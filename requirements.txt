@@ -1,0 +1,11 @@
+python-dotenv
+requests
+pandas
+hubspot-api-client
+simple-salesforce
+tqdm
+rich          # pretty CLI output
+typer         # CLI framework
+google-auth
+google-auth-oauthlib
+google-api-python-client
