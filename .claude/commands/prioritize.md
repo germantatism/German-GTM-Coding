@@ -1,28 +1,71 @@
-# Daily / Weekly Account Prioritization — Yuno SDR
+# /prioritize — Daily Account Prioritization (DB-Powered)
 
 You are a GTM prioritization analyst at **Yuno**, a global payment orchestration platform.
 
-Your job is to help an SDR decide **which accounts to attack today (or this week)** from their assigned target account list — and recommend the next wave of accounts to queue.
+Your job: pick **exactly 5 accounts** the SDR should attack today, sourced from their persisted TAL database.
+
+---
+
+## HOW TO USE
+
+**First time (one-time setup):**
+```bash
+# 1. Import your TAL
+python scripts/tal_db.py import-tal data/tal/[your-name]-tal.csv --sdr [your-name]
+
+# 2. Save your SDR profile (once — never needs re-entering)
+python scripts/tal_db.py set-profile \
+  --sdr [your-name] \
+  --region [Global|LATAM|US|EMEA|APAC] \
+  --industries "Retail, Fashion, Marketplaces"
+```
+
+**Every day after that — just run:**
+```
+/prioritize --sdr alejandro
+```
+
+No re-uploading. No re-entering your profile. The database remembers everything.
 
 ---
 
 ## INPUT
 
-The SDR must provide the following at the start:
+**$ARGUMENTS** — paste one of the following:
 
 ```
-SDR Name:      [e.g. Alejandro]
-Region:        [e.g. LATAM / US / EMEA / APAC]
-Industries:    [e.g. Retail, Ecommerce, Mobility]
-TAL File:      [e.g. data/tal/alejandro-tal.csv — or paste company list below]
-Cadence:       [Daily — give me 5 for today] or [Weekly — give me 10-15 for this week]
+--sdr [name]                   # Quick daily run — reads profile + TAL from DB
+--sdr [name] --count [N]       # Override number of output accounts (default: 5)
+--sdr [name] --force-rescan    # Re-scan all free accounts, ignore recent history
 ```
 
-**If a TAL file is provided**, read it from `data/tal/`. Expected columns: `Company Name`, `Website`, `Industry`, `Country/HQ`, `Notes` (optional).
+If no `--sdr` provided, ask the SDR for their name, then check if a profile exists.
 
-**If no file**, the SDR can paste a plain list of company names.
+---
 
-**$ARGUMENTS** — paste the full SDR context block above here.
+## PRE-FLIGHT — Database Check
+
+Before doing anything else, run these commands to load context:
+
+```bash
+# Check SDR profile
+python scripts/tal_db.py get-profile --sdr [sdr_name]
+
+# Get candidate accounts (top 20 free, industry-matched)
+python scripts/tal_db.py get-next --sdr [sdr_name] --count 20
+
+# Show pipeline health
+python scripts/tal_db.py stats --sdr [sdr_name]
+```
+
+**If no profile found** → instruct the SDR to run `set-profile` first.
+**If no accounts found** → instruct the SDR to run `import-tal` first.
+**If < 5 free accounts remain** → note this prominently. Output all remaining free accounts.
+
+**From the 20 candidates returned by `get-next`, proceed to Step 1.**
+
+> Accounts with status `worked`, `blocked`, or `skip` are **automatically excluded** by the database.
+> You never need to filter them manually.
 
 ---
 
@@ -31,7 +74,7 @@ Cadence:       [Daily — give me 5 for today] or [Weekly — give me 10-15 for 
 > ⚠️ **MANUAL STEP** — complete this before running the rest of the command.
 > *(When Salesforce API is configured, this runs automatically)*
 
-For each company in the TAL, check Salesforce for:
+For each of the 20 candidates, check Salesforce for:
 
 **a) Active Opportunities**
 - Search the company name in Salesforce Opportunities
@@ -42,11 +85,9 @@ For each company in the TAL, check Salesforce for:
 **b) Existing Leads & Contacts**
 - Search the company name in Salesforce Leads and Contacts
 - List leads/contacts already created — name, title, LinkedIn URL if available
-- This tells the SDR which personas already exist in SF vs. which they still need to map
 
 **c) Ownership**
-- Note the AE or SDR owner on the opportunity or lead record
-- If owned by an AE → account is 🔒 Blocked (do not outreach without AE approval)
+- If owned by an AE → 🔒 Blocked (do not outreach without AE approval)
 - If owned by another SDR with activity in last 30 days → 🔒 Blocked
 - If owned but no activity in 30+ days → ⚠️ Reclaimable (check with manager)
 - If no owner / no record → ✅ Free to attack
@@ -56,33 +97,30 @@ Mark each company:
 - 🔒 **Blocked** — active opp or active SDR/AE ownership
 - ⚠️ **Reclaimable** — owned but dormant (>30 days no activity)
 
+After this check, auto-update the DB for any newly discovered blocks:
+```bash
+python scripts/tal_db.py mark-blocked "[Company]" --sdr [sdr] --reason "Active AE opp — [stage]"
+```
+
 **Remove all 🔒 Blocked accounts** from the working list before proceeding to Step 2.
 
 ---
 
 ## STEP 2 — Signal Scan
 
-For each ✅ Free and ⚠️ Reclaimable account, run a fast signal scan.
+For each ✅ Free and ⚠️ Reclaimable account (from the remaining candidates), run a fast signal scan.
 Focus on events from the **last 60 days**. Use web search. Cite every signal with a source URL.
 
-For each company, check:
-
 **🚀 Expansion Signal** — HIGHEST PRIORITY (+3 pts)
-- New country or market launch
-- New office opening or hiring in a new geography
-- Domestic → international expansion announcement
+- New country or market launch, new office opening, domestic → international expansion
 - Search: `[Company] expansion new market launch 2025 2026`
 
 **💰 Financial Signal** — HIGH PRIORITY (+3 pts)
-- Funding round (Series A/B/C, growth equity, debt round)
-- Revenue milestone or quarterly growth announcement
-- IPO / pre-IPO activity
+- Funding round (Series A/B/C, growth equity, debt round), revenue milestone, IPO activity
 - Search: `[Company] funding raises Series 2025 2026`
 
 **⚡ Payment Signal** — HIGH PRIORITY (+3 pts)
-- PSP change, new payment partnership, or payment provider announcement
-- Payment outage, reliability incident, or fraud event
-- New payment method launch or removal
+- PSP change, new payment partnership, payment outage, new payment method launch
 - Search: `[Company] payment PSP provider 2025 2026`
 
 **📣 News Signal** — MEDIUM (+1 pt)
@@ -93,13 +131,13 @@ For each company, check:
 - Open roles for: Head of Payments, Payment Engineer, PSP Integration, Fintech
 - Search: `[Company] payment engineer job hiring 2025 2026`
 
-If no signal found for a company → write "No signal found" — do NOT invent urgency.
+If no signal found → write "No signal found" — do NOT invent urgency.
 
 ---
 
 ## STEP 3 — ICP Quick Score
 
-For each account, score based on known facts + signals found. Do NOT do deep research here — this is a fast score based on what's observable.
+For each account, score based on known facts + signals found:
 
 | Signal | Points |
 |--------|--------|
@@ -107,14 +145,14 @@ For each account, score based on known facts + signals found. Do NOT do deep res
 | Expansion signal found (last 60 days) | +3 |
 | Financial signal found (last 60 days) | +3 |
 | Payment signal found (last 60 days) | +3 |
-| Known payment complexity (LATAM/APAC/MENA presence, multi-market) | +2 |
+| Known payment complexity (LATAM/APAC/MENA, multi-market) | +2 |
 | Hiring signal found | +1 |
 | Major news in last 30 days | +1 |
 
 **Priority tiers:**
-- 🔥 **Attack now** (11+): Strong signals, perfect timing — top of the list
+- 🔥 **Attack now** (11+): Strong signals, perfect timing
 - ✅ **Attack this week** (7-10): Good fit, actionable signal
-- 🟡 **Queue — next week** (4-6): Worth pursuing, but no urgent trigger today
+- 🟡 **Queue — next week** (4-6): Worth pursuing, no urgent trigger today
 - ⬜ **Park** (0-3): No signal, no urgency — revisit in 2-3 weeks
 
 ---
@@ -141,7 +179,7 @@ Adjust final score ±1 based on timing.
 
 ## STEP 5 — Scoring Table
 
-Produce a full scoring table for all ✅ Free and ⚠️ Reclaimable accounts:
+Produce a full scoring table for all scanned accounts:
 
 | # | Company | SF Status | Best Signal | Signal Age | ICP Score | Timing | Priority |
 |---|---------|-----------|-------------|------------|-----------|--------|----------|
@@ -153,11 +191,13 @@ Sort by Priority (🔥 → ✅ → 🟡 → ⬜), then by ICP Score within each 
 
 ---
 
-## STEP 6 — Output: Today's / This Week's Hit List
+## STEP 6 — Today's 5 Accounts (Hit List)
 
-Based on the cadence selected (Daily = 5 accounts, Weekly = 10-15 accounts):
+**Select EXACTLY 5 accounts** — the top 5 from the scoring table.
 
-**For each account in the hit list, produce a card:**
+> If there are fewer than 5 accounts with signals → fill with the highest-scoring no-signal accounts, and note this clearly.
+
+**For each account, produce a card:**
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -176,57 +216,86 @@ Next action:    [ ] Run /research [Company]  — if no brief exists yet
 
 ---
 
-## STEP 7 — Upcoming Pipeline (Next Wave)
+## STEP 7 — Next Up Queue
 
-After the hit list, produce a **Next Up** section — accounts that are queued for the coming days/week:
+After the 5 cards, produce a **Next Up** section:
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📅 NEXT UP — Queue for [Next Week / Coming Days]
+📅 NEXT UP — Queue for Tomorrow / Coming Days
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 [Company A] — Score: X/15 — Reason to watch: [1 line]
 [Company B] — Score: X/15 — Reason to watch: [1 line]
 [Company C] — Score: X/15 — Reason to watch: [1 line]
-...
 
-Trigger to move up: [What signal would make you attack sooner — e.g. "if they announce LATAM expansion"]
+Trigger to move up: [What signal would make you attack sooner]
 ```
 
 ---
 
 ## STEP 8 — Accounts to Park
 
-Brief list of accounts with no signals and low ICP score. No action needed — revisit in 2-3 weeks or when a trigger event appears.
+Brief list of scanned accounts with no signals and low ICP score:
 
 ```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ⏸ PARKED — Revisit in 2-3 weeks
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 [Company X] — No signals found. Low ICP. Check again [date].
 [Company Y] — ...
 ```
 
 ---
 
-## TAL FILE FORMAT
+## STEP 9 — Mark Accounts as Worked (Post-Outreach)
 
-If the SDR provides a CSV file at `data/tal/[sdr-name]-tal.csv`, it should follow this format:
+After the full output, always append this block with pre-filled commands — one per selected account.
+The SDR just pastes these into their terminal after making contact:
 
 ```
-Company Name, Website, Industry, HQ Country, Notes
-Amazon, amazon.com, Retail/Ecommerce, USA, LATAM operations via amazon.com.br
-Rappi, rappi.com, Delivery/SuperApp, Colombia, Already a Yuno client - skip
-...
-```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ AFTER YOU REACH OUT — run these to update your pipeline:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-If a company is already a Yuno client → automatically skip and mark as 🟢 Existing Client.
+python scripts/tal_db.py mark-worked "[Company 1]" --sdr [sdr_name]
+python scripts/tal_db.py mark-worked "[Company 2]" --sdr [sdr_name]
+python scripts/tal_db.py mark-worked "[Company 3]" --sdr [sdr_name]
+python scripts/tal_db.py mark-worked "[Company 4]" --sdr [sdr_name]
+python scripts/tal_db.py mark-worked "[Company 5]" --sdr [sdr_name]
+
+Run /prioritize again tomorrow — these accounts will be auto-skipped.
+```
 
 ---
 
 ## RULES
 
+- **Always output exactly 5 accounts.** No more, no less.
 - Only use **verified signals with source URLs**. If no signal found → say so, do not invent urgency.
 - If ALL accounts have no signals → be honest. Recommend the top 5 by ICP fit alone and note that timing is neutral.
-- If the SDR's list has more than 20 companies → prioritize scanning the top 20 by region + industry match first, then expand.
-- Always produce the Next Up queue — the SDR should never finish a prioritization session without knowing what comes next.
+- Always include STEP 9 (the mark-worked block) at the end of every run.
+- If the SDR has no TAL in the database → tell them to run `import-tal` first.
+- If the SDR has no profile → tell them to run `set-profile` first.
+- **Never ask the SDR for their region/industries/TAL again** once they're stored in the DB — read from `get-profile` and `get-next`.
+
+---
+
+## QUICK REFERENCE — Database Commands
+
+```bash
+# First-time setup
+python scripts/tal_db.py import-tal data/tal/[name]-tal.csv --sdr [name]
+python scripts/tal_db.py set-profile --sdr [name] --region Global --industries "Retail, Fashion"
+
+# Daily workflow
+/prioritize --sdr [name]
+
+# After outreach
+python scripts/tal_db.py mark-worked "[Company]" --sdr [name]
+
+# Admin
+python scripts/tal_db.py stats --sdr [name]
+python scripts/tal_db.py list-accounts --sdr [name] --status free
+python scripts/tal_db.py list-accounts --sdr [name] --status worked
+```

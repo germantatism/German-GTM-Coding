@@ -9,3 +9,4 @@ typer         # CLI framework
 google-auth
 google-auth-oauthlib
 google-api-python-client
+# sqlite3 is part of Python stdlib — no install needed
