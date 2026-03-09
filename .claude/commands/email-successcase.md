@@ -43,7 +43,7 @@ Use the appropriate template based on the selected success case. Two template st
 
 Hello ((contact_name))!
 
-Hope you are doing great! As promised, I went back internally and found the success case that I think fits your situation the best. Here it is!
+Hope you are doing great! I went back internally and found the success case that I think fits your situation the best. Here it is!
 
 Some time ago we built an end-to-end project for [CLIENT NAME]. They were looking to optimize their global payment infrastructure, increase acceptance rates across their regional and global markets, secure reliability with PSP backup scenarios, and improve connection times and costs with new providers.
 
