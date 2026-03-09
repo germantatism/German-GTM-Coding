@@ -368,7 +368,7 @@ Subject: [Subject line]
 
 After generating the full report, save it:
 ```
-/Users/albarracinduque/Documents/GTM CODING/data/research/[company-slug]-[YYYY-MM-DD].md
+/Users/germantatis/Documents/GERMAN CLAUDE CODE/GTMCoding/data/research/[company-slug]-[YYYY-MM-DD].md
 ```
 Use the Write tool. Lowercase hyphenated slug, today's date.
 

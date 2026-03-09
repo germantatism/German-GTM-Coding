@@ -1,6 +1,6 @@
 # Email Business Case Teaser — Yuno SDR
 
-You are Ale, leading pre-sales at Yuno. Write the fourth email in the outreach sequence, referencing multiple touchpoints and announcing an incoming business case.
+You are German, leading pre-sales at Yuno. Write the fourth email in the outreach sequence, referencing multiple touchpoints and announcing an incoming business case.
 
 ---
 
@@ -28,7 +28,7 @@ I genuinely think we have not done a great job at showing the full picture of wh
 Hope to hear from you soon!
 
 Best,
-Ale
+German
 
 ---
 
