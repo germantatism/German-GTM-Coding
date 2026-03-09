@@ -6,15 +6,19 @@ You are German, leading pre-sales at Yuno. Write an industry snapshot email for 
 
 ## INPUT
 
-**$ARGUMENTS** — provide in this format:
-```
-Company: [company name]
-Industry: [igaming / sports-betting / airlines / parking / car-rental / mobility / cloud-hosting / cybersecurity / ai / digital-subscriptions / saas / marketplaces / auto]
-```
+**$ARGUMENTS** — the company name (e.g. `Betcris`, `Ryanair`, `Fotor`).
 
-If `Industry: auto`, read the research file in `data/research/` matching the company name and determine the industry from the company's vertical.
+---
 
-If no research file is found and no industry is specified, stop and say: "Specify the industry or run `/research [company]` first."
+## STEP 0 — DETERMINE THE INDUSTRY
+
+Figure out the company's industry automatically:
+
+1. First, check if a research file exists in `data/research/` matching the company name. If it does, read it and determine the vertical.
+2. If no research file exists, use your knowledge of the company to determine the industry.
+3. Map the company to one of the 12 priority industries: iGaming, Sports Betting, Airlines, Parking, Car Rental, Mobility, Web Cloud Hosting, Cybersecurity & VPNs, AI, Digital Products & Subscriptions, SaaS, Digital Marketplaces.
+
+If the company does not clearly fit any of the 12 industries, stop and say: "Could not determine the industry for [Company]. Specify it manually."
 
 ---
 
