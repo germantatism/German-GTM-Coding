@@ -139,7 +139,7 @@ Format: `[{"market": "Brazil", "method": "Pix"}, ...]`.
 
 `capability_descs` is 4 paragraphs of 2-4 sentences each. Each desc must reference at least one **verifiable fact** about the merchant (revenue figure, country count, growth rate, specific product line) — no generic copy. Anchor to numbers from the research. Example for SAP capability 1: "Per-transaction routing across acquirers by card BIN, issuer, and market. With €21B in cloud subscription revenue (+26% YoY) across 180+ countries, lifting auth rates 3 to 10% on cloud renewals translates to hundreds of millions in recovered ARR annually."
 
-**Hard length cap: 280 characters per desc.** The slide 5 capability card has a CSS line-clamp safety net at ~7 lines; anything longer gets ellipsized rather than overflowing the back face. Stay under the cap so no content is hidden — if a desc creeps above ~280 chars, cut sentences, not facts.
+**Hard length cap: 180 characters per desc.** The slide 5 capability cards are short stacked tiles (~2-3 lines of visible body text each); anything longer hits the CSS line-clamp at 5 lines and ellipsizes. Stay under the cap so no content is hidden. If a desc creeps above ~180 chars: cut adjective phrases first, then sentences, then specifics — but never invent or generalize. Better to fit the most important fact than to lose half of two facts to ellipsis.
 
 ## Business Overview entry — slide 2 data
 
