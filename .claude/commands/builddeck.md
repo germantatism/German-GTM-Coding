@@ -49,13 +49,20 @@ If the service-role key isn't recoverable from history, ask the user to paste it
 
 ## Research — what to find
 
-Use `WebSearch` and `WebFetch` in parallel where possible. Cap at ~8 searches total. The research only powers the Supabase row fields, so don't go overboard — this isn't `/research`. Targets:
+Use `WebSearch` and `WebFetch` in parallel where possible. Cap at ~12 searches total. The research powers both the Supabase row fields AND the Business Overview slide (slide 2), so cover both. Targets:
 
-- **Headline financials**: latest annual revenue, growth rate, public/private, geographies of operation. Source: 10-K / 20-F if public, latest earnings release if recent. Verifiable numbers go into capability descs as anchors.
+- **Headline financials**: latest annual revenue (always in USD), growth rate, public/private, fiscal year. Source: 10-K / 20-F if public, latest earnings release if recent. If the company is private and revenue is reported by a third party (Forbes, Inc, PitchBook, S&P), use that number and mark `estimated: true` with the source. If no number is verifiable, **omit revenue entirely** — never fabricate.
 - **Geographic footprint**: which markets they serve, where their cloud/SaaS revenue is shifting toward, where they don't have local methods. This drives `missing_methods` and the local-payment-method capability copy.
+- **SimilarWeb top countries**: WebFetch `https://www.similarweb.com/website/{primary-domain}/` and pull the country-share table. Filter to share ≥ 1%, cap at top 10. If the SimilarWeb page is unreachable or returns no data, omit the countries section entirely.
+- **Recent strategic catalyst**: most recent acquisition, IPO, take-private, market exit, major product launch, regulatory event, or leadership change in the last 12-24 months. One headline + one detail sentence with the deal size / date / counterparty. If nothing material, omit the catalyst block.
+- **Scale anchors**: stores / locations, employee count, founding year, customers/MAU/merchants served — whatever is publicly verifiable. Pick 3. Omit any anchor you can't verify.
+- **Business lines / product portfolio**: the distinct revenue lines the company operates (e.g. for Nordstrom: Full-Line, Rack, Nordstrom.com, Nordstrom Local). Only include lines you can confirm with a primary source. 3-6 chips ideal.
+- **APMs (Alternative Payment Methods) at checkout**: WebFetch their checkout / payment-options help page and list the non-card methods accepted (wallets like Apple Pay / Google Pay / PayPal, BNPL like Affirm / Afterpay / Klarna / Sezzle / Zip, bank methods like Pix / SEPA / iDEAL / OXXO). Confirm via official pages or partner pages (e.g. afterpay.com/store-directory). If you can't verify the checkout, omit the APMs section.
 - **Payment stack signals**: search for "{company} Stripe Adyen Worldpay Braintree Checkout.com payment processor", "{company} payment gateway", "{company} job listings payments engineer", "{company} press release fintech partnership". Look at official help pages, T&Cs, dev docs, job boards, SEC filings, press releases. Tag confirmed (live checkout, official docs, press release) vs. inferred (job posting alone, third-party article). If the company runs a help page describing how customers pay them, that's gold.
 - **Business model**: subscription, transactional, marketplace? Shapes `capabilities_live` (subscriptions, tokenization, fraud, payouts, kyc, kyb, baas).
 - **Pain points the merchant is publicly known to have**: complaints on Reddit/Trustpilot/community forums about declined cards, double charges, refunds, missing local methods, billing failures. These become real, verifiable pain titles.
+
+**Accuracy rule.** Every field in the Business Overview slide is independently optional. The slide reflows automatically — never pad an empty section with guesses. If revenue is not verifiable, omit. If APMs aren't documented, omit. If SimilarWeb fails, omit countries. **Mentir es peor que omitir.**
 
 ## Industry — pick from the canonical list
 
@@ -131,6 +138,51 @@ Format: `[{"market": "Brazil", "method": "Pix"}, ...]`.
 4. `Unified Orchestration`
 
 `capability_descs` is 4 paragraphs of 2-4 sentences each. Each desc must reference at least one **verifiable fact** about the merchant (revenue figure, country count, growth rate, specific product line) — no generic copy. Anchor to numbers from the research. Example for SAP capability 1: "Per-transaction routing across acquirers by card BIN, issuer, and market. With €21B in cloud subscription revenue (+26% YoY) across 180+ countries, lifting auth rates 3 to 10% on cloud renewals translates to hundreds of millions in recovered ARR annually."
+
+## Business Overview entry — slide 2 data
+
+After research, append a new entry to `yuno-sales-pitch-maker/src/data/business-overviews.json` keyed by slug. Every field is independently optional — only include a field when the source is verifiable. Full shape:
+
+```json
+{
+  "<slug>": {
+    "revenue": {
+      "amount": "15.02",        // string, decimal-pointed
+      "unit": "B",              // "M" or "B"
+      "currency": "USD",        // always USD
+      "year": "FY24",           // fiscal year label
+      "growth": "+2.2% YoY",    // optional
+      "estimated": false,       // true when source is not a public filing
+      "source": "10-K filed Mar 2025"
+    },
+    "description": "2-3 sentences anchored to verifiable numbers. Tight.",
+    "catalyst": {
+      "headline": "Take-private closed May 2025 in a $6.25B deal",
+      "detail": "One sentence with counterparty, % stake, date."
+    },
+    "scale": [
+      { "value": "350+", "label": "stores in 32 US states" },
+      { "value": "~60K", "label": "employees" },
+      { "value": "1901", "label": "founded in Seattle" }
+    ],
+    "countries": [
+      { "name": "United States", "code": "us", "share": 0.94 }
+    ],
+    "countriesSource": "SimilarWeb",
+    "apms": ["Apple Pay", "Google Pay", "PayPal", "Affirm"],
+    "businessLines": ["Full-Line", "Rack", "Nordstrom.com"]
+  }
+}
+```
+
+Rules:
+- Country `code` is ISO 3166 alpha-2 lowercase. Flags must exist at `public/flags/{code}.svg` — if a country code isn't in that folder, **download it from `https://raw.githubusercontent.com/HatScripts/circle-flags/gh-pages/flags/{code}.svg`** before adding the country to the entry.
+- `share` is a decimal (0.94, not 94 or "94%"). Only include countries ≥ 0.01. Cap at top 10.
+- `apms` is the non-card methods only. Cards (Visa/MC/Amex) are implicit; don't list them.
+- `businessLines` 3-6 entries. Only verifiable lines.
+- Any field you can't verify: **omit the key entirely**. The slide reflows.
+
+After writing the JSON entry, no other file needs to change — `src/lib/supabase.js` already lifts the entry via `getBusinessOverview()` into `data.OVERVIEW`, and `SlideViewer.jsx` already filters the slide via `requiresDataField: 'OVERVIEW'` (so merchants without an entry skip it cleanly).
 
 ## Capabilities live — what the merchant has today
 
@@ -211,10 +263,12 @@ Before committing, run `npm run build` in `yuno-sales-pitch-maker/` to make sure
 
 ```bash
 cd /Users/germantatis/Desktop/GTMCoding/yuno-sales-pitch-maker
-git add public/merchants.csv src/data/merchants.generated.js public/merchants/{slug}.png
+git add public/merchants.csv src/data/merchants.generated.js src/data/business-overviews.json public/merchants/{slug}.png public/flags/
 git commit -m "feat: add {Company} merchant"
 git push origin master:main
 ```
+
+Note: stage `public/flags/` only if you downloaded a new flag SVG for this merchant (most existing top countries are already covered). The `git add public/flags/` line is a no-op when nothing changed there.
 
 Use a HEREDOC for the commit body if you want to add detail. The body should mention: research highlights (revenue, geo), PSP source (confirmed vs. inferred), and any non-obvious decisions (e.g. "single-PSP topology preserved as Yuno talking point").
 
