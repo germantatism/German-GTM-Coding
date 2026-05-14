@@ -55,7 +55,7 @@ Use `WebSearch` and `WebFetch` in parallel where possible. Cap at ~12 searches t
 - **Geographic footprint**: which markets they serve, where their cloud/SaaS revenue is shifting toward, where they don't have local methods. This drives `missing_methods` and the local-payment-method capability copy.
 - **SimilarWeb top countries**: WebFetch `https://www.similarweb.com/website/{primary-domain}/` and pull the country-share table. Filter to share ≥ 1%, cap at top 10. If the SimilarWeb page is unreachable or returns no data, omit the countries section entirely.
 - **Recent strategic catalyst**: most recent acquisition, IPO, take-private, market exit, major product launch, regulatory event, or leadership change in the last 12-24 months. One headline + one detail sentence with the deal size / date / counterparty. If nothing material, omit the catalyst block.
-- **Scale anchors**: stores / locations, employee count, founding year, customers/MAU/merchants served — whatever is publicly verifiable. Pick 3. Omit any anchor you can't verify.
+- **Commerce footprint (3 anchors, payment-relevant)**: pick 3 stats that describe where and how this merchant transacts, NOT biographical trivia. Bias toward payment-relevant dimensions Yuno can optimize: digital vs in-store sales mix, # of stores / POS surface, # of countries shipped to, monthly visitors (SimilarWeb), active customers / loyalty members, average order value, # of currencies transacted. Avoid: founding year, headcount (unless extraordinary), HQ location. The slide section is called "Commerce Footprint" — every anchor must answer "how big is the surface Yuno would optimize?"
 - **Business lines / product portfolio**: the distinct revenue lines the company operates (e.g. for Nordstrom: Full-Line, Rack, Nordstrom.com, Nordstrom Local). Only include lines you can confirm with a primary source. 3-6 chips ideal.
 - **APMs (Alternative Payment Methods) at checkout**: WebFetch their checkout / payment-options help page and list the non-card methods accepted (wallets like Apple Pay / Google Pay / PayPal, BNPL like Affirm / Afterpay / Klarna / Sezzle / Zip, bank methods like Pix / SEPA / iDEAL / OXXO). Confirm via official pages or partner pages (e.g. afterpay.com/store-directory). If you can't verify the checkout, omit the APMs section.
 - **Payment stack signals**: search for "{company} Stripe Adyen Worldpay Braintree Checkout.com payment processor", "{company} payment gateway", "{company} job listings payments engineer", "{company} press release fintech partnership". Look at official help pages, T&Cs, dev docs, job boards, SEC filings, press releases. Tag confirmed (live checkout, official docs, press release) vs. inferred (job posting alone, third-party article). If the company runs a help page describing how customers pay them, that's gold.
@@ -139,6 +139,8 @@ Format: `[{"market": "Brazil", "method": "Pix"}, ...]`.
 
 `capability_descs` is 4 paragraphs of 2-4 sentences each. Each desc must reference at least one **verifiable fact** about the merchant (revenue figure, country count, growth rate, specific product line) — no generic copy. Anchor to numbers from the research. Example for SAP capability 1: "Per-transaction routing across acquirers by card BIN, issuer, and market. With €21B in cloud subscription revenue (+26% YoY) across 180+ countries, lifting auth rates 3 to 10% on cloud renewals translates to hundreds of millions in recovered ARR annually."
 
+**Hard length cap: 280 characters per desc.** The slide 5 capability card has a CSS line-clamp safety net at ~7 lines; anything longer gets ellipsized rather than overflowing the back face. Stay under the cap so no content is hidden — if a desc creeps above ~280 chars, cut sentences, not facts.
+
 ## Business Overview entry — slide 2 data
 
 After research, append a new entry to `yuno-sales-pitch-maker/src/data/business-overviews.json` keyed by slug. Every field is independently optional — only include a field when the source is verifiable. Full shape:
@@ -160,10 +162,10 @@ After research, append a new entry to `yuno-sales-pitch-maker/src/data/business-
       "headline": "Take-private closed May 2025 in a $6.25B deal",
       "detail": "One sentence with counterparty, % stake, date."
     },
-    "scale": [
+    "footprint": [
+      { "value": "~34%", "label": "digital sales mix vs in-store" },
       { "value": "350+", "label": "stores in 32 US states" },
-      { "value": "~60K", "label": "employees" },
-      { "value": "1901", "label": "founded in Seattle" }
+      { "value": "30", "label": "countries shipped to via ESW" }
     ],
     "countries": [
       { "name": "United States", "code": "us", "share": 0.94 }
