@@ -289,3 +289,78 @@ Hopefully, we can chat soon over all the ideas we have!
 
 Best,
 German
+
+---
+
+## 13. Financial Services & FinTech
+
+Hey {{recipient.first_name}}!
+
+German from Yuno again haha.
+
+Quick email to share an industry snapshot. Today, the global fintech market is valued at over $395 billion, with digital payments now accounting for more than half of all consumer transactions worldwide for the first time in history.
+
+Looking ahead to this year, the market is projected to surpass $460 billion in revenue, growing at a CAGR of over 18%. Key trends shaping the future of fintech payments include:
+
+Rapid adoption of real-time payment rails and instant settlement, replacing legacy batch processing across payroll, treasury, and cross-border flows
+Aggressive vendor consolidation as enterprises move from multiple standalone providers to unified platforms that combine payments, ledgering, and compliance in a single integration
+Explosive growth in cross-border transaction volumes requiring local acquiring, multi-currency support, and region-specific payment methods to maximize approval rates
+Rising regulatory complexity across jurisdictions demanding flexible infrastructure that adapts to new compliance requirements without rebuilding the payment stack
+
+At Yuno, we help fintech companies orchestrate payments globally, consolidate multiple PSPs and acquirers into a single API, maximize approval rates through smart routing, and scale into new markets with local payment methods and processors without heavy engineering investment.
+
+Hopefully, we can chat soon over all the ideas we have!
+
+Best,
+German
+
+---
+
+## 14. Retail & E-Commerce
+
+Hey {{recipient.first_name}}!
+
+German from Yuno again haha.
+
+Quick email to share an industry snapshot. Today, the global e-commerce market has surpassed $6.8 trillion in annual revenue, with online transactions now accounting for more than 20% of all retail sales worldwide and growing at a CAGR of over 9%.
+
+Looking ahead to this year, online retail revenue is projected to reach $7.4 trillion, as digital-first shopping and omnichannel strategies become the standard across every major market. Key trends shaping the future of retail payments include:
+
+Omnichannel convergence where retailers must deliver seamless payment experiences across web, mobile app, in-store, and social commerce, each requiring different payment methods and processors
+Growing demand for local payment methods in high-growth markets like LATAM, Southeast Asia, and MENA where card penetration remains low and wallets, bank transfers, and BNPL dominate
+Rising pressure to reduce merchant discount rates and cross-border processing costs as retailers expand internationally and margins tighten in a competitive landscape
+Increasing complexity of managing multiple PSPs, fraud tools, and reconciliation across dozens of markets simultaneously while maintaining checkout conversion rates
+
+At Yuno, we help retail and e-commerce companies orchestrate payments globally, activate local processors and payment methods in every market through a single API, reduce MDRs through smart routing, and centralize reconciliation across all providers in a single dashboard.
+
+Hopefully, we can chat soon over all the ideas we have!
+
+Best,
+German
+
+---
+
+## 15. Video Gaming
+
+Hey {{recipient.first_name}}!
+
+German from Yuno again haha.
+
+Quick email to share an industry snapshot. Today, the global video games market is valued at over $187 billion, with mobile alone driving close to half of all revenue and in game purchases and virtual currency now the dominant way players spend.
+
+Looking ahead, the market is projected to surpass $210 billion in annual revenue, fueled by live service titles, blockbuster launches, and the shift toward selling directly to players. Key trends shaping the future of gaming payments include:
+
+Publishers moving purchases into their own direct to consumer webshops to step out from under the 15 to 30 percent Apple and Google store fees and regain control of routing and costs
+
+In game purchases and microtransactions becoming the core revenue engine, which makes approval rates and recovery of failed payments a direct driver of bookings
+
+Global player bases demanding local payment methods, local acquiring, and multi currency support well beyond cards and wallets to convert in every region
+
+Major launches and live events creating huge transaction spikes in short windows, alongside rising fraud and chargeback pressure on digital goods, both of which demand smart routing and PSP failover
+
+At Yuno, we help gaming companies orchestrate payments globally, stand up direct to consumer checkouts across their titles, recover failed transactions and lift approval rates, activate local payment methods in every market, and absorb launch day volume spikes with smart routing and failover.
+
+Hopefully, we can chat soon over all the ideas we have!
+
+Best,
+German
