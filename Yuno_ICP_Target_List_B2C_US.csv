@@ -1,0 +1,153 @@
+Priority,Score,Company,Industry,HQ_US,Description,Signal_WhyNow
+HIGH,10,Aura,Cybersecurity/VPN,Y,Consumer identity-theft and online-safety subscription suite (9M+ families),New CFO Brian DeCenzo + Qoria merger (Apr 2026); $150M Series G (Jan 2026); ASX listing planned
+HIGH,10,ElevenLabs,AI,Partial,AI voice/audio generation and conversational agents sold via subscriptions/credits,$500M Series D at $11B (Feb 2026); opening GTM offices in 14+ cities incl Mexico City Sao Paulo Tokyo
+HIGH,10,Suno,AI,Y,AI music/song generation app with consumer subscription tiers,Raised $400M at $5.4B (Jun 2026); shifting to subscriber-only monetization in 2026
+HIGH,10,Epic Games,Gaming,Y,Fortnite maker and storefront pushing direct-to-consumer payments,New Epic Store webshops + Google settlement (fees to 20%) rolling out Jun 30 2026; direct payment push
+HIGH,10,Kalshi,Sports Betting,Y,CFTC-regulated prediction market exchange,$1B Series F at $22B (May 2026); institutional volume +800%; 50-state sports event contracts
+HIGH,9,Perplexity,AI,Y,AI answer engine / search with Pro consumer subscription,~$200M at ~$20-21B; $400M India investment; 238-country 46-language push
+HIGH,9,Runway,AI,Y,AI video generation creative tools sold via subscriptions/credits,$315M Series E at $5.3B (Feb 2026); launched Gen 4.5 video model
+HIGH,9,Higgsfield,AI,Y,AI video/image generation app on consumption-based credits,$80M Series A ext at $1.3B (Jan 2026); ARR $100M to $300M in ~4mo; credit model + creator payouts
+HIGH,9,Mirage (Captions),AI,Y,AI short-form video creation/editing app with consumer subscriptions,$75M growth (Mar 2026); 20M+ users; cash earmarked for global expansion into Asian markets
+HIGH,9,Electronic Arts,Gaming,Y,Publisher of EA Sports FC Apex Sims with global D2C and in-game purchases,$55B+ take-private by PIF/Silver Lake cleared ~Apr 2026 (largest gaming LBO ever); restructuring
+HIGH,9,Take-Two Interactive (Rockstar),Gaming,Y,Owner of Rockstar/Zynga; console PC and mobile games with large in-game spend,GTA 6 launch Nov 19 2026; expanding D2C commerce platform for in-game/mobile purchases
+HIGH,9,Scopely,Gaming,Y,PIF/Savvy-owned mobile publisher (Monopoly Go Pokemon Go) with heavy global IAP,Acquired Loom Games (>$1B) early 2026; passed $15B lifetime revenue; integrating Pokemon Go
+HIGH,9,DraftKings,Sports Betting,Y,Largest US online sportsbook DFS casino and prediction markets operator,Launching crypto-to-cash deposits in 4 states + scaling DraftKings Predictions; new deposit rails
+HIGH,9,FanDuel,Sports Betting,Y,#1 US online sportsbook and casino owned by Flutter,Dropping credit-card deposits/withdrawals across all products effective Mar 2 2026 (cashier change)
+HIGH,9,Polymarket,Sports Betting,Y,Crypto-native prediction market relaunching in US,ICE/NYSE added $600M (total ~$2B); dissolved US waitlist; new taker-fee schedule live
+HIGH,9,PrizePicks,Sports Betting,Y,Largest US DFS pick-em operator,Allwyn closed 62.3% stake for $1.533B (Jan 2026); launched prediction markets in 48 states; new CEO
+HIGH,9,Underdog Fantasy,Sports Betting,Y,DFS and prediction-market operator,Acquired Aristotle Exchange (CFTC) for 50-state access; pivoting to prediction markets
+HIGH,9,VGW (Chumba/LuckyLand/Global Poker),iGaming,N,Largest US sweepstakes operator restructuring brands and payment stack,Diversifying payment rails away from single-Trustly concentration toward open-banking/ACH/prepaid
+HIGH,9,United Airlines,Airlines/Travel,Y,Major US global network carrier with heavy cross-border multi-currency bookings,14-route 2026 expansion incl first-ever US-carrier nonstops + Newark-Seoul Bangkok
+HIGH,9,Delta Air Lines,Airlines/Travel,Y,Major US global carrier with extensive international JV partnerships and APM exposure,Largest-ever transatlantic schedule 2026; new Atlanta-Riyadh Boston-Madrid Hong Kong
+HIGH,9,Southwest Airlines,Airlines/Travel,Y,Large US carrier newly entering transatlantic/transpacific connectivity,First-ever global pivot: six international partnerships launching 2026 (Turkish ANA Icelandair)
+HIGH,9,Alaska Airlines,Airlines/Travel,Y,US carrier (with Hawaiian) building first long-haul intercontinental network,First widebody 787 intl launch Seattle to London Rome Reykjavik; new multi-currency flows
+HIGH,9,Spotify,Digital Subscriptions,N,Global music/audio streaming with recurring subscriptions across many markets,Hired Lex Ledger as Global Head of Payments focused on localized payments/APMs (Apr 2026)
+HIGH,9,Netflix,Digital Subscriptions,Y,Global subscription video streaming,Ad tier expanded to 15 new markets incl Colombia Peru Indonesia Philippines (May 2026)
+HIGH,9,OnlyFans (Fenix Intl),Digital Subscriptions,N,Creator subscription/content platform ($25B+ paid to creators),Sold 16% stake to Architect Capital at $3.15B to grow creator financial-services offering
+HIGH,9,Match Group,Dating/Social,Y,Portfolio of dating apps (Tinder Hinge Match) with global recurring subscribers,Launched off-App-Store payments saving >$100M in fees 2026; Hinge intl +28%; new CEO + CFO
+HIGH,9,Peloton,Health & Fitness,Y,Connected-fitness hardware + global subscription content platform,New CFO Sid Thacker (Jun 2026); adjacent-markets intl expansion + multi-country Spotify content deal
+HIGH,9,Whoop,Health & Fitness,Y,Wearable human-performance platform on recurring membership model,$575M Series G at $10.1B (Mar 2026) earmarked for intl expansion (Europe GCC LatAm Asia); IPO next
+HIGH,9,Hims & Hers,Health & Fitness,Y,Telehealth/wellness DTC platform expanding internationally,Proposed Eucalyptus acquisition (~$240M upfront + deferred installments); EU/Canada ops; AU/Japan next
+HIGH,9,Chewy,Retail/E-Commerce,Y,US online pet products and pharmacy retailer,First-ever international expansion announced + new CFO Christopher Deppe (ex-Amazon) Feb 2026
+HIGH,9,Etsy,Retail/E-Commerce,Y,Global handmade/vintage goods marketplace,New agentic-payments partnership with Stripe + Google/Microsoft commerce tie-ins (Jan 2026)
+HIGH,9,SKIMS,Retail/E-Commerce,Y,DTC shapewear/apparel scaling globally,$225M raise at $5B to fund intl growth; London flagship + Dubai store; beauty M&A
+HIGH,9,iHerb,Retail/E-Commerce,Y,Global online health/wellness/supplements retailer (180 countries ~75% intl),Launched on Amazon UK/AU + Albertsons; Saudi/ME fulfillment center live Feb 2026
+HIGH,9,Hertz,Car Rental,Y,Global car rental operator (Hertz Dollar Thrifty brands),Unifying in-person + online payment volume onto Stripe; rolling out Apple Pay for US rentals (May 2026)
+HIGH,9,Metropolis,Parking,Y,AI-powered checkout-free parking platform (acquired SP Plus),$5B valuation after $500M Series D + $1.1B JPMorgan loan; expanding aviation/airports
+HIGH,9,SpotHero,Parking,Y,Parking reservation marketplace app,Being acquired by Uber to power in-app parking; added Google Pay/touchless payments (Feb 2026)
+HIGH,9,Lime,Mobility,Y,Shared e-bike/e-scooter micromobility operator,Filed S-1 for Nasdaq IPO (~$2B target); 230 cities/29 countries (May 2026)
+HIGH,9,Kraken,Crypto,Y,US consumer crypto exchange expanding into payments and derivatives,Raising at $20B pre-IPO; acquired Reap ($600M) and Bitnomial ($550M); 80% ready to IPO
+HIGH,9,ExpressVPN (Kape/Unikmind),Cybersecurity/VPN,N,Consumer VPN now private under Unikmind,Rolling out local-currency pricing (GBP/EUR/BRL live; more testing) + planning BNPL + regional APMs
+HIGH,8,Luma AI,AI,Y,AI video generation (Dream Machine) with consumer credit plans,$900M Series C at $4B led by Saudi PIF Humain; Ray3 update Jan 2026
+HIGH,8,Character.AI,AI,Y,AI companion/chat app with c.ai+ subscription and in-app currency,Launched Charms virtual-currency economy + in-chat ads; 28M MAU; exploring sale/raise
+HIGH,8,Candy.ai,AI,N,AI companion app monetized via subscriptions and token credits,Live Action video update Feb 2026; traffic 11.6M to 39.3M monthly visits; ~$50M+ ARR
+HIGH,8,Roblox,Gaming,Y,Global UGC gaming platform monetizing via Robux purchases and creator payouts,DevEx payouts +50% YoY to $423M Q1 2026; ex-Activision CFO joined board Mar 2026
+HIGH,8,Playtika,Gaming,N,Casual/social-casino mobile publisher scaling D2C web stores globally,Record DTC revenue nearing $1.2B annual run-rate; FY2026 guide raised
+HIGH,8,Discord,Gaming,Y,Gaming-first social platform monetizing via Nitro subscriptions and new commerce,Confidential S-1 filed Jan 2026 targeting ~$25B IPO; launched in-chat digital-goods selling
+HIGH,8,Betr,Sports Betting,Y,Jake Paul/Joey Levy microbetting and social sportsbook,Acquired ACM Futures (NFA brokerage) May 2026 to pivot into CFTC prediction markets; live 32-38 states
+HIGH,8,Novig,Sports Betting,Y,Trader-first peer-to-peer sports prediction market,$75M Series B (Pantera-led) at $500M; filed CFTC DCM application; volume up 10x
+HIGH,8,McLuck (B-Two Operations),iGaming,N,Multi-brand sweepstakes operator with own payments brand (Payfame),Moved sister sites to new entity B-Two Operations + multi-brand portfolio scaling
+HIGH,8,Modo.us (ARB Interactive),iGaming,Y,Aggressively scaling Miami sweepstakes casino with heavy NASCAR push,First-ever sweepstakes Daytona 500 sponsor + expanded Spire Motorsports deal full 2026 season
+HIGH,8,JetBlue,Airlines/Travel,Y,US carrier scaling transatlantic and Caribbean cross-border travel,Transatlantic expansion to 9 EU nonstops from Boston (Barcelona Apr Milan May 2026)
+HIGH,8,Expedia Group,Airlines/Travel,Y,Global US OTA with multi-currency checkout and active MoR/payments build,New CFO May 2026; Vrbo Payments pilot making Expedia merchant of record; existing VP Global Payments
+HIGH,8,Vrbo (Expedia),Airlines/Travel,Y,US vacation-rental marketplace building new MoR payment flows,Vrbo Payments pilot positions platform as merchant of record; distribution expansion + Revolut
+HIGH,8,Paramount+ (Paramount Skydance),Digital Subscriptions,Y,Subscription streaming video service,US price increases Q1 2026 + adjustments in Canada/Australia post-$8B Skydance merger
+HIGH,8,DistroKid,Digital Subscriptions,Y,Music distribution platform paying royalties to 2M+ artists,Exploring ~$2B sale via Goldman Sachs and Raine (Jan-Feb 2026)
+HIGH,8,Substack,Digital Subscriptions,Y,Subscription newsletter/content platform for creators,Expanding in-app payments to all Stripe regions by mid-2026; $1.1B unicorn eyeing IPO/raise
+HIGH,8,Twitch,Digital Subscriptions,Y,Live-streaming platform with recurring subscriptions and localized pricing,Opened monetization to all streamers globally with phased international payout rollout (May 2026)
+HIGH,8,Bumble,Dating/Social,Y,Women-first dating app with global multi-market subscriber base,30% workforce cut + CPO exit + global-expansion pivot; staged international rollout Q4
+HIGH,8,Grindr,Dating/Social,Y,LGBTQ social/dating app with international paying subscribers,Q1 2026 revenue +38% to $130M; global rollout of new AI EDGE premium tier + pricing changes
+HIGH,8,Strava,Health & Fitness,Y,Fitness-tracking social app ~90% revenue from premium subscriptions (185+ countries),Confidential IPO filing Jan 2026 targeting spring 2026; new API developer fee
+HIGH,8,Duolingo,EdTech,Y,Gamified language-learning app with global freemium subscribers,Q1 2026 revenue $292M (+27%); 12.5M paid subscribers (+21%); >50M DAU
+HIGH,8,Coursera,EdTech,Y,Online-learning platform with international consumer subscriptions,Pending Udemy merger; cites localized pricing/payment capabilities driving Plus adoption
+HIGH,8,Wayfair,Retail/E-Commerce,Y,Online home goods marketplace across US/CA/UK/DE,Affirm BNPL partnership expanded to UK + Canada (Feb 2026)
+HIGH,8,FIGS,Retail/E-Commerce,Y,DTC medical scrubs/healthcare apparel brand,Expanding to 80+ markets (from 58); intl revenue +49.9% YoY Q1 2026; raised FY guidance
+HIGH,8,Fanatics (commerce),Retail/E-Commerce,Y,Licensed sports merchandise commerce platform,Acquired Voggt (live-commerce); exclusive FIFA World Cup 2026 retail across US/MX/CA
+HIGH,8,Turo,Car Rental,Y,Peer-to-peer car-sharing marketplace,Consolidated pay-ins/payouts/insurance claims onto Stripe; US+Canada/UK cross-border ops
+HIGH,8,ParkMobile (Arrive),Parking,Y,Digital parking payments app,Launched Express Pay automated entry/exit/payment in Philly; expanding to ~8000 new US locations
+HIGH,8,Via,Mobility,Y,On-demand transit/microtransit software and operations (30+ countries),Completed NYSE IPO raising $493M to fund product intl expansion + acquisitions
+HIGH,8,Gemini,Crypto,Y,US consumer crypto exchange expanding into a markets company,Won CFTC clearinghouse approval Apr 2026; +$100M Winklevoss investment; Q1 revenue +42%
+HIGH,8,Robinhood,Consumer Fintech,Y,US consumer trading investing and crypto app,Closed WonderFi acquisition expanding Canada/intl crypto; building payment-solutions eng team
+HIGH,8,Remitly,Consumer Fintech,Y,US cross-border remittance and consumer money-transfer app (175+ countries),Remitly Business GA in Canada; launched Bulk Payments + Send-by-Link; new CEO
+HIGH,8,Cash App,Consumer Fintech,Y,Block's US consumer payments banking and crypto app,Phased USDC rollout to ~60M users; expanded Afterpay BNPL on Visa; BTC merchant pay
+HIGH,8,Wise,Consumer Fintech,N,Global consumer/SMB cross-border payments platform doubling down on US,Shifted primary listing to Nasdaq May 2026; launched US Business card; X-border volume +31%
+HIGH,8,DoorDash,Food Delivery,Y,US food/grocery delivery marketplace now operating globally,Intl revenue +148% YoY to $932M Q1 2026; integrating Deliveroo/Wolt across UK/France/Italy
+HIGH,8,Uber Eats,Food Delivery,Y,Global on-demand food grocery and retail delivery arm of Uber,Pushing into 7 new European markets + $100M Getir stake (2026)
+HIGH,8,1Password,Cybersecurity/VPN,Y,Consumer/prosumer password manager and identity security,New CFO Greg Henry; crossed $400M ARR; IPO-ready per CEO
+HIGH,8,Bluehost (Newfold Digital),Web Hosting,Y,Consumer/SMB web hosting brand within Newfold Digital,New CFO and CMO to accelerate AI-powered SaaS platform; Markmonitor divested Dec 2025
+HIGH,8,Hostinger,Web Hosting,N,Fast-growing global consumer/SMB web hosting and site builder (150+ countries),2026 payments overhaul: localized payment page Stripe Express Checkout wallets Brazil NuPay
+MEDIUM,7,Gamma,AI,Y,AI presentation/document/website generator with consumer subscriptions,$68M Series B at ~$2.1B (Nov 2025); freemium + AI-credit consumer model
+MEDIUM,7,Skillz,Gaming,Y,Mobile competitive cash-gaming platform handling deposits entry fees and payouts,New CFO (ex-Aristocrat Gaming) approved May 2026 after prior pick withdrew
+MEDIUM,7,Tripledot Studios,Gaming,N,Multi-billion-dollar mobile publisher (Solitaire Woodoku + ex-AppLovin titles),Closed $800M acquisition of AppLovin's games portfolio; expanding US/Asia footprint
+MEDIUM,7,Stake.us (Sweepsteaks),iGaming,N,Crypto-native sweepstakes casino under legal pressure,Exiting multiple states; lawsuits forcing payments/redemption rework
+MEDIUM,7,Crown Coins Casino,iGaming,Y,Fast-growing sweepstakes casino with multi-method cross-border cashier needs,Aggressive 2026 growth; broad cashier stack (Apple Pay cards Skrill Interac) fast-redemption push
+MEDIUM,7,ESPN Bet / theScore Bet (Penn),Sports Betting,Y,Penn Entertainment US online sportsbook,Terminated $2B ESPN deal rebranded to theScore Bet; investing in DraftKings Predictions
+MEDIUM,7,Sleeper,Sports Betting,Y,DFS and prediction-market app,Launched Sleeper Markets prediction product via Kalshi partnership (Feb 2026)
+MEDIUM,7,Hawaiian Airlines,Airlines/Travel,Y,US transpacific carrier integrating into Alaska global network,Transpacific widebody backbone of Alaska's 2026 global expansion; heavy Asia-Pacific APM exposure
+MEDIUM,7,Frontier Airlines,Airlines/Travel,Y,US ultra-low-cost carrier expanding into LatAm/Caribbean,23 new 2026 routes incl Mexico Bahamas; CEO targets intl growth 5% to 15-20%
+MEDIUM,7,Booking Holdings / Priceline,Airlines/Travel,Y,US OTA parent (Priceline Kayak OpenTable) with massive multi-market payment ops,Expanded global payments platform supporting 100+ payment methods and 50+ currencies
+MEDIUM,7,Audible,Digital Subscriptions,Y,Audiobook subscription service (Amazon-owned),New lower-priced Standard plan across 6 markets; global multi-language catalog expansion
+MEDIUM,7,SiriusXM / Pandora,Digital Subscriptions,Y,Subscription satellite/streaming audio,Rate increase effective Feb 24 2026 + new flexible streaming tiers
+MEDIUM,7,HBO Max (Warner Bros Discovery),Digital Subscriptions,Y,Global subscription streaming video service,Launched in Germany/Italy UK & Ireland Mar 2026; full-year benefit of US price increases
+MEDIUM,7,Udemy,EdTech,Y,Online-course marketplace with consumer + subscription revenue,Pending Coursera merger ($115M run-rate synergies)
+MEDIUM,7,Revolve Group,Retail/E-Commerce,Y,Online fashion retailer for millennials/Gen Z,Intl net sales +20% YoY (13th straight quarter outpacing domestic) Mexico-led
+MEDIUM,7,Crocs,Retail/E-Commerce,Y,Global casual footwear (Crocs + HEYDUDE),New CFO ex-Nike/SharkNinja running $100M cost program; intl growth + AR try-on
+MEDIUM,7,Avis Budget Group,Car Rental,Y,Global vehicle rental (Avis Budget Zipcar),Expanded online payment options (Visa Checkout); Q1 net loss signals cost/efficiency pressure
+MEDIUM,7,Sixt (US ops),Car Rental,N,Premium car rental HQ Germany scaling US,Aggressive US expansion to 53 airports + launched SIXT ONE US rewards program (Mar 2026)
+MEDIUM,7,Gen Digital (Norton/Avast/LifeLock),Cybersecurity/VPN,Y,Public consumer-cyber parent of Norton Avast LifeLock Avira,Crossed record $5B revenue FY26; $876M on acquisitions YTD; bookings +28%
+MEDIUM,7,GoDaddy,Web Hosting,Y,Public domains hosting and commerce platform for SMBs/prosumers,Q1 2026 revenue $1.27B (+6%); intl revenue +7%; AI-driven international expansion
+MEDIUM,7,Squarespace,Web Hosting,Y,Website builder domains and commerce/payments platform,Squarespace Payments/Capital (Stripe-powered) intl expansion; private under Permira $7.2B
+MEDIUM,7,Gopuff,Food Delivery,Y,US instant-commerce / q-commerce delivery platform,Raised $250M for AI + global expansion; new CFO; nationwide SNAP EBT rollout
+MEDIUM,7,Coinbase,Crypto,Y,Largest US-listed consumer crypto exchange and wallet,2026 priority to scale stablecoin/payments infra globally; expanding USDC rails + One Card
+MEDIUM,7,Crypto.com,Crypto,Y,Global consumer crypto exchange wallet and Crypto.com Pay merchant network,New payment-gateway partnerships (Korea) + US prediction-market launch; expanding Crypto.com Pay
+MEDIUM,7,Webull,Consumer Fintech,Y,US multi-asset consumer trading app expanding into Europe and payments,Relaunched US crypto; cleared for 22 new EU markets; upcoming Payments/Treasury wallet + debit card
+MEDIUM,6,Midjourney,AI,Y,AI image (and now video) generation fully subscription-based,V8.1 release (Apr 2026); four-tier subscriptions; ~$500M revenue run-rate
+MEDIUM,6,Activision Blizzard (Microsoft),Gaming,Y,Publisher of Call of Duty Warcraft Candy Crush selling via Battle.net D2C and mobile IAP,Battle.net operating as core D2C storefront; Spring Sale 2026 direct sales
+MEDIUM,6,Voodoo,Gaming,N,Hyper/hybrid-casual mobile games giant plus BeReal monetizing via IAP and ads,#3 global mobile publisher; scaling BeReal US ad business; APAC push with Tencent
+MEDIUM,6,Pulsz (Yellow Social Interactive),iGaming,N,High-volume US sweepstakes casino facing litigation and likely rebrand,Named in Baltimore Mar 2026 suit; expected to copy VGW clean-brand spin-off H2 2026
+MEDIUM,6,High 5 Games,iGaming,Y,NY-based sweepstakes + B2B content supplier navigating state exits,Exiting TN + named in Baltimore Mar 2026 suit; expected clean-brand spin-off H2 2026
+MEDIUM,6,Patrianna,iGaming,N,White-label sweepstakes platform amid ownership litigation,Gibraltar Supreme Court control dispute first judgment Apr 2026
+MEDIUM,6,BetMGM,Sports Betting,Y,MGM/Entain US online sportsbook and iGaming JV,Cut FY2026 net revenue guidance; launching new Alberta market July 2026; 30 markets live
+MEDIUM,6,Caesars Sportsbook,Sports Betting,Y,Caesars Entertainment online sportsbook,Universal Digital Wallet cross-state single-account expansion (24 jurisdictions); Alberta July 2026
+MEDIUM,6,Fanatics Sportsbook,Sports Betting,Y,Fanatics Betting & Gaming sportsbook,Launched Fanatics Markets prediction platform (w/ Crypto.com) across 24 states; OpenBet deal
+MEDIUM,6,American Airlines,Airlines/Travel,Y,Largest US carrier by fleet with multi-rail consumer checkout and intl route growth,Broad BNPL/checkout stack (Affirm Citi Flex Pay PayPal Apple Pay) + 2026 Mexico route additions
+MEDIUM,6,Hopper,Airlines/Travel,Y,Travel-fintech app/B2B platform powering bank and airline payment/booking flows,Capital One acquiring Hopper's travel-portal tech + 150 staff (Mar 2026); new RBC deal
+MEDIUM,6,Tripadvisor / Viator,Airlines/Travel,Y,US OTA/experiences marketplace with global multi-currency checkout,New Viator president (ex-Booking.com); 2026 push to lift booking conversion/GBV
+MEDIUM,6,The New York Times,Digital Subscriptions,Y,Digital news subscription and multiproduct bundle,Digital bundle price raised to $30; new family plan; strong Q1 2026 sub-revenue guidance
+MEDIUM,6,Vimeo,Digital Subscriptions,Y,Video hosting/streaming with self-serve OTT and enterprise subscriptions,New 2026 self-serve plan tiers post-$1.38B Bending Spoons take-private
+MEDIUM,6,Peacock (NBCUniversal),Digital Subscriptions,Y,Subscription streaming video service,Versant cable spinoff completed Jan 2026; extended deal around Winter Olympics live-sports push
+MEDIUM,6,Fanbase,Digital Subscriptions,Y,Creator social platform with subscriber tiers,Closed Series B (Dec 2025) + crowdfunding; lowering creator payout threshold to $5 via Stripe
+MEDIUM,6,Calm,Health & Fitness,Y,Meditation/sleep app with global consumer subscriptions,Feb 2026 annual subscription price increase; intl content expansion UK & Canada
+MEDIUM,6,Headspace,Health & Fitness,Y,Mental-wellness app consumer + enterprise subscriptions,$105M new financing post-layoffs eyeing M&A and expansion; IPO candidate
+MEDIUM,6,Noom,Health & Fitness,Y,Weight-management/GLP-1 app with recurring subscriptions,Acquired Tailor Made Compounding (Apr 2026); launched free tier + AI Face Scan; IPO rumored
+MEDIUM,6,Warby Parker,Retail/E-Commerce,Y,DTC eyewear omnichannel US + intl,Google committing up to $75M investment tied to collaboration milestones (May 2026)
+MEDIUM,6,Glossier,Retail/E-Commerce,Y,DTC beauty brand e-commerce-first global expansion,Intl rollout scaling 2026; AU orders cancelled over US-card/address payment filtering (geo gaps)
+MEDIUM,6,Gymshark,Retail/E-Commerce,N,UK fitness apparel brand with growing US ops,Entered German retail Feb 2026; new permanent CFO; US Miami store + DICK'S
+MEDIUM,6,Princess Polly,Retail/E-Commerce,N,Australian Gen Z fashion e-tailer expanding US (a.k.a. Brands),Signed 8 new US store leases (first TX/MN entry) opening H2 2026
+MEDIUM,6,Abercrombie & Fitch,Retail/E-Commerce,Y,Global apparel retailer (A&F + Hollister),Record $5.27B FY sales; EMEA +8% APAC +9%; reviewing APAC strategic alternatives
+MEDIUM,6,Flash (FlashParking),Parking,Y,Cloud parking + mobility-hub management platform,Powering Arrive/ParkMobile Express Pay rollout + ~8000-location reservation expansion
+MEDIUM,6,Revel,Mobility,Y,Urban electric mobility pivoting from rideshare to EV charging,Merging with Voltera (EQT majority) for 1000+ stalls; $60M NY Green Bank loan (May 2026)
+MEDIUM,6,NordVPN (Nord Security),Cybersecurity/VPN,N,Consumer VPN and privacy suite (20M+ users),Direct-carrier-billing expansion via Noju + new APMs (Apple/Google Pay Sofort prepaid crypto)
+MEDIUM,6,Malwarebytes,Cybersecurity/VPN,Y,Consumer anti-malware and online-privacy provider,Active M&A (AzireVPN Cyrus) + US Student Protection Program + ChatGPT fraud integration
+MEDIUM,6,Instacart,Food Delivery,Y,US online grocery delivery and fulfillment platform,Launched Mastercard Shopper Rewards debit card; Stripe-based stack adding BNPL/Cash App
+MEDIUM,5,Ideogram,AI,Y,AI text-to-image generation with consumer subscription tiers,Launched v4.0 text-to-image with open weights; multi-tier subscriptions; no new round
+MEDIUM,5,Krea,AI,Y,AI image/video generation creative suite consumer subscriptions,$47M Series B at $500M (2025); 750K+ weekly actives; active product expansion
+MEDIUM,5,Pika,AI,Y,AI short-form/social video generation app for consumers,iPhone app + Predictive Video; reportedly ~$900M valuation early 2026; 16.4M users
+MEDIUM,5,Everand (Scribd),Digital Subscriptions,Y,Subscription ebook/audiobook/magazine content service,Shifted US to credit-based plans with international expansion planned
+MEDIUM,5,BetterMe,Health & Fitness,N,Health/wellness coaching app with global multi-currency subscriptions,Mar 2026 Diabetes UK partnership; ~150M users across 5 continents; bootstrapped
+MEDIUM,5,StockX,Retail/E-Commerce,Y,Sneaker/streetwear resale marketplace (200+ countries),Ongoing intl expansion; $1.8B GMV; 200M+ global visitors
+MEDIUM,5,Gap Inc,Retail/E-Commerce,Y,Multi-brand apparel retailer (Gap Old Navy Banana Republic Athleta),Pursuing selective intl franchise expansion; raised EPS outlook
+MEDIUM,5,ThredUp,Retail/E-Commerce,Y,Online resale/thrift marketplace for apparel,Q1 2026 revenue +14.6% YoY; active buyers +25%
+MEDIUM,5,Proton (Proton VPN),Cybersecurity/VPN,N,Privacy-first consumer VPN/email under Swiss non-profit,2026 roadmap adds many new-market server locations + enterprise expansion
+MEDIUM,5,IONOS,Web Hosting,N,European hosting/cloud and domains provider with US consumer operations,Q1 2026 revenue EUR348M (+5.7%); record 180K new customers; AI-driven growth
+MEDIUM,5,HelloFresh,Food Delivery,N,Global meal-kit and ready-to-eat subscription company (Factor in US),Q1 2026 EU orders +12% YoY; scaling into Nordic markets; growing US RTE business
+LOW,4,Pocket Gems,Gaming,Y,SF mobile publisher (Episode War Dragons) monetizing via in-app purchases,No recent 2026 payments/exec/expansion signal found; freemium IAP model
+LOW,4,Golden Hearts Games,iGaming,Y,Boston charity-linked social/sweepstakes casino,No recent payments/funding/exec signal in last 90 days; steady promo activity
+LOW,4,Funrize (Tellurion Mobile),iGaming,N,Dual-currency sweepstakes casino,No recent buying signal in last ~90 days; library expansion only
+LOW,4,WOW Vegas,iGaming,N,High-volume social/sweepstakes casino content-focused,No recent buying signal last ~90 days; content growth only
+LOW,4,Coffee Meets Bagel,Dating/Social,Y,Curated dating app with subscription monetization,Reached EBITDA profitability via Braavo financing; no payments DM move
+LOW,4,MasterClass,EdTech,Y,Premium online-class subscription platform,Apr 2026 Microsoft certificate launch + AI products; no new funding/payments move
+LOW,4,Nike,Retail/E-Commerce,Y,Global athletic footwear/apparel DTC + wholesale leader,No recent payments/expansion signal; routine filings; no new payments DM
+LOW,4,Surfshark,Cybersecurity/VPN,N,Budget consumer VPN merged with Nord Security holding co,No payments signal; product-led news only (Dausos protocol Apr 2026)
+LOW,3,Jam City,Gaming,Y,LA mobile games studio (Harry Potter Hogwarts Mystery Cookie Jam) freemium IAP,No recent signal; no 2026 funding/exec/expansion news found
+LOW,2,Getaround,Car Rental,Y,Car-sharing marketplace (US operations shut down),Wound down entire US car-share + HyreCar business; EU-only now
