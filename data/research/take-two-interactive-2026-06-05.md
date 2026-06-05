@@ -1,12 +1,14 @@
 # Take-Two Interactive — SDR Research Brief
-*Yuno Payment Orchestrator | Date: 2026-06-04 | Parent: Take-Two Interactive Software, Inc. (NASDAQ: TTWO)*
+*Yuno Payment Orchestrator | Date: 2026-06-05 (refresh of 2026-06-04 brief) | Parent: Take-Two Interactive Software, Inc. (NASDAQ: TTWO)*
 *Brands: Rockstar Games · 2K · Zynga · Private Division · Gearbox*
+
+> **REFRESH NOTE (2026-06-05):** Focused delta pass over the prior brief. **No material new payment news, PSP partnership, executive hire, earnings event, or GTA VI storefront/pre-order announcement** surfaced in the last 24–48h — the Q4 FY2026 print and FY2027 guidance (filed 2026-05-21) remain the latest events, and GTA VI pre-orders/Trailer 3 are still pegged to "late June 2026" with no monetization detail confirmed. Two corrections were applied versus the 06-04 brief: (1) **the "Swirepay" signal was a FALSE POSITIVE** — `store2k.swirepay.com` is an unrelated Indian grocery store in Santa Clara, CA, not a Take-Two property; it has been removed. (2) `checkout.2k.com` now returns HTTP 404 and is not a live standalone host; Xsolla routing on the 2K Store is re-confirmed via the live `store.2k.com` footer → `help.xsolla.com`. One new datapoint: `store.2k.com` served prices in **COP (Colombian Peso)** on a geo-localized fetch, confirming an IP-localized international storefront. Next realistic catalyst: the late-June 2026 GTA VI marketing launch.
 
 ---
 
 ## EXECUTIVE SUMMARY
 
-Take-Two Interactive is a ~$6.72B (FY2026 net bookings, +19% YoY) global games publisher where **recurrent consumer spending is 81% of GAAP revenue** and **mobile is ~52% of net sales**. The payment landscape is fragmented across at least three rails with no public orchestration layer: the **2K Store runs on Xsolla** (merchant of record, the single strongest verified finding), **Zynga is aggressively building per-game direct-to-consumer web stores** to bypass the 30% app-store fee using "several payment processors," and most console/mobile purchases still route through platform billers (Sony, Microsoft, Steam, Apple, Google). With **GTA VI confirmed for November 19, 2026** and FY2027 guidance of **$8.0 to 8.2B net bookings**, Take-Two is heading into the largest monetization event in its history. The strongest Yuno wedge is Zynga's live D2C push plus the looming GTA VI microtransaction stack, both of which need routing, retries, fraud, and local methods that a single orchestration layer provides. 🔴 **High-priority target (score 17).**
+Take-Two Interactive is a ~$6.72B (FY2026 net bookings, +19% YoY) global games publisher where **recurrent consumer spending is 81% of GAAP revenue** and **mobile is ~52% of net sales**. The payment landscape is fragmented across at least three rails with no public orchestration layer: the **2K Store runs on Xsolla** (merchant of record, the single strongest verified finding, re-confirmed 2026-06-05), **Zynga is aggressively building per-game direct-to-consumer web stores** to bypass the 30% app-store fee using cards + PayPal + "several payment processors," and most console/mobile purchases still route through platform billers (Sony, Microsoft, Steam, Apple, Google). With **GTA VI confirmed for November 19, 2026** and FY2027 guidance of **$8.0 to 8.2B net bookings**, Take-Two is heading into the largest monetization event in its history. The strongest Yuno wedge is Zynga's live D2C push plus the looming GTA VI microtransaction stack, both of which need routing, retries, fraud, and local methods that a single orchestration layer provides. 🔴 **High-priority target (score 17).**
 
 ---
 
@@ -22,12 +24,12 @@ Take-Two has no single storefront; traffic is split across brand sites. Country-
 | 4 | take2games.com | ~1M (corporate/IR, not a storefront) | Not found | Stale figure | [SimilarWeb](https://www.similarweb.com/website/take2games.com/competitors/) |
 
 **Payment-processing storefronts (the ones that matter for PSP scope):**
-- **2K Store** (store.2k.com / checkout.2k.com) — live D2C storefront. [Live](https://store.2k.com/)
+- **2K Store** (store.2k.com) — live D2C storefront, geo-localized (served COP/Colombian Peso pricing on a 2026-06-05 fetch). [Live](https://store.2k.com/)
 - **Rockstar Store / Rockstar Warehouse** (rockstarwarehouse.com → store.rockstargames.com) — D2C store. [Live](https://www.rockstarwarehouse.com/)
 - **Rockstar Games Launcher / Social Club store** (socialclub.rockstargames.com) — sells/launches Rockstar PC titles. [Live](https://socialclub.rockstargames.com/rockstar-games-launcher)
-- **Zynga per-game web stores** (store.zynga.com) — D2C webshops selling in-game items off app-store rails. [Live](https://store.zynga.com/)
+- **Zynga per-game web stores** (store.zynga.com, store.wordswithfriends.com) — D2C webshops selling in-game items/currency off app-store rails. [Live](https://store.zynga.com/)
 
-**Cross-border flag:** ~40.8% of FY2026 net revenue is earned outside the US ([SEC 4Q26 earnings](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026037260/ttwo4q26earningsrelease.htm)), and mobile (global) is ~52% of net sales, so a large share of volume is international and cross-border.
+**Cross-border flag:** ~40.8% of FY2026 net revenue is earned outside the US ([SEC 4Q26 earnings](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026037260/ttwo4q26earningsrelease.htm)), and mobile (global) is ~52% of net sales, so a large share of volume is international and cross-border. The 2K Store's IP-localized currency (COP observed) is direct evidence of geo-localized international checkout.
 
 > ⚠️ MANUAL: Country-level traffic split requires SimilarWeb paid access. 2K / Zynga / Take2 visit figures above are 2024-vintage and should be refreshed.
 
@@ -50,7 +52,7 @@ Authoritative source is the FY2026 10-K Exhibit 21.1 (EDGAR returned 403 to the 
 
 **Confidence:** HIGH that these named subsidiaries exist (official SEC filing). The roster is partial.
 
-> ⚠️ MANUAL: Open the EDGAR Exhibit 21.1 directly for the full jurisdiction roster, and verify any LATAM / APAC consumer-facing entities on official store T&Cs.
+> ⚠️ MANUAL: Open the EDGAR Exhibit 21.1 directly for the full jurisdiction roster, and verify any LATAM / APAC consumer-facing entities on official store T&Cs. (Note: 2K Store serves COP pricing but no Colombian consumer entity was found in the partial roster — potential cross-border operation, verify on T&Cs.)
 
 ---
 
@@ -60,16 +62,16 @@ Authoritative source is the FY2026 10-K Exhibit 21.1 (EDGAR returned 403 to the 
 
 | Property / Region | PSP / Acquirer | Evidence Type | Source |
 |---|---|---|---|
-| 2K Store | **Xsolla** (merchant of record) | [Support page] 2K routes all 2K Store order/payment questions to "the Xsolla Support Team" | [2K Support](https://support.2k.com/hc/en-us/articles/360061754473-How-to-Contact-the-2K-Store) |
-| 2K Store checkout | **Xsolla** | [Source Code / Checkout URL] checkout.2k.com resolves to an Xsolla partner-network link (`xsollaPartnerNetworkLinkUuid=...`) | [checkout.2k.com](https://checkout.2k.com/api/network/link/?xsollaPartnerNetworkLinkUuid=3AcMXBOk) |
-| 2K Store (alt host) | **Swirepay** (signal) | [Source Code] a 2K Store contact page resolves on `store2k.swirepay.com` | [store2k.swirepay.com](https://store2k.swirepay.com/contact/) |
+| 2K Store | **Xsolla** (merchant of record) | [Support page + Live footer] store.2k.com footer routes "Support" and "Order Lookup & Refunds" to help.xsolla.com; 2K Support routes 2K Store order/payment questions to "the Xsolla Support Team" (re-confirmed 2026-06-05) | [2K Support](https://support.2k.com/hc/en-us/articles/360061754473-How-to-Contact-the-2K-Store) · [store.2k.com](https://store.2k.com/) |
 | Rockstar Warehouse / Store | **Digital River (historical) → Xsolla (current)** | [Community / reviews] — MEDIUM confidence, not a Rockstar primary source | [Trustpilot](https://www.trustpilot.com/review/rockstarwarehouse.com) |
-| Zynga web stores | Cards + PayPal + "several payment processors"; in-house payments engineering org | [Help center + Job listing] | [Zynga Store billing FAQ](https://zyngasupport.helpshift.com/hc/en/119-zynga-store/section/1421-billing/) · [Payments role](https://www.zynga.com/job-listing/principal-software-engineer-payments/) |
+| Zynga web stores | Cards + PayPal + Apple Pay + Google Pay + "several payment processors"; in-house payments engineering org | [Help center + Job listing] | [Zynga Store billing FAQ](https://zyngasupport.helpshift.com/hc/en/119-zynga-store/section/1421-billing/) · [Payments role](https://www.zynga.com/job-listing/principal-software-engineer-payments/) |
 | Console / mobile (all brands) | Platform billers: Sony, Microsoft, Steam, Apple, Google | [Support pages] refunds routed to these processors | [2K Support](https://support.2k.com/hc/en-us/articles/44052599101971-Missing-or-Not-Delivered-VC-Content-After-Purchase) |
+
+> **CORRECTION (2026-06-05):** The prior brief listed a "Swirepay" signal on `store2k.swirepay.com`. This was a **false positive** — that domain is "Store 2K," an Indian grocery store in Santa Clara, CA (2213 El Camino Real), built on Swirepay's e-commerce platform, with no connection to 2K Games / Take-Two. It has been removed. Separately, `checkout.2k.com` now returns HTTP 404 and is not a live standalone host (checkout is served inline by Xsolla under store.2k.com [INFERENCE]).
 
 ### 3B. Orchestrator
 
-**No public evidence found** of Spreedly, Primer, Gr4vy, CellPoint, APEXX, or Yuno. No named card-PSP (Stripe, Adyen, Checkout.com, Worldpay, Braintree) was found tying the storefronts together. [INFERENCE — not confirmed] Take-Two runs a fragmented multi-storefront landscape (Xsolla MoR for 2K and current Rockstar web, Zynga in-house D2C, plus platform billers), with no single orchestration layer connecting them. This fragmentation is the natural Yuno wedge.
+**No public evidence found** of Spreedly, Primer, Gr4vy, CellPoint, APEXX, or Yuno (re-confirmed 2026-06-05). No named card-PSP (Stripe, Adyen, Checkout.com, Worldpay, Braintree) was found tying the storefronts together. [INFERENCE — not confirmed] Take-Two runs a fragmented multi-storefront landscape (Xsolla MoR for 2K and current Rockstar web, Zynga in-house D2C, plus platform billers), with no single orchestration layer connecting them. This fragmentation is the natural Yuno wedge.
 
 > ⚠️ MANUAL — DevTools: test card 4111 1111 1111 1111 | 02/30 | 123 against store.2k.com and store.zynga.com checkout to fingerprint gateways.
 
@@ -81,20 +83,19 @@ Authoritative source is the FY2026 10-K Exhibit 21.1 (EDGAR returned 403 to the 
 
 | Market / Property | Confirmed | Verification Source | Source URL |
 |---|---|---|---|
-| 2K Store | Routed through **Xsolla** (MoR/PSP) | 2K Support text | [2K Support](https://support.2k.com/hc/en-us/articles/360061754473-How-to-Contact-the-2K-Store) |
-| 2K Store (alt host) | **Swirepay** involvement on one storefront flow | Indexed contact page | [store2k.swirepay.com](https://store2k.swirepay.com/contact/) |
+| 2K Store | Routed through **Xsolla** (MoR/PSP); geo-localized currency (COP observed) | store.2k.com footer → help.xsolla.com; 2K Support text (re-confirmed 2026-06-05) | [2K Support](https://support.2k.com/hc/en-us/articles/360061754473-How-to-Contact-the-2K-Store) · [store.2k.com](https://store.2k.com/) |
 | Rockstar Store | **Guest checkout available**; no checkout fees | Rockstar Support | [Order receipts](https://support.rockstargames.com/articles/1v0gPkZJ8IiKarabrFPHZU/rockstar-store-order-receipts) |
-| Zynga web store | Major credit cards + PayPal + "several payment processors" | Stash.gg + Zynga help | [Zynga billing FAQ](https://zyngasupport.helpshift.com/hc/en/119-zynga-store/section/1421-billing/) |
+| Zynga web store | Major credit cards + PayPal + Apple Pay + Google Pay + "several payment processors" | Stash.gg + Zynga help (re-confirmed 2026-06-05) | [Zynga billing FAQ](https://zyngasupport.helpshift.com/hc/en/119-zynga-store/section/1421-billing/) |
 
 ### 4B. Unverified Markets
 
 | Property | Verification Attempted? | Reason Not Verified | Popular Methods (NOT a gap claim) |
 |---|---|---|---|
 | Rockstar / Social Club store | ✅ | Store homepage exposes no payment info pre-login; support pages timed out | PayPal (third-party Knoji, unconfirmed), cards |
-| 2K Store card networks / wallets | ✅ | Help-center pages 403'd; only Xsolla/Swirepay routing readable | Visa/MC/Amex, PayPal, Apple Pay, Google Pay |
-| Zynga (Poker, CSR2, Store) | ✅ | Every Helpshift billing FAQ returned 403 | Cards, PayPal, Apple/Google/Amazon/Facebook billing |
+| 2K Store card networks / wallets | ✅ | Method logos render only at the dynamic Xsolla Pay Station step, not in static HTML | Visa/MC/Amex, PayPal, Apple Pay, Google Pay |
+| Zynga (Poker, CSR2, Store) | ✅ | store.zynga.com is JS-rendered; Helpshift billing FAQs returned 403 | Cards, PayPal, Apple/Google/Amazon/Facebook billing |
 
-> ⚠️ "Not verified" ≠ "not available." A clothing brand at **rockstaroriginal.com** (Shopify, with Shop Pay / Afterpay / Zip) is **NOT Take-Two** and must not be attributed to Rockstar Games. MANUAL: VPN checkout walk-through before any APM claims.
+> ⚠️ "Not verified" ≠ "not available." A clothing brand at **rockstaroriginal.com** (Shopify, with Shop Pay / Afterpay / Zip) is **NOT Take-Two** and must not be attributed to Rockstar Games. Likewise **store2k.swirepay.com** (Indian grocery, Santa Clara CA) is NOT Take-Two. MANUAL: VPN checkout walk-through before any APM claims.
 
 ---
 
@@ -116,13 +117,14 @@ Authoritative source is the FY2026 10-K Exhibit 21.1 (EDGAR returned 403 to the 
 
 | # | Date | Development | Category | Source |
 |---|---|---|---|---|
-| 1 | Nov 19, 2026 | **GTA VI confirmed launch** (PS5 / Xbox Series S\|X); slipped from May 26, 2026 | Product | [Rockstar Newswire](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) |
+| 1 | Nov 19, 2026 | **GTA VI confirmed launch** (PS5 / Xbox Series S\|X); reaffirmed at the May 21, 2026 earnings call | Product | [Rockstar Newswire](https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026) |
 | 2 | June 12, 2024 | **Gearbox (Borderlands) acquisition** closed, $460M from Embracer | M&A | [BusinessWire](https://www.businesswire.com/news/home/20240327928202/en/) |
 | 3 | 2025-2026 | **Zynga pursuing D2C "very aggressively"** to bypass Apple's 30% fee; per-game web stores live | Commerce | [MobileGamer.biz](https://mobilegamer.biz/zynga-is-unhappy-with-apples-30-cut-and-is-going-after-d2c-very-aggressively/) |
 | 4 | Sept 2025 | Borderlands 4 launched | Product | [BusinessWire FY26](https://www.businesswire.com/news/home/20260521450562/en/) |
 | 5 | Ongoing | Zynga "Principal Software Engineer - Payments" role open | Payments hiring | [Zynga careers](https://www.zynga.com/job-listing/principal-software-engineer-payments/) |
+| 6 | Late June 2026 (expected) | GTA VI pre-orders + marketing campaign + Trailer 3 expected; no monetization/storefront detail confirmed as of 2026-06-05 | Watch | [TechTimes](https://www.techtimes.com/articles/317156/20260525/gta-6-release-date-locked-pre-orders-trailer-3-expected-late-june.htm) · [GamingBible](https://www.gamingbible.com/news/gta-pre-order-window-confirmed-828857-20260526) |
 
-No confirmed CTO/CFO/VP Payments hire surfaced via SEC or web search. [GAP — verify on LinkedIn.]
+No confirmed CTO/CFO/VP Payments hire surfaced via SEC or web search (re-checked 2026-06-05; leadership unchanged — Strauss Zelnick CEO, Lainie Goldstein CFO). [GAP — verify on LinkedIn.]
 
 ---
 
@@ -132,9 +134,9 @@ No confirmed CTO/CFO/VP Payments hire surfaced via SEC or web search. [GAP — v
 |---|---|---|---|---|
 | 1 | May 2026 | FY2027 guidance **$8.0-8.2B net bookings**, GTA VI named primary driver | 🟢 Massive incoming microtransaction stream | [Insider Gaming](https://insider-gaming.com/gta-6-release-date-earnings-call/) |
 | 2 | 2025-2026 | Zynga goes after D2C aggressively, "how much value am I getting for these fees?" | 🟢 Live orchestration need (multi-PSP webshops) | [MobileGamer.biz](https://mobilegamer.biz/zynga-is-unhappy-with-apples-30-cut-and-is-going-after-d2c-very-aggressively/) |
-| 3 | June 2026 | GTA VI marketing + pre-orders begin late June; monetization/web-shop details not yet confirmed | 🟡 Watch for a direct storefront announcement | [TechTimes](https://www.techtimes.com/articles/317156/20260525/gta-6-release-date-locked-pre-orders-trailer-3-expected-late-june.htm) |
+| 3 | June 2026 | GTA VI pre-orders + Trailer 3 still expected late June; monetization/web-shop details not yet confirmed (re-checked 2026-06-05, still open) | 🟡 Watch for a direct storefront announcement | [TechTimes](https://www.techtimes.com/articles/317156/20260525/gta-6-release-date-locked-pre-orders-trailer-3-expected-late-june.htm) |
 
-No public information found on a new named PSP/fintech partnership or PSP removal for Take-Two/Rockstar/Zynga in 2025-2026.
+No public information found on a new named PSP/fintech partnership or PSP removal for Take-Two/Rockstar/Zynga in 2025-2026 (re-confirmed 2026-06-05).
 
 ---
 
@@ -147,7 +149,7 @@ No public information found on a new named PSP/fintech partnership or PSP remova
 | Steps to purchase | Not measured | — | MANUAL walk-through needed |
 | 3DS | Not measured | — | Likely via Xsolla on 2K |
 | Mobile experience | ~52% of net sales are mobile; Zynga steering players to webshops via in-game pop-ups | Confirmed | [MobileGamer.biz](https://mobilegamer.biz/zynga-is-unhappy-with-apples-30-cut-and-is-going-after-d2c-very-aggressively/) |
-| APM display logic | Not verified per geo | — | 403s on help centers |
+| APM display logic | Geo-localized currency confirmed (2K Store served COP); per-method logos not statically visible | Partial | Renders at Xsolla Pay Station step |
 
 > ⚠️ MANUAL: Walk checkout on store.2k.com and store.zynga.com.
 
@@ -166,7 +168,7 @@ No public information found on a new named PSP/fintech partnership or PSP remova
 ## SECTION 10 — Strategic Insights
 
 ### Insight #1: Fragmented multi-storefront stack, no orchestration layer
-**Evidence:** §3 — Xsolla (2K + current Rockstar web), Swirepay signal, Zynga in-house D2C with "several payment processors," plus platform billers, with no orchestrator found.
+**Evidence:** §3 — Xsolla (2K + current Rockstar web), Zynga in-house D2C with "several payment processors," plus platform billers, with no orchestrator found.
 **Pain Point:** No smart routing, no failover, no consolidated reporting across rails; each storefront is a separate integration to maintain.
 **Yuno Value Prop:** One API above every PSP and storefront, smart routing for +7% approval uplift, single reconciliation layer.
 **Best Case:** InDrive (10 markets in <8 months, 90% approval).
@@ -223,16 +225,16 @@ No direct competitor publicly confirmed using a named third-party payment orches
 | Signal | Pts | Verified? |
 |---|---|---|
 | Operates in 3+ countries | +3 | ✅ (US, UK, IE, ES, CN, CZ, DE, RS) |
-| Multiple PSPs | +3 | ✅ (Xsolla, Swirepay, Zynga "several processors", Digital River historical, platform billers) |
+| Multiple PSPs | +3 | ✅ (Xsolla, Zynga "several processors", Digital River historical, platform billers) |
 | Recent expansion (24 mo.) | +2 | ✅ (Gearbox close, Zynga D2C, GTA VI) |
 | Public payment issues | +2 | ✅ (VC not delivered, double charges, refund friction) |
 | Funding >$10M | +2 | ✅ ($6.72B net bookings, NASDAQ) |
-| LATAM/APAC/MENA traffic | +2 | ✅ (China entities; mobile ~52% global; 40.8% revenue ex-US) |
+| LATAM/APAC/MENA traffic | +2 | ✅ (China entities; mobile ~52% global; 40.8% revenue ex-US; 2K Store COP pricing) |
 | No orchestrator | +2 | ✅ (no public evidence) |
 | Payment job postings | +1 | ✅ (Zynga Principal SWE - Payments) |
 | Public RFP | +3 | ❌ Not found |
 
-**Score: 17 → 🔴 HIGH PRIORITY**
+**Score: 17 → 🔴 HIGH PRIORITY** (unchanged; dropping the Swirepay false positive does not affect "Multiple PSPs," which still holds on Xsolla + Zynga's several processors + platform billers.)
 
 ### Top 10 Pipeline (this brief)
 
@@ -248,7 +250,7 @@ No direct competitor publicly confirmed using a named third-party payment orches
 
 | Annual Net Bookings | Recurrent Spend | Mobile Mix | Geo Split | Primary Currency |
 |---|---|---|---|---|
-| ~$6.72B (FY2026, +19% YoY); $8.0-8.2B FY2027 guidance | RCS 81% of GAAP revenue | ~52% net sales mobile | ~40.8% revenue ex-US | USD + global |
+| ~$6.72B (FY2026, +19% YoY); $8.0-8.2B FY2027 guidance | RCS 81% of GAAP revenue | ~52% net sales mobile | ~40.8% revenue ex-US | USD + global (geo-localized, e.g. COP) |
 
 Average transaction value not disclosed publicly [ESTIMATE not available]. Sources: [BusinessWire FY26](https://www.businesswire.com/news/home/20260521450562/en/) · [SEC 4Q26 earnings](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026037260/ttwo4q26earningsrelease.htm) · [SEC FY2026 10-K](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026037434/ttwo-20260331.htm)
 
@@ -309,8 +311,8 @@ Yuno | Payment Orchestration
 [S5]  https://store.zynga.com/
 [S6]  https://www.sec.gov/Archives/edgar/data/0000946581/000162828026037434/ex-21103312026.htm
 [S7]  https://support.2k.com/hc/en-us/articles/360061754473-How-to-Contact-the-2K-Store
-[S8]  https://checkout.2k.com/api/network/link/?xsollaPartnerNetworkLinkUuid=3AcMXBOk
-[S9]  https://store2k.swirepay.com/contact/
+[S8]  https://help.xsolla.com/ (2K Store footer support/refund routing)
+[S9]  https://store.wordswithfriends.com/ (Zynga D2C webshop)
 [S10] https://www.trustpilot.com/review/rockstarwarehouse.com
 [S11] https://www.zynga.com/job-listing/principal-software-engineer-payments/
 [S12] https://support.2k.com/hc/en-us/articles/44052599101971-Missing-or-Not-Delivered-VC-Content-After-Purchase
@@ -323,4 +325,6 @@ Yuno | Payment Orchestration
 [S19] https://insider-gaming.com/gta-6-release-date-earnings-call/
 [S20] https://support.rockstargames.com/articles/1v0gPkZJ8IiKarabrFPHZU/rockstar-store-order-receipts
 [S21] https://www.thesavvygamer.com/gaming/the-top-20-gaming-companies-of-2025-by-revenue
+[S22] https://www.techtimes.com/articles/317156/20260525/gta-6-release-date-locked-pre-orders-trailer-3-expected-late-june.htm
+[S23] https://www.gamingbible.com/news/gta-pre-order-window-confirmed-828857-20260526
 ```
