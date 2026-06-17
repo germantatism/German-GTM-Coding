@@ -16,9 +16,9 @@ Figure out the company's industry automatically:
 
 1. First, check if a research file exists in `data/research/` matching the company name. If it does, read it and determine the vertical.
 2. If no research file exists, use your knowledge of the company to determine the industry.
-3. Map the company to one of the 12 priority industries: iGaming, Sports Betting, Airlines, Parking, Car Rental, Mobility, Web Cloud Hosting, Cybersecurity & VPNs, AI, Digital Products & Subscriptions, SaaS, Digital Marketplaces.
+3. Map the company to one of the 14 priority industries: iGaming, Sports Betting, Airlines, Parking, Car Rental, Mobility, Web Cloud Hosting, Cybersecurity & VPNs, AI, Digital Products & Subscriptions, SaaS, Digital Marketplaces, Financial Services & FinTech, Retail & E-Commerce.
 
-If the company does not clearly fit any of the 12 industries, stop and say: "Could not determine the industry for [Company]. Specify it manually."
+If the company does not clearly fit any of the 14 industries, stop and say: "Could not determine the industry for [Company]. Specify it manually."
 
 ---
 
@@ -39,6 +39,8 @@ Read the file `data/industry-snapshots.md` and select the matching industry sect
 - digital-subscriptions → 10. Digital Products & Subscriptions
 - saas → 11. SaaS
 - marketplaces → 12. Digital Marketplaces
+- fintech → 13. Financial Services & FinTech
+- retail → 14. Retail & E-Commerce
 
 ---
 

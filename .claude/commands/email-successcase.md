@@ -9,7 +9,7 @@ You are German, leading pre-sales at Yuno. Write the third email in the outreach
 **$ARGUMENTS** — provide in this format:
 ```
 Company: [company name]
-Case: [indrive / mcdonalds / rappi / livelo / wingo / gaming / parking / auto]
+Case: [indrive / mcdonalds / rappi / livelo / wingo / whop / gaming / parking / auto]
 ```
 
 If `Case: auto`, read the research file and select the most relevant success case based on the company's industry, markets, and pain points found in Section 10 and Section 11.
@@ -22,12 +22,13 @@ Search for the file in `data/research/` matching the company name. Read Section 
 
 **Auto-selection logic:**
 
+- **Whop** → Marketplaces, platforms, US-based SaaS, digital products, companies with approval rate issues, global expansion needs, or downtime risk. Strong for any company that needs resilience + global expansion + approval rate optimization.
 - **Wingo** → Airlines, travel, OTAs, booking platforms. Use when the target is in air travel or travel booking. The 14% approval rate increase is the strongest single metric.
 - **Gaming (unnamed)** → Gaming companies, mobile games, in-app purchase businesses. Use when target is in gaming vertical. Highlights local acquiring with 94%+ auth rates and LATAM expansion with 10+ local APMs.
 - **Parking (unnamed)** → Parking, tolls, mobility infrastructure, fleet management. Use when target is in parking/tolls/mobility infrastructure. Highlights MDR reduction (130 bps), fraud tools, and 5% approval rate boost.
 - **InDrive** → Mobility, ride-hailing, multi-market LATAM expansion, fast PSP activation. Use when target is expanding rapidly to multiple markets.
 - **Rappi** → Super-app, high transaction volume, operational efficiency, fast provider onboarding, real-time visibility. Use when target has high volume and cost optimization is the main pain.
-- **McDonald's** → DEFAULT for everything else. QSR, retail, e-commerce, fintech, SaaS, B2B. Strong global name recognition makes it the safest and most impactful choice across verticals. 18 countries, +4.7% acceptance, $3.2M additional revenue.
+- **McDonald's** → DEFAULT for everything else. QSR, retail, e-commerce, fintech, SaaS, B2B. Strong global name recognition makes it the safest and most impactful choice across verticals. 18 countries, +4.7% acceptance, $3.2M additional revenue. **This is the go-to case for Retail & E-Commerce companies** — the omnichannel scale, multi-market operations, and approval rate gains resonate directly with retail pain points.
 - **eSIM (unnamed)** → Digital products, eSIM providers, digital telecom, connectivity platforms, or any company selling digital goods that operates in many countries (50+) and faces high fraud levels. The combination of cross-border fraud flags, reconciliation across 70+ countries, and cost reduction through orchestration makes this the go-to case for high-fraud digital businesses at scale.
 - **Livelo** → Manual-only. For companies where the main pain point is transaction recovery and auth rate improvement in existing markets (not expansion).
 
@@ -53,7 +54,7 @@ With Yuno, they managed to:
 [RESULT 2]
 [RESULT 3]
 
-I think there is a very similar opportunity for [Company] and would love to walk you through this in a quick call. Would [TIMESLOT] work for you?
+I think there is a very similar opportunity for [Company] and would love to walk you through this in a quick call. Would [DAY OF WEEK] work for you?
 
 Hope to hear from you soon!
 
@@ -127,6 +128,15 @@ Results:
 • Recovered 50% of previously failed transactions through smart routing and automatic retry logic.
 • Connected to additional PSPs and APMs through one API, reducing engineering costs and expanding payment method coverage.
 
+### Whop
+Client name: Whop
+Template: A
+Context: They were suffering from low approval rates, wanted to expand quickly worldwide, and had experienced provider outages that resulted in revenue loss. They needed a resilient, global payment infrastructure without adding engineering complexity.
+Results:
+• Solved their approval rate issues by routing transactions through the best-performing processors with no extra code.
+• Enabled rapid entry into new markets with local payment methods via a single integration.
+• Implemented the fallback and redundancy layers they were missing to guarantee 24/7 uptime, eliminating revenue loss from provider outages.
+
 ### Wingo
 Client name: Wingo
 Template: B (named but uses Template B style)
@@ -176,7 +186,7 @@ Closing: Just weeks after integrating with Yuno, results came around!
 
 ## TIMESLOT
 
-Propose one specific timeslot 5-7 days from today. Pick a weekday, mid-morning or mid-afternoon. Example: "Would next Thursday March 12 at 11am work for you?"
+Propose a day of the week only (e.g., "next Tuesday", "next Thursday"). Do NOT include specific dates or times. Keep it casual and flexible.
 
 ---
 
