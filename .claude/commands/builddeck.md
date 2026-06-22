@@ -1,6 +1,22 @@
 # /builddeck — End-to-end deck build for a new merchant
 
-You're building a complete merchant entry for **$ARGUMENTS** on `deck.yuno.tools`. End-to-end: research → Supabase row → CSV/manifest → logo → commit → push → deploy verification. Single command, no manual handoffs except the user dropping the logo PNG/SVG into the `Logos/` folder beforehand.
+You're building a complete merchant entry for **$ARGUMENTS** on `deck.yuno.tools`. End-to-end: research → Supabase row → CSV/manifest → logo → business-overview → commit → push → deploy verification. Single command, fully automated (the logo is auto-fetched via logo.dev; no manual handoff needed).
+
+## A "complete" deck — the current standard (build to this every time)
+
+A deck is only complete when ALL of these are produced, in this order. This is the standard every recent deck (Stripe Tour Berlin batch, DistroKid, Midjourney, Kick) was built to. Do not stop early or skip any item:
+
+1. **Business Overview entry** in `src/data/business-overviews.json` so the **"What we know about your business"** slide renders (revenue if verifiable, description, catalyst, 3 commerce-footprint anchors, top countries, business lines, APMs). This slide is NOT optional anymore; a deck without it reads as incomplete.
+2. **5 pain titles** anchored to real research, each weaving a taxonomy keyword in organically (NO literal "(BUCKET)" tag in the text).
+3. **PSPs** per the decision tree (confirmed, single, or seeded + disclaimer).
+4. **10 missing methods**, real markets the merchant operates in.
+5. **The 4 standard capability levers** (current names + copy, see the Capability section).
+6. **capabilities_live** subset.
+7. **Logo** at `public/merchants/{slug}.png` (auto-fetched + normalized).
+8. **CSV row + manifest entry** (generated.js) for the slug.
+9. **Supabase row upserted**, **build passes**, **commit + push to `main`**, **deploy verified**.
+
+The helper scripts `scripts/_finish-merchant.sh` + `scripts/_add-merchant.mjs` + `scripts/_logo-one.mjs` automate steps 1, 7, 8 and the Supabase upsert (see "Build mechanism").
 
 ## Inputs
 
@@ -16,7 +32,7 @@ If no flag is passed, default mode is `merchant` (the standard Yuno-vs-merchant 
 
 These are not negotiable. They come from prior decisions and are documented in the user's auto-memory:
 
-1. **Auto commit + push at the end.** Never stop at "wrote the files." Run `git add` → `git commit` → `git push origin master:main`. The remote branch is `main`, not `master`. The local working branch is `master` in this repo (yes, asymmetric — that's the actual setup). Source of truth: `feedback_auto_commit_push.md`.
+1. **Auto commit + push at the end.** Never stop at "wrote the files." Run `git add` → `git commit` → `git push origin main`. The local working branch is `main` and the deploy branch is `main` (Railway auto-deploys from it). Source of truth: `feedback_auto_commit_push.md`.
 2. **Never put false information.** When a fact (especially PSPs) isn't publicly verifiable, follow the disclaimer rule below. Source: `feedback_no_false_info_disclaimer.md`.
 3. **Never use the phrase "no small feat"** anywhere in capability copy or pain titles. Source: `feedback_no_small_feat.md`.
 4. **Em-dashes (`—`) are banned in body copy** per the deck's design principles. Use commas or restructure. Pain titles, capability descs, and the disclaimer text all count as body copy. Source: `DESIGN.md`.
@@ -25,7 +41,7 @@ These are not negotiable. They come from prior decisions and are documented in t
 
 Before doing anything else:
 
-1. **Logo exists.** Look in `/Users/germantatis/Desktop/GTMCoding/yuno-sales-pitch-maker/Logos/` for any file matching the company name (case-insensitive substring). Accept `.svg`, `.png`, `.webp`, `.jpg`. If multiple, prefer SVG > PNG > WEBP > JPG. If nothing found, abort with a clear message: "Logo not found. Drop a PNG/SVG of the {Company} logo into `yuno-sales-pitch-maker/Logos/` and re-run."
+1. **Logo.** First check `/Users/germantatis/Desktop/GTMCoding/yuno-sales-pitch-maker/Logos/` for a file matching the company name (case-insensitive substring; prefer SVG > PNG > WEBP > JPG) and use it if present. If nothing is there, do NOT abort: auto-fetch via logo.dev using the merchant domain (this is the standard flow, handled by `scripts/_finish-merchant.sh {slug} {domain}` which calls logo.dev then `_logo-one.mjs` to normalize to white-on-transparent). Only ask the user for a logo if logo.dev returns nothing usable.
 2. **Slug determination.** Slugify the company name: lowercase, non-alphanumeric → `-`, trim. E.g. `SAP` → `sap`, `Trip.com Group` → `trip-com-group`. Don't shorten — the slug must match what the app's `resolveMerchant()` looks up.
 3. **Existing-merchant check.** Query Supabase for the slug:
    ```bash
@@ -105,6 +121,8 @@ Each title should still **classify into one of the 7 taxonomy buckets** in `Slid
 
 Bake the keyword into the title organically. Example: "License-to-Cloud Subscription Transition at €21B Scale" hits RECOVERY via `subscription`. "Card Payments Enabled in Only 18 of 180 Countries" hits COVERAGE via `card`.
 
+**Never append the bucket name in parentheses.** The Diagnostic slide renders the title text verbatim, so a literal `(CROSS-BORDER)` tag would show on the slide. The keyword must live inside the sentence ("...strains cross-border settlement"), never as a trailing label. Aim for variety across the 5 (don't stack three RECOVERY pains).
+
 ## PSPs — the rule
 
 Walk this decision tree on the research output:
@@ -128,22 +146,27 @@ Pick 10 local payment methods the merchant likely doesn't accept yet but matters
 
 Format: `[{"market": "Brazil", "method": "Pix"}, ...]`.
 
-## Capability cards — 4 fixed slots
+## Capability cards — 4 fixed slots (CURRENT standard)
 
-`capability_titles` is always exactly these 4, in order:
+`capability_titles` is always exactly these 4, in order (these are the current names; the old "Smart Routing / Failover & Retries / Local Payment Methods / Unified Orchestration" set is retired):
 
-1. `Smart Routing`
-2. `Failover & Retries`
-3. `Local Payment Methods`
-4. `Unified Orchestration`
+1. `Smart Routing Engine`
+2. `Failover + Recovery`
+3. `1,000+ Local Methods`
+4. `NOVA Fraud Intelligence`
 
-`capability_descs` is 4 paragraphs of 2-4 sentences each. Each desc must reference at least one **verifiable fact** about the merchant (revenue figure, country count, growth rate, specific product line) — no generic copy. Anchor to numbers from the research. Example for SAP capability 1: "Per-transaction routing across acquirers by card BIN, issuer, and market. With €21B in cloud subscription revenue (+26% YoY) across 180+ countries, lifting auth rates 3 to 10% on cloud renewals translates to hundreds of millions in recovered ARR annually."
+`capability_descs` is 4 short paragraphs, each adapting Yuno's standard lever to a **verifiable fact** about THIS merchant (revenue, country count, user count, business model) plus the canonical Yuno proof point for that lever. No generic copy. The proof points (use verbatim phrasing):
 
-**Hard length cap: 180 characters per desc.** The slide 5 capability cards are short stacked tiles (~2-3 lines of visible body text each); anything longer hits the CSS line-clamp at 5 lines and ellipsizes. Stay under the cap so no content is hidden. If a desc creeps above ~180 chars: cut adjective phrases first, then sentences, then specifics — but never invent or generalize. Better to fit the most important fact than to lose half of two facts to ellipsis.
+1. **Smart Routing Engine** — per-transaction routing across PSPs by BIN, issuer and market; proof: "InDrive achieved 90% approval rates across 10 LATAM markets."
+2. **Failover + Recovery** — automatic cascade + dunning on failed renewals; "up to 50% recovery on failed transactions"; proof: "Livelo recovered +5% approvals within 3 months."
+3. **1,000+ Local Methods** — name 4-6 REAL local APMs for the merchant's actual markets (Pix Brazil, UPI India, OXXO Mexico, iDEAL Netherlands, BLIK Poland, GCash Philippines, etc.); one API, beyond card-only.
+4. **NOVA Fraud Intelligence** — AI scoring on 5,000+ data points; "reduces false declines up to 75%"; proof: "McDonald's uses NOVA across LATAM markets."
+
+These render on **SlideYunoSolve** (The Solve), whose card body clamps at `WebkitLineClamp: 5`. Keep each desc to ~2 sentences (roughly <=200 chars) so nothing ellipsizes. If a desc runs long, cut adjectives then a sentence, never invent.
 
 ## Business Overview entry — slide 2 data
 
-After research, append a new entry to `yuno-sales-pitch-maker/src/data/business-overviews.json` keyed by slug. Every field is independently optional — only include a field when the source is verifiable. Full shape:
+**Always produce this entry** (it powers the "What we know about your business" slide, which is part of a complete deck). Append a new entry to `yuno-sales-pitch-maker/src/data/business-overviews.json` keyed by slug. Within the entry, every FIELD is independently optional — only include a field when the source is verifiable; omit (don't fabricate) the rest. Full shape:
 
 ```json
 {
@@ -179,9 +202,9 @@ After research, append a new entry to `yuno-sales-pitch-maker/src/data/business-
 
 Rules:
 - Country `code` is ISO 3166 alpha-2 lowercase. Flags must exist at `public/flags/{code}.svg` — if a country code isn't in that folder, **download it from `https://raw.githubusercontent.com/HatScripts/circle-flags/gh-pages/flags/{code}.svg`** before adding the country to the entry.
-- `share` is a decimal (0.94, not 94 or "94%"). Only include countries ≥ 0.01. Cap at top 10.
+- `share` is a decimal/fraction (0.94, not 94 or "94%"). **Gotcha:** SimilarWeb and most research report shares as percentages (e.g. 16.9). Divide by 100 before writing (16.9 → 0.169). Only include countries ≥ 0.01. Cap at top 10.
 - `apms` is the non-card methods only. Cards (Visa/MC/Amex) are implicit; don't list them.
-- `businessLines` 3-6 entries. Only verifiable lines.
+- `businessLines` **3-4 SHORT entries** (no long parentheticals/pricing). Long lines overflow and get cut off at the bottom of the slide (this bit DistroKid). Consolidate, e.g. "Annual subscription tiers (Basic / Pro / Mega)" as one line, not three.
 - Any field you can't verify: **omit the key entirely**. The slide reflows.
 
 After writing the JSON entry, no other file needs to change — `src/lib/supabase.js` already lifts the entry via `getBusinessOverview()` into `data.OVERVIEW`, and `SlideViewer.jsx` already filters the slide via `requiresDataField: 'OVERVIEW'` (so merchants without an entry skip it cleanly).
@@ -190,11 +213,24 @@ After writing the JSON entry, no other file needs to change — `src/lib/supabas
 
 Array of strings from this fixed set: `payouts`, `subscriptions`, `tokenization`, `fraud`, `kyc`, `kyb`, `baas`. Tag a capability as `live` only if you found public evidence the merchant operates it today (e.g. "subscriptions" if they sell SaaS subscriptions, "fraud" if they mention 3DS or Stripe Radar in docs). The rest render as muted "missing/upsell" chips on the slide.
 
-## Logo processing
+## Build mechanism — the helper scripts (recommended, fastest path)
 
-Inline node script using `sharp` (a dep of the project). Mirror the `toWhiteOnTransparent` logic from `scripts/build-merchants.mjs`. Don't run `npm run build:merchants` — it wipes `public/merchants/` and rebuilds from Isabella's desktop folder, which doesn't exist on this machine.
+The recent standard automates logo + local files + Supabase in one shot. Prefer this over hand-running each step.
 
-Inline script writes to `yuno-sales-pitch-maker/public/merchants/{slug}.png`. If the source PNG is already pre-processed (white-on-transparent, e.g. some brand kits ship that way), the corner-subtraction can wipe it — fall back to a raw resize+trim in that case.
+1. Write two temp files:
+   - `/tmp/{slug}.json` = `{ "slug", "name", "industry", "overview": {…the business-overviews entry…} }` (input for `_add-merchant.mjs`). **Divide country `share` by 100 here.**
+   - `/tmp/{slug}-row.json` = the full Supabase row (slug, name, vertical:"merchant", auto_generated:true, industry, pain_titles, psps, psps_disclaimer, missing_methods, capability_titles, capability_descs, capabilities_live).
+2. Ensure the service key is at `/tmp/.sbkey` (read it from `yuno-sales-pitch-maker/.env.local` → `SUPABASE_SERVICE_ROLE_KEY`, else recover from chat history per "Service-role key retrieval").
+3. Run `bash scripts/_finish-merchant.sh {slug} {domain}` from the app root. It: fetches the logo from logo.dev for `{domain}`, normalizes it to white-on-transparent via `_logo-one.mjs` → `public/merchants/{slug}.png`, runs `_add-merchant.mjs` (prepends to `merchants.generated.js` MERCHANTS + MERCHANT_LIST, appends the CSV row, writes the `business-overviews.json` entry), then upserts the Supabase row. Expect `Supabase HTTP 201` (insert) or `200` (update).
+4. Download any missing country flag SVGs (see Business Overview rules), `npm run build`, then commit + push.
+
+If a merchant already exists (the existing-merchant check returned a row), `_add-merchant.mjs` skips the generated.js/CSV inserts automatically and only refreshes the overview; the Supabase upsert still updates the row.
+
+## Logo processing (manual fallback)
+
+If you are not using `_finish-merchant.sh` (e.g. the user dropped a logo in `Logos/`), process it with an inline node script using `sharp`. Mirror the `toWhiteOnTransparent` logic from `scripts/_logo-one.mjs` / `scripts/build-merchants.mjs`. Don't run `npm run build:merchants` — it wipes `public/merchants/` and rebuilds from a path that doesn't exist on this machine.
+
+Write to `yuno-sales-pitch-maker/public/merchants/{slug}.png`. If the source PNG is already pre-processed (white-on-transparent), corner-subtraction can wipe it — fall back to a raw resize+trim.
 
 ## CSV update
 
@@ -239,8 +275,11 @@ Entry shape:
   "psps": [{"name": "...", "role": "..."}],
   "psps_disclaimer": null | "No public information on providers so assumptions were made",
   "missing_methods": [{"market": "...", "method": "..."}, ...],
-  "capability_titles": ["Smart Routing", "Failover & Retries", "Local Payment Methods", "Unified Orchestration"],
+  "capability_titles": ["Smart Routing Engine", "Failover + Recovery", "1,000+ Local Methods", "NOVA Fraud Intelligence"],
   "capability_descs": ["...", "...", "...", "..."],
+  "vertical": "merchant",
+  "auto_generated": true,
+  "industry": "...",
   "capabilities_live": ["subscriptions", "tokenization", "fraud"]
 }
 ```
@@ -267,7 +306,7 @@ Before committing, run `npm run build` in `yuno-sales-pitch-maker/` to make sure
 cd /Users/germantatis/Desktop/GTMCoding/yuno-sales-pitch-maker
 git add public/merchants.csv src/data/merchants.generated.js src/data/business-overviews.json public/merchants/{slug}.png public/flags/
 git commit -m "feat: add {Company} merchant"
-git push origin master:main
+git push origin main
 ```
 
 Note: stage `public/flags/` only if you downloaded a new flag SVG for this merchant (most existing top countries are already covered). The `git add public/flags/` line is a no-op when nothing changed there.
@@ -279,8 +318,8 @@ Use a HEREDOC for the commit body if you want to add detail. The body should men
 Poll `deck.yuno.tools` until the new bundle hash lands. Use `Bash` with `run_in_background: true` and an `until` loop:
 
 ```bash
-until bundle=$(curl -s "https://deck.yuno.tools/m/{slug}" | grep -oE 'index-[A-Za-z0-9]+\.js' | head -1); \
-  curl -s "https://deck.yuno.tools/assets/$bundle" | grep -q "{Company Name}"; do
+until bundle=$(curl -s "https://deck.yuno.tools/m/{slug}" | grep -oE 'index-[A-Za-z0-9_-]+\.js' | head -1); \
+  [ -n "$bundle" ] && curl -s "https://deck.yuno.tools/assets/$bundle" | grep -q "{Company Name}"; do
   echo "$(date +%H:%M:%S) bundle=$bundle waiting"
   sleep 30
 done
@@ -307,7 +346,11 @@ Format the URL as a clickable markdown link.
 ## Things NOT to do
 
 - Don't run `npm run build:merchants` — it wipes `public/merchants/` and rebuilds from a hard-coded path that doesn't exist on this machine.
-- Don't push to `master` on the remote — that branch is stale ("Initial commit"). Only `main` deploys.
+- Don't skip the Business Overview entry — a deck without the "What we know" slide is incomplete.
+- Don't ship the retired capability titles ("Smart Routing / Failover & Retries / Local Payment Methods / Unified Orchestration"); use the current 4 (Smart Routing Engine / Failover + Recovery / 1,000+ Local Methods / NOVA Fraud Intelligence).
+- Don't append "(BUCKET)" tags to pain titles — they render literally on the slide.
+- Don't leave country `share` as a percentage; store it as a fraction (divide by 100).
+- Don't let `businessLines` run long — keep 3-4 short entries or the slide overflows.
 - Don't fabricate PSPs to "fill out" the topology to 4. Single-PSP merchants stay single-PSP.
 - Don't put em-dashes in any copy you write to Supabase or to slides.
 - Don't commit secrets. The service-role key never goes into a tracked file.
