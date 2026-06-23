@@ -1,0 +1,728 @@
+Company,Size,Sector,Region/HQ,Fit,Deck?,Yuno angle,Signal
+Accor,Enterprise,Hotels,France,10,YES,"Smart routing + LPMs 110 países, un API",
+Airalo,Enterprise,eSIM,Singapore,10,NEW,Un API rails locales por mercado + auth cross-border,
+Allegro,Enterprise,E-comm marketplace,Poland,10,NEW,Routing + CEE LPMs + marketplace payouts,
+Anghami,Enterprise,Music/audio,UAE,10,YES,"Smart routing + LPMs MENA, reduce churn",
+Bolt,Enterprise,Mobility super-app,Estonia,10,YES,Smart routing + failover + rider-pay + payout un API,
+bolttech,Enterprise,Embedded insurance,Singapore,10,YES,Orchestration mirror modelo multi-país + LPMs,
+Crypto.com,Enterprise,Crypto exchange,Singapore,10,NEW,Card-auth routing + acquirer failover global,
+Cursor (Anysphere),Enterprise,AI / Dev,US/Global,10,YES,Single Stripe rail leaks emerging-mkt signups; add local acquirers + smart-retry routing,"~$2B ARR, raising ~$50B (Apr'26); Stripe-only + intl declines; hiring Billing eng"
+Despegar (Decolar),Enterprise,Online travel,Argentina/Brazil,10,NEW,Routing cross-border + decline recovery high AOV,
+DoorDash,Enterprise,Marketplace,US/Global,10,YES,One layer to unify three acquired marketplaces' payments + cross-border Dasher payouts,"Consolidating DoorDash+Wolt+Deliveroo on one platform; $20B+ Dasher earnings, 40+ ctys (Feb'26)"
+Duolingo,Enterprise,Edtech,US/Global,10,YES,Migrate Super off 30% IAP to web + UPI/Pix/OXXO to monetize emerging-mkt surge,"400M+ users, MAU growth in India/Brazil/Vietnam/Mexico; growth-first 2026"
+EasyPark Group,Enterprise,Parking/mobility,Sweden,10,NEW,Route por mercado + cortar tap-to-park churn,
+Electronic Arts,Enterprise,Gaming,US/Global,10,YES,"Orchestrate one global integration w/ routing, LPMs, redundancy across multi-store web-billing",FC Mobile Webstore live; ~$4.4B FY25 microtxn; ~$55B PE take-private
+Emirates,Enterprise,Airline,UAE,10,NEW,Un API global LPMs + smart-route high-ticket,
+FWD Group,Enterprise,Digital insurance,Hong Kong,10,NEW,Unificar PSPs por mercado + cortar churn premiums,
+Garena (Sea),Enterprise,Mobile F2P/esports,Singapore,10,NEW,LPMs + routing para wallets/cash emergentes,
+Glovo,Enterprise,Food/q-commerce,Spain/EMEA,10,NEW,Auth cross-border + payout orchestration 25+ países,
+Grab,Enterprise,Super-app,SEA,10,NEW,Multi-country PSP redundancy + LPM 8 mercados SEA,
+HBO Max (WBD),Enterprise,Streaming,US/Global,10,YES,One API for LPMs across 20+ new countries + PSP failover for fast-scaling intl base,"Global rollout complete (UK/IE, 14 APAC, 15 EU mkts); 150M subs target by end-2026"
+Hims & Hers,Enterprise,Healthtech,US/Global,10,YES,"Stitch overnight multi-region subscription billing into one API w/ LPMs, routing, redundancy",$1.15B ZAVA + Eucalyptus/LiveWell M&A → UK/DE/FR/CA/AU (Feb'26); intl rev ~10x
+iFood,Enterprise,Food delivery,Brazil,10,NEW,"Pix + card routing, failover, restaurant/courier payouts",
+Klook,Enterprise,Travel,US/Global,10,NEW,"Pre-IPO mktplace paying 120+ currencies, standing up multi-PSP — unify routing/failover/fraud",Filed F-1 for $400-500M NYSE IPO Nov'25; hiring Payments & Fraud PM for multi-PSP engine
+LATAM Airlines,Enterprise,Airline,Chile,10,YES,Local acquiring + installment routing LatAm,
+Lyft,Enterprise,Mobility,US/Global,10,YES,"Orchestrate the now-fragmented multi-PSP, multi-ctry stack + standardize driver payouts","Closed FreeNow (~$197M, Jan'26) → 9 EU countries; runs Checkout.com + Stripe"
+MakeMyTrip,Enterprise,OTA,India,10,NEW,UPI/card routing + redundancia outbound,
+OpenAI,Enterprise,AI,US/Global,10,NEW,"Global subs + agentic commerce needs LPM coverage, auth uplift, PSP redundancy across 170+ ctys","Instant Checkout/agentic commerce live; ChatGPT Go in 170+ countries, India #2 (Oct'25)"
+Oura,Enterprise,Healthtech,US/Global,10,YES,"IPO-prep makes involuntary-churn reduction, PSP redundancy, new-mkt LPMs directly material",Confidential IPO filing May'26 after $900M at $11B; 5M+ paid; Japan/Germany
+Playtika,Enterprise,Gaming,US/Global,10,NEW,~$1.2B/yr D2C across social-casino: routing + LPMs + failover protect highest-margin line,"Record D2C $291.8M Q1'26 +62.8% YoY, 39% of total, 40% target"
+Scopely (Savvy),Enterprise,Gaming,US/Global,10,NEW,"Unify enlarged multi-store D2C portfolio, route to lift auth, cut processing + fraud orchestration",Closed $3.5B Niantic (May'25); Monopoly Go $5B D2C + PGO on separate stacks ~10% fees
+Smart Fit,Enterprise,Gym chain,Brazil,10,NEW,"Route por país + cortar churn dues, Pix/boleto/OXXO",
+Spotify,Enterprise,Streaming,US/Global,10,YES,Orchestrate web-billing across PSPs to recapture 30% IAP + lift auth on price-hike churn cliff,Apple approved US external payment links May'25; US price hike to $12.99 Feb'26
+Strava,Enterprise,Fitness,US/Global,10,YES,They're wiring LPMs one-by-one; Yuno delivers every LPM via one API for IPO-era monetization,"Launched Pix in Brazil (#2 mkt) Feb'26; confidential ~$3B IPO filing Jan'26, ~$500M ARR"
+Supercell,Enterprise,Mobile F2P,Finland,10,NEW,Orquestar web-store billing + LPMs 190 mercados,
+Swiggy,Enterprise,Food/q-commerce,India,10,NEW,UPI optimization + redundancia + courier payouts,
+Talabat,Enterprise,Food delivery,MENA,10,NEW,Multi-country routing + LPM (mada/KNET) + courier payouts,
+Trip.com Group,Enterprise,OTA,China,10,YES,Cross-border auth routing + LPM cada corredor,
+Vinted (US),Enterprise,Marketplace,US/Global,10,NEW,Greenfield US/cross-border build = the moment for orchestration: US acquirers + EU LPMs + payouts,'Major' US expansion Jan'26; UK-US cross-border pilot; building Vinted Pay
+Viu (PCCW),Enterprise,OTT/video,Hong Kong,10,NEW,Un API SEA LPMs + dunning para cortar churn,
+Whatnot,Enterprise,Marketplace,US/Global,10,NEW,"Hyper-scaling live-shopping GMV across US/UK/EU = routing, redundancy, global LPMs + seller payouts",$225M Series F at $11.5B (Oct'25) for intl expansion; GMV >$6B 2x YoY; EU sellers +600%
+Whoop,Enterprise,Healthtech,US/Global,10,NEW,LPMs + auth-rate routing to protect $1.1B run-rate in card-light emerging markets,$575M Series G at $10.1B (Mar'26) to fund EU/GCC/LatAm/Asia; ~60% new sales intl
+Apex Trader Funding,Medium,Fintech,Austin TX,10,NEW,Auth de fees eval + payouts globales a traders,$65M payouts últimos 90d (fin 2025)
+Cambly,Medium,Edtech,San Francisco CA,10,YES,Payouts tutor cross-border + métodos locales,~$250M ARR; base Brasil/MENA/Asia
+Curology,Medium,Health/Wellness,San Diego CA,10,NEW,Dunning + card-updater para churn en refills Rx,Lanzó hair care Rx; Amazon+Target 2025
+Cymbiotika,Medium,DTC,San Diego CA,10,NEW,Dunning subscripción + routing global,"Expansión Target 1,900 + Ulta/Sprouts 2025-26"
+Dossier,Medium,DTC,New York NY,10,NEW,Dossier+ recurring billing + LPM routing global,$100M ARR + Target nacional (Sep'25)
+ELSA Speak,Medium,Edtech,San Francisco CA,10,NEW,LPMs LatAm/SEA + escapar 30% via web checkout,Push Brasil/India/Vietnam (2025)
+Felix Pago,Medium,Fintech,Miami FL,10,NEW,Auth de transfers card-funded + failover off single-Stripe,$75M Serie B (Abr'25); $3B acumulado
+Fever,Medium,Marketplace,New York NY,10,NEW,Routing + LPMs para footprint 40 países payout/checkout,Adquirió Atom+DICE 2025; 20x rev growth
+Gruns,Medium,DTC,Austin TX,10,NEW,AutoShip recurring billing + dunning; auth-rate hipergrowth,Serie B $500M val (May'25); $300M run-rate
+Hallow,Medium,Edtech,Chicago IL,10,NEW,Web-billing para escapar 30% IAP en base de subs,"Lent 2025 ~500K downloads/día, #2 App Store"
+Outschool,Medium,Edtech,San Francisco CA,10,NEW,Payouts instructor + métodos de pago globales para padres,$229M+ pagado a instructores
+Passes,Medium,Creator/Social,West Hollywood CA,10,NEW,Redundancia PSP + auth-rate en sub billing; payouts creator,Momentum 2025; pay-per-minute
+Peek,Medium,Marketplace,San Francisco CA,10,YES,Redundancia multi-PSP + LPMs globales al consolidar operadores,Adquirió ACME+Connect&GO (Nov'25)
+Praktika,Medium,Consumer AI,San Francisco CA,10,NEW,Smart-routing + IAP→web para users LatAm/India,"$20M rev LTM, 100 países (2025)"
+Sleeper,Medium,Gaming/Ent,San Francisco CA,10,NEW,Auth-rate + LPMs en rails de depósito/payout,Expansión prediction markets/picks 2025-26
+Topstep,Medium,Fintech,Chicago IL,10,NEW,Auth en eval fees + payouts,Plus500 en pláticas de adquisición 2025
+TripleTen,Medium,Edtech,Cheyenne WY,10,NEW,Pix/OXXO/MX cards + installments via un API,División LatAm (MX/Chile/PR) 2025
+True Classic,Medium,DTC,Los Angeles CA,10,NEW,Routing cross-border + LPMs + dunning en tier membership,Intl 25%+ del e-comm (UK/UAE/CA) 2025
+Underdog Fantasy,Medium,Gaming/Ent,Brooklyn NY,10,NEW,Redundancia PSP + smart routing en rails de depósito,Triplicó valuación; prediction markets Sep'25
+Adevinta,Enterprise,Classifieds,Norway/EU,9,NEW,Unificar pagos multi-marca multi-país clasificados,
+Allegiant / Sun Country,Enterprise,Travel,US/Global,9,NEW,Fresh M&A = two stacks to consolidate going cross-border first time: unify acquirers + LatAm LPMs,~$1.5B Sun Country acquisition (May'26); +18 intl destinations (MX/Central America/Caribbean)
+Alo Yoga,Enterprise,DTC,US/Global,9,NEW,"Premium DTC pushing into UK/France: localized checkout, EU LPMs, auth lift on cross-border",4 new UK stores + Champs-Elysees Paris flagship 2026
+Anthropic,Enterprise,AI,US/Global,9,YES,Stripe-only risk at $30B during intl hypergrowth = redundancy/failover + smart routing,"Subs doubled early'26, ~$30B run-rate, Bengaluru office; Stripe single-PSP (Apr'26)"
+Avianca,Enterprise,Airline,Colombia,9,NEW,Local acquiring + LPM/installment LatAm,
+Babbel,Enterprise,Edtech,Germany,9,YES,Reduce auth-decline churn renewals + EU LPMs,
+Basic-Fit,Enterprise,Gym chain,Netherlands,9,YES,Smart routing + dunning debit/card mix + failover,
+BetterHelp (Teladoc),Enterprise,Healthtech,US/Global,9,NEW,LPMs for non-English expansion + dunning to stem paying-user losses,Launched France (first non-English mkt) 2025; intl rev +12% but lost ~5% payers
+Bitget,Enterprise,Crypto exchange,Global,9,NEW,Un API add/route acquirers + LPMs globales,
+Bitpanda,Enterprise,Crypto/investing,Austria,9,NEW,Card-auth lift + LPM breadth EU,
+Bitso,Enterprise,Crypto exchange,Mexico,9,YES,LPM (Pix/SPEI) + on-ramp failover,
+Bumble,Enterprise,Dating,US/Global,9,YES,Smart routing + dunning recovers involuntary churn; IAP→web reclaims store cut,Q1'26 rev -14%; paying users -21% YoY to 3.2M
+Bunq,Enterprise,Neobank,Netherlands,9,NEW,Top-up auth routing + PSP failover EU,
+Bybit,Enterprise,Crypto exchange,UAE,9,NEW,Acquirer failover + LPMs para recuperar deposits,
+Chewy,Enterprise,DTC,US/Global,9,YES,$11B+ pet e-com w/ heavy Autoship subs entering first foreign mkt: port recurring billing without re-integrating,Announced first-ever international market launch (next few quarters)
+Coinbase,Enterprise,Crypto,US/Global,9,YES,"Global card-deposit/on-ramp + USDC settlement: smart card-auth routing, redundancy, on/off-ramp",Citi partnership incl. 'payments orchestration' (Oct'25); Nium USDC across 190+ ctys
+CoinDCX,Enterprise,Crypto exchange,India,9,NEW,"UPI + card routing, on-ramp optimization",
+CoreWeave,Enterprise,Cloud,US/Global,9,NEW,Newly public multi-region cloud: unify cross-border collections + acquirer redundancy at IPO scale,"Public (Mar'25), $5.1B 2025 rev, $3.5B European expansion (UK HQ + Nordics/Spain DCs)"
+Corsair Gaming,Enterprise,Gaming,US/Global,9,NEW,5+ brand storefronts EMEA-heavy = fragmented multi-PSP estate; consolidate to one API w/ routing+LPMs,"Closed Fanatec (Sep'24); 5+ brand storefronts; FY25 ~$1.47B, EMEA ~40%"
+Coupang,Enterprise,E-comm marketplace,Korea,9,NEW,Routing expansión cross-border + Korean LPMs,
+Coursera,Enterprise,Edtech,US/Global,9,YES,Routing + LPMs to convert huge India/global registered base into paid Coursera Plus,"Q1'26 consumer rev +10% 4th straight; record 7.6M new learners, 205M cumulative"
+Cover Genius,Enterprise,Embedded insurance,Australia,9,NEW,Global LPMs + PSP redundancy 60 países,
+Crunchyroll (Sony),Enterprise,Streaming,US/Global,9,YES,Single integration for APAC LPMs to monetize aggressive new-market localization,21M subs +25% YoY; launching Taiwan & South Korea 2026; Thai localization
+CTS Eventim,Enterprise,Event ticketing,Germany,9,YES,Failover/redundancy en on-sale surge + LPMs,
+Dafiti (GFG),Enterprise,Fashion e-comm,Brazil,9,NEW,Multi-country PSP consolidation + LPM,
+Deezer,Enterprise,Music/audio,France,9,NEW,Auth-rate routing + IAP→web para margen,
+DigitalOcean,Enterprise,Cloud,US/Global,9,YES,Public cloud on card-based self-serve for SMBs/devs worldwide: high decline volume = routing + recovery,"Q1'26 rev $258M +22%, crossed $1B run-rate; AI ARR +221%"
+Discord,Enterprise,Gaming,US/Global,9,YES,"Migrate Nitro/Shop to smart-routed web checkout, cut store leakage, add emerging-mkt LPMs + redundancy","Hiring Dir Global Payments + eng (Jun'26) after confidential S-1 (~$15B, Jan'26)"
+Domino's Pizza,Enterprise,QSR,Global,9,NEW,"Orquestación PSP global 90 mercados, redundancia",
+Dream Games,Enterprise,Mobile puzzle,Turkey,9,YES,Web-shop billing + LPMs vs 30%,
+eDreams ODIGEO,Enterprise,Flights OTA/sub,Spain,9,NEW,Routing + recuperar Prime renewals + redundancia EU,
+ElevenLabs,Enterprise,AI,US/Global,9,YES,"Add redundancy + local acquiring (Pix, UPI) to lift intl auth pre-public-scrutiny","$500M Series D at $11B (Feb'26), 'eyes IPO'; $500M ARR, 14+ GTM cities; Stripe-only+IAP"
+Eneba,Enterprise,Gaming,US/Global,9,NEW,Collapse Checkout.com+Nuvei into one API w/ smart routing + auto-failover,Raised €10M (Nov'25); runs Checkout.com AND Nuvei simultaneously
+Etihad Airways,Enterprise,Airline,UAE,9,NEW,Unificar LPMs regionales + smart-route premium,
+eToro,Enterprise,Investing/crypto,Israel/UK,9,NEW,Deposit-auth routing + acquirer redundancy global,
+eToro US,Enterprise,Fintech,US/Global,9,NEW,"Consolidate cards, LPMs, fiat on/off-ramp into one layer w/ failover + higher deposit auth",CEO weighing payments/banking expansion; NY crypto Apr'26 (48 states)
+Europcar,Enterprise,Car rental,France,9,NEW,Smart routing + redundancia + franchise payouts,
+Faire,Enterprise,Marketplace,US/Global,9,NEW,"B2B two-sided flows pre-IPO: de-risk single-PSP, lift auth, standardize cross-border brand payouts",$5.2B tender (Nov'25) IPO warm-up; expanding to 14 EU countries
+Fastned,Enterprise,EV charging sub,Netherlands,9,NEW,Multi-country PSP + tap-to-charge auth + dunning,
+Figma,Enterprise,SaaS,US/Global,9,YES,Single-PSP (Stripe) dependency on global self-serve seats = cross-PSP redundancy + LPM expansion,Worked w/ Stripe May'25 to overhaul billing for local currencies; newly public
+Flo Health,Enterprise,Healthtech,US/Global,9,YES,Heavy 30% IAP leakage → IAP-to-web migration + LPMs to monetize non-US pools,"300M+ registered/6M paid, $275M rev; #1 women's health, overwhelmingly mobile/IAP"
+Fubo,Enterprise,Streaming,US/Global,9,NEW,PSP redundancy + routing for new SKUs + cross-border (US/Canada) sports-streaming launches,Launched skinny 'Fubo Sports' Sep'25; DAZN partnership; Canada expansion
+G2A,Enterprise,Gaming,US/Global,9,NEW,Orchestrate multi-LPM/anti-fraud stack behind one API w/ failover on high-chargeback goods,Deployed Forter for fraud + optimization globally for 30M users
+Gameloft,Enterprise,Mobile F2P,France,9,YES,"Un API web-store billing + LPMs, escapar 30%",
+GetYourGuide (US),Enterprise,Travel,US/Global,9,YES,Recent single-PSP commitment scaling geos: redundancy + LPMs + tour-operator payouts,Partnered Checkout.com Jan'25; ~$194M raise for global+AI; NA expansion
+Globoplay (Globo),Enterprise,OTT/video,Brazil,9,NEW,Pix/boleto/installment LPMs + retry routing,
+Grindr,Enterprise,Dating,US/Global,9,NEW,UPI/Pix + PSP redundancy capture non-US users + protect new high-ARPU tier from auth drop-off,FY26 roadmap: India + Brazil expansion + premium AI 'Edge' tier
+Guesty,Enterprise,Travel,US/Global,9,NEW,"Payments-company-in-a-PMS prepping IPO: routing, redundancy, LPMs, cross-border host payouts","$130M Series F at $900M (KKR), 2025 IPO intent; 80+ ctys; scaling GuestyPay"
+HBX Group (Hotelbeds),Enterprise,B2B bedbank,Spain,9,YES,Collections cross-border + supplier payouts un API,
+HelloFresh,Enterprise,Meal-kit sub,Germany,9,YES,Subscriptions/dunning + multi-country LPM + failover,
+Hopper (HTS),Enterprise,Travel,US/Global,9,NEW,Multi-ctry multi-partner fintech: one layer scales each new partner geo without re-integrating PSPs,"~90% B2B, ~20 partners US/CA/JP/LatAm; Capital One carve-out (Mar'26)"
+Hostaway,Enterprise,Travel,US/Global,9,NEW,"New payments product across 90+ ctys: one integration for local methods, failover, host payouts",$365M raise at $1B (Dec'24) for EU; 90+ ctys; launched embedded financial services
+HungerStation,Enterprise,Food delivery,Saudi Arabia,9,NEW,KSA LPM (mada) + courier payouts + failover,
+Indodax,Enterprise,Crypto exchange,Indonesia,9,NEW,Add LPMs + acquirer failover IDR on-ramp,
+iQIYI,Enterprise,OTT/video,China,9,YES,IAP→web migration + SEA LPM routing,
+JetBlue,Enterprise,Travel,US/Global,9,NEW,Deep transatlantic + LatAm push: EU local methods + multi-currency w/ smart routing on high-ticket fares,13 EU routes 2026 (Milan May'26) + 11-dest Ft Lauderdale LatAm buildout
+JioSaavn,Enterprise,Music/audio,India,9,NEW,"UPI + card orchestration, recovery churn",
+Kavak,Enterprise,Used-car marketplace,Mexico,9,NEW,Installment routing + auth big-ticket + payouts,
+King,Enterprise,Mobile F2P,UK,9,NEW,Orquestar D2C web billing + auth routing,
+Krafton,Enterprise,AAA/mobile,Korea,9,NEW,UPI + LPM coverage + PSP failover India/SEA,
+Lime,Enterprise,Mobility,US/Global,9,YES,29-ctry operator going public under cost pressure: routing improves the unit economics investors scrutinize,Filed Nasdaq IPO May'26; 230 cities/29 ctys; going-concern doubt
+Lycamobile,Enterprise,MVNO,UK,9,NEW,"Smart routing + LPMs, reduce failed top-ups",
+Meesho,Enterprise,Social-commerce,India,9,NEW,UPI/card routing + reseller payout orchestration,
+Melia Hotels,Enterprise,Hotels,Spain,9,NEW,Multi-currency LPMs + PSP failover global,
+Midjourney,Enterprise,AI,US/Global,9,YES,$500M across 150+ ctys on single PSP = concentration risk; failover + per-market routing,~$500M rev across 150+ ctys; Stripe's most globally distributed merchant
+miHoYo / HoYoverse,Enterprise,AAA gacha,China/Singapore,9,NEW,Orquestar web top-up + LPMs + fraude/chargeback,
+Minor Hotels,Enterprise,Hotels,Thailand,9,NEW,LPMs APAC/EMEA + acquirer redundancy,
+Moomoo (Futu),Enterprise,Fintech,US/Global,9,NEW,One integration for per-market LPMs + card acquiring + routing to fund accounts in each new ctry,Crypto to Texas (May'26); Canada funded accts +150% YoY; >50% accts outside HK
+MoonPay,Enterprise,Crypto,US/Global,9,NEW,Card-funded on-ramp at IPO scale across 160+ ctys: multi-acquirer auth routing + failover,Launched bank/fintech tokenized-asset platform (May'26); acquisition spree; IPO prep
+MSC Cruises,Enterprise,Cruise,Switzerland,9,YES,Auth routing high-value + LPMs por mercado,
+Navan,Enterprise,Travel,US/Global,9,YES,Post-IPO margin scrutiny + booming card volume → auth lift + cross-border cost = defensible take-rate,IPO'd Nasdaq Oct'25 (~$960M); card volume $3.7B +35% YoY
+Netflix,Enterprise,Streaming,US/Global,9,YES,Smart routing + dunning/retry to cut involuntary churn when price hikes spike declines,"US price hike Jan'26 (Std $19.99, Prem $26.99); ARPU/retention focus"
+Netmarble,Enterprise,Mobile RPG/gacha,Korea,9,NEW,Smart routing auth + global LPMs hacia Occidente,
+Nexon,Enterprise,F2P MMORPG,Japan/Korea,9,NEW,Cross-PSP redundancy + LPM expansion global,
+Norwegian Cruise Line,Enterprise,Travel,US/Global,9,NEW,High-ticket multi-currency global bookings: lift approvals + PSP redundancy/LPMs,FY25 rev $9.8B; 17 new ships through 2037 across 3 brands
+Notion,Enterprise,SaaS,US/Global,9,YES,In-house billing team owns intl currency = direct buyer; lift auth on global seat renewals,'Monetization Foundations' eng team building intl currencies/self-serve; $42B tender
+OKX,Enterprise,Crypto exchange,Global,9,NEW,Smart routing + redundancia regional acquirers,
+OTTO Group,Enterprise,E-comm marketplace,Germany,9,YES,Routing optimization + seller payouts + redundancia,
+Paramount+,Enterprise,Streaming,US/Global,9,NEW,Auth-rate optimization + unified billing to de-risk price hike + complex platform merger,Price increase for new subs Jan'26; pending WBD merger
+PedidosYa,Enterprise,Food/q-commerce,LatAm,9,NEW,Multi-country LPM + cost reduction + payouts,
+Peloton,Enterprise,Fitness,US/Global,9,NEW,Dunning + decline-recovery + new-mkt LPMs + IAP→web for app subs,"Turnaround: renewed intl subscriber expansion as early as 2026, AI churn reduction"
+Preply,Enterprise,Edtech,US/Global,9,NEW,Two-sided marketplace: one API for global pay-in LPMs + tutor payout orchestration,$150M Series D at $1.2B (Jan'26) for global growth in 180 ctys
+QuintoAndar,Enterprise,Proptech,Brazil,9,NEW,Rent collection + dunning + landlord payouts,
+Remitly,Enterprise,Fintech,US/Global,9,YES,Card-funded transfers into new high-risk corridors: auth optimization + redundancy = direct revenue lever,2026 guidance ~$1.95B; expanding Saudi Arabia + Brazil; scaling Wallet & Card
+Restaurant Brands Intl,Enterprise,QSR,Canada,9,NEW,Consolidación PSP cross-border + auth lift,
+Riot Games,Enterprise,Gaming,US/Global,9,NEW,"In-house payments build + card-only checkout = gap for routing, LPMs, failover",Hiring Mgr SWE Payments 'Checkouts' team; RP card/PayPal-only in-client
+Robinhood,Enterprise,Fintech,US/Global,9,YES,Onboard per-market LPMs + lift card-deposit auth w/ failover as it funds millions of new accounts,Dec'25 Indonesia M&A → SE Asia; 2026 EU crypto via Bitstamp; $5.6B net deposits Feb'26
+Roblox,Enterprise,Gaming,US/Global,9,YES,"Accelerate IAP→web w/ one API across APAC/RoW LPMs, lift auth, failover, fraud orchestration",+25% Robux on web to steer off IAP; hiring 'SWE Payments Foundation'
+Secretlab,Enterprise,Gaming,US/Global,9,NEW,"Replace region-by-region PSP patchwork w/ one integration: unify checkout, lift auth, new-mkt LPMs",Per-region storefronts each w/ different PSP/BNPL roster; India/SEA push
+Shahid (MBC),Enterprise,OTT/video,Saudi Arabia,9,NEW,LPM coverage + PSP failover en picos,
+Singapore Airlines,Enterprise,Airline,Singapore,9,NEW,Auth routing premium + APAC LPM breadth,
+Singlife,Enterprise,Digital insurance,Singapore,9,NEW,Smart routing + failover auto-pay y wallet top-ups,
+Sixt,Enterprise,Car rental,Germany,9,NEW,Auth en holds/deposits + LPMs inbound,
+Skims,Enterprise,DTC,US/Global,9,NEW,"$1B+ DTC opening multi-region storefronts: unified global checkout, LPMs, cross-border cost pre-IPO",$225M at $5B (Nov'25) for intl; UK flagship + Dubai 2026; >$1B net sales
+Snyk,Enterprise,Security,US/Global,9,NEW,"Developer-first security self-serve global; IPO prep = billing scrutiny, PCI reduction, redundancy","Planning 2026 IPO; ~$2B mark, $435M cash"
+StockX,Enterprise,Marketplace,US/Global,9,NEW,Global two-sided marketplace: orchestrate auth + LPMs across 170 ctys + failover,Sellers in 170+ ctys; launching StockX Live (Jun'26); only 67% rev US
+StubHub,Enterprise,Marketplace,US/Global,9,NEW,LatAm+APAC is Yuno's home turf: lift auth + local methods where growth concentrates,"Newly public (Sep'25); intl growth outpacing NA, esp. LatAm + APAC; 48 currencies"
+Substack,Enterprise,Creator,US/Global,9,YES,"Two-sided global payouts on one PSP: redundancy/failover, routing, LPMs + cross-border payouts",$100M Series C at $1.1B (Jul'25); $600M+/yr creator payouts; single Stripe both sides
+Sweat,Enterprise,Fitness,US/Global,9,NEW,IAP-to-web migration + LPMs for its non-US majority,"30M+ subscribers, 145 ctys, 8 languages; heavy iOS/Android IAP"
+Take-Two (Rockstar/2K),Enterprise,Gaming,US/Global,9,YES,"Global GTA Online 2 launch w/ massive recurring microtxn needs auth optimization, LPMs, redundancy day one",GTA 6 / GTA Online 2 launching Nov'26; Shark Cards pulled $5B
+Trade Republic,Enterprise,Brokerage/neobank,Germany,9,NEW,Deposit-auth lift + acquirer redundancy,
+Transak,Enterprise,Crypto,US/Global,9,NEW,Pure-play on-ramp in MetaMask: orchestrate card acquirers behind buy button for higher auth + redundancy,$16M from Tether/IDG; exclusive MetaMask on-ramp powering 100M+ users
+Traveloka,Enterprise,OTA/super-app,Indonesia,9,NEW,Orquestar SEA LPMs + failover,
+TravelPerk (US),Enterprise,Travel,US/Global,9,NEW,Rapid US+global build w/ fresh payments stack: orchestration prevents single-PSP lock-in + local methods,$200M Series E at $2.7B; aggressive US expansion; acquired payments firm Yokoy
+Tripledot Studios,Enterprise,Gaming,US/Global,9,NEW,Freshly merged 12-studio portfolio runs fragmented PSPs; consolidate billing w/ one integration + LPMs,"Closed $800M acquisition of AppLovin games (Jun'25); 12 studios, 25M DAU"
+Turkish Airlines,Enterprise,Airline,Turkey,9,NEW,LPM coverage + multi-currency + redundancia,
+Valve / Steam,Enterprise,Gaming,US/Global,9,NEW,PSP redundancy w/ auto-failover so no single bank cuts off a region + routing + LPMs + chargeback orchestration,PayPal acquirer terminated Steam in most regions (Jul'25); chargeback pressure
+Vidio (Emtek),Enterprise,OTT/video,Indonesia,9,NEW,Local APMs + failover fragmentación ID,
+Vivid Seats,Enterprise,Marketplace,US/Global,9,NEW,"Cost pressure + new intl launches: routing-driven cost reduction, redundancy, local methods",Launching Europe + Japan; acquired Vegas.com; cost-cutting to cash-generative 2026
+ViX (TelevisaUnivision),Enterprise,OTT/video,Mexico,9,NEW,"LatAm LPMs (OXXO, SPEI) + IAP→web",
+Voodoo,Enterprise,Hybrid-casual,France,9,YES,Web-store migration + routing al volverse core IAP,
+Vuori,Enterprise,DTC,US/Global,9,NEW,Rapid multi-ctry rollout + China/UK = fragmented-PSP + LPM problem one orchestrator solves,E-com in 11 new ctys; first Asia stores (Seoul/Beijing); IPO chatter 2026
+Webull,Enterprise,Fintech,US/Global,9,NEW,One integration for card acquiring + LPMs to fund accounts across 22 new EEA markets,EEA passport for 22 EU markets (Q1'26); net deposits $8.6B +91% YoY
+WeightWatchers,Enterprise,Healthtech,US/Global,9,NEW,Turnaround lives on retention: dunning + decline-recovery to stop involuntary churn,"Emerged from Ch.11 Jul'25, relaunched as GLP-1 telehealth subscription"
+Wellhub (Gympass),Enterprise,Corporate wellness,Brazil,9,YES,Multi-PSP redundancy + local acquiring recurring,
+Wildlife Studios,Enterprise,Mobile gaming,Brazil,9,NEW,Web-store routing + auth vs IAP leakage,
+WorldWinner,Enterprise,Gaming,US/Global,9,NEW,One API for high-volume entry-fee w/ failover + chargeback orchestration + web checkout vs 30%,Pays $2M+ weekly across 45 states; runs FanDuel Faceoff
+Yum! Brands,Enterprise,QSR,Global,9,NEW,"Smart routing + global LPM en franquicias, auth lift",
+Zynga (Take-Two),Enterprise,Gaming,US/Global,9,NEW,Massive global mobile portfolio shifting to D2C: orchestration to escape 30% + route globally,Take-Two emphasizing D2C over advertising for mobile
+ARB Interactive (Modo),Medium,Gaming/Ent,Miami FL,9,NEW,Redundancia PSP en rails coin-purchase + fraude,Adquirió Publishers Clearing House (Jun'25)
+Baseten,Medium,AI,US/Global,9,NEW,Hypergrowth metered inference needs PSP failover + smart routing so declines never stall revenue,"$1.5B round at ~$13B (Jun'26); ~$600M run-rate +1,900%; usage-based billing"
+Bloom Nutrition,Medium,DTC,Los Angeles CA,9,NEW,Crecer sub share via dunning/retry; LPMs + auth-rate,Nutrabolt +$160M (Ene'25); +100% YoY
+Boatsetter,Medium,Marketplace,Fort Lauderdale FL,9,NEW,Split payouts a owners y captains via un API,Bookings high-ticket + payouts duales
+Bubble Skincare,Medium,DTC,New York NY,9,NEW,LPMs intl + local acquiring; sub replenishment,Cruzó $100M + expansión global 2025
+Captions / Mirage,Medium,AI,US/Global,9,NEW,Scaling into Asia + web checkout off 30% IAP: orchestrate local methods + routing,"$75M (Mar'26) to push into Asia + web suite; ~20M users, heavy IAP"
+Caraway,Medium,DTC,New York NY,9,NEW,Routing high-AOV + BNPL en sets $300+,Expansión producto+retail 2024-25
+Comun,Medium,Fintech,New York NY,9,NEW,LPMs en mercados receptores + payouts cross-border,50x crecimiento rev; Serie A 2025
+Current,Medium,Fintech,New York NY,9,NEW,Auth de depósitos + routing top-ups con failover,$80M raise + 90%+ growth (fin 2025)
+Cuts Clothing,Medium,DTC,Las Vegas NV,9,NEW,Sub billing infra + auth-rate/redundancia PSP,Piloto subscripción + crecimiento cross-border 2025
+Fanbase,Medium,Creator/Social,Atlanta GA,9,NEW,Failover + LPMs al escalar; reduce churn en subs,"Rediseño 2025, push monetización"
+Fireworks AI,Medium,AI,US/Global,9,NEW,10k-customer global inference API: LPMs + auth-rate routing to monetize devs in every region,"$315M ARR (Feb'26) +416%, 10k+ companies, raising at $15B; usage billing"
+Fomo,Medium,Fintech,New York NY,9,NEW,Auth en on-ramp al escalar global,$75M Serie B (Jun'26); 625K traders
+FTMO,Medium,Fintech,US/Global,9,NEW,Already proved routing lifts US auth 20%; extend across multiple PSPs for failover + global payouts,Re-entered US via OANDA (Dec'25); Nuvei case: +20% US card approvals
+FundedNext,Medium,Fintech,US/Global,9,NEW,50/30/20 payout mix scaling 3x across 170+ ctys: card auth lift + multi-rail payout routing,Q1'26 payouts $42.7M +293% YoY; launched FNmarkets brokerage
+Gamma,Medium,AI,US/Global,9,YES,100% Stripe dependency on majority-intl revenue = SPOF; add redundancy + local-acquirer routing,$100M+ ARR + $68M Series B at $2.1B (Nov'25); 70M users majority-intl; Stripe-only
+Goli Nutrition,Medium,DTC,Los Angeles CA,9,NEW,Routing cross-border + LPMs para footprint 115 países,Target nacional + 115 países 2025-26
+Goodiebox,Medium,Subscription beauty,Denmark,9,NEW,Multi-PSP routing + dunning recover renewals,
+Grover,Medium,Subscription tech rental,Germany,9,YES,Failover + auth en rental charges + LPMs,
+HeyGen,Medium,AI,US/Global,9,YES,Already proved auth = revenue; multi-PSP routing + local acquiring across 140 mkts w/ failover,"Stripe case study: +21% auth; $100M ARR ~3x YoY, 140+ languages; Stripe-only+IAP"
+Higgsfield,Medium,Consumer AI,San Francisco CA,9,YES,Credit billing + routing intl + failover en volumen spiky,"$1.3B val Ene'26, $200M ARR"
+Hipcamp,Medium,Marketplace,San Francisco CA,9,YES,Payouts host + LPMs al expandir geografía,Duplicó inventario a 565K sites (May'25)
+Holafly,Medium,eSIM,Spain,9,NEW,LatAm LPMs + auth lift cross-border cards,
+INK Games,Medium,Gaming/Ent,Austin TX,9,NEW,IAP→D2C web + routing al escalar,Serie B cerrada 2025
+Jinx,Medium,DTC,Los Angeles CA,9,NEW,Auth-rate + LPMs; routing en renovaciones sub,Push retail manteniendo sub DTC 2025
+Lassie,Medium,Pet insurance,Sweden,9,NEW,Reduce dunning/churn premiums + multi-country PSP,
+LaunchGood,Medium,Charity/crowdfunding,US,9,NEW,Global LPMs + redundancia donation spikes (Ramadan),
+Learner,Medium,Edtech,Philadelphia PA,9,NEW,Automatización payout tutor + checkout padres,Escalando tutoring K-12 post-2024
+Lebara,Medium,MVNO,UK,9,NEW,Diaspora LPMs + failover across PSPs,
+Lovable,Medium,Dev,US/Global,9,YES,Global self-serve PLG w/ constant top-ups: routing + failover on high-frequency card auths,0→$300M ARR <12mo; per-message credit billing
+Maelys,Medium,DTC,New York NY,9,NEW,Redundancia PSP + auth-rate en spikes virales,Top-3 fastest-growing DTC beauty 2025
+Manta (Razor),Medium,Webtoon/comics,Korea,9,NEW,IAP→web escape 30% + global LPM coverage,
+Mercor,Medium,AI,US/Global,9,NEW,"One-API payouts layer unifies Stripe Connect+Wise+local rails w/ failover, higher delivery, lower FX",$350M Series C at $10B (Oct'25); paying 30k+ experts $2M+/day on Stripe Connect+Wise
+Momentous,Medium,Health/Wellness,Park City UT,9,NEW,Retry/dunning subscripción + redundancia PSP,"Inc. 5000 #392 (2025); 1,258% 3yr"
+My Funded Futures,Medium,Fintech,Frisco TX,9,NEW,Auth en fees + failover PSP en eval alto volumen,Escalado rápido 2024-25
+Netlify,Medium,Dev,US/Global,9,NEW,Fresh consumption-billing transition = new failed-payment surface; retry/recovery use case,All new accounts → credit-based usage pricing (Sep'25)
+Nutrisense,Medium,Health/Wellness,USA,9,NEW,Dunning + retry en subs metabólicas high-ticket,Modelo CGM+coaching $225-399/mo escalando
+Pair Eyewear,Medium,DTC,New York NY,9,NEW,Auth-rate + LPMs UK/AU; dunning en recompradores,Lanzó UK+Australia (2024-25)
+Phantom,Medium,Fintech,San Francisco CA,9,NEW,Orquestar auth on-ramp + failover de ramps,Pivot a 'consumer finance platform' 2025
+PLAYSTUDIOS,Medium,Gaming/Ent,Las Vegas NV,9,NEW,IAP→web store para escapar 30% + routing,$235M TTM (Dic'25)
+Pocket FM,Medium,Audio/audiobooks,India/US,9,NEW,Smart routing auth small-ticket + dunning,
+Pomelo,Medium,Fintech,US/Global,9,NEW,Entire product is credit-card-funded cross-border: auth rate IS the business; routing + failover core,$35M Series A + $75M warehouse; Thunes for US→PH→MX/IN remittances
+Pray.com,Medium,Edtech,Santa Monica CA,9,NEW,IAP leakage + rails locales al internacionalizar,"17M+ users, top grossing religioso"
+Qover,Medium,Embedded insurance,Belgium,9,NEW,"Route + LPMs por mercado, su tesis en pagos",
+Ritual,Medium,Health/Wellness,Los Angeles CA,9,NEW,Auth-rate de subscripción + dunning; LPMs intl,Lanzamiento Ulta 2025; $5M R&D clínico
+SciPlay,Medium,Gaming/Ent,USA,9,NEW,Migración web-store D2C + expansión LPM,$250M rev 2025
+Seed Health,Medium,Health/Wellness,Venice CA,9,NEW,Replenishment billing + redundancia PSP al escalar global,Explorando venta ~$1B; Sprouts nationwide (2025)
+Signos,Medium,Health/Wellness,USA,9,NEW,Auth-rate + failover al escalar post-FDA,FDA-cleared con Dexcom Stelo (2025)
+Skillshare,Medium,Edtech,New York NY,9,NEW,Billing subscripción global + métodos locales 180 países,Inversión NewSpring; adquirió Superpeer
+Skillz,Medium,Gaming/Ent,Las Vegas NV,9,NEW,Anti-fraude + chargeback mgmt + auth lift,$420M win vs Papaya (Abr'26)
+Sling Money,Medium,Fintech,Dover DE,9,NEW,Auth de transfers card-funded + on/off-ramp,119 países live 2025
+Speak,Medium,Edtech,US/Global,9,NEW,Migrate IAP + fragmented regional billing to one API w/ Korea/Japan/SEA/LatAm LPMs + routing,"$78M Series C at $1B (OpenAI-backed); 10M+ users 40+ ctys, expanding SEA/EU/LatAm"
+Splash Sports,Medium,Gaming/Ent,USA,9,NEW,Failover + LPMs globales al escalar estados,Serie B Oct'25; payout dinámico
+Spot & Tango,Medium,DTC,New York NY,9,NEW,Dunning auto-ship + failover en renovaciones críticas,130M+ meals (Dic'25); expansión UnKibble
+Springboard,Medium,Edtech,San Francisco CA,9,NEW,Orquestar PSPs installment/financing + recuperar tuition,Modelo financing-partner 2025
+Stan (Stan.store),Medium,Creator/Social,Los Angeles CA,9,NEW,Auth-rate + LPMs para checkout creator global,ARR +24% YoY 2025
+Stash,Medium,Fintech,New York NY,9,NEW,Auth de depósitos card-funded + redundancia PSP,$146M Serie H oversubscribed (May'25)
+Sundays for Dogs,Medium,DTC,New York NY,9,NEW,Recurring billing + dunning; PSP failover,'Brand to watch' eyeing retail 2025
+Sunnyside,Medium,Health/Wellness,USA,9,NEW,IAP→web + dunning en subs alto volumen bajo ARPU,Lanzó AI coach + naltrexone $99/mo (2024-25)
+Suno,Medium,AI,US/Global,9,YES,Freshly funded Stripe-only grower turning away intl cards; local methods + routing convert demand,$400M Series D at $5.4B (Jun'26); 2M+ subs; Stripe-only + USD-only rejecting intl cards
+Swimply,Medium,Marketplace,New York NY,9,NEW,Payouts two-sided + instant-payout para hosts,Expandiendo categorías
+Take Profit Trader,Medium,Fintech,Orlando FL,9,NEW,LPMs globales + orquestación payouts,Top US futures prop 2025-26
+Tibber,Medium,Smart-energy sub,Norway,9,NEW,Dunning + involuntary-churn recovery debits mensuales,
+TickPick,Medium,Marketplace,New York NY,9,NEW,Failover PSP + auth-rate en tickets de alto valor,Capital fresco Brighton Park
+Together AI,Medium,AI,US/Global,9,YES,Dual usage-based lines to global startups: one orchestration layer for local acquiring + decline recovery,"$1B annualized rev (Feb'26), raising ~$1B at $7.5B; self-serve 25+ cities"
+Tolan (Portola),Medium,Consumer AI,San Francisco CA,9,NEW,App IAP hipergrowth → web-billing + dunning,$1M→$12M ARR en 4 meses (2025)
+WorkOS,Medium,SaaS,US/Global,9,NEW,"Usage-based dev-auth APIs, self-serve globally; scaling finance ops = ripe before lock-in",$100M Series C at $2B (Mar'26); ARR climbing fast
+1GLOBAL,Enterprise,eSIM/MVNO,UK,8,YES,Multi-country recurring billing + PSP redundancy,
+888 / Evoke,Enterprise,iGaming,UK,8,NEW,LPM coverage + payout + PSP redundancy,
+ACKO,Enterprise,Digital insurance,India,8,NEW,"UPI + card routing, auth lift, mandate failover",
+AG1,Enterprise,DTC,US/Global,8,YES,Single-SKU global subscription lives on recurring auth + dunning = smart routing + failover,~$600M rev; launched at Target Apr'26 (omnichannel); single-subscription engine
+Air France-KLM,Enterprise,Airline group,France,8,NEW,LPM breadth + PSP failover multi-marca,
+Airwallex (US),Enterprise,Fintech,US/Global,8,NEW,Aggressive US push + card book: cross-PSP redundancy + acquiring-side auth across 12 new markets,$8B valuation; ~$1B to US ops 2026-29 + SF HQ; $1.3B ARR
+Alaska/Hawaiian,Enterprise,Travel,US/Global,8,NEW,Domestic carrier going global across two merged stacks: unified cross-border acceptance + failover,Post-merger first transatlantic (Rome/London/Reykjavik) 2026
+Allego,Enterprise,EV charging,Netherlands,8,NEW,"Auth-rate + smart routing per-session, 16 mercados",
+Almosafer (Seera),Enterprise,OTA,Saudi Arabia,8,NEW,mada/GCC rails + failover + multi-currency,
+Anker Innovations,Enterprise,DTC,US/Global,8,NEW,"Multi-brand global electronics runs fragmented PSPs by brand/region; consolidate routing, LPMs, cost","$3.65B TTM 2025, ~half US; multi-brand global DTC + marketplace"
+ARQ (DolarApp),Enterprise,Fintech,US/Global,8,NEW,Stablecoin cross-border super-app adding cards: orchestrate fiat on/off-ramp + lift auth across LatAm,"$70M raise (Sequoia/FF) early'26; 2M+ users, $10B+ annualized; adding cards"
+Avis Budget,Enterprise,Travel,US/Global,8,YES,180-ctry high-ticket rental: small auth lifts on high-value bookings = recovered revenue,"~10,250 locations ~180 ctys; expanding Avis First 2026"
+Bandai Namco,Enterprise,AAA/mobile,Japan,8,NEW,Routing + LPM coverage D2C global,
+Betsson,Enterprise,iGaming,Sweden,8,NEW,LPM + payout orchestration + failover/auth,
+Betway,Enterprise,iGaming,Malta/Africa,8,NEW,Card-auth routing + acquirer failover deposits,
+Bitstamp,Enterprise,Crypto exchange,Luxembourg,8,NEW,Card-auth routing + redundancia EU acquirers,
+Bitwarden,Enterprise,Security,US/Global,8,NEW,Password-manager self-serve subs worldwide: cross-border acceptance + LPMs on global renewals,"$100M PSG/Battery round; 10M users 180+ ctys, capital for intl"
+Bol.com,Enterprise,E-comm marketplace,Netherlands,8,NEW,iDEAL/Bancontact + marketplace payouts + routing,
+Boomplay,Enterprise,Music/audio,Nigeria,8,NEW,Mobile-money LPMs + retry para margen fino,
+Breeze Airways,Enterprise,Travel,US/Global,8,NEW,First-time cross-border = greenfield: one integration to add LPMs + FX without per-ctry plumbing,Launching first-ever intl routes early'26 (MX/Bahamas/CR/Jamaica/DR)
+Bungie (Sony),Enterprise,Gaming,US/Global,8,NEW,"New live-service launch + global cosmetics store: orchestrate D2C, reduce store dependency",Marathon launching w/ new microtxn model; Destiny 2 Eververse $300M+
+Cabify,Enterprise,Ride-hailing,Spain/LatAm,8,NEW,Routing + driver payout orchestration,
+Calm,Enterprise,Mental health,US/Global,8,YES,One API for UK/CA w/ LPMs + routing/dunning to recover lost subs,Calm Health first intl (UK/CA) Jun'25; shed ~500K subs to 3.5M
+Careem,Enterprise,Super-app,UAE/MENA,8,NEW,MENA LPM + courier payouts + redundancia,
+Carnival Corporation,Enterprise,Travel,US/Global,8,YES,World's largest cruise w/ multi-brand global flows: reduce cross-border cost + auth/redundancy,Celebration Key opened Jul'25; largest-ever fleet; record bookings
+Casago,Enterprise,Travel,US/Global,8,NEW,Live cross-border portfolio mid-integration: consolidate two legacy stacks + multi-currency + owner payouts,Completed Vacasa acquisition (May'25); 40k+ properties US/MX/Belize/CR
+Casas Bahia,Enterprise,Retail e-comm,Brazil,8,NEW,Installment routing + marketplace payouts + auth,
+Cash App (Block),Enterprise,Fintech,US/Global,8,NEW,Orchestrate card-funded top-ups + stablecoin on/off-ramp across PSPs to lift auth + failover,Rolling out Circle USDC to ~60M users across 4 chains (May'26)
+Cathay Pacific,Enterprise,Airline,Hong Kong,8,NEW,China LPM coverage + redundancia + auth routing,
+Century Games,Enterprise,Mobile strategy,Singapore/China,8,NEW,Multi-region routing + LPMs + chargeback control,
+ChargePoint,Enterprise,Mobility,US/Global,8,YES,Cross-network roaming settles across ctys/currencies/billing: multi-currency multi-PSP orchestration,"150k+ ports NA+EU, 500k+ EU roaming; payments ~$690M segment"
+Chegg,Enterprise,Edtech,US/Global,8,YES,Churn crisis + fresh LatAm expansion: dunning orchestration + LPM story,"Q2'25 sub rev -39%, subs -40% to 2.6M; pushing Busuu into LatAm"
+Chime,Enterprise,Fintech,US/Global,8,NEW,Scale instant transfers + card top-ups post-IPO: lift funding auth + PSP failover,Q1'26 $38.7B purchase volume +12%; first GAAP profit; post-IPO
+Chipotle,Enterprise,Fast-casual,US/Asia,8,NEW,New-market LPM + auth lift en lanzamiento intl,
+Cloudflare,Enterprise,Cloud,US/Global,8,YES,Self-serve usage+subscription expanding geos: local acquiring/currency/LPM billing pain,Expanded data-residency regions (BR/DE/IN/JP/SG/UK) Dec'25
+Com2uS,Enterprise,Mobile gacha,Korea,8,NEW,Web-store billing + LPM coverage + chargeback,
+Copa Airlines,Enterprise,Airline,Panama,8,NEW,Local acquiring + installment LPMs LatAm,
+Costa Cruises,Enterprise,Cruise,Italy,8,NEW,LPMs EU/APAC + failover booking engine,
+CVC Corp,Enterprise,Travel,Brazil,8,NEW,Routing cross-border + installments + recovery,
+Dashlane,Enterprise,Security,US/Global,8,NEW,Surge of new self-serve card subs globally: onboarding auth-rate + churn-recovery moment,"Retired free plan Sep'25, forcing free users onto paid card tiers"
+DAZN,Enterprise,Streaming,US/Global,8,YES,Global LPM coverage + failover for sports base spanning dozens of markets,Multi-year US+Canada Fubo integration; DAZN1 linear launch
+DiDi (LatAm),Enterprise,Ride-hailing,LatAm,8,NEW,Routing auth + driver payout orchestration,
+Dott,Enterprise,Micromobility,Netherlands,8,NEW,Lift auth + LPMs recover declined micro-txns,
+DriveWealth,Enterprise,Fintech,US/Global,8,NEW,One integration for LPMs + card acquiring per market so partners fund at high auth without rebuilding rails,Powers Uala US-stock launch in Mexico (Mar'26); Kalshi; EU license
+Eight Sleep,Enterprise,Healthtech,US/Global,8,YES,Local acquiring/LPMs + redundancy to capture membership revenue outside US rails,"$100M Series D (Aug'25) + $50M at $1.5B; ships 34+ ctys, China entry"
+Etsy,Enterprise,Marketplace,US/Global,8,NEW,"Adding payment markets: layer orchestration for LPM breadth, auth lift, seller-payout reliability",Expanded Etsy Payments to more markets amid 2025 tariff complexity
+Exodus,Enterprise,Crypto,US/Global,8,NEW,US-public wallet turning into payments app w/ global expansion: card acquiring/on-ramp + payouts,Launched Exodus Pay (Apr'26); acquired Baanx+Monavate for issuing
+Expedia Group,Enterprise,Travel,US/Global,8,YES,Surging B2B/white-label + supplier payouts across global partners: cross-border orchestration + failover,B2B gross bookings +24% Q4'25; extending Rapid API 2026; ~$3B tech spend
+Fanatics Collect,Enterprise,Marketplace,US/Global,8,YES,New high-growth collectibles + live-auction w/ complex payouts: one API + redundancy as volume scales,PSA partnership; live auctions + Sotheby's scaling 2025-26
+Foodpanda,Enterprise,Food/q-commerce,APAC,8,NEW,APAC multi-country routing + LPM + payouts,
+Frontier Airlines,Enterprise,Travel,US/Global,8,NEW,"ULCC Mexico/LatAm growth where LPMs (OXXO, installments) + cross-border declines are real leakage",23 new US/Mexico routes + Caribbean/Central America spring'26
+Gemini (crypto),Enterprise,Crypto,US/Global,8,YES,As growth engine pivots to card-deposit under public scrutiny: lift card auth + acquirer redundancy,"Card revenue +300% to $14.7M (~half of rev), May'26; post-IPO"
+GitHub Copilot,Enterprise,Dev,US/Global,8,YES,Massive self-serve subscriber base shifting to metered token billing = new decline exposure,All Copilot plans → usage-based AI-credit billing (Jun'26)
+GoTo (Gojek),Enterprise,Super-app,Indonesia,8,NEW,Indonesia/SEA LPM redundancy + payouts,
+Grafana Labs,Enterprise,SaaS,US/Global,8,NEW,"Self-serve consumption-metered observability, global SRE base: auth-rate lift on usage charges",$250M at ~$9B (Feb'26); multi-dimensional usage pricing
+Groww,Enterprise,Investing/brokerage,India,8,NEW,"UPI + card deposit routing, optimization",
+Headspace,Enterprise,Mental health,US/Global,8,NEW,IAP→web on $476M+ volume to escape 30% + dunning across 190 ctys,Top behavioral-health IPO candidate 2026; Cigna rollout + cost cuts
+Hi-Rez Studios,Enterprise,Gaming,US/Global,8,NEW,"Just-launched F2P economy = ideal moment to standardize on one API for LPMs, routing, web store","SMITE 2 went F2P w/ microtxn (Jan'25), new economy"
+IAG (Iberia/BA/Vueling),Enterprise,Airline group,Spain/UK,8,NEW,Una capa entre marcas + LatAm LPMs,
+iFIT / NordicTrack,Enterprise,Fitness,US/Global,8,YES,"Dunning, retries, PSP redundancy for high-ARPU connected fitness",Restructured sub tiers Sep'25; millions of hardware-tethered subs US/EU
+IndiGo,Enterprise,Airline,India,8,NEW,UPI/EMI + expansión LPM intl un API,
+inDrive,Enterprise,Ride-hailing,US/LatAm,8,NEW,Cashless routing + multi-country driver payouts,
+Instacart,Enterprise,Marketplace,US/Global,8,YES,One API for intl enterprise expansion + shopper payouts beyond US-centric stack,Acquired Instaleap for global enterprise expansion; intl traction Q1'26
+IONITY,Enterprise,EV charging sub,Germany,8,NEW,Subscription dunning + LPMs + cross-border auth,
+Jahez,Enterprise,Food delivery,Saudi Arabia,8,NEW,KSA LPM + courier payouts + cost reduction,
+Jumeirah Group,Enterprise,Hotels,UAE,8,NEW,"GCC + inbound LPMs, multi-currency auth",
+Jumia,Enterprise,E-comm super-app,Nigeria,8,NEW,African LPMs/mobile money + payout orchestration,
+Kajabi,Enterprise,Creator,US/Global,8,YES,"Investing in own payments layer: lift intl-card auth, cut FX surcharge, add redundancy",$10B cumulative creator payouts (Aug'25); +1.5% on intl cards
+Kinepolis Group,Enterprise,Cinema chain,Belgium,8,NEW,Un API multi-país + loyalty/sub dunning,
+Lambda Labs,Enterprise,Cloud,US/Global,8,NEW,Pre-IPO GPU cloud: hardened billing + PSP redundancy to de-risk collection ahead of listing,IPO planned H2'26 (banks hired); $520M+ rev; $1.5B Series E (Nov'25)
+Lazada,Enterprise,E-comm marketplace,Singapore,8,NEW,Un API SEA + seller payouts + LPMs,
+Linktree,Enterprise,Creator,US/Global,8,NEW,Pivoting to transactional commerce at 50M scale: launch payments/payouts globally w/ routing+LPMs,Launched 'Linktree Earn' + Shops; acquired Fingertip (Nov'25); 50M+ users
+Localiza,Enterprise,Car rental,Brazil,8,YES,Pix/installment LPMs + auth routing inbound,
+Loft,Enterprise,Proptech,Brazil,8,NEW,Big-ticket auth + installment orchestration,
+Luckin Coffee,Enterprise,Coffee chain,China/US,8,NEW,New-market PSP routing + app-payment LPM,
+MadeiraMadeira,Enterprise,Home e-comm,Brazil,8,NEW,Installment routing + seller payouts + auth,
+Mandarin Oriental,Enterprise,Hotels,Hong Kong,8,NEW,Auth routing luxury high-ticket + APAC LPMs,
+ManoMano,Enterprise,DIY marketplace,France,8,YES,Cross-border LPMs + seller payouts + B2B billing,
+Mercado Bitcoin,Enterprise,Crypto exchange,Brazil,8,NEW,Pix/on-ramp redundancy + cost reduction,
+Mercari (US),Enterprise,Marketplace,US/Global,8,YES,Processing in take rate: routing/cost reduction + cheaper payouts protect the 10% economics,Flat 10% fee w/ processing absorbed (Jan'25)
+MongoDB,Enterprise,SaaS,US/Global,8,YES,Global self-serve usage billing at scale: cross-border cost + decline recovery on metered charges,Atlas Flex usage-based tier GA Feb'25; per-hour usage globally
+Monzo,Enterprise,Neobank,UK,8,NEW,Card top-up routing + redundancia,
+MyFitnessPal,Enterprise,Fitness,US/Global,8,NEW,Auth lift + churn recovery + IAP→web margin directly accretive to exit story,"Rev -5.7% to $310M; PE owner pivoting to growth, IPO/sale exit"
+N26,Enterprise,Neobank,Germany,8,NEW,Top-up auth routing + PSP failover,
+NCSoft,Enterprise,MMORPG,Korea,8,NEW,Global LPM + PSP failover expansión occidental,
+Niantic (Scopely),Enterprise,Gaming,US/Global,8,NEW,"Maximize D2C shift w/ optimized global checkout, fraud controls, LPMs",PGO web stores live but huge volume still via app stores
+Nium,Enterprise,Fintech,US/Global,8,NEW,B2B cross-border payouts adding card-issuing: fits on collection/acceptance side + PSP redundancy,Circle/Coinbase stablecoin + dual-network card issuance; $50B+ volume
+Noon,Enterprise,E-comm/food,UAE,8,YES,MENA LPM + multi-country redundancy,
+NZXT,Enterprise,Gaming,US/Global,8,NEW,Recurring Flex subs + sprawling card/BNPL stack + billing crisis: one orchestrated API w/ anti-fraud+dunning,$3.45M class-action (Sep'26) over 'Flex' rent-a-PC subscription
+Overwolf,Enterprise,Gaming,US/Global,8,NEW,"Orchestrate auth, failover, unified LPMs, fraud across 4-rail stack (lead consolidation, not replacement)",CurseForge billing to Tebex (Aug'25); $300M+ creator payouts 4 rails
+Papaya Gaming,Enterprise,Gaming,US/Global,8,NEW,Fraud/dispute orchestration + multi-PSP failover for global real-money platform under scrutiny,$420M verdict + $15M settlement; 17M+ downloads 5 continents
+Patreon,Enterprise,Creator,US/Global,8,YES,USD-only payouts = global-LPM gap; multi-PSP model solves + auth lift on recurring [warm contact],$179M rev 2025 +28%; $2B+/yr to creators; payouts USD-only
+Paysend,Enterprise,Remittance,UK,8,NEW,Card-acceptance routing + acquirer redundancy global,
+Pearl Abyss,Enterprise,AAA/MMO,Korea,8,NEW,D2C store orchestration + global LPMs,
+Piccoma (Kakao),Enterprise,Webtoon/comics,Japan,8,NEW,IAP→web + JP LPM routing,
+PicPay,Enterprise,Fintech super-app,Brazil,8,NEW,Card-auth lift + Pix/LPM orchestration,
+Plarium,Enterprise,Mobile mid-core,Israel,8,NEW,Web-store routing + LPM coverage un API,
+Playrix,Enterprise,Mobile F2P,Ireland,8,NEW,Web-store migration + smart routing,
+Plus500 (US),Enterprise,Fintech,US/Global,8,NEW,One integration to lift deposit auth + failover + onboard per-ctry LPMs across new markets,Record deposits $1.8B Q1'26; US rev +45%; new licenses CA/UAE/JP
+Posadas,Enterprise,Hotels,Mexico,8,NEW,Pix/SPEI/installment LPMs + auth inbound,
+Poshmark,Enterprise,Marketplace,US/Global,8,YES,"Mature US resale w/ millions of payouts + Naver global ambitions: auth lift, cost reduction, one rail",Naver-owned; cross-listing competitive pressure
+Qantas,Enterprise,Airline,Australia,8,NEW,Multi-currency + auth routing premium intl,
+Replit,Enterprise,Dev,US/Global,8,YES,Consumption agent credits to worldwide devs: routing recovers failed top-ups + local methods,$525M annualized (Apr'26); $400M Series D at $9B; usage-based agent credits
+Revolut US,Enterprise,Fintech,US/Global,8,NEW,Scale US card-funded top-ups + new users: orchestrate multiple acquirers for auth + failover,Filed US bank charter (Mar'26); ex-Visa US CEO; $75B valuation
+Royal Caribbean,Enterprise,Travel,US/Global,8,YES,Aggressive global capacity + new river/destination launches: optimize auth + LPMs,7 Icon-class mega-ships through 2030; Celebrity River Cruises
+Saudia,Enterprise,Airline,Saudi Arabia,8,NEW,mada + GCC LPM + cross-border auth routing,
+SciPlay / Light & Wonder,Enterprise,Gaming,US/Global,8,NEW,Social casino = high fraud exposure + growing web shop: anti-fraud orchestration + routing,D2C ~11% of rev growing; chip class-action payouts Mar'26
+SeatGeek,Enterprise,Marketplace,US/Global,8,YES,"IPO-prep window: PSP failover, lift auth, de-risk single-PSP before S-1",On 2026 IPO-watch lists; confidentially filed ~3yrs ago
+SEGA,Enterprise,AAA/mobile,Japan,8,YES,Orquestar D2C/web billing + auth optimization,
+Shangri-La,Enterprise,Hotels,Hong Kong,8,NEW,UnionPay/Alipay LPMs + multi-currency routing,
+SiriusXM / Pandora,Enterprise,Streaming,US/Global,8,NEW,Dunning/retry + auth optimization to defend shrinking price-sensitive base,Double-digit profit growth Q1'26 on price hikes; satellite subs to 32.9M
+SoFi,Enterprise,Fintech,US/Global,8,YES,Orchestrate high-auth card funding of crypto buys + cross-border on/off-ramp across acquirers,Launched SoFiUSD stablecoin to ~15M (May'26); tokenized deposits Q3'26
+Solo Brands,Enterprise,DTC,US/Global,8,NEW,Multi-brand DTC into EU under cost pressure: orchestration cost reduction + LPM coverage,Next phase of European expansion; profitability-first rebuild
+SonyLIV,Enterprise,OTT/video,India,8,NEW,UPI/card orchestration + dunning,
+Square Enix,Enterprise,AAA/mobile,Japan,8,NEW,D2C store billing orchestration + LPMs,
+Starbucks,Enterprise,Coffee chain,Global,8,NEW,Global LPM + stored-value rails + auth lift,
+Storytel,Enterprise,Audiobooks,Sweden,8,YES,Cross-market routing + dunning para cortar churn,
+Subway,Enterprise,QSR,Global,8,NEW,Consolidación PSP cross-border en franquicias,
+Superbet,Enterprise,iGaming,Romania,8,NEW,LatAm LPMs + cross-PSP routing regulado,
+Tastytrade,Enterprise,Fintech,US/Global,8,NEW,Solving global funding friction but base on traditional rails: lift card-deposit auth + LPMs market-by-market,Launched instant stablecoin funding (Jul'25); hired intl-expansion lead
+Tokopedia (GoTo),Enterprise,E-comm marketplace,Indonesia,8,NEW,LPMs Indonesia + payout orchestration + redundancia,
+Trading 212,Enterprise,Brokerage,UK/Bulgaria,8,NEW,Card deposit-auth lift + PSP failover,
+Truecaller,Enterprise,Privacy SaaS,Sweden,8,NEW,UPI/local rails convierte base no-card India/MENA,
+TUI Group,Enterprise,Travel/cruise,Germany,8,NEW,PSP redundancy + LPMs + supplier payouts,
+TVING (CJ ENM),Enterprise,OTT/video,Korea,8,NEW,Cost-cut via routing + bundled billing,
+Twilio,Enterprise,SaaS,US/Global,8,YES,High-volume usage billing + active billing-eng hiring + global base = orchestration + cost,Consolidated SendGrid/Segment (Feb'26); hiring Principal SWE Billing
+U-NEXT,Enterprise,OTT/video,Japan,8,NEW,Japan LPM coverage + failover,
+Uala,Enterprise,Neobank/investing,Argentina,8,NEW,LPM + card on-ramp routing 3 mercados,
+Ubigi (NTT),Enterprise,eSIM,France,8,NEW,Subscription dunning + LPMs + OEM-billing redundancy,
+Ubisoft,Enterprise,AAA,France,8,YES,D2C checkout orchestration + LPMs + fraude,
+Vercel,Enterprise,Dev,US/Global,8,YES,v0 on usage credits + IPO horizon: orchestrate global collections + acquirer failover,$300M Series F at $9.3B; moved to credit billing Sep'25; IPO signals
+Vestiaire Collective,Enterprise,C2C luxury resale,France,8,YES,Cross-border routing + payouts/escrow + LPMs,
+Via Transportation,Enterprise,Mobility,US/Global,8,NEW,Fresh IPO capital for intl expansion: localize acceptance + PSP failover as it scales,"IPO'd NYSE Sep'25 (~$493M); 30+ ctys, ~30% rev outside NA"
+Viaplay,Enterprise,OTT/sports,Sweden,8,NEW,Cost reduction + cross-market PSP failover,
+Viator (Tripadvisor),Enterprise,Travel,US/Global,8,YES,Cross-border supplier-payout network + high volume: payout orchestration + auth routing on high-ticket,"Experiences $4.7B GBV +13%, 70k suppliers; spin-off planned"
+Viking Holdings,Enterprise,Travel,US/Global,8,NEW,Newly public premium line expanding to new geos (India): fresh cross-border LPM + auth needs,"FY25 rev $6.5B +22%, first public year; India river 2027-28"
+VNG Corporation,Enterprise,Game publisher,Vietnam,8,NEW,LPM + cross-border routing fuera de VN,
+Voi Technology,Enterprise,Micromobility,Sweden,8,NEW,Auth optimization + PSP redundancy low-ticket,
+Wavve,Enterprise,OTT/video,Korea,8,NEW,Auth-rate + PSP cost reduction,
+Webflow,Enterprise,SaaS,US/Global,8,YES,Large global self-serve base; subscription renewals + credit auths = churn recovery + cross-border,Pricing overhaul + credit-based AI billing (May'26); $213M 2024 +66%
+WeTV (Tencent),Enterprise,OTT/video,China,8,NEW,SEA LPM routing + IAP migration,
+Wizards of the Coast,Enterprise,Gaming,US/Global,8,NEW,Fast-growing digital storefront w/ intl demand: LPM breadth + routing; consolidate + lift auth,WotC+Digital $2.2B +45% 2025; MTG Arena driving growth
+Wolt,Enterprise,Food/retail delivery,Finland,8,NEW,Multi-country LPM + courier payout orchestration,
+XTB,Enterprise,Brokerage/crypto,Poland,8,NEW,Deposit-auth routing + multi-region redundancy,
+YETI,Enterprise,DTC,US/Global,8,NEW,Accelerating intl mix: lift cross-border auth + add LPMs (esp. Japan) via orchestration,Intl sales +14% 2025 w/ new Japan entry + Europe/Australia growth
+ZEE5,Enterprise,OTT/video,India,8,NEW,Cross-border LPMs + IAP→web,
+Zomato (Eternal),Enterprise,Food/q-commerce,India,8,NEW,UPI/card routing + q-commerce payouts,
+Acorns,Medium,Fintech,Irvine CA,8,NEW,Auth recurrente card + failover,Adquirió EarlyBird (May'25); rev ~3x
+Alto (Alto IRA),Medium,Fintech,Nashville TN,8,NEW,Auth de account-funding + on/off-ramp orchestration,Partnership Canopy (Dic'25)
+Amanotes,Medium,Music-game,Vietnam,8,NEW,Global LPMs + routing microtransacciones mundiales,
+Atlas Coffee Club,Medium,DTC,Boston MA,8,NEW,LPMs intl-roaster + dunning subscripción; failover,Cross-promo Driftaway (Mar'25)
+Aura Health,Medium,Health/Wellness,San Francisco CA,8,NEW,IAP→web; smart routing en subs globales,App meditación 1:1 coaching 2025
+Beacons,Medium,Creator/Social,San Francisco CA,8,NEW,LPMs + routing para conversión creator-store global,Expansión features monetización 2025
+Bitexen,Medium,Crypto exchange,Turkey,8,NEW,LPM + card on-ramp routing TRY,
+BitOasis,Medium,Crypto exchange,UAE,8,NEW,Card-auth routing para cortar decline + fee leakage,
+BloomNation,Medium,Marketplace,Santa Monica CA,8,NEW,Payouts florist + LPMs Canadá/LatAm,Soporte español; Canadá; supplier 2025
+Blueland,Medium,DTC,New York NY,8,NEW,Replenishment billing + dunning,Modelo refill drive loyalty 2025
+Bokksu,Medium,DTC,New York NY,8,NEW,Aceptación cross-border/LPM + dunning subscripción,Forecast $34M 2025; retail 2x
+Boo,Medium,Dating,US/Global,8,NEW,UPI/regional wallets + shift recurring off 30% IAP + dunning,"Top-3 in SG/ID/MY, active India (largest 2025 download mkt)"
+Born / Pengu,Medium,Consumer AI,USA,8,NEW,Single-PSP sub + IAP→web + routing intl,$15M Serie A + 15M users (Sep'25)
+Brainscape,Medium,Edtech,New York NY,8,NEW,Web checkout + métodos locales para learners globales,Rev $4.4M→$6.1M (Oct'24)
+Brightside Health,Medium,Health/Wellness,USA,8,NEW,Routing + redundancia para billing recurrente,Expandiendo therapy/psychiatry/meds 2025
+Brilliant,Medium,Edtech,San Francisco CA,8,NEW,Billing subscripción global + auth-rate en planes anuales,Lanzó Koji AI tutor 2025
+Brooklinen,Medium,DTC,Brooklyn NY,8,NEW,Redundancia PSP + BNPL en sets de mayor AOV,Omnichannel + expansión categorías
+Buenbit,Medium,Crypto neobank,Argentina,8,NEW,LPM + card on-ramp routing 4 mercados,
+Cameo,Medium,Creator/Social,Chicago IL,8,NEW,Routing recupera declines + LPMs para compras de fans,Rev reconstruyéndose 2025
+Captions,Medium,Consumer AI,New York NY,8,NEW,IAP→web + LPMs globales + credit billing,"$100M Serie C, escalando intl"
+Chairish,Medium,Marketplace,San Francisco CA,8,NEW,Auth high-ticket + orquestación payout seller,"Resale design high-AOV, shipping intl"
+Character.AI,Medium,AI,US/Global,8,NEW,Intl Stripe-only sub w/ explosive LatAm/India + acute cost pressure = textbook orchestration,Exploring sale/raise >$1B amid cost pressure; LatAm/India skew; Stripe-only+IAP
+Chuffed,Medium,Charity/crowdfunding,Australia,8,NEW,Smart routing + auth lift + multi-currency failover,
+Circle (communities),Medium,Creator/Social,San Francisco CA,8,YES,Auth-rate + redundancia en subs membership,Rentable 2025; 18k+ comunidades
+Clara,Medium,Corporate cards,Mexico,8,NEW,Payment ops + PSP redundancy B2B,
+Cleartrip,Medium,OTA,India/ME,8,NEW,UPI/mada routing + redundancia India-GCC,
+Clerk,Medium,SaaS,US/Global,8,NEW,PLG auth/identity API building metered billing now: orchestration partner at the right moment,$50M round (Jun'25); usage-based billing top roadmap priority
+Coins.ph,Medium,Crypto wallet,Philippines,8,NEW,LPM + card on-ramp orchestration PH,
+Cotopaxi,Medium,DTC,Salt Lake City UT,8,NEW,LPMs/local acquiring para intl; redundancia PSP,Nuevo CEO; Serie C-III (Jun'25)
+Crown Affair,Medium,DTC,New York NY,8,NEW,Replenishment sub + dunning; LPMs intl,$9M Serie B (May'25)
+Cult.fit,Medium,Fitness sub,India,8,NEW,Subscription routing + dunning + GCC expansion LPMs,
+Cure Hydration,Medium,DTC,New York NY,8,NEW,Subscribe-and-save billing + auth-rate,Categoría hidratación en polvo surge 2025-26
+Curtsy,Medium,Marketplace,San Francisco CA,8,NEW,Payouts seller + auth lift para compradores impulsivos,Crecimiento resale mobile-first
+DataCamp,Medium,Edtech,New York NY,8,YES,Métodos locales + decline recovery en base intl,180+ países base 2025
+Descomplica,Medium,Edtech,Brazil,8,NEW,Subscriptions + dunning + installment routing,
+Ditto,Medium,Creator/Social,USA,8,NEW,Dunning + failover para monetización temprana,$9.2M seed Feb 2026
+Elevate Labs,Medium,Edtech,San Francisco CA,8,NEW,Reducir 30% IAP via web billing,Top brain-training app 2025
+Enthuse,Medium,Charity/crowdfunding,UK,8,NEW,Reduce failed recurring-donation churn + redundancia,
+Faherty,Medium,DTC,New York NY,8,NEW,Auth-rate + redundancia PSP omnichannel,"Escaló a $250M, B Corp 2025"
+Fashionphile,Medium,Marketplace,Carlsbad CA,8,NEW,PSP cross-border + LPMs para nuevo mercado UK/EU,Lanzó UK 2025 (Luxe Collective)
+Feeld,Medium,Dating,US/Global,8,NEW,One API to lift global auth + LPMs + cut churn before scale magnifies leakage,"2024 rev +26% to $65.2M; ~171 staff across 6 continents, intl plans"
+Finch (Finch Care),Medium,Mental health,US/Global,8,NEW,Launch web billing to escape the tax + routing + dunning,~$30M ARR almost all on IAP as Apple 30% cracked Jan'26
+Floward,Medium,Q-commerce gifting,Saudi Arabia,8,NEW,GCC LPMs + cross-border routing + redundancia,
+Found,Medium,Health/Wellness,Austin TX,8,NEW,Dunning + routing en billing GLP-1 alto volumen,Boom GLP-1 telehealth 2025
+Fourthwall,Medium,Creator/Social,Venice CA,8,NEW,Un API checkout global + payouts/redundancia creator,"200k+ sellers, expansión monetización 2025"
+Gameflip,Medium,Gaming/Ent,USA,8,NEW,Marketplace PSP orchestration + fraude/chargeback,StartEngine raise 2025; $200M+ ventas
+Getsafe,Medium,Digital insurance,Germany,8,NEW,Cut failed-payment churn + SEPA/card LPMs un API,
+Giggster,Medium,Marketplace,Los Angeles CA,8,NEW,Payouts host two-sided + fraude en bookings de alto valor,Marketplace de espacios creativos
+Goldbelly,Medium,Marketplace,New York NY,8,NEW,Payouts merchant + auth lift en picos de gifting,Marketplace food two-sided nationwide
+Good Job Games,Medium,Casual publisher,Turkey,8,NEW,Web-shop migration + routing para margen,
+GoStudent,Medium,Edtech tutoring,Austria,8,NEW,Cut failed-payment churn + LPMs por mercado,
+Gousto,Medium,Meal-kit sub,UK,8,NEW,Subscriptions/dunning + PSP redundancy,
+Grailed,Medium,Marketplace,New York NY,8,NEW,Payouts two-sided + LPMs checkout global,"Líder resale masculino, base intl"
+Groq,Medium,AI,US/Global,8,NEW,2M-dev inference API expanding EU+ME: region-specific acquiring + LPMs a US PSP can't deliver,$750M at $6.9B; 13 DCs NA/EU/ME; 2M+ devs on usage-based GroqCloud
+High 5 Games,Medium,Gaming/Ent,Jersey City NJ,8,NEW,Failover coin-purchase + chargeback mgmt,Mercado sweeps activo 2025
+Hily,Medium,Dating,US/Global,8,NEW,"Scale off-store checkout globally w/ routing, dunning, redundancy, LatAm LPMs",Surpassed Bumble to #3 US dating app; already runs direct web billing
+Homa Games,Medium,Hybrid-casual,France,8,NEW,Web-store billing + LPMs al volverse core IAP,
+Igloo,Medium,Embedded micro-insurance,Singapore,8,NEW,e-wallet LPMs + routing rails SEA fragmentados,
+Insight Timer,Medium,Mental health,US/Global,8,NEW,IAP→web for MemberPlus + UPI/LPMs for India + dunning on failed renewals,Official India launch (first emerging-mkt) Mar'26; 35M+ members; Apple 30% pain
+Instawork,Medium,Marketplace,US/Global,8,NEW,Build worker payouts + collections on one orchestration layer ahead of Europe launch,$60M Series D; UK/EU expansion 2026-27; 4M+ hourly workers
+Interview Kickstart,Medium,Edtech,Santa Clara CA,8,NEW,UPI/rails locales + installments via un API,Pivot a AI/ML; funnels US+India 2025-26
+ixigo,Medium,OTA,India,8,NEW,UPI/card routing + cost reduction + redundancia,
+Jam City,Medium,Gaming/Ent,Culver City CA,8,YES,Web-store D2C + LPMs para IAP global,Portfolio activo
+Jumpspeak,Medium,Edtech,Miami FL,8,NEW,ESL intl en IAP = pagos locales + reducción de fees,Escalando intl via paid social
+Juni Learning,Medium,Edtech,San Francisco CA,8,NEW,Payouts instructor + auth-rate sub recurrente padres,Crecimiento K-12 enrichment
+Kikoff,Medium,Fintech,San Francisco CA,8,NEW,Recuperar cargos sub declined via retry/routing,"Superó $300M rev 2025, profitable"
+Kindroid,Medium,Consumer AI,USA,8,NEW,Tiered sub billing + IAP→web + auth intl,Líder companion customization 2026
+Klover,Medium,Fintech,Chicago IL,8,NEW,Push-to-card payout routing + redundancia disbursement,Modelo data-monetization
+Krea,Medium,Consumer AI,San Francisco CA,8,NEW,Credit billing + routing intl al escalar,$47M Serie B (Abr'25)
+Krea AI,Medium,AI,US/Global,8,NEW,"One API to monetize 191 ctys w/ LPMs + PSP redundancy, lifting auth + cutting decline churn",$47M Series B (Apr'25) at ~$500M; 30M+ users across 191 ctys
+Kuku FM,Medium,Audio/audiobooks,India,8,NEW,UPI auth optimization + retry logic,
+Ladder,Medium,Fitness,US/Global,8,NEW,IAP→web + auth optimization as it chases the $100M ARR milestone,$105M (GC/Point72) targeting 400K members + $100M ARR early'26
+Lemon,Medium,Crypto neobank,Argentina,8,NEW,Card on-ramp + LPM routing LatAm,
+Lemon Cash,Medium,Crypto/fintech,Argentina,8,NEW,On-ramp routing + card auth uplift,
+Levels,Medium,Health/Wellness,USA,8,NEW,Auth-rate + LPMs al ampliar TAM con CGM OTC,Membership $125/yr + Stelo OTC tailwind 2025
+LifeMD,Medium,Healthtech,US/Global,8,NEW,Auth-rate lift + churn reduction protect new-subscriber LTV during growth push,Record 42k+ net-new subs Q1'26; weight-mgmt ~100k; Medicare Apr'26
+Lucra Sports,Medium,Gaming/Ent,USA,8,NEW,Failover + LPMs al expandir estados,Serie B Ene'26 (Harlo)
+Magic Spoon,Medium,DTC,New York NY,8,NEW,Cortar churn involuntario via retries; auth-rate,+29% lift subscripción via Shopify 2025
+Magoosh,Medium,Edtech,San Francisco CA,8,NEW,UPI + APMs locales para cortar declines de tarjeta,Tráfico intl India/Nigeria
+Majority,Medium,Fintech,Houston TX,8,NEW,LPMs en mercados receptores + auth de transfers,$40M ARR; remesas 4x
+Marley Spoon,Medium,Meal-kit sub,Germany/AU/US,8,NEW,Subscriptions/dunning + multi-country LPM,
+Masterworks,Medium,Fintech,New York NY,8,NEW,Auth de compras card-funded + payouts,ARR +23% YoY
+Mighty Networks,Medium,Creator/Social,Palo Alto CA,8,NEW,Sub billing + dunning + LPMs para miembros globales,Crecimiento comunidades de pago
+Modal Labs,Medium,AI,US/Global,8,NEW,Pay-per-compute to global devs is decline-sensitive: routing + retries protect metered revenue,$355M Series C at $4.65B (May'26); per-second usage billing
+Musely,Medium,Health/Wellness,USA,8,NEW,PSP failover + retry en refills,160x crecimiento 6 años
+Namshi,Medium,DTC fashion,UAE,8,NEW,GCC LPMs + auth lift + COD-to-card conversion,
+Needed,Medium,DTC,Los Angeles CA,8,NEW,Replenishment dunning + auth-rate,135 empleados 2026
+Nerdy / Varsity Tutors,Medium,Edtech,St. Louis MO,8,NEW,Payouts tutor/expert + optimización sub billing,Q4'25 EBITDA+; consumer +6% YoY
+Nomi AI,Medium,Consumer AI,USA,8,NEW,"Single-PSP sub, users intl → routing + dunning",App companion top-ranked 2026
+OneFootball,Medium,Sports/video,Germany,8,NEW,Global LPM coverage + IAP→web,
+Opus Clip,Medium,AI,US/Global,8,NEW,Consolidate global creator+enterprise billing on one API w/ routing/failover + local methods,$20M from SoftBank at $215M (Mar'25); 10M users; launched Agent Opus
+OSEA Malibu,Medium,DTC,Los Angeles CA,8,NEW,Replenishment dunning + LPMs intl,GA strategic growth (Sep'25)
+Ounass (Al Tayer),Medium,Luxury DTC,UAE,8,NEW,Multi-currency routing + high-value auth,
+Our Place,Medium,DTC,Los Angeles CA,8,NEW,Routing checkout + BNPL en cestas $150+,Liberty London + expansión retail 2025
+Outdoorsy,Medium,Marketplace,Austin TX,8,YES,Payouts cross-border + redundancia multi-PSP,"Mercados US+intl, high-ticket"
+Palla,Medium,Fintech,Miami FL,8,NEW,Payouts cross-border + LPMs en mercados receptores,$14.5M Serie A (May'25); 30+ FI
+Parachute,Medium,DTC,Los Angeles CA,8,NEW,Routing + BNPL; dunning de cart-abandonment,Refoco en canal DTC 2024-25
+Passline,Medium,Event ticketing,Argentina,8,NEW,"Pix, cash vouchers, local cards + auth un API",
+Peerspace,Medium,Marketplace,San Francisco CA,8,NEW,Orquestación payout host + auth-rate,Escalando vs Swimply/Giggster
+Perelel,Medium,DTC,Los Angeles CA,8,NEW,Replenishment dunning + auth-rate; LPMs al expandir,$27M Prelude Growth (Nov'25)
+Phlur,Medium,DTC,Austin TX,8,NEW,Auth-rate + redundancia PSP en demanda viral,DTC +100% 2025; adquirida por TSG
+Pietra,Medium,Creator/Social,New York NY,8,NEW,Checkout global embebido + payout orchestration,Expansión más allá de creators
+Pika,Medium,Consumer AI,Palo Alto CA,8,NEW,Credit billing + failover PSP + LPMs intl,"$80M Serie B, crecimiento masivo"
+Pintu,Medium,Crypto exchange,Indonesia,8,NEW,Add acquirers + LPMs IDR on-ramp,
+Platzi,Medium,Edtech,Colombia,8,NEW,Cross-border subscriptions + retry + LPM,
+Plugsurfing,Medium,EV charging,Germany,8,NEW,Cross-border auth + LPMs + partner settlement,
+Pocket Gems,Medium,Gaming/Ent,Daly City CA,8,NEW,IAP→web store + auth lift,Monetización IAP continua
+Poe (Quora),Medium,AI,US/Global,8,NEW,"PSP redundancy behind Stripe, route subs off 30% IAP to web, orchestrate creator payouts","18M MAU, ~$190M 2026; 5 paid tiers + creator-payout; single-Stripe+IAP"
+PrizePicks,Medium,Gaming/Ent,Atlanta GA,8,YES,Smart routing para auth depósitos + LPMs,60%+ YoY; Allwyn compró 62.3% (Ene'26)
+Rebag,Medium,Marketplace,New York NY,8,NEW,Auth-rate high-ticket + rails payout seller,Serie E 2025; AI authentication
+Reframe,Medium,Health/Wellness,USA,8,NEW,IAP→web; retry en renovaciones anuales,Superó 3M users 2025
+Reverb,Medium,Marketplace,Chicago IL,8,NEW,Payouts two-sided + LPMs cross-border,"Marketplace gear global, compradores intl"
+Ripio,Medium,Crypto exchange,Argentina,8,NEW,Local on-ramp routing + failover,
+Ro,Medium,Healthtech,US/Global,8,NEW,High-AOV care subs tie failed-payment recovery directly to revenue + adherence,Retained Wegovy partnership (Jun'25); ~$370M GLP-1 rev
+Ruggable,Medium,DTC,Los Angeles CA,8,NEW,BNPL + LPMs cross-border + auth-rate,"Escaló >$100M, crecimiento intl"
+Runway,Medium,AI,US/Global,8,YES,Real local methods + multi-acquirer routing recover intl declines currency display can't fix,"$315M at $5.3B (Feb'26); Stripe-only, admits intl checkout drop-off"
+RVshare,Medium,Marketplace,Akron OH,8,NEW,Payouts owner + fraude en rentals de alto valor,Marketplace P2P RV grande
+Saily,Medium,eSIM,Lithuania,8,NEW,Recurring-billing churn reduction + cross-border auth,
+Second Dinner,Medium,Gaming/Ent,Irvine CA,8,NEW,IAP→web store D2C + smart routing,Monetización IAP Marvel Snap sostenida
+Sentry,Medium,SaaS,US/Global,8,NEW,PLG error-monitoring self-serve globally: renewal + overage auths = involuntary-churn fit,Hybrid tiered + usage-based overage w/ reserved capacity (2026)
+Sitch,Medium,Creator/Social,New York NY,8,NEW,Sub billing + auth-rate al escalar dating pago,$5M seed; dating AI emergente 2025
+Skool,Medium,Creator/Social,Austin TX,8,NEW,Smart routing + LPMs para billing comunidad,Adopción rápida creator-community 2025
+Strike,Medium,Fintech,Chicago IL,8,NEW,Card-auth routing en buy-ins + LPMs corredores,Entró a crypto lending 2025
+Supabase,Medium,Dev,US/Global,8,YES,"Open-source backend, self-serve usage Cloud, global devs: routing + failover",Crossed 1M databases; serverless-Postgres consolidation
+Surfshark,Medium,VPN/SaaS,Netherlands,8,NEW,Rebill auth optimization + failover + LPMs emergentes,
+Sympla,Medium,Event ticketing,Brazil,8,NEW,"Pix + card routing, surge redundancy, LPMs",
+Theorycraft Games,Medium,Gaming/Ent,Los Angeles CA,8,NEW,Web store D2C para cosméticos + LPMs globales,Ramp lanzamiento Supervive 2025
+Tia,Medium,Health/Wellness,New York NY,8,NEW,Billing membership recurrente + LPMs,Membership + virtual care escalando 2025
+Tiket.com,Medium,OTA,Indonesia,8,NEW,Orquestar LPMs Indonesia + auth routing,
+Titan,Medium,Fintech,New York NY,8,NEW,Auth de depósitos + failover PSP,"Serie B (a16z, Gen Catalyst)"
+Trade Coffee,Medium,DTC,New York NY,8,NEW,Payouts multi-roaster + routing subscripción; dunning,Adquirió Bean Box 2025
+Uphold,Medium,Fintech,New York NY,8,NEW,Failover PSP + LPMs para funding cross-border,Push card/rewards 2025-26
+Varo Bank,Medium,Fintech,San Francisco CA,8,NEW,Auth de depósitos card-funded + on-ramp orchestration,Recaudó $124M 2025
+Vegamour,Medium,DTC,Los Angeles CA,8,NEW,Dunning sub + card-updater en refills,GA $80M; Sephora 200+ doors
+Vivid Picks,Medium,Gaming/Ent,Chicago IL,8,NEW,Routing rails depósito + redundancia,Relanzó producto DFS
+Wallapop,Medium,C2C marketplace,Spain,8,NEW,LPMs + payout/escrow orchestration 3 mercados,
+Wego,Medium,Travel metasearch,UAE/SEA,8,NEW,Plug LPMs (+stablecoin) + route regional PSPs,
+WhyDonate,Medium,Charity/crowdfunding,Netherlands,8,NEW,Un API LPMs + routing 117 países,
+WinZO,Medium,Real-money skill,India,8,NEW,UPI + payouts orchestration + fraude/chargeback,
+Workana,Medium,Freelance marketplace,Argentina,8,NEW,Marketplace payouts + multi-country collection,
+Yellow Card,Medium,Crypto on-ramp,Nigeria,8,NEW,Multi-country acquirer + LPM orchestration,
+Activision Blizzard,Enterprise,Gaming,US/Global,7,YES,"Massive global microtxn across CoD/Diablo: redundancy, LPMs, post-ruling direct-billing path",Shut CoD Warzone Mobile (May'25); console/PC microtxn at scale
+Airtable,Enterprise,SaaS,US/Global,7,NEW,Global freemium→paid self-serve seats: auth-rate lift + dunning on high-volume renewals,"$1.4B raised, $11.6B valuation, 500K+ orgs (Jan'26)"
+Arco Platform,Enterprise,Edtech,Brazil,7,NEW,Recurring billing orchestration + retry,
+Aristocrat / Product Madness,Enterprise,Gaming,US/Global,7,NEW,"Social-casino IAP + fraud w/ no orchestrator: routing, failover, future web-store migration","Top-grossing social casino; high IAP, no public D2C"
+AvantStay,Enterprise,Travel,US/Global,7,NEW,High-ticket luxury acutely auth-sensitive: smart routing + retry recover declined reservations + payouts,"~2,300 luxury properties 140+ cities; $5B+ AUM"
+Avelo Airlines,Enterprise,Travel,US/Global,7,NEW,Fast-scaling LCC w/ new Caribbean/MX: one orchestration layer vs building multi-PSP infra,Expanded to 4 intl destinations (Jamaica/MX/DR/Bahamas)
+Badoo,Enterprise,Dating/social,UK,7,NEW,Failed-renewal recovery + LatAm LPMs,
+Bild (Axel Springer),Enterprise,News/publishing,Germany,7,NEW,Dunning + SEPA/LPM routing para cortar churn,
+Blinkit (Eternal),Enterprise,Q-commerce,India,7,NEW,UPI routing + payout orchestration,
+Bloomberg Media,Enterprise,Streaming,US/Global,7,NEW,Auth-rate + retry orchestration to protect renewals through steep price increase,Raised annual digital sub 33% ($299→$399) for 2025
+Cebu Pacific,Enterprise,Airline,Philippines,7,NEW,SEA LPM/cash-rail coverage + auth optimization,
+Costa Coffee,Enterprise,Coffee chain,UK/Global,7,NEW,Multi-country LPM + loyalty/stored-value rails,
+Coupang Eats,Enterprise,Food delivery,South Korea,7,NEW,Korea LPM + courier payouts + redundancia,
+Creditas,Enterprise,Fintech lending,Brazil,7,NEW,Recurring repayment + disbursement payouts,
+Datadog,Enterprise,SaaS,US/Global,7,YES,Per-host usage billing w/ self-serve entry; growing intl base: cross-border cost + routing,FY26 8-K flags shifting geographic earnings mix (intl growth)
+Daybreak (EG7),Enterprise,Gaming,US/Global,7,NEW,Margin pressure across legacy sub/microtxn MMOs: cost reduction + auth uplift + reduced PCI = P&L pitch,Q2'25 rev -7%; margin pressure across subscription MMOs
+Deel,Enterprise,Marketplace,US/Global,7,NEW,Orchestrate inbound funding + FX across 150 ctys to cut PSP/FX cost (confirm card volume),$22B annual payroll 150+ ctys; USDC payroll + Coinbase withdrawals
+DiDi Food,Enterprise,Food delivery,LatAm,7,NEW,LatAm LPM (Pix/voucher) + payouts,
+Ethiopian Airlines,Enterprise,Airline,Ethiopia,7,NEW,African mobile-money/LPM + multi-currency + redundancia,
+Fiverr,Enterprise,Marketplace,US/Global,7,NEW,Reduce processing cost + lift cross-border buyer auth via multi-PSP routing,"Global freelancer marketplace, 5%+ fees, two-sided [structural]"
+Gearbox (Take-Two),Enterprise,Gaming,US/Global,7,NEW,Fresh AAA live-service w/ global PC spend: power direct cosmetics/DLC web store w/ cross-PSP routing,Borderlands 4 launched Sep'25 w/ paid DLC + live-service
+Gol Linhas Aereas,Enterprise,Airline,Brazil,7,NEW,Pix/Boleto + installment routing Brazil,
+HubSpot,Enterprise,SaaS,US/Global,7,YES,PLG-rooted self-serve subs worldwide: auth-rate + dunning on tiered renewals,Eliminated free CRM plan (Jun'25); contact-tiered self-serve
+Jones Road Beauty,Enterprise,DTC,US/Global,7,NEW,"High-growth DTC beauty scaling omnichannel: resilient checkout, subscription, path to intl LPMs",Most viral beauty 2025; 3x retail store count 2026
+Kasa Living,Enterprise,Travel,US/Global,7,NEW,Roll-up of distressed competitors = multiple inherited stacks to unify + failover + owner payouts,$70M Series C (Aug'25); absorbing Sonder properties + Mint House
+Kindred (FDJ United),Enterprise,iGaming,Sweden/France,7,NEW,Cross-PSP routing + LPMs + auth optimization,
+Le Monde,Enterprise,News/publishing,France,7,YES,"SEPA + francophone LPMs, churn recovery",
+Liquid Death,Enterprise,DTC,US/Global,7,NEW,Fast-scaling DTC+retail CPG entering new categories: consolidate checkout/subscription + prep intl,New Big Geyser distribution (Oct'25); entering energy drinks 2026
+Loggi,Enterprise,Logistics,Brazil,7,NEW,Payout orchestration + collection redundancy,
+Mercury,Enterprise,Fintech,US/Global,7,NEW,"As it builds own rails post-charter: orchestrate card deposits, payouts, multi-acquirer redundancy",$200M Series D at $5.2B after OCC charter (Apr'26); building payments infra
+Miniclip,Enterprise,Mobile F2P,Switzerland,7,NEW,D2C web billing + global LPMs,
+NeoGames / Aristocrat Interactive,Enterprise,iGaming/iLottery,Israel,7,NEW,LPM + routing flujos regulados,
+NH Hotel Group,Enterprise,Hotels,Spain,7,NEW,Multi-acquirer redundancy + LPMs Europe/LatAm,
+Noom,Enterprise,Healthtech,US/Global,7,NEW,Reduce involuntary churn on high-ticket recurring health subs; add LPMs for expansion,Top wellness/weight-loss player in 19.7% CAGR market
+Norwegian Cruise Line Holdings,Enterprise,Cruise,US,7,NEW,LPMs por mercado + auth routing high-value,
+Octopus Energy,Enterprise,Smart-energy sub,UK,7,NEW,Involuntary-churn recovery debits + multi-country PSP,
+Parimatch,Enterprise,iGaming,Cyprus,7,NEW,Card-auth routing + redundancia deposit approval,
+Photoroom,Enterprise,SaaS,US/Global,7,YES,Single API for global subscription billing + IAP-to-web migration as ARR scales,"~$50M ARR target, 20M downloads, e-commerce focus"
+Picsart,Enterprise,Streaming,US/Global,7,YES,Web checkout + global LPMs to escape IAP on heavily intl app base,30+ languages mobile+web; large intl consumer base
+Postman,Enterprise,SaaS,US/Global,7,YES,Self-serve global dev base pushed onto paid tiers = new card-auth volume,Cut free plan to 1 user (Mar'26); API-call metered tiers
+Princess Polly,Enterprise,DTC,US/Global,7,NEW,Cross-border fashion DTC w/ AU/US footprint: unified multi-region checkout + routing,Continued US store rollout; AU-origin heavy US ops
+Quizlet,Enterprise,Edtech,US/Global,7,YES,Localized LPMs + auth routing to convert the intl surge into Quizlet Plus,"200-400% intl new-user growth amid AI pivot, ~$139M rev"
+Rakuten,Enterprise,E-comm/ecosystem,Japan,7,YES,Japanese LPMs + cross-border routing + redundancia,
+Reformation,Enterprise,DTC,US/Global,7,NEW,Growing apparel DTC expanding intl: LPMs + cross-border auth optimization,Fast-growing DTC fashion scaling [structural]
+Schibsted,Enterprise,News/publishing,Norway,7,NEW,Cross-Nordic routing + dunning,
+ShopeeFood,Enterprise,Food delivery,SEA,7,NEW,SEA LPM redundancy + payment routing,
+Sportingbet,Enterprise,iGaming,UK,7,NEW,Card-auth routing + LPM orchestration,
+Superhuman,Enterprise,SaaS,US/Global,7,YES,Consumer+team self-serve subs globally: renewal churn recovery + auth-rate,"Grammarly rebranded to Superhuman (Oct'25), $13B mark"
+Tabby,Enterprise,Fintech BNPL,UAE,7,NEW,Card-acceptance routing + acquirer redundancy,
+Takealot,Enterprise,E-comm/q-commerce,South Africa,7,NEW,SA LPMs + marketplace/courier payouts + redundancia,
+The Funded Trader,Enterprise,Fintech,US/Global,7,NEW,Firm whose near-death was payout failure = textbook payout orchestration + redundancy buyer,cTrader US approval (May'25); rebuilding after payout collapse
+ThredUp,Enterprise,Marketplace,US/Global,7,NEW,New P2P + RaaS = true two-sided payments operator: seller payouts + per-brand flows one integration,Launched P2P 'Direct Listing' beta (Jun'26); stock +340% 2025
+TrueID,Enterprise,OTT/video,Thailand,7,NEW,SEA LPM routing + carrier-billing orchestration,
+Turo,Enterprise,Mobility,US/Global,7,YES,Marketplace payouts to ~170k hosts on single Stripe: redundancy/failover + routing leverage,Acquired Kyte (Jul'25); US/UK/CA/AU/FR; cost-focused after layoffs
+Udemy,Enterprise,Edtech,US/Global,7,YES,Live transactional→subscription pivot = moment to install billing orchestration,"Consumer sub rev +44%, paid subs +102% YoY FY25; pivot to recurring"
+United Airlines,Enterprise,Travel,US/Global,7,YES,Massive global footprint = fragmented-acquirer problem; routing/redundancy on high-value intl tickets,2026 expansion: Croatia/Italy/Scotland/Spain/Bangkok/Central America
+Upstox,Enterprise,Brokerage,India,7,NEW,UPI/card deposit-auth routing,
+Upwork,Enterprise,Marketplace,US/Global,7,YES,Orchestrate global collections + freelancer payouts to close failed-payment gap + reduce PSP cost,"796K active clients, $4B+ spend, 180+ ctys [structural]"
+VietJet Air,Enterprise,Airline,Vietnam,7,NEW,APAC LPM breadth + cross-border routing,
+Washington Post,Enterprise,Streaming,US/Global,7,NEW,Dunning + LPMs to support intl digital-subscriber growth + bundle launches,News-sub sector growing; bundling/tiering push
+Wayfair,Enterprise,Marketplace,US/Global,7,YES,Large home-goods marketplace w/ cross-border flows: routing/cost-reduction + LPM target,Named partner using PingPong for cross-border (Mar'25)
+Wise (US),Enterprise,Fintech,US/Global,7,NEW,Increasingly card-led: card-acquiring auth optimization + redundancy (heavy in-house = longer sell),Nasdaq primary listing (May'26); card spend $44B +37%
+Zepz,Enterprise,Fintech,US/Global,7,NEW,"Cost pressure across 4,000+ corridors: cross-border cost reduction + PSP consolidation = efficiency pitch",€152M HSBC facilities but cut 20% staff; cost-discipline mode
+1stDibs,Medium,Marketplace,New York NY,7,YES,Auth high-ticket + LPMs/payouts dealer cross-border,"Luxury high-AOV global, compradores intl"
+222,Medium,Creator/Social,Los Angeles CA,7,NEW,Smart routing + LPMs para eventos IRL de pago,Momentum IRL-social
+Acely,Medium,Edtech,USA,7,NEW,Orquestación para college-bound global,Nuevo AI tutor ganando share 2025
+Albert,Medium,Fintech,Los Angeles CA,7,NEW,Orquestación instant-disbursement + auth de depósitos,Nueva ronda (Sep'25)
+Albo,Medium,Neobank,Mexico,7,NEW,Card top-up routing + acquirer redundancy,
+App Academy,Medium,Edtech,San Francisco CA,7,NEW,Orquestar PSPs installment/ISA + reducir fallos,Modelo ISA/installment 2025
+Balance (Elevate Labs),Medium,Health/Wellness,San Francisco CA,7,NEW,IAP→web; dunning en renovaciones anuales,App meditación $69.99/yr
+Betr,Medium,Gaming/Ent,Miami FL,7,NEW,Routing de depósitos + redundancia,Crecimiento activo 2025-26
+Blissim,Medium,Subscription beauty,France,7,NEW,Dunning + routing recover failed charges + LPMs,
+Branch,Medium,Fintech,Minneapolis MN,7,NEW,Push-to-card payout routing con failover,Lanzó plataforma EWA 2025
+Busuu,Medium,Edtech,UK,7,NEW,Local methods + dunning para usuarios no-card,
+Catchplay+,Medium,OTT/video,Taiwan,7,NEW,SEA LPMs + failover,
+Centr,Medium,Fitness,US/Global,7,NEW,LPMs + IAP→web to defend margins as it scales globally,2025 content expansion + HYROX partnership; PE-backed ~$200M
+Chalkboard Fantasy,Medium,Gaming/Ent,USA,7,NEW,Orquestación rail depósito + redundancia,Plataforma DFS en ascenso 2025-26
+Chowdeck,Medium,Food delivery,Nigeria,7,NEW,Nigeria LPM + courier payouts + scale,
+Civitatis,Medium,Tours & activities,Spain,7,NEW,LatAm/EU LPMs + cross-border + supplier payouts,
+Clapper,Medium,Creator/Social,Dallas TX,7,NEW,Failover + LPMs para tipping/gifting en escala spiky,1.4M downloads en una semana (Ene'25)
+Cleo,Medium,Fintech,US/Global,7,NEW,Orchestrate card-funded top-ups + instant disbursements: raise auth + add redundancy across US+UK,ARR ~$300M +118% YoY; relaunched UK 2026
+Coffee Meets Bagel,Medium,Dating,US/Global,7,NEW,Cost-reduction routing + Asia/LatAm LPMs improve unit economics,~101 staff 6 continents; 4th highest-grossing dating in SE Asia
+Copper Banking,Medium,Fintech,Seattle WA,7,NEW,Auth de top-ups card-funded across PSPs,350K+ users
+Crehana,Medium,Edtech,Peru,7,NEW,Cross-border subscriptions + dunning,
+Crown Coins Casino,Medium,Gaming/Ent,USA,7,NEW,Redundancia PSP coin-purchase + chargeback,Top-3 trusted sweeps 2025-26
+Crusoe,Medium,AI,US/Global,7,NEW,Scaling cloud ARR + enterprise contracts globalizing: unified cross-border billing + redundancy,$1.37B Series E at $10B (Oct'25); cloud ARR +150% YoY
+Dave,Medium,Fintech,US/Global,7,NEW,ExtraCash disbursements + card-funded Checking growing: orchestrate payouts + lift top-up auth,Q1'26 ExtraCash +37% to $2.1B; 2025 rev +59.7% to $554M
+Daybreak Game Co.,Medium,Gaming/Ent,San Diego CA,7,NEW,Sub billing + LPMs globales + recovery,Absorbió Singularity 6 (2024-25)
+Daydream,Medium,AI,US/Global,7,NEW,"Conversational checkout across 8k brands: smart routing, redundancy, global LPMs, anti-fraud","Public-beta chat shopping agent + iPhone app (Nov'25); 8,000+ brands"
+Descript,Medium,SaaS,US/Global,7,YES,New usage billing + global creators: local methods + routing,~$95-110M ARR; billing overhaul to credits/minutes (Sep'25)
+Devsisters,Medium,Mobile gacha,Korea,7,NEW,Web-store billing + LPMs + chargeback,
+Dippy AI,Medium,Consumer AI,USA,7,NEW,IAP→web + auth intl,Activo 2026
+Dropout,Medium,Gaming/Ent,Los Angeles CA,7,NEW,Auth-rate subscripción + decline recovery,Fuerte crecimiento subscriber 2024-25
+Eden (Try Eden),Medium,Health/Wellness,USA,7,NEW,Dunning en sub mensual GLP-1; escapar card-only,Programa GLP-1 escalando 2025
+Encantos,Medium,Edtech,Culver City CA,7,NEW,"LPMs LatAm (Pix, OXXO) para subs de padres",Sub rev supera retail 2025
+Events.com,Medium,Marketplace,San Diego CA,7,NEW,Payouts organizer + routing multi-PSP,$200M GEM facility 2025
+Evolve,Medium,Marketplace,Denver CO,7,NEW,Payouts host + optimización checkout,Modelo lower-fee host = volumen payout
+Faces (Chalhoub),Medium,DTC beauty,UAE,7,NEW,GCC LPMs + cross-border routing,
+Friend,Medium,Consumer AI,USA,7,NEW,IAP→web + billing hardware+sub orchestration,Push consumer 2025-26
+Frubana,Medium,B2B food marketplace,Colombia,7,NEW,B2B recurring collection + supplier payouts,
+Function Health,Medium,Healthtech,US/Global,7,NEW,Decline-recovery + routing to defend annual-membership renewal economics,"$298M Series B at $2.5B (Nov'25); ~200k members, $100M run-rate"
+Fundrise,Medium,Fintech,Washington DC,7,NEW,Auth de account-funding + payouts en distribuciones,Inc 5000 (Ago'25); $770M JPM facility
+Future,Medium,Health/Wellness,USA,7,NEW,Dunning + retry en subs coaching premium,Cerró Serie B Ene 2025
+Gametime,Medium,Marketplace,San Francisco CA,7,YES,Auth checkout mobile + payouts seller,Secondary ticketing mobile-first
+Geneva,Medium,Creator/Social,Los Angeles CA,7,NEW,Sub + LPM rails al monetizar comunidades,Interés VC en comunidades nicho
+GOAT,Medium,Marketplace,Los Angeles CA,7,YES,LPMs cross-border + payouts two-sided,"Marketplace sneaker global, LPMs intl"
+Grand Games,Medium,Hybrid-casual,Turkey,7,NEW,Web-store billing + LPMs desde el inicio,
+GridRival,Medium,Gaming/Ent,USA,7,NEW,Routing depósito/payout + LPMs,Crecimiento nicho
+Gumroad,Medium,Creator,US/Global,7,NEW,"As MoR w/ global creators on thin stack: multi-PSP routing, redundancy, broader payout rails",Became MoR on every txn (Jan'25); bank transfer to 100+ ctys
+Habi,Medium,Proptech,Colombia,7,NEW,Big-ticket auth + payout orchestration,
+Headway,Medium,Health/Wellness,New York NY,7,NEW,Routing + LPMs al escalar therapy consumer-pay,$125M Serie C (Spark) 2025
+Heritage Auctions,Medium,Marketplace,Dallas TX,7,NEW,Routing pago high-ticket + payouts consignor,Payouts collectible alto valor
+Hoplon,Medium,F2P publisher,Brazil,7,NEW,LatAm LPMs (Pix/boleto) + global routing,
+Hungryroot,Medium,Grocery sub,US,7,NEW,Subscriptions/dunning + PSP redundancy,
+InnoGames,Medium,Browser/mobile,Germany,7,NEW,Orquestar LPMs + auth (web checkout existe),
+January AI,Medium,Health/Wellness,USA,7,NEW,IAP→web + retry en subs metabólicas,App CGM/metabólica activa 2025
+Jeeves,Medium,Fintech corp cards,US/LatAm,7,NEW,Multi-country card rails + redundancia,
+Justo,Medium,Online grocery,Mexico,7,NEW,Recurring checkout + LPM (OXXO/SPEI),
+Justos,Medium,Insurtech,Brazil,7,NEW,Recurring premium billing + dunning,
+Kidizen,Medium,Marketplace,Minneapolis MN,7,NEW,Rails payout seller + optimización checkout,Flujos payout seller nicho
+Kindbody,Medium,Health/Wellness,New York NY,7,NEW,LPMs + installments para fertility high-ticket,"27 clínicas, 21 ciudades 2025"
+Lex,Medium,Creator/Social,New York NY,7,NEW,Sub billing + LPMs para monetización nicho,Momentum Gen Z 2025
+Lezhin Comics,Medium,Webtoon/comics,Korea,7,NEW,IAP→web + global LPMs,
+LINEMAN (Wongnai),Medium,Food delivery,Thailand,7,NEW,Thailand LPM (PromptPay) + courier payouts,
+Masomo,Medium,Mobile mid-core,Turkey,7,NEW,Routing + LPMs + web-store D2C,
+Maven,Medium,Edtech,Austin TX,7,NEW,Checkout comprador global + payouts instructor,"$9M ventas en 18mo, 300+ cohorts 2025"
+Mindful Chef,Medium,Meal-kit sub,UK,7,NEW,Auth-rate + involuntary-churn reduction renewals,
+Nebula,Medium,Gaming/Ent,USA,7,NEW,Sub billing + dunning/recovery + LPMs globales,"680k+ subs pagos, escalando"
+Numerade,Medium,Consumer AI,Los Angeles CA,7,NEW,IAP leakage + LPM intl para subs estudiantes,Expansión AI tutor 2024; push global
+Oar Health,Medium,Health/Wellness,New York NY,7,NEW,Retry + redundancia en subs Rx recurrentes,Tratamiento alcohol escalando 2025
+OfferUp,Medium,Marketplace,Bellevue WA,7,NEW,Payouts seller + fraude en transacciones shipped,Escala post-merger (recommerce 2025)
+OpenRouter,Medium,AI,US/Global,7,NEW,Marketplace on thin 5% of global inference spend lives/dies on auth + method coverage,"$50M ARR (Mar'26); $113M Series B at $1.3B; 1M+ devs, 5% margin"
+Pacaso,Medium,Marketplace,San Francisco CA,7,NEW,Routing pago alto valor + failover en transacciones grandes,Mayor Reg A+ inmobiliario 2025
+Paribu,Medium,Crypto exchange,Turkey,7,NEW,LPM + card on-ramp routing TRY,
+Partiful,Medium,Creator/Social,San Francisco CA,7,NEW,LPMs + routing al añadir features de pago/ticketing,"+2M users 2025, +400% YoY MAU"
+Paycell,Medium,Fintech wallet,Turkey,7,NEW,Card top-up routing + cross-border LPMs,
+Pier,Medium,Digital insurance,Brazil,7,NEW,Reduce decline churn + métodos brasileños,
+Pixel Federation,Medium,Mobile F2P,Slovakia,7,NEW,Routing + web-store D2C + LPMs,
+Podimo,Medium,Podcast/audio,Denmark,7,NEW,Cross-market LPMs + IAP→web,
+Pratilipi,Medium,Content/audio,India,7,NEW,UPI optimization + dunning,
+PredictionStrike,Medium,Gaming/Ent,USA,7,NEW,Orquestación rail depósito + fraude,Growth-stage financiado
+Pret A Manger,Medium,Coffee/food,UK,7,NEW,Subscription/dunning + multi-country LPM,
+Privalia,Medium,Fashion flash-sale,Brazil/Mexico,7,NEW,Multi-country routing + member retry/dunning,
+Proton,Medium,Privacy SaaS,Switzerland,7,NEW,Global LPM coverage + PSP redundancy 127 países,
+Public.com,Medium,Fintech,New York NY,7,NEW,Auth de depósitos card + LPMs globales,$174M rev disclosed 2025
+Rain,Medium,Fintech,Los Angeles CA,7,NEW,Push-to-card payout orchestration + redundancia,$75M Serie B (Abr'25); 2.5M empleados
+River Financial,Medium,Fintech,Columbus OH,7,NEW,Card-auth en buys recurrentes + redundancia PSP,Crecimiento consumer estable
+Rollic Games,Medium,Hyper-casual,Turkey,7,NEW,Routing + web-store D2C casual,
+Rootine,Medium,Health/Wellness,USA,7,NEW,Dunning + routing en subs vitaminas personalizadas,$10M Serie A 2025
+Sarwa,Medium,Investing/neobank,UAE,7,NEW,Deposit-auth routing card funding,
+Scandic Hotels,Medium,Hotels,Sweden,7,NEW,Nordic LPMs + PSP redundancy direct booking,
+Sesame,Medium,Consumer AI,USA,7,NEW,App IAP early → web-billing + dunning setup,Lanzó app iOS May'26
+Shory,Medium,Digital motor insurance,UAE,7,NEW,Failover + routing auto-renewal premiums GCC,
+SoloLearn,Medium,Edtech,Pleasanton CA,7,NEW,Sub billing app+web + métodos locales + churn recovery,"Escala consumer-app, learners intl 2025"
+Spinomenal,Medium,RMG,Israel,7,NEW,Multi-market LPM + routing deposits regulados,
+Stationhead,Medium,Creator/Social,New York NY,7,NEW,LPMs + routing para compras fan / superfan global,Eventos fan streaming escalando
+Step,Medium,Fintech,Palo Alto CA,7,NEW,Auth de top-ups card-funded + failover PSP,$300M debt facility
+Stork Club,Medium,Health/Wellness,USA,7,NEW,Billing recurrente + high-ticket redundancia,Plataforma maternity escalando 2025
+Super Teacher,Medium,Consumer AI,USA,7,NEW,Dunning sub consumer + billing family-plan,Lanzamiento Disrupt 2025
+Swan Bitcoin,Medium,Fintech,Calabasas CA,7,NEW,Card-auth routing en buys recurrentes + on-ramp global,Serie C + Swan International (Oct'25)
+Synthesia,Medium,SaaS,US/Global,7,NEW,Global self-serve + renewals: involuntary churn + multi-region optimization,~$146M ARR (Sep'25); self-serve subscription tiers
+TaleMonster Games,Medium,Gaming/Ent,USA,7,NEW,IAP→D2C + auth lift temprano,Serie A 2025
+Tapps Games,Medium,Mobile gaming,Brazil,7,NEW,Web-store routing vs IAP fees + auth uplift,
+Tappytoon,Medium,Webtoon/comics,Korea,7,NEW,Small-ticket auth routing + IAP migration,
+Tidal (Block),Medium,Music/audio,Norway/US,7,NEW,IAP→web + auth routing,
+Tilting Point,Medium,Gaming/Ent,New York NY,7,NEW,Routing IAP cross-title + web-store D2C,Lanzó fondo UA $150M 2025
+Tonal,Medium,Fitness,US/Global,7,NEW,Processing-cost reduction + retry/dunning as a direct margin lever,$130M at reduced ~$550-600M valuation; profitability mandate
+Tonebase,Medium,Edtech,New Haven CT,7,NEW,"Checkout sub + lifetime, rails estudiante intl",Expansión eventos 2025
+Travelstart,Medium,OTA,South Africa,7,NEW,African LPMs/mobile money + failover + multi-currency,
+Treet,Medium,Marketplace,USA,7,NEW,Rails payout seller + auth checkout,Scaleup RaaS/recommerce
+Trove,Medium,Marketplace,Brisbane CA,7,NEW,Payouts trade-in two-sided via un API,Adquirió Recurate (2024) P2P payout
+Westwing,Medium,Home e-comm,Brazil,7,NEW,Subscriptions/dunning + LPM coverage,
+Wio Bank,Medium,Neobank,UAE,7,NEW,Top-up auth routing + PSP redundancy,
+Wooga,Medium,Mobile casual,Germany,7,NEW,Web-store migration + routing,
+Yatra,Medium,OTA,India,7,NEW,UPI/card routing + redundancia corporate,
+Zepto,Medium,Q-commerce,India,7,NEW,UPI optimization + redundancia + payouts,
+Mediaset Infinity,Enterprise,OTT/video,Italy,6,NEW,"SEPA + IT/ES LPMs, churn recovery",
+Tarte Cosmetics,Enterprise,DTC,US/Global,6,NEW,Global beauty: consolidate fragmented regional PSPs + broaden LPMs,Large DTC/retail beauty w/ global ambitions [structural]
+Aragon AI,Medium,Consumer AI,San Francisco CA,6,NEW,Usage-credit billing + auth intl + redundancia PSP,1.2M+ users 2025-26
+First Voyage,Medium,Consumer AI,USA,6,NEW,IAP→web + dunning sub foundation,$2.5M seed Dic'25
+Getir,Medium,Q-commerce,Turkey/EU,6,NEW,Turkey/EU LPM + payout orchestration,
+Gopuff,Medium,Q-commerce,US/UK,6,NEW,Cross-border PSP redundancy + courier payouts,
+Granola,Medium,Consumer AI,USA,6,NEW,Prosumer sub billing + LPMs + decline recovery,Top consumer AI productivity 2025-26
+Grupo Vidanta,Medium,Resort/cruise,Mexico,6,NEW,High-ticket auth routing + SPEI/installment LPMs,
+Hurb,Medium,OTA,Brazil,6,NEW,Pix/installment routing + PSP redundancy,
+Lemon Slice,Medium,Consumer AI,USA,6,NEW,Credit billing + routing intl al escalar,$10.5M seed Dic'25
+Memberful,Medium,Creator/Social,USA,6,NEW,Redundancia PSP + auth-rate en subs membership,Demanda membership-economy
+Outlier.org,Medium,Edtech,USA,6,NEW,Checkout tuition consumer + financing + decline recovery,Rev consumer ~$15M 2025
+Particle,Medium,Consumer AI,USA,6,NEW,Sub consumer dunning + auth intl,"Top news app, escalando 2025-26"
+Picnic,Medium,Online grocery,Netherlands,6,NEW,Multi-country EU LPM (iDEAL/SEPA) + redundancia,
+Pico,Medium,Creator/Social,New York NY,6,NEW,Sub billing + LPMs para monetización de miembros,$6.5M raise
+StellarFi,Medium,Fintech,Austin TX,6,NEW,Recuperar cargos sub fallidos via smart retry,Crecimiento early-stage
+Wispr Flow,Medium,Consumer AI,USA,6,NEW,Sub billing self-serve + auth intl + dunning,Adopción prosumer fuerte 2025-26
+Yoogis Closet,Medium,Marketplace,Portland OR,6,NEW,Payouts seller + optimización checkout,Líder US luxury-resale 2025
