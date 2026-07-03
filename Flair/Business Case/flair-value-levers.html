@@ -21,7 +21,7 @@
   .wordmark .dots{ color:var(--blue); }
   h1{ color:var(--blue); font-size:58px; line-height:1.12; font-weight:800; margin:18px 0 0 36px; max-width:1450px; }
 
-  .grouprow{ display:grid; grid-template-columns:210px 1fr 1fr; gap:0; margin:34px 0 0 36px; align-items:end; }
+  .grouprow{ display:grid; grid-template-columns:210px 1fr 1fr; gap:0; margin:22px 0 0 36px; align-items:end; }
   .grouphdr{ text-align:center; color:var(--grey); font-size:24px; font-weight:600; padding-bottom:8px; position:relative; }
   .grouphdr .bg{ background:var(--lilac); padding:6px 40px; border-radius:8px 8px 0 0; display:inline-block; }
   .grouphdr::after{ content:""; position:absolute; left:14px; right:14px; bottom:0; height:2px; background:var(--blue); }
@@ -38,14 +38,15 @@
   .colhead .name{ color:var(--blue); font-weight:800; font-size:29px; line-height:1.15; }
   .badge{ position:absolute; top:20px; right:0; width:40px; height:40px; border-radius:50%; background:var(--blue); color:#fff; font-weight:700; font-size:22px; display:flex; align-items:center; justify-content:center; }
   .metric{ font-size:46px; font-weight:800; color:#111; padding:14px 0 8px; white-space:nowrap; }
-  .desc{ color:#4b5563; font-size:20px; line-height:1.34; padding-bottom:24px; min-height:150px; }
-  .impact{ color:var(--blue); font-weight:800; font-size:40px; text-align:center; padding:22px 0; border-top:1px solid var(--lilacline); }
+  .desc{ color:#4b5563; font-size:20px; line-height:1.32; padding-bottom:18px; min-height:126px; }
+  .impact{ color:var(--blue); font-weight:800; font-size:38px; text-align:center; padding:16px 0; border-top:1px solid var(--lilacline); }
   .impact.cons{ background:#FBFBFF; }
+  .impact.avg{ background:#EEF0FF; }
 
   .assume{ margin:0 0 0 236px; background:#EEF3EE; color:#374151; font-size:19px; padding:16px 26px; border-radius:6px; }
   .assume b{ color:#111; }
 
-  .banner{ text-align:center; color:var(--blue); font-weight:800; font-size:30px; line-height:1.3; margin:26px 120px 0 236px; padding-top:22px; border-top:2px solid var(--blue); position:relative; }
+  .banner{ text-align:center; color:var(--blue); font-weight:800; font-size:29px; line-height:1.28; margin:16px 120px 0 236px; padding-top:16px; border-top:2px solid var(--blue); position:relative; }
   .banner::before{ content:""; position:absolute; top:-9px; left:50%; transform:translateX(-50%); width:34px; height:16px; background:var(--blue); border-radius:9px; }
   .pageno{ position:absolute; left:34px; bottom:20px; color:#9ca3af; font-size:20px; }
 </style>
@@ -102,6 +103,14 @@
       <td class="cell"><div class="impact cons">+$2.2M/yr</div></td>
       <td class="cell"><div class="impact cons">+$0.22M/yr</div></td>
       <td class="cell"><div class="impact cons">+$0.25M/yr</div></td>
+    </tr>
+
+    <tr>
+      <td class="rowlabel sub">Average</td>
+      <td class="cell first"><div class="impact avg">+$5.8M/yr</div></td>
+      <td class="cell"><div class="impact avg">+$2.9M/yr</div></td>
+      <td class="cell"><div class="impact avg">+$0.29M/yr</div></td>
+      <td class="cell"><div class="impact avg">+$0.31M/yr</div></td>
     </tr>
 
     <tr>
