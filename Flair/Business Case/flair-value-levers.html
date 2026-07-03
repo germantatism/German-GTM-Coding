@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --blue:#3B4BF9;
+    --ink:#1a1a2e;
+    --lilac:#F4F4FE;
+    --lilacline:#E6E6FA;
+    --grey:#6b7280;
+    --cardbg:#FAFAFF;
+  }
+  html,body{ width:1920px; height:1080px; font-family:-apple-system,"Segoe UI",Arial,sans-serif; color:var(--ink); background:#fff; }
+  .slide{ position:relative; width:1920px; height:1080px; padding:60px 80px 40px 90px; }
+  .accent{ position:absolute; left:78px; top:60px; width:6px; height:150px; background:var(--blue); border-radius:3px; }
+  .pill{ display:inline-block; background:var(--blue); color:#fff; font-weight:700; font-size:24px; padding:9px 26px; border-radius:22px; margin-left:36px; }
+  .topbar{ display:flex; justify-content:space-between; align-items:flex-start; }
+  .wordmark{ font-size:44px; font-weight:800; letter-spacing:-1px; color:#111; }
+  .wordmark .dots{ color:var(--blue); }
+  h1{ color:var(--blue); font-size:58px; line-height:1.12; font-weight:800; margin:18px 0 0 36px; max-width:1450px; }
+
+  .grouprow{ display:grid; grid-template-columns:210px 1fr 1fr; gap:0; margin:34px 0 0 36px; align-items:end; }
+  .grouphdr{ text-align:center; color:var(--grey); font-size:24px; font-weight:600; padding-bottom:8px; position:relative; }
+  .grouphdr .bg{ background:var(--lilac); padding:6px 40px; border-radius:8px 8px 0 0; display:inline-block; }
+  .grouphdr::after{ content:""; position:absolute; left:14px; right:14px; bottom:0; height:2px; background:var(--blue); }
+
+  table{ width:100%; border-collapse:separate; border-spacing:0; margin:2px 0 0 36px; table-layout:fixed; }
+  col.lbl{ width:200px; }
+  td,th{ vertical-align:top; padding:0; }
+  .rowlabel{ font-weight:800; font-size:26px; color:#111; padding:22px 24px 0 0; text-align:right; }
+  .rowlabel.sub{ font-weight:700; font-size:23px; }
+
+  .cell{ background:var(--cardbg); border-left:1px solid var(--lilacline); padding:0 26px; }
+  .cell.first{ border-left:1px solid var(--lilacline); }
+  .colhead{ padding-top:22px; position:relative; }
+  .colhead .name{ color:var(--blue); font-weight:800; font-size:29px; line-height:1.15; }
+  .badge{ position:absolute; top:20px; right:0; width:40px; height:40px; border-radius:50%; background:var(--blue); color:#fff; font-weight:700; font-size:22px; display:flex; align-items:center; justify-content:center; }
+  .metric{ font-size:56px; font-weight:800; color:#111; padding:14px 0 8px; }
+  .desc{ color:#4b5563; font-size:20px; line-height:1.34; padding-bottom:24px; min-height:150px; }
+  .impact{ color:var(--blue); font-weight:800; font-size:40px; text-align:center; padding:22px 0; border-top:1px solid var(--lilacline); }
+  .impact.cons{ background:#FBFBFF; }
+
+  .assume{ margin:0 0 0 236px; background:#EEF3EE; color:#374151; font-size:19px; padding:16px 26px; border-radius:6px; }
+  .assume b{ color:#111; }
+
+  .banner{ text-align:center; color:var(--blue); font-weight:800; font-size:30px; line-height:1.3; margin:26px 120px 0 236px; padding-top:22px; border-top:2px solid var(--blue); position:relative; }
+  .banner::before{ content:""; position:absolute; top:-9px; left:50%; transform:translateX(-50%); width:34px; height:16px; background:var(--blue); border-radius:9px; }
+  .pageno{ position:absolute; left:34px; bottom:20px; color:#9ca3af; font-size:20px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="accent"></div>
+  <div class="topbar">
+    <div class="pill">With Yuno</div>
+    <div class="wordmark"><span class="dots">⠿</span> yuno</div>
+  </div>
+  <h1>Platform-scale value levers: small performance lifts compound into meaningful impact</h1>
+
+  <div class="grouprow">
+    <div></div>
+    <div class="grouphdr"><span class="bg">Operational levers</span></div>
+    <div class="grouphdr"><span class="bg">Cost Levers</span></div>
+  </div>
+
+  <table>
+    <colgroup><col class="lbl"><col><col><col><col></colgroup>
+
+    <tr>
+      <td class="rowlabel">Lever</td>
+      <td class="cell first"><div class="colhead"><span class="badge">1</span><div class="name">Conversion uplift<br>(local rails)</div></div></td>
+      <td class="cell"><div class="colhead"><span class="badge">2</span><div class="name">Smart Routing &amp;<br>Retries</div></div></td>
+      <td class="cell"><div class="colhead"><span class="badge">3</span><div class="name">Processing cost<br>reduction</div></div></td>
+      <td class="cell"><div class="colhead"><span class="badge">4</span><div class="name">Run-ops<br>reduction</div></div></td>
+    </tr>
+
+    <tr>
+      <td class="rowlabel">How it works</td>
+      <td class="cell first">
+        <div class="metric">+2%</div>
+        <div class="desc">Routing card volume to local acquirers via scheme tokens lifts approval rates on Flair's 80% acceptance base and recovers cross-border declines.</div>
+      </td>
+      <td class="cell">
+        <div class="metric">+1%</div>
+        <div class="desc">Dynamic routing on real-time bank performance plus intelligent retries recovers valid transactions that a single static acquirer loses.</div>
+      </td>
+      <td class="cell">
+        <div class="metric">10 bps</div>
+        <div class="desc">Shifting volume to direct local rails compresses the effective MDR from 2.60% to 2.50% across $24M in monthly TPV.</div>
+      </td>
+      <td class="cell">
+        <div class="metric">2-3 FTE</div>
+        <div class="desc">Automated reconciliation and one Yuno integration replace 3 separate PSP builds ($64.8K each) and manual ops per new market.</div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="rowlabel sub">Conservative</td>
+      <td class="cell first"><div class="impact cons">+$4.3M/yr</div></td>
+      <td class="cell"><div class="impact cons">+$2.2M/yr</div></td>
+      <td class="cell"><div class="impact cons">+$0.22M/yr</div></td>
+      <td class="cell"><div class="impact cons">+$0.12M/yr</div></td>
+    </tr>
+
+    <tr>
+      <td class="rowlabel sub">Optimistic</td>
+      <td class="cell first"><div class="impact">+$7.2M/yr</div></td>
+      <td class="cell"><div class="impact">+$3.6M/yr</div></td>
+      <td class="cell"><div class="impact">+$0.36M/yr</div></td>
+      <td class="cell"><div class="impact">+$0.31M/yr</div></td>
+    </tr>
+  </table>
+
+  <div class="assume"><b>Assumptions</b>&nbsp;&nbsp;Base case ≈ $9.05M/yr on 120K monthly trx, $200 ATV, $24M TPV, 2.60% MDR. Illustrative ±25% ranges; +3% approval uplift split 2% local rails / 1% retries. Flair-specific impact validated in pilot.</div>
+
+  <div class="banner">The estimated annual value can be monetized much earlier than with alternative solutions thanks<br>to an expected time to market of 4-6 weeks leveraging Yuno's existing capabilities</div>
+
+  <div class="pageno">17</div>
+</div>
+</body>
+</html>
