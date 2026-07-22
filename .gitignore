@@ -12,3 +12,8 @@ venv/
 *.egg-info/
 dist/
 *.db
+
+# Google OAuth tokens + client secrets (never commit)
+.gdrive_token.json
+.slides_token.json
+client_secret_*.json
