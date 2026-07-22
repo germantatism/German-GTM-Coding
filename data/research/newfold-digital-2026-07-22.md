@@ -5,11 +5,11 @@
 
 ## EXECUTIVE SUMMARY
 
-Newfold Digital is the web-presence group formed in Feb 2021 from Endurance International (ex-NASDAQ: EIGI) and Web.com, billing **nearly 7 million customers** on recurring hosting and domain subscriptions through Bluehost, HostGator, Network Solutions, BigRock, ResellerClub and Crazy Domains. **PayU (India) is the only payment processor Newfold names anywhere in public documentation**; the US, Brazil and every other market run undisclosed acquirers behind at least nine distinct local method sets, with no orchestration layer found.
+Newfold Digital is the web-presence group formed in Feb 2021 from Endurance International (ex-NASDAQ: EIGI) and Web.com, billing **nearly 7 million customers** on recurring hosting and domain subscriptions through Bluehost, HostGator, Network Solutions, BigRock, ResellerClub and Crazy Domains. Newfold names **no processor in any legal or help document**, but its own production checkout bundle exposes the rails directly: **Worldpay, BillDesk and PayU on a single shared checkout serving nine brands**, with Network Solutions on a separate stack, Brazil on a WHMCS/Bradesco boleto rail, and three different fraud vendors split by brand. **No orchestration layer exists.** This is a multi-PSP, multi-fraud-vendor estate stitched per market, not a single-processor shop.
 
 The standout finding is that **Newfold publicly documents its own involuntary-churn mechanism**. Bluehost's help centre states that some issuers now require the CVV on recurring requests, that "it is illegal for Bluehost to store this number," and therefore **"some cards will work the first time but fail every subsequent time"** — with the only remedies offered being "using a different credit card or logging in every month to... pay your invoice manually." Separately, **"customers cannot store Indian payment methods on file or set up auto-renewals in India."**
 
-For a leveraged subscription business (~$3.5B debt, Moody's CFR **Caa1** citing "lower than expected revenue growth") where renewals are the lender-watched metric, recovered involuntary churn drops straight to the number that matters. Yuno's opening: network tokenization plus issuer-aware retries to replace a blunt 4-card cascade, and UPI AutoPay / Pix Automático to restore recurring billing in the two markets that are 29% of portfolio traffic.
+For a leveraged subscription business (~$3.5B debt, Moody's CFR **Caa1** citing "lower than expected revenue growth") where renewals are the lender-watched metric, recovered involuntary churn drops straight to the number that matters. Yuno's opening: network tokenization plus issuer-aware retries to replace a blunt 4-card cascade, routing across the three acquirers they already run, and UPI AutoPay to restore recurring billing in India. Note Brazil already has Pix Automático live, so the India gap is the sharp one.
 
 ---
 
@@ -84,12 +84,31 @@ Source: `https://www.similarweb.com/website/{domain}/` for each domain above.
 
 ### 3A. PSPs & Acquirers
 
-| Country/Region | PSP / Acquirer | Evidence Type | Source |
-|---|---|---|---|
-| **India (Bluehost, INR)** | **PayU** — "the payment gateway used is PayU" | **[Help Page]** — verified firsthand | [S3a] |
-| United States / global | **Not publicly named** | Absence across all help pages, filings, press releases | [S3a] |
-| Brazil (HostGator BR) | **Not publicly named** | hostgator.com.br/formas-de-pagamento names no processor | [S3b] |
-| All markets (predecessor) | **Plural, unnamed** — "our credit card processors", "merchant banks and payment processors" | **[SEC 10-K]** Endurance International FY2019 | [S3c] |
+**Breakthrough method.** Every live checkout is Cloudflare-403. The stack was recovered from Bluehost's **archived production checkout bundle** (`reg3-bundle.js` on `static.registration.bluehost.com`), retrieved via the Wayback Machine and gzip-decompressed to 2.05 MB. All strings below were **verified firsthand** by the analyst, not taken from a summary. Snapshot date **2024-05-25** unless noted.
+
+| Country/Region | PSP / Acquirer | Evidence (verbatim) | Type | Source |
+|---|---|---|---|---|
+| **Global / US (9-brand shared checkout)** | **Worldpay** | `worldpayFollowup:function(...){var s="".concat(eX(),"/cart/order/worldpay/")...}` and `"/cart/order/worldpayRedirect?capReturnURL="`. 14 occurrences | **[Source Code]** own order route | [S3g] |
+| **India (shared checkout)** | **BillDesk** | `billdeskOrder:function(...){var o="".concat(eX(),"/cart/order/billdesk")...}`; UI `htmlFor:"pay-with-billdesk"`. 73 occurrences | **[Source Code]** own order route | [S3g] |
+| **India (Bluehost, INR)** | **PayU / PayUbiz** | `function l8(){var e;return 66===$U()&&(e=JU("paymentProcessor")\|\|"payubiz"),e}` (brand 66 = `bluehostindia`) plus `PayUbiz_logo.png`. Independently confirmed on the **live** help page: "the payment gateway used is **PayU**" | **[Source Code]** + **[Help Page]** | [S3a] [S3g] |
+| **All 9 brands** | **PCI Pal** + in-house vault | `title:"PaaS - Credit Card (PCI Pal)"`; iframe `https://securepay.svcs.endurance.com/payment/cc-pcip_2.html?...tokenType=MULTI`; `paymentProcessor:"paas"` | **[Source Code]** card descoping, not an acquirer | [S3g] |
+| **Brazil (HostGator BR)** | **Banco Bradesco S.A. (237)** via **GatorPay / WHMCS** | Live boleto: `Banco Bradesco S.A. 237-2` · `Beneficiário HostGator Brasil LTDA` · `CNPJ 15.754.475/0001-40`; served from `/modules/gateways/gatorpay/` | **[Primary doc]** collection bank | [S3h] |
+| **Philippines / selected markets (Crazy Domains)** | **Dragonpay** | "you can also choose from several alternative payment options: PayPal, Maestro Debit Card, ZipPay, WebMoney, Alipay, UnionPay, Neteller and **Dragonpay** (selected countries only)" | **[Help Page]** live | [S4f] |
+| **AU / APAC (Crazy Domains, Vodien)** | **Dreamscape Networks International Pte Ltd** (SG) | "**5.1 Merchant Facilities** Our merchant facilities are provided/serviced via Dreamscape Networks International Pte Ltd" | **[T&C]** acquiring entity, not a gateway | [S3i] |
+| **ResellerClub (global)** | **Pay.pw** | "Debit/Credit Card payments via **Pay.pw**... Charge will be displayed as: **EIG\*ResellerClub**" | **[Official page]** archived | [S3j] |
+| **ResellerClub (Brazil)** | **EBANX** | "Transferência via **Ebanx** 2.75%" | **[Official page]** archived | [S3k] |
+| **Network Solutions / Web.com / Register.com** | **Not identified** | **Absent from the 9-brand map**, so they run a separate checkout stack entirely | Structural finding | [S3g] |
+| All markets (predecessor) | **Plural, unnamed** — "our credit card processors", "merchant banks and payment processors" | | **[SEC 10-K]** Endurance FY2019 | [S3c] |
+
+**The shared-checkout brand map (verbatim):**
+`{40:"ipage",45:"netfirms",46:"dotster",47:"domaincom",48:"mydomain",50:"hostgator",52:"bluehost",61:"justhost",66:"bluehostindia"}`
+One checkout, nine brands, three processors, no routing layer between them.
+
+**Fraud stack is also fragmented (all [Source Code], verified):** **Sift** (`if("hostgator"===n||"bluehost"===n)... faas-sift.js`), **iovation / TransUnion** (`iovation/loader.js`, `aci-transunion.js`), and **MaxMind** (`device.maxmind.com` on HostGator US checkout). Three vendors, split by brand.
+
+**Timeline:** Worldpay was **added between Oct 2021 and Mar 2024** (zero "worldpay" occurrences in the 2021-10-04 bundle; 14 by 2024-05). Newfold has changed acquirers recently, which means the stack is actively in play.
+
+**Newfold discloses none of this.** Its subprocessor list (updated 6 Jan 2026) names 38 vendors including WHMCS but **not one payment processor**, hiding them behind "Fraud detection and deterrence services." [S3l]
 
 **Do NOT conflate (verified merchant-side, not Newfold's own rail):**
 - **Razorpay** — 2021 partnership for *Bluehost customers'* online stores, not Bluehost's billing. [S3d]
@@ -100,7 +119,7 @@ Source: `https://www.similarweb.com/website/{domain}/` for each domain above.
 
 **No public evidence found.** Searched Spreedly, Primer, Gr4vy, CellPoint, APEXX against Newfold and every brand: zero company-specific hits. Also searched Cybersource, Worldpay, Chase Paymentech, Recurly, Zuora, Chargebee, Adyen, Stripe, Braintree, Checkout.com with no confirmed hit for Newfold's own processing outside India.
 
-**Checkout source-code inspection blocked:** bluehost.com/registration, secure.bluehost.com, networksolutions.com/cart, bigrock.in and bluehost.in all returned Cloudflare 403 interstitials. Apparent PSP keyword matches in those payloads were verified as false positives from the Cloudflare challenge.
+**Checkout source code was ultimately recovered** (see §3A) via the archived `reg3-bundle.js`, despite every live checkout returning Cloudflare 403. Note: apparent PSP keyword matches *inside the 403 challenge bodies themselves* are false positives from random base64 and were discarded. The bundle confirms three processors and **no orchestration vendor**: no Spreedly, Primer, Gr4vy, CellPoint or APEXX string appears anywhere in it.
 
 > ⚠️ MANUAL — DevTools: test card 4111 1111 1111 1111 | 02/30 | 123
 
@@ -136,7 +155,7 @@ Restricted cash held by merchant banks and processors as chargeback collateral: 
 | **US — Network Solutions** | **Apple Pay**, **Google Pay**, PayPal (legacy wallet only). Checks by post, renewals only | Official KB | [S4a] |
 | **US — HostGator** | PayPal (instant only; requires linked bank or card) | Official KB | [S4b] |
 | **India — Bluehost (INR)** | **UPI** (cart ≤ ₹1,00,000), **Net Banking**. Via **PayU**. Cart capped ₹2,50,000 | Official KB, verified firsthand | [S3a] |
-| **Brazil — HostGator** | **Pix**, **Boleto Bancário**, PayPal, cards (Visa, Mastercard, **Hipercard**, **Elo**). **Parcelamento to 12x** on annual/biennial/triennial, min R$100 | Official KB + pricing page | [S3b] [S4c] |
+| **Brazil — HostGator** | **Pix**, **Pix Automático / Pix Recorrente (LIVE)**, **Boleto Bancário**, PayPal, cards (Visa, Mastercard, **Hipercard**, **Elo**). **Parcelamento to 12x** on annual/biennial/triennial, min R$100 | Official KB + pricing page | [S3b] [S4c] [S4g] |
 | **Mexico — HostGator** | **OXXO**, **7-Eleven** cash, **Bancomer** transfer, PayPal | Official KB | [S4d] |
 | **Colombia — HostGator** | **PSE**, **Efecty** | Official KB | [S4e] |
 | **Chile — HostGator** | **Webpay**, **Khipu**, **ServiPag** | Official KB | [S4e] |
@@ -278,9 +297,9 @@ Bluehost's own customer-facing posture: "**Bluehost does not guarantee PCI compl
 **Best Case:** **InDrive** stood up 10 LATAM markets in under 8 months at 90% approval.
 **Outreach Angle:** "You accept UPI in India but can't auto-renew on it. That makes your fastest-growing region your leakiest." Pair with the entity switch.
 
-### Insight #3: One named processor across nine method markets
-**Evidence:** §3A — PayU (India) is the only processor Newfold names anywhere. Predecessor 10-K uses the plural "our credit card processors" and never names one. Nine markets run distinct local method sets. No orchestrator found.
-**Pain Point:** Region-by-region rails stitched brand-by-brand, with no single routing layer, no cross-PSP failover, and (per the 10-K) billing-system fragmentation severe enough to blur the subscriber count.
+### Insight #3: Three processors on one checkout, and a second checkout no one routes with
+**Evidence:** §3A — Newfold's own checkout bundle runs **Worldpay, BillDesk and PayU** across a single map of nine brands, while **Network Solutions, Web.com and Register.com are absent from that map entirely** and run a separate stack. Brazil sits on a WHMCS/Bradesco boleto rail, Crazy Domains on Dragonpay via a Singapore merchant entity, ResellerClub on Pay.pw and EBANX. Fraud is split across Sift, iovation and MaxMind. No orchestrator found, and Worldpay was only added between late 2021 and early 2024.
+**Pain Point:** Multiple acquirers already exist, but nothing routes between them. There is no cross-PSP failover, no single approval-rate owner, and (per the 10-K) billing-system fragmentation severe enough to blur the subscriber count.
 **Yuno Value Prop:** One API over 1,000+ methods and 30+ PSPs, with per-transaction routing by BIN, issuer and market, and unified reconciliation across all brands.
 **Best Case:** **Rappi** removed implementation time entirely and cut analyst resolution effort by 80%.
 **Outreach Angle:** Ask who owns approval rate across Bluehost, HostGator, Network Solutions and BigRock. The answer is usually nobody, because each brand inherited its own rail.
@@ -344,7 +363,7 @@ Bluehost's own customer-facing posture: "**Bluehost does not guarantee PCI compl
 | Signal | Pts | Verified? |
 |---|---|---|
 | Operates in 3+ countries | +3 | ✅ US, BR, IN, MX, AU, SG, UK, CO, CL, AR, PE |
-| Multiple PSPs | +3 | ⚠️ **Not verified.** Only PayU named; plural "processors" in 10-K is suggestive, not confirmed → **0 pts** |
+| Multiple PSPs | +3 | ✅ **Verified in Newfold's own checkout code:** Worldpay + BillDesk + PayU on one shared 9-brand checkout, plus Bradesco/WHMCS (BR), Dragonpay (Crazy Domains), Pay.pw + EBANX (ResellerClub) |
 | Recent expansion (24 mo.) | +2 | ✅ Divestiture, brand consolidation, group split, 4 exec hires |
 | Public payment issues | +2 | ✅ BBB Pattern-of-Complaints alert, 84 billing complaints, self-documented recurring failure |
 | Funding >$10M | +2 | ✅ $100M financing Dec 2025 |
@@ -353,13 +372,13 @@ Bluehost's own customer-facing posture: "**Bluehost does not guarantee PCI compl
 | Payment job postings | +1 | ✅ Senior Manager, Payment Systems and Processing |
 | Public RFP | +3 | ❌ None found |
 
-**Score: 14 → 🔴 HIGH PRIORITY**
+**Score: 17 → 🔴 HIGH PRIORITY**
 
 ### Top 10 Pipeline
 
 | Rank | Company | Type | Key Markets | Score | Priority | Top Signal |
 |---|---|---|---|---|---|---|
-| 1 | **Newfold Digital** | Target | US, BR, IN, MX, AU | **14** | 🔴 High | Self-documented recurring-billing failure at ~7M subs |
+| 1 | **Newfold Digital** | Target | US, BR, IN, MX, AU | **17** | 🔴 High | 3+ acquirers on one checkout with no routing layer, plus self-documented recurring-billing failure at ~7M subs |
 | 2 | Hostinger | Competitor | BR, MX, AR, CO, EU, APAC | 13 | 🔴 High | 150+ countries, deep LPM matrix, +51% growth, no orchestrator named |
 | 3 | GoDaddy | Competitor | Global | 12 | 🔴 High | 20.4M customers, own acquiring plus third-party gateways |
 | 4 | Locaweb | Peer | Brazil | 12 | 🔴 High | BRL 8.9B TPV, runs its own rail, LATAM native |
@@ -402,10 +421,11 @@ renewals resting on a stored card surviving 12 to 36 months, with a
 net. India looks even tighter, since methods there cannot be stored for
 auto-renewal at all.
 
-Yuno is the orchestration layer for exactly this. Network tokenization
-removes the CVV dependency, issuer-aware retries replace the cascade,
-and UPI AutoPay and Pix Automatico turn your two biggest non-US markets
-into true recurring rails. Livelo recovered +5% approvals in 3 months
+You already run Worldpay, BillDesk and PayU across one shared checkout,
+with Network Solutions on a separate stack. Nothing routes between them.
+Yuno is that layer: network tokenization removes the CVV dependency,
+issuer-aware retries replace the cascade, and UPI AutoPay restores true
+recurring billing in India. Livelo recovered +5% approvals in 3 months
 and InDrive runs 10 LATAM markets at 90% approval.
 
 Worth 20 minutes to show you where the renewals are leaking? I have
@@ -429,11 +449,12 @@ non-US scheme uncovered. In India, methods cannot be stored for
 auto-renewal at all, so every renewal is a manual repurchase in a
 market that is roughly 6% of your traffic across three brands.
 
-Yuno is one API over 1,000+ payment methods and 30+ PSPs. Network
-tokenization removes the CVV dependency, issuer-aware smart retries and
-cross-PSP failover recover up to 50% of failed transactions, and UPI
-AutoPay and Pix Automatico restore true recurring billing in India and
-Brazil.
+You already run Worldpay, BillDesk and PayU on one shared checkout, and
+Network Solutions sits on a separate stack entirely. The acquirers exist,
+the routing between them does not. Yuno is one API over 1,000+ payment
+methods and 30+ PSPs: network tokenization removes the CVV dependency,
+issuer-aware retries and cross-PSP failover recover up to 50% of failed
+transactions, and UPI AutoPay restores true recurring billing in India.
 
 Livelo recovered +5% approvals within 3 months. InDrive runs 10 LATAM
 markets at 90% approval. No new CAC, just the renewals you already
@@ -466,7 +487,14 @@ German
 [S4c] https://suporte.hostgator.com.br/hc/pt-br/articles/30823530972819
 [S4d] https://soporte.hostgator.mx/hc/es-419/articles/28446271360275
 [S4e] https://soporte-latam.hostgator.com/hc/es-419/articles/217286347
-[S4f] https://www.crazydomains.in/help/article/what-credit-cards-are-accepted
+[S4f] https://www.crazydomains.com.au/help/article/what-credit-cards-are-accepted
+[S4g] https://suporte.hostgator.com.br/hc/pt-br/articles/42481864736787
+[S3g] http://web.archive.org/web/20240525020918id_/https://static.registration.bluehost.com/1274/static/reggie/js/reg3-bundle.js
+[S3h] http://web.archive.org/web/20240906222146/https://financeiro.hostgator.com.br/gatorpay/1af1689a-6862-448c-8451-997638788328
+[S3i] https://www.crazydomains.com.au/privacy/terms-of-service/
+[S3j] http://web.archive.org/web/20260306040933/https://www.resellerclub.com/domain-reseller/payment-methods
+[S3k] http://web.archive.org/web/20251006140347/https://br.resellerclub.com/domain-reseller/payment-methods
+[S3l] https://www.newfold.com/privacy-center/third-party-data
 [S5a] https://www.bbb.org/us/fl/jacksonville/profile/web-hosting/newfold-digital-inc-0403-236012022/complaints
 [S5b] https://www.bbb.org/us/fl/jacksonville/profile/internet-service/network-solutions-0403-235968175/complaints
 [S5c] https://www.reclameaqui.com.br/hostgator/cobranca-indevida-renovacao-automatica-de-dominio_-M7fk1BN4XCPiZ__/
@@ -511,9 +539,10 @@ German
 
 ## RESEARCH GAPS
 
-1. **US/global card processor never disclosed.** India (PayU) is the only market where Newfold names its own gateway. Checkout source inspection blocked by Cloudflare on all brands.
-2. **Brazil acquirer unknown.** Asaas and PagSeguro are merchant-side partner products for HostGator's *customers*, not HostGator's collection rail. Do not conflate.
-3. **No orchestration vendor evidence either way.**
+1. **Newfold never *discloses* a processor**, but the stack was recovered from its own archived checkout code (§3A): Worldpay, BillDesk, PayU. Evidence is dated **May 2024**; the live bundle is Cloudflare-blocked, so current-state should be re-confirmed in a DevTools walk.
+2. **Brazil acquirer still unnamed.** Bradesco is confirmed as the boleto *collection bank* via GatorPay/WHMCS, but the card acquirer for HostGator BR is not public. Asaas and PagSeguro are merchant-side products for HostGator's *customers*; do not conflate.
+3. **No orchestration vendor**, now a stronger negative: the checkout bundle contains no orchestrator string at all.
+3b. **Pix Automático is LIVE in Brazil** (verified). Do not pitch it as a gap. India, by contrast, has no auto-renewal at all.
 4. **No audited revenue exists publicly.** All estimates are aggregator-grade and mutually inconsistent.
 5. **BigRock and Crazy Domains APMs unverified** (HTTP 403). Do not claim gaps there.
 6. **No PCI AoC or level published.**
