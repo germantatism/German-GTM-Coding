@@ -32,7 +32,9 @@ Cross-check: Semrush reports **50.7M** visits June 2026 (down ~6% from 53.87M in
 
 **Ranks 7 to 10: not obtainable.** Both Similarweb and Semrush publish only 5 countries plus "Others" on their free tiers. **No public information found.**
 
-**Domain architecture:** AA runs **no country ccTLDs**. It serves a single domain with a locale parameter (`aa.com/i18n/...?locale=en_GB`, `?locale=pt_BR`, `?locale=es_MX`). Verified live. https://www.aa.com/i18n/customer-service/payment-options/payment-options.jsp
+**Domain architecture (CORRECTED 2026-07-22):** aa.com serves localized content via a locale parameter (`?locale=en_GB`, `?locale=pt_BR`, `?locale=es_MX`). **However, AA also operates country ccTLDs.** `americanairlines.in` returns a whois Registrant Organization of **"American Airlines, Inc."** (state TX), and `americanairlines.jp`, `.cn`, `.it`, `.de`, `.es` and `.co.uk` all resolve to the **same Akamai IP (23.2.68.136)** as that confirmed AA domain. All of them return HTTP 403 to automated fetches.
+
+> ⚠️ **This materially limits every "not observed in their published payment options" claim.** The `aa.com?locale=` pages are not the whole published surface for a market that has its own ccTLD. India is the proven case: `americanairlines.in` hosts a separate payment-options page we could not read. Any claim about what a market does or does not offer must be scoped to the specific page actually read, and markets with an unreadable ccTLD must be excluded entirely.
 
 **Flags:**
 - Only one market above 5% traffic (United States). Web traffic is heavily domestic, but revenue is not: **29.1% of passenger revenue is international** (Section 12).
@@ -151,6 +153,15 @@ Cards accepted globally, verbatim: **American Express, Diners Club, Discover, JC
 | Sezzle, Zip, Klarna, Uplift (current status) | Yes | None appear on any AA page retrieved. The only Uplift trace is a stale `<title>` string on the AA Vacations FAQ, whose body names Upgrade, Inc. | N/A |
 | eCheck, Western Union cash, "Fly Now Pay Later" | Yes | Present in a 2009 AA investor press release, absent from the current page. The popup fragments return 403 | N/A |
 | 3DS / EMV-3DS / SCA posture | Yes | No AA page, release or forum thread verifies a step-up flow | N/A |
+
+### 4C. DISPROVEN, never claim these as missing
+
+| Method | Status | Evidence |
+|---|---|---|
+| **Alipay (China)** | **ACCEPTED by American.** Do not list as a gap | American's own Q3 2018 Form 8-K exhibit 99.1 names Alipay. EDGAR full-text search for "Alipay" restricted to CIK 0000006201 returns exactly one hit, that document. https://www.sec.gov/Archives/edgar/data/0000006201/000000620118000037/a8kerexhibit991q3-18.htm |
+| **UPI (India)** | **ACCEPTED by American.** Do not list as a gap | American's India site lists UPI. Domain ownership confirmed by whois: Registrant Organization "American Airlines, Inc.", state TX. https://www.americanairlines.in/i18n/customer-service/payment-options/payment-options.jsp?locale=en_IN |
+
+**Subscriptions are LIVE at American, not a gap:** monthly inflight Wi-Fi plans and auto-renewing Admirals Club membership are recurring-billing products. https://www.aa.com/i18n/travel-info/experience/entertainment/wi-fi-and-inflight-connectivity.jsp
 
 > **"Not verified" is not "not available."** The tables above record what each page lists, which is a verified fact about the page. They are **not** evidence that Google Pay is unavailable in the UK, that Affirm is unavailable in Brazil, or that Pix is unavailable at a Brazilian checkout. **MANUAL: VPN checkout walk-through before making any APM claim in a call or email.**
 
