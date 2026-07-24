@@ -1,0 +1,730 @@
+DECKS POR VERTICAL — export
+
+BANK/BANKING (6)
+  Banco de Chile
+  Bancolombia
+  Citi
+  Empire Supply Chain
+  NatWest Group
+  Prosa
+
+MERCHANT (716)
+  11teamsports
+  1GLOBAL
+  1Komma5°
+  1Password
+  1stDibs
+  2K
+  Abercrombie & Fitch
+  ablefy
+  Ableton
+  Abound
+  About You
+  Academia.edu
+  Accor
+  ACE Money Transfer
+  Activision Blizzard
+  Adidas
+  Admiral Pioneer
+  Adobe
+  ADP
+  ADP GlobalView
+  AG1
+  Age of Learning
+  Agile
+  Agoda
+  Airbnb
+  Alan
+  Alibaba Group
+  Allianz Trade
+  Altice France
+  Alura
+  Aman Group
+  Aman Resorts
+  Amazon
+  Amazon Web Services (AWS)
+  American Airlines
+  Amplitude
+  Ancestry
+  Andrew Brownsword Hotels
+  Anghami
+  Anthropic
+  APH - Airport Parking & Hotels
+  Apple
+  AppLovin
+  Arcos Dorados
+  Aritzia
+  Artlist
+  Asana
+  Ascot Group
+  asgoodasnew
+  ASOS
+  Asurion
+  Atlassian
+  audibene
+  Auto1 Group
+  Autodoc
+  Automattic
+  Avis
+  AVIV Group
+  AXA
+  AXA Colpatria
+  AXA en France
+  AXA Insurance Ireland
+  AXS
+  Aylo
+  Babbel
+  Back Market
+  Balenciaga
+  Banana Republic
+  Bancolombia
+  BanCoppel
+  Banijay Entertainment
+  Bank
+  Banking
+  Basic-Fit
+  BayWa
+  BBC Studios
+  BBVA
+  Beer52
+  Bending Spoons
+  BestSecret
+  BetterMe
+  Bill.com
+  Binance
+  BingX
+  Bird
+  Bitdefender
+  Bitso
+  Blackbaud
+  Blackcircles
+  Blinkist
+  BMW Group
+  Bókun
+  Bold One
+  Bolt
+  bolttech
+  Booking.com
+  Boots UK
+  Bosch
+  Bouygues Telecom
+  Box
+  BPCE Payment Services
+  Brainly
+  Bright Horizons
+  BSH Home Appliances
+  Bulgaria Air
+  Bumble
+  Bupa
+  Burberry
+  Butternut Box
+  Buy Me a Coffee
+  ByteDance
+  C&A
+  Cadent Gas
+  Calendly
+  Calm
+  Cambly
+  CANAL+
+  Canal+ myCanal
+  Canva
+  Capri Holdings
+  Care Fertility
+  Care.com
+  Carnival Corporation
+  CASETiFY
+  Chanel
+  ChargePoint
+  Charles Tyrwhitt
+  Chegg
+  Chess.com
+  Chewy
+  Cinemex
+  Circle
+  City Bank PLC
+  ClassDojo
+  Cleverbridge
+  Click&Boat
+  Clickup
+  Cloudbeds
+  Cloudflare
+  Club Med
+  Coach
+  Coca-Cola Europacific Partners
+  Codecademy
+  Codere Online
+  Cofidis Business Solutions
+  Cofidis Group
+  Coinbase
+  Collinson Group
+  Collinson Group
+  Columbia Sportswear
+  Comcast
+  Compass Group
+  Condé Nast
+  CopeCart
+  Costco
+  Coursera
+  Coursiv
+  Crédit Agricole Personal Finance & Mobility
+  Credit Genie
+  Credit Karma
+  Crocs
+  Crowdcube
+  Crowdfunder
+  Crunchyroll
+  CTS Eventim
+  CTS Eventim
+  CuriosityStream
+  Currys plc
+  Cursor
+  Daedalic Entertainment
+  DataCamp
+  Datadog
+  Dataline Labs
+  DAZN
+  Decorami
+  Deepl
+  DeepSeek
+  Deliveroo
+  Delivery Hero
+  Depop
+  DERTOUR
+  Descript
+  Design Hotels
+  DesignBundles
+  Deutsche Bahn
+  Deutsche Telekom
+  DFDS
+  DHL
+  Diario AS
+  DICE
+  DigitalOcean
+  Diriyah Company
+  Discord
+  Disney
+  DistroKid
+  Doctolib
+  Docusign
+  DolarApp
+  DoorDash
+  DP World Tour
+  Dream Games
+  Dribbble
+  Dropbox
+  du (EITC)
+  Duolingo
+  e& (Etisalat)
+  EarnIn
+  eBay
+  EDF
+  Eight Sleep
+  El Palacio de Hierro
+  El Universal Cartagena
+  Electronic Arts
+  ElevenLabs
+  Elli
+  Embracer Group
+  EMPIRE
+  Empire Supply Chain
+  Ennismore
+  Entain
+  Epic Games
+  Ericsson
+  eSIM Mobile
+  EssilorLuxottica
+  Eurostar
+  Eurowings
+  Eventbrite
+  EverAI
+  Exclaimer
+  Expedia Group
+  Experian
+  Fabletics
+  Fanatics
+  Fandom
+  Fanvue
+  Farfetch
+  Farmacias Benavides
+  Farmacias Cruz Verde Chile
+  Farmacias San Pablo
+  Feather
+  FeetFinder
+  Figma
+  FIGS
+  Financial Times
+  FINN
+  Fintech Wrap Up
+  Fireflies.ai
+  Flaconi
+  Flair Airlines
+  Flaticon
+  FlexPay
+  Flexport
+  Flink
+  Flo Health
+  Flutter Entertainment
+  Flutterwave
+  flydubai
+  Flywire
+  Fnac Darty
+  Focusrite Group
+  Forbes
+  Ford Credit
+  Forge
+  Forge Holiday Group
+  Fox
+  Frasers Group
+  Free2move
+  FREENOW
+  Freepik
+  Fremantle
+  FreshBooks
+  FreshDirect
+  Frontdoor
+  Fundraise Up
+  Gameloft
+  Gametime
+  Gamma AI
+  GAP
+  Gap Inc.
+  Gedimat
+  Gemini
+  Gen Digital
+  Genspark AI
+  Getaround
+  Getty Images
+  GetYourGuide
+  GGPoker
+  GigSky
+  Gismart
+  Github
+  GiveButter
+  GiveCampus
+  Global
+  GNP Seguros
+  GOAT
+  GoDaddy
+  Golden Goose
+  GoodLeap
+  Google
+  GradGuard
+  Granum
+  Gravyty
+  Groupe BPCE
+  Grover
+  Grow Therapy
+  Gusto
+  H&M Group
+  Halliday
+  Handshake
+  Hapana
+  Hastings Direct
+  HBO Max
+  HBX Group
+  HDI Global
+  Healthspan
+  Heathrow Airport
+  HEB México
+  HelloFresh
+  Henkel
+  Hertz
+  Hevo Data
+  HeyGen
+  Higgsfield AI
+  High Tide
+  Hilti
+  hims & hers
+  Hinge
+  Hipcamp
+  Holiday Extras
+  Holland & Barrett
+  Hollister Co.
+  Hostinger
+  Hotelbeds
+  Hotelworld AI
+  Houzz
+  HP
+  HubSpot
+  Hyatt Hotels
+  ICON plc
+  iFIT
+  iHerb
+  Indie Campers
+  INFORICH
+  Ingresso
+  Inkitt
+  Instacart
+  Instantly
+  Intercorp
+  Intrepid Travel
+  Intuit
+  iQIYI
+  Itaú Unibanco
+  IXL Learning
+  J.Crew
+  Jackbox Games
+  Jam City
+  Jane App
+  JD Gyms
+  Jimdo
+  Jobber
+  John Lewis
+  John Lewis Partnership
+  Jonak
+  Just Eat Takeaway.com
+  JustAnswer
+  Kabam
+  Kajabi
+  Kaseya
+  Kering
+  Kickstarter
+  Kimi
+  Kingfisher plc
+  Kinguin
+  Klaviyo
+  Konami Group Corporation
+  Krisp AI
+  L'olivier Assurance
+  L'Oréal
+  La Bécanerie
+  La Redoute
+  Last Minute
+  LATAM Airlines
+  Later
+  Le Figaro
+  Le Monde
+  Leboncoin
+  Ledger
+  LegalZoom
+  Lenovo
+  Leroy Merlin
+  Let's Do This
+  Life360
+  Lime
+  Link Money
+  Linkedin
+  LinkToAny
+  LoanPro
+  Localiza&Co
+  Longchamp
+  LotusFlare
+  Louis Vuitton
+  Lovable
+  Lowe's
+  Lucid Motors
+  Lululemon Athletica
+  Luma AI
+  LuxExperience B.V.
+  LVMH
+  Lyft
+  Lyst
+  maat.ai
+  Magnific
+  Make.com
+  Malwarebytes
+  ManoMano
+  Marks and Spencer
+  Marriott International
+  MasterClass
+  Match Group
+  Maxio
+  Maya
+  Mayfair Casino
+  ME+EM
+  Medely
+  Mejuri
+  Mekari
+  Mentimeter
+  Mercari
+  Meta
+  MetaWin
+  Mews
+  MGM Resorts International
+  Michael Kors
+  Michelin
+  Microlise
+  Microsoft
+  Midjourney
+  Mindbody
+  Miro
+  Mochi Health
+  Mon Marché
+  MongoDB
+  Moonpig
+  Moonshot AI
+  Mövenpick Hotels & Resorts
+  Mozilla
+  MPB
+  Mr & Mrs Smith
+  MSC Cruises
+  MUBI
+  Mytheresa
+  Navan
+  Neon
+  Nespresso
+  Netflix
+  Newegg
+  NexHealth
+  Next plc
+  NHN Global
+  Nike
+  Nimax Theatres
+  NinjaTech AI
+  Nintendo
+  Nissan Motor Co., Ltd.
+  Nomad Fintech
+  noon payments
+  Nordstrom
+  Notch
+  Notion
+  Nutrameg
+  Olo
+  Omio
+  On the Beach
+  OnePipe
+  OnlyFans
+  OpenLoop
+  Operant AI
+  Oracle
+  Orange
+  Orange Business
+  Otto
+  Oura
+  Outdoorsy
+  Outside
+  OYSHO
+  Pager Health
+  Papier
+  Parafin
+  Paris Attitude
+  Partoo
+  Patreon
+  Peacock
+  Peek
+  Penn Entertainment
+  Perlego
+  Perplexity AI
+  PetSmart
+  Phorest Software
+  Photoroom
+  Piano
+  Picsart
+  Pipedrive
+  Pitch
+  Pixmania
+  Planity
+  Playlist Technologies
+  Plooto
+  Pluralsight
+  PMU
+  Poshmark
+  Postman
+  Prezi
+  Privy
+  PrizePicks
+  ProfitSolv
+  Pulley
+  Pump.co
+  Puzzle
+  PVH Corp.
+  Qlub
+  Qogita
+  Quince
+  Quizlet
+  Rakuten
+  Rakuten France
+  Ralph Lauren
+  Rapha
+  Raya
+  Recurly
+  RED by SFR
+  Reddit
+  Remitly
+  Remote
+  Replit
+  RevenueCat
+  REVOLVE Group
+  Rho
+  Rights Tracker
+  Rippling
+  Ritz Paris
+  River Island
+  Rivian
+  Robinhood
+  Roblox
+  Rockstar Games
+  Roku
+  Royal Caribbean
+  Runway
+  Ryght AI
+  Sainsbury's
+  Salcobrand
+  Salesforce
+  Sam's Club México
+  Samsung Electronics
+  SAP
+  Sapiom
+  Saturn
+  Scale AI
+  Scotiabank
+  Scribd
+  SeatGeek
+  Secret Escapes
+  See Tickets
+  Sega
+  Segment
+  Selfridges
+  Sephora
+  ServiceNow
+  Setmore
+  Sézane
+  Sezzle
+  SFR
+  Shoper
+  Shopify
+  Shoplazza
+  Shopline
+  Sift
+  SIMO
+  Sirius AI
+  Skillsoft
+  Sky
+  Skyfire
+  Slack
+  Smyths Toys
+  Snaptrip
+  SoFi Group
+  Soho House & Co
+  Solana Foundation
+  Sonesta International Hotels
+  Sonos
+  Sony
+  Sorare
+  Southwest Airlines
+  SpaceX / Starlink
+  Speechify
+  Spotify
+  Squarespace
+  Ssense
+  Stability AI
+  Stellantis
+  StellarTech
+  Storytel
+  Strava
+  Substack
+  Sumitomo Mitsui Card Company (SMCC)
+  Sunbit
+  Sunday
+  Suno
+  Supabase
+  Super.com
+  Superhuman
+  Supply Chain (by EMPIRE)
+  SurePoint Technologies
+  Take-Two Interactive
+  Tapestry, Inc.
+  Target
+  TaskRabbit
+  Taster
+  TD Ameritrade
+  Teachable
+  Tempo
+  Tencent Games
+  the D2 collective
+  The Economist
+  The Estée Lauder Companies
+  The Guardian
+  The Gym Group
+  The North Face
+  The RealReal
+  The Sage Group
+  The Telegraph
+  The Travel Corporation
+  TheFork
+  Thinkific
+  Thomson Reuters
+  ThoughtFocus
+  ThriveCart
+  Thryv
+  Tinder
+  Together AI
+  Togetherwork
+  Tory Burch
+  Tottenham Hotspur Football Club
+  Totto
+  Transform
+  Travel + Leisure Co.
+  Trip.com Group
+  Tripadvisor
+  TrueML
+  Tupperware
+  Turo
+  Twilio
+  Twitch
+  Ubisoft
+  Udemy
+  United Airlines
+  Universal
+  Universal Music Group
+  Upbound
+  Upgrade
+  Upwork
+  Urban
+  Uzum
+  Vans
+  Veja
+  Vercel
+  Vestiaire Collective
+  Veygo
+  VF Corporation
+  VGW (Virtual Gaming Worlds)
+  Viator
+  Virgin Group
+  Virgin Media O2
+  Visit Com
+  Vista Group
+  Vivenu
+  Vivienne Westwood
+  Vodafone
+  VodafoneThree
+  Volaris
+  Voodoo
+  Vyond
+  Waitrose & Partners
+  Wallets
+  Walmart
+  Warner Bros. Discovery
+  Wayfair
+  Weave
+  Webflow
+  Wellhub
+  Whitbread
+  Whole Foods Market
+  Williams-Sonoma
+  Wix.com
+  Wolf & Badger
+  Wolverine Worldwide
+  WOM
+  Wonderbox
+  Workday
+  Workspot
+  Wrapbook
+  Wyndham Hotels & Resorts
+  Wyndham Hotels & Resorts
+  Xero
+  Xsolla
+  Yahoo Ads
+  Yango
+  Yassir
+  Yelp
+  YouTube
+  Zapier
+  Zendesk
+  Zeta
+  Zillow
+  Zoom
+  zooplus
+
+PSP: 0 decks construidos (solo deck base generico)
+WALLET: 0 decks construidos (solo deck base generico)

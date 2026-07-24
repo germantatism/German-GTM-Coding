@@ -364,3 +364,30 @@ Hopefully, we can chat soon over all the ideas we have!
 
 Best,
 German
+
+---
+
+## 16. Crypto / Digital Assets
+
+Hey {{recipient.first_name}}!
+
+German from Yuno again haha.
+
+Quick email to share an industry snapshot. Today, the global crypto market sits around $3 trillion in total value, and stablecoins have moved from a trading tool into real money rails, settling over $27 trillion in transfers last year, more than Visa and Mastercard combined.
+
+Looking ahead, the story is crypto moving into everyday payments, as wallets and exchanges launch cards, on-ramps, and stablecoin spending to turn holders into everyday users. Key trends shaping the future of crypto payments include:
+
+The fiat on-ramp becoming the critical conversion point, where buying crypto by card is one of the highest decline transaction types in all of payments, making approval rate optimization a direct driver of revenue
+
+Stablecoins moving from trading into real-world spend, with wallets and issuers standing up card programs and merchant-of-record rails that now need the same acquiring, routing, and reconciliation as any global payments business
+
+Global, borderless user bases demanding local payment methods and local acquiring to buy and spend, well beyond cards, to convert in every region
+
+Regulatory fragmentation across jurisdictions demanding flexible infrastructure and local processing to launch market by market without rebuilding the payment stack each time
+
+At Yuno, we help crypto companies orchestrate on-ramp and card payments globally, add acquirer redundancy and smart routing to recover the crypto buys that decline today, activate local payment methods and local acquiring in every market, and scale card and stablecoin payment products worldwide through a single API.
+
+Hopefully, we can chat soon over all the ideas we have!
+
+Best,
+German
