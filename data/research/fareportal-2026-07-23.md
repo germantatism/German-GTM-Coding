@@ -232,3 +232,51 @@ Worth 20 minutes to map your consumer acquiring by market and see the auth-rate 
 [S15] https://www.prweb.com/releases/fareportal-expands-long-term-partnership-with-sabre-to-accelerate-global-growth-and-ai-driven-distribution-302780866.html
 [S16] https://silviglobaltechnology.com/blog/best-otas-in-2026/ · https://mize.tech/blog/online-travel-agencies-market-share-across-the-world/
 ```
+
+---
+
+## ADDENDUM 2026-07-27 — Consumer payment & anti-fraud stack CONFIRMED (deep dig)
+
+The prior brief marked the consumer PSP "not found" (Akamai 403 blocked source inspection). A 5-angle deep dig cracked it via **first-party Fareportal checkout JavaScript captured on the Wayback Machine** (live sites 403 to bots; archived snapshots do not). Both brands run the **same Fareportal platform** (byte-identical CSS asset hashes and resource strings under both domains).
+
+### Payment & anti-fraud stack (CheapOair + OneTravel)
+| Layer | Vendor | Role | Confidence | Evidence |
+|---|---|---|---|---|
+| Card gateway / PSP | **CyberSource (Visa)** | Cards + Google Pay (`Gateway:"cybersource", GatewayMerchantId:"007100", MerchantName:"CheapOair"`) | High (CheapOair); Med (OneTravel, shared platform) | Checkout JS `paymentoption.bundle` (Wayback 2026-06-26) |
+| PSP for wallets | **Braintree (PayPal)** | PayPal + Venmo (`braintree-web`, prod TokenizationKey, MerchantAccountId `CheapOair_instant`/`fareportal`) | High, both | COA + OT `paymentoption.bundle` (Wayback) |
+| 3-D Secure | **CardinalCommerce (Visa)** | Consumer auth / 3DS (Cardinal-powered, consistent with CyberSource Payer Auth) | High, both | `_air_payment` resource strings |
+| Anti-fraud (current) | **Accertify (Amex)** | Device intelligence / fraud (`AccertifyAppDisclosure` consent string in live checkout) | High, both | `_air_payment` (2025–2026) |
+| Anti-fraud (2019) | **Fraud.net** | ML fraud scoring | High named; current status unclear | Fraud.net case study w/ Fareportal SVP testimonial (~2019) |
+| Fraud ops | **In-house Gurgaon review team** | Manual fraud review | High | OneTravel privacy policy "in-house fraud monitoring"; Fraud.net case study |
+| Edge / bot mgmt | **Akamai** (+ reCAPTCHA on auth) | CDN + bot management (the 403 blocker) | High | Live Akamai 403 headers |
+| Orchestrator | **None found** | — | — | No Spreedly/Primer/Gr4vy/etc. in code |
+
+**Architecture = multi-PSP, no orchestrator:** CyberSource (cards) + Braintree (PayPal/Venmo) run in parallel, 3DS via Cardinal, fraud via Accertify + Fraud.net + in-house team. Acquiring bank behind CyberSource not exposed client-side.
+
+**Ruled OUT (explicit):** Stripe (only CSS `-stripes`/`striped` hits), Adyen, Worldpay, Chase Paymentech, Vantiv/FIS, First Data, Elavon; Riskified, Signifyd, Forter, Sift, Kount, ThreatMetrix, Iovation.
+
+### Wallets / methods (routed through the gateways above)
+Cards (Visa, MC, Amex, Discover, Diners/Carte Blanche, Synchrony PLCC), PayPal + Venmo (Braintree), Apple Pay, Google Pay (CyberSource), **Paze** (Early Warning bank wallet, CheapOair), Affirm BNPL (both), Accrue Savings (CheapOair only).
+
+### Payment methods by market (same checkout, currency-only localization)
+| Market | Confirmed methods | Note |
+|---|---|---|
+| US | Full stack: cards + PayPal/Venmo + Apple/Google Pay + Paze (COA) + Affirm + Accrue (COA) | — |
+| Canada | Same cards + PayPal + Apple/Google Pay; Affirm (PayBright) | CAD display; no Interac confirmed |
+| UK | Same card checkout | GBP display |
+| UAE / Saudi | Same card checkout | AED display; no Mada/STC confirmed |
+| India | Same US card checkout + PayPal + Apple Pay | INR **display currency only**; **NO UPI/RuPay/netbanking evidence** — card-only US-style checkout. `onetravel.co.in` = parked/dead domain |
+
+### Top markets by traffic (top 5 only; ranks 6–10 paywalled on all free sources)
+- **CheapOair (HIGH conf, 3-source agreement):** US ~81–85% · Canada ~2.5% · India ~1% · Saudi Arabia ~0.8% · Argentina/UAE ~0.7%. ~5.9–6.9M visits/mo, declining.
+- **OneTravel (source CONFLICT, unresolved):** Semrush = India 45.8%, US 33.9%, Canada 6.6%, Venezuela 1.7%, Germany 1.1% (1.48M visits, +72% MoM). SimilarWeb+Hypestat = US ~66–70%, Canada ~6–7%, Puerto Rico, Philippines/Mexico, Thailand/India (~640K visits, −6% MoM). Do NOT assert India-dominant as fact.
+
+### Sources (addendum)
+```
+[A1] Wayback COA checkout JS: web.archive.org/web/20260626225207/https://www.cheapoair.com/air/paymentoption.bundle.8e517cea72796b9c65a1.js
+[A2] Wayback OT checkout JS: web.archive.org/web/20250211143156/https://www.onetravel.com/air/paymentoption.bundle.3eaa2fa386a3d4e29797.js
+[A3] Wayback COA _air_payment (Cardinal/Accertify strings): web.archive.org/web/20250624211940/https://www.cheapoair.com/air/iln/desktop/en-us/2.2.821/_air_payment
+[A4] Fraud.net case study (Fareportal SVP testimonial): fraud.net/resources/case-study-fareportal-travel-agency/
+[A5] OneTravel privacy policy (in-house fraud): web.archive.org/web/20260411083819/https://www.onetravel.com/info/privacy-policy/
+[A6] SimilarWeb/Semrush/Hypestat cheapoair.com + onetravel.com (traffic)
+```
