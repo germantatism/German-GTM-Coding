@@ -1,0 +1,514 @@
+Company,Industry,Tier,Stage
+American Airlines,Airlines,1,Lost
+Best Buy,Retail,1,Not contacted
+Airlo,Telecom & eSIMs,1,Not contacted
+Delta Air Lines,Airlines,1,Contacting
+Boss Revolution (IDT),Telecom & eSIMs,1,Not contacted
+ComCast,Telecom & eSIMs,1,Contacting
+WOM,Telecom & eSIMs,1,Not contacted
+Lowe's,Retail,1,Contacting
+Bait,Telecom & eSIMs,1,Not contacted
+Tripadvisor,Digital Products & Subscriptions,1,Contacting
+Surf Telecom,Telecom & eSIMs,1,Not contacted
+Virgin Mobile Latin America,Telecom & eSIMs,1,Not contacted
+edX (2U),E-Learning & EdTech,1,Not contacted
+Platzi,E-Learning & EdTech,1,Not contacted
+Domestika,E-Learning & EdTech,1,Not contacted
+Poliglota,E-Learning & EdTech,1,Not contacted
+UBITS,E-Learning & EdTech,1,Not contacted
+Kiwify,E-Learning & EdTech,1,Not contacted
+Código Facilito,E-Learning & EdTech,1,Not contacted
+DEV.F,E-Learning & EdTech,1,Not contacted
+Bedu,E-Learning & EdTech,1,Not contacted
+Desafío Latam,E-Learning & EdTech,1,Not contacted
+Digital House,E-Learning & EdTech,1,Not contacted
+Slang,E-Learning & EdTech,1,Not contacted
+AmazingTalker,E-Learning & EdTech,1,Not contacted
+MindHub,E-Learning & EdTech,1,Not contacted
+Passline,Event & Travel Ticketing,1,Not contacted
+Boletia,Event & Travel Ticketing,1,Not contacted
+TuBoleta,Event & Travel Ticketing,1,Not contacted
+Puntoticket,Event & Travel Ticketing,1,Not contacted
+Joinnus,Event & Travel Ticketing,1,Not contacted
+Eventbrite,Event & Travel Ticketing,1,Not contacted
+Ingresse,Event & Travel Ticketing,1,Not contacted
+Ticket360,Event & Travel Ticketing,1,Not contacted
+Ticketplus,Event & Travel Ticketing,1,Not contacted
+Bilheteria Digital,Event & Travel Ticketing,1,Not contacted
+Ticketera,Event & Travel Ticketing,1,Not contacted
+TicketMundo,Event & Travel Ticketing,1,Not contacted
+Tickeri,Event & Travel Ticketing,1,Not contacted
+Uber,Mobility & Ridesharing,1,Not contacted
+DiDi,Mobility & Ridesharing,1,Not contacted
+99,Mobility & Ridesharing,1,Not contacted
+Kavak,Mobility & Ridesharing,1,Not contacted
+Picap,Mobility & Ridesharing,1,Not contacted
+Mottu,Mobility & Ridesharing,1,Not contacted
+Blacklane,Mobility & Ridesharing,1,Not contacted
+Awto,Mobility & Ridesharing,1,Not contacted
+Turbi,Mobility & Ridesharing,1,Not contacted
+Kinto Share,Mobility & Ridesharing,1,Not contacted
+Avianca,Airlines,1,Not contacted
+Gol Linhas Aéreas,Airlines,1,Not contacted
+Azul,Airlines,1,Not contacted
+Copa Airlines,Airlines,1,Not contacted
+LATAM Airlines,Airlines,1,Not contacted
+Aeroméxico,Airlines,1,Not contacted
+Aerolíneas Argentinas,Airlines,1,Not contacted
+Sky Airline,Airlines,1,Not contacted
+Caribbean Airlines,Airlines,1,Not contacted
+Boliviana de Aviación (BoA),Airlines,1,Not contacted
+EasyFly,Airlines,1,Not contacted
+SATENA,Airlines,1,Not contacted
+Cayman Airways,Airlines,1,Not contacted
+Bahamasair,Airlines,1,Not contacted
+ClickBus,Passenger Transport & Ticketing,1,Not contacted
+Buser,Passenger Transport & Ticketing,1,Not contacted
+Quero Passagem,Passenger Transport & Ticketing,1,Not contacted
+Reservamos,Passenger Transport & Ticketing,1,Not contacted
+Pinbus,Passenger Transport & Ticketing,1,Not contacted
+redBus,Passenger Transport & Ticketing,1,Not contacted
+Trainline,Passenger Transport & Ticketing,1,Not contacted
+Grupo ADO,Passenger Transport & Ticketing,1,Not contacted
+ETN Turistar,Passenger Transport & Ticketing,1,Not contacted
+Primera Plus,Passenger Transport & Ticketing,1,Not contacted
+Expreso Brasilia,Passenger Transport & Ticketing,1,Not contacted
+Cruz del Sur,Passenger Transport & Ticketing,1,Not contacted
+Andesmar,Passenger Transport & Ticketing,1,Not contacted
+Turbus,Passenger Transport & Ticketing,1,Not contacted
+DeÔnibus,Passenger Transport & Ticketing,1,Not contacted
+PasajeBus.com,Passenger Transport & Ticketing,1,Not contacted
+BUSPORTAL,Passenger Transport & Ticketing,1,Not contacted
+Copetran,Passenger Transport & Ticketing,1,Not contacted
+Bolivariano,Passenger Transport & Ticketing,1,Not contacted
+CIVA,Passenger Transport & Ticketing,1,Not contacted
+Pullman Bus,Passenger Transport & Ticketing,1,Not contacted
+Flecha Bus,Passenger Transport & Ticketing,1,Not contacted
+Viação Cometa,Passenger Transport & Ticketing,1,Not contacted
+Tica Bus,Passenger Transport & Ticketing,1,Not contacted
+OYO,Hospitality & Lodging,1,Not contacted
+Casai,Hospitality & Lodging,1,Not contacted
+Meliá Hotels,Hospitality & Lodging,1,Not contacted
+RIU Hotels & Resorts,Hospitality & Lodging,1,Not contacted
+Iberostar,Hospitality & Lodging,1,Not contacted
+Barceló Hotel Group,Hospitality & Lodging,1,Not contacted
+Grupo Posadas,Hospitality & Lodging,1,Not contacted
+Decameron,Hospitality & Lodging,1,Not contacted
+Grupo Xcaret,Hospitality & Lodging,1,Not contacted
+Karisma Hotels,Hospitality & Lodging,1,Not contacted
+Palladium Hotel Group,Hospitality & Lodging,1,Not contacted
+GHL Hoteles,Hospitality & Lodging,1,Not contacted
+NH Hotel Group (Minor),Hospitality & Lodging,1,Not contacted
+Atlantica Hospitality Intl,Hospitality & Lodging,1,Not contacted
+Hoteles Estelar,Hospitality & Lodging,1,Not contacted
+Bourbon Hotéis,Hospitality & Lodging,1,Not contacted
+Blue Tree Hotels,Hospitality & Lodging,1,Not contacted
+Camino Real,Hospitality & Lodging,1,Not contacted
+Housi,Hospitality & Lodging,1,Not contacted
+Che Lagarto Hostels,Hospitality & Lodging,1,Not contacted
+Fen Hotels,Hospitality & Lodging,1,Not contacted
+Faranda Hotels & Resorts,Hospitality & Lodging,1,Not contacted
+Royal Holiday,Hospitality & Lodging,1,Not contacted
+Fasano,Hospitality & Lodging,1,Not contacted
+Bahia Principe (Grupo Piñero),Hospitality & Lodging,1,Not contacted
+Sandals Resorts,Hospitality & Lodging,1,Not contacted
+Viajero Hostels,Hospitality & Lodging,1,Not contacted
+Pariwana Hostels,Hospitality & Lodging,1,Not contacted
+Despegar (Decolar),Travel & OTAs,1,Not contacted
+Almundo,Travel & OTAs,1,Not contacted
+Trip.com,Travel & OTAs,1,Not contacted
+Hotelbeds,Travel & OTAs,1,Not contacted
+MaxMilhas,Travel & OTAs,1,Not contacted
+Recorrido,Travel & OTAs,1,Not contacted
+lastminute.com,Travel & OTAs,1,Not contacted
+Best Day,Travel & OTAs,1,Not contacted
+PriceTravel Holding,Travel & OTAs,1,Not contacted
+Aviatur,Travel & OTAs,1,Not contacted
+Viajanet,Travel & OTAs,1,Not contacted
+Viajes Falabella,Travel & OTAs,1,Not contacted
+Denomades,Travel & OTAs,1,Not contacted
+Zarpo,Travel & OTAs,1,Not contacted
+Submarino Viagens,Travel & OTAs,1,Not contacted
+Onfly,Travel & OTAs,1,Not contacted
+MeVuelo,Travel & OTAs,1,Not contacted
+Turismocity,Travel & OTAs,1,Not contacted
+LocalAdventures,Travel & OTAs,1,Not contacted
+Vibe Adventures,Travel & OTAs,1,Not contacted
+Lindblad Expeditions,Travel & OTAs,1,Not contacted
+Voyagers Travel,Travel & OTAs,1,Not contacted
+GoDaddy,Web & Cloud Hosting,1,Not contacted
+HostGator,Web & Cloud Hosting,1,Not contacted
+Locaweb,Web & Cloud Hosting,1,Not contacted
+OVHcloud,Web & Cloud Hosting,1,Not contacted
+Umbler,Web & Cloud Hosting,1,Not contacted
+DonWeb,Web & Cloud Hosting,1,Not contacted
+Neubox,Web & Cloud Hosting,1,Not contacted
+NordVPN (Nord Security),Cybersecurity & VPNs,1,Not contacted
+ExpressVPN (Kape),Cybersecurity & VPNs,1,Not contacted
+Gen Digital (Norton/Avast/AVG),Cybersecurity & VPNs,1,Not contacted
+ESET,Cybersecurity & VPNs,1,Not contacted
+Life360,Cybersecurity & VPNs,1,Not contacted
+OpenAI,AI,1,Not contacted
+Freepik,AI,1,Not contacted
+Read AI,AI,1,Not contacted
+Audible (Amazon),Digital Products & Subscriptions,1,Not contacted
+Tinder (Match Group),Digital Products & Subscriptions,1,Not contacted
+Nuuvem,Digital Products & Subscriptions,1,Not contacted
+ViX (TelevisaUnivision),Digital Products & Subscriptions,1,Not contacted
+Claro Video,Digital Products & Subscriptions,1,Not contacted
+Globoplay,Digital Products & Subscriptions,1,Not contacted
+Blim TV,Digital Products & Subscriptions,1,Not contacted
+Ubook,Digital Products & Subscriptions,1,Not contacted
+Clarín (digital),Digital Products & Subscriptions,1,Not contacted
+Zendesk,SaaS,1,Not contacted
+Adobe,SaaS,1,Not contacted
+Pipefy,SaaS,1,Not contacted
+Conta Azul,SaaS,1,Not contacted
+RD Station,SaaS,1,Not contacted
+Truora,SaaS,1,Not contacted
+FunPlus,Gaming,1,Not contacted
+HoYoverse,Gaming,1,Not contacted
+IGG,Gaming,1,Not contacted
+Level Infinite (Tencent),Gaming,1,Not contacted
+Playrix,Gaming,1,Not contacted
+Scopely,Gaming,1,Not contacted
+Take-Two Interactive,Gaming,1,Not contacted
+Ubisoft,Gaming,1,Not contacted
+Etermax,Gaming,1,Not contacted
+Habby,Gaming,1,Not contacted
+Digicel,Telecom & eSIMs,1,Not contacted
+RecargaPay,Telecom & eSIMs,1,Not contacted
+Gen Mobile,Telecom & eSIMs,1,Not contacted
+KeepCalling,Telecom & eSIMs,1,Not contacted
+Rebtel,Telecom & eSIMs,1,Not contacted
+Talk360,Telecom & eSIMs,1,Not contacted
+Tello Mobile,Telecom & eSIMs,1,Not contacted
+TextNow,Telecom & eSIMs,1,Not contacted
+Ultra Mobile,Telecom & eSIMs,1,Not contacted
+US Mobile,Telecom & eSIMs,1,Not contacted
+Yolla,Telecom & eSIMs,1,Not contacted
+aloSIM,Telecom & eSIMs,1,Not contacted
+BNESIM,Telecom & eSIMs,1,Not contacted
+Gigs,Telecom & eSIMs,1,Not contacted
+Global YO,Telecom & eSIMs,1,Not contacted
+Jetpac,Telecom & eSIMs,1,Not contacted
+Maya Mobile,Telecom & eSIMs,1,Not contacted
+MobiMatter,Telecom & eSIMs,1,Not contacted
+RedteaGO,Telecom & eSIMs,1,Not contacted
+Roamless,Telecom & eSIMs,1,Not contacted
+Sim Local,Telecom & eSIMs,1,Not contacted
+Yesim,Telecom & eSIMs,1,Not contacted
+Pluralsight,E-Learning & EdTech,1,Not contacted
+AXS,Event & Travel Ticketing,1,Not contacted
+Cinépolis,Event & Travel Ticketing,1,Not contacted
+DICE,Event & Travel Ticketing,1,Not contacted
+Ticketmaster (Live Nation),Event & Travel Ticketing,1,Not contacted
+Tiqets,Event & Travel Ticketing,1,Not contacted
+Viagogo,Event & Travel Ticketing,1,Not contacted
+Viator,Event & Travel Ticketing,1,Not contacted
+Buy Me a Coffee,Crowdfunding & Donations,1,Not contacted
+Classy,Crowdfunding & Donations,1,Not contacted
+Donorbox,Crowdfunding & Donations,1,Not contacted
+DonorsChoose,Crowdfunding & Donations,1,Not contacted
+Fundraise Up,Crowdfunding & Donations,1,Not contacted
+Givebutter,Crowdfunding & Donations,1,Not contacted
+GlobalGiving,Crowdfunding & Donations,1,Not contacted
+Kickstarter,Crowdfunding & Donations,1,Not contacted
+Kiva,Crowdfunding & Donations,1,Not contacted
+Republic,Crowdfunding & Donations,1,Not contacted
+Binance.US,Crypto,1,Not contacted
+Gemini,Crypto & Digital Assets,1,Not contacted
+Mercado Bitcoin,Crypto & Digital Assets,1,Not contacted
+Airtm,Crypto & Digital Assets,1,Not contacted
+AvaTrade,Investment Platforms,1,Not contacted
+Betterment,Investment Platforms,1,Not contacted
+Exness,Investment Platforms,1,Not contacted
+FOREX.com,Investment Platforms,1,Not contacted
+IG Group,Investment Platforms,1,Not contacted
+Interactive Brokers,Investment Platforms,1,Not contacted
+Moomoo,Investment Platforms,1,Not contacted
+OANDA,Investment Platforms,1,Not contacted
+Pepperstone,Investment Platforms,1,Not contacted
+Plus500,Investment Platforms,1,Not contacted
+SoFi Invest,Investment Platforms,1,Not contacted
+Trading 212,Investment Platforms,1,Not contacted
+Wealthfront,Investment Platforms,1,Not contacted
+Wealthsimple,Investment Platforms,1,Not contacted
+XTB,Investment Platforms,1,Not contacted
+Public,Investment Platforms,1,Not contacted
+CarMax,Mobility & Ridesharing,1,Not contacted
+Carsome,Mobility & Ridesharing,1,Not contacted
+Carvana,Mobility & Ridesharing,1,Not contacted
+Localiza,Mobility & Ridesharing,1,Not contacted
+Movida,Mobility & Ridesharing,1,Not contacted
+Turo,Mobility & Ridesharing,1,Not contacted
+Voi,Mobility & Ridesharing,1,Not contacted
+Webmotors,Mobility & Ridesharing,1,Not contacted
+Air Canada,Airlines,1,Not contacted
+Air Europa,Airlines,1,Not contacted
+Alaska Airlines,Airlines,1,Not contacted
+Allegiant Air,Airlines,1,Not contacted
+Hawaiian Airlines,Airlines,1,Not contacted
+Iberia,Airlines,1,Not contacted
+Southwest Airlines,Airlines,1,Not contacted
+Spirit Airlines,Airlines,1,Not contacted
+WestJet,Airlines,1,Not contacted
+Arajet,Airlines,1,Not contacted
+BlaBlaCar,Passenger Transport & Ticketing,1,Not contacted
+Guichê Virtual (Buson),Passenger Transport & Ticketing,1,Not contacted
+National Express,Passenger Transport & Ticketing,1,Not contacted
+Rail Europe,Passenger Transport & Ticketing,1,Not contacted
+Belmond,Hospitality & Lodging,1,Not contacted
+Best Western Hotels & Resorts,Hospitality & Lodging,1,Not contacted
+Blueground,Hospitality & Lodging,1,Not contacted
+Casa Andina,Hospitality & Lodging,1,Not contacted
+Choice Hotels,Hospitality & Lodging,1,Not contacted
+Club Med,Hospitality & Lodging,1,Not contacted
+Grupo Hotelero Santa Fe (Krystal),Hospitality & Lodging,1,Not contacted
+Hilton,Hospitality & Lodging,1,Not contacted
+Hyatt,Hospitality & Lodging,1,Not contacted
+IHG Hotels & Resorts,Hospitality & Lodging,1,Not contacted
+Marriott International,Hospitality & Lodging,1,Not contacted
+Playa Hotels & Resorts,Hospitality & Lodging,1,Not contacted
+Radisson Hotel Group,Hospitality & Lodging,1,Not contacted
+Selina,Hospitality & Lodging,1,Not contacted
+Sonesta Hotels,Hospitality & Lodging,1,Not contacted
+Wyndham Hotels & Resorts,Hospitality & Lodging,1,Not contacted
+Agoda,Travel & OTAs,1,Not contacted
+Booking.com,Travel & OTAs,1,Not contacted
+Hopper,Travel & OTAs,1,Not contacted
+Hotwire,Travel & OTAs,1,Not contacted
+Kayer (Kayak),Travel & OTAs,1,Not contacted
+Priceline,Travel & OTAs,1,Not contacted
+Namecheap,Web & Cloud Hosting,1,Not contacted
+Aura,Cybersecurity & VPNs,1,Not contacted
+CyberGhost,Cybersecurity & VPNs,1,Not contacted
+IPVanish,Cybersecurity & VPNs,1,Not contacted
+Keeper Security,Cybersecurity & VPNs,1,Not contacted
+Malwarebytes,Cybersecurity & VPNs,1,Not contacted
+McAfee,Cybersecurity & VPNs,1,Not contacted
+Private Internet Access,Cybersecurity & VPNs,1,Not contacted
+TotalAV,Cybersecurity & VPNs,1,Not contacted
+Anthropic,AI,1,Not contacted
+Bending Spoons,AI,1,Not contacted
+Cursor (Anysphere),AI,1,Not contacted
+DeepL,AI,1,Not contacted
+Lightricks,AI,1,Not contacted
+Perplexity,AI,1,Not contacted
+Crunchyroll,Digital Products & Subscriptions,1,Not contacted
+Disney+,Digital Products & Subscriptions,1,Not contacted
+Flo Health,Digital Products & Subscriptions,1,Not contacted
+JetBrains,SaaS,1,Not contacted
+Miro,SaaS,1,Not contacted
+Semrush,SaaS,1,Not contacted
+Squarespace,SaaS,1,Not contacted
+Nomad,Telecom & eSIMs,2,Not contacted
+Ubigi (Transatel),Telecom & eSIMs,2,Not contacted
+GigSky,Telecom & eSIMs,2,Not contacted
+Truphone / 1GLOBAL,Telecom & eSIMs,2,Not contacted
+Recharge.com,Telecom & eSIMs,2,Not contacted
+Ding,Telecom & eSIMs,2,Not contacted
+Red Pocket Mobile,Telecom & eSIMs,2,Not contacted
+Reloadly,Telecom & eSIMs,2,Not contacted
+ETravelSim,Telecom & eSIMs,2,Not contacted
+Uff Móvil,Telecom & eSIMs,2,Not contacted
+TEAL Communications,Telecom & eSIMs,2,Not contacted
+Veek,Telecom & eSIMs,2,Not contacted
+Diri,Telecom & eSIMs,2,Not contacted
+Flash Mobile,Telecom & eSIMs,2,Not contacted
+SIMPLE Mobile,Telecom & eSIMs,2,Not contacted
+Coursera,E-Learning & EdTech,2,Not contacted
+Go1,E-Learning & EdTech,2,Not contacted
+Ironhack,E-Learning & EdTech,2,Not contacted
+4Geeks Academy,E-Learning & EdTech,2,Not contacted
+Aprende Institute,E-Learning & EdTech,2,Not contacted
+Age of Learning (ABCmouse),E-Learning & EdTech,2,Not contacted
+Udacity,E-Learning & EdTech,2,Not contacted
+Kultivi,E-Learning & EdTech,2,Not contacted
+MakeMake,E-Learning & EdTech,2,Not contacted
+Wormhole,E-Learning & EdTech,2,Not contacted
+Epic!,E-Learning & EdTech,2,Not contacted
+IXL Learning,E-Learning & EdTech,2,Not contacted
+Prodigy Education,E-Learning & EdTech,2,Not contacted
+Superprof,E-Learning & EdTech,2,Not contacted
+Bandsintown,Event & Travel Ticketing,2,Not contacted
+Ticketon,Event & Travel Ticketing,2,Not contacted
+See Tickets,Event & Travel Ticketing,2,Not contacted
+Weezevent,Event & Travel Ticketing,2,Not contacted
+AudienceView,Event & Travel Ticketing,2,Not contacted
+Uhuu,Event & Travel Ticketing,2,Not contacted
+Rezdy,Event & Travel Ticketing,2,Not contacted
+Getaround,Mobility & Ridesharing,2,Not contacted
+Free Now,Mobility & Ridesharing,2,Not contacted
+Via,Mobility & Ridesharing,2,Not contacted
+Gett,Mobility & Ridesharing,2,Not contacted
+Yango,Mobility & Ridesharing,2,Not contacted
+Careem,Mobility & Ridesharing,2,Not contacted
+MoObie,Mobility & Ridesharing,2,Not contacted
+Getmancar,Mobility & Ridesharing,2,Not contacted
+Flybondi,Airlines,2,Not contacted
+TAG Airlines,Airlines,2,Not contacted
+Silver Airways,Airlines,2,Not contacted
+Copa (Wingo excluded),Airlines,2,Not contacted
+Jazeera Airways,Airlines,2,Not contacted
+Widerøe,Airlines,2,Not contacted
+Flix (FlixBus/Greyhound),Passenger Transport & Ticketing,2,Not contacted
+Direct Ferries,Passenger Transport & Ticketing,2,Not contacted
+Amtrak,Passenger Transport & Ticketing,2,Not contacted
+Oltursa,Passenger Transport & Ticketing,2,Not contacted
+Tepsa,Passenger Transport & Ticketing,2,Not contacted
+Nueva Chevallier,Passenger Transport & Ticketing,2,Not contacted
+Bolivia Hop,Passenger Transport & Ticketing,2,Not contacted
+L'Express des Îles,Passenger Transport & Ticketing,2,Not contacted
+Vacasa,Hospitality & Lodging,2,Not contacted
+Sonder,Hospitality & Lodging,2,Not contacted
+Ayenda,Hospitality & Lodging,2,Not contacted
+Grupo Habita,Hospitality & Lodging,2,Not contacted
+Hoteles Misión,Hospitality & Lodging,2,Not contacted
+Catalonia Hotels & Resorts,Hospitality & Lodging,2,Not contacted
+Eurostars (Hotusa),Hospitality & Lodging,2,Not contacted
+Sercotel Hoteles,Hospitality & Lodging,2,Not contacted
+Ascott (Citadines/lyf),Hospitality & Lodging,2,Not contacted
+Pitchup,Hospitality & Lodging,2,Not contacted
+Indie Campers,Hospitality & Lodging,2,Not contacted
+Atrápalo,Travel & OTAs,2,Not contacted
+Headout,Travel & OTAs,2,Not contacted
+Viajala,Travel & OTAs,2,Not contacted
+Argo Solutions,Travel & OTAs,2,Not contacted
+Dollar Flight Club,Travel & OTAs,2,Not contacted
+HX (Hurtigruten Expeditions),Travel & OTAs,2,Not contacted
+IONOS,Web & Cloud Hosting,2,Not contacted
+Kinsta,Web & Cloud Hosting,2,Not contacted
+WP Engine,Web & Cloud Hosting,2,Not contacted
+SiteGround,Web & Cloud Hosting,2,Not contacted
+Fastly,Web & Cloud Hosting,2,Not contacted
+Dynadot,Web & Cloud Hosting,2,Not contacted
+Gcore,Web & Cloud Hosting,2,Not contacted
+Bitdefender,Cybersecurity & VPNs,2,Not contacted
+F-Secure,Cybersecurity & VPNs,2,Not contacted
+LastPass,Cybersecurity & VPNs,2,Not contacted
+Webroot,Cybersecurity & VPNs,2,Not contacted
+Tresorit,Cybersecurity & VPNs,2,Not contacted
+Windsurf,AI,2,Not contacted
+Krisp,AI,2,Not contacted
+Storytel,Digital Products & Subscriptions,2,Not contacted
+Everand / Scribd,Digital Products & Subscriptions,2,Not contacted
+Webtoon (Naver),Digital Products & Subscriptions,2,Not contacted
+Fanatiz,Digital Products & Subscriptions,2,Not contacted
+Garena,Digital Products & Subscriptions,2,Not contacted
+GitLab,SaaS,2,Not contacted
+Intercom,SaaS,2,Not contacted
+Pipedrive,SaaS,2,Not contacted
+Atlassian,SaaS,2,Not contacted
+DocuSign,SaaS,2,Not contacted
+Shopify,SaaS,2,Not contacted
+Mailchimp (Intuit),SaaS,2,Not contacted
+Sprout Social,SaaS,2,Not contacted
+Tiendanube (Nuvemshop),SaaS,2,Not contacted
+Omie,SaaS,2,Not contacted
+Boost Mobile,Telecom & eSIMs,2,Not contacted
+Claro (América Móvil),Telecom & eSIMs,2,Not contacted
+DT One,Telecom & eSIMs,2,Not contacted
+Entel,Telecom & eSIMs,2,Not contacted
+Millicom (Tigo),Telecom & eSIMs,2,Not contacted
+Movistar (Telefónica),Telecom & eSIMs,2,Not contacted
+TIM Brasil,Telecom & eSIMs,2,Not contacted
+Localphone,Telecom & eSIMs,2,Not contacted
+Prepay Nation,Telecom & eSIMs,2,Not contacted
+Sochitel,Telecom & eSIMs,2,Not contacted
+Emnify,Telecom & eSIMs,2,Not contacted
+Eseye,Telecom & eSIMs,2,Not contacted
+Soracom,Telecom & eSIMs,2,Not contacted
+Wireless Logic,Telecom & eSIMs,2,Not contacted
+eSIM Go,Telecom & eSIMs,2,Not contacted
+Flexiroam,Telecom & eSIMs,2,Not contacted
+Keepgo,Telecom & eSIMs,2,Not contacted
+Numero eSIM,Telecom & eSIMs,2,Not contacted
+Onomondo,Telecom & eSIMs,2,Not contacted
+Telna,Telecom & eSIMs,2,Not contacted
+Codecademy,E-Learning & EdTech,2,Not contacted
+Eduzz,E-Learning & EdTech,2,Not contacted
+GoStudent,E-Learning & EdTech,2,Not contacted
+Rosetta Stone,E-Learning & EdTech,2,Not contacted
+Voxy,E-Learning & EdTech,2,Not contacted
+Yousician,E-Learning & EdTech,2,Not contacted
+Fandango,Event & Travel Ticketing,2,Not contacted
+Musement,Event & Travel Ticketing,2,Not contacted
+Ticketek (TEG),Event & Travel Ticketing,2,Not contacted
+Atom Tickets,Event & Travel Ticketing,2,Not contacted
+Tixr,Event & Travel Ticketing,2,Not contacted
+TodayTix,Event & Travel Ticketing,2,Not contacted
+Vivenu,Event & Travel Ticketing,2,Not contacted
+Indiegogo,Crowdfunding & Donations,2,Not contacted
+StartEngine,Crowdfunding & Donations,2,Not contacted
+Wefunder,Crowdfunding & Donations,2,Not contacted
+Bonfire,Crowdfunding & Donations,2,Not contacted
+Catarse,Crowdfunding & Donations,2,Not contacted
+Fundly,Crowdfunding & Donations,2,Not contacted
+FundRazr,Crowdfunding & Donations,2,Not contacted
+Kickante,Crowdfunding & Donations,2,Not contacted
+Ko-fi,Crowdfunding & Donations,2,Not contacted
+Mightycause,Crowdfunding & Donations,2,Not contacted
+Tiltify,Crowdfunding & Donations,2,Not contacted
+Vaki,Crowdfunding & Donations,2,Not contacted
+Vakinha,Crowdfunding & Donations,2,Not contacted
+Zeffy,Crowdfunding & Donations,2,Not contacted
+Bit2Me,Crypto & Digital Assets,2,Not contacted
+Foxbit,Crypto & Digital Assets,2,Not contacted
+Wirex,Crypto & Digital Assets,2,Not contacted
+Belo,Crypto & Digital Assets,2,Not contacted
+Buda.com,Crypto & Digital Assets,2,Not contacted
+CryptoMarket,Crypto & Digital Assets,2,Not contacted
+Lemon Cash,Crypto & Digital Assets,2,Not contacted
+Ripio,Crypto & Digital Assets,2,Not contacted
+TruBit,Crypto & Digital Assets,2,Not contacted
+CMC Markets,Investment Platforms,2,Not contacted
+Flink,Investment Platforms,2,Not contacted
+Hapi,Investment Platforms,2,Not contacted
+M1 Finance,Investment Platforms,2,Not contacted
+Tickmill,Investment Platforms,2,Not contacted
+Trii,Investment Platforms,2,Not contacted
+Vested Finance,Investment Platforms,2,Not contacted
+Zipcar,Mobility & Ridesharing,2,Not contacted
+Kovi,Mobility & Ridesharing,2,Not contacted
+Porter Airlines,Airlines,2,Not contacted
+Sun Country Airlines,Airlines,2,Not contacted
+Baleària,Passenger Transport & Ticketing,2,Not contacted
+Distribusion,Passenger Transport & Ticketing,2,Not contacted
+Megabus,Passenger Transport & Ticketing,2,Not contacted
+Rome2Rio,Passenger Transport & Ticketing,2,Not contacted
+Easybook,Passenger Transport & Ticketing,2,Not contacted
+Ferryhopper,Passenger Transport & Ticketing,2,Not contacted
+Kupos,Passenger Transport & Ticketing,2,Not contacted
+Vexere,Passenger Transport & Ticketing,2,Not contacted
+Wanderu,Passenger Transport & Ticketing,2,Not contacted
+Wemobi,Passenger Transport & Ticketing,2,Not contacted
+Logitravel,Travel & OTAs,2,Not contacted
+DreamHost,Web & Cloud Hosting,2,Not contacted
+Hetzner,Web & Cloud Hosting,2,Not contacted
+InMotion Hosting,Web & Cloud Hosting,2,Not contacted
+Liquid Web,Web & Cloud Hosting,2,Not contacted
+A2 Hosting,Web & Cloud Hosting,2,Not contacted
+Gandi,Web & Cloud Hosting,2,Not contacted
+KingHost,Web & Cloud Hosting,2,Not contacted
+Name.com,Web & Cloud Hosting,2,Not contacted
+Porkbun,Web & Cloud Hosting,2,Not contacted
+Render,Web & Cloud Hosting,2,Not contacted
+Kaspersky,Cybersecurity & VPNs,2,Not contacted
+Panda Security,Cybersecurity & VPNs,2,Not contacted
+Trend Micro,Cybersecurity & VPNs,2,Not contacted
+G DATA,Cybersecurity & VPNs,2,Not contacted
+Hotspot Shield,Cybersecurity & VPNs,2,Not contacted
+Mullvad,Cybersecurity & VPNs,2,Not contacted
+PSafe,Cybersecurity & VPNs,2,Not contacted
+PureVPN,Cybersecurity & VPNs,2,Not contacted
+RoboForm,Cybersecurity & VPNs,2,Not contacted
+Windscribe,Cybersecurity & VPNs,2,Not contacted
+Mistral AI,AI,1,Not contacted
+Chai Research,AI,2,Not contacted
+Lovable,AI,1,Not contacted
+Replika (Luka),AI,2,Not contacted
+Looke,Digital Products & Subscriptions,2,Not contacted
+Ahrefs,SaaS,2,Not contacted
+Framer,SaaS,2,Not contacted
+Typeform,SaaS,2,Not contacted
