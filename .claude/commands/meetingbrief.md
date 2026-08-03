@@ -25,10 +25,10 @@ Search Google Calendar (`mcp__claude_ai_Google_Calendar__search_events`) for eve
 
 ## Step 2 — Internal history (run in parallel with Step 3)
 
-- **Memory + repo first:** check memory files and `data/research/` for an existing research brief or prior meeting brief on this company (e.g. `data/research/<company>-*.md`). If one exists, reuse and refresh it; never re-research from zero what is already verified.
+- **Calendar history (ALWAYS, never skip):** after finding the meeting in Step 1, search the calendar for PAST conversations with the people on this call. Run `mcp__claude_ai_Google_Calendar__list_events` with `fullText` = each external attendee's email, then their name, then the company name and its short forms (no time bounds, or bounded to the past). For every past event found: date, title, who attended, and whether it actually happened (accepted vs declined/cancelled). The output is a definitive statement either way: "prior meetings with these people: {list, dated}" or "no prior meeting with any attendee of this call exists on the calendar." That statement feeds the relationship timeline and the follow-up vs first-meeting framing, and a prior meeting that research would otherwise miss (e.g. a call with the same person under another company or event name) is exactly what this step exists to catch.
 - **Gmail** (if the Gmail MCP is connected): search `from:@{domain}`, `to:@{domain}`, and each external attendee's address. Read the most relevant threads in full. Extract: relationship timeline, who introduced whom, what pitch material the prospect ALREADY received (decks, recaps), commitments made, tone, unresolved items. If Gmail is not connected, note it and continue.
 - **Gong** (only if `GONG_ACCESS_KEY` is configured; check with `node -e "console.log(process.env.GONG_ACCESS_KEY ? 'CONFIGURED' : 'NOT_CONFIGURED')"`): pull prior call summaries, pains, objections, competitor mentions, unfulfilled action items. If not configured, skip silently with a one-line note.
-- Auto-detect mode: any history found → follow-up framing (build on what they know); nothing found → first-meeting framing.
+- Auto-detect mode: any history found (calendar, Gmail, Gong or memory) → follow-up framing (build on what they know); nothing found anywhere → first-meeting framing.
 
 ## Step 3 — External research (10-20 parallel WebSearches)
 
