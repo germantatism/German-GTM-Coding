@@ -12,7 +12,7 @@ Google Doc: https://docs.google.com/document/d/17TUFSuhggGtWqcS6tR2rTxnXbPchujrF
 
 | Action | Why |
 |---|---|
-| **Verify who Paul is.** Check the invite's display name and search him on LinkedIn before the call. | The invite shows only `paul@eventbrite.com` with no surname. The only Paul confirmable in public sources is **Paul Bach, Manager, Finance** (San Francisco, previously Senior Financial Analyst at Eventbrite, before that Abercrombie & Fitch, Ohio State). ⚠️ Medium confidence only, and it is unconfirmed whether he stayed through the April 2026 reduction. No Paul in a payments, treasury or fintech title exists in any public source. Do not greet him by an assumed title. |
+| **Open Paul Pasion's LinkedIn profile logged in and note his title and career path.** https://www.linkedin.com/in/phpasion/ | The attendee is confirmed as **Paul Pasion** (German confirmed the profile). His profile is set to private for logged-out viewers, so automated retrieval was blocked and no public source states his title or history. German has LinkedIn access; two minutes logged in closes the gap. Do not greet him by an assumed title until then. |
 | **Confirm Jarrett Falasco is attending.** | He has not responded to the invite (needsAction). |
 | **Get gong@y.uno to accept, or the call will not be recorded.** | The Gong recorder is on the invite but still needsAction. |
 | **Read the email thread with Paul yourself.** | The Gmail connector is not authorized in this session, so no thread history could be pulled. What was already sent, who introduced whom, and what was promised are all unknown. |
@@ -70,17 +70,17 @@ The product feed shipped **real-time sold-out status and a real-time waiting roo
 | Justo | Yuno | Yuno | Accepted |
 | Jarrett Falasco | Yuno | Yuno | ⚠️ No response |
 | gong@y.uno | Call recorder | Yuno | ⚠️ No response, recording at risk |
-| **Paul (surname unknown)** | ⚠️ **Unconfirmed** | Eventbrite | Accepted |
+| **Paul Pasion** | ⚠️ Title unconfirmed (private profile) | Eventbrite | Accepted |
 
-### Profile: paul@eventbrite.com ⚠️
+### Profile: Paul Pasion (paul@eventbrite.com) ✅ identity · ⚠️ role
 
-**Identity is not confirmed. Verify before the call.** The invite carries no display name or title.
+**Identity confirmed by German: https://www.linkedin.com/in/phpasion/.**
 
-- **Paul Bach, Manager, Finance at Eventbrite.** San Francisco. Previously Senior Financial Analyst at Eventbrite. Before Eventbrite: Abercrombie & Fitch (Senior Financial Analyst, Revenue Accounting Financial Analyst, Real Estate Accounting Analyst) and a commercial real estate internship at Huntington National Bank. Ohio State, Fisher College of Business. Listed on TheOrg's Eventbrite Finance and Accounting team. ⚠️ Medium confidence. No public talks, posts or quotes. Unverified whether he remained after April 2026.
-- **Ruled out:** Paul Pieralde (former Eventbrite Director of Security, now Senior Security Engineer at Amazon), Paul Duan (early data scientist, left years ago to found Bayes Impact).
-- **Note on the email format.** Do not read seniority into `paul@`. First-name-only is Eventbrite's most common address format at roughly 57% of addresses.
+- **What automated research could and could not get.** The profile is set to private for logged-out viewers (LinkedIn returns "Profile Not Found... may be private" to anonymous fetches), and no public source (DuckDuckGo, Bing, TheOrg, RocketReach, ZoomInfo, press) ties a Paul Pasion to Eventbrite. His **title, tenure and career history are therefore unknown** in this brief and must be read manually from the logged-in profile. ⚠️ Pre-meeting action above.
+- **What the first-name-only address suggests:** nothing. `firstname@` is Eventbrite's most common email format at roughly 57% of addresses, so it carries no seniority signal. That he kept the address through the April 2026 reduction does confirm he is a current employee.
+- **Earlier candidates now ruled out as the attendee:** Paul Bach (Manager, Finance), Paul Pieralde (ex Director of Security, now Amazon), Paul Duan (early data scientist, left years ago).
 
-**How to play an unconfirmed attendee:** open by asking him to describe what he owns today, in his own words, before positioning anything. If finance, lead hook 1 (cost). If product or engineering, lead hook 2 (speed to market and reliability). Do not guess his title out loud.
+**How to play an attendee whose role you do not know:** open by asking him to describe what he owns today, in his own words, before positioning anything. If finance, lead hook 1 (cost). If product or engineering, lead hook 2 (speed to market and reliability). Do not guess his title out loud.
 
 ### Relationship timeline
 
@@ -390,7 +390,7 @@ These build on what is already public. None re-ask something the filings or help
 # 11. Post-Meeting Checklist
 
 - Send the recap email the same day. Confirm what you heard, restate the agreed next step with a date, attach nothing he did not ask for.
-- Log the outcome and every new fact learned, especially **Paul's actual name, title and remit**, and who owns payment routing.
+- Log the outcome and every new fact learned, especially **Paul Pasion's title and remit**, and who owns payment routing.
 - Put the agreed working session on the calendar before the end of the day, with the routing owner invited.
 - Update memory: create `project_eventbrite.md` (Bending Spoons ownership, five-vendor stack, merchant-of-record model, LatAm and APAC card-only, contact map) and add the pointer line to `MEMORY.md`.
 - Update this file with the outcome, then commit and push.
