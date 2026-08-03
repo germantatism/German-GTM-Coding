@@ -39,10 +39,15 @@ Cover, at minimum:
    - LinkedIn frequently blocks automated fetches (HTTP 999/403). When blocked, do NOT give up silently: pull the same profile through Google's cache/snippets, Bing, TheOrg, RocketReach, ZoomInfo, conference speaker bios, and the company's own site, and label the source. If the profile still cannot be read, say so explicitly in the brief and add a ⚠️ pre-meeting action: "open {linkedin-url} manually" with the best-guess URL.
    - The brief's attendee profile section must show, per external attendee: title, tenure, career path, education, location, and one "how to read this person" line. Label unconfirmed identity matches ⚠️. An attendee section without LinkedIn-grade detail is incomplete unless the blocks above were tried and documented.
 2. **Company:** what it does, business model, revenue/users (label estimates), leadership, strategy themes (cost discipline, IPO, expansion), **corporate structure and subsidiaries** (parent company, regional/billing entities from ToS or filings, special cases where a market runs through a partner).
-3. **Payments stack:** PSPs/acquirers/aggregators (respect the PSP-chips scope rules: gateways/PSPs/MoR only; PayPal is a wallet, never a PSP), payment methods by market, fraud/3DS posture, billing entities, payments hiring signals, peer/competitor payment stacks.
-4. **News:** company news AND payments news, each item dated, newest first; flag anything from the last 7 days as a rapport opener.
-5. **Expansion plans:** new markets, launches, catalysts with dates.
-6. For global consumer merchants, add **top markets**: gamer/user demographics or market stats and local payment behavior per key country (anchor on canonical sources: Worldpay GPR, ESA, PGB, Lumikai, Statista, etc.).
+3. **Financials (dedicated module, always):**
+   - **10-year growth trajectory:** revenue (or GMV/users when revenue is not public) year by year or by milestone, from the earliest verifiable point to today. Public companies: pull from 10-Ks/annual reports. Private: funding rounds, disclosed valuations, and press-stated revenue, each labeled with source and date. If ownership changed (acquisition, take-private), split the trajectory at that point.
+   - **Recent-months trends:** the last 2-4 quarters or latest available filings/statements. Direction of revenue, margin, profitability, cash, headcount; guidance if any; restructurings or cost programs with dates.
+   - **Last full year:** revenue for the most recent completed fiscal year, plus net income/loss, EBITDA and gross margin when available, with the exact period and source named.
+   - **Anything else financially material, judged per company:** debt and maturities, funding rounds and runway, IPO or M&A activity, buybacks, take rate, unit economics, payment-processing cost commentary, concentration risks, auditor or reporting changes. Include what is relevant, drop what is not.
+4. **Payments stack:** PSPs/acquirers/aggregators (respect the PSP-chips scope rules: gateways/PSPs/MoR only; PayPal is a wallet, never a PSP), payment methods by market, fraud/3DS posture, billing entities, payments hiring signals, peer/competitor payment stacks.
+5. **News:** company news AND payments news, each item dated, newest first; flag anything from the last 7 days as a rapport opener.
+6. **Expansion plans:** new markets, launches, catalysts with dates.
+7. For global consumer merchants, add **top markets**: gamer/user demographics or market stats and local payment behavior per key country (anchor on canonical sources: Worldpay GPR, ESA, PGB, Lumikai, Statista, etc.).
 
 ## Step 4 — Build the brief (v2 structure, two zones)
 
@@ -55,16 +60,17 @@ Evidence labels throughout: ✅ verified · ⚠️ inference or unconfirmed (nev
 - **1. TL;DR Battle Card (max 1 page):** five facts to know cold · three hooks in priority order · THE objection they will raise + the answer · the ask (next step to land) · one rapport opener.
 - **2. Who Is in the Room:** attendee table (name, role, side, status/history) · profile per external attendee: what they do, what they have done, signals · the sponsor/intro path · relationship timeline ending with the implication ("they already have X, build on it") · map of other known contacts in the account.
 - **3. The Company:** what they do + key-metrics table · **corporate structure and subsidiaries table** (billing entities, parent, special cases) · leadership and strategy themes.
-- **4. Payments Money Map:** platform/orchestrator status, providers per region, fraud/3DS, hiring signals, peer context · methods-by-market table · framing rules for this account.
-- **5. Top Markets** (when relevant): demographics + payment behavior table with one "for the call" insight per row.
-- **6. News & Signals:** dated, newest first.
-- **7. Selling Yuno Here:** core frame · hooks with proof points (real Yuno cases only) · landmines (what NOT to say).
-- **8. Be Ready For:** table of what THEY may ask German (pricing, integration effort, PCI/security, references, build-vs-buy, how Yuno works with their specific stack) with ready answers.
+- **4. Financials:** dedicated section, always present. · **10-year growth table** (revenue or best-available proxy per year/milestone, source per row; split at ownership changes) · **recent-months trend read** (last 2-4 quarters: revenue direction, margin, profitability, cash, guidance, restructurings, each dated) · **last full year headline**: FY revenue plus net income/loss, EBITDA, gross margin when available, with period and source · **other material items** as judged per company (debt, funding, IPO/M&A, buybacks, take rate, payment-cost commentary, concentration risks) · end with one "so what for the call" line connecting the financial picture to the payments conversation (e.g. a margin plan makes processing cost the lever). Facts-only rules apply hard here: every number carries its period and source, estimates are labeled, and nothing is interpolated between known data points.
+- **5. Payments Money Map:** platform/orchestrator status, providers per region, fraud/3DS, hiring signals, peer context · methods-by-market table · framing rules for this account.
+- **6. Top Markets** (when relevant): demographics + payment behavior table with one "for the call" insight per row.
+- **7. News & Signals:** dated, newest first.
+- **8. Selling Yuno Here:** core frame · hooks with proof points (real Yuno cases only) · landmines (what NOT to say).
+- **9. Be Ready For:** table of what THEY may ask German (pricing, integration effort, PCI/security, references, build-vs-buy, how Yuno works with their specific stack) with ready answers.
 
 **LIVE ZONE (always last)**
-- **9. Agenda:** minute-by-minute table sized to the meeting length, with a "Notes: ____" column per block.
-- **10. Discovery Questions:** numbered, discovery-oriented, building on what is already known (never re-ask what emails answered), each followed by "Notes: ____".
-- **11. Post-Meeting Checklist:** recap email same day, log outcome and new facts, schedule the agreed next step, update memory.
+- **10. Agenda:** minute-by-minute table sized to the meeting length, with a "Notes: ____" column per block.
+- **11. Discovery Questions:** numbered, discovery-oriented, building on what is already known (never re-ask what emails answered), each followed by "Notes: ____".
+- **12. Post-Meeting Checklist:** recap email same day, log outcome and new facts, schedule the agreed next step, update memory.
 - **Appendix:** sources.
 
 ## Step 5 — Output (ALWAYS Google Docs)
