@@ -3,11 +3,25 @@
 **Tuesday, August 4, 2026 · 16:30 to 17:00 COT (30 minutes) · https://meet.google.com/zoj-mucn-hyd**
 Organizer: German Tatis · Prepared 2026-08-03
 
-> **Read this first, two things reframe the whole call.**
-> **1. The attendee is a payments infrastructure veteran, not a generalist.** Paul Pasion's career arc is Amazon, Marqeta (card issuing), Uber (marketplace payments and payouts at scale), and most recently Director of Payments Product and Engineering at Recurly (subscription billing). His own public bio reads "Payments and tech nerd." Do not explain what orchestration is. He has almost certainly evaluated one.
-> **2. Eventbrite is no longer NYSE: EB.** Bending Spoons S.p.A. (Milan) closed its acquisition on **2026-03-10** at $4.50 per share, roughly $505M, and the stock was delisted. Julia Hartz, CFO Anand Gandhi, CPO Ted Dworkin, CLO Lisa Gorman and the entire board are gone. Bending Spoons IPO'd on Nasdaq (BSP) on 2026-07-01. Calling Eventbrite public, citing earnings calls, or naming Hartz as CEO would be an immediate credibility loss.
+> **Read this first, three things reframe the whole call.**
+> **1. THIS IS A FORMAL ORCHESTRATOR EVALUATION, NOT COLD DISCOVERY.** Paul's email to German (quoted 2026-08-03) asks for *"specific examples of how your integrations with Braintree, Stripe, Adyen and J.P. Morgan Payments support marketplace use cases"* and states *"we are speaking with several other orchestrators."* They have already concluded that their self-built failover is not enough and are comparing vendors. The competition is no longer the status quo; it is other orchestrators.
+> **2. The attendee is a payments infrastructure veteran, not a generalist.** Paul Pasion's career arc is Amazon, Marqeta (card issuing), Uber (marketplace payments and payouts at scale), and most recently Director of Payments Product and Engineering at Recurly (subscription billing). His own public bio reads "Payments and tech nerd." Someone who writes that email is not a curious browser; he is the person holding the technical checklist, almost certainly running the evaluation.
+> **3. Eventbrite is no longer NYSE: EB.** Bending Spoons S.p.A. (Milan) closed its acquisition on **2026-03-10** at $4.50 per share, roughly $505M, and the stock was delisted. Julia Hartz, CFO Anand Gandhi, CPO Ted Dworkin, CLO Lisa Gorman and the entire board are gone. Bending Spoons IPO'd on Nasdaq (BSP) on 2026-07-01. Calling Eventbrite public, citing earnings calls, or naming Hartz as CEO would be an immediate credibility loss.
 
-**Objective, what winning looks like:** leave with Paul agreeing to a technical working session on routing economics, and with the name of whoever owns processor strategy today (him, or someone in Milan).
+**Objective, what winning looks like:** advance to the technical round of the bake-off with evidence, not slides. Concretely: leave with a scheduled working session where Yuno demonstrates the four named connectors against their marketplace flows, plus the evaluation's timeline, criteria and decision makers.
+
+## The email, decoded
+
+Paul's message carries four signals beyond its literal ask:
+
+1. **The four connectors he named are the evaluation scope: Braintree, Stripe, Adyen, J.P. Morgan Payments.** Three of them (Braintree, Stripe, Adyen) are already among Eventbrite's five listed payment sub-processors, so he is testing whether Yuno layers on top of the existing estate without an engineering project.
+2. **What he did NOT name matters: Cybersource and Mercado Pago.** Both are on their sub-processor list and absent from his question. ⚠️ Inference: that silence hints at where the strategic core of the evaluation sits, and possibly which rails are not part of the future stack. Do not assert it; note it.
+3. **J.P. Morgan Payments is NOT in their current stack. This is the big signal.** A merchant with 71.6% of revenue in the US putting JPM on the list is evaluating adding a direct bank acquirer, almost certainly for cost (direct acquiring economics on large US volume, possibly consolidating with a treasury bank). The read for Yuno: **the orchestrator they pick is probably the vehicle for bringing JPM in without building another in-house integration.** Whoever makes that migration look easy has structural advantage in this deal.
+4. **"Marketplace use cases" is the hard question, deliberately.** Eventbrite is a merchant of record with a two-sided flow: collect from the attendee, hold funds ($278M payable to creators), run reserves and chargebacks, pay out to creators (3% Instant Payout in the US). In processor language that means the platform products: Stripe Connect (which they already use for payouts in US/UK/CA/AU), Adyen for Platforms, Braintree marketplace tooling, and JPM's equivalent. He is probing whether an orchestrator's connectors reach **platform depth** (fund splits, sub-merchant KYC onboarding, payout ledgers) or only cover auth/capture/refund. Many orchestrators have the logo but only in simple pay-in mode. He is filtering who advances on evidence.
+
+Also: *"we are speaking with several other orchestrators"* is partly classic negotiating posture to pressure price and urgency. Behind it there is a real evaluation, which is good news: intent and budget exist. Probable rivals given the peer context in this brief: **BR-DGE** (used by Resident Advisor), **ProcessOut** (Checkout.com-owned, used by Fever), and the usual **Spreedly, Primer, Gr4vy, Payrails**.
+
+**Yuno's escape from the feature-matrix trap:** BR-DGE, Primer and Spreedly cannot say what Yuno can, that one layer covers **pay-in AND pay-out plus antifraud, KYC and reconciliation**. For a merchant of record holding $278M payable to creators, that is exactly the frame that breaks a connector-by-connector comparison.
 
 ## ⚠️ Pre-meeting actions
 
@@ -16,10 +30,11 @@ Organizer: German Tatis · Prepared 2026-08-03
 | **Open https://www.linkedin.com/in/phpasion/ logged in and read his current title and start date.** | His career history is verified from third-party databases, but **his Eventbrite title is not in any public source**, and every database still shows him at Recurly. That lag is consistent with a recent move, but it is inference. Two minutes logged in confirms what he actually owns. |
 | **Confirm Jarrett Falasco is attending.** | Still needsAction on the invite. |
 | **Get gong@y.uno to accept, or the call is not recorded.** | Still needsAction. |
-| **Read the email thread with Paul yourself.** | The Gmail connector is not authorized in this session, so no thread history could be pulled. What was already sent, who introduced whom, and what was promised are unknown to this brief. |
-| **You have a SYNC on the calendar at 11:30 the same morning** (meet.google.com/bex-zuij-hyf, with Jarrett and Justo, both still needsAction). | Use it to assign roles for the 16:30 call. |
+| **Build the four-connector capability matrix at the 11:30 SYNC** (meet.google.com/bex-zuij-hyf, with Jarrett and Justo, both still needsAction). | Paul asked for specific examples on **Braintree, Stripe, Adyen and J.P. Morgan Payments**. Before the call you need, per connector: operations supported, tokenization, payouts, and above all whether Yuno supports the **platform modes** (Stripe Connect, Adyen for Platforms, Braintree marketplace, the JPM equivalent) or standard acquiring only. ⚠️ This is internal Yuno knowledge that could not be verified from this session; it must come from Justo and Jarrett. Standing rule: what is not verified is not asserted on the call; the answer is "I will confirm that with the technical detail in the working session." |
+| **Prepare 1 or 2 real marketplace examples (Rappi, InDrive)** with the detail of which processors they route and whether payout is in the flow. | "Specific examples" is literally what he asked for. He is filtering who advances on evidence, not slides. |
+| **Authorize the Gmail connector** (claude.ai → Settings → Connectors → Gmail). | This brief only learned about Paul's email because German pasted it. The full thread (tone, history, whatever else was said) remains unread by this workflow, and next runs should read it directly. |
 
-**Calendar history, checked explicitly:** searched the calendar by Paul's email, his surname, the eventbrite.com domain and "Bending Spoons". **No prior meeting with any attendee of this call exists.** The only related events are your own prep blocks today (14:30 solo, 16:00 with Jarrett and Justo, which has a recording saved) and tomorrow's SYNC. Gong is not configured in this environment, so there is no call history either. **This is a genuine first meeting.**
+**Calendar history, checked explicitly:** searched the calendar by Paul's email, his surname, the eventbrite.com domain and "Bending Spoons". **No prior meeting with any attendee of this call exists.** The only related events are your own prep blocks today (14:30 solo, 16:00 with Jarrett and Justo, which has a recording saved) and tomorrow's SYNC. Gong is not configured in this environment, so there is no call history either. **First video call, but not a cold start: the email exchange already established intent.**
 
 ---
 
@@ -45,21 +60,27 @@ Organizer: German Tatis · Prepared 2026-08-03
 
 **Fourth hook, for a Milan audience:** the parent's IPO prospectus states that in Q1 2026, 75% of group revenue came through electronic payments, 67% of that via "providers such as Adyen, PayPal, and Stripe" and 33% via app stores at 15% to 30% against "5% or less" for processors, with a dedicated risk factor headed "A significant portion of our products depend on third-party payment processors." One integration absorbing each acquired brand's rail is a portfolio thesis.
 
-### THE objection he will raise, and the answer
+### THE challenge he will put, and the answer
 
-> **"I have built this. Why would I buy a routing layer instead of building one?"**
+The old objection ("we already have failover, why add a layer?") **is dead: they killed it themselves by opening a formal evaluation.** The real test is now:
 
-Coming from someone with his background this is the real objection, and it is not hostile. **Answer:** "Honestly, you could, and you would probably build a good one. The question I would put back is what it costs you to keep it. Every processor version change, every new method, every new market, every scheme mandate is ongoing engineering on a team that just got smaller and has reliability, creator tools, discovery and checkout on the same roadmap. What we sell is not the routing logic, it is not having to own the maintenance of five integrations and the observability across them. Ticketmaster built theirs. Resident Advisor and Fever bought theirs. Both are defensible; the difference is what you want your engineers spending cycles on this year."
+> **"Do your Braintree, Stripe, Adyen and JPM connectors reach platform depth for marketplace use cases, or just auth, capture and refund?"**
 
-**Second objection: "Payments decisions sit with Bending Spoons now."** Convert it, do not fight it: "That makes it a bigger conversation, not a smaller one. Their own prospectus quantifies this at the portfolio level. Point me at whoever owns routing in Milan and let us bring them in."
+**Answer discipline:** only what the 11:30 matrix confirmed gets asserted. For everything else, verbatim: "I will confirm that with the technical detail in the working session, and I would rather show you than tell you." Then pivot to the frame competitors cannot match: "The part I can tell you today is that we treat your model as what it is, a merchant of record with a two-sided flow. Orchestration for you is not just routing the pay-in; it is the payout side, the fraud layer, KYC onboarding for organizers and reconciliation across processors, in one layer. That is the conversation where a connector checklist stops being the whole picture."
+
+He may also probe the fund-flow question directly: **if a payment is collected on one processor but the creator payout runs on another rail, how does the ledger reconcile while preserving the MoR model?** If the matrix has not confirmed the answer, take it to the working session; do not improvise.
+
+**Second challenge, the comparison itself: "We are speaking with several other orchestrators."** Do not flinch and do not disparage anyone. "That is the right way to run this. What I would ask is that the comparison include the payout and reconciliation side, because that is where marketplace orchestration actually gets hard, and where the differences between us and the pay-in-only players show up." It is also partly negotiating posture; the correct response to posture is process questions, not concessions.
+
+**Third: "Payments decisions sit with Bending Spoons now."** Convert it: "That makes it a bigger conversation, not a smaller one. Their own prospectus quantifies this at the portfolio level. Point me at whoever owns routing in Milan and let us bring them in."
 
 ### The ask
 
-A 45 to 60 minute technical working session in the next two weeks with him and whoever owns processor strategy. Offer to bring a cost and authorization model on two or three of their non-US markets. Fallback: permission to send the model plus a warm introduction to the routing owner.
+Advance to the technical round: a working session where Yuno demonstrates the four named connectors against their actual flows, with the routing owner present. Walk out with the evaluation's **timeline, decision criteria, and who else is at the table**, all normal questions in a bake-off. Also confirm whether **JPM is something they are already negotiating or something they want the orchestrator to enable**.
 
 ### Rapport opener
 
-His background. "Marqeta, Uber, Recurly is about as complete a payments arc as it gets, issuing through marketplace through recurring. What pulled you to ticketing?" It is specific, verifiable, flattering, and it opens directly into discovery question 1. **Do not open on the acquisition or the layoffs.** A product alternative if you want something lighter: they shipped a real-time waiting room on 2026-07-13 and order-level transfer refunds on 2026-07-24.
+His background. "Marqeta, Uber, Recurly is about as complete a payments arc as it gets, issuing through marketplace through recurring. What pulled you to ticketing?" Specific, verifiable, flattering. **Then the question that earns the whole call:** "When you say marketplace use cases, what weighs most for you: fund splits, organizer onboarding, payouts, or the funds-holding side?" His answer tells you exactly what to demo and reveals the real pain. **Do not open on the acquisition or the layoffs.**
 
 ---
 
@@ -464,6 +485,9 @@ Yuno is the unified operating system for global financial infrastructure, orches
 - **Do not assert Adyen's or Cybersource's specific role.** Listed but undisclosed. Ask, it is a good question.
 - **Do not assert his title or that he was hired to fix payments.** Both are inferences.
 - **Do not pitch replacement.** Say early that Stripe, Braintree, Adyen, Cybersource and Mercado Pago all stay.
+- **Do not assert any connector capability the 11:30 matrix did not confirm.** In a bake-off run by a payments engineer, one overclaimed capability discovered later kills the deal. "I will confirm in the working session" is a strength, not a weakness.
+- **Do not disparage the other orchestrators** he is talking to, and do not guess out loud who they are. Reframe the comparison onto payout, reconciliation and the full-stack scope instead.
+- **Do not read the Cybersource and Mercado Pago omission back to him as a conclusion.** It is an inference about evaluation scope. If relevant, ask about geographic scope instead: "does the evaluation cover the LatAm rails too, or is this phase US and Europe?"
 
 ---
 
@@ -471,7 +495,9 @@ Yuno is the unified operating system for global financial infrastructure, orches
 
 | What he may ask | Ready answer |
 |---|---|
-| **"Why not build it?"** (most likely, given his background) | See the battle card. Concede he could, reframe on maintenance cost and opportunity cost of engineering cycles, and use the peer split: Ticketmaster built, Resident Advisor and Fever bought. |
+| **"Do your connectors support Connect / Adyen for Platforms / Braintree marketplace / JPM's equivalent, or just standard acquiring?"** (the central question of the evaluation) | Only what the 11:30 matrix confirmed. Everything else: "I will confirm with the technical detail in the working session." Then widen to payout, reconciliation, fraud and KYC in one layer. |
+| "If you route my pay-in to one processor and my payout runs elsewhere, how does the ledger reconcile without breaking my MoR model?" | If confirmed in the matrix, answer concretely. If not, working session. Never improvise fund-flow answers to a person who has built payout ledgers. |
+| "Why not build it?" (less likely now that they opened a formal evaluation, but possible from him) | Concede he could, reframe on maintenance and opportunity cost, use the peer split: Ticketmaster built, Resident Advisor and Fever bought. |
 | "How do you price?" | Per-transaction on volume, decoupled from processor economics so the incentive is to lower your cost per transaction. Shape now, number after seeing volume by market and method. Do not invent a rate. |
 | "What does integration actually cost my team?" | One integration to Yuno, then each processor and method is configuration. Be honest that the first integration is real work; the return is on the second and every one after. Offer an API and SDK walkthrough. |
 | "Do we replace Stripe or Braintree?" | No. Everything stays. Say it before he asks. |
@@ -489,25 +515,29 @@ Yuno is the unified operating system for global financial infrastructure, orches
 
 # 10. Agenda (30 minutes)
 
+Restructured for a bake-off: less open discovery, more demonstration, and process questions at the close.
+
 | Time | Block | Notes |
 |---|---|---|
-| 0:00 to 0:03 | Intros. Rapport on his Marqeta/Uber/Recurly arc. Ask what pulled him to ticketing. Agree the 30 minutes. | Notes: ____________________ |
-| 0:03 to 0:06 | Yuno in 60 seconds, no orchestration 101. State up front that nobody gets replaced. | Notes: ____________________ |
-| 0:06 to 0:20 | **Discovery.** The longest block on purpose. Questions 1 through 6. | Notes: ____________________ |
-| 0:20 to 0:26 | Where Yuno fits, built on what he just said. One proof point, chosen live. Hand technical depth to Justo or Jarrett. | Notes: ____________________ |
-| 0:26 to 0:30 | Next step: the working session, and who else owns processor strategy. Confirm follow-up and who to copy. | Notes: ____________________ |
+| 0:00 to 0:03 | Intros. Rapport on his Marqeta/Uber/Recurly arc. Then the clarifier from his own email: "when you say marketplace use cases, what weighs most: splits, onboarding, payouts, funds holding?" His answer steers the whole call. | Notes: ____________________ |
+| 0:03 to 0:08 | **Targeted discovery.** Questions 2 through 5 below: how routing decides today, where decisions sit post-acquisition, and the JPM question. | Notes: ____________________ |
+| 0:08 to 0:20 | **The evidence block, the longest on purpose.** The four connectors from the 11:30 matrix (only confirmed facts), plus the Rappi and InDrive marketplace examples with processors routed and payout flows. This answers "specific examples" head on. Hand technical depth to Justo or Jarrett. | Notes: ____________________ |
+| 0:20 to 0:26 | The frame that breaks the feature matrix: pay-in plus pay-out plus fraud, KYC and reconciliation in one layer for a MoR holding $278M payable to creators. | Notes: ____________________ |
+| 0:26 to 0:30 | **Process close:** timeline, decision criteria, who else is at the table, whether JPM is negotiated or to-be-enabled, and the working session with the routing owner. | Notes: ____________________ |
 
 # 11. Discovery Questions
 
-Nothing here re-asks what filings or the help centre already answer. Calibrated for a payments engineer, not a generalist.
+Nothing here re-asks what filings or the help centre already answer. Calibrated for a payments engineer running a vendor evaluation.
 
-1. **Before I assume anything, how is your world scoped at Eventbrite post-acquisition? What sits under you?**
+1. **"When you say marketplace use cases, what weighs most for you: fund splits, organizer onboarding, payouts, or the funds-holding side?"** (His own email, turned back. The answer steers the demo and reveals the pain.)
    *Notes: ____________________________________________*
-2. **Coming from Recurly and Marqeta into ticketing, what looked different about this payments problem from the outside, and what has surprised you since?**
+2. **"J.P. Morgan Payments is not on your sub-processor list today. Is that a relationship you are already negotiating, or something you would want the orchestration layer to enable?"** (The biggest signal in his email. The answer changes the pitch: enablement is Yuno's home turf.)
    *Notes: ____________________________________________*
-3. **Your sub-processor page lists five payment vendors and the 10-K describes multiple integrations with back-up alternatives. In practice, what decides which one takes a given transaction today?** (Availability, geography, method, or something else. The pivotal question.)
+3. **Your sub-processor page lists five payment vendors and the 10-K describes multiple integrations with back-up alternatives. In practice, what decides which one takes a given transaction today?** (Still the pivotal question, and now it also reveals how far their internal evaluation has gone.)
    *Notes: ____________________________________________*
-4. **Since the transition in March, where do processor and routing decisions actually get made? Here, or Milan?**
+4. **Since the transition in March, where do processor and routing decisions actually get made? Here, or Milan? And for this evaluation specifically, who besides you is at the table, what are the criteria, and what timeline are you working to?** (Normal bake-off questions; ask them without apology.)
+   *Notes: ____________________________________________*
+4b. **Coming from Recurly and Marqeta into ticketing, what looked different about this payments problem from the outside, and what has surprised you since?** (Rapport-grade discovery, use if the room allows.)
    *Notes: ____________________________________________*
 5. **41% of paid tickets are outside the US but 28% of revenue. When you look at that gap, how much of it is pricing versus acceptance and completion?**
    *Notes: ____________________________________________*
