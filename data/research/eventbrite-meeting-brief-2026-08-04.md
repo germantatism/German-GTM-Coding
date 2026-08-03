@@ -351,6 +351,20 @@ Payouts land roughly five business days after the event, with a reserve against 
 
 Eventbrite's fee page splits countries into current "Standard" packages (US, UK, Canada, Australia, Ireland, New Zealand) and **"Legacy Package Countries"** including Spain, Netherlands, Germany, Mexico, Brazil, Argentina, Hong Kong and Singapore. That word is theirs. Orchestration is how a smaller team keeps monetizing a long tail it no longer staffs.
 
+**Structural detail worth noticing:** the UK, Australia and Ireland are sold as a **single blended ticketing fee with no separately disclosed processing line**, while the US, Canada and New Zealand unbundle service fee and processing fee. Where processing is bundled, the merchant absorbs the variance; where it is unbundled, the buyer sees it. Both models are affected differently by a cost change, which is a good question to ask rather than assume.
+
+**The buyer-facing processing fee has moved, and moved up ✅** (Eventbrite's own help pages and archived captures):
+
+| Period | US processing fee charged | Source |
+|---|---|---|
+| Through 2018-09-03 | **3.0%** of ticket cost | Help article, 2017 capture |
+| From 2018-09-04, 1pm EDT | **2.5%** of total transaction | Fee-change article, verbatim: "a reduction in the Eventbrite Service flat fee (from $0.99 to $0.79) and the EPP fee (from 3% to 2.5%)" |
+| By 2023-01-20 to today | **2.9%** per order | Pricing page and help article 755615 |
+
+The same 2018 change **removed the US$19.95 per-ticket fee cap**, and no cap has been disclosed since. So over eight years the processing fee they charge buyers fell then rose 40bps, while the service fee rose materially (Professional was 2.5% + $1.99 in 2018 against 3.7% + $1.79 today). ⚠️ You cannot infer their acquiring cost from any of this; the buyer-facing fee is a price, not a cost. Use it only to show you have read the history.
+
+**Organizer-selectable processors have narrowed.** Until roughly 2021 organizers could choose **Eventbrite Payment Processing, PayPal, or Authorize.Net** (US and Canada, and only on a paid package). Authorize.Net was present in a March 2021 capture and gone by September 2022. Today the help centre offers only EPP, with PayPal framed purely as the fallback "if you don't see your currency." The consolidation onto EPP is complete, which is consistent with the dormant `accept_authnet` flag still sitting in the checkout payload.
+
 ### Hiring signal ✅
 
 `eventbrite.com/careers/jobs` now redirects to `jobs.bendingspoons.com` (verified 2026-08-03). Across the full Bending Spoons job board: payment 1, fraud 0, billing 0, treasury 0, fintech 0. No payments organization is being staffed up. **Do not say this out loud.** Use it to calibrate: if Paul owns payments, he likely owns it thinly.
