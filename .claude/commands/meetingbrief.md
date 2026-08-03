@@ -33,7 +33,11 @@ Search Google Calendar (`mcp__claude_ai_Google_Calendar__search_events`) for eve
 ## Step 3 — External research (10-20 parallel WebSearches)
 
 Cover, at minimum:
-1. **Attendees:** each external person's role, background, career history, public footprint. Label unconfirmed identity matches ⚠️ and add a "verify on LinkedIn" action.
+1. **Attendees — LinkedIn is MANDATORY, not a fallback.** For EVERY external attendee, go to their LinkedIn profile directly:
+   - Find the profile: WebSearch `site:linkedin.com/in "{name}" {company}` (plus variants: name + title, name + company + city). If only an email is on the invite, first resolve the name (email-format sites, TheOrg, ZoomInfo, company site, press releases), then search LinkedIn.
+   - Open the profile with WebFetch and extract: exact current title and start date, full career history (companies, roles, years), education, location, headline/About, recent posts or activity, mutual signals (payments/fintech vocabulary, conference talks, shared connections German should know about).
+   - LinkedIn frequently blocks automated fetches (HTTP 999/403). When blocked, do NOT give up silently: pull the same profile through Google's cache/snippets, Bing, TheOrg, RocketReach, ZoomInfo, conference speaker bios, and the company's own site, and label the source. If the profile still cannot be read, say so explicitly in the brief and add a ⚠️ pre-meeting action: "open {linkedin-url} manually" with the best-guess URL.
+   - The brief's attendee profile section must show, per external attendee: title, tenure, career path, education, location, and one "how to read this person" line. Label unconfirmed identity matches ⚠️. An attendee section without LinkedIn-grade detail is incomplete unless the blocks above were tried and documented.
 2. **Company:** what it does, business model, revenue/users (label estimates), leadership, strategy themes (cost discipline, IPO, expansion), **corporate structure and subsidiaries** (parent company, regional/billing entities from ToS or filings, special cases where a market runs through a partner).
 3. **Payments stack:** PSPs/acquirers/aggregators (respect the PSP-chips scope rules: gateways/PSPs/MoR only; PayPal is a wallet, never a PSP), payment methods by market, fraud/3DS posture, billing entities, payments hiring signals, peer/competitor payment stacks.
 4. **News:** company news AND payments news, each item dated, newest first; flag anything from the last 7 days as a rapport opener.
