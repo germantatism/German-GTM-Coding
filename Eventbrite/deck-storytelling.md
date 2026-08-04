@@ -4,6 +4,7 @@
 **Cambios vs v1:** entra Executive Summary como primer slide de contenido · EBANX fuera del stack actual (no son cliente de EBANX, cero mentiras) · el routing de pay-ins Y payouts pasa al centro con respaldo de la documentación pública de Yuno · desaparece la sección Proof (la lista de clientes la absorbe: entra Fiverr, salen los que no hacen fit).
 **Fuentes:** transcript call 2026-08-04 (Paul Pasion) · docs.y.uno (Routing, Payouts, Split Marketplace Payments) · deck Flair como referencia de formato.
 **Deadline externo:** viernes 2026-08-14. Justo en Milán en ~3 semanas.
+**Dato de German (2026-08-04):** Top 10 operating countries de Eventbrite (de **122**): 1 US · 2 UK · 3 Canadá · 4 Australia · 5 Italia · 6 Alemania · 7 España · 8 Irlanda · 9 Francia · 10 México. Implicación para el deck: el peso está en US + Europa (IT/DE/ES/FR, territorio de Milán y de PSD3) y México es el único LatAm en el top 10; usar estos países en los ejemplos de routing y en el slide de entidades.
 
 ---
 
