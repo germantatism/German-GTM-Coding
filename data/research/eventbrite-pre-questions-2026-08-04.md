@@ -1,6 +1,7 @@
-# Eventbrite Pre-Questions Bank: Yuno <> Eventbrite Call
+# Eventbrite Pre-Questions Bank: Yuno <> Eventbrite Call — FINAL (v2, internally reviewed)
 
 **2026-08-04, 16:30 COT. Attendee: Paul Pasion (Eventbrite). Yuno: German, Justo, Jarrett.**
+**v2 status:** reviewed by the internal Yuno knowledge agent (avg quality 7.9/10). 8 answers corrected (Q2, Q8, Q9, Q28, Q37, Q51, Q57, Q59), conditional-promise rule applied (Q39, Q41, Q48, Q51: no dated commitments without a confirmed owner), 4 questions added from the gap check (Q61 to Q64). All OPEN items and ⚠️ statuses REMAIN OPEN: the review validated wording, not internal facts; Section 0 still needs Justo + Jarrett.
 Paste-ready for the "pre questions" tab of the meeting brief doc. Companion research: `eventbrite-platform-deepdives-2026-08-04.md`.
 
 **Their verbatim ask:** "For reference, we are currently speaking with several other orchestrators. During our call, we would like to see specific examples of how your integrations with PayPal (Braintree), Stripe, Adyen, and JPM Chase support marketplace use cases."
@@ -46,7 +47,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q2. [MUST REHEARSE] "On Stripe specifically: can a payment created through Yuno target one of our existing connected accounts, with destination, application fee, and statement descriptor fields passed through? Or do we re-paper every organizer?"
 **Why they ask:** Organizers sign the Stripe Connected Account Agreement; re-onboarding the creator base is commercially unacceptable.
-**A (spoken):** "Yes, and nobody gets re-papered. In our model, your organizers exist as recipients in Yuno, and each recipient is linked to your provider connections, including existing Stripe connected accounts. The split payment carries the purchase, commission, and fee components through to Stripe's transfer mechanics. Your organizers' agreements, their KYC status, and their payout schedules stay exactly where they are today. We sit in front of the charge, not inside your Connect relationship."
+**A (spoken, FINAL):** "Nobody gets re-papered. Your organizers exist as recipients in Yuno, each linked to your provider connections, including existing Stripe connected accounts, and the split carries purchase, commission, and fee components through Stripe's transfer mechanics. Agreements, KYC status, and payout schedules stay exactly where they are. On the exact field-level pass-through, destination, application fee, statement descriptor, I'll give you the field map in the technical session rather than improvise API fields on a call; the model is that we sit in front of the charge, not inside your Connect relationship."
 **Backup:**
 - Recipients link to one or more provider connections; split types PURCHASE, COMMISSION, PAYMENTFEE, VAT, MARKETPLACE, with liability fields for processing fee and chargebacks. https://docs.y.uno/docs/payment-features/split-payments-marketplace
 - **INTERNAL:** GFM flows use application_fee_amount and transfer_data on Stripe through Yuno; onboarding transfers between recipients exist (POST /v1/recipients/{id}/onboardings/{id}/transfer).
@@ -102,7 +103,8 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q8. "Do you support Mercado Pago as we use it in Mexico and Argentina, and can you switch on the local rails we have flagged off: OXXO, boleto, Rapipago, Pago Facil, installments, Pix?"
 **Why they ask:** Card-only checkout in MX/AR/SG/HK is their biggest conversion gap; this is the growth story.
-**A (spoken):** "Yes, Mercado Pago is a documented connector for us, wallet and checkout flows included, and LatAm is where Yuno is strongest, it is where we were born. OXXO, boleto, Rapipago, Pago Facil, Pix, and installment programs like meses sin intereses are standard methods in our catalog through local processors. The interesting part for you: those flags already exist dormant in your checkout payload, so this is activation, not construction. The one piece I want to flag honestly is settlement timing: cash vouchers settle days later, which interacts with your five-day post-event payout clock, and we should design that together in the working session."
+**A (spoken):** "Yes, Mercado Pago is a documented connector for us, wallet and checkout flows included, and LatAm is where Yuno is strongest, it is where we were born. OXXO, boleto, Rapipago, Pago Facil, Pix, and installment programs like meses sin intereses are standard methods in our catalog through local processors. And from what's visible in your own checkout, much of this is activation, not construction; the plumbing for these methods is closer than you may think. The one piece I want to flag honestly is settlement timing: cash vouchers settle days later, which interacts with your five-day post-event payout clock, and we should design that together in the working session."
+**Safety rule:** never say "we probed your checkout payload" in any form; "from what's visible in your checkout" at most.
 **Backup:**
 - Mercado Pago in Yuno docs since 2020: Checkout Pro, wallet enrollment, antifraud. https://docs.y.uno/changelog/android
 - Dormant Eventbrite flags verified 2026-08-03: should_accept_oxxo, rapipago, pagofacil, boleto_bancario, maxInstallments (meeting brief).
@@ -112,7 +114,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q9. [MUST REHEARSE] "If a transaction fails over between processors, what happens to the split configuration, the connected account attribution, and the payout mapping? Failover on a marketplace is not just re-authing a card."
 **Why they ask:** They built failover in-house precisely because naive retry breaks funds attribution. This question separates real marketplace orchestration from card-retry demos.
-**A (spoken):** "You're right, and this is exactly why marketplace failover has to be recipient-aware. In our model the retry can only cascade to a connection where that organizer is onboarded as a recipient; the split is then re-expressed in the winning processor's own split mechanics. Where the organizer exists on only one processor, routing pins to it, no blind cascading. So failover and splits compose, but by design, not magic: you decide which organizers are multi-homed and which are pinned. That is exactly how our live marketplace merchant runs it across two acquirers today. I'd love to walk the failure cases with your team in the deep dive, because the edge cases are where we've done the real work."
+**A (spoken):** "You're right, and this is exactly why marketplace failover has to be recipient-aware. In our model the retry can only cascade to a connection where that organizer is onboarded as a recipient; the split is then re-expressed in the winning processor's own split mechanics. Where the organizer exists on only one processor, routing pins to it, no blind cascading. So failover and splits compose, but by design, not magic: you decide which organizers are multi-homed and which are pinned. We run this recipient-aware model in production with a live marketplace merchant today, and I'd love to walk the concrete failure cases with your team in the deep dive, because the edge cases are where we've done the real work."
 **Backup:**
 - Split validation requires all recipients onboarded on the connection. https://docs.y.uno/docs/payment-features/split-payments-marketplace
 - Routing: outcome paths per connection for Declined/Error with chained next steps. https://docs.y.uno/docs/using-yuno/dashboard-overview/routing
@@ -256,7 +258,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q24. "Could you help us extend instant payouts beyond the US, and who carries funds and FX risk in that model?"
 **Why they ask:** Instant Payout at 3% is a revenue line and a creator-retention lever.
-**A (spoken):** "It is a genuine expansion path, and the answer depends on the market: in Latin America we have live payout rails today, Pix payouts in Brazil for example, and funds always move processor-to-recipient, never through Yuno, so FX and settlement risk stay with the licensed provider. For Europe and APAC I want to scope provider by provider rather than claim a map. What I can commit to: we bring the payout providers to one API, and you keep the pricing power, the way you already monetize instant payouts at 3 percent over Stripe's 1 percent rail."
+**A (spoken):** "It is a genuine expansion path, and the answer depends on the market: in Latin America we have live payout rails today, Pix payouts in Brazil for example, and funds always move processor-to-recipient, never through Yuno, so FX and settlement risk stay with the licensed provider. For Europe and APAC I want to scope provider by provider rather than claim a map. What I can commit to: we bring the payout providers to one API, and you keep the pricing power you have today over the payout experience." (Do not spell out their 3%-over-1% margin arithmetic; it is public math, let them do it.)
 **Backup:**
 - PIX_PAYOUT, STP_PAYOUT (MX), NEQUI/TRANSFIYA (CO) documented. https://docs.y.uno/reference/payouts/create-payout
 - Stripe's 1% instant fee vs Eventbrite's 3% pricing: https://docs.stripe.com/connect/instant-payouts
@@ -297,7 +299,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q28. "What did your fastest and slowest enterprise implementations actually take, and what made the slow one slow?"
 **Why they ask:** Small post-acquisition team; a 12-month, 10-engineer integration is not viable.
-**A (spoken):** "I will give you real numbers rather than a brochure answer, and I want to pull the exact comparable cases with our delivery team so the numbers are honest, that is a follow-up I will bring to the working session. What I can tell you directionally from public cases: inDrive stood up 10 new countries in under 8 months on our layer, and our marketplace merchant went from contract to live production splits in months, not years. The slow implementations in this industry are always the same cause: underestimating funds-flow design, which is exactly why we start there with you, not with the SDK."
+**A (spoken, FINAL):** "I'll give you real numbers with our delivery team as a follow-up rather than a brochure answer. Directionally, from public cases: inDrive stood up 10 new countries in under 8 months on our layer. Slow implementations in this industry always have the same cause, underestimating funds-flow design, which is exactly why we start there with you, not with the SDK."
 **Backup:**
 - inDrive: 10 countries <8 months, ~90% approval quote. https://y.uno/en/success-stories/indrive
 - **INTERNAL:** GFM timeline: integration work visible from ~Aug 2025 (shared Stripe channel), live 2026-02-19.
@@ -386,7 +388,8 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q37. "We enable 3DS2 in only five European markets, by choice. Who decides when 3DS fires in your platform? Can we keep exemption logic per market, and our current 3DS setup?"
 **Why they ask:** Blanket 3DS would crater conversion on high-demand on-sales; some orchestrators impose their own decisioning.
-**A (spoken):** "You decide, not us. 3DS in Yuno is routed through the same rules engine as payments: per market, per BIN, per amount, and it supports three models, including external MPI, meaning you keep your own 3DS provider where you have one, and our 3DS where you want it. Your current posture, 3DS2 in the UK and the four EU markets and nothing elsewhere, expresses directly as routing rules. Nothing fires globally because a vendor default said so."
+**A (spoken, FINAL):** "You decide, not us. 3DS routes through the same rules engine as payments: per market, per BIN, per amount, and it supports three models including external MPI, so you keep your own 3DS provider where you have one, and our 3DS where you want it. However you run 3DS today, and I'd rather have you describe your current posture than assume it, that expresses directly as routing rules. Nothing fires globally because a vendor default said so."
+**Note:** never assert their 3DS configuration as fact; let them describe it.
 **Backup:**
 - Three 3DS models documented: Checkout SDK auto, External MPI ("use your own 3DS"), Direct; 3DS via dynamic routing; 3DS Standalone feature. https://docs.y.uno/docs/security-and-compliance/3d-secure, https://docs.y.uno/docs/payment-features/3ds-standalone
 - ⚠️ SCA exemption engine (TRA, low-value) per acquirer: not explicitly documented; do not claim, offer technical session.
@@ -403,7 +406,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q39. "Where is our transaction data processed and stored, and how do you handle GDPR, UK, Brazil, Mexico data residency?"
 **Why they ask:** Cross-border data through a new intermediary creates compliance work their shrunken team cannot absorb.
-**A (spoken):** "GDPR compliance and ISO 27701 privacy certification are in place, and I want to give your privacy team the precise data-residency architecture in writing rather than approximate regions in a call, that lands with the compliance package this week."
+**A (spoken, FINAL):** "GDPR compliance and ISO 27701 privacy certification are in place, and I want to give your privacy team the precise data-residency architecture in writing rather than approximate regions in a call; I'll confirm the exact delivery timeline with our compliance team right after this call." (Say "this week" only once a delivery owner is confirmed.)
 **Backup:**
 - Data residency specifics: NOT publicly documented. Do not improvise. (Open item 10.)
 **Status:** OPEN (residency architecture: SecOps)
@@ -424,7 +427,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q41. [MUST REHEARSE] "You become a single point of failure in front of my multi-processor redundancy. Measured availability, SLA with credits, and what happens to checkout when Yuno itself is down?"
 **Why they ask:** The ironic failure mode of orchestration; the bypass answer separates serious vendors from the rest. They built failover precisely so no single vendor can take down checkout.
-**A (spoken):** "The most legitimate question in this space, and I will not answer it with adjectives. Directionally: our platform is built for processor failure as a routine event, automatic failover, retries, and traffic redistribution when a provider degrades, and one public case: a merchant whose provider-disruption response went from five to ten minutes of manual work to milliseconds of automatic rerouting. For Yuno's own availability, measured uptime, the SLA with credits, and the degraded-mode design, I want you to have the real engineering answer with real numbers, and I would rather bring our platform team to the technical session than quote marketing at you. I will send the SLA documentation this week."
+**A (spoken):** "The most legitimate question in this space, and I will not answer it with adjectives. Directionally: our platform is built for processor failure as a routine event, automatic failover, retries, and traffic redistribution when a provider degrades, and one public case: a merchant whose provider-disruption response went from five to ten minutes of manual work to milliseconds of automatic rerouting. For Yuno's own availability, measured uptime, the SLA with credits, and the degraded-mode design, I want you to have the real engineering answer with real numbers, and I would rather bring our platform team to the technical session than quote marketing at you. I'll confirm right after this call exactly when the SLA documentation reaches you." (Promise a date only once the doc's existence and owner are confirmed.)
 **Backup:**
 - Rappi public case: disruption response 5-10 min to milliseconds. https://y.uno/en/success-stories/rappi
 - Routing: "Automatically redistributes traffic if a provider's performance drops." https://y.uno/en/product/smart-routing
@@ -442,7 +445,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q43. "Show me your status page history and your worst incident in the last 18 months: duration, impact, root cause, what changed."
 **Why they ask:** Postmortem culture tells the truth that SLA pages do not; evasion is disqualifying.
-**A (spoken):** "Right way to evaluate any vendor in your critical path. I will bring the incident history and how we communicated it, and you should ask our references the same question, ideally the finance team, not just engineering. I would rather show you a real postmortem than claim we have never had a bad day; nobody in payments gets to claim that honestly."
+**A (spoken):** "That is the right way to evaluate any vendor in your critical path. I will bring the incident history and how we communicated it, and you should ask our references the same question, ideally the finance team, not just engineering. I would rather show you a real postmortem than claim we have never had a bad day; nobody in payments gets to claim that honestly."
 **Backup:**
 - Public status page: not found in research. OPEN. Do not claim one exists until verified.
 **Status:** OPEN (status page + incident narrative: platform)
@@ -487,7 +490,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q48. "Beyond your fee: what did year one actually cost a customer our size, including our engineering months?"
 **Why they ask:** The fee is never the cost; they need the fully loaded number against the do-nothing baseline.
-**A (spoken):** "Fair, and the honest comparison for you is not Yuno versus free, it is Yuno versus the fully loaded cost of your in-house failover layer: every processor version change, every new method, every new market is engineering headcount you no longer have. I will bring a year-one TCO from a comparable merchant, integration engineering included, to the working session as a named deliverable."
+**A (spoken):** "Fair, and the honest comparison for you is not Yuno versus free, it is Yuno versus the fully loaded cost of your in-house failover layer: every processor version change, every new method, every new market is engineering headcount you no longer have. I'll scope with our delivery team what comparable year-one numbers we can share, integration engineering included, and bring them to the working session." (Confirm feasibility with Justo before naming it a deliverable.)
 **Backup:** OPEN (comparable TCO case: Justo/delivery).
 **Status:** OPEN
 **Source:** none
@@ -515,7 +518,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q51. "Rather than slides: can you show me live, today, a split payment on Stripe Connect through your API, and the same order failing over to a second processor?"
 **Why they ask:** They asked in writing for specific examples; inability to demo the named use case reads as not ready.
-**A (spoken):** "Yes to showing you the real thing, with one honesty rule we hold ourselves to: everything we show gets labeled GA, beta, or roadmap as we go, you should hold every vendor to that. If we do not get through the full flow in this half hour, my commitment is a hands-on sandbox with marketplace features enabled for your team this week, real API keys, your engineers driving, not ours."
+**A (spoken, FINAL):** "Yes to showing you the real thing, with one honesty rule we hold ourselves to: everything we show gets labeled GA, beta, or roadmap as we go, and you should hold every vendor to that. And if we don't get through the full flow in this half hour, my commitment is hands-on sandbox access for your engineers, real API keys, your team driving; I'll confirm the exact timeline right after this call." (Upgrade back to "this week" the moment open item 12 is confirmed.)
 **Backup:**
 - Demo depth constraint is real: Jarrett flagged he may be limited on a very deep dive. Pre-align with him exactly which screens/flows are shown and how each is labeled. (Open items 2 and 12.)
 **Status:** ⚠️ partial (demo scope: Jarrett)
@@ -575,7 +578,7 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q57. "If we activated local methods and installments in Latin America through you, what ships in the first 90 days, and how do delayed-settlement methods like OXXO reconcile against a payout due 5 days post-event?"
 **Why they ask:** APM expansion is the growth story, but cash-voucher settlement timing collides with their payout clock; they want evidence we thought past checkout.
-**A (spoken):** "First 90 days, realistically: Mexico installments and OXXO through your existing Mercado Pago rail plus our recommended local acquirers, Brazil Pix, which is already eight times card volume there, and Argentina installments, all as routing configuration against your dormant checkout flags, this is activation, not construction. On your second point, which most vendors will not have thought about: delayed-settlement methods change the cash timing, not the payout obligation, so the design is settlement-aware payout eligibility, an OXXO ticket enters the organizer's payable when the voucher confirms, not when it is issued, and your five-day clock runs from event date as today with funds already settled. We model that per method in the business case, with your real settlement lags."
+**A (spoken):** "First 90 days, realistically: Mexico installments and OXXO through your existing Mercado Pago rail plus our recommended local acquirers, Brazil Pix, which now moves more transactions than cards in Brazil, and Argentina installments, all as routing configuration; from what's visible in your checkout this is activation, not construction. On your second point, which most vendors will not have thought about: delayed-settlement methods change the cash timing, not the payout obligation, so the design is settlement-aware payout eligibility, an OXXO ticket enters the organizer's payable when the voucher confirms, not when it is issued, and your five-day clock runs from event date as today with funds already settled. We model that per method in the business case, with your real settlement lags."
 **Backup:**
 - Pix 8.6x card volume (Central Bank of Brazil, meeting brief section 5).
 - Dormant flags list (meeting brief).
@@ -592,7 +595,8 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ### Q59. "Our owner runs 50+ consumer apps on their own stacks. Does anything support or block one Yuno contract across multiple legal entities and product lines?"
 **Why they ask:** Group-level leverage changes the commercial calculus; entity surprises kill deals at legal review.
-**A (spoken):** "Our architecture is built for exactly that: organizations with multiple accounts, entities, and connections under one integration, with per-entity segregation. Several of our merchants run multiple brands and countries under one relationship. If the Bending Spoons portfolio conversation ever becomes relevant, Eventbrite is the natural first case, and the contract can be structured to extend rather than restart. I would genuinely welcome that conversation with Milan."
+**A (spoken, FINAL):** "Our architecture is built for exactly that: organizations with multiple accounts, entities, and connections under one integration, with per-entity segregation. Several of our merchants run multiple brands and countries under one relationship. If the portfolio conversation becomes relevant on your side, the contract can extend rather than restart; Eventbrite would be the natural first case."
+**Note:** let THEM raise the parent-company angle; do not presume a conversation with Milan.
 **Backup:**
 - Organization > Account > Connections architecture documented. https://docs.y.uno/reference/organizations/connections-routing-overview
 - Reserva public case: multiple brands under one orchestration layer (meeting brief hook 2).
@@ -606,6 +610,30 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 - **INTERNAL:** PayPal marketplace in build for GFM; Adyen "being built out more" (Jarrett); Zoop split connector extension in flight. Consistent with the spoken direction; do not cite merchants.
 **Status:** ⚠️ partial (dated roadmap: product)
 **Source:** internal Slack
+
+---
+
+# ADDED AFTER INTERNAL REVIEW (GAP CHECK)
+
+### Q61. "Who is our named technical contact post-sale, and what does enterprise support look like: ticket SLAs, shared Slack channel, TAM?"
+**Why they ask:** A skeleton team needs to know the vendor carries the operational load, not them.
+**A (spoken):** "A dedicated technical account manager plus a shared-channel model with our engineers is the standard enterprise shape, and support tiers with response SLAs go in the proposal in writing, not as verbal assurances. The people you meet in the technical session are the people who run our largest accounts."
+**Status:** ⚠️ partial (confirm the exact support model and SLAs with Justo before quoting specifics)
+
+### Q62. "What happens to in-flight payments during a Yuno deploy or a region failover?"
+**Why they ask:** Deploy-time behavior reveals engineering maturity; fund-holding marketplaces cannot tolerate lost or duplicated payment events.
+**A (spoken):** "Same standard I'm holding on availability: no adjectives. That question goes to our platform team in the technical session with the real engineering answer, deploy semantics, idempotency behavior, and what fails open versus closed. What I can say now is that idempotency keys are first-class in our APIs, and our transaction query APIs give you the authoritative pull path independent of event delivery."
+**Status:** OPEN (platform team)
+
+### Q63. "Can our data team get read-only access to routing decisions for audit?"
+**Why they ask:** Consistent with the routing-neutrality concern (Q47); they want to verify, not trust.
+**A (spoken):** "Routing decisions are auditable per transaction: you can see which connection took it and why, against the rules you configured. The exact export surface for your data team, API versus reports, is a technical-session item, and given the neutrality question you raised, I'd encourage you to make auditability a scoring criterion for every vendor in your process."
+**Status:** ⚠️ partial (export surface detail: technical session)
+
+### Q64. "Which of your answers today will you put in writing?"
+**Why they ask:** The natural close for an honesty-test buyer.
+**A (spoken):** "All of them. The follow-up includes the per-provider GA map, the feature matrix against the features you use, and the SLA documentation, in writing. Hold us to it, and hold the other six vendors to the same standard."
+**Status:** ✅ (the commitment mechanism itself; the documents behind it are the Section 0 items)
 
 ---
 
@@ -639,4 +667,11 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 - Stripe, Braintree, Adyen, Cybersource, Mercado Pago all STAY; never pitch replacement
 - Do not mention: layoffs, CFIUS, Delaware lawsuit, privacy letters, NYSE:EB, earnings calls, Julia Hartz as CEO
 - **INTERNAL facts (GFM volumes, war rooms, build statuses, mock connectors) are for calibration only; never quoted externally**
+
+## Additions from the internal review (binding)
+- **No unconfirmed "this week" promises.** Every dated commitment needs a confirmed owner before the call; otherwise say "I'll confirm the timeline right after this call." Applies to Q39, Q41, Q48, Q51 and anything improvised live.
+- **Never say "we probed/inspected your checkout payload."** Maximum: "from what's visible in your checkout." (Q8, Q57)
+- **Never assert their configuration as fact** (3DS posture, processor roles); let them describe it. (Q37, consistent with the Adyen/Cybersource landmine)
+- **The anonymized reference is only anonymous while vague.** February go-live + two named processors + the homepage logo is a solvable puzzle; freeze all further detail (tips/fees/rails) until GoFundMe permission lands. (Q15, Q28, Q50)
+- **Q31 bracket discipline:** if JPM status is unresolved at call time, use only the neutral second half (Orbital vs modern API + orchestrator-as-right-architecture) and commit to a written status within 24h. Never improvise beyond the bracket.
 
