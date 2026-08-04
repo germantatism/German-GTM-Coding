@@ -1,7 +1,8 @@
-# Eventbrite Pre-Questions Bank: Yuno <> Eventbrite Call — FINAL (v2, internally reviewed)
+# Eventbrite Pre-Questions Bank: Yuno <> Eventbrite Call — FINAL (v3)
 
 **2026-08-04, 16:30 COT. Attendee: Paul Pasion (Eventbrite). Yuno: German, Justo, Jarrett.**
 **v2 status:** reviewed by the internal Yuno knowledge agent (avg quality 7.9/10). 8 answers corrected (Q2, Q8, Q9, Q28, Q37, Q51, Q57, Q59), conditional-promise rule applied (Q39, Q41, Q48, Q51: no dated commitments without a confirmed owner), 4 questions added from the gap check (Q61 to Q64). All OPEN items and ⚠️ statuses REMAIN OPEN: the review validated wording, not internal facts; Section 0 still needs Justo + Jarrett.
+**v3 additions:** Yuno for Platforms capability brief (internal agent, public-docs based) added as Appendix B, plus 6 product-model questions (Q65 to Q70) derived from it.
 Paste-ready for the "pre questions" tab of the meeting brief doc. Companion research: `eventbrite-platform-deepdives-2026-08-04.md`.
 
 **Their verbatim ask:** "For reference, we are currently speaking with several other orchestrators. During our call, we would like to see specific examples of how your integrations with PayPal (Braintree), Stripe, Adyen, and JPM Chase support marketplace use cases."
@@ -637,6 +638,40 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 
 ---
 
+# YUNO FOR PLATFORMS: PRODUCT QUESTIONS (ADDED v3, from the capability brief)
+
+### Q65. "Is 'Yuno for Platforms' an off-the-shelf product or positioning? What exactly are we buying?"
+**Why they ask:** Bake-off evaluators test whether the marketplace story is a packaged product or slideware.
+**A (spoken):** "It is a real capability set, documented and live, not a label: the recipient object, typed split payments, recipient-linked payouts, and the orchestration layer underneath, all through one integration. What you buy is that model configured to your funds flow: your entities as accounts, your processors as connections, your organizers as recipients. The packaging and commercial shape come in the proposal; the capabilities you can verify in our public docs today."
+**Status:** ✅ (components documented: Recipients, Split Payments Marketplace, Payouts, routing)
+
+### Q66. "We process through different legal entities per region. How does your account structure map to that?"
+**Why they ask:** They run 16 subsidiaries with dedicated processing entities (Dublin, Mexico "Payment Processing", AU, SG, HK, CA); entity mapping kills deals at legal review.
+**A (spoken):** "One organization, multiple accounts, one integration. Each account maps to a country, entity, or brand, with its own provider connections, routing rules, and reporting, so your Dublin entity, your Mexican payment-processing entity, and the US parent each keep their own configuration while your engineers integrate once. Reporting rolls up or segregates per entity, which your finance team will care about at close."
+**Status:** ✅ (Organization > Accounts > Connections documented)
+
+### Q67. "Can one payment split across multiple recipients? Our orders can contain tickets from multiple events."
+**Why they ask:** Basket-level multi-seller checkout is a known breaking point (PayPal multiparty caps at 10 purchase units, for example).
+**A (spoken):** "Yes. The split breakdown distributes typed components, purchase, commission, fees, tax, across one or more recipients in the same payment, and the same structure carries into refunds, so a partial refund can target the right recipient's share. Multi-event orders express naturally; the constraint to design around is each underlying provider's own split mechanics, which is exactly what we map in the technical session."
+**Status:** ✅ (multi-recipient splits documented; provider mechanics honesty kept)
+
+### Q68. "We are effectively headless. What integration surfaces exist?"
+**Why they ask:** A platform with its own checkout does not want an SDK-only vendor.
+**A (spoken):** "Server-to-server API first, which is how marketplace merchants at our largest scale integrate with us, plus web and mobile SDKs and hosted checkout where you want them. Headless is a first-class path, not a workaround. One nuance: capturing cards through our SDK narrows your PCI scope toward SAQ A, while direct API keeps your current PCI posture with our vault or PCI proxy behind it; both are supported, you choose per surface."
+**Status:** ✅ (API/SDK/hosted surfaces + PCI proxy documented)
+
+### Q69. "Does the sub-merchant dimension actually survive retries, refunds, and reporting?"
+**Why they ask:** This is the practical test of "first-class object" claims.
+**A (spoken):** "Yes, and that is the design point. Because payments reference the recipient object rather than a metadata tag, the sub-merchant dimension persists through routing decisions, retries, refunds, and into reporting and reconciliation. Your per-organizer view does not fragment when the processor changes: the processor is an attribute, the organizer is the key."
+**Status:** ✅
+
+### Q70. "You claim 300+ providers and 1,000+ methods. What of that is actually relevant to us?"
+**Why they ask:** Catalog numbers are the classic orchestrator vanity metric; a sharp evaluator discounts them.
+**A (spoken):** "Honestly, a fraction, and that is the right way to read any vendor's catalog number. What matters for you: your five current providers, the JPM leg you want to add, and the local methods in your card-only markets, Pix, OXXO, installments, plus the payout rails where expansion earns something. The catalog's value is optionality: the next method or processor is configuration, not a build. We will scope the relevant subset in the business case rather than wave the catalog at you."
+**Status:** ✅ (catalog claims are public marketing; the framing keeps them honest)
+
+---
+
 # APPENDIX. VERIFIED FACTS CHEAT SHEET
 
 ## Yuno (public, safe to state)
@@ -674,4 +709,56 @@ Q1, Q2, Q5, Q6, Q9, Q11, Q16, Q21, Q22, Q25, Q26, Q31, Q41, Q50, Q54. They are m
 - **Never assert their configuration as fact** (3DS posture, processor roles); let them describe it. (Q37, consistent with the Adyen/Cybersource landmine)
 - **The anonymized reference is only anonymous while vague.** February go-live + two named processors + the homepage logo is a solvable puzzle; freeze all further detail (tips/fees/rails) until GoFundMe permission lands. (Q15, Q28, Q50)
 - **Q31 bracket discipline:** if JPM status is unresolved at call time, use only the neutral second half (Orbital vs modern API + orchestrator-as-right-architecture) and commit to a written status within 24h. Never improvise beyond the bracket.
+
+---
+
+# APPENDIX B. YUNO FOR PLATFORMS — CAPABILITY BRIEF (internal agent, public-docs based)
+
+*Scope note: this brief is built from Yuno's public documentation (docs.y.uno, y.uno). It describes the platform/marketplace model and its documented capabilities. Provider-by-provider GA status, timelines, and anything commercial (pricing, SLA terms) are not covered here; those come from the product and commercial teams.*
+
+## 1. The model in one paragraph
+
+Yuno for Platforms is Yuno's orchestration model for marketplaces, ticketing platforms, delivery apps, and any business that processes payments on behalf of third parties (sellers, creators, organizers, drivers: "recipients"). The platform keeps its role as merchant of record and keeps its own ledger; Yuno provides a single integration layer that orchestrates the **pay-in leg** across multiple processors, represents sub-merchants as first-class objects, carries split instructions with each payment, and (where enabled) orchestrates payouts. Yuno is **never in the funds flow**: money settles processor to merchant directly; Yuno moves instructions and data, not funds.
+
+## 2. Core building blocks
+
+*Organizations, accounts, connections:* one organization can hold multiple accounts (per country, entity, or brand), each with its own provider connections, routing rules, and reporting. One integration covers all of them; this is how multi-country / multi-brand platforms run under a single relationship.
+
+*Recipients (sub-merchant object):* recipients are first-class API objects, not metadata. A recipient represents the seller/creator/organizer, carries identification and account data, and is linked to the platform's provider connections (e.g. an existing Stripe connected account). Payments reference recipients, so the sub-merchant dimension survives routing, retries, refunds, and reporting.
+
+*Split payments:* a payment can carry a split breakdown with **typed components** (PURCHASE, COMMISSION, PAYMENTFEE, VAT, MARKETPLACE) distributed across one or more recipients. The split travels with the transaction into the provider's platform mechanics (e.g. Stripe Connect transfers and application fees, Adyen for Platforms splits), so commission/fee logic is expressed once at the Yuno layer instead of per-processor.
+
+*Provider platform flavors:* for marketplace use cases the connectors target the platform/marketplace flavor of each provider's API where available (Stripe Connect, Adyen for Platforms, PayPal multiparty, local equivalents such as Pagar.me recipients), not just vanilla acquiring. Exact per-provider scope is a matrix the team shares in technical sessions.
+
+## 3. Pay-in orchestration (applies fully to the platforms model)
+
+- *One API / SDKs:* single integration (server-to-server API, web/mobile SDKs, hosted checkout) covering 300+ providers and 1,000+ payment methods globally: cards, wallets, bank transfers (Pix, PSE, SPEI), cash, BNPL, installments.
+- *Smart routing:* rules engine on any transaction attribute (country, currency, amount, BIN, method, recipient) with cascading/retry across providers. Currency and market pinning are routing conditions (relevant for no-FX policies).
+- *Vaulting and network tokens:* PCI DSS Level 1 vault, cards stored once and routable to any connected processor; network tokenization so credentials travel with the routing decision instead of being locked to one PSP. Documented vault export (encrypted, to a PCI L1 destination) on exit.
+- *3DS and fraud:* flexible 3DS orchestration (including external MPI support) driven by the same rules engine; native anti-fraud capabilities plus orchestration of third-party fraud providers.
+- *Lifecycle:* authorizations, captures (full/partial), refunds (full/partial, split-aware), voids, webhooks for every status transition, idempotency, merchant-side order references carried end to end.
+
+## 4. Recipient lifecycle and KYC
+
+Recipient creation and onboarding runs through Yuno's API; where the underlying provider requires its own KYC/verification (e.g. Stripe Connect hosted onboarding, Adyen hosted onboarding), Yuno orchestrates into those flows. Important honesty point: **KYC is a per-provider regulatory obligation**; an orchestrator cannot collapse one KYC into universal coverage across processors. What Yuno removes is the integration cost of each flow, not the regulatory step itself.
+
+## 5. Payouts
+
+Yuno has a payouts API (recipient-linked) with documented coverage concentrated in the Americas (US + LATAM, 17 countries in the public docs). A platform can also keep its existing payout rails (e.g. Stripe Connect payouts) while Yuno orchestrates only pay-ins; the recipient object still gives a unified per-sub-merchant view across processors. Coverage beyond the documented countries is a roadmap conversation with the team.
+
+## 6. Reporting and reconciliation
+
+Per-transaction data with recipient and split detail, unified across processors; reconciliation tooling that ingests processor settlement files (the settlement file stays the anchor, important for platforms with their own ledger); dashboards per account/entity; metadata pass-through (event IDs, batch IDs, internal keys) for joining Yuno data to the platform's ledger.
+
+## 7. Migration and exit posture
+
+- Shadow/passthrough mode and percentage-based traffic splits with instant rollback; platforms migrate gradually, keeping existing processors live.
+- Stored credentials keep working: vault migration paths for existing card-on-file portfolios; network tokens are scheme-level assets.
+- Exit: documented vault export, transaction history via reporting APIs, and, because Yuno never holds funds, no balance to unwind. Exit is a routing change, not a treasury event.
+
+## 8. Compliance envelope
+
+PCI DSS Level 1, SOC 2 Type II, ISO 27001, ISO 27701, GDPR alignment; Visa-listed service provider. Specific dates, AOC, and residency architecture are shared under NDA via the compliance package.
+
+*Sources: docs.y.uno (Payments, Recipients/Split Payments, Payouts, Routing, Tokenization, Reconciliation sections) and y.uno public pages.*
 
