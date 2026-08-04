@@ -48,6 +48,11 @@ Cover, at minimum:
 5. **News:** company news AND payments news, each item dated, newest first; flag anything from the last 7 days as a rapport opener.
 6. **Expansion plans:** new markets, launches, catalysts with dates.
 7. For global consumer merchants, add **top markets**: gamer/user demographics or market stats and local payment behavior per key country (anchor on canonical sources: Worldpay GPR, ESA, PGB, Lumikai, Statista, etc.).
+8. **Competitors (dedicated module, always): minimum 10 named competitors with estimated market share each.**
+   - Identify at least 10 real competitors. Segment them if the company competes in more than one arena (e.g. self-serve vs enterprise, regional vs global) rather than mixing unlike players in one flat list.
+   - For EACH competitor, get a market-share estimate. Acceptable bases, in order of preference: revenue or GMV share from filings/analyst reports; category share from a named research house (Statista, Mordor, 6sense/Datanyze, IBISWorld, SimilarWeb traffic share); or a derived proxy (e.g. company GMV ÷ published market size) computed transparently. **Every share figure is labeled with its source AND its basis** (revenue share vs web-install share vs traffic share vs derived), because these bases disagree wildly and presenting one as another is fabrication.
+   - If no share estimate exists anywhere for a competitor, the row still appears with the best verifiable scale proxy (revenue, GMV, tickets/users, funding) and share marked "no estimate available", never a guessed percentage.
+   - Also capture per competitor, one line: what differentiates them, and their payments posture if known (PSP, orchestrator, MoR model) since that feeds the peer-context table of the Money Map.
 
 ## Step 4 — Build the brief (v2 structure, two zones)
 
@@ -61,16 +66,17 @@ Evidence labels throughout: ✅ verified · ⚠️ inference or unconfirmed (nev
 - **2. Who Is in the Room:** attendee table (name, role, side, status/history) · profile per external attendee: what they do, what they have done, signals · the sponsor/intro path · relationship timeline ending with the implication ("they already have X, build on it") · map of other known contacts in the account.
 - **3. The Company:** what they do + key-metrics table · **corporate structure and subsidiaries table** (billing entities, parent, special cases) · leadership and strategy themes.
 - **4. Financials:** dedicated section, always present. · **10-year growth table** (revenue or best-available proxy per year/milestone, source per row; split at ownership changes) · **recent-months trend read** (last 2-4 quarters: revenue direction, margin, profitability, cash, guidance, restructurings, each dated) · **last full year headline**: FY revenue plus net income/loss, EBITDA, gross margin when available, with period and source · **other material items** as judged per company (debt, funding, IPO/M&A, buybacks, take rate, payment-cost commentary, concentration risks) · end with one "so what for the call" line connecting the financial picture to the payments conversation (e.g. a margin plan makes processing cost the lever). Facts-only rules apply hard here: every number carries its period and source, estimates are labeled, and nothing is interpolated between known data points.
-- **5. Payments Money Map:** platform/orchestrator status, providers per region, fraud/3DS, hiring signals, peer context · methods-by-market table · framing rules for this account.
-- **6. Top Markets** (when relevant): demographics + payment behavior table with one "for the call" insight per row.
-- **7. News & Signals:** dated, newest first.
-- **8. Selling Yuno Here:** core frame · hooks with proof points (real Yuno cases only) · landmines (what NOT to say).
-- **9. Be Ready For:** table of what THEY may ask German (pricing, integration effort, PCI/security, references, build-vs-buy, how Yuno works with their specific stack) with ready answers.
+- **5. Competitive Landscape:** dedicated section, always present. **One table, minimum 10 competitors**, columns: competitor · segment · estimated market share (with source AND basis: revenue share vs install share vs traffic share vs derived; "no estimate available" when nothing sourced exists, never a guessed number) · scale proxy (revenue/GMV/users, dated) · one-line differentiator · payments posture if known. Below the table: 2-3 lines on where the prospect sits in this field and one "for the call" implication. Include the mandatory caveat when using install-base sources (6sense/Datanyze measure website tech installs, not revenue; never present those as revenue share).
+- **6. Payments Money Map:** platform/orchestrator status, providers per region, fraud/3DS, hiring signals, peer context · methods-by-market table · framing rules for this account.
+- **7. Top Markets** (when relevant): demographics + payment behavior table with one "for the call" insight per row.
+- **8. News & Signals:** dated, newest first.
+- **9. Selling Yuno Here:** core frame · hooks with proof points (real Yuno cases only) · landmines (what NOT to say).
+- **10. Be Ready For:** table of what THEY may ask German (pricing, integration effort, PCI/security, references, build-vs-buy, how Yuno works with their specific stack) with ready answers.
 
 **LIVE ZONE (always last)**
-- **10. Agenda:** minute-by-minute table sized to the meeting length, with a "Notes: ____" column per block.
-- **11. Discovery Questions:** numbered, discovery-oriented, building on what is already known (never re-ask what emails answered), each followed by "Notes: ____".
-- **12. Post-Meeting Checklist:** recap email same day, log outcome and new facts, schedule the agreed next step, update memory.
+- **11. Agenda:** minute-by-minute table sized to the meeting length, with a "Notes: ____" column per block.
+- **12. Discovery Questions:** numbered, discovery-oriented, building on what is already known (never re-ask what emails answered), each followed by "Notes: ____".
+- **13. Post-Meeting Checklist:** recap email same day, log outcome and new facts, schedule the agreed next step, update memory.
 - **Appendix:** sources.
 
 ## Step 5 — Output (ALWAYS Google Docs)
