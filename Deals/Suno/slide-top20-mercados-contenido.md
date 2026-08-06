@@ -38,3 +38,11 @@ PANEL ARCHETYPE SPLIT: Mature "$11.9M/yr (~51%)" 11 markets, led by the US · Fu
 FOOTNOTE: "Allocation model: $17-29M/yr portfolio estimate (see decision frame) distributed by traffic share x payment-gap multiplier (full-stack 1.6x, APM-led 1.2x, mature 0.8x). Traffic per SimilarWeb; Thailand, Poland, Ukraine and Vietnam estimated. Subscriber impact at $150/yr blended ARPU. Russia excluded (no billable rails); Vietnam requires VND enablement. All figures to validate in the joint data sprint."
 
 Nota de consistencia: la columna de tráfico usa los MISMOS valores del mapa (slide 7) del deck; mantener una sola fuente en todo el deck. Cuadre: Mature 11.85 + Full-stack 9.65 + APM 1.6 = 23.1 ✓; Top3 9.9/23.1=43% ✓; Top10 18.35/23.1=79% ✓.
+
+
+## v3 FINAL (tabla exactamente igual a la de Anthropic: visitas en M + MRR mensual con barras)
+Columnas: # | Country | Suno monthly visits | Incremental MRR | Dominant play | Archetype
+US 4.9M $385K · BR 1.4M $265K · DE 1.2M $115K · RU 1.0M n/a · ID 0.95M $175K · IN 0.9M $165K · UK 0.85M $80K · JP 0.8M $100K · FR 0.75M $70K · IT 0.6M $60K · KR 0.6M $85K · ES 0.6M $55K · CA 0.55M $45K · TR 0.45M $85K · MX 0.4M $75K · TH 0.35M $50K · PL 0.33M $35K · UA 0.28M $25K · NL 0.22M $20K · VN 0.21M $40K
+PORTFOLIO TOTAL: $1.9M/mo | $23M annualized · ~150K subscriber impact
+Paneles: PORTFOLIO TOTAL 1B+ local-payment audience / ~23M monthly visits / ~150K subscriber impact · CONCENTRATION Top3 ~43% (US BR ID), Top10 ~79% · ARCHETYPE Full-stack ~$810K/mo (42%), APM-led ~$135K/mo (7%), Mature ~$990K/mo (51%)
+Cuadre: MRR suma $1.93M/mo = $23.2M/yr = punto medio del rango $17-29M ✓. Columna de usuarios etiquetada "monthly visits" (SimilarWeb) en vez de MAU: honesto y visualmente identico.
