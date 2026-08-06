@@ -26,3 +26,9 @@ Este archivo es el registro; la lista operativa por diapositiva se entregó en c
 13. Nada de breach, BBB F ni outage en el deck: va a circular dentro de Suno.
 
 Detalle completo por diapositiva: ver mensaje de chat de esta fecha (sesión Claude 2026-08-06) o reconstruir de este resumen.
+
+## Slides del deck Anthropic (1tog6yCe3-QViNsu9ENEk-ES-sWbSpGDH) a adaptar para Suno
+Prioridad alta: decision frame (Stripe-only vs 2do PSP vs orquestación), arquitectura keep-Stripe, waterfall metodológico de 3 levers, tabla top-mercados con arquetipos, slide de 6 data inputs requeridos, sprint de datos de 2 semanas, matriz 2x2 de priorización.
+Opcionales: wave-2 emergentes (con twist Suno: los mercados donde los usuarios ya hackean el pago: Nigeria/Ghana/Pakistán/Filipinas documentados), dedicated teams 4 columnas, sprint BD 60 días para mandatos recurrentes (Pix Automático / UPI AutoPay).
+NO copiar: bloque huérfano de Mastercard/Agent Pay en la slide "why move now" (artefacto de otro deck); números de Anthropic sin recalcular (ARPU $240/yr vs Suno ~$150/yr blended, WAU de Claude, etc.).
+Detalle completo en chat 2026-08-06 (noche).
