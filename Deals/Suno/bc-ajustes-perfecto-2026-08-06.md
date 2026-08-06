@@ -16,7 +16,7 @@ Este archivo es el registro; la lista operativa por diapositiva se entregó en c
 3. Cero claims de "missing methods" sobre lo que ya viven (UPI, KakaoPay, NaverPay, Cash App Pay); usar la cita del help center ("options not yet available with our direct processor...") como evidencia del techo.
 4. Quitar Discover (no documentado). Mapa real de métodos + 17 monedas + 36 países en D6. Typo "In-Store"→"In-app". "30% in-app" marcado como supuesto a validar.
 5. Quitar Rusia como mercado accionable; eliminar fila Mir/SBP/YooMoney (sanciones; RUB no está en las 17 monedas). Reemplazar por Polonia (PLN vive) y recalcular EMEA.
-6. Brasil: agregar Pix (~40% e-comm) + installments; hoy el deck no menciona Pix.
+6. Brasil: CORREGIDO 2026-08-06 noche: German confirma que Suno YA tiene Pix (el help center no lo documenta). El play es Pix Automatico (rail recurrente) + installments. Patron clave para el deck: Suno tiene los metodos de pago unico (Pix, UPI) pero no las versiones recurrentes que un negocio de suscripciones necesita (Pix Automatico, UPI Autopay). Gaps confirmados por German: PayPal en web, Klarna, SPEI, OVO.
 7. Alemania: giropay descontinuado (fin 2024) → Wero/SEPA DD/PayPal/Klarna.
 8. APAC: Corea solo net-new (Samsung Pay, Toss; Kakao/Naver ya viven); India → UPI Autopay (UPI ya vive).
 9. NA: headline = PayPal ya existe pero solo vía app stores (15-30% fee); habilitarlo en web = margen inmediato. Klarna prescindible.
