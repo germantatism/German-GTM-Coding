@@ -52,3 +52,12 @@ Cuadre: MRR suma $1.93M/mo = $23.2M/yr = punto medio del rango $17-29M ✓. Colu
 Orden: US, BR, DE, ID, IN, UK, JP, FR, IT, KR, ES, CA, TR, MX, TH, PL, UA, NL, VN, AR.
 Argentina: 0.2M visits, $35K/mo, "Mercado Pago + local cards + installments; ARS billing to unlock", Full-stack (ARS no esta en las 17 monedas vivas).
 TOTAL: $2.0M/mo | $23.6M annualized | ~155K subscriber impact. Concentration: Top3 ~42% (US BR ID), Top10 ~78%. Archetype: Full-stack ~$845K/mo (43%), APM-led ~$135K/mo (7%), Mature ~$990K/mo (50%). Cuadre: 1.965M/mo x12 = 23.6M dentro de 17-29M.
+
+
+## Slide "20 additional emerging markets" (wave 2) para Suno (2026-08-06)
+Titulo: "20 additional emerging markets can extend Suno's localization moat, ranked by long-term strategic attractiveness"
+Orden (prioridad first-mover): Nigeria*, Filipinas*, Pakistan*, Colombia, Egipto, Arabia Saudita, Sudafrica, Malasia, Bangladesh, Kenia, Ghana*, Peru, UAE, Chile, Marruecos, Kazajistan, Rep. Dominicana, Ecuador (USD billable today), Guatemala, Irak.
+* = demanda Suno documentada (guias de workarounds de pago, 2026). Sin repetir paises del top-20 principal.
+WAVE 2 TOTAL: ~1.36B poblacion | avg ~74% internet | ~40-60M AI demand est. | "Localize early. Monetize as AI music demand inflects across 1.36B people."
+Panel Suno: la demanda ya le gana a los rails (workarounds documentados); quien localice pagos primero la convierte.
+Seleccion con sesgo musical: afrobeats (NG), amapiano (ZA), dembow (DO), karaoke (PH).
