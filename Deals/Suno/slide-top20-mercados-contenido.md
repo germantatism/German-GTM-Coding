@@ -46,3 +46,9 @@ US 4.9M $385K · BR 1.4M $265K · DE 1.2M $115K · RU 1.0M n/a · ID 0.95M $175K
 PORTFOLIO TOTAL: $1.9M/mo | $23M annualized · ~150K subscriber impact
 Paneles: PORTFOLIO TOTAL 1B+ local-payment audience / ~23M monthly visits / ~150K subscriber impact · CONCENTRATION Top3 ~43% (US BR ID), Top10 ~79% · ARCHETYPE Full-stack ~$810K/mo (42%), APM-led ~$135K/mo (7%), Mature ~$990K/mo (51%)
 Cuadre: MRR suma $1.93M/mo = $23.2M/yr = punto medio del rango $17-29M ✓. Columna de usuarios etiquetada "monthly visits" (SimilarWeb) en vez de MAU: honesto y visualmente identico.
+
+
+## v4 FINAL (sin Rusia, entra Argentina en #20)
+Orden: US, BR, DE, ID, IN, UK, JP, FR, IT, KR, ES, CA, TR, MX, TH, PL, UA, NL, VN, AR.
+Argentina: 0.2M visits, $35K/mo, "Mercado Pago + local cards + installments; ARS billing to unlock", Full-stack (ARS no esta en las 17 monedas vivas).
+TOTAL: $2.0M/mo | $23.6M annualized | ~155K subscriber impact. Concentration: Top3 ~42% (US BR ID), Top10 ~78%. Archetype: Full-stack ~$845K/mo (43%), APM-led ~$135K/mo (7%), Mature ~$990K/mo (50%). Cuadre: 1.965M/mo x12 = 23.6M dentro de 17-29M.
