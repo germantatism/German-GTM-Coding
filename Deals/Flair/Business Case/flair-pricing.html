@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root{
+    --blue:#3B4BF9;
+    --ink:#20222A;
+    --bg:#E9E9F3;
+    --grey:#6b7280;
+    --line:#DEDEEA;
+  }
+  html,body{ width:1920px; height:1080px; font-family:-apple-system,"Segoe UI",Arial,sans-serif; color:var(--ink); background:var(--bg); }
+  .slide{ position:relative; width:1920px; height:1080px; padding:70px 90px; }
+  .wordmark{ position:absolute; top:56px; right:90px; font-size:40px; font-weight:800; letter-spacing:-1px; color:var(--blue); }
+  .wordmark .dots{ color:var(--blue); }
+  .topline{ position:absolute; left:90px; right:90px; top:186px; height:1px; background:#C9C9DB; }
+
+  .cols{ display:grid; grid-template-columns:1fr 1fr; gap:120px; margin-top:150px; }
+
+  /* LEFT */
+  .titlebox{ border:1.5px solid #4a4a58; border-radius:2px; padding:44px 46px 40px; }
+  .titlebox h2{ font-size:58px; font-weight:800; line-height:1.02; letter-spacing:-1px; color:#111; text-transform:uppercase; }
+  .tier{ margin-top:40px; background:#fff; border-radius:4px; overflow:hidden; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+  .tier .thead, .tier .trow{ display:grid; grid-template-columns:1.1fr 1.1fr 1fr; }
+  .tier .thead > div{ font-size:23px; font-weight:700; color:#2b2b38; padding:26px 30px; }
+  .tier .trow > div{ font-size:25px; color:#3a3a46; padding:30px 30px; border-top:1px solid #EDEDF3; }
+  .tier .trow .fee{ color:var(--blue); font-weight:700; }
+
+  /* RIGHT */
+  .platform{ background:#F6F6FB; border-radius:20px; padding:44px 50px; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+  .platform .lbl{ font-size:44px; color:#3a3a46; font-weight:500; }
+  .platform .lbl b{ color:#111; font-weight:800; }
+
+  .addons{ margin-top:44px; }
+  .arow{ display:grid; grid-template-columns:1fr auto; align-items:center; background:#fff; padding:30px 40px; border-bottom:3px solid var(--bg); }
+  .arow:first-child{ border-radius:4px 4px 0 0; }
+  .arow:last-child{ border-radius:0 0 4px 4px; border-bottom:none; }
+  .arow .name{ font-size:27px; font-weight:600; color:#20222A; }
+  .arow .name .sub{ font-size:19px; font-weight:400; color:var(--grey); display:block; margin-top:2px; }
+  .arow .val{ font-size:27px; font-weight:700; color:var(--blue); }
+  .arow .val.tbd{ color:#9ca3af; font-weight:600; font-style:italic; }
+  .arow.min{ background:#EEF0FF; }
+  .arow.min .val{ font-size:29px; }
+
+  .pageno{ position:absolute; left:40px; bottom:24px; color:#9ca3af; font-size:20px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="wordmark"><span class="dots">⠿</span> yuno</div>
+  <div class="topline"></div>
+
+  <div class="cols">
+    <!-- LEFT -->
+    <div>
+      <div class="titlebox">
+        <h2>We charge<br>you when<br>you succeed</h2>
+      </div>
+      <div class="tier">
+        <div class="thead">
+          <div>Lower Range</div><div>Upper Range</div><div>Fee x txs (USD)</div>
+        </div>
+        <div class="trow">
+          <div>0</div><div>80,000</div><div class="fee">$0.080</div>
+        </div>
+        <div class="trow">
+          <div>80,000</div><div>120,000+</div><div class="fee">$0.065</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div>
+      <div class="platform">
+        <div class="lbl">Platform Fee <b>$5,000 monthly</b></div>
+      </div>
+      <div class="addons">
+        <div class="arow">
+          <div class="name">Network tokens (NT)</div>
+          <div class="val">$0.015 <span style="font-size:19px;font-weight:400;color:#6b7280;">/ txn</span></div>
+        </div>
+        <div class="arow">
+          <div class="name">Smart routing</div>
+          <div class="val">$0.025 <span style="font-size:19px;font-weight:400;color:#6b7280;">/ txn</span></div>
+        </div>
+        <div class="arow">
+          <div class="name">Reconciliations</div>
+          <div class="val">$1,500 <span style="font-size:19px;font-weight:400;color:#6b7280;">/ mo</span></div>
+        </div>
+        <div class="arow">
+          <div class="name">NOVA AI <span class="sub">revenue recovery</span></div>
+          <div class="val tbd">TBD</div>
+        </div>
+        <div class="arow min">
+          <div class="name">Minimum monthly billing</div>
+          <div class="val">$12,000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pageno">18</div>
+</div>
+</body>
+</html>
