@@ -38,6 +38,12 @@ Feedback crudo de Justo, organizado en 9 items y 3 bloques de ejecución. Meetin
 ### Paso 3: segundo prompt a Claude Design
 Cuando el Paso 0 esté resuelto, Claude genera el prompt v2 (mismas reglas: no tocar diseño existente, solo texto + slides nuevas en el design system).
 
+### Señales nuevas del call German+Justo (2026-08-06 15:00, transcript garbled pero decodificado)
+- Slide 5 (constraints) "with BIG NUMBERS": las cifras como protagonistas visuales ($300M ARR en riesgo, 2M subs, ~24M renovaciones/año, 3 rails). Menos prosa, numeros grandes.
+- "The key is emerging markets": la slide de mercados emergentes SUBE A OBLIGATORIA. Adaptar la wave-2 del deck Anthropic con el twist Suno: mercados donde los usuarios ya hackean el pago (Nigeria, Ghana, Pakistan, Filipinas, documentado en guias de terceros). Narrativa de mercados reordenada: Brasil, India, Indonesia, Turquia primero.
+- Confirmado en el call: agenda nueva aprobada, flag de suscripcion por metodo, flujo directo a Razorpay/EBANX, SimilarWeb visits en exec summary, tokens dentro de Stripe.
+- "Gambia/cambia": consistente con cambiar logo; sigue pendiente confirmar cual.
+
 ### Orden por impacto si falta tiempo antes de la call
 1. Bullets en 7-8 (rápido, es lo que más se ve).
 2. Industry context antes del exec summary (todo el contenido ya existe en el research).
