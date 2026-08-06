@@ -1,47 +1,40 @@
-# Slide "Top 20 markets" para Suno (adaptada del deck Anthropic) — contenido final (2026-08-06)
+# Slide "Top 20 markets" Suno (v2 FINAL, modelo completo) (2026-08-06)
+
+Modelo: pool $17-29M/yr del decision frame, punto medio $23M/yr, distribuido por share de tráfico × multiplicador de gap (Full-stack 1.6x, APM-led 1.2x, Mature 0.8x, US 0.7x, Japón 1.0x por lift de método-confianza). Tráfico: valores del propio deck (pull SimilarWeb del equipo, slide del mapa); TH/PL/UA/VN estimados. ARPU blended $150/yr para impacto en suscriptores. Rusia $0 (sin rails). Suma verificada: $23.1M.
 
 Título: "Stripe does the US and EU very well. Yuno fills the gaps and reinforces those markets."
+Columnas: # | Country | Est. traffic share | Incremental value (est. $/yr) | Dominant play | Archetype
 
-Columnas: # | Country | Currency live? | $ at stake/yr (est.) | Dominant play | Archetype
-
-| # | Country | Currency live? | $ at stake/yr (est.) | Dominant play | Archetype |
+| # | Country | Traffic | $/yr | Dominant play | Archetype |
 |---|---|---|---|---|---|
-| 1 | United States | USD ✓ | $3-5M | Network tokens + account updater + retries; PayPal and Venmo on web | Mature |
-| 2 | Brazil | BRL ✓ | $3-5M | Pix Automatico (recurring) + local acquiring + installments | Full-stack |
-| 3 | Germany | EUR ✓ | $1.5-3M | PayPal + SEPA DD as recurring rails; SCA tuning | Mature |
-| 4 | Russia | RUB ✗ | n/a today | No supported rails (sanctions; RUB not billable) | Not addressable |
-| 5 | Indonesia | IDR ✓ | $1.5-3M | QRIS + wallets (OVO, DANA, GoPay) + local cards | Full-stack |
-| 6 | India | INR ✓ | $1.5-3M | UPI Autopay mandates on live UPI + RuPay/local card routing | Full-stack |
-| 7 | United Kingdom | GBP ✓ | $0.7-1.5M | Cards + Open Banking; retry and token optimization | Mature |
-| 8 | Japan | JPY ✓ | $1.5-3M | PayPay + Konbini for acquisition; renewal optimization | Mature |
-| 9 | France | EUR ✓ | $0.7-1.5M | Cartes Bancaires domestic routing + PayPal + SEPA DD | Mature |
-| 10 | Italy | EUR ✓ | $0.3-0.7M | PayPal + PostePay + SEPA DD | Mature |
-| 11 | Republic of Korea | KRW ✓ | $0.7-1.5M | Recurring tokens on live KakaoPay/NaverPay + Toss, Samsung Pay | APM-led |
-| 12 | Spain | EUR ✓ | $0.3-0.7M | Bizum + SCA/retry tuning | Mature |
-| 13 | Canada | CAD ✓ | $0.3-0.7M | Cards + PayPal; retry optimization | Mature |
-| 14 | Turkey | TRY ✓ | $0.7-1.5M | TROY domestic scheme + installments + FX-aware local acquiring | Full-stack |
-| 15 | Mexico | MXN ✓ | $0.7-1.5M | Local debit acquiring + SPEI; OXXO for acquisition only | Full-stack |
-| 16 | Thailand | THB ✓ | $0.3-0.7M | PromptPay + TrueMoney + local cards | APM-led |
-| 17 | Poland | PLN ✓ | $0.3-0.7M | BLIK for acquisition + card retries for renewals | Mature |
-| 18 | Ukraine | UAH ✓ | $0.3-0.7M | Local card routing + Apple/Google Pay tokens | Mature |
-| 19 | Netherlands | EUR ✓ | $0.3-0.7M | iDEAL first payment, SEPA DD renewals | Mature |
-| 20 | Vietnam | VND ✗ | Unlock pending | Enable VND billing first; then MoMo + VietQR + local cards | Full-stack |
-| | PORTFOLIO TOTAL | 17 currencies live | **$17-29M/yr** | | |
+| 1 | United States | 20.84% | $4.6M | Network tokens + account updater + retries; PayPal and Venmo on web | Mature |
+| 2 | Brazil | 5.95% | $3.2M | Pix Automatico (recurring) + local acquiring + installments | Full-stack |
+| 3 | Germany | 5.29% | $1.4M | PayPal + SEPA DD as recurring rails; SCA tuning | Mature |
+| 4 | Russia | 4.30% | n/a | No supported rails (sanctions; RUB not billable) | Not addressable |
+| 5 | Indonesia | 4.03% | $2.1M | QRIS + wallets (OVO, DANA, GoPay) + local cards | Full-stack |
+| 6 | India | 3.79% | $2.0M | UPI Autopay mandates on live UPI + RuPay/local card routing | Full-stack |
+| 7 | United Kingdom | 3.58% | $0.95M | Cards + Open Banking; retry and token optimization | Mature |
+| 8 | Japan | 3.49% | $1.2M | PayPay + Konbini for acquisition; renewal optimization | Mature |
+| 9 | France | 3.18% | $0.85M | Cartes Bancaires domestic routing + PayPal + SEPA DD | Mature |
+| 10 | Italy | 2.62% | $0.7M | PayPal + PostePay + SEPA DD | Mature |
+| 11 | Republic of Korea | 2.54% | $1.0M | Recurring tokens on live KakaoPay/NaverPay + Toss, Samsung Pay | APM-led |
+| 12 | Spain | 2.51% | $0.65M | Bizum + SCA/retry tuning | Mature |
+| 13 | Canada | 2.30% | $0.55M | Cards + PayPal; retry optimization | Mature |
+| 14 | Turkey | 1.87% | $1.0M | TROY domestic scheme + installments + FX-aware local acquiring | Full-stack |
+| 15 | Mexico | 1.71% | $0.9M | Local debit acquiring + SPEI; OXXO for acquisition only | Full-stack |
+| 16 | Thailand | ~1.5% | $0.6M | PromptPay + TrueMoney + local cards | APM-led |
+| 17 | Poland | ~1.4% | $0.4M | BLIK for acquisition + card retries for renewals | Mature |
+| 18 | Ukraine | ~1.2% | $0.3M | Local card routing + Apple/Google Pay tokens | Mature |
+| 19 | Netherlands | 0.94% | $0.25M | iDEAL first payment, SEPA DD renewals | Mature |
+| 20 | Vietnam | ~0.9% | $0.45M | Enable VND billing first; then MoMo + VietQR + local cards | Full-stack |
+| | PORTFOLIO TOTAL | ~69% of traffic | $23.1M/yr | $17-29M/yr range · ~150K subscriber impact | |
 
-Panel derecho 1 (PORTFOLIO TOTAL):
-- "$17-29M/yr" at stake across the portfolio
-- "80%+" of traffic outside the US
-- "17" billing currencies already live
+PANEL PORTFOLIO TOTAL: "$23M/yr" mid estimate ($17-29M range) · "1B+" consumers on local payment rails across these markets · "~23M" monthly web visits (SimilarWeb) · "~150K" paid-subscriber impact/yr (new + retained, est.)
 
-Panel derecho 2 (CONCENTRATION):
-- TOP 5: "~38%" of traffic (US, RU, BR, DE, JP; SimilarWeb-verified)
-- LONG TAIL: "60%+" spread across 100+ countries (the orchestration case)
+PANEL CONCENTRATION: TOP 3 "~43%" (US · Brazil · Indonesia) · TOP 10 "~79%" of total value
 
-Panel derecho 3 (ARCHETYPE SPLIT, est.):
-- Mature: 11 markets, ~50-55% of value (led by the US)
-- Full-stack: 6 markets, ~40% of value (BR, IN, ID, TR, MX, VN)
-- APM-led: 2 markets, ~5-10% of value (KR, TH)
+PANEL ARCHETYPE SPLIT: Mature "$11.9M/yr (~51%)" 11 markets, led by the US · Full-stack "$9.7M/yr (~42%)" BR IN ID TR MX VN · APM-led "$1.6M/yr (~7%)" KR TH
 
-Footnote: "Illustrative allocation of the $17-29M/yr portfolio estimate (see decision frame). Traffic shares verified for top 5 (SimilarWeb, Jun 2026); remaining market weights to validate in the data sprint. Recurring-capable rails noted; acquisition-only methods (OXXO, Konbini, BLIK) convert but do not renew on their own. Russia excluded from totals."
+FOOTNOTE: "Allocation model: $17-29M/yr portfolio estimate (see decision frame) distributed by traffic share x payment-gap multiplier (full-stack 1.6x, APM-led 1.2x, mature 0.8x). Traffic per SimilarWeb; Thailand, Poland, Ukraine and Vietnam estimated. Subscriber impact at $150/yr blended ARPU. Russia excluded (no billable rails); Vietnam requires VND enablement. All figures to validate in the joint data sprint."
 
-Decisiones: Rusia visible pero en gris y fuera de totales (es su tráfico #2, mostrarlo da credibilidad; monetizarlo no es viable). Vietnam con "unlock pending" porque VND no está entre las 17 monedas vivas de Suno. Bandas de $ en vez de cifras falso-precisas; suman ~$26M, consistente con el total $17-29M del decision frame.
+Nota de consistencia: la columna de tráfico usa los MISMOS valores del mapa (slide 7) del deck; mantener una sola fuente en todo el deck. Cuadre: Mature 11.85 + Full-stack 9.65 + APM 1.6 = 23.1 ✓; Top3 9.9/23.1=43% ✓; Top10 18.35/23.1=79% ✓.
