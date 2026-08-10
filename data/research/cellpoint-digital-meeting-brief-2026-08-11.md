@@ -1,6 +1,7 @@
-# Meeting Brief: Yuno <> CellPoint Digital
+# Meeting Brief: Yuno <> CellPoint Digital (v2)
 Meeting: Tuesday, August 11, 2026, 11:45am–12:15pm America/Bogota (30 min)
-Google Doc: https://docs.google.com/document/d/1eRERZBNuMFeHOvnCB2ZDdIFWzgwzHnhmrqH2pFBlwJE/edit
+Google Doc (current, v2): https://docs.google.com/document/d/1uFH9Bwmwqvxq2oYDTNE2_2vB9CqD0sIR1stiao6dF_E/edit
+Superseded v1: https://docs.google.com/document/d/1eRERZBNuMFeHOvnCB2ZDdIFWzgwzHnhmrqH2pFBlwJE/edit (adds Section 2, Deal Rationale, confirming CellPoint's exit from orchestration)
 
 ## Header
 - **Date/Time:** Tue Aug 11, 2026, 11:45am–12:15pm America/Bogota = 17:45–18:15 London (BST) | 11:45am–12:15pm Dallas (CDT) | 16:45–17:15 UTC
@@ -11,8 +12,8 @@ Google Doc: https://docs.google.com/document/d/1eRERZBNuMFeHOvnCB2ZDdIFWzgwzHnhm
 - **Objective:** First time CellPoint sees actual Yuno pricing (only NDAs exchanged so far) and they also expect a demo, in 30 minutes. Win = they react to the proposal, channel-conflict/territory gets raised proactively, and a concrete next step with the right people is set.
 
 ### ⚠️ Pre-meeting actions
-- Confirm the per-transaction fee before the call: internal notes (Jul 27) say $0.10/successful transaction; the built deck says $0.07. Pick one before presenting.
-- Fix the integration-count contradiction in the deck: slide 4 says "460+ integrations", slide 13 says "1,500+" twice.
+- ✅ RESOLVED: per-transaction fee is $0.07 (confirmed via the actual slide 13 German will present; supersedes the Jul 27 internal note of $0.10).
+- Fix the integration-count contradiction in the deck if slide 4 is also shown: slide 4 says "460+ integrations", slide 13 (the one being presented) says "1,500+" twice — 1,500+ is confirmed as the number in use.
 - Reword the "high-concurrency spikes of gaming" line on slide 5 — recycled copy in a travel deck.
 - Decide the demo/proposal split for 30 minutes; both are expected.
 - Confirm Bernabé Murata's attendance (on original intro call, hasn't responded to this invite).
@@ -37,13 +38,40 @@ Google Doc: https://docs.google.com/document/d/1eRERZBNuMFeHOvnCB2ZDdIFWzgwzHnhm
 **Objection:** "$50k/month + $0.07/txn + 50/50 revenue share is three stacked mechanisms, steep for our size."
 **Answer:** No public white-label deal stacks three mechanisms this way. Stripe/Shopify = fee-only, no rev share, reseller sets pricing. Paydock/CBA = exclusivity-only, no disclosed transaction economics. Treat this as an opening position; be ready to discuss tiering the per-transaction fee by volume.
 
+**Sharper answer, using confirmed intel (German, Aug 10 2026):** CellPoint is not just repositioning messaging — they are exiting orchestration entirely and becoming a pure consulting layer reselling white-labeled Yuno tech. See Section 2 below for the full reframed defense of each number using this fact.
+
+### ✅ Confirmed Aug 10, 2026 (from German, not inferred)
+CellPoint is exiting orchestration completely. They want the Yuno white label specifically so they can stop running their own platform and shift their business to consulting on top of it. This upgrades what Section 8 (News & Signals) and the "Payment Optimisation" messaging pivot could only infer from public marketing copy into a confirmed fact. It is the single best argument for the pricing structure — see Section 2.
+
 ### The ask
 Not a signature. Realistic win: agreement on which fee mechanism matters most to them, an explicit territory/exclusivity conversation (raise it proactively), and a scheduled follow-up with the right people (commercial/legal, possibly Kevin Murphy).
 
 ### Rapport opener
 Andrew Goddard speaks at World Aviation Festival 2026 (Lisbon, Oct 13–15) on "Agentic AI and automation in travel payments: transformation or hype?" — genuine opener, ties to Yuno's AI & Intelligence pillar.
 
-## 2. Who Is in the Room
+## 2. Deal Rationale: The Purpose Behind This Pricing
+
+This section exists because German confirmed directly (Aug 10, 2026) that CellPoint is not repositioning messaging — they are exiting orchestration entirely and becoming a pure consulting layer that resells white-labeled Yuno technology to their airline/travel clients. That fact is the strongest available defense of the $50k/month + $0.07/txn + 50/50 structure, and it was not available when the proposal deck or the pricing objection-handling were first drafted. Use this section to walk into the pricing conversation on the front foot rather than reactively.
+
+### The confirmed strategic shift
+CellPoint's own marketing has been signaling this for a month (the Jul 1, 2026 blog "From Orchestration to Optimisation", the "Book an audit" CTA replacing platform messaging on their homepage), but German's direct confirmation removes the ambiguity: CellPoint plans to stop building and running payment technology altogether. Patrick Uckermark's hire in July 2025, for cloud/infrastructure scale rather than payments depth, is consistent with someone brought in to manage a platform wind-down or migration rather than to build a competing one — worth probing directly in discovery question 7.
+
+### Why $50,000/month is a replacement cost, not an addition
+Don't defend this figure as new spend. Frame it as what it actually is: a replacement for a cost structure CellPoint can no longer sustain. In FY2024 alone they amortized **$9,985,420** in capitalized software against **$5,126,646** of total revenue — before any of the engineering headcount, infrastructure, or maintenance costs behind that number. If they exit orchestration as confirmed, that entire cost line disappears. $600,000/year against a technology cost base that was running at $8–10M+/year is roughly a **94% reduction in fixed technology cost**, not a new expense line.
+
+### Why $0.07/successful transaction is structurally trivial
+On a $400 average fare this is about 2.5 basis points. It was already an easy number to defend on unit economics alone. It is now even easier: this isn't "our per-transaction fee versus your per-transaction fee," because if they exit orchestration they will not have a comparable stack of their own left to compare it against.
+
+### Why the 50/50 revenue share only touches what CellPoint no longer builds
+This is the mechanism most likely to draw pushback, and the one the confirmed pivot resolves most cleanly. Make explicit, even if it is only implicit in the deck's "net platform revenue" wording: the 50/50 applies only to the margin CellPoint marks up on Yuno's platform pricing when reselling to end clients. It does not touch whatever CellPoint bills separately for the actual consulting work — the payment-intelligence audits, the strategic advisory, the airline relationships themselves. That is the part of their business model that is genuinely theirs going forward, and none of it is shared. Framed this way, Yuno is asking for half of a technology-margin slice it built entirely, while CellPoint keeps 100% of the larger, real business. For context, real-world ISO/reseller arrangements often run the other way, with the distributor keeping 70%+ of the full relationship (see Section 6/Priority Technology precedent) — a straight 50/50 on just the tech margin is a comparatively generous ask from Yuno's side, not an aggressive one.
+
+### The line to use live
+*"You're not paying us on top of running your own platform anymore. You're paying us instead of running one. Every dollar you used to spend building this is gone. What's left is 100% yours: the relationships, the advisory work, the audits. We only touch the part that used to cost you ten million dollars a year to build yourselves."*
+
+### Where this gives Yuno leverage
+If CellPoint genuinely exits orchestration with zero technology of their own left, their entire go-forward business becomes dependent on Yuno's platform working. That is leverage for Yuno in shaping protective terms (see Section 5's note on contract structure), but it cuts both ways: CellPoint may push hard on continuity and exit guarantees, since a broken relationship would leave them with nothing to fall back on. Have an answer ready if that comes up — it is a fair question given what they are agreeing to give up.
+
+## 3. Who Is in the Room
 
 | Name | Role | Side | Status |
 |---|---|---|---|
@@ -90,7 +118,7 @@ Justo Benetti (Yuno CRO) had the intro call Jun 26, 2026 with Andrew Goddard and
 ### Other known contacts (not on this call)
 Kevin Murphy (new Group CEO & Board Director — likely real approver), Shaun Donaghey (CCO), Shawn Rea (CFO), Steven Osei (Head of Brand/Marketing), Michael Kelly (board director).
 
-## 3. The Company
+## 4. The Company
 Payment orchestration for airlines, travel, hospitality — single integration layer for acquirers/PSPs/APMs/fraud/reconciliation with intelligent routing. Founded 2007 Copenhagen as CellPoint Mobile; both UK entities renamed CellPoint Digital Aug 29, 2019.
 
 - **Founded:** 2007, Copenhagen
@@ -114,7 +142,7 @@ Payment orchestration for airlines, travel, hospitality — single integration l
 Kevin Murphy (Group CEO, appointed unannounced): PE turnaround specialist, interim Group CEO of EML Payments (ASX:EML) from Apr 2023 during a Central Bank of Ireland regulatory crisis; Bank of Ireland exec roles; Mastercard board 2006–2008. Own bio: led "growth, transformation, and restructuring initiatives for private equity firms."
 Strategy: public messaging shifted from "orchestration platform" to "payment optimisation/intelligence" (blog Jul 1 2026). Murphy's own interview argues orchestration is commoditized. Never formally announced as a strategy change.
 
-## 4. Financials
+## 5. Financials
 
 ⚠️ **The single most important section for deal structuring.** Source: CellPoint Digital Holdings Limited audited group accounts, UK Companies House, filed Nov 21, 2025.
 
@@ -147,7 +175,7 @@ Revenue $5,126,646 · Operating loss $(18,926,682) · Loss after tax $(18,237,91
 
 **So what for the call:** A financially distressed, going-concern-flagged counterparty is asking Yuno to commit to a 3-year, $50k/month platform-fee relationship. This should shape deal structure (shorter initial term, parent-entity guarantee, prepayment/milestones) more than the pitch itself. No insolvency/administration found — Toscafund/Penta are still injecting cash — but this is a materially different counterparty risk profile than a cash-generative partner.
 
-## 5. Competitive Landscape
+## 6. Competitive Landscape
 
 No credible *revenue* market-share figure exists for any pure-play orchestrator. Every "% market share" figure traces back to 6sense/Datanyze *install-base* counts for the broader "Payment Management" category, not revenue. Aite (Apr 2024) estimated all dedicated fintech orchestrators combined report **under $25M total revenue** — a small, fragmenting category.
 
@@ -171,14 +199,14 @@ No credible *revenue* market-share figure exists for any pure-play orchestrator.
 
 **For the call:** supports the white-label pitch (they can't out-invest Adyen/Amadeus) but also means they need this deal more than Yuno needs this counterparty — useful leverage on protective terms.
 
-## 6. Payments Money Map
+## 7. Payments Money Map
 CellPoint IS an orchestrator today — this is "replace your entire technology layer with Yuno's, wear it as your own brand," not Yuno's typical "add orchestration alongside your stack" sale. Bigger internal decision for them given sunk cost ($9.99M amortized in 2024 alone).
 
 Current network claims: 28+ card schemes, 168+ APMs, 220+ processors (Worldpay, Elavon, Union Pay cited). Recent integrations: Checkout.com (Apr 2025), Paysafe (Nov 2024), PayU GPO (Oct 2024), PayPal (Mar 2026), Sabre SabreSonic+Radixx (Apr 2025), UATP (2018).
 Fraud/3DS currently in-house — would be replaced by Yuno's Security & Risk pillar (PCI DSS Level 1 carried by Yuno).
 CellPoint's marketing claims (30% cost reduction, 15% approval increase, 50% faster time-to-market) are generic/undifferentiated — Yuno's edge needs to be concrete named proof points plus the analytics angle.
 
-## 7. News & Signals
+## 8. News & Signals
 | Date | Signal |
 |---|---|
 | Aug 10, 2026 (today) | CellPoint Digital Holdings confirmation statement overdue |
@@ -197,8 +225,8 @@ CellPoint's marketing claims (30% cost reduction, 15% approval increase, 50% fas
 | Sep 16, 2025 | Sattel and Merrill announced to board |
 | Aug 20, 2025 | Gr4vy signs exclusive airline orchestration deal with Datalex |
 
-## 8. Selling Yuno Here
-**Core frame:** Stop funding a platform business you can no longer afford to compete on; go back to what you have that Yuno doesn't — 15+ years of airline/travel relationships. Position Yuno as the infrastructure investment CellPoint can no longer make themselves, not as a competitor.
+## 9. Selling Yuno Here
+**Core frame:** Stop funding a platform business you can no longer afford to compete on; go back to what you have that Yuno doesn't — 15+ years of airline/travel relationships. Position Yuno as the infrastructure investment CellPoint can no longer make themselves, not as a competitor. See Section 2 for the full reframed pricing defense built on CellPoint's confirmed exit from orchestration.
 
 **Hooks:**
 - Cost of ownership: ~$10M amortized in 2024 alone vs $5.1M revenue; Yuno removes that cost line.
@@ -207,15 +235,15 @@ CellPoint's marketing claims (30% cost reduction, 15% approval increase, 50% fas
 - Payment intelligence hook aimed at Murphy's own thesis: Yuno's Insights & Operations pillar directly answers his stated pain point.
 
 **Landmines:**
-- Don't state both $0.07 and $0.10 in the room.
-- Don't cite both "460+" and "1,500+" integration counts.
+- Use $0.07 only (confirmed); don't let $0.10 slip in from old notes.
+- Don't cite both "460+" and "1,500+" integration counts — use 1,500+, the number on the slide being presented.
 - Don't use the "gaming" line live.
 - Don't reference CellPoint's going-concern opinion directly with them — it's for Yuno's internal negotiating posture only.
 - Never frame CellPoint as "lacking" something.
 - Don't present 50/50 as fixed — no market precedent for triple-stacked fees.
 - Don't assume Patrick has payments fluency.
 
-## 9. Be Ready For
+## 10. Be Ready For
 | What they may ask | Ready answer |
 |---|---|
 | Why three fee mechanisms stacked? | Explain what each covers; offer to discuss reweighting; this is an opening position |
@@ -230,7 +258,7 @@ CellPoint's marketing claims (30% cost reduction, 15% approval increase, 50% fas
 ---
 ## LIVE ZONE
 
-## 10. Agenda
+## 11. Agenda
 | Time | Block | Notes |
 |---|---|---|
 | 11:45–11:50 | Welcome, rapport, confirm agenda | ____ |
@@ -238,7 +266,7 @@ CellPoint's marketing claims (30% cost reduction, 15% approval increase, 50% fas
 | 12:00–12:10 | Demo: orchestration + analytics/intelligence layer | ____ |
 | 12:10–12:15 | Next steps: align open items, schedule follow-up | ____ |
 
-## 11. Discovery Questions
+## 12. Discovery Questions
 1. Given the new leadership this year, who ultimately signs off on a deal like this? Notes: ____
 2. Of the three pricing mechanisms, is one more important to get right than the others? Notes: ____
 3. Which accounts move onto the white label first, on what timeline? Notes: ____
@@ -252,7 +280,7 @@ CellPoint's marketing claims (30% cost reduction, 15% approval increase, 50% fas
 11. Where does the payment-optimization positioning fit alongside this white-label motion? Notes: ____
 12. Is there a board or investor checkpoint driving urgency here? Notes: ____
 
-## 12. Post-Meeting Checklist
+## 13. Post-Meeting Checklist
 - Send recap email same day to Andrew and Patrick (cc Justo, Jarrett)
 - Log outcome and new facts (pricing reaction, territory discussion, real approver) back into memory/CRM
 - Schedule the agreed next step immediately
