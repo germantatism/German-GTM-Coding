@@ -4,7 +4,7 @@
 
 ⚠️ **This replaces section 6.5 ("NEW: Country deep-dives") of the earlier prompt `claude-design-prompt-yango-deck-2026-08-16.md`.** That section built a lighter two-part slide per country (a methods table plus a short processor note). This version replaces those four slides with the full Suno-style deep-dive format below, same visual system as the rest of the Yango deck (which itself mirrors the Suno deck's design system — see `claude-design-prompt-20-country-appendix.md` for the reference layout this is built from). Everything else in the 2026-08-16 prompt (cover, "today" slide, opportunity slide, case studies, Yuno+Cobre section, other appendix sections) is unchanged.
 
-You are adding 5 slides (1 divider + 4 country deep-dives) to the Yango deck, in the Appendix section, in this order: divider, Colombia, Peru, Bolivia, Venezuela.
+You are adding 6 slides (1 divider + 4 country deep-dives + 1 Merchant of Record comparison) to the Yango deck, in the Appendix section, in this order: divider, Colombia, Peru, Bolivia, Venezuela, The Merchant of Record.
 
 ## DESIGN RULES (ABSOLUTE)
 
@@ -21,6 +21,7 @@ You are adding 5 slides (1 divider + 4 country deep-dives) to the Yango deck, in
 4. Every dollar figure below is a **modeled estimate**, not Yango's actual data. Wherever a cell shows a modeled or proxy number, keep the "(est.)" or "(industry proxy)" qualifier visible on the slide in small type, do not silently drop it to make the number look more authoritative.
 5. **No processor gets a numeric approval/acceptance-rate percentage anywhere on these slides, not even a vendor's own self-reported one.** Rank providers instead by confirmed, sourced performance signals: transaction/merchant volume actually processed, confirmed support for the market's must-have local methods, and any confirmed direct relationship with Yango. The "Why it ranks here" column must cite one of those concrete, sourced reasons, never a percentage.
 6. If any text overflows its box, shrink font size one step before truncating or dropping content.
+7. **Slide 6 ("The Merchant of Record") is a comparative synthesis slide, not a country slide, and uses a different layout** — see its own section below instead of the 4-cell-stat-bar-plus-3-levers structure. Keep the same fonts, palette, logo and footnote treatment as the rest of the deck, but let the content (a wide comparison table plus two supporting boxes) drive the layout. If it doesn't fit on one slide at a legible size, split it into a 6 and 6b pair rather than shrinking text below the deck's normal minimum size.
 
 ## SHARED METHODOLOGY NOTE (put this once, on an appendix divider slide before the 4 country slides)
 
@@ -160,6 +161,46 @@ Footnote: "Source: elnacional.com, bancaynegocios.com, motummagazine.com, Últim
 
 ---
 
+## SLIDE 5: The Merchant of Record
+
+Title: "The Merchant of Record: why one vendor can't cover Colombia, Peru, Bolivia and Venezuela"
+
+Framing text box, directly under the title, smaller body type: "A Merchant of Record (MoR) becomes the legal seller of a transaction, taking on tax collection and remittance, chargeback liability, and local compliance, unlike a plain PSP, which moves the payment and leaves that liability with the merchant. That distinction isn't academic for Yango: Bolivia unified its exchange rate in June 2026, ending a 15-year peg and devaluing the boliviano roughly 30-40%, and Venezuela is running 600%+ inflation and remains largely cut off from global card networks and correspondent banking, even after the January 2026 capture of Nicolás Maduro. An entity that owns FX conversion, settlement timing and local compliance is worth materially more here than a pure processor that pushes that risk back to Yango."
+
+Stat bar (4 cells):
+1. "2 of 4" / "Countries Unlimit confirms on its own site" / "Colombia + Peru only, per unlimit.com/coverage/latam"
+2. "3 of 4" / "Countries Inswitch confirms on its own site" / "Colombia + Peru + Bolivia; its Venezuela page returns a 404"
+3. "0 of 12+" / "MoR/PSP candidates researched with confirmed Venezuela coverage" / "dLocal, EBANX, Paddle, PayPal, Rebill, PayRetailers, Unlimit and Inswitch all exclude it"
+4. "Neither" / "Unlimit nor Inswitch has a named, dedicated Merchant of Record product" / "Both are PSP/embedded-finance platforms; MoR is a side effect of their model, not a purpose-built service"
+
+"WHO ACTUALLY PERFORMS BEST, RANKED" table (columns: Rank, Provider, True MoR?, Colombia, Peru, Bolivia, Venezuela, Why it ranks here):
+| Rank | Provider | True MoR? | Colombia | Peru | Bolivia | Venezuela | Why it ranks here |
+| 1 | dLocal | Yes, confirmed, "acts as Merchant of Record in each country" | Yes | Yes | Yes | No | Only true MoR here with a dedicated marketplace/payout product, dLocal for Platforms, built for splitting funds and paying sellers or partners, the closest structural match to driver payouts |
+| 2 | Inswitch | Not a named MoR product; positions as embedded-finance/BaaS platform | Yes | Yes | Yes | No (404 on own site) | Best country coverage of the two HQ-shortlisted vendors, and the only one with a published ride-hailing case study, see verification flag below |
+| 3 | EBANX | Yes, confirmed for at least some markets | Yes | Yes | Yes | No | Major established LatAm player with a dedicated Bolivia country page |
+| 4 | Paddle | Yes, confirmed | Yes | Yes | Yes | No | True MoR with Bolivia coverage, but built for digital goods and subscriptions, not a proven fit for a driver-payout/gig use case |
+| 5 | Unlimit | Not a named MoR product; PSP/aggregated-MID model | Yes | Yes | No | No | Weakest coverage of the group, 2 of 4 countries, and no gig-economy or ride-hailing client found anywhere in public sources |
+
+Also considered, weaker fit, smaller text below the table: "PayPal (confirmed PSP, not an MoR; excludes Venezuela entirely; no gig-economy driver-payout product), Rebill (explicitly states it is not an MoR; Colombia and Peru only), PayRetailers (not branded as an MoR; Colombia and Peru only, no confirmed Bolivia or Venezuela coverage). FastSpring, 2Checkout/Verifone, Nomupay and Corpay all lack a confirmed, itemized coverage list for these four markets specifically."
+
+Two-column box below the table:
+
+LEFT box, "Unlimit vs. Inswitch, head to head":
+- Founded: Unlimit 2009, London HQ, rebranded from Unlimint in 2023. Inswitch 2002, Uruguay-founded with a US legal entity, acquired by TransNetwork in May 2024.
+- Funding: Unlimit has not publicly raised funding, per Tracxn. Inswitch's funding is not publicly disclosed either; it now operates as a TransNetwork subsidiary.
+- Scale: Unlimit ~500-585 employees across 16 offices on 4 continents. Inswitch ~130-170 employees across 3 continents.
+- Gig-economy/ride-hailing client: Unlimit, none found. Inswitch, one published case study, see verification flag.
+- Independent reviews: no independently verified rating was confirmed for either vendor in this pass; treat any review-site number for either as unconfirmed until checked manually.
+
+RIGHT box, "VERIFY BEFORE THE MEETING" (flagged/warning style):
+"Inswitch publishes a case study titled 'Yango Scales with Inswitch' (inswitch.com/case-studies/yango), describing payments and payouts orchestration, hosted checkout, digital wallets and compliance for a multi-country mobility platform. It does not name a legal entity or list countries. Confirm directly with Yango's HQ team whether this is the same Yango before presenting this slide, it would mean Inswitch is a known or existing vendor, not a blind comparison, and that changes the framing of this whole conversation."
+
+SO WHAT: "Across every credible Merchant of Record and PSP candidate researched, including both vendors Yango's HQ already likes, not one has confirmed coverage in Venezuela, and only Inswitch among the two shortlisted vendors reaches Bolivia. A single-MoR bet structurally cannot cover all four markets Yango operates in; the only way to get Colombia, Peru, Bolivia and Venezuela covered at once is to orchestrate across providers per market, not pick one."
+
+Footnote: "Source: Unlimit, Inswitch, dLocal, EBANX, Paddle, PayPal, Rebill, PayRetailers official coverage pages and documentation (2026); Stripe and Paddle on MoR vs. PSP; Rio Times, Central Banking, Trading Economics, CSIS, USNI News on Bolivia's 2026 currency unification and Venezuela's 2026 macro and political situation. No approval or acceptance rate appears for any provider. TO VALIDATE: whether Inswitch's published Yango case study refers to this same prospect, and current commercial terms and country-specific licensing status for both shortlisted vendors."
+
+---
+
 ## WHAT NOT TO DO
 
 - Do not modify any other slide in the deck outside this new appendix section.
@@ -167,5 +208,7 @@ Footnote: "Source: elnacional.com, bancaynegocios.com, motummagazine.com, Últim
 - Do not put a numeric approval/acceptance rate on any provider anywhere in this appendix, including a vendor's own self-reported figure. Rank providers only by confirmed scale, confirmed local-method support, or a confirmed direct relationship with Yango.
 - Do not model a dollar TAM for Venezuela. The slide explicitly says "Not modeled" for a reason, there is no defensible driver count to build one from.
 - Do not drop the "(est.)," "(industry proxy)," "(derived)," or "(lower confidence)" qualifiers from any stat bar cell or lever card, they are load-bearing, not decorative.
-- Do not carry over the lighter Colombia/Peru/Bolivia/Venezuela slides from section 6.5 of the 2026-08-16 prompt, these 5 slides replace them entirely.
-- Keep all 4 country slides visually identical to each other in layout, differing only in content.
+- Do not carry over the lighter Colombia/Peru/Bolivia/Venezuela slides from section 6.5 of the 2026-08-16 prompt, these 6 slides replace them entirely.
+- Keep all 4 country slides visually identical to each other in layout, differing only in content. Slide 5 (The Merchant of Record) is intentionally different, don't force it into the same 4-cell-stat-bar-plus-levers mold.
+- Do not present the Inswitch "Yango Scales with Inswitch" case study as confirmed proof that Inswitch already serves this exact prospect. State it as a fact that needs verification, exactly as written on the slide, never stronger.
+- Do not put a specific star rating or review-platform score on Unlimit or Inswitch anywhere on this slide. Research this pass turned up conflicting, unverifiable numbers for both; the slide correctly says no independently verified rating exists, keep it that way.
