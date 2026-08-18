@@ -26,7 +26,7 @@ You are adding 6 slides (1 divider + 4 country deep-dives + 1 Merchant of Record
 ## SHARED METHODOLOGY NOTE (put this once, on an appendix divider slide before the 4 country slides)
 
 Divider slide title: "Appendix: Country Deep-Dives"
-Body text: "Colombia, Peru, Bolivia and Venezuela are Yango's four LatAm driver-recharge markets. Modeled annual recharge-volume opportunity is built from each country's most recent public driver count (or the closest available proxy), an ARPU figure sourced from Yango's own disclosures where available or from comparable-platform driver economics where not, and Yango's own disclosed or estimated commission rate. No processor on these slides carries an approval or acceptance-rate percentage, including vendors' own self-reported figures; each market's PSPs and MoRs are ranked instead by confirmed transaction/merchant volume, confirmed support for that market's must-have local payment methods, and any confirmed direct relationship with Yango. All figures are Yuno's model outputs from public data, to be replaced with Yango's actual driver, recharge-volume and commission data in a joint data-validation sprint."
+Body text: "Colombia, Peru, Bolivia and Venezuela are Yango's four LatAm driver-recharge markets. Modeled annual recharge-volume opportunity is built from each country's most recent public driver count (or the closest available proxy), an ARPU figure sourced from Yango's own disclosures where available or from comparable-platform driver economics where not, and Yango's own disclosed or estimated commission rate. Combined across Colombia, Peru and Bolivia this totals roughly $332M/year in recharge volume across ~162,000+ drivers, revised 2026-08-18; Venezuela's driver base could not be sized and is not included. No processor on these slides carries an approval or acceptance-rate percentage, including vendors' own self-reported figures; each market's PSPs and MoRs are ranked instead by confirmed transaction/merchant volume, confirmed support for that market's must-have local payment methods, and any confirmed direct relationship with Yango. All figures are Yuno's model outputs from public data, to be replaced with Yango's actual driver, recharge-volume and commission data in a joint data-validation sprint."
 
 ---
 
@@ -102,12 +102,12 @@ Footnote: "Source: Gestión, Credicorp, Ecommercenews.pe, Naran.blog, BCRP, Niub
 Title: "Bolivia: Yango's biggest market outside Egypt and the UAE, and cards are already losing to QR"
 
 Stat bar (4 cells):
-1. "14,000+" / "Yango drivers nationwide" / "2023 figure, likely understates 2026 scale"
+1. "~27,000+" / "Yango drivers nationwide (revised)" / "Derived from Santa Cruz's own 4M trips/month + Cochabamba's confirmed 4,000; supersedes a stale 2023 figure"
 2. "94%" / "of interbank transfers run through QR Simple" / "891M transactions, US$51.3B moved in 2025"
 3. "~$107/mo" / "Avg. monthly driver revenue (ARPU, derived)" / "Cochabamba trips-per-driver x Yango's own fare range · avg ticket ~$0.61"
-4. "~$2.7M/year" / "Est. annual recharge volume opportunity (likely understated)" / "Modeled: 14K drivers x ARPU x ~15% commission x 12 (est., commission rate unconfirmed for Bolivia)"
+4. "~$5.2M/year" / "Est. annual recharge volume opportunity (revised, still a floor)" / "Modeled: 27K drivers x ARPU x ~15% commission x 12 (est., commission rate unconfirmed for Bolivia; La Paz/El Alto excluded)"
 
-Lever 1 SCALE CONTEXT: "9.68% of Yango's global site traffic, #3 market after Egypt and UAE" / "Yango's own country manager: ~1M monthly active users, ~10% of Bolivia's population" / "Materially larger than the 14,000-driver figure alone suggests"
+Lever 1 SCALE CONTEXT: "9.68% of Yango's global site traffic, #3 market after Egypt and UAE" / "Yango's own country manager: ~1M monthly active users, ~10% of Bolivia's population" / "Santa Cruz alone implies ~22,900 drivers by trip volume, already above the old nationwide figure"
 Lever 2 RAIL SHIFT ALREADY HAPPENING: "Card-based dollar consumption fell ~40%" / "confirmed via ASOFIN/Red Enlace, Sept 2025" / "Cards are losing share to QR and stablecoins, not gaining it; build for that shift, don't fight it"
 Lever 3 STABLECOIN BRIDGE ALREADY LIVE: "Peso x Yango Food went live Aug 14, 2026" / "USDT payments across 2,000+ restaurants" / "The precedent for a USDT bridge already exists inside Yango's own Bolivia stack"
 
@@ -125,7 +125,7 @@ Top-performing PSPs / MoRs table (ranked best to worst):
 
 SO WHAT: "Bolivia is quietly Yango's biggest LatAm market by traffic, and the region's most underserved by global payments research, no processor here discloses an approval rate, but the real story is that cards are already losing 40% of dollar-linked volume to QR and stablecoins, exactly where an orchestrator adds the most value."
 
-Footnote: "Source: Similarweb, estrategiabolivia.com, Red Uno, Correo del Sur, Los Tiempos, criptonoticias.com, Banco Central de Bolivia, ASOFIN, Red Enlace (2025-2026). Modeled TAM likely understates 2026 scale; the 14,000-driver figure is 2023-vintage. TO VALIDATE: current total driver count, actual recharge amount, Peso's transaction volume with Yango."
+Footnote: "Source: Similarweb, estrategiabolivia.com, Red Uno, Correo del Sur, Los Tiempos, criptonoticias.com, Banco Central de Bolivia, ASOFIN, Red Enlace (2025-2026). Driver count revised 2026-08-18 from a stale 2023 nationwide figure (14,000) to ~27,000+, derived by applying the Cochabamba trips-per-driver ratio to Santa Cruz's own ~4M trips/month, plus Cochabamba's confirmed 4,000; La Paz/El Alto excluded, so this is a floor. TO VALIDATE: current total driver count including La Paz/El Alto, actual recharge amount, Peso's transaction volume with Yango."
 
 ---
 
