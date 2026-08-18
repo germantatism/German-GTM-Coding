@@ -134,10 +134,10 @@ Footnote: "Source: Similarweb, estrategiabolivia.com, Red Uno, Correo del Sur, L
 Title: "Venezuela: no global PSP covers this market at all, and Yango is building it bank by bank"
 
 Stat bar (4 cells):
-1. "Not found" / "Total driver count" / "Only qualitative: \"hundreds of thousands\" of riders in 100 days, driver base oversupplied vs. Yango's other markets"
+1. "~3,100" / "Yango drivers (modeled)" / "Derived from Yango's own 11M+ km driven in 100 days; range ~2,100-4,700, softest estimate of the four countries"
 2. "~7,000/min" / "Pago Móvil transactions nationally" / "20M+ affiliated customers, 86%+ banking penetration, 2026"
 3. "~$915/mo" / "Avg. monthly driver revenue (Yango's own published ranges)" / "Blended, 60% moto / 40% car fleet mix · avg ticket ~$0.50-$5.80"
-4. "Not modeled" / "Est. annual recharge volume opportunity" / "No defensible driver count exists to size this in dollars"
+4. "~$9.4M/year" / "Est. annual recharge volume opportunity (modeled, wide range)" / "Modeled: ~3,100 drivers x ARPU x ~27.5% commission x 12 (est.); range ~$6.3M-$14.2M/year"
 
 Lever 1 DAY-ONE FRAGMENTATION, LIVE RIGHT NOW: "Cash-only at launch, online methods added ~5 days later" / "Three separate bank \"payment buttons\" (Banco de Venezuela, BNC, Bancamiga)" / "This is the exact one-integration-per-bank pattern an orchestrator replaces, happening today, not hypothetically"
 Lever 2 ZERO GLOBAL PSP COVERAGE: "Stripe confirmed not to support Venezuela at all" / "No approval-rate data exists for any provider covering the country" / "Whoever builds a real rail here first has no incumbent to displace"
@@ -155,9 +155,9 @@ Top-performing PSPs / MoRs table (ranked best to worst):
 | 2 | Zinli | USD wallet | Only option that lets a driver hold and spend USD without a Venezuelan bank account |
 | 3 | Reserve / UglyCash | Crypto/USD wallet | Most direct crypto-native rail, but current scale is unconfirmed since its July 2026 relaunch |
 
-SO WHAT: "Venezuela is the weakest-evidence market of the four, and that absence is itself the finding: no global PSP covers it, no processor discloses an approval rate, and Yango's own online-payments rollout is three separate bank integrations bolted on five days after cash-only launch."
+SO WHAT: "Venezuela is the weakest-evidence market of the four, no global PSP covers it and no processor discloses an approval rate, but even a conservative reading of Yango's own disclosed driving activity points to a real, if uncertain, recharge opportunity, on top of an online-payments rollout that is still three separate bank integrations bolted on five days after cash-only launch."
 
-Footnote: "Source: elnacional.com, bancaynegocios.com, motummagazine.com, Últimas Noticias, Chainalysis, criptonoticias.com, elucabista.com (2025-2026). No dollar opportunity is modeled here, the driver-count data does not support one. TO VALIDATE: total driver count, blended average fare, whether the three bank integrations are still separate."
+Footnote: "Source: elnacional.com, bancaynegocios.com, motummagazine.com, Últimas Noticias, Chainalysis, criptonoticias.com, elucabista.com (2025-2026). Driver count and TAM are modeled, not reported, derived from Yango's own 11M+ km driven in 100 days divided by an assumed trip distance and Bolivia's cross-market trip-frequency rate; this is the softest of the four country models, treat the range, not the point estimate, as the honest answer. TO VALIDATE: total driver count, blended average fare, whether the three bank integrations are still separate."
 
 ---
 

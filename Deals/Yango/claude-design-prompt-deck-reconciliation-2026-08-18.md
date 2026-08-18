@@ -19,9 +19,9 @@ These two numbers cannot both be right in the same deck: the main body's own "13
 
 **New Bolivia TAM: 27,000 drivers × $107/month × ~15% commission × 12 = ~$5.2M/year** (was ~$2.7M/year).
 
-**Also fix the Venezuela appendix slide**, which currently shows a fabricated, self-contradicting number: stat bar cell 1 reads "8,000 / Total driver count," while its own sub-caption still says "Only qualitative: 'hundreds of thousands' of riders in 100 days..." and cell 4 still says "Not modeled / No defensible driver count exists to size this in dollars." That "8,000" has no source and was never part of the original research or prompt for this slide. **Revert cell 1 to "Not found" (matching cell 4's "Not modeled"), exactly as it was originally specified.** Do not replace it with any other specific number, there is no sourced driver count for Venezuela.
+**Also fix the Venezuela appendix slide.** The live deck currently shows a fabricated, self-contradicting number: stat bar cell 1 reads "8,000 / Total driver count," while its own sub-caption still said "Only qualitative: 'hundreds of thousands' of riders in 100 days..." and cell 4 still said "Not modeled / No defensible driver count exists to size this in dollars." That "8,000" had no source and was never part of the original research or prompt for this slide. **As of 2026-08-18, Venezuela now has an actual modeled estimate to replace both the fabricated "8,000" and the old "Not modeled," built from Yango's own disclosed 11,000,000+ km driven in its first 100 days, divided by an assumed average trip distance (no Venezuela-specific figure exists, so a 4-9km range is used, midpoint 6km) and Bolivia's cross-market trip-frequency rate (175 trips/driver/month, since no Venezuela-specific rate exists either): ~3,100 drivers (range ~2,100-4,700). Modeled TAM: 3,100 × $915/month ARPU × ~27.5% commission × 12 = ~$9.4M/year (range ~$6.3M-$14.2M/year). This is explicitly the softest of the four country models, treat it as directional. Do NOT use the much larger alternative implied by applying the driver-to-rider oversupply ratio to "hundreds of thousands of riders" (would suggest 40,000-100,000+ drivers), that phrase is a vague company figure, not a usable base, and the two methods diverge by roughly 20-30x.**
 
-**Revised combined base across Colombia + Peru + Bolivia**: **~162,000+ drivers, ~$332M/year modeled annual recharge volume.** Venezuela remains explicitly unsized and excluded from this total, not zeroed.
+**Revised combined base across Colombia + Peru + Bolivia**: **~162,000+ drivers, ~$332M/year modeled annual recharge volume.** This remains the base used for the main-body reconciliation below. Venezuela's new ~3,100-driver / ~$9.4M-year model is real but meaningfully less reliable than the other three; keep it visible on its own appendix slide, but do NOT fold it into the main-body headline numbers below without calling out its lower confidence every time it appears. If German wants Venezuela included in the whole-deck headline too, the all-four total is ~165,100+ drivers and ~$341M/year, always with that caveat attached.
 
 ## MAIN-BODY RECALCULATION METHODOLOGY
 
@@ -70,7 +70,7 @@ Already specified in full in `claude-design-prompt-4-country-appendix-2026-08-18
 
 ### Appendix, Venezuela slide
 
-Revert stat bar cell 1 from "8,000 / Total driver count" back to "Not found / Total driver count," keeping its existing sub-caption ("Only qualitative: 'hundreds of thousands' of riders in 100 days...") and cell 4 ("Not modeled / No defensible driver count exists to size this in dollars") exactly as they already are. No other change to this slide.
+Full replacement text already specified in `claude-design-prompt-4-country-appendix-2026-08-18.md` (updated 2026-08-18): stat bar cell 1 becomes "~3,100" with a caption citing the km-based derivation and the softer-confidence flag, cell 4 becomes "~$9.4M/year" with its range noted, the SO WHAT line is reworded to reflect that a real (if uncertain) opportunity is now modeled, and the footnote drops the old "no dollar opportunity is modeled here" language. Apply exactly as written there.
 
 ## WHAT NOT TO DO
 
@@ -78,4 +78,5 @@ Revert stat bar cell 1 from "8,000 / Total driver count" back to "Not found / To
 - Do not scale the ~$0.52M/~$0.5M integration-avoidance figure, it is not volume-driven.
 - Do not silently drop the "Venezuela not sized" qualifier anywhere it appears in the updated text, it is load-bearing, not decorative.
 - Do not present "$29M/year" as a firm, final number in any client-facing sentence without also keeping the "modeled from public data, to be validated with Yango's actual data" framing that already exists elsewhere in the deck.
-- Do not reintroduce a specific Venezuela driver count anywhere. If a placeholder is genuinely needed for visual symmetry, use "Not found," never an invented figure.
+- Do not blend Venezuela's ~3,100-driver / ~$9.4M-year model into the main-body headline numbers (the $332M/162,000-driver base used in the recalculation above) without explicitly flagging that Venezuela's figure is materially lower confidence than the other three. If in doubt, keep it out of the headline and confined to its own appendix slide.
+- Do not use the driver-to-rider-ratio-derived alternative for Venezuela (40,000-100,000+ drivers) anywhere, it was explicitly rejected in favor of the distance-based method, see above.
