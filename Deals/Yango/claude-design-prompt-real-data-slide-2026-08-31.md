@@ -1,6 +1,8 @@
 # Prompt Claude Design: real recharge data slide + reconcile Opportunity/Levers to Javier's actual numbers (2026-08-31)
 
-Target file: the live Google Slides deck **"Yango + Yuno_Aug 26"** (id `1XPdfoKEGoT-s7-XcIoewxbOWnMidO9JfcMTUgYvclak`). Edit directly in this file, do not duplicate it.
+Target: the presentation uploaded alongside this prompt, "Yango + Yuno_Aug 26." Edit it in place, do not create a new deck or a new visual system.
+
+**Match the uploaded deck's existing visual system exactly everywhere below: same fonts, same colors, same chip and callout style, same stat-block and card layout, same eyebrow/title/footer structure already used on its other slides.** Every new or edited slide must look like it was always part of this deck. This is a content and data update, not a redesign.
 
 ## Why this change is happening
 
