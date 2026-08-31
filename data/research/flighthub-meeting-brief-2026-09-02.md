@@ -20,7 +20,7 @@
 
 1. **Anna-Lena is the person Nick described as having built the internal routing platform, but her exact function is not fully pinned down.** Her own email signature says **Product Manager, FlightHub.com & Justfly.com**. ⚠️ A LinkedIn snippet (page would not fully load) lists a different title, "Marketing Manager, Compare and Ads," at what appears to be the same person (Montreal, Concordia M.A. in behavioral neuroscience, prior research associate at UC San Diego). Treat the email signature as current and correct since it is first-party and recent, but do not be surprised if her day-to-day is more data/growth-flavored than a typical payments PM. Either way, she is the one who owns FlightHub's internal routing platform per Nick, and that is what matters for the call.
 2. **They store raw PANs, encrypted, and use no network tokens at all.** Nick, verbatim: *"we don't use tokens. we have the PAN and we have it encrypted right now. We haven't started using tokens."* They are PCI DSS compliant. This is the single most concrete approval-rate and PCI-scope lever on the table, and it is something her internal build cannot deliver on its own because it requires tokenization relationships at each provider.
-3. **The stack is already large and growing.** Pay-in: Chase Paymentech, Stripe, Airwallex, Adyen (went live around June 30), Braintree/PayPal. Payout: ConnectPay (primary, including virtual cards), plus Adyen and Airwallex being added, and Float in Canada. Wex is the next integration. ⚠️ Nuvei was mentioned in the call but the transcript is garbled on it, so do not assert it.
+3. **The stack is already large and growing, and confirmed in full.** Pay-in: Chase Paymentech, Stripe, **Nuvei**, Airwallex, Adyen (live as of June 30), Braintree (underlying PayPal). Payout: ConnectPay (primary, including virtual cards), plus Wex, Adyen and Airwallex being added, and Float in Canada. That is seven providers already live plus Wex incoming. Full detail in section 3 below.
 4. **Their two KPIs are the only two that matter.** Nick: *"lower my cost and accept more, that's the KPIs that we always work."* No other pain was volunteered. He explicitly said Adyen had *"no pain points."* This is a low-drama, numbers-driven account.
 5. **Nick already floated buy over build himself.** His own words closing the June call: *"maybe Anna-Lena can get a walkthrough of your platform and see if [it's] something that maybe it's easier for us to just integrate with you guys."* The build-vs-buy door was opened by the CFO, not by us. Do not re-open it as if it were our idea.
 
@@ -56,7 +56,7 @@
 
 **How to read her:** whichever title is current, she is a trained quantitative researcher, not a sales-facing executive, and she owns (or co-owns) the rules that decide where FlightHub's traffic goes. Expect skepticism of vendor claims without a measurement design and a preference for concrete numbers over narrative. Lead with specifics: rule types, BIN-level logic, token handling, reconciliation output, API surface, and where possible frame improvements as a testable lift (e.g. "here is the baseline, here is what changes, here is how we would measure it") rather than a capability list. Avoid the executive value narrative; Nick already heard it on June 30.
 
-**Nick Hart** (Montreal). Signs his emails **Chief Financial Officer, FlightHub.com & Justfly.com** (June 27, 2026 signature). ⚠️ LinkedIn and Crunchbase still list him as **Chief Corp Development Officer**, a title he was promoted into in October 2019; his current signature says CFO, so use CFO, but do not be surprised if the room refers to a broader corporate-development remit. He led the June 30 call alone, is matter-of-fact, does not volunteer pain, and answered "I'd have to check" on approval rates because payments detail is not his day job. He is the one who asked how Yuno makes money and who asked for a fee proposal. He has not replied to any email since June 30, across five follow-ups, and is optional on this invite.
+**Nick Hart** (Montreal). Signs his emails **Chief Financial Officer, FlightHub.com & Justfly.com** (June 27, 2026 signature). ⚠️ LinkedIn and Crunchbase list him as **Chief Corp Development Officer**, a title he was promoted into in October 2019, and **the June 30 call recording itself tags him the same way** ("FlightHub, Nick Hart, Chief Corp Development Officer"), one addition day after his CFO-signed email. Two consistent sources point to Corp Development, one recent email says CFO; use CFO in address but do not be surprised if the room or his own team refers to a broader corporate-development remit. He led the June 30 call alone (Hakan Ersoy was invited, tentative, did not join), is matter-of-fact, does not volunteer pain, and answered "I'd have to check" on approval rates because payments detail is not his day job. He is the one who asked how Yuno makes money and who asked for a fee proposal. He has not replied to any email since June 30, across five follow-ups, and is optional on this invite.
 
 🔴 **Sensitivity, never raise:** Nick Hart was one of two FlightHub directors personally fined **CAD $400,000** in a February 2021 Competition Bureau consent agreement over drip pricing (total company + director penalty **$5.8M**, the largest such penalty at the time), carrying a 10-year prohibition on misleading pricing claims. This is public record, not a rumor, but it has no bearing on a payments-orchestration conversation and should never come up.
 
@@ -81,31 +81,59 @@
 
 ---
 
-## 3. What They Told Us (June 30 discovery, verbatim-anchored)
+## 3. Call Recap: June 30, 2026 Discovery Call — Full Stack and What to Carry Into the Anna-Lena Call
 
-**Payment stack**
+**The call.** 23 minutes, Google Meet. Yuno: German, Justo (CRO). FlightHub: **Nick Hart, alone** (Hakan Ersoy was invited, tentative, did not join). Opened by referencing a prior December 2025 conversation. ⚠️ The call recording itself tags Nick as "Chief Corp Development Officer," matching LinkedIn and Crunchbase rather than his CFO email signature from three days earlier, see the title note in section 2.
 
-| Layer | Providers | Notes |
+### FlightHub's complete payment stack, as stated on this call (definitive)
+
+| Layer | Providers | Detail |
 |---|---|---|
-| Pay-in | Chase Paymentech, Stripe, Airwallex, Adyen, Braintree/PayPal | Adyen launching "as we speak" on Jun 30. Nick on PayPal: *"we have PayPal and all that nonsense"* |
-| Pay-in and payout | ConnectPay | Used on both sides |
-| Payout | ConnectPay (primary), adding Adyen and Airwallex, Float in Canada | Airlines are the main payout destination |
-| Coming next | **Wex** | The only integration left on their list |
-| Virtual cards | Already live via ConnectPay | Customer card in, virtual card out to the airline |
-| Fraud | **Own internal model**, multiple data providers; Riskified as *"a backstop"* | Nick: *"we're pretty good with the fraud, but always interested if people have new ideas"* |
-| Tokens | **None. Raw PAN, encrypted.** PCI DSS compliant | The largest single technical opening |
+| Pay-in | Chase Paymentech, Stripe, **Nuvei** (transcribed "Nuve," stated twice by Nick and confirmed again in German's closing recap), Airwallex, Adyen, Braintree (underlying PayPal) | Adyen: *"going fine, no pain points... the team is launching it as we speak."* Braintree: German flagged it from inspecting the live checkout, Nick confirmed, *"we have PayPal and all that [nonsense]."* |
+| Pay-in and payout | ConnectPay | *"We also have ConnectPay on the pay-in and payout side."* |
+| Payout | ConnectPay (primary today), adding **Wex**, Adyen and Airwallex; **Float** in Canada | Wex is being added specifically to the payout and virtual-card side, not just "in the pipeline" generically |
+| Virtual cards | Already live via ConnectPay | Customer card in, FlightHub-issued virtual card out to the airline, for settlement |
+| Tokens | **None. Raw PAN, encrypted.** PCI DSS compliant, confirmed directly | The single largest approval-rate and PCI-scope lever on the table |
+| Fraud | Own internal model plus multiple data providers, primary; **Riskified explicitly "a backstop"** | *"We're pretty good with the fraud, but always interested if people have new ideas."* |
 
-**How they route today.** No orchestration platform. Nick: *"because the majority is going to one of them we don't have let's say a platform to distribute the traffic at the moment. We have a few rules in place."* There is a basic fallback: *"if it fails on one processor, it drops to the next one."* Anna-Lena's platform is meant to replace that with real BIN-level, rule-driven distribution.
+That is **seven providers already live** (Chase Paymentech, Stripe, Nuvei, Airwallex, Adyen, Braintree, ConnectPay) plus Wex incoming, split across pay-in and payout, with Float as a Canada-specific payout add.
 
-**The BIN nuance that matters.** When Nick says BINs he means **the virtual cards FlightHub issues to pay airlines**, not issuer BINs on the pay-in side. His words: *"the more bins we have the better... I'm talking about the cards that we're passing to the airline having multiple bins."* Justo initially read this as pay-in issuer routing and corrected mid-call. Getting this right on Wednesday signals we actually listened. Wex is being added partly to widen that BIN pool.
+### How they route today, and why the timing with Anna-Lena matters
 
-**Structure and economics.** Multiple entities across countries, deliberately processing locally to reduce rates. Average ticket around **USD 700**. ⚠️ Monthly transaction count was never given: Nick started *"I would say between five and..."* and cut himself off, then said he would send a number. He never did. Getting this number is the commercial unlock.
+No orchestration platform exists yet. Nick: *"because the majority is going to one of them we don't have... a platform to distribute the traffic... we have a few rules in place."* The only resilience today is a basic cascade: *"if it fails on one processor, it drops to the next one."* **Anna-Lena wrote the specification this quarter (Q2 2026), with implementation targeted for the following quarter.** September 2 lands squarely inside that implementation window, so ask directly where the build actually stands rather than assuming it is live.
 
-**Settlement context.** As a travel agent rather than an operator, airline settlement runs through BSP and ARC, with GDS connectivity for reservations. Yuno orchestrates the money movement around that, not the GDS itself.
+**The BIN nuance, confirmed twice:** BINs, in Nick's usage, means the virtual cards FlightHub issues to pay airlines, not issuer BINs on the pay-in side: *"I'm talking about the cards that we're passing to the airline having multiple bins."* Justo initially read this as pay-in issuer routing and Nick redirected him mid-call. More BIN ranges means better airline-side acceptance, which is part of why Wex is being added.
 
-**Public corroboration of what was disclosed on the call:** **Affirm launched in Canada on FlightHub/JustFly in May 2024**, splitting purchases of CAD $200 or more into installments, Canada only. **Accrue (Pay by Bank) launched on justfly.com in August 2024**, explicitly positioned to cut card-processing fees and offering a 1% discount for paying direct from a bank account, a merchant already acting on cost-of-acceptance. The **Riskified case study** on FlightHub quotes a **30% increase in approval rate**, an **80% drop in manual reviews**, and a **75% cut in chargeback-review time** (previously a 20 to 30 minute wait per decision), consistent with Nick's "backstop" description rather than a primary fraud engine. ⚠️ Braintree and Adyen specifically could not be corroborated from any public source (expected, since neither a company nor its processor typically publicizes that relationship); treat them as confirmed only by direct discovery-call disclosure and by German's own checkout inspection, which is a reliable source, just not a citable public one. Payment methods accepted publicly conflict across sources (card networks only per one aggregator, PayPal per another); **verify live at checkout before the call.**
+**Local-processing strategy:** multiple legal entities across countries, deliberately processing locally to reduce rates; the virtual-card provider is also chosen per case to optimize cost.
 
-**Two distinct payments roles were posted, not one, strengthening the build signal.** Alongside the "Product Manager, Payments" req, FlightHub separately posted a **"Payment Manager / Gestionnaire des paiements"** role (Montreal, on-site) scoped to their in-house payment tool, *"responsible for managing payment gateways and processors, optimizing transaction approval rates, and ensuring smooth payment processing"*, plus two **Fraud Analyst** listings and a data-entry role supporting chargebacks and refunds. Read together, this is a small but real internal payments organization being staffed around Anna-Lena's platform, not a single side project.
+**Reconciliation:** one person, merchant-level, across both pay-in and payout, today, about to get harder as Adyen, Airwallex and Wex all land at once.
+
+**Three numbers from this call, one still missing, one now more precise:**
+- Monthly transaction volume: **still never delivered.** Nick started to answer, said he would send a number, never did.
+- Current approval rate: **unknown even to him.** *"I'd have to check... relatively high... I don't know off the top of my head."*
+- Average ticket: **roughly USD 500 to 700**, a range, not a single point figure as earlier notes suggested; the clean recording confirms *"I would say between five and 700."*
+
+**Settlement context:** as a travel agent rather than an operator, airline settlement runs through BSP and ARC, with GDS connectivity for reservations. Yuno orchestrates the money movement around that, not the GDS itself.
+
+### Rules-engine proof points Justo used live, reusable in the Anna-Lena demo
+
+- **Uber's metadata field:** Uber tags VIP customers through a free-form metadata field so those transactions are never auto-declined for insufficient funds, one example among 50-plus rule dimensions (issuing country, BIN, currency, and more).
+- **Amazon Mexico case study:** a wave of US expats living in Mexico were buying on Amazon with US-issued cards; routed as international, those cards cost up to 4%; routed as domestic through a Mexican entity, roughly 1.6 to 1.9%, less on debit. A BIN and issuing-country rule fixed it. This is the same "process locally to cut interchange" logic FlightHub already runs with its own multi-entity setup, just manual today where Yuno automates it, which makes it a natural bridge into the pitch.
+
+### What Nick actually asked for, twice, closing the call
+
+1. **A platform walkthrough for Anna-Lena:** *"maybe Anna-Lena can get a kind of a walkthrough of your platform and see if it's easier for us to just integrate with you guys."* This is the September 2 meeting.
+2. **A fee-structure proposal**, explicitly blocked because volumes were never sent: *"if you could send me a more detailed... what fees it kind of would look like for us, so I can see what makes sense."*
+
+### What to carry into the Anna-Lena call, and what not to redo
+
+- **Reference, do not re-explain:** the full seven-provider stack, the no-tokens/raw-PAN finding, Riskified-as-backstop, ConnectPay spanning both pay-in and payout, and the fee model (platform fee plus per-successful-transaction) are all already on record with Nick. Anna-Lena was not on this call, so a brief, confident recap is fine, but do not run this as fresh discovery.
+- **Do not re-ask what Nick already answered**, even with a different person in the room: the two KPIs (cost and acceptance), the local-processing/multi-entity structure, and the airline-payout BIN logic.
+- **Get the two numbers Nick never delivered:** monthly volume and current or target approval rate. This is the single most important open item for September 2, since it directly unblocks the fee proposal Nick asked for.
+- **Confirm implementation status directly:** spec written in Q2, implementation targeted for Q3, which is now. Ask where the build actually stands rather than assuming June 30's plan held.
+- **Reuse the Amazon Mexico and Uber examples** if the conversation needs a concrete illustration of rule depth; both already landed well with Nick and cost nothing to repeat.
+- **Public corroboration of what Nick disclosed:** Affirm launched in Canada on FlightHub/JustFly in May 2024 (purchases of CAD $200 or more, Canada only); Accrue (Pay by Bank) launched on justfly.com in August 2024, explicitly to cut card-processing fees; the Riskified case study quotes a 30% approval-rate increase, an 80% drop in manual reviews, and a 75% cut in chargeback-review time, consistent with Nick's "backstop" framing. ⚠️ Braintree, Adyen and Nuvei specifically carry no public corroboration (expected, this kind of relationship is rarely publicized); they are confirmed by direct call disclosure, which is reliable but not citable externally. Payment methods accepted publicly conflict across sources; verify live at checkout before the call.
+- **Two distinct payments roles were posted, not one, strengthening the build signal:** alongside "Product Manager, Payments," FlightHub separately posted a "Payment Manager / Gestionnaire des paiements" role scoped to the in-house payment tool, *"managing payment gateways and processors, optimizing transaction approval rates,"* plus two Fraud Analyst listings and a data-entry role for chargebacks and refunds. This reads as a small but real internal payments organization being staffed around Anna-Lena's platform, not a side project.
 
 ---
 
@@ -169,8 +197,8 @@ No news found in the last 7 days beyond the above.
 
 | They ask | You answer |
 |---|---|
-| "How is this different from what I already built?" | Your rules engine is the part that is genuinely FlightHub-specific and you keep owning it. What we take off you is the layer under it: maintaining each provider integration as their APIs change, normalizing reconciliation and settlement across all of them, PCI scope, and adding provider number seven after Wex. Plus two things a single-company build cannot produce: network tokens across every provider, and benchmark data from other OTAs and airlines. |
-| "What rules can you actually express?" | Over 50 fields including issuing country, BIN, currency, amount, card type, plus a free-form metadata field you populate yourself. Example: Uber flags VIP users through metadata so those transactions get special handling downstream. Routing is dynamic and can optimize on cost, approval rate, or a blend, not static failover. |
+| "How is this different from what I already built?" | Your rules engine is the part that is genuinely FlightHub-specific and you keep owning it. What we take off you is the layer under it: maintaining each of your seven provider integrations as their APIs change, normalizing reconciliation and settlement across all of them, PCI scope, and adding whatever comes after Wex. Plus two things a single-company build cannot produce: network tokens across every provider, and benchmark data from other OTAs and airlines. |
+| "What rules can you actually express?" | Over 50 fields including issuing country, BIN, currency, amount, card type, plus a free-form metadata field you populate yourself. Two examples already used with Nick: Uber flags VIP users through metadata so those transactions get special handling downstream; and a merchant routing US-issued cards used by expats in Mexico as domestic through a Mexican entity cut interchange from ~4% to ~1.6-1.9%. Routing is dynamic and can optimize on cost, approval rate, or a blend, not static failover. |
 | "Do you issue single-use virtual cards for airline payouts?" | Yes, through the API. One merchant runs exactly that today. Since your BIN breadth is the lever on airline acceptance, this is where to spend demo time, alongside payout corridor and FX rate comparison. |
 | "How do you make money?" | Platform fee plus a fee per **successful** transaction, so the incentive is aligned with approval rate. Justo covered this with Nick on June 30. Any actual numbers need volumes first, which is precisely the ask. |
 | "We are PCI compliant already, why does tokenization matter?" | Approval rate and resilience, not just compliance. Network tokens survive card reissuance and lift authorization rates, and moving PANs out of your systems shrinks the audit surface. It also removes the migration friction when you add or swap providers. |
@@ -180,7 +208,6 @@ No news found in the last 7 days beyond the above.
 **Landmines**
 - Never imply the internal platform was a mistake or that they "lack" orchestration. Anna-Lena built it and Nick funded it. The frame is augmentation and speed.
 - Do not re-pitch the executive story from June 30. She was not on that call, but Nick was, and he asked for a **walkthrough**, not a value deck.
-- Do not assert Nuvei is in the stack. The transcript is unclear on it. Ask instead.
 - Do not claim Riskified is their fraud system. Nick corrected that: their own internal model is primary, Riskified is a backstop.
 - Do not push pricing numbers without volumes. Get the volumes, then Justo prices it.
 - Never raise the 2019 California AG suit, the 2021 Competition Bureau matter, the 2022 DOT consent order, or the 2020 CCAA restructuring. None are relevant to this conversation and one implicates Nick Hart personally.
@@ -207,7 +234,7 @@ No news found in the last 7 days beyond the above.
 3. On the pay-in side, are you routing on issuer BIN, or is the BIN work mostly on the virtual cards you pass to the airlines? **Notes: ____**
 4. Nick mentioned you store PANs encrypted rather than tokenized. Is network tokenization on your roadmap, and is it blocked by the providers or by priority? **Notes: ____**
 5. Who handles reconciliation across pay-ins and payouts today, and what happens to that workload once Adyen, Airwallex and Wex are all live? **Notes: ____**
-6. Is Nuvei part of the stack? It came up in June but we did not capture it cleanly. **Notes: ____**
+6. Nick mentioned the spec was written this past quarter with implementation targeted for this one. Where does the build actually stand today? **Notes: ____**
 7. What is your monthly transaction volume and current approval rate? Nick asked us for a fee structure and we have been holding on this number to give him something real. **Notes: ____**
 8. What would have to be true for FlightHub to route through a third-party layer rather than finish the internal build? **Notes: ____**
 
