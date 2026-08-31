@@ -21,7 +21,10 @@
 2. **Twenty days of silence on the substance.** German asked for feedback on August 11. None has arrived. All correspondence since has been about calendar logistics.
 3. **The September 4 Dallas workshop is dead.** Andrew declined it on August 27 after flagging on August 24 that he cannot travel. Date ping-pong: Andrew offered Sep 9 to 11 (Yuno no), Yuno offered the week of Sep 14 to 18 (no answer), Andrew asked about Sep 7 or 8 (Yuno no, company event), Yuno re-offered the week of Sep 14 "any day". Andrew's last word, August 26: *"we are juggling dates and will revert."* Nothing since.
 4. **Their stated driver is speed to market, and secondarily cost.** Andrew on August 11: *"it's going to take us far too long to get to that perfect scenario... there's got to be a quicker way to market than try and build it all ourselves."* Jarrett, who spent four months inside CellPoint: *"I know the goal at CPD is to reduce costs."*
-5. **Two very different buyers.** Patrick (CTO, Dallas) is the technical champion and asked the deepest question on the call. Andrew (London) controls the calendar and the commercials, and he is the one whose diary keeps slipping.
+5. **Two very different buyers.** Patrick (Dallas) is the technical champion and asked the deepest question on the call. Andrew (London) controls the calendar and the commercials, and he is the one whose diary keeps slipping.
+6. **This is not just "a company in turnaround." It is a PE-backed rescue with a brand-new CEO who has never touched travel.** Kevin Murphy, a career private-equity-backed lender turnaround operator (Colthurst Card & Payment Solutions, Avant Money, Bank of Ireland), was appointed a director in December 2025 and now sits as Group CEO. ✅ Confirmed on CellPoint's own team page. Founder Kristian Gjerding, CEO since 2007, is gone from the exec page (still a dormant board director, no exit filed). No press release was ever issued for this handover. This is who "parachuted in at the beginning of the year" actually is, and it changes how to read every cost conversation on this account: Murphy's whole career is squeezing fixed cost out of PE-owned balance sheets.
+
+**Leverage read:** the external research points the same way on every axis. CellPoint's last public customer win was October 2025; two senior aviation board members (ex-Amadeus, ex-Southwest) joined and quit within five months; the July 2025 capital raise was never announced and CellPoint has quietly disappeared from Penta Capital's own portfolio page; FY2022 group accounts (last analyzed publicly) showed a $22.0m net loss against $2.6m revenue and $69.9m of accumulated losses. ⚠️ These are signals, not proof of distress today, and none of it should be said in the room. But it argues for holding the commercial structure rather than pre-emptively softening it: they need this partnership more than the polished demo reaction suggested.
 
 **Three hooks, in priority order**
 
@@ -29,9 +32,9 @@
 2. **Zero-disruption migration.** Keep the Velocity front end, map their API fields to Yuno's, normalize through to the integrations. Existing merchants do not notice. Jarrett and Mauricio are already running this exact play on another white-label account.
 3. **Patrick's intelligence layer.** Full transaction lifecycle visibility (inbound data, the payload sent to the provider, the provider response, latency) plus routing control by API, so his ML models can both read and act in real time.
 
-**THE objection they will raise:** the USD 50,000/month platform fee is net-new fixed opex for a company in shareholder-backed turnaround with a cost-reduction mandate, and it lands before a single new deal closes.
+**THE objection they will raise:** the USD 50,000/month platform fee is net-new fixed opex for a company under a PE-driven cost-reduction mandate, and it lands before a single new deal closes.
 
-**The answer:** do not defend the number, reframe the comparison. The fee replaces the OSO build path, which is infrastructure plus development plus integrations plus ongoing maintenance plus PCI scope plus the team to run it, and it never gets them to parity on the timeline they need. The 50/50 revenue share means Yuno only makes real money when CellPoint wins, so both sides carry the risk. If they push hard, do not discount on the call. Justo can explore structure (a ramp during the migration months, or fee against term or volume commitment) and take it away to formalize.
+**The answer:** do not defend the number, reframe the comparison, and do not soften first. The fee replaces the OSO build path, which is infrastructure plus development plus integrations plus ongoing maintenance plus PCI scope plus the team to run it, and it never gets them to parity on the timeline they need. The 50/50 revenue share means Yuno only makes real money when CellPoint wins, so both sides carry the risk. Given how quiet their 2026 has been on new customer wins, they likely need a credible speed-to-market story more than Yuno needs this specific deal. If they push hard, do not discount on the call. Justo can explore structure (a ramp during the migration months, or fee against term or volume commitment) and take it away to formalize.
 
 **The ask:** a confirmed workshop date agreed live on the call, and either written feedback on the proposal or a dedicated commercial session with Justo booked before the workshop.
 
@@ -43,18 +46,16 @@
 
 | Name | Role | Side | Status |
 |---|---|---|---|
-| Andrew Goddard | Chief Partnerships & Marketing Officer ⚠️ (see below) | CellPoint | Accepted |
-| Patrick Uckermark | CTO, based in Dallas | CellPoint | Accepted |
+| Andrew Goddard | Chief Strategy & Product Officer | CellPoint | Accepted |
+| Patrick Uckermark | Dallas, CTO per his signature / Global Head of Tech & Eng per team page ⚠️ | CellPoint | Accepted |
 | Justo Benetti | CRO, owns the relationship | Yuno | Accepted |
 | Jarrett Falasco | Senior Sales Engineer, ex-CellPoint | Yuno | Accepted |
 | German Tatis | BDM, organizer | Yuno | Accepted |
 | Bernabé Murata | Business Development | Yuno | ⚠️ No response |
 
-**Andrew Goddard** (London, Surbiton area). Brought in by CellPoint's shareholders at the start of 2026 to turn the business around. He is candid about the past: *"some of our predecessors were slightly guilty in the way they did things... we're over promising and under delivering massively."* He reacted to the Yuno demo with *"this is beyond an expectation, which is great."* He is the buyer for the commercial frame and the one who has to clear travel.
+**Andrew Goddard** (London, Surbiton area). ~30 years in payments (American Express, UK Post Office, payment services firms) before CellPoint. ✅ Official title per CellPoint's team page and his 2026 World Aviation Festival speaker listing: **Chief Strategy & Product Officer**. His email signature has drifted through "Chief Product & Partnerships Officer" (Jul-Aug) and "Chief Partnerships & Marketing Officer" (Aug 24); treat those as informal, not a demotion. He is candid about the past: *"some of our predecessors were slightly guilty in the way they did things... we're over promising and under delivering massively."* He reacted to the Yuno demo with *"this is beyond an expectation, which is great."* He is the buyer for the commercial frame and the one who has to clear travel.
 
-⚠️ **His title has moved three times in five weeks**, from "Chief Product & Partnerships Officer" (July 29 and August 4 signatures) to "Chief Partnerships & Marketing Officer" (August 24 signature), while the August 11 call listed him as "Chief Strategy & Product Officer". The drift is away from Product. This is an inference and must never be said out loud, but it is the reason to ask who else needs to be in the workshop room on product and engineering.
-
-**Patrick Uckermark** (CTO, Dallas, travels to London regularly and was there August 10 to 12). The strongest technical signal in the account. He is personally building a data project: ingesting historical transaction data to train ML models, splitting the live API so every transaction feeds his intelligence layer, and having that layer respond with dynamic routing decisions based on BIN-level knowledge of which PSP will decline. Phase two is ecosystem observability, meaning provider availability per country. He accepts every invite promptly and asks the concrete questions. Treat him as the champion.
+**Patrick Uckermark** (Dallas, travels to London regularly and was there August 10 to 12). Prior: **Sabre Corporation**, ClearDATA, European payments startups. ⚠️ His own email signature and the August call both say **CTO**, but CellPoint's current team page lists him as **Global Head of Technology & Engineering** (he was announced CTO in a September 2025 press release). Do not assume a demotion, but do not assume CTO either; if it comes up naturally, confirm his current scope. The strongest technical signal in the account regardless of title. He is personally building a data project: ingesting historical transaction data to train ML models, splitting the live API so every transaction feeds his intelligence layer, and having that layer respond with dynamic routing decisions based on BIN-level knowledge of which PSP will decline. Phase two is ecosystem observability, meaning provider availability per country. He accepts every invite promptly and asks the concrete questions. Treat him as the champion.
 
 **Mauricio Madrigal** is on Yuno's side, leading Yuno's white-label product. He is not a CellPoint employee. (Correcting an earlier note in memory.)
 
@@ -98,7 +99,23 @@
 
 ---
 
-## 5. Agenda (30 minutes)
+## 5. Company Context (External Research)
+
+**Ownership and money.** Majority shareholder is **Tosca Penta CPM Limited** (Toscafund/Penta Capital, Jersey), holding 50 to 75% since June 2023. Prior raises: £11m (2019), $25m (Jan 2022), $30m (Nov 2024, all Toscafund/Penta). A **July 2025 share allotment took capital to GBP 67.9m**, filed at Companies House with no press release. ⚠️ CellPoint no longer appears on Penta Capital's own portfolio page (checked Aug 31, 2026); reason unconfirmed.
+
+**Leadership.** **Kevin Murphy is now Group CEO** (appointed director Dec 2025), a PE-backed-lender turnaround specialist with no travel-industry background. Founder Kristian Gjerding, CEO since 2007, is off the exec team page with no announced departure. Two aviation-heavyweight board additions from September 2025 (ex-Amadeus President Airlines, ex-Southwest SVP/CIO) both **left within five months**, by early Feb 2026.
+
+**Momentum.** No new customer win has been announced on CellPoint's newsroom in all of 2026; the last was October 2025 (Dallas Americas expansion). Their **OSO platform** (launched Sep 2025) targets an airline-retailing model IATA does not expect to reach scale adoption before 2030, a long runway to monetize.
+
+**Competitive pressure.** Sabre, previously an integration partner, signed **Juspay** in November 2025. Gr4vy locked an **exclusive** airline deal with Datalex in August 2025. Amadeus/Outpayce is the best-funded airline-native threat.
+
+**Market backdrop (usable as a rapport opener or framing point):** IATA halved its 2026 airline profit forecast in June 2026 to a 2.0% margin, meaning payment processing cost now competes directly with the industry's entire profit. Airlines processed roughly $977B in payments in 2024 at $22.2B in cost.
+
+**So what:** none of this is for the room. It is context for how German and Justo read pushback on fee structure, and for why "quicker path to market, less capital outlay" should land harder with this buyer than it might have five months ago.
+
+---
+
+## 6. Agenda (30 minutes)
 
 | Min | Block | Notes |
 |---|---|---|
@@ -110,7 +127,7 @@
 
 ---
 
-## 6. Questions to Ask
+## 7. Questions to Ask
 
 1. When we sent the proposal on the 11th we asked for your feedback. How did it land, and who on your side has been through it? **Notes: ____**
 2. What has to be true internally for this to get a yes, and who signs it? **Notes: ____**
@@ -122,7 +139,7 @@
 
 ---
 
-## 7. Post-Meeting
+## 8. Post-Meeting
 
 - Same-day recap email confirming the workshop date, the venue and the agreed agenda blocks.
 - If the fee was challenged, brief Justo the same day before anything is put in writing.
@@ -131,4 +148,4 @@
 ---
 
 ### Sources
-Google Calendar (event `CellPoint Digital + Yuno | Workshop Alignment`, Sep 1, 2026) · Gmail threads "Follow up" and "CellPoint Digital + Yuno: Dallas Workshop, September 4" (Jul 27 to Aug 27, 2026) · Papermark view notifications (Aug 12 and Aug 31, 2026) · Google Meet transcript, "CellPoint Digital + Yuno", Aug 11, 2026 · `Proposal - CellPoint Digital + Yuno.pdf` (commercial terms read directly from the file sent).
+Google Calendar (event `CellPoint Digital + Yuno | Workshop Alignment`, Sep 1, 2026) · Gmail threads "Follow up" and "CellPoint Digital + Yuno: Dallas Workshop, September 4" (Jul 27 to Aug 27, 2026) · Papermark view notifications (Aug 12 and Aug 31, 2026) · Google Meet transcript, "CellPoint Digital + Yuno", Aug 11, 2026 · `Proposal - CellPoint Digital + Yuno.pdf` (commercial terms read directly from the file sent) · Companies House (CellPoint Digital Holdings Ltd, 07855692: PSC register, filing history) · cellpointdigital.com (team page, newsroom, funding press releases) · businessofpayments.com (Nov 13, 2023 financial analysis) · Tracxn (headcount) · Penta Capital portfolio page (checked Aug 31, 2026) · IATA press releases (Jun 7, 2026 and Aug 3, 2026) · press coverage of Sabre-Juspay (Nov 2025) and Gr4vy-Datalex (Aug 2025).
