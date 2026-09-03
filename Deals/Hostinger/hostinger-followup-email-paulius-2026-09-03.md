@@ -8,7 +8,7 @@
 
 Hi Paulius,
 
-Thank you for the time today, we covered everything we wanted to see.
+Thank you for the time today. It was a productive conversation and left us with a clear picture of your priorities.
 
 In summary:
 
