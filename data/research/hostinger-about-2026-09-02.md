@@ -6,7 +6,7 @@ On the surface, a low-cost web hosting provider. In practice, a high-volume, low
 
 Founded in 2004 in Kaunas, Lithuania, as Hosting Media; renamed Hostinger in 2011. Headquarters in Vilnius (the "Cyber City" campus), registered address in London. ICANN-accredited registrar, so it sells domains directly without intermediaries. Around 1,000 employees, roughly half in Lithuania.
 
-**Leadership:** CEO Daugirdas Jankus. Board chairman Arnas Stuopelis (was CEO until ~2023). CFO Domantas Beržanskis. COO Aivaras Šimkus. (Third-party databases like Growjo or GetLatka list outdated CEOs; the corporate blog is the reliable source.)
+**Leadership:** CEO Giedrius Zakaitis, appointed June 16, 2026 to lead the AI-first strategy (14-year insider, previously Chief Product and Technology Officer; predecessor Daugirdas Jankus moved to new strategic initiatives). Board chairman Arnas Stuopelis (was CEO until ~2023). CFO Domantas Beržanskis. COO Aivaras Šimkus. (Third-party databases like Growjo or GetLatka list outdated CEOs; the corporate blog is the reliable source.)
 
 ## The numbers
 
