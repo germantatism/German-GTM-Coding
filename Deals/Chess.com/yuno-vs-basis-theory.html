@@ -1,0 +1,330 @@
+<title>Yuno vs Basis Theory</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --bg:#F7F6FB; --surface:#FFFFFF; --surface2:#F1EFF8;
+    --ink:#1C1830; --muted:#5C5772; --line:#E4E1F0;
+    --accent:#6A3DF5; --accent-soft:#EFEAFE; --accent-ink:#4A28C4;
+    --win:#1E8A5A; --win-soft:#E4F4EC;
+    --gap:#C43D3D; --gap-soft:#FBEAEA;
+    --warn:#8A6410; --warn-soft:#F8F0DC;
+    --int:#0E6B8A; --int-soft:#E2F1F7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141126; --surface:#1E1A33; --surface2:#26213F;
+      --ink:#ECE9F7; --muted:#A49FBD; --line:#2E2947;
+      --accent:#9B7DFF; --accent-soft:#2A2350; --accent-ink:#C3B2FF;
+      --win:#4CC38A; --win-soft:#173327;
+      --gap:#E5736F; --gap-soft:#3A1F1F;
+      --warn:#D9A83F; --warn-soft:#332A14;
+      --int:#5BB8D9; --int-soft:#132C36;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141126; --surface:#1E1A33; --surface2:#26213F;
+    --ink:#ECE9F7; --muted:#A49FBD; --line:#2E2947;
+    --accent:#9B7DFF; --accent-soft:#2A2350; --accent-ink:#C3B2FF;
+    --win:#4CC38A; --win-soft:#173327;
+    --gap:#E5736F; --gap-soft:#3A1F1F;
+    --warn:#D9A83F; --warn-soft:#332A14;
+    --int:#5BB8D9; --int-soft:#132C36;
+  }
+  body{background:var(--bg); color:var(--ink); font-family:'Archivo',system-ui,-apple-system,sans-serif; line-height:1.55; font-size:15px;}
+  .wrap{max-width:1100px; margin:0 auto; padding:48px 28px 80px;}
+  a{color:var(--accent-ink); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .eyebrow{font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); display:flex; align-items:center; gap:14px; flex-wrap:wrap;}
+  .pill-internal{background:var(--gap-soft); color:var(--gap); border:1px solid var(--gap); border-radius:3px; padding:2px 10px; font-weight:600;}
+  h1{font-size:clamp(30px,4.5vw,44px); font-weight:800; letter-spacing:-.02em; margin:14px 0 6px; text-wrap:balance;}
+  h1 .vs{color:var(--muted); font-weight:400;}
+  .sub{color:var(--muted); max-width:68ch; margin:0 0 34px; font-size:16px;}
+
+  .verdict{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:6px; padding:26px 30px; margin-bottom:14px;}
+  .verdict h2{margin:0 0 10px; font-size:21px; font-weight:700; letter-spacing:-.01em;}
+  .verdict p{margin:0 0 12px; max-width:78ch;}
+  .verdict p:last-child{margin-bottom:0;}
+  blockquote{margin:16px 0; padding:14px 20px; background:var(--surface2); border-radius:5px; border-left:3px solid var(--muted); font-style:italic; color:var(--ink);}
+  blockquote .who{display:block; font-style:normal; font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--muted); margin-top:8px; text-transform:uppercase; letter-spacing:.08em;}
+
+  .chips{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin:22px 0 44px;}
+  .chip{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 18px;}
+  .chip .n{font-family:'IBM Plex Mono',monospace; font-size:21px; font-weight:600; letter-spacing:-.01em; font-variant-numeric:tabular-nums;}
+  .chip .l{font-size:12.5px; color:var(--muted); margin-top:4px; line-height:1.4;}
+  .chip.bad .n{color:var(--gap);}
+  .chip.good .n{color:var(--win);}
+
+  section{margin-bottom:52px;}
+  section > h2{font-size:23px; font-weight:700; letter-spacing:-.015em; margin:0 0 6px;}
+  section > .note{color:var(--muted); font-size:14px; margin:0 0 18px; max-width:80ch;}
+
+  .tbl-scroll{overflow-x:auto; border:1px solid var(--line); border-radius:6px; background:var(--surface);}
+  table{border-collapse:collapse; width:100%; min-width:760px;}
+  th{font-family:'IBM Plex Mono',monospace; font-size:11.5px; text-transform:uppercase; letter-spacing:.1em; text-align:left; color:var(--muted); padding:12px 16px; border-bottom:2px solid var(--line); background:var(--surface2);}
+  th.yuno{color:var(--accent-ink);}
+  td{padding:13px 16px; border-bottom:1px solid var(--line); vertical-align:top; font-size:14px;}
+  tr:last-child td{border-bottom:none;}
+  td.dim{font-weight:600; width:19%; min-width:150px;}
+  td.y{width:40.5%; background:color-mix(in srgb, var(--accent-soft) 34%, transparent);}
+  td.b{width:40.5%;}
+  .src{display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:.04em; padding:1px 7px; border-radius:3px; margin:3px 6px 0 0; white-space:nowrap; border:1px solid transparent;}
+  .src.doc{background:var(--win-soft); color:var(--win);}
+  .src.mkt{background:var(--warn-soft); color:var(--warn);}
+  .src.est{background:var(--surface2); color:var(--muted); border-color:var(--line);}
+  .src.int{background:var(--int-soft); color:var(--int);}
+  .tick{color:var(--win); font-weight:700;}
+  .cross{color:var(--gap); font-weight:700;}
+
+  .legend{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 26px; font-size:12.5px; color:var(--muted); align-items:center;}
+
+  .flow{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  @media (max-width:760px){.flow{grid-template-columns:1fr;}}
+  .flow-card{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:22px 24px;}
+  .flow-card.bt{border-top:4px solid var(--gap);}
+  .flow-card.yu{border-top:4px solid var(--accent);}
+  .flow-card h3{margin:0 0 12px; font-size:16px; font-weight:700;}
+  .flow-card ol{margin:0; padding-left:20px;}
+  .flow-card li{margin-bottom:9px;}
+  .flow-card li:last-child{margin-bottom:0;}
+
+  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  @media (max-width:760px){.two-col{grid-template-columns:1fr;}}
+  .plain-card{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:22px 24px;}
+  .plain-card h3{margin:0 0 10px; font-size:16px; font-weight:700;}
+  .plain-card ul{margin:0; padding-left:19px;}
+  .plain-card li{margin-bottom:8px;}
+
+  .talk{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:24px 28px;}
+  .talk ol{margin:8px 0 0; padding-left:20px;}
+  .talk li{margin-bottom:11px; max-width:85ch;}
+  .talk .q{font-weight:600;}
+  .talk .why{color:var(--muted); font-size:13.5px; display:block; margin-top:2px;}
+
+  .warnbox{background:var(--warn-soft); border:1px solid var(--warn); border-radius:6px; padding:16px 20px; margin-top:16px; font-size:14px; max-width:100%;}
+  .warnbox strong{color:var(--warn);}
+
+  footer{border-top:1px solid var(--line); margin-top:60px; padding-top:18px; font-size:12.5px; color:var(--muted); max-width:90ch;}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">
+    <span>Battle card · Chess.com · 02 sep 2026</span>
+    <span class="pill-internal">Solo uso interno, no compartir con el cliente</span>
+  </div>
+  <h1>Yuno <span class="vs">vs</span> Basis Theory</h1>
+  <p class="sub">Vault de tokens standalone: qué gana Chess.com vaulteando con Yuno en vez de con Basis Theory. Todos los datos investigados el 2 de septiembre de 2026 con fuente pública, salvo lo marcado como interno.</p>
+
+  <div class="verdict">
+    <h2>El veredicto en una línea</h2>
+    <p>Basis Theory vende infraestructura de credenciales: un vault más un proxy para reenviar datos. Todo lo demás del roadmap de pagos de Chess.com (integrar cada PSP, routing, retries, reconciliación, métodos de pago, operación 24/7) queda como trabajo del equipo de Chess.com. Con Yuno, el vault es la primera pieza de una plataforma donde todo eso ya está construido.</p>
+    <p>No lo decimos nosotros, lo dicen ellos:</p>
+    <blockquote>"Basis Theory offers the vault and lets you build the rules yourself, or with a partner."
+      <span class="who">Blog oficial de Basis Theory, escrito por su VP de Producto, 11 ago 2026</span></blockquote>
+    <blockquote>"You are not restricted to the Payment Processors listed above. As long as your partner can accept cards through an API endpoint, you can invoke it using the Ephemeral Proxy."
+      <span class="who">Docs de Basis Theory: traducción real, el merchant escribe y mantiene cada integración PSP</span></blockquote>
+    <p>Su modelo asume que el merchant construye la orquestación solo "o con un partner". Ese partner es exactamente lo que Yuno ya es, con el vault incluido.</p>
+  </div>
+
+  <div class="chips">
+    <div class="chip bad"><div class="n">40 a 55</div><div class="l">empleados de Basis Theory (su propio PR de oct 2025 dice "more than 40"). El dato de ~30 estaba desactualizado</div></div>
+    <div class="chip bad"><div class="n">16 snippets</div><div class="l">"integraciones" PSP de BT: ejemplos curl del proxy que el merchant codea y mantiene, vs 460+ integraciones nativas de Yuno</div></div>
+    <div class="chip bad"><div class="n">L a V, 8am a 6pm</div><div class="l">soporte estándar de BT (US Central, respuesta en 4h hábiles). Sin tier 24/7 publicado, sin NOC</div></div>
+    <div class="chip bad"><div class="n">99.90%</div><div class="l">SLA contractual de BT en su MSA (crédito máx 20%), pese a que su marketing dice "100% uptime"</div></div>
+    <div class="chip bad"><div class="n">En construcción</div><div class="l">la página de docs "Payments Routing" de BT es un placeholder literal al 02 sep 2026</div></div>
+    <div class="chip good"><div class="n">0 re-tokenización</div><div class="l">docs de Yuno: los vaulted tokens sirven en todos los procesadores conectados, agregar o cambiar PSP no requiere re-tokenizar</div></div>
+  </div>
+
+  <div class="legend">
+    <strong>Fuentes:</strong>
+    <span class="src doc">DOC</span> documentación oficial
+    <span class="src mkt">MKT</span> claim de marketing del vendor
+    <span class="src est">EST</span> estimación de terceros
+    <span class="src int">INT</span> claim interno Yuno, no citable por escrito al cliente
+  </div>
+
+  <section>
+    <h2>Empresa vs empresa</h2>
+    <p class="note">Chess.com le estaría confiando las credenciales de decenas de millones de usuarios a un vendor. El tamaño y la solidez importan.</p>
+    <div class="tbl-scroll"><table>
+      <tr><th></th><th class="yuno">Yuno</th><th>Basis Theory</th></tr>
+      <tr><td class="dim">Fundación y HQ</td>
+        <td class="y">2022 <span class="src doc">DOC</span></td>
+        <td class="b">2020, San Francisco <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Funding total</td>
+        <td class="y">~$80M: seed $10M (2022), Series A $25M (2024), Series B $45M (ago 2026). Inversores: a16z, DST Global, Tiger Global, Kaszek, Monashees, Global PayTech Ventures <span class="src doc">DOC</span></td>
+        <td class="b">$50M: $17M (2022) + Series B $33M (oct 2025). Inversores: Bessemer, Costanoa, Stage 2, Kindred <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Empleados</td>
+        <td class="y">Sin cifra oficial pública; trackers de terceros dan números contradictorios <span class="src est">EST</span></td>
+        <td class="b">"More than 40 full-time employees" según su propio PR (oct 2025); PitchBook 39, Tracxn 54 (jun 2026). Rango real: 40 a 55 <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Escala de negocio</td>
+        <td class="y">Trayectoria a $100B de TPV anual en los próximos 12 meses; $5B en volumen recuperado el último año (PR Series B) <span class="src mkt">MKT</span></td>
+        <td class="b">ARR estimado $3.4M en 2025 según Latka, modelo de terceros no confirmado por la empresa <span class="src est">EST</span></td></tr>
+      <tr><td class="dim">Clientes nombrados</td>
+        <td class="y">McDonald's (21 mercados), inDrive, Rappi, NetEase, GoFundMe, dLocal, Tap, Tabby, Viva Aerobus, Avianca <span class="src doc">DOC</span></td>
+        <td class="b">Pinterest, MoneyGram, Melio, más case studies de mid-market (Forage, Maxio, Passes, Branch) <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Prueba social</td>
+        <td class="y">Success stories públicos con métricas (inDrive 90% approval) <span class="src mkt">MKT</span></td>
+        <td class="b">0 reviews en G2, perfil inactivo hace más de un año <span class="src doc">DOC</span></td></tr>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Infraestructura y soporte</h2>
+    <p class="note">Chess.com opera un negocio de consumo global 24/7. Aquí está la diferencia entre lo que BT publica en marketing y lo que firma en contrato.</p>
+    <div class="tbl-scroll"><table>
+      <tr><th></th><th class="yuno">Yuno</th><th>Basis Theory</th></tr>
+      <tr><td class="dim">Cloud</td>
+        <td class="y">Público: AWS Well-Architected Framework <span class="src doc">DOC</span><br>Interno: multicloud, hot-hot servers, instancias en APAC, US y Europa <span class="src int">INT</span></td>
+        <td class="b">Solo AWS (hosting en USA, Irlanda, Alemania) con Cloudflare como CDN/edge. No hay multicloud <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Regiones de producción</td>
+        <td class="y">Operación en 190+ países <span class="src mkt">MKT</span></td>
+        <td class="b">US, Europa e India. Sin región LatAm, sin APAC. India ni siquiera aparece en su status page. Sandbox/test tenants: solo US desde dic 2025 <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Redundancia</td>
+        <td class="y">Status page pública: 100% uptime en 90 días, cero incidentes en 30 días <span class="src doc">DOC</span></td>
+        <td class="b">Marketing dice "hot-hot super region redundancy" y "100% uptime", pero es multi-región dentro de un solo cloud (AWS). Status page: 100% en 90 días visibles; historial anterior no accesible <span class="src mkt">MKT</span></td></tr>
+      <tr><td class="dim">SLA contractual</td>
+        <td class="y">No publicado en docs, se define en contrato <span class="src est">EST</span></td>
+        <td class="b">99.90% mensual en su MSA estándar. Créditos: 5% a 20% máximo. SLAs mayores solo como ítem custom Enterprise <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Soporte</td>
+        <td class="y">Payments Concierge 24/7 por Slack/WhatsApp <span class="src mkt">MKT</span><br>NOC y cobertura humana enterprise <span class="src int">INT</span></td>
+        <td class="b">Horario hábil: lunes a viernes, 8am a 6pm US Central, respuesta en 4 horas. Fuera de horario: on-call por paging, sin tier 24/7 publicado, sin NOC. "P1 support" es un add-on custom de Enterprise <span class="src doc">DOC</span></td></tr>
+    </table></div>
+    <div class="warnbox"><strong>Ojo:</strong> el claim de multicloud hot-hot de Yuno es interno, la página pública de trust solo menciona AWS. Úsenlo en calls, no por escrito con fuente. Y no ataquen a BT por "no tener redundancia": su marketing sí dice hot-hot multi-región. Los golpes verificables son: un solo cloud, cero presencia LatAm/APAC, soporte de horario de oficina y SLA de 99.90% con crédito máximo del 20%.</div>
+  </section>
+
+  <section>
+    <h2>El vault, feature por feature</h2>
+    <div class="tbl-scroll"><table>
+      <tr><th></th><th class="yuno">Yuno</th><th>Basis Theory</th></tr>
+      <tr><td class="dim">Certificaciones</td>
+        <td class="y">PCI DSS Level 1 (v4.0), SOC 2 Type 2, ISO 27001, ISO 27701. SDK deja al merchant en SAQ A (22 preguntas vs 329) <span class="src doc">DOC</span></td>
+        <td class="b">PCI DSS Level 1, SOC 2 Type II, SOC 3, ISO 27001, ISO 27701, HIPAA <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Qué se puede vaultear</td>
+        <td class="y">Cards y APMs enrollables: PayPal, Nu Pay, Yape, Nequi, Pix biométrico, wallets. El vault guarda tarjetas, documentos de identidad y registros de cliente <span class="src doc">DOC</span></td>
+        <td class="b">Cualquier dato: cards, bancos, PII, PHI, API keys. Más amplio en tipos de dato genéricos, pero cero noción de APMs o enrolamiento de métodos de pago <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Network tokens</td>
+        <td class="y">Visa, Mastercard y Amex, procurados y almacenados en infra propia de Yuno. "Registered in your name, not ours". Cryptogram API propia. Portabilidad multi-acquirer documentada <span class="src doc">DOC</span></td>
+        <td class="b">Visa, MC, Amex vía Pagos, un subprocesador externo. No es tecnología propia. Network tokens existentes NO se pueden importar: hay que re-provisionar todo <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Account Updater</td>
+        <td class="y">Visa y MC, asíncrono, batch de 100 tokens por request, token y fingerprint estables tras el update, webhooks <span class="src doc">DOC</span></td>
+        <td class="b">Batch (V/MC/Amex/Discover) tarda hasta 7 días; real-time solo V/MC. También corre sobre Pagos <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Credenciales almacenadas</td>
+        <td class="y">Framework CIT/MIT completo: card on file, suscripciones, unscheduled, con network_transaction_id para recurrencia <span class="src doc">DOC</span></td>
+        <td class="b">El merchant arma el manejo CIT/MIT por su cuenta en cada integración de procesador que escriba <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Uso del token en PSPs</td>
+        <td class="y">Un vaulted token funciona en todos los procesadores conectados, "no re-tokenization is needed when switching or adding providers". Además PCI Proxy outbound para endpoints que Yuno no orquesta <span class="src doc">DOC</span></td>
+        <td class="b">Todo pasa por su Ephemeral Proxy: el merchant escribe la llamada a cada PSP, mapea campos, maneja cryptogramas y errores. 16 ejemplos curl publicados, cero integraciones nativas mantenidas <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Migración de entrada</td>
+        <td class="y">Proceso documentado de import de PANs (SFTP + PGP) y también de network tokens existentes (NTID incluido, Apple Pay y Google Pay) <span class="src doc">DOC</span></td>
+        <td class="b">Import de PANs sí; network tokens existentes no (re-provisioning). Import de wallet tokens vía Stripe desde may 2026 <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Salida (anti lock-in)</td>
+        <td class="y">Export documentado, gratuito y con timeline definido, vía PGP + SFTP a cualquier proveedor con PCI AOC <span class="src doc">DOC</span></td>
+        <td class="b">Guía de migración de salida existe, pero export directo al merchant exige que el merchant sea PCI Level 1 con ROC presentado a BT; si no, solo provider a provider <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Pricing</td>
+        <td class="y">No publicado, se define en contrato <span class="src est">EST</span></td>
+        <td class="b">$995/mes con 20,000 tokens, overage $0.05 por token, tokens borrados en el mes igual se cobran. Network tokens, account updater y 3DS: "contact sales" <span class="src doc">DOC</span></td></tr>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Todo lo que rodea al vault (el roadmap 2027 de Chess.com)</h2>
+    <p class="note">Sean dijo: primero vault, después PSPs. Esta tabla es ese "después".</p>
+    <div class="tbl-scroll"><table>
+      <tr><th></th><th class="yuno">Yuno</th><th>Basis Theory</th></tr>
+      <tr><td class="dim">Integraciones PSP</td>
+        <td class="y"><span class="tick">✓</span> 460+ integraciones nativas, mantenidas por Yuno <span class="src mkt">MKT</span></td>
+        <td class="b"><span class="cross">✗</span> Ninguna nativa. El merchant construye y mantiene cada conexión vía proxy <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Routing</td>
+        <td class="y"><span class="tick">✓</span> Smart routing con AI (conversión, costo, latencia), splits por porcentaje, condiciones por bin/monto/moneda, cascading por outcome <span class="src doc">DOC</span></td>
+        <td class="b"><span class="cross">✗</span> El homepage vende "Smart Routing" pero la página de docs de Payments Routing está literalmente "under construction" al 02 sep 2026. Su propio blog dice que las reglas las construye el merchant <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Retries</td>
+        <td class="y"><span class="tick">✓</span> Hasta 7 reintentos en 96 horas, smart retries para suscripciones <span class="src doc">DOC</span></td>
+        <td class="b"><span class="cross">✗</span> No existe motor de retries <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Métodos de pago</td>
+        <td class="y"><span class="tick">✓</span> 1,000+ métodos en 190+ países <span class="src mkt">MKT</span></td>
+        <td class="b"><span class="cross">✗</span> Cero aceptación de APMs. Vaultean credenciales, no aceptan pagos <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Reconciliación</td>
+        <td class="y"><span class="tick">✓</span> Producto completo: matching contra settlement files, 4 estados, reportes por proveedor/cuenta/moneda <span class="src doc">DOC</span></td>
+        <td class="b"><span class="cross">✗</span> No existe <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Payouts</td>
+        <td class="y"><span class="tick">✓</span> 100+ métodos de payout, bancos, cards y wallets <span class="src mkt">MKT</span></td>
+        <td class="b"><span class="cross">✗</span> No existe <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Fraude y 3DS</td>
+        <td class="y"><span class="tick">✓</span> Múltiples herramientas antifraude y 3DS bajo un solo motor de reglas, como paso de routing <span class="src doc">DOC</span></td>
+        <td class="b">3DS existe pero corre sobre Ravelin, otro subprocesador externo. Sin orquestación de fraude <span class="src doc">DOC</span></td></tr>
+      <tr><td class="dim">Checkout y SDKs</td>
+        <td class="y"><span class="tick">✓</span> Web, iOS, Android, Flutter, React Native; Seamless, Lite, Headless, Secure Fields; payment links <span class="src doc">DOC</span></td>
+        <td class="b">Elements para captura de datos (buen DX), sin checkout de pagos completo <span class="src doc">DOC</span></td></tr>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Qué significa "mover los tokens across PSPs" en la práctica</h2>
+    <div class="flow">
+      <div class="flow-card bt">
+        <h3>Ruta Basis Theory: vault primero, y en 2027 cada PSP es un proyecto</h3>
+        <ol>
+          <li>Vaultean las tarjetas con BT. Scope PCI reducido, hasta ahí bien.</li>
+          <li>Para habilitar cada PSP del shortlist, ingeniería de Chess.com escribe la integración: llamada por el Ephemeral Proxy, mapeo de campos de ese PSP, manejo de errores, CIT/MIT, testing y mantenimiento. BT lo dice explícito en sus docs.</li>
+          <li>Los network tokens dependen de Pagos y el cryptogram lo pasa el merchant a cada procesador; cada combinación PSP más red se valida aparte.</li>
+          <li>La lógica de ruteo entre PSPs, fallbacks y retries no existe en BT: se construye in-house o se contrata un orquestador encima. Dos vendors, dos contratos, dos soportes.</li>
+          <li>Si algo se cae un sábado a las 2am, el soporte estándar de BT responde en horario hábil de US Central.</li>
+        </ol>
+      </div>
+      <div class="flow-card yu">
+        <h3>Ruta Yuno: vault primero, y en 2027 cada PSP es configuración</h3>
+        <ol>
+          <li>Vaultean las tarjetas con Yuno. Mismo efecto PCI (SAQ A), mismo arranque acotado que planean con BT.</li>
+          <li>El vaulted token ya funciona contra los 460+ procesadores integrados: habilitar un PSP nuevo es conectarlo en el dashboard, sin re-tokenizar y sin proyecto de ingeniería.</li>
+          <li>Network tokens en infra propia, a nombre de Chess.com, con cryptogram API y portabilidad entre acquirers documentada.</li>
+          <li>Routing, cascading, retries, reconciliación y reporting ya existen como producto el día que decidan usarlos. Un vendor, un contrato, un soporte.</li>
+          <li>Y si algún día quieren irse, el export está documentado, gratuito y con timeline definido.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lo que BT hace bien (para no subestimarlos en la call)</h2>
+    <div class="two-col">
+      <div class="plain-card">
+        <h3>Fortalezas reales</h3>
+        <ul>
+          <li>Data residency dura: US, EU e India con garantía de que el dato nunca sale de la región. Mensaje fuerte para GDPR.</li>
+          <li>Vault genérico: PII, PHI, HIPAA, cualquier dato, no solo tarjetas.</li>
+          <li>Buen developer experience: docs abiertas, Terraform, benchmarks publicados de Elements.</li>
+          <li>First mover en agentic commerce: API que registra una tarjeta en Visa Intelligent Commerce, Mastercard Agent Pay y Stripe Shared Payment Tokens en una llamada, más un consorcio de 20+ miembros.</li>
+          <li>Pricing de entrada transparente ($995/mes) y narrativa anti lock-in bien armada (TRID propio del merchant).</li>
+        </ul>
+      </div>
+      <div class="plain-card">
+        <h3>Cómo responder si salen en la conversación</h3>
+        <ul>
+          <li>Data residency: relevante para PII regulada, menos crítico para un vault de pagos donde lo que importa es que el token funcione en cualquier acquirer global.</li>
+          <li>Vault genérico: Chess.com necesita un vault de PAGOS conectado a procesamiento, no un vault de documentos.</li>
+          <li>Agentic commerce: interesante, pero Yuno también procura network tokens de las mismas redes y procesa la transacción completa, no solo la credencial.</li>
+          <li>Anti lock-in: el nuestro es más fuerte en la práctica: export gratis y documentado sin exigir que el merchant sea PCI L1, e import de network tokens que BT no puede hacer.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo jugarlo con Sean (modo disimulado)</h2>
+    <div class="talk">
+      <p style="margin:0 0 6px; max-width:85ch;">Acordado con Justo: en el email no se nombra a Basis Theory ni se cuestiona la decisión de frente. Se habla de nuestro vault y sus features, y las comparaciones se dejan como preguntas que Sean se va a hacer solo. Preguntas para plantar en el email o en la call de diciembre:</p>
+      <ol>
+        <li><span class="q">Cuando terminen el vaulting, ¿quién construye y mantiene la integración con cada PSP del shortlist?</span><span class="why">Con BT es el equipo de Sean; con nosotros ya está hecho. Es la pregunta que más duele y es 100% verificable.</span></li>
+        <li><span class="q">¿Los network tokens quedan registrados a nombre de Chess.com, y pueden migrar los que ya existan?</span><span class="why">BT no puede importar network tokens existentes y su servicio corre sobre un tercero (Pagos).</span></li>
+        <li><span class="q">¿El SLA y el soporte del vault cubren un negocio de consumo 24/7 global?</span><span class="why">BT: 99.90% contractual y soporte de lunes a viernes en horario de US Central.</span></li>
+        <li><span class="q">¿Qué pasa el día que quieran mover los tokens a otro lado?</span><span class="why">Nuestro export es gratis, documentado y sin exigir PCI L1 al merchant. El de BT exige ROC o va provider a provider.</span></li>
+        <li><span class="q">¿El vault los acerca o los aleja del resto del roadmap (routing, retries, reconciliación, APMs)?</span><span class="why">Con un vault puro, cada una de esas piezas es otro proyecto. Con Yuno son features que se activan.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Metodología:</strong> investigación del 02 sep 2026 sobre fuentes públicas: basistheory.com (pricing, MSA, subprocessors, trust center, status page, docs de developers, blog y changelogs), press releases (Series B oct 2025, consorcio agentic), PitchBook, Tracxn, Latka, G2, docs.y.uno, y.uno (trust and security, product/vault, product/network-tokens), status.y.uno y PRs oficiales de Yuno (Series B ago 2026, TechCrunch 2022 y 2024). Cada celda está etiquetada por tipo de fuente. Lo marcado como INT es claim interno de Yuno y no debe citarse por escrito al cliente. Lo marcado como EST es estimación de terceros no confirmada.</p>
+  </footer>
+</div>
