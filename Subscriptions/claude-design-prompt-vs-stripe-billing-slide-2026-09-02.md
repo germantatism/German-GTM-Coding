@@ -1,4 +1,4 @@
-# Prompt for Claude Design: "Yuno Subscriptions vs Stripe Billing" comparison slide (2026-09-02, v2 — adds pricing)
+# Prompt for Claude Design: "Yuno Subscriptions vs Stripe Billing" comparison slide (2026-09-02, v3 — pricing lives in the table, not the footer)
 
 Paste this into the **Yuno Design System** Claude Design project (the one with `CLAUDE.md`, `tokens.json`, `colors_and_type.css` and `slides/` already uploaded). This is a new, standalone slide, not an edit to an existing deck. If you already generated a v1 of this slide, edit that file in place rather than forking a new one.
 
@@ -36,8 +36,7 @@ One slide using the **Table template** (`slides/TableSlide.html`) — read that 
 ## Footer
 
 - **Notes (left):** Source: Yuno pricing and product documentation (docs.y.uno/docs/payment-features/subscriptions); Stripe Billing documentation (docs.stripe.com/billing), reviewed Sept 2026.
-- **summary-label:** Per-transaction fee
-- **summary-value:** $0.05 vs $0.07
+- Drop the `summary-label` / `summary-value` pair from the template — the pricing comparison lives entirely in row 2 of the table, not in the footer. Let the notes column take the full footer width instead.
 - Five rows is more than the four-row pricing-table example in `TableSlide.html` — if body cell padding makes the table run long, tighten `tbody td` padding slightly (e.g. 32px → 24px vertical) rather than shrinking the headline or footer. Keep everything else on the established grid.
 
 ## Design-system compliance
