@@ -11,9 +11,9 @@
 
 Hi Filippo,
 
-Hope you had a great weekend. I know things are moving fast on your side these days, so this is just a light touch, no rush at all.
+Hope you had a great weekend, and congratulations on the Airtable news! Saw it is official now. Welcome aboard to a great product; we are super users of Airtable at Yuno, a good part of our own ops runs on it, so this one made us smile.
 
-In case it got lost in the thread, I'm sharing the deck we built for you (attached). It sums up what we covered on the call: payouts, stepping out of the flow of funds, and how we would approach the setup for Eventbrite. Nothing you need to react to now; mostly so you have it handy if it helps internally.
+I imagine weeks like this get hectic on your side, so this is just a light touch, no rush at all. In case it got lost in the thread, I'm sharing the deck we built for you (attached). It sums up what we covered on the call: payouts, stepping out of the flow of funds, and how we would approach the setup for Eventbrite. Nothing you need to react to now; mostly so you have it handy if it helps internally.
 
 And whenever you get a moment, Justo's invitation for Milan the week of September 14 still stands. Happy to lock in one of the slots I shared, or to find another time that works better for the team.
 
@@ -25,6 +25,7 @@ German
 ---
 
 **Notas:**
+- Opener actualizado 04-sep: Bending Spoons cerró la adquisición de Airtable (anuncio LinkedIn 04-sep-2026); felicitación + "somos super usuarios de Airtable en Yuno" como hook genuino.
 - Tono deliberadamente sin presión: dos veces "no rush / nothing to react to" para que el único CTA vivo sea Milán.
 - No se menciona el NDA/vendor portal (quedó trabado con la salida de Paul); mejor resolverlo en la reunión de Milán o en un hilo aparte.
 - Deck: "Bending Spoons + Yuno.pdf" (17-ago, 3.6MB). También existe el deck web /m/eventbrite si prefiere link en vez de adjunto.
