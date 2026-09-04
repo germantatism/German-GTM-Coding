@@ -15,9 +15,9 @@
 
 Hi Sean, great to cross paths again, it's been a while since my dLocal days.
 
-Quick one before the Q1 vaulting work starts, since the vault is the hardest piece to change once tokens are provisioned. Attached is a one page side by side of Yuno and Basis Theory, every cell backed by documented sources. Two rows matter: Basis Theory cannot import existing network tokens, everything gets re provisioned, while we have migrated them from 24 providers including Adyen and Checkout.com. And with their vault your team still builds each processor integration and the routing, while ours ships with 300+ maintained connectors, so adding a PSP later is configuration, not a build.
+Short note before the vaulting work starts. As it stands, your plan is two projects: vault the tokens with Basis Theory now, then engage the shortlist for the 2027 PSP work. Yuno is an infrastructure layer that gives you both in one move: the vault and network tokens from day one, with Stripe, Global Payments and Checkout.com already integrated behind it, so enabling any of them next year is configuration, not a new build. One integration, and the second project disappears from your roadmap. Attached is a one page side by side with Basis Theory; the row on network token imports alone is worth the read.
 
-Not reopening your roadmap, December stands. If a 20 minute walkthrough helps before then, happy to jump on.
+Not reopening anything, December stands. If a 20 minute walkthrough helps before then, happy to jump on.
 
 Cheers,
 
@@ -28,5 +28,7 @@ Justo
 ## Notas
 
 - Intro de reencuentro (dLocal), sin presentación formal.
-- Challenge en una frase ("hardest piece to change once tokens are provisioned") + dos hechos del one-pager, literales de las filas Network tokens y Token portability.
+- Foco: Yuno como capa de infraestructura = vault + network tokens + los PSPs del shortlist (Stripe, Global Payments, Checkout.com) en una sola integración. "Todo de una vez": colapsa los dos proyectos de Sean en uno.
+- Global Payments verificado como partner integrado de Yuno (y.uno/partner/global-payments).
+- El detalle duro (BT no importa network tokens existentes) queda como teaser al PDF, no en el cuerpo.
 - Cierre protege el touch base de diciembre acordado con German.
