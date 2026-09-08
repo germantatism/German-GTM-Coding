@@ -34,3 +34,15 @@ German
 - Global Payments verificado como partner integrado de Yuno (y.uno/partner/global-payments).
 - El detalle duro (BT no importa network tokens existentes) queda como teaser al PDF, no en el cuerpo.
 - Cierre protege el touch base de diciembre.
+
+---
+
+## Follow-up: reply de Justo (2026-09-08)
+
+**Contexto:** German envió el one pager el 8-sep; Sean respondió a los minutos: "This is great. Let me digest in detail and get you feedback if any arises." Justo entra con reply-all corto invitando a conversar.
+
+Sean, Justo here, great to cross paths again after my dLocal days. Glad the one pager landed. Once you've had a chance to digest it, let's grab 30 minutes and talk it through, it'll save your team time on the Q1 planning. Happy to work around your calendar.
+
+Cheers,
+
+Justo
