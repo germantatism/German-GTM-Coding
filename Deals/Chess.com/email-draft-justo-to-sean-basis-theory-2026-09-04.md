@@ -15,11 +15,11 @@
 
 Hi Sean,
 
-I kept thinking about what you mentioned on Basis Theory, so over the past few days I built a one pager comparing both platforms side by side, attached here. The row on network token imports alone is worth the read.
+Kept thinking about the Basis Theory piece, so over the past few days I built a one pager comparing them with Yuno side by side (attached). The network token import row alone is worth a look.
 
-The bigger picture is why I built it. As it stands, the plan is two projects: vault the tokens with Basis Theory now, then engage the shortlist for the 2027 PSP work. Yuno is an infrastructure layer that gives you both in one move: the vault and network tokens from day one, with Stripe, Global Payments and Checkout.com already integrated behind it, so enabling any of them next year is configuration, not a new build. One integration, and the second project disappears from your roadmap.
+Main point: right now the plan is two projects, vault first, then the 2027 PSP work with the shortlist. With Yuno you get both in one, the vault and network tokens from day one, plus Stripe, Global Payments and Checkout.com already integrated behind it, so adding any of them later is config, not a build.
 
-Not reopening anything, December stands. If a 20 minute walkthrough helps before then, happy to jump on.
+December stands, no rush. If a quick walkthrough helps before then, happy to jump on.
 
 Best,
 
