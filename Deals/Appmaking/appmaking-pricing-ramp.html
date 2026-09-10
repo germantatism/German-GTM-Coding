@@ -1,0 +1,93 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#3B4BF9;--ink:#20222A;--bg:#E9E9F3;--grey:#6b7280;--line:#DEDEEA}
+html,body{width:1920px;height:1080px;font-family:-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.slide{position:relative;width:1920px;height:1080px;padding:56px 80px}
+.wordmark{position:absolute;top:46px;right:80px;font-size:36px;font-weight:800;letter-spacing:-1px;color:var(--blue)}
+.label{font-size:20px;color:var(--grey);font-weight:600;letter-spacing:.5px}
+.h1{font-size:34px;font-weight:700;margin-top:4px}
+.topline{position:absolute;left:80px;right:80px;top:140px;height:1px;background:#C9C9DB}
+.grid{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;margin-top:34px}
+.titlebox{border:1.5px solid #4a4a58;border-radius:2px;padding:16px 26px}
+.titlebox h2{font-size:33px;font-weight:800;line-height:1.05;letter-spacing:-.5px;color:#111;text-transform:uppercase}
+.lead{font-size:17px;color:#3a3a46;margin-top:10px;line-height:1.3}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:6px;overflow:hidden;margin-top:12px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+th{font-size:15px;font-weight:700;color:#2b2b38;text-align:left;padding:9px 14px;white-space:nowrap;border-bottom:1px solid #EDEDF3}
+th small{display:block;font-weight:400;color:var(--grey);font-size:13px}
+td{font-size:17px;color:#3a3a46;padding:10px 14px;white-space:nowrap;border-top:1px solid #EDEDF3;vertical-align:middle}
+td.fee{color:var(--blue);font-weight:700;font-size:19px;white-space:normal}
+td.unit{font-weight:600;color:#20222A}
+tr.full td{background:#EEF0FF}
+.foot{font-size:13px;color:var(--grey);margin-top:8px;line-height:1.35}
+.card{background:#F6F6FB;border-radius:16px;padding:16px 26px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.card .big{font-size:26px;color:#3a3a46;font-weight:500}
+.card .big b{color:#111;font-weight:800}
+.card .sub{font-size:14px;color:var(--grey);margin-top:4px}
+.sec{font-size:13px;font-weight:700;letter-spacing:1px;color:var(--grey);margin:12px 0 6px}
+.row{display:grid;grid-template-columns:1fr auto;align-items:center;background:#fff;padding:7px 20px;border-bottom:2px solid var(--bg)}
+.row .n{font-size:16px;font-weight:600}
+.row .v{font-size:16px;font-weight:700;color:var(--blue)}
+.row .v.tbd{color:#9ca3af;font-style:italic;font-weight:600}
+.note{font-size:12px;color:var(--grey);margin-top:5px;line-height:1.3}
+.band{position:absolute;left:80px;right:80px;bottom:44px;background:#F6F6FB;border-radius:16px;padding:14px 28px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.band .sec{margin:0 0 4px}
+.band .subh{font-size:14px;color:var(--grey);margin-bottom:8px}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}
+.stat .k{font-size:15px;font-weight:700;color:#2b2b38}
+.stat .val{font-size:24px;font-weight:800;color:var(--blue);margin-top:0}
+.stat .d{font-size:14px;color:#3a3a46;margin-top:1px}
+.band .note{margin-top:8px}
+.pageno{position:absolute;left:40px;bottom:22px;color:#9ca3af;font-size:18px}
+</style></head><body>
+<div class="slide">
+  <div class="wordmark">⠿ yuno</div>
+  <div class="label">PRICING</div>
+  <div class="h1">Proposal · Ramp-up fixed fee</div>
+  <div class="topline"></div>
+  <div class="grid">
+    <div>
+      <div class="titlebox"><h2>A fixed fee that grows<br>slower than your volume</h2></div>
+      <div class="lead">One monthly fee, all-in. It steps up as you ramp and stops at 150,000. Your cost per successful transaction falls at every step.</div>
+      <table>
+        <tr><th>Step</th><th>Successful transactions / month</th><th>Expected</th><th>Fixed fee / month</th><th>All-in per successful txn<small>at the top of the band</small></th></tr>
+        <tr><td>1</td><td>0 to 25,000</td><td>Months 1 to 3</td><td class="fee">$6,500</td><td class="unit">$0.26</td></tr>
+        <tr><td>2</td><td>25,001 to 50,000</td><td>Months 4 to 5</td><td class="fee">$8,000</td><td class="unit">$0.16</td></tr>
+        <tr><td>3</td><td>50,001 to 100,000</td><td>Months 6 to 7</td><td class="fee">$10,000</td><td class="unit">$0.10</td></tr>
+        <tr><td>4</td><td>100,001 to 150,000</td><td>Months 8 to 9</td><td class="fee">$13,000</td><td class="unit">$0.087</td></tr>
+        <tr class="full"><td>Fully ramped</td><td>Above 150,000</td><td>Month 10 onward</td><td class="fee">$13,000 + $0.03 per successful txn above 150,000</td><td class="unit">Falls toward $0.03</td></tr>
+      </table>
+      <div class="foot">The step is set by successful transactions in the month, not by the calendar. Declines cost nothing. No setup fee. Expected months follow Appmaking's ramp plan.</div>
+    </div>
+    <div>
+      <div class="card"><div class="big">Fully ramped: <b>$13,000 / month</b></div><div class="sub">$156,000 / year at 150,000 successful transactions. This is what covers the stack.</div></div>
+      <div class="sec">WHAT IT INCLUDES</div>
+      <div class="row"><div class="n">Dedicated KAM and TAM</div><div class="v">Included</div></div>
+      <div class="row"><div class="n">Payment methods</div><div class="v">+1,000</div></div>
+      <div class="row"><div class="n">Payment providers</div><div class="v">+450</div></div>
+      <div class="row"><div class="n">Anti-fraud tools</div><div class="v">+50</div></div>
+      <div class="row"><div class="n">Orchestration &amp; rules engine</div><div class="v">Included</div></div>
+      <div class="row"><div class="n">Smart routing &amp; retries</div><div class="v">Included</div></div>
+      <div class="note">Every connector maintained by Yuno. Adding a provider later is a routing change, not a new fee.</div>
+      <div class="sec">PENDING SCOPING</div>
+      <div class="row"><div class="n">Subscriptions engine (standalone)</div><div class="v tbd">Pending</div></div>
+      <div class="row"><div class="n">Token vault &amp; network tokens</div><div class="v tbd">Pending</div></div>
+      <div class="row"><div class="n">Reconciliation</div><div class="v tbd">Pending</div></div>
+      <div class="row"><div class="n">Verifi &amp; Ethoca alerts</div><div class="v tbd">Pending</div></div>
+      <div class="note">Priced separately once scoped together. Not part of the fixed fee.</div>
+    </div>
+  </div>
+  <div class="band">
+    <div class="sec">WHAT IT MEANS FOR APPMAKING</div>
+    <div class="subh">On the ramp plan above</div>
+    <div class="stats">
+      <div class="stat"><div class="k">Months 1 to 9</div><div class="val">$81,500</div><div class="d">about 600,000 successful transactions, about $0.14 each</div></div>
+      <div class="stat"><div class="k">Months 10 to 12</div><div class="val">$39,000</div><div class="d">at 150,000 successful transactions per month, $0.087 each</div></div>
+      <div class="stat"><div class="k">Year 1</div><div class="val">$120,500</div><div class="d">about 1.05M successful transactions, about $0.115 each</div></div>
+    </div>
+    <div class="note">Volumes are Appmaking's projected ramp. The fee follows actual successful transactions each month.</div>
+  </div>
+  <div class="pageno">15</div>
+</div>
+</body></html>
