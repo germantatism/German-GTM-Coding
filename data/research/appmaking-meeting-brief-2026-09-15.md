@@ -114,7 +114,7 @@ Evidence labels: ✅ verified · ⚠️ inference or unconfirmed, never state in
 | 2 | TRID under their own entity | Sep 14 | ✅ Sent Sep 14: default vs passthrough | Confirm passthrough works with their phase 1 PSPs (🔍 Jarrett) |
 | 3 | Prevention alerts provider | Sep 14 | ✅ Sent Sep 14: Ethoca | Visa side: say exactly what is confirmed, nothing more |
 | 4 | Full PSP list | Sep 14 | ✅ Sent Sep 14: snapshot by market | Local acquirers Japan, Brazil, Mexico (🔍 verify names in catalog first) |
-| 5 | Do you introduce merchants to banks? | Sep 8 | ⬜ Deferred to the call | Honest answer agreed with Sean (section 7) |
+| 5 | Do you introduce merchants to banks? | Sep 8 | ⬜ Deferred to the call | Honest answer agreed with Sean (section 5) |
 | 6 | Pricing in writing on the ramp | Sep 8, Sep 10 | ✅ Slide ready | Present, explain, get reaction |
 | 7 | AI products (Concierge, Nova) | Promised Sep 4 | ⬜ | Demo block (section 6) |
 | 8 | Connector coverage in writing | Promised Sep 4 | ✅ Affirmed twice by email | Verify Shift4 and Payabl before you repeat it |
