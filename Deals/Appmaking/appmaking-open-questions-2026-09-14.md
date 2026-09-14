@@ -8,7 +8,7 @@ Call: **martes 15-sep, 9:00 AM COT / 5:00 PM hora de ellos** (Dzmitry ya aceptó
 
 | # | Pregunta | La hicieron | Estado |
 |---|---|---|---|
-| 1 | Muestra de reporte TC40 y SAFE (formato de entrega) | 8-sep | Info interna recibida, ver abajo. Falta el ejemplo del payload |
+| 1 | Muestra de reporte TC40 y SAFE (formato de entrega) | 8-sep | Explicación y payload de Leo recibidos. Faltan 2 confirmaciones (ver abajo) |
 | 2 | ¿El TRID (Token Requestor ID) queda abierto bajo su propia entidad merchant? | 14-sep | Pendiente |
 | 3 | ¿Quién es su proveedor de prevention alerts? | 14-sep | Pendiente |
 | 4 | Lista completa de PSPs con los que trabajan | 14-sep | Pendiente |
@@ -17,29 +17,94 @@ Call: **martes 15-sep, 9:00 AM COT / 5:00 PM hora de ellos** (Dzmitry ya aceptó
 
 ## 1. TC40 y SAFE
 
-**Info interna de German (14-sep):**
-- dLocal deja los archivos en un SFTP.
-- El equipo de Thiago baja la data.
-- Leo la convierte en webhook y eso es lo que se le envía al merchant.
-- Al merchant no le llega el archivo: no hay comunicación por archivos, solo por webhook.
-- Hoy el único proveedor con TC40 y SAFE es dLocal.
-- Si quieren cobertura con más proveedores, que nos cuenten y vemos cómo organizarlo.
+**Fuente: Leo, quien lidera este tema internamente (14-sep, vía German).**
 
-**⚠️ Choca con lo que ya se dijo por escrito.** El recap del 4-sep dice: "TC40 and SAFE data, bank and fraud rates are delivered today as normalized reports across all your providers, with dashboard views on the roadmap." Lo que hay hoy es otra cosa:
-- Entrega por **webhook**, no como reporte ni archivo.
-- Solo **dLocal**, no todos sus proveedores.
-- dLocal **no está** en su lista de fase 1 (Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl, NMI).
+### Cómo funciona (explicación de Leo)
+- **Yuno no le manda el archivo al merchant, lo lee por él.**
+- Cuando el banco del tarjetahabiente le reporta a Visa (**TC40**) o a Mastercard (**SAFE**) que un pago fue fraude, el proveedor le pasa esa alerta a Yuno.
+- Yuno le manda al merchant un aviso de ese pago puntual, llamado **pre-chargeback** (webhook `payment.pre_chargeback`).
+- Es **solo un aviso**: todavía no es un contracargo y no se ha movido plata. Así el merchant alcanza a devolver el pago o bloquear al cliente antes de que se vuelva un contracargo de verdad.
 
-La respuesta tiene que corregir esto con claridad, sin esconderlo.
+### Operación interna (German, 14-sep)
+- dLocal deja los archivos en un SFTP; el equipo de Thiago baja la data; Leo la convierte en webhook al merchant.
+- Al merchant no le llega ningún archivo: la comunicación es solo por webhook.
+- "The only provider right now with TC40 and SAFE is dLocal."
+- Si quieren más proveedores, nos cuentan y vemos cómo organizarlo.
+
+### Ejemplo real enviado a un merchant (datos tapados, compartido por Leo)
+
+```json
+{
+  "type": "payment",
+  "type_event": "payment.pre_chargeback",
+  "account_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "retry": 0,
+  "version": 2,
+  "data": {
+    "payment": {
+      "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "account_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "description": "Ecommerce Order",
+      "country": "BR",
+      "status": "SUCCEEDED",
+      "sub_status": "APPROVED",
+      "order_id": "ORDER-123456",
+      "created_at": "2026-04-29T04:44:49.904820Z",
+      "updated_at": "2026-06-03T12:41:17.236899Z",
+      "amount": {
+        "currency": "BRL",
+        "value": 35.9,
+        "refunded": 0.0,
+        "captured": 0.0
+      },
+      "transactions": {
+        "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+        "type": "PRE_CHARGEBACK",
+        "status": "CREATED",
+        "category": "WALLET",
+        "amount": 35.9,
+        "provider_id": "ADYEN",
+        "response_code": "ACTION_REQUIRED",
+        "response_message": "Chargeback or Inquiry received. Decision or documentation must be provided",
+        "reason": "FRAUDULENT",
+        "description": "webhook transaction",
+        "created_at": "2026-06-03T12:41:17.184528Z",
+        "updated_at": "2026-06-03T12:41:17.212602Z",
+        "payment_method": {
+          "type": "GOOGLE_PAY"
+        },
+        "provider": {
+          "provider_transaction_id": "XXXXXXXXXXXXXXXX"
+        },
+        "provider_data": {
+          "id": "ADYEN",
+          "transaction_id": "XXXXXXXXXXXXXXXX",
+          "status": "NOTIFICATION_OF_FRAUD"
+        }
+      }
+    }
+  }
+}
+```
+
+**Cómo leerlo (Leo):** el pago sigue aprobado (`status: SUCCEEDED`, `sub_status: APPROVED`); el aviso es `type: PRE_CHARGEBACK` con `reason: FRAUDULENT`; `provider_data.status: NOTIFICATION_OF_FRAUD` es la alerta de fraude que mandó el proveedor.
+
+### ⚠️ Antes de escribir el correo
+
+1. **El ejemplo es de Adyen, no de dLocal.** Choca con "el único proveedor con TC40 y SAFE es dLocal". Posible lectura: dLocal es el único vía archivo SFTP y Adyen lo manda por su propia notificación. Confirmar con Leo qué proveedores lo soportan hoy. Ojo: ninguno de los dos está en su fase 1, y Adyen además está bloqueado por su exclusividad con Solidgate.
+2. **Sanitizar más antes de compartirlo.** Los IDs están tapados, pero el ejemplo sigue mostrando datos de otro merchant (Brasil, BRL 35.90, Adyen, Google Pay, fechas). Mandar una versión con valores genéricos y decir que es ilustrativa. Regla Riot: nada de un cliente a terceros sin permiso.
+3. **No es exactamente lo que pidieron.** Pidieron una "muestra de reporte TC40 y SAFE" y, en la call del 4-sep, tasas de banco y de fraude por PSP. Lo que existe es un aviso por pago, no un reporte agregado ni tasas por PSP.
+
+### Corrección pendiente frente al recap del 4-sep
+El recap dice: "TC40 and SAFE data, bank and fraud rates are delivered today as normalized reports across all your providers, with dashboard views on the roadmap." Lo real hoy:
+- Entrega por **webhook por pago** (pre-chargeback), no como reporte ni archivo.
+- Solo con **algunos proveedores** (dLocal confirmado; Adyen por confirmar), no con todos.
+- Ninguno de los dos está en su fase 1 (Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl, NMI).
 
 **Implicaciones para el correo:**
-- La "muestra de reporte" que pidieron sería un **ejemplo del payload del webhook**, no un archivo.
-- Ofrecer abiertamente organizar TC40/SAFE con sus PSPs de fase 1 si es prioridad para ellos.
-
-**Por confirmar internamente:**
-- Ejemplo real o sanitizado del payload del webhook TC40/SAFE (¿Leo?).
-- Campos que trae, frecuencia y latencia desde que dLocal deja el archivo.
-- Qué haría falta para sumar otro proveedor y en cuánto tiempo.
+- Explicar el flujo en simple (lo leemos por ustedes y les avisamos por pago) y adjuntar el payload ilustrativo.
+- Corregir el recap con claridad, sin esconderlo.
+- Ofrecer organizar TC40/SAFE con sus PSPs de fase 1 si es prioridad para ellos.
 
 ## 2. TRID
 
