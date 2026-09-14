@@ -88,7 +88,7 @@ Evidence labels: ✅ verified · ⚠️ inference or unconfirmed, never state in
 
 **How to read Tatsiana:** precise, follows up fast, reads what you send (she caught the "full list of PSPs" and TRID points). She will test the corrections you made yesterday. Answer narrowly.
 
-**How to read Dzmitry:** P&L first. He gave the ramp and the "profitability" framing. He decides whether $13,000 a month makes sense against the diversification benefit. Show him the unit cost curve, not the feature list.
+**How to read Dzmitry:** P&L first. He gave the ramp and the "profitability" framing. He decides whether $15,000 a month makes sense against the diversification benefit. Show him the unit cost curve, not the feature list.
 
 **Sean in the room:** first client call with your new manager on this deal. He expects the ARR, close date, decision maker and blocker cold, and an ask. Have the Deal Desk framing ready for him afterwards (section 10).
 
@@ -312,7 +312,7 @@ Owner: Jarrett if confirmed; otherwise German drives and Joaquin supports. Keep 
 - Run the calculator for Appmaking and file the score.
 - Deal Desk framing for Sean (Wednesday 08:00): ARR $180K steady state ($155.6K year 1), close date, decision maker (Dzmitry with Butrym signing), blocker, and the ask.
 - If they want the pending products, request the calculator run for each before quoting.
-- Update memory: products selected, contracting entity, their reaction to $13,000, next-step date.
+- Update memory: products selected, contracting entity, their reaction to $15,000, next-step date.
 
 ### Sources
 Google Calendar (event "AppMaking + Yuno", Sep 15, 2026; "App Making x Yuno Dashboard Overview", Sep 4, 2026) · Gmail thread "Appmaking + Yuno: Call Recap and Next Steps" (Sep 4 to Sep 14, 2026, ten messages) · Gmail "You've been invited to Yuno" (sandbox, Sep 8) · Slack DM German and Jarrett (Sep 9, Sep 14), German and Leo (Sep 14), German and Thiago (Sep 11) · "Proposal - AppMaking + Yuno" (Google Slides, 18 slides, PDF in Deals/Appmaking, reviewed Sep 14) · Deals/Appmaking/appmaking-pricing-proposal-2026-09-10.md (Sep 10 draft, superseded by the deck model) · Deals/Appmaking/appmaking-open-questions-2026-09-14.md · Deals/Appmaking/appmaking-followup-email-2026-09-04.md (call notes) · data/research/appmaking-meeting-brief-2026-09-04.md and appmaking-ltd-2026-09-03.md (company, attendees, competitive context) · docs.y.uno (network tokens, stored credentials) · Yuno RFP response to Hostinger (provider list, Aug 2026) · Finextra and Fintech Times on Yuno and Ethoca (April 2025).
