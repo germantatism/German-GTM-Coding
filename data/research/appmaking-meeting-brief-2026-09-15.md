@@ -9,13 +9,14 @@
 Evidence labels: ✅ verified · ⚠️ inference or unconfirmed, never state in the call · 🔍 ask in discovery
 
 ### ⚠️ Pre-meeting actions
-1. **Jarrett has not replied to your Slack note of tonight (18:13) and has not accepted the invite.** You told him the plan is "a full demo on the dashboard apart from what we showed them last time (routing, connections, subscriptions)" and "we want to know which products they'd like to use." If he is not confirmed by 08:30, the demo is yours: section 6 is the run order.
-2. **Five minutes with Sean before 09:00.** He is on the call and he is your manager. Agree how the number is presented (final vs preliminary subject to contract), what he says if they push on price, and the honest answer on bank introductions.
-3. **Verifi status.** You wrote yesterday "happy to walk you through our Visa-side coverage and roadmap on tomorrow's call." Only Ethoca (Mastercard) is publicly confirmed (April 2025 launch). An internal draft said RDR and Ethoca were "being relaunched." Get one sentence from Jarrett or Leo on where Verifi RDR/CDRN stands and say exactly that.
-4. **TC40/SAFE providers.** Leo (Andres Leonardo Moreno) confirmed yesterday: Yuno reads the network files and sends a `payment.pre_chargeback` webhook per payment; dLocal delivers by SFTP; his real example came from Adyen. Neither is in their phase 1. Answer for the call: "live today with dLocal and Adyen-type providers; for Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl and NMI we scope it together." Do not promise a consolidated report. Jira context: YSHUB-6715 and PRIOR-513 (Thiago).
-5. **Connector coverage.** You have written twice ("we have full coverage with them all" on Sep 4; "full coverage of your phase 1 providers" on Sep 14) that Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl and NMI are covered. Ecompay (ECOMMPAY), Unlimit (UNLIMINT), NMI, Airwallex and Stripe appear in Yuno's own RFP provider list; Shift4 and Payabl do not appear there. 🔍 Check the Dashboard connections catalog for Shift4 and Payabl before 09:00. If either is missing, say so before they ask.
-6. **Run the calculator.** The ramp is checked by hand against the policy (all green) but the official score has not been run. Duplicate "Yuno — Pricing Palco" as "Yuno — Pricing Appmaking" (150,000 tx, AOV $18, Digital Business / Goods) so the number is documented before the Deal Desk on Wednesday.
-7. **Tatsiana on the invite.** She confirmed by email; the event shows her as not responded. Re-send or ping so she has the link.
+1. **Fix slide 13 and slide 11 of the deck** (section 4.3 and 4.7): the "Expected" months and the "What it means" box are still on the first assumed ramp, and two Key Advantages bullets are FlightHub copy. Ten minutes in Google Slides.
+2. **Jarrett has not replied to your Slack note of tonight (18:13) and has not accepted the invite.** You told him the plan is "a full demo on the dashboard apart from what we showed them last time (routing, connections, subscriptions)" and "we want to know which products they'd like to use." If he is not confirmed by 08:30, the demo is yours: section 6 is the run order.
+3. **Five minutes with Sean before 09:00.** He is on the call and he is your manager. Agree how the number is presented (final vs preliminary subject to contract), what he says if they push on price, and the honest answer on bank introductions.
+4. **Verifi status.** You wrote yesterday "happy to walk you through our Visa-side coverage and roadmap on tomorrow's call." Only Ethoca (Mastercard) is publicly confirmed (April 2025 launch). An internal draft said RDR and Ethoca were "being relaunched." Get one sentence from Jarrett or Leo on where Verifi RDR/CDRN stands and say exactly that.
+5. **TC40/SAFE providers.** Leo (Andres Leonardo Moreno) confirmed yesterday: Yuno reads the network files and sends a `payment.pre_chargeback` webhook per payment; dLocal delivers by SFTP; his real example came from Adyen. Neither is in their phase 1. Answer for the call: "live today with dLocal and Adyen-type providers; for Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl and NMI we scope it together." Do not promise a consolidated report. Jira context: YSHUB-6715 and PRIOR-513 (Thiago).
+6. **Connector coverage.** You have written twice ("we have full coverage with them all" on Sep 4; "full coverage of your phase 1 providers" on Sep 14) that Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl and NMI are covered. Ecompay (ECOMMPAY), Unlimit (UNLIMINT), NMI, Airwallex and Stripe appear in Yuno's own RFP provider list; Shift4 and Payabl do not appear there. 🔍 Check the Dashboard connections catalog for Shift4 and Payabl before 09:00. If either is missing, say so before they ask.
+7. **Run the calculator.** The ramp is checked by hand against the policy (all green) but the official score has not been run. Duplicate "Yuno — Pricing Palco" as "Yuno — Pricing Appmaking" (150,000 tx, AOV $18, Digital Business / Goods) so the number is documented before the Deal Desk on Wednesday.
+8. **Tatsiana on the invite.** She confirmed by email; the event shows her as not responded. Re-send or ping so she has the link.
 
 ---
 
@@ -30,9 +31,9 @@ Evidence labels: ✅ verified · ⚠️ inference or unconfirmed, never state in
 7. **What they asked for and when:** pricing in writing on that ramp (Sep 8, chased Sep 10: "Will you be able to share the pricing this week?"); TC40 and SAFE sample (Sep 8); whether Yuno introduces merchants to banks (Sep 8); TRID under their own entity, prevention alerts provider, full PSP list (Sep 14). ✅
 8. **What you sent yesterday at 15:19:** TC40/SAFE flow with a generic payload and a correction of the Sep 4 recap ("per-payment notification rather than a consolidated report... live with select providers today"); TRID default (Yuno-provisioned) vs passthrough (their own `token_requestor_id`); Ethoca as the alerts network; a PSP snapshot by market (US, Europe, Japan, LatAm). ✅
 9. **What you explicitly deferred to this call:** TC40/SAFE scoped against their phase 1 list; Visa-side alerts coverage and roadmap; local acquirers in Japan, Brazil and Mexico; bank introductions ("happy to discuss our network and how we typically support our merchants in those conversations," Sep 10); AI products, Payments Concierge and Nova (promised in the Sep 4 recap). ✅
-10. **The pricing you are presenting:** fixed fee all-in, stepped by successful transactions per month, no per-transaction fee until 150K, then $0.03 per successful transaction above 150K. Steps: $6,500 (0 to 25K), $8,000 (25,001 to 50K), $10,000 (50,001 to 100K), $13,000 (100,001 to 150K). On their curve the unit cost falls every month: $0.325, $0.267, $0.178, $0.154, $0.111, $0.108, $0.087. Months 1 to 7: $68,500 for 520K transactions. Year 1: $133,500 for 1.27M transactions ($0.105 average). Steady state: $156,000 a year. Slide: Deals/Appmaking/appmaking-pricing-ramp.png. ✅
-11. **Why $13,000 and not less:** at $12,500 the implied pay-in line drops below the calculator's green floor for V3 (about $0.0188 per transaction) and needs approval. $13,000 keeps every step green with no approvals. Deal size at $13,000 a month clears the $10,000 new-logo minimum; take rate is 48 bps on $2.7M monthly TPV against 15 bps expected. ✅
-12. **The internal comparison, for conversation only:** a standard structure (F3 $10,000 platform fee plus about $0.035 per transaction) would cost them about $164K in year 1 on their curve and about $183K a year at 150K; the ramp saves them about $31K in year 1 and about $27K a year after. In month 4 they are already at $0.15 per transaction. Never put this on a slide. ✅
+10. **The pricing you are presenting (deck, slide 13):** a platform fee plus a rate per successful transaction, both stepping by the month's successful transactions: $5,000 + $0.20 (0 to 25K, ceiling $10,000), $5,500 + $0.12 (25,001 to 50K, $11,500), $6,500 + $0.065 (50,001 to 100K, $13,000), $7,500 + $0.05 (100,001 to 150K, $15,000), then $7,500 + $0.05 per transaction above 150K. Declines free, no setup fee. On their curve the unit cost falls every month: $0.45, $0.30, $0.24, $0.165, $0.137, $0.1125, $0.10. Months 1 to 7: $80,575 for 520K transactions. Year 1: $155,575 for 1.27M ($0.12). Fully ramped: $15,000 a month, $180,000 a year. Full debrief in section 4. ✅
+11. **Why it is green without approvals:** platform $5,000 is the F1 list price; $7,500 fully ramped is above the F3 green floor ($6,325, list $10,000); $0.05 per transaction is above the V3 suggested ladder and far above the green floor ($0.0188); deal size $15,000 a month clears the $10,000 new-logo minimum; take rate 56 bps on $2.7M monthly GMV against 15 bps expected. ✅
+12. **The internal comparison, for conversation only:** a standard structure (F3 $10,000 plus about $0.035 per transaction) would cost them about $164,450 in year 1 on their curve and about $183,000 a year at 150K. The ramp does not discount the steady state ($180,000); it halves the platform fee early, so year 1 is about $9,000 cheaper and the unit cost is $0.165 by month 4. The Sep 10 fixed-fee draft ($133,500 year 1, $156,000 steady) is superseded; the deck is what you present. Never put this on a slide. ✅
 13. **Not in the fixed fee, pending scoping:** subscriptions engine standalone, token vault and network tokens, reconciliation, Verifi and Ethoca alerts. Internal reference prices from the Palco calculator run (mid-margin, never quote): Subscriptions $0.0369 per unit, Network Tokens creation $0.2973 and update $0.0595, Reconciliation $0.0188. Appmaking is high-margin and would price slightly higher. ✅
 14. **Sandbox:** delivered Sep 8 ("You've been invited to Yuno" to the AppMaking account); "our technical team checked out the sandbox and loved it" (Tatsiana, Sep 10). ✅
 15. **NDA:** signed by both parties; Susana sent it with the Sep 4 recap. ✅
@@ -49,18 +50,18 @@ Evidence labels: ✅ verified · ⚠️ inference or unconfirmed, never state in
 **Five facts to know cold**
 1. Third orchestration layer, not first: they run Solidgate and an unnamed second one and want diversification with a neutral, PSP-agnostic layer out of the flow of funds.
 2. Their ramp is fast: 150K transactions a month by month 7 at $18 AOV, about $2.7M monthly GMV.
-3. The pricing is a stepped fixed fee that ends at $13,000 a month plus $0.03 above 150K; year 1 is $133,500. Everything green, no approvals.
+3. The pricing is a platform fee plus a rate per successful transaction, both stepping from $10,000 to $15,000 a month; year 1 on their curve is $155,575, fully ramped $180,000 a year. Everything green, no approvals.
 4. They asked for the pricing three times in writing. It is the deliverable of this call.
 5. You owe them five answers on the call: TC40/SAFE scope, Visa alerts, Japan/Brazil/Mexico acquirers, bank introductions, AI products.
 
 **Three hooks, in priority order**
-1. **A fee that grows slower than their volume.** They asked for pricing "to see profitability" on the ramp. The ladder answers exactly that: cost per successful transaction falls every month, declines cost nothing, no setup fee, no per-integration fee.
+1. **A fee that grows slower than their volume.** They asked for pricing "to see profitability" on the ramp. The ramp answers exactly that: the all-in cost per successful transaction falls every month on their curve ($0.45 to $0.10), declines cost nothing, no setup fee, no per-integration fee.
 2. **Token freedom and dispute visibility, priced separately so they choose.** Their explicit asks on Sep 4 were network-token portability, TC40/SAFE, Verifi and Ethoca. All four are scoped as add-ons, not bundled, which matches the "diversify, stay independent" logic they stated.
 3. **Products they have not seen yet.** Monitors (Rappi: incidents detected in milliseconds vs 5 to 10 minutes manually), reconciliation across Solidgate plus the second orchestrator plus Yuno, and Payments Concierge for a two-person payments function.
 
-**THE objection they will raise (Dzmitry):** "$6,500 for 20,000 transactions is $0.33 each. That is expensive for month one."
+**THE objection they will raise (Dzmitry):** "$9,000 for 20,000 transactions is $0.45 each. That is expensive for month one."
 
-**The answer:** the step is set by what you actually process, not by the calendar; month one is the only month above $0.30 and by month four you are at $0.15 and by month seven at $0.087. Over the whole ramp it averages $0.13, and year 1 lands at $0.105 all-in with every connector, KAM and TAM included. If they still push: the alternative is a standard platform fee plus a per-transaction fee, which costs more in year 1 on their own curve. Do not move $13,000; it is the floor that keeps the deal approval-free.
+**The answer:** the band is set by what you actually process, not by the calendar; month one is the only month above $0.30, by month four you are at $0.165 and by month seven at $0.10. Year 1 lands at $0.12 all-in with every connector, KAM and TAM included, and above 150K every extra transaction is five cents. If they still push: the standard structure costs more in year 1 on their own curve. Do not move the fully ramped $15,000 yourself; Sean decides live if anything moves.
 
 **The second objection (Tatsiana):** "The recap said TC40 and SAFE come as normalized reports across all providers. Now it is a webhook with select providers."
 
@@ -121,44 +122,111 @@ Evidence labels: ✅ verified · ⚠️ inference or unconfirmed, never state in
 
 ---
 
-## 4. The pricing: how to present it
+## 4. Proposal Debrief: how to sell it, how to show it, and the logic behind the number
 
-**One sentence:** "One monthly fee, all-in. It steps up as you ramp and stops at 150,000. Your cost per successful transaction falls at every step."
+**Source reviewed:** "Proposal - AppMaking + Yuno" (Google Slides, 18 slides, last edited Sep 14, 23:37 UTC; PDF copy in Deals/Appmaking). Link: https://docs.google.com/presentation/d/1oH2wwoz3EMYLKNMARaj23AVMf_C-hkPzdfLWnVZfNmc/edit
 
-**The ladder (slide):**
+### 4.1 What the deck is, and what to show live
 
-| Step | Successful transactions / month | Expected (their curve) | Fixed fee / month | All-in per transaction at top of band |
-|---|---|---|---|---|
-| 1 | 0 to 25,000 | Month 1 | $6,500 | $0.26 |
-| 2 | 25,001 to 50,000 | Months 2 to 3 | $8,000 | $0.16 |
-| 3 | 50,001 to 100,000 | Months 4 to 5 | $10,000 | $0.10 |
-| 4 | 100,001 to 150,000 | Months 6 to 7 | $13,000 | $0.087 |
-| Fully ramped | Above 150,000 | Month 8 onward | $13,000 + $0.03 per successful transaction above 150,000 | Falls toward $0.03 |
+| Slide | Content | Live? | Time |
+|---|---|---|---|
+| 1 | Cover | Yes | 10 sec |
+| 2 | Agenda: 01 Why Yuno? 02 Proposal | Yes, one line | 10 sec |
+| 3, 4 | Divider; 180+ currencies, 460+ integrations, 190+ countries, 1,000+ methods | Skip, they saw the platform on Sep 4 | |
+| 5 | Why we believe Yuno is the right partner for AppMaking (global orchestrator, dedicated team, payments-as-a-service, awards, resilience) | Yes, 30 sec: only "dedicated team" (KAM, TAM, Solutions, Fraud and Optimization) and "resilience" | 30 sec |
+| 6 | A complete suite, four pillars, one brain (orchestration, checkout and SDKs, security and risk, AI and intelligence) | Yes, as the map: "On the 4th we showed pillar 1; today the number, then pillars 3 and 4" | 1 min |
+| 7, 8, 9 | Suite detail, logos, team | Skip | |
+| 10 | Cases: inDrive (11 countries in 8 months, 90% approval), Rappi (new provider implementation time to zero), Livelo (14% approval increase) | Optional, 30 sec, only if Dzmitry asks for proof | |
+| 11 | Key advantages (⚠️ two bullets are FlightHub copy, see 4.7) | Yes if fixed, 20 sec | |
+| 12 | Divider: Proposal | Yes | |
+| 13 | The pricing | Yes. The ten minutes that matter | 10 min |
+| 14 to 17 | Appendix: "What Yuno unlocks" (orchestration vs single PSP, industry statistics) and customer quotes | Do not present. Leave in the PDF | |
+| 18 | Close | | |
 
-**Their curve, month by month:**
+Under three minutes of deck before the number. After the number, the dashboard (section 6), not the deck.
 
-| Month | Transactions | Step | Fee | All-in per transaction |
-|---|---|---|---|---|
-| 1 | 20,000 | 1 | $6,500 | $0.325 |
-| 2 | 30,000 | 2 | $8,000 | $0.267 |
-| 3 | 45,000 | 2 | $8,000 | $0.178 |
-| 4 | 65,000 | 3 | $10,000 | $0.154 |
-| 5 | 90,000 | 3 | $10,000 | $0.111 |
-| 6 | 120,000 | 4 | $13,000 | $0.108 |
-| 7 | 150,000 | 4 | $13,000 | $0.087 |
-| 8 to 12 | 150,000 (held flat, they gave no number) | 4 | $13,000 | $0.087 |
+### 4.2 The model on slide 13, exactly as built
 
-**Rules to state:** the step follows successful transactions in the month, not the calendar; declines cost nothing; no setup fee; if they ramp slower they pay the higher step later, if faster, sooner.
+A platform fee plus a rate per successful transaction. Both step by the month's successful transactions. Declines cost nothing, no setup fee.
 
-**What the fee includes:** dedicated KAM and TAM, 1,000+ payment methods, 450+ providers, 50+ anti-fraud tools, orchestration and rules engine, smart routing and retries. Every connector maintained by Yuno; adding a provider later is a routing change, not a new fee.
+| Band (successful trx / month) | Platform fee | Rate per successful trx | Total at the top of the band |
+|---|---|---|---|
+| 0 to 25,000 | $5,000 | $0.20 | $10,000 |
+| 25,001 to 50,000 | $5,500 | $0.12 | $11,500 |
+| 50,001 to 100,000 | $6,500 | $0.065 | $13,000 |
+| 100,001 to 150,000 | $7,500 | $0.05 | $15,000 |
+| Above 150,000 | $7,500 | $0.05 | $15,000 plus $0.05 per extra successful trx |
 
-**What it does not include (pending scoping, priced separately once they say which ones they want):** subscriptions engine standalone, token vault and network tokens, reconciliation, Verifi and Ethoca alerts.
+Fully ramped: $15,000 a month ($7,500 platform plus $7,500 in transactions at 150,000), $180,000 a year. Pending scoping, priced separately: subscriptions engine, token vault and network tokens, reconciliation, Verifi and Ethoca alerts.
 
-**Do not say on the slide or in the room:** a minimum monthly billing line (the fixed fee is the minimum), a contract term (not discussed), PSP names as "included," approval or savings claims, the internal comparison to the standard structure, the Palco reference prices.
+⚠️ This replaces the fixed-fee-only ladder ($6,500 to $13,000) from the Sep 10 draft. The deck is the source of truth. The two differ by $22,075 in year 1 and $24,000 a year fully ramped, in Yuno's favor.
 
-**If Dzmitry asks for volume-vs-calendar:** volume-based is what is proposed and it is in their favor if they ramp slower. Calendar-based is the alternative if they want fixed predictability; same total if they hit the plan.
+### 4.3 The deck's numbers versus their curve: fix before 09:00
 
-**If they ask about the $0.03 overage:** it only starts above 150,000 successful transactions in a month, and it is the only per-transaction line in the whole structure.
+The "Expected" months and the "What it means for AppMaking" box on slide 13 still sit on the first assumed ramp (fully ramped in month 10, about 675K transactions in months 1 to 9). Tatsiana's curve of Sep 8 is faster. Recomputed with the exact model on slide 13:
+
+| Month | Their trx | Band | Platform + trx | Total | All-in per trx |
+|---|---|---|---|---|---|
+| 1 | 20,000 | 1 | $5,000 + $4,000 | $9,000 | $0.45 |
+| 2 | 30,000 | 2 | $5,500 + $3,600 | $9,100 | $0.30 |
+| 3 | 45,000 | 2 | $5,500 + $5,400 | $10,900 | $0.24 |
+| 4 | 65,000 | 3 | $6,500 + $4,225 | $10,725 | $0.165 |
+| 5 | 90,000 | 3 | $6,500 + $5,850 | $12,350 | $0.137 |
+| 6 | 120,000 | 4 | $7,500 + $6,000 | $13,500 | $0.1125 |
+| 7 | 150,000 | 4 | $7,500 + $7,500 | $15,000 | $0.10 |
+| 8 to 12 | 150,000 (held flat, they gave no number) | 4 | $7,500 + $7,500 | $15,000 | $0.10 |
+
+Replacement values for slide 13:
+- "Expected" column: Month 1 / Months 2 to 3 / Months 4 to 5 / Months 6 to 7 / Month 8 onward.
+- "What it means for AppMaking", sub-line "On the ramp plan you shared on Sep 8": Months 1 to 7: $80,575, 520k, $0.155. Months 8 to 12: $75,000, 750k, $0.10. Year 1: $155,575, about 1.27M, $0.12.
+- Fully ramped card unchanged: $15,000 a month, $180,000 a year.
+
+If the deck cannot be edited before the call, say it on the slide: "the months here come from our first estimate; on the curve you sent you are fully ramped by month seven, so year 1 is $155,575 and by month seven you are at $0.10 per transaction." The totals move by $1,575; the message is that you rebuilt it on their numbers.
+
+### 4.4 The logic behind the number, in your own words
+
+1. **Two components because that is how Yuno prices and invoices every merchant.** The platform fee pays for the stack that exists whether they send one transaction or 150,000: KAM and TAM, every connector maintained, the rules engine, monitors, the dashboard. The per-transaction rate is usage, charged only on successes. Keeping both visible is honest, and it makes "declines cost nothing" concrete.
+2. **Both step because a full platform fee at 20,000 transactions would be $0.50 each.** The list platform fee for a merchant of their fully ramped size (100K to 1M a month) is $10,000. Charging it in month one is what kills ramp deals. So the platform fee starts at $5,000, the list price for a 0 to 25K merchant, and ends at $7,500, still 25% under the $10,000 list at their size. The per-transaction rate starts high ($0.20) precisely because the fixed part is low, and it falls four times, to $0.05, as volume carries the stack.
+3. **The ceilings are built so the all-in unit cost falls at every step:** $0.40 at the top of band 1, $0.23 at band 2, $0.13 at band 3, $0.10 at band 4. On their curve it falls every single month: $0.45, $0.30, $0.24, $0.165, $0.137, $0.1125, $0.10. That is the headline of the slide, "a fee that grows slower than your volume," and it is true on their numbers.
+4. **$15,000 fully ramped is Yuno's standard price for their size, expressed as a ramp.** The standard structure (F3 $10,000 platform fee plus about $0.035 per transaction) is about $15,250 a month at 150K. The ramp does not discount the steady state; it discounts the early months (year 1 $155,575 versus about $164,450 standard on their curve) by halving the platform fee while they grow. The argument: "you pay for the stack when the stack is carrying your volume, not before."
+5. **$0.05 above 150K is the number to remember.** The platform fee never rises again; every extra successful transaction costs five cents, all-in.
+6. **Volume-triggered, not calendar-triggered.** Ramp slower and they stay in the lower band longer; ramp faster and they get the lower rate sooner. Fair both ways, and it removes the "what if we miss the plan" objection.
+7. **Policy check, internal, never said aloud:** platform $5,000 is the F1 list price; $7,500 fully ramped is above the F3 green floor ($6,325); $0.05 per transaction is above the V3 suggested ladder ($0.031 to $0.043 in the Palco run) and far above the green floor ($0.0188); deal size $15,000 a month clears the $10,000 new-logo minimum; take rate 56 bps on $2.7M monthly GMV against 15 bps expected. All green, no approvals. Sean has room (the platform fee could go to $6,325 fully ramped and stay green). Do not offer it; know it.
+8. **The quirk to know before Dzmitry finds it.** Because the band's rate applies to the whole month, the bill can drop when crossing into a higher band: 50,000 transactions cost $11,500 and 50,001 cost $9,750; on their curve month 4 (65,000) costs $10,725, less than month 3 (45,000) at $10,900. It is in their favor. If he notices: "correct, the bands are built so growing is never penalized; the totals in the table are the ceiling of each band." Sean should know revenue dips at each band entry.
+9. **Why not one flat rate.** A rate that covers the stack at 20K transactions is $0.50; one that is fair at 150K is $0.10. No single number works across a 7x ramp. The ramp is the honest version of a flat rate.
+
+### 4.5 Step by step: the sell
+
+1. **Before sharing the screen (1 min).** "You asked for pricing on your ramp to see profitability. I built it on the exact curve you sent on the 8th: 20K in month one, 150K in month seven." Their words, their numbers, then the screen.
+2. **Slide 6 (1 min).** "On the 4th we showed routing, connections and subscriptions. Today: the number first, then the parts you have not seen, and you tell us which ones you want."
+3. **Slide 13, the headline (30 sec).** Read it as written: "A platform fee plus a rate per successful transaction. Both step as you ramp: $10,000 a month at the start, $15,000 fully ramped. Declines cost nothing." Then stop for two seconds.
+4. **The ramp table (2 min), top to bottom, with their months.** "Band one is your month one. Band two is months two and three. Band three, months four and five. Band four, six and seven. From month eight you are above 150K." Then the line that matters: "the totals in the table are the ceiling of each band; on your curve you pay less than the ceiling in every month except month seven."
+5. **The right-hand box (2 min).** Year 1: $155,575 for 1.27M transactions, $0.12 all-in. Fully ramped: $15,000 a month, $180,000 a year, $7,500 of it platform. Say "$0.10 per transaction at scale, and five cents for every transaction above 150K."
+6. **What it includes (30 sec).** KAM and TAM, 1,000+ methods, 450+ providers, 50+ anti-fraud tools, rules engine, smart routing and retries. Then: "every connector is maintained by us; adding a provider later is a routing change, not a fee." That sentence answers their diversification logic directly.
+7. **Pending scoping (1 min).** Name the four. Ask which they want priced first. Fill the checklist in section 6 as they answer.
+8. **Silence.** Let Dzmitry react. Do not fill it.
+9. **Objections (4.6).** Sean handles anything that moves a number.
+10. **Close (1 min).** "I send you this slide and a one-page summary of the rules today, with the products you pick. Which entity signs, Appmaking LTD or the web merchant of record? And what is your timeline for phase 1 credentials?"
+
+### 4.6 Objections on the number
+
+| They say | You answer |
+|---|---|
+| "$0.20 per transaction on an $18 basket is over 1%." | Only in month one and only while under 25K. Year 1 blended is $0.12 and at scale $0.10, which is 0.55% of the basket, with every connector, KAM and TAM inside. The rate falls four times as you ramp. |
+| "Why does the platform fee go up?" | Because the stack is carrying more of your volume. It goes from $5,000 to $7,500 and then never moves again. At your fully ramped size the list price is $10,000. |
+| "Can the platform fee stay at $5,000?" | Then the per-transaction rate cannot fall to $0.05; the two move together. Sean decides whether anything moves. |
+| "What if we ramp slower than the plan?" | You stay in the lower band longer and pay the lower total. The band follows what you process, not the calendar. |
+| "Why not one per-transaction rate?" | A rate that covers the stack at 20K is $0.50; one that is fair at 150K is $0.10. The ramp is the honest version of a flat rate. |
+| "How does this compare with Solidgate?" | Do not compare. Yuno does not process and sits out of the flow of funds; PSP fees stay with the PSPs. This is the price of the layer above them. |
+| "Is there a minimum or a lock-in?" | The platform fee is the minimum. Term is not proposed yet; it goes in the written proposal once products are confirmed. |
+| "What do subscriptions, vault and reconciliation cost?" | Priced separately once scoped; tell us which you want first and the numbers go in the written proposal. Never quote the Palco reference prices. |
+
+### 4.7 Fixes in the deck before 09:00
+
+- **Slide 13:** "Expected" months and the "What it means" box (values in 4.3). Sub-line: "On the ramp plan you shared on Sep 8."
+- **Slide 11, Key Advantages:** two bullets are inherited from the FlightHub deck. "Your routing platform stays, Yuno extends it" → "Your current providers stay, Yuno adds an independent layer". "Network tokens across all seven providers" → "Network tokens across your phase 1 providers" (they do name seven, but the sentence was written for FlightHub). "Higher approvals, lower cost" and "Reporting and analytics" are fine.
+- **Slides 15 and 16 (appendix)** carry industry statistics ("4 to 16% approval boost," "8 to 12% uplift with local APMs," "20 to 40 integrations monthly"). Keep them as appendix. If asked for Yuno figures, the published ones are 7% approval uplift and 30% recovered revenue.
+- **Slide 5** is the standard pillar slide; fine as is.
 
 ---
 
@@ -199,7 +267,7 @@ Owner: Jarrett if confirmed; otherwise German drives and Joaquin supports. Keep 
 |---|---|
 | "Can you send the pricing in writing after the call?" | Yes, the slide plus a one-page summary of the rules, same day. |
 | "What is the contract term?" | Not defined yet; propose it in the written proposal after they confirm products. Do not improvise a term on the call. |
-| "Is $13,000 negotiable?" | The ladder is built so the economics work before 100K; $13,000 is what covers the stack at 150K. If they want a lower steady state, the trade is a per-transaction fee inside the steps, which costs them more on their curve. Sean decides live if anything moves. |
+| "Is $15,000 negotiable?" | $15,000 fully ramped is the standard price for their size; the ramp already halves the platform fee while they grow. If they want a lower steady state, the platform fee and the per-transaction rate move together. Sean decides live if anything moves. |
 | "Which providers have TC40/SAFE today?" | The ones Leo confirmed. Not their phase 1 list. Scope together. |
 | "Is Verifi live?" | Exactly what was confirmed internally, nothing more. |
 | "Do you have Shift4 and Payabl?" | Only if verified in the catalog before the call. |
@@ -240,11 +308,11 @@ Owner: Jarrett if confirmed; otherwise German drives and Joaquin supports. Keep 
 
 ## 10. Post-meeting checklist
 
-- Same-day email: pricing slide plus a one-page summary of the rules, the product checklist as they filled it, and owners and dates for anything still open (TC40 scope, Verifi, local acquirers, bank introductions).
+- Same-day email: slide 13 (corrected) plus a one-page summary of the rules, the product checklist as they filled it, and owners and dates for anything still open (TC40 scope, Verifi, local acquirers, bank introductions).
 - Run the calculator for Appmaking and file the score.
-- Deal Desk framing for Sean (Wednesday 08:00): ARR $156K steady state ($133.5K year 1), close date, decision maker (Dzmitry with Butrym signing), blocker, and the ask.
+- Deal Desk framing for Sean (Wednesday 08:00): ARR $180K steady state ($155.6K year 1), close date, decision maker (Dzmitry with Butrym signing), blocker, and the ask.
 - If they want the pending products, request the calculator run for each before quoting.
 - Update memory: products selected, contracting entity, their reaction to $13,000, next-step date.
 
 ### Sources
-Google Calendar (event "AppMaking + Yuno", Sep 15, 2026; "App Making x Yuno Dashboard Overview", Sep 4, 2026) · Gmail thread "Appmaking + Yuno: Call Recap and Next Steps" (Sep 4 to Sep 14, 2026, ten messages) · Gmail "You've been invited to Yuno" (sandbox, Sep 8) · Slack DM German and Jarrett (Sep 9, Sep 14), German and Leo (Sep 14), German and Thiago (Sep 11) · Deals/Appmaking/appmaking-pricing-proposal-2026-09-10.md (updated Sep 14) · Deals/Appmaking/appmaking-open-questions-2026-09-14.md · Deals/Appmaking/appmaking-followup-email-2026-09-04.md (call notes) · data/research/appmaking-meeting-brief-2026-09-04.md and appmaking-ltd-2026-09-03.md (company, attendees, competitive context) · docs.y.uno (network tokens, stored credentials) · Yuno RFP response to Hostinger (provider list, Aug 2026) · Finextra and Fintech Times on Yuno and Ethoca (April 2025).
+Google Calendar (event "AppMaking + Yuno", Sep 15, 2026; "App Making x Yuno Dashboard Overview", Sep 4, 2026) · Gmail thread "Appmaking + Yuno: Call Recap and Next Steps" (Sep 4 to Sep 14, 2026, ten messages) · Gmail "You've been invited to Yuno" (sandbox, Sep 8) · Slack DM German and Jarrett (Sep 9, Sep 14), German and Leo (Sep 14), German and Thiago (Sep 11) · "Proposal - AppMaking + Yuno" (Google Slides, 18 slides, PDF in Deals/Appmaking, reviewed Sep 14) · Deals/Appmaking/appmaking-pricing-proposal-2026-09-10.md (Sep 10 draft, superseded by the deck model) · Deals/Appmaking/appmaking-open-questions-2026-09-14.md · Deals/Appmaking/appmaking-followup-email-2026-09-04.md (call notes) · data/research/appmaking-meeting-brief-2026-09-04.md and appmaking-ltd-2026-09-03.md (company, attendees, competitive context) · docs.y.uno (network tokens, stored credentials) · Yuno RFP response to Hostinger (provider list, Aug 2026) · Finextra and Fintech Times on Yuno and Ethoca (April 2025).
