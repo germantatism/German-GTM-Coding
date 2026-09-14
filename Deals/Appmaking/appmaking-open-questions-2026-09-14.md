@@ -1,19 +1,19 @@
 # Appmaking: respuestas a las preguntas abiertas de Tatsiana
 
-Hilo Gmail: "Appmaking + Yuno: Call Recap and Next Steps" (Tatsiana Gubarevich, Payment Manager; cc Dzmitry Katsiushchyk, Jarrett Falasco, Sean).
-El 14-sep German prometió enviar "throughout the day" las muestras TC40/SAFE y las respuestas a las preguntas nuevas.
-Call: **martes 15-sep, 9:00 AM COT / 5:00 PM hora de ellos** (Dzmitry ya aceptó).
+Hilo Gmail: "Appmaking + Yuno: Call Recap and Next Steps" (Tatsiana Gubarevich, Payment Manager; cc Dzmitry Katsiushchyk, Jarrett Falasco, Susana Awad).
+**14-sep 15:19 COT: German envió el correo con las respuestas 1 a 4** (TC40/SAFE con payload genérico y corrección del recap, TRID default vs passthrough, Ethoca como red de alertas, top de PSPs por mercado). Lo que quedó explícitamente "para la call de mañana": scoping de TC40/SAFE contra su lista fase 1, cobertura Visa-side de alertas y roadmap, detalle de adquirentes locales en Japón, Brasil y México, y la pregunta de intro a bancos.
+Call: **martes 15-sep, 9:00 AM COT / 5:00 PM hora de ellos** (Dzmitry, Sean y Joaquin aceptaron; Jarrett sin responder; Tatsiana confirmó por correo).
 
 ## Tracker
 
 | # | Pregunta | La hicieron | Estado |
 |---|---|---|---|
-| 1 | Muestra de reporte TC40 y SAFE (formato de entrega) | 8-sep | Explicación y payload de Leo recibidos. Faltan 2 confirmaciones (ver abajo) |
-| 2 | ¿El TRID (Token Requestor ID) queda abierto bajo su propia entidad merchant? | 14-sep | Pendiente |
-| 3 | ¿Quién es su proveedor de prevention alerts? | 14-sep | Pendiente |
-| 4 | Lista completa de PSPs con los que trabajan | 14-sep | Pendiente |
-| 5 | ¿Presentan merchants a bancos? | 8-sep | German lo difirió a la call |
-| 6 | Pricing por escrito sobre su ramp-up | 8-sep | En curso: appmaking-pricing-proposal-2026-09-10.md |
+| 1 | Muestra de reporte TC40 y SAFE (formato de entrega) | 8-sep | ✅ Enviado 14-sep: flujo webhook `payment.pre_chargeback`, payload con valores genéricos, corrección del recap ("per-payment notification, live with select providers"). ⬜ Para la call: qué proveedores exactos lo tienen hoy (confirmar con Leo: dLocal por SFTP; el ejemplo era de Adyen) |
+| 2 | ¿El TRID queda abierto bajo su propia entidad merchant? | 14-sep | ✅ Enviado 14-sep: sí, vía passthrough con su propio `token_requestor_id`; default es Yuno-provisioned. ⬜ Confirmar con Jarrett/Leo que passthrough funciona con sus PSPs fase 1 |
+| 3 | ¿Quién es su proveedor de prevention alerts? | 14-sep | ✅ Enviado 14-sep: Ethoca (Mastercard) en integración directa. ⚠️ Se prometió "Visa-side coverage and roadmap on tomorrow's call": confirmar status real de Verifi (RDR/CDRN) antes de las 9:00 |
+| 4 | Lista completa de PSPs con los que trabajan | 14-sep | ✅ Enviado 14-sep: snapshot por mercado (US, Europa, Japón, LatAm). ⚠️ El correo afirma "full coverage of your phase 1 providers": verificar Ecompay, Payabl y NMI en el catálogo del Dashboard |
+| 5 | ¿Presentan merchants a bancos? | 8-sep | ⬜ Para la call (10-sep German dijo "happy to discuss our network and how we typically support our merchants"). Definir la respuesta honesta con Sean antes de la call |
+| 6 | Pricing por escrito sobre su ramp-up | 8-sep | ✅ Propuesta lista con la curva real de ellos: appmaking-pricing-proposal-2026-09-10.md + slide appmaking-pricing-ramp.png (actualizados 14-sep). Se presenta en la call |
 
 ## 1. TC40 y SAFE
 

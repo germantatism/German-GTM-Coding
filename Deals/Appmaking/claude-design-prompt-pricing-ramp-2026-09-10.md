@@ -1,4 +1,4 @@
-# Prompt Claude Design: Appmaking + Yuno pricing proposal, ramp-up fixed fee (2026-09-10)
+# Prompt Claude Design: Appmaking + Yuno pricing proposal, ramp-up fixed fee (2026-09-10, curve updated 2026-09-14)
 
 Build one 16:9 pricing slide (1920x1080): **"Proposal · Ramp-up fixed fee"**, for the commercial proposal **Appmaking + Yuno**. Use the attached FlightHub pricing slide (page 15 of "Proposal - FlightHub + Yuno") as the exact visual reference: replicate its layout, typography and color system, only the content and the block structure described below change. All figures in USD, monthly billing, copy in English.
 
@@ -16,11 +16,11 @@ Build one 16:9 pricing slide (1920x1080): **"Proposal · Ramp-up fixed fee"**, f
 
 | Step | Successful transactions / month | Expected | Fixed fee / month | All-in per successful txn |
 |---|---|---|---|---|
-| 1 | 0 to 25,000 | Months 1 to 3 | $6,500 | $0.26 |
-| 2 | 25,001 to 50,000 | Months 4 to 5 | $8,000 | $0.16 |
-| 3 | 50,001 to 100,000 | Months 6 to 7 | $10,000 | $0.10 |
-| 4 | 100,001 to 150,000 | Months 8 to 9 | $13,000 | $0.087 |
-| Fully ramped | Above 150,000 | Month 10 onward | $13,000 + $0.03 per successful txn above 150,000 | Falls toward $0.03 |
+| 1 | 0 to 25,000 | Month 1 | $6,500 | $0.26 |
+| 2 | 25,001 to 50,000 | Months 2 to 3 | $8,000 | $0.16 |
+| 3 | 50,001 to 100,000 | Months 4 to 5 | $10,000 | $0.10 |
+| 4 | 100,001 to 150,000 | Months 6 to 7 | $13,000 | $0.087 |
+| Fully ramped | Above 150,000 | Month 8 onward | $13,000 + $0.03 per successful txn above 150,000 | Falls toward $0.03 |
 
    The "Fully ramped" row gets the light blue filled treatment used for the highlighted row in the reference. The "All-in per successful txn" column is the fee divided by the top of the band; label it in the header sub-line as "at the top of the band".
 4. Small grey footnote under the table: "The step is set by successful transactions in the month, not by the calendar. Declines cost nothing. No setup fee. Expected months follow Appmaking's ramp plan."
@@ -47,13 +47,13 @@ Build one 16:9 pricing slide (1920x1080): **"Proposal · Ramp-up fixed fee"**, f
 
 Full-width light band, same style as the "WHAT IT MEANS FOR FLIGHTHUB" block in the reference. Header: **"WHAT IT MEANS FOR APPMAKING"**, sub-header: "On the ramp plan above". Three short stat columns:
 
-- **Months 1 to 9:** $81,500 for about 600,000 successful transactions, about $0.14 each
-- **Months 10 to 12:** $39,000 at 150,000 successful transactions per month, $0.087 each
-- **Year 1:** $120,500 for about 1.05M successful transactions, about $0.115 each
+- **Months 1 to 7:** $68,500 for 520,000 successful transactions, about $0.13 each
+- **Months 8 to 12:** $65,000 at 150,000 successful transactions per month, $0.087 each
+- **Year 1:** $133,500 for about 1.27M successful transactions, about $0.105 each
 
-One grey line under the three stats: "Volumes are Appmaking's projected ramp. The fee follows actual successful transactions each month."
+One grey line under the three stats: "Volumes are Appmaking's projected ramp for months 1 to 7, held at 150,000 from month 8. The fee follows actual successful transactions each month."
 
-⚠️ Before generating: if Appmaking's email gives a different month-by-month ramp, replace the "Expected" column and recompute the three bottom stats from it. Do not change the fee ladder.
+Curve source (updated 2026-09-14): Appmaking's own ramp from Tatsiana's email of Sep 8 (20K, 30K, 45K, 65K, 90K, 120K, 150K transactions in months 1 to 7, AOV $18). Months 8 to 12 are held flat at 150K. Do not change the fee ladder.
 
 ## What NOT to do
 
