@@ -108,15 +108,24 @@ El recap dice: "TC40 and SAFE data, bank and fraud rates are delivered today as 
 
 ## 2. TRID
 
-Pendiente.
+**Validado contra docs.y.uno (14-sep):** Yuno soporta dos modos.
+- **Default (Yuno provisiona):** "We procure network tokens from leading card networks, including Visa, Mastercard, and American Express." Cero integración extra; provisioning y lifecycle corren por el token requestor de Yuno. Consistente con el recap del 4-sep: tokens "owned by you, usable inside Yuno and outside it".
+- **Passthrough (TRID propio):** el merchant se registra como token requestor ante las redes y manda su `token_requestor_id` por API; "Yuno acts only as a passthrough for the network token information".
+- ⚠️ Docs dicen que `token_requestor_id` es "[Only required for certain providers]": confirmar con Jarrett/Leo que passthrough con TRID propio funciona con sus PSPs fase 1 (Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl, NMI).
 
 ## 3. Proveedor de prevention alerts
 
-Pendiente.
+- **Ethoca (Mastercard): confirmado público.** Yuno lanzó Ethoca Alerts en abril 2025 (Finextra/Fintech Times): el issuer marca la transacción, la alerta llega vía Yuno y el merchant puede reembolsar proactivamente antes de que sea contracargo.
+- **Verifi (Visa, CDRN/RDR): NO hay confirmación pública.** El draft interno del 4-sep decía "RDR and Ethoca capabilities are being relaunched in the platform". Confirmar wording exacto de status antes de afirmarle nada a Tatsiana.
+- ❌ Descartado del borrador de Jordan: Kount, PRECISION y Forter son partners de fraud prevention, no redes de dispute alerts (categoría equivocada). El "resolve within 48 hours" no se pudo verificar en ninguna fuente.
 
-## 4. Lista completa de PSPs
+## 4. Lista de PSPs (top 15 por mercado, no lista completa)
 
-Pendiente.
+Decisión de German (14-sep): no mandar "lista completa" (catálogo vivo, 1,000+ providers en 190+ países); mandar top 15 procesadores por sus mercados clave: US, Europa, Japón, LatAm.
+- Anclas verificadas: fase 1 confirmada por escrito el 2-sep (Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl, NMI); página pública de integraciones (Adyen, ACI Worldwide, 2c2p, Allinpay, Alignet); dLocal (interno, TC40/SAFE); Tabapay (GoFundMe live).
+- ⚠️ Excluir de la lista al cliente: Adyen, JPMorgan Chase y Checkout.com (su exclusividad con Solidgate les prohíbe usarlos vía otro gateway) y Solidgate mismo.
+- ⚠️ Japón es el mercado con menos anclas verificadas: confirmar lista local (GMO, SB Payment, Univapay, Komoju) con solutions antes de enviar.
+- Glean sin auth (401) y el catálogo web es JS: la lista definitiva por mercado sale del catálogo de connections en el Dashboard o de Jarrett.
 
 ## 5. Presentación a bancos
 
