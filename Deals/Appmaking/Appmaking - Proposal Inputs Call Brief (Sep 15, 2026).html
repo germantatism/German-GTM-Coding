@@ -1,0 +1,305 @@
+
+<title>Appmaking Proposal Inputs Call</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap">
+<style>
+:root{--bg:#F5F5FA;--surface:#FFFFFF;--ink:#282A30;--muted:#5F626E;--line:#DCDEEC;--accent:#3E4FE0;--accent-deep:#1227AD;--lilac:#E8EAF5;--soft:#BDC3F6;--code:#EEF0FA}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#14151C;--surface:#1E2029;--ink:#E9EAF2;--muted:#A3A7B7;--line:#33364A;--accent:#7C89EF;--accent-deep:#BDC3F6;--lilac:#232636;--soft:#3E4478;--code:#262A3A}}
+:root[data-theme="dark"]{--bg:#14151C;--surface:#1E2029;--ink:#E9EAF2;--muted:#A3A7B7;--line:#33364A;--accent:#7C89EF;--accent-deep:#BDC3F6;--lilac:#232636;--soft:#3E4478;--code:#262A3A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Titillium Web","Segoe UI",Arial,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.page{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+.brand{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:28px}
+.brand .mark{font-weight:700;font-size:22px;color:var(--accent);letter-spacing:-.01em}
+.brand .kind{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+h1{font-size:34px;line-height:1.15;font-weight:700;margin:0 0 20px;text-wrap:balance;max-width:24ch}
+h2{font-size:23px;line-height:1.25;font-weight:700;margin:0 0 14px;text-wrap:balance;padding-top:6px}
+h3{font-size:17px;font-weight:700;margin:22px 0 8px;text-wrap:balance;color:var(--accent-deep)}
+p{margin:0 0 12px;max-width:76ch}
+section{margin:0 0 40px;padding-top:22px;border-top:1px solid var(--line)}
+section.actions{background:var(--lilac);border:0;border-radius:6px;padding:22px 24px 10px}
+section.actions ol{max-width:80ch}
+dl.meta{display:grid;grid-template-columns:1fr;gap:10px 0;margin:0 0 20px;padding:0}
+dl.meta div{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:start;max-width:86ch}
+dl.meta dt{font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;color:var(--muted);padding-top:4px}
+dl.meta dd{margin:0}
+dl.meta div.objective{background:var(--surface);border-left:3px solid var(--accent);padding:12px 16px;border-radius:0 4px 4px 0;margin-top:6px}
+dl.meta div.objective dt{color:var(--accent-deep)}
+p.legend{font-size:13.5px;color:var(--muted);border:1px dashed var(--line);display:inline-block;padding:6px 12px;border-radius:4px;margin:4px 0 8px}
+ol,ul{margin:0 0 14px;padding-left:22px;max-width:80ch}
+li{margin:0 0 7px}
+li>ul{margin-top:6px}
+blockquote{margin:14px 0;padding:12px 18px;background:var(--surface);border-left:3px solid var(--accent-deep);border-radius:0 4px 4px 0;max-width:76ch;font-weight:600}
+code{font-family:"SFMono-Regular",Menlo,Consolas,monospace;font-size:.9em;background:var(--code);padding:1px 5px;border-radius:3px}
+a{color:var(--accent)}
+.table-wrap{overflow-x:auto;margin:6px 0 18px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.45;font-variant-numeric:tabular-nums}
+th{background:var(--lilac);text-align:left;font-weight:700;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top;min-width:120px}
+td:first-child{font-weight:600;min-width:150px}
+tr:last-child td{border-bottom:0}
+.zone.live{margin:20px -24px 0;padding:28px 24px 10px;background:var(--lilac);border-radius:10px}
+.zone.live section{border-top-color:var(--soft)}
+.zone.live .table-wrap{background:var(--surface)}
+.zone-eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--accent-deep);margin:0 0 6px}
+.notes{display:inline-flex;align-items:baseline;gap:8px;width:100%;max-width:520px;margin-top:4px;vertical-align:baseline}
+.notes-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.notes-rule{flex:1;border-bottom:1px dotted var(--soft);height:.9em}
+td .notes{max-width:none;min-width:180px}
+strong{font-weight:700}
+@media (max-width:640px){h1{font-size:28px}dl.meta div{grid-template-columns:1fr;gap:2px}.page{padding:24px 16px 60px}.zone.live{margin:20px -16px 0;padding:22px 16px 8px}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+<div class="page"><div class="brand"><span class="mark">⠿ yuno</span><span class="kind">Meeting brief · Appmaking · September 2026</span></div><h1>Meeting Brief: Yuno &lt;&gt; Appmaking, Proposal Inputs Call</h1>
+<dl class="meta"><div><dt>When</dt><dd>to confirm. German offered &quot;in a few hours&quot; on Tuesday, September 15 or on Wednesday, September 16, 2026 (they are on EEST, Cyprus and Minsk, 8 hours ahead of Bogotá). Short call, 30 minutes.</dd></div><div><dt>How</dt><dd>phone or text first (German shared his number in the Meet chat), then the shared Slack channel Jarrett proposed.</dd></div><div><dt>Who</dt><dd>Tatsiana Hubarevich (Payment Manager; signs Gubarevich by email) and Dzmitry Katsiushchyk for Appmaking. German for Yuno; Jarrett Falasco and Joaquin Mann optional.</dd></div><div><dt>Why this call exists</dt><dd>on the September 15 call the proposal was not shown. German closed with &quot;I&#x27;ll get to the proposal and then we can get a couple of things settled.&quot; Tatsiana asked &quot;do you need some more information from me for the proposal?&quot; and agreed to speak in a couple of hours.</dd></div>
+<div class="objective"><dt>Objective, what winning looks like</dt><dd>leave with the ten inputs that move the proposal closed (timelines, markets, MIDs, volume split, performance criteria, routing ownership, subscriptions, reconciliation, integration path, second orchestrator), the list of Yuno products they will actually use, a contracting entity, and a committed date for the written proposal: Thursday, September 17 or Friday, September 18. Tatsiana has asked for pricing three times (September 8, September 10, September 15). A fourth time without a date is a problem.</dd></div>
+</dl>
+<p class="legend">Evidence labels: ✅ verified · ⚠️ inference or unconfirmed, never state in the call · 🔍 ask in discovery</p>
+<div class="zone study">
+<section class="actions"><h2>⚠️ Pre-meeting actions</h2>
+<ol start="1">
+<li><strong>Schedule the call.</strong> No calendar event exists yet. Text Tatsiana, fix the slot, and create the shared Slack channel Jarrett offered on the call.</li>
+<li><strong>Talk to Piotr.</strong> Justo&#x27;s instruction: &quot;Habla con Piotr que los conoce bien.&quot; Ask what he knows about their Solidgate setup, who holds the MIDs, and their relationship with Unlimit and the other phase 1 providers.</li>
+<li><strong>Jarrett, four confirmations:</strong> the formal timeline for a merchant-owned TRID (he said &quot;a week or so&quot; on the call); the real status of Verifi and Visa RDR (he told them both are supported; internally Verifi was unconfirmed on September 14); whether a separate MID through the Unlimit partnership is viable; and whether Shift4 and Payabl are in the catalog before anyone repeats &quot;full coverage of your phase 1 providers.&quot;</li>
+<li><strong>Leo:</strong> which providers deliver TC40 and SAFE today beyond dLocal, so the scope against their phase 1 list is honest. Jarrett described the reports as customizable on the call.</li>
+<li><strong>Sean:</strong> the agreed sentence on bank introductions (section 7), and the Deal Desk framing for Wednesday 08:00: ARR $180,000 steady state, $155,575 year 1, decision maker Dzmitry with Butrym signing.</li>
+<li><strong>Fix the deck before the proposal call:</strong> slide 13 &quot;Expected&quot; months and the &quot;What it means&quot; box still sit on the first assumed ramp; slide 11 carries two FlightHub bullets. Values in section 6.</li>
+<li><strong>Send the Top 10 ahead of the call</strong> by Slack or email so Tatsiana arrives with the volume split, the MID map and the provider list.</li>
+<li><strong>Run the calculator.</strong> Duplicate &quot;Yuno — Pricing Palco&quot; as &quot;Yuno — Pricing Appmaking&quot; (150,000 transactions, AOV $18, Digital Business / Goods) so the score is on file before Deal Desk.</li>
+</ol>
+</section>
+<section><h2>1. TL;DR Battle Card</h2>
+<h3>Five facts to know cold</h3>
+<ol start="1">
+<li><strong>They process about 500,000 transactions a month</strong> across all providers (August 2026, Tatsiana on the September 15 call). Their ramp gives Yuno 150,000 by month 7, about 30% of today&#x27;s volume. ✅</li>
+<li><strong>Their curve, in their words (September 8 email):</strong> 20K, 30K, 45K, 65K, 90K, 120K, 150K successful transactions in months 1 to 7, AOV exactly $18, fully ramped in month 7. What drives it: &quot;performance. We would be testing which transactions work better at Yuno, and as soon as we find what works best we would be giving you more volume. We do have big volumes at the moment.&quot; ✅</li>
+<li><strong>Solidgate is in the money flow with almost all of their volume.</strong> No written minimum, but &quot;they do get cheaper the more transactions you send through them, so we tend to keep bigger volumes there.&quot; Justo&#x27;s question is the one that decides the shape of the proposal: are the MIDs theirs or Solidgate&#x27;s? ✅</li>
+<li><strong>The second orchestrator is the volume that moves first.</strong> &quot;A small team, a small gateway, they don&#x27;t always have the resources. If something breaks it takes them a lot of time to fix, and that causes approval rate drops and billing problems. If we were looking to transfer, that would probably be from them.&quot; ✅</li>
+<li><strong>They want their own TRID.</strong> Reason given: &quot;we just like to be secure, owning those tokens, it&#x27;s our responsibility and we are flexible.&quot; Legal is checking readiness; they do not vault tokens on their side today. Jarrett: Yuno is a certified token requestor, a merchant TRID takes about a week, tokens are portable as a batch file to a new requestor. ✅</li>
+</ol>
+<h3>Three hooks, in priority order</h3>
+<p><strong>Hook 1: turn &quot;performance&quot; into a written scale-up rule.</strong> Volume follows performance, so define performance with them: approval rate by market and BIN, latency, cost per transaction, chargeback rate, against a baseline from their current reports, over a fixed window. Ask for two to three months of approvals and declines by geo and PSP under the NDA. Without a baseline nothing can be measured and the ramp stays a promise.</p>
+<p><strong>Hook 2: monitors with automatic redistribution are the answer to the second orchestrator&#x27;s failure mode.</strong> Their pain is slow reaction when something breaks. Yuno detects the failure from the error responses, bypasses the provider, keeps one percent of traffic to test it, and restores the routing when it recovers. German said it on the call: &quot;your approval rates will never be affected by outages.&quot; Position Yuno as the destination for that volume, not a third of an experiment.</p>
+<p><strong>Hook 3: new markets are greenfield.</strong> LatAm is the stated interest; Korea and Africa are on the list; &quot;many regions we are not processing to our full capacity.&quot; Pix, Pix Automático, UPI and UPI Autopay already run on Solidgate, so the argument for new markets is new rails and local acquiring through one connection, not migration.</p>
+<h3>THE objection they will raise, and the answer</h3>
+<blockquote>Dzmitry, P&amp;L first: &quot;$9,000 for 20,000 transactions is $0.45 each. That is expensive for month one.&quot;</blockquote>
+<p>The band is set by what they actually process, not by the calendar. Month one is the only month above $0.30. By month four they are at $0.165, by month seven at $0.10. Year 1 lands at $0.12 all-in with every connector, KAM and TAM included, and above 150,000 every extra transaction is five cents. If they push: on their own curve the standard structure costs more in year 1. Do not move the fully ramped $15,000 yourself; Sean decides live if anything moves.</p>
+<h3>The ask</h3>
+<p>The ten inputs answered, the products confirmed, the contracting entity named, and a date for the written proposal that German then meets.</p>
+<h3>Rapport opener</h3>
+<p>They went through the sandbox and liked it (&quot;intuitively understandable,&quot; Tatsiana). Thank them for the ramp curve too: few prospects send a month-by-month plan unprompted, and the proposal is built on it.</p>
+</section>
+<section><h2>2. Who is in the room</h2>
+<div class="table-wrap"><table><thead><tr><th>Name</th><th>Role</th><th>Side</th><th>Status</th></tr></thead><tbody>
+<tr><td>Tatsiana Hubarevich (Gubarevich)</td><td>Payment Manager, group. The operator and champion; writes every email; asked every question so far</td><td>Appmaking</td><td>Agreed to the short call</td></tr>
+<tr><td>Dzmitry Katsiushchyk</td><td>P&amp;L owner in the room. Gave the ramp and the &quot;profitability&quot; framing; decides whether $15,000 a month makes sense</td><td>Appmaking</td><td>On both calls</td></tr>
+<tr><td>German Tatis</td><td>BDM NA, runs the deal</td><td>Yuno</td><td></td></tr>
+<tr><td>Jarrett Falasco</td><td>Senior Sales Engineer, ran the demo and the technical answers</td><td>Yuno</td><td>Optional for the short call</td></tr>
+<tr><td>Joaquin Mann</td><td>BDM NA, joined the team the week of September 7, observing</td><td>Yuno</td><td>Optional</td></tr>
+<tr><td>Sean Calabro</td><td>General Manager NA. Wants timelines and markets, routing and partner strategy, subscriptions and reconciliation answered</td><td>Yuno</td><td>Not on the short call; reads the outcome</td></tr>
+</tbody></table></div>
+<p><strong>How to read Tatsiana:</strong> precise and procedural. She asked about RDR alongside Ethoca, whether TC40 reports are customizable, and how long an own TRID takes. She is checking that Yuno&#x27;s answers survive contact with her legal and finance teams. Give her exact scopes and dates, not adjectives.</p>
+<p><strong>How to read Dzmitry:</strong> he speaks when the topic is money or performance. He owns the &quot;as soon as we find what works we give you more&quot; logic. Show him the unit-cost curve and the scale-up rule.</p>
+<h3>Relationship timeline</h3>
+<div class="table-wrap"><table><thead><tr><th>Date</th><th>Event</th></tr></thead><tbody>
+<tr><td>Sep 2</td><td>Phase 1 provider list confirmed in writing: Stripe, Ecompay, Unlimit, Airwallex, Shift4, Payabl, NMI, plus one unclear</td></tr>
+<tr><td>Sep 4</td><td>Call 1, 44 min. Subscription business, 95% web. Two orchestrators, Yuno as third layer. Recap sent with NDA</td></tr>
+<tr><td>Sep 8</td><td>Tatsiana sends the ramp curve, asks for a TC40/SAFE sample and whether Yuno introduces merchants to banks</td></tr>
+<tr><td>Sep 10</td><td>Tatsiana chases the pricing: &quot;Will you be able to share the pricing this week?&quot;</td></tr>
+<tr><td>Sep 14</td><td>German answers TC40/SAFE, TRID, Ethoca and the provider list by email</td></tr>
+<tr><td>Sep 15</td><td>Call 2, 47 min. Answers reviewed, ramp discussed, full dashboard demo. Proposal not shown. Short call agreed</td></tr>
+<tr><td>Next</td><td>Proposal inputs call, then the written proposal on September 17 or 18</td></tr>
+</tbody></table></div>
+<p><strong>Implication:</strong> this is the third conversation and the fourth time pricing is on the table. Every question in this brief builds on what they already said; nothing below re-asks what the emails or the two calls answered.</p>
+</section>
+<section><h2>3. What the September 15 call established</h2>
+<div class="table-wrap"><table><thead><tr><th>Topic</th><th>What they said</th><th>Where</th></tr></thead><tbody>
+<tr><td>Total volume</td><td>About 500,000 transactions in August 2026 across all providers</td><td>15:41</td></tr>
+<tr><td>Ramp driver</td><td>Performance. They test which transactions work better at Yuno and move more as they find it. &quot;We do have big volumes at the moment&quot;</td><td>14:30</td></tr>
+<tr><td>Solidgate</td><td>No written minimum, cheaper with volume, so they concentrate volume there. Justo: Solidgate is in the money flow with almost all the flow</td><td>16:11</td></tr>
+<tr><td>Second orchestrator</td><td>Small team and gateway, slow fixes, approval drops and billing problems. Any migration starts there</td><td>17:48</td></tr>
+<tr><td>One PSP through two orchestrators</td><td>They want to use the same bank (Unlimit was the example) through the current orchestrator and through Yuno. Jarrett: possible with the same credentials; the cost is reconciliation and duplicate alerts; a separate MID through the Unlimit partnership is an option</td><td>21:20</td></tr>
+<tr><td>Coverage</td><td>LatAm is the interest; Korea and Africa are being looked at. Pix, Pix Automático, UPI and UPI Autopay already integrated on Solidgate</td><td>20:21, 23:50</td></tr>
+<tr><td>3DS</td><td>Each orchestrator&#x27;s native 3DS</td><td>28:27</td></tr>
+<tr><td>Tokens</td><td>No tokens vaulted on their side; both providers are PCI. Own TRID wanted for security, ownership and flexibility; legal checking requirements</td><td>5:34 to 13:25</td></tr>
+<tr><td>Alerts</td><td>Jarrett: Ethoca and Visa RDR supported, pre-chargeback notification project under way. ⚠️ Verifi unconfirmed internally on September 14; verify before writing it</td><td>3:06</td></tr>
+<tr><td>TC40 and SAFE</td><td>Jarrett: customizable if the data point is in the file; TC40 already normalized. ⚠️ Internally only dLocal delivers it today (SFTP, Leo); none of their phase 1 providers confirmed</td><td>4:17</td></tr>
+<tr><td>Sandbox</td><td>Their team went through it and liked it</td><td>1:52, 25:21</td></tr>
+<tr><td>Entity and markets</td><td>Cyprus entity. Global sales, strongest in the US and Europe, strong interest in LatAm where they have few connections (German to Justo)</td><td>WhatsApp</td></tr>
+<tr><td>Demo covered</td><td>Routing conditions, decline groups, retries, failover, traffic split for commitments and A/B tests, smart routing on conversion, latency and cost, monitors with automatic redistribution, checkout builder, tenant structure. Subscriptions shown on call 1</td><td>25:32 to 46:14</td></tr>
+<tr><td>Bank introductions</td><td>Tatsiana&#x27;s September 8 question. Not touched on September 15. Still open</td><td>Email Sep 8</td></tr>
+<tr><td>Next steps</td><td>Short call to close the proposal inputs; shared Slack channel</td><td>46:14</td></tr>
+</tbody></table></div>
+</section>
+<section><h2>4. The internal asks this call must resolve</h2>
+<div class="table-wrap"><table><thead><tr><th>From</th><th>The ask</th><th>Why it matters</th><th>Resolved by</th></tr></thead><tbody>
+<tr><td>Sean</td><td>Timelines: when do they want to go live, and which markets come first</td><td>Sets phase 1 scope and the &quot;expected months&quot; on the proposal</td><td>Block A</td></tr>
+<tr><td>Sean</td><td>What drives the routing strategy once live; the payments partner strategy</td><td>Decides whether Yuno is the routing brain or extra rails, and which providers sit behind it</td><td>Block B</td></tr>
+<tr><td>Sean</td><td>Subscriptions and reconciliation: in house, or something Yuno can support</td><td>Decides whether standalone modules enter the proposal</td><td>Block C</td></tr>
+<tr><td>Justo</td><td>Are the MIDs theirs or Solidgate&#x27;s? Where do they have entities and where do they sell?</td><td>If the MIDs are Solidgate&#x27;s, Yuno has to onboard them with processors and the proposal includes that plan. If the MIDs are theirs, it is connection and credentials</td><td>Block B, first six questions</td></tr>
+<tr><td>German</td><td>Which Yuno capabilities they are willing to use</td><td>Turns &quot;Pending scoping&quot; lines into priced lines, or drops them</td><td>Section 5 checklist</td></tr>
+<tr><td>German</td><td>The largest possible volume</td><td>150K is 30% of what they process. The lever is a written performance rule plus greenfield markets through Yuno</td><td>Block E</td></tr>
+</tbody></table></div>
+</section>
+<section><h2>5. Capabilities checklist: what they would actually use</h2>
+<div class="table-wrap"><table><thead><tr><th>Capability</th><th>What we know</th><th>Ask</th><th>If yes, in the proposal as</th></tr></thead><tbody>
+<tr><td>Routing rules (conditions, BIN, metadata)</td><td>Demoed, understood</td><td>Will you manage routing yourselves in the dashboard, or want us to configure phase 1 with you?</td><td>Included</td></tr>
+<tr><td>Smart routing</td><td>Demoed; today they hand-tune geo and OS splits</td><td>Would you enable smart routing on a share of traffic from day one? Which share?</td><td>Included</td></tr>
+<tr><td>Monitors with automatic redistribution</td><td>&quot;It looks cool&quot;; answers the second orchestrator&#x27;s pain</td><td>Which thresholds and alert channels do you want?</td><td>Included</td></tr>
+<tr><td>Failover, retries, decline groups</td><td>Demoed</td><td>What retry logic do you have today that we should replicate or improve?</td><td>Included</td></tr>
+<tr><td>Decoupled 3DS</td><td>Today each orchestrator&#x27;s own 3DS</td><td>Would you move 3DS to Yuno for cross-provider retries without re-authentication?</td><td>Included</td></tr>
+<tr><td>Network tokens under their own TRID (passthrough)</td><td>Strong interest; legal reviewing; about a week per Jarrett</td><td>Own TRID from day one, for all cards or renewals first?</td><td>Pending scoping (vault and tokens)</td></tr>
+<tr><td>Agnostic vault and proxy (tokens usable outside Yuno)</td><td>They asked for portability; no vault on their side today</td><td>Which providers outside Yuno would consume the tokens?</td><td>Pending scoping</td></tr>
+<tr><td>Subscriptions engine, standalone</td><td>Shown on call 1; where billing lives today is unconfirmed</td><td>Would you run a segment on our engine?</td><td>Pending scoping</td></tr>
+<tr><td>Reconciliation</td><td>Normalized reports explained</td><td>Standalone reconciliation, for which sources?</td><td>Pending scoping</td></tr>
+<tr><td>Reports (approval by provider, country, BIN; export)</td><td>Part of the dashboard</td><td>Which views does Dzmitry need for the bake-off?</td><td>Included</td></tr>
+<tr><td>TC40 and SAFE, bank and fraud rates per PSP</td><td>Customizable per Jarrett; internally dLocal only today</td><td>Launch requirement on your phase 1 providers, or nice to have once live?</td><td>Scoped provider by provider</td></tr>
+<tr><td>Verifi RDR and Ethoca</td><td>Ethoca confirmed; Verifi to verify</td><td>Alerts through Yuno for Yuno traffic only, or for everything?</td><td>Pending scoping, priced separately, never improvised</td></tr>
+<tr><td>Fraud engine and risk conditions</td><td>Not discussed</td><td>Who does antifraud today? Interested in risk conditions on routes?</td><td>Pending scoping</td></tr>
+<tr><td>Checkout: full SDK, lite SDK or server to server</td><td>They own the quiz funnel UI</td><td>Which path, who builds it, when?</td><td>Defines the integration</td></tr>
+<tr><td>Tenant structure (accounts per region, brand or entity)</td><td>Explained</td><td>How do you want data split?</td><td>Included</td></tr>
+<tr><td>New payment methods and APMs</td><td>Pix and UPI live; gaps in LatAm, Korea, Africa</td><td>Which APMs per priority market for phase 1?</td><td>Included; connectors confirmed in writing</td></tr>
+<tr><td>Nova and Payments Concierge</td><td>Promised since September 4, not yet shown</td><td>Do you want a 20 minute session?</td><td>Separate session</td></tr>
+<tr><td>Marketplaces, installments</td><td>Not their model</td><td>Do not ask</td><td>Out</td></tr>
+</tbody></table></div>
+</section>
+<section><h2>6. The proposal: current model and what this call changes</h2>
+<p><strong>Current model (deck &quot;Proposal - AppMaking + Yuno&quot;, slide 13):</strong> a platform fee plus a rate per successful transaction, both stepping by the month&#x27;s successful transactions: $5,000 + $0.20 (0 to 25K) · $5,500 + $0.12 (25,001 to 50K) · $6,500 + $0.065 (50,001 to 100K) · $7,500 + $0.05 (100,001 to 150K) · $7,500 + $0.05 per transaction above 150K. Declines free, no setup fee. Fully ramped $15,000 a month, $180,000 a year. On their curve: months 1 to 7 $80,575 for 520,000 transactions; year 1 $155,575 for about 1.27M ($0.12). The September 10 fixed-fee draft is a backup, not what is presented.</p>
+<ul>
+<li><strong>Deck fixes before it is shown (brief of September 15, sections 4.3 and 4.7):</strong> &quot;Expected&quot; column becomes Month 1 / Months 2 to 3 / Months 4 to 5 / Months 6 to 7 / Month 8 onward. &quot;What it means for AppMaking&quot; becomes Months 1 to 7 $80,575 (520k, $0.155), Months 8 to 12 $75,000 (750k, $0.10), Year 1 $155,575 (about 1.27M, $0.12). Slide 11: remove the two FlightHub bullets.</li>
+<li><strong>The band above 150,000 now matters.</strong> With 500,000 a month in play, show what a larger share costs: 250,000 transactions is $20,000 a month ($0.08); 500,000 is $32,500 a month ($0.065). This is the number behind the target-share question in Block E.</li>
+<li><strong>Scale-up criteria in writing.</strong> Their volume follows performance. Convert the answer to Top 10 question 5 (metric, baseline, window) into a clause in the proposal.</li>
+<li><strong>Onboarding with processors.</strong> If the MIDs are Solidgate&#x27;s, the proposal includes the plan to open their own MIDs with each phase 1 provider and the timelines. If the MIDs are theirs, it is connection and credentials only.</li>
+<li><strong>Standalone modules</strong> enter only if they say yes in section 5, and only after the calculator is run for each. Everything else stays &quot;Pending.&quot;</li>
+<li><strong>Contracting entity and term.</strong> Appmaking LTD or Appsella LTD (Butrym signs). Ask which term they would sign: 12, 24 or 36 months. Billing in USD.</li>
+<li><strong>Date.</strong> Commit to Thursday, September 17 or Friday, September 18 for the written proposal, and meet it.</li>
+</ul>
+</section>
+<section><h2>7. Be ready for</h2>
+<div class="table-wrap"><table><thead><tr><th>They ask</th><th>You answer</th></tr></thead><tbody>
+<tr><td>&quot;Can you send the pricing in writing after this call?&quot;</td><td>Yes: the slide plus a one-page summary of the rules, on the date agreed.</td></tr>
+<tr><td>&quot;What is the contract term?&quot;</td><td>Proposed in the written proposal once products are confirmed. Ask which term works for them; do not improvise one.</td></tr>
+<tr><td>&quot;Is $15,000 negotiable?&quot;</td><td>$15,000 fully ramped is the standard price for their size; the ramp already halves the platform fee while they grow. If they want a lower steady state, platform fee and per-transaction rate move together. Sean decides live if anything moves.</td></tr>
+<tr><td>&quot;Which providers have TC40 and SAFE today?&quot;</td><td>The ones Leo confirms. Not their phase 1 list yet. Scope together.</td></tr>
+<tr><td>&quot;Is Verifi live?&quot;</td><td>Exactly what Jarrett confirms internally, nothing more.</td></tr>
+<tr><td>&quot;Do you have Shift4 and Payabl?&quot;</td><td>Only if verified in the catalog before the call.</td></tr>
+<tr><td>&quot;Can we keep our own TRID?&quot;</td><td>Yes, passthrough: they register as token requestor and send their token requestor ID by API. Confirm it works with their phase 1 PSPs.</td></tr>
+<tr><td>&quot;Do you introduce merchants to banks?&quot;</td><td>Yuno has commercial relationships with the acquirers and PSPs on its catalog and can introduce the merchant to its contacts; the merchant contracts directly. Yuno is not a paid referrer, takes no part in underwriting and is not in the flow of funds. Ask which markets, which entity and what volume. Do not promise a formal program unless Sean agrees one.</td></tr>
+<tr><td>&quot;Which entity should contract?&quot;</td><td>Their call: Appmaking LTD or Appsella LTD. Butrym signs for the Cyprus entities.</td></tr>
+<tr><td>&quot;How fast can phase 1 go live?&quot;</td><td>Connections come up in days once credentials exist; the integration is one API and web SDK. Only quote a timeline Jarrett stands behind.</td></tr>
+</tbody></table></div>
+<p><strong>Landmines:</strong> never &quot;you don&#x27;t have an orchestrator&quot; or &quot;your PSP shortlist is open&quot;; never name Truegate; never include Adyen, JPMorgan or Checkout.com; never promise consolidated TC40/SAFE reports; never quote subscriptions, vault or reconciliation prices before the calculator is run; never assert the Wowmaking name or the four-entity group map; no em-dashes in anything written.</p>
+</section>
+</div><div class="zone live"><p class="zone-eyebrow">Live zone · notes start here</p>
+<section><h2>8. Agenda (30 minutes)</h2>
+<div class="table-wrap"><table><thead><tr><th>Min</th><th>Block</th><th>Notes</th></tr></thead><tbody>
+<tr><td>0 to 3</td><td>Open: thank them for the sandbox feedback and the ramp curve; confirm the goal is to close the inputs for the written proposal</td><td><span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></td></tr>
+<tr><td>3 to 9</td><td>Block A: timelines and priority markets</td><td><span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></td></tr>
+<tr><td>9 to 17</td><td>Block B: money flow and MIDs first, then routing after go-live</td><td><span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></td></tr>
+<tr><td>17 to 22</td><td>Block C: subscriptions and reconciliation</td><td><span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></td></tr>
+<tr><td>22 to 26</td><td>Section 5 checklist: which capabilities they will use</td><td><span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></td></tr>
+<tr><td>26 to 30</td><td>Close: contracting entity, Slack channel, date for the written proposal</td><td><span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></td></tr>
+</tbody></table></div>
+</section>
+<section><h2>9. Discovery questions</h2>
+<h3>Top 10, if the call is short</h3>
+<ol start="1">
+<li>When do you want the first live transaction, and what has to be true on your side first (legal on TRID, dev capacity, signature)? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Rank your phase 1 markets: US, EU (which countries), LatAm (which), Japan, Korea, Africa. <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Are the MIDs in your name or Solidgate&#x27;s? Which providers do you contract directly today? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Of the roughly 500,000 monthly transactions, how are they split between Solidgate, the second orchestrator and direct integrations? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>What performance result would make you move more volume to Yuno, measured against which baseline and over what window? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Once live, who decides routing and on what rules? Would you let smart routing run on a share of traffic? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Where does subscription logic live today (plans, trials, renewals, retries)? Would you run a segment on Yuno&#x27;s engine? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>How do you reconcile across Solidgate, the second orchestrator and the app stores today? Who does it and with what tools? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Which integration path: full SDK, lite SDK or server to server? Who builds it and when? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>What would it take to move the second orchestrator&#x27;s full volume to Yuno, and when? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+</ol>
+<h3>Block A. Timelines and priority markets (Sean, point 1)</h3>
+<ol start="11">
+<li>What is your target date for the first live transaction? Is there an internal quarter or a business event driving it? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>What is on the critical path on your side: legal review for your own TRID, engineering capacity, procurement or contract signature? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Month 1 in your curve: is that the first month live, or the first month after integration is complete? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>How long do you expect integration and testing to take? Who is the technical owner on your side? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Do you have any commitment with Solidgate or another provider that gates when you can start moving volume? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Is there seasonality, for example Q4 user acquisition peaks, that affects when you want to be live? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Who takes the final decision and who else needs to approve? When does legal (Butrym) come in? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>For each priority market, which payment methods must be live on day one: cards, Apple Pay, Google Pay, PayPal, Pix, UPI, local cards? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Is the 150K curve Atrix only, or across brands (AstroSoul, Astroline, others)? Which funnels go first? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>For LatAm, which countries specifically, and do you plan local entities and local acquiring, or cross border from Cyprus? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Korea and Africa: a 2027 plan, or phase 1? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Which entity will contract and process (Appmaking LTD, Appsella LTD, others)? Who signs? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+</ol>
+<h3>Block B. Money flow, MIDs and routing strategy (Sean, point 2, and Justo)</h3>
+<ol start="23">
+<li>Are the merchant IDs with your acquirers in your name or in Solidgate&#x27;s name? Provider by provider: Stripe, Unlimit, Ecompay, Airwallex, Shift4, Payabl, NMI, Nuvei, Maverick, Checkout.com. <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Which providers do you contract directly, with your own contract and settlement, versus through Solidgate as aggregator or merchant of record? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Where does settlement land per provider: which entity, which currency, which bank? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Which providers are contracted but not live (Payabl), and why? Which would you onboard new for phase 1? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>What is the exact scope and expiry of the Solidgate exclusivity? Adyen, JPMorgan and Checkout.com were mentioned. Anything else? When does the Solidgate contract renew? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>If the MIDs are Solidgate&#x27;s: which ones could you open in your own name, and how fast? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Bank introductions (your September 8 question): which markets do you need new acquiring in, with which entity, what volume would you put on a new acquirer, and what happened with previous acquirers? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Who owns routing decisions today and how often do rules change? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>What drives routing today in Solidgate and in the second orchestrator: geo, OS, BIN, cost, approval rate, provider commitments? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Can you share two or three months of approvals and declines by geo and PSP under the NDA, so the scale-up rule has a baseline? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>What share of each market do you plan to send to Yuno at the start, and what metric and window would scale it up? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Which providers would sit behind Yuno, and which stay only on Solidgate? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>One PSP through two orchestrators: which providers and markets? Do you want a separate MID via our Unlimit partnership? Who reconciles the two streams? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>What retry and decline logic exists today? Do you retry across providers? Do you carry network transaction IDs for MITs? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Would you move 3DS to Yuno&#x27;s decoupled 3DS so retries can cross providers without re-authentication? Any SCA exemption strategy in the EU? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Monitors: what approval rate thresholds would you set, and where do alerts go (email, OpsGenie, Slack)? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Partner strategy going forward: local acquirers in LatAm, Korea or Africa through Yuno connections, or candidates you already have? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Second orchestrator: how much volume is on it, what is the timeline to phase it out, and what needs to be true for Yuno to take that volume? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+</ol>
+<h3>Block C. Subscriptions and reconciliation (Sean, point 3)</h3>
+<ol start="41">
+<li>Where does the subscription logic live today: your own billing system, Solidgate&#x27;s subscription product, the second orchestrator, something else? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Which features are handled where: plans, trials, phased pricing, per-country pricing, renewals, retries, proration, cancellations? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>What share of the roughly 500,000 monthly transactions are renewals (merchant initiated) versus first payments? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>How does approval on renewals compare with first payments? Do you use account updater or network tokens on renewals today? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Where are cards vaulted today, how many cards on file, and under whose TRID are the current network tokens? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>How do you handle failed renewals: retry schedule, dunning emails, downgrade? Who owns that logic, and how much revenue do you lose to failed renewals per month? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Would you run a segment on Yuno&#x27;s subscription engine (a new brand, a new market, the web funnel)? What would be must-have for that? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Is Nova or a retry optimization layer interesting for renewal recovery? Do you want a session on it? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>How do you reconcile today across Solidgate, the second orchestrator and the app stores? Spreadsheets, in-house tool, third party? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Who does it and how much time does it take per month? What breaks most often? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Which reports do you need and how often: transactional, settlement, fees, chargebacks, TC40 and SAFE, bank and fraud rates per PSP? Which data points must be in them, and who consumes them? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Would you use Yuno reconciliation as a standalone module, and for which sources: Yuno only, or also Solidgate and the second orchestrator? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Who provides Verifi and Ethoca alerts today, through which descriptor, how many alerts a month, and what do you pay? Alerts through Yuno for Yuno traffic only, or for everything? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Who responds to disputes today and with what tool? How many per month? Any MID near a Visa or Mastercard monitoring threshold? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+</ol>
+<h3>Block D. Integration path</h3>
+<ol start="55">
+<li>Full SDK, lite SDK or server to server? Who builds it, how many developers, and when can they start? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>How do you want the tenant structure: accounts by brand, by region, by entity? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Who does antifraud today, in house or a provider? Interested in risk conditions on routes? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+</ol>
+<h3>Block E. Getting to the largest possible volume</h3>
+<ol start="58">
+<li>Map the roughly 500,000: by provider, by region, by brand, and first payments versus renewals. <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Solidgate price breaks: at what volumes does your per-transaction cost drop, and how much volume do you need to keep there to hold your current tier? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>If performance is good by month 7, what does month 12 look like? Would you commit to a target share, for example half of your volume, contingent on agreed performance results? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Would a price that drops per transaction as your volume grows change how fast you move volume to us? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>New markets (LatAm, Korea, Africa) are greenfield: would you route those through Yuno from day one? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+<li>Anything contractual or technical that caps the share of volume you could send to Yuno in year 1? <span class="notes"><span class="notes-label">Notes</span><span class="notes-rule"></span></span></li>
+</ol>
+</section>
+<section><h2>10. Post-meeting checklist</h2>
+<ul>
+<li>Same-day recap by email: the inputs closed, the products they want, the entity, and the proposal date, with owners and dates for anything still open (Verifi, TC40 scope by provider, Shift4 and Payabl, bank introductions, Unlimit MID).</li>
+<li>Fix slide 13 and slide 11; run the calculator for Appmaking and for any standalone module they said yes to.</li>
+<li>Send the written proposal on the committed date.</li>
+<li>Deal Desk framing for Sean: ARR $180,000 steady state, $155,575 year 1, close date, decision maker, blocker, the ask.</li>
+<li>Log the outcome and new facts; update memory: MIDs owner, volume split, products selected, contracting entity, reaction to $15,000, next step date.</li>
+</ul>
+<h3>Sources</h3>
+<ul>
+<li>Google Meet transcript, &quot;AppMaking + Yuno,&quot; September 15, 2026, 47 min (German, Jarrett Falasco, Joaquin Mann, Sean Calabro; Dzmitry Katsiushchyk, Tatsiana Hubarevich).</li>
+<li>Sean Calabro, written feedback after the September 15 call (three points to understand).</li>
+<li>Justo Benetti, WhatsApp with German, September 15, 2026 (money flow, MIDs, Piotr).</li>
+<li>Tatsiana Gubarevich, email of September 8, 2026 (ramp curve, TC40/SAFE sample, bank introductions) and September 10 (pricing chase).</li>
+<li>data/research/appmaking-meeting-brief-2026-09-15.md (v2, Proposal Debrief), Deals/Appmaking/appmaking-qa-and-discovery-2026-09-15.md, Deals/Appmaking/appmaking-open-questions-2026-09-14.md, Deals/Appmaking/appmaking-discovery-questions-2026-09-15.md.</li>
+<li>Deck &quot;Proposal - AppMaking + Yuno,&quot; Google Slides, 18 slides, PDF in Deals/Appmaking.</li>
+</ul>
+</section>
+</div></div>
