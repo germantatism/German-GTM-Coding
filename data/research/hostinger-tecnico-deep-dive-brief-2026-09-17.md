@@ -7,7 +7,7 @@
 
 **Purpose:** internal alignment on what we present, what we focus on and how we run it. Built from the Sep 3 call transcript, the RFP answers, the Sep 2 and Sep 15 internal syncs, Gmail and docs.y.uno. Deeper material: [Sep 3 meeting brief](https://docs.google.com/document/d/1CqI5ig5Z-K4iE0uPrLol6-aab49BRiIPh89Tu8YYYCU/edit), [Sep 15 sync brief](https://docs.google.com/document/d/1dawyrxuyxnN3lGYGnIYzfEeGHq6GqMKUyZPpDKAejPI/edit), [Sep 3 call in Gong](https://app.gong.io/call?id=8546116675641297982).
 
-Labels: ✅ verified · ⚠️ unverified, roadmap or internal only · 🔍 open, needs an owner
+Labels: ✅ verified · ⚠️ unverified, roadmap or internal only · ❓ open, needs an owner
 
 ---
 
@@ -52,7 +52,7 @@ Labels: ✅ verified · ⚠️ unverified, roadmap or internal only · 🔍 open
 - History: talks with the previous Europe GM (Miguel) early in 2025 went nowhere; Piotr's messages in June 2025 went unanswered. At MPE Berlin (end of March 2026) they told him: "we are so happy with ProcessOut, we are not shopping for any solution, but if you can help us establish connections in India, let's talk." ✅ **ProcessOut (Checkout.com) is the third-party layer Paulius did not name.**
 - His read: ProcessOut is strong in Europe and the US and likely weaker in APAC. India is the wedge.
 - As a Hostinger customer: everything is tokenized and auto-renewal is effectively forced, including domains, charged to card or PayPal.
-- On Thursday he stays silent unless history helps. He invited TJ because a Yuno engineer based in Vilnius matters to a Lithuanian merchant ("it's really important for them to have somebody local"). ⚠️ Piotr calls TJ VP of Engineering; the Slack directory says Engineering Management Consultant. 🔍 Confirm the title before we introduce him.
+- On Thursday he stays silent unless history helps. He invited TJ because a Yuno engineer based in Vilnius matters to a Lithuanian merchant ("it's really important for them to have somebody local"). ⚠️ Piotr calls TJ VP of Engineering; the Slack directory says Engineering Management Consultant. ❓ Confirm the title before we introduce him.
 - Dirk's question stayed open: **"there's a reason they're looking for alternatives, what are those reasons?"** We have never asked. It goes in the first five minutes.
 
 ### Their stack as we know it
@@ -123,8 +123,8 @@ Ranked by weight in the RFP plus what Paulius chose to spend the call on.
 | Topic | Say | Do not say | Status |
 |---|---|---|---|
 | Retry strategies (subscriptions engine) | Three per plan: DEFAULT fixed schedule (5h, 12h, 24h, 36h, 48h, 96h), SMART (ML timing on decline reason, country, issuer, provider), CUSTOM_SCHEDULE (per-attempt delay from seconds to 7 days). Stop on hard decline. A/B split | "Unlimited retries", "5 in production" | docs.y.uno ✅ (cap is 6 in production) |
-| Retry timing for charges his own billing engine sends | 🔍 Dirk confirms before Thursday: does SMART or CUSTOM_SCHEDULE timing apply to merchant-scheduled MITs, or only to cycles the engine creates? Until then the safe line is: real-time fallback across PSPs on every request; time-shifted retries are a feature of our subscription engine that fits his in-house scheduler when he moves billing | "We pick the moment" for standalone charges without confirmation | 🔍 open |
-| Subscriptions engine, payment methods | 🔍 Confirm with Product (Daniel Lozano) before stating. Our written RFP answer (Aug 6) said cards only; the Sep 2026 launch deck lists cards, Apple Pay, Google Pay, PayPal and Pix Automático live | "UPI Autopay inside the engine" (said on the Sep 3 call, not in the launch deck) | ⚠️ conflicting internal sources |
+| Retry timing for charges his own billing engine sends | ❓ Dirk confirms before Thursday: does SMART or CUSTOM_SCHEDULE timing apply to merchant-scheduled MITs, or only to cycles the engine creates? Until then the safe line is: real-time fallback across PSPs on every request; time-shifted retries are a feature of our subscription engine that fits his in-house scheduler when he moves billing | "We pick the moment" for standalone charges without confirmation | ❓ open |
+| Subscriptions engine, payment methods | ❓ Confirm with Product (Daniel Lozano) before stating. Our written RFP answer (Aug 6) said cards only; the Sep 2026 launch deck lists cards, Apple Pay, Google Pay, PayPal and Pix Automático live | "UPI Autopay inside the engine" (said on the Sep 3 call, not in the launch deck) | ⚠️ conflicting internal sources |
 | Subscriptions engine, results | Externally: the published 7% uplift and 30% recovered revenue only | The internal launch deck numbers (16 merchants, 135K active subscriptions, 86% per cycle after retries) unless Product clears them for external use | ⚠️ internal only |
 | Account updater | Visa and Mastercard; asynchronous; vaulted token and fingerprint stay stable; enrollment.update webhook; registration up to 10 working days | Amex | docs.y.uno ✅ |
 | Network tokens | Visa and Mastercard live via Visa Token Service and Mastercard's network token API; TRID: theirs or ours | Amex live. Our RFP 3.1 answer lists Amex; Antoine (Sep 2): not true yet, months away with the scheme | ⚠️ correct if asked |
@@ -134,7 +134,7 @@ Ranked by weight in the RFP plus what Paulius chose to spend the call on.
 | Webhooks | At-least-once, seven attempts out to 96 hours, HMAC and OAuth2, unified event model | Delivery logs visible in the payment screen | RFP ✅ (7.1 is a no) |
 | Pinless debit | Acquirer capability; Yuno segments debit traffic and routes it to connections where it is enabled | A Yuno-side debit switch | RFP ✅ |
 | Backend SDKs | REST API only, by design; Postman collection | Kotlin, Java or Node server SDKs | RFP ✅ |
-| Data warehouse export (4.4) | 🔍 Real answer needed: Reporting API plus which connectors exist, if any | "Confirm with your account team" again | 🔍 open |
+| Data warehouse export (4.4) | ❓ Real answer needed: Reporting API plus which connectors exist, if any | "Confirm with your account team" again | ❓ open |
 | India cards | RBI card-on-file tokens are issued by the networks and issuers, not by the acquirer, so a network token is not tied to Razorpay or BillDesk | | ⚠️ confirm with Product for the MIT flow on both |
 | Interchange and scheme fee effect of network tokens and 3DS | ⚠️ Antoine quoted 5.5 bps (Mastercard) and 7.5 bps (Visa) reductions on Sep 2. Not verified against scheme bulletins; do not quote in writing | | ⚠️ |
 | Infrastructure | Regions: two in the US, one EU, one APAC, KSA, India; 24/7 NOC | | Justo on the call ✅ |
@@ -145,13 +145,13 @@ Ranked by weight in the RFP plus what Paulius chose to spend the call on.
 
 | Item | Owner | Status Sep 15 |
 |---|---|---|
-| Sandbox with Stripe, Adyen and Checkout.com test connections; one vaulted card with a network transaction ID charged on two of them; one routing rule, one fallback, one Monitor; a PCI proxy request ready; a report with the three columns | Dirk | 🔍 |
-| The three matrices (network transaction ID 2.1, network token 3.5, wallet MIT 13.3) scoped to Stripe, Adyen, Checkout.com, Razorpay, BillDesk, as documents he can keep | Dirk with Solutions | 🔍 |
-| Retry-timing answer for merchant-scheduled charges (section 5) | Dirk | 🔍 committed Sep 3, no answer visible |
-| Subscription engine facts: payment methods live, and whether engine results can be quoted | German with Daniel Lozano | 🔍 |
-| Data warehouse connectors (4.4) and routing audit trail (6.3) | Dirk | 🔍 |
-| India: Razorpay and BillDesk readiness for UPI Autopay recurring and token migration; NPCI mandate portability live date | Justo via India GM; Dirk said he would look at India | 🔍 committed Sep 3, nothing sent |
-| Vault standalone material "full breadth and depth" | Justo | 🔍 committed Sep 3, nothing sent. The demo can replace it if the proposal follows within a week |
+| Sandbox with Stripe, Adyen and Checkout.com test connections; one vaulted card with a network transaction ID charged on two of them; one routing rule, one fallback, one Monitor; a PCI proxy request ready; a report with the three columns | Dirk | ❓ |
+| The three matrices (network transaction ID 2.1, network token 3.5, wallet MIT 13.3) scoped to Stripe, Adyen, Checkout.com, Razorpay, BillDesk, as documents he can keep | Dirk with Solutions | ❓ |
+| Retry-timing answer for merchant-scheduled charges (section 5) | Dirk | ❓ committed Sep 3, no answer visible |
+| Subscription engine facts: payment methods live, and whether engine results can be quoted | German with Daniel Lozano | ❓ |
+| Data warehouse connectors (4.4) and routing audit trail (6.3) | Dirk | ❓ |
+| India: Razorpay and BillDesk readiness for UPI Autopay recurring and token migration; NPCI mandate portability live date | Justo via India GM; Dirk said he would look at India | ❓ committed Sep 3, nothing sent |
+| Vault standalone material "full breadth and depth" | Justo | ❓ committed Sep 3, nothing sent. The demo can replace it if the proposal follows within a week |
 | Revolut Pay and Mastercard funded-card notification info | Justo | Low priority: Paulius said Revolut is small for them |
 | NDA on Hostinger's paper | Paulius | Unanswered since the Sep 9 reminder. Ask at the open |
 | Piotr's notes from the March 2026 meeting in Berlin | Piotr | Promised Sep 15 |
