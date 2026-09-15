@@ -1,6 +1,6 @@
 # Prompt Claude Design: AppMaking + Yuno, update the pricing slide to pricing v3 (2026-09-15)
 
-Target: the deck **"Proposal - AppMaking + Yuno"** (18 slides, already open in the canvas). Edit **slide 13, "Proposal · Platform fee plus usage"** in place. Keep its layout, typography, card language and color system exactly as they are; only the content described below changes. Also make one small fix on slide 11. Do not touch any other slide.
+Target: the deck **"Proposal - AppMaking + Yuno"** (18 slides, already open in the canvas). Edit **slide 13, "Proposal · Platform fee plus usage"** in place. Keep its layout, typography, card language and color system exactly as they are; only the content described below changes. Do not touch any other slide.
 
 ## Why this changes
 
@@ -37,7 +37,6 @@ Give the "Fully ramped" row the highlighted treatment used for the top tier toda
 **PENDING REVIEW** (values in grey italic "Pending"):
 - Reconciliation · Pending
 - Token vault & network tokens · Pending
-- Verifi & Ethoca alerts · Pending
 - Sub-line: "Scope and pricing to be reviewed together once the phase 1 providers are set."
 
 **WHAT IT MEANS FOR APPMAKING.** Sub-line: "On the ramp you shared on September 8". Replace the current lines with exactly these:
@@ -52,15 +51,11 @@ If the slide has an "Expected" column or month labels next to the bands, set the
 
 If the slide still carries a "Minimum monthly billing" line or a contract term line, remove them. Neither has been agreed.
 
-## Slide 11 fix
-
-Remove the two bullets inherited from the FlightHub deck: "Your routing platform stays, Yuno extends it" and "Network tokens across all seven providers". Do not add replacements.
-
 ## What NOT to do
 
 - Do not keep any of the previous numbers ($5,000 + $0.20, $5,500 + $0.12, $6,500 + $0.065, $7,500 + $0.05, $15,000 fully ramped, $155,575 year 1). All are replaced.
 - Do not add a first-month-free line, a volume commitment, a 250K scenario as a condition, or a contract term. Those are conversation levers, not slide content.
-- Do not invent prices for reconciliation, token vault, network tokens, Verifi or Ethoca. They stay "Pending" with no number.
+- Do not invent prices for reconciliation, token vault or network tokens. They stay "Pending" with no number. Do not add a Verifi or Ethoca line anywhere on the slide.
 - Do not name Solidgate or any PSP on this slide.
 - Do not add claims about Appmaking's approval rates, savings or comparisons with other pricing structures.
 - Do not change, round or reformat the numbers above.
