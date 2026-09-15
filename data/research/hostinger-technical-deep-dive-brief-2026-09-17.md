@@ -1,11 +1,11 @@
-# Técnico Deep Dive Brief: Hostinger
+# Technical Deep Dive Brief: Hostinger
 
 **Thursday, September 17, 2026 · 06:00 to 06:45 COT · 14:00 Vilnius · 13:00 Amsterdam and Warsaw · 45 min**
 **Meet:** https://meet.google.com/uri-otwr-mua · Event "Hostinger + Yuno | Demo" (organizer: German)
 **Hostinger:** Paulius Lapenas, Head of Payments (accepted Sep 4).
 **Yuno:** German (lead, discovery, close) · Dirk Van Der Meulen (demo, accepted) · Piotr Sierpinski (relationship, accepted) · Tautvydas "TJ" (local presence, 10 min, pending) · Justo (India and commercial, pending) · Antoine Cathelin (declined Sep 15).
 
-**Purpose:** internal alignment on what we present, what we focus on and how we run it. Built from the Sep 3 call transcript, the RFP answers, the Sep 2 and Sep 15 internal syncs, Gmail and docs.y.uno. Deeper material: [Sep 3 meeting brief](https://docs.google.com/document/d/1CqI5ig5Z-K4iE0uPrLol6-aab49BRiIPh89Tu8YYYCU/edit), [Sep 15 sync brief](https://docs.google.com/document/d/1dawyrxuyxnN3lGYGnIYzfEeGHq6GqMKUyZPpDKAejPI/edit), [Sep 3 call in Gong](https://app.gong.io/call?id=8546116675641297982).
+**Purpose:** internal alignment on what we present, what we focus on and how we run it. Built from the Sep 3 call transcript, the RFP answers, the Sep 2 and Sep 15 internal syncs, Piotr's notes from his March and April 2026 conversations with Hostinger, Gmail and docs.y.uno. Deeper material: [Sep 3 meeting brief](https://docs.google.com/document/d/1CqI5ig5Z-K4iE0uPrLol6-aab49BRiIPh89Tu8YYYCU/edit), [Sep 15 sync brief](https://docs.google.com/document/d/1dawyrxuyxnN3lGYGnIYzfEeGHq6GqMKUyZPpDKAejPI/edit), [Sep 3 call in Gong](https://app.gong.io/call?id=8546116675641297982).
 
 Labels: ✅ verified · ⚠️ unverified, roadmap or internal only · ❓ open, needs an owner
 
@@ -25,7 +25,9 @@ Labels: ✅ verified · ⚠️ unverified, roadmap or internal only · ❓ open,
 
 | Date | What happened | Source |
 |---|---|---|
-| Apr 29 | Met in person at Stripe Sessions SF (Juan Pablo Ortega, Justo, German, Paulius). India opened the door | Calendar ✅ |
+| Late Mar | MPE Berlin: Hostinger tells Piotr they are happy with ProcessOut and not shopping, but want help establishing connections in India | Piotr ✅ |
+| Apr | Piotr follows up on Berlin: asks whether the UPI challenges they mentioned still stand, says Yuno now invests heavily in India with a local office, and sends them the India recurring payment-methods list (reproduced below) | Piotr's notes ✅ |
+| Apr 29 | Met in person at Stripe Sessions SF (Juan Pablo Ortega, Justo, German, Paulius). India opened the door again, this time with German | Calendar ✅ |
 | Jul 7 | Paulius: Q3 closed, "readiness for Q4", revisit in August or early September. Questionnaire sent Jul 8 | Gmail ✅ |
 | Aug 6 | RFP answers returned. 17 sections, titled "Questions to orchestrators" (plural: we are being compared in writing) | Gmail ✅ |
 | Sep 3 | 45 min debrief call. Paulius alone; German, Justo, Antoine, Dirk | Transcript ✅ |
@@ -46,11 +48,12 @@ Labels: ✅ verified · ⚠️ unverified, roadmap or internal only · ❓ open,
 - **Agentic.** Prioritizes stablecoin protocols (x402, Cloudflare wallet, MPP) over card rails for service businesses; already talking to Stripe on specs; open question on how to invoice micro-payments. Wants to be kept posted, not demoed.
 - **NDA on Hostinger's paper.** Asked for entity and signatory by email (sent Sep 3).
 
-### What Piotr added on Sep 15
+### What Piotr added (Sep 15 sync, plus his March and April notes)
 
 - He was Hostinger's account manager at Braintree and PayPal for years and sold them Braintree through ProcessOut. He knows Paulius well.
 - History: talks with the previous Europe GM (Miguel) early in 2025 went nowhere; Piotr's messages in June 2025 went unanswered. At MPE Berlin (end of March 2026) they told him: "we are so happy with ProcessOut, we are not shopping for any solution, but if you can help us establish connections in India, let's talk." ✅ **ProcessOut (Checkout.com) is the third-party layer Paulius did not name.**
 - His read: ProcessOut is strong in Europe and the US and likely weaker in APAC. India is the wedge.
+- **Hostinger raised India and UPI challenges with him first.** In Berlin they mentioned "some challenges with UPI"; in April Piotr wrote back asking whether that was still the case, told them Yuno now invests heavily in India with a local office, and sent the recurring payment-methods list for India (next subsection). ❓ Whether they answered the UPI question is not in his notes. It goes into discovery on Thursday.
 - As a Hostinger customer: everything is tokenized and auto-renewal is effectively forced, including domains, charged to card or PayPal.
 - On Thursday he stays silent unless history helps. He invited TJ because a Yuno engineer based in Vilnius matters to a Lithuanian merchant ("it's really important for them to have somebody local"). ⚠️ Piotr calls TJ VP of Engineering; the Slack directory says Engineering Management Consultant. ❓ Confirm the title before we introduce him.
 - Dirk's question stayed open: **"there's a reason they're looking for alternatives, what are those reasons?"** We have never asked. It goes in the first five minutes.
@@ -67,6 +70,26 @@ Labels: ✅ verified · ⚠️ unverified, roadmap or internal only · ❓ open,
 | Payments org | Product-side "hPayments" technical team plus a strategy team (PSP relationships, fraud and disputes) | Public interview ⚠️ |
 | Checkout observed Sep 2 | Netherlands: cards, PayPal, Google Pay, Apple Pay, CoinGate, Alipay HK and CN, no iDEAL. Colombia: PayPal, Google Pay, Apple Pay, Nequi | Antoine and German ✅ |
 
+### The India thread: what Hostinger already received from Piotr (April 2026)
+
+This is the list Piotr sent them, titled "Payment Methods, India, Recurring / MIT Support". Paulius may hold Thursday's answers against it, so what we show has to be consistent with it.
+
+| Method | What Piotr told them | Providers named |
+|---|---|---|
+| Cards | Recurring and MIT on Visa, Mastercard, RuPay, American Express, Diners Club, JCB and JCB RuPay, Discover | Airwallex, Adyen, Stripe, Checkout.com, Splitit, Worldpay, Unlimint, Nuvei, NMI |
+| Apple Pay | Recurring and MIT via network cards (Visa, Mastercard) | Adyen, Stripe, Checkout.com, Airwallex, Braintree |
+| Google Pay | Recurring and MIT via network cards (Visa, Mastercard) | Stripe, Airwallex, Adyen |
+| UPI | UPI Autopay for recurring and merchant-initiated payments | "Supported UPI-enabled providers", none named |
+| Afterpay, Cash App Pay | Available via Stripe | Stripe |
+
+What this means for Thursday:
+
+- **Razorpay and BillDesk are not in the list.** Those are the two providers Hostinger actually runs in India. The matrices and the India block must name them explicitly for cards and for UPI Autopay, or say where they stand. ❓ Dirk confirms before Thursday.
+- **UPI Autopay providers were left unnamed.** Paulius asked for one integration over Razorpay and BillDesk with UPI at roughly 70% of his India volume. "Supported UPI-enabled providers" will not survive his questions. Name the connections that run UPI Autopay recurring today.
+- **Keep card brands and token products apart.** The list says Amex, Diners, JCB and Discover are accepted for recurring. That is card acceptance through the listed providers. It is not Amex network tokens (not live) or Amex account updater (not supported). Say it in those words if he connects the two.
+- **Afterpay and Cash App Pay are not India methods.** Leave them out of anything India on Thursday.
+- **Piotr owns the bridge.** He can open the India block with one line: in Berlin they mentioned UPI challenges, he sent the list in April, and Thursday is where we land it.
+
 ---
 
 ## 3. What they care about, in priority order
@@ -78,7 +101,7 @@ Ranked by weight in the RFP plus what Paulius chose to spend the call on.
 | 1 | **Vault standalone for business continuity**: own the tokens, charge through any PSP, migrate in without losing data, export if they leave | Call: his stated interest and the only thing he asked to go deeper on. RFP 2.3, 2.4, 3.4, 9.1 to 9.3 | One vaulted card charged through two of his providers. Import with network transaction IDs. PCI proxy placeholder. Export path in one sentence. Permissions on PAN visibility |
 | 2 | **Renewal authorization: network tokens, network transaction IDs, account updater** | Roughly half the RFP (sections 2, 3, 10, 11). Renewals price at 2x to 5x the intro price, so a declined renewal is the most expensive event in their model | Enrollment with their TRID or ours. Token-type selection per provider at payment time (3.6). Matrices for network transaction ID, network token and wallet MIT acceptance scoped to Stripe, Adyen, Checkout.com, Razorpay, BillDesk. Limits stated first |
 | 3 | **Retries that respect his dunning schedule**, and renewal batches that stop tripping PSP fraud rules | Call: the Chargebee pain and the verbatim constraint. RFP 11.1, 11.2 | A clear statement of what happens to a charge his billing engine sends us: real-time fallback across PSPs on the same request, and where time-shifting applies (see section 5) |
-| 4 | **India as one integration** over Razorpay and BillDesk, one journey, UPI recurring, and where token or mandate portability stands | Call. The topic that opened the door in April and the reason they answered Piotr in March | Razorpay and BillDesk behind one integration. Portability status stated only as verified. Owner named for the follow-up |
+| 4 | **India as one integration** over Razorpay and BillDesk, one journey, UPI recurring, and where token or mandate portability stands | Call, and Piotr's thread: they raised UPI challenges with him in Berlin, received the India recurring list in April, and raised India again with German at Stripe Sessions | Razorpay and BillDesk behind one integration. Portability status stated only as verified. Owner named for the follow-up |
 | 5 | **Routing, fallback, Monitors, operational safety** | RFP 5, 6, 7 (validation against user error, version control, webhook visibility). Table stakes: he runs this today | One rule, one fallback, one Monitor, the audit log. Say plainly what is not there (webhook delivery logs in the payment screen) |
 | 6 | **Data and BI**: order-level approval rate, data warehouse export | RFP 4.3, 4.4. They have a BI team; 4.4 was our weakest written answer | A real answer on export and connectors. Report columns shown live |
 | 7 | Secondary RFP items: PayPal billing agreements (12), Apple Pay MPAN (13.4), pinless debit (8), co-badged cards (18) | RFP only, not raised on the call | Answer if asked, with the limit first |
@@ -99,7 +122,7 @@ Ranked by weight in the RFP plus what Paulius chose to spend the call on.
 | C. Renewal authorization | Enrollment with their TRID or ours; token type chosen per provider at payment time; hand over the three matrices | "Enrollment below 100% never blocks a charge" (his 3.6 trap, answered honestly) | Account updater is Visa and Mastercard only; scheme registration up to 10 working days. Amex network tokens: see section 5 |
 | D. Retries and routing | One routing rule by country or BIN, one fallback on provider error, one Monitor with a threshold, the audit log; retry strategy configuration | "Real-time fallback on every request your billing engine sends. Retry timing moves the attempt inside your window, never past it" (only what Dirk confirms, see section 5) | Production cap is 6 attempts (our written answer said 5; correct it). Webhook delivery logs are not in the payment screen (7.1) |
 
-**4.3 India in five minutes, verified facts only.** Razorpay and BillDesk behind one integration and one journey. UPI recurring runs on UPI Autopay mandates. On portability: NPCI plans to make UPI Autopay mandates portable so merchants can move existing mandates when they change payment gateway or acquiring bank (Mint report, Aug 31, 2026; announcement expected at Global Fintech Fest). ⚠️ Planned, not live, no date. Say: "NPCI has announced plans for mandate portability; we are confirming the live date and Razorpay and BillDesk readiness through our India GM." Do not repeat "the mandate exists and players comply by year-end" as fact.
+**4.3 India in five minutes, verified facts only.** Start from what Piotr already sent in April (section 2): Thursday's answers must match that list and must now name Razorpay and BillDesk. Razorpay and BillDesk behind one integration and one journey. UPI recurring runs on UPI Autopay mandates. On portability: NPCI plans to make UPI Autopay mandates portable so merchants can move existing mandates when they change payment gateway or acquiring bank (Mint report, Aug 31, 2026; announcement expected at Global Fintech Fest). ⚠️ Planned, not live, no date. Say: "NPCI has announced plans for mandate portability; we are confirming the live date and Razorpay and BillDesk readiness through our India GM." Do not repeat "the mandate exists and players comply by year-end" as fact.
 
 **4.4 Discovery in the first five minutes.** We have never asked why they are looking. Two questions before any demo: what triggered the business-continuity review this year, and if the orchestration layer went down for 48 hours today, what exactly stops. The second answer becomes the success criterion for proof point A.
 
@@ -109,7 +132,7 @@ Ranked by weight in the RFP plus what Paulius chose to spend the call on.
 |---|---|---|
 | German | Opens, runs discovery, keeps time, closes with the ask, sends every written follow-up (Piotr cc'd) | Improvise pricing |
 | Dirk | Proof points A to D in the sandbox; the three matrices; the retry-timing answer | Claim anything not built |
-| Piotr | Relationship, one line of history at the open if useful, listens for what Paulius does not say | Run a parallel thread with Paulius |
+| Piotr | Relationship, one line of history at the open if useful, opens the India block with the Berlin and April thread, listens for what Paulius does not say | Run a parallel thread with Paulius |
 | TJ | Joins at the open for a short hello: Yuno engineering, based in Vilnius | Stay past 10 minutes |
 | Justo (if he joins) | India status and the commercial frame at the close | |
 | Antoine (declined) | Agentic is not on the agenda; if Paulius raises it, German offers a separate session | |
@@ -151,6 +174,7 @@ Ranked by weight in the RFP plus what Paulius chose to spend the call on.
 | Subscription engine facts: payment methods live, and whether engine results can be quoted | German with Daniel Lozano | ❓ |
 | Data warehouse connectors (4.4) and routing audit trail (6.3) | Dirk | ❓ |
 | India: Razorpay and BillDesk readiness for UPI Autopay recurring and token migration; NPCI mandate portability live date | Justo via India GM; Dirk said he would look at India | ❓ committed Sep 3, nothing sent |
+| Reconcile Piotr's April India list with the matrices: which connections run UPI Autopay recurring today, and whether Razorpay and BillDesk are covered for cards and UPI. Drop Afterpay and Cash App Pay from anything India | Dirk with Piotr | ❓ |
 | Vault standalone material "full breadth and depth" | Justo | ❓ committed Sep 3, nothing sent. The demo can replace it if the proposal follows within a week |
 | Revolut Pay and Mastercard funded-card notification info | Justo | Low priority: Paulius said Revolut is small for them |
 | NDA on Hostinger's paper | Paulius | Unanswered since the Sep 9 reminder. Ask at the open |
@@ -195,6 +219,7 @@ If he asks for the subscription engine: two minutes at most. "You keep the sched
 5. How much Amex card-on-file volume do you carry? Notes: ____
 6. Which providers must be in the acceptance matrices beyond Stripe, Adyen, Checkout.com, Razorpay and BillDesk? Notes: ____
 7. When billing moves in-house, will your scheduler send us each charge with a deadline, so retry timing can work inside the window? Notes: ____
-8. India: what would "one integration" have to cover on day one (UPI Autopay, cards, mandates already live)? Notes: ____
-9. Who else is part of this decision, and who from hPayments joins the engineering session? Notes: ____
-10. Where is the NDA? Notes: ____
+8. In Berlin you mentioned challenges with UPI. Which ones, and do they still stand? Notes: ____
+9. India: what would "one integration" have to cover on day one (UPI Autopay, cards, mandates already live)? Notes: ____
+10. Who else is part of this decision, and who from hPayments joins the engineering session? Notes: ____
+11. Where is the NDA? Notes: ____
