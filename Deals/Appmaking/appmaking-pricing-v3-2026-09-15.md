@@ -1,5 +1,7 @@
 # Appmaking + Yuno: pricing v3 (2026-09-15, tras la call corta con Tatsiana)
 
+> **NOTA 15-sep (noche):** German construyó la slide con otros números: platform fee $9,750 / $9,500 / $9,000 / $8,500 / $8,000 y rate $0.09 / $0.08 / $0.06 / $0.05 / $0.045; fully ramped $16,000/mes ($192K/año); año 1 $174,350. El deck es la fuente de verdad; este doc queda como referencia del razonamiento y del chequeo de política.
+
 **Qué cambia frente al deck del 14-sep (v2):** el precio sube. La banda 1 ahora cierra en $12,000 all-in (antes $10,000) y fully ramped queda en $17,500/mes (antes $15,000). Subscriptions engine pasa de "Pending" a precio estándar de Yuno. Monitors se incluyen sin costo (German lo ofreció en la call). Reconciliation, token vault y network tokens, y Verifi/Ethoca siguen en "Pending". Se envía el martes 16-sep.
 
 **Estructura (igual que v2):** platform fee + fee por transacción exitosa, ambos escalonados por banda de transacciones exitosas del mes. La tarifa de la banda aplica a todo el mes. Declinadas gratis, sin setup fee.
