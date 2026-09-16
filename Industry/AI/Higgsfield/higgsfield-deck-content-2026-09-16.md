@@ -748,9 +748,9 @@ Two columns:
 2. **18 slides país, no 20.** Consecuencia de lo anterior.
 3. **Competidor en el slide de "cost of delay":** genérico ("a localized competitor") con Google/Veo y Kling como ejemplos, porque Kuaishou (Kwai/Snack Video) está bloqueado en India desde 2020 y no quiero un dato atacable.
 4. **Nova fraud sin el "75%"** del deck de Bending Spoons; lo atamos al problema real (BBB F, 27 quejas, cargos no reconocidos).
-4b. **Competidor del slide 4 reformulado:** en lugar de "Kling toma tus usuarios", el argumento verificado es "nadie en AI video ha localizado el checkout (Kling global = USD vía Stripe) y la distribución ya se mueve (Google + Jio, ChatGPT Go + UPI)". Kwai y Snack Video están bloqueados en India desde 2020 (PIB), así que Kling en India no es un dato defendible.
-5. **Reconciliation** aparece como módulo con nota "confirm GA status" (memoria: roadmap sep-2026).
-6. **Impacto esperado:** +7% approval uplift y 30% recovered revenue (publicados), no +12% / 20 a 30%.
+5. **Competidor del slide 4 reformulado:** en lugar de "Kling toma tus usuarios", el argumento verificado es "nadie en AI video ha localizado el checkout (Kling global = USD vía Stripe) y la distribución ya se mueve (Google + Jio, ChatGPT Go + UPI)". Kwai y Snack Video están bloqueados en India desde 2020 (PIB), así que Kling en India no es un dato defendible.
+6. **Reconciliation** aparece como módulo con nota "confirm GA status" (memoria: roadmap sep-2026).
+7. **Impacto esperado:** +7% approval uplift y 30% recovered revenue (publicados), no +12% / 20 a 30%.
 
 ## C. Inputs que debes confirmar antes de enviar
 
