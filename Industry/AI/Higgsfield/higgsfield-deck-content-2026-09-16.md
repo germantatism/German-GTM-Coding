@@ -8,7 +8,7 @@
 ## 0. Cómo usar este documento (para German)
 
 1. Cada slide tiene: título, texto exacto que va en el slide, y notas de construcción. Copia el texto tal cual; los corchetes `[...]` son instrucciones, no texto de slide.
-2. Los marcadores `[PENDIENTE AGENTE]` se llenan hoy mismo cuando termine la verificación de fuentes (slide 2, países nuevos, wave 2).
+2. Todas las fuentes quedaron verificadas el 16-sep-2026 (slide 2, países nuevos, wave 2, Jio, ChatGPT Go, Kling). No quedan marcadores pendientes; solo las verificaciones del día de envío listadas en C.
 3. Al final: (A) auditoría número por número contra el brief de Justo, (B) decisiones que tomé y (C) inputs que debes confirmar antes de enviar.
 4. Regla del deck: nunca decir "Higgsfield no tiene X método". Solo decimos lo que está confirmado (help center 2026-08-01 y materiales de Stripe) y "verify at checkout" para lo demás.
 
@@ -49,13 +49,13 @@
 
 **Left column, three stat tiles (same layout as Suno slide 4):**
 
-Tile 1: **[PENDIENTE AGENTE: TAM figure]** TAM
-Sub: AI video generation market, 2026. [forecast value and year, CAGR] [firm]
-Right text: [one line on the broader creative-AI market; monetization of the category is just beginning]
+Tile 1: **$847M** TAM
+Sub: AI video generator market, 2026. ~$3.35B by 2034 (18.8% CAGR), Fortune Business Insights (updated Aug 31 2026)
+Right text: Analyst sizing lags the category: Higgsfield alone books ~$700M against an $847M 2026 estimate (The Business Research Company puts 2026 at $1.04B). The category is being re-sized in real time, and most of that revenue now comes from businesses buying production capacity, not from consumer subscriptions.
 
 Tile 2: **$700M** annualized revenue, Aug 2026
 Sub: From ~$10M in April 2025 to $700M in 16 months
-Right text: The field trails by a wide margin on disclosed numbers: Kling AI (Kuaishou) reported $240M ARR in December 2025; MiniMax (Hailuo) reported $79.0M revenue for 2025; Runway and Luma have not disclosed revenue. [PENDIENTE AGENTE: category traffic share if a published comparison exists]
+Right text: Disclosed run-rates put Higgsfield first: Kling AI (Kuaishou) reported ~$500M ARR in March 2026 and RMB 850M+ revenue in Q2 2026; Runway reached $200M ARR in September 2026; MiniMax (Hailuo) reported $79.0M revenue for 2025. On traffic, higgsfield.ai ranks #1,228 globally vs kling.ai #4,223 and runwayml.com #7,435 (SimilarWeb, Aug 2026).
 
 Tile 3: **30M+** users across 238 countries and territories
 Sub: 390 of the Fortune 500 are customers (Aug 2026)
@@ -64,22 +64,22 @@ Right text: Usage is global by default and monetization is card-led by default. 
 **Right column, purple box:**
 **#1**
 THE CATEGORY, CONCENTRATED IN ONE COMPANY
-30M+ users. $700M annualized revenue (Aug 2026). Valued at $5.4B (Aug 2026). 75% of revenue outside the US. Where this category monetizes internationally is decided at Higgsfield's checkout.
+30M+ users. $700M annualized revenue (Aug 2026), the highest disclosed in the category. Valued at $5.4B (Aug 2026), level with Runway ($5.3B, Feb 2026) and Luma ($4B+, Nov 2025). 75% of revenue outside the US. Where this category monetizes internationally is decided at Higgsfield's checkout.
 
 **Bottom row, "WHAT DEFINES THE CATEGORY IN 2026" (three purple cards):**
 
 Card 1: **The aggregation era**
-Higgsfield sells one workflow over many models: third-party (Sora 2, Veo 3.1, Kling, Seedance, WAN, Hailuo) plus its own (Soul, DoP). [PENDIENTE AGENTE: confirm current model list on higgsfield.ai]. Switching cost for the user is low; the winner is whoever removes friction fastest.
+Higgsfield sells one workflow over 30+ models: third-party (Kling 3.0, Seedance 2.0, Wan 2.7, Sora 2, Veo 3.1, Hailuo 2.3) plus its own Soul model (higgsfield.ai, Sep 16 2026). Switching cost for the user is low; the winner is whoever removes friction fastest.
 
 Card 2: **The enterprise turn**
 In January 2026 businesses were under a quarter of revenue; by August 2026 they were the majority (FT via ContentGrip). Consumer and prosumer is now the ~30% that has to be monetized efficiently, not the whole story.
 
-Card 3: **Capital converged at ~$5B**
-Higgsfield $5.4B (Aug 2026), Runway $5.3B (Feb 2026), Luma AI $4B+ (Nov 2025). Everyone can buy models and GPUs. Distribution and monetization are where the next gap opens.
+Card 3: **Big tech retreated from the standalone app**
+OpenAI discontinued the Sora app (announced Mar 24 2026; Sora 2 stays available through ChatGPT and partners such as Higgsfield until the API window closes). Google ships Veo 3.1 inside Gemini and Flow (275M videos in Flow's first five months), and Meta discloses no Vibes numbers. The consumer category belongs to the specialists.
 
 **Closing bar:** When 75% of revenue sits outside the home market and the checkout is card-led, payments infrastructure becomes the growth lever. Every point of conversion, approval and renewal recovery lands directly on revenue. That is what this deck is about.
 
-**Sources (footnote):** PR Newswire Series B (Aug 17 2026); Stripe customer story (stripe.com/customers/higgsfield); Kuaishou PR (Kling $240M ARR, Dec 2025); Wikipedia/MiniMax HKEX (2025 revenue $79.0M); ContentGrip (Aug 18 2026); aifundingtracker (Runway, Luma rounds); [PENDIENTE AGENTE: market-size source].
+**Sources (footnote):** Fortune Business Insights, AI Video Generator Market (updated Aug 31 2026): https://www.fortunebusinessinsights.com/ai-video-generator-market-110060 · The Business Research Company via Research and Markets (Feb 2026): https://www.researchandmarkets.com/reports/6227059/ai-video-generator-market-report · PR Newswire, Higgsfield Series B (Aug 17 2026) · Stripe customer story: https://stripe.com/customers/higgsfield · Kuaishou Q1 2026 results (May 27 2026): https://www.prnewswire.com/apac/news-releases/kuaishou-technology-announces-first-quarter-2026-unaudited-financial-results-302782902.html · Kuaishou Q2 2026 results (Aug 19 2026) · PYMNTS, Runway $200M ARR (Sep 8 2026): https://www.pymnts.com/news/artificial-intelligence/2026/runway-ai-hits-200-million-revenue-and-expands-robotics-capabilities · Wikipedia/MiniMax (2025 revenue $79.0M) · SimilarWeb competitors page (Aug 2026): https://www.similarweb.com/website/higgsfield.ai/competitors/ · ContentGrip citing FT (Aug 18 2026) · TechCrunch, Sora app shutdown (Mar 24 2026): https://techcrunch.com/2026/03/24/openais-sora-was-the-creepiest-app-on-your-phone-now-its-shutting-down/ · Google blog, Veo 3.1 / Flow (Oct 15 2025): https://blog.google/technology/ai/veo-updates-flow/ · Higgsfield model pages: https://higgsfield.ai/ai-video, https://higgsfield.ai/soul · aifundingtracker (Runway, Luma rounds).
 
 ---
 
@@ -111,7 +111,7 @@ Authorization uplift through local card processing recovers ~7K cross-border dec
 **Kicker:** SPEED TO MARKET
 **Title:** Outside the US and EU, paid AI-video subscribers are near zero. This is a greenfield race, and first mover takes it.
 
-**Left text:** ~6M Higgsfield MAU across the 18 addressable priority markets, of ~12M globally (Yuno-estimated). Competitors are already localizing: Google bundles Gemini (with Veo video generation) free with Jio in India [carried over from the xAI deck; re-verify the current Jio bundle before send], and Kling (Kuaishou, $240M ARR) is native to Chinese and Southeast Asian rails. Paid AI-video penetration outside US/EU is still near zero.
+**Left text:** ~6M Higgsfield MAU across the 18 addressable priority markets, of ~12M globally (Yuno-estimated). No AI-video competitor has localized international checkout yet: Kling (Kuaishou, ~$500M ARR in March 2026) sells its global plans in USD through Stripe per its own payment policy. Distribution is moving faster than payments: Google bundles Google AI Pro, Veo video generation included, free for 18 months with Jio unlimited-5G plans in India (announced Oct 30 2025, still claimable Sep 2026), and OpenAI's ChatGPT Go launched in India at ₹399/month with UPI (Aug 2025) and more than doubled paid subscribers. Paid AI-video penetration outside US/EU is still near zero.
 
 **Callout:** IN THESE 18 MARKETS, PAID AI-VIDEO SUBSCRIPTIONS ARE A BLANK SLATE. There are no incumbents to displace, only users to convert.
 
@@ -126,7 +126,7 @@ Authorization uplift through local card processing recovers ~7K cross-border dec
 
 **Footer tile:** 24 MONTHS COST OF INACTION: **~$19M+** to whoever localizes first
 
-**Build note:** ratios reused from the OpenAI deck (competitor captures 11% / 44% / 72% / 86% of Lever 1 subscribers by months 6 / 12 / 18 / 24), applied to 83K Lever 1 subs at a blended $21.6/month. Source line: "Yuno model; SimilarWeb; Kuaishou PR (Dec 2025)".
+**Build note:** ratios reused from the OpenAI deck (competitor captures 11% / 44% / 72% / 86% of Lever 1 subscribers by months 6 / 12 / 18 / 24), applied to 83K Lever 1 subs at a blended $21.6/month. Source line: "Yuno model; SimilarWeb; Kuaishou Q1 2026 results (May 27 2026); Kling AI Payment Policy (Apr 21 2026); TechCrunch (Oct 30 2025; Aug 18 and Sep 22 2025); Jio offer page (Sep 2026)". URLs: https://kling.ai/docs/payment-policy · https://techcrunch.com/?p=3063978 · https://www.jio.com/google-gemini-offer/ · https://techcrunch.com/2025/08/18/openai-launches-a-sub-5-chatgpt-plan-in-india · https://techcrunch.com/2025/09/22/after-india-openai-launches-its-affordable-chatgpt-go-plan-in-indonesia/
 
 ---
 
@@ -236,7 +236,7 @@ Four columns, same copy as the OpenAI deck with "Higgsfield" substituted:
 |---|---|---|---|---|---|---|
 | 1 | United States | 15.13% | 1.82M | Baseline, $0 | Stripe direct, unchanged | Home market |
 | 2 | India | 12.54% | 1.50M | $0.67M | UPI + UPI AutoPay + RuPay/local debit + retries | Full-stack |
-| 3 | Russia | 3.82% | 0.46M | Not addressable | Visa/Mastercard suspended since 2022; sanctions | Excluded |
+| 3 | Russia | 3.82% | 0.46M | Not addressable | Visa and Mastercard suspended operations in March 2022; NSPK (Mir) under US sanctions since February 2024 | Excluded |
 | 4 | United Kingdom | 3.76% | 0.45M | $0.14M | PayPal + Open Banking + Apple/Google Pay + retries | Mature |
 | 5 | South Korea | 3.71% | 0.45M | $0.09M | Toss / Samsung Pay + local card acquiring + retries (Kakao Pay, Naver Pay, PayCo already live) | APM-led |
 | 6 | Germany | 3.35% | 0.40M | $0.13M | PayPal + SEPA DD + Klarna recurring + retries | Mature |
@@ -261,7 +261,7 @@ PORTFOLIO TOTAL: ~6.1M addressable MAU · ~12M global MAU (Yuno-estimated) · ~9
 CONCENTRATION: TOP 3 ~45% (India · Indonesia · United Kingdom) · TOP 10 ~78% of total value
 ARCHETYPE SPLIT: Full-stack ~$1.26M/mo (~59%) · Mature ~$0.71M/mo (~33%) · APM-led ~$0.17M/mo (~8%)
 
-**Source line:** SimilarWeb (German's export, 122 countries); Yuno three-lever model; full detail in appendix.
+**Source line:** SimilarWeb (German's export, 122 countries); Yuno three-lever model; Russia constraint per The Moscow Times (Mar 6 2022) and Wikipedia/Mir; full detail in appendix.
 **Build notes:** Row 1 (US) and row 3 (Russia) are shown in grey with no MRR; this reinforces the architecture message (Stripe keeps the US) and is honest about Russia. If you prefer 20 addressable markets, replace those two rows with ranks 21 and 22 from your SimilarWeb export and I will re-run the model.
 
 ---
@@ -275,28 +275,30 @@ ARCHETYPE SPLIT: Full-stack ~$1.26M/mo (~59%) · Mature ~$0.71M/mo (~33%) · APM
 
 | # | Country | Population (M) | Internet penetration | Payment-localization gap (dominant rails) | First-mover priority |
 |---|---|---|---|---|---|
-| 1 | Philippines | [PENDIENTE AGENTE] | [PA] | GCash / Maya wallet-first; QR Ph, InstaPay | Very high |
-| 2 | Saudi Arabia | [PA] | [PA] | mada domestic scheme, Apple Pay / mada Pay, STC Pay, Tabby / Tamara | Very high |
-| 3 | Thailand | [PA] | [PA] | PromptPay QR, TrueMoney | High |
-| 4 | Colombia | [PA] | [PA] | PSE, Nequi, Daviplata, Bre-B | High |
-| 5 | Argentina | [PA] | [PA] | Mercado Pago, MODO, installments | High |
-| 6 | Egypt | [PA] | [PA] | Fawry, Meeza, InstaPay | High |
-| 7 | Malaysia | [PA] | [PA] | Touch 'n Go, FPX / DuitNow QR | High |
-| 8 | Nigeria | [PA] | [PA] | Bank transfers + wallets dominate; cards underperform | Very high |
-| 9 | Bangladesh | [PA] | [PA] | bKash / Nagad mobile financial services | High |
-| 10 | Poland | [PA] | [PA] | BLIK, pay-by-link | High |
-| 11 | South Africa | [PA] | [PA] | Cards + EFT / QR (PayShap, Ozow, SnapScan) | High |
-| 12 | Kazakhstan | [PA] | [PA] | Kaspi.kz QR / Pay super-app | High |
-| 13 | Peru | [PA] | [PA] | Yape / PLIN, PagoEfectivo, local cards | Medium |
-| 14 | Chile | [PA] | [PA] | Webpay, Mercado Pago, MACH | Medium |
-| 15 | Kenya | [PA] | [PA] | M-Pesa mobile money | Medium |
-| 16 | Morocco | [PA] | [PA] | CMI local cards, emerging wallets (card lockouts already reported by Moroccan users, Trustpilot Sep 2026) | Medium |
-| 17 | Ukraine | [PA] | [PA] | Privat24 / LiqPay, Apple / Google Pay heavy | Medium |
-| 18 | Sri Lanka | [PA] | [PA] | LankaQR, JustPay, CEFTS | Medium |
-| 19 | Nepal | [PA] | [PA] | Fonepay QR, eSewa / Khalti | Medium |
-| 20 | Ghana | [PA] | [PA] | MTN MoMo mobile money | Medium |
+| 1 | Philippines | 117 | 83.8% | E-wallet 33%, card 30%, bank transfer 16% of e-com (PPRO 2024); GCash / Maya wallet-first, QR Ph | Very high |
+| 2 | Saudi Arabia | 34.7 | 99.0% | Cards 42% (93% of them mada), e-wallet 22%, bank transfer 16% (PPRO 2023); mada, STC Pay, Apple Pay / mada Pay, Tabby / Tamara | Very high |
+| 3 | Nigeria | 239 | 45.5% | Card 37%, bank transfer 29%, cash 16%, e-wallet 10% (PPRO 2023); bank transfers + wallets dominate, cards underperform | Very high |
+| 4 | Thailand | 71.6 | 94.7% | Bank transfer 42%, e-wallet 25%, card 21% (PPRO 2024); PromptPay QR, TrueMoney | High |
+| 5 | Colombia | 53.6 | 77.8% | Cards 36%, bank transfer 29%, e-wallet 26% (PPRO); PSE, Nequi, Daviplata, Bre-B (OA) | High |
+| 6 | Argentina | 45.9 | 90.6% | Cards 46%, e-wallets 34%, bank transfer 14% (PPRO); Mercado Pago, MODO, installments, Naranja / Cabal domestic schemes | High |
+| 7 | Egypt | 119 | 82.7% | Cash 31%, card 30%, e-wallet 15%, bank transfer 10% (PPRO 2024); Fawry, Meeza, InstaPay (OA) | High |
+| 8 | Malaysia | 36.1 | 98.0% | Bank transfer 37%, cards 28%, e-wallet 24% (PPRO); FPX / DuitNow QR, Touch 'n Go, Boost, GrabPay | High |
+| 9 | Bangladesh | 176 | 47.0% | bKash / Nagad mobile financial services (OA); e-com mix not published by PPRO | High |
+| 10 | Poland | 38 | 89.8% | Bank transfer 67%, card 15%, e-wallet 15% (PPRO); BLIK (~30%), Przelewy24, PayU | High |
+| 11 | South Africa | 64.9 | 79.6% | Card 43%, bank transfer 22%, e-wallet 20% (PPRO 2023); EFT, SnapScan, PayShap / Ozow (OA) | High |
+| 12 | Kazakhstan | 20.9 | 93.4% | Kaspi.kz QR / Pay super-app (OA); Higgsfield's engineering hub (Almaty) | High |
+| 13 | Peru | 34.7 | 82.0% | Cards 52%, bank transfer 17%, e-wallet 11%, cash 10% (PPRO 2023); Yape / PLIN, PagoEfectivo (OA) | Medium |
+| 14 | Chile | 19.9 | 94.5% | Cards 53%, e-wallets 22%, bank transfer 21% (PPRO); local schemes 44% of card volume; Webpay, Mercado Pago, MACH (OA) | Medium |
+| 15 | Kenya | 57.8 | 40.5% | Cash 35%, other 34%, card 28% (PPRO 2023); M-Pesa mobile money (OA) | Medium |
+| 16 | Morocco | 38.5 | 92.2% | Cash 58%, e-wallet 20%, card 17% (PPRO 2024); CMI local cards; Moroccan card lockouts already reported (Trustpilot, Sep 2026) | Medium |
+| 17 | Ukraine | 39.3 | 89.6% | Privat24 / LiqPay, Apple / Google Pay heavy (OA); PPRO mix not published | Medium |
+| 18 | Sri Lanka | 23.3 | 59.7% | LankaQR, JustPay, CEFTS bank transfers (OA); PPRO mix not published | Medium |
+| 19 | Nepal | 29.6 | 56.0% | Fonepay QR, eSewa / Khalti wallets (OA); PPRO mix not published | Medium |
+| 20 | Ghana | 35.2 | 74.6% | MTN MoMo mobile money (OA); PPRO mix not published | Medium |
+| | **WAVE 2 TOTAL** | **~1.3B** | **~79% simple avg (~70% weighted, ~0.9B internet users)** | Mobile money, wallets and instant rails dominate | |
 
-**Right column ("WHY THIS MATTERS FOR HIGGSFIELD"):** Capture monetization in these markets early, before AI-video demand inflects and global competitors race in to localize. Tiles: [PA: total population], [PA: avg internet penetration], "Mobile money / wallets / instant rails dominate", "Localize early, before demand inflects".
+**Right column ("WHY THIS MATTERS FOR HIGGSFIELD"):** Capture monetization in these markets early, before AI-video demand inflects and global competitors race in to localize. Tiles: "~1.3B population", "~79% avg internet penetration", "Mobile money / wallets / instant rails dominate", "Localize early, before demand inflects".
+**Sources:** population (Oct 2025) and internet users (end-2025) from DataReportal Digital 2026 country reports (datareportal.com/reports/digital-2026-[country]); e-commerce payment mix from PPRO country pages (ppro.com/countries/[country], data vintage 2022 to 2024 as noted); (OA) = rail description carried over from the OpenAI deck (Yuno research).
 **Build note:** ask German for SimilarWeb ranks 21 to 40 so the wave-2 order can also reflect actual Higgsfield traffic (today it reflects strategic attractiveness only).
 
 ---
@@ -326,10 +328,10 @@ Waterfall steps (left to right):
 
 Three columns:
 - **LOCALIZATION TAKES TIME.** Payment orchestration: 4 to 12 weeks per market. Direct PSP integrations: 6 to 18 months each. Multiply by 20 to 40 markets, add local entity setup, regulatory work and operations on the ground, and the first mover holds a structural lead measured in years, not quarters. Higgsfield integrated Stripe in 3 days with one backend engineer (Stripe case study); Yuno is the same shape of decision, one integration, at the local-rails layer.
-- **DEMAND IS INFLECTING NOW.** Across the next 20 emerging markets [PA: population total] people are online at [PA: avg penetration] internet penetration and rising. Mobile money, wallets and instant rails are the default way these consumers pay online.
-- **THE WINDOW IS SHORT.** Google bundles Gemini (Veo) with carriers [re-verify]; Kling sells natively in Asia; OpenAI launched ChatGPT Go in India with UPI at ₹399/month (carried over from the xAI deck). The monetization race in emerging markets has started, with localized pricing and local rails as the entry weapon.
+- **DEMAND IS INFLECTING NOW.** The next 20 emerging markets hold ~1.3B people and ~0.9B internet users (DataReportal Digital 2026), with penetration still rising in the largest ones (Nigeria 46%, Bangladesh 47%, Kenya 41%). Mobile money, wallets and instant rails are the default way these consumers pay online.
+- **THE WINDOW IS SHORT.** Google gives Jio's unlimited-5G users 18 months of Google AI Pro with Veo at no cost (Oct 2025, all ages since Nov 10 2025, still live). OpenAI launched ChatGPT Go in India at ₹399/month with UPI (Aug 2025), then Indonesia at Rp 75,000 (Sep 2025), then made it free for a year in India (Nov 2025); Go is now sold in every ChatGPT country. The monetization race in emerging markets has started, with localized pricing, local rails and carrier distribution as the entry weapons. In AI video specifically, nobody has moved yet.
 
-**Bottom bar:** CAPTURE TODAY / WIN TOMORROW: ~$25M annualized in the 18 priority markets, and market control across the next 20 emerging markets where AI-video demand is just starting. Tiles: "4 to 12 weeks vs 6 to 18 months per market" · "[PA] population · [PA] internet users today" · "Payment infra is the moat models can't catch up to".
+**Bottom bar:** CAPTURE TODAY / WIN TOMORROW: ~$25M annualized in the 18 priority markets, and market control across the next 20 emerging markets where AI-video demand is just starting. Tiles: "4 to 12 weeks vs 6 to 18 months per market" · "~1.3B population · ~0.9B internet users today" · "Payment infra is the moat models can't catch up to".
 
 ---
 
@@ -480,7 +482,7 @@ Four regional columns:
 ## SLIDES 23 to 40: Country slides (18 addressable markets, ordered by total opportunity)
 
 **Template per slide (identical layout to OpenAI slides 21 to 40):** headline stat tiles (local audience · est. MAU · incremental paid subs · total impact), three lever boxes, PAYMENT METHOD PRIORITY table (Must-have / Must-have / Optional), BASE-CASE MODEL (today conv · with-LPM conv · uplift · ARPU), SO WHAT, source + TO VALIDATE line ("Higgsfield [country] MAU, checkout starts, current paid conversion, payment-method mix, decline codes").
-**Stats marked (OA) are carried over from the OpenAI/xAI decks (Yuno research); re-verify date before send. Stats marked [PA] come from today's source check.**
+**Stats marked (OA) are carried over from the OpenAI/xAI decks (Yuno research); re-verify date before send. Stats for the UK, Italy, Canada, UAE, China and Russia were verified on Sep 16 2026 and carry their source URL inline.**
 
 ### SLIDE 23: India: UPI is the largest audience-expansion lever in the portfolio
 - Tiles: 504M+ UPI users, 84% of digital retail payments (OA) · ~1.5M est. MAU (1.3 to 1.7M) · ~30K incremental paid subs · ~31.5K total impact · ~$8.1M/yr total
@@ -502,13 +504,13 @@ Four regional columns:
 - Source: Bank Indonesia; ASEAN Briefing; Adyen.
 
 ### SLIDE 25: United Kingdom: PayPal, Open Banking and wallets lift a strong card market
-- Tiles: [PA: Open Banking payments stat] · ~0.45M MAU (0.38 to 0.52M) · ~4.5K incremental · ~5.0K total · ~$1.7M/yr
+- Tiles: 351M Open Banking payments in 2025 (+57% YoY); 16.5M user connections (OBL, Jan 2026) · ~0.45M MAU (0.38 to 0.52M) · ~4.5K incremental · ~5.0K total · ~$1.7M/yr
 - L1 +~4.5K · ~$1.35M/yr (PayPal + Open Banking pay-by-bank + Apple/Google Pay) · L2 +~500 · ~$0.10M/yr (local GBP acquiring, SCA-aware routing) · L3 ~2.2K/yr · ~$0.26M/yr (retries + provider fallback)
-- Method priority: PayPal [PA stat] · Open Banking / pay-by-bank [PA stat] · Optional Apple Pay / Google Pay (Apple Pay already live)
+- Method priority: PayPal / e-wallets (e-wallets 35% of UK e-commerce transactions, cards 46%, PPRO) · Open Banking pay-by-bank (40.1M payments in June 2026; 1B+ cumulative; OBL via PYMNTS) · Optional Apple Pay / Google Pay (Apple Pay already live; 65% of UK adults registered for a mobile payment service, UK Finance 2025)
 - Base case: 3.0% → 4.0% (+1.0pp) · ARPU $300
 - Higgsfield-specific: help center states PayPal is not supported; the UK is Higgsfield's #4 market (3.76%).
-- SO WHAT: The UK is a preferred-method and renewal-recovery market, not a card-access problem.
-- Source: [PA].
+- SO WHAT: The UK is a preferred-method and renewal-recovery market, not a card-access problem (debit cards are more than half of all UK payments, UK Finance).
+- Source: Open Banking Limited (Jan 29 2026): https://www.openbanking.org.uk/insights/open-banking-in-2025-now-part-of-the-uks-everyday-financial-life/ · PYMNTS citing OBL (Jul 28 2026) · UK Finance (Aug 19 2026): https://www.ukfinance.org.uk/news-and-insight/press-release/digital-payments-continue-grow-mobile-wallets-become-more-popular · PPRO UK.
 
 ### SLIDE 26: Germany: PayPal, SEPA Direct Debit and invoice/BNPL make card-only checkout suboptimal
 - Tiles: PayPal +47% conversion lift in DE digital media (Stripe, OA) · ~0.40M MAU (0.34 to 0.46M) · ~4.0K incremental · ~4.4K total · ~$1.5M/yr
@@ -563,12 +565,12 @@ Four regional columns:
 - Source: Antom; KISDI; Stripe customer story; VentureSquare.
 
 ### SLIDE 32: Italy: PayPal, Satispay and domestic rails beyond cards
-- Tiles: [PA: Satispay users / PayPal share] · ~0.26M MAU (0.22 to 0.30M) · ~2.6K incremental · ~2.9K total · ~$1.0M/yr
+- Tiles: Satispay 6.5M users, 450K+ merchants (May 2026); e-wallets 35% of Italian e-commerce transactions (PPRO) · ~0.26M MAU (0.22 to 0.30M) · ~2.6K incremental · ~2.9K total · ~$1.0M/yr
 - L1 +~2.6K · ~$0.79M/yr (PayPal + Satispay) · L2 +~300 · ~$0.06M/yr (local EUR acquiring) · L3 ~1.3K/yr · ~$0.15M/yr
-- Method priority: PayPal [PA] · Satispay [PA] · Optional Bancomat Pay / PostePay
+- Method priority: PayPal / e-wallets (35% of e-com transactions vs cards 31%, PPRO) · Satispay (6.5M users; 450K+ merchants; EU-Startups Jun 2026) · Optional BANCOMAT Pay / PostePay / MyBank; BNPL EUR 9.9B in 2025, +45% (PoliMi)
 - Base case: 3.0% → 4.0% (+1.0pp) · ARPU $300
-- SO WHAT: Italy converts on trusted domestic methods; PayPal absence is the visible gap.
-- Source: [PA].
+- SO WHAT: Italy converts on trusted domestic methods (digital payments EUR 518B in 2025, +7%; ~14M Italians paid by smartphone, PoliMi); PayPal absence is the visible gap.
+- Source: Osservatorio Innovative Payments, Politecnico di Milano (Mar 12 2026): https://www.osservatori.net/comunicato/innovative-payments/pagamenti-digitali-in-italia-mercato/ · EU-Startups (Jun 11 2026) · PPRO Italy.
 
 ### SLIDE 33: France: Cartes Bancaires routing + PayPal / SEPA make renewals the play in a strong card market
 - Tiles: 73M+ CB cards; CB ≈ 60% of domestic card volume (OA) · ~0.24M MAU (0.21 to 0.28M) · ~2.4K incremental · ~2.7K total · ~$0.9M/yr
@@ -580,12 +582,12 @@ Four regional columns:
 - Source: Groupement CB; Banque de France.
 
 ### SLIDE 34: Canada: Interac and PayPal complete a card-heavy market
-- Tiles: [PA: Interac e-Transfer stat] · ~0.24M MAU (0.21 to 0.28M) · ~2.4K incremental · ~2.7K total · ~$0.9M/yr
+- Tiles: Interac e-Transfer 1.4B+ transactions worth $554B in 2024; 88% of Canadians have used it (Interac) · ~0.24M MAU (0.21 to 0.28M) · ~2.4K incremental · ~2.7K total · ~$0.9M/yr
 - L1 +~2.4K · ~$0.72M/yr (Interac e-Transfer / Interac Debit online + PayPal) · L2 +~300 · ~$0.05M/yr (local CAD acquiring) · L3 ~1.2K/yr · ~$0.14M/yr
-- Method priority: PayPal [PA] · Interac [PA] · Optional Apple / Google Pay
+- Method priority: PayPal / e-wallets (27% of e-com transactions vs cards 52%, PPRO) · Interac e-Transfer / Interac Debit (online transfers +16% volume YoY; 6.5B Interac Debit transactions a year) · Optional Apple / Google Pay
 - Base case: 3.0% → 4.0% (+1.0pp) · ARPU $300
-- SO WHAT: Canada is a preferred-method market; local CAD processing and PayPal are the whole play.
-- Source: [PA].
+- SO WHAT: Canada is a preferred-method market (credit 33%, debit 30%, EFT 14%, online transfer 7% of 2024 retail transactions, Payments Canada); local CAD processing, Interac and PayPal are the whole play.
+- Source: Interac (Sep 16 2025): https://www.interac.ca/en/content/news/interac-broadens-access-to-interac-e-transfer-for-payment-service-providers-under-new-federal-framework/ · Payments Canada CPMT 2025 fact sheet · PPRO Canada.
 
 ### SLIDE 35: Mexico: cross-border card decline + cash-to-digital gap together suppress conversion
 - Tiles: 21% bank transfer + 21% e-wallet share of e-commerce (OA) · ~0.16M MAU (0.14 to 0.18M) · ~3.2K incremental · ~3.5K total · ~$0.9M/yr
@@ -604,12 +606,12 @@ Four regional columns:
 - Source: Dutch Payments Association; Stripe.
 
 ### SLIDE 37: United Arab Emirates: local AED acquiring and wallets on a high-ARPU base
-- Tiles: [PA: cashless / digital payment stat] · ~0.19M MAU (0.16 to 0.22M) · ~1.9K incremental · ~2.1K total · ~$0.7M/yr
+- Tiles: Cards 52%, e-wallets 24% of UAE e-commerce; m-commerce 60%+; cross-border 37% of e-commerce (PPRO) · ~0.19M MAU (0.16 to 0.22M) · ~1.9K incremental · ~2.1K total · ~$0.7M/yr
 - L1 +~1.9K · ~$0.57M/yr (Apple Pay already live; add Tabby / Tamara and local wallets) · L2 +~300 · ~$0.05M/yr (local AED acquiring; issuer-friendly routing) · L3 ~700/yr · ~$0.08M/yr
-- Method priority: local AED cards via local acquiring [PA] · Apple Pay (live) · Optional Tabby / Tamara [PA]
+- Method priority: local AED card acquiring incl. the Jaywan domestic scheme (inaugurated Jul 2026; added to Network International's e-com gateway, Gulf News) · Apple Pay (live) · Optional Tabby / Tamara (BNPL)
 - Base case: 2.0% → 3.0% (+1.0pp) · ARPU $300
-- SO WHAT: The UAE is a local-processing market at high purchasing power; cards work, but locally.
-- Source: [PA].
+- SO WHAT: The UAE is a local-processing market at high purchasing power; cards work, but locally, and 37% of e-commerce is already cross-border, so issuers are used to foreign merchants but reward domestic routing.
+- Source: PPRO UAE: https://www.ppro.com/countries/united-arab-emirates/ · Gulf News (Jul 20 2026): https://gulfnews.com/business/banking/uae-rolls-out-jaywan-the-first-national-payment-card-banks-launch-new-schemes-1.500614102 · Wikipedia, Jaywan.
 
 ### SLIDE 38: Japan: high card penetration does not remove the need for local methods
 - Tiles: PayPay 70M+ registered users (Jul 2025); cashless ratio 42.8% (2024) (OA) · ~0.18M MAU (0.16 to 0.21M) · ~1.8K incremental · ~2.0K total · ~$0.66M/yr
@@ -630,12 +632,12 @@ Four regional columns:
 - Source: Jazz; State Bank of Pakistan; Trustpilot.
 
 ### SLIDE 40: China: WeChat Pay is live; Alipay completes cross-border wallet coverage
-- Tiles: [PA: Alipay / WeChat Pay users] · ~0.19M MAU (0.16 to 0.21M) · ~900 incremental · ~1.0K total · ~$0.26M/yr
+- Tiles: Weixin + WeChat 1,414M MAU (Tencent, Sep 30 2025); e-wallets 65% of Chinese e-commerce transactions (PPRO) · ~0.19M MAU (0.16 to 0.21M) · ~900 incremental · ~1.0K total · ~$0.26M/yr
 - L1 +~900 · ~$0.22M/yr (add Alipay alongside WeChat Pay, cross-border) · L2 +~100 · ~$0.01M/yr · L3 ~300/yr · ~$0.03M/yr
-- Method priority: WeChat Pay (live via Stripe) · Alipay [PA] · Optional UnionPay
+- Method priority: WeChat Pay (live via Stripe) · Alipay (add; Alipay and WeChat Pay are the two dominant wallets, PPRO) · Optional UnionPay SecurePay
 - Base case: 0.5% → 1.0% (+0.5pp) · ARPU $240
 - SO WHAT: China is a cross-border wallet market for a US merchant; the play is completeness, not entry. Smallest opportunity in the deck; keep as one slide or fold into the table.
-- Source: [PA].
+- Source: Tencent Q3 2025 results (Nov 13 2025): https://www.prnewswire.com/apac/news-releases/tencent-announces-2025-third-quarter-results-302614403.html · PPRO China.
 
 ---
 
@@ -746,6 +748,7 @@ Two columns:
 2. **18 slides país, no 20.** Consecuencia de lo anterior.
 3. **Competidor en el slide de "cost of delay":** genérico ("a localized competitor") con Google/Veo y Kling como ejemplos, porque Kuaishou (Kwai/Snack Video) está bloqueado en India desde 2020 y no quiero un dato atacable.
 4. **Nova fraud sin el "75%"** del deck de Bending Spoons; lo atamos al problema real (BBB F, 27 quejas, cargos no reconocidos).
+4b. **Competidor del slide 4 reformulado:** en lugar de "Kling toma tus usuarios", el argumento verificado es "nadie en AI video ha localizado el checkout (Kling global = USD vía Stripe) y la distribución ya se mueve (Google + Jio, ChatGPT Go + UPI)". Kwai y Snack Video están bloqueados en India desde 2020 (PIB), así que Kling en India no es un dato defendible.
 5. **Reconciliation** aparece como módulo con nota "confirm GA status" (memoria: roadmap sep-2026).
 6. **Impacto esperado:** +7% approval uplift y 30% recovered revenue (publicados), no +12% / 20 a 30%.
 
@@ -756,4 +759,4 @@ Two columns:
 3. Logos de referencia aprobados para un prospecto de AI/creator (deck OpenAI no los usa; el slide 7 los pide en la barra negra de partners, no de clientes).
 4. Destinatario: Alex Mashrabov (CEO) o Shotan Jakupov (Data & Growth Lead, citado por Stripe). Cambia el tono del slide 19.
 5. ¿Mantener slide 40 (China, $0.26M) o plegarlo a la tabla?
-6. Verificar el día del envío: página de pricing en vivo, bundle Gemini+Jio, lista de modelos en higgsfield.ai.
+6. Verificar el día del envío: página de pricing en vivo y lista de modelos en higgsfield.ai (el bundle Gemini+Jio y ChatGPT Go ya quedaron verificados el 16-sep-2026).
