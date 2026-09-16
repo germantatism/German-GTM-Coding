@@ -58,3 +58,6 @@ Pricing (S15):
 ## Estado tras el reajuste a $37.09 (16-sep, tarde)
 Aplicados en el deck: 2 (supuestos con $37.09), 3 (3DS condicional), 6 (cejillas), 1 (notas Kraken borradas), 14, 17, 18 y todos los números de S13 y S14 recalculados con ticket $37.09 (ver palco-proposal-2026-09-16.md). El ítem 16 (ticket por mercado en L2) queda sin efecto: por instrucción de German, todo el GTV recuperado usa $37.09.
 Pendientes de decisión: 4 (risk conditions $0.04), 5 (volumen 3DS), 7 (lockup S20 y tagline), 8 (contrato 3 años), 9 (ROI en S14, ahora: L4 cubre 82% a 128% del costo; cada 1% de fee sobre $6.0M = $60K), 10 (ahora 27 bps sobre $37.09), 11, 12, 13, 15, 19, 20, 21, 22, 23, 24, 25.
+
+## Sección de contexto montada (16-sep, noche)
+Aplicados 12 y 13: agenda 01 Nuestro entendimiento del contexto · 02 ¿Por qué Yuno? · 03 Business case · 04 Propuesta; divisor de contexto (S3); "Resumen ejecutivo" (S4: Palco, 50+ integraciones sin capa de decisión, retos clave, panel azul "Qué obtiene Palco al trabajar con Yuno"); "La capa de pagos de Palco hoy" (S5: tabla de aprobación por procesador con su data, 12 de 16 procesadores + total, y cuatro restricciones); divisor "Propuesta" (S18) antes del pricing (S19). Deck: 24 slides. Capturas: palco-deck-v3-s02/s04/s05.
