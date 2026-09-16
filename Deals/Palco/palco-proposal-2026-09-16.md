@@ -27,3 +27,25 @@ Pendientes de revisión: conciliación, network tokens, token vault. Incluidos: 
 5. Ventajas clave (slide 11) adaptadas a Palco: una sola integración por país, cuentas y contratos de sus clientes siguen siendo suyos, monitores con redistribución automática, subcuentas por cliente con reportes.
 6. Teléfono del cierre corregido a +1 786 238 4554 (el deck de Appmaking decía 787).
 7. Los volúmenes de 235,000 tx y $37.09 son los de Patricio (2-sep) y siguen sin reconciliar (ticket vs orden).
+
+
+## v2 del deck (16-sep, tarde): business case y pricing reajustados
+
+German rehizo el deck: agenda 02 Business Case, slide 13 (cuatro palancas), slide 14 (Impacto total), slide 15 (pricing en layout Flair). Pricing v2: platform fee $7,000 + $0.06 / $0.055 / $0.045 por tramo (58,750 / 117,500 / +). A 235,000 tx exitosas: pagos $12,044 + plataforma $7,000 = $19,044/mes ($228,525/año); 3DS 100,000 × $0.04 = $4,000; antifraude 20,000 × $0.018 = $360; total $23,404/mes ($280,845/año); $0.081 y $0.100 por tx. Sigue GREEN contra el calculator.
+
+**Regla de German (16-sep): el ticket promedio de Palco es $37.09, el que reportó Patricio. No usar el $163 derivado ($346M / 2.12M).** Business case reajustado con $37.09 en palancas 1 y 2 (L3 sigue sobre el TPV de tarjeta de $346M y L4 sobre FTE):
+
+| Palanca | Conservador | Optimista | Promedio |
+|---|---|---|---|
+| L1 aprobación en tarjeta (+5 pp / +10 pp sobre 1,952,600 intentos) | $3.6M | $7.2M | $5.4M |
+| L2 failover Fiserv + Pixel Pay (47.6% → 60% / 68% sobre 88,000) | $0.40M | $0.67M | $0.54M |
+| L3 costo de procesamiento (7.5 a 12.5 bps sobre $346M) | $0.26M | $0.43M | $0.35M |
+| L4 run-ops (3 a 4 FTE) | $0.23M | $0.36M | $0.30M |
+| Total anual | $4.5M | $8.7M | $6.6M |
+
+Tarjetas S14: GTV recuperado tenants $6.0M (rango $4.0M a $7.9M); ahorro MDR $0.35M; ahorro operativo Palco $0.30M. Cálculo: L1c 97,630 × 37.09 = $3,621,097; L1o 195,260 × 37.09 = $7,242,193; L2c 10,912 × 37.09 = $404,726; L2o 17,952 × 37.09 = $665,840.
+ROI con estos números: costo Yuno $281K/año; L4 cubre 82% a 128%; cada 1% de fee de Palco sobre $6.0M = $60K/año. All-in $0.100 por tx = 27 bps sobre un ticket de $37.09.
+Nota interna: $37.09 × 2.19M aprobadas = $81M, no los $346M de TPV en tarjeta que también reportaron; ambos son datos de Patricio. El deck usa el ticket para GTV recuperado y el TPV para bps.
+
+Aplicado en el deck el 16-sep (tarde): números de S13 y S14; supuestos reescritos con $37.09; "Si el 3DS aplica a todos los flujos, como plantearon"; "Se calibra con el MDR que nos compartan"; "sus 50+ integraciones (16 procesadores concentran el volumen)"; "supuesto de modelación de Yuno" en vez de "benchmark"; cejillas S14 BUSINESS CASE y S15 PROPUESTA · PRICING; notas del orador de S11 (Kraken) borradas.
+Pendiente de decisión de German: risk conditions $0.04 vs sugerido $0.0139; 3DS a 100,000 vs 257,000 intentos; "Contrato a 3 años"; línea de ROI en S14; "27 bps sobre $37.09" en S15; slides de contexto; lockup cortado en S20 y tagline del logo; "4 a 6 semanas"; apéndice sin fuentes.
