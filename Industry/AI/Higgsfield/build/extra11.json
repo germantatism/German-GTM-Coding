@@ -1,0 +1,42 @@
+{
+ "text": {
+  "g3db258e17b2_8_633": "Higher-tier / annual plans",
+  "g3db2d1d8a08_1_321": "Secondary methods",
+  "g3db2d1d8a08_1_420": "Source: PPRO UAE; Gulf News (Jul 2026); SimilarWeb  \u00b7  TO VALIDATE: Higgsfield UAE MAU, checkout starts, current paid conversion, payment-method mix, decline codes",
+  "g3db2d1d8a08_1_368": "Card share of e-com; wallets 24%",
+  "g3db2d1d8a08_1_411": "With local acquiring + wallets",
+  "g3db2d1d8a08_1_485": "Cash / rescue rail",
+  "g3db2d1d8a08_1_174": "Mexico: cross-border declines and the cash-to-digital gap limit conversion",
+  "g3db258e17b2_3_276": "The largest markets combine high Higgsfield demand, low current monetization and strong conversion uplift when local methods are enabled. Ranked by Lever 1 MRR.",
+  "g3db258e17b2_3_606": "~47%",
+  "g3db258e17b2_3_609": "~78%",
+  "g3db258e17b2_3_610": "of Lever 1 MRR",
+  "g3db258e17b2_3_282": "MAU (est.)",
+  "g3db258e17b2_3_633": "Cross-border card declines are high (Brazil, Mexico, Turkey)",
+  "g3db258e17b2_3_640": "Brazil \u00b7 Mexico \u00b7 Turkey \u00b7 India \u00b7 South Korea \u00b7 UK",
+  "g3db258e17b2_3_810": "Lever 2 sizing: converting failed card attempts into paid subscribers",
+  "g3db258e17b2_3_849": "~7.9K card attempts \u00d7  25% avoidable decline gap \u00d7  55% recoverable",
+  "g3db258e17b2_3_846": "Avoidable decline gap = cross-border decline rate \u2212 local-processing decline rate \u00b7 first-year revenue \u00d7 0.685 partial-year factor",
+  "g3db258e17b2_3_904": "Recovered renewals \u00d7 remaining value ($120 EM / $150 DM) \u00d7 0.78 incrementality haircut."
+ },
+ "style": {
+  "g3db258e17b2_3_742": {
+   "fontSize": {
+    "magnitude": 26,
+    "unit": "PT"
+   }
+  },
+  "g3db258e17b2_3_810": {
+   "fontSize": {
+    "magnitude": 26,
+    "unit": "PT"
+   }
+  },
+  "g3db258e17b2_3_868": {
+   "fontSize": {
+    "magnitude": 26,
+    "unit": "PT"
+   }
+  }
+ }
+}
