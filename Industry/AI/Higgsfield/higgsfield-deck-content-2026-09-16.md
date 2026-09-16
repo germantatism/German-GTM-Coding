@@ -9,6 +9,8 @@
 
 **Actualización (16-sep-2026, tarde):** el appendix ahora cubre los 20 mercados del top 20: se agregó **Estados Unidos** (slide 23, Stripe se queda como baseline; PayPal / Venmo / Cash App Pay, segundo procesador y recuperación de renovaciones modelados como upside de ~$4.0M/yr con +0.5pp, ARPU $300, fuera del hero de ~$25M) y **Rusia** (slide 42, mercado no direccionable: Visa/Mastercard suspendidos en marzo 2022, NSPK/Mir sancionado por el Tesoro de EE. UU. en febrero 2024; $0 modelado). El ranking de la palanca 1 (slide 43) muestra 20 filas y el gráfico de burbujas incluye a EE. UU. El deck tiene 51 slides.
 
+**Regla de moneda (16-sep-2026):** todo el deck habla en USD. Los montos en otras monedas se reemplazaron por métricas sin moneda: Corea usa Naver Pay 30.7M usuarios (≈60% de la población) en vez de ₩1.1T/día; Italia, Países Bajos y Pakistán usan crecimiento o conteos de transacciones en vez de €/PKR; Canadá muestra 1.4B+ e-Transfers sin el monto en dólares canadienses. Las menciones "local AED/KRW/BRL/EUR acquiring" se conservan porque describen adquirencia en moneda local, no montos.
+
 ## 0. Cómo usar este documento (para German)
 
 1. Cada slide tiene: título, texto exacto que va en el slide, y notas de construcción. Copia el texto tal cual; los corchetes `[...]` son instrucciones, no texto de slide.
