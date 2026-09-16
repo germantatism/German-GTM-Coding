@@ -49,3 +49,21 @@ Nota interna: $37.09 × 2.19M aprobadas = $81M, no los $346M de TPV en tarjeta q
 
 Aplicado en el deck el 16-sep (tarde): números de S13 y S14; supuestos reescritos con $37.09; "Si el 3DS aplica a todos los flujos, como plantearon"; "Se calibra con el MDR que nos compartan"; "sus 50+ integraciones (16 procesadores concentran el volumen)"; "supuesto de modelación de Yuno" en vez de "benchmark"; cejillas S14 BUSINESS CASE y S15 PROPUESTA · PRICING; notas del orador de S11 (Kraken) borradas.
 Pendiente de decisión de German: risk conditions $0.04 vs sugerido $0.0139; 3DS a 100,000 vs 257,000 intentos; "Contrato a 3 años"; línea de ROI en S14; "27 bps sobre $37.09" en S15; slides de contexto; lockup cortado en S20 y tagline del logo; "4 a 6 semanas"; apéndice sin fuentes.
+
+
+## v3 del business case (16-sep, noche): una sola base, 235,000 × $37.09
+
+**Regla de German:** el TPV se construye como 235,000 transacciones exitosas al mes × ticket promedio $37.09 = $8,716,150/mes = $104,593,800/año. Nada del business case usa el TPV de $457M ni los volúmenes de la tabla por procesador; de esa tabla solo salen tasas de aprobación y pesos relativos.
+
+Derivación: la cohorte (MP v2, Openpay, Banorte, Santander, Cybersource, Stripe, Bancard) aprueba 62.4% y concentra 55.7% de las transacciones aprobadas de su tabla → sobre la base, 130,900 aprobadas/mes y 209,800 intentos/mes; +5 pp = 10,490 tx/mes = 125,860/año × $37.09 = $4.67M; +10 pp = $9.34M. Fiserv + Pixel Pay: 47.6% y 1.9% de las aprobadas → 4,500 aprobadas/mes, 9,450 intentos/mes; a 60% = $0.52M, a 68% = $0.86M. L3: 7.5 a 12.5 bps sobre el TPV en tarjeta de la base (75.7% × $104.6M = $79.2M) = $59K / $99K. L4: $230K / $360K.
+
+| Palanca | Conservador | Optimista | Promedio |
+|---|---|---|---|
+| L1 aprobación en tarjeta | $4.7M | $9.3M | $7.0M |
+| L2 failover | $0.52M | $0.86M | $0.69M |
+| L3 costo de procesamiento | $59K | $99K | $79K |
+| L4 run-ops | $230K | $360K | $295K |
+| Total anual | $5.5M | $10.7M | $8.1M |
+
+GTV recuperado tenants $7.7M (rango $5.2M a $10.2M). ROI: costo Yuno $280,845/año (misma base de 235K); L4 cubre 82% a 128%; cada 1% de fee de Palco sobre $7.7M = $77K/año. All-in $0.100/tx = 27 bps sobre $37.09.
+Aplicado en el deck (S13 intro, cuerpos de palancas, supuestos; S14 tabla, tarjetas, supuestos). Nota: German eliminó los tres slides de contexto (S3 a S5 de la v3); el deck queda en 21 slides con el divisor "Propuesta" antes del pricing.
