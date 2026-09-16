@@ -30,9 +30,10 @@ def bubble_requests(s12, sim=None):
     return reqs
 
 # ---------- shape helpers ----------
-_n=[0]
+import time
+_n=[0]; _run=str(int(time.time()))[-6:]
 def _id(prefix):
-    _n[0]+=1; return f"hf_{prefix}_{_n[0]}"
+    _n[0]+=1; return f"hf_{prefix}_{_run}_{_n[0]}"
 def shape(page,kind,x,y,w,h,spans=None,fill=None,outline=None,valign=None,align=None,radius=None):
     """spans: list of (text,size,bold,color) joined by newlines. returns requests"""
     oid=_id(kind.lower()[:4]); r=[{'createShape':{'objectId':oid,'shapeType':kind,'elementProperties':{'pageObjectId':page,

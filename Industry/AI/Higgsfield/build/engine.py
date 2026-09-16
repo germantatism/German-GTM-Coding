@@ -79,9 +79,9 @@ def replace_requests(el,new_text):
     paras=paragraphs(el); rr=runs_of(el)
     def sig(st): return (st.get('fontSize',{}).get('magnitude'),st.get('bold'))
     two=len([p for p in paras if p['text'].strip()])==1 and len(rr)>=2 and sig(rr[0][1])!=sig(rr[-1][1])
-    if two and ('\n' in new_text or '  ' in new_text):
+    if two and ('\n' in new_text or '\x0b' in new_text or '  ' in new_text):
         reqs=[{'deleteText':{'objectId':oid,'textRange':{'type':'ALL'}}},{'insertText':{'objectId':oid,'insertionIndex':0,'text':new_text}}]
-        sep='\n' if '\n' in new_text else '  '
+        sep='\n' if '\n' in new_text else ('\x0b' if '\x0b' in new_text else '  ')
         head,tail=new_text.split(sep,1); ps=paras[0]['pstyle'] if paras else {}
         reqs+=_style_reqs(oid,0,len(head),rr[0][1],ps)
         reqs+=_style_reqs(oid,len(head)+len(sep),len(new_text),rr[-1][1],ps)
