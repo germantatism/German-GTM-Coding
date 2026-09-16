@@ -5,6 +5,8 @@
 
 ---
 
+**Deck construido en Google Slides (2026-09-16):** https://docs.google.com/presentation/d/17V3SJ4ErlM_8RMq46XG0nRkdau9NYAYz4rX3ilDxI8g/edit ("Higgsfield_Yuno_SEP 2026", 49 slides). Copia del deck de OpenAI editada vía Slides API; scripts en `build/`. Cambios respecto a este documento durante la construcción: el competidor del slide 4 es genérico (Google/Veo vía Jio y Kling en USD vía Stripe; sin OpenAI/ChatGPT), el gráfico de "cost of delay" se rediseñó nativo, los logos de Higgsfield van como cuadro de texto (no hay asset), las banderas vienen de flagcdn.com, y los slides país usan las estadísticas verificadas con fuentes primarias el 16-sep-2026 (NPCI/RBI, BCB vía Worldpay, Bank of Korea, PayPay/METI, Bank Indonesia, Bizum, BKM, EHI, Groupement CB, Banxico, Betaalvereniging, MoMo/SBV, JazzCash/SBP) en lugar de las cifras heredadas del deck de OpenAI.
+
 ## 0. Cómo usar este documento (para German)
 
 1. Cada slide tiene: título, texto exacto que va en el slide, y notas de construcción. Copia el texto tal cual; los corchetes `[...]` son instrucciones, no texto de slide.
