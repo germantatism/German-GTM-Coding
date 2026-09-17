@@ -1,0 +1,6 @@
+{
+  "name": "yuno-sales-deck-scripts",
+  "private": true,
+  "description": "pptxgenjs helper for the yuno-sales-deck skill",
+  "dependencies": { "pptxgenjs": "^3.12.0" }
+}
