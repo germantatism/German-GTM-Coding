@@ -14,7 +14,7 @@ OUT=os.path.dirname(os.path.abspath(__file__))
 NEW_TITLE='SUBSCRIPTIONS ENGINE & PRE-CHARGEBACK ALERTS'
 NEW_BODY=('First $50,000 processed free, then $0.05 per transaction through the engine\n'
           'Ethoca alerts, Mastercard network: $14 for every alert\n'
-          'Verifi RDR: enrolled through your PSP; cases surface in Yuno flagged as pre-dispute, live on Stripe today')
+          'Verifi RDR: enrolled through your PSP; cases surface in Yuno as pre-dispute where the provider passes them through, to be confirmed for your phase 1 providers')
 
 svc=service(); P=svc.presentations().get(presentationId=PID).execute()
 s=[x for x in P['slides'] if x['objectId']==S13][0]
