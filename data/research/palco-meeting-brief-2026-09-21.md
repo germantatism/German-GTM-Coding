@@ -1,5 +1,7 @@
 # Meeting Brief: Yuno <> PALCO Commercial Proposal (Sep 21, 2026)
 
+Google Doc: https://docs.google.com/document/d/1h4L49gak_2Nbs_maT9sn2M-SIf1ypWD-aRfLprtL48s/edit
+
 **Monday, September 21, 2026 · 11:00 Bogotá (GMT-5) · 10:00 Mexico City · 18:00 Madrid**
 Google Meet: https://meet.google.com/xyh-vxie-ovk · Event "Palco + Yuno | Propuesta", organized by German Tatis, created Sep 15.
 ⚠️ The calendar event currently ends at **11:30** (30 minutes). The acceptance emails from Fernando, Alfonso, Miguel and Joaquin all say **11:00 to 11:45**; the event was shortened on Sep 16 at 20:44 UTC after they accepted. Decide the length before Monday and re-send if 45.
