@@ -1,8 +1,8 @@
 # Appmaking: respuesta a Tatsiana (21-sep-2026)
 
-Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c6323ea2ae6c6`, v5; v1 a v4 borradas, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
+Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c64888d2c786f`, v6 (revisión final); el v5 editado a mano por German sigue en el hilo (draft `r-4366462570319751211`), descartar uno de los dos, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
 
-Antes de enviar: adjuntar el PDF de la propuesta actualizada (slide 14 con ADD-ONS).
+Antes de enviar: German cambió el adjunto por el link https://deck.y.uno/amprop (mismo slug de los correos del 15 y 18-sep). Confirmar en Papermark que ese link sirve la versión NUEVA del PDF (slide 13 con ADD-ONS).
 
 v2 (21-sep 17:45 COT): incorpora la respuesta de Jordan Belfort en Slack (llegó en alemán; traducida y cruzada con docs y casos internos). Foco: responder cada pregunta y anunciar la propuesta adjunta con el full package.
 
@@ -12,7 +12,7 @@ v3 (21-sep noche): German pidió reescribirlo en lenguaje simple (sin campos de 
 
 Hi Tatsiana,
 
-Hope you had a great weekend too. Attached is the updated proposal, now with the full package priced, and below are the answers to your questions.
+Hope you had a great weekend too. [Here](https://deck.y.uno/amprop) is the updated proposal, now with the full package priced, and below are the answers to your questions.
 
 **Pricing**
 
@@ -26,15 +26,15 @@ To give you the full picture, the proposal now shows what this looks like fully 
 
 **One-click payments**
 
-**1. Cards.** Yes. When a returning customer pays with a saved card, Yuno does not ask for the CVV and does not force 3DS. 3DS only runs if your routing rules are set up to request it on those payments, or if the customer's bank demands it. Expect that more often in Europe, where strong authentication rules apply to payments the customer starts unless the bank accepts an exemption, and occasionally elsewhere when the bank or the acquirer sees a payment as risky. On CVV, it also depends on how each acquirer connection is set up, so we will test this on Unlimit and Ecommpay in sandbox with your team before go-live.
+**1. Cards.** Yes. When a returning customer pays with a saved card, Yuno does not ask for the CVV and does not force 3DS. 3DS comes into play in two situations: when your routing rules are set up to request it on those payments, or when the customer's bank asks for authentication, in which case the customer completes 3DS to finish the payment. Expect the second more often in Europe, where strong authentication rules apply to payments the customer starts unless the bank accepts an exemption, and occasionally elsewhere when the bank or the acquirer sees a payment as risky. At your average ticket of about $18, many of those European payments can qualify for the low value exemption (under €30), which you can request through Yuno, with the bank having the final say. On CVV, it also depends on how each acquirer connection is set up, so we will test this on Unlimit and Ecommpay in sandbox with your team before go-live.
 
-**2. Apple Pay and Google Pay.** Yes. After the first wallet payment you can charge the customer again without them opening the wallet, and it runs like a saved card. And yes, you need to store the token yourselves from that first payment, since it will not show up in the list of enrolled payment methods. Good to know: the saved token is not locked to the provider that processed the first payment. The network reference travels with it, whichever provider your routing selects. Two limitations. The token is tied to the customer's device, so if it expires, or the customer changes phones or removes the card from the wallet, it stops working and they pay through the wallet once more. And some providers have their own requirements for these later charges, which we will validate for Unlimit and Ecommpay in the same test.
+**2. Apple Pay and Google Pay.** Yes. Once a first wallet payment is made with the save option on, you can charge the customer again without them opening the wallet, and it runs like a saved card. And yes, you need to store the token yourselves from that first payment, since it will not show up in the list of enrolled payment methods. Good to know: the saved token is not locked to the provider that processed the first payment. The network reference travels with it, whichever provider your routing selects. Two limitations. The token is usually tied to the customer's device, so if it expires, or the customer changes phones or removes the card from the wallet, it stops working and they pay through the wallet once more. And some providers have their own requirements for these later charges, which we will validate for Unlimit and Ecommpay in the same test.
 
 **3. PayPal.** Yes. The customer approves a billing agreement on PayPal once, which is the only redirect, and from then on you charge the saved account directly with no redirect. Two things to keep in mind: the customer can cancel that agreement from their PayPal account at any time, and PayPal has to approve and enable this feature on your merchant account (they call it reference transactions), which you request from PayPal directly.
 
-Two notes your developers will want from day one. First, create the customer in Yuno before that first payment and send its ID with it. If the customer details are only sent inline, nothing gets saved and no token comes back. Second, always flag saved payment charges correctly (first use or later use, and who starts the payment). It is what keeps approval rates up and protects you in chargeback disputes.
+Two notes your developers will want from day one. First, create the customer in Yuno before the first payment you want to save, and send its ID with that payment. If the customer details are only sent inline, nothing gets saved and no token comes back. Second, always flag saved payment charges correctly (first use or later use, and who starts the payment). It is what keeps approval rates up and protects you in chargeback disputes.
 
-Jarrett can walk your technical team through the exact API fields for each of these flows. Shall we do that on Thursday at your 5:00 PM, together with the proposal?
+We can walk your technical team through the exact API fields for each of these flows. Shall we do that on Thursday at your 5:00 PM, together with the proposal?
 
 Best regards,
 
@@ -94,3 +94,17 @@ Riesgos internos (NO van en el correo; para Jarrett e Ilya Ryabukhin antes de la
 | 3a PayPal | CONFIRMED | Sin cambio |
 | 3b, 3c PayPal | Correctos, pero son reglas de PayPal, no de Yuno | Se mantienen; 3c verificado en developer.paypal.com |
 | Faltantes | 5 sugerencias | Se añadieron 2, verificadas textual en docs: crear el customer antes y mandar su ID (si no, no vuelve `vaulted_token`) y marcar bien los stored credentials (si no, "decreased approval rates and loss of chargeback disputes"). Se dejaron fuera: `detail.card` vs `detail.wallet` (lo lleva Jarrett), monitoreo de expiración (sin fuente en docs) y límites del agreement de PayPal (vago, sin fuente) |
+
+## Revisión final (21-sep ~18:25 COT, v6)
+
+Estado en Gmail: no hay mensajes nuevos de Appmaking desde el de Tatsiana de las 10:01 COT. German editó el v5 a mano a las 18:06 COT (link en vez de adjunto; "We can" en vez de "Jarrett can"); esas dos ediciones se conservaron en el v6 y su borrador NO se borró.
+
+Números contra la slide 13 final: vault $500, tokens $0.05 / $0.01, recon $1,500 / 50,000 / $0.032, payments $16,000, total $22,400, $0.149 por trx, 20,000 tokens nuevos y ~17,000 updates: todo coincide. 22,400 / 150,000 = 0.1493.
+
+Correcciones de precisión aplicadas en el v6:
+1. Cards: "3DS only runs if A or B" y luego un tercer caso era inconsistente. Ahora son dos situaciones claras, y se precisa que si el banco pide autenticación el cliente completa 3DS (no es que "corra solo").
+2. Cards: se añadió la exención de bajo valor (menos de €30, docs sca-exemptions) porque su ticket promedio es ~$18: es el dato que más les sirve para Europa. El banco decide.
+3. Wallets: "After the first wallet payment" omitía la condición; ahora "made with the save option on".
+4. Wallets: "usually tied to the device", porque en Google Pay las credenciales PAN_ONLY son la tarjeta real, no un token de dispositivo.
+5. Nota a desarrolladores: "that first payment" era ambiguo después del párrafo de PayPal.
+6. Link: `deck.y.uno/amprop` es el correcto (decodificado de los correos enviados el 15 y 18-sep); la memoria lo tenía mal como "ampprop".
