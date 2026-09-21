@@ -1,16 +1,18 @@
 # Appmaking: respuesta a Tatsiana (21-sep-2026)
 
-Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c5bf6bcda6d3d`, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
+Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c61f1e7db4171`, v2; la v1 `1a0c5bf6bcda6d3d` fue borrada, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
 
 Antes de enviar: adjuntar el PDF de la propuesta actualizada (slide 14 con ADD-ONS).
+
+v2 (21-sep 17:45 COT): incorpora la respuesta de Jordan Belfort en Slack (llegó en alemán; traducida y cruzada con docs y casos internos). Foco: responder cada pregunta y anunciar la propuesta adjunta con el full package.
 
 ## Texto
 
 Hi Tatsiana,
 
-Hope you had a great weekend too. Your team is clearly deep in the docs already, so I will go straight to the answers. I am also attaching the updated proposal, with the two pending lines now priced.
+Hope you had a great weekend too. Answers to everything below, and attached is the updated proposal with the full package: the two lines that were pending are now priced, so the platform fee, the transaction tiers, token vault, network tokens, reconciliation, the subscriptions engine and the pre chargeback alerts are all in one place.
 
-**1. Reconciliation and network tokens (estimated pricing)**
+**Reconciliation and network tokens (estimated pricing)**
 
 - **Token vault:** included, no separate fee.
 - **Network tokens:** $0.05 per token created and $0.01 per token update (reissues, expiry changes). Using a token on a payment is not billed, that sits inside the per transaction fee.
@@ -18,23 +20,50 @@ Hope you had a great weekend too. Your team is clearly deep in the docs already,
 
 These are estimates, and we firm them up once the phase 1 providers are set.
 
-**2. One-click payments**
+**1. Cards: CIT one-click with `CARD_ON_FILE` + `USED`**
 
-**Cards (`CARD_ON_FILE` + `USED`).** Yes. With a `vaulted_token` Yuno does not ask for the CVV, and we attach the original network transaction ID for you, so the charge reaches the acquirer flagged as a customer initiated card on file payment. Two things can still bring CVV or 3DS back:
+Yes, in the normal case it skips both. You charge the `vaulted_token`, so no raw card data travels and the CVV is not involved, and Yuno attaches the original `network_transaction_id` automatically, so the payment reaches the acquirer as a customer initiated card on file charge linked to the first authenticated one.
 
-- **CVV** is the acquirer's call. Providers generally accept card on file payments without it, but some MID configurations still request it, in particular when the payment carries 3DS authentication data. Since your live traffic runs on Unlimit and Ecommpay, we will validate both with your team in sandbox before go-live.
-- **3DS** in Yuno is a step you place in your card route with your own conditions, so you decide whether returning customers go through it. When your route does call for a challenge, the payment comes back with `sdk_action_required: true` and a `redirect_url`. Beyond your own rules the issuer has the last word: in the EEA and UK a customer initiated payment stays in scope of SCA, so without an exemption the issuer can soft decline and ask for authentication. You can request exemptions through `three_d_secure.strong_customer_authentication_exemptions` (low value, transaction risk analysis and trusted beneficiary, among others), and the issuer decides whether to accept them.
+Cases where CVV or 3DS can still be triggered:
 
-**Apple Pay and Google Pay.** Yes, you read the docs right. Send the first wallet payment with `vault_on_success: true` and the `stored_credentials` under `detail.wallet` with usage `FIRST`. Yuno decrypts it into a card network token and stores it as a `CARD` record whose `parent_payment_method_type` is the wallet. Later charges use that `vaulted_token` with `detail.card.stored_credentials` and usage `USED`, with no wallet sheet and the network transaction ID attached automatically.
+- **Your own route.** 3DS in Yuno is a step you place in your card route with your own conditions, so it only runs for returning customers if your rules say so.
+- **The issuer.** It can require authentication regardless of the stored credential flag, or decline an SCA exemption. You request exemptions through `three_d_secure.strong_customer_authentication_exemptions` (low value, transaction risk analysis and trusted beneficiary, among others), and the issuer always has the last word.
+- **Local regulation.** In the EEA and UK a customer initiated payment stays in scope of SCA unless an exemption is accepted.
+- **Risk.** The acquirer or the scheme can flag a transaction as high risk and force a step up.
+- **CVV at the acquirer.** A few MID configurations still ask for it on card on file charges, in particular when the payment carries 3DS data. Your live traffic runs on Unlimit and Ecommpay, so we will validate both with your team in sandbox before go-live.
 
-- And yes, store the `vaulted_token` on your side, together with the brand and last four you want to display. It is returned only in that first payment response, and wallet vaulted instruments are intentionally left out of Retrieve Enrolled Payment Methods.
-- Limitations: the wallet's built in authentication covers the first payment only. Later charges travel as card on file on the network token, without a new cryptogram, so the SCA points above apply to them as well. Acceptance of that flow is provider specific, and we will confirm it on Unlimit and Ecommpay in the same sandbox pass. On Google Pay, `CRYPTOGRAM_3DS` credentials arrive as a device token, while `PAN_ONLY` credentials are the card stored in the Google account, which Yuno runs through 3DS when you have it enabled.
+When a challenge does run, the payment comes back with `sdk_action_required: true` and a `redirect_url`, so the customer completes it and the sale is not lost. No orchestration layer can guarantee zero step ups, but the framework to skip CVV and 3DS is there and most of it is in your hands.
 
-**PayPal.** Yes. PayPal is enrolled as its own method, `PAYPAL_ENROLLMENT`: the customer approves the agreement once on PayPal, which is the only redirect, and you receive a `vaulted_token`. From then on you charge it server side with no redirect back to PayPal. Three things to know: PayPal needs to have vaulting enabled on your PayPal merchant account, the enrollment runs through our SDK and not through the Direct card workflow, and for PayPal the `stored_credentials` go under `detail.wallet`, not `detail.card`.
+**2. Apple Pay and Google Pay**
 
-**3. Call**
+Yes, it is supported, and you read the docs right.
 
-No worries about the invite. With this you should have everything on pricing, so shall we go through it on Thursday at your 5:00 PM? I will bring Jarrett so your technical team can go deep on the one-click flows, and we can open the shared Slack channel we talked about to keep questions like these moving quickly.
+- **First payment:** send it with `vault_on_success: true` and the `stored_credentials` under `detail.wallet` with usage `FIRST`. Yuno decrypts the wallet token into a card network token and stores it as a `CARD` record whose `parent_payment_method_type` is the wallet.
+- **Later charges:** send the `vaulted_token` with `detail.card.stored_credentials` (`CARD_ON_FILE`, `USED`). No wallet sheet, no biometric prompt, no Apple or Google interaction. It runs on the network token rail like a card.
+- **Storing the token:** yes, persist the `vaulted_token` from that first payment response, together with the brand and last four you want to display. Wallet vaulted instruments are intentionally excluded from Retrieve Enrolled Payment Methods, so an empty list for a wallet only customer is expected even though the token is valid and chargeable.
+
+Limitations:
+
+- The token behind the wallet is tied to the customer's device. If it expires or is deactivated, the one-click charge fails and the customer has to pay through the wallet again.
+- The wallet's built in authentication covers the first payment only, so later customer initiated charges follow the same SCA logic as cards above. Acceptance of charges without a new cryptogram is provider specific, and we will confirm it on Unlimit and Ecommpay in the same sandbox pass.
+- On Google Pay, `CRYPTOGRAM_3DS` credentials arrive as a device token, while `PAN_ONLY` credentials are the card stored in the Google account, which Yuno runs through 3DS when you have it enabled.
+- Apple Pay on the web needs your domain registered and verified with Apple, as for any Apple Pay payment.
+
+**3. PayPal**
+
+Yes, after a one time enrollment. The mechanism is PayPal's billing agreement:
+
+1. The customer goes through `PAYPAL_ENROLLMENT` and approves the agreement on PayPal. That is the only redirect, and our SDK has a dedicated PayPal enrollment button for it.
+2. Yuno returns a `vaulted_token`.
+3. Later charges use that token server side, with no redirect and no PayPal login window.
+
+Restrictions:
+
+- The agreement has its own lifecycle on PayPal's side: the customer can revoke it from their PayPal account, and PayPal's risk engine can limit a charge.
+- PayPal needs to have vaulting (reference transactions) enabled on your PayPal merchant account.
+- The enrollment runs through our SDK and not through the Direct card workflow, and for PayPal the `stored_credentials` go under `detail.wallet`, not `detail.card`.
+
+Once you have gone through it, shall we do the call on Thursday at your 5:00 PM? I will bring Jarrett for the technical side.
 
 Best regards,
 
@@ -57,3 +86,8 @@ German
 | PAYPAL_ENROLLMENT, redirect único, cobro sin redirect | docs.y.uno enroll-payment-methods; Reface en producción | Verificado; ZPY-590 (Zuora) sin confirmar si ya está resuelto |
 | PayPal debe habilitar vaulting en la cuenta | Requisito de PayPal, no de Yuno | Confirmar con Jarrett |
 | `stored_credentials` en `detail.wallet` para PayPal | Ticket de Varun Pathi 21-sep y repro de Starlink | Verificado |
+| Casos de step up: issuer, riesgo del adquirente o scheme, exención rechazada, regulación local | Jordan Belfort (Slack, 21-sep) + docs sca-exemptions ("the card issuer has the final authority") | Verificado |
+| Token del wallet atado al dispositivo, puede expirar o desactivarse | Jordan Belfort (Slack, 21-sep); comportamiento estándar de los DPAN | Verificado a nivel general |
+| Dominio de Apple Pay registrado y verificado | Jordan Belfort + docs prerequisites-apple-pay | Verificado |
+| PayPal = billing agreement; botón de enrollment dedicado en el SDK | Jordan Belfort + changelog Web SDK v1.11.9 (18-sep-2026): "PayPal enrollment button (vault and billing agreement)" | Verificado |
+| El cliente puede revocar el agreement; PayPal puede limitar un cobro | Jordan Belfort; política de PayPal | No incluí "límites de variación del monto" por ser vago y sin fuente |
