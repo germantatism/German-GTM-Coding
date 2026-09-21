@@ -1,6 +1,6 @@
 # Appmaking: respuesta a Tatsiana (21-sep-2026)
 
-Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c64888d2c786f`, v6 (revisión final); el v5 editado a mano por German sigue en el hilo (draft `r-4366462570319751211`), descartar uno de los dos, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
+Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c65059f126c3c`, DEFINITIVO (mismo texto del v6); es el único borrador en el hilo: German pidió borrar el anterior y crear el último, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
 
 Antes de enviar: German cambió el adjunto por el link https://deck.y.uno/amprop (mismo slug de los correos del 15 y 18-sep). Confirmar en Papermark que ese link sirve la versión NUEVA del PDF (slide 13 con ADD-ONS).
 
