@@ -3,7 +3,7 @@
 box into the add-ons Tatsiana asked for on 2026-09-21: token vault (included), network tokens and a
 reconciliation estimate. The original slide is never edited; the copy lands right after it.
 
-Requires a valid Slides token at ~/.config/yuno-slides/token.json (see auth_slides.py).
+Works on the Drive COPY of the deck by default (--pid to override). Requires a valid Slides token at ~/.config/yuno-slides/token.json (see auth_slides.py).
   python3 Deals/Appmaking/build/dup_s13_addons.py --inspect              # print the box structure, change nothing
   python3 Deals/Appmaking/build/dup_s13_addons.py --nt established --dry  # print the requests, change nothing
   python3 Deals/Appmaking/build/dup_s13_addons.py --nt established        # apply + save a thumbnail for QA
@@ -25,7 +25,8 @@ then $0.022) is cheaper. Token vault: $0, bundled into core for any merchant pro
 import sys, os, json, time, argparse, urllib.request
 sys.path.insert(0, '/Users/germantatis/Desktop/GTMCoding/Industry/AI/Higgsfield/build')
 
-PID = '1oH2wwoz3EMYLKNMARaj23AVMf_C-hkPzdfLWnVZfNmc'
+ORIGINAL = '1oH2wwoz3EMYLKNMARaj23AVMf_C-hkPzdfLWnVZfNmc'  # live deck behind deck.y.uno/ampprop, never edited here
+PID = '1bAhlH3l7fDhmvxokTFvGHsk0wY4xqjQcIIYwoGAJy-U'       # Drive copy made 2026-09-21: "Proposal - AppMaking + Yuno (add-ons, 2026-09-21)"
 S13 = 'g3f6c0558646_0_35'
 OUT = os.path.dirname(os.path.abspath(__file__))
 PT = 12700.0  # EMU per point
@@ -175,7 +176,8 @@ def build_requests(slide, nt, matched=False, stamp=None):
     ids = {S13: new_slide}
     for k, el in enumerate({e['objectId']: e for e in touched}.values()):
         ids[el['objectId']] = f'{new_slide}_e{k}'
-    reqs = [{'duplicateObject': {'objectId': S13, 'objectIds': ids}}]
+    ids = {(slide['objectId'] if k == S13 else k): v for k, v in ids.items()}
+    reqs = [{'duplicateObject': {'objectId': slide['objectId'], 'objectIds': ids}}]
 
     # title (+ subtitle, same shape or its own)
     t_el = f['title'][0]; t_runs = runs(t_el); t_txt = text_of(t_el)
@@ -225,11 +227,17 @@ def inspect(slide):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--nt', choices=list(NT)); ap.add_argument('--matched', action='store_true')
-    ap.add_argument('--dry', action='store_true'); ap.add_argument('--inspect', action='store_true'); a = ap.parse_args()
+    ap.add_argument('--dry', action='store_true'); ap.add_argument('--inspect', action='store_true')
+    ap.add_argument('--pid', default=PID, help='presentation to edit (default: the Drive copy, not the live deck)'); a = ap.parse_args()
+    PID = a.pid
     if not a.inspect and not a.nt: raise SystemExit('--nt is required: established | floor | list | included (see the docstring)')
     from engine import service
     svc = service(); P = svc.presentations().get(presentationId=PID).execute()
-    s = [x for x in P['slides'] if x['objectId'] == S13][0]
+    print('deck:', P.get('title'), '| LIVE ORIGINAL' if PID == ORIGINAL else '| copy')
+    cand = [x for x in P['slides'] if x['objectId'] == S13] or \
+           [x for x in P['slides'] if any(text_of(e).strip().upper().startswith('PENDING REVIEW') for e, _, _ in flat(x))]
+    if len(cand) != 1: raise SystemExit(f'pricing slide not found unambiguously ({len(cand)} candidates)')
+    s = cand[0]
     if a.inspect: inspect(s); raise SystemExit(0)
     R, new_slide, row_text = build_requests(s, a.nt, a.matched)
     print('box title :', TITLE, '|', SUB); print('box rows  :', row_text.replace('\n', ' / '))
