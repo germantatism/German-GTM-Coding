@@ -1,6 +1,6 @@
 # Appmaking: respuesta a Tatsiana (21-sep-2026)
 
-Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c6240f0cd9ce6`, v3; v1 y v2 borradas, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
+Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c62defbf08503`, v4; v1 a v3 borradas, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
 
 Antes de enviar: adjuntar el PDF de la propuesta actualizada (slide 14 con ADD-ONS).
 
@@ -26,11 +26,11 @@ To give you the full picture, the proposal now shows what this looks like fully 
 
 **One-click payments**
 
-**1. Cards.** Yes. When a returning customer pays with a saved card there is no CVV and normally no 3DS. It can still come up in a few cases: if your own routing rules ask for 3DS, if the customer's bank requires it (more common in Europe, where strong authentication rules apply to payments the customer starts), or if the bank or the acquirer sees the payment as risky. On CVV specifically, a few acquirer setups still ask for it, so we will test this on Unlimit and Ecommpay in sandbox with your team before go-live.
+**1. Cards.** Yes. When a returning customer pays with a saved card, Yuno does not ask for the CVV and does not force 3DS. 3DS only runs if your own routing rules call for it or if the customer's bank demands it. Expect that more often in Europe, where strong authentication rules apply to payments the customer starts unless the bank accepts an exemption, and occasionally elsewhere when the bank or the acquirer sees a payment as risky. On CVV, it also depends on how each acquirer connection is set up, so we will test this on Unlimit and Ecommpay in sandbox with your team before go-live.
 
-**2. Apple Pay and Google Pay.** Yes. After the first wallet payment you can charge the customer again without them opening the wallet, and it runs like a saved card. And yes, you need to store the token yourselves from that first payment, since it will not show up in the list of enrolled payment methods. Two limitations: the saved token is tied to the customer's device, so if it expires or is deactivated the customer pays through the wallet once more, and whether each provider accepts these later charges varies, so we will confirm it for Unlimit and Ecommpay in the same test.
+**2. Apple Pay and Google Pay.** Yes. After the first wallet payment you can charge the customer again without them opening the wallet, and it runs like a saved card. And yes, you need to store the token yourselves from that first payment, since it will not show up in the list of enrolled payment methods. Two limitations. The saved token is tied to the customer's device, so if they change phones or remove the card from the wallet it stops working and they pay through the wallet once more. And whether each provider accepts these later charges varies, so we will confirm it for Unlimit and Ecommpay in the same test.
 
-**3. PayPal.** Yes. The customer approves a billing agreement on PayPal once, which is the only redirect, and from then on you charge the saved account directly with no redirect. Keep in mind that the customer can cancel that agreement from their PayPal account at any time, and that PayPal needs to have this feature enabled on your merchant account.
+**3. PayPal.** Yes. The customer approves a billing agreement on PayPal once, which is the only redirect, and from then on you charge the saved account directly with no redirect. Two things to keep in mind: the customer can cancel that agreement from their PayPal account at any time, and PayPal has to approve and enable this feature on your merchant account (they call it reference transactions), which you request from PayPal directly.
 
 Jarrett can walk your technical team through the exact API fields for each of these flows. Shall we do that on Thursday at your 5:00 PM, together with the proposal?
 
@@ -60,3 +60,21 @@ German
 | Dominio de Apple Pay registrado y verificado | Jordan Belfort + docs prerequisites-apple-pay | Verificado |
 | PayPal = billing agreement; botón de enrollment dedicado en el SDK | Jordan Belfort + changelog Web SDK v1.11.9 (18-sep-2026): "PayPal enrollment button (vault and billing agreement)" | Verificado |
 | El cliente puede revocar el agreement; PayPal puede limitar un cobro | Jordan Belfort; política de PayPal | No incluí "límites de variación del monto" por ser vago y sin fuente |
+
+## Verificación de la sección One-click (21-sep, v4)
+
+German pidió que quedara perfecta. Se le envió el texto a Jordan Belfort (Slack, 17:52 COT) para fact-check claim por claim; respondió "Still working on this one" y no entregó resultado (su mensaje quedó con reacción ❌). Verificación hecha con fuentes primarias:
+
+| Claim | Fuente | Resultado |
+|---|---|---|
+| Saved card = one-click, sin CVV | docs.y.uno stored-credentials: CARD_ON_FILE "Allows customers one-click payment for a frictionless payment experience" | Confirmado |
+| "Normally no 3DS" | El mismo doc dice que un CIT "typically requires cardholder authentication" | Sobreafirmado: se cambió a "Yuno does not force 3DS; it runs if your routing rules call for it or the bank demands it" |
+| Wallet one-click sin abrir el wallet | docs.y.uno, tabla de wallet tokens: "One-click customer purchase: reason CARD_ON_FILE, usage USED" | Confirmado |
+| Token del wallet atado al dispositivo | Apple Developer, merchant tokens: los DPAN se desactivan si el cliente cambia de dispositivo o quita la tarjeta | Confirmado; redacción ajustada a eso |
+| PayPal debe aprobar y habilitar reference transactions | developer.paypal.com: "Approval from PayPal is required to enable reference transactions for your live account" | Confirmado |
+| Botón de enrollment de PayPal con billing agreement | Changelog Web SDK v1.11.9 (18-sep-2026) | Confirmado |
+
+Riesgos internos (NO van en el correo; para Jarrett e Ilya Ryabukhin antes de la call):
+- **Ecommpay:** tarjeta guardada + paso 3DS de Yuno + sin CVV = rechazo 3201 "cvv required". Abierto desde el 8-sep, con impacto en producción; al 21-sep 03:27 COT sin hallazgos ni fecha de fix (#ext-overgear-yuno-ecommpay). Es justo el patrón de Appmaking en Europa.
+- **Unlimit:** el one-click CIT sin CVV fallaba (YSHUB-6529) y se corrigió en prod el 18-ago-2026. Queda un ajuste en curso para CIT con network token + criptograma (YSHUB-6951, PR #173 en draft al 16-sep). La conexión debe estar en el tipo de integración "recurring" (/api/recurrings); el tipo e-commerce (/api/payments) siempre exige CVV. El 3DS hospedado por Unlimit no está soportado en el conector (PRIOR-1137); el 3DS de Yuno delante de Unlimit sí funciona. Rebills de wallets vía Unlimit fallaron a nivel plataforma hasta el 10-sep (YSHUB-6814, cerrado).
+- **Apple Pay merchant tokens (MPAN):** sin evidencia de soporte en Yuno; no se menciona en el correo.
