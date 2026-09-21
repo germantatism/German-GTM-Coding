@@ -1,12 +1,14 @@
 # Appmaking: respuesta a Tatsiana (21-sep-2026)
 
-Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c65059f126c3c`, DEFINITIVO (mismo texto del v6); es el único borrador en el hilo: German pidió borrar el anterior y crear el último, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
+Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c657b7636981e`, VERSIÓN SIMPLE (v7), único borrador en el hilo); es el único borrador en el hilo: German pidió borrar el anterior y crear el último, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
 
 Antes de enviar: German cambió el adjunto por el link https://deck.y.uno/amprop (mismo slug de los correos del 15 y 18-sep). Confirmar en Papermark que ese link sirve la versión NUEVA del PDF (slide 13 con ADD-ONS).
 
 v2 (21-sep 17:45 COT): incorpora la respuesta de Jordan Belfort en Slack (llegó en alemán; traducida y cruzada con docs y casos internos). Foco: responder cada pregunta y anunciar la propuesta adjunta con el full package.
 
 v3 (21-sep noche): German pidió reescribirlo en lenguaje simple (sin campos de API; el detalle técnico lo lleva Jarrett a la call) y alineado con la slide 13 final: PCI token vault $500/mes (ya no incluido), total estimado fully ramped $22,400/mes con add-ons ($0.149/trx), supuestos 20,000 tokens nuevos + ~17,000 updates al mes. La versión técnica v2 queda en el historial de git (commit 4403142).
+
+v7 (21-sep ~18:50 COT): German quitó a mano la línea del vault y el párrafo del total, y pidió respuestas lo más simples posible y sin notas a desarrolladores. One-click quedó en 2 o 3 frases por pregunta; la validación en sandbox de Unlimit y Ecommpay va una sola vez al cierre. Las versiones largas (v2 a v6) están en el historial de git.
 
 ## Texto
 
@@ -16,25 +18,20 @@ Hope you had a great weekend too. [Here](https://deck.y.uno/amprop) is the updat
 
 **Pricing**
 
-The lines that were pending now have estimated pricing:
+The pending line items now have pricing:
 
-- **PCI token vault:** $500 per month.
 - **Network tokens:** $0.05 per token created and $0.01 per token update. Using a token on a payment is not billed.
 - **Reconciliation:** $1,500 a month including 50,000 reconciled transactions, then $0.032 for each additional one. It is optional, so you can add it later.
 
-To give you the full picture, the proposal now shows what this looks like fully ramped at 150,000 transactions a month: $16,000 a month for payments, and an estimated $22,400 with all the add-ons, which is about $0.149 per transaction. The add-on figures assume roughly 20,000 new tokens and 17,000 token updates a month. We will adjust them once we know your real numbers and the phase 1 providers are set.
-
 **One-click payments**
 
-**1. Cards.** Yes. When a returning customer pays with a saved card, Yuno does not ask for the CVV and does not force 3DS. 3DS comes into play in two situations: when your routing rules are set up to request it on those payments, or when the customer's bank asks for authentication, in which case the customer completes 3DS to finish the payment. Expect the second more often in Europe, where strong authentication rules apply to payments the customer starts unless the bank accepts an exemption, and occasionally elsewhere when the bank or the acquirer sees a payment as risky. At your average ticket of about $18, many of those European payments can qualify for the low value exemption (under €30), which you can request through Yuno, with the bank having the final say. On CVV, it also depends on how each acquirer connection is set up, so we will test this on Unlimit and Ecommpay in sandbox with your team before go-live.
+**1. Cards.** Yes. A returning customer pays with the saved card with no CVV, and Yuno does not force 3DS. It only comes up if your routing rules request it or if the customer's bank asks for authentication, which is more common in Europe.
 
-**2. Apple Pay and Google Pay.** Yes. Once a first wallet payment is made with the save option on, you can charge the customer again without them opening the wallet, and it runs like a saved card. And yes, you need to store the token yourselves from that first payment, since it will not show up in the list of enrolled payment methods. Good to know: the saved token is not locked to the provider that processed the first payment. The network reference travels with it, whichever provider your routing selects. Two limitations. The token is usually tied to the customer's device, so if it expires, or the customer changes phones or removes the card from the wallet, it stops working and they pay through the wallet once more. And some providers have their own requirements for these later charges, which we will validate for Unlimit and Ecommpay in the same test.
+**2. Apple Pay and Google Pay.** Yes. Once the first wallet payment is saved, you can charge the customer again without them opening the wallet. You do need to store the token yourselves, since it does not show up in the enrolled payment methods list. The one limitation is that the token is usually tied to the customer's device, so if they change phones or remove the card, they pay through the wallet once more.
 
-**3. PayPal.** Yes. The customer approves a billing agreement on PayPal once, which is the only redirect, and from then on you charge the saved account directly with no redirect. Two things to keep in mind: the customer can cancel that agreement from their PayPal account at any time, and PayPal has to approve and enable this feature on your merchant account (they call it reference transactions), which you request from PayPal directly.
+**3. PayPal.** Yes. The customer approves a billing agreement on PayPal once, and from then on you charge the saved account with no redirect. One requirement: PayPal has to enable this feature (reference transactions) on your merchant account.
 
-Two notes your developers will want from day one. First, create the customer in Yuno before the first payment you want to save, and send its ID with that payment. If the customer details are only sent inline, nothing gets saved and no token comes back. Second, always flag saved payment charges correctly (first use or later use, and who starts the payment). It is what keeps approval rates up and protects you in chargeback disputes.
-
-We can walk your technical team through the exact API fields for each of these flows. Shall we do that on Thursday at your 5:00 PM, together with the proposal?
+We will validate all three on Unlimit and Ecommpay with your team in sandbox before go-live, and we can walk your technical team through the details on a call. Does Thursday at your 5:00 PM work?
 
 Best regards,
 
