@@ -1,6 +1,6 @@
 # Appmaking: respuesta a Tatsiana (21-sep-2026)
 
-Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c657b7636981e`, VERSIÓN SIMPLE (v7), único borrador en el hilo); es el único borrador en el hilo: German pidió borrar el anterior y crear el último, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
+Borrador en Gmail, hilo "Appmaking + Yuno: Call Recap and Next Steps" (draft msg `1a0c65ba5faa2d1c`, VERSIÓN SIMPLE (v8), único borrador en el hilo); es el único borrador en el hilo: German pidió borrar el anterior y crear el último, respuesta al mensaje `1a0c47d10ec58f1a`). To: Tatsiana. Cc: Dzmitry, Jarrett, Sean (Piotr quedó fuera del cc en el último correo de Tatsiana; re-agregarlo es decisión de German).
 
 Antes de enviar: German cambió el adjunto por el link https://deck.y.uno/amprop (mismo slug de los correos del 15 y 18-sep). Confirmar en Papermark que ese link sirve la versión NUEVA del PDF (slide 13 con ADD-ONS).
 
@@ -9,6 +9,8 @@ v2 (21-sep 17:45 COT): incorpora la respuesta de Jordan Belfort en Slack (llegó
 v3 (21-sep noche): German pidió reescribirlo en lenguaje simple (sin campos de API; el detalle técnico lo lleva Jarrett a la call) y alineado con la slide 13 final: PCI token vault $500/mes (ya no incluido), total estimado fully ramped $22,400/mes con add-ons ($0.149/trx), supuestos 20,000 tokens nuevos + ~17,000 updates al mes. La versión técnica v2 queda en el historial de git (commit 4403142).
 
 v7 (21-sep ~18:50 COT): German quitó a mano la línea del vault y el párrafo del total, y pidió respuestas lo más simples posible y sin notas a desarrolladores. One-click quedó en 2 o 3 frases por pregunta; la validación en sandbox de Unlimit y Ecommpay va una sola vez al cierre. Las versiones largas (v2 a v6) están en el historial de git.
+
+v8 (21-sep ~19:00 COT): German pidió quitar los "Yes." iniciales y la frase de validación en sandbox ("We will validate all three on Unlimit and Ecommpay"). Ojo interno: sin esa frase el correo ya no cubre el bug abierto de Ecommpay (3201 cvv required tras 3DS de Yuno); llevarlo resuelto o con dueño a la call.
 
 ## Texto
 
@@ -25,13 +27,13 @@ The pending line items now have pricing:
 
 **One-click payments**
 
-**1. Cards.** Yes. A returning customer pays with the saved card with no CVV, and Yuno does not force 3DS. It only comes up if your routing rules request it or if the customer's bank asks for authentication, which is more common in Europe.
+**1. Cards.** A returning customer pays with the saved card with no CVV, and Yuno does not force 3DS. It only comes up if your routing rules request it or if the customer's bank asks for authentication, which is more common in Europe.
 
-**2. Apple Pay and Google Pay.** Yes. Once the first wallet payment is saved, you can charge the customer again without them opening the wallet. You do need to store the token yourselves, since it does not show up in the enrolled payment methods list. The one limitation is that the token is usually tied to the customer's device, so if they change phones or remove the card, they pay through the wallet once more.
+**2. Apple Pay and Google Pay.** Once the first wallet payment is saved, you can charge the customer again without them opening the wallet. You do need to store the token yourselves, since it does not show up in the enrolled payment methods list. The one limitation is that the token is usually tied to the customer's device, so if they change phones or remove the card, they pay through the wallet once more.
 
-**3. PayPal.** Yes. The customer approves a billing agreement on PayPal once, and from then on you charge the saved account with no redirect. One requirement: PayPal has to enable this feature (reference transactions) on your merchant account.
+**3. PayPal.** The customer approves a billing agreement on PayPal once, and from then on you charge the saved account with no redirect. One requirement: PayPal has to enable this feature (reference transactions) on your merchant account.
 
-We will validate all three on Unlimit and Ecommpay with your team in sandbox before go-live, and we can walk your technical team through the details on a call. Does Thursday at your 5:00 PM work?
+We can walk your technical team through the details on a call. Does Thursday at your 5:00 PM work?
 
 Best regards,
 
