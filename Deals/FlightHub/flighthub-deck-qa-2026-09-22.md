@@ -28,3 +28,10 @@ Deck: Google Slides 1O7nRB5nFt5DGSt_tnGsa0cY7HVQhui4CoCS_gJthczI, 24 slides, rev
 - Apéndice 21 y 22 compara contra "single PSP/MoR", que no es FlightHub, con stats sin fuente. Opcional quitarlo.
 - Policy: network tokens $0.05/$0.01 y reconciliation 200K por $1,500 están bajo mínimo (zona roja, CFO + CRO); alerts $15 y platform fee $10K están en list. Sirve para enviar, no para bookear sin firma.
 - El text box "$ 0.71" de las slides 13 y 14 no se ve en el export; no afecta.
+
+## Aplicado en el deck vivo (22-sep, vía Slides API con service account)
+- Bloqueante 1: slide 16 ahora dice "NETWORK TOKENS & RECONCILIATION" y "Network tokens: $0.05 per token created, $0.01 per token update".
+- Bloqueante 2: slide 13, palanca 2 = "Routing & retries", cabe en una línea (verificado en PDF re-exportado).
+- Bloqueante 3: slide 19, Assumptions = "in-house cost: 4 to 5 payments engineers at $100K fully loaded ($0.4M to $0.5M, the run-ops lever) plus infrastructure, PCI and tooling". La caja de texto se estrechó al margen (antes se salía del slide, borde derecho en 1.048 del ancho); ahora envuelve en dos líneas dentro del margen.
+- Observado al verificar: German cambió el Tier 5 a $0.018/trx (era $0.015); no afecta los totales de 700K ni 800K. La palanca 1 de la slide 13 dice "Conversion uplift" pero solo se ve "Conversion" (el resto queda oculto, no se nota).
+- Script: Deals/FlightHub/build/apply_blocker_fixes_2026-09-22.py. Los recomendados 4 a 8 siguen pendientes.
