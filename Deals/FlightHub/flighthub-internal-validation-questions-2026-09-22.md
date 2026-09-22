@@ -1,41 +1,16 @@
-# FlightHub · preguntas internas a validar tras el presencial del 22-sep-2026
+# FlightHub · questions for Jarrett after the Sep 22 in-person (Will's notes)
 
-Fuente: notas de Will Wong de la reunión en Montreal con Nick y Anna-Lena. Lectura de Will: todo es precio y el trade-off build interno vs orquestador. Call positiva.
+Two things Will flagged as "validate": scheduled retries and chargeback / dispute orchestration. Everything else in the notes (A/B testing of routes, payment links) we already know.
 
-## Chargebacks y disputas (Jarrett / producto)
-1. ¿Qué tenemos hoy de chargeback y dispute management en el dashboard? ¿Solo visibilidad y alertas, o también gestión del caso: evidencia, representment, aceptar o disputar?
-2. ¿Podemos orquestar chargebacks a través de sus 7 proveedores (Chase Paymentech, Stripe, Nuvei, Airwallex, Adyen, Braintree, ConnexPay)? ¿De cuáles ingerimos los chargebacks por webhook y los normalizamos en un solo lugar?
-3. ¿Existe API de chargebacks (listar disputas, subir evidencia, responder)? ¿Para qué proveedores está soportada?
-4. Ellos ya tienen proveedor de chargebacks. ¿Podemos alimentarlo (webhooks o export) o convivir con él sin duplicar alertas?
-5. Chargeback alerts (Ethoca + Verifi): ¿cómo se enrolan los MIDs y descriptors de 7 proveedores, quién es titular del contrato con Ethoca y Verifi, qué match rate esperamos, qué pasa con las alertas unmatched, y la RDR de Verifi va vía PSP como en Appmaking?
+## 1. Scheduled (delayed) retries
+1. Can we configure a delayed retry on a route, i.e. wait X seconds or minutes before retrying on the same or the next provider, instead of an instant retry? Is that native in routing today, or only in the subscriptions engine (scheduled smart retries)?
+2. If it exists, where is it set (route, decline group, condition set) and what are the limits (delay range, max attempts)?
+3. If it does not exist, is it on the roadmap and when? What can we commit to FlightHub?
+4. How do instant retries work exactly today: retry on the same provider vs cascade to the next one, on which decline codes or decline groups, with what cap on attempts? And on a retry after a timeout, how do we avoid a double authorization or double charge (idempotency, auto-void)?
 
-## Retries (Jarrett / producto)
-6. Instant retries: ¿reintento en el mismo proveedor o cascada al siguiente, sobre qué decline codes o grupos, y con qué tope de intentos?
-7. Delayed retry por ruta: ¿se puede configurar un delay (segundos o minutos) antes de reintentar en una ruta? ¿Existe en routing o solo en subscriptions (smart retries programados)? Si no existe, ¿está en roadmap y cuándo?
-8. ¿Cómo evitamos doble autorización o doble cobro cuando un intento hace timeout y se reintenta (idempotencia, void automático)?
-
-## A/B testing de rutas (Jarrett)
-9. Volume split por porcentaje: ¿se puede correr sobre un condition set específico, varios experimentos a la vez, y con asignación aleatoria por transacción o sticky por cliente?
-10. ¿Qué reporting da el dashboard por variante (approval rate, latencia, costo) y se puede exportar para que Anna-Lena lo analice ella misma?
-
-## Payment links (Jarrett / producto)
-11. ¿Qué cubre hoy lo que mostramos como payment links (link único vs reutilizable, expiración, branding, métodos)? ¿Está incluido en la platform fee o se cobra como pay-in normal?
-
-## Network tokens y vault (Jarrett / producto)
-12. ¿Cuáles de sus 7 proveedores aceptan network tokens emitidos por Yuno y cuáles caen a PAN? El deck dice "across all seven providers".
-13. ¿Qué evento exacto factura "token created" y "token updated"? Necesito el conteo esperado para estimar el add-on.
-14. Migración de sus PANs cifrados al vault: ¿bulk import, formato, tiempos? ¿El vault sigue gratis con orquestación (la policy dice $0 bundled)?
-
-## Reconciliación (Thiago de Souza / producto)
-15. ¿Qué es una "transacción conciliada" a efectos de facturación: pay-in exitosa, o también refunds, chargebacks y payouts?
-16. ¿Tenemos settlement reports configurados para sus 7 proveedores, incluido ConnexPay (acquiring e issuing)? ¿Fee y settlement recon está GA? En QA de decks figura como no GA.
-
-## Uptime y single point of failure (infra / CTO)
-17. Uptime real de los últimos 12 meses y SLA contractual (el apéndice dice 99.99%): ¿qué número podemos poner por escrito y con qué créditos?
-18. ¿Qué pasa si Yuno se cae: multirregión, failover, RTO y RPO, status page, incidentes y post-mortems del último año?
-19. ¿Podemos proponer un modo de contingencia donde su capa de routing actual llame directo a los PSPs si Yuno no responde? ¿Quién de Yuno (Edwin, Rik, infra) hace la sesión con Nick?
-
-## Pricing (Sean / Finance)
-20. Network tokens a $0.005 / $0.01 y recon 200K por $1,500 están bajo mínimo de la policy: ¿pedimos aprobación roja (CFO + CRO, 5 días hábiles) antes de enviar, o ajustamos?
-21. Platform fee $9K + mínimo $25K: Sean dijo que normalmente es uno u otro. ¿Lo mantenemos o dejamos solo uno para responder al "todo es precio"?
-22. Nova AI no les interesó: ¿lo quitamos de la slide en vez de dejarlo pending?
+## 2. Chargeback and dispute management
+5. Do we have chargeback and dispute management in the dashboard? Visibility and alerts only, or also case handling: evidence upload, representment, accept or contest?
+6. Can we orchestrate chargebacks across their 7 providers (Chase Paymentech, Stripe, Nuvei, Airwallex, Adyen, Braintree, ConnexPay)? From which of them do we ingest chargebacks via webhook and normalize them in one place?
+7. Is there a chargebacks API (list disputes, upload evidence, respond)? Which providers are supported through it?
+8. They already have a chargeback provider. Can we feed it (webhooks or export) or coexist with it without duplicating alerts?
+9. Chargeback alerts (Ethoca + Verifi), now priced in the proposal at $15 per matched alert: how do we enroll MIDs and descriptors across 7 providers, who holds the Ethoca and Verifi contract, what match rate should we expect, what happens with unmatched alerts, and does Verifi RDR go through the PSP as with Appmaking?
