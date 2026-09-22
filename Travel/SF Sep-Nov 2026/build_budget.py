@@ -56,7 +56,7 @@ rows = [
     ("Airbnb: precio de la unidad por noche (2 pax, sin impuestos)", 440, 130, 121, "USD/noche",
      "Política: 2 × $220 (tope hotel SF por persona). Realista: listing SOMA Executive Retreat (2BR) aprobado por Sean como '<$4k/mes' = ~$130/noche. CONFIRMAR con el precio real del listing. Ahorro: cuartil inferior Airbnb SF $121 (AirROI 2026)."),
     # row 9
-    ("Airbnb: tu parte por noche (sin impuestos)", "=B8*$B$5", "=C8*$B$5", "=D8*$B$5", "USD/noche", "= unidad × tu parte."),
+    ("Airbnb: tu parte por noche (sin impuestos)", "=B8*$B$5", "=C8*$B$5", "=D8*$B$5", "USD/noche", "Unidad × tu parte (Supuestos B5)."),
     # row 10
     ("Impuestos Airbnb (TOT 14% + TID 2,25%) si la reserva es < 30 noches", "=IF(Resumen!$B$9<30,0.1625,0)", "=IF(Resumen!$B$9<30,0.1625,0)", "=IF(Resumen!$B$9<30,0.1625,0)", "%",
      "SF Transient Occupancy Tax 14% + Tourism Improvement District 2,25% aplican solo a estadías < 30 noches (sftreasurer.org). Con 30+ noches queda en 0%."),
@@ -151,7 +151,7 @@ for i, d in enumerate(DAYS):
         for col in range(1, 5): dd.cell(r, col).fill = sub_fill if col != 4 else in_fill
     dd.cell(r, 11).font = Font(bold=True)
 tr = LAST + 1
-dd.cell(tr, 1, "TOTAL VIAJE (sin vuelo)").font = Font(bold=True)
+dd.cell(tr, 1, "TOTAL VIAJE (sin vuelo; lavandería y comidas con clientes solo en Resumen)").font = Font(bold=True)
 for col in range(5, 14):
     L = get_column_letter(col)
     c = dd.cell(tr, col, f"=SUM({L}{FIRST}:{L}{LAST})"); c.number_format = USD; c.font = Font(bold=True); c.fill = tot_fill; c.border = box
