@@ -37,6 +37,8 @@ Lo que vimos con Daniel y por qué creemos que encaja:
 4. Dashboard con todas las suscripciones agrupadas por plan y por estado, que es la base para la analítica por plan y la proyección de cierre de mes que mencionaba Cristian.
 5. Planes mensuales, trimestrales o anuales, con los siete días gratis configurados en la plataforma. Si un reintento exitoso mantiene o reinicia la fecha de cobro es una decisión de negocio que queda de su lado.
 
+Como Carlos decía que es más visual, en los próximos días les compartimos también un one-pager del producto de suscripciones para que tengan todo esto en una sola página.
+
 Sobre la migración:
 
 - Tokens de tarjeta en PayU y Wompi: se pueden migrar a Yuno y seguir cobrando como MIT con el network transaction ID. Entendemos que por ahora prefieren no tocar esos dos flujos, así que el foco es cuentas.
@@ -60,6 +62,6 @@ German
 
 **Notas:**
 - Sin em-dashes ni " - " como puntuación. Español, tuteo, tono senior.
-- Compromisos que el correo deja sobre la mesa: (a) diagrama del flujo de integración para el martes (Daniel / German), (b) respuesta sobre bancos conectados para débito a cuenta y tiempos de respuesta, (c) tarifarios por escrito el martes después de la sesión (consultar Pricing Policy antes), (d) invitación del martes 2:00 p.m. COT por enviar.
+- Compromisos que el correo deja sobre la mesa: (a) diagrama del flujo de integración para el martes (Daniel / German), (b) respuesta sobre bancos conectados para débito a cuenta y tiempos de respuesta, (c) tarifarios por escrito el martes después de la sesión (consultar Pricing Policy antes), (d) invitación del martes 2:00 p.m. COT por enviar, (e) one-pager del producto de suscripciones "en los próximos días" (no existe uno listo: el deck Subscriptions/deck-subscriptions-launch-3.pdf es interno y el one-pager revisado para Peacock el 18-sep quedó sin go; hay que armarlo o corregirlo antes de enviarlo).
 - Cifras que NO van en el correo: split 55/25/20, 100 a 150K suscriptores, 300K base, 150M COP de desarrollo.
 - Borrador creado en Gmail como correo nuevo (no existe hilo de correo con Carlos; el hilo "Experian + Yuno" de febrero es la intro de Clariana a Julián Buitrago con siete personas de Experian en copia).
