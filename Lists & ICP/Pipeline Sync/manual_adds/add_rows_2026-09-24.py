@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Append UNICEF Colombia, Experian (DataCredito) and Linea Directa to Deal Status GTM > Deal Status Tracker.
+"""Append UNICEF Colombia, Experian (DataCredito), Linea Directa and Tiendamia to Deal Status GTM > Deal Status Tracker.
 
 Auth: service account ~/.config/gsuite/sa.json (the sheet must be shared as Editor with
 gtm-claude-editor@gtm-claude-tools-260922.iam.gserviceaccount.com).
 Idempotent: skips a row if the Company already exists (case-insensitive, trimmed), same rule as the sync.
-Usage: python3 add_rows_2026-09-24.py [--dry]
+Usage: python3 add_rows_2026-09-24.py [--dry] [--with-stale]
 """
 import os, sys
 from google.oauth2 import service_account
@@ -34,10 +34,33 @@ ROWS = [
      "Retail & E-commerce",
      "Inbound via Susana (SDR). Colombian fashion direct-sales group (Carmel, Pacifika, Loguin; Grupo Elede). Luis Paternina (Treasury Director) and Jesus Cubides (USC Manager). 300K digital tx/month in CO + 25K in PE, ticket COP 180K / PEN 200. Want Nequi, Daviplata, Wompi, PSE, Dale, Bancolombia app, cards, and Yape in Peru; integrate via API. Intro + dashboard demo Sep 30 2pm COT (Luis confirmed the slot, invite pending).",
      "Demo"],
+    ["Tiendamia",
+     "https://www.tiendamia.com",
+     "https://www.linkedin.com/company/tiendamia",
+     "E-commerce & Retail",
+     "Booked by Pedro Ferrer (SDR): intro call Sep 25 9am COT with Salvador Boidi. Cross-border marketplace (Miami HQ; AR, BR, CR, EC, PE, UY). Yuno already demoed them in Feb 2024 (Cybersource flow for Uruguay, Slack #tiendamia-yuno); no CRM account in Gong. Confirm Salvador's role and what changed since 2024.",
+     "Discovery"],
+]
+
+# SDR-sourced inbound with no follow-up on record. Added only with --with-stale.
+STALE_ROWS = [
+    ["American Red Cross",
+     "https://www.redcross.org",
+     "https://www.linkedin.com/company/american-red-cross",
+     "Nonprofit & Fundraising",
+     "Inbound via Susana (SDR): 30-min call Sep 2 with Carlos Carneiro (Merchant Services, seniority unconfirmed). No recap, follow-up or reply on record since. Angle if pursued: three disconnected gateways across donation surfaces and B2B Invoice Central on the blood-products line.",
+     "Discovery"],
+    ["Cobrana",
+     "https://www.cobrana.pe",
+     "",
+     "Financial Services",
+     "Intro via Isabella Ponce: calls Aug 21 and Aug 24 with Gabriel Shimabuko (co-founder, ex-Interbank). WhatsApp collections layer on top of Kashio in Peru, ~USD 67K/month; two-person startup. No follow-up since Aug 24.",
+     "Discovery"],
 ]
 
 def main():
     dry = "--dry" in sys.argv
+    rows = ROWS + (STALE_ROWS if "--with-stale" in sys.argv else [])
     creds = service_account.Credentials.from_service_account_file(SA, scopes=["https://www.googleapis.com/auth/spreadsheets"])
     svc = build("sheets", "v4", credentials=creds, cache_discovery=False)
     vals = svc.spreadsheets().values().get(spreadsheetId=SID, range=f"'{TAB}'!A1:F").execute().get("values", [])
@@ -45,7 +68,7 @@ def main():
     assert header[:6] == HEADERS, f"unexpected header: {header}"
     existing = {r[0].strip().lower() for r in vals[1:] if r and r[0].strip()}
     last = max((i + 1 for i, r in enumerate(vals) if r and r[0].strip()), default=1)
-    to_add = [r for r in ROWS if r[0].strip().lower() not in existing]
+    to_add = [r for r in rows if r[0].strip().lower() not in existing]
     print(f"rows in tab: {len(vals)}, last filled row: {last}, to add: {[r[0] for r in to_add]}")
     if dry or not to_add:
         return
