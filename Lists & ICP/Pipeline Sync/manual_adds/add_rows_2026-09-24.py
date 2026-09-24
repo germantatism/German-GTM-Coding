@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Append UNICEF Colombia, Experian (DataCredito), Linea Directa and Tiendamia to Deal Status GTM > Deal Status Tracker.
+"""Append UNICEF Colombia, Experian (DataCredito), Linea Directa, Tiendamia and Cruz Verde Colombia to Deal Status GTM > Deal Status Tracker.
 
 Auth: service account ~/.config/gsuite/sa.json (the sheet must be shared as Editor with
 gtm-claude-editor@gtm-claude-tools-260922.iam.gserviceaccount.com).
@@ -40,6 +40,12 @@ ROWS = [
      "E-commerce & Retail",
      "Booked by Pedro Ferrer (SDR): intro call Sep 25 9am COT with Salvador Boidi. Cross-border marketplace (Miami HQ; AR, BR, CR, EC, PE, UY). Yuno already demoed them in Feb 2024 (Cybersource flow for Uruguay, Slack #tiendamia-yuno); no CRM account in Gong. Confirm Salvador's role and what changed since 2024.",
      "Discovery"],
+    ["Cruz Verde Colombia",
+     "https://www.cruzverde.com.co",
+     "https://www.linkedin.com/company/droguerias-cruz-verde-colombia",
+     "Retail & E-commerce",
+     "Inbound via Susana and Alejandro Bernal: intro May 21 (Andres Guzman Forero, Ecommerce Manager), demo Sep 1, dashboard review Sep 22; NDA and business case in progress (Sep 23). Mercado Pago only (incl. POS payment links), PSE 58% of sales, 100K tx/mo (80K MP + 20K cash), ticket ~$20 and falling. Pains: single-provider dependency, PSE downtime, rejections. Pricing model requested; concern = USD per-tx cost. Recommended open: $7K platform + $0.06/$0.05/$0.04 tranches (~$11.75K/mo).",
+     "Demo"],
 ]
 
 # SDR-sourced inbound with no follow-up on record. Added only with --with-stale.
