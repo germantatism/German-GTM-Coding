@@ -1,6 +1,6 @@
 # Email to Paulius: Yuno's redline on Hostinger's mutual NDA (Sep 24, 2026)
 
-**Status:** Gmail draft created Sep 24, 2026 as a reply in the thread "Hostinger + Yuno | Demo" (to Paulius; cc Ivvy, Antoine, Dirk, Justo, Piotr, TJ), with Ivvy's redline attached (09242026 - IS - Mutual Non-Disclosure Agreement v2 - Yuno and Hostinger.docx). Review and send.
+**Status:** Gmail draft created Sep 24, 2026 as a reply in the thread "Hostinger + Yuno | Demo" (to Paulius; cc Ivvy, Antoine, Dirk, Justo, Piotr, TJ), WITHOUT the attachment: before sending, attach Ivvy's redline, saved next to this file as "09242026 - IS - Mutual Non-Disclosure Agreement v2 - Yuno and Hostinger (Yuno redline).docx" (same file Ivvy posted in #salesops-legal). Review and send.
 **Source:** Ivvy Soberay in #salesops-legal, thread "NDA - Hostinger", Sep 24, 2026 14:38 COT. Hostinger's mutual NDA arrived for signature (Paulius overruled his legal team's one-way version on the Sep 24 call and said the mutual one is what they use with other providers).
 
 ---
