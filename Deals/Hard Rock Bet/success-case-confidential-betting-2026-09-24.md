@@ -2,27 +2,23 @@
 
 Built 2026-09-24. Merchant anonymized on purpose. Every figure below is verified in Slack (go-live post, KAM performance threads, TAM results post, finance billing) and in y.uno published content. Provenance table at the end. Do not add numbers that are not in that table.
 
-## Version A: email (third touch, unnamed client, plain text)
+## Version A: email (third touch, unnamed client, plain text, short)
 
 Hi ((contact_name)),
 
-Hope you had a chance to go over my last emails. To keep adding value, I wanted to share our most recent success in the sports betting industry. The merchant is a confidential client, a licensed sports betting and online gaming operator in Latin America running more than 600,000 instant bank transfer deposits a month through Yuno.
-
-Before Yuno, each payment provider was a separate integration and every routing change meant a release. They needed one layer above their processors that could keep deposits flowing during peak sporting events and give the payments team real visibility by provider.
+Hope you had a chance to go over my last emails. To keep adding value, I wanted to share a recent success in the sports betting industry with a confidential client, a licensed sportsbook operator processing more than 600,000 deposits a month through Yuno.
 
 With our payment infrastructure, they now benefit from:
 
-Three instant bank transfer providers behind one integration, with automatic fallback between them, so provider selection is a routing rule instead of code.
+Multiple providers behind one integration, with automatic fallback, so routing changes are rules instead of releases.
 
-Deposit approval rate up from 82% to over 88% in the first four months after going live, with average ticket up 22% and transaction count up 17%.
+Deposit approval rate up from 82% to over 88% in the first four months, with transaction count up 17% and average ticket up 22%.
 
-World Cup peak absorbed on that setup: daily transactions up 17% and deposited value up 22% versus the weeks before, with approval holding above 88% across the opening days of the tournament.
+World Cup peak handled on the same setup, with approval above 88% while daily transactions grew 17%.
 
-Provider level performance tracking down to decline reason, reviewed with their team every week, so a bad day on one provider is caught and explained the same day.
+Weekly performance reviews by provider and decline reason, and the same layer now being extended to payouts.
 
-The same layer is now being extended to withdrawals, with two payout routes and fallback between them.
-
-They went from contract to live production in under four months, including the regulatory and risk review that comes with a licensed betting operator.
+They went from contract to live in under four months, including the compliance review a licensed operator requires.
 
 We would love to do the same for Hard Rock Bet!
 
