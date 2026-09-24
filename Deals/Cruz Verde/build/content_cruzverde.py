@@ -74,7 +74,7 @@ T = {
 'g3fb7d86b358_4_626': '0 a 25,000 trx', 'g3fb7d86b358_4_627': '$0.06/trx',
 'g3fb7d86b358_4_629': '25,001 a 50,000 trx', 'g3fb7d86b358_4_630': '$0.04/trx',
 'g3fb7d86b358_4_632': 'Más de 50,000 trx', 'g3fb7d86b358_4_633': '$0.035/trx',
-'g3fb7d86b358_4_658': 'Usuarios, roles y webhooks',
+'g3fb7d86b358_4_658': 'Usuarios y roles',
 'g3f8ec79a1c3_1_0': 'Conciliación', 'g3f8ec79a1c3_1_1': '$2,000 / mes',
 'g3fb7d86b358_4_668': '$7,500 / mes',
 'g3fb7d86b358_4_670': 'LO QUE SIGNIFICA PARA CRUZ VERDE',

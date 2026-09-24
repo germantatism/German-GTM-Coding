@@ -24,7 +24,7 @@ Contexto: sesión con Gerencia y TI de Cruz Verde el viernes 25-sep-2026 11:00 (
 - ≈ $0.118 por tx en pagos, ≈ $0.138 con conciliación. A 150,000 tx: $7,500 + $6,000 = $13,500 en pagos (≈ $0.090 / tx).
 - Cortes de tramo (25K / 50K) los fijé yo: German no los dio; el calculator usa 24,250 / 48,500 sobre 97,000. Ajustar si prefiere otros.
 - Contra el calculator (todo verde): platform sugerido $7,000; pay-ins sugeridos $0.0553 / $0.0449 / $0.0378 (verde hasta $0.0235 / $0.0212 / $0.0194); conciliación sugerida $0.0234 / tx (≈ $2,340 a 100K; verde hasta $0.0141 ≈ $1,410). Deal size $13,750 > mínimo $10,000.
-- Incluido en plataforma (lo de siempre): +1,000 métodos, +450 procesadores, +50 conexiones antifraude, orquestación y reglas, smart routing y reintentos, monitores y alertas, usuarios/roles/webhooks, reportes y dashboard, KAM y TAM. **Token vault NO incluido** (German, 24-sep, tercera pasada: fix2_vault_cruzverde.py); sigue nombrado solo como capacidad de la suite en S6 y S7.
+- Incluido en plataforma (lo de siempre): +1,000 métodos, +450 procesadores, +50 conexiones antifraude, orquestación y reglas, smart routing y reintentos, monitores y alertas, usuarios y roles, reportes y dashboard, KAM y TAM. **Token vault NO incluido** (German, 24-sep, tercera pasada: fix2_vault_cruzverde.py); sigue nombrado solo como capacidad de la suite en S6 y S7.
 - Franja "Seguridad y riesgo" = opcional según consumo, fuera del total: 3DS $0.04, antifraude $0.018 (precios sugeridos del calculator), reglas de riesgo incluidas. ⚠️ German no las pidió: borrar la franja si no quiere abrir ese tema.
 - "Contrato a 3 años" quedó igual que en Palco. ⚠️ Confirmar.
 - Sin network tokens, sin IA (Payments Concierge), sin suscripciones en todo el deck (instrucción de German).

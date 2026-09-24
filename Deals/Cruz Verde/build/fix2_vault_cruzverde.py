@@ -12,7 +12,7 @@ svc = build('slides', 'v1', credentials=creds, cache_discovery=False)
 P = svc.presentations().get(presentationId=PID).execute()
 idx = {el['objectId']: el for s in P['slides'] for el, tr in elements(s)}
 FIX = {
- 'g3fb7d86b358_4_658': 'Usuarios, roles y webhooks',            # "Qué cubre la tarifa": was "Bóveda de tokens PCI"
+ 'g3fb7d86b358_4_658': 'Usuarios y roles',            # "Qué cubre la tarifa": was "Bóveda de tokens PCI"
  'g3fb7d86b358_4_692': 'Monitores, reintentos y reportes',      # blue panel row: was "Monitores, reintentos y bóveda PCI"
 }
 for oid, new in FIX.items():
