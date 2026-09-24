@@ -31,7 +31,7 @@ UPDATES = {
     "Yango": ("Demo",
         "Business case sent Sep 4 to Javier, Alejo and Luis; silent since (20 days). Proposal v22-sep ready ($10K platform + 0.60/0.50/0.45% of volume, ~$47.9K/mo at full rollout) but NOT sent: needs Salesforce entry and pricing-policy zone check. Still aiming for the HQ meeting."),
     "Flair Airlines": ("Negotiation",
-        "Proposal emailed Aug 18 (Lucas asked for it by email, no call). Lucas Aug 25: 'let me run some more numbers in the next couple weeks'; no answer to the Sep 4 review proposal; silent since. Juliana left. Multi-thread to Abigail Wigle or the CFO, using Flair's new UK/Europe approval (Sep 23) as the hook."),
+        "Proposal emailed Aug 18. Lucas says it does not make sense for now, but he has kept reviewing the proposal. German offered a 1-month free trial of the full platform so they can test everything; waiting on Lucas' answer. Juliana left; Abigail Wigle is the other contact. Hook if it stalls: Flair's new UK/Europe approval (Sep 23)."),
     "FC Barcelona": ("Pipeline",
         "RFP postponed three times, never published. Sep 17 follow-up sent to Alex + Arnau tying the tender to the September members' Assembly budget; no reply. Homologated as supplier, NDA in place. Stay close; possible in-person via Lucca Zadra in Spain Oct/Nov."),
     "HBO Max (WBD)": ("Pipeline",
