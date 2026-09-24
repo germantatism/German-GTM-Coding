@@ -107,3 +107,28 @@ rec_min = RECON_POLICY_MIN[0] + tot_t * RECON_POLICY_MIN[1]
 print(f"\nReconciliation add-on at full volume: deck {rec_live:,.2f}/mo  vs policy minimum {rec_min:,.2f}/mo  (pack 3M tx = 30,000/mo) -> {rec_min/rec_live:.1f}x below minimum")
 for c, (v, t, k) in monthly.items():
     print(f"  {c:10} ticket ${k:.2f}: $0.023 = {0.023/k*100:.2f}% of ticket ; $0.008 = {0.008/k*100:.2f}%")
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# FINAL MODEL (deck as read 2026-09-24 afternoon, after German's adjustments): % of approved recharge volume,
+# four tranches pooled across the four markets, $12,000 platform fee, no monthly minimum. Sent-candidate.
+# ---------------------------------------------------------------------------------------------------------------
+FINAL_PF = 12_000
+FINAL_TRANCHES = [(1_500_000, 0.0025), (1_500_000, 0.0020), (1_500_000, 0.0015), (float('inf'), 0.0010)]
+
+def final_tx_fee(V):
+    f, rem = 0.0, V
+    for w, r in FINAL_TRANCHES:
+        take = min(rem, w); f += take * r; rem -= take
+        if rem <= 0: break
+    return f
+
+print("\n==================== FINAL MODEL (% of volume, deck 24-sep) ====================")
+ff = final_tx_fee(tot_v); ftot = ff + FINAL_PF
+print(f"  tx fee {ff:,.2f}  platform {FINAL_PF:,}  TOTAL {ftot:,.2f}/mo  {ftot*12:,.2f}/yr  per tx {ftot/tot_t:.5f}  {ftot/tot_v*100:.3f}% of volume  card-rail case {CARD_RAIL_CASE/(ftot*12):.1f}x")
+V = T = 0; prev = 0
+for c in order:
+    v, t, k = monthly[c]; V += v; T += t; x = final_tx_fee(V) + FINAL_PF
+    print(f"  +{c:10} total {x:10,.2f}/mo  added {x-prev:9,.2f}  per recharge {x/T:.4f}")
+    prev = x
+print("  per-tx equivalents at $2.25 ticket:", [round(r * tot_v / tot_t, 5) for _, r in FINAL_TRANCHES], "| Doc minimum $0.01/tx")

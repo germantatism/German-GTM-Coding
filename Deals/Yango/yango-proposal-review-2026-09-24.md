@@ -112,3 +112,11 @@ Fundamental #1: cotizar después de Salesforce. Rojo = CFO/Global Controller + C
 - `build/yango_pricing_model.py`: sección LIVE con el modelo por transacción (tranches, rampa con mínimo, asignación por país, add-on de reconciliation contra policy).
 - `build/apply_review_fixes_2026-09-24.py`: service account, dry-run por defecto; borra "$ 75.56", aclara el mínimo, agrega la rampa en la slide 37, unifica la fuente y exporta thumbnails para la QA visual.
 - `yango-pricing-proposal-2026-09-22.md`: el modelo % anterior, ahora alternativa.
+
+---
+
+## 7. Estado final (24-sep, tarde)
+
+German ajustó el deck: **tarifa variable 0.25% / 0.20% / 0.15% / 0.10% del volumen aprobado (bandas de $1.5M), platform fee $12,000, sin mínimo mensual**. Totales verificados: $23,805 / mes, $285,660 / año, $0.0073 por recarga, 0.33% del volumen; rampa CO $16,609 → +PE $19,839 → +BO $22,973 → +VE $23,805; caso del rail 11.2x. Correo a Javier, Alejo y Luis en borrador de Gmail (reply al hilo del 4-sep, cc Justo, Majo, jpatino@yango.com).
+
+Sigue pendiente antes de enviar: re-subir el PDF a Papermark (slug yangobclatam); borrar "$ 75.56" en slides 34, 36 y 37; unificar "July 2026" en slide 31; reconciliation a $0.0003 / tx sigue en el deck; todas las bandas quedan bajo el mínimo de $0.01 / tx del Doc (rojo, CFO + CRO) y el fundamental #1 pide Salesforce antes de cotizar.
