@@ -2,23 +2,25 @@
 
 Built 2026-09-24. Merchant anonymized on purpose. Every figure below is verified in Slack (go-live post, KAM performance threads, TAM results post, finance billing) and in y.uno published content. Provenance table at the end. Do not add numbers that are not in that table.
 
-## Version A: email (third touch, unnamed client, plain text, short)
+## Version A: email (third touch, unnamed client, plain text, impact bullets)
 
 Hi ((contact_name)),
 
-Hope you had a chance to go over my last emails. To keep adding value, I wanted to share a recent success in the sports betting industry with a confidential client, a licensed sportsbook operator processing more than 600,000 deposits a month through Yuno.
+Hope you had a chance to go over my last emails. To keep adding value, I wanted to share a recent success in the sports betting industry, a licensed sportsbook operator processing more than 600,000 deposits a month through Yuno.
 
 With our payment infrastructure, they now benefit from:
 
-Multiple providers behind one integration, with automatic fallback, so routing changes are rules instead of releases.
+3 providers connected under one integration, with automatic fallback.
 
-Deposit approval rate up from 82% to over 88% in the first four months, with transaction count up 17% and average ticket up 22%.
+Approval rate from 82% to over 88%.
 
-World Cup peak handled on the same setup, with approval above 88% while daily transactions grew 17%.
+Transactions up 17% and average ticket up 22%.
 
-Weekly performance reviews by provider and decline reason, and the same layer now being extended to payouts.
+World Cup peak: deposited value up 22% with approval above 88%.
 
-They went from contract to live in under four months, including the compliance review a licensed operator requires.
+Fraud and provider error rejections below 0.1% of volume.
+
+Live in under four months, compliance review included.
 
 We would love to do the same for Hard Rock Bet!
 
@@ -26,6 +28,8 @@ What do you think we meet for 20 minutes next week and discuss the ideas we have
 
 All the best,
 German
+
+Note: "under three months" is not accurate (contract 2025-11-19, live 2026-03-05). Keep "under four months".
 
 ## Version B: talk track for a call (pain of Hard Rock Bet, what we did for the confidential client, proof)
 
@@ -52,7 +56,8 @@ A global gaming studio on Yuno lifted approval rates 11%, recovered 30 million d
 | Weekly performance reviews with the merchant | Aposta Ganha | Weekly "Semanal: Aposta Ganha <> Yuno" invites, KAM analyses cc merchant (Victor Sales, Rony Silva) |
 | Payouts being extended, two payout routes | Aposta Ganha | #aposta-ganha_yuno and #product-tech, Sept 2026 (PIX_PAYOUT Safeway tests; go-live targeted Monday 2026-09-28). NOT live yet as of 2026-09-24 |
 | Bank transfer deposits and payouts live for a betting operator in Mexico | Betcris | #product-tech: STP SPEI pay-in and SPEI dispersion payouts, 2025 to 2026 |
-| Contract to live in under four months incl. compliance | Aposta Ganha | Salesforce contract signed 2025-11-19 (#salesops-legal); live 2026-03-05 (#go-live credits Compliance & Legal) |
+| Contract to live in under four months incl. compliance (3.5 months; do not say under three) | Aposta Ganha | Salesforce contract signed 2025-11-19 (#salesops-legal); live 2026-03-05 (#go-live credits Compliance & Legal) |
+| Fraud and provider error rejections below 0.1% | Aposta Ganha | #aposta-ganha_yuno, Benjamin Lee, 2026-06-22: FRAUD_VALIDATION 0.03%, PROVIDER_INTERNAL_ERROR 0.03% of 220,515 tx |
 | Gaming studio +11% / $30M / 90% / 10 markets | Unnamed, published | y.uno post "Why orchestration is now mission critical for gaming companies" |
 
 Things deliberately NOT claimed: zero downtime during the World Cup (not verified), real time monitors as delivered value (monitors were configured in June 2026 but had issues), casino product for the client (not verified), payouts as live for the Brazilian client (in rollout).
