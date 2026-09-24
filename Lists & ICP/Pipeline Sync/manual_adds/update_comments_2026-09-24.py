@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+"""Refresh Comments (and Status) for the deals already in Deal Status GTM > Deal Status Tracker.
+
+Auth: service account ~/.config/gsuite/sa.json (sheet must be shared as Editor with
+gtm-claude-editor@gtm-claude-tools-260922.iam.gserviceaccount.com).
+Matches rows by Company (case-insensitive, trimmed). Writes only columns E (Comments) and F (Status).
+Usage: python3 update_comments_2026-09-24.py [--dry]
+"""
+import os, sys
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
+
+SA = os.path.expanduser("~/.config/gsuite/sa.json")
+SID = "1WPz1JW9zQm06SQg9ncrBM-4BH8ZKWh5O2Pn18XvKKPc"
+TAB = "Deal Status Tracker"
+
+# Company -> (Status, Comments). Research date: 2026-09-24.
+UPDATES = {
+    "Suno": ("Demo",
+        "Technical deep dive done Sep 17 (Gur + Madden): pain #1 is Stripe retry/recovery; they want billing out of Stripe Billing later. Madden sent the NDA via DocuSign Sep 21 and said they will slow down while they fix commerce infrastructure; our legal cannot review inside DocuSign, asked for a PDF Sep 21, no reply. Justo's offer (subs engine free 6 months) sent Sep 21. Next: get NDA executed, then routing strategy session; Sean wants to meet Madden in NY."),
+    "FlightHub": ("Proposal Sent",
+        "In-person in Montreal Sep 22 (William) and proposal call Sep 23 with Anna-Lena (Nick absent): they want per-bucket tiers, a low fixed fee, and are weighing build in-house. Pricing v3 ($10K platform, no minimum, 8/6/4/3.5/3 cent tiers, flat recon $7.5K, ~10% lower) drafted in Gmail; update slide 16 and attach PDF before sending. Waiting on their internal read of the numbers."),
+    "Hostinger": ("Demo",
+        "Demo Sep 24 done (Paulius): start with India (Razorpay + BillDesk under one integration) plus vault-as-a-service; ~2M tokens, network tokens under their TRID, billing stays in-house. Mutual NDA comes from Hostinger (with their legal). Recap sent Sep 24; Dirk to send the token-migration note, TJ to answer India in ~2 weeks."),
+    "CellPoint Digital": ("Proposal Sent",
+        "Full platform stalled internally (Sep 1 call). APM-only proposal ($15K/mo platform + 50/50 rev share or $500 per integration, no per-tx fee) sent Sep 1. Andrew said Sep 8 he would revert after meeting Patrick; silent since. Nudge; possible in-person in London or Lisbon."),
+    "AppMaking LTD": ("Proposal Sent",
+        "Full package priced Sep 21 ($8.5K flat + tiers, network tokens $0.05/$0.01, reconciliation $1,500/mo) plus one-click answers; Tatsiana said they are still reviewing pricing. Proposed a Sep 24 call, no reply. Follow-up drafted proposing a joint review Sep 29 or 30 at 5pm EEST (she joined our subscriptions webinar Sep 23)."),
+    "Eventbrite": ("Discovery",
+        "Filippo (Bending Spoons PM) silent since the Aug 20 call; no reply to the Sep 7 or Sep 17 follow-ups. Milan in-person did not happen; do not propose it again. MNDA pending on their side. Interest = payouts + getting out of the funds flow. Needs a new angle or a second contact (Giacomo, Noe)."),
+    "Yango": ("Demo",
+        "Business case sent Sep 4 to Javier, Alejo and Luis; silent since (20 days). Proposal v22-sep ready ($10K platform + 0.60/0.50/0.45% of volume, ~$47.9K/mo at full rollout) but NOT sent: needs Salesforce entry and pricing-policy zone check. Still aiming for the HQ meeting."),
+    "Flair Airlines": ("Negotiation",
+        "Proposal emailed Aug 18 (Lucas asked for it by email, no call). Lucas Aug 25: 'let me run some more numbers in the next couple weeks'; no answer to the Sep 4 review proposal; silent since. Juliana left. Multi-thread to Abigail Wigle or the CFO, using Flair's new UK/Europe approval (Sep 23) as the hook."),
+    "FC Barcelona": ("Pipeline",
+        "RFP postponed three times, never published. Sep 17 follow-up sent to Alex + Arnau tying the tender to the September members' Assembly budget; no reply. Homologated as supplier, NDA in place. Stay close; possible in-person via Lucca Zadra in Spain Oct/Nov."),
+    "HBO Max (WBD)": ("Pipeline",
+        "Orchestrating with Spreedly; Ashwyn Singhal is the global decision maker, Karime the LatAm door. BC ($15M) sent Aug 20 and subs note Sep 1; zero written replies since Jul 23. Sep 17 follow-up asked for an in-person hour in October, no reply. New hook: Paramount-WBD merger settlement (Sep 21)."),
+    "Lululemon": ("Pipeline",
+        "Eric Mei (PM Payments) silent since Jul 30; door is the NA PSP assessment (JPMC + Aurus, Adyen intl) tied to FY27 AOP. Touches: German Sep 9, Will Wong Sep 14 (coffee in Vancouver), LinkedIn note Sep 22. New CEO and Q2 miss may be resetting priorities. German in SF from Sep 28: Vancouver in-person is an option."),
+    "Chess.com": ("Pipeline",
+        "Sean Walkinshaw: no payments infra work until late Q1 2027; vault + network tokens first (Basis Theory), then a second PSP; shortlist Yuno, Checkout.com, Stripe, Global Payments. Sent Yuno vs Basis Theory one-pager Sep 8 ('This is great'); Justo Sep 9 and German Sep 18 proposed a call, no answer. Touch base in December."),
+    "Fareportal": ("Pipeline",
+        "Tom Spagnola (champion) confirmed Naveen Gunti (CIO) is the decision maker. Magdalena sent the BC to Naveen Sep 14; German joined the thread Sep 21. Tom Sep 21: 'I'll follow up with Naveen by Wednesday' (Sep 23); nothing yet. Nudge Tom end of week."),
+    "Alaska Airlines": ("Pipeline",
+        "Angela Trivedi (Jul 24): payments initiatives delayed to 2027, timing not right; agreed to reconnect end of year. She confirmed to Saman (Aug 5) that German is her contact. Reach out in December."),
+    "Peacock (NBCUniversal)": ("Pipeline",
+        "Brendan Callinan silent since July (last email Aug 10, LinkedIn Sep 4). Stack: Spreedly vault + Adyen. Magdalena's BC ($27-31M) never sent; subscriptions one-pager reviewed Sep 18 but not ready (fix prices and stats). Alternate door: Andrea Babcock (Payment Ops)."),
+    "Thinkific": ("Pipeline",
+        "Darren (VP Product) only answers Justo; zero replies since May 13 despite Jul 20, Aug 10 and Sep 9 follow-ups. Asked Justo Sep 17 to nudge, not sent yet. Thinkific announced a reorg with workforce cuts Sep 23: let it settle, light check-in in October."),
+    "Palco": ("Proposal Sent",
+        "Proposal presented Sep 21 (Patricio CEO, Miguel CRO, Alfonso, Fernando): $7K platform + $0.06/0.055/0.045 tiers, ~$23.4K/mo; four levers ~$8M/yr on a conservative base. Real volume ~$430M GTV 2025, >$500M 2026 (confidential). Deck sent Sep 21; no feedback yet. They said: go, then contract. WhatsApp nudge to Patricio ready; offer an enablement session for Miguel."),
+    "Tiket.com": ("Pipeline",
+        "LinkedIn-only so far, still trying to anchor a call; Alejandro forwarded the Sep 2024 intro call recording (Gong) on Sep 14. Next: move to email with a concrete date."),
+    "Super.com": ("Pipeline",
+        "Carol Schimmelpfeng (Jul 20): reconnect Nov/Dec; knows Yuno well, Mexico live but underperforming, LatAm expansion is the angle. Akshay Kohli (fintech products) and Maria Munteanu in cc; Justo and Carol go way back. Reach out in November."),
+    "Vix": ("Pipeline",
+        "Co-sell with Stripe (Berni, Vale): prep call Aug 24, German sent Yuno context Aug 26 for Stripe's Aug 27 meeting with Vix; no readout from Stripe yet. Vix needs local, tokenizable APMs outside US/MX; Recurly stays for subscriptions; real decision sits with a Miami CFO-type exec (name unknown), Lorena is the champion. Ask Vale for the readout."),
+}
+
+def main():
+    dry = "--dry" in sys.argv
+    creds = service_account.Credentials.from_service_account_file(SA, scopes=["https://www.googleapis.com/auth/spreadsheets"])
+    svc = build("sheets", "v4", credentials=creds, cache_discovery=False)
+    vals = svc.spreadsheets().values().get(spreadsheetId=SID, range=f"'{TAB}'!A1:F").execute().get("values", [])
+    rows = {r[0].strip().lower(): i + 1 for i, r in enumerate(vals) if r and r[0].strip()}
+    data, missing = [], []
+    for company, (status, comment) in UPDATES.items():
+        rn = rows.get(company.strip().lower())
+        if not rn:
+            missing.append(company); continue
+        data.append({"range": f"'{TAB}'!E{rn}:F{rn}", "values": [[comment, status]]})
+    print(f"matched {len(data)}, missing {missing}")
+    if dry or not data:
+        return
+    svc.spreadsheets().values().batchUpdate(spreadsheetId=SID, body={"valueInputOption": "USER_ENTERED", "data": data}).execute()
+    print("updated", len(data), "rows")
+
+if __name__ == "__main__":
+    main()
