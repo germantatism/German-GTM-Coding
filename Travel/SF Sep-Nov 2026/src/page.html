@@ -1,0 +1,553 @@
+<title>Playbook SF Payments</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F3F4FA; --surface:#FFFFFF; --lilac:#E8EAF5; --ink:#282A30; --ink-2:#4A4D55;
+  --muted:#6F727A; --line:#D5D8E6; --accent:#3E4FE0; --accent-deep:#1227AD; --accent-soft:#E3E6FB;
+  --must-bg:#1227AD; --must-fg:#FFFFFF; --go-bg:#E3E6FB; --go-fg:#1227AD;
+  --opt-bg:#E8EAF5; --opt-fg:#4A4D55; --skip-fg:#6F727A;
+  --warn-bg:#FFF1D6; --warn-fg:#8A5200; --crit-bg:#FDE7E4; --crit-fg:#A8261C;
+  --sans:'Titillium Web','Segoe UI',system-ui,-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#15161A; --surface:#1E2026; --lilac:#262935; --ink:#ECEDF3; --ink-2:#C6C8D2;
+    --muted:#9799A3; --line:#343745; --accent:#8C97F2; --accent-deep:#BDC3F6; --accent-soft:#262B4D;
+    --must-bg:#5967E4; --must-fg:#FFFFFF; --go-bg:#262B4D; --go-fg:#BDC3F6;
+    --opt-bg:#2A2C36; --opt-fg:#C6C8D2; --skip-fg:#9799A3;
+    --warn-bg:#3A2E12; --warn-fg:#F2C46B; --crit-bg:#3D1D19; --crit-fg:#F3A59C;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#15161A; --surface:#1E2026; --lilac:#262935; --ink:#ECEDF3; --ink-2:#C6C8D2;
+  --muted:#9799A3; --line:#343745; --accent:#8C97F2; --accent-deep:#BDC3F6; --accent-soft:#262B4D;
+  --must-bg:#5967E4; --must-fg:#FFFFFF; --go-bg:#262B4D; --go-fg:#BDC3F6;
+  --opt-bg:#2A2C36; --opt-fg:#C6C8D2; --skip-fg:#9799A3;
+  --warn-bg:#3A2E12; --warn-fg:#F2C46B; --crit-bg:#3D1D19; --crit-fg:#F3A59C;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;margin:0}
+.page{max-width:1060px;margin:0 auto;padding-inline:20px;padding-block:36px 72px;display:flex;flex-direction:column;gap:56px}
+a{color:var(--accent-deep);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3,h4{margin:0;text-wrap:balance;line-height:1.15}
+h1{font-size:clamp(2rem,5.2vw,3.2rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(1.45rem,3vw,1.9rem);font-weight:700}
+h3{font-size:1.15rem;font-weight:700}
+h4{font-size:1.05rem;font-weight:700}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:1.2rem;max-width:66ch;color:var(--ink-2)}
+.top{display:flex;flex-direction:column;gap:16px}
+.topnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ground);border-bottom:1px solid var(--line);margin-inline:-20px;padding:10px 20px;display:flex;gap:6px;overflow-x:auto;white-space:nowrap}
+.topnav a{font-size:.9rem;font-weight:600;text-decoration:none;color:var(--ink-2);padding:4px 10px;border-radius:999px}
+.topnav a:hover{background:var(--lilac);color:var(--ink)}
+section{display:flex;flex-direction:column;gap:20px;scroll-margin-top:64px}
+.sec-head{display:flex;flex-direction:column;gap:6px;max-width:70ch}
+.sec-head p{color:var(--ink-2)}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.fig{background:var(--surface);padding:16px 18px;display:flex;flex-direction:column;gap:2px}
+.fig b{font-size:2.1rem;line-height:1.05;font-weight:700;color:var(--accent-deep);font-variant-numeric:tabular-nums}
+.fig span{font-size:.92rem;color:var(--ink-2)}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.rules div{border-top:3px solid var(--accent);padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.rules p{color:var(--ink-2);font-size:.98rem}
+.chip{display:inline-block;font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:4px;white-space:nowrap}
+.chip.must{background:var(--must-bg);color:var(--must-fg)}
+.chip.go{background:var(--go-bg);color:var(--go-fg)}
+.chip.opt{background:var(--opt-bg);color:var(--opt-fg)}
+.chip.skip{color:var(--skip-fg);border:1px solid var(--line)}
+.chip.warn{background:var(--warn-bg);color:var(--warn-fg)}
+.chip.crit{background:var(--crit-bg);color:var(--crit-fg)}
+.who{font-family:var(--mono);font-size:.74rem;color:var(--muted);white-space:nowrap}
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.filters button{font:600 .88rem var(--sans);color:var(--ink-2);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 13px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.evs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ev{display:grid;grid-template-columns:6.6rem 1fr auto;gap:6px 20px;padding:16px 0;border-bottom:1px solid var(--line);align-items:start}
+.ev-date{font-family:var(--mono);font-size:.84rem;color:var(--ink-2);line-height:1.35;font-variant-numeric:tabular-nums}
+.ev-date span{display:block;color:var(--muted)}
+.ev-body{display:flex;flex-direction:column;gap:5px;min-width:0}
+.ev-body h4 small{font-weight:400;font-size:.9rem;color:var(--muted)}
+.ev-body p{font-size:.98rem;color:var(--ink-2);max-width:72ch}
+.ev-body .meta{font-size:.86rem;color:var(--muted)}
+.ev-tag{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.ev[data-v="skip"] h4{color:var(--ink-2);font-weight:600}
+.must-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.must-item{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.must-item .when{font-family:var(--mono);font-size:.8rem;color:var(--accent-deep)}
+.must-item p{font-size:.97rem;color:var(--ink-2)}
+.must-item .act{font-size:.92rem;color:var(--ink);border-top:1px dashed var(--line);padding-top:8px}
+.week{display:grid;grid-template-columns:13rem 1fr;gap:12px 28px;padding:22px 0;border-top:1px solid var(--line)}
+.week:last-child{border-bottom:1px solid var(--line)}
+.week-h{display:flex;flex-direction:column;gap:4px}
+.week-h .eyebrow{color:var(--accent-deep)}
+.week-h p{font-size:.92rem;color:var(--ink-2)}
+.days{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.days li{display:grid;grid-template-columns:5.6rem 1fr;gap:12px;font-size:.97rem}
+.days .d{font-family:var(--mono);font-size:.82rem;color:var(--muted);padding-top:3px}
+.days .own{font-weight:700;color:var(--accent-deep)}
+.days .note{color:var(--muted);font-size:.9rem}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:.93rem}
+th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--line)}
+th{font-family:var(--mono);font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--lilac)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;white-space:nowrap}
+td small{color:var(--muted);font-weight:400}
+.plays{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px 32px}
+.play{display:flex;flex-direction:column;gap:6px}
+.play p{font-size:.97rem;color:var(--ink-2)}
+.play .how{font-size:.9rem;color:var(--muted)}
+.callout{background:var(--accent-soft);border-radius:6px;padding:18px 20px;display:flex;flex-direction:column;gap:6px;max-width:80ch}
+.callout p{color:var(--ink);font-size:1rem}
+.todo{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.todo li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:start}
+.todo input{width:18px;height:18px;margin-top:4px;accent-color:var(--accent)}
+.todo label{font-size:.98rem}
+.todo label small{display:block;color:var(--muted);font-size:.88rem}
+.todo input:checked + label{color:var(--muted);text-decoration:line-through}
+.cols{columns:2 320px;column-gap:36px;font-size:.92rem;color:var(--ink-2)}
+.cols p{break-inside:avoid;margin-bottom:10px}
+.foot{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:720px){
+  body{font-size:16px}
+  .ev{grid-template-columns:1fr;gap:6px}
+  .ev-tag{flex-direction:row;align-items:center;order:-1}
+  .ev-date span{display:inline;margin-left:6px}
+  .week{grid-template-columns:1fr}
+  .days li{grid-template-columns:4.6rem 1fr}
+  .todo li{grid-template-columns:auto 1fr}
+  .todo li .chip{grid-column:2}
+}
+{{CALENDAR_CSS}}</style>
+
+<div class="page">
+
+<header class="top">
+  <p class="eyebrow">Yuno · Joaquín Mann, Samuel Vieira y German Tatis · actualizado 28 sep 2026</p>
+  <h1>San Francisco, 28 de septiembre al 4 de noviembre</h1>
+  <p class="lede">En estas cinco semanas no hay ninguna conferencia de payments para merchants en el Bay Area. La mayoría de los eventos de la ciudad reúne a founders, inversionistas y proveedores. Los compradores están en sus oficinas: 226 cuentas de la TCL tienen sede aquí. El viaje se gana con reuniones y con eventos propios. Los eventos de terceros sirven para abrir puertas y construir nombre.</p>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Vistas">
+  <button type="button" role="tab" id="tab-playbook" aria-controls="panel-playbook" aria-selected="true">Playbook</button>
+  <button type="button" role="tab" id="tab-calendar" aria-controls="panel-calendar" aria-selected="false" tabindex="-1">Interactive Calendar</button>
+</div>
+
+<div id="panel-playbook" class="panel" role="tabpanel" aria-labelledby="tab-playbook">
+
+<nav class="topnav" aria-label="Secciones">
+  <a href="#veredicto">Veredicto</a>
+  <a href="#nofaltar">No faltar</a>
+  <a href="#costos">Costos</a>
+  <a href="#eventos">Eventos</a>
+  <a href="#calendario">Semana a semana</a>
+  <a href="#cuentas">Cuentas</a>
+  <a href="#comunidad">Comunidad</a>
+  <a href="#semana">Esta semana</a>
+</nav>
+
+<section id="veredicto">
+  <div class="figs">
+    <div class="fig"><b>226</b><span>cuentas de la TCL con sede en el Bay Area</span></div>
+    <div class="fig"><b>44</b><span>de ellas en prioridad High</span></div>
+    <div class="fig"><b>151</b><span>en San Francisco ciudad, el resto en la Península y South Bay</span></div>
+    <div class="fig"><b>0</b><span>conferencias de payments para merchants en el Bay Area durante el viaje</span></div>
+  </div>
+  <div class="rules">
+    <div>
+      <h3>Primero, quién está en el salón</h3>
+      <p>Compradores (payments, finanzas o monetización de un merchant) valen más que ecosistema (redes, PSPs, fintechs), y ecosistema vale más que founders en etapa temprana e inversionistas. Casi todo SF Tech Week cae en el tercer grupo.</p>
+    </div>
+    <div>
+      <h3>Los tres juntos, un solo plan</h3>
+      <p>Joaquín, Samuel y German van juntos a todo. Por eso, cuando dos eventos chocan, este plan ya eligió uno y deja el otro como plan B. Dentro del salón conviene abrirse para cubrir más conversaciones y reencontrarse al cierre para cruzar notas.</p>
+    </div>
+    <div>
+      <h3>La reunión manda sobre el evento</h3>
+      <p>Ningún happy hour reemplaza una reunión con una cuenta High. Los eventos son de tarde y noche; las mañanas y mediodías son para reuniones en oficinas de clientes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="nofaltar">
+  <div class="sec-head">
+    <h2>A dónde no se puede dejar de ir</h2>
+    <p>Seis compromisos fijos para los tres: cuatro eventos de terceros, las reuniones y los eventos propios. Todo lo demás se acomoda alrededor.</p>
+  </div>
+  <div class="must-list">
+    <div class="must-item">
+      <span class="when">18 al 21 oct · Las Vegas</span>
+      <h3>Money20/20 USA</h3>
+      <p>El evento de payments de la ventana: más de 11,000 asistentes, uno de cada tres nivel C. Juan Pablo Ortega y Mauricio Schwartzmann hablan en la agenda. Cuatro cuentas del Bay Area también: Perplexity, eBay, Upwork y Navan. Marketing ya tiene la lista de asistentes.</p>
+      <p class="act">Pase estándar $4,199 por persona. Samuel ya tiene el viaje aprobado; falta pedir viaje y pase para German y Joaquín. Meta: 15 reuniones agendadas antes de aterrizar.</p>
+    </div>
+    <div class="must-item">
+      <span class="when">lun 5 y mar 6 oct · SF Tech Week</span>
+      <h3>El bloque de payments de Tech Week</h3>
+      <p>Fintech House el lunes a las 6:00 pm. El martes: Fintech Coffee a las 8:30 am, Visa a las 4:00 pm y Mastercard a las 5:30 pm, los dos últimos en la misma zona. Es la mayor concentración local de gente de payments en todo el viaje.</p>
+      <p class="act">Todos gratis. Registrarse hoy, cada uno con su cuenta: casi todos piden aprobación y a Mastercard le quedaban 9 cupos.</p>
+    </div>
+    <div class="must-item">
+      <span class="when">mar 29 sep · The Green Room</span>
+      <h3>FTW San Francisco, día 1</h3>
+      <p>Más de 600 personas del ecosistema fintech en el primer día hábil del viaje. Entre los speakers está Higgsfield, cuenta con deck listo y sin outreach, además de Walmart y OpenAI. No se verificó qué día habla cada uno.</p>
+      <p class="act">Tres pases de un día, $495 cada uno. German sale a sus llamadas de 11:00 am a 3:00 pm y vuelve al bloque de la tarde.</p>
+    </div>
+    <div class="must-item">
+      <span class="when">lun 2 y mar 3 nov · San Francisco</span>
+      <h3>GamesBeat Next</h3>
+      <p>El salón con compradores reales de la ventana: 500 líderes senior de gaming, 80% nivel C, con Epic Games, EA, Roblox, Netflix y Unity en la lista de asistentes. Gamesforum SF (26 y 27 oct) es igual de bueno, pero solo admite proveedores como patrocinadores.</p>
+      <p class="act">Conference Pass $899 por persona. Para Gamesforum, pedir cotización de patrocinio antes de decidir.</p>
+    </div>
+    <div class="must-item">
+      <span class="when">todas las semanas</span>
+      <h3>Las reuniones en oficinas de clientes</h3>
+      <p>Es el compromiso que más pesa. Hay contactos de payments con nombre en DoorDash, Coinbase, Gap, Dropbox, Midjourney y otras sedes de la ciudad, y research, deck o business case ya hecho para más de diez cuentas.</p>
+      <p class="act">Ocho reuniones presenciales por semana, a las que van los tres. Las solicitudes salen el lunes 28.</p>
+    </div>
+    <div class="must-item">
+      <span class="when">8 oct · 14 oct · 28 oct</span>
+      <h3>Los eventos propios</h3>
+      <p>Nadie está reuniendo a líderes de payments de merchants en San Francisco en estas semanas. Ese espacio está libre y es la forma más directa de construir comunidad.</p>
+      <p class="act">Un desayuno y dos cenas pequeñas con los tres como anfitriones. Detalle en la sección Comunidad.</p>
+    </div>
+  </div>
+</section>
+
+<section id="costos">
+  <div class="sec-head">
+    <h2>Cuánto cuestan las entradas</h2>
+    <p>Precio publicado por persona y el total para los tres. La multiplicación es cálculo propio. Todo lo que no aparece aquí es gratis.</p>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Evento</th><th>Veredicto</th><th>Por persona</th><th>Los tres</th><th>Nota</th></tr></thead>
+      <tbody>
+        <tr><td>FTW San Francisco, día 1</td><td>No faltar</td><td>$495</td><td>$1,485</td><td>Pase de un día. El de tres días cuesta $995.</td></tr>
+        <tr><td>Money20/20 USA</td><td>No faltar</td><td>$4,199</td><td>$11,700</td><td>Con el descuento de $299 por pase al comprar tres o más en una sola transacción. Sin descuento son $12,597.</td></tr>
+        <tr><td>GamesBeat Next</td><td>No faltar</td><td>$899</td><td>$2,697</td><td>Conference Pass. Las tarifas del checkout no se pudieron leer.</td></tr>
+        <tr><td>Fintech Next, 12 oct</td><td>Ir</td><td>$20</td><td>$60</td><td></td></tr>
+        <tr><td>Future of Finance Summit</td><td>Si cabe</td><td>$45</td><td>$135</td><td>$30 mientras dure la preventa.</td></tr>
+        <tr><td>One Way Summit</td><td>Si cabe</td><td>$129</td><td>$387</td><td>Pase regular.</td></tr>
+        <tr><td>Silicon Valley Latino Leadership Summit</td><td>Si cabe</td><td>$300</td><td>$900</td><td>Entrada general.</td></tr>
+        <tr><td>Gamesforum San Francisco</td><td>Si cabe</td><td>Patrocinio</td><td>Sin publicar</td><td>No vende pases a proveedores. Hay que pedir cotización.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="sec-head">Los cuatro eventos de No faltar e Ir que cobran entrada suman $15,942 para los tres. Los opcionales de pago suman $1,422 más.</p>
+</section>
+
+<section id="eventos">
+  <div class="sec-head">
+    <h2>Todos los eventos, uno por uno</h2>
+    <p>En orden de fecha, con veredicto según quién asiste y el precio de la entrada en cada uno. Fechas y precios verificados en páginas en vivo el 27 y 28 de septiembre. En los eventos de Tech Week que se registran por Partiful la página no muestra precio: el dato de que son gratis viene del listado de GarysGuide.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filtrar por veredicto">
+    <button type="button" id="fe-all" data-f="all" aria-pressed="true">Todos</button>
+    <button type="button" id="fe-must" data-f="must" aria-pressed="false">No faltar</button>
+    <button type="button" id="fe-go" data-f="go" aria-pressed="false">Ir</button>
+    <button type="button" id="fe-opt" data-f="opt" aria-pressed="false">Si cabe</button>
+    <button type="button" id="fe-skip" data-f="skip" aria-pressed="false">Saltar</button>
+  </div>
+
+  <h3>En el Bay Area</h3>
+  <ul class="evs" id="evs-bay">
+{{EVENTS_BAY}}
+  </ul>
+
+  <h3>Fuera de San Francisco</h3>
+  <ul class="evs" id="evs-trips">
+{{EVENTS_TRIP}}
+  </ul>
+</section>
+
+<section id="calendario">
+  <div class="sec-head">
+    <h2>Semana a semana</h2>
+    <p>Un solo itinerario para los tres; la versión con horas y precios está en la pestaña Interactive Calendar. Horas en PT. Las notas en gris son las llamadas fijas de German, que obligan a salir un rato o a mover la reunión. Lo marcado en azul son eventos propios propuestos.</p>
+  </div>
+  <div>
+    <div class="week">
+      <div class="week-h">
+        <span class="eyebrow">Semana 1 · 28 sep al 4 oct</span>
+        <h3>Aterrizar y sembrar</h3>
+        <p>Entrar a la comunidad por FTW y dejar enviadas todas las solicitudes de reunión y de registro.</p>
+      </div>
+      <ul class="days">
+        <li><span class="d">lun 28</span><span>Llegada. Registros de Tech Week y primeras 30 solicitudes de reunión. <span class="note">Emmanuel Abugauch también está en SF hasta el 2 de octubre.</span></span></li>
+        <li><span class="d">mar 29</span><span>FTW día 1, programa de 10:00 am a 5:00 pm. <span class="note">German sale de 11:00 am a 3:00 pm: SalesOps, Experian, UNICEF y SDR BiWeekly.</span></span></li>
+        <li><span class="d">mié 30</span><span>Reuniones en oficinas de clientes. <span class="note">German: Línea Directa 12:00.</span></span></li>
+        <li><span class="d">jue 1</span><span>Reuniones en oficinas de clientes. <span class="note">German: Forecast 11:30.</span></span></li>
+        <li><span class="d">vie 2</span><span>Future of Finance Summit en Berkeley, opcional.</span></li>
+      </ul>
+    </div>
+    <div class="week">
+      <div class="week-h">
+        <span class="eyebrow">Semana 2 · 5 al 11 oct</span>
+        <h3>SF Tech Week</h3>
+        <p>La semana más densa. Dos días de payments y el primer evento propio.</p>
+      </div>
+      <ul class="days">
+        <li><span class="d">lun 5</span><span>Fintech House, 6:00 pm. Plan B: cena LATAM y SF VCs en Palo Alto.</span></li>
+        <li><span class="d">mar 6</span><span>Fintech Coffee 8:30 am en 532 Market St. Visa en Mission Rock a las 4:00 pm y Mastercard en China Basin a las 5:30 pm. <span class="note">German: SalesOps 11:00, Magdalena 1:00.</span></span></li>
+        <li><span class="d">mié 7</span><span>Agentic Zero, medio día. Reuniones en la tarde. Mixer de Bayteq a las 6:00 pm, opcional.</span></li>
+        <li><span class="d">jue 8</span><span class="own">Desayuno de operadores de payments, organizado por ustedes.</span></li>
+        <li><span class="d">sáb 10</span><span>Silicon Valley Latino Leadership Summit, 8:00 am a 1:45 pm, opcional.</span></li>
+      </ul>
+    </div>
+    <div class="week">
+      <div class="week-h">
+        <span class="eyebrow">Semana 3 · 12 al 17 oct</span>
+        <h3>Semana de Disrupt</h3>
+        <p>Sin pase de Disrupt. La ciudad está llena de gente de fuera: semana de reuniones y de la primera cena.</p>
+      </div>
+      <ul class="days">
+        <li><span class="d">lun 12</span><span>Fintech Next a las 5:00 pm en Market y 3rd. A las 6:00 pm, NMI en SPIN, a unas cuadras por 3rd St.</span></li>
+        <li><span class="d">mar 13</span><span>Reuniones en oficinas de clientes. Máximo un evento paralelo de Disrupt por noche.</span></li>
+        <li><span class="d">mié 14</span><span class="own">Cena de operadores de payments, primera edición.</span></li>
+        <li><span class="d">jue 15</span><span>Reuniones. Preparar Money20/20: agenda cerrada y materiales. <span class="note">German: Forecast 11:30, FinX 2:30.</span></span></li>
+      </ul>
+    </div>
+    <div class="week">
+      <div class="week-h">
+        <span class="eyebrow">Semana 4 · 18 al 25 oct</span>
+        <h3>Las Vegas y seguimiento</h3>
+        <p>Money20/20 y, al volver, convertir cada conversación en siguiente paso.</p>
+      </div>
+      <ul class="days">
+        <li><span class="d">dom 18</span><span>Vuelo a Las Vegas. VGS Vault Lounge o cena de TWIF y SEON.</span></li>
+        <li><span class="d">lun 19</span><span>Money20/20. eBay habla a las 10:25 am, Mauricio Schwartzmann a la 1:15 pm. Almuerzo de TabaPay, Stable Salon.</span></li>
+        <li><span class="d">mar 20</span><span>Money20/20. Perplexity 9:05 am, Upwork 10:30 am, Juan Pablo Ortega 3:15 pm. Open house de TabaPay, happy hour de Astra y Visa.</span></li>
+        <li><span class="d">mié 21</span><span>Cierre y regreso a SF.</span></li>
+        <li><span class="d">jue 22, vie 23</span><span>Seguimientos en menos de 24 horas y reuniones en SF con quienes se conocieron en Vegas.</span></li>
+      </ul>
+    </div>
+    <div class="week">
+      <div class="week-h">
+        <span class="eyebrow">Semana 5 · 26 oct al 4 nov</span>
+        <h3>Gaming y cierre</h3>
+        <p>El salón de compradores de gaming y la cena de cierre que deja la comunidad andando.</p>
+      </div>
+      <ul class="days">
+        <li><span class="d">lun 26, mar 27</span><span>Gamesforum SF, solo si se cierra el patrocinio. Si no, reuniones en oficinas de clientes.</span></li>
+        <li><span class="d">mié 28</span><span class="own">Cena de cierre, con anuncio de la siguiente edición.</span></li>
+        <li><span class="d">jue 29</span><span>One Way Summit en el día, opcional. Fintech Next a las 5:00 pm, opcional.</span></li>
+        <li><span class="d">lun 2, mar 3</span><span>GamesBeat Next. Super.com pidió retomar en noviembre: café esta semana.</span></li>
+        <li><span class="d">mié 4</span><span>Regreso.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cuentas">
+  <div class="sec-head">
+    <h2>A quién ver en persona</h2>
+    <p>A las reuniones van los tres; el mensaje lo manda quien tiene el contacto. Fuente: TCL (pestañas Final List y TCL_v2), la base de contactos de Stripe Sessions 2026 y las notas de cada deal. Los cargos son los registrados en esas bases; conviene revisarlos en LinkedIn antes de escribir.</p>
+  </div>
+
+  <h3>Conversaciones abiertas o tibias</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Cuenta</th><th>Sede</th><th>Estado</th><th>Jugada en SF</th></tr></thead>
+      <tbody>
+        <tr><td>Eventbrite</td><td>San Francisco</td><td>Discovery. Filippo (Milán) sin responder desde el 20 de agosto.</td><td>Puerta local: ingeniería de payments en SF (Mansi Karan, Bryan Mayes, Andy Abbott). Justo ofreció en la llamada un café con el CEO de Yuno en el Bay Area.</td></tr>
+        <tr><td>Super.com</td><td>San Francisco</td><td>Carol Schimmelpfeng pidió retomar en noviembre o diciembre. Akshay Kohli es relación previa de German.</td><td>Café en la última semana, 26 de octubre al 3 de noviembre.</td></tr>
+        <tr><td>Patreon</td><td>San Francisco</td><td>Kritika Rooney-Cespedes, Head of Payment Ops. Tibia y lenta.</td><td>Invitarla a la cena de operadores, no a una demo.</td></tr>
+        <tr><td>Discord</td><td>San Francisco</td><td>Oportunidad estancada de $684K en la lista de marketing del 24 de septiembre.</td><td>Confirmar quién la lleva y reactivar en persona.</td></tr>
+        <tr><td>Higgsfield</td><td>535 Mission St, SF</td><td>Deck listo desde el 16 de septiembre, sin outreach. Stripe único.</td><td>Su VP of Platform Partnerships habla en FTW esta semana. Llevar el deck en persona. Justo pidió esta cuenta.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Con trabajo previo ya hecho</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Cuenta</th><th>Sede</th><th>Stack</th><th>Contacto registrado</th><th>Material</th></tr></thead>
+      <tbody>
+        <tr><td>Perplexity</td><td>115 Sansome St, SF</td><td>Stripe único en web. India es el mercado 2 y solo acepta tarjeta.</td><td>Tony Wu y Harrison Wong, VPs de Ingeniería</td><td>Research. El CEO habla en Money20/20 el 20 de octubre.</td></tr>
+        <tr><td>Gamma</td><td>San Francisco</td><td>Stripe único</td><td>Alex Gurevich, Head of Finance. Max Blaha, Growth Product Lead</td><td>Deck</td></tr>
+        <tr><td>Cambly</td><td>San Francisco</td><td>Stripe y EBANX solo en Brasil</td><td>Julia Neizonek y Eric Sandine</td><td>Business case</td></tr>
+        <tr><td>Anthropic</td><td>San Francisco</td><td>Stripe</td><td>Allison Rossi, Treasurer</td><td>Deck</td></tr>
+        <tr><td>OpenAI</td><td>San Francisco</td><td>Stripe</td><td>Sin contacto registrado</td><td>Deck</td></tr>
+        <tr><td>Roblox</td><td>San Mateo</td><td>Tiendas de apps más checkout web</td><td>Sin contacto registrado</td><td>Business case</td></tr>
+        <tr><td>Replika</td><td>San Francisco</td><td>Stripe y PayPal en web, resto en tiendas de apps</td><td>Dmytro Klochko</td><td>Research</td></tr>
+        <tr><td>Chai</td><td>Palo Alto</td><td>Mayormente compras dentro de la app</td><td>William Beauchamp, founder</td><td>Research</td></tr>
+        <tr><td>Upwork</td><td>Palo Alto</td><td>Sin PSP de checkout confirmado</td><td>Roopa Patel, Director of Product, Payments</td><td>Habla en Money20/20 el 20 de octubre</td></tr>
+        <tr><td>eBay</td><td>San Jose</td><td>Adyen como procesador principal</td><td>Renata Camera Santos, Head of Wallet</td><td>Habla en Money20/20 el 19 de octubre</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Contactos de payments en sedes del Bay Area</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Cuenta</th><th>Sede</th><th>Contacto y cargo</th><th>Quién escribe</th></tr></thead>
+      <tbody>
+        <tr><td>DoorDash</td><td>San Francisco</td><td>AJ Tus, Head of Global FinTech and Payments Partnerships. Divyesh Oza, Product Lead Payments</td><td>German</td></tr>
+        <tr><td>Coinbase</td><td>San Francisco</td><td>Adrienne Wong, GPM Payments. Justin Gainsley, Payments Product Lead</td><td>German</td></tr>
+        <tr><td>Gap Inc.</td><td>San Francisco</td><td>Kevin Meiners, Head of Loyalty and Payments</td><td>German</td></tr>
+        <tr><td>Dropbox</td><td>San Francisco</td><td>Emina Zahirovic, PM Payments and Billing</td><td>German</td></tr>
+        <tr><td>Midjourney</td><td>San Francisco</td><td>Joanne Soo, PM Billing and Payments. Bhavin Patel, Head of Finance</td><td>German</td></tr>
+        <tr><td>Automattic</td><td>San Francisco</td><td>Gary Schofield, GM Payments. Tim Crepeau, Director de Producto Payments</td><td>German</td></tr>
+        <tr><td>Docusign</td><td>San Francisco</td><td>Prashant Sharma, Sr Director PM Commerce Platform</td><td>German</td></tr>
+        <tr><td>Asana</td><td>San Francisco</td><td>Sid Sanghvi, Head of FinTech</td><td>German</td></tr>
+        <tr><td>Academia.edu</td><td>San Francisco</td><td>Olga Rembielinska, Head of Payments</td><td>German</td></tr>
+        <tr><td>JustAnswer</td><td>San Francisco</td><td>Ben Rabb, Director of Payments</td><td>German</td></tr>
+        <tr><td>Miro</td><td>San Francisco</td><td>Nino Kintsurashvili, PM Payments</td><td>German</td></tr>
+        <tr><td>LegalZoom</td><td>Mountain View</td><td>Robert Ritchie, Payments Lead</td><td>German</td></tr>
+        <tr><td>Airbnb</td><td>San Francisco</td><td>Taylor R., Payment Implementations and Cash Ops</td><td>Samuel</td></tr>
+        <tr><td>Lyft</td><td>San Francisco</td><td>Priyanka Banerjee, Manager Payments. Tae Moon, Payments Strategy</td><td>Samuel</td></tr>
+        <tr><td>LinkedIn</td><td>Sunnyvale</td><td>Ande Keller, Sr PM Payments</td><td>Samuel</td></tr>
+        <tr><td>Navan</td><td>Palo Alto</td><td>Ashley Duncan, VP Pricing and Payments Optimization</td><td>Samuel</td></tr>
+        <tr><td>hims and hers</td><td>San Francisco</td><td>John Farris, Sr PM Payments and Finance Platform</td><td>Samuel</td></tr>
+        <tr><td>Coursera</td><td>Mountain View</td><td>Onofre Melo, Sr EM Payments</td><td>Samuel</td></tr>
+        <tr><td>Quizlet</td><td>San Francisco</td><td>Michelle Cheung, PM Payments</td><td>Samuel</td></tr>
+        <tr><td>TaskRabbit</td><td>San Francisco</td><td>Hannah McCan, Sr Payments PM</td><td>Samuel</td></tr>
+        <tr><td>Peek</td><td>San Francisco</td><td>Kristi Hurd, Payments Operations Manager</td><td>Samuel</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Prioridad High en la TCL, todavía sin contacto de payments</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Cuenta</th><th>Sede</th><th>Stack según la TCL</th></tr></thead>
+      <tbody>
+        <tr><td>Uber</td><td>San Francisco</td><td>Braintree, Adyen y Stripe</td></tr>
+        <tr><td>Everand / Scribd</td><td>San Francisco</td><td>Stripe, Adyen, Braintree y EBANX</td></tr>
+        <tr><td>Netflix</td><td>Los Gatos</td><td>Adyen</td></tr>
+        <tr><td>McAfee</td><td>San Jose</td><td>Salida de Digital River como merchant of record</td></tr>
+        <tr><td>Instacart</td><td>San Francisco</td><td>Stripe desde 2012</td></tr>
+        <tr><td>Figma</td><td>San Francisco</td><td>Stripe único</td></tr>
+        <tr><td>Zendesk</td><td>San Francisco</td><td>Stripe único para tarjetas</td></tr>
+        <tr><td>Intercom</td><td>San Francisco</td><td>Stripe Billing</td></tr>
+        <tr><td>Houzz</td><td>Palo Alto</td><td>Stripe</td></tr>
+        <tr><td>Remote</td><td>San Francisco</td><td>Stripe Connect para pagos a contratistas</td></tr>
+        <tr><td>Electronic Arts</td><td>Redwood City</td><td>Sin PSP confirmado públicamente</td></tr>
+        <tr><td>Zoom</td><td>San Jose</td><td>PayPal y Stripe</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <h3>Dos palancas internas</h3>
+    <p>El CEO de Yuno está basado en el Bay Area, según dijo Justo en la llamada con Eventbrite del 4 de agosto. Para las diez cuentas más grandes, la invitación a un café con el founder abre más puertas que una demo.</p>
+    <p>a16z es inversionista de Yuno desde la Serie A y organiza SF Tech Week. Vale pedirle a Justo o a Juan Pablo una introducción al equipo de plataforma de a16z para intros a su portafolio y acceso a eventos.</p>
+  </div>
+
+  <p class="sec-head">Opcional fuera del Bay Area: el archivo de pipeline ya anota que desde SF se abre la opción de una visita presencial a Vancouver. Un solo día cubriría Lululemon (Eric Mei) y Thinkific, las dos sin respuesta reciente.</p>
+</section>
+
+<section id="comunidad">
+  <div class="sec-head">
+    <h2>Cómo construir comunidad</h2>
+    <p>La meta es que al 4 de noviembre exista algo que siga funcionando sin ustedes en la ciudad: una lista, una serie y una reputación.</p>
+  </div>
+  <div class="plays">
+    <div class="play">
+      <h3>Una serie propia, no un evento suelto</h3>
+      <p>Tres ediciones con el mismo nombre y el mismo formato: desayuno el 8 de octubre, cena el 14, cena de cierre el 28. Ustedes tres como anfitriones y de 8 a 10 invitados, solo lado merchant, sin pitch y con un tema por edición.</p>
+      <p class="how">Temas posibles: qué se rompió en su stack este año, vida después de un solo PSP, qué necesita un merchant del checkout con agentes.</p>
+    </div>
+    <div class="play">
+      <h3>Invitados desde la propia base</h3>
+      <p>La tabla de contactos de payments de arriba es la lista de invitados. Una invitación a una cena entre pares tiene mejor respuesta que una solicitud de demo, y sirve para reactivar cuentas tibias como Patreon.</p>
+      <p class="how">La política de viajes cubre $85 por persona en comida con clientes.</p>
+    </div>
+    <div class="play">
+      <h3>Tres personas, un salón</h3>
+      <p>Llegar juntos, abrirse dentro del evento y reencontrarse al cierre. Antes de entrar, acordar a quién busca cada uno. Al salir, diez minutos para cruzar nombres y definir quién hace cada seguimiento al día siguiente.</p>
+    </div>
+    <div class="play">
+      <h3>Un coanfitrión neutral</h3>
+      <p>Una red o un socio sube la tasa de aceptación y comparte costo. Candidatos naturales: a16z, Mastercard, Visa o TabaPay, que ya es parte del caso de GoFundMe.</p>
+      <p class="how">Las conversaciones con Visa y Mastercard del martes 6 son el momento para proponerlo.</p>
+    </div>
+    <div class="play">
+      <h3>Calendario propio en Luma</h3>
+      <p>Un calendario de Yuno en San Francisco con los tres eventos publicados y registro con aprobación. Deja una lista de suscriptores que sobrevive al viaje.</p>
+    </div>
+    <div class="play">
+      <h3>Entrar a las comunidades que ya existen</h3>
+      <p>Fintech Coffee mensual de This Week in Fintech, el calendario de Fintech Next, PaymentsEd (liderado por merchants), el Slack de Payments FM (con regla de no pitch) y la comunidad PAYMENTSfn.</p>
+      <p class="how"><a href="https://luma.com/user/twif">TWIF</a> · <a href="https://luma.com/calendar/cal-cf0Ly7rAuHG5Gyt">Fintech Next</a> · <a href="https://paymentsed.org/">PaymentsEd</a> · <a href="https://payments.fm/p/slack">Payments FM</a></p>
+    </div>
+    <div class="play">
+      <h3>El ángulo LatAm como diferencial</h3>
+      <p>Un desayuno sobre cómo cobrar en Latinoamérica para compañías de Estados Unidos es un tema que pocos en la ciudad pueden dar con autoridad. Aliados posibles: Latitud, BayBrazil, Chile California Council.</p>
+    </div>
+    <div class="play">
+      <h3>Llevar el deck en la mano</h3>
+      <p>Ya hay decks o business cases para Higgsfield, Gamma, Cambly, Anthropic, OpenAI, xAI, Roblox y Patreon. Ofrecer 30 minutos en su oficina para revisar su propio caso es una razón concreta para recibirlos.</p>
+    </div>
+    <div class="play">
+      <h3>Presencia diaria en LinkedIn</h3>
+      <p>Un post el primer día avisando que los tres están en SF hasta el 4 de noviembre, y una nota corta después de cada evento con lo aprendido y las personas conocidas.</p>
+    </div>
+    <div class="play">
+      <h3>Trabajar desde donde pasa la gente</h3>
+      <p>Frontier Tower (995 Market St) tiene varios eventos públicos al día. Shack15 es el club del Ferry Building. Un par de días por semana trabajando desde esos espacios genera encuentros que no se agendan.</p>
+      <p class="how"><a href="https://luma.com/frontiertower">Frontier Tower</a> · <a href="https://www.shack15.com/">Shack15</a></p>
+    </div>
+  </div>
+  <div class="callout">
+    <h3>Marcador propuesto para el viaje</h3>
+    <p>40 reuniones presenciales con merchants, 3 eventos propios, 15 reuniones agendadas en Money20/20 y 10 oportunidades nuevas en Salesforce. Son metas sugeridas para el equipo de tres, para revisar cada viernes; no son cifras acordadas.</p>
+  </div>
+</section>
+
+<section id="semana">
+  <div class="sec-head">
+    <h2>Esta semana</h2>
+    <p>Lo que vence primero. Las marcas se guardan solo en este navegador.</p>
+  </div>
+  <ul class="todo">
+    <li><input type="checkbox" id="t1"><label for="t1">Comprar los tres pases de un día de FTW para el martes 29<small>$495 cada uno. Empieza en menos de 48 horas. Revisar antes en la agenda qué día habla Higgsfield.</small></label><span class="chip crit">Hoy</span></li>
+    <li><input type="checkbox" id="t2"><label for="t2">Registrarse los tres, cada uno con su cuenta, en Mastercard y en los demás eventos con aprobación<small>Todos gratis. A Mastercard le quedaban 9 cupos. Después: Fintech House, Visa, Fintech Coffee, Agentic Zero.</small></label><span class="chip crit">Hoy</span></li>
+    <li><input type="checkbox" id="t3"><label for="t3">Pedir viaje y pase de Money20/20 para German y Joaquín<small>$4,199 por pase; $299 menos por pase si se compran tres o más juntos. Samuel ya tiene vuelo aprobado del 18 al 21. Melissa Pottenger y Yana tienen la lista de asistentes.</small></label><span class="chip warn">Lunes</span></li>
+    <li><input type="checkbox" id="t10"><label for="t10">Pedir reunión en Las Vegas a las cuentas del Bay Area que hablan en Money20/20<small>Perplexity, eBay, Upwork y Navan. La charla de Juan Pablo el martes 20 es la excusa natural para invitarlos.</small></label><span class="chip warn">Lunes</span></li>
+    <li><input type="checkbox" id="t4"><label for="t4">Enviar las primeras 30 solicitudes de reunión presencial<small>Empezar por conversaciones abiertas y por contactos de payments con cargo confirmado.</small></label><span class="chip warn">Lunes</span></li>
+    <li><input type="checkbox" id="t5"><label for="t5">Pedir a Justo y a Juan Pablo la introducción a a16z y confirmar One Way Summit</label><span class="chip warn">Lunes</span></li>
+    <li><input type="checkbox" id="t6"><label for="t6">Registrarse los tres en Fintech Next y en NMI del 12 de octubre<small>Fintech Next cuesta $20 por persona. NMI es gratis.</small></label><span class="chip opt">Esta semana</span></li>
+    <li><input type="checkbox" id="t7"><label for="t7">Crear el calendario de Luma y publicar el desayuno del 8 de octubre<small>Definir lugar, tema y coanfitrión. Enviar las primeras 20 invitaciones.</small></label><span class="chip opt">Esta semana</span></li>
+    <li><input type="checkbox" id="t8"><label for="t8">Comprar tres pases de GamesBeat Next y pedir cotización de patrocinio a Gamesforum<small>GamesBeat: $899 por persona. Gamesforum cancela los pases comprados por proveedores.</small></label><span class="chip opt">Esta semana</span></li>
+    <li><input type="checkbox" id="t9"><label for="t9">Publicar en LinkedIn que están en San Francisco hasta el 4 de noviembre</label><span class="chip opt">Esta semana</span></li>
+  </ul>
+</section>
+
+<section id="verificar">
+  <div class="sec-head">
+    <h2>Por verificar antes de actuar</h2>
+    <p>Datos que aparecieron en la búsqueda pero no se pudieron confirmar en una página oficial.</p>
+  </div>
+  <div class="cols">
+    <p><strong>Viaje de Joaquín a Las Vegas.</strong> En el canal de viajes no aparece una solicitud suya ni de German para Money20/20. Si ya se gestionó por otra vía, ignorar.</p>
+    <p><strong>Juan Pablo Ortega en One Way Summit.</strong> Lo menciona un resultado de búsqueda, no la página del evento. Confirmar con él.</p>
+    <p><strong>Gratis según el agregador.</strong> Fintech House, Fintech Coffee, Visa, el panel de CFOs, When Agents Spend Money y Klaviyo se registran en Partiful, que no muestra precio. El dato de que son gratis viene de GarysGuide.</p>
+    <p><strong>Qué día habla cada speaker de FTW.</strong> La lista de speakers está verificada, el día de cada uno no. Revisar el filtro de agenda antes de elegir el pase de un día.</p>
+    <p><strong>Calendario completo de Tech Week.</strong> El sitio oficial tech-week.com bloqueó la consulta y muchos eventos viven en Partiful. Puede haber más eventos de payments que los listados aquí.</p>
+    <p><strong>Stripe Tour Nueva York, 4 de noviembre.</strong> Aparece en sitios de terceros, no en la página oficial de Stripe Tour.</p>
+    <p><strong>Eventos de Tech Week vistos solo como una línea en el agregador:</strong> FinTech Founders' Lunch (5 oct), mixer New Money (5 oct), desayuno de Brex y DoorDash for Business (6 oct). Sin anfitrión ni lugar confirmados.</p>
+    <p><strong>Costo del patrocinio de Gamesforum.</strong> No está publicado. La página remite a un contacto comercial.</p>
+    <p><strong>Subscription Show, Jersey City.</strong> Salió de la lista: el sitio del organizador ya no lo menciona y no se pudo confirmar que siga en pie.</p>
+    <p><strong>Klaviyo Commerce Social.</strong> La página del anfitrión no carga y el lugar no está anunciado. Confirmar antes de ir.</p>
+    <p><strong>Hora de cierre de Visa y de When Agents Spend Money.</strong> No están publicadas; el calendario muestra una duración estimada.</p>
+    <p><strong>VGS Vault Lounge en Las Vegas.</strong> La página no dice si es gratis.</p>
+    <p><strong>Ya pasaron en 2026:</strong> Dreamforce, MRC San Diego, Stripe Sessions, SaaStr Annual, Roblox RDC. Quedan justo después del viaje: Payments Leaders' Summit (San Diego, 10 y 11 nov) y Phocuswright (Fort Lauderdale, 17 al 19 nov).</p>
+  </div>
+  <p class="foot">Fuentes: páginas oficiales y listados de cada evento consultados el 27 de septiembre de 2026, TCL de German en Google Sheets, base de Stripe Sessions 2026, notas de deals y canales de Slack de viajes y marketing.</p>
+</section>
+
+</div>
+
+{{CALENDAR_HTML}}
+
+</div>
+
+<script type="application/json" id="base-items">{{BASE_ITEMS}}</script>
+<script>
+{{CALENDAR_JS}}
+</script>

@@ -121,21 +121,199 @@ td small{color:var(--muted);font-weight:400}
   .todo li{grid-template-columns:auto 1fr}
   .todo li .chip{grid-column:2}
 }
+
+/* ---------- tabs, price chips and Interactive Calendar ---------- */
+:root{
+  --free-bg:#DDF3E4; --free-fg:#14602F; --paid-bg:#E8EAF5; --paid-fg:#282A30;
+  --c-must-bg:#1227AD; --c-must-fg:#FFFFFF;
+  --c-go-bg:#C9CFFA; --c-go-fg:#10196B;
+  --c-opt-bg:#E8EAF5; --c-opt-fg:#33363F;
+  --c-own-bg:#0E6F7E; --c-own-fg:#FFFFFF;
+  --c-meet-bg:#CFEBD9; --c-meet-fg:#0F5A2E;
+  --c-other-bg:#FFE7C2; --c-other-fg:#6B4300;
+  --c-call-bd:#9AA3E8; --now:#D33A2C; --scrim:rgba(20,22,30,.5);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --free-bg:#173522; --free-fg:#8FD3A6; --paid-bg:#2A2C36; --paid-fg:#ECEDF3;
+    --c-must-bg:#5967E4; --c-must-fg:#FFFFFF;
+    --c-go-bg:#2B3270; --c-go-fg:#D5D9FB;
+    --c-opt-bg:#2A2C36; --c-opt-fg:#C6C8D2;
+    --c-own-bg:#157585; --c-own-fg:#FFFFFF;
+    --c-meet-bg:#173522; --c-meet-fg:#8FD3A6;
+    --c-other-bg:#4A3710; --c-other-fg:#F2C46B;
+    --c-call-bd:#5B63A8; --now:#F0695C; --scrim:rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --free-bg:#173522; --free-fg:#8FD3A6; --paid-bg:#2A2C36; --paid-fg:#ECEDF3;
+  --c-must-bg:#5967E4; --c-must-fg:#FFFFFF;
+  --c-go-bg:#2B3270; --c-go-fg:#D5D9FB;
+  --c-opt-bg:#2A2C36; --c-opt-fg:#C6C8D2;
+  --c-own-bg:#157585; --c-own-fg:#FFFFFF;
+  --c-meet-bg:#173522; --c-meet-fg:#8FD3A6;
+  --c-other-bg:#4A3710; --c-other-fg:#F2C46B;
+  --c-call-bd:#5B63A8; --now:#F0695C; --scrim:rgba(0,0,0,.6);
+}
+
+.tabs{display:flex;gap:4px;border-bottom:2px solid var(--line);overflow-x:auto}
+.tabs button{font:700 1.05rem var(--sans);color:var(--ink-2);background:transparent;border:0;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 16px;cursor:pointer;white-space:nowrap}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{color:var(--accent-deep);border-bottom-color:var(--accent)}
+.panel{display:flex;flex-direction:column;gap:56px}
+
+.price{display:inline-block;font-family:var(--mono);font-size:.74rem;font-weight:500;padding:2px 8px;border-radius:4px;white-space:nowrap}
+.price.free{background:var(--free-bg);color:var(--free-fg)}
+.price.paid{background:var(--paid-bg);color:var(--paid-fg)}
+.price.unknown{background:var(--warn-bg);color:var(--warn-fg)}
+.ev-body p.cost{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;font-size:.92rem;color:var(--ink)}
+
+.cal-bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.cal-bar > *,.cal-filters > *{min-width:0;max-width:100%}
+#calendar{min-width:0}
+.cal-nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.cal-title{font-weight:700;font-size:1.2rem;padding-left:6px}
+.cal-bar .grow{flex:1 1 auto}
+.btn{font:600 .9rem var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 12px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--must-bg);border-color:var(--must-bg);color:var(--must-fg)}
+.btn.danger{color:var(--crit-fg);border-color:var(--crit-fg);background:transparent}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{font:600 .86rem var(--sans);background:var(--surface);color:var(--ink-2);border:0;padding:6px 12px;cursor:pointer}
+.seg button + button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.cal-filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.fchip{display:inline-flex;align-items:center;gap:7px;font:600 .84rem var(--sans);color:var(--ink-2);background:transparent;border:1px solid var(--line);border-radius:999px;padding:4px 12px 4px 8px;cursor:pointer}
+.fchip i{width:12px;height:12px;border-radius:3px;display:inline-block;flex:none;box-shadow:0 0 0 1px var(--line)}
+.fchip[aria-pressed="false"]{opacity:.55}
+.fchip[aria-pressed="false"] i{background:transparent !important;border:1px solid var(--muted)}
+.conn{font-size:.88rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
+.conn.ok::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--free-fg);display:inline-block}
+.conn.warn{color:var(--warn-fg)}
+.linkbtn{font:600 .88rem var(--sans);color:var(--accent-deep);background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+
+.cal-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.cal-grid{min-width:880px;--hh:46px}
+.cal-head,.cal-all,.cal-body{display:grid;grid-template-columns:56px repeat(7,minmax(0,1fr))}
+.cal-head > div{padding:8px 4px 6px;text-align:center;border-bottom:1px solid var(--line)}
+.cal-head > div + div{border-left:1px solid var(--line)}
+.cal-head .dow{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.cal-head .dnum{display:inline-block;font-size:1.45rem;font-weight:600;line-height:1.5;min-width:2.2em;border-radius:999px;font-variant-numeric:tabular-nums}
+.cal-head .today .dow{color:var(--accent-deep)}
+.cal-head .today .dnum{background:var(--must-bg);color:var(--must-fg)}
+.cal-head .mon{display:block;font-size:.72rem;color:var(--muted)}
+.cal-all{border-bottom:1px solid var(--line)}
+.cal-all .gl{font-family:var(--mono);font-size:.62rem;color:var(--muted);padding:8px 6px 0;text-align:right;line-height:1.2}
+.cal-all .lane{grid-column:2 / span 7;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));grid-auto-flow:row dense;gap:3px;padding:4px 3px;min-height:32px}
+.cal-body .gut{position:relative}
+.cal-body .hr{position:absolute;right:6px;font-family:var(--mono);font-size:.66rem;color:var(--muted);transform:translateY(-50%);white-space:nowrap}
+.cal-body .col{position:relative;border-left:1px solid var(--line);background-image:linear-gradient(var(--line) 1px,transparent 1px);background-size:100% var(--hh)}
+.cal-body .col.today{background-color:var(--accent-soft)}
+.evb{display:block;font-family:var(--sans);text-align:left;border:0;border-radius:5px;padding:3px 6px;overflow:hidden;cursor:pointer;line-height:1.2;box-shadow:0 0 0 1px var(--surface)}
+.cal-body .evb{position:absolute}
+.cal-all .evb{min-width:0}
+.evb .t{display:block;font-size:.78rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.evb .m{display:block;font-family:var(--mono);font-size:.66rem;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.evb.tight .t{-webkit-line-clamp:1;display:block;white-space:nowrap}
+.evb.tight .m{margin-top:0}
+.evb.tiny{padding:1px 6px}
+.evb.tiny .m{display:none}
+.cal-all .evb .t{-webkit-line-clamp:1;display:block;white-space:nowrap}
+.evb:hover{filter:brightness(.96)}
+.evb:focus-visible{outline:2px solid var(--accent);outline-offset:1px;z-index:3}
+.cat-must{background:var(--c-must-bg);color:var(--c-must-fg)}
+.cat-go{background:var(--c-go-bg);color:var(--c-go-fg)}
+.cat-opt{background:var(--c-opt-bg);color:var(--c-opt-fg)}
+.cat-planb{background:var(--c-opt-bg);color:var(--c-opt-fg);outline:1.5px dashed var(--muted);outline-offset:-2px}
+.cat-skip{background:var(--surface);color:var(--muted);outline:1px dashed var(--muted);outline-offset:-1px}
+.cat-own{background:var(--c-own-bg);color:var(--c-own-fg)}
+.cat-meet{background:var(--c-meet-bg);color:var(--c-meet-fg)}
+.cat-other{background:var(--c-other-bg);color:var(--c-other-fg)}
+.cat-call{background:var(--surface);color:var(--ink-2);outline:1px solid var(--c-call-bd);outline-offset:-1px}
+.now{position:absolute;left:0;right:0;height:0;border-top:2px solid var(--now);z-index:4;pointer-events:none}
+.now::before{content:"";position:absolute;left:-5px;top:-6px;width:10px;height:10px;border-radius:50%;background:var(--now)}
+
+.cal-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.cal-day{display:grid;grid-template-columns:6.6rem 1fr;gap:8px 20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.cal-day .dl{font-family:var(--mono);font-size:.84rem;color:var(--ink-2);line-height:1.35}
+.cal-day .dl b{display:block;font-family:var(--sans);font-size:1.3rem;color:var(--ink)}
+.cal-day.today .dl b{color:var(--accent-deep)}
+.cal-day ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.li-item{width:100%;display:grid;grid-template-columns:14px 8.4rem minmax(0,1fr) auto;gap:4px 12px;align-items:baseline;padding:9px 12px;border-radius:6px;text-align:left;background:var(--surface);border:1px solid var(--line);color:var(--ink);font-family:var(--sans);cursor:pointer}
+.li-item:hover{border-color:var(--accent)}
+.li-item i{width:12px;height:12px;border-radius:3px;align-self:center;box-shadow:0 0 0 1px var(--line)}
+.li-item .tm{font-family:var(--mono);font-size:.78rem;color:var(--ink-2)}
+.li-item .tt{font-size:.98rem;font-weight:600;min-width:0}
+.li-item .tt small{display:block;font-weight:400;font-size:.86rem;color:var(--muted)}
+.li-item .rt{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.cal-empty{padding:28px 16px;text-align:center;color:var(--muted)}
+.cal-foot{font-size:.86rem;color:var(--muted);max-width:80ch}
+
+dialog.dlg{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:0;width:min(580px,calc(100vw - 32px));max-height:calc(100vh - 48px);font-family:var(--sans)}
+dialog.dlg::backdrop{background:var(--scrim)}
+.dlg-in{display:flex;flex-direction:column;gap:16px;padding:22px 24px}
+.dlg-in h3{font-size:1.3rem}
+.dlg-chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.dlg dl{margin:0;display:grid;grid-template-columns:6.4rem 1fr;gap:8px 14px;font-size:.96rem}
+.dlg dt{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.dlg dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.dlg dd small{display:block;color:var(--muted);font-size:.86rem}
+.dlg-actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;border-top:1px solid var(--line);padding-top:14px}
+.dlg-actions .sp{flex:1 1 auto}
+.regs{display:flex;flex-wrap:wrap;gap:6px}
+.regs button{font:600 .84rem var(--sans);border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink-2);padding:5px 10px;cursor:pointer}
+.regs button[data-s="1"]{background:var(--warn-bg);color:var(--warn-fg);border-color:transparent}
+.regs button[data-s="2"]{background:var(--free-bg);color:var(--free-fg);border-color:transparent}
+.regs button[disabled]{cursor:not-allowed;opacity:.6}
+
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.form .full{grid-column:1 / -1}
+.form label,.form legend{display:block;font-size:.84rem;font-weight:600;color:var(--ink-2);margin-bottom:4px;padding:0}
+.form input[type="text"],.form input[type="url"],.form input[type="date"],.form input[type="time"],.form select,.form textarea{width:100%;font:400 .98rem var(--sans);color:var(--ink);background:var(--ground);border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+.form textarea{min-height:70px;resize:vertical}
+.form fieldset{border:0;margin:0;padding:0;min-width:0}
+.form .opts{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center}
+.form .opts label{display:inline-flex;gap:6px;align-items:center;font-weight:400;font-size:.95rem;color:var(--ink);margin:0}
+.form .hint{font-size:.82rem;color:var(--muted);margin-top:4px}
+.form-err{color:var(--crit-fg);background:var(--crit-bg);border-radius:6px;padding:8px 12px;font-size:.92rem}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--ground);font-size:.92rem;font-weight:600;padding:9px 16px;border-radius:999px;z-index:20}
+
+@media (max-width:720px){
+  .cal-day{grid-template-columns:1fr}
+  .cal-day .dl b{display:inline;margin-right:8px}
+  .li-item{grid-template-columns:14px minmax(0,1fr)}
+  .li-item .tm{grid-column:2}
+  .li-item .tt{grid-column:2}
+  .li-item .rt{grid-column:2;justify-content:flex-start}
+  .form{grid-template-columns:1fr}
+  .dlg dl{grid-template-columns:1fr;gap:2px 0}
+  .dlg dd{margin-bottom:8px}
+  .dlg-in{padding:18px 16px}
+}
 </style>
 
 <div class="page">
 
 <header class="top">
-  <p class="eyebrow">Yuno · Joaquín Mann, Samuel Vieira y German Tatis · actualizado 27 sep 2026</p>
+  <p class="eyebrow">Yuno · Joaquín Mann, Samuel Vieira y German Tatis · actualizado 28 sep 2026</p>
   <h1>San Francisco, 28 de septiembre al 4 de noviembre</h1>
   <p class="lede">En estas cinco semanas no hay ninguna conferencia de payments para merchants en el Bay Area. La mayoría de los eventos de la ciudad reúne a founders, inversionistas y proveedores. Los compradores están en sus oficinas: 226 cuentas de la TCL tienen sede aquí. El viaje se gana con reuniones y con eventos propios. Los eventos de terceros sirven para abrir puertas y construir nombre.</p>
 </header>
 
+<div class="tabs" role="tablist" aria-label="Vistas">
+  <button type="button" role="tab" id="tab-playbook" aria-controls="panel-playbook" aria-selected="true">Playbook</button>
+  <button type="button" role="tab" id="tab-calendar" aria-controls="panel-calendar" aria-selected="false" tabindex="-1">Interactive Calendar</button>
+</div>
+
+<div id="panel-playbook" class="panel" role="tabpanel" aria-labelledby="tab-playbook">
+
 <nav class="topnav" aria-label="Secciones">
   <a href="#veredicto">Veredicto</a>
   <a href="#nofaltar">No faltar</a>
+  <a href="#costos">Costos</a>
   <a href="#eventos">Eventos</a>
-  <a href="#calendario">Calendario</a>
+  <a href="#calendario">Semana a semana</a>
   <a href="#cuentas">Cuentas</a>
   <a href="#comunidad">Comunidad</a>
   <a href="#semana">Esta semana</a>
@@ -174,13 +352,13 @@ td small{color:var(--muted);font-weight:400}
       <span class="when">18 al 21 oct · Las Vegas</span>
       <h3>Money20/20 USA</h3>
       <p>El evento de payments de la ventana: más de 11,000 asistentes, uno de cada tres nivel C. Juan Pablo Ortega y Mauricio Schwartzmann hablan en la agenda. Cuatro cuentas del Bay Area también: Perplexity, eBay, Upwork y Navan. Marketing ya tiene la lista de asistentes.</p>
-      <p class="act">Samuel ya tiene el viaje aprobado. Falta pedir viaje y pase para German y Joaquín. Meta: 15 reuniones agendadas antes de aterrizar.</p>
+      <p class="act">Pase estándar $4,199 por persona. Samuel ya tiene el viaje aprobado; falta pedir viaje y pase para German y Joaquín. Meta: 15 reuniones agendadas antes de aterrizar.</p>
     </div>
     <div class="must-item">
       <span class="when">lun 5 y mar 6 oct · SF Tech Week</span>
       <h3>El bloque de payments de Tech Week</h3>
       <p>Fintech House el lunes a las 6:00 pm. El martes: Fintech Coffee a las 8:30 am, Visa a las 4:00 pm y Mastercard a las 5:30 pm, los dos últimos en la misma zona. Es la mayor concentración local de gente de payments en todo el viaje.</p>
-      <p class="act">Registrarse hoy, cada uno con su cuenta. Casi todos piden aprobación y a Mastercard le quedaban 9 cupos.</p>
+      <p class="act">Todos gratis. Registrarse hoy, cada uno con su cuenta: casi todos piden aprobación y a Mastercard le quedaban 9 cupos.</p>
     </div>
     <div class="must-item">
       <span class="when">mar 29 sep · The Green Room</span>
@@ -189,10 +367,10 @@ td small{color:var(--muted);font-weight:400}
       <p class="act">Tres pases de un día, $495 cada uno. German sale a sus llamadas de 11:00 am a 3:00 pm y vuelve al bloque de la tarde.</p>
     </div>
     <div class="must-item">
-      <span class="when">26 y 27 oct · 2 y 3 nov</span>
-      <h3>Gamesforum SF y GamesBeat Next</h3>
-      <p>Los dos salones con compradores reales de la ventana: líderes de monetización y producto de gaming (Supercell, Zynga, EA, Scopely, Epic, Roblox en la lista de asistentes o speakers).</p>
-      <p class="act">Los tres a los dos eventos. Llegar con la lista de estudios objetivo y el caso de web shops.</p>
+      <span class="when">lun 2 y mar 3 nov · San Francisco</span>
+      <h3>GamesBeat Next</h3>
+      <p>El salón con compradores reales de la ventana: 500 líderes senior de gaming, 80% nivel C, con Epic Games, EA, Roblox, Netflix y Unity en la lista de asistentes. Gamesforum SF (26 y 27 oct) es igual de bueno, pero solo admite proveedores como patrocinadores.</p>
+      <p class="act">Conference Pass $899 por persona. Para Gamesforum, pedir cotización de patrocinio antes de decidir.</p>
     </div>
     <div class="must-item">
       <span class="when">todas las semanas</span>
@@ -209,10 +387,33 @@ td small{color:var(--muted);font-weight:400}
   </div>
 </section>
 
+<section id="costos">
+  <div class="sec-head">
+    <h2>Cuánto cuestan las entradas</h2>
+    <p>Precio publicado por persona y el total para los tres. La multiplicación es cálculo propio. Todo lo que no aparece aquí es gratis.</p>
+  </div>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Evento</th><th>Veredicto</th><th>Por persona</th><th>Los tres</th><th>Nota</th></tr></thead>
+      <tbody>
+        <tr><td>FTW San Francisco, día 1</td><td>No faltar</td><td>$495</td><td>$1,485</td><td>Pase de un día. El de tres días cuesta $995.</td></tr>
+        <tr><td>Money20/20 USA</td><td>No faltar</td><td>$4,199</td><td>$11,700</td><td>Con el descuento de $299 por pase al comprar tres o más en una sola transacción. Sin descuento son $12,597.</td></tr>
+        <tr><td>GamesBeat Next</td><td>No faltar</td><td>$899</td><td>$2,697</td><td>Conference Pass. Las tarifas del checkout no se pudieron leer.</td></tr>
+        <tr><td>Fintech Next, 12 oct</td><td>Ir</td><td>$20</td><td>$60</td><td></td></tr>
+        <tr><td>Future of Finance Summit</td><td>Si cabe</td><td>$45</td><td>$135</td><td>$30 mientras dure la preventa.</td></tr>
+        <tr><td>One Way Summit</td><td>Si cabe</td><td>$129</td><td>$387</td><td>Pase regular.</td></tr>
+        <tr><td>Silicon Valley Latino Leadership Summit</td><td>Si cabe</td><td>$300</td><td>$900</td><td>Entrada general.</td></tr>
+        <tr><td>Gamesforum San Francisco</td><td>Si cabe</td><td>Patrocinio</td><td>Sin publicar</td><td>No vende pases a proveedores. Hay que pedir cotización.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="sec-head">Los cuatro eventos de No faltar e Ir que cobran entrada suman $15,942 para los tres. Los opcionales de pago suman $1,422 más.</p>
+</section>
+
 <section id="eventos">
   <div class="sec-head">
     <h2>Todos los eventos, uno por uno</h2>
-    <p>En orden de fecha, con veredicto según quién asiste. Verificados con fecha 2026 en una página en vivo el 27 de septiembre. Varios eventos de Tech Week se verificaron en el agregador GarysGuide porque Luma estaba limitando consultas; el lugar exacto se revela al aprobar el registro.</p>
+    <p>En orden de fecha, con veredicto según quién asiste y el precio de la entrada en cada uno. Fechas y precios verificados en páginas en vivo el 27 y 28 de septiembre. En los eventos de Tech Week que se registran por Partiful la página no muestra precio: el dato de que son gratis viene del listado de GarysGuide.</p>
   </div>
   <div class="filters" role="group" aria-label="Filtrar por veredicto">
     <button type="button" id="fe-all" data-f="all" aria-pressed="true">Todos</button>
@@ -229,7 +430,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>FTW San Francisco <small>Fintech Is Femme y Fiat Growth</small></h4>
         <p>Más de 600 personas. Según el organizador: 60% founders y tomadores de decisión, 20% inversionistas, 10% bancos. Los speakers son sobre todo de fintechs, bancos y redes (Chime, Plaid, TabaPay, Stripe, Mastercard, Fiserv). Del lado merchant o de cuentas objetivo hablan Walmart (Head of Consumer Fintech), Higgsfield (VP of Platform Partnerships) y OpenAI. Sesiones de pagos: día 1 a las 10:35 am y 3:45 pm, día 2 a las 2:00 pm, día 3 a las 11:00 am y 1:15 pm.</p>
-        <p class="meta">1 día $495 · 3 días $995 · abierto, sin aprobación · The Green Room, 401 Van Ness Ave · <a href="https://luma.com/FTW_SF26">registro</a> · <a href="https://fintech-week.co/san-francisco/">agenda</a></p>
+        <p class="cost"><span class="price paid">$495</span> <span>$495 por persona el pase de un día. Tres días $995, bundle comunidad $795, VIP $1,295</span></p>
+        <p class="meta">abierto, sin aprobación · The Green Room, 401 Van Ness Ave · <a href="https://luma.com/FTW_SF26">registro</a> · <a href="https://fintech-week.co/san-francisco/">agenda</a></p>
       </div>
       <div class="ev-tag"><span class="chip must">No faltar</span><span class="who">día 1</span></div>
     </li>
@@ -237,8 +439,9 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">29 sep<span>mar</span></div>
       <div class="ev-body">
         <h4>Machine Earning AI Summit <small>Newcomer</small></h4>
-        <p>Buen salón (ejecutivos de Faire, Chime, Brex, Airwallex), pero es por aplicación, el pase para perfiles de BD cuesta $999 y choca con FTW.</p>
-        <p class="meta"><a href="https://machine-earning.ai/">sitio</a></p>
+        <p>Buen salón (ejecutivos de Faire, Chime, Brex, Airwallex), pero es por aplicación y choca con FTW.</p>
+        <p class="cost"><span class="price paid">$999</span> <span>$999 por persona para perfiles de BD y servicios. General $699, founders $99</span></p>
+        <p class="meta">por aplicación · San Francisco, lugar sin publicar · <a href="https://machine-earning.ai/">sitio</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -246,8 +449,9 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">29 sep al 1 oct</div>
       <div class="ev-body">
         <h4>OpenAI DevDay y The AI Conference</h4>
-        <p>DevDay (29 sep, Fort Mason) ya cerró aplicaciones presenciales. The AI Conference (Pier 48) es de ingenieros y cuesta más de $1,000. Público de desarrolladores, no de payments.</p>
-        <p class="meta"><a href="https://devday.openai.com/">DevDay</a> · <a href="https://aiconference.com/">AI Conference</a></p>
+        <p>DevDay (29 sep, Fort Mason) ya cerró aplicaciones presenciales. The AI Conference (Pier 48) es de ingenieros. Público de desarrolladores, no de payments.</p>
+        <p class="cost"><span class="price paid">$650 y $1,075</span> <span>DevDay $650, ya cerrado. The AI Conference $1,075 según el agregador GarysGuide</span></p>
+        <p class="meta">Fort Mason y Pier 48 · <a href="https://devday.openai.com/">DevDay</a> · <a href="https://aiconference.com/">AI Conference</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -256,7 +460,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>The Future of Finance Summit <small>Haas Fintech Club, UC Berkeley</small></h4>
         <p>Keynote del SVP Global Head of AI de PayPal y panel con Visa (stablecoins), Ripple y Airwallex. Público mayormente estudiantil; vale por el acceso barato a los speakers.</p>
-        <p class="meta">$10 a $45 · aprobación · 105 cupos · Jarvis Auditorium, Berkeley · <a href="https://luma.com/0psua4hi">registro</a></p>
+        <p class="cost"><span class="price paid">$45</span> <span>$45 por persona para profesionales de industria; $30 mientras dure la preventa. Estudiantes $10</span></p>
+        <p class="meta">aprobación, 105 cupos · Jarvis Auditorium, Berkeley · <a href="https://luma.com/0psua4hi">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Si cabe</span></div>
     </li>
@@ -265,16 +470,18 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Fintech House SF <small>The Financial Club, Vouch, BPM, SVB</small></h4>
         <p>La noche principal de fintech en Tech Week: founders, inversionistas y operadores senior. Los organizadores citan una lista de espera de 2,000 personas el año pasado.</p>
-        <p class="meta">Gratis · por aplicación · lugar por anunciar · <a href="https://www.garysguide.com/events/fefm619">registro</a></p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis según el listado de GarysGuide</span></p>
+        <p class="meta">por aplicación, cupo de 250 · San Francisco, lugar por anunciar · <a href="https://www.garysguide.com/events/fefm619">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip go">Ir</span></div>
     </li>
     <li class="ev" data-v="opt">
-      <div class="ev-date">5 oct<span>lun, Palo Alto</span></div>
+      <div class="ev-date">5 oct<span>lun 5:30 pm</span></div>
       <div class="ev-body">
         <h4>Dinner: LATAM and SF VCs, Entrepreneurs and Friends <small>José Alvarez y Carlos Zárate</small></h4>
-        <p>La cena de tema latino de Tech Week. Solo por invitación, 98 cupos. Misma noche que Fintech House: es el plan B si Fintech House no aprueba a los tres.</p>
-        <p class="meta">Aprobación · <a href="https://luma.com/7ovjgctq">registro</a></p>
+        <p>La cena de tema latino de Tech Week. Misma noche que Fintech House: es el plan B si Fintech House no aprueba a los tres.</p>
+        <p class="cost"><span class="price free">Gratis</span></p>
+        <p class="meta">solo por invitación, con aprobación · Palo Alto · <a href="https://luma.com/7ovjgctq">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Plan B</span></div>
     </li>
@@ -282,8 +489,9 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">5 y 7 oct<span>Palo Alto y SF</span></div>
       <div class="ev-body">
         <h4>Cena y mixer de Bayteq</h4>
-        <p>La cena del lunes 5 en Palo Alto es para líderes senior de compañías Serie B en adelante; el tema es talento de ingeniería y choca con Fintech House. El mixer del miércoles 7 a las 6:00 pm es mejor horario: sus ediciones pasadas citan invitados de Visa, Walmart Global Tech, Finix y Venmo.</p>
-        <p class="meta">Aprobación · <a href="https://luma.com/77y6mljh">cena del 5</a> · <a href="https://luma.com/y9i2hhem">mixer del 7</a></p>
+        <p>La cena del lunes 5 es para líderes senior de compañías Serie B en adelante; el tema es talento de ingeniería y choca con Fintech House. Luma la ubica en Palo Alto, aunque la descripción habla de un restaurante en SF. El mixer del miércoles 7 a las 6:00 pm es mejor horario: sus ediciones pasadas citan invitados de Visa, Walmart Global Tech, Finix y Venmo.</p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis los dos</span></p>
+        <p class="meta">aprobación, cada invitado se revisa · Dirección visible al ser aprobado · <a href="https://luma.com/77y6mljh">cena del 5</a> · <a href="https://luma.com/y9i2hhem">mixer del 7</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Si cabe</span><span class="who">el del 7</span></div>
     </li>
@@ -292,7 +500,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Cena de Stripe y MidLyr, AI Pay Summit</h4>
         <p>La cena de Stripe es cerrada y por invitación. AI Pay Summit (7:00 pm) son demos de pagos entre agentes. Las dos chocan con Fintech House.</p>
-        <p class="meta"><a href="https://www.garysguide.com/events/u9hxnok">cena</a> · <a href="https://www.garysguide.com/events/9kt55lk">AI Pay Summit</a></p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis los dos, según el listado de GarysGuide</span></p>
+        <p class="meta">la cena es solo por invitación · San Francisco, lugar por anunciar · <a href="https://www.garysguide.com/events/u9hxnok">cena</a> · <a href="https://www.garysguide.com/events/9kt55lk">AI Pay Summit</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -301,16 +510,28 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Fintech Coffee <small>This Week in Fintech y SVB</small></h4>
         <p>Café mensual de la comunidad fintech de SF, formato sin pitch. Es la comunidad recurrente a la que conviene pertenecer desde la primera semana.</p>
-        <p class="meta">Gratis · aprobación · lugar por anunciar · <a href="https://www.garysguide.com/events/1efjmxy">registro</a> · <a href="https://luma.com/sfcoffee2">serie mensual</a></p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis según el listado de GarysGuide</span></p>
+        <p class="meta">por aplicación · SVB Experience Center, 532 Market St · <a href="https://www.garysguide.com/events/1efjmxy">registro</a> · <a href="https://luma.com/sfcoffee2">serie mensual</a></p>
       </div>
       <div class="ev-tag"><span class="chip go">Ir</span></div>
+    </li>
+    <li class="ev" data-v="opt">
+      <div class="ev-date">6 oct<span>mar 11:00 am</span></div>
+      <div class="ev-body">
+        <h4>Techonomy 2026 <small>Worth Media, en la oficina de Finix</small></h4>
+        <p>150 líderes senior, con público de CIOs y CTOs de Fortune 500. Puertas a las 11:00 am, programa desde las 12:00 y recepción de 5:00 a 6:30 pm. Vale pedir la invitación, aunque cruza con el resto del martes 6.</p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis para invitados confirmados</span></p>
+        <p class="meta">solo por invitación, 100 cupos · Finix, 760 Market St, Suite 200 · <a href="https://luma.com/g4isf5rf">registro</a> · <a href="https://worth.com/event/techonomy-2026/">agenda</a></p>
+      </div>
+      <div class="ev-tag"><span class="chip opt">Si cabe</span></div>
     </li>
     <li class="ev" data-v="opt">
       <div class="ev-date">6 oct<span>mar 2:00 pm</span></div>
       <div class="ev-body">
         <h4>Klaviyo Commerce Social <small>Klaviyo</small></h4>
         <p>Marcas y operadores de e-commerce. De lo poco con merchants en la semana, aunque el público típico de Klaviyo son marcas medianas. Queda antes de Visa, así que cabe en la misma tarde.</p>
-        <p class="meta">Gratis · Flying Figs Wine Bar, 1870 Fillmore St · <a href="https://www.garysguide.com/lists/bflfxqg/SF-Tech-Week">lista Tech Week</a></p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis según el listado de GarysGuide</span></p>
+        <p class="meta">la página del anfitrión no carga; confirmar antes de ir · Lugar por anunciar · <a href="https://www.garysguide.com/events/m1zjzm0/Klaviyo-Commerce-Social">ficha</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Si cabe</span></div>
     </li>
@@ -319,7 +540,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Agentic Commerce Meet Up <small>Visa</small></h4>
         <p>En la oficina de Visa en Mission Rock. Equipo de Visa y ecosistema de payments y commerce. Queda en la misma zona que Mastercard, que empieza hora y media después.</p>
-        <p class="meta">Gratis · <a href="https://www.garysguide.com/events/h30nj4p">registro</a></p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis según el listado de GarysGuide</span></p>
+        <p class="meta">por aplicación; agenda marcada como tentativa · Oficina de Visa, Mission Rock · <a href="https://partiful.com/e/AvQ6V2uhBuwbU6Ubq9v8">registro</a> · <a href="https://www.garysguide.com/events/h30nj4p">ficha</a></p>
       </div>
       <div class="ev-tag"><span class="chip must">No faltar</span></div>
     </li>
@@ -327,8 +549,9 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">6 oct<span>mar 5:30 pm</span></div>
       <div class="ev-body">
         <h4>Agentic Now and Agentic Next <small>Mastercard</small></h4>
-        <p>Líderes de producto y alianzas de IA de Mastercard, con el programa Start Path, Agent Pay y Agent Connect. Pide aprobación y el 27 de septiembre quedaban 9 cupos; los tres ocupan tres. Es en la zona de China Basin, vecina a Mission Rock.</p>
-        <p class="meta">Gratis · aprobación · dirección visible al ser aprobado · <a href="https://luma.com/mdxyfrgf">registro</a></p>
+        <p>Líderes de producto y alianzas de IA de Mastercard, con el programa Start Path, Agent Pay y Agent Connect. El 27 de septiembre quedaban 9 cupos; los tres ocupan tres. Es en la zona de China Basin, vecina a Mission Rock.</p>
+        <p class="cost"><span class="price free">Gratis</span></p>
+        <p class="meta">aprobación · China Basin, dirección visible al ser aprobado · <a href="https://luma.com/mdxyfrgf">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip must">No faltar</span><span class="chip crit">9 cupos</span></div>
     </li>
@@ -336,8 +559,9 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">6 oct<span>mar 4:00 pm</span></div>
       <div class="ev-body">
         <h4>Fintech CFO Panel y Happy Hour <small>Pluvo, con BMO y Ramp</small></h4>
-        <p>Público de finanzas: CFOs, VPs de Finanzas y Controllers. Hablan los CFOs de Carta y de Vercel. Choca con Visa y el registro se revisa por perfil de finanzas, así que es difícil que aprueben a los tres. Es el plan B de las 4:00 pm.</p>
-        <p class="meta">Gratis · registros revisados por perfil · lugar por anunciar · <a href="https://www.garysguide.com/events/k4uqgjd">registro</a></p>
+        <p>Público de finanzas: CFOs, VPs de Finanzas y Controllers. Hablan los CFOs de Carta y de Vercel. Va de 4:00 a 7:30 pm. Choca con Visa y el registro se revisa por perfil de finanzas, así que es difícil que aprueben a los tres. Es el plan B de las 4:00 pm.</p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis según el listado de GarysGuide</span></p>
+        <p class="meta">registros revisados por perfil · SoMa, dirección al ser aprobado · <a href="https://partiful.com/e/u1YZGJden2SOdNj5vWDJ">registro</a> · <a href="https://www.garysguide.com/events/k4uqgjd">ficha</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Plan B</span></div>
     </li>
@@ -345,25 +569,19 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">6 oct<span>mar 5:30 pm</span></div>
       <div class="ev-body">
         <h4>When Agents Spend Money y Ready for Anything</h4>
-        <p>Dos alternativas a la misma hora que Mastercard, solo si Mastercard no aprueba. El primero es un panel sobre autorización de pagos hechos por agentes. El segundo, de Open Future Forum, declara público de CFOs y líderes senior de finanzas.</p>
-        <p class="meta"><a href="https://www.garysguide.com/events/atgc5x2">When Agents Spend Money</a> · <a href="https://luma.com/fb7ihel0">Ready for Anything</a></p>
+        <p>Dos alternativas a la misma hora que Mastercard, solo si Mastercard no aprueba. El primero es un panel sobre autorización de pagos hechos por agentes, con JPMorgan Chase como coanfitrión. El segundo, de Open Future Forum, es para CFOs, founders e inversionistas y avisa que no admite pitch de proveedores.</p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis los dos</span></p>
+        <p class="meta">los dos piden aplicación o aprobación · San Francisco · <a href="https://partiful.com/e/aCbTfUBiykYHp6BzOdg6">When Agents Spend Money</a> · <a href="https://luma.com/fb7ihel0">Ready for Anything</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Plan B</span></div>
-    </li>
-    <li class="ev" data-v="opt">
-      <div class="ev-date">6 oct<span>mar 11:00 am</span></div>
-      <div class="ev-body">
-        <h4>Techonomy 2026 <small>Worth Media, en la oficina de Finix</small></h4>
-        <p>Solo por invitación: 150 líderes senior, con público de CIOs y CTOs de Fortune 500. Vale pedir la invitación, aunque cruza con el resto del martes 6.</p>
-        <p class="meta">Aprobación · 760 Market St · <a href="https://luma.com/g4isf5rf">registro</a></p>
-      </div>
-      <div class="ev-tag"><span class="chip opt">Si cabe</span></div>
     </li>
     <li class="ev" data-v="skip">
       <div class="ev-date">5 y 6 oct</div>
       <div class="ev-body">
         <h4>Salones de founders e inversionistas de Tech Week</h4>
         <p>YC Founders Mixer (solo founders de YC), Founder Friends SF (agotado), Batter Up SF (founders presentando a ángeles, quedaba 1 cupo), SF Founder and Investor Dinner y The SOLO Founder Club.</p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis los cinco</span></p>
+        <p class="meta">aprobación en la mayoría · San Francisco</p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -372,6 +590,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Salones de desarrolladores de Tech Week</h4>
         <p>Demo Night en WorkOS, SF Tech Week AI Demo Night, Camp AI en el Ferry Building, The MCP Gateway y Ship it and Sip it (agotado).</p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis cuatro de ellos. Camp AI no publica precio</span></p>
+        <p class="meta">San Francisco</p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -380,6 +600,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>AI 2030 Summit, puente Silicon Valley y APAC, meetup de Discord, SF Tech Mix and Mingle</h4>
         <p>AI 2030 es de IA responsable. El puente con APAC es de inversión industrial. El meetup de Discord lo organiza el grupo SF Game Development para desarrolladores de juegos, no la compañía Discord. SF Tech Mix and Mingle no aparece en el calendario oficial de Luma.</p>
+        <p class="cost"><span class="price free">Gratis</span> <span>Gratis los tres primeros. SF Tech Mix and Mingle sin verificar</span></p>
+        <p class="meta">San Francisco</p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -388,16 +610,18 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Agentic Zero, The Agentic Finance Summit</h4>
         <p>Infraestructura de pagos para agentes y stablecoins (Circle, Solana, Belo). Sirve para el ángulo de stablecoins y para conocer a Belo, que es LatAm. No es un salón de compradores: medio día basta.</p>
-        <p class="meta">Gratis · 500 cupos · The Avalon, 1244 Sutter St · <a href="https://agenticzero.xyz/">sitio</a></p>
+        <p class="cost"><span class="price free">Gratis</span></p>
+        <p class="meta">RSVP, 500 cupos · The Avalon, 1244 Sutter St · <a href="https://agenticzero.xyz/">sitio</a> · <a href="https://partiful.com/e/6vkA8cTvPI7tTb3NtV2F">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Si cabe</span></div>
     </li>
     <li class="ev" data-v="opt">
-      <div class="ev-date">10 oct<span>sáb</span></div>
+      <div class="ev-date">10 oct<span>sáb 8:00 am</span></div>
       <div class="ev-body">
         <h4>Silicon Valley Latino Leadership Summit</h4>
         <p>Cerca de 400 ejecutivos y emprendedores latinos. No es de payments; sirve para la red latina del Bay Area.</p>
-        <p class="meta">Computer History Museum, Mountain View · <a href="https://www.svlls.com/">sitio</a></p>
+        <p class="cost"><span class="price paid">$300</span> <span>$300 por persona, entrada general. Organizaciones sin ánimo de lucro $175</span></p>
+        <p class="meta">abierto, sin aprobación · Computer History Museum, Mountain View · <a href="https://www.eventbrite.com/e/2026-silicon-valley-latino-leadership-summit-tickets-1991957327990">entradas</a> · <a href="https://www.svlls.com/">sitio</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Si cabe</span></div>
     </li>
@@ -406,7 +630,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Fintech: Pre TechCrunch and Money20/20 <small>Fintech Next</small></h4>
         <p>Calentamiento de la comunidad fintech local antes de las dos semanas grandes. Es a la misma hora que NMI y a unas cuadras por 3rd St: primera hora aquí, segunda en NMI.</p>
-        <p class="meta">$20 · sin aprobación · 73 cupos · Market St y 3rd St · <a href="https://luma.com/b3a50qei">registro</a></p>
+        <p class="cost"><span class="price paid">$20</span> <span>$20 por persona</span></p>
+        <p class="meta">sin aprobación, 73 cupos · Market St y 3rd St · <a href="https://luma.com/b3a50qei">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip go">Ir</span><span class="who">5:00 a 6:00</span></div>
     </li>
@@ -415,7 +640,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Serve, Swipe and Settle <small>NMI</small></h4>
         <p>Evento paralelo oficial de Disrupt y el único de payments en esa lista. Público declarado: founders de SaaS, desarrolladores y líderes técnicos. Sin panel ni speakers. Útil para conocer plataformas que quieren embeber pagos, no para encontrar equipos de payments de merchants.</p>
-        <p class="meta">Gratis con RSVP · SPIN, 690 Folsom St · <a href="https://go.nmi.com/serve-swipe-settle-event">registro</a></p>
+        <p class="cost"><span class="price free">Gratis</span></p>
+        <p class="meta">RSVP, incluye comida y bebidas · SPIN, 690 Folsom St · <a href="https://go.nmi.com/serve-swipe-settle-event">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip go">Ir</span><span class="who">6:00 a 7:00</span></div>
     </li>
@@ -423,8 +649,9 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">13 al 15 oct<span>Moscone West</span></div>
       <div class="ev-body">
         <h4>TechCrunch Disrupt, pase</h4>
-        <p>El pase de asistente cuesta $949 por persona. Más de 10,000 founders e inversionistas. Hay un escenario de fintech, Smart Money Stage, con sesiones publicadas solo para el martes 13 en la mañana (Circle, TabaPay, Robinhood, Amex, Plaid) y una mesa de Walmart eCommerce a la 1:50 pm. Para vender a merchants grandes el salón no justifica tres días: esos días rinden más en reuniones.</p>
-        <p class="meta"><a href="https://techcrunch.com/events/techcrunch-disrupt/tickets/">pases</a> · <a href="https://techcrunch.com/events/tc-disrupt-2026/agenda/">agenda</a></p>
+        <p>Más de 10,000 founders e inversionistas. Hay un escenario de fintech, Smart Money Stage, con sesiones publicadas solo para el martes 13 en la mañana (Circle, TabaPay, Robinhood, Amex, Plaid) y una mesa de Walmart eCommerce a la 1:50 pm. Para vender a merchants grandes el salón no justifica tres días: esos días rinden más en reuniones.</p>
+        <p class="cost"><span class="price paid">$949</span> <span>$949 por persona el pase de asistente. Expo+ $299, sin acceso a los escenarios de industria ni a las mesas redondas</span></p>
+        <p class="meta">abierto · Moscone West · <a href="https://techcrunch.com/events/techcrunch-disrupt/tickets/">pases</a> · <a href="https://techcrunch.com/events/tc-disrupt-2026/agenda/">agenda</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -433,7 +660,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Eventos paralelos de Disrupt</h4>
         <p>EPIC SF demo night, European Startup Embassy, AI Barmen, Harvard Griffin GSAS, South Asian Investor Founder Connect, PeakXV, Liquid Assets, The Afterburn, SignalFire, Token Economics, Israel Economic Mission, LP y GP networking, NachoThursday. Son salones de inversionistas, founders y seguridad de IA. Máximo uno por noche y solo si no hay reunión ni cena.</p>
-        <p class="meta"><a href="https://techcrunch.com/events/techcrunch-disrupt/side-events/">lista oficial</a></p>
+        <p class="cost"><span class="price unknown">Sin verificar</span> <span>NachoThursday es gratis. El precio de los demás no se verificó uno por uno</span></p>
+        <p class="meta">registro por evento · San Francisco · <a href="https://techcrunch.com/events/techcrunch-disrupt/side-events/">lista oficial</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -441,26 +669,29 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">20 al 22 oct</div>
       <div class="ev-body">
         <h4>Masters of Scale Summit</h4>
-        <p>Cerca de 800 ejecutivos curados, solo por aplicación, y choca con Money20/20.</p>
-        <p class="meta">Presidio · <a href="https://www.summit.mastersofscale.com/info">sitio</a></p>
+        <p>Cerca de 800 ejecutivos curados y choca con Money20/20.</p>
+        <p class="cost"><span class="price paid">$3,750</span> <span>$3,750 por persona, sin hospedaje ni viaje</span></p>
+        <p class="meta">solo por invitación y aplicación · Presidio · <a href="https://www.summit.mastersofscale.com/info">sitio</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
-    <li class="ev" data-v="must">
+    <li class="ev" data-v="opt">
       <div class="ev-date">26 y 27 oct<span>lun y mar</span></div>
       <div class="ev-body">
         <h4>Gamesforum San Francisco</h4>
-        <p>Más de 500 asistentes de más de 300 compañías de juegos móviles: monetización, producto y growth. Speakers de Supercell, Zynga, EA, Scopely y Activision Blizzard Media. La agenda publicada no tiene sesiones específicas de pagos, así que el tema hay que llevarlo.</p>
-        <p class="meta">Hotel Nikko · precio no publicado en la página · <a href="https://www.globalgamesforum.com/san-francisco">sitio</a></p>
+        <p>Más de 500 asistentes de más de 300 compañías de juegos móviles: monetización, producto y growth. Speakers de Supercell, Zynga, EA, Scopely y Activision Blizzard Media. El salón es muy bueno, pero los pases son solo para estudios y publishers: la página avisa que los pases comprados por proveedores de servicios se cancelan y se reembolsan. La única vía para un proveedor es patrocinar.</p>
+        <p class="cost"><span class="price unknown">Patrocinio</span> <span>Patrocinio, sin precio publicado: hay que pedir cotización. El pase de $239 es solo para estudios y publishers</span></p>
+        <p class="meta">proveedores solo como patrocinadores · Hotel Nikko · <a href="https://www.globalgamesforum.com/san-francisco/register-now">registro</a> · <a href="https://www.globalgamesforum.com/san-francisco">sitio</a></p>
       </div>
-      <div class="ev-tag"><span class="chip must">No faltar</span></div>
+      <div class="ev-tag"><span class="chip opt">Si cabe</span><span class="chip crit">solo patrocinio</span></div>
     </li>
     <li class="ev" data-v="opt">
-      <div class="ev-date">28 y 29 oct<span>mié y jue</span></div>
+      <div class="ev-date">28 y 29 oct<span>mié 9:30 am a jue 7:00 pm</span></div>
       <div class="ev-body">
         <h4>One Way Summit <small>One Way Ventures</small></h4>
         <p>Más de 1,000 founders inmigrantes e inversionistas, con delegaciones de más de 20 países. Red internacional y latina. Un resultado de búsqueda menciona a Juan Pablo Ortega como speaker, pero no aparece en la página oficial: confirmar con él.</p>
-        <p class="meta">The Commonwealth Club, 110 The Embarcadero · <a href="https://www.eventbrite.com/e/one-way-summit-2026-the-flagship-event-for-immigrant-entrepreneurship-tickets-2000784038920">registro</a></p>
+        <p class="cost"><span class="price paid">$129</span> <span>$129 por persona el pase regular. Premium $179 con talleres, VIP $499</span></p>
+        <p class="meta">abierto, sin aprobación · The Commonwealth Club, 110 The Embarcadero · <a href="https://www.eventbrite.com/e/one-way-summit-2026-the-flagship-event-for-immigrant-entrepreneurship-tickets-2000784038920">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Si cabe</span></div>
     </li>
@@ -468,8 +699,9 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">28 y 29 oct</div>
       <div class="ev-body">
         <h4>GitHub Universe</h4>
-        <p>$1,399 por persona y público de desarrolladores. Sin compradores de payments.</p>
-        <p class="meta">Fort Mason · <a href="https://githubuniverse.com/">sitio</a></p>
+        <p>Público de desarrolladores. Sin compradores de payments.</p>
+        <p class="cost"><span class="price paid">$1,399</span> <span>$1,399 por persona presencial. Virtual gratis</span></p>
+        <p class="meta">abierto · Fort Mason · <a href="https://githubuniverse.com/">sitio</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -478,7 +710,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Panel and Pitch, Fintech Startup Founders and Investors <small>Fintech Next</small></h4>
         <p>Serie recurrente de la comunidad fintech local. Útil para mantener presencia si la tarde está libre.</p>
-        <p class="meta">Gratis · aprobación · zona Yerba Buena · <a href="https://luma.com/wiqhrvi6">registro</a></p>
+        <p class="cost"><span class="price free">Gratis</span></p>
+        <p class="meta">aprobación, 124 cupos · Zona Yerba Buena · <a href="https://luma.com/wiqhrvi6">registro</a></p>
       </div>
       <div class="ev-tag"><span class="chip opt">Si cabe</span></div>
     </li>
@@ -487,7 +720,8 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>GamesBeat Next 2026</h4>
         <p>500 líderes senior de gaming, 80% nivel C. La lista de compañías asistentes incluye Epic Games, EA, Roblox, Netflix, Tencent y Unity. La agenda toca modelos de monetización y venta directa al consumidor. Es el cierre del viaje.</p>
-        <p class="meta">San Francisco · precio no publicado en la página · <a href="https://events.gamesbeat.com/next26/">sitio</a></p>
+        <p class="cost"><span class="price paid">$899</span> <span>$899 por persona el Conference Pass. VIP $1,200. Las tarifas del checkout no se pudieron leer</span></p>
+        <p class="meta">abierto, sin aprobación · San Francisco · <a href="https://events.gamesbeat.com/next26/attend/">pases</a> · <a href="https://events.gamesbeat.com/next26/">sitio</a></p>
       </div>
       <div class="ev-tag"><span class="chip must">No faltar</span></div>
     </li>
@@ -500,26 +734,19 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-body">
         <h4>Money20/20 USA</h4>
         <p>Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.</p>
-        <p>Eventos paralelos: VGS Vault Lounge y cena de líderes de fraude de TWIF y SEON (18 oct), almuerzo anual de TabaPay y Stable Salon (19 oct), open house de TabaPay y happy hour de Astra y Visa (20 oct). Varios piden aprobación y los horarios difieren entre listados, así que hay que confirmar con cada anfitrión.</p>
-        <p class="meta">Pase estándar $4,049 según la página de pases, con ahorro de grupo desde tres pases en compras nuevas; el precio final en checkout no se verificó · The Venetian · <a href="https://us.money2020.com/attend/passes">pases</a> · <a href="https://us.money2020.com/agenda/speakers">speakers</a> · <a href="https://avenuez.com/events/money20-20-side-events/">eventos paralelos</a></p>
+        <p>Eventos paralelos, todos gratis con registro: cena de líderes de fraude de TWIF y SEON (dom 18), almuerzo anual de TabaPay y Stable Salon (lun 19), open house de TabaPay y happy hour de Astra y Visa (mar 20). VGS Vault Lounge abre el domingo 18 y el martes 20 y no publica precio. Casi todos piden aprobación.</p>
+        <p class="cost"><span class="price paid">$4,199</span> <span>$4,199 por persona el pase estándar hoy. Comprando tres o más en una sola transacción baja $299 por pase</span></p>
+        <p class="meta">abierto · The Venetian, Las Vegas · <a href="https://us.money2020.com/pass-picker">pases</a> · <a href="https://us.money2020.com/agenda/speakers">speakers</a> · <a href="https://avenuez.com/events/money20-20-side-events/">eventos paralelos</a></p>
       </div>
       <div class="ev-tag"><span class="chip must">No faltar</span></div>
-    </li>
-    <li class="ev" data-v="skip">
-      <div class="ev-date">6 al 8 oct<span>Jersey City</span></div>
-      <div class="ev-body">
-        <h4>Subscription Show 2026 <small>Subscription Insider</small></h4>
-        <p>Salón pequeño, tope de 250, con ejecutivos de retención, renovación y revenue de negocios de suscripción. Es un comprador muy bueno, pero choca con el bloque de payments de Tech Week y el precio no está publicado. Anotar para 2027.</p>
-        <p class="meta"><a href="https://ecommercetech.io/events/subscription-show">ficha</a></p>
-      </div>
-      <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
     <li class="ev" data-v="skip">
       <div class="ev-date">21 oct<span>Nueva York</span></div>
       <div class="ev-body">
         <h4>App Growth Annual <small>RevenueCat</small></h4>
-        <p>Líderes de growth de apps de suscripción. Muy buen público para las cuentas de apps de IA, pero cae el último día de Money20/20.</p>
-        <p class="meta"><a href="https://appgrowthannual.com/">sitio</a></p>
+        <p>Líderes de growth de apps de suscripción. Muy buen público para las cuentas de apps de IA, pero cae el último día de Money20/20 y la aplicación presencial ya cerró.</p>
+        <p class="cost"><span class="price unknown">Por aplicación</span> <span>No se venden entradas. Presencial solo por aplicación, que cerró el 28 de agosto. Virtual gratis</span></p>
+        <p class="meta">aplicación cerrada · The Glasshouse, Nueva York · <a href="https://appgrowthannual.com/faq">preguntas frecuentes</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -527,8 +754,9 @@ td small{color:var(--muted);font-weight:400}
       <div class="ev-date">27 sep al 1 oct</div>
       <div class="ev-body">
         <h4>MAG Payments Conference, Shoptalk Fall y Sibos</h4>
-        <p>MAG (Nashville) es el evento con más densidad de equipos de payments de merchants, pero ya empezó y es cerrado a no patrocinadores. Shoptalk Fall (Nashville) cobra cerca de $3,750 a proveedores. Sibos (Miami) es de bancos. Anotar MAG para 2027.</p>
-        <p class="meta"><a href="https://www.merchantadvisorygroup.org/conferences/mag-payments-conference-26">MAG</a> · <a href="https://fall.shoptalk.com/">Shoptalk</a> · <a href="https://www.sibos.com/">Sibos</a></p>
+        <p>MAG (Nashville) es el evento con más densidad de equipos de payments de merchants, pero ya empezó y es cerrado a no patrocinadores. Shoptalk Fall (Nashville) es de retail. Sibos (Miami) es de bancos. Anotar MAG para 2027.</p>
+        <p class="cost"><span class="price paid">$3,750</span> <span>Shoptalk cerca de $3,750 por persona para proveedores, según resultado de búsqueda. MAG y Sibos no publican precio para no miembros</span></p>
+        <p class="meta">MAG cerrado a no patrocinadores · Nashville y Miami · <a href="https://www.merchantadvisorygroup.org/conferences/mag-payments-conference-26">MAG</a> · <a href="https://fall.shoptalk.com/">Shoptalk</a> · <a href="https://www.sibos.com/">Sibos</a></p>
       </div>
       <div class="ev-tag"><span class="chip skip">Saltar</span></div>
     </li>
@@ -537,8 +765,8 @@ td small{color:var(--muted);font-weight:400}
 
 <section id="calendario">
   <div class="sec-head">
-    <h2>Calendario semana a semana</h2>
-    <p>Un solo itinerario para los tres. Horas en PT. Las notas en gris son las llamadas fijas de German, que obligan a salir un rato o a mover la reunión. Lo marcado en azul son eventos propios propuestos.</p>
+    <h2>Semana a semana</h2>
+    <p>Un solo itinerario para los tres; la versión con horas y precios está en la pestaña Interactive Calendar. Horas en PT. Las notas en gris son las llamadas fijas de German, que obligan a salir un rato o a mover la reunión. Lo marcado en azul son eventos propios propuestos.</p>
   </div>
   <div>
     <div class="week">
@@ -563,10 +791,10 @@ td small{color:var(--muted);font-weight:400}
       </div>
       <ul class="days">
         <li><span class="d">lun 5</span><span>Fintech House, 6:00 pm. Plan B: cena LATAM y SF VCs en Palo Alto.</span></li>
-        <li><span class="d">mar 6</span><span>Fintech Coffee 8:30 am. Visa en Mission Rock a las 4:00 pm y Mastercard en China Basin a las 5:30 pm. <span class="note">German: SalesOps 11:00, Magdalena 1:00.</span></span></li>
+        <li><span class="d">mar 6</span><span>Fintech Coffee 8:30 am en 532 Market St. Visa en Mission Rock a las 4:00 pm y Mastercard en China Basin a las 5:30 pm. <span class="note">German: SalesOps 11:00, Magdalena 1:00.</span></span></li>
         <li><span class="d">mié 7</span><span>Agentic Zero, medio día. Reuniones en la tarde. Mixer de Bayteq a las 6:00 pm, opcional.</span></li>
         <li><span class="d">jue 8</span><span class="own">Desayuno de operadores de payments, organizado por ustedes.</span></li>
-        <li><span class="d">sáb 10</span><span>Silicon Valley Latino Leadership Summit, opcional.</span></li>
+        <li><span class="d">sáb 10</span><span>Silicon Valley Latino Leadership Summit, 8:00 am a 1:45 pm, opcional.</span></li>
       </ul>
     </div>
     <div class="week">
@@ -600,10 +828,10 @@ td small{color:var(--muted);font-weight:400}
       <div class="week-h">
         <span class="eyebrow">Semana 5 · 26 oct al 4 nov</span>
         <h3>Gaming y cierre</h3>
-        <p>Los dos salones de compradores de gaming y la cena de cierre que deja la comunidad andando.</p>
+        <p>El salón de compradores de gaming y la cena de cierre que deja la comunidad andando.</p>
       </div>
       <ul class="days">
-        <li><span class="d">lun 26, mar 27</span><span>Gamesforum SF, Hotel Nikko.</span></li>
+        <li><span class="d">lun 26, mar 27</span><span>Gamesforum SF, solo si se cierra el patrocinio. Si no, reuniones en oficinas de clientes.</span></li>
         <li><span class="d">mié 28</span><span class="own">Cena de cierre, con anuncio de la siguiente edición.</span></li>
         <li><span class="d">jue 29</span><span>One Way Summit en el día, opcional. Fintech Next a las 5:00 pm, opcional.</span></li>
         <li><span class="d">lun 2, mar 3</span><span>GamesBeat Next. Super.com pidió retomar en noviembre: café esta semana.</span></li>
@@ -777,14 +1005,14 @@ td small{color:var(--muted);font-weight:400}
   </div>
   <ul class="todo">
     <li><input type="checkbox" id="t1"><label for="t1">Comprar los tres pases de un día de FTW para el martes 29<small>$495 cada uno. Empieza en menos de 48 horas. Revisar antes en la agenda qué día habla Higgsfield.</small></label><span class="chip crit">Hoy</span></li>
-    <li><input type="checkbox" id="t2"><label for="t2">Registrarse los tres, cada uno con su cuenta, en Mastercard y en los demás eventos con aprobación<small>A Mastercard le quedaban 9 cupos. Después: Fintech House, Visa, Fintech Coffee, Agentic Zero.</small></label><span class="chip crit">Hoy</span></li>
-    <li><input type="checkbox" id="t3"><label for="t3">Pedir viaje y pase de Money20/20 para German y Joaquín<small>Samuel ya tiene vuelo aprobado del 18 al 21. Melissa Pottenger y Yana tienen la lista de asistentes. Preguntar por el ahorro de grupo.</small></label><span class="chip warn">Lunes</span></li>
+    <li><input type="checkbox" id="t2"><label for="t2">Registrarse los tres, cada uno con su cuenta, en Mastercard y en los demás eventos con aprobación<small>Todos gratis. A Mastercard le quedaban 9 cupos. Después: Fintech House, Visa, Fintech Coffee, Agentic Zero.</small></label><span class="chip crit">Hoy</span></li>
+    <li><input type="checkbox" id="t3"><label for="t3">Pedir viaje y pase de Money20/20 para German y Joaquín<small>$4,199 por pase; $299 menos por pase si se compran tres o más juntos. Samuel ya tiene vuelo aprobado del 18 al 21. Melissa Pottenger y Yana tienen la lista de asistentes.</small></label><span class="chip warn">Lunes</span></li>
     <li><input type="checkbox" id="t10"><label for="t10">Pedir reunión en Las Vegas a las cuentas del Bay Area que hablan en Money20/20<small>Perplexity, eBay, Upwork y Navan. La charla de Juan Pablo el martes 20 es la excusa natural para invitarlos.</small></label><span class="chip warn">Lunes</span></li>
     <li><input type="checkbox" id="t4"><label for="t4">Enviar las primeras 30 solicitudes de reunión presencial<small>Empezar por conversaciones abiertas y por contactos de payments con cargo confirmado.</small></label><span class="chip warn">Lunes</span></li>
     <li><input type="checkbox" id="t5"><label for="t5">Pedir a Justo y a Juan Pablo la introducción a a16z y confirmar One Way Summit</label><span class="chip warn">Lunes</span></li>
-    <li><input type="checkbox" id="t6"><label for="t6">Registrarse los tres en Fintech Next y en NMI del 12 de octubre</label><span class="chip opt">Esta semana</span></li>
+    <li><input type="checkbox" id="t6"><label for="t6">Registrarse los tres en Fintech Next y en NMI del 12 de octubre<small>Fintech Next cuesta $20 por persona. NMI es gratis.</small></label><span class="chip opt">Esta semana</span></li>
     <li><input type="checkbox" id="t7"><label for="t7">Crear el calendario de Luma y publicar el desayuno del 8 de octubre<small>Definir lugar, tema y coanfitrión. Enviar las primeras 20 invitaciones.</small></label><span class="chip opt">Esta semana</span></li>
-    <li><input type="checkbox" id="t8"><label for="t8">Comprar las entradas de Gamesforum SF y GamesBeat Next para los tres<small>Precios no publicados en las páginas: revisar en el checkout.</small></label><span class="chip opt">Esta semana</span></li>
+    <li><input type="checkbox" id="t8"><label for="t8">Comprar tres pases de GamesBeat Next y pedir cotización de patrocinio a Gamesforum<small>GamesBeat: $899 por persona. Gamesforum cancela los pases comprados por proveedores.</small></label><span class="chip opt">Esta semana</span></li>
     <li><input type="checkbox" id="t9"><label for="t9">Publicar en LinkedIn que están en San Francisco hasta el 4 de noviembre</label><span class="chip opt">Esta semana</span></li>
   </ul>
 </section>
@@ -797,12 +1025,16 @@ td small{color:var(--muted);font-weight:400}
   <div class="cols">
     <p><strong>Viaje de Joaquín a Las Vegas.</strong> En el canal de viajes no aparece una solicitud suya ni de German para Money20/20. Si ya se gestionó por otra vía, ignorar.</p>
     <p><strong>Juan Pablo Ortega en One Way Summit.</strong> Lo menciona un resultado de búsqueda, no la página del evento. Confirmar con él.</p>
-    <p><strong>Precio final de Money20/20.</strong> La página de pases muestra $4,049 con un aviso de descuento que venció el 11 de septiembre. El precio en checkout puede ser mayor.</p>
+    <p><strong>Gratis según el agregador.</strong> Fintech House, Fintech Coffee, Visa, el panel de CFOs, When Agents Spend Money y Klaviyo se registran en Partiful, que no muestra precio. El dato de que son gratis viene de GarysGuide.</p>
     <p><strong>Qué día habla cada speaker de FTW.</strong> La lista de speakers está verificada, el día de cada uno no. Revisar el filtro de agenda antes de elegir el pase de un día.</p>
     <p><strong>Calendario completo de Tech Week.</strong> El sitio oficial tech-week.com bloqueó la consulta y muchos eventos viven en Partiful. Puede haber más eventos de payments que los listados aquí.</p>
     <p><strong>Stripe Tour Nueva York, 4 de noviembre.</strong> Aparece en sitios de terceros, no en la página oficial de Stripe Tour.</p>
     <p><strong>Eventos de Tech Week vistos solo como una línea en el agregador:</strong> FinTech Founders' Lunch (5 oct), mixer New Money (5 oct), desayuno de Brex y DoorDash for Business (6 oct). Sin anfitrión ni lugar confirmados.</p>
-    <p><strong>Precios de Gamesforum, GamesBeat Next, Subscription Show y One Way Summit.</strong> No publicados en las páginas consultadas.</p>
+    <p><strong>Costo del patrocinio de Gamesforum.</strong> No está publicado. La página remite a un contacto comercial.</p>
+    <p><strong>Subscription Show, Jersey City.</strong> Salió de la lista: el sitio del organizador ya no lo menciona y no se pudo confirmar que siga en pie.</p>
+    <p><strong>Klaviyo Commerce Social.</strong> La página del anfitrión no carga y el lugar no está anunciado. Confirmar antes de ir.</p>
+    <p><strong>Hora de cierre de Visa y de When Agents Spend Money.</strong> No están publicadas; el calendario muestra una duración estimada.</p>
+    <p><strong>VGS Vault Lounge en Las Vegas.</strong> La página no dice si es gratis.</p>
     <p><strong>Ya pasaron en 2026:</strong> Dreamforce, MRC San Diego, Stripe Sessions, SaaStr Annual, Roblox RDC. Quedan justo después del viaje: Payments Leaders' Summit (San Diego, 10 y 11 nov) y Phocuswright (Fort Lauderdale, 17 al 19 nov).</p>
   </div>
   <p class="foot">Fuentes: páginas oficiales y listados de cada evento consultados el 27 de septiembre de 2026, TCL de German en Google Sheets, base de Stripe Sessions 2026, notas de deals y canales de Slack de viajes y marketing.</p>
@@ -810,26 +1042,725 @@ td small{color:var(--muted);font-weight:400}
 
 </div>
 
+<div id="panel-calendar" class="panel" role="tabpanel" aria-labelledby="tab-calendar" hidden>
+<section id="calendar">
+  <div class="sec-head">
+    <h2>Interactive Calendar</h2>
+    <p>Todos los eventos del plan con el precio de la entrada, más lo que agregue cualquiera de los tres: reuniones, cenas, eventos nuevos. Toca un bloque para ver el detalle, editarlo o marcar quién ya se registró.</p>
+  </div>
+  <div class="cal-bar">
+    <div class="cal-nav">
+      <button type="button" class="btn" id="cal-prev" aria-label="Semana anterior">&lsaquo;</button>
+      <button type="button" class="btn" id="cal-today">Hoy</button>
+      <button type="button" class="btn" id="cal-next" aria-label="Semana siguiente">&rsaquo;</button>
+      <span class="cal-title" id="cal-title" aria-live="polite"></span>
+    </div>
+    <span class="grow"></span>
+    <div class="seg" role="group" aria-label="Vista">
+      <button type="button" id="view-week" aria-pressed="true">Semana</button>
+      <button type="button" id="view-list" aria-pressed="false">Lista</button>
+    </div>
+    <div class="seg" role="group" aria-label="Zona horaria">
+      <button type="button" id="tz-sf" aria-pressed="true">Hora San Francisco</button>
+      <button type="button" id="tz-co" aria-pressed="false">Hora Colombia</button>
+    </div>
+    <button type="button" class="btn primary" id="cal-add">Agregar</button>
+  </div>
+  <div class="cal-filters" id="cal-filters" role="group" aria-label="Qué mostrar"></div>
+  <p class="conn" id="cal-conn">Conectando con el calendario compartido.</p>
+  <div id="cal-view"></div>
+  <p class="cal-foot">Los horarios de los eventos están en hora de San Francisco y Las Vegas, que comparten zona. Cuando un evento no publica hora de cierre, el bloque muestra una duración estimada y el detalle lo indica. Las llamadas vienen del calendario de German al 28 de septiembre.</p>
+</section>
+</div>
+
+<dialog class="dlg" id="dlg-detail" aria-labelledby="dd-title">
+  <div class="dlg-in">
+    <div class="dlg-chips" id="dd-chips"></div>
+    <h3 id="dd-title"></h3>
+    <dl id="dd-rows"></dl>
+    <div id="dd-reg"></div>
+    <div class="dlg-actions">
+      <button type="button" class="btn danger" id="dd-delete">Eliminar</button>
+      <button type="button" class="btn" id="dd-restore" hidden>Volver al original</button>
+      <span class="sp"></span>
+      <button type="button" class="btn" id="dd-edit">Editar</button>
+      <button type="button" class="btn primary" id="dd-close">Cerrar</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-form" aria-labelledby="df-title">
+  <form class="dlg-in" id="cal-form" novalidate>
+    <h3 id="df-title">Agregar al calendario</h3>
+    <div class="form">
+      <div class="full">
+        <label for="f-title">Título</label>
+        <input type="text" id="f-title" maxlength="140" autocomplete="off" placeholder="Reunión con DoorDash, cena con Visa, evento nuevo">
+      </div>
+      <div>
+        <label for="f-cat">Tipo</label>
+        <select id="f-cat">
+          <option value="meet">Reunión con cliente</option>
+          <option value="go">Evento, ir</option>
+          <option value="must">Evento, no faltar</option>
+          <option value="opt">Evento, si cabe</option>
+          <option value="planb">Evento, plan B</option>
+          <option value="skip">Evento, saltar</option>
+          <option value="own">Evento propio</option>
+          <option value="call">Llamada</option>
+          <option value="other">Otro</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-by">Quién lo agrega</label>
+        <select id="f-by">
+          <option value="German">German</option>
+          <option value="Samuel">Samuel</option>
+          <option value="Joaquín">Joaquín</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-date">Fecha</label>
+        <input type="date" id="f-date" min="2026-09-27" max="2026-11-07">
+      </div>
+      <div>
+        <label for="f-enddate">Último día, si dura varios</label>
+        <input type="date" id="f-enddate" min="2026-09-27" max="2026-11-07">
+      </div>
+      <div class="full opts">
+        <label for="f-allday"><input type="checkbox" id="f-allday"> Todo el día</label>
+      </div>
+      <div id="f-start-wrap">
+        <label for="f-start">Empieza, hora de San Francisco</label>
+        <input type="time" id="f-start" step="300">
+      </div>
+      <div id="f-end-wrap">
+        <label for="f-end">Termina</label>
+        <input type="time" id="f-end" step="300">
+      </div>
+      <div class="full">
+        <label for="f-place">Lugar</label>
+        <input type="text" id="f-place" maxlength="160" autocomplete="off">
+      </div>
+      <fieldset class="full" id="f-price-set">
+        <legend>Precio de la entrada</legend>
+        <div class="opts">
+          <label for="f-price-free"><input type="radio" name="f-price" id="f-price-free" value="free"> Gratis</label>
+          <label for="f-price-paid"><input type="radio" name="f-price" id="f-price-paid" value="paid"> De pago</label>
+          <label for="f-price-unknown"><input type="radio" name="f-price" id="f-price-unknown" value="unknown"> Por confirmar</label>
+          <label for="f-price-na"><input type="radio" name="f-price" id="f-price-na" value="na"> No aplica</label>
+        </div>
+        <input type="text" id="f-amount" maxlength="120" autocomplete="off" placeholder="$495 por persona" aria-label="Valor de la entrada" hidden>
+        <p class="hint">En eventos el precio es obligatorio. Si es gratis, queda marcado como Gratis.</p>
+      </fieldset>
+      <div class="full">
+        <label for="f-url">Link de registro o de la página</label>
+        <input type="url" id="f-url" maxlength="400" autocomplete="off" placeholder="https://">
+      </div>
+      <div class="full">
+        <label for="f-note">Nota</label>
+        <textarea id="f-note" maxlength="600"></textarea>
+      </div>
+    </div>
+    <p class="form-err" id="f-err" role="alert" hidden></p>
+    <div class="dlg-actions">
+      <button type="button" class="btn" id="f-cancel">Cancelar</button>
+      <button type="submit" class="btn primary" id="f-save">Guardar</button>
+    </div>
+  </form>
+</dialog>
+
+
+</div>
+
+<script type="application/json" id="base-items">[{"id":"ftw-d1","title":"FTW San Francisco, día 1","host":"","cat":"must","date":"2026-09-29","endDate":"","allDay":false,"start":"10:00","end":"17:00","endAssumed":false,"place":"The Green Room, 401 Van Ness Ave","price":"$495 por persona el pase de un día. Tres días $995, bundle comunidad $795, VIP $1,295","priceShort":"$495","priceKind":"paid","reg":"abierto, sin aprobación","links":[["registro","https://luma.com/FTW_SF26"],["agenda","https://fintech-week.co/san-francisco/"]],"url":"","note":"Más de 600 personas. Según el organizador: 60% founders y tomadores de decisión, 20% inversionistas, 10% bancos. Los speakers son sobre todo de fintechs, bancos y redes (Chime, Plaid, TabaPay, Stripe, Mastercard, Fiserv). Del lado merchant o de cuentas objetivo hablan Walmart (Head of Consumer Fintech), Higgsfield (VP of Platform Partnerships) y OpenAI. Sesiones de pagos: día 1 a las 10:35 am y 3:45 pm, día 2 a las 2:00 pm, día 3 a las 11:00 am y 1:15 pm.","by":""},{"id":"ftw-d2","title":"FTW día 2, Fintech Is Femme Leadership","host":"","cat":"opt","date":"2026-09-30","endDate":"","allDay":false,"start":"11:00","end":"19:00","endAssumed":false,"place":"The Green Room, 401 Van Ness Ave","price":"$495 por persona el pase de un día. Tres días $995, bundle comunidad $795, VIP $1,295","priceShort":"$495","priceKind":"paid","reg":"abierto, sin aprobación","links":[["registro","https://luma.com/FTW_SF26"],["agenda","https://fintech-week.co/san-francisco/"]],"url":"","note":"Más de 600 personas. Según el organizador: 60% founders y tomadores de decisión, 20% inversionistas, 10% bancos. Los speakers son sobre todo de fintechs, bancos y redes (Chime, Plaid, TabaPay, Stripe, Mastercard, Fiserv). Del lado merchant o de cuentas objetivo hablan Walmart (Head of Consumer Fintech), Higgsfield (VP of Platform Partnerships) y OpenAI. Sesiones de pagos: día 1 a las 10:35 am y 3:45 pm, día 2 a las 2:00 pm, día 3 a las 11:00 am y 1:15 pm.","by":""},{"id":"ftw-d3","title":"FTW día 3, Fintech Security","host":"","cat":"opt","date":"2026-10-01","endDate":"","allDay":false,"start":"10:00","end":"17:00","endAssumed":false,"place":"The Green Room, 401 Van Ness Ave","price":"$495 por persona el pase de un día. Tres días $995, bundle comunidad $795, VIP $1,295","priceShort":"$495","priceKind":"paid","reg":"abierto, sin aprobación","links":[["registro","https://luma.com/FTW_SF26"],["agenda","https://fintech-week.co/san-francisco/"]],"url":"","note":"Más de 600 personas. Según el organizador: 60% founders y tomadores de decisión, 20% inversionistas, 10% bancos. Los speakers son sobre todo de fintechs, bancos y redes (Chime, Plaid, TabaPay, Stripe, Mastercard, Fiserv). Del lado merchant o de cuentas objetivo hablan Walmart (Head of Consumer Fintech), Higgsfield (VP of Platform Partnerships) y OpenAI. Sesiones de pagos: día 1 a las 10:35 am y 3:45 pm, día 2 a las 2:00 pm, día 3 a las 11:00 am y 1:15 pm.","by":""},{"id":"machine-earning","title":"Machine Earning AI Summit","host":"Newcomer","cat":"skip","date":"2026-09-29","endDate":"","allDay":true,"start":"","end":"","endAssumed":false,"place":"San Francisco, lugar sin publicar","price":"$999 por persona para perfiles de BD y servicios. General $699, founders $99","priceShort":"$999","priceKind":"paid","reg":"por aplicación","links":[["sitio","https://machine-earning.ai/"]],"url":"","note":"Buen salón (ejecutivos de Faire, Chime, Brex, Airwallex), pero es por aplicación y choca con FTW.","by":""},{"id":"devday","title":"OpenAI DevDay","host":"","cat":"skip","date":"2026-09-29","endDate":"","allDay":true,"start":"","end":"","endAssumed":false,"place":"Fort Mason","price":"$650, aplicaciones cerradas","priceShort":"$650","priceKind":"paid","reg":"","links":[["abrir página","https://devday.openai.com/"]],"url":"","note":"DevDay (29 sep, Fort Mason) ya cerró aplicaciones presenciales. The AI Conference (Pier 48) es de ingenieros. Público de desarrolladores, no de payments.","by":""},{"id":"aiconf","title":"The AI Conference","host":"","cat":"skip","date":"2026-09-29","endDate":"2026-10-01","allDay":true,"start":"","end":"","endAssumed":false,"place":"Pier 48","price":"$1,075 según el agregador GarysGuide","priceShort":"$1,075","priceKind":"paid","reg":"","links":[["abrir página","https://aiconference.com/"]],"url":"","note":"DevDay (29 sep, Fort Mason) ya cerró aplicaciones presenciales. The AI Conference (Pier 48) es de ingenieros. Público de desarrolladores, no de payments.","by":""},{"id":"haas","title":"The Future of Finance Summit","host":"Haas Fintech Club, UC Berkeley","cat":"opt","date":"2026-10-02","endDate":"","allDay":false,"start":"08:30","end":"17:00","endAssumed":false,"place":"Jarvis Auditorium, Berkeley","price":"$45 por persona para profesionales de industria; $30 mientras dure la preventa. Estudiantes $10","priceShort":"$45","priceKind":"paid","reg":"aprobación, 105 cupos","links":[["registro","https://luma.com/0psua4hi"]],"url":"","note":"Keynote del SVP Global Head of AI de PayPal y panel con Visa (stablecoins), Ripple y Airwallex. Público mayormente estudiantil; vale por el acceso barato a los speakers.","by":""},{"id":"fintech-house","title":"Fintech House SF","host":"The Financial Club, Vouch, BPM, SVB","cat":"go","date":"2026-10-05","endDate":"","allDay":false,"start":"18:00","end":"20:00","endAssumed":false,"place":"San Francisco, lugar por anunciar","price":"Gratis según el listado de GarysGuide","priceShort":"Gratis","priceKind":"free","reg":"por aplicación, cupo de 250","links":[["registro","https://www.garysguide.com/events/fefm619"]],"url":"","note":"La noche principal de fintech en Tech Week: founders, inversionistas y operadores senior. Los organizadores citan una lista de espera de 2,000 personas el año pasado.","by":""},{"id":"latam-dinner","title":"Dinner: LATAM and SF VCs, Entrepreneurs and Friends","host":"José Alvarez y Carlos Zárate","cat":"planb","date":"2026-10-05","endDate":"","allDay":false,"start":"17:30","end":"20:00","endAssumed":false,"place":"Palo Alto","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"solo por invitación, con aprobación","links":[["registro","https://luma.com/7ovjgctq"]],"url":"","note":"La cena de tema latino de Tech Week. Misma noche que Fintech House: es el plan B si Fintech House no aprueba a los tres.","by":""},{"id":"bayteq-dinner","title":"Cena privada de Bayteq","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"17:30","end":"20:00","endAssumed":false,"place":"Palo Alto según Luma; dirección al ser aprobado","price":"Gratis los dos","priceShort":"Gratis","priceKind":"free","reg":"aprobación, cada invitado se revisa","links":[["abrir página","https://luma.com/77y6mljh"]],"url":"","note":"La cena del lunes 5 es para líderes senior de compañías Serie B en adelante; el tema es talento de ingeniería y choca con Fintech House. Luma la ubica en Palo Alto, aunque la descripción habla de un restaurante en SF. El mixer del miércoles 7 a las 6:00 pm es mejor horario: sus ediciones pasadas citan invitados de Visa, Walmart Global Tech, Finix y Venmo.","by":""},{"id":"bayteq-mixer","title":"Mixer privado de Bayteq","host":"","cat":"opt","date":"2026-10-07","endDate":"","allDay":false,"start":"18:00","end":"20:30","endAssumed":false,"place":"San Francisco, dirección al ser aprobado","price":"Gratis los dos","priceShort":"Gratis","priceKind":"free","reg":"aprobación, cada invitado se revisa","links":[["abrir página","https://luma.com/y9i2hhem"]],"url":"","note":"La cena del lunes 5 es para líderes senior de compañías Serie B en adelante; el tema es talento de ingeniería y choca con Fintech House. Luma la ubica en Palo Alto, aunque la descripción habla de un restaurante en SF. El mixer del miércoles 7 a las 6:00 pm es mejor horario: sus ediciones pasadas citan invitados de Visa, Walmart Global Tech, Finix y Venmo.","by":""},{"id":"stripe-dinner","title":"Compliance at Fintech Speed, cena de Stripe y MidLyr","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"18:00","end":"21:00","endAssumed":true,"place":"San Francisco, lugar por anunciar","price":"Gratis los dos, según el listado de GarysGuide","priceShort":"Gratis","priceKind":"free","reg":"la cena es solo por invitación","links":[["abrir página","https://www.garysguide.com/events/u9hxnok"]],"url":"","note":"La cena de Stripe es cerrada y por invitación. AI Pay Summit (7:00 pm) son demos de pagos entre agentes. Las dos chocan con Fintech House.","by":""},{"id":"ai-pay-summit","title":"AI Pay Summit","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"19:00","end":"21:00","endAssumed":true,"place":"San Francisco, lugar por anunciar","price":"Gratis los dos, según el listado de GarysGuide","priceShort":"Gratis","priceKind":"free","reg":"la cena es solo por invitación","links":[["abrir página","https://www.garysguide.com/events/9kt55lk"]],"url":"","note":"La cena de Stripe es cerrada y por invitación. AI Pay Summit (7:00 pm) son demos de pagos entre agentes. Las dos chocan con Fintech House.","by":""},{"id":"fintech-coffee","title":"Fintech Coffee","host":"This Week in Fintech y SVB","cat":"go","date":"2026-10-06","endDate":"","allDay":false,"start":"08:30","end":"11:00","endAssumed":false,"place":"SVB Experience Center, 532 Market St","price":"Gratis según el listado de GarysGuide","priceShort":"Gratis","priceKind":"free","reg":"por aplicación","links":[["registro","https://www.garysguide.com/events/1efjmxy"],["serie mensual","https://luma.com/sfcoffee2"]],"url":"","note":"Café mensual de la comunidad fintech de SF, formato sin pitch. Es la comunidad recurrente a la que conviene pertenecer desde la primera semana.","by":""},{"id":"techonomy","title":"Techonomy 2026","host":"Worth Media, en la oficina de Finix","cat":"opt","date":"2026-10-06","endDate":"","allDay":false,"start":"11:00","end":"19:00","endAssumed":false,"place":"Finix, 760 Market St, Suite 200","price":"Gratis para invitados confirmados","priceShort":"Gratis","priceKind":"free","reg":"solo por invitación, 100 cupos","links":[["registro","https://luma.com/g4isf5rf"],["agenda","https://worth.com/event/techonomy-2026/"]],"url":"","note":"150 líderes senior, con público de CIOs y CTOs de Fortune 500. Puertas a las 11:00 am, programa desde las 12:00 y recepción de 5:00 a 6:30 pm. Vale pedir la invitación, aunque cruza con el resto del martes 6.","by":""},{"id":"klaviyo","title":"Klaviyo Commerce Social","host":"Klaviyo","cat":"opt","date":"2026-10-06","endDate":"","allDay":false,"start":"14:00","end":"15:30","endAssumed":true,"place":"Lugar por anunciar","price":"Gratis según el listado de GarysGuide","priceShort":"Gratis","priceKind":"free","reg":"la página del anfitrión no carga; confirmar antes de ir","links":[["ficha","https://www.garysguide.com/events/m1zjzm0/Klaviyo-Commerce-Social"]],"url":"","note":"Marcas y operadores de e-commerce. De lo poco con merchants en la semana, aunque el público típico de Klaviyo son marcas medianas. Queda antes de Visa, así que cabe en la misma tarde.","by":""},{"id":"visa","title":"Visa, Agentic Commerce Meet Up","host":"","cat":"must","date":"2026-10-06","endDate":"","allDay":false,"start":"16:00","end":"17:30","endAssumed":true,"place":"Oficina de Visa, Mission Rock","price":"Gratis según el listado de GarysGuide","priceShort":"Gratis","priceKind":"free","reg":"por aplicación; agenda marcada como tentativa","links":[["registro","https://partiful.com/e/AvQ6V2uhBuwbU6Ubq9v8"],["ficha","https://www.garysguide.com/events/h30nj4p"]],"url":"","note":"En la oficina de Visa en Mission Rock. Equipo de Visa y ecosistema de payments y commerce. Queda en la misma zona que Mastercard, que empieza hora y media después.","by":""},{"id":"mastercard","title":"Mastercard, Agentic Now and Agentic Next","host":"","cat":"must","date":"2026-10-06","endDate":"","allDay":false,"start":"17:30","end":"19:30","endAssumed":false,"place":"China Basin, dirección visible al ser aprobado","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"aprobación","links":[["registro","https://luma.com/mdxyfrgf"]],"url":"","note":"Líderes de producto y alianzas de IA de Mastercard, con el programa Start Path, Agent Pay y Agent Connect. El 27 de septiembre quedaban 9 cupos; los tres ocupan tres. Es en la zona de China Basin, vecina a Mission Rock.","by":""},{"id":"cfo-panel","title":"Fintech CFO Panel y Happy Hour","host":"Pluvo, con BMO y Ramp","cat":"planb","date":"2026-10-06","endDate":"","allDay":false,"start":"16:00","end":"19:30","endAssumed":false,"place":"SoMa, dirección al ser aprobado","price":"Gratis según el listado de GarysGuide","priceShort":"Gratis","priceKind":"free","reg":"registros revisados por perfil","links":[["registro","https://partiful.com/e/u1YZGJden2SOdNj5vWDJ"],["ficha","https://www.garysguide.com/events/k4uqgjd"]],"url":"","note":"Público de finanzas: CFOs, VPs de Finanzas y Controllers. Hablan los CFOs de Carta y de Vercel. Va de 4:00 a 7:30 pm. Choca con Visa y el registro se revisa por perfil de finanzas, así que es difícil que aprueben a los tres. Es el plan B de las 4:00 pm.","by":""},{"id":"agents-spend","title":"When Agents Spend Money","host":"","cat":"planb","date":"2026-10-06","endDate":"","allDay":false,"start":"17:30","end":"19:30","endAssumed":true,"place":"South Beach, dirección al ser aprobado","price":"Gratis según el listado de GarysGuide","priceShort":"Gratis","priceKind":"free","reg":"los dos piden aplicación o aprobación","links":[["abrir página","https://partiful.com/e/aCbTfUBiykYHp6BzOdg6"]],"url":"","note":"Dos alternativas a la misma hora que Mastercard, solo si Mastercard no aprueba. El primero es un panel sobre autorización de pagos hechos por agentes, con JPMorgan Chase como coanfitrión. El segundo, de Open Future Forum, es para CFOs, founders e inversionistas y avisa que no admite pitch de proveedores.","by":""},{"id":"ready-anything","title":"Ready for Anything: IPOs, SPACs and Capital Market Shifts","host":"","cat":"planb","date":"2026-10-06","endDate":"","allDay":false,"start":"17:30","end":"20:00","endAssumed":false,"place":"San Francisco, dirección al ser aprobado","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"los dos piden aplicación o aprobación","links":[["abrir página","https://luma.com/fb7ihel0"]],"url":"","note":"Dos alternativas a la misma hora que Mastercard, solo si Mastercard no aprueba. El primero es un panel sobre autorización de pagos hechos por agentes, con JPMorgan Chase como coanfitrión. El segundo, de Open Future Forum, es para CFOs, founders e inversionistas y avisa que no admite pitch de proveedores.","by":""},{"id":"yc-mixer","title":"YC Founders Mixer","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"17:00","end":"19:30","endAssumed":false,"place":"San Francisco","price":"Gratis los cinco","priceShort":"Gratis","priceKind":"free","reg":"aprobación en la mayoría","links":[["abrir página","https://luma.com/szg4hzay"]],"url":"","note":"YC Founders Mixer (solo founders de YC), Founder Friends SF (agotado), Batter Up SF (founders presentando a ángeles, quedaba 1 cupo), SF Founder and Investor Dinner y The SOLO Founder Club.","by":""},{"id":"founder-friends","title":"Founder Friends SF","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"18:00","end":"20:30","endAssumed":false,"place":"San Francisco","price":"Gratis los cinco","priceShort":"Gratis","priceKind":"free","reg":"aprobación en la mayoría","links":[["abrir página","https://luma.com/4xjpmq1m"]],"url":"","note":"YC Founders Mixer (solo founders de YC), Founder Friends SF (agotado), Batter Up SF (founders presentando a ángeles, quedaba 1 cupo), SF Founder and Investor Dinner y The SOLO Founder Club.","by":""},{"id":"founder-investor-dinner","title":"SF Founder and Investor Dinner","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"19:00","end":"21:30","endAssumed":false,"place":"San Francisco","price":"Gratis los cinco","priceShort":"Gratis","priceKind":"free","reg":"aprobación en la mayoría","links":[["abrir página","https://luma.com/ozrtk4ne"]],"url":"","note":"YC Founders Mixer (solo founders de YC), Founder Friends SF (agotado), Batter Up SF (founders presentando a ángeles, quedaba 1 cupo), SF Founder and Investor Dinner y The SOLO Founder Club.","by":""},{"id":"solo-founder","title":"The SOLO Founder Club","host":"","cat":"skip","date":"2026-10-06","endDate":"","allDay":false,"start":"16:00","end":"19:00","endAssumed":false,"place":"San Francisco","price":"Gratis los cinco","priceShort":"Gratis","priceKind":"free","reg":"aprobación en la mayoría","links":[["abrir página","https://luma.com/ejwagfv9"]],"url":"","note":"YC Founders Mixer (solo founders de YC), Founder Friends SF (agotado), Batter Up SF (founders presentando a ángeles, quedaba 1 cupo), SF Founder and Investor Dinner y The SOLO Founder Club.","by":""},{"id":"batter-up","title":"Batter Up SF","host":"","cat":"skip","date":"2026-10-06","endDate":"","allDay":false,"start":"18:00","end":"21:00","endAssumed":false,"place":"San Francisco","price":"Gratis los cinco","priceShort":"Gratis","priceKind":"free","reg":"aprobación en la mayoría","links":[["abrir página","https://luma.com/xenl8z74"]],"url":"","note":"YC Founders Mixer (solo founders de YC), Founder Friends SF (agotado), Batter Up SF (founders presentando a ángeles, quedaba 1 cupo), SF Founder and Investor Dinner y The SOLO Founder Club.","by":""},{"id":"mcp-gateway","title":"The MCP Gateway","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"09:30","end":"11:00","endAssumed":false,"place":"Joe and The Juice, 301 Howard St","price":"Gratis cuatro de ellos. Camp AI no publica precio","priceShort":"Gratis","priceKind":"free","reg":"","links":[["abrir página","https://luma.com/scorx7qo"]],"url":"","note":"Demo Night en WorkOS, SF Tech Week AI Demo Night, Camp AI en el Ferry Building, The MCP Gateway y Ship it and Sip it (agotado).","by":""},{"id":"demo-night-workos","title":"Demo Night en WorkOS","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"17:30","end":"20:00","endAssumed":false,"place":"660 Market St","price":"Gratis cuatro de ellos. Camp AI no publica precio","priceShort":"Gratis","priceKind":"free","reg":"","links":[["abrir página","https://luma.com/demo-night-oct2026"]],"url":"","note":"Demo Night en WorkOS, SF Tech Week AI Demo Night, Camp AI en el Ferry Building, The MCP Gateway y Ship it and Sip it (agotado).","by":""},{"id":"ship-it","title":"Ship it and Sip it","host":"","cat":"skip","date":"2026-10-05","endDate":"","allDay":false,"start":"18:00","end":"20:00","endAssumed":false,"place":"Corgi Cafe","price":"Gratis cuatro de ellos. Camp AI no publica precio","priceShort":"Gratis","priceKind":"free","reg":"","links":[["abrir página","https://luma.com/copilo-y6wx"]],"url":"","note":"Demo Night en WorkOS, SF Tech Week AI Demo Night, Camp AI en el Ferry Building, The MCP Gateway y Ship it and Sip it (agotado).","by":""},{"id":"ai-demo-night","title":"SF Tech Week AI Demo Night","host":"","cat":"skip","date":"2026-10-06","endDate":"","allDay":false,"start":"17:00","end":"20:30","endAssumed":false,"place":"CANOPY Jackson Square","price":"Gratis cuatro de ellos. Camp AI no publica precio","priceShort":"Gratis","priceKind":"free","reg":"","links":[["abrir página","https://luma.com/clickh-zngw"]],"url":"","note":"Demo Night en WorkOS, SF Tech Week AI Demo Night, Camp AI en el Ferry Building, The MCP Gateway y Ship it and Sip it (agotado).","by":""},{"id":"camp-ai","title":"Camp AI: Production-Ready Agents","host":"","cat":"skip","date":"2026-10-06","endDate":"","allDay":false,"start":"17:30","end":"20:30","endAssumed":false,"place":"Ferry Building","price":"Precio no publicado en la página","priceShort":"Sin publicar","priceKind":"unknown","reg":"","links":[["abrir página","https://partiful.com/e/wgzQaLCyAPobkZnJpzOP"]],"url":"","note":"Demo Night en WorkOS, SF Tech Week AI Demo Night, Camp AI en el Ferry Building, The MCP Gateway y Ship it and Sip it (agotado).","by":""},{"id":"sv-apac","title":"Silicon Valley y APAC Industrial Innovation Bridge","host":"","cat":"skip","date":"2026-10-06","endDate":"","allDay":false,"start":"08:30","end":"13:00","endAssumed":false,"place":"San Francisco","price":"Gratis los tres primeros. SF Tech Mix and Mingle sin verificar","priceShort":"Gratis","priceKind":"free","reg":"","links":[["abrir página","https://luma.com/1e7nxcr0"]],"url":"","note":"AI 2030 es de IA responsable. El puente con APAC es de inversión industrial. El meetup de Discord lo organiza el grupo SF Game Development para desarrolladores de juegos, no la compañía Discord. SF Tech Mix and Mingle no aparece en el calendario oficial de Luma.","by":""},{"id":"ai-2030","title":"AI 2030 Summit","host":"","cat":"skip","date":"2026-10-06","endDate":"","allDay":false,"start":"09:00","end":"17:00","endAssumed":false,"place":"San Francisco","price":"Gratis los tres primeros. SF Tech Mix and Mingle sin verificar","priceShort":"Gratis","priceKind":"free","reg":"","links":[["abrir página","https://luma.com/lxgo78u5"]],"url":"","note":"AI 2030 es de IA responsable. El puente con APAC es de inversión industrial. El meetup de Discord lo organiza el grupo SF Game Development para desarrolladores de juegos, no la compañía Discord. SF Tech Mix and Mingle no aparece en el calendario oficial de Luma.","by":""},{"id":"discord-meetup","title":"Meetup de Discord para game dev","host":"","cat":"skip","date":"2026-10-06","endDate":"","allDay":false,"start":"17:30","end":"21:00","endAssumed":false,"place":"DNA Lounge","price":"Gratis los tres primeros. SF Tech Mix and Mingle sin verificar","priceShort":"Gratis","priceKind":"free","reg":"","links":[["abrir página","https://luma.com/sf-tech-week-discord-game-development-meetup"]],"url":"","note":"AI 2030 es de IA responsable. El puente con APAC es de inversión industrial. El meetup de Discord lo organiza el grupo SF Game Development para desarrolladores de juegos, no la compañía Discord. SF Tech Mix and Mingle no aparece en el calendario oficial de Luma.","by":""},{"id":"agentic-zero","title":"Agentic Zero, The Agentic Finance Summit","host":"","cat":"opt","date":"2026-10-07","endDate":"","allDay":false,"start":"09:00","end":"17:00","endAssumed":false,"place":"The Avalon, 1244 Sutter St","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"RSVP, 500 cupos","links":[["sitio","https://agenticzero.xyz/"],["registro","https://partiful.com/e/6vkA8cTvPI7tTb3NtV2F"]],"url":"","note":"Infraestructura de pagos para agentes y stablecoins (Circle, Solana, Belo). Sirve para el ángulo de stablecoins y para conocer a Belo, que es LatAm. No es un salón de compradores: medio día basta.","by":""},{"id":"svlls","title":"Silicon Valley Latino Leadership Summit","host":"","cat":"opt","date":"2026-10-10","endDate":"","allDay":false,"start":"08:00","end":"13:45","endAssumed":false,"place":"Computer History Museum, Mountain View","price":"$300 por persona, entrada general. Organizaciones sin ánimo de lucro $175","priceShort":"$300","priceKind":"paid","reg":"abierto, sin aprobación","links":[["entradas","https://www.eventbrite.com/e/2026-silicon-valley-latino-leadership-summit-tickets-1991957327990"],["sitio","https://www.svlls.com/"]],"url":"","note":"Cerca de 400 ejecutivos y emprendedores latinos. No es de payments; sirve para la red latina del Bay Area.","by":""},{"id":"fintech-next-pre","title":"Fintech Next, previo a Disrupt y Money20/20","host":"","cat":"go","date":"2026-10-12","endDate":"","allDay":false,"start":"17:00","end":"19:00","endAssumed":false,"place":"Market St y 3rd St","price":"$20 por persona","priceShort":"$20","priceKind":"paid","reg":"sin aprobación, 73 cupos","links":[["registro","https://luma.com/b3a50qei"]],"url":"","note":"Calentamiento de la comunidad fintech local antes de las dos semanas grandes. Es a la misma hora que NMI y a unas cuadras por 3rd St: primera hora aquí, segunda en NMI.","by":""},{"id":"nmi","title":"NMI, Serve, Swipe and Settle","host":"","cat":"go","date":"2026-10-12","endDate":"","allDay":false,"start":"17:00","end":"19:00","endAssumed":false,"place":"SPIN, 690 Folsom St","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"RSVP, incluye comida y bebidas","links":[["registro","https://go.nmi.com/serve-swipe-settle-event"]],"url":"","note":"Evento paralelo oficial de Disrupt y el único de payments en esa lista. Público declarado: founders de SaaS, desarrolladores y líderes técnicos. Sin panel ni speakers. Útil para conocer plataformas que quieren embeber pagos, no para encontrar equipos de payments de merchants.","by":""},{"id":"disrupt","title":"TechCrunch Disrupt","host":"","cat":"skip","date":"2026-10-13","endDate":"2026-10-15","allDay":true,"start":"","end":"","endAssumed":false,"place":"Moscone West","price":"$949 por persona el pase de asistente. Expo+ $299, sin acceso a los escenarios de industria ni a las mesas redondas","priceShort":"$949","priceKind":"paid","reg":"abierto","links":[["pases","https://techcrunch.com/events/techcrunch-disrupt/tickets/"],["agenda","https://techcrunch.com/events/tc-disrupt-2026/agenda/"]],"url":"","note":"Más de 10,000 founders e inversionistas. Hay un escenario de fintech, Smart Money Stage, con sesiones publicadas solo para el martes 13 en la mañana (Circle, TabaPay, Robinhood, Amex, Plaid) y una mesa de Walmart eCommerce a la 1:50 pm. Para vender a merchants grandes el salón no justifica tres días: esos días rinden más en reuniones.","by":""},{"id":"nacho-thursday","title":"NachoThursday, happy hour de Disrupt","host":"","cat":"skip","date":"2026-10-15","endDate":"","allDay":false,"start":"17:00","end":"20:00","endAssumed":false,"place":"San Francisco","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"registro por evento","links":[["abrir página","https://luma.com/nachon-9ui9"]],"url":"","note":"EPIC SF demo night, European Startup Embassy, AI Barmen, Harvard Griffin GSAS, South Asian Investor Founder Connect, PeakXV, Liquid Assets, The Afterburn, SignalFire, Token Economics, Israel Economic Mission, LP y GP networking, NachoThursday. Son salones de inversionistas, founders y seguridad de IA. Máximo uno por noche y solo si no hay reunión ni cena.","by":""},{"id":"masters-of-scale","title":"Masters of Scale Summit","host":"","cat":"skip","date":"2026-10-20","endDate":"2026-10-22","allDay":true,"start":"","end":"","endAssumed":false,"place":"Presidio","price":"$3,750 por persona, sin hospedaje ni viaje","priceShort":"$3,750","priceKind":"paid","reg":"solo por invitación y aplicación","links":[["sitio","https://www.summit.mastersofscale.com/info"]],"url":"","note":"Cerca de 800 ejecutivos curados y choca con Money20/20.","by":""},{"id":"gamesforum","title":"Gamesforum San Francisco","host":"","cat":"opt","date":"2026-10-26","endDate":"2026-10-27","allDay":true,"start":"","end":"","endAssumed":false,"place":"Hotel Nikko","price":"Patrocinio, sin precio publicado: hay que pedir cotización. El pase de $239 es solo para estudios y publishers","priceShort":"Patrocinio","priceKind":"unknown","reg":"proveedores solo como patrocinadores","links":[["registro","https://www.globalgamesforum.com/san-francisco/register-now"],["sitio","https://www.globalgamesforum.com/san-francisco"]],"url":"","note":"Más de 500 asistentes de más de 300 compañías de juegos móviles: monetización, producto y growth. Speakers de Supercell, Zynga, EA, Scopely y Activision Blizzard Media. El salón es muy bueno, pero los pases son solo para estudios y publishers: la página avisa que los pases comprados por proveedores de servicios se cancelan y se reembolsan. La única vía para un proveedor es patrocinar.","by":""},{"id":"one-way","title":"One Way Summit","host":"One Way Ventures","cat":"opt","date":"2026-10-28","endDate":"2026-10-29","allDay":true,"start":"","end":"","endAssumed":false,"place":"The Commonwealth Club, 110 The Embarcadero","price":"$129 por persona el pase regular. Premium $179 con talleres, VIP $499","priceShort":"$129","priceKind":"paid","reg":"abierto, sin aprobación","links":[["registro","https://www.eventbrite.com/e/one-way-summit-2026-the-flagship-event-for-immigrant-entrepreneurship-tickets-2000784038920"]],"url":"","note":"Más de 1,000 founders inmigrantes e inversionistas, con delegaciones de más de 20 países. Red internacional y latina. Un resultado de búsqueda menciona a Juan Pablo Ortega como speaker, pero no aparece en la página oficial: confirmar con él.","by":""},{"id":"github-universe","title":"GitHub Universe","host":"","cat":"skip","date":"2026-10-28","endDate":"2026-10-29","allDay":true,"start":"","end":"","endAssumed":false,"place":"Fort Mason","price":"$1,399 por persona presencial. Virtual gratis","priceShort":"$1,399","priceKind":"paid","reg":"abierto","links":[["sitio","https://githubuniverse.com/"]],"url":"","note":"Público de desarrolladores. Sin compradores de payments.","by":""},{"id":"panel-pitch","title":"Fintech Next, Panel and Pitch","host":"","cat":"opt","date":"2026-10-29","endDate":"","allDay":false,"start":"17:00","end":"19:00","endAssumed":false,"place":"Zona Yerba Buena","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"aprobación, 124 cupos","links":[["registro","https://luma.com/wiqhrvi6"]],"url":"","note":"Serie recurrente de la comunidad fintech local. Útil para mantener presencia si la tarde está libre.","by":""},{"id":"gamesbeat","title":"GamesBeat Next 2026","host":"","cat":"must","date":"2026-11-02","endDate":"2026-11-03","allDay":true,"start":"","end":"","endAssumed":false,"place":"San Francisco","price":"$899 por persona el Conference Pass. VIP $1,200. Las tarifas del checkout no se pudieron leer","priceShort":"$899","priceKind":"paid","reg":"abierto, sin aprobación","links":[["pases","https://events.gamesbeat.com/next26/attend/"],["sitio","https://events.gamesbeat.com/next26/"]],"url":"","note":"500 líderes senior de gaming, 80% nivel C. La lista de compañías asistentes incluye Epic Games, EA, Roblox, Netflix, Tencent y Unity. La agenda toca modelos de monetización y venta directa al consumidor. Es el cierre del viaje.","by":""},{"id":"money2020","title":"Money20/20 USA","host":"","cat":"must","date":"2026-10-18","endDate":"2026-10-21","allDay":true,"start":"","end":"","endAssumed":false,"place":"The Venetian, Las Vegas","price":"$4,199 por persona el pase estándar hoy. Comprando tres o más en una sola transacción baja $299 por pase","priceShort":"$4,199","priceKind":"paid","reg":"abierto","links":[["pases","https://us.money2020.com/pass-picker"],["speakers","https://us.money2020.com/agenda/speakers"],["eventos paralelos","https://avenuez.com/events/money20-20-side-events/"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-ebay","title":"Money20/20: habla eBay, Head of Wallet","host":"","cat":"go","date":"2026-10-19","endDate":"","allDay":false,"start":"10:25","end":"10:55","endAssumed":true,"place":"The Venetian, Las Vegas","price":"Incluido en el pase de Money20/20","priceShort":"Con el pase","priceKind":"paid","reg":"abierto","links":[["pases","https://us.money2020.com/pass-picker"],["speakers","https://us.money2020.com/agenda/speakers"],["eventos paralelos","https://avenuez.com/events/money20-20-side-events/"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-mauricio","title":"Money20/20: habla Mauricio Schwartzmann, con Kavak","host":"","cat":"must","date":"2026-10-19","endDate":"","allDay":false,"start":"13:15","end":"13:45","endAssumed":true,"place":"The Venetian, Las Vegas","price":"Incluido en el pase de Money20/20","priceShort":"Con el pase","priceKind":"paid","reg":"abierto","links":[["pases","https://us.money2020.com/pass-picker"],["speakers","https://us.money2020.com/agenda/speakers"],["eventos paralelos","https://avenuez.com/events/money20-20-side-events/"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-perplexity","title":"Money20/20: habla el CEO de Perplexity","host":"","cat":"go","date":"2026-10-20","endDate":"","allDay":false,"start":"09:05","end":"09:35","endAssumed":true,"place":"The Venetian, Las Vegas","price":"Incluido en el pase de Money20/20","priceShort":"Con el pase","priceKind":"paid","reg":"abierto","links":[["pases","https://us.money2020.com/pass-picker"],["speakers","https://us.money2020.com/agenda/speakers"],["eventos paralelos","https://avenuez.com/events/money20-20-side-events/"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-upwork","title":"Money20/20: habla Upwork, Director of Product Payments","host":"","cat":"go","date":"2026-10-20","endDate":"","allDay":false,"start":"10:30","end":"11:00","endAssumed":true,"place":"The Venetian, Las Vegas","price":"Incluido en el pase de Money20/20","priceShort":"Con el pase","priceKind":"paid","reg":"abierto","links":[["pases","https://us.money2020.com/pass-picker"],["speakers","https://us.money2020.com/agenda/speakers"],["eventos paralelos","https://avenuez.com/events/money20-20-side-events/"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-jp","title":"Money20/20: habla Juan Pablo Ortega","host":"","cat":"must","date":"2026-10-20","endDate":"","allDay":false,"start":"15:15","end":"15:45","endAssumed":true,"place":"The Venetian, Las Vegas","price":"Incluido en el pase de Money20/20","priceShort":"Con el pase","priceKind":"paid","reg":"abierto","links":[["pases","https://us.money2020.com/pass-picker"],["speakers","https://us.money2020.com/agenda/speakers"],["eventos paralelos","https://avenuez.com/events/money20-20-side-events/"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-navan","title":"Money20/20: habla el CEO de Navan","host":"","cat":"go","date":"2026-10-21","endDate":"","allDay":false,"start":"11:15","end":"11:45","endAssumed":true,"place":"The Venetian, Las Vegas","price":"Incluido en el pase de Money20/20","priceShort":"Con el pase","priceKind":"paid","reg":"abierto","links":[["pases","https://us.money2020.com/pass-picker"],["speakers","https://us.money2020.com/agenda/speakers"],["eventos paralelos","https://avenuez.com/events/money20-20-side-events/"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-vgs-18","title":"VGS Vault Lounge, happy hour","host":"","cat":"opt","date":"2026-10-18","endDate":"","allDay":false,"start":"16:30","end":"19:30","endAssumed":false,"place":"Suite 3916, Palazzo Tower, The Venetian","price":"Precio no publicado en la página","priceShort":"Sin publicar","priceKind":"unknown","reg":"formulario de registro","links":[["abrir página","https://info.verygoodsecurity.com/vault-lounge"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-twif-seon","title":"Cena de líderes de fraude y riesgo, TWIF y SEON","host":"","cat":"go","date":"2026-10-18","endDate":"","allDay":false,"start":"18:30","end":"21:30","endAssumed":false,"place":"Las Vegas, dirección al ser aprobado","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"aprobación; para líderes de fraude, riesgo y payments de compañías de más de 250 empleados","links":[["abrir página","https://luma.com/LV-1018"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-tabapay-lunch","title":"Almuerzo anual de TabaPay","host":"","cat":"go","date":"2026-10-19","endDate":"","allDay":false,"start":"11:00","end":"13:00","endAssumed":false,"place":"Bouchon, The Venetian","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"aprobación","links":[["abrir página","https://luma.com/3cwtc821"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-stable-salon","title":"Stable Salon, OpenFX y Stablecon","host":"","cat":"opt","date":"2026-10-19","endDate":"","allDay":false,"start":"19:00","end":"22:00","endAssumed":false,"place":"Bazaar Meat, 3325 S Las Vegas Blvd","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"solo por invitación","links":[["abrir página","https://luma.com/OpenFXM202026"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-tabapay-open","title":"Open house de TabaPay: café, donas y payments","host":"","cat":"go","date":"2026-10-20","endDate":"","allDay":false,"start":"08:00","end":"10:00","endAssumed":false,"place":"Donutique, 3327 Las Vegas Blvd S","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"RSVP, sin aprobación","links":[["abrir página","https://luma.com/t54modwc"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-astra-visa","title":"Happy hour de payments, Astra y Visa","host":"","cat":"go","date":"2026-10-20","endDate":"","allDay":false,"start":"17:00","end":"19:00","endAssumed":false,"place":"Las Vegas, dirección al ser aprobado","price":"Gratis","priceShort":"Gratis","priceKind":"free","reg":"aprobación","links":[["abrir página","https://luma.com/8ste17ee"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"m2020-vgs-20","title":"VGS Vault Lounge, happy hour","host":"","cat":"opt","date":"2026-10-20","endDate":"","allDay":false,"start":"16:30","end":"19:30","endAssumed":false,"place":"Suite 3916, Palazzo Tower, The Venetian","price":"Precio no publicado en la página","priceShort":"Sin publicar","priceKind":"unknown","reg":"formulario de registro","links":[["abrir página","https://info.verygoodsecurity.com/vault-lounge"]],"url":"","note":"Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.","by":""},{"id":"app-growth","title":"App Growth Annual, Nueva York","host":"","cat":"skip","date":"2026-10-21","endDate":"","allDay":true,"start":"","end":"","endAssumed":false,"place":"The Glasshouse, Nueva York","price":"No se venden entradas. Presencial solo por aplicación, que cerró el 28 de agosto. Virtual gratis","priceShort":"Por aplicación","priceKind":"unknown","reg":"aplicación cerrada","links":[["preguntas frecuentes","https://appgrowthannual.com/faq"]],"url":"","note":"Líderes de growth de apps de suscripción. Muy buen público para las cuentas de apps de IA, pero cae el último día de Money20/20 y la aplicación presencial ya cerró.","by":""},{"id":"own-breakfast","title":"Desayuno de operadores de payments (propuesto)","host":"","cat":"own","date":"2026-10-08","endDate":"","allDay":false,"start":"08:30","end":"10:00","endAssumed":false,"place":"Por definir","price":"Sin costo para invitados, lo cubre Yuno","priceShort":"Invita Yuno","priceKind":"free","reg":"","links":[],"url":"","note":"Evento propio. Ustedes tres como anfitriones y de 8 a 10 invitados del lado merchant.","by":""},{"id":"own-dinner-1","title":"Cena de operadores de payments, primera edición (propuesta)","host":"","cat":"own","date":"2026-10-14","endDate":"","allDay":false,"start":"19:00","end":"21:30","endAssumed":false,"place":"Por definir","price":"Sin costo para invitados, lo cubre Yuno","priceShort":"Invita Yuno","priceKind":"free","reg":"","links":[],"url":"","note":"Evento propio. La política de viajes cubre $85 por persona en comida con clientes.","by":""},{"id":"own-dinner-2","title":"Cena de cierre (propuesta)","host":"","cat":"own","date":"2026-10-28","endDate":"","allDay":false,"start":"19:00","end":"21:30","endAssumed":false,"place":"Por definir","price":"Sin costo para invitados, lo cubre Yuno","priceShort":"Invita Yuno","priceKind":"free","reg":"","links":[],"url":"","note":"Evento propio. Anunciar la siguiente edición.","by":""},{"id":"call-2026-09-29-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-09-29","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-09-29-1200","title":"Experian + Yuno | Suscripciones","host":"","cat":"call","date":"2026-09-29","endDate":"","allDay":false,"start":"12:00","end":"12:45","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada con cliente, del calendario de German.","by":""},{"id":"call-2026-09-29-1300","title":"Dashboard Demo Unicef x Yuno","host":"","cat":"call","date":"2026-09-29","endDate":"","allDay":false,"start":"13:00","end":"13:45","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada con cliente, del calendario de German.","by":""},{"id":"call-2026-09-29-1400","title":"US SDR BiWeekly","host":"","cat":"call","date":"2026-09-29","endDate":"","allDay":false,"start":"14:00","end":"14:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-09-30-0500","title":"Weekly Deal Desk","host":"","cat":"call","date":"2026-09-30","endDate":"","allDay":false,"start":"05:00","end":"06:15","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-09-30-0900","title":"AI Coffee and Vibe Coding","host":"","cat":"call","date":"2026-09-30","endDate":"","allDay":false,"start":"09:00","end":"10:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-09-30-1130","title":"Americas BD Meeting","host":"","cat":"call","date":"2026-09-30","endDate":"","allDay":false,"start":"11:30","end":"12:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-09-30-1200","title":"Dashboard Overview Linea Directa x Yuno","host":"","cat":"call","date":"2026-09-30","endDate":"","allDay":false,"start":"12:00","end":"13:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada con cliente, del calendario de German.","by":""},{"id":"call-2026-10-01-0600","title":"ALL HANDS YUNO","host":"","cat":"call","date":"2026-10-01","endDate":"","allDay":false,"start":"06:00","end":"07:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-01-1130","title":"Forecast Call NA","host":"","cat":"call","date":"2026-10-01","endDate":"","allDay":false,"start":"11:30","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-02-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-02","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-05-1130","title":"Weekly | Americas Commercial","host":"","cat":"call","date":"2026-10-05","endDate":"","allDay":false,"start":"11:30","end":"12:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-06-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-06","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-06-1300","title":"1:1 Magdalena 1:1","host":"","cat":"call","date":"2026-10-06","endDate":"","allDay":false,"start":"13:00","end":"13:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-07-0500","title":"Weekly Deal Desk","host":"","cat":"call","date":"2026-10-07","endDate":"","allDay":false,"start":"05:00","end":"06:15","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-07-0830","title":"1:1 Samuel","host":"","cat":"call","date":"2026-10-07","endDate":"","allDay":false,"start":"08:30","end":"09:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-08-0600","title":"ALL HANDS YUNO","host":"","cat":"call","date":"2026-10-08","endDate":"","allDay":false,"start":"06:00","end":"07:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-08-1130","title":"Forecast Call NA","host":"","cat":"call","date":"2026-10-08","endDate":"","allDay":false,"start":"11:30","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-09-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-09","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-12-1130","title":"Weekly | Americas Commercial","host":"","cat":"call","date":"2026-10-12","endDate":"","allDay":false,"start":"11:30","end":"12:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-13-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-13","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-13-1400","title":"US SDR BiWeekly","host":"","cat":"call","date":"2026-10-13","endDate":"","allDay":false,"start":"14:00","end":"14:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-14-0500","title":"Weekly Deal Desk","host":"","cat":"call","date":"2026-10-14","endDate":"","allDay":false,"start":"05:00","end":"06:15","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-14-0900","title":"AI Coffee and Vibe Coding","host":"","cat":"call","date":"2026-10-14","endDate":"","allDay":false,"start":"09:00","end":"10:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-15-1130","title":"Forecast Call NA","host":"","cat":"call","date":"2026-10-15","endDate":"","allDay":false,"start":"11:30","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-15-1430","title":"FinX Monthly","host":"","cat":"call","date":"2026-10-15","endDate":"","allDay":false,"start":"14:30","end":"15:15","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-16-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-16","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-19-1130","title":"Weekly | Americas Commercial","host":"","cat":"call","date":"2026-10-19","endDate":"","allDay":false,"start":"11:30","end":"12:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-20-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-20","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-20-1300","title":"1:1 Magdalena 1:1","host":"","cat":"call","date":"2026-10-20","endDate":"","allDay":false,"start":"13:00","end":"13:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-21-0500","title":"Weekly Deal Desk","host":"","cat":"call","date":"2026-10-21","endDate":"","allDay":false,"start":"05:00","end":"06:15","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-21-0830","title":"1:1 Samuel","host":"","cat":"call","date":"2026-10-21","endDate":"","allDay":false,"start":"08:30","end":"09:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-22-0600","title":"ALL HANDS YUNO","host":"","cat":"call","date":"2026-10-22","endDate":"","allDay":false,"start":"06:00","end":"07:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-22-1130","title":"Forecast Call NA","host":"","cat":"call","date":"2026-10-22","endDate":"","allDay":false,"start":"11:30","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-23-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-23","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-26-1130","title":"Weekly | Americas Commercial","host":"","cat":"call","date":"2026-10-26","endDate":"","allDay":false,"start":"11:30","end":"12:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-27-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-27","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-27-1400","title":"US SDR BiWeekly","host":"","cat":"call","date":"2026-10-27","endDate":"","allDay":false,"start":"14:00","end":"14:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-28-0500","title":"Weekly Deal Desk","host":"","cat":"call","date":"2026-10-28","endDate":"","allDay":false,"start":"05:00","end":"06:15","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-28-0900","title":"AI Coffee and Vibe Coding","host":"","cat":"call","date":"2026-10-28","endDate":"","allDay":false,"start":"09:00","end":"10:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-29-1130","title":"Forecast Call NA","host":"","cat":"call","date":"2026-10-29","endDate":"","allDay":false,"start":"11:30","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-10-30-1100","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-10-30","endDate":"","allDay":false,"start":"11:00","end":"12:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-11-02-1130","title":"Weekly | Americas Commercial","host":"","cat":"call","date":"2026-11-02","endDate":"","allDay":false,"start":"11:30","end":"12:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-11-03-1000","title":"SalesOps Working Hours","host":"","cat":"call","date":"2026-11-03","endDate":"","allDay":false,"start":"10:00","end":"11:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-11-03-1200","title":"1:1 Magdalena 1:1","host":"","cat":"call","date":"2026-11-03","endDate":"","allDay":false,"start":"12:00","end":"12:30","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-11-04-0500","title":"Weekly Deal Desk","host":"","cat":"call","date":"2026-11-04","endDate":"","allDay":false,"start":"05:00","end":"06:15","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""},{"id":"call-2026-11-04-0830","title":"1:1 Samuel","host":"","cat":"call","date":"2026-11-04","endDate":"","allDay":false,"start":"08:30","end":"09:00","endAssumed":false,"place":"","price":"","priceShort":"","priceKind":"na","reg":"","links":[],"url":"","note":"Llamada interna, del calendario de German.","by":""}]</script>
 <script>
 (function(){
+  'use strict';
+  function $(id){ return document.getElementById(id); }
+  function pad(n){ return (n < 10 ? '0' : '') + n; }
+  function lsGet(k, d){ try { var v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } }
+  function lsSet(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  function el(tag, attrs, kids){
+    var n = document.createElement(tag), k;
+    if (attrs) for (k in attrs) {
+      var v = attrs[k];
+      if (v == null || v === false) continue;
+      if (k === 'class') n.className = v;
+      else if (k === 'text') n.textContent = v;
+      else n.setAttribute(k, v === true ? '' : v);
+    }
+    (kids || []).forEach(function(c){ if (c != null) n.appendChild(typeof c === 'string' ? document.createTextNode(c) : c); });
+    return n;
+  }
+
+  /* ---------- Playbook: filtros de la lista y checklist ---------- */
   document.querySelectorAll('.filters').forEach(function(bar){
     var sec = bar.closest('section');
     bar.addEventListener('click', function(e){
-      var b = e.target.closest('button'); if(!b) return;
+      var b = e.target.closest('button'); if (!b) return;
       bar.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
       var f = b.getAttribute('data-f');
       sec.querySelectorAll('.ev').forEach(function(li){ li.hidden = !(f === 'all' || li.getAttribute('data-v') === f); });
     });
   });
-  var KEY = 'sf-playbook-todo';
-  var state = {};
-  try { state = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch(e) { state = {}; }
+  var todo = lsGet('sf-playbook-todo', {}) || {};
   document.querySelectorAll('.todo input').forEach(function(cb){
-    if(state[cb.id]) cb.checked = true;
-    cb.addEventListener('change', function(){
-      state[cb.id] = cb.checked;
-      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {}
+    if (todo[cb.id]) cb.checked = true;
+    cb.addEventListener('change', function(){ todo[cb.id] = cb.checked; lsSet('sf-playbook-todo', todo); });
+  });
+
+  /* ---------- Pestañas ---------- */
+  var tabP = $('tab-playbook'), tabC = $('tab-calendar'), panP = $('panel-playbook'), panC = $('panel-calendar');
+  function showTab(name){
+    var cal = name === 'calendar';
+    tabP.setAttribute('aria-selected', cal ? 'false' : 'true');
+    tabC.setAttribute('aria-selected', cal ? 'true' : 'false');
+    tabP.tabIndex = cal ? -1 : 0; tabC.tabIndex = cal ? 0 : -1;
+    panP.hidden = cal; panC.hidden = !cal;
+    lsSet('sfcal-tab', name);
+    if (cal) render();
+  }
+  tabP.addEventListener('click', function(){ showTab('playbook'); });
+  tabC.addEventListener('click', function(){ showTab('calendar'); });
+  [tabP, tabC].forEach(function(t){
+    t.addEventListener('keydown', function(e){
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      var other = t === tabP ? tabC : tabP; other.focus(); other.click();
     });
   });
+
+  /* ---------- Calendario: datos ---------- */
+  var BASE = [];
+  try { BASE = JSON.parse($('base-items').textContent) || []; } catch (e) { BASE = []; }
+  var baseById = {};
+  BASE.forEach(function(b){ baseById[b.id] = b; });
+
+  var MON = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  var DOW = ['dom','lun','mar','mié','jue','vie','sáb'];
+  var CATS = {
+    must:{label:'No faltar', f:'must'}, go:{label:'Ir', f:'go'}, opt:{label:'Si cabe', f:'opt'},
+    planb:{label:'Plan B', f:'opt'}, skip:{label:'Saltar', f:'skip'}, own:{label:'Evento propio', f:'own'},
+    meet:{label:'Reunión con cliente', f:'meet'}, call:{label:'Llamada', f:'call'}, other:{label:'Otro', f:'other'}
+  };
+  var FILTERS = [['must','No faltar','must'],['go','Ir','go'],['opt','Si cabe y plan B','opt'],['own','Eventos propios','own'],
+                 ['meet','Reuniones','meet'],['other','Otros','other'],['call','Llamadas de German','call'],['skip','Saltar','skip']];
+  var EVENT_CATS = {must:1, go:1, opt:1, planb:1, skip:1, own:1};
+  var PEOPLE = [['g','German'],['s','Samuel'],['j','Joaquín']];
+  var REG = ['sin registro','registrado','aprobado'];
+
+  function dn(s){ var p = s.split('-'); return Math.round(Date.UTC(+p[0], +p[1] - 1, +p[2]) / 864e5); }
+  function ds(n){ var d = new Date(n * 864e5); return d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()); }
+  function mins(t){ var p = String(t).split(':'); return (+p[0]) * 60 + (+p[1]); }
+  function isDate(s){ return typeof s === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(dn(s)); }
+  function isTime(s){ return typeof s === 'string' && /^([01]\d|2[0-3]):[0-5]\d$/.test(s); }
+  function str(v, max){ return typeof v === 'string' ? v.slice(0, max || 400).trim() : ''; }
+  function safeUrl(u){ u = str(u, 400); return /^https?:\/\//i.test(u) ? u : ''; }
+  function fmtT(m){ var h = Math.floor(m / 60) % 24, mm = m % 60; return (h % 12 || 12) + ':' + pad(mm) + (h < 12 ? ' am' : ' pm'); }
+  function fmtH(h){ h = h % 24; return (h % 12 || 12) + (h < 12 ? ' am' : ' pm'); }
+  function fmtD(day){ var d = new Date(day * 864e5); return DOW[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + MON[d.getUTCMonth()]; }
+
+  var DAY0 = dn('2026-09-27'), DAYZ = dn('2026-11-07'), DST_END = dn('2026-11-01');
+
+  function nowIn(tz){
+    try {
+      var parts = new Intl.DateTimeFormat('en-CA', {timeZone: tz, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hourCycle:'h23'}).formatToParts(new Date());
+      var o = {}; parts.forEach(function(p){ o[p.type] = p.value; });
+      return {day: dn(o.year + '-' + o.month + '-' + o.day), min: ((+o.hour) % 24) * 60 + (+o.minute)};
+    } catch (e) {
+      var d = new Date();
+      return {day: dn(d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate())), min: d.getHours() * 60 + d.getMinutes()};
+    }
+  }
+  function weekOf(day){ var w = day - new Date(day * 864e5).getUTCDay(); return Math.min(Math.max(w, DAY0), DAYZ - 6); }
+
+  var narrow = !!(window.matchMedia && window.matchMedia('(max-width: 720px)').matches);
+  var st = {
+    week: weekOf(nowIn('America/Los_Angeles').day),
+    view: lsGet('sfcal-view', narrow ? 'list' : 'week') === 'list' ? 'list' : 'week',
+    tz: lsGet('sfcal-tz', 'sf') === 'co' ? 'co' : 'sf',
+    filters: {must:true, go:true, opt:true, own:true, meet:true, other:true, call:true, skip:false},
+    items: {}, status: {}, conn: 'pending', canWrite: null
+  };
+  (function(){ var f = lsGet('sfcal-filters', null); if (f && typeof f === 'object') for (var k in st.filters) if (typeof f[k] === 'boolean') st.filters[k] = f[k]; })();
+
+  function fromDoc(id, o, b){
+    if (!o || typeof o !== 'object') return null;
+    var date = isDate(o.date) ? o.date : (b ? b.date : null);
+    if (!date) return null;
+    var cat = CATS[o.cat] ? o.cat : (b ? b.cat : 'other');
+    var kind = ['free','paid','unknown','na'].indexOf(o.priceKind) >= 0 ? o.priceKind : (b ? b.priceKind : 'unknown');
+    var price = str(o.price, 160);
+    var short = kind === 'free' ? 'Gratis' : kind === 'paid' ? (price.length > 22 ? price.slice(0, 21) + '…' : price) : kind === 'unknown' ? 'Por confirmar' : '';
+    return {
+      id: id, title: str(o.title, 140) || (b ? b.title : 'Sin título'), host: b ? b.host : '', cat: cat,
+      date: date, endDate: isDate(o.endDate) && dn(o.endDate) >= dn(date) ? o.endDate : '',
+      allDay: !!o.allDay, start: isTime(o.start) ? o.start : '', end: isTime(o.end) ? o.end : '',
+      place: str(o.place, 160), priceKind: kind, price: price || (kind === 'free' ? 'Gratis' : ''), priceShort: short,
+      url: safeUrl(o.url), links: b ? b.links : null, reg: b ? b.reg : '', note: str(o.note, 600),
+      by: str(o.by, 40), custom: !b, edited: !!b, endAssumed: false
+    };
+  }
+  function merged(){
+    var out = [];
+    BASE.forEach(function(b){
+      var o = st.items[b.id];
+      if (!o) { out.push(b); return; }
+      if (o.deleted) return;
+      var it = fromDoc(b.id, o, b); out.push(it || b);
+    });
+    Object.keys(st.items).forEach(function(id){
+      if (baseById[id]) return;
+      var o = st.items[id]; if (!o || o.deleted) return;
+      var it = fromDoc(id, o, null); if (it) out.push(it);
+    });
+    return out;
+  }
+  function findItem(id){ var all = merged(); for (var i = 0; i < all.length; i++) if (all[i].id === id) return all[i]; return null; }
+  function hiddenBase(){ return Object.keys(st.items).filter(function(id){ return baseById[id] && st.items[id] && st.items[id].deleted; }); }
+
+  function priceTag(it){
+    if (it.priceKind === 'na') return null;
+    if (it.priceKind === 'free') return {text: it.priceShort || 'Gratis', cls: 'free'};
+    if (it.priceKind === 'paid') return {text: it.priceShort || it.price || 'De pago', cls: 'paid'};
+    return {text: it.priceShort || 'Por confirmar', cls: 'unknown'};
+  }
+  function place(it, tz){
+    var d = dn(it.date);
+    if (it.allDay || !it.start) {
+      var e = it.endDate ? dn(it.endDate) : d;
+      return {allDay: true, s: d, e: Math.max(e, d)};
+    }
+    var off = tz === 'co' ? (d < DST_END ? 120 : 180) : 0;
+    var a = mins(it.start), b = it.end ? mins(it.end) : a + 60;
+    if (b <= a) b = a + 60;
+    a += off; b += off;
+    var shift = Math.floor(a / 1440); a -= shift * 1440; b -= shift * 1440;
+    if (b > 1440) b = 1440;
+    return {allDay: false, day: d + shift, a: a, b: b};
+  }
+  function weekItems(){
+    var ws = st.week, we = ws + 6, all = [], timed = [];
+    merged().forEach(function(it){
+      if (!st.filters[CATS[it.cat].f]) return;
+      var p = place(it, st.tz);
+      if (p.allDay) { if (p.e < ws || p.s > we) return; all.push({it: it, s: Math.max(p.s, ws), e: Math.min(p.e, we)}); }
+      else { if (p.day < ws || p.day > we) return; timed.push({it: it, day: p.day, a: p.a, b: p.b}); }
+    });
+    all.sort(function(x, y){ return x.s - y.s || (y.e - y.s) - (x.e - x.s); });
+    return {all: all, timed: timed};
+  }
+  function layout(evs){
+    evs.sort(function(x, y){ return x.a - y.a || y.b - x.b; });
+    var groups = [], cur = [], end = -1;
+    evs.forEach(function(e){
+      if (cur.length && e.a >= end) { groups.push(cur); cur = []; end = -1; }
+      cur.push(e); end = Math.max(end, e.b);
+    });
+    if (cur.length) groups.push(cur);
+    groups.forEach(function(g){
+      var cols = [];
+      g.forEach(function(e){ var c = 0; while (cols[c] !== undefined && cols[c] > e.a) c++; cols[c] = e.b; e.col = c; });
+      g.forEach(function(e){ e.cols = cols.length; });
+    });
+  }
+
+  /* ---------- Calendario: render ---------- */
+  function regCount(id){ var s = st.status[id]; if (!s) return 0; return PEOPLE.filter(function(p){ return (s[p[0]] | 0) > 0; }).length; }
+  function aria(it, when){ var pt = priceTag(it); return it.title + ', ' + when + (pt ? ', ' + (it.price || pt.text) : ''); }
+
+  function block(it, e){
+    var pt = priceTag(it), timed = !!e;
+    var b = el('button', {type: 'button', class: 'evb cat-' + it.cat, title: it.title});
+    if (timed) {
+      var h = Math.max(20, (e.b - e.a) / 60 * 46 - 2);
+      b.setAttribute('aria-label', aria(it, fmtT(e.a) + ' a ' + fmtT(e.b)));
+      if (h < 38) {
+        b.classList.add('tight'); if (h < 26) b.classList.add('tiny');
+        b.appendChild(el('span', {class: 't', text: (pt ? pt.text + ' · ' : '') + it.title}));
+      } else {
+        b.appendChild(el('span', {class: 't', text: it.title}));
+        b.appendChild(el('span', {class: 'm', text: (pt ? pt.text + ' · ' : '') + fmtT(e.a)}));
+      }
+      b.style.height = h + 'px';
+    } else {
+      b.setAttribute('aria-label', aria(it, 'todo el día'));
+      b.appendChild(el('span', {class: 't', text: (pt ? pt.text + ' · ' : '') + it.title}));
+    }
+    b.addEventListener('click', function(){ openDetail(it.id); });
+    return b;
+  }
+
+  function renderWeek(view, w, now){
+    var lo = 8 * 60, hi = 20 * 60, HH = 46, i;
+    w.timed.forEach(function(e){ lo = Math.min(lo, Math.floor(e.a / 60) * 60); hi = Math.max(hi, Math.ceil(e.b / 60) * 60); });
+    var hours = (hi - lo) / 60;
+    var head = el('div', {class: 'cal-head'}, [el('div')]);
+    for (i = 0; i < 7; i++) {
+      var d = st.week + i, dt = new Date(d * 864e5);
+      head.appendChild(el('div', {class: d === now.day ? 'today' : null}, [
+        el('span', {class: 'dow', text: DOW[dt.getUTCDay()]}),
+        el('span', {class: 'dnum', text: String(dt.getUTCDate())}),
+        el('span', {class: 'mon', text: MON[dt.getUTCMonth()]})
+      ]));
+    }
+    var lane = el('div', {class: 'lane'});
+    w.all.forEach(function(a){
+      var b = block(a.it, null);
+      b.style.gridColumn = (a.s - st.week + 1) + ' / span ' + (a.e - a.s + 1);
+      lane.appendChild(b);
+    });
+    var allrow = el('div', {class: 'cal-all'}, [el('div', {class: 'gl', text: 'todo el día'}), lane]);
+    var body = el('div', {class: 'cal-body'}), gut = el('div', {class: 'gut'});
+    gut.style.height = (hours * HH) + 'px';
+    for (i = lo / 60 + 1; i < hi / 60; i++) {
+      var lab = el('span', {class: 'hr', text: fmtH(i)});
+      lab.style.top = ((i - lo / 60) * HH) + 'px';
+      gut.appendChild(lab);
+    }
+    body.appendChild(gut);
+    for (i = 0; i < 7; i++) {
+      var day = st.week + i;
+      var col = el('div', {class: 'col' + (day === now.day ? ' today' : '')});
+      col.style.height = (hours * HH) + 'px';
+      var evs = w.timed.filter(function(e){ return e.day === day; });
+      layout(evs);
+      evs.forEach(function(e){
+        var b = block(e.it, e);
+        b.style.top = ((e.a - lo) / 60 * HH) + 'px';
+        b.style.left = 'calc(' + (e.col / e.cols * 100) + '% + 2px)';
+        b.style.width = 'calc(' + (100 / e.cols) + '% - 4px)';
+        col.appendChild(b);
+      });
+      if (day === now.day && now.min >= lo && now.min <= hi) {
+        var line = el('div', {class: 'now'});
+        line.style.top = ((now.min - lo) / 60 * HH) + 'px';
+        col.appendChild(line);
+      }
+      body.appendChild(col);
+    }
+    var grid = el('div', {class: 'cal-grid'}, [head, allrow, body]);
+    view.appendChild(el('div', {class: 'cal-scroll'}, [grid]));
+    if (!w.all.length && !w.timed.length) view.appendChild(el('p', {class: 'cal-empty', text: 'Nada en esta semana con los filtros actuales.'}));
+  }
+
+  function renderList(view, w, now){
+    var list = el('div', {class: 'cal-list'}), any = false, i;
+    for (i = 0; i < 7; i++) {
+      var d = st.week + i, rows = [];
+      w.all.forEach(function(a){ if (a.s <= d && a.e >= d) rows.push({it: a.it, a: -1, label: 'todo el día'}); });
+      w.timed.forEach(function(e){ if (e.day === d) rows.push({it: e.it, a: e.a, label: fmtT(e.a) + ' a ' + fmtT(e.b)}); });
+      if (!rows.length) continue;
+      any = true;
+      rows.sort(function(x, y){ return x.a - y.a; });
+      var dt = new Date(d * 864e5);
+      var ul = el('ul');
+      rows.forEach(function(r){
+        var it = r.it, pt = priceTag(it), rc = regCount(it.id);
+        var right = el('span', {class: 'rt'});
+        if (pt) right.appendChild(el('span', {class: 'price ' + pt.cls, text: pt.text}));
+        if (rc) right.appendChild(el('span', {class: 'who', text: 'registro ' + rc + '/3'}));
+        right.appendChild(el('span', {class: 'who', text: CATS[it.cat].label}));
+        var title = el('span', {class: 'tt'}, [it.title]);
+        if (it.place) title.appendChild(el('small', {text: it.place}));
+        var btn = el('button', {type: 'button', class: 'li-item', 'aria-label': aria(it, r.label)}, [
+          el('i', {class: 'cat-' + it.cat}), el('span', {class: 'tm', text: r.label}), title, right
+        ]);
+        btn.addEventListener('click', function(){ openDetail(it.id); });
+        ul.appendChild(el('li', null, [btn]));
+      });
+      list.appendChild(el('div', {class: 'cal-day' + (d === now.day ? ' today' : '')}, [
+        el('div', {class: 'dl'}, [el('b', {text: DOW[dt.getUTCDay()] + ' ' + dt.getUTCDate()}), MON[dt.getUTCMonth()]]), ul
+      ]));
+    }
+    view.appendChild(list);
+    if (!any) view.appendChild(el('p', {class: 'cal-empty', text: 'Nada en esta semana con los filtros actuales.'}));
+  }
+
+  function renderFilters(){
+    var box = $('cal-filters');
+    if (!box.firstChild) {
+      FILTERS.forEach(function(f){
+        var b = el('button', {type: 'button', class: 'fchip', id: 'flt-' + f[0], 'data-f': f[0]}, [el('i', {class: 'cat-' + f[2]}), f[1]]);
+        b.addEventListener('click', function(){ st.filters[f[0]] = !st.filters[f[0]]; lsSet('sfcal-filters', st.filters); render(); });
+        box.appendChild(b);
+      });
+    }
+    FILTERS.forEach(function(f){ $('flt-' + f[0]).setAttribute('aria-pressed', st.filters[f[0]] ? 'true' : 'false'); });
+  }
+  function canAdd(){ return !!db && st.canWrite !== false && st.conn !== 'ro' && st.conn !== 'none'; }
+  function renderConn(){
+    var p = $('cal-conn'); p.textContent = ''; p.className = 'conn';
+    var msg;
+    if (st.conn === 'ok' && st.canWrite !== false) { p.classList.add('ok'); msg = 'Calendario compartido activo. Lo que agreguen lo ven los tres.'; }
+    else if (st.conn === 'ro' || (st.conn === 'ok' && st.canWrite === false)) { p.classList.add('warn'); msg = 'Tu acceso es de solo lectura. Pide a German acceso de Contributor para agregar o editar.'; }
+    else if (st.conn === 'pending') msg = 'Conectando con el calendario compartido.';
+    else { p.classList.add('warn'); msg = 'Esta vista no tiene conexión con el calendario compartido. Se muestra el plan base y no se puede agregar. Ábrela desde claude.ai con tu sesión.'; }
+    p.appendChild(document.createTextNode(msg));
+    var hid = hiddenBase();
+    if (hid.length && canAdd()) {
+      var b = el('button', {type: 'button', class: 'linkbtn', text: 'Restaurar ' + hid.length + (hid.length === 1 ? ' evento oculto' : ' eventos ocultos')});
+      b.addEventListener('click', function(){ restoreAll(hid); });
+      p.appendChild(b);
+    }
+    $('cal-add').disabled = !canAdd();
+  }
+  function render(){
+    if (panC.hidden) return;
+    var we = st.week + 6, a = new Date(st.week * 864e5), b = new Date(we * 864e5);
+    $('cal-title').textContent = a.getUTCDate() + ' ' + MON[a.getUTCMonth()] + ' al ' + b.getUTCDate() + ' ' + MON[b.getUTCMonth()] + ' 2026';
+    $('cal-prev').disabled = st.week <= DAY0;
+    $('cal-next').disabled = st.week >= DAYZ - 6;
+    $('view-week').setAttribute('aria-pressed', st.view === 'week' ? 'true' : 'false');
+    $('view-list').setAttribute('aria-pressed', st.view === 'list' ? 'true' : 'false');
+    $('tz-sf').setAttribute('aria-pressed', st.tz === 'sf' ? 'true' : 'false');
+    $('tz-co').setAttribute('aria-pressed', st.tz === 'co' ? 'true' : 'false');
+    renderFilters(); renderConn();
+    var view = $('cal-view'); view.textContent = '';
+    var now = nowIn(st.tz === 'co' ? 'America/Bogota' : 'America/Los_Angeles'), w = weekItems();
+    if (st.view === 'week') renderWeek(view, w, now); else renderList(view, w, now);
+  }
+
+  $('cal-prev').addEventListener('click', function(){ st.week = Math.max(DAY0, st.week - 7); render(); });
+  $('cal-next').addEventListener('click', function(){ st.week = Math.min(DAYZ - 6, st.week + 7); render(); });
+  $('cal-today').addEventListener('click', function(){ st.week = weekOf(nowIn('America/Los_Angeles').day); render(); });
+  $('view-week').addEventListener('click', function(){ st.view = 'week'; lsSet('sfcal-view', 'week'); render(); });
+  $('view-list').addEventListener('click', function(){ st.view = 'list'; lsSet('sfcal-view', 'list'); render(); });
+  $('tz-sf').addEventListener('click', function(){ st.tz = 'sf'; lsSet('sfcal-tz', 'sf'); render(); });
+  $('tz-co').addEventListener('click', function(){ st.tz = 'co'; lsSet('sfcal-tz', 'co'); render(); });
+
+  /* ---------- Avisos y diálogos ---------- */
+  var toastT = null;
+  function toast(msg){
+    var t = $('cal-toast'); if (!t) { t = el('div', {class: 'toast', id: 'cal-toast', role: 'status'}); document.body.appendChild(t); }
+    t.textContent = msg; t.hidden = false;
+    clearTimeout(toastT); toastT = setTimeout(function(){ t.hidden = true; }, 2600);
+  }
+  function openDlg(d){ try { if (!d.open) d.showModal(); } catch (e) { d.setAttribute('open', ''); } }
+  function closeDlg(d){ try { d.close(); } catch (e) { d.removeAttribute('open'); } }
+  function errMsg(err){
+    var c = err && err.code;
+    if (c === 'invalid_argument' || c === 'not_granted' || c === 'revoked') { st.conn = 'ro'; renderConn(); return 'No se pudo guardar. Tu acceso a esta página parece ser de solo lectura: pide a German acceso de Contributor.'; }
+    if (c === 'quota_exceeded') return 'El calendario llegó al límite de elementos. Hay que borrar algunos antes de agregar más.';
+    return 'No se pudo guardar. Intenta de nuevo en un momento.';
+  }
+
+  var dDetail = $('dlg-detail'), dForm = $('dlg-form'), curId = null, editId = null;
+
+  function whenLines(it){
+    var sf = place(it, 'sf'), co = place(it, 'co');
+    if (sf.allDay) return [sf.s === sf.e ? fmtD(sf.s) + ', todo el día' : fmtD(sf.s) + ' al ' + fmtD(sf.e), ''];
+    var sub = fmtT(co.a) + ' a ' + fmtT(co.b) + ' en Colombia' + (co.day !== sf.day ? ', ' + fmtD(co.day) : '');
+    if (it.endAssumed) sub += '. El evento no publica hora de cierre: duración estimada';
+    return [fmtD(sf.day) + ', ' + fmtT(sf.a) + ' a ' + fmtT(sf.b) + ', hora de San Francisco', sub];
+  }
+  function row(dl, label, main, sub){
+    if (!main) return;
+    var dd = el('dd', null, [main]);
+    if (sub) dd.appendChild(el('small', {text: sub}));
+    dl.appendChild(el('dt', {text: label})); dl.appendChild(dd);
+  }
+  function renderReg(it){
+    var box = $('dd-reg'); box.textContent = '';
+    if (!EVENT_CATS[it.cat] && it.cat !== 'other') return;
+    var s = st.status[it.id] || {};
+    var wrap = el('div', {class: 'regs', role: 'group', 'aria-label': 'Registro de cada uno'});
+    PEOPLE.forEach(function(p){
+      var v = (s[p[0]] | 0) % 3;
+      var b = el('button', {type: 'button', 'data-s': String(v), id: 'reg-' + p[0], text: p[1] + ': ' + REG[v]});
+      b.disabled = !canAdd();
+      b.addEventListener('click', function(){ cycleReg(it.id, p[0]); });
+      wrap.appendChild(b);
+    });
+    box.appendChild(el('p', {class: 'eyebrow', text: 'Registro de cada uno, toca para cambiar'}));
+    box.appendChild(wrap);
+  }
+  function openDetail(id){
+    var it = findItem(id); if (!it) return;
+    curId = id;
+    var chips = $('dd-chips'); chips.textContent = '';
+    chips.appendChild(el('span', {class: 'chip ' + (it.cat === 'must' ? 'must' : it.cat === 'go' || it.cat === 'own' || it.cat === 'meet' ? 'go' : it.cat === 'skip' ? 'skip' : 'opt'), text: CATS[it.cat].label}));
+    var pt = priceTag(it);
+    if (pt) chips.appendChild(el('span', {class: 'price ' + pt.cls, text: pt.text}));
+    if (it.edited) chips.appendChild(el('span', {class: 'who', text: 'editado por el equipo'}));
+    $('dd-title').textContent = it.title;
+    var dl = $('dd-rows'); dl.textContent = '';
+    var w = whenLines(it);
+    row(dl, 'Cuándo', w[0], w[1]);
+    if (it.host) row(dl, 'Organiza', it.host);
+    row(dl, 'Dónde', it.place);
+    if (it.priceKind !== 'na') row(dl, 'Precio', it.price || (pt ? pt.text : ''), it.priceKind === 'unknown' ? 'Revisar en el checkout antes de comprar' : '');
+    row(dl, 'Registro', it.reg);
+    var links = [];
+    (it.links || []).forEach(function(l){ var u = safeUrl(l[1]); if (u) links.push([l[0], u]); });
+    if (it.url && !links.some(function(l){ return l[1] === it.url; })) links.push(['abrir página', it.url]);
+    if (links.length) {
+      var dd = el('dd');
+      links.forEach(function(l, i){ if (i) dd.appendChild(document.createTextNode(' · ')); dd.appendChild(el('a', {href: l[1], target: '_blank', rel: 'noopener noreferrer', text: l[0]})); });
+      dl.appendChild(el('dt', {text: 'Links'})); dl.appendChild(dd);
+    }
+    row(dl, 'Nota', it.note);
+    if (it.by) row(dl, 'Agregó', it.by);
+    renderReg(it);
+    var ok = canAdd();
+    $('dd-edit').disabled = !ok;
+    $('dd-delete').disabled = !ok;
+    $('dd-delete').textContent = it.custom ? 'Eliminar' : 'Ocultar';
+    $('dd-restore').hidden = !(it.edited && ok);
+    openDlg(dDetail);
+  }
+  $('dd-close').addEventListener('click', function(){ closeDlg(dDetail); });
+  $('dd-edit').addEventListener('click', function(){ var it = findItem(curId); closeDlg(dDetail); if (it) openForm(it); });
+  $('dd-delete').addEventListener('click', function(){
+    var it = findItem(curId); if (!it || !db) return;
+    var ref = db.collection('items').doc(it.id), p;
+    if (it.custom) p = ref.delete(); else p = ref.set({v: 1, base: true, deleted: true, title: it.title, at: new Date().toISOString()});
+    $('dd-delete').disabled = true;
+    p.then(function(){
+      if (it.custom) delete st.items[it.id]; else st.items[it.id] = {deleted: true};
+      closeDlg(dDetail); toast(it.custom ? 'Eliminado' : 'Oculto. Se puede restaurar desde la barra del calendario'); render();
+    }, function(err){ $('dd-delete').disabled = false; toast(errMsg(err)); });
+  });
+  $('dd-restore').addEventListener('click', function(){
+    if (!db || !curId) return;
+    db.collection('items').doc(curId).delete().then(function(){ delete st.items[curId]; closeDlg(dDetail); toast('Volvió al original'); render(); }, function(err){ toast(errMsg(err)); });
+  });
+  function restoreAll(ids){
+    if (!db) return;
+    var i = 0;
+    (function next(){
+      if (i >= ids.length) { toast('Eventos restaurados'); render(); return; }
+      var id = ids[i++];
+      db.collection('items').doc(id).delete().then(function(){ delete st.items[id]; next(); }, function(err){ toast(errMsg(err)); });
+    })();
+  }
+
+  /* registro por persona: una escritura a la vez por documento */
+  var regBusy = {}, regDirty = {};
+  function flushReg(id){
+    if (!db) return;
+    if (regBusy[id]) { regDirty[id] = true; return; }
+    regBusy[id] = true; regDirty[id] = false;
+    var s = st.status[id] || {};
+    db.collection('status').doc(id).set({g: s.g | 0, s: s.s | 0, j: s.j | 0}).then(function(){
+      regBusy[id] = false; if (regDirty[id]) flushReg(id);
+    }, function(err){ regBusy[id] = false; regDirty[id] = false; toast(errMsg(err)); });
+  }
+  function cycleReg(id, key){
+    var s = st.status[id] ? {g: st.status[id].g | 0, s: st.status[id].s | 0, j: st.status[id].j | 0} : {g: 0, s: 0, j: 0};
+    s[key] = (s[key] + 1) % 3; st.status[id] = s;
+    var it = findItem(id); if (it) renderReg(it);
+    flushReg(id);
+    if (st.view === 'list') render();
+  }
+
+  /* ---------- Formulario ---------- */
+  function priceKindSel(){ var r = dForm.querySelector('input[name="f-price"]:checked'); return r ? r.value : ''; }
+  function syncForm(){
+    var allDay = $('f-allday').checked;
+    $('f-start-wrap').hidden = allDay; $('f-end-wrap').hidden = allDay;
+    $('f-amount').hidden = priceKindSel() !== 'paid';
+  }
+  function formErr(msg){ var e = $('f-err'); e.textContent = msg || ''; e.hidden = !msg; }
+  function openForm(it){
+    editId = it ? it.id : null;
+    $('df-title').textContent = it ? 'Editar' : 'Agregar al calendario';
+    $('f-title').value = it ? it.title : '';
+    $('f-cat').value = it ? it.cat : 'meet';
+    $('f-by').value = lsGet('sfcal-by', 'German');
+    if (['German','Samuel','Joaquín'].indexOf($('f-by').value) < 0) $('f-by').value = 'German';
+    $('f-date').value = it ? it.date : ds(Math.min(Math.max(nowIn('America/Los_Angeles').day, st.week), st.week + 6));
+    $('f-enddate').value = it && it.endDate ? it.endDate : '';
+    $('f-allday').checked = it ? !!(it.allDay || !it.start) : false;
+    $('f-start').value = it && it.start ? it.start : '';
+    $('f-end').value = it && it.end ? it.end : '';
+    $('f-place').value = it ? it.place : '';
+    var k = it ? it.priceKind : 'na';
+    dForm.querySelectorAll('input[name="f-price"]').forEach(function(r){ r.checked = r.value === k; });
+    $('f-amount').value = it && it.priceKind === 'paid' ? it.price : '';
+    $('f-url').value = it ? (it.url || (it.links && it.links[0] ? it.links[0][1] : '')) : '';
+    $('f-note').value = it ? it.note : '';
+    formErr(''); syncForm();
+    $('f-save').disabled = false;
+    openDlg(dForm);
+    $('f-title').focus();
+  }
+  $('cal-add').addEventListener('click', function(){ if (canAdd()) openForm(null); });
+  $('f-cancel').addEventListener('click', function(){ closeDlg(dForm); });
+  $('f-allday').addEventListener('change', syncForm);
+  dForm.querySelectorAll('input[name="f-price"]').forEach(function(r){ r.addEventListener('change', syncForm); });
+  $('f-cat').addEventListener('change', function(){
+    var c = $('f-cat').value, k = priceKindSel();
+    if (EVENT_CATS[c] && (k === 'na' || !k)) { $('f-price-na').checked = false; }
+    if (!EVENT_CATS[c] && !k) $('f-price-na').checked = true;
+    syncForm();
+  });
+
+  $('cal-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!db) { formErr('Esta vista no tiene conexión con el calendario compartido.'); return; }
+    var title = str($('f-title').value, 140), cat = $('f-cat').value, date = $('f-date').value, endDate = $('f-enddate').value;
+    var allDay = $('f-allday').checked, start = $('f-start').value, end = $('f-end').value, k = priceKindSel(), amount = str($('f-amount').value, 120);
+    var url = str($('f-url').value, 400);
+    if (!title) return formErr('Falta el título.');
+    if (!CATS[cat]) return formErr('Elige un tipo.');
+    if (!isDate(date) || dn(date) < DAY0 || dn(date) > DAYZ) return formErr('Elige una fecha entre el 27 de septiembre y el 7 de noviembre.');
+    if (endDate && (!isDate(endDate) || dn(endDate) < dn(date) || dn(endDate) > DAYZ)) return formErr('El último día debe ser igual o posterior a la fecha de inicio.');
+    if (endDate && endDate !== date) allDay = true;
+    if (!allDay) {
+      if (!isTime(start)) return formErr('Falta la hora de inicio, o marca Todo el día.');
+      if (end && (!isTime(end) || mins(end) <= mins(start))) return formErr('La hora de cierre debe ser posterior a la de inicio.');
+    }
+    if (EVENT_CATS[cat] && (!k || k === 'na')) return formErr('En un evento el precio es obligatorio: marca Gratis, De pago o Por confirmar.');
+    if (!k) k = 'na';
+    if (k === 'paid' && !amount) return formErr('Escribe el valor de la entrada, por ejemplo $495 por persona.');
+    if (url && !safeUrl(url)) return formErr('El link debe empezar por https://');
+    var by = $('f-by').value; lsSet('sfcal-by', by);
+    var data = {v: 1, title: title, cat: cat, date: date, endDate: endDate && endDate !== date ? endDate : '', allDay: allDay,
+      start: allDay ? '' : start, end: allDay ? '' : (end || ''), place: str($('f-place').value, 160),
+      priceKind: k, price: k === 'paid' ? amount : k === 'free' ? 'Gratis' : '', url: safeUrl(url), note: str($('f-note').value, 600),
+      by: by, base: !!(editId && baseById[editId]), at: new Date().toISOString()};
+    var ref = editId ? db.collection('items').doc(editId) : db.collection('items').doc();
+    $('f-save').disabled = true; formErr('');
+    ref.set(data).then(function(){
+      st.items[ref.id] = data;
+      closeDlg(dForm); toast('Guardado');
+      st.week = weekOf(dn(date)); render();
+    }, function(err){ $('f-save').disabled = false; formErr(errMsg(err)); });
+  });
+
+  /* ---------- Base compartida ---------- */
+  var db = null;
+  function snapTo(target){
+    return function(snap){
+      var o = {};
+      snap.docs.forEach(function(d){ var x = d.data(); if (x) { try { o[d.id] = JSON.parse(JSON.stringify(x)); } catch (e) {} } });
+      st[target] = o; render();
+      if (target === 'status' && dDetail.open && curId) { var it = findItem(curId); if (it) renderReg(it); }
+    };
+  }
+  function lost(){ st.conn = 'none'; db = null; render(); }
+  function connect(){
+    if (!window.claude || typeof window.claude.use !== 'function') { st.conn = 'none'; render(); return; }
+    window.claude.use('db').then(function(d){
+      if (!d) { st.conn = 'none'; render(); return; }
+      db = d; st.conn = 'ok'; render();
+      try {
+        d.collection('items').onSnapshot(snapTo('items'), lost);
+        d.collection('status').onSnapshot(snapTo('status'), function(){});
+      } catch (e) { lost(); }
+    }, function(){ st.conn = 'none'; render(); });
+    window.claude.use('user').then(function(u){
+      if (!u || typeof u.can !== 'function') return;
+      u.can('data.write').then(function(v){ if (v === false || v === true) { st.canWrite = v; render(); } });
+    }, function(){});
+  }
+
+  /* ---------- Arranque ---------- */
+  var startTab = (location.hash === '#calendar' || location.hash === '#interactive-calendar') ? 'calendar' : lsGet('sfcal-tab', 'playbook');
+  showTab(startTab === 'calendar' ? 'calendar' : 'playbook');
+  connect();
+  setInterval(function(){ if (!panC.hidden && st.view === 'week' && !dDetail.open && !dForm.open) render(); }, 5 * 60 * 1000);
 })();
+
 </script>

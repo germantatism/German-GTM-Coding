@@ -1,0 +1,1407 @@
+{
+ "updated": "2026-09-28",
+ "events": [
+  {
+   "id": "ftw",
+   "group": "bay",
+   "verdict": "must",
+   "tag": "día 1",
+   "title": "FTW San Francisco",
+   "host": "Fintech Is Femme y Fiat Growth",
+   "dateLabel": "29 sep al 1 oct",
+   "subLabel": "mar a jue",
+   "desc": "Más de 600 personas. Según el organizador: 60% founders y tomadores de decisión, 20% inversionistas, 10% bancos. Los speakers son sobre todo de fintechs, bancos y redes (Chime, Plaid, TabaPay, Stripe, Mastercard, Fiserv). Del lado merchant o de cuentas objetivo hablan Walmart (Head of Consumer Fintech), Higgsfield (VP of Platform Partnerships) y OpenAI. Sesiones de pagos: día 1 a las 10:35 am y 3:45 pm, día 2 a las 2:00 pm, día 3 a las 11:00 am y 1:15 pm.",
+   "price": "$495 por persona el pase de un día. Tres días $995, bundle comunidad $795, VIP $1,295",
+   "priceShort": "$495",
+   "priceKind": "paid",
+   "reg": "abierto, sin aprobación",
+   "place": "The Green Room, 401 Van Ness Ave",
+   "links": [
+    [
+     "registro",
+     "https://luma.com/FTW_SF26"
+    ],
+    [
+     "agenda",
+     "https://fintech-week.co/san-francisco/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "ftw-d1",
+     "date": "2026-09-29",
+     "start": "10:00",
+     "end": "17:00",
+     "title": "FTW San Francisco, día 1"
+    },
+    {
+     "id": "ftw-d2",
+     "date": "2026-09-30",
+     "start": "11:00",
+     "end": "19:00",
+     "title": "FTW día 2, Fintech Is Femme Leadership",
+     "cat": "opt"
+    },
+    {
+     "id": "ftw-d3",
+     "date": "2026-10-01",
+     "start": "10:00",
+     "end": "17:00",
+     "title": "FTW día 3, Fintech Security",
+     "cat": "opt"
+    }
+   ]
+  },
+  {
+   "id": "machine-earning",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "Machine Earning AI Summit",
+   "host": "Newcomer",
+   "dateLabel": "29 sep",
+   "subLabel": "mar",
+   "desc": "Buen salón (ejecutivos de Faire, Chime, Brex, Airwallex), pero es por aplicación y choca con FTW.",
+   "price": "$999 por persona para perfiles de BD y servicios. General $699, founders $99",
+   "priceShort": "$999",
+   "priceKind": "paid",
+   "reg": "por aplicación",
+   "place": "San Francisco, lugar sin publicar",
+   "links": [
+    [
+     "sitio",
+     "https://machine-earning.ai/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "machine-earning",
+     "date": "2026-09-29",
+     "allDay": true
+    }
+   ]
+  },
+  {
+   "id": "devday-aiconf",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "OpenAI DevDay y The AI Conference",
+   "host": "",
+   "dateLabel": "29 sep al 1 oct",
+   "subLabel": "",
+   "desc": "DevDay (29 sep, Fort Mason) ya cerró aplicaciones presenciales. The AI Conference (Pier 48) es de ingenieros. Público de desarrolladores, no de payments.",
+   "price": "DevDay $650, ya cerrado. The AI Conference $1,075 según el agregador GarysGuide",
+   "priceShort": "$650 y $1,075",
+   "priceKind": "paid",
+   "reg": "",
+   "place": "Fort Mason y Pier 48",
+   "links": [
+    [
+     "DevDay",
+     "https://devday.openai.com/"
+    ],
+    [
+     "AI Conference",
+     "https://aiconference.com/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "devday",
+     "date": "2026-09-29",
+     "allDay": true,
+     "title": "OpenAI DevDay",
+     "price": "$650, aplicaciones cerradas",
+     "priceShort": "$650",
+     "place": "Fort Mason",
+     "url": "https://devday.openai.com/"
+    },
+    {
+     "id": "aiconf",
+     "date": "2026-09-29",
+     "endDate": "2026-10-01",
+     "allDay": true,
+     "title": "The AI Conference",
+     "price": "$1,075 según el agregador GarysGuide",
+     "priceShort": "$1,075",
+     "place": "Pier 48",
+     "url": "https://aiconference.com/"
+    }
+   ]
+  },
+  {
+   "id": "haas",
+   "group": "bay",
+   "verdict": "opt",
+   "title": "The Future of Finance Summit",
+   "host": "Haas Fintech Club, UC Berkeley",
+   "dateLabel": "2 oct",
+   "subLabel": "vie 8:30 am",
+   "desc": "Keynote del SVP Global Head of AI de PayPal y panel con Visa (stablecoins), Ripple y Airwallex. Público mayormente estudiantil; vale por el acceso barato a los speakers.",
+   "price": "$45 por persona para profesionales de industria; $30 mientras dure la preventa. Estudiantes $10",
+   "priceShort": "$45",
+   "priceKind": "paid",
+   "reg": "aprobación, 105 cupos",
+   "place": "Jarvis Auditorium, Berkeley",
+   "links": [
+    [
+     "registro",
+     "https://luma.com/0psua4hi"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "haas",
+     "date": "2026-10-02",
+     "start": "08:30",
+     "end": "17:00"
+    }
+   ]
+  },
+  {
+   "id": "fintech-house",
+   "group": "bay",
+   "verdict": "go",
+   "title": "Fintech House SF",
+   "host": "The Financial Club, Vouch, BPM, SVB",
+   "dateLabel": "5 oct",
+   "subLabel": "lun 6:00 pm",
+   "desc": "La noche principal de fintech en Tech Week: founders, inversionistas y operadores senior. Los organizadores citan una lista de espera de 2,000 personas el año pasado.",
+   "price": "Gratis según el listado de GarysGuide",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "por aplicación, cupo de 250",
+   "place": "San Francisco, lugar por anunciar",
+   "links": [
+    [
+     "registro",
+     "https://www.garysguide.com/events/fefm619"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "fintech-house",
+     "date": "2026-10-05",
+     "start": "18:00",
+     "end": "20:00"
+    }
+   ]
+  },
+  {
+   "id": "latam-dinner",
+   "group": "bay",
+   "verdict": "planb",
+   "title": "Dinner: LATAM and SF VCs, Entrepreneurs and Friends",
+   "host": "José Alvarez y Carlos Zárate",
+   "dateLabel": "5 oct",
+   "subLabel": "lun 5:30 pm",
+   "desc": "La cena de tema latino de Tech Week. Misma noche que Fintech House: es el plan B si Fintech House no aprueba a los tres.",
+   "price": "Gratis",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "solo por invitación, con aprobación",
+   "place": "Palo Alto",
+   "links": [
+    [
+     "registro",
+     "https://luma.com/7ovjgctq"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "latam-dinner",
+     "date": "2026-10-05",
+     "start": "17:30",
+     "end": "20:00"
+    }
+   ]
+  },
+  {
+   "id": "bayteq",
+   "group": "bay",
+   "verdict": "opt",
+   "tag": "el del 7",
+   "title": "Cena y mixer de Bayteq",
+   "host": "",
+   "dateLabel": "5 y 7 oct",
+   "subLabel": "Palo Alto y SF",
+   "desc": "La cena del lunes 5 es para líderes senior de compañías Serie B en adelante; el tema es talento de ingeniería y choca con Fintech House. Luma la ubica en Palo Alto, aunque la descripción habla de un restaurante en SF. El mixer del miércoles 7 a las 6:00 pm es mejor horario: sus ediciones pasadas citan invitados de Visa, Walmart Global Tech, Finix y Venmo.",
+   "price": "Gratis los dos",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "aprobación, cada invitado se revisa",
+   "place": "Dirección visible al ser aprobado",
+   "links": [
+    [
+     "cena del 5",
+     "https://luma.com/77y6mljh"
+    ],
+    [
+     "mixer del 7",
+     "https://luma.com/y9i2hhem"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "bayteq-dinner",
+     "date": "2026-10-05",
+     "start": "17:30",
+     "end": "20:00",
+     "title": "Cena privada de Bayteq",
+     "cat": "skip",
+     "place": "Palo Alto según Luma; dirección al ser aprobado",
+     "url": "https://luma.com/77y6mljh"
+    },
+    {
+     "id": "bayteq-mixer",
+     "date": "2026-10-07",
+     "start": "18:00",
+     "end": "20:30",
+     "title": "Mixer privado de Bayteq",
+     "place": "San Francisco, dirección al ser aprobado",
+     "url": "https://luma.com/y9i2hhem"
+    }
+   ]
+  },
+  {
+   "id": "stripe-aipay",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "Cena de Stripe y MidLyr, AI Pay Summit",
+   "host": "",
+   "dateLabel": "5 oct",
+   "subLabel": "lun",
+   "desc": "La cena de Stripe es cerrada y por invitación. AI Pay Summit (7:00 pm) son demos de pagos entre agentes. Las dos chocan con Fintech House.",
+   "price": "Gratis los dos, según el listado de GarysGuide",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "la cena es solo por invitación",
+   "place": "San Francisco, lugar por anunciar",
+   "links": [
+    [
+     "cena",
+     "https://www.garysguide.com/events/u9hxnok"
+    ],
+    [
+     "AI Pay Summit",
+     "https://www.garysguide.com/events/9kt55lk"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "stripe-dinner",
+     "date": "2026-10-05",
+     "start": "18:00",
+     "end": "21:00",
+     "endAssumed": true,
+     "title": "Compliance at Fintech Speed, cena de Stripe y MidLyr",
+     "url": "https://www.garysguide.com/events/u9hxnok"
+    },
+    {
+     "id": "ai-pay-summit",
+     "date": "2026-10-05",
+     "start": "19:00",
+     "end": "21:00",
+     "endAssumed": true,
+     "title": "AI Pay Summit",
+     "url": "https://www.garysguide.com/events/9kt55lk"
+    }
+   ]
+  },
+  {
+   "id": "fintech-coffee",
+   "group": "bay",
+   "verdict": "go",
+   "title": "Fintech Coffee",
+   "host": "This Week in Fintech y SVB",
+   "dateLabel": "6 oct",
+   "subLabel": "mar 8:30 am",
+   "desc": "Café mensual de la comunidad fintech de SF, formato sin pitch. Es la comunidad recurrente a la que conviene pertenecer desde la primera semana.",
+   "price": "Gratis según el listado de GarysGuide",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "por aplicación",
+   "place": "SVB Experience Center, 532 Market St",
+   "links": [
+    [
+     "registro",
+     "https://www.garysguide.com/events/1efjmxy"
+    ],
+    [
+     "serie mensual",
+     "https://luma.com/sfcoffee2"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "fintech-coffee",
+     "date": "2026-10-06",
+     "start": "08:30",
+     "end": "11:00"
+    }
+   ]
+  },
+  {
+   "id": "techonomy",
+   "group": "bay",
+   "verdict": "opt",
+   "title": "Techonomy 2026",
+   "host": "Worth Media, en la oficina de Finix",
+   "dateLabel": "6 oct",
+   "subLabel": "mar 11:00 am",
+   "desc": "150 líderes senior, con público de CIOs y CTOs de Fortune 500. Puertas a las 11:00 am, programa desde las 12:00 y recepción de 5:00 a 6:30 pm. Vale pedir la invitación, aunque cruza con el resto del martes 6.",
+   "price": "Gratis para invitados confirmados",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "solo por invitación, 100 cupos",
+   "place": "Finix, 760 Market St, Suite 200",
+   "links": [
+    [
+     "registro",
+     "https://luma.com/g4isf5rf"
+    ],
+    [
+     "agenda",
+     "https://worth.com/event/techonomy-2026/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "techonomy",
+     "date": "2026-10-06",
+     "start": "11:00",
+     "end": "19:00"
+    }
+   ]
+  },
+  {
+   "id": "klaviyo",
+   "group": "bay",
+   "verdict": "opt",
+   "title": "Klaviyo Commerce Social",
+   "host": "Klaviyo",
+   "dateLabel": "6 oct",
+   "subLabel": "mar 2:00 pm",
+   "desc": "Marcas y operadores de e-commerce. De lo poco con merchants en la semana, aunque el público típico de Klaviyo son marcas medianas. Queda antes de Visa, así que cabe en la misma tarde.",
+   "price": "Gratis según el listado de GarysGuide",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "la página del anfitrión no carga; confirmar antes de ir",
+   "place": "Lugar por anunciar",
+   "links": [
+    [
+     "ficha",
+     "https://www.garysguide.com/events/m1zjzm0/Klaviyo-Commerce-Social"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "klaviyo",
+     "date": "2026-10-06",
+     "start": "14:00",
+     "end": "15:30",
+     "endAssumed": true
+    }
+   ]
+  },
+  {
+   "id": "visa",
+   "group": "bay",
+   "verdict": "must",
+   "title": "Agentic Commerce Meet Up",
+   "host": "Visa",
+   "dateLabel": "6 oct",
+   "subLabel": "mar 4:00 pm",
+   "desc": "En la oficina de Visa en Mission Rock. Equipo de Visa y ecosistema de payments y commerce. Queda en la misma zona que Mastercard, que empieza hora y media después.",
+   "price": "Gratis según el listado de GarysGuide",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "por aplicación; agenda marcada como tentativa",
+   "place": "Oficina de Visa, Mission Rock",
+   "links": [
+    [
+     "registro",
+     "https://partiful.com/e/AvQ6V2uhBuwbU6Ubq9v8"
+    ],
+    [
+     "ficha",
+     "https://www.garysguide.com/events/h30nj4p"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "visa",
+     "date": "2026-10-06",
+     "start": "16:00",
+     "end": "17:30",
+     "endAssumed": true,
+     "title": "Visa, Agentic Commerce Meet Up"
+    }
+   ]
+  },
+  {
+   "id": "mastercard",
+   "group": "bay",
+   "verdict": "must",
+   "alert": "9 cupos",
+   "title": "Agentic Now and Agentic Next",
+   "host": "Mastercard",
+   "dateLabel": "6 oct",
+   "subLabel": "mar 5:30 pm",
+   "desc": "Líderes de producto y alianzas de IA de Mastercard, con el programa Start Path, Agent Pay y Agent Connect. El 27 de septiembre quedaban 9 cupos; los tres ocupan tres. Es en la zona de China Basin, vecina a Mission Rock.",
+   "price": "Gratis",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "aprobación",
+   "place": "China Basin, dirección visible al ser aprobado",
+   "links": [
+    [
+     "registro",
+     "https://luma.com/mdxyfrgf"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "mastercard",
+     "date": "2026-10-06",
+     "start": "17:30",
+     "end": "19:30",
+     "title": "Mastercard, Agentic Now and Agentic Next"
+    }
+   ]
+  },
+  {
+   "id": "cfo-panel",
+   "group": "bay",
+   "verdict": "planb",
+   "title": "Fintech CFO Panel y Happy Hour",
+   "host": "Pluvo, con BMO y Ramp",
+   "dateLabel": "6 oct",
+   "subLabel": "mar 4:00 pm",
+   "desc": "Público de finanzas: CFOs, VPs de Finanzas y Controllers. Hablan los CFOs de Carta y de Vercel. Va de 4:00 a 7:30 pm. Choca con Visa y el registro se revisa por perfil de finanzas, así que es difícil que aprueben a los tres. Es el plan B de las 4:00 pm.",
+   "price": "Gratis según el listado de GarysGuide",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "registros revisados por perfil",
+   "place": "SoMa, dirección al ser aprobado",
+   "links": [
+    [
+     "registro",
+     "https://partiful.com/e/u1YZGJden2SOdNj5vWDJ"
+    ],
+    [
+     "ficha",
+     "https://www.garysguide.com/events/k4uqgjd"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "cfo-panel",
+     "date": "2026-10-06",
+     "start": "16:00",
+     "end": "19:30"
+    }
+   ]
+  },
+  {
+   "id": "planb-530",
+   "group": "bay",
+   "verdict": "planb",
+   "title": "When Agents Spend Money y Ready for Anything",
+   "host": "",
+   "dateLabel": "6 oct",
+   "subLabel": "mar 5:30 pm",
+   "desc": "Dos alternativas a la misma hora que Mastercard, solo si Mastercard no aprueba. El primero es un panel sobre autorización de pagos hechos por agentes, con JPMorgan Chase como coanfitrión. El segundo, de Open Future Forum, es para CFOs, founders e inversionistas y avisa que no admite pitch de proveedores.",
+   "price": "Gratis los dos",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "los dos piden aplicación o aprobación",
+   "place": "San Francisco",
+   "links": [
+    [
+     "When Agents Spend Money",
+     "https://partiful.com/e/aCbTfUBiykYHp6BzOdg6"
+    ],
+    [
+     "Ready for Anything",
+     "https://luma.com/fb7ihel0"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "agents-spend",
+     "date": "2026-10-06",
+     "start": "17:30",
+     "end": "19:30",
+     "endAssumed": true,
+     "title": "When Agents Spend Money",
+     "url": "https://partiful.com/e/aCbTfUBiykYHp6BzOdg6",
+     "place": "South Beach, dirección al ser aprobado",
+     "price": "Gratis según el listado de GarysGuide"
+    },
+    {
+     "id": "ready-anything",
+     "date": "2026-10-06",
+     "start": "17:30",
+     "end": "20:00",
+     "title": "Ready for Anything: IPOs, SPACs and Capital Market Shifts",
+     "url": "https://luma.com/fb7ihel0",
+     "place": "San Francisco, dirección al ser aprobado",
+     "price": "Gratis"
+    }
+   ]
+  },
+  {
+   "id": "founders-rooms",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "Salones de founders e inversionistas de Tech Week",
+   "host": "",
+   "dateLabel": "5 y 6 oct",
+   "subLabel": "",
+   "desc": "YC Founders Mixer (solo founders de YC), Founder Friends SF (agotado), Batter Up SF (founders presentando a ángeles, quedaba 1 cupo), SF Founder and Investor Dinner y The SOLO Founder Club.",
+   "price": "Gratis los cinco",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "aprobación en la mayoría",
+   "place": "San Francisco",
+   "links": [],
+   "cal": [
+    {
+     "id": "yc-mixer",
+     "date": "2026-10-05",
+     "start": "17:00",
+     "end": "19:30",
+     "title": "YC Founders Mixer",
+     "url": "https://luma.com/szg4hzay"
+    },
+    {
+     "id": "founder-friends",
+     "date": "2026-10-05",
+     "start": "18:00",
+     "end": "20:30",
+     "title": "Founder Friends SF",
+     "url": "https://luma.com/4xjpmq1m"
+    },
+    {
+     "id": "founder-investor-dinner",
+     "date": "2026-10-05",
+     "start": "19:00",
+     "end": "21:30",
+     "title": "SF Founder and Investor Dinner",
+     "url": "https://luma.com/ozrtk4ne"
+    },
+    {
+     "id": "solo-founder",
+     "date": "2026-10-06",
+     "start": "16:00",
+     "end": "19:00",
+     "title": "The SOLO Founder Club",
+     "url": "https://luma.com/ejwagfv9"
+    },
+    {
+     "id": "batter-up",
+     "date": "2026-10-06",
+     "start": "18:00",
+     "end": "21:00",
+     "title": "Batter Up SF",
+     "url": "https://luma.com/xenl8z74"
+    }
+   ]
+  },
+  {
+   "id": "dev-rooms",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "Salones de desarrolladores de Tech Week",
+   "host": "",
+   "dateLabel": "5 y 6 oct",
+   "subLabel": "",
+   "desc": "Demo Night en WorkOS, SF Tech Week AI Demo Night, Camp AI en el Ferry Building, The MCP Gateway y Ship it and Sip it (agotado).",
+   "price": "Gratis cuatro de ellos. Camp AI no publica precio",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "",
+   "place": "San Francisco",
+   "links": [],
+   "cal": [
+    {
+     "id": "mcp-gateway",
+     "date": "2026-10-05",
+     "start": "09:30",
+     "end": "11:00",
+     "title": "The MCP Gateway",
+     "place": "Joe and The Juice, 301 Howard St",
+     "url": "https://luma.com/scorx7qo"
+    },
+    {
+     "id": "demo-night-workos",
+     "date": "2026-10-05",
+     "start": "17:30",
+     "end": "20:00",
+     "title": "Demo Night en WorkOS",
+     "place": "660 Market St",
+     "url": "https://luma.com/demo-night-oct2026"
+    },
+    {
+     "id": "ship-it",
+     "date": "2026-10-05",
+     "start": "18:00",
+     "end": "20:00",
+     "title": "Ship it and Sip it",
+     "place": "Corgi Cafe",
+     "url": "https://luma.com/copilo-y6wx"
+    },
+    {
+     "id": "ai-demo-night",
+     "date": "2026-10-06",
+     "start": "17:00",
+     "end": "20:30",
+     "title": "SF Tech Week AI Demo Night",
+     "place": "CANOPY Jackson Square",
+     "url": "https://luma.com/clickh-zngw"
+    },
+    {
+     "id": "camp-ai",
+     "date": "2026-10-06",
+     "start": "17:30",
+     "end": "20:30",
+     "title": "Camp AI: Production-Ready Agents",
+     "place": "Ferry Building",
+     "price": "Precio no publicado en la página",
+     "priceShort": "Sin publicar",
+     "priceKind": "unknown",
+     "url": "https://partiful.com/e/wgzQaLCyAPobkZnJpzOP"
+    }
+   ]
+  },
+  {
+   "id": "misc-skip",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "AI 2030 Summit, puente Silicon Valley y APAC, meetup de Discord, SF Tech Mix and Mingle",
+   "host": "",
+   "dateLabel": "6 oct",
+   "subLabel": "",
+   "desc": "AI 2030 es de IA responsable. El puente con APAC es de inversión industrial. El meetup de Discord lo organiza el grupo SF Game Development para desarrolladores de juegos, no la compañía Discord. SF Tech Mix and Mingle no aparece en el calendario oficial de Luma.",
+   "price": "Gratis los tres primeros. SF Tech Mix and Mingle sin verificar",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "",
+   "place": "San Francisco",
+   "links": [],
+   "cal": [
+    {
+     "id": "sv-apac",
+     "date": "2026-10-06",
+     "start": "08:30",
+     "end": "13:00",
+     "title": "Silicon Valley y APAC Industrial Innovation Bridge",
+     "url": "https://luma.com/1e7nxcr0"
+    },
+    {
+     "id": "ai-2030",
+     "date": "2026-10-06",
+     "start": "09:00",
+     "end": "17:00",
+     "title": "AI 2030 Summit",
+     "url": "https://luma.com/lxgo78u5"
+    },
+    {
+     "id": "discord-meetup",
+     "date": "2026-10-06",
+     "start": "17:30",
+     "end": "21:00",
+     "title": "Meetup de Discord para game dev",
+     "place": "DNA Lounge",
+     "url": "https://luma.com/sf-tech-week-discord-game-development-meetup"
+    }
+   ]
+  },
+  {
+   "id": "agentic-zero",
+   "group": "bay",
+   "verdict": "opt",
+   "title": "Agentic Zero, The Agentic Finance Summit",
+   "host": "",
+   "dateLabel": "7 oct",
+   "subLabel": "mié 9:00 am",
+   "desc": "Infraestructura de pagos para agentes y stablecoins (Circle, Solana, Belo). Sirve para el ángulo de stablecoins y para conocer a Belo, que es LatAm. No es un salón de compradores: medio día basta.",
+   "price": "Gratis",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "RSVP, 500 cupos",
+   "place": "The Avalon, 1244 Sutter St",
+   "links": [
+    [
+     "sitio",
+     "https://agenticzero.xyz/"
+    ],
+    [
+     "registro",
+     "https://partiful.com/e/6vkA8cTvPI7tTb3NtV2F"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "agentic-zero",
+     "date": "2026-10-07",
+     "start": "09:00",
+     "end": "17:00"
+    }
+   ]
+  },
+  {
+   "id": "svlls",
+   "group": "bay",
+   "verdict": "opt",
+   "title": "Silicon Valley Latino Leadership Summit",
+   "host": "",
+   "dateLabel": "10 oct",
+   "subLabel": "sáb 8:00 am",
+   "desc": "Cerca de 400 ejecutivos y emprendedores latinos. No es de payments; sirve para la red latina del Bay Area.",
+   "price": "$300 por persona, entrada general. Organizaciones sin ánimo de lucro $175",
+   "priceShort": "$300",
+   "priceKind": "paid",
+   "reg": "abierto, sin aprobación",
+   "place": "Computer History Museum, Mountain View",
+   "links": [
+    [
+     "entradas",
+     "https://www.eventbrite.com/e/2026-silicon-valley-latino-leadership-summit-tickets-1991957327990"
+    ],
+    [
+     "sitio",
+     "https://www.svlls.com/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "svlls",
+     "date": "2026-10-10",
+     "start": "08:00",
+     "end": "13:45"
+    }
+   ]
+  },
+  {
+   "id": "fintech-next-pre",
+   "group": "bay",
+   "verdict": "go",
+   "tag": "5:00 a 6:00",
+   "title": "Fintech: Pre TechCrunch and Money20/20",
+   "host": "Fintech Next",
+   "dateLabel": "12 oct",
+   "subLabel": "lun 5:00 pm",
+   "desc": "Calentamiento de la comunidad fintech local antes de las dos semanas grandes. Es a la misma hora que NMI y a unas cuadras por 3rd St: primera hora aquí, segunda en NMI.",
+   "price": "$20 por persona",
+   "priceShort": "$20",
+   "priceKind": "paid",
+   "reg": "sin aprobación, 73 cupos",
+   "place": "Market St y 3rd St",
+   "links": [
+    [
+     "registro",
+     "https://luma.com/b3a50qei"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "fintech-next-pre",
+     "date": "2026-10-12",
+     "start": "17:00",
+     "end": "19:00",
+     "title": "Fintech Next, previo a Disrupt y Money20/20"
+    }
+   ]
+  },
+  {
+   "id": "nmi",
+   "group": "bay",
+   "verdict": "go",
+   "tag": "6:00 a 7:00",
+   "title": "Serve, Swipe and Settle",
+   "host": "NMI",
+   "dateLabel": "12 oct",
+   "subLabel": "lun 5:00 pm",
+   "desc": "Evento paralelo oficial de Disrupt y el único de payments en esa lista. Público declarado: founders de SaaS, desarrolladores y líderes técnicos. Sin panel ni speakers. Útil para conocer plataformas que quieren embeber pagos, no para encontrar equipos de payments de merchants.",
+   "price": "Gratis",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "RSVP, incluye comida y bebidas",
+   "place": "SPIN, 690 Folsom St",
+   "links": [
+    [
+     "registro",
+     "https://go.nmi.com/serve-swipe-settle-event"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "nmi",
+     "date": "2026-10-12",
+     "start": "17:00",
+     "end": "19:00",
+     "title": "NMI, Serve, Swipe and Settle"
+    }
+   ]
+  },
+  {
+   "id": "disrupt-pass",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "TechCrunch Disrupt, pase",
+   "host": "",
+   "dateLabel": "13 al 15 oct",
+   "subLabel": "Moscone West",
+   "desc": "Más de 10,000 founders e inversionistas. Hay un escenario de fintech, Smart Money Stage, con sesiones publicadas solo para el martes 13 en la mañana (Circle, TabaPay, Robinhood, Amex, Plaid) y una mesa de Walmart eCommerce a la 1:50 pm. Para vender a merchants grandes el salón no justifica tres días: esos días rinden más en reuniones.",
+   "price": "$949 por persona el pase de asistente. Expo+ $299, sin acceso a los escenarios de industria ni a las mesas redondas",
+   "priceShort": "$949",
+   "priceKind": "paid",
+   "reg": "abierto",
+   "place": "Moscone West",
+   "links": [
+    [
+     "pases",
+     "https://techcrunch.com/events/techcrunch-disrupt/tickets/"
+    ],
+    [
+     "agenda",
+     "https://techcrunch.com/events/tc-disrupt-2026/agenda/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "disrupt",
+     "date": "2026-10-13",
+     "endDate": "2026-10-15",
+     "allDay": true,
+     "title": "TechCrunch Disrupt"
+    }
+   ]
+  },
+  {
+   "id": "disrupt-side",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "Eventos paralelos de Disrupt",
+   "host": "",
+   "dateLabel": "11 al 15 oct",
+   "subLabel": "",
+   "desc": "EPIC SF demo night, European Startup Embassy, AI Barmen, Harvard Griffin GSAS, South Asian Investor Founder Connect, PeakXV, Liquid Assets, The Afterburn, SignalFire, Token Economics, Israel Economic Mission, LP y GP networking, NachoThursday. Son salones de inversionistas, founders y seguridad de IA. Máximo uno por noche y solo si no hay reunión ni cena.",
+   "price": "NachoThursday es gratis. El precio de los demás no se verificó uno por uno",
+   "priceShort": "Sin verificar",
+   "priceKind": "unknown",
+   "reg": "registro por evento",
+   "place": "San Francisco",
+   "links": [
+    [
+     "lista oficial",
+     "https://techcrunch.com/events/techcrunch-disrupt/side-events/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "nacho-thursday",
+     "date": "2026-10-15",
+     "start": "17:00",
+     "end": "20:00",
+     "title": "NachoThursday, happy hour de Disrupt",
+     "price": "Gratis",
+     "priceShort": "Gratis",
+     "priceKind": "free",
+     "url": "https://luma.com/nachon-9ui9"
+    }
+   ]
+  },
+  {
+   "id": "masters-of-scale",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "Masters of Scale Summit",
+   "host": "",
+   "dateLabel": "20 al 22 oct",
+   "subLabel": "",
+   "desc": "Cerca de 800 ejecutivos curados y choca con Money20/20.",
+   "price": "$3,750 por persona, sin hospedaje ni viaje",
+   "priceShort": "$3,750",
+   "priceKind": "paid",
+   "reg": "solo por invitación y aplicación",
+   "place": "Presidio",
+   "links": [
+    [
+     "sitio",
+     "https://www.summit.mastersofscale.com/info"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "masters-of-scale",
+     "date": "2026-10-20",
+     "endDate": "2026-10-22",
+     "allDay": true
+    }
+   ]
+  },
+  {
+   "id": "gamesforum",
+   "group": "bay",
+   "verdict": "opt",
+   "title": "Gamesforum San Francisco",
+   "host": "",
+   "dateLabel": "26 y 27 oct",
+   "subLabel": "lun y mar",
+   "desc": "Más de 500 asistentes de más de 300 compañías de juegos móviles: monetización, producto y growth. Speakers de Supercell, Zynga, EA, Scopely y Activision Blizzard Media. El salón es muy bueno, pero los pases son solo para estudios y publishers: la página avisa que los pases comprados por proveedores de servicios se cancelan y se reembolsan. La única vía para un proveedor es patrocinar.",
+   "price": "Patrocinio, sin precio publicado: hay que pedir cotización. El pase de $239 es solo para estudios y publishers",
+   "priceShort": "Patrocinio",
+   "priceKind": "unknown",
+   "reg": "proveedores solo como patrocinadores",
+   "place": "Hotel Nikko",
+   "links": [
+    [
+     "registro",
+     "https://www.globalgamesforum.com/san-francisco/register-now"
+    ],
+    [
+     "sitio",
+     "https://www.globalgamesforum.com/san-francisco"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "gamesforum",
+     "date": "2026-10-26",
+     "endDate": "2026-10-27",
+     "allDay": true
+    }
+   ],
+   "alert": "solo patrocinio"
+  },
+  {
+   "id": "one-way",
+   "group": "bay",
+   "verdict": "opt",
+   "title": "One Way Summit",
+   "host": "One Way Ventures",
+   "dateLabel": "28 y 29 oct",
+   "subLabel": "mié 9:30 am a jue 7:00 pm",
+   "desc": "Más de 1,000 founders inmigrantes e inversionistas, con delegaciones de más de 20 países. Red internacional y latina. Un resultado de búsqueda menciona a Juan Pablo Ortega como speaker, pero no aparece en la página oficial: confirmar con él.",
+   "price": "$129 por persona el pase regular. Premium $179 con talleres, VIP $499",
+   "priceShort": "$129",
+   "priceKind": "paid",
+   "reg": "abierto, sin aprobación",
+   "place": "The Commonwealth Club, 110 The Embarcadero",
+   "links": [
+    [
+     "registro",
+     "https://www.eventbrite.com/e/one-way-summit-2026-the-flagship-event-for-immigrant-entrepreneurship-tickets-2000784038920"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "one-way",
+     "date": "2026-10-28",
+     "endDate": "2026-10-29",
+     "allDay": true
+    }
+   ]
+  },
+  {
+   "id": "github-universe",
+   "group": "bay",
+   "verdict": "skip",
+   "title": "GitHub Universe",
+   "host": "",
+   "dateLabel": "28 y 29 oct",
+   "subLabel": "",
+   "desc": "Público de desarrolladores. Sin compradores de payments.",
+   "price": "$1,399 por persona presencial. Virtual gratis",
+   "priceShort": "$1,399",
+   "priceKind": "paid",
+   "reg": "abierto",
+   "place": "Fort Mason",
+   "links": [
+    [
+     "sitio",
+     "https://githubuniverse.com/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "github-universe",
+     "date": "2026-10-28",
+     "endDate": "2026-10-29",
+     "allDay": true
+    }
+   ]
+  },
+  {
+   "id": "panel-pitch",
+   "group": "bay",
+   "verdict": "opt",
+   "title": "Panel and Pitch, Fintech Startup Founders and Investors",
+   "host": "Fintech Next",
+   "dateLabel": "29 oct",
+   "subLabel": "jue 5:00 pm",
+   "desc": "Serie recurrente de la comunidad fintech local. Útil para mantener presencia si la tarde está libre.",
+   "price": "Gratis",
+   "priceShort": "Gratis",
+   "priceKind": "free",
+   "reg": "aprobación, 124 cupos",
+   "place": "Zona Yerba Buena",
+   "links": [
+    [
+     "registro",
+     "https://luma.com/wiqhrvi6"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "panel-pitch",
+     "date": "2026-10-29",
+     "start": "17:00",
+     "end": "19:00",
+     "title": "Fintech Next, Panel and Pitch"
+    }
+   ]
+  },
+  {
+   "id": "gamesbeat",
+   "group": "bay",
+   "verdict": "must",
+   "title": "GamesBeat Next 2026",
+   "host": "",
+   "dateLabel": "2 y 3 nov",
+   "subLabel": "lun y mar",
+   "desc": "500 líderes senior de gaming, 80% nivel C. La lista de compañías asistentes incluye Epic Games, EA, Roblox, Netflix, Tencent y Unity. La agenda toca modelos de monetización y venta directa al consumidor. Es el cierre del viaje.",
+   "price": "$899 por persona el Conference Pass. VIP $1,200. Las tarifas del checkout no se pudieron leer",
+   "priceShort": "$899",
+   "priceKind": "paid",
+   "reg": "abierto, sin aprobación",
+   "place": "San Francisco",
+   "links": [
+    [
+     "pases",
+     "https://events.gamesbeat.com/next26/attend/"
+    ],
+    [
+     "sitio",
+     "https://events.gamesbeat.com/next26/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "gamesbeat",
+     "date": "2026-11-02",
+     "endDate": "2026-11-03",
+     "allDay": true
+    }
+   ]
+  },
+  {
+   "id": "money2020",
+   "group": "trip",
+   "verdict": "must",
+   "title": "Money20/20 USA",
+   "host": "",
+   "dateLabel": "18 al 21 oct",
+   "subLabel": "Las Vegas",
+   "desc": "Yuno tiene dos speakers en la agenda: Juan Pablo Ortega el martes 20 a las 3:15 pm y Mauricio Schwartzmann el lunes 19 a la 1:15 pm, junto a Kavak. También hablan cuentas del Bay Area que están en la TCL: Perplexity (CEO), eBay (Head of Wallet), Upwork (Director of Product, Payments) y Navan (CEO). Otros merchants en la agenda: Walmart, Google Play, PlayStation, United Airlines y Fresha.",
+   "desc2": "Eventos paralelos, todos gratis con registro: cena de líderes de fraude de TWIF y SEON (dom 18), almuerzo anual de TabaPay y Stable Salon (lun 19), open house de TabaPay y happy hour de Astra y Visa (mar 20). VGS Vault Lounge abre el domingo 18 y el martes 20 y no publica precio. Casi todos piden aprobación.",
+   "price": "$4,199 por persona el pase estándar hoy. Comprando tres o más en una sola transacción baja $299 por pase",
+   "priceShort": "$4,199",
+   "priceKind": "paid",
+   "reg": "abierto",
+   "place": "The Venetian, Las Vegas",
+   "links": [
+    [
+     "pases",
+     "https://us.money2020.com/pass-picker"
+    ],
+    [
+     "speakers",
+     "https://us.money2020.com/agenda/speakers"
+    ],
+    [
+     "eventos paralelos",
+     "https://avenuez.com/events/money20-20-side-events/"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "money2020",
+     "date": "2026-10-18",
+     "endDate": "2026-10-21",
+     "allDay": true
+    },
+    {
+     "id": "m2020-ebay",
+     "date": "2026-10-19",
+     "start": "10:25",
+     "end": "10:55",
+     "endAssumed": true,
+     "title": "Money20/20: habla eBay, Head of Wallet",
+     "cat": "go",
+     "price": "Incluido en el pase de Money20/20",
+     "priceShort": "Con el pase",
+     "priceKind": "paid"
+    },
+    {
+     "id": "m2020-mauricio",
+     "date": "2026-10-19",
+     "start": "13:15",
+     "end": "13:45",
+     "endAssumed": true,
+     "title": "Money20/20: habla Mauricio Schwartzmann, con Kavak",
+     "price": "Incluido en el pase de Money20/20",
+     "priceShort": "Con el pase",
+     "priceKind": "paid"
+    },
+    {
+     "id": "m2020-perplexity",
+     "date": "2026-10-20",
+     "start": "09:05",
+     "end": "09:35",
+     "endAssumed": true,
+     "title": "Money20/20: habla el CEO de Perplexity",
+     "cat": "go",
+     "price": "Incluido en el pase de Money20/20",
+     "priceShort": "Con el pase",
+     "priceKind": "paid"
+    },
+    {
+     "id": "m2020-upwork",
+     "date": "2026-10-20",
+     "start": "10:30",
+     "end": "11:00",
+     "endAssumed": true,
+     "title": "Money20/20: habla Upwork, Director of Product Payments",
+     "cat": "go",
+     "price": "Incluido en el pase de Money20/20",
+     "priceShort": "Con el pase",
+     "priceKind": "paid"
+    },
+    {
+     "id": "m2020-jp",
+     "date": "2026-10-20",
+     "start": "15:15",
+     "end": "15:45",
+     "endAssumed": true,
+     "title": "Money20/20: habla Juan Pablo Ortega",
+     "price": "Incluido en el pase de Money20/20",
+     "priceShort": "Con el pase",
+     "priceKind": "paid"
+    },
+    {
+     "id": "m2020-navan",
+     "date": "2026-10-21",
+     "start": "11:15",
+     "end": "11:45",
+     "endAssumed": true,
+     "title": "Money20/20: habla el CEO de Navan",
+     "cat": "go",
+     "price": "Incluido en el pase de Money20/20",
+     "priceShort": "Con el pase",
+     "priceKind": "paid"
+    },
+    {
+     "id": "m2020-vgs-18",
+     "date": "2026-10-18",
+     "start": "16:30",
+     "end": "19:30",
+     "title": "VGS Vault Lounge, happy hour",
+     "cat": "opt",
+     "place": "Suite 3916, Palazzo Tower, The Venetian",
+     "price": "Precio no publicado en la página",
+     "priceShort": "Sin publicar",
+     "priceKind": "unknown",
+     "reg": "formulario de registro",
+     "url": "https://info.verygoodsecurity.com/vault-lounge"
+    },
+    {
+     "id": "m2020-twif-seon",
+     "date": "2026-10-18",
+     "start": "18:30",
+     "end": "21:30",
+     "title": "Cena de líderes de fraude y riesgo, TWIF y SEON",
+     "cat": "go",
+     "place": "Las Vegas, dirección al ser aprobado",
+     "price": "Gratis",
+     "priceShort": "Gratis",
+     "priceKind": "free",
+     "reg": "aprobación; para líderes de fraude, riesgo y payments de compañías de más de 250 empleados",
+     "url": "https://luma.com/LV-1018"
+    },
+    {
+     "id": "m2020-tabapay-lunch",
+     "date": "2026-10-19",
+     "start": "11:00",
+     "end": "13:00",
+     "title": "Almuerzo anual de TabaPay",
+     "cat": "go",
+     "place": "Bouchon, The Venetian",
+     "price": "Gratis",
+     "priceShort": "Gratis",
+     "priceKind": "free",
+     "reg": "aprobación",
+     "url": "https://luma.com/3cwtc821"
+    },
+    {
+     "id": "m2020-stable-salon",
+     "date": "2026-10-19",
+     "start": "19:00",
+     "end": "22:00",
+     "title": "Stable Salon, OpenFX y Stablecon",
+     "cat": "opt",
+     "place": "Bazaar Meat, 3325 S Las Vegas Blvd",
+     "price": "Gratis",
+     "priceShort": "Gratis",
+     "priceKind": "free",
+     "reg": "solo por invitación",
+     "url": "https://luma.com/OpenFXM202026"
+    },
+    {
+     "id": "m2020-tabapay-open",
+     "date": "2026-10-20",
+     "start": "08:00",
+     "end": "10:00",
+     "title": "Open house de TabaPay: café, donas y payments",
+     "cat": "go",
+     "place": "Donutique, 3327 Las Vegas Blvd S",
+     "price": "Gratis",
+     "priceShort": "Gratis",
+     "priceKind": "free",
+     "reg": "RSVP, sin aprobación",
+     "url": "https://luma.com/t54modwc"
+    },
+    {
+     "id": "m2020-astra-visa",
+     "date": "2026-10-20",
+     "start": "17:00",
+     "end": "19:00",
+     "title": "Happy hour de payments, Astra y Visa",
+     "cat": "go",
+     "place": "Las Vegas, dirección al ser aprobado",
+     "price": "Gratis",
+     "priceShort": "Gratis",
+     "priceKind": "free",
+     "reg": "aprobación",
+     "url": "https://luma.com/8ste17ee"
+    },
+    {
+     "id": "m2020-vgs-20",
+     "date": "2026-10-20",
+     "start": "16:30",
+     "end": "19:30",
+     "title": "VGS Vault Lounge, happy hour",
+     "cat": "opt",
+     "place": "Suite 3916, Palazzo Tower, The Venetian",
+     "price": "Precio no publicado en la página",
+     "priceShort": "Sin publicar",
+     "priceKind": "unknown",
+     "reg": "formulario de registro",
+     "url": "https://info.verygoodsecurity.com/vault-lounge"
+    }
+   ]
+  },
+  {
+   "id": "app-growth",
+   "group": "trip",
+   "verdict": "skip",
+   "title": "App Growth Annual",
+   "host": "RevenueCat",
+   "dateLabel": "21 oct",
+   "subLabel": "Nueva York",
+   "desc": "Líderes de growth de apps de suscripción. Muy buen público para las cuentas de apps de IA, pero cae el último día de Money20/20 y la aplicación presencial ya cerró.",
+   "price": "No se venden entradas. Presencial solo por aplicación, que cerró el 28 de agosto. Virtual gratis",
+   "priceShort": "Por aplicación",
+   "priceKind": "unknown",
+   "reg": "aplicación cerrada",
+   "place": "The Glasshouse, Nueva York",
+   "links": [
+    [
+     "preguntas frecuentes",
+     "https://appgrowthannual.com/faq"
+    ]
+   ],
+   "cal": [
+    {
+     "id": "app-growth",
+     "date": "2026-10-21",
+     "allDay": true,
+     "title": "App Growth Annual, Nueva York"
+    }
+   ]
+  },
+  {
+   "id": "mag-shoptalk-sibos",
+   "group": "trip",
+   "verdict": "skip",
+   "title": "MAG Payments Conference, Shoptalk Fall y Sibos",
+   "host": "",
+   "dateLabel": "27 sep al 1 oct",
+   "subLabel": "",
+   "desc": "MAG (Nashville) es el evento con más densidad de equipos de payments de merchants, pero ya empezó y es cerrado a no patrocinadores. Shoptalk Fall (Nashville) es de retail. Sibos (Miami) es de bancos. Anotar MAG para 2027.",
+   "price": "Shoptalk cerca de $3,750 por persona para proveedores, según resultado de búsqueda. MAG y Sibos no publican precio para no miembros",
+   "priceShort": "$3,750",
+   "priceKind": "paid",
+   "reg": "MAG cerrado a no patrocinadores",
+   "place": "Nashville y Miami",
+   "links": [
+    [
+     "MAG",
+     "https://www.merchantadvisorygroup.org/conferences/mag-payments-conference-26"
+    ],
+    [
+     "Shoptalk",
+     "https://fall.shoptalk.com/"
+    ],
+    [
+     "Sibos",
+     "https://www.sibos.com/"
+    ]
+   ],
+   "cal": []
+  }
+ ],
+ "own": [
+  {
+   "id": "own-breakfast",
+   "date": "2026-10-08",
+   "start": "08:30",
+   "end": "10:00",
+   "title": "Desayuno de operadores de payments (propuesto)",
+   "cat": "own",
+   "place": "Por definir",
+   "price": "Sin costo para invitados, lo cubre Yuno",
+   "priceShort": "Invita Yuno",
+   "priceKind": "free",
+   "note": "Evento propio. Ustedes tres como anfitriones y de 8 a 10 invitados del lado merchant."
+  },
+  {
+   "id": "own-dinner-1",
+   "date": "2026-10-14",
+   "start": "19:00",
+   "end": "21:30",
+   "title": "Cena de operadores de payments, primera edición (propuesta)",
+   "cat": "own",
+   "place": "Por definir",
+   "price": "Sin costo para invitados, lo cubre Yuno",
+   "priceShort": "Invita Yuno",
+   "priceKind": "free",
+   "note": "Evento propio. La política de viajes cubre $85 por persona en comida con clientes."
+  },
+  {
+   "id": "own-dinner-2",
+   "date": "2026-10-28",
+   "start": "19:00",
+   "end": "21:30",
+   "title": "Cena de cierre (propuesta)",
+   "cat": "own",
+   "place": "Por definir",
+   "price": "Sin costo para invitados, lo cubre Yuno",
+   "priceShort": "Invita Yuno",
+   "priceKind": "free",
+   "note": "Evento propio. Anunciar la siguiente edición."
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+<div id="panel-calendar" class="panel" role="tabpanel" aria-labelledby="tab-calendar" hidden>
+<section id="calendar">
+  <div class="sec-head">
+    <h2>Interactive Calendar</h2>
+    <p>Todos los eventos del plan con el precio de la entrada, más lo que agregue cualquiera de los tres: reuniones, cenas, eventos nuevos. Toca un bloque para ver el detalle, editarlo o marcar quién ya se registró.</p>
+  </div>
+  <div class="cal-bar">
+    <div class="cal-nav">
+      <button type="button" class="btn" id="cal-prev" aria-label="Semana anterior">&lsaquo;</button>
+      <button type="button" class="btn" id="cal-today">Hoy</button>
+      <button type="button" class="btn" id="cal-next" aria-label="Semana siguiente">&rsaquo;</button>
+      <span class="cal-title" id="cal-title" aria-live="polite"></span>
+    </div>
+    <span class="grow"></span>
+    <div class="seg" role="group" aria-label="Vista">
+      <button type="button" id="view-week" aria-pressed="true">Semana</button>
+      <button type="button" id="view-list" aria-pressed="false">Lista</button>
+    </div>
+    <div class="seg" role="group" aria-label="Zona horaria">
+      <button type="button" id="tz-sf" aria-pressed="true">Hora San Francisco</button>
+      <button type="button" id="tz-co" aria-pressed="false">Hora Colombia</button>
+    </div>
+    <button type="button" class="btn primary" id="cal-add">Agregar</button>
+  </div>
+  <div class="cal-filters" id="cal-filters" role="group" aria-label="Qué mostrar"></div>
+  <p class="conn" id="cal-conn">Conectando con el calendario compartido.</p>
+  <div id="cal-view"></div>
+  <p class="cal-foot">Los horarios de los eventos están en hora de San Francisco y Las Vegas, que comparten zona. Cuando un evento no publica hora de cierre, el bloque muestra una duración estimada y el detalle lo indica. Las llamadas vienen del calendario de German al 28 de septiembre.</p>
+</section>
+</div>
+
+<dialog class="dlg" id="dlg-detail" aria-labelledby="dd-title">
+  <div class="dlg-in">
+    <div class="dlg-chips" id="dd-chips"></div>
+    <h3 id="dd-title"></h3>
+    <dl id="dd-rows"></dl>
+    <div id="dd-reg"></div>
+    <div class="dlg-actions">
+      <button type="button" class="btn danger" id="dd-delete">Eliminar</button>
+      <button type="button" class="btn" id="dd-restore" hidden>Volver al original</button>
+      <span class="sp"></span>
+      <button type="button" class="btn" id="dd-edit">Editar</button>
+      <button type="button" class="btn primary" id="dd-close">Cerrar</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="dlg" id="dlg-form" aria-labelledby="df-title">
+  <form class="dlg-in" id="cal-form" novalidate>
+    <h3 id="df-title">Agregar al calendario</h3>
+    <div class="form">
+      <div class="full">
+        <label for="f-title">Título</label>
+        <input type="text" id="f-title" maxlength="140" autocomplete="off" placeholder="Reunión con DoorDash, cena con Visa, evento nuevo">
+      </div>
+      <div>
+        <label for="f-cat">Tipo</label>
+        <select id="f-cat">
+          <option value="meet">Reunión con cliente</option>
+          <option value="go">Evento, ir</option>
+          <option value="must">Evento, no faltar</option>
+          <option value="opt">Evento, si cabe</option>
+          <option value="planb">Evento, plan B</option>
+          <option value="skip">Evento, saltar</option>
+          <option value="own">Evento propio</option>
+          <option value="call">Llamada</option>
+          <option value="other">Otro</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-by">Quién lo agrega</label>
+        <select id="f-by">
+          <option value="German">German</option>
+          <option value="Samuel">Samuel</option>
+          <option value="Joaquín">Joaquín</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-date">Fecha</label>
+        <input type="date" id="f-date" min="2026-09-27" max="2026-11-07">
+      </div>
+      <div>
+        <label for="f-enddate">Último día, si dura varios</label>
+        <input type="date" id="f-enddate" min="2026-09-27" max="2026-11-07">
+      </div>
+      <div class="full opts">
+        <label for="f-allday"><input type="checkbox" id="f-allday"> Todo el día</label>
+      </div>
+      <div id="f-start-wrap">
+        <label for="f-start">Empieza, hora de San Francisco</label>
+        <input type="time" id="f-start" step="300">
+      </div>
+      <div id="f-end-wrap">
+        <label for="f-end">Termina</label>
+        <input type="time" id="f-end" step="300">
+      </div>
+      <div class="full">
+        <label for="f-place">Lugar</label>
+        <input type="text" id="f-place" maxlength="160" autocomplete="off">
+      </div>
+      <fieldset class="full" id="f-price-set">
+        <legend>Precio de la entrada</legend>
+        <div class="opts">
+          <label for="f-price-free"><input type="radio" name="f-price" id="f-price-free" value="free"> Gratis</label>
+          <label for="f-price-paid"><input type="radio" name="f-price" id="f-price-paid" value="paid"> De pago</label>
+          <label for="f-price-unknown"><input type="radio" name="f-price" id="f-price-unknown" value="unknown"> Por confirmar</label>
+          <label for="f-price-na"><input type="radio" name="f-price" id="f-price-na" value="na"> No aplica</label>
+        </div>
+        <input type="text" id="f-amount" maxlength="120" autocomplete="off" placeholder="$495 por persona" aria-label="Valor de la entrada" hidden>
+        <p class="hint">En eventos el precio es obligatorio. Si es gratis, queda marcado como Gratis.</p>
+      </fieldset>
+      <div class="full">
+        <label for="f-url">Link de registro o de la página</label>
+        <input type="url" id="f-url" maxlength="400" autocomplete="off" placeholder="https://">
+      </div>
+      <div class="full">
+        <label for="f-note">Nota</label>
+        <textarea id="f-note" maxlength="600"></textarea>
+      </div>
+    </div>
+    <p class="form-err" id="f-err" role="alert" hidden></p>
+    <div class="dlg-actions">
+      <button type="button" class="btn" id="f-cancel">Cancelar</button>
+      <button type="submit" class="btn primary" id="f-save">Guardar</button>
+    </div>
+  </form>
+</dialog>
