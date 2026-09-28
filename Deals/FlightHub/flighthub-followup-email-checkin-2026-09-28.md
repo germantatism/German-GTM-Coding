@@ -6,6 +6,8 @@ Contexto: la propuesta v3 se envió el 23-sep 16:51 UTC. Sin respuesta de Flight
 
 Mensaje pedido por German: estamos pendientes de que revisen la propuesta para repasarla juntos. Sin links, sin pricing, sin presión.
 
+v2 (28-sep): German rechazó la frase "We are standing by on our side, so once you have had a chance to look at it and run your numbers". Se cambió por una pregunta directa. Draft vigente r-3559356975700857226 (el v1 r-7519789522467554019 se borró).
+
 ---
 
 Subject: Re: FlightHub + Yuno | Next Steps
@@ -14,7 +16,7 @@ Hi Anna-Lena, Nick,
 
 Hope you both had a great weekend!
 
-Checking in on the updated proposal I sent last Wednesday. We are standing by on our side, so once you have had a chance to look at it and run your numbers, I would love to go through it together.
+Checking in on the updated proposal I sent last Wednesday. Have you had a chance to look at it? I would love to go through it together and hear your thoughts.
 
 Happy to jump on a short call this week, whenever works best for you.
 
