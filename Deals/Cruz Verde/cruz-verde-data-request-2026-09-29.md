@@ -2,18 +2,21 @@
 
 Cruz Verde pidió que Yuno les solicite todos los datos necesarios para construir el business case lo más a la medida posible (ejemplo de German: hasta el porcentaje de rechazos que son hard y los que son soft). Es el "documento de información requerida" prometido en el follow-up del 25-sep.
 
-## Entregable que se envía: Google Sheet
+## Entregable que se envía: Google Sheet sencillo, una sola hoja
 
-"Cruz Verde + Yuno | Información para el business case": https://docs.google.com/spreadsheets/d/1xipYBM6dNEVmCj_cxezIAqsfMb-gbPCimMJmXaGIMJQ/edit (carpeta Drive "Cruz Verde", dueño German). Pedido de German el 29-sep: formato de formulario, el campo a la izquierda y al lado el espacio para que Cruz Verde ponga sus números.
+"Cruz Verde + Yuno | Información para el business case": https://docs.google.com/spreadsheets/d/1xipYBM6dNEVmCj_cxezIAqsfMb-gbPCimMJmXaGIMJQ/edit (carpeta Drive "Cruz Verde", dueño German).
 
-- 13 hojas: Inicio, 1. Export y las hojas 2 a 12. 878 celdas amarillas para llenar y 104 listas desplegables. Configuración regional es_CO (1.000 y 90,0%).
-- Mismo contenido que el Excel (90 solicitudes), sin columnas calculadas, totales ni filas de ejemplo. No tiene hoja Resumen: el índice está en Inicio.
-- Tablas: campo en la columna A, respuestas de la B en adelante. Preguntas: campo, respuesta, prioridad y lo que nos han compartido por confirmar.
-- Se genera con `build/build_data_request_gsheet.py`, que toma el contenido de `build/build_data_request.py` y lo escribe con la Sheets API y la service account. El Sheet lo creó el conector de Drive y el mismo conector lo compartió con la service account como Editor.
-- ⚠️ `--rebuild` borra y recrea las hojas: no usarlo cuando Cruz Verde ya haya escrito datos.
+German pidió primero un Google Sheet en formato de formulario y luego, al ver la versión de 13 hojas, "mucho más sencillo y en un solo tab". La versión vigente es la sencilla:
+
+- Una hoja ("Información"), tres columnas: Campo, Respuesta de Cruz Verde (amarillo), Comentarios (opcional).
+- 36 campos en 9 secciones: volumen y ventas (5), mix de medios (5), aprobación (4), rechazos con hard, soft, fraude y datos mal digitados (6), devoluciones y contracargos (4), disponibilidad (2), costos actuales (5), conciliación (2), nuevos medios de pago (3).
+- Una línea al final ofrece la alternativa del export transaccional de Mercado Pago.
+- Se genera con `build/build_data_request_simple.py`. Reemplaza todas las hojas del Sheet y se niega a correr si alguna celda amarilla ya tiene respuesta.
+- Quedó por fuera frente a la versión detallada: series mensuales, cortes por canal, banco emisor, rango de ticket y tipo de entrega, códigos `status_detail` por motivo, embudos de PSE y checkout, registro de incidentes, proceso de conciliación y prioridades A, B, C. Si Cruz Verde quiere profundizar, esa versión sigue disponible (Excel y `build/build_data_request_gsheet.py`).
+- ⚠️ `build/build_data_request_gsheet.py --rebuild` apunta al mismo Sheet y lo devolvería a la versión de 13 hojas. No correrlo sobre este archivo.
 - German comparte el Sheet con Cruz Verde desde la interfaz. La service account aparece en la lista de personas con acceso; se puede quitar antes de compartir.
 
-## Excel (respaldo)
+## Excel (respaldo, versión detallada)
 
 `Solicitud de información - Cruz Verde + Yuno.xlsx` (esta carpeta). Se regenera con `build/build_data_request.py`; todo el contenido vive en el script y la hoja Resumen se arma sola a partir de las tablas y preguntas.
 
@@ -51,7 +54,7 @@ Cruz Verde pidió que Yuno les solicite todos los datos necesarios para construi
 
 ## Correo (borrador Gmail)
 
-Borrador r5433334866971531362: reply en el hilo "Cruz Verde + Yuno" (threadId 1a0da6fca5a65b53, reply a 1a0da7e93f16f71d). To: Michael Vargas, Sandra P. Vargas, Andrés Guzmán, Edisson Olarte, Francy Silva, Santiago Castaño. Cc: Guillermo Gutiérrez, Alejandro Albarracín, Susana Awad, Carlos Medina. German agrega el link del Google Sheet. Reemplaza al primer borrador, que hablaba de un adjunto.
+Borrador r5317102337443385744: reply en el hilo "Cruz Verde + Yuno" (threadId 1a0da6fca5a65b53, reply a 1a0da7e93f16f71d). To: Michael Vargas, Sandra P. Vargas, Andrés Guzmán, Edisson Olarte, Francy Silva, Santiago Castaño. Cc: Guillermo Gutiérrez, Alejandro Albarracín, Susana Awad, Carlos Medina. German agrega el link del Google Sheet. Es la tercera versión: reemplaza a las dos anteriores (adjunto Excel y Sheet de 13 hojas).
 
 Asunto: Re: Cruz Verde + Yuno
 
@@ -59,9 +62,9 @@ Hola Sandri, Mike, Andrew, Santi y equipo,
 
 Como quedamos, les comparto el documento con la información que necesitamos para construir el business case sobre las cifras reales de Cruz Verde.
 
-Lo armamos con el mayor nivel de detalle posible para que el caso quede a la medida de su operación. Está en formato de formulario: a la izquierda el campo que necesitamos y al lado el espacio para su respuesta. Cubre volumen y ventas, mix de medios de pago, aprobación en tarjetas, motivos de rechazo con la separación entre rechazos definitivos y temporales, PSE y efectivo, incidentes, devoluciones y contracargos, costos actuales, conciliación, checkout y nuevos medios de pago.
+Es una sola hoja: a la izquierda el campo que necesitamos y al lado el espacio para su respuesta. Cubre volumen y ventas, mix de medios de pago, aprobación, motivos de rechazo, devoluciones, disponibilidad, costos actuales, conciliación y nuevos medios de pago.
 
-Hay una alternativa más rápida para ustedes: compartirnos un export transaccional de Mercado Pago de los últimos doce meses con los campos que detallamos en la hoja de export. Con eso nosotros calculamos buena parte de las tablas y ustedes completan solo el resto. Cada tabla tiene una prioridad, así que si algún dato no está disponible avanzamos con lo imprescindible y acordamos un supuesto para lo demás.
+Si algún dato no está disponible, avanzamos con lo que tengan y acordamos un supuesto para el resto. Si les resulta más fácil, también pueden enviarnos un export transaccional de Mercado Pago de los últimos doce meses y nosotros calculamos las cifras.
 
 No necesitamos datos personales de clientes ni números completos de tarjeta. Entendemos que la información la comparten una vez quede firmado el NDA, que ya está en trámite.
 
