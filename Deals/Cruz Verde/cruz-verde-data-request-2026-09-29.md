@@ -52,15 +52,15 @@ German pidió primero un Google Sheet en formato de formulario y luego, al ver l
 - Bre-B aparece como medio de interés de Cruz Verde. La disponibilidad de Bre-B en Yuno sigue sin verificar: no afirmarla.
 - Fórmulas: 223, verificadas sin errores con un motor de cálculo en Python y con datos de prueba. No se recalcularon en Excel, así que en una vista previa (Quick Look, vista protegida) las celdas calculadas pueden verse en 0 hasta habilitar la edición.
 
-## Correo (borrador Gmail)
+## Correo (ENVIADO 29-sep-2026)
 
-Borrador vigente **r8537645621480480793** (cuarta versión, 29-sep tarde): reply en el hilo "Cruz Verde + Yuno" (threadId 1a0da6fca5a65b53, reply a 1a0da7e93f16f71d). To: Michael Vargas, Sandra P. Vargas, Andrés Guzmán, Edisson Olarte, Francy Silva, Santiago Castaño. Cc: Guillermo Gutiérrez, Alejandro Albarracín, Susana Awad, Carlos Medina.
+**ENVIADO por German el 29-sep-2026, 18:19 UTC** (mensaje 1a0ee644fdb8c422 en el hilo "Cruz Verde + Yuno", threadId 1a0da6fca5a65b53). Salió desde el borrador r8537645621480480793 (cuarta versión). To: Michael Vargas, Sandra P. Vargas, Andrés Guzmán, Edisson Olarte, Francy Silva, Santiago Castaño. Cc: Guillermo Gutiérrez, Alejandro Albarracín, Susana Awad, Carlos Medina. Adjunto verificado: "Cruz Verde + Yuno _ Información para el business case.xlsx". El texto de abajo es el que salió. German quitó dos cosas del borrador antes de enviar: la opción del export transaccional de Mercado Pago y el párrafo sobre datos personales y NDA.
 
 German decidió ADJUNTAR el documento en vez de compartir el link. Cambios frente a la tercera versión: "les comparto" pasó a "les adjunto" y se agregó una línea sobre la reunión técnica con TI (nadie reservó los horarios ofrecidos el 25-sep).
 
-Archivo para adjuntar: `Información para el business case - Cruz Verde + Yuno.xlsx` (esta carpeta). Es un export del Google Sheet en vivo hecho el 29-sep, así que trae las ediciones que German hizo a mano en el Sheet. Si el Sheet cambia, volver a exportar antes de enviar.
+Copia local del adjunto: `Información para el business case - Cruz Verde + Yuno.xlsx` (esta carpeta). Es un export del Google Sheet en vivo hecho el 29-sep, con las ediciones que German hizo a mano en el Sheet. German adjuntó el archivo con otro nombre, así que pudo ser un export propio.
 
-⚠️ El borrador anterior r5317102337443385744 ("les comparto") sigue en el hilo: el clasificador bloqueó el borrado. German lo descarta a mano.
+El borrador anterior r5317102337443385744 ("les comparto") se BORRÓ el 29-sep después del envío. No quedan borradores de Cruz Verde en Gmail.
 
 ⚠️ En el Sheet hay tres campos de costos con "desglozado" (debe ser "desglosado") y con " - " como separador. Son ediciones de German; no se tocaron.
 
@@ -72,9 +72,7 @@ Como quedamos, les adjunto el documento con la información que necesitamos para
 
 Es una sola hoja: a la izquierda el campo que necesitamos y al lado el espacio para su respuesta. Cubre volumen y ventas, mix de medios de pago, aprobación, motivos de rechazo, devoluciones, disponibilidad, costos actuales, conciliación y nuevos medios de pago.
 
-Si algún dato no está disponible, avanzamos con lo que tengan y acordamos un supuesto para el resto. Si les resulta más fácil, también pueden enviarnos un export transaccional de Mercado Pago de los últimos doce meses y nosotros calculamos las cifras.
-
-No necesitamos datos personales de clientes ni números completos de tarjeta. Entendemos que la información la comparten una vez quede firmado el NDA, que ya está en trámite.
+Si algún dato no está disponible, avanzamos con lo que tengan y acordamos un supuesto para el resto.
 
 Mike, si te parece usamos la conversación que teníamos pendiente esta semana para recorrer el documento juntos y resolver dudas.
 
@@ -87,5 +85,6 @@ German
 
 ## Pendientes
 
-- El follow-up del 25-sep prometió enviar este documento junto con la propuesta v2 (tiers, cifras en pesos, BC sin L4 y L5). El correo solo cubre el documento; la v2 sigue pendiente.
+- El follow-up del 25-sep prometió enviar este documento junto con la propuesta v2 (tiers, cifras en pesos, BC sin L4 y L5). El correo enviado el 29-sep solo cubre el documento; la v2 sigue pendiente.
+- Esperar respuesta de Cruz Verde con el documento diligenciado y con el día para la reunión técnica con TI.
 - No hay reunión de Cruz Verde en el calendario esta semana: ni la técnica con TI ni la conversación con Michael están agendadas.
