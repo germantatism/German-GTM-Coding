@@ -3,7 +3,7 @@
 **Para:** Belén Casaret (belen.casaret@pedidosya.com)
 **CC:** Alejandro Albarracín
 **Asunto:** PedidosYa + Yuno
-**Estado:** BORRADOR en Gmail, editado a mano por German. Sin enviar. Correo nuevo (no había hilo previo con Belén, solo la invitación de calendario). El texto de abajo es la versión 2: la edición de German más el ajuste de las tres claves, que se le pasó por chat para que lo pegue él. El borrador de Gmail no se tocó.
+**Estado:** BORRADOR en Gmail, editado a mano por German. Sin enviar. Correo nuevo (no había hilo previo con Belén, solo la invitación de calendario). El texto de abajo es la versión 3: el texto de German tal como lo dejó en el borrador, con el bloque de las tres claves insertado. Se le pasó por chat para que lo pegue él. El borrador de Gmail no se tocó.
 
 Contexto: call "PeYa & Yuno" del 29-sep-2026. Parte del texto de German. Cambios: una línea que devuelve los dos objetivos de Belén, el deep dive descrito como recorrido completo (pago desde el portal + identificación y conciliación), y el pedido de una muestra anonimizada del archivo de un banco para preparar el ejemplo.
 
@@ -24,11 +24,11 @@ Gracias por la conversación de hoy. Nos quedó claro que, entre otros temas que
 
 Todo gira en torno a las tres claves que te comenté:
 
-1. Métodos de pago y checkout: que el partner pueda ver y pagar su deuda desde el portal.
+1. Métodos de pago y checkout: más opciones para que el partner pague su deuda por su cuenta.
 2. Procesadores y visibilidad: los bancos y proveedores de cada país en una misma vista, con reporting unificado.
 3. Conciliación: identificar quién pagó y asociar cada pago a su partner.
 
-Como quedamos, me gustaría coordinar un deep dive contigo y el resto de tu equipo para recorrer las tres sobre el flujo completo, con foco en cómo identificaríamos y conciliaríamos las transferencias bancarias en la práctica.
+Como quedamos, me gustaría coordinar un deep dive contigo y el resto de tu equipo para recorrer el flujo completo: cómo pagaría un partner desde el portal y, sobre todo, cómo identificaríamos y conciliaríamos las transferencias bancarias en la práctica.
 
 ¿Les vendría bien el jueves 8 o el viernes 9 de octubre? Si están con el cierre, lo vemos la semana siguiente.
 
