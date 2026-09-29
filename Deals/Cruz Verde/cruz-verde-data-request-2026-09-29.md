@@ -54,13 +54,21 @@ German pidió primero un Google Sheet en formato de formulario y luego, al ver l
 
 ## Correo (borrador Gmail)
 
-Borrador r5317102337443385744: reply en el hilo "Cruz Verde + Yuno" (threadId 1a0da6fca5a65b53, reply a 1a0da7e93f16f71d). To: Michael Vargas, Sandra P. Vargas, Andrés Guzmán, Edisson Olarte, Francy Silva, Santiago Castaño. Cc: Guillermo Gutiérrez, Alejandro Albarracín, Susana Awad, Carlos Medina. German agrega el link del Google Sheet. Es la tercera versión: reemplaza a las dos anteriores (adjunto Excel y Sheet de 13 hojas).
+Borrador vigente **r8537645621480480793** (cuarta versión, 29-sep tarde): reply en el hilo "Cruz Verde + Yuno" (threadId 1a0da6fca5a65b53, reply a 1a0da7e93f16f71d). To: Michael Vargas, Sandra P. Vargas, Andrés Guzmán, Edisson Olarte, Francy Silva, Santiago Castaño. Cc: Guillermo Gutiérrez, Alejandro Albarracín, Susana Awad, Carlos Medina.
+
+German decidió ADJUNTAR el documento en vez de compartir el link. Cambios frente a la tercera versión: "les comparto" pasó a "les adjunto" y se agregó una línea sobre la reunión técnica con TI (nadie reservó los horarios ofrecidos el 25-sep).
+
+Archivo para adjuntar: `Información para el business case - Cruz Verde + Yuno.xlsx` (esta carpeta). Es un export del Google Sheet en vivo hecho el 29-sep, así que trae las ediciones que German hizo a mano en el Sheet. Si el Sheet cambia, volver a exportar antes de enviar.
+
+⚠️ El borrador anterior r5317102337443385744 ("les comparto") sigue en el hilo: el clasificador bloqueó el borrado. German lo descarta a mano.
+
+⚠️ En el Sheet hay tres campos de costos con "desglozado" (debe ser "desglosado") y con " - " como separador. Son ediciones de German; no se tocaron.
 
 Asunto: Re: Cruz Verde + Yuno
 
 Hola Sandri, Mike, Andrew, Santi y equipo,
 
-Como quedamos, les comparto el documento con la información que necesitamos para construir el business case sobre las cifras reales de Cruz Verde.
+Como quedamos, les adjunto el documento con la información que necesitamos para construir el business case sobre las cifras reales de Cruz Verde.
 
 Es una sola hoja: a la izquierda el campo que necesitamos y al lado el espacio para su respuesta. Cubre volumen y ventas, mix de medios de pago, aprobación, motivos de rechazo, devoluciones, disponibilidad, costos actuales, conciliación y nuevos medios de pago.
 
@@ -69,6 +77,8 @@ Si algún dato no está disponible, avanzamos con lo que tengan y acordamos un s
 No necesitamos datos personales de clientes ni números completos de tarjeta. Entendemos que la información la comparten una vez quede firmado el NDA, que ya está en trámite.
 
 Mike, si te parece usamos la conversación que teníamos pendiente esta semana para recorrer el documento juntos y resolver dudas.
+
+Sobre la reunión técnica con TI, cuéntenme qué día les funciona y envío la invitación.
 
 Quedo atento. Gracias!
 
