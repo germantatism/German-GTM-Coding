@@ -1,6 +1,6 @@
 # Follow-up email to Paulius, five days after the demo (Sep 29, 2026)
 
-**Status:** Gmail draft created Sep 29, 2026 as a reply in the thread "Hostinger + Yuno | Demo" (to Paulius; cc Antoine, Dirk, Justo, Piotr, TJ, Ivvy). Review and send.
+**Status (updated Sep 30):** the Gmail draft no longer exists (the whole thread had been trashed and was restored on Sep 30); replaced by hostinger-followup-email-paulius-2026-09-30.md. Original status: Gmail draft created Sep 29, 2026 as a reply in the thread "Hostinger + Yuno | Demo" (to Paulius; cc Antoine, Dirk, Justo, Piotr, TJ, Ivvy). Review and send.
 **Before sending:** confirm with TJ / Antoine that the India answer can land by Friday, October 9. If not, change the date in the India paragraph.
 
 **Context:** Paulius has not replied by email since Sep 18. After the Sep 24 demo Yuno sent three messages in the thread without answer: German's recap (Sep 24), the NDA redline (Sep 24) and Dirk's token migration note (Sep 25). No new DocuSign envelope has arrived. No meeting on the calendar.
