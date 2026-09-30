@@ -19,10 +19,14 @@ L4 = tuple(w / 52 * FTE for w in weeks)
 LEV = [L1, L2, L3, L4]
 cons, opt = sum(l[0] for l in LEV), sum(l[1] for l in LEV)
 avg = [(l[0] + l[1]) / 2 for l in LEV]
-# Pricing (German, 30-sep-2026): platform $15,000 + $0.06 tramo 1 / $0.05 tramo 2; corte de tramo 150,000 (supuesto)
-PLATFORM, P1, P2, CUT = 15_000, 0.06, 0.05, 150_000
+# Pricing v2 (German, 30-sep-2026): platform $7,500 + compromiso mínimo de $7,500 en transacciones = facturación mínima mensual $15,000;
+# $0.06 tramo 1 / $0.05 tramo 2; corte de tramo 150,000 (supuesto). v1 era platform $15,000 sin compromiso.
+PLATFORM, COMMIT, P1, P2, CUT = 7_500, 7_500, 0.06, 0.05, 150_000
+MIN_BILL = PLATFORM + COMMIT
+COMMIT_TX = COMMIT / P1                          # transacciones exitosas que cubren el compromiso (dentro del tramo 1)
+assert COMMIT_TX <= CUT
 def monthly(tx):
-    var = min(tx, CUT) * P1 + max(tx - CUT, 0) * P2
+    var = max(min(tx, CUT) * P1 + max(tx - CUT, 0) * P2, COMMIT)
     return var, var + PLATFORM
 TX = TX_CO + TX_PE
 var, total = monthly(TX)
@@ -39,4 +43,5 @@ if __name__ == '__main__':
     print(f"L1+L2: {L1[0]+L2[0]:,.0f} / {L1[1]+L2[1]:,.0f} / {avg[0]+avg[1]:,.0f}")
     print(f"pricing @ {TX:,}: variable ${var:,.0f}  total ${total:,.0f}/mes  ${total*12:,.0f}/año  all-in ${total/TX:.4f}  var ${var/TX:.4f}  bps {total*12/tpv*1e4:.1f}")
     v2, t2 = monthly(400_000); print(f"pricing @ 400,000: variable ${v2:,.0f} total ${t2:,.0f} all-in ${t2/400_000:.4f}")
+    print(f"compromiso ${COMMIT:,} = {COMMIT_TX:,.0f} trx a ${P1:.2f} | facturación mínima ${MIN_BILL:,}/mes")
     print(f"físico CO (30% del total si 300k = 70%): {TX_CO/0.7*0.3:,.0f} pagos/mes")

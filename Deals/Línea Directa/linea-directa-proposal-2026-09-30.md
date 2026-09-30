@@ -68,3 +68,21 @@ Fuente: docs.y.uno/reference/payment-type-list, consultado el 30-sep-2026.
 - 80,000 por Wompi/PSE más 180,000 por Nequi suman 260,000, no 300,000.
 - Nequi "55% del total" no cuadra con 180,000 de 300,000 digitales si lo digital es el 70%.
 - No está claro si el 70/30 es por número de pagos o por valor, ni si incluye Perú.
+
+## Pricing v2 (30-sep, tarde): fee de plataforma + compromiso mínimo
+Instrucción de German: platform fee de $7,500 más un compromiso de $7,500 en volumen transaccional, presentado como facturación mínima mensual de $15,000. Aplicado con build/fix2_commitment.py (solo toca el slide de pricing).
+
+| Concepto | Precio | A 325,000 tx exitosas |
+|---|---|---|
+| Fee de plataforma | $7,500 / mes | $7,500 |
+| Tramo 1: 0 a 150,000 | $0.06 / tx | $9,000 |
+| Tramo 2: más de 150,000 | $0.05 / tx | $8,750 |
+| Compromiso mínimo en transacciones | $7,500 / mes | cubierto |
+| **Total** | | **$25,250 / mes ($303,000 / año), $0.078 por tx, 14.3 bps** |
+
+- El compromiso de $7,500 equivale a 125,000 transacciones exitosas al mes a $0.06 (cae completo dentro del tramo 1). Si el mes cierra por debajo, se factura la diferencia.
+- Facturación mínima mensual: $15,000. A 400,000 tx: $7,500 + $21,500 = $29,000 ($0.0725 por tx).
+- Con su volumen actual (325,000) el compromiso se cubre 2.6 veces; solo aplica si caen por debajo de 125,000.
+- Contra la Pricing Policy: es la estructura preferida (fee fija + MMG aditivo). Platform $7,500 queda por debajo del list de V3 ($10,000) y por encima del mínimo; facturar platform y MMG mensual en vez de anual anticipado va por zona amarilla. Validar en el calculator y Salesforce.
+
+**Estado del deck tras ediciones de German a mano (30-sep, tarde): 20 slides.** Quitó la sección de Business Case (divisor, palancas e impacto total). Agenda: 01 ¿Por qué Yuno?, 02 Conexiones en Colombia y Perú, 03 Propuesta. El slide de métodos es el 13 y el de pricing el 15. La sección "Business case (S13 y S14)" de arriba queda como referencia; ya no está en el deck.
