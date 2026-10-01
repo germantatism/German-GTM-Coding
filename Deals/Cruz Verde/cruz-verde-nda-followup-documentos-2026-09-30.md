@@ -1,6 +1,8 @@
 # Cruz Verde: follow-up del NDA con los documentos listos (30-sep-2026)
 
-Borrador en Gmail: `r-473603245379497276` (reply a `1a0f30c6798367da`, hilo "Siguientes pasos | NDA y Business Case – Yuno").
+Borrador vigente en Gmail (1-oct): `r4219961008964291876` (reply a `1a0f30c6798367da`, hilo "Siguientes pasos | NDA y Business Case – Yuno"). Reemplaza al del 30-sep (`r-473603245379497276`, borrado sin ediciones de German).
+
+Novedades al 1-oct: William Peña entregó la información tributaria del formulario el 30-sep (el campo de resolución va en blanco: Yuno Colombia no es gran contribuyente ni autorretenedor). María Gabriela no ha respondido sobre el certificado de existencia nuevo y declinó la llamada de alineación del 1-oct. Cruz Verde sin mensajes nuevos.
 Para: Michael Vargas, Adriana Buitrago. Cc: Santiago Castaño, Alejandro Albarracín, Susana Awad, Carlos Medina, Juan Pablo Pantoja.
 
 ## Estado de lo que pidió Mike el 23-sep (hilo Slack #salesops-legal "Cruz Verde - NDA", ts 1790553688.958639)
@@ -34,7 +36,7 @@ Quedan dos puntos en curso:
 - El certificado de propiedad con los beneficiarios finales lo envía Juan Pablo Pantoja, nuestro Compliance Manager (en copia), directamente a María Teresa Silva, como nos indicó Adriana.
 - El formulario de inscripción de proveedor lo estamos terminando de diligenciar con nuestros equipos de Legal y Finanzas. Apenas tenga la firma del representante legal se los envío en Excel y en PDF por este mismo hilo.
 
-Me confirman porfa si con estos documentos pueden iniciar las validaciones mientras llega el formulario firmado? Y si necesitan algún dato adicional en la certificación bancaria, me cuentan y lo gestionamos.
+Me confirman porfa si con estos documentos pueden iniciar las validaciones mientras llega el formulario firmado? Si necesitan el certificado de existencia con una fecha de expedición más reciente o algún dato adicional en la certificación bancaria, me cuentan y lo gestionamos.
 
 Quedo atento. Gracias!
 
