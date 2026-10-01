@@ -1,6 +1,6 @@
 # Hostinger: el NDA que llegó hoy es el mismo de antes; pedir el revisado y anular el viejo (1-oct-2026)
 
-**Estado:** BORRADOR en Gmail (v2), reply en el hilo "Hostinger + Yuno | Demo" (thread 1a0ae5f99f71a2d0), respondiendo al "Thanks!" de German de las 13:09Z.
+**Estado:** BORRADOR en Gmail (v3), reply en el hilo "Hostinger + Yuno | Demo" (thread 1a0ae5f99f71a2d0), respondiendo al "Thanks!" de German de las 13:09Z.
 **To:** paulius.lapenas@hostinger.com
 **Cc:** ivvy@y.uno, antoine.cathelin@y.uno, dirk.meulen@y.uno, justo@y.uno, piotr@y.uno, tautvydas@y.uno
 
@@ -12,11 +12,11 @@
 - Aclaración de German: Ivvy habla de lo que recibió HOY. Es decir, después del aviso de Paulius lo que llegó para firma sigue siendo el mismo NDA, no el revisado con los dos cambios.
 - La v1 del borrador solo pedía anular el envelope anterior y daba por hecho que el revisado venía en camino; se borró.
 
-## Correo (v2)
+## Correo (v3, con la apertura que pidió German)
 
-Hi Paulius,
+Hi Paulius, sorry for the double email.
 
-One flag on the NDA: what reached Diego today for signature is the same NDA as before, not the revised one. Could you check with your legal team that the version with the two changes goes out as a new envelope? And please ask them to void the earlier one, since it keeps being resent to Diego every day.
+I just validated with the team and they said the NDA that reached Diego today for signature is the same one as before, not the revised version. Could you check with your legal team that the version with the two changes goes out as a new envelope? And please ask them to void the earlier one, since it keeps being resent to Diego every day.
 
 Thanks!
 
