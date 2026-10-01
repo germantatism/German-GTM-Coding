@@ -86,3 +86,11 @@ Instrucción de German: platform fee de $7,500 más un compromiso de $7,500 en v
 - Contra la Pricing Policy: es la estructura preferida (fee fija + MMG aditivo). Platform $7,500 queda por debajo del list de V3 ($10,000) y por encima del mínimo; facturar platform y MMG mensual en vez de anual anticipado va por zona amarilla. Validar en el calculator y Salesforce.
 
 **Estado del deck tras ediciones de German a mano (30-sep, tarde): 20 slides.** Quitó la sección de Business Case (divisor, palancas e impacto total). Agenda: 01 ¿Por qué Yuno?, 02 Conexiones en Colombia y Perú, 03 Propuesta. El slide de métodos es el 13 y el de pricing el 15. La sección "Business case (S13 y S14)" de arriba queda como referencia; ya no está en el deck.
+
+## Pricing v3 (1-oct): orquestación incluida y conciliación cotizada abajo
+Instrucción de German. Aplicado con build/fix3_orchestration_recon.py (solo el slide de pricing; el deck tiene 21 slides tras ediciones de German y el pricing es el 16).
+- "Orquestación y smart routing" pasa a la lista de incluidos en el fee de plataforma (reemplaza la fila "Gestión de transacciones") y al subtítulo.
+- Franja inferior "Opcional · Conciliación", fuera del total estimado: $1,000 / mes fijos por 200,000 trx conciliadas y $0.03 / trx conciliada adicional. Monitores y network tokens siguen como opcionales sin precio.
+- **Interpretación mía:** los $1,000 cubren las primeras 200,000 y los $0.03 aplican a las adicionales. Si German quiso decir otra cosa (por ejemplo dos alternativas, o fijo más variable desde la primera), cambiar el texto de la franja.
+- Si conciliaran las 325,000: $1,000 + 125,000 × $0.03 = $4,750 / mes. No está en el deck.
+- Contra la Pricing Policy: el fijo de conciliación de $1,000 queda por debajo del mínimo de $1,500 / mes (zona roja, requiere aprobación); los $0.03 por transacción están en list.
