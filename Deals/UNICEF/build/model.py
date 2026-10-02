@@ -4,13 +4,13 @@ Inputs dados por German el 2-oct-2026: 150,000 transacciones al mes, ticket prom
 fee de plataforma $10,000; tarifa variable como % del volumen aprobado "como en la propuesta de Yango";
 motor de suscripciones $0.02 por transacción enviada.
 Ajuste de German (2-oct, tarde): los tramos se definen por número de transacciones aprobadas, no por volumen aprobado.
-SUPUESTO (por confirmar con German): los porcentajes son los de la propuesta final de Yango (0.25% y 0.20%) y el corte
+Porcentajes dados por German (2-oct): empieza en 0.28% y baja a 0.24%. SUPUESTO (por confirmar con German): el corte
 de 100,000 transacciones es el corte de Yango ($1.5M) dividido por el ticket de $15."""
 TX = 150_000                      # transacciones al mes (German)
 TICKET = 15                       # ticket promedio en dólares (German)
 VOL = TX * TICKET                 # volumen aprobado mensual
 PLATFORM = 10_000                 # fee de plataforma mensual (German)
-R1, R2, CUT_TX = 0.0025, 0.0020, 100_000  # % del valor de cada transacción aprobada; corte en transacciones aprobadas (supuesto)
+R1, R2, CUT_TX = 0.0028, 0.0024, 100_000  # % del valor de cada transacción aprobada (German, 2-oct: 0.28% y 0.24%); corte en transacciones aprobadas (supuesto)
 CUT = CUT_TX * TICKET             # equivalente en volumen (v1 del slide, por volumen)
 TX1, TX2 = min(TX, CUT_TX), max(TX - CUT_TX, 0)
 SUBS = 0.02                       # por transacción enviada por el motor de suscripciones (German)

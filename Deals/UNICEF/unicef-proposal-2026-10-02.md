@@ -76,3 +76,18 @@ Instrucción de German: las tarifas y los tramos van sobre transacciones aprobad
 **Interpretación mía, por confirmar con German:**
 1. La tarifa sigue siendo un porcentaje (como pidió antes) y lo que cambia es la base del tramo: número de transacciones aprobadas. Si quiso decir una tarifa fija en dólares por transacción aprobada, hay que cambiar las cifras grandes del panel izquierdo.
 2. El corte de 100,000 transacciones sale de dividir el corte de Yango ($1.5M) por el ticket de $15.
+
+## Pricing v3 (2-oct, tarde): 0.28% y 0.24%
+Instrucción de German: la tarifa empieza en 0.28% y baja a 0.24%. Aplicado con build/fix3_rates.py (solo el slide de pricing). Tramos por transacciones aprobadas, sin cambio. Esta es la versión vigente en el deck.
+
+| Concepto | Precio | Mensual | Anual |
+|---|---|---|---|
+| Tramo 1: 0 a 100,000 trx aprobadas | 0.28% del valor de cada transacción aprobada | $4,200 | $50,400 |
+| Tramo 2: más de 100,000 trx aprobadas | 0.24% | $1,800 | $21,600 |
+| Subtotal transacciones (150k) | $0.04 por trx en promedio | $6,000 | $72,000 |
+| Motor de suscripciones | $0.02 por trx enviada, 150,000 trx | $3,000 | $36,000 |
+| Fee de plataforma | | $10,000 | $120,000 |
+| **Total** | **$0.13 all-in por transacción aprobada** | **$19,000** | **$228,000** |
+
+- Al ticket de $15, cada transacción aprobada paga $0.042 en el tramo 1 y $0.036 en el tramo 2 (list de pay-ins $0.10, mínimo $0.01: la zona la da el calculator).
+- Las tasas ya no son las de Yango: las dio German. Sigue por confirmar el corte de 100,000 transacciones.
