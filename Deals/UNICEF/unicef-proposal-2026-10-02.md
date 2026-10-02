@@ -55,3 +55,24 @@ Estado: BORRADOR, sin enviar.
 - S10 (credenciales) trae "Wingo 14%" del template; German lo mantiene en sus propuestas.
 - Pendientes de producto sin resolver: tiempos de respuesta de ACH, prenotificación de cuentas nuevas, monto abierto en el checkout.
 - Pendientes de UNICEF: mix de volumen por método, cómo compran (RFP, LTA o directo), quién decide, y cómo manejar el middleware.
+
+## Pricing v2 (2-oct, tarde): tramos por transacciones aprobadas
+Instrucción de German: las tarifas y los tramos van sobre transacciones aprobadas, no sobre volumen aprobado. Aplicado con build/fix2_tx_tiers.py (solo el slide de pricing). Las tablas de arriba quedan como registro de la v1.
+
+| Concepto | Precio | Mensual | Anual |
+|---|---|---|---|
+| Tramo 1: 0 a 100,000 trx aprobadas | 0.25% del valor de cada transacción aprobada | $3,750 | $45,000 |
+| Tramo 2: más de 100,000 trx aprobadas | 0.20% | $1,500 | $18,000 |
+| Subtotal transacciones (150k) | $0.035 por trx en promedio | $5,250 | $63,000 |
+| Motor de suscripciones | $0.02 por trx enviada, 150,000 trx | $3,000 | $36,000 |
+| Fee de plataforma | | $10,000 | $120,000 |
+| **Total** | **$0.12 all-in por transacción aprobada** | **$18,250** | **$219,000** |
+
+- Título del slide: "Fee de plataforma más un porcentaje por transacción aprobada". Panel izquierdo: "TARIFA POR TRANSACCIÓN APROBADA", tramos "0 a 100,000 trx aprobadas" y "Más de 100,000 trx aprobadas".
+- Al ticket de $15, cada transacción aprobada paga $0.0375 en el tramo 1 y $0.03 en el tramo 2.
+- Los totales no cambian frente a la v1: el corte de 100,000 transacciones equivale a $1.5M al ticket de $15.
+- Ya no aparece "volumen aprobado" en el slide; el callout quedó en "≈ $0.12 all-in por transacción aprobada".
+
+**Interpretación mía, por confirmar con German:**
+1. La tarifa sigue siendo un porcentaje (como pidió antes) y lo que cambia es la base del tramo: número de transacciones aprobadas. Si quiso decir una tarifa fija en dólares por transacción aprobada, hay que cambiar las cifras grandes del panel izquierdo.
+2. El corte de 100,000 transacciones sale de dividir el corte de Yango ($1.5M) por el ticket de $15.
