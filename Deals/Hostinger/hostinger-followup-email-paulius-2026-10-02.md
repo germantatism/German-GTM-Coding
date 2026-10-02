@@ -1,6 +1,6 @@
 # Hostinger: NDA firmado, working session y pregunta de India (2-oct-2026)
 
-**Estado:** BORRADOR en Gmail, reply en el hilo "Hostinger + Yuno | Demo" (thread 1a0ae5f99f71a2d0), respondiendo al double email de German del 1-oct 13:18Z.
+**Estado:** BORRADOR en Gmail (v2), reply en el hilo "Hostinger + Yuno | Demo" (thread 1a0ae5f99f71a2d0), respondiendo al double email de German del 1-oct 13:18Z.
 **To:** paulius.lapenas@hostinger.com
 **Cc:** ivvy@y.uno, antoine.cathelin@y.uno, dirk.meulen@y.uno, justo@y.uno, piotr@y.uno, tautvydas@y.uno
 
@@ -17,28 +17,28 @@
   - German respondió "Still a GO!" y que apuntan a Razorpay y BillDesk.
 - **Hostinger procesa India cross-border.** Paulius, call del 3-sep: "Yeah, we do cross border."
 
-## Correo
+## Correo (v2, con los cambios que pidió German)
 
 Hi Paulius,
 
 The NDA is signed, thank you for moving it through with your legal team.
 
-That clears the way for the working session on the token migration with your own data. Would Tuesday 13 or Wednesday 14 October work, in your afternoon? Let me know who from your team should join and I'll send the invites. If you can also confirm that your network tokens sit under Hostinger's own token requestor ID, Dirk will bring the exact migration path to that session.
+With that in place, the next step is the working session on how the token migration would run with your own data. It is the main pending item, and the one I'd like to get on the calendar. Would Tuesday 13 or Wednesday 14 October work, in your afternoon? Let me know who from your team should join and I'll send the invites. Dirk will walk you through it.
 
-On India, one question so the answer I owe you next week fits your setup. You told us India runs cross-border today through Razorpay and BillDesk. Is the plan to keep it that way, or is local processing through an Indian entity on your roadmap? Cross-border is live on our side today, while local processing is a larger build for us, so knowing which one you need lets me come back with a realistic scope and timeline.
+On India, cross-border processing is live today, and we are targeting early 2027 to go live with local processing.
 
 Best,
 German
 
-## Por qué está escrito así
+## Qué cambió frente a la v1
 
-- La pregunta de India es la que decide si el freno interno afecta a Hostinger. Si se quedan en cross-border, el scope pausado (local India processing) puede no ser el camino crítico del deal. Si quieren local, el plazo real es 2027 y hay que decírselo.
-- "Cross-border is live on our side today" repite lo que German ya le escribió el 1-oct ("we're already live"). No nombra proveedores a propósito: BillDesk UPI se mostró conectado en la demo del 24-sep, Razorpay como conexión de Yuno sigue sin confirmar.
-- "Local processing is a larger build for us" es la versión para el cliente de lo que dijo Antoine. No menciona fechas, ni el freno, ni Zuora.
-- No promete nada nuevo sobre tokens ni mandatos UPI Autopay; solo mantiene la respuesta de la semana que viene.
+- German pidió quitar la pregunta del token requestor ID (network tokens no es lo relevante ahora); Dirk queda solo como quien conduce la sesión.
+- El foco pasa a ser agendar la working session de token migration, que es lo pendiente y lo más relevante.
+- India deja de ser una pregunta (cross-border vs local) y pasa a ser una afirmación: cross-border live hoy, local processing a comienzos de 2027.
+- La v1 se borró de Gmail; solo queda este borrador en el hilo.
 
 ## Antes de enviar
 
-- **Validar con Antoine** si el caso de Hostinger (cross-border, Razorpay + BillDesk bajo una integración, tokens y mandatos guardados según la regulación local) entra en lo que "ya se puede hacer" o si depende del scope pausado. Antoine escribió en el hilo interno que Hostinger está interesado en "local india processing capabilities", así que él hoy lo cuenta como local.
-- **Decidir si German quiere decirle ya** que local es "a larger build". Si prefiere no adelantarlo, se borra la última frase del párrafo de India y queda solo la pregunta.
-- La respuesta sobre RBI, tokens y mandatos sigue debiéndose la semana del 5-oct y hoy no tiene dueño con fecha (TJ y Antoine).
+- **"Early 2027" para local processing no está confirmado internamente.** Lo que hay en Slack al 2-oct: Antoine dijo "not before the end of the year" y "Once we have an ETA I'll share it"; el scoping está pausado; en el otro RFP escribió "would know more in 27". El correo dice "we are targeting", no "we will go live", por eso. Confirmar la fecha con Antoine antes de que salga por escrito.
+- El correo ya no menciona la respuesta sobre RBI, tokens y mandatos UPI Autopay que German prometió el 1-oct para la semana del 5-oct. Sigue debiéndose, o se cubre en la working session.
+- Razorpay como conexión de Yuno sigue sin confirmar (BillDesk UPI se mostró en la demo del 24-sep). El correo no nombra proveedores.
