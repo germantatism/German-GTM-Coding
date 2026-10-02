@@ -78,7 +78,7 @@ Instrucción de German: las tarifas y los tramos van sobre transacciones aprobad
 2. El corte de 100,000 transacciones sale de dividir el corte de Yango ($1.5M) por el ticket de $15.
 
 ## Pricing v3 (2-oct, tarde): 0.28% y 0.24%
-Instrucción de German: la tarifa empieza en 0.28% y baja a 0.24%. Aplicado con build/fix3_rates.py (solo el slide de pricing). Tramos por transacciones aprobadas, sin cambio. Esta es la versión vigente en el deck.
+Instrucción de German: la tarifa empieza en 0.28% y baja a 0.24%. Aplicado con build/fix3_rates.py (solo el slide de pricing). Tramos por transacciones aprobadas, sin cambio. Reemplazada por la v4 de abajo.
 
 | Concepto | Precio | Mensual | Anual |
 |---|---|---|---|
@@ -91,3 +91,20 @@ Instrucción de German: la tarifa empieza en 0.28% y baja a 0.24%. Aplicado con 
 
 - Al ticket de $15, cada transacción aprobada paga $0.042 en el tramo 1 y $0.036 en el tramo 2 (list de pay-ins $0.10, mínimo $0.01: la zona la da el calculator).
 - Las tasas ya no son las de Yango: las dio German. Sigue por confirmar el corte de 100,000 transacciones.
+
+## Pricing v4 (2-oct, tarde): primeras 50,000 transacciones de suscripciones sin costo
+Instrucción de German: en suscripciones se dan gratis las primeras 50,000 transacciones. Aplicado con build/fix4_subs_free.py (solo el slide de pricing). **Esta es la versión vigente en el deck.**
+
+| Concepto | Precio | Mensual | Anual |
+|---|---|---|---|
+| Tramo 1: 0 a 100,000 trx aprobadas | 0.28% del valor de cada transacción aprobada | $4,200 | $50,400 |
+| Tramo 2: más de 100,000 trx aprobadas | 0.24% | $1,800 | $21,600 |
+| Subtotal transacciones (150k) | $0.04 por trx en promedio | $6,000 | $72,000 |
+| Motor de suscripciones | $0.02 por trx enviada; primeras 50,000 del mes sin costo; 100,000 facturables | $2,000 | $24,000 |
+| Fee de plataforma | | $10,000 | $120,000 |
+| **Total** | **$0.12 all-in por transacción aprobada** | **$18,000** | **$216,000** |
+
+**Supuestos míos, por confirmar con German:**
+1. Las 50,000 gratis son por mes y se renuevan cada mes (German dijo "las primeras 50k trx", sin decir el periodo). Si fueran 50,000 una sola vez, la línea vuelve a $3,000 al mes desde el segundo mes.
+2. El corte de tramo en 100,000 transacciones aprobadas.
+3. Las 150,000 transacciones pasan por el motor, un envío cada una. Si los reintentos cuentan, con 85% de aprobación serían unos 176,471 envíos: $2,529 al mes.
