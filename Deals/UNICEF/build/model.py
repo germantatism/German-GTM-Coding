@@ -16,6 +16,10 @@ TX1, TX2 = min(TX, CUT_TX), max(TX - CUT_TX, 0)
 SUBS = 0.02                       # por transacción enviada por el motor de suscripciones (German)
 SUBS_TX = TX                      # supuesto: las 150,000 pasan por el motor, un envío por transacción
 SUBS_FREE = 50_000                # primeras 50,000 transacciones del motor sin costo (German, 2-oct); supuesto: por mes
+MIN_BILL = 14_000                 # facturación mínima mensual (German, 4-oct)
+COMMIT = MIN_BILL - PLATFORM      # compromiso en transacciones que suma al fee de plataforma
+COMMIT_TX = COMMIT / (R1 * TICKET)  # transacciones aprobadas que cubren el compromiso, al ticket de $15 y la tarifa del tramo 1
+assert COMMIT_TX <= CUT_TX
 def variable(vol):
     return min(vol, CUT) * R1, max(vol - CUT, 0) * R2
 t1, t2 = variable(VOL)
@@ -35,4 +39,5 @@ if __name__ == '__main__':
     print(f"TOTAL: ${total:,.0f}/mes ${total*12:,.0f}/año  all-in ${total/TX:.4f}/trx  {total/VOL:.3%} del volumen")
     print(f"por trx de cada tramo: ${TICKET*R1:.4f} / ${TICKET*R2:.4f}; suscripciones como % del ticket: {SUBS/TICKET:.3%}")
     for ap in (0.85,): print(f"sensibilidad: si 150,000 son las aprobadas a {ap:.0%}, envíos >= {TX/ap:,.0f} -> suscripciones ${(TX/ap-SUBS_FREE)*SUBS:,.0f}/mes")
+    print(f"facturación mínima ${MIN_BILL:,} = ${PLATFORM:,} plataforma + ${COMMIT:,} en transacciones = {COMMIT_TX:,.1f} trx aprobadas a ${R1*TICKET:.3f} (0.28% x $15); con suscripciones contando: {(COMMIT + SUBS_FREE*SUBS)/(R1*TICKET + SUBS):,.0f} trx")
     print(K(VOL), K(CUT), K(VOL - CUT))

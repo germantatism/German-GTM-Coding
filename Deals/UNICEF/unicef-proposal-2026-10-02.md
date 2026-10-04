@@ -93,7 +93,7 @@ Instrucción de German: la tarifa empieza en 0.28% y baja a 0.24%. Aplicado con 
 - Las tasas ya no son las de Yango: las dio German. Sigue por confirmar el corte de 100,000 transacciones.
 
 ## Pricing v4 (2-oct, tarde): primeras 50,000 transacciones de suscripciones sin costo
-Instrucción de German: en suscripciones se dan gratis las primeras 50,000 transacciones. Aplicado con build/fix4_subs_free.py (solo el slide de pricing). **Esta es la versión vigente en el deck.**
+Instrucción de German: en suscripciones se dan gratis las primeras 50,000 transacciones. Aplicado con build/fix4_subs_free.py (solo el slide de pricing). Reemplazada por la v5 de abajo.
 
 | Concepto | Precio | Mensual | Anual |
 |---|---|---|---|
@@ -108,3 +108,12 @@ Instrucción de German: en suscripciones se dan gratis las primeras 50,000 trans
 1. Las 50,000 gratis son por mes y se renuevan cada mes (German dijo "las primeras 50k trx", sin decir el periodo). Si fueran 50,000 una sola vez, la línea vuelve a $3,000 al mes desde el segundo mes.
 2. El corte de tramo en 100,000 transacciones aprobadas.
 3. Las 150,000 transacciones pasan por el motor, un envío cada una. Si los reintentos cuentan, con 85% de aprobación serían unos 176,471 envíos: $2,529 al mes.
+
+## Pricing v5 (4-oct): facturación mínima mensual de $14,000
+Instrucción de German: facturación mínima mensual de $14,000, es decir $10,000 de plataforma más $4,000 en transacciones; calcular cuántas transacciones cubren los $4,000. Aplicado con build/fix5_min_billing.py (solo el slide de pricing). **Esta es la versión vigente en el deck.**
+
+- $4,000 ÷ ($15 × 0.28%) = $4,000 ÷ $0.042 = **95,238 transacciones aprobadas al mes** (en el slide: "cerca de 95,000"). Caen completas en el tramo 1.
+- Si el compromiso también se cubriera con la tarifa de suscripciones ($0.02 por envío a partir de 50,000), bastarían 80,645 transacciones. El slide usa solo la tarifa por transacción aprobada, como en Línea Directa.
+- Con 150,000 transacciones el mínimo queda cubierto (total estimado $18,000, sin cambio). Si el mes cierra por debajo, se factura la diferencia.
+- Cambios en el slide: header; caja de notas del panel izquierdo (lleva el mínimo); fila nueva "Facturación mínima mensual $14,000 / mes" bajo el fee de plataforma en el panel del medio; fila nueva "Facturación mínima: $14,000 (≈95,000 trx) | Cubierta | Cubierta" antes del total en el panel derecho; nota del panel derecho reescrita.
+- Contra la Pricing Policy: fee fija + MMG aditivo es la estructura preferida. Facturar plataforma y mínimo mensual (en vez de anual anticipado) va por zona amarilla. El equivalente en transacciones depende del ticket de $15: si el ticket real es otro, cambia el número de transacciones, no los $4,000.
