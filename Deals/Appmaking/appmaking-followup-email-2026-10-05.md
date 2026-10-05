@@ -18,7 +18,7 @@ Following up on my note and Sean's. We understand the decision and we respect it
 
 We would still like to sit down with you and Dzmitry for 20 minutes. We want to understand what the right solution looks like for Appmaking at this stage, and see what we can do to help, or what we would need to do differently to be that solution for you.
 
-Piotr Sierpinski, who leads our sales team in Europe, will be at the Stripe event in Warsaw this Thursday. If you or Dzmitry are going, it would be great for you to meet him there in person. I have copied him here.
+Piotr will be at the Stripe event in Warsaw this Thursday, his home city. Limassol did not work out last month, so if you or Dzmitry are going, this could be the chance to finally meet him in person. He is in copy.
 
 If Warsaw is not in your plans, let's still meet online. Sean and I are free on Friday at your 5:00 PM, and if another time is easier, we will adapt.
 
@@ -30,6 +30,7 @@ German
 
 Notas:
 - Stripe event en Warsaw: jueves 8-oct-2026 (dato de Piotr, 5-oct). Piotr es quien iría a conocerlos ahí.
+- Piotr YA fue presentado en el hilo el 15-sep (German lo puso en copia; Piotr se presentó como basado en Warsaw, BD Europa, foco subscriptions y apps). Intentaron verse en Limassol (WN Conference) y Tatsiana respondió el 18-sep "Nice to meet you, Piotr! ... Hope we can catch you next time!". Por eso el tono es "la próxima vez llegó", sin volver a presentarlo.
 - 5:00 PM EEST (Limassol, UTC+3) = 7:00 AM PT (German en San Francisco). Viernes 9-oct libre en el calendario de German a esa hora. Disponibilidad de Sean no verificada.
 - Sin precio, sin concesiones y sin preguntas de discovery por escrito. Palancas para la call: subs engine, platform fee, add-ons.
 - Si no responde a este toque, el siguiente paso debería ser otro canal (LinkedIn o WhatsApp) o dejarlo en pausa y retomar en 2027.
