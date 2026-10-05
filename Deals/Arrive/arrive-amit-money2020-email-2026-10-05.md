@@ -12,7 +12,7 @@ Cc: susana.awad@y.uno
 
 Hi Amit,
 
-German here, from Susi's team. Thank you for making time on the 29th, I am really looking forward to it. I have been following Arrive for a good few months now, and the way you are building payments across the rental and resale platform is one of the conversations I most want to have.
+Thank you for making time on the 29th, I am really looking forward to it. I have been following Arrive for a good few months now, and the way you are building payments across the rental and resale platform is one of the conversations I most want to have.
 
 One small ask, only if it is not an imposition. I was going through the Money20/20 attendee list and noticed Debbie Guerra will be in Las Vegas. Part of our team will be there as well, so would you be open to connecting us for a coffee with her during the event? It would be a nice way to get to know the team in person ahead of our call, and the conversation with you on the 29th stays exactly as planned.
 
