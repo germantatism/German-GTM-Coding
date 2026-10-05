@@ -1,4 +1,5 @@
 # Meeting Brief: Yuno <> CellPoint (Oct 07, 2026)
+Google Doc: https://docs.google.com/document/d/1lQ7CmOkznZWECw5Ypt8XLqCovKdIfuqAwzjaPVIWNik/edit
 
 **Wednesday, October 7, 2026 · 11:45 to 12:45 PT** (13:45 Bogotá · 13:45 Dallas CDT · 19:45 London BST) · 60 min
 **Event:** "Catch up CP & Yuno", organized by Andrew Goddard, invite sent Sep 29.
