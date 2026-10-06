@@ -39,3 +39,15 @@ We still think Flair is a strong fit. A ULCC on three processors across CA, US a
 - Opens with the surprise at the low in-house cost, which reframes "costs basically null" without calling it wrong.
 - Borrows Sean's moves: "a ways off", "flexibility in how we structure the commercials", "how you arrived at that number", "same picture on the cost side and the value side", "still think it's a strong fit", "this week or next".
 - Still no price quoted.
+
+---
+
+## v3 (6-oct) · shorter, plainer
+
+Hey Lucas, appreciate the honesty, and thanks for pushing for it on your side.
+
+I'm a bit surprised the in-house cost comes out that low. $0.02 CAD covers the last 10% of rules, but not the dev time per change, the manual recon across 3 dashboards or the declines you can't retry on another processor.
+
+I know 6 to 8 cents is a ways off. We have flexibility on structure, and if the gap is really that last 10%, the scope can be a lot narrower than what I sent.
+
+30 mins this week or next to compare how you got to your number and how we got to ours? Whoever is weighing in on the approval is welcome. If it's still a no after that, we park it and pick it up when things change.
