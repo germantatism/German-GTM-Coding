@@ -17,19 +17,19 @@
 
 ## Subject
 
-Super.com + Yuno, meet at Money20/20?
+Coffee in Vegas?
 
-## Body
+## Body (v2, lighter; v1 rejected as too tedious)
 
 Hi Rick,
 
-German here, from Yuno. We haven't met yet, but Super has come up on our side a few times over the past year, so I wanted to introduce myself before Vegas and give you the short version of where things stand.
+German from Yuno here. We haven't met, but your team and I have crossed paths a few times this past year, so I figured I'd say hi before Vegas.
 
-We first connected with Sarah and Akshay in mid 2025, and Sarah joined us at our leadership summit in Mexico last November. This summer I picked the conversation back up with Carol and Akshay around LatAm. Carol was candid that Mexico was live but not performing as expected and that the region was not a priority for the second half, so we agreed to look at the data again toward the end of the year. I understand Sarah and Carol have since moved on, and I didn't want the thread to get lost with them.
+Quick backstory: I spoke with Sarah and Akshay last year, and this summer with Carol about LatAm. We left it at "let's revisit toward year end." With Sarah and Carol now gone, you seemed like the right person to keep the conversation going.
 
-Also, congrats on the Series D. Great to see the momentum.
+Also, congrats on the Series D. Big milestone.
 
-I saw your name on the Money20/20 list and I'll be in Vegas that week as well. It would be great to finally meet in person and hear how you're thinking about payments at Super now, no agenda beyond that. Would a coffee between sessions on Monday or Tuesday work?
+I saw you're speaking at Money20/20. I'll be there all week. Coffee between sessions Monday or Tuesday? No agenda, just curious to hear what you're building on the payments side.
 
 Best,
 German
