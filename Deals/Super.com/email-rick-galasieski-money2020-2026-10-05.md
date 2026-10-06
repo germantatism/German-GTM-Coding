@@ -19,17 +19,15 @@
 
 Coffee in Vegas?
 
-## Body (v2, lighter; v1 rejected as too tedious)
+## Body (v3, German's edit minus the repeated Money20/20 mention)
 
 Hi Rick,
 
-German from Yuno here. We haven't met, but your team and I have crossed paths a few times this past year, so I figured I'd say hi before Vegas.
+German from Yuno here. We haven't met, but your team and I have crossed paths a few times this past year, and when I saw your name on the Money20/20 list I had to reach out.
 
-Quick backstory: I spoke with Sarah and Akshay last year, and this summer with Carol about LatAm. We left it at "let's revisit toward year end." With Sarah and Carol now gone, you seemed like the right person to keep the conversation going.
+For context: I spoke with Sarah and Akshay last year, and this summer with Carol about LatAm. We left it at "let's revisit toward year end." With Sarah and Carol now gone, you seemed like the right person to keep the conversation going.
 
-Also, congrats on the Series D. Big milestone.
-
-I saw you're speaking at Money20/20. I'll be there all week. Coffee between sessions Monday or Tuesday? No agenda, just curious to hear what you're building on the payments side.
+I'll be in Vegas all week. Coffee between sessions Monday or Tuesday? No agenda, just curious to hear what you're building on the payments side.
 
 Best,
 German
