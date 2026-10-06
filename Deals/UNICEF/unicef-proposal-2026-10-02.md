@@ -110,10 +110,29 @@ Instrucción de German: en suscripciones se dan gratis las primeras 50,000 trans
 3. Las 150,000 transacciones pasan por el motor, un envío cada una. Si los reintentos cuentan, con 85% de aprobación serían unos 176,471 envíos: $2,529 al mes.
 
 ## Pricing v5 (4-oct): facturación mínima mensual de $14,000
-Instrucción de German: facturación mínima mensual de $14,000, es decir $10,000 de plataforma más $4,000 en transacciones; calcular cuántas transacciones cubren los $4,000. Aplicado con build/fix5_min_billing.py (solo el slide de pricing). **Esta es la versión vigente en el deck.**
+Instrucción de German: facturación mínima mensual de $14,000, es decir $10,000 de plataforma más $4,000 en transacciones; calcular cuántas transacciones cubren los $4,000. Aplicado con build/fix5_min_billing.py (solo el slide de pricing). Reemplazada por la v6 de abajo.
 
 - $4,000 ÷ ($15 × 0.28%) = $4,000 ÷ $0.042 = **95,238 transacciones aprobadas al mes** (en el slide: "cerca de 95,000"). Caen completas en el tramo 1.
 - Si el compromiso también se cubriera con la tarifa de suscripciones ($0.02 por envío a partir de 50,000), bastarían 80,645 transacciones. El slide usa solo la tarifa por transacción aprobada, como en Línea Directa.
 - Con 150,000 transacciones el mínimo queda cubierto (total estimado $18,000, sin cambio). Si el mes cierra por debajo, se factura la diferencia.
 - Cambios en el slide: header; caja de notas del panel izquierdo (lleva el mínimo); fila nueva "Facturación mínima mensual $14,000 / mes" bajo el fee de plataforma en el panel del medio; fila nueva "Facturación mínima: $14,000 (≈95,000 trx) | Cubierta | Cubierta" antes del total en el panel derecho; nota del panel derecho reescrita.
 - Contra la Pricing Policy: fee fija + MMG aditivo es la estructura preferida. Facturar plataforma y mínimo mensual (en vez de anual anticipado) va por zona amarilla. El equivalente en transacciones depende del ticket de $15: si el ticket real es otro, cambia el número de transacciones, no los $4,000.
+
+## Pricing v6 (6-oct): plataforma $7,000, mínimo $10,000, suscripciones $0.015
+Instrucción de German: bajar el fee de plataforma a $7,000, la facturación mínima mensual a $10,000 y cobrar el motor de suscripciones a $0.015 por transacción enviada. Aplicado con build/fix6_v6_lower_fees.py (solo texto del slide 15, mismos IDs que v5, nada se movió). **Esta es la versión vigente en el deck.** Los porcentajes (0.28% / 0.24%), el corte de 100,000 trx y las 50,000 gratis de suscripciones no cambian.
+
+| Concepto | Precio | Mensual | Anual |
+|---|---|---|---|
+| Tramo 1: 0 a 100,000 trx aprobadas | 0.28% del valor de cada transacción aprobada | $4,200 | $50,400 |
+| Tramo 2: más de 100,000 trx aprobadas | 0.24% | $1,800 | $21,600 |
+| Subtotal transacciones (150k) | $0.04 por trx en promedio | $6,000 | $72,000 |
+| Motor de suscripciones | $0.015 por trx enviada; primeras 50,000 del mes sin costo; 100,000 facturables | $1,500 | $18,000 |
+| Fee de plataforma | | $7,000 | $84,000 |
+| Facturación mínima mensual | $10,000 = $7,000 de plataforma + $3,000 en transacciones (≈71,000 trx aprobadas) | Cubierta | Cubierta |
+| **Total** | **$0.10 all-in por transacción aprobada (0.64% del volumen)** | **$14,500** | **$174,000** |
+
+- $3,000 ÷ ($15 × 0.28%) = $3,000 ÷ $0.042 = **71,429 transacciones aprobadas al mes** (en el slide: "cerca de 71,000"). Caen completas en el tramo 1. Si el compromiso también contara la tarifa de suscripciones, bastarían 65,789; el slide sigue usando solo la tarifa por transacción aprobada.
+- Supuesto mío: el mínimo de $10,000 es el total facturado (plataforma + transacciones), igual que en la v5. Si German quería $10,000 solo en transacciones encima de los $7,000 de plataforma, el mínimo sería $17,000 y hay que rehacer el slide.
+- Supuesto heredado: las 150,000 pasan por el motor, un envío cada una (con reintentos a 85% serían ~176,471 envíos: $1,897 al mes).
+- Contra la Pricing Policy (ver memoria yuno-pricing-policy): el fee de plataforma de $7,000 queda por debajo del list de V3 ($10,000) y hay que validar la zona antes de enviar; la estructura fee fija + MMG aditivo sigue siendo la preferida.
+- Cambios en el slide: header; "$0.015/trx" en el panel izquierdo; caja de notas del mínimo; filas "Fee de plataforma $7,000 / mes" y "Facturación mínima mensual $10,000 / mes" en el panel del medio; en el panel derecho suscripciones $1,500 / $18,000, plataforma $7,000 / $84,000, "Facturación mínima: $10,000 (≈71,000 trx)", total $14,500 / $174,000, "≈ $0.10 all-in" y la nota.

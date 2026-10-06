@@ -75,7 +75,7 @@ LOGO = 'https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/com
 # (old image id, new id, box): UNICEF wordmark is 1300 x 313 (4.15:1)
 LOGOS = [('ld_cover_logo', 'un_cover_logo', (119, 23, 70.6, 17)), ('ld_close_logo', 'un_close_logo', (621, 197.5, 70.6, 17))]
 FORBID = ['Línea Directa', 'LÍNEA DIRECTA', 'Linea Directa', 'Eledé', 'Perú', 'PERÚ', 'portal de pedidos', 'subcuenta', '$7,500', '325,000', '125,000',
-          '225,000', '$0.06', '$0.05', '$0.015', '$15,000', 'compromiso', 'Compromiso', 'Palco', ' — ', ' – ', ' - ']
+          '225,000', '$0.06', '$0.05', '$15,000', 'compromiso', 'Compromiso', 'Palco', ' — ', ' – ', ' - ']
 
 if __name__ == '__main__':
     s = svc(); P = s.presentations().get(presentationId=PID).execute()

@@ -7,7 +7,7 @@ from engine import elements, text_of, replace_requests, run, pos, TEXT_FIELDS
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 PID = '111EW1tmbSYPYtxLYRa5Mf_yx0Cn-BxA4wT2FAZeGpe0'
-WORK = '/private/tmp/claude-501/-Users-germantatis-Desktop-GTMCoding/44c54378-7dc3-4df9-b971-1b6c9bd43627/scratchpad/unicef'
+WORK = '/private/tmp/claude-501/-Users-germantatis-Desktop-GTMCoding/9370c6dc-908f-4e40-b6bc-431ca9d296b0/scratchpad/unicef'
 os.makedirs(WORK, exist_ok=True)
 def svc():
     creds = service_account.Credentials.from_service_account_file(os.path.expanduser('~/.config/gsuite/sa.json'),

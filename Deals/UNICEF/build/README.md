@@ -11,9 +11,10 @@ Orden de ejecución (ya aplicado, no volver a correr sobre el mismo deck):
 5. `fix3_rates.py`: pricing v3, 0.28% y 0.24% (antes 0.25% y 0.20%); solo el slide de pricing.
 6. `fix4_subs_free.py`: pricing v4, primeras 50,000 transacciones del motor de suscripciones sin costo; solo el slide de pricing.
 7. `fix5_min_billing.py`: pricing v5, facturación mínima mensual de $14,000 ($10,000 de plataforma + $4,000 en transacciones, cerca de 95,000 aprobadas al mes); filas nuevas en los paneles del medio y derecho; solo el slide de pricing.
-8. `qa.py`: tokens prohibidos, guiones, elementos fuera de página y hoja de contacto.
+8. `fix6_v6_lower_fees.py`: pricing v6 (6-oct), fee de plataforma $7,000, facturación mínima mensual $10,000 ($7,000 + $3,000 en transacciones, cerca de 71,000 aprobadas al mes) y motor de suscripciones $0.015 por transacción enviada; solo texto, mismos IDs que fix5; se niega a escribir si el slide no coincide con v5 (`force` para pisar).
+9. `qa.py`: tokens prohibidos, guiones, elementos fuera de página y hoja de contacto (el footer "Contrato a 3 años" sale off-page por 33 pt desde la plantilla de Línea Directa; no se tocó).
 
 - `model.py`: toda la aritmética del pricing. Cambiar ahí los porcentajes, el corte de tramo, el volumen o el precio de suscripciones.
 - `common.py`: helpers de Línea Directa (`fmt_requests`, `box_req`, `geom`, `thumbs`).
 
-Para cambiar el pricing sobre el deck ya construido: editar `model.py` y escribir un `fix6_*.py` con el patrón de `fix5_min_billing.py` (IDs `g3fb7d86b358_4_*` y `ld_commit_*`). Antes de pisar, comparar contra el estado guardado para no borrar ediciones manuales de German.
+Para cambiar el pricing sobre el deck ya construido: editar `model.py` y escribir un `fix7_*.py` con el patrón de `fix6_v6_lower_fees.py` (IDs `g3fb7d86b358_4_*` y `ld_commit_*`). Antes de pisar, comparar contra el estado guardado para no borrar ediciones manuales de German.
