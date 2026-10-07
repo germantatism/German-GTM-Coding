@@ -1,0 +1,177 @@
+[
+  {
+    "name": "stripe-sessions-research",
+    "source": ".claude/commands/Stripesessionsresearch.md",
+    "desc": "Stripe Sessions Research — Payment Stack Deep Dive",
+    "local_dep": true,
+    "lines": 255
+  },
+  {
+    "name": "builddeck",
+    "source": ".claude/commands/builddeck.md",
+    "desc": "End-to-end deck build for a new merchant",
+    "local_dep": true,
+    "lines": 356
+  },
+  {
+    "name": "business-case",
+    "source": ".claude/commands/business-case.md",
+    "desc": "Build a Business Case Excel for any prospect company. Input: <company name>",
+    "local_dep": false,
+    "lines": 328
+  },
+  {
+    "name": "cadence-builder",
+    "source": ".claude/commands/cadence-builder.md",
+    "desc": "Cadence Builder — Yuno SDR",
+    "local_dep": false,
+    "lines": 222
+  },
+  {
+    "name": "coldcall",
+    "source": ".claude/commands/coldcall.md",
+    "desc": "Cold Call Prep — Yuno SDR",
+    "local_dep": false,
+    "lines": 73
+  },
+  {
+    "name": "email-bizcase-teaser",
+    "source": ".claude/commands/email-bizcase-teaser.md",
+    "desc": "Email Business Case Teaser — Yuno SDR",
+    "local_dep": false,
+    "lines": 45
+  },
+  {
+    "name": "email-successcase",
+    "source": ".claude/commands/email-successcase.md",
+    "desc": "Email Success Case — Yuno SDR",
+    "local_dep": false,
+    "lines": 206
+  },
+  {
+    "name": "email1",
+    "source": ".claude/commands/email1.md",
+    "desc": "Email Opener — Yuno SDR",
+    "local_dep": false,
+    "lines": 171
+  },
+  {
+    "name": "email2",
+    "source": ".claude/commands/email2.md",
+    "desc": "Email Deep Dive — Yuno SDR",
+    "local_dep": false,
+    "lines": 255
+  },
+  {
+    "name": "industrysnapshot",
+    "source": ".claude/commands/industrysnapshot.md",
+    "desc": "Industry Snapshot — Yuno SDR",
+    "local_dep": false,
+    "lines": 68
+  },
+  {
+    "name": "lk-opener",
+    "source": ".claude/commands/lk-opener.md",
+    "desc": "LinkedIn Connection Request — Yuno SDR",
+    "local_dep": false,
+    "lines": 47
+  },
+  {
+    "name": "mbr-builder",
+    "source": ".claude/commands/mbr-builder.md",
+    "desc": "Build a 10-slide Monthly Business Review deck for any Yuno merchant. Input: <merchant> <month YYYY>",
+    "local_dep": true,
+    "lines": 142
+  },
+  {
+    "name": "meeting-prep",
+    "source": ".claude/commands/meeting-prep.md",
+    "desc": "Deep research briefing for upcoming meetings. Input: <meeting-details>",
+    "local_dep": true,
+    "lines": 300
+  },
+  {
+    "name": "meetingbrief",
+    "source": ".claude/commands/meetingbrief.md",
+    "desc": "Meeting Brief v2 — give a company name; finds the calendar meeting, researches everything, builds the battle-card brief as a Google Doc. Input: <company-name>",
+    "local_dep": true,
+    "lines": 90
+  },
+  {
+    "name": "negative-response",
+    "source": ".claude/commands/negative-response.md",
+    "desc": "Reply to Prospect Objection or Rejection",
+    "local_dep": false,
+    "lines": 140
+  },
+  {
+    "name": "newaccounts",
+    "source": ".claude/commands/newaccounts.md",
+    "desc": "Find 5 New ICP-Fit Companies for Yuno",
+    "local_dep": false,
+    "lines": 94
+  },
+  {
+    "name": "pipeline-sync",
+    "source": ".claude/commands/pipeline-sync.md",
+    "desc": "/pipeline-sync — Operate, tune, and fix the Pipeline Sync (TCL → Deal Status GTM Apps Script) end to end. Input: <what you want: status | change config | fix something | restore>",
+    "local_dep": true,
+    "lines": 114
+  },
+  {
+    "name": "prioritize",
+    "source": ".claude/commands/prioritize.md",
+    "desc": "Daily Account Prioritization (DB-Powered)",
+    "local_dep": true,
+    "lines": 301
+  },
+  {
+    "name": "prioritizeaccounts",
+    "source": ".claude/commands/prioritizeaccounts.md",
+    "desc": "Account Prioritization by Buying Signals",
+    "local_dep": false,
+    "lines": 99
+  },
+  {
+    "name": "profile",
+    "source": ".claude/commands/profile.md",
+    "desc": "Facebook Attendee — Stripe Sessions Pre-Meeting Brief. Input: LinkedIn: [URL] Company: [company name]",
+    "local_dep": true,
+    "lines": 256
+  },
+  {
+    "name": "research",
+    "source": ".claude/commands/research.md",
+    "desc": "SDR Research Brief — Yuno Payment Orchestrator",
+    "local_dep": false,
+    "lines": 255
+  },
+  {
+    "name": "signals",
+    "source": ".claude/commands/signals.md",
+    "desc": "Intent Signals Scanner — Yuno",
+    "local_dep": false,
+    "lines": 103
+  },
+  {
+    "name": "slide-builder",
+    "source": ".claude/commands/slide-builder.md",
+    "desc": "Build a Yuno-branded presentation deck in Google Slides. Input: <merchant> <period> [qbr|brief]",
+    "local_dep": true,
+    "lines": 317
+  },
+  {
+    "name": "yuno-sales-deck",
+    "source": ".claude/skills/yuno-sales-deck/ (full folder, node_modules removed; run `npm install` in scripts/)",
+    "desc": "Builds German's master Yuno sales deck (.pptx) for a named merchant, research-backed and consulting-grade. Merges German Tatis's outside-in three-lever business cases (xAI, Anthropic, Higgsfield, Flair) with Samuel Vieira's Roblox decks (10-K-driven business case, C-suite product session, first-meeting deck). TRIGGERS: 'build a presentation / deck / slides for [merchant]', 'business case deck', 'BC deck', 'pitch deck', 'proposal deck', 'first-meeting or intro deck', 'C-suite / exec presentation', 'QBR or workshop deck', 'deck like Roblox / Higgsfield / Flair', 'deck for my call with [merchant]', 'arma el deck / la presentacion / el business case de [merchant]', or turning account research, a POV or a business case into slides for a Yuno prospect or customer. Works with only a company name: it researches (local repo, memory, Gong, Slack, Gmail, Drive, Calendar, Glean, web), asks at most three questions, sizes the value, writes the storyline, builds the .pptx and runs QA. Not for deck.yuno.tools web decks (/builddeck), the Excel model (/business-case), MBRs (/mbr-builder) or Google Slides QBRs (/slide-builder).",
+    "local_dep": true,
+    "lines": 150
+  },
+  {
+    "name": "intro-reply",
+    "source": "Milo/intro-reply/ (Yuno Agents cloud routine skill)",
+    "desc": "Procesa las intros que Magdalena (SDR de Yuno) hace por email presentando a German con un lead externo (German en CC, lead de otra empresa en TO). Investiga al lead, clasifica su buyer persona, redacta la respuesta corta de German, pide el OK a Magdalena por email y SOLO tras su OK envía la respuesta en el hilo original. Usar cuando corra la tarea programada de intros, o cuando German pida 'revisa intros', 'procesa intros' o 'procesa aprobaciones'.",
+    "local_dep": false,
+    "lines": 147
+  }
+]

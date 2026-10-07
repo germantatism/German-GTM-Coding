@@ -1,0 +1,151 @@
+- [ViX deal](project_vix.md) — decisor real = CFO-type en Miami, no Lorena Velarde (champion); interés en Mastercard POP
+- [Pipeline Sync](project_pipeline_sync.md) — Apps Script TCL `Final List` → Deal Status GTM cada 15 min; skill `/pipeline-sync`
+- [Yango deal](project_yango.md) — driver-recharge CO/PE/BO/VE; propuesta FINAL $23.8K/mes ENVIADA por WhatsApp; presentada a HQ 1-oct, esperando feedback; Piotr habla con HQ ruso; falta opp en Salesforce y aprobación de pricing
+- [Gmail workflow central](feedback_gmail_workflow.md) — Claude siempre en el Gmail de German; leer threads + drafts proactivos
+- [Fareportal](project_fareportal.md) — Tom Spagnola champion; Naveen (CIO) = decisor; BC enviado 14-sep sin respuesta; tono SOFT
+- [RFP training guide](reference_rfp_training_guide.md) — Google Doc "Payments & Yuno: Guía de Entrenamiento"; ampliar en ese mismo Doc
+- [BC slides always](feedback_bc_slides.md) — Presentar slides 4-7 siempre que corra /business-case
+- [Slide 2 always complete](feedback_slide2_always_complete.md) — Business-overview slide siempre completo; forceLocalOverview si queda pobre
+- [Email 1 no name dropping](feedback_email1_no_namedrop.md) — Email 1 sin logos de clientes; name dropping desde Email 2
+- [No "small feat"](feedback_no_small_feat.md) — Nunca la frase "no small feat"
+- [Concierge short](feedback_concierge_short.md) — Párrafo Payments Concierge en 2-3 frases (email2)
+- [doTERRA PSP](project_doterra_psp.md) — procesa vía Cybersource
+- [Universal PSP + name](project_universal_psp.md) — "Universal" (no UMG); PSP único bank-acquirer (Chase/BofA) con disclaimer
+- [Always commit and push](feedback_auto_commit_push.md) — git add + commit + push tras cualquier cambio de archivo, sin preguntar
+- [Supabase key location](project_supabase_service_key_location.md) — service-role key en yuno-sales-pitch-maker/.env.local; nunca pedirla
+- [Deck languages (en/es/pt/fr)](project_deck_languages.md) — t()/pickLang; cómo añadir idiomas; TODO traducción pt/fr en DB
+- [Salesmaker deploy branch](project_salesmaker_protected_master.md) — deploy desde `main`; `master` es decoy protegido
+- [Never false info](feedback_no_false_info_disclaimer.md) — Solo hechos verificados; omitir lo no verificable. TODOS los proyectos
+- [PSP chips scope](feedback_psps_chips_scope.md) — Chips slide 3 = gateways/PSPs/MoR únicamente; nunca BNPL, wallets, redes, issuers, LPMs
+- [PayPal is not a processor](feedback_paypal_not_processor.md) — PayPal = wallet/APM, nunca cuenta como PSP
+- [Cover lockup](feedback_cover_lockup.md) — Cover con lockup `yuno | {logo}` arriba-izq; sin "Hello team"
+- [Suno account](project_suno_jasper.md) — Madden frenó 21-sep; oferta subs engine 6 meses ENVIADA; Justo le escribió a Madden (2-oct), no duplicar; NDA pendiente; ⚠️ nunca notetakers
+- [No dashes](feedback_no_dashes.md) — Nunca em-dashes ni " - " como puntuación en entregables
+- [PDF: no transform:scale](feedback_pdf_no_transform_scale.md) — En PrintViewer, transform:scale vacía los slides; quedarse en 1920×1080
+- [PDF vw=paper width](project_pdf_vw_paper_width.md) — capturar en 1440×810 + zoom 0.75 para que el PDF iguale el link
+- [PDF: no cursor artifacts](feedback_no_pdf_cursor_artifacts.md) — PDFs sin carets "|" de Google Slides
+- [No slide overlap](feedback_no_slide_overlap.md) — Elementos nunca se solapan; footer stats slide 3 ≥40px de las cards
+- [Never duplicate decks](feedback_never_duplicate_decks.md) — Si el merchant existe (csv/manifest/logo local), parar y avisar
+- [Super.com contacts](project_super_contacts.md) — Akshay Kohli (fintech products); Sarah y Carol se fueron; Rick Galasieski (GM Financial Products, rick@super.com) va a Money20/20, email intro+café EN BORRADOR 5-oct
+- [NYT / Gus Jacobs](project_nyt_gus_jacobs.md) — NYT ya orquesta; pitch decline/renewal recovery + auth-rate
+- [Patreon / Kritika](project_patreon_kritika.md) — Head of Payment Ops; licencia parental hasta ene-2027; aceptó LinkedIn 6-oct, nota friendly; cubre Michael Mincieli (Tax); retomar enero
+- [Stripe Tour Paris event](project_stripe_tour_paris_event.md) — 35/54 attendees hechos, ~19 restantes
+- [Stripe Tour Berlin event](project_stripe_tour_berlin_event.md) — 12 existentes + batch 1 (15) hechos, ~75 restantes
+- [Polymarket PSP](project_polymarket_psp.md) — MoonPay = procesador primario (fiat on-ramp)
+- [AI apps batch 2026-06-17](project_ai_apps_batch_2026_06_17.md) — 5 briefs pendientes (ver PSPs por marca)
+- [Bending Spoons PSP](project_bending_spoons_psp.md) — roll-up de apps, IAP fee leakage en S-1, PSPs por marca
+- [Replika PSP](project_replika_psp.md) — Stripe único web + IAP, quejas billing BBB
+- [Lightricks PSP](project_lightricks_psp.md) — Stripe+Adyen (+PayPal wallet), sin orquestador = ángulo
+- [Chai AI PSP](project_chai_ai_psp.md) — $80M ARR, PSP web sin revelar, verificar live
+- [Perplexity PSP](project_perplexity_psp.md) — India #2 card-only (gap UPI) + agentic commerce en rail US único
+- [Praktika PSP](project_praktika_psp.md) — 100% IAP, sin web checkout; BC = App Store fee recovery ($6.5M/32.6% ARR)
+- [Cambly](project_cambly.md) — Stripe+EBANX (APMs solo Brasil); BC APMs locales por mercado ($14.66M total)
+- [Babbel](project_babbel.md) — Adyen + Stripe reportado, sin orquestador; lead = orquestación + churn recovery; ICP High (16)
+- [Voodoo PSP](project_voodoo_psp.md) — Stripe US-iOS web checkout (MoR), single-PSP, IAP fee-bypass
+- [Flair contacts](project_flair_contacts.md) — Lucas Oordt-Bosman (WhatsApp); orquestación in-house sobre Elavon+Nuvei+Braintree; 6-oct cerró suave (breakeven $0.02 CAD vs $0.06-0.08); reply WhatsApp v2 redactado (patrón Sean/FlightHub): sorpresa por costo in-house tan bajo + cómo llegó al número + flexibilidad comercial sin precio + última call
+- [FlightHub](project_flighthub.md) — Anna-Lena (PM), Nick Hart CFO; propuesta v3 ($10K + tiers 8/6/4/3.5/3¢) ENVIADA 23-sep; FUP 28-sep + nudge de Sean 1-oct sin respuesta; siguiente toque dirigido a Nick
+- [Hostinger](project_hostinger.md) — empezar por India + vault-as-a-service; NDA FIRMADO 2-oct; ⚠️ local India processing pausado internamente, cross-border sí; FUP a Paulius ENVIADO 2-oct (working session de token migration 13/14-oct); Antoine pide volumen estimado de India; local India "early 2027" sin confirmar
+- [Deck Edit button](project_deck_edit_button.md) — "Editar deck" auto-aplica; off-catalog escala a needs-human
+- [Deck override layer](project_deck_override_layer.md) — deckOverrides + ov() = editar texto de cualquier deck vía Supabase sin deploy
+- [Deck edits scoped](feedback_deck_edits_scoped.md) — Cada edición aplica a UN deck (slug / audience+language)
+- [FanDuel deck+research](project_fanduel.md) — PayNearMe/Trustly/Play+, sin orquestador; pains payout + declines; Predicts catalyst
+- [Buyer personas](reference_buyer_personas.md) — 13 personas de Yuno; adaptar outreach a la persona que nombre German
+- [German profile](user_german_profile.md) — Senior AE en Yuno; outbound research + outreach
+- [Emails shorter + senior](feedback_email_length_senior.md) — Email 1 y 2 más densos, tono senior, misma voz
+- [LinkedIn shorter](feedback_linkedin_shorter.md) — Outreach LinkedIn/InMail/DM más corto que email
+- [Google Sheets editing (gdrive MCP)](project_gsheets_mcp.md) — ⚠️ MUERTO desde sep-2026; reemplazo vía tools/gsuite
+- [gcloud CLI + proyecto GTM Claude Tools](project_gcloud_cli.md) — gcloud en ~/google-cloud-sdk; proyecto gtm-claude-tools-260922; falta consent screen
+- [TCL agent build](project_tcl_agent.md) — 695 compañías en TCL_v2, 36 columnas; enriquecer por oleadas con /research + SimilarWeb
+- [Lululemon / Eric Mei](project_lululemon.md) — PM Payments; puerta = NA PSP assessment, FY27 AOP; mudo desde 30-jul; nota LinkedIn 22-sep; FUP soft ENVIADO 1-oct
+- [StubHub research](project_stubhub.md) — 🔴 High ICP; lead seller-payout + cross-border acquiring, sin orquestador
+- [Curology deck](project_curology.md) — slide 2 en columna business_overview de Supabase; card-only checkout = ángulo
+- [Gopuff deck](project_gopuff.md) — Stripe payouts + Forage EBT confirmados (nunca afirmar Braintree); ángulo consolidación pre-IPO
+- [McAfee PSP](project_mcafee_psp.md) — Digital River MoR colapsó 2025 + equipo in-house = ángulo MoR-exit
+- [Yuno positioning](reference_yuno_positioning.md) — "unified operating system to enable global financial infrastructure"
+- [Hertz account](project_hertz.md) — Stripe único (capa encima, nunca reemplazar); John March fuera, no contactar
+- [ThriveCart](project_thrivecart.md) — plataforma de checkout; embed-Yuno como orquestación, 🔴 High (17)
+- [Tango Live](project_tango_live.md) — live-streaming; orquestación dual pay-in + payouts, 🔴 High (16)
+- [US QSR/retail batch](project_us_qsr_retail_batch.md) — 45 marcas; US-only = fit débil; QSR globales son los fits
+- [Localiza / André Aires](project_localiza_andre.md) — re-engagement jul-2026 vía grupo LinkedIn con Alejandro
+- [CellPoint white label](project_cellpoint_whitelabel.md) — Propuesta 2 APM = $15K/mes + $0.02/trx + 4 APMs/trim incl. + $500/APM extra, sin rev share, 3 años (⚠️ verificar PDF Papermark); call "Catch up CP & Yuno" 7-oct 11:45 PT sin link; brief listo; Kevin Murphy (CEO) en el grupo WhatsApp
+- [Neverland migration](project_neverland_migration.md) — LIVE en decks.internal-tools.y.uno; builddeck verificado; NO apagar Railway aún
+- [Deck changes → deploy Neverland](feedback_deck_changes_deploy_neverland.md) — push a main NO basta; disparar deploy Kingdom y verificar bundle en vivo
+- [Railway watchdog](project_railway_watchdog.md) — modo silencioso (solo Gmail draft) tras ~65 falsas alarmas
+- [Riot Games / Andreas](project_riot_games.md) — core cerrado, puerta = physical goods vía RFP; ⚠️ NADA de Riot a terceros sin OK de Andreas
+- [Brief: agenda y preguntas al final](feedback_meeting_brief_structure.md) — Briefs: TL;DR battle card al inicio; agenda + preguntas al final
+- [Skill meeting-brief v2](project_meeting_brief_skill.md) — template v2 aprobándose; hereda research de meeting-prep
+- [Eventbrite bake-off](project_eventbrite.md) — Filippo (PM) mudo desde 20-ago; interés = payouts; ⚠️ verificar JPM/ChaseNet; FUP ENVIADO 17-sep
+- [Eventbrite deck x2](project_eventbrite_deck.md) — pptx 29 slides (⚠VERIFY) + web /m/eventbrite 23 slides
+- [GoFundMe marketplace](project_gofundme_marketplace.md) — primer Marketplace live (feb-2026); referencia platform-deal (pedir permiso)
+- [Milo intro routine](project_milo_intro_routine.md) — rutina cloud horaria L-V 8-18 COT; requiere skill en GitHub
+- [Business Case TripAdvisor deck](project_business_case_tripadvisor_deck.md) — familia "report" light; servicio Kingdom `decks`
+- [Neverland PDF export broken](project_neverland_pdf_export_broken.md) — PDF falla en Neverland (sin Chromium); usar link Railway
+- [Sean Calabro (jefe)](project_sean_calabro_manager.md) — Head of NorthAm ex-Worldpay; feedback directo; forecast jueves mediodía
+- [Yuno vs Stripe Billing](project_yuno_vs_stripe_subscriptions.md) — comparación en construcción; gaps por verificar
+- [RBP methodology](feedback_rbp_methodology.md) — Requirement → Benefit → Proof, top-down; nombre oficial
+- [Yuno pricing](reference_yuno_pricing.md) — $50K gratis, luego $0.05/tx; solo outreach; para propuestas manda la Pricing Policy
+- [Yuno Pricing Policy (Finance)](reference_yuno_pricing_policy.md) — CONSULTAR SIEMPRE al cotizar; zonas green/yellow/red; ⚠️ minimum price nunca customer-facing
+- [Appmaking deal](project_appmaking.md) — pricing v4 $8.5K + tiers (OK JSB 17-sep); ⚠️ Tatsiana RECHAZÓ 28-sep ("different solution that better fits our needs at this stage"); German 28-sep + Sean 1-oct pidieron call sin respuesta; FUP #3 en borrador 5-oct: in-person con Piotr en Stripe event Warsaw jue 8-oct, si no call vie 9 a su 5 PM; ⚠️ Ecommpay exige CVV tras 3DS
+- [Palco Ticketing](project_palco_ticketing.md) — propuesta presentada 21-sep; $7K + $0.06/0.055/0.045 = $23.4K/mes; Patricio tiene feedback final del board (2-oct); call lun 5 o mar 6-oct 7:30/8:00 PT por confirmar
+- [Published stats only](feedback_published_stats_only.md) — +12% / 20–30% son inventados; usar 7% uplift / 30% recovered revenue
+- [Airalo deck](project_airalo.md) — "orchestration is in, coverage is not"; Brazil APM gap; BeyondOne proof
+- [Gamma deck](project_gamma.md) — "Gamma" nunca "Gamma AI" (slug gamma-ai); Stripe único → una capa encima; India 10.8% #1
+- [Lucky agent (Yuno Agents)](project_lucky_agent.md) — agente BD: MEDDIC + account plan desde transcripts; solo hechos
+- [Yuno Agents platform](reference_yuno_agents_platform.md) — ai.agents.y.uno: admins si Public; transfer ownership en #yuno-agents con Agent ID
+- [Warby Parker / Eben Timko](project_warby_parker.md) — blocker "solo US+Canadá"; 3er toque sep-2026 ángulo growth, cc Alejandro
+- [Railway stale desde sep-2026](project_railway_stale_sep_2026.md) — deck.yuno.tools no publica main desde ~8-sep; Neverland (VPN) es el target real
+- [Higgsfield AI](project_higgsfield.md) — brief + Google Slides 16-sep; Stripe-only a $700M ARR
+- [Single currency USD](feedback_single_currency_usd.md) — decks solo en USD; métricas sin moneda en vez de convertir con FX asumido
+- [Client-reported metrics](feedback_client_reported_metrics.md) — usar el número reportado por el cliente (Palco $37.09), nunca uno derivado
+- [Skydance (Paramount + WBD)](project_skydance.md) — cierre 6-oct-2026, grupo renombrado Skydance; Paramount SF = Alejandro + Samuel Carreño, LOST por Recurly; HBO Max es de German
+- [HBO Max / WBD](project_hbo_max.md) — orquestan con Spreedly; Ashwyn Singhal decisor global, Karime puerta LatAm; FUP ENVIADO 17-sep; Ashwyn va a Money20/20 Vegas 18-21 oct, borrador "coffee between sessions" 5-oct sin enviar
+- [FC Barcelona](project_fc_barcelona.md) — licitación pospuesta 3 veces; sin respuesta desde 17-jun; nota de cierre ENVIADA 1-oct, en pausa
+- [Thinkific](project_thinkific.md) — Darren solo responde a Justo; deck reescrito 1-oct (commit bcbe18b, sin desplegar); Beverley Ferguson (hilo de Magda) pide retomar inicios 2027; reply de German en BORRADOR 6-oct: US+Canadá primero, call jue 8 o vie 9-oct PT
+- [Gmail update_draft desprende del hilo](feedback_gmail_update_draft_detaches_thread.md) — nunca update_draft en respuestas; create_draft + replyToMessageId
+- [Campañas BC Magdalena sep-2026](project_magdalena_bc_campaigns_sep_2026.md) — Magnific, T-Mobile, Best Buy: 26 FUPs 17-sep, cero respuestas
+- [yuno-sales-deck skill](project_yuno_sales_deck_skill.md) — .claude/skills/yuno-sales-deck: pptx vía pptxgenjs + deck_qa.py
+- [Slides API: service account](project_slides_api_token_dead.md) — compartir el archivo con gtm-claude-editor@ (service account) + ~/.config/gsuite/sa.json; gcloud ADC bloqueado
+- [Chess.com / Sean Walkinshaw](project_chess_com.md) — infra late Q1-2027, vault first; FUP vault ENVIADO 18-sep; touch base dic-2026
+- [Peacock](project_peacock.md) — Brendan Callinan mudo desde jul-2026; Spreedly vault + Adyen; one-pager Subs no go hasta corregir precios/stat
+- [Subscriptions stats](reference_subscriptions_stats.md) — 16 merchants/135K subs/83→86%/69K reactivadas (31-ago); pedir OK a Daniel Lozano
+- [SF sep-nov 2026](project_sf_relocation_fall_2026.md) — German + Samuel Vieira + Joaquin Mann en San Francisco 28-sep a 4-nov-2026; horario PT; Yuno busca Solutions Engineer
+- [UNICEF Colombia](project_unicef_colombia.md) — demos 21 y 29-sep HECHAS; recap ENVIADO 29-sep sin respuesta; propuesta Google Slides ARMADA 2-oct sin enviar, pricing v6 (6-oct): platform $7K + 0.28%/0.24% por transacción aprobada (tramos por nº de trx, corte 100K por confirmar) + suscripciones $0.015/trx con primeras 50K gratis al mes = $14,500/mes; mínimo mensual $10K (= 71,429 trx aprobadas); ⚠️ $7K < list V3, validar zona
+- [British Airways deck](project_british_airways.md) — /m/british-airways editado 21-sep vía Supabase; ⚠️ slide 4 recorta última línea
+- [SF trip budget sheet](project_sf_trip_budget_sheet.md) — Google Sheet presupuesto 28-sep→4-nov; regenerar con build_budget.py
+- [Headshots camisa Yuno](project_headshots_yuno_shirt.md) — tools/swap_shirt.py listo; 60.jpg pendiente por falta de API key de imagen
+- [Deck tools handover](project_deck_tools_handover.md) — Magdalena + Yamin nuevos owners; docs/HANDOVER.md; plan de réplica fases 0-7
+- [Línea Directa](project_linea_directa.md) — inbound vía Susana; Luis Paternina (Tesorería) + Jesús Cubides; 300K tx/mes CO + 25K PE; llamada 30-sep HECHA; propuesta Google Slides (German la edita a mano, sin BC): platform $7.5K con orquestación incluida + compromiso $7.5K (125K tx) = mínimo $15K/mes, $0.06/$0.05 corte 150K = $25,250/mes; conciliación opcional $1K por 200K trx + $0.03 adicional; pendiente enviar, confirmar Dale y validar zona de precio
+- [Cruz Verde](project_cruz_verde.md) — NDA: 5 docs de Yuno ENTREGADOS (formulario firmado 5-oct); esperando borrador NDA de CV (Adriana); info BC sin respuesta; propuesta v2 (tiers/pesos/sin L4-L5) PENDIENTE de Yuno; correo de pendientes en BORRADOR 6-oct
+- [#salesops-legal](reference_salesops_legal.md) — canal Slack para NDAs y docs legales; Ivvy Soberay; mensajes en inglés, encabezado + hilo
+- [Tiendamia](project_tiendamia.md) — marketplace cross-border LatAm; intro call 25-sep; demo previa feb-2024
+- [American Red Cross](project_american_red_cross.md) — call inbound 2-sep con Carlos Carneiro; sin follow-up
+- [Cobrana](project_cobrana.md) — Perú, cobros WhatsApp sobre Kashio; calls 21 y 24-ago; sin seguimiento; probablemente no es deal
+- [Experian (DataCrédito)](project_experian.md) — call subs 29-sep HECHA: débito a cuentas, alternativa a PayU, Bre-B recurrente; FUP ENVIADO 29-sep, sin respuesta
+- [Procesadores Colombia](reference_colombia_processors.md) — verificación 29-sep: tarifas, qué está conectado a Yuno, Bre-B recurrente
+- [Emails sin links, sobrios](feedback_email_no_links_sober.md) — sin URLs ni listas de beneficios; él agrega link/adjunto
+- [SF trip playbook](project_sf_trip_playbook.md) — artifact con Interactive Calendar (db); build: events.json + build_playbook.py; precio SIEMPRE visible
+- [TCL Final List desalineada](project_tcl_final_list_misaligned.md) — columnas Insight 3 a Confidence desalineadas; cruzar contra TCL_v2
+- [PedidosYa](project_pedidosya.md) — Belén Casaret (Collections B2B); conciliación de 15 bancos + portal vendors; recap ENVIADO 29-sep sin respuesta; deep dive 8 o 9-oct SIN agendar
+- [Pedidos de datos a clientes: sencillos](feedback_client_data_requests_simple.md) — Google Sheet de UNA hoja, 30 a 40 filas; nada de workbooks largos
+- [Bounce](project_bounce.md) — campaña Samuel Carreño 28-sep, German en CC; 13 replies ENVIADOS 29-sep, cero respuestas; Stripe Connect, sin métodos locales
+- [Cost objection reply pattern](feedback_cost_objection_reply_pattern.md) — "a ways off" + flexibilidad comercial sin precio + call para entender cómo llegaron al número + same picture cost/value + still great fit (Sean a FlightHub, reusado en Flair)
+- [Reply cuando me ponen en CC](feedback_cc_handoff_reply_pattern.md) — reply por hilo: intro + tesis + proof point + CTA con dos días; verificar al SDR
+- [Eve, agente de eventos SF](project_eve_events_agent.md) — Yuno Agents; puente = Google Sheet "SF Events Feed · Eve"; todo en inglés
+- [Supabase deck tool caído 30-sep](project_supabase_deck_down_sep_2026.md) — host NXDOMAIN desde 30-sep-2026; todos los decks muestran la plantilla genérica; salida = pinned-merchant-rows.json
+- [Genspark AI / Winnie Wei](project_genspark.md) — Head of Finance; Stripe único; RESPONDIÓ 5-oct (SF Tech Week + implementando NetSuite, "later time"); reply de German en borrador: presencial semana del 26-oct con Sean
+- [GoDaddy / Sunil Joshi](project_godaddy.md) — Director PM Payments en SF, respondió a campaña BC de Magda; café con German + Sean semana 5-oct por confirmar
+- [Zoom / Drew Curhan](project_zoom_drew_curhan.md) — Payments Lead, vive en Santa Barbara; 3 emails fríos feb-mar 2026 sin respuesta; 4-oct LinkedIn casual networking desde SF, sin pitch
+- [Samuel knowledge transfer](project_samuel_knowledge_transfer.md) — prompt ENVIADO a Samuel por Slack DM 5-oct; cuando German pegue la respuesta, ingerir por dominios como memorias reference/feedback
+- [Arrive / Amit Chhabra](project_arrive.md) — Arrive Recommerce; call 29-oct 1 PM PT vía Susi; Debbie Guerra (Head of Payments) va a Money20/20, borrador pidiendo intro para café en Vegas
+- [Money20/20 LV 2026 × TCL match](project_money2020_lv2026_tcl_match.md) — Sheet `1R0GJ0h4vLTi4CrLhwvoklBtxnRry0zmD0IMxZWkiiSo`: 71 empresas / 350 personas / 121 LinkedIn; homónimos descartados; 2ª pasada LinkedIn pendiente
+- [Entregables en Google Sheets](feedback_deliverables_google_sheets.md) — listas y cruces van a Google Sheet vía create_file CSV, nunca Claude Doc
+- [Leer Sheets grandes: download → disco](feedback_drive_download_to_disk.md) — download_file_content xlsx se guarda en tool-results; decodificar base64 + openpyxl
+- [WebSearch tope 200/sesión](feedback_websearch_budget_shared.md) — compartido entre subagentes; lookups masivos en pasadas ≤180, allowed_domains linkedin.com
+- [DoorDash / A.J. Tus](project_doordash_aj_tus.md) — Head of Payments & FinTech Partnerships; respondió solo en sep-2025 (derivó a Alodie); German YA lo contactó 5-oct para Money20/20, borrador eliminado
+- [Money20/20 Vegas supercar event](reference_money2020_vegas_2026_supercar_event.md) — Yuno + PayPal en SpeedVegas, luma.com/10q4wvgc; gancho "Are you into cars?" para prospectos en la lista; fecha por verificar
+- [Money20/20 must-talk list](project_money2020_must_talk_list.md) — Tier A (HBO Max, DoorDash, Fareportal, FanDuel, Arrive, Super.com), Tier B (eBay, TikTok, Roku, Yum, Airbnb, Upwork...), NO tocar (Tesla, Amazon, Samsung, Discord, Adobe, Copa)
+- [Reply in English always](feedback_reply_in_english.md) — chat replies always in English regardless of input language; switch only when German explicitly asks; deliverables keep the audience language
+- [Airlines targeted list](project_airlines_targeted_list.md) — Sheet 1EsmeI6bw… tab 1: 37 airlines Oct 2025–Oct 2026; tab 2: 43 US/Canada airlines; col Level of engagement (8 niveles) con nota en el header, sin tab Legend; CSVs en Lists & ICP
+- [Sheet house format](feedback_sheet_house_format.md) — header navy #10284A Roboto 10 blanco, bordes finos, freeze B2, sin gridlines; aplicar vía SA + Sheets batchUpdate justo después de crear cualquier Sheet
+- [Anthropic / Shaa](project_anthropic_shaa.md) — hilo de Magda (subs engine), Justo y Magda sin respuesta; German por WhatsApp + email en BORRADOR 6-oct (café en SF o call)
+- [Allegiant signed](project_allegiant_signed.md) — Allegiant Air FIRMÓ con Yuno (oct-2026, deal de Samuel/Adam; Salhar Memon = payments) y compró Sun Country; usar como referencia NorthAm, Sun Country vía Allegiant
