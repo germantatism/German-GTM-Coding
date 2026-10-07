@@ -54,4 +54,4 @@ Typical dependencies: `tools/gsuite/gsuite.py` (Google service account), `yuno-s
 
 ## Source of truth
 
-The live versions stay in the repo: `.claude/commands/*.md`, `.claude/skills/yuno-sales-deck/`, `Milo/intro-reply/`. Memory lives at `~/.claude/projects/-Users-germantatis-Desktop-GTMCoding/memory/`. Re-run the export script (kept in this session's scratchpad, logic is simple: convert commands to SKILL.md, zip, concatenate memory) whenever they change.
+The live versions stay in the repo: `.claude/commands/*.md`, `.claude/skills/yuno-sales-deck/`, `Milo/intro-reply/`. Memory lives at `~/.claude/projects/-Users-germantatis-Desktop-GTMCoding/memory/`. Re-run `python3 tools/build_claude_app_export.py` from the repo root whenever they change; it rebuilds this whole folder (skills, zips, MEMORY_FULL.md, PROJECT_INSTRUCTIONS.md). README.md and SETUP.md are hand-written and preserved only if you re-add them, so copy them aside first.
