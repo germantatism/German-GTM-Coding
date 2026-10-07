@@ -5,7 +5,7 @@
 **Angle:** stop nudging, bring one concrete topic they care about (exit the flow of funds in Europe, organizer as merchant of record on their own credentials) tied to a real clock (PSD3 and PSR final compromise texts published 23-apr-2026, ECON approval May 2026, formal adoption expected H2 2026, then a 21-month transition). Fever as the live reference. Low-friction alternatives: written note instead of a call, or in person in San Francisco while German is there (until 4-nov).
 
 **To:** fber-bsp@eventbrite.com, gste@bendingspoons.com, noeg-bsp@eventbrite.com
-**Cc:** justo@y.uno, jarrett.falasco@y.uno
+**Cc:** justo@y.uno, sean@y.uno (German swapped Jarrett for Sean in his own edit, 7-oct)
 **Subject:** Re: Eventbrite + Yuno (reply to German's 17-sep message 1a0b008218c672a9, thread 1a06d480fccfa42d)
 **Status:** DRAFT in Gmail, not sent. v2 (7-oct): rewritten warmer and more human after German's feedback ("más friendly, que no suene tan robótico"); v1 draft deleted. v3 (7-oct, after German's own edits + "less AI, more friendly, no tedious words like 'there is a real clock'"): contractions, plain words, German's reference-call offer (Fever or similar partners) kept, Jarrett line and written-note paragraph dropped by German.
 
