@@ -7,24 +7,26 @@
 **To:** fber-bsp@eventbrite.com, gste@bendingspoons.com, noeg-bsp@eventbrite.com
 **Cc:** justo@y.uno, jarrett.falasco@y.uno
 **Subject:** Re: Eventbrite + Yuno (reply to German's 17-sep message 1a0b008218c672a9, thread 1a06d480fccfa42d)
-**Status:** DRAFT in Gmail, not sent.
+**Status:** DRAFT in Gmail, not sent. v2 (7-oct): rewritten warmer and more human after German's feedback ("más friendly, que no suene tan robótico"); v1 draft deleted.
 
 ---
 
 Hi Filippo, Giacomo, Noe,
 
-Picking this back up on one specific point, since it was the one that mattered most when we spoke in August: Eventbrite stepping out of the flow of funds in Europe, with the organizer as merchant of record on its own credentials.
+Hope you are all doing well, and that the pace in Milan has settled a bit after the last few weeks.
 
-The final PSD3 and PSR texts are now public and heading to formal adoption, so the design work for that model has a clock on it. We run this setup with Fever today, where the organizer is the merchant of record, and I would like to walk you through how it works in practice: onboarding and KYC of organizers, which processors carry the pay-in on the organizer's credentials, and how payouts and reconciliation are handled when the platform is no longer in the middle.
+I wanted to pick this back up on one thing in particular, because it was the part of our August conversation that stuck with me most: the idea of Eventbrite stepping out of the flow of funds in Europe, with each organizer running as merchant of record on their own credentials.
 
-Jarrett, who was on our last call, would join. Thirty minutes is enough. Two options next week, both Milan time:
+That topic just got more timely. The final PSD3 and PSR texts are now public and heading to formal adoption, so there is a real clock on designing that model. We already run this setup with Fever, where the organizer is the merchant of record, and I think seeing how it actually works day to day would be more useful than any deck: how organizers get onboarded and through KYC, which processors carry the pay-in on the organizer's credentials, and how payouts and reconciliation work once the platform is no longer in the middle.
+
+Jarrett, who joined our last call, would come along. Thirty minutes is plenty. Would either of these work? Both Milan time:
 
 Tuesday, October 13, 16:00
 Thursday, October 15, 17:00
 
-If a call is too much right now, tell me and I will send a short written note on the organizer-as-merchant model instead. And if the direction has changed on your side, that is useful for us to know as well.
+If a call is hard to fit right now, no problem at all, just say so and I will put together a short written note on the organizer-as-merchant model instead. And if your thinking has moved in a different direction since August, I would genuinely appreciate knowing, it helps us be useful rather than noisy.
 
-I am based in San Francisco until early November, so if any of you pass through the Eventbrite office there, happy to meet in person.
+One more thing: I am in San Francisco until early November, so if any of you happen to pass through the Eventbrite office there, I would love to grab a coffee in person.
 
 Best,
 German
