@@ -6,15 +6,15 @@
 
 **To:** shreya@fireflies.ai
 **Subject:** Picking up where you and Sam left off
-**Status:** DRAFT in Gmail. The earlier 3-person draft (Shreya + Venu + Sam Udotong, "Fireflies + Yuno") was deleted at German's request; its text stays in fireflies-email1-2026-10-07.md.
+**Status:** DRAFT in Gmail (v2: no self-introduction, German has already emailed her four times). The earlier 3-person draft (Shreya + Venu + Sam Udotong, "Fireflies + Yuno") was deleted at German's request; its text stays in fireflies-email1-2026-10-07.md.
 
 ---
 
 Hi Shreya,
 
-Hope you're doing well! I work with Samuel at Yuno, and I know you two spoke back in 2024 about payments at Fireflies, mostly around Stripe, costs, and the fact that a big part of your customers sit in India, the US and the UK.
+Hope you're doing well! I was going back through the notes from your conversation with Samuel in 2024, Stripe, costs, and most of your customers sitting in India, the US and the UK, and I think it's worth picking that back up.
 
-A lot has changed on our side since then, especially for companies with that kind of India exposure, where cards alone leave a lot on the table. I'd love to pick that conversation back up with you.
+A lot has changed on our side since then, especially for companies with that kind of India exposure, where cards alone leave a lot on the table.
 
 I'm in San Francisco until early November, so if a coffee works, that would be great. Otherwise a quick 20-minute call is perfect too.
 
