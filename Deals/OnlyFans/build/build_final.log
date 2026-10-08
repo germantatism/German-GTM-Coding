@@ -1,0 +1,233 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+[01] cover              cover
+  applied    2 requests duplicate t1 -> n01_g3f77215683c_1_445
+  applied   16 requests n01
+  applied    2 requests notes n01_g3f77215683c_1_445
+[02] agenda             agenda
+  applied    2 requests duplicate t2 -> n02_g3f769a0f446_0_0
+  applied  108 requests n02
+[03] divider            d01
+  applied    2 requests duplicate t3 -> n03_g3f769a0f446_0_988
+  applied   13 requests n03
+  applied    1 requests notes n03_g3f769a0f446_0_988
+[04] diagram            understood
+  applied    2 requests duplicate t7 -> n04_g3f77215683c_2_2968
+  applied  174 requests n04
+  applied    3 requests notes n04_g3f77215683c_2_2968
+[05] cards_row          howtoread
+  applied    2 requests duplicate t7 -> n05_g3f77215683c_2_2968
+  applied   94 requests n05
+  applied    3 requests notes n05_g3f77215683c_2_2968
+[06] stats              answer
+  applied    2 requests duplicate t7 -> n06_g3f77215683c_2_2968
+  applied   94 requests n06
+  applied    3 requests notes n06_g3f77215683c_2_2968
+[07] exec_summary       exec
+  applied    2 requests duplicate t7 -> n07_g3f77215683c_2_2968
+  applied  116 requests n07
+  applied    3 requests notes n07_g3f77215683c_2_2968
+[08] divider            d02
+  applied    2 requests duplicate t3 -> n08_g3f769a0f446_0_988
+  applied   13 requests n08
+  applied    1 requests notes n08_g3f769a0f446_0_988
+[09] stats              industry-glance
+  applied    2 requests duplicate t7 -> n09_g3f77215683c_2_2968
+  applied  115 requests n09
+  applied    3 requests notes n09_g3f77215683c_2_2968
+[10] cards_row          no-single-bank
+  applied    2 requests duplicate t7 -> n10_g3f77215683c_2_2968
+  applied  111 requests n10
+  applied    3 requests notes n10_g3f77215683c_2_2968
+[11] cards_row          vault-2026
+  applied    2 requests duplicate t7 -> n11_g3f77215683c_2_2968
+  applied  111 requests n11
+  applied    3 requests notes n11_g3f77215683c_2_2968
+[12] table              vault-market
+  applied    2 requests duplicate t7 -> n12_g3f77215683c_2_2968
+  applied  322 requests n12
+  applied    3 requests notes n12_g3f77215683c_2_2968
+[13] divider            d03
+  applied    2 requests duplicate t3 -> n13_g3f769a0f446_0_988
+  applied    8 requests n13
+  applied    1 requests notes n13_g3f769a0f446_0_988
+[14] scale              of-numbers
+  applied    2 requests duplicate t7 -> n14_g3f77215683c_2_2968
+  applied  141 requests n14
+  applied    3 requests notes n14_g3f77215683c_2_2968
+[15] traffic_list       traffic
+  applied    2 requests duplicate t7 -> n15_g3f77215683c_2_2968
+  applied  161 requests n15
+  applied    3 requests notes n15_g3f77215683c_2_2968
+[16] cards_row          stack
+  applied    2 requests duplicate t7 -> n16_g3f77215683c_2_2968
+  applied  111 requests n16
+  applied    3 requests notes n16_g3f77215683c_2_2968
+[17] table              lesson-2021
+  applied    2 requests duplicate t7 -> n17_g3f77215683c_2_2968
+  applied  190 requests n17
+  applied    3 requests notes n17_g3f77215683c_2_2968
+[18] four_numbers       four-numbers
+  applied    2 requests duplicate t7 -> n18_g3f77215683c_2_2968
+  applied  125 requests n18
+  applied    3 requests notes n18_g3f77215683c_2_2968
+[19] divider            d04
+  applied    2 requests duplicate t3 -> n19_g3f769a0f446_0_988
+  applied    8 requests n19
+  applied    1 requests notes n19_g3f769a0f446_0_988
+[20] cards_row          cof-today
+  applied    2 requests duplicate t7 -> n20_g3f77215683c_2_2968
+  applied   93 requests n20
+  applied    3 requests notes n20_g3f77215683c_2_2968
+[21] table              five-data
+  applied    2 requests duplicate t7 -> n21_g3f77215683c_2_2968
+  applied  237 requests n21
+  applied    3 requests notes n21_g3f77215683c_2_2968
+[22] checklist_table    questions-1
+  applied    2 requests duplicate t7 -> n22_g3f77215683c_2_2968
+  applied  290 requests n22
+  applied    3 requests notes n22_g3f77215683c_2_2968
+[23] checklist_table    questions-2
+  applied    2 requests duplicate t7 -> n23_g3f77215683c_2_2968
+  FIT PROBLEM: table needs 314 pt, zone has 271 pt (font 7, 8 rows)
+  applied    2 requests duplicate t7 -> n23p_g3f77215683c_2_2968
+  applied   46 requests n23p
+  applied    3 requests notes n23p_g3f77215683c_2_2968
+[24] stats              clocks
+  applied    2 requests duplicate t7 -> n24_g3f77215683c_2_2968
+  applied  109 requests n24
+  applied    3 requests notes n24_g3f77215683c_2_2968
+[25] divider            d05
+  applied    2 requests duplicate t3 -> n25_g3f769a0f446_0_988
+  applied    8 requests n25
+  applied    1 requests notes n25_g3f769a0f446_0_988
+[26] template_keep      yuno-story
+  WARNING slide yuno-story: template_index 23 is 'four pillars' in template_dump order; using 22 ('Yuno story stats') from the slide id
+  applied    2 requests duplicate t22 -> n26_g3f769a0f446_0_14188
+  applied   11 requests n26
+  applied    1 requests notes n26_g3f769a0f446_0_14188
+[27] template_keep      four-pillars
+  WARNING slide four-pillars: template_index 24 is 'offices map' in template_dump order; using 23 ('four pillars') from the slide id
+  applied    2 requests duplicate t23 -> n27_g3f769a0f446_0_7028
+  applied   10 requests n27
+[28] table              compliance
+  applied    2 requests duplicate t7 -> n28_g3f77215683c_2_2968
+  applied  285 requests n28
+  applied    3 requests notes n28_g3f77215683c_2_2968
+[29] template_keep      offices
+  WARNING slide offices: template_index 25 is 'trusted-by logos' in template_dump order; using 24 ('offices map') from the slide id
+  applied    2 requests duplicate t24 -> n29_g3f769a0f446_0_15222
+  applied   10 requests n29
+  applied    1 requests notes n29_g3f769a0f446_0_15222
+[30] template_keep      trusted
+  WARNING slide trusted: template_index 26 is 'team' in template_dump order; using 25 ('trusted-by logos') from the slide id
+  applied    2 requests duplicate t25 -> n30_g3f769a0f446_0_8218
+  applied   11 requests n30
+  applied    1 requests notes n30_g3f769a0f446_0_8218
+[31] template_keep      team
+  WARNING slide team: template_index 27 is 'dedicated team' in template_dump order; using 26 ('team') from the slide id
+  applied    2 requests duplicate t26 -> n31_g3f77215683c_1_1334
+  applied   10 requests n31
+  applied    1 requests notes n31_g3f77215683c_1_1334
+[32] template_keep      dedicated
+  WARNING slide dedicated: template_index 29 is 'marketplace hero' in template_dump order; using 27 ('dedicated team') from the slide id
+  applied    2 requests duplicate t27 -> n32_g3f77215683c_2_1368
+  applied   22 requests n32
+  applied    1 requests notes n32_g3f77215683c_2_1368
+[33] divider            d06
+  applied    2 requests duplicate t3 -> n33_g3f769a0f446_0_988
+  applied   13 requests n33
+  applied    3 requests notes n33_g3f769a0f446_0_988
+[34] cards_row          vault-cards
+  applied    2 requests duplicate t7 -> n34_g3f77215683c_2_2968
+  applied  143 requests n34
+  applied    3 requests notes n34_g3f77215683c_2_2968
+[35] diagram            vault-data
+  applied    2 requests duplicate t7 -> n35_g3f77215683c_2_2968
+  applied  132 requests n35
+  applied    3 requests notes n35_g3f77215683c_2_2968
+[36] diagram            keep-current
+  applied    2 requests duplicate t7 -> n36_g3f77215683c_2_2968
+  applied  168 requests n36
+  applied    3 requests notes n36_g3f77215683c_2_2968
+[37] cards_row          move
+  applied    2 requests duplicate t7 -> n37_g3f77215683c_2_2968
+  applied  150 requests n37
+  applied    3 requests notes n37_g3f77215683c_2_2968
+[38] code_before_after  proxy-how
+  applied    2 requests duplicate t7 -> n38_g3f77215683c_2_2968
+  applied  129 requests n38
+  applied    3 requests notes n38_g3f77215683c_2_2968
+[39] cards_row          proxy-controls
+  applied    2 requests duplicate t7 -> n39_g3f77215683c_2_2968
+  applied  180 requests n39
+  applied    3 requests notes n39_g3f77215683c_2_2968
+[40] diagram            banking
+  applied    2 requests duplicate t7 -> n40_g3f77215683c_2_2968
+  applied  190 requests n40
+  applied    3 requests notes n40_g3f77215683c_2_2968
+[41] cards_row          who-decides
+  applied    2 requests duplicate t7 -> n41_g3f77215683c_2_2968
+  applied  143 requests n41
+  applied    3 requests notes n41_g3f77215683c_2_2968
+[42] divider            d07
+  applied    2 requests duplicate t3 -> n42_g3f769a0f446_0_988
+  applied   13 requests n42
+  applied    3 requests notes n42_g3f769a0f446_0_988
+[43] cards_row          versus-thesis
+  applied    2 requests duplicate t7 -> n43_g3f77215683c_2_2968
+  applied  116 requests n43
+  applied    3 requests notes n43_g3f77215683c_2_2968
+[44] comparison_grid    versus-model
+  applied    2 requests duplicate t7 -> n44_g3f77215683c_2_2968
+  FIT PROBLEM: slide versus-model: comparison_grid rows need 219 pt, have 156
+  applied    2 requests duplicate t7 -> n44p_g3f77215683c_2_2968
+  applied   46 requests n44p
+  applied    3 requests notes n44p_g3f77215683c_2_2968
+[45] table              versus-table
+  applied    2 requests duplicate t7 -> n45_g3f77215683c_2_2968
+  applied  463 requests n45
+  applied    3 requests notes n45_g3f77215683c_2_2968
+[46] table              versus-bt
+  applied    2 requests duplicate t7 -> n46_g3f77215683c_2_2968
+  applied  323 requests n46
+  applied    3 requests notes n46_g3f77215683c_2_2968
+[47] table              versus-vgs
+  applied    2 requests duplicate t7 -> n47_g3f77215683c_2_2968
+  applied  323 requests n47
+  applied    3 requests notes n47_g3f77215683c_2_2968
+[48] divider            d08
+  applied    2 requests duplicate t3 -> n48_g3f769a0f446_0_988
+  applied    8 requests n48
+  applied    1 requests notes n48_g3f769a0f446_0_988
+[49] phases             shape
+  applied    2 requests duplicate t7 -> n49_g3f77215683c_2_2968
+  applied  130 requests n49
+  applied    3 requests notes n49_g3f77215683c_2_2968
+[50] open_items_table   owe
+  applied    2 requests duplicate t7 -> n50_g3f77215683c_2_2968
+  applied  227 requests n50
+  applied    3 requests notes n50_g3f77215683c_2_2968
+[51] next_steps         next
+  applied    2 requests duplicate t7 -> n51_g3f77215683c_2_2968
+  applied  102 requests n51
+  applied    3 requests notes n51_g3f77215683c_2_2968
+[52] closing            closing
+  applied    2 requests duplicate t46 -> n52_g3c99cf7678e_0_44
+  applied   12 requests closing text
+  applied    6 requests closing lockup
+[53] divider            d-appx
+  applied    2 requests duplicate t3 -> n53_g3f769a0f446_0_988
+  applied    6 requests n53
+  applied    1 requests notes n53_g3f769a0f446_0_988
+[54] table              app-limits
+  applied    2 requests duplicate t7 -> n54_g3f77215683c_2_2968
+  applied  241 requests n54
+  applied    3 requests notes n54_g3f77215683c_2_2968
+[55] stats              app-who
+  applied    2 requests duplicate t7 -> n55_g3f77215683c_2_2968
+  applied  120 requests n55

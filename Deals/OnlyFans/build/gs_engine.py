@@ -12,6 +12,8 @@ Usage
   python3 gs_engine.py build deck_spec.json            # append all slides (template kept)
   python3 gs_engine.py build deck_spec.json --final    # append all, then delete the 46 template slides
   python3 gs_engine.py build deck_spec.json --only s03,s07
+  python3 gs_engine.py build deck_spec.json --only s03 --replace   # rebuild one slide in place (same position, old one deleted)
+  python3 gs_engine.py check deck_spec.json                        # offline validation + fit check
   python3 gs_engine.py cleanup                          # delete every slide this engine appended (build_state.json)
   python3 gs_engine.py dump                             # presentations.get -> build/live_dump.json
 """
@@ -93,9 +95,9 @@ def text_width(s, size, bold=False):
         if ch in _NARROW: w += 0.30
         elif ch in _WIDE: w += 0.82
         elif ch.isupper(): w += 0.64
-        elif ch.isdigit(): w += 0.58
+        elif ch.isdigit(): w += 0.56
         else: w += 0.53
-    return w * size * (1.05 if bold else 1.0)
+    return w * size * (1.07 if bold else 1.0)
 
 def wrap_count(text, size, width, bold=False):
     """Number of rendered lines for text (paragraphs split on \\n) in a box `width` pt wide (visual width, insets excluded)."""
@@ -320,6 +322,8 @@ class SB:
         self.deck, self.page, self.tag, self.idmap, self.dark = deck, page_id, tag, idmap or {}, dark
         self.R = []; self.n = 0; self.post = []   # post: callables run after a flush (need a fetch)
         self.min_font = 99
+        self.zy, self.zh = ZONE_Y, ZONE_H          # content zone top / height (moved down when the headline takes 3 lines)
+        self.table_h = 0
     def nid(self):
         self.n += 1; return f"{self.tag}_e{self.n:03d}"
     def flush(self, label=''):
@@ -424,8 +428,9 @@ class SB:
 
     def pill(self, x, y, label, h=14.0, size=7.0, right=False):
         """Status pill (CONFIRMED / BETA / PUBLIC DOCS / OPEN / NOT IN DOCS). Returns (x_left, width)."""
-        label = (label or '').upper().strip()
-        fg, bg = PILLS.get(label, ('#424449', '#EFF0F2'))
+        raw = (label or '').strip(); label = raw.upper()
+        if label in PILLS: fg, bg = PILLS[label]
+        else: fg, bg, label = DEEP, PANEL, raw          # free text chip (e.g. "Rules set by OnlyFans"): blue on light panel
         w = text_width(label, size, True) + 12
         if right: x = x - w
         self.round_rect(x, y, w, h, fill=bg)
@@ -448,10 +453,14 @@ class SB:
         el = self._tpl_el(base, ROLE[base]['headline'])
         text = text or ''
         width = 602.6 if base == 7 else 600
-        size = 22 if wrap_count(text, 22, width, True) == 1 else 20
-        if wrap_count(text, size, width, True) > 2:
-            raise FitError(f"slide {slide_id}: headline needs more than two lines at {size} pt: {text!r}")
+        if wrap_count(text, 20, width, True) <= 2: size, lines = 20, wrap_count(text, 20, width, True)
+        elif wrap_count(text, 18, width, True) <= 2: size, lines = 18, 2
+        elif wrap_count(text, 18, width, True) == 3: size, lines = 18, 3
+        else: raise FitError(f"slide {slide_id}: headline needs more than three lines at 18 pt: {text!r}")
         self.R += replace_text_requests(el, text, size=size, color=(WHITE if self.dark else BLACK))
+        if lines == 3:
+            self.move(self.mapped(ROLE[base]['headline']), 36, 41.1, 602.6, 64, size=(el['size']['width']['magnitude'], el['size']['height']['magnitude']))
+            self.zy, self.zh = 112.0, 253.0
         if base == 22:  # dark base headline box is narrow (249 pt) and lower; widen and lift it to the white rhythm
             self.move(self.mapped(ROLE[base]['headline']), 36, 41.1, 602.6, 43.6, size=(el['size']['width']['magnitude'], el['size']['height']['magnitude']))
     def _tpl_el(self, base, oid):
@@ -480,7 +489,7 @@ class SB:
         if caption:
             self.text(x + 10, cy, w - 20, h - (cy - y) - 6, caption, size=7.5, color=(ONDARK if dark else BODY2), ls=112)
     def card(self, x, y, w, h, eyebrow=None, num=None, title=None, body=None, foot=None, pill=None, fill=WHITE, outline=DEEP,
-             title_color=BLUE, title_size=10, body_size=8.5, body_color=BODY3, pad=11, blue=False):
+             title_color=BLUE, title_size=10, body_size=8.5, body_color=BODY3, pad=11, blue=False, pill2=None):
         if blue: fill, outline, title_color, body_color = BLUE, None, WHITE, WHITE
         self.rect(x, y, w, h, fill=fill, outline=outline)
         cx, cw, cy = x + pad, w - 2 * pad, y + pad - 1
@@ -488,9 +497,12 @@ class SB:
         if num:
             self.text(cx, cy, 24, 11, str(num), size=8, color=(WHITE if blue else LBLUE), font=MONO, ls=100); row = True
         if eyebrow:
-            self.text(cx + (24 if num else 0), cy, cw - (24 if num else 0) - (60 if pill else 0), 11, eyebrow.upper(), size=7, bold=True, color=(PALE if blue else GREY), ls=100); row = True
-        if pill:
-            self.pill(x + w - pad, y + pad - 3, pill, right=True); row = True
+            self.text(cx + (24 if num else 0), cy, cw - (24 if num else 0) - (60 if pill else 0) - (60 if pill2 else 0), 11, eyebrow.upper(), size=7, bold=True, color=(PALE if blue else GREY), ls=100); row = True
+        if pill or pill2:
+            px = x + w - pad
+            for lab in [p for p in (pill2, pill) if p]:
+                px, pw = self.pill(px, y + pad - 3, lab, right=True); px -= 4
+            row = True
         if row: cy += 15
         if title:
             th = text_h(title, title_size, cw, 105, True)
@@ -513,14 +525,20 @@ class SB:
         self.text(x + 12, cy + 10, w - 24, h - (cy - y) - 20, code.replace('\t', '    '), size=size, color=WHITE, font=MONO, ls=130, valign='TOP')
         self.min_font = min(self.min_font, size)
     def diagram_box(self, x, y, w, h, title=None, body=None, pill=None, style='light', title_size=9, body_size=7.5):
+        if style == 'label':   # lane header: no fill, no outline, 7 pt bold blue caps
+            self.text(x, y, w, h, (title or body or '').upper(), size=7, bold=True, color=BLUE, ls=105, valign='MIDDLE'); return
         st = {'light': (PANEL3, None, INK, BODY3), 'blue': (BRAND, None, WHITE, WHITE), 'dark': (DARK, None, WHITE, ONDARK),
               'outline': (WHITE, DEEP, INK, BODY3), 'panel': (PANEL, None, INK, BODY3)}[style]
         self.rect(x, y, w, h, fill=st[0], outline=st[1])
         cx, cw, cy = x + 8, w - 16, y + 7
-        if pill: self.pill(x + w - 6, y + 5, pill, h=12, size=6.5, right=True)
+        reserve = 0
+        if pill:
+            px, pw = self.pill(x + w - 6, y + 5, pill, h=12, size=6.5, right=True)
+            if pw > w * 0.55: cy += 12          # wide chip: title goes under it
+            else: reserve = pw + 10
         if title:
-            th = text_h(title, title_size, cw - (50 if pill else 0), 105, True)
-            self.text(cx, cy, cw - (50 if pill else 0), th, title, size=title_size, bold=True, color=st[2], ls=105); cy += th + 2
+            th = text_h(title, title_size, cw - reserve, 105, True)
+            self.text(cx, cy, cw - reserve, th, title, size=title_size, bold=True, color=st[2], ls=105); cy += th + 2
         if body:
             self.text(cx, cy, cw, max(y + h - cy - 5, 8), body, size=body_size, color=st[3], ls=112)
     def connector(self, a, b, label=None, color=LBLUE):
@@ -538,9 +556,59 @@ class SB:
             self.text(mx - lw / 2, my - 5.5, lw, 10, label, size=6.5, color=GREY, align='CENTER', ls=100)
 
     def table(self, x, y, col_widths, rows, header=None, header_style='dark', font_size=8, bold_first_col=True, zebra=True,
+              min_row=18, header_min=22, max_h=None, native=False, pad_x=6, pad_y=5):
+        """Table. Default: a rectangle grid in the template's own idiom (slides 15, 32, 43 to 45), 5 pt vertical padding,
+        deterministic row heights. native=True uses createTable (7.2 pt fixed cell padding, see table_native).
+        rows: list of lists of cells; a cell is a string or {'text','pill','pill2','bold','align'}. Returns the table height."""
+        if native:
+            self.table_native(x, y, col_widths, rows, header, header_style, font_size, bold_first_col, zebra, max(min_row, 22), max(header_min, 24), max_h); return self.table_h
+        ncols = len(col_widths); allrows = ([list(header)] if header else []) + [list(r) for r in rows]
+        hfill = DARK if header_style == 'dark' else BRAND
+        cells = []; row_h = []
+        for i, r in enumerate(allrows):
+            is_h = bool(header) and i == 0; fs = (font_size - 0.5) if is_h else font_size
+            need = 0; crow = []
+            for j in range(ncols):
+                c = r[j] if j < len(r) else ''
+                d = c if isinstance(c, dict) else {'text': c}
+                txt = (d.get('text') or '').strip()
+                if is_h: txt = txt.upper()
+                plist = [p for p in (d.get('pill'), d.get('pill2')) if p]
+                base_bold = bool(is_h or d.get('bold') or (bold_first_col and j == 0))
+                tfs = 7 if plist else fs
+                lines = wrap_count(txt, tfs, col_widths[j] - 2 * pad_x, base_bold) if txt else 0
+                hgt = lines * tfs * 1.21 * 1.08 + (14.4 if plist else 0) + (2 if (plist and txt) else 0)
+                need = max(need, hgt); crow.append((d, txt, plist, base_bold, tfs))
+            row_h.append(max(header_min if is_h else min_row, need + 2 * pad_y)); cells.append(crow)
+        self.table_h = sum(row_h)
+        if max_h and self.table_h > max_h + 2:
+            raise FitError(f"table needs {self.table_h:.0f} pt, zone has {max_h:.0f} pt (font {font_size}, {len(rows)} rows)")
+        cy = y
+        for i, crow in enumerate(cells):
+            is_h = bool(header) and i == 0; bi = i - (1 if header else 0)
+            for j, (d, txt, plist, base_bold, tfs) in enumerate(crow):
+                cx = x + sum(col_widths[:j]); cw = col_widths[j]
+                if is_h: fill = hfill
+                elif bold_first_col and j == 0: fill = PANEL
+                else: fill = PANEL2 if (zebra and bi % 2 == 1) else WHITE
+                self.rect(cx, cy, cw, row_h[i], fill=fill)
+                color = WHITE if is_h else (d.get('color') or (DEEP if (bold_first_col and j == 0) else INK))
+                if plist:
+                    px = cx + pad_x; py = cy + pad_y if txt else cy + (row_h[i] - 14) / 2
+                    for lab in plist:
+                        px, pw = self.pill(px, py, lab); px += pw + 4
+                    if txt: self.text(cx + pad_x, cy + pad_y + 15.4, cw - 2 * pad_x, row_h[i] - pad_y - 15.4, txt, size=7, color=GREY, ls=108)
+                elif txt:
+                    self.text(cx + pad_x, cy + pad_y, cw - 2 * pad_x, row_h[i] - 2 * pad_y, txt, size=tfs, bold=base_bold, color=color, align=d.get('align', 'START'), ls=108, valign='MIDDLE')
+            if is_h: self.hairline(x, cy + row_h[i] - 0.4, sum(col_widths), alpha=0.24)
+            cy += row_h[i]
+        self.min_font = min(self.min_font, font_size - 0.5)
+        return self.table_h
+
+    def table_native(self, x, y, col_widths, rows, header=None, header_style='dark', font_size=8, bold_first_col=True, zebra=True,
               min_row=22, header_min=24, max_h=None, cell_valign='MIDDLE'):
-        """Native table. rows: list of lists of cells; a cell is a string or {'text','pill','bold','align'}.
-        Pills are overlaid after the first flush (needs the rendered row heights). Returns table id."""
+        """Native Slides table (createTable + per-cell styling). Limits hit on 8 Oct 2026: cell padding is fixed at 0.1 in and not
+        exposed by the API, and tableRows[].rowHeight reports the minimum, not the rendered height, so rows are pinned from a text model."""
         tid = self.nid(); ncols = len(col_widths); body = [list(r) for r in rows]
         allrows = ([list(header)] if header else []) + body
         nrows = len(allrows)
@@ -562,8 +630,10 @@ class SB:
                 c = r[j] if j < len(r) else ''
                 d = c if isinstance(c, dict) else {'text': c}
                 txt = d.get('text') or ''
-                lines = wrap_count(txt, fs, col_widths[j] - 2 * CELL_PAD, is_h or bool(d.get('bold')) or (bold_first_col and j == 0)) if txt else 0
-                hgt = lines * fs * 1.21 * 1.08 + (14 if d.get('pill') else 0) + (2 if (d.get('pill') and txt) else 0)
+                has_p = bool(d.get('pill') or d.get('pill2'))
+                tfs = 7 if has_p else fs
+                lines = wrap_count(txt, tfs, col_widths[j] - 2 * CELL_PAD, is_h or bool(d.get('bold')) or (bold_first_col and j == 0)) if txt else 0
+                hgt = lines * tfs * 1.21 * 1.08 + (14.4 if has_p else 0) + (1 if (has_p and txt) else 0)
                 need = max(need, hgt)
             row_h.append(max(header_min if is_h else min_row, need + 2 * CELL_PAD + 1))
         for i, h in enumerate(row_h):
@@ -579,10 +649,11 @@ class SB:
                 c = r[j] if j < len(r) else ''
                 d = c if isinstance(c, dict) else {'text': c}
                 txt = (d.get('text') or '')
-                pill = d.get('pill')
-                if pill: pill_cells.append((i, j, pill, bool(txt)))
-                if pill and not txt: txt = ' '
-                elif pill and txt: txt = ' \n' + txt
+                pill = d.get('pill'); pill2 = d.get('pill2')
+                if pill or pill2: pill_cells.append((i, j, [p for p in (pill, pill2) if p], bool(txt)))
+                has_pill = bool(pill or pill2)
+                if has_pill and not txt: txt = ' '
+                elif has_pill and txt: txt = ' \n' + txt
                 if not txt: txt = ' '
                 segs = _segments(txt); plain = ''.join(t for t, b in segs)
                 self.R.append({'insertText': {'objectId': tid, 'cellLocation': {'rowIndex': i, 'columnIndex': j}, 'text': plain, 'insertionIndex': 0}})
@@ -595,8 +666,10 @@ class SB:
                     st = {'weightedFontFamily': {'fontFamily': FONT, 'weight': 700 if isb else 400}, 'bold': isb, 'fontSize': {'magnitude': size, 'unit': 'PT'}, 'foregroundColor': {'opaqueColor': {'rgbColor': rgb(color)}}}
                     self.R.append({'updateTextStyle': {'objectId': tid, 'cellLocation': {'rowIndex': i, 'columnIndex': j}, 'textRange': {'type': 'FIXED_RANGE', 'startIndex': k, 'endIndex': k + len(t)}, 'style': st, 'fields': 'weightedFontFamily,bold,fontSize,foregroundColor'}})
                     k += len(t)
-                if pill:  # first (blank) line reserves the pill height
-                    self.R.append({'updateTextStyle': {'objectId': tid, 'cellLocation': {'rowIndex': i, 'columnIndex': j}, 'textRange': {'type': 'FIXED_RANGE', 'startIndex': 0, 'endIndex': 1}, 'style': {'fontSize': {'magnitude': 10, 'unit': 'PT'}}, 'fields': 'fontSize'}})
+                if has_pill:  # first (blank) line reserves the pill height; any text under the pills is small grey (owners)
+                    self.R.append({'updateTextStyle': {'objectId': tid, 'cellLocation': {'rowIndex': i, 'columnIndex': j}, 'textRange': {'type': 'FIXED_RANGE', 'startIndex': 0, 'endIndex': 1}, 'style': {'fontSize': {'magnitude': 11, 'unit': 'PT'}}, 'fields': 'fontSize'}})
+                    if len(plain) > 2:
+                        self.R.append({'updateTextStyle': {'objectId': tid, 'cellLocation': {'rowIndex': i, 'columnIndex': j}, 'textRange': {'type': 'FIXED_RANGE', 'startIndex': 2, 'endIndex': len(plain)}, 'style': {'fontSize': {'magnitude': 7, 'unit': 'PT'}, 'foregroundColor': {'opaqueColor': {'rgbColor': rgb(GREY)}}, 'bold': False, 'weightedFontFamily': {'fontFamily': FONT, 'weight': 400}}, 'fields': 'fontSize,foregroundColor,bold,weightedFontFamily'}})
                 self.R.append({'updateParagraphStyle': {'objectId': tid, 'cellLocation': {'rowIndex': i, 'columnIndex': j}, 'textRange': {'type': 'ALL'},
                     'style': {'alignment': d.get('align', 'START'), 'lineSpacing': 108, 'spaceAbove': {'magnitude': 0, 'unit': 'PT'}, 'spaceBelow': {'magnitude': 0, 'unit': 'PT'}}, 'fields': 'alignment,lineSpacing,spaceAbove,spaceBelow'}})
                 if is_h: fill = hfill
@@ -608,10 +681,11 @@ class SB:
         self.R.append({'updateTableBorderProperties': {'objectId': tid, 'tableRange': {'location': {'rowIndex': 0, 'columnIndex': 0}, 'rowSpan': nrows, 'columnSpan': ncols}, 'borderPosition': 'ALL',
             'tableBorderProperties': {'tableBorderFill': solid(WHITE), 'weight': {'magnitude': emu(1.0), 'unit': 'EMU'}, 'dashStyle': 'SOLID'}, 'fields': 'tableBorderFill,weight,dashStyle'}})
         self.min_font = min(self.min_font, font_size - 0.5)
-        for (i, j, pill, has_text) in pill_cells:   # overlay from the pinned row model (the API does not expose rendered heights)
+        for (i, j, plist, has_text) in pill_cells:   # overlay from the pinned row model (the API does not expose rendered heights)
             cx = x + sum(col_widths[:j]) + CELL_PAD; cy = y + sum(row_h[:i])
-            py = cy + (row_h[i] - 14) / 2 if not has_text else cy + CELL_PAD
-            self.pill(cx, py, pill)
+            py = cy + (row_h[i] - 14) / 2 if not has_text else cy + CELL_PAD + 0.5
+            for lab in plist:
+                px, pw = self.pill(cx, py, lab); cx += pw + 4
         return tid
 
 def _cell_text(c):
@@ -623,11 +697,26 @@ def _item_text(it):
     if isinstance(it, dict): return (('**%s**' % it['text']) if it.get('bold') else it.get('text', '')), it.get('pill')
     return it, None
 
-def _bar(sb, y, text, h=27.5):
-    """bottom band like template slide 4 (#E8EAF5, 9 pt)"""
-    if not text: return
+def bar_h(text):
+    """height of a bottom band (#E8EAF5, 8.5 pt) for this text; 0 when empty"""
+    return (max(24.0, text_h(text, 8.5, W0 - 24, 110) + 11)) if text else 0.0
+
+def _bar(sb, y, text, h=None):
+    """bottom band like template slide 4, top edge at y, height from the text"""
+    if not text: return 0
+    h = h or bar_h(text); th = text_h(text, 8.5, W0 - 24, 110)
     sb.rect(X0, y, W0, h, fill=PANEL)
-    sb.text(X0 + 12, y + (h - 12) / 2, W0 - 24, 12, text, size=8.5, color=INK, valign='MIDDLE', ls=110)
+    sb.text(X0 + 12, y + (h - th) / 2, W0 - 24, th, text, size=8.5, color=INK, valign='MIDDLE', ls=110)
+    return h
+
+def card_need(w, eyebrow=None, num=None, title=None, body=None, foot=None, pill=None, pill2=None, title_size=10, body_size=8.5, pad=11):
+    """height card() needs for this content"""
+    cw = w - 2 * pad; h = pad - 1
+    if eyebrow or num or pill or pill2: h += 15
+    if title: h += text_h(title, title_size, cw, 105, True) + 3
+    if body: h += text_h(body, body_size, cw, 115)
+    if foot: h += text_h(foot, 7.5, cw, 105, True) + 8
+    return h + pad
 
 def _side_column(sb, x, y, w, h, side):
     """right column: header + items (title/body)"""
@@ -647,16 +736,17 @@ def _side_column(sb, x, y, w, h, side):
 
 def r_cover(deck, s, tag, n):
     sid, m = deck.duplicate(BASE['cover'], tag); sb = SB(deck, sid, tag, m, dark=True)
-    sb.delete([m['g3f77215683c_1_537']])
     el = sb._tpl_el(1, ROLE[1]['title'])
     title = s.get('title') or ''
-    sb.R += replace_text_requests(el, title, size=30 if wrap_count(title, 30, 480, True) <= 2 else 26)
+    size = 30 if wrap_count(title, 30, 480, True) <= 2 else 26
+    lines = wrap_count(title, size, 480, True)
+    sb.R += replace_text_requests(el, title, size=size)
     sb.replace_image(m[ROLE[1]['logo']], s.get('logo_url') or LOGO_URL, 'CENTER_INSIDE')
-    # title box sits at y 300..372.7; subtitle and presenter go underneath in the free band
-    tl = wrap_count(title, 30, 480, True)
-    sb.move(m[ROLE[1]['title']], 29, 262 if tl > 1 else 292, 492.8, 72.7, size=(el['size']['width']['magnitude'], el['size']['height']['magnitude']))
-    if s.get('subtitle'): sb.text(36, 336, 520, 16, s['subtitle'], size=12, color=WHITE, ls=110)
-    if s.get('presenter'): sb.text(36, 356, 520, 12, s['presenter'], size=8.5, color=PALE, ls=100)
+    # title box (valign MIDDLE) sized to its lines and bottom-anchored at y 330; subtitle and presenter underneath
+    th = lines * size * 1.21 + 6
+    sb.move(m[ROLE[1]['title']], 29, 330 - th, 492.8, th, size=(el['size']['width']['magnitude'], el['size']['height']['magnitude']))
+    if s.get('subtitle'): sb.text(36, 338, 560, 16, s['subtitle'], size=12, color=WHITE, ls=110)
+    if s.get('presenter'): sb.text(36, 358, 560, 12, s['presenter'], size=8.5, color=PALE, ls=100)
     sb.flush(); deck.set_notes(sid, s.get('notes')); return sid
 
 def r_agenda(deck, s, tag, n):
@@ -682,8 +772,7 @@ def r_divider(deck, s, tag, n):
         y = 78
         for item in sl:
             cur = (str(s.get('num', '')).strip() and item.strip().startswith(str(s.get('num')).strip())) or (title and title.lower() in item.lower())
-            sb.text(X0, y, 400, 10, item.upper(), size=7, bold=bool(cur), color=WHITE if cur else '#FFFFFF', ls=100)
-            if not cur: sb.R[-2]['updateTextStyle']['style']['foregroundColor'] = {'opaqueColor': {'rgbColor': rgb('#B9BFE8')}}
+            sb.text(X0, y, 400, 10, item.upper(), size=7, bold=bool(cur), color=WHITE if cur else '#B9BFE8', ls=100)
             y += 13
     sb.flush(); deck.set_notes(sid, s.get('notes')); return sid
 
@@ -701,11 +790,11 @@ def _finish(deck, sb, sid, s, n, footer):
 
 def r_exec_summary(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
-    bottom = s.get('bottom'); y_end = 335 if bottom else 365
+    bottom = s.get('bottom'); bh = bar_h(bottom); y_end = (363 - bh - 12) if bottom else 365
     # right panel
     px, pw = 393.4, 684 - 393.4
-    sb.rect(px, ZONE_Y, pw, y_end - ZONE_Y, fill=BLUE)
-    cy = ZONE_Y + 16
+    sb.rect(px, sb.zy, pw, y_end - sb.zy, fill=BLUE)
+    cy = sb.zy + 16
     if s.get('right_header'): sb.text(px + 20, cy, pw - 40, 12, s['right_header'].upper(), size=8.5, bold=True, color=WHITE, ls=100); cy += 22
     cards = s.get('right_cards', [])[:3]
     avail = y_end - 12 - cy; per = avail / max(len(cards), 1)
@@ -717,7 +806,7 @@ def r_exec_summary(deck, s, tag, n, footer):
         cy += per
     # left column
     lx, lw = X0, px - 20 - X0
-    cy = ZONE_Y
+    cy = sb.zy
     if s.get('left_header'): sb.text(lx, cy, lw, 12, s['left_header'].upper(), size=8, bold=True, color=BLUE, ls=100); cy += 16
     items = s.get('left_items', [])
     sizes = [(9, 8.5), (9, 8), (8.5, 7.5)]
@@ -730,27 +819,41 @@ def r_exec_summary(deck, s, tag, n, footer):
     for it, (th, bh) in zip(items, hs):
         sb.text(lx, cy, lw, th, it.get('title', ''), size=ts, bold=True, color=INK, ls=105); cy += th + 1
         sb.text(lx, cy, lw, bh, it.get('body', ''), size=bs, color=BODY3, ls=112); cy += bh + 8
-    _bar(sb, 340, bottom, 25)
+    _bar(sb, 363 - bh, bottom)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_stats(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
     tiles = s.get('tiles', [])[:4]; N = max(len(tiles), 1)
-    gap = 12; tw = (W0 - gap * (N - 1)) / N; th = 100
+    gap = 12; tw = (W0 - gap * (N - 1)) / N
+    below = (30 if s.get('chips') else 0) + ((text_h(s['paragraph'], 9.5, W0, 125) + 10) if s.get('paragraph') else 0)
+    bh = bar_h(s.get('bar')); bar_top = 363 - bh
+    th = max(100, min(170, (bar_top - 12 if s.get('bar') else 362) - sb.zy - below))
     for i, t in enumerate(tiles):
-        sb.stat_tile(X0 + i * (tw + gap), ZONE_Y, tw, th, t.get('value', ''), t.get('label'), t.get('caption'))
-    cy = ZONE_Y + th + 16
+        sb.stat_tile(X0 + i * (tw + gap), sb.zy, tw, th, t.get('value', ''), t.get('label'), t.get('caption'))
+    cy = sb.zy + th + 14
+    chips = s.get('chips') or []
+    if chips:
+        cx = X0
+        for ch in chips:
+            w = text_width(ch, 7.5) + 16
+            if cx + w > 684: cx = X0; cy += 22
+            sb.rect(cx, cy, w, 17, outline=DEEP, outline_w=0.5)
+            sb.text(cx, cy + 3.5, w, 10, ch, size=7.5, color=DEEP, align='CENTER', ls=100)
+            cx += w + 6
+        cy += 30
     if s.get('paragraph'):
         ph = text_h(s['paragraph'], 9.5, W0, 125)
         sb.text(X0, cy, W0, ph, s['paragraph'], size=9.5, color=INK, ls=125); cy += ph
-    if s.get('bar'): _bar(sb, 335, s['bar'])
-    if cy > (335 if s.get('bar') else 365) + 2: raise FitError(f"slide {s.get('id')}: stats paragraph overflows")
+    if s.get('bar'): _bar(sb, bar_top, s['bar'])
+    if cy > (bar_top - 8 if s.get('bar') else 365) + 2: raise FitError(f"slide {s.get('id')}: stats paragraph overflows")
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_scale(deck, s, tag, n, footer):
     """three outlined cards like template slide 4: numbers | bullets | body"""
     sid, sb = _content_base(deck, s, tag)
-    cw, gap, y, h = 207, 13.5, ZONE_Y, 232
+    bh = bar_h(s.get('bar'))
+    cw, gap, y = 207, 13.5, sb.zy; h = (363 - bh - 10 - y) if s.get('bar') else (365 - y)
     xs = [X0, X0 + cw + gap, X0 + 2 * (cw + gap)]
     for x in xs: sb.rect(x, y, cw, h, fill=WHITE, outline=DEEP)
     # left: header + 2 tiles + note
@@ -780,7 +883,7 @@ def r_scale(deck, s, tag, n, footer):
     rb = s.get('right_body', ''); rh = text_h(rb, 8, cw - 23, 125)
     if cy + rh > y + h - 8: raise FitError(f"slide {s.get('id')}: scale right card overflows")
     sb.text(xs[2] + 11.6, cy, cw - 23, rh, rb, size=8, color=INK, ls=125)
-    _bar(sb, y + h + 8, s.get('bar'))
+    _bar(sb, 363 - bh, s.get('bar'))
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_four_numbers(deck, s, tag, n, footer):
@@ -788,14 +891,14 @@ def r_four_numbers(deck, s, tag, n, footer):
     tiles = s.get('tiles', [])[:4]
     tw, th, g = 138, 76, 8
     for i, t in enumerate(tiles):
-        x = X0 + (i % 2) * (tw + g); y = ZONE_Y + 4 + (i // 2) * (th + g)
+        x = X0 + (i % 2) * (tw + g); y = sb.zy + 4 + (i // 2) * (th + g)
         sb.round_rect(x, y, tw, th, outline=TILE_OUT, outline_w=1.4)
         sb.text(x + 11, y + 12, tw - 22, 28, t.get('value', ''), size=24, bold=True, color=BLACK, ls=80)
         sb.text(x + 11, y + 44, tw - 22, 24, t.get('label', ''), size=7.6, color=INK, ls=112)
-    rx = X0 + 2 * tw + g + 24; rw = 684 - rx; cy = ZONE_Y + 4
+    rx = X0 + 2 * tw + g + 24; rw = 684 - rx; cy = sb.zy + 4
     if s.get('right_header'): sb.text(rx, cy, rw, 11, s['right_header'].upper(), size=7.5, bold=True, color=BLUE, ls=100); cy += 16
     items = s.get('right_items', [])[:4]
-    y_end = 330 if s.get('bar') else 365
+    bh = bar_h(s.get('bar')); y_end = (363 - bh - 10) if s.get('bar') else 365
     for bs in (8.5, 8, 7.5):
         hs = [(text_h(it.get('title', ''), 8.2, rw, 105, True), text_h(it.get('body', ''), bs, rw, 112)) for it in items]
         if cy + sum(a + b + 9 for a, b in hs) <= y_end: break
@@ -803,24 +906,27 @@ def r_four_numbers(deck, s, tag, n, footer):
     for it, (a, b) in zip(items, hs):
         sb.text(rx, cy, rw, a, it.get('title', '').upper(), size=8.2, bold=True, color=BLUE, ls=105); cy += a + 1
         sb.text(rx, cy, rw, b, it.get('body', ''), size=bs, color=INK, ls=112); cy += b + 8
-    _bar(sb, 335, s.get('bar'))
+    _bar(sb, 363 - bh, s.get('bar'))
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_traffic_list(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
     rows = s.get('rows', [])[:12]; N = max(len(rows), 1)
-    pitch = min(22, (ZONE_H - 10) / N); y = ZONE_Y
+    pitch = min(22, (sb.zh - 10) / N); y = sb.zy
     try: mx = max(float(str(r.get('pct', '0')).replace('%', '').replace(',', '.')) for r in rows) or 1
     except ValueError: mx = 100
-    bx, bw = X0 + 150, 440
+    side = s.get('side')
+    right = (X0 + W0 * 0.55) if side else 684
+    bx = X0 + 110; bw = right - 56 - bx
     for r in rows:
-        sb.text(X0, y, 140, 12, r.get('country', ''), size=9, color=INK, ls=100)
+        sb.text(X0, y, 104, 12, r.get('country', ''), size=9, color=INK, ls=100)
         try: v = float(str(r.get('pct', '0')).replace('%', '').replace(',', '.'))
         except ValueError: v = 0
         sb.rect(bx, y + 3, bw, 7, fill=PANEL); sb.rect(bx, y + 3, max(bw * v / mx, 1), 7, fill=BLUE)
-        sb.text(bx + bw + 10, y, 684 - (bx + bw + 10), 12, str(r.get('pct', '')), size=9, color=DEEP, align='END', ls=100)
-        sb.hairline(X0, y + pitch - 4, W0, alpha=0.10)
+        sb.text(bx + bw + 8, y, right - (bx + bw + 8), 12, str(r.get('pct', '')), size=9, color=DEEP, align='END', ls=100)
+        sb.hairline(X0, y + pitch - 4, right - X0, alpha=0.10)
         y += pitch
+    if side: _side_column(sb, right + 24, sb.zy, 684 - (right + 24), sb.zh, side)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_cards_row(deck, s, tag, n, footer, numbered_default=False):
@@ -829,19 +935,35 @@ def r_cards_row(deck, s, tag, n, footer, numbered_default=False):
     side = s.get('side'); bar = s.get('bar')
     width = W0 * 0.65 if side else W0
     gap = 12; cw = (width - gap * (N - 1)) / N
-    y = ZONE_Y; h = (325 - y) if bar else (365 - y)
+    limits = s.get('limits'); bh = bar_h(bar)
+    y = sb.zy; y_end = (363 - bh - 12) if bar else 365
+    max_h = (y_end - y - 86) if limits else (y_end - y)
+    need = max([card_need(cw, c.get('eyebrow'), c.get('num'), c.get('title'), c.get('body'), c.get('foot'), c.get('pill'), c.get('pill2')) for c in cards] + [0])
+    if need > max_h + 1: raise FitError(f"slide {s.get('id')}: cards need {need:.0f} pt, have {max_h:.0f} pt")
+    h = max_h if (not bar and not limits) else max(110.0, min(need, max_h))   # no band: cards use the zone like the template
     for i, c in enumerate(cards):
-        sb.card(X0 + i * (cw + gap), y, cw, h, eyebrow=c.get('eyebrow'), num=c.get('num'), title=c.get('title'), body=c.get('body'), foot=c.get('foot'), pill=c.get('pill'))
+        sb.card(X0 + i * (cw + gap), y, cw, h, eyebrow=c.get('eyebrow'), num=c.get('num'), title=c.get('title'), body=c.get('body'), foot=c.get('foot'), pill=c.get('pill'), pill2=c.get('pill2'))
     if side: _side_column(sb, X0 + width + 20, y, 684 - (X0 + width + 20), h, side)
-    _bar(sb, 333, bar)
+    if limits:   # four-tile strip under the cards
+        ly = y + h + 12
+        if limits.get('header'): sb.text(X0, ly, W0, 10, limits['header'].upper(), size=7, bold=True, color=BLUE, ls=100); ly += 14
+        tiles = limits.get('tiles', [])[:4]; N2 = max(len(tiles), 1); tw = (W0 - 10 * (N2 - 1)) / N2; th = min(74, y_end - ly)
+        for i, t in enumerate(tiles):
+            tx = X0 + i * (tw + 10)
+            sb.rect(tx, ly, tw, th, fill=PANEL3)
+            sb.text(tx + 10, ly + 7, tw - 20, 20, str(t.get('value', '')), size=15, bold=True, color=BLUE, ls=95)
+            sb.text(tx + 10, ly + 28, tw - 20, th - 32, t.get('label', ''), size=7.5, color=BODY3, ls=110)
+        y_cards_end = ly + th
+    else: y_cards_end = y + h
+    _bar(sb, y_cards_end + 12, bar)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_two_column(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
-    cols = s.get('cols', [])[:2]; bar = s.get('bar'); y_end = 328 if bar else 365
+    cols = s.get('cols', [])[:2]; bar = s.get('bar'); bh = bar_h(bar); y_end = (363 - bh - 12) if bar else 365
     gap = 24; cw = (W0 - gap) / 2
     for i, col in enumerate(cols):
-        x = X0 + i * (cw + gap); cy = ZONE_Y
+        x = X0 + i * (cw + gap); cy = sb.zy
         if col.get('header'): sb.text(x, cy, cw, 13, col['header'].upper(), size=9, bold=True, color=BLUE, ls=100); cy += 18
         items = col.get('items', [])
         for bs in (8.5, 8, 7.5):
@@ -852,24 +974,24 @@ def r_two_column(deck, s, tag, n, footer):
             sb.text(x, cy + 1, 20, 10, f"{k + 1:02d}", size=7, color=LBLUE, font=MONO, ls=100)
             sb.text(x + 22, cy, cw - 22, a, it.get('title', ''), size=9, bold=True, color=INK, ls=105); cy += a + 1
             sb.text(x + 22, cy, cw - 22, b, it.get('body', ''), size=bs, color=BODY3, ls=112); cy += b + 8
-    _bar(sb, 336, bar)
+    _bar(sb, 363 - bh, bar)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_table(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
     cols = s.get('columns', []); fr = s.get('col_widths') or [1.0 / max(len(cols), 1)] * len(cols)
     tot = sum(fr); widths = [W0 * f / tot for f in fr]
-    note = s.get('note'); max_h = (ZONE_H - 16) if note else ZONE_H
-    sb.table(X0, ZONE_Y, widths, s.get('rows', []), header=cols, header_style=s.get('header_style', 'dark'), font_size=s.get('font_size', 8),
-             bold_first_col=s.get('bold_first_col', True), zebra=s.get('zebra', True), max_h=max_h)
-    if note: sb.text(X0, 357, W0, 9, note, size=6.5, color=GREY, ls=100)
+    note = s.get('note'); max_h = (366 - sb.zy) - (14 if note else 0)
+    sb.table(X0, sb.zy, widths, s.get('rows', []), header=cols, header_style=s.get('header_style', 'dark'), font_size=s.get('font_size', 8),
+             bold_first_col=s.get('bold_first_col', True), zebra=s.get('zebra', True), max_h=max_h, native=bool(s.get('native')))
+    if note: sb.text(X0, sb.zy + sb.table_h + 5, W0, 9, note, size=6.5, color=GREY, ls=100)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_comparison_grid(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
-    y = ZONE_Y
+    y = sb.zy
     if s.get('quote'):
-        sb.text(X0, y - 4, 330, 22, s['quote'], size=8, color=MUTED, ls=115, italic=False)
+        sb.text(X0, y - 4, 330, 22, s['quote'], size=8, color=MUTED, ls=115, italic=True)
     legend = s.get('legend') or ['Gap stays open', 'Partly closed', 'Closed']
     lx = 684
     for key, lab in reversed(list(zip(['open', 'partial', 'closed'], legend))):
@@ -932,7 +1054,7 @@ def r_comparison_grid(deck, s, tag, n, footer):
 
 def r_diagram(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
-    side = s.get('side'); ox, oy = X0, ZONE_Y
+    side = s.get('side'); ox, oy = X0, sb.zy
     boxes = {}
     for b in s.get('boxes', []):
         x, y, w, h = ox + float(b['x']), oy + float(b['y']), float(b['w']), float(b['h'])
@@ -943,7 +1065,7 @@ def r_diagram(deck, s, tag, n, footer):
     for b in s.get('boxes', []):
         x, y, w, h = boxes[b['id']]
         sb.diagram_box(x, y, w, h, b.get('title'), b.get('body'), b.get('pill'), b.get('style', 'light'))
-    if side: _side_column(sb, X0 + 440, ZONE_Y, 684 - (X0 + 440), ZONE_H, side)
+    if side: _side_column(sb, X0 + 440, sb.zy, 684 - (X0 + 440), sb.zh, side)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_code_before_after(deck, s, tag, n, footer):
@@ -956,20 +1078,27 @@ def r_code_before_after(deck, s, tag, n, footer):
         lines = code.split('\n')
         if max((text_width(l, size, False) * 1.15 for l in lines), default=0) > wdt - 24: size = 7
         if mono_h(code, size) + 20 > code_h: raise FitError(f"slide {s.get('id')}: code block needs {mono_h(code, size) + 20:.0f} pt, has {code_h}")
-    sb.code_block(xs[0], ZONE_Y, lw, code_h + 14, L.get('code', ''), size=size, title=L.get('title'))
-    sb.code_block(xs[2], ZONE_Y, rw, code_h + 14, Rr.get('code', ''), size=size, title=Rr.get('title'))
-    my = ZONE_Y + 14 + code_h / 2 - 30
+    sb.code_block(xs[0], sb.zy, lw, code_h + 14, L.get('code', ''), size=size, title=L.get('title'))
+    sb.code_block(xs[2], sb.zy, rw, code_h + 14, Rr.get('code', ''), size=size, title=Rr.get('title'))
+    my = sb.zy + 14 + code_h / 2 - 30
     if M.get('title'): sb.text(xs[1], my, mw, 24, M['title'], size=8, bold=True, color=INK, align='CENTER', ls=105)
     sb.text(xs[1], my + 26, mw, 20, '→', size=16, color=LBLUE, align='CENTER', ls=100)
     if M.get('sub'): sb.text(xs[1], my + 48, mw, 30, M['sub'], size=6.5, color=GREY, align='CENTER', ls=110)
-    if Rr.get('caption'): sb.text(xs[2], ZONE_Y + code_h + 20, rw, 10, Rr['caption'], size=6.5, color=GREY, ls=100)
-    if side: _side_column(sb, sx, ZONE_Y, 684 - sx, ZONE_H, side)
+    if Rr.get('caption'): sb.text(xs[2], sb.zy + code_h + 20, rw, 10, Rr['caption'], size=6.5, color=GREY, ls=100)
+    if side: _side_column(sb, sx, sb.zy, 684 - sx, sb.zh, side)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_phases(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
     cards = s.get('cards', [])[:3]; bar = s.get('bar'); N = max(len(cards), 1)
-    gap = 26; cw = (W0 - gap * (N - 1)) / N; y = ZONE_Y; h = (325 - y) if bar else (362 - y)
+    gap = 26; cw = (W0 - gap * (N - 1)) / N; y = sb.zy; bh = bar_h(bar); max_h = (363 - bh - 12 - y) if bar else (362 - y)
+    need = 0
+    for i, c in enumerate(cards):
+        cwi = cw - 28
+        nh = 12 + 18 + text_h(c.get('title', ''), 10, cwi, 105, True) + 4 + text_h(c.get('body', ''), 8.5, cwi, 115) + ((text_h(c.get('exit', ''), 8, cwi, 112) + 16 + 6) if c.get('exit') else 0) + 12
+        need = max(need, nh)
+    if need > max_h + 1: raise FitError(f"slide {s.get('id')}: phase cards need {need:.0f} pt, have {max_h:.0f} pt")
+    h = max(110.0, min(need, max_h)) if bar else max_h
     sb.rect(X0, y, W0, h, fill=PANEL3)
     for i, c in enumerate(cards):
         x = X0 + i * (cw + gap); cy = y + 12; cx, cwi = x + 14, cw - 28
@@ -985,13 +1114,17 @@ def r_phases(deck, s, tag, n, footer):
             sb.text(cx, ey, cwi, 10, (c.get('exit_label') or 'EXIT CRITERIA').upper(), size=6.5, bold=True, color=BLUE, ls=100)
             sb.text(cx, ey + 11, cwi, eh - 14, c['exit'], size=8, color=INK, ls=112)
         if i < N - 1: sb.text(x + cw + 2, y + h / 2 - 10, gap - 4, 20, '→', size=14, color=LBLUE, align='CENTER', ls=100)
-    _bar(sb, 333, bar)
+    _bar(sb, y + h + 12, bar)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_next_steps(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
     cards = s.get('cards', [])[:3]; N = max(len(cards), 1)
-    gap = 12; cw = (W0 - gap * (N - 1)) / N; y = ZONE_Y; h = 200
+    gap = 12; cw = (W0 - gap * (N - 1)) / N; y = sb.zy
+    max_h = (365 - y - 46) if s.get('contact') else (365 - y)
+    need = max([card_need(cw, c.get('eyebrow'), c.get('num'), c.get('title'), c.get('body')) for c in cards] + [0])
+    if need > max_h + 1: raise FitError(f"slide {s.get('id')}: next_steps cards need {need:.0f} pt, have {max_h:.0f} pt")
+    h = max(110.0, min(need, max_h)) if s.get('contact') else max_h
     for i, c in enumerate(cards):
         sb.card(X0 + i * (cw + gap), y, cw, h, eyebrow=c.get('eyebrow'), num=c.get('num'), title=c.get('title'), body=c.get('body'))
     if s.get('contact'):
@@ -1003,7 +1136,7 @@ def r_sources(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
     cols = s.get('cols', [])[:2]; gap = 24; cw = (W0 - gap) / 2
     for i, col in enumerate(cols):
-        x = X0 + i * (cw + gap); cy = ZONE_Y
+        x = X0 + i * (cw + gap); cy = sb.zy
         if col.get('header'):
             sb.text(x, cy, cw - 90, 11, col['header'].upper(), size=7.5, bold=True, color=BLUE, ls=100)
             if col.get('pill'): sb.pill(x + text_width(col['header'].upper(), 7.5, True) + 8, cy - 3, col['pill'])
@@ -1025,36 +1158,51 @@ def r_closing(deck, s, tag, n):
     sid, m = deck.duplicate(BASE['closing'], tag); sb = SB(deck, sid, tag, m, dark=True)
     sb.delete([m[ROLE[46]['icon']]])
     sb.R += replace_text_requests(sb._tpl_el(46, ROLE[46]['title']), s.get('line') or "Let's grow together")
-    body_el = sb._tpl_el(46, ROLE[46]['body'])
     lines = []
     if s.get('name') or s.get('title'): lines.append(('**%s**' % s.get('name', '')) + (' | ' + s['title'] if s.get('title') else ''))
     if s.get('phone'): lines.append('**%s**' % s['phone'])
     if s.get('email'): lines.append('**%s**' % s['email'])
-    sb.R += replace_text_requests(body_el, '\n'.join(lines), size=11, color=WHITE)
-    # lockup: cover the layout's "yuno |" (x 540..615, y 195..220) and redraw yuno | OnlyFans right-aligned to x 684
-    sb.rect(528, 186, 192, 44, fill=BLACK)
-    url = deck.wordmark_url(); lh = 14.0; lw = lh * 1024 / 179; ww = lh * 36400 / 9850 * (16.0 / 16.0)
-    ww = lh / 16.0 * 59.2  # cover wordmark is 59.2 x 16.0
+    sb.R += replace_text_requests(sb._tpl_el(46, ROLE[46]['body']), '\n'.join(lines), size=11, color=WHITE)
+    sb.flush('closing text')
+    # lockup: cover the layout's "yuno |" (x 540..615, y 195..220) and redraw `yuno | OnlyFans` right-aligned to x 684
+    url = deck.wordmark_url(); lh = 14.0; lw = lh * 1024 / 179; ww = lh / 16.0 * 59.2   # cover wordmark is 59.2 x 16.0 pt
     logo_x = 684 - lw; bar_x = logo_x - 13; wm_x = bar_x - 13 - ww; y = 199.4 + (16.4 - lh) / 2
     try:
         if not url: raise RuntimeError('no wordmark url')
+        sb.rect(528, 186, 192, 44, fill=BLACK)
         sb.image(url, wm_x, y, ww, lh)
         sb.rect(bar_x, y - 1.5, 1.3, lh + 3, fill=WHITE)
         sb.image(s.get('logo_url') or LOGO_URL, logo_x, y, lw, lh)
-        sb.flush()
+        sb.flush('closing lockup')
     except Exception as e:
-        print('  closing lockup fallback:', str(e)[:120])
+        print('  closing lockup fallback (layout wordmark kept):', str(e)[:140])
         sb.R = []; sb.post = []
-        sb.delete([m[ROLE[46]['icon']]]) if False else None
-        sb.R += replace_text_requests(sb._tpl_el(46, ROLE[46]['title']), s.get('line') or "Let's grow together")
-        sb.R += replace_text_requests(body_el, '\n'.join(lines), size=11, color=WHITE)
-        lh2 = 14.0; lw2 = lh2 * 1024 / 179
+        lh2 = 12.0; lw2 = lh2 * 1024 / 179
         sb.image(s.get('logo_url') or LOGO_URL, 632.5, 199.4 + (16.4 - lh2) / 2, lw2, lh2)
-        sb.flush()
+        sb.flush('closing lockup fallback')
     deck.set_notes(sid, s.get('notes')); return sid
 
+TEMPLATE_BY_REF = {'yuno-story': 22, 'yuno_story': 22, 'four-pillars': 23, 'four_pillars': 23, 'pillars': 23, 'offices': 24, 'global-presence': 24,
+                   'trusted': 25, 'trusted-by': 25, 'trusted_by': 25, 'logos': 25, 'team': 26, 'leadership': 26, 'dedicated': 27, 'dedicated-team': 27,
+                   'awards': 38, 'coverage': 40, 'credentials': 41, 'quotes': 42, 'compliance': 45}
+HIDDEN_JUNK = {22: ['g3f76accd9b2_0_1750']}   # invisible "Happy Easter" text box on the Yuno story slide
+
+def resolve_template_index(s):
+    ti = int(s.get('template_index') or 0)
+    ref = (s.get('template_ref') or s.get('id') or '').lower()
+    want = TEMPLATE_BY_REF.get(ref)
+    if 'SPACEX_LOGO_OBJECT_ID' in (s.get('delete_images_matching') or []) or SPACEX_LOGO in (s.get('delete_images_matching') or []): want = 25
+    if want and want != ti:
+        print(f"  WARNING slide {s.get('id')}: template_index {ti} is '{_kind(ti)}' in template_dump order; using {want} ('{_kind(want)}') from the slide id")
+        return want
+    return ti
+
+def _kind(i):
+    return {22: 'Yuno story stats', 23: 'four pillars', 24: 'offices map', 25: 'trusted-by logos', 26: 'team', 27: 'dedicated team', 28: 'divider 05',
+            29: 'marketplace hero', 38: 'awards', 40: 'coverage', 41: 'credentials', 42: 'quotes', 45: 'compliance'}.get(i, f'slide {i}')
+
 def r_template_keep(deck, s, tag, n, footer):
-    ti = int(s['template_index']); sid, m = deck.duplicate(ti, tag)
+    ti = resolve_template_index(s); sid, m = deck.duplicate(ti, tag)
     src = deck.tpl_slides[ti - 1]
     dark = (src.get('pageProperties', {}).get('pageBackgroundFill', {}).get('solidFill', {}).get('color', {}).get('rgbColor', {'red': 1}) == {} or
             src.get('pageProperties', {}).get('pageBackgroundFill', {}).get('solidFill', {}).get('color', {}).get('themeColor') == 'DARK1')
@@ -1069,8 +1217,10 @@ def r_template_keep(deck, s, tag, n, footer):
                 new_el = copy.deepcopy(el); new_el['objectId'] = m[el['objectId']]
                 sb.R += replace_text_requests(new_el, t.rstrip('\n').replace(find, repl)); hit = True
         if not hit: print(f"  warning: template_keep find text not found on slide {ti}: {find!r}")
-    for oid in s.get('delete_images_matching', []) or []:
-        sb.delete([m.get(oid, oid)])
+    for oid in list(s.get('delete_images_matching', []) or []) + HIDDEN_JUNK.get(ti, []):
+        if oid == 'SPACEX_LOGO_OBJECT_ID': oid = SPACEX_LOGO
+        if oid in m: sb.delete([m[oid]])
+        else: print(f"  warning: element {oid} not on template slide {ti}")
     if s.get('kicker') and ti in ROLE and 'kicker' in ROLE[ti]: sb.kicker(s['kicker'], ti)
     sb.footer(footer, n)
     sb.flush(); deck.set_notes(sid, s.get('notes')); return sid
@@ -1098,29 +1248,97 @@ def validate(spec):
         if '—' in blob or ' - ' in blob or 'no small feat' in blob.lower(): errs.append(f"slide {s.get('id')}: em dash, ' - ' or forbidden phrase in text")
     return errs
 
-def build_from_spec(spec_path, final=False, only=None):
+class DryDeck(Deck):
+    """No API calls: duplicate/run/notes are simulated so renderers can be fit-checked offline."""
+    def __init__(self):
+        self.pid = PID; self.svc = None; self.tpl = json.load(open(TEMPLATE_DUMP)); self.tpl_slides = self.tpl['slides']
+        self.pres = self.tpl; self.state = {'built': []}; self._n = N_TEMPLATE; self.log = []
+    def fetch(self): return self.tpl
+    def slide_ids(self): return ['x'] * self._n
+    def run(self, reqs, label=''): self.log.append((label, len(reqs)))
+    def duplicate(self, template_index, tag):
+        src = self.tpl_slides[template_index - 1]; ids = [src['objectId']] + all_ids(src)
+        idmap = {i: f"{tag}_{i}"[:50] for i in ids}; self._n += 1
+        return idmap[src['objectId']], idmap
+    def set_notes(self, slide_id, text): pass
+    def save_state(self): pass
+    def wordmark_url(self): return 'dry://wordmark'
+    def page(self, page_id): return {'pageElements': []}
+
+def check_spec(spec_path):
+    """Offline: validate + run every renderer against a DryDeck; print per-slide fit problems."""
+    spec = json.load(open(spec_path)); errs = validate(spec)
+    for e in errs: print('SPEC ', e)
+    deck = DryDeck(); footer = spec.get('footer', ''); bad = 0
+    for n, s in enumerate(spec['slides'], 1):
+        tag = 'c%02d' % n; t = s['type']
+        try:
+            if t == 'cover': r_cover(deck, s, tag, n)
+            elif t == 'agenda': r_agenda(deck, s, tag, n)
+            elif t == 'divider': r_divider(deck, s, tag, n)
+            elif t == 'closing': r_closing(deck, s, tag, n)
+            else: RENDERERS[t](deck, s, tag, n, footer)
+            print(f"ok    [{n:02d}] {t:18s} {s.get('id')}")
+        except FitError as e:
+            bad += 1; print(f"FIT   [{n:02d}] {t:18s} {s.get('id')}: {e}")
+        except Exception as e:
+            bad += 1; print(f"ERROR [{n:02d}] {t:18s} {s.get('id')}: {type(e).__name__}: {e}")
+    print(f"{len(spec['slides']) - bad} ok, {bad} with problems"); return bad
+
+def render_one(deck, s, tag, n, footer):
+    t = s['type']
+    if t == 'cover': return r_cover(deck, s, tag, n)
+    if t == 'agenda': return r_agenda(deck, s, tag, n)
+    if t == 'divider': return r_divider(deck, s, tag, n)
+    if t == 'closing': return r_closing(deck, s, tag, n)
+    return RENDERERS[t](deck, s, tag, n, footer)
+
+def r_placeholder(deck, s, tag, n, footer, reason):
+    """a slide that could not be laid out: chrome + a visible notice, so order and numbering hold until the copy is shortened"""
+    sid, sb = _content_base(deck, s, tag)
+    sb.rect(X0, sb.zy, W0, 60, fill='#FBEFD9')
+    sb.text(X0 + 12, sb.zy + 8, W0 - 24, 12, 'CONTENT DOES NOT FIT · REBUILD AFTER SHORTENING THE COPY', size=8, bold=True, color='#9A5B00', ls=100)
+    sb.text(X0 + 12, sb.zy + 24, W0 - 24, 30, reason, size=8, color=INK, ls=115)
+    return _finish(deck, sb, sid, s, n, footer)
+
+def build_from_spec(spec_path, final=False, only=None, replace=False):
     spec = json.load(open(spec_path))
     errs = validate(spec)
     if errs: raise SystemExit('spec errors:\n  ' + '\n  '.join(errs))
     deck = Deck(spec.get('presentation_id') or PID); deck.fetch()
     footer = spec.get('footer', '')
     slides = spec['slides']
-    built = []
+    built = []; problems = []
     for n, s in enumerate(slides, 1):
         if only and s.get('id') not in only: continue
         tag = 'n%02d' % n
+        if replace:  # a fresh tag so ids never collide with the slide being replaced
+            k = 1
+            while any(i.startswith(f"{tag}r{k}_") for i in deck.state.get('built', [])): k += 1
+            tag = f"{tag}r{k}"
         t = s['type']; print(f"[{n:02d}] {t:18s} {s.get('id')}")
-        if t == 'cover': sid = r_cover(deck, s, tag, n)
-        elif t == 'agenda': sid = r_agenda(deck, s, tag, n)
-        elif t == 'divider': sid = r_divider(deck, s, tag, n)
-        elif t == 'closing': sid = r_closing(deck, s, tag, n)
-        else: sid = RENDERERS[t](deck, s, tag, n, footer)
+        try:
+            sid = render_one(deck, s, tag, n, footer)
+        except FitError as e:
+            print(f"  FIT PROBLEM: {e}"); problems.append((n, s.get('id'), str(e)))
+            tag2 = tag + 'p'
+            sid = r_placeholder(deck, s, tag2, n, footer, str(e))
         built.append(sid)
+        if replace:
+            live = deck.slide_ids()
+            old = [i for i in live if i != sid and (i.startswith(f"n{n:02d}_") or i.startswith(f"n{n:02d}r"))]
+            if old:
+                idx = live.index(old[0])
+                deck.run([{'updateSlidesPosition': {'slideObjectIds': [sid], 'insertionIndex': idx}}] + [{'deleteObject': {'objectId': o}} for o in old], f'replace slide {n}')
+                deck.state['built'] = [i for i in deck.state['built'] if i not in old]; deck.save_state()
     if final:
         tpl = deck.template_live_ids()
         if len(built) != len(slides): raise SystemExit('refusing --final on a partial build')
         deck.delete_slides(tpl)
-        print(f"deleted {len(tpl)} template slides; deck now has {len(deck.slide_ids())} slides")
+        print(f"deleted {len(tpl)} template slides in one call; deck now has {len(deck.slide_ids())} slides")
+    if problems:
+        print('\nSLIDES THAT NEED SHORTER COPY (placeholder inserted):')
+        for n, i, e in problems: print(f"  [{n:02d}] {i}: {e}")
     return built
 
 def cleanup():
@@ -1133,10 +1351,11 @@ def cleanup():
 if __name__ == '__main__':
     a = sys.argv[1:]
     if not a: print(__doc__); sys.exit(0)
+    if a[0] == 'check': sys.exit(1 if check_spec(a[1]) else 0)
     if a[0] == 'build':
         only = None
         if '--only' in a: only = set(a[a.index('--only') + 1].split(','))
-        build_from_spec(a[1], final='--final' in a, only=only)
+        build_from_spec(a[1], final='--final' in a, only=only, replace='--replace' in a)
     elif a[0] == 'cleanup': cleanup()
     elif a[0] == 'dump':
         d = Deck().fetch(); json.dump(d, open(os.path.join(HERE, 'live_dump.json'), 'w')); print('live_dump.json', len(d['slides']), 'slides')

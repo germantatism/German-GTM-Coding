@@ -35,7 +35,7 @@ SLIDES["exec"] = {
 SLIDES["industry-glance"] = {
     "id": "industry-glance", "type": "stats",
     "kicker": K02 + " · CREATOR BANKING AT A GLANCE",
-    "headline": "Creator platforms are becoming the creator's bank, and OnlyFans brings a longer payout record to that shift than anyone launching it.",
+    "headline": "Creator platforms are becoming the creator's bank. OnlyFans brings a longer payout record to that shift than anyone launching it.",
     "tiles": [
         {"label": "CREATOR ECONOMY, 2027", "value": "$480B", "caption": "Addressable market projected for 2027, from about $250B in 2023 (Goldman Sachs Research)."},
         {"label": "GLOBAL CREATORS", "value": "50M", "caption": "Growing 10% to 20% a year (Goldman Sachs Research)."},
@@ -52,7 +52,7 @@ SLIDES["industry-glance"] = {
 SLIDES["no-single-bank"] = {
     "id": "no-single-bank", "type": "cards_row",
     "kicker": K02 + " · WHY A MULTI-BANK ARCHITECTURE",
-    "headline": "Platforms that depended on one bank, one network or one middleware learned the cost in 2020, 2021 and 2024. Your design treats redundancy as the product.",
+    "headline": "Platforms that depended on one bank, one network or one middleware learned the cost in 2020, 2021 and 2024. Your design makes redundancy the product.",
     "cards": [
         {"eyebrow": "DEC 2020 · ONE NETWORK DECISION", "title": "Card acceptance switched off in a day", "body": "Mastercard terminated and Visa suspended card acceptance at a major adult platform within a day of a newspaper column; Discover followed."},
         {"eyebrow": "AUG 2021 · ONE PAYOUT BANK", "title": "A content ban announced, then reversed", "body": "OnlyFans announced a ban for 1 October 2021 after banks were \"broadly rejecting money transfers and closing related accounts\". Reversed six days later once assurances were secured."},
@@ -68,7 +68,7 @@ SLIDES["no-single-bank"] = {
 SLIDES["vault-2026"] = {
     "id": "vault-2026", "type": "cards_row",
     "kicker": K02 + " · WHAT A TOKEN VAULT IS EXPECTED TO DO IN 2026",
-    "headline": "In 2026 a vault is judged on more than storing a card: script controls, network tokens, lifecycle updates, agent credentials and the rules around stablecoin balances.",
+    "headline": "In 2026 a vault is judged on five things beyond storing a card: script controls, network tokens, lifecycle updates, agent credentials, stablecoin rules.",
     "cards": [
         {"eyebrow": "PCI DSS 4.0.1", "title": "Script controls are live", "body": "Future-dated requirements became mandatory on 31 March 2025. Requirement 6.4.3 covers payment-page script authorization, integrity and monitoring; 11.6.1 covers detection of unauthorized page changes. SAQ A merchants must still confirm the site is not susceptible to script attacks."},
         {"eyebrow": "NETWORK TOKENS", "title": "The default credential", "body": "More than 16 billion Visa tokens issued. More than 30% of Mastercard transactions are tokenized, with a stated goal of all online transactions by 2030 and approval gains of three to six percentage points."},
@@ -84,7 +84,7 @@ SLIDES["vault-2026"] = {
 SLIDES["vault-market"] = {
     "id": "vault-market", "type": "table",
     "kicker": K02 + " · WHERE THE INDEPENDENT VAULT MARKET STANDS",
-    "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, and data privacy vault. The RFP should state which shape it is buying.",
+    "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, data privacy vault. The RFP should state which one it is buying.",
     "columns": ["Vendor", "HQ", "Founded", "Funding (public)", "Shape"],
     "col_widths": [0.18, 0.20, 0.10, 0.28, 0.24],
     "header_style": "dark", "font_size": 7.5, "bold_first_col": True, "zebra": True,
@@ -106,7 +106,7 @@ SLIDES["vault-market"] = {
 SLIDES["of-numbers"] = {
     "id": "of-numbers", "type": "scale",
     "kicker": K03 + " · ONLYFANS IN NUMBERS",
-    "headline": "OnlyFans moves more than $6 billion a year to 2.5 million creators with 47 employees, so any new payments layer has to scale without headcount.",
+    "headline": "OnlyFans moves more than $6 billion a year to 2.5 million creators with 47 employees. Any new payments layer has to scale without headcount.",
     "left_header": "THE SCALE TODAY · FY ENDED 30 NOV 2025",
     "tiles": [{"value": "$1.55B", "label": "Net revenue, up 10%"}, {"value": "$6.3B", "label": "Paid to creators in the year"}],
     "left_note": "**$714M** pre-tax profit, up 5%. **$30B+** paid to creators since 2016. **5,076** creators have earned $1M or more since 2016. FY2024 for reference: $7.2B of fan payments, $1.41B revenue, $5.8B paid to creators.",
@@ -146,7 +146,7 @@ SLIDES["traffic"] = {
 SLIDES["stack"] = {
     "id": "stack", "type": "cards_row",
     "kicker": K03 + " · THE STACK AS PUBLICLY EVIDENCED",
-    "headline": "Publicly, OnlyFans runs card pay-ins through a third-party processor and payouts on location-dependent rails, and holds the bank data itself. Nothing public names a vault.",
+    "headline": "Publicly, OnlyFans runs card pay-ins through a third-party processor, pays out on location-dependent rails and holds the bank data itself. No vault is named.",
     "cards": [
         {"eyebrow": "PAY-IN", "title": "Cards, in USD, through an approved provider", "body": "\"All Fan Payments will be received and processed by a third-party payment provider we approve.\" Charged in USD; subscriptions renew automatically on the stored card; a wallet can be set as the primary method for rebills. Descriptors: \"OnlyFans\", \"OF\", \"OnlyFans.com\"."},
         {"eyebrow": "PAYOUTS", "title": "Rails that depend on where the creator lives", "body": "Method \"will depend on where you live\"; $20 minimum for most methods; manual or automatic daily, weekly or monthly where available. Earnings pend 7 days, 21 in a small number of high-reversal countries; payouts within 3 to 5 business days, up to 10."},
@@ -162,7 +162,7 @@ SLIDES["stack"] = {
 SLIDES["lesson-2021"] = {
     "id": "lesson-2021", "type": "table",
     "kicker": K03 + " · THE 2021 LESSON IN ONE SLIDE",
-    "headline": "In 2021 it was the payout rail, not the checkout, that nearly stopped the business. The multi-bank design is the direct answer, and the vault is what makes it operable.",
+    "headline": "In 2021 the payout rail, not the checkout, nearly stopped the business. The multi-bank design is the answer, and the vault is what makes it operable.",
     "columns": ["When", "What happened", "What it shows"],
     "col_widths": [0.14, 0.52, 0.34],
     "header_style": "dark", "font_size": 7.5, "bold_first_col": True, "zebra": True,
@@ -241,7 +241,7 @@ SLIDES["five-data"] = {
 SLIDES["clocks"] = {
     "id": "clocks", "type": "stats",
     "kicker": K04 + " · FOUR EXTERNAL CLOCKS ALREADY RUNNING",
-    "headline": "Four external clocks set the pace for Phase 1: PCI 4.0.1 is live, the GENIUS Act takes effect by January 2027, the networks are tokenizing everything by 2030, and agent credentials arrived in 2025.",
+    "headline": "Four external clocks set the pace for Phase 1, and none of them is set by a vendor.",
     "tiles": [
         {"label": "PCI DSS 4.0.1", "value": "31 Mar 2025", "caption": "Script controls (6.4.3, 11.6.1) became mandatory."},
         {"label": "GENIUS ACT", "value": "18 Jan 2027", "caption": "Latest effective date, or 120 days after final rules; the OCC yield rule is still proposed."},

@@ -16,7 +16,7 @@ def load(mod):
     except ModuleNotFoundError:
         print(f"  (module {mod} not present yet)"); return {}
 
-S = load("spec_samuel"); A = load("spec_research"); B = load("spec_yuno")
+S = load("spec_samuel"); A = load("spec_research"); B = load("spec_yuno"); D = load("spec_direction")
 
 def divider(id_, num, title, sub=None, notes=None):
     d = {"id": id_, "type": "divider", "num": num, "title": title}
@@ -52,9 +52,10 @@ ORDER = [
     keep("yuno-story", 23), keep("four-pillars", 24), B.get("compliance") or keep("compliance", 45),
     keep("offices", 25), keep("trusted", 26, delete_images_matching=["SPACEX_LOGO_OBJECT_ID"]), keep("team", 27),
     B.get("dedicated") or keep("dedicated", 29, replacements=[{"find": "Eventbrite", "replace": "OnlyFans"}]),
-    divider("d06", "06", "The Yuno token vault", "Vault · Proxy · Decision layer", DN["d06"]),
+    divider("d06", "06", "The Yuno token vault", "Vault · Proxy · Decision layer · Product direction", DN["d06"]),
     S.get("vault-cards"), S.get("vault-data"), B.get("keep-current"), B.get("move"),
     S.get("proxy-how"), S.get("proxy-controls"), S.get("banking"), S.get("who-decides"),
+    D.get("direction-architecture"), D.get("direction-rules"), D.get("direction-yield"),
     divider("d07", "07", "Versus a standalone vault", "Where VGS and Basis Theory lead, and where they stop.", DN["d07"]),
     S.get("versus-thesis"), B.get("versus-model"), S.get("versus-table"), S.get("versus-bt"), S.get("versus-vgs"),
     divider("d08", "08", "The path forward"),

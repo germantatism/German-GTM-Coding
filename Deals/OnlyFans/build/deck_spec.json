@@ -200,7 +200,7 @@
     {
      "pill": "OPEN",
      "title": "Not yet confirmed in writing inside Yuno",
-     "body": "Shown with an owner, never as a fact. The six open items are listed together on slide 50. In the appendix, Not in docs marks a gap in our public reference."
+     "body": "Shown with an owner, never as a fact. The six open items are listed together on slide 53. In the appendix, Not in docs marks a gap in our public reference."
     }
    ],
    "bar": "**Why it matters.** A vault sits under everything you build on it. We would rather show you an open item today than have your engineers find it in the sandbox.",
@@ -211,7 +211,7 @@
    "type": "stats",
    "kicker": "WHY WE ARE HERE · THE ANSWER UP FRONT",
    "headline": "A vault stores the credential. Your design also needs a layer that decides where it goes. Yuno does both; here is how far each goes today.",
-   "source": "Nine things your design needs: item by item on slide 45, vendor by vendor on slides 46 and 47. Competitor lines from public pages, read 7 October 2026.",
+   "source": "Nine things your design needs: item by item on slide 48, vendor by vendor on slides 49 and 50. Competitor lines from public pages, read 7 October 2026.",
    "tiles": [
     {
      "label": "WHERE YUNO LEADS",
@@ -285,7 +285,7 @@
    "id": "industry-glance",
    "type": "stats",
    "kicker": "INDUSTRY CONTEXT · CREATOR BANKING AT A GLANCE",
-   "headline": "Creator platforms are becoming the creator's bank, and OnlyFans brings a longer payout record to that shift than anyone launching it.",
+   "headline": "Creator platforms are becoming the creator's bank. OnlyFans brings a longer payout record to that shift than anyone launching it.",
    "tiles": [
     {
      "label": "CREATOR ECONOMY, 2027",
@@ -317,7 +317,7 @@
    "id": "no-single-bank",
    "type": "cards_row",
    "kicker": "INDUSTRY CONTEXT · WHY A MULTI-BANK ARCHITECTURE",
-   "headline": "Platforms that depended on one bank, one network or one middleware learned the cost in 2020, 2021 and 2024. Your design treats redundancy as the product.",
+   "headline": "Platforms that depended on one bank, one network or one middleware learned the cost in 2020, 2021 and 2024. Your design makes redundancy the product.",
    "cards": [
     {
      "eyebrow": "DEC 2020 · ONE NETWORK DECISION",
@@ -348,7 +348,7 @@
    "id": "vault-2026",
    "type": "cards_row",
    "kicker": "INDUSTRY CONTEXT · WHAT A TOKEN VAULT IS EXPECTED TO DO IN 2026",
-   "headline": "In 2026 a vault is judged on more than storing a card: script controls, network tokens, lifecycle updates, agent credentials and the rules around stablecoin balances.",
+   "headline": "In 2026 a vault is judged on five things beyond storing a card: script controls, network tokens, lifecycle updates, agent credentials, stablecoin rules.",
    "cards": [
     {
      "eyebrow": "PCI DSS 4.0.1",
@@ -379,7 +379,7 @@
    "id": "vault-market",
    "type": "table",
    "kicker": "INDUSTRY CONTEXT · WHERE THE INDEPENDENT VAULT MARKET STANDS",
-   "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, and data privacy vault. The RFP should state which shape it is buying.",
+   "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, data privacy vault. The RFP should state which one it is buying.",
    "columns": [
     "Vendor",
     "HQ",
@@ -463,7 +463,7 @@
    "id": "of-numbers",
    "type": "scale",
    "kicker": "HOW ONLYFANS RUNS PAYMENTS TODAY · ONLYFANS IN NUMBERS",
-   "headline": "OnlyFans moves more than $6 billion a year to 2.5 million creators with 47 employees, so any new payments layer has to scale without headcount.",
+   "headline": "OnlyFans moves more than $6 billion a year to 2.5 million creators with 47 employees. Any new payments layer has to scale without headcount.",
    "left_header": "THE SCALE TODAY · FY ENDED 30 NOV 2025",
    "tiles": [
     {
@@ -543,7 +543,7 @@
    "id": "stack",
    "type": "cards_row",
    "kicker": "HOW ONLYFANS RUNS PAYMENTS TODAY · THE STACK AS PUBLICLY EVIDENCED",
-   "headline": "Publicly, OnlyFans runs card pay-ins through a third-party processor and payouts on location-dependent rails, and holds the bank data itself. Nothing public names a vault.",
+   "headline": "Publicly, OnlyFans runs card pay-ins through a third-party processor, pays out on location-dependent rails and holds the bank data itself. No vault is named.",
    "cards": [
     {
      "eyebrow": "PAY-IN",
@@ -574,7 +574,7 @@
    "id": "lesson-2021",
    "type": "table",
    "kicker": "HOW ONLYFANS RUNS PAYMENTS TODAY · THE 2021 LESSON IN ONE SLIDE",
-   "headline": "In 2021 it was the payout rail, not the checkout, that nearly stopped the business. The multi-bank design is the direct answer, and the vault is what makes it operable.",
+   "headline": "In 2021 the payout rail, not the checkout, nearly stopped the business. The multi-bank design is the answer, and the vault is what makes it operable.",
    "columns": [
     "When",
     "What happened",
@@ -879,7 +879,7 @@
    "type": "checklist_table",
    "kicker": "WHAT THE VAULT HAS TO HOLD · THE QUESTIONS",
    "headline": "The questions a careful vault buyer asks first, answered before you ask (2 of 2).",
-   "source": "Yuno answers from docs.y.uno and y.uno, read 8 October 2026. Open rows map to the open items on slide 50.",
+   "source": "Yuno answers from docs.y.uno and y.uno, read 8 October 2026. Open rows map to the open items on slide 53.",
    "columns": [
     "#",
     "The question",
@@ -928,7 +928,7 @@
       "text": "What happens at checkout and at renewal time if the vault is unreachable?",
       "bold": true
      },
-     "Failover between the processors you connect is a routing feature (Monitors). Behaviour of capture and recurring charges during a vault outage is answered with the failover design, not asserted here.",
+     "Failover between the processors you connect is a routing feature (Monitors). Capture and recurring behaviour during a vault outage comes with the failover design, not asserted here.",
      {
       "text": "Engineering",
       "pill": "CONFIRMED",
@@ -941,7 +941,7 @@
       "text": "Do you capture the network transaction ID when we charge through the proxy on our own processor?",
       "bold": true
      },
-     "For payments Yuno processes, the ID is stored on the token and replayed on every merchant-initiated charge, whichever provider is used. Through the proxy, the stored ID is injected into your request; capturing a new one from your processor's response is an open item.",
+     "For payments Yuno processes, the ID is stored on the token and replayed on every merchant-initiated charge, whichever provider. Through the proxy the stored ID is injected into your request; capturing a new one from your processor's response is open.",
      {
       "text": "Beta · Product",
       "pill": "CONFIRMED",
@@ -954,7 +954,7 @@
       "text": "Does using the proxy change our SAQ?",
       "bold": true
      },
-     "Capture stays in our hosted fields and the proxy resolves data inside Yuno's PCI environment, so per our documentation your PCI scope does not change. Sending a raw CVV yourself outside the 3-hour window keeps that request in your scope. Your QSA confirms your SAQ.",
+     "Capture stays in our hosted fields and the proxy resolves data inside Yuno's PCI environment, so per our documentation your scope does not change. Sending a raw CVV yourself outside the 3-hour window keeps that request in your scope. Your QSA confirms your SAQ.",
      {
       "text": "",
       "pill": "CONFIRMED",
@@ -967,7 +967,7 @@
       "text": "Can we vault bank accounts and other payment methods, not only cards?",
       "bold": true
      },
-     "Yes. ACH and SEPA details with a mandate record through the enroll API, with no provider involved if you choose; PayPal and several wallets are enrollable. Other methods are confirmed per method in writing.",
+     "Yes. ACH and SEPA details with a mandate record through the enroll API, with no provider involved if you choose; PayPal and several wallets are enrollable. Other methods confirmed per method in writing.",
      {
       "text": "Product",
       "pill": "CONFIRMED",
@@ -992,7 +992,7 @@
       "text": "Where does the data live, and which region do we integrate with?",
       "bold": true
      },
-     "Separate production environments for the US (api.y.uno) and EMEA (api.eu.y.uno), hosted on AWS with AES-256 at rest per our trust page. Key management and regional detail are in the security pack with the RFP response.",
+     "Separate production environments for the US (api.y.uno) and EMEA (api.eu.y.uno), on AWS with AES-256 at rest per our trust page. Key management and regional detail come in the security pack with the RFP response.",
      {
       "text": "Engineering, Security",
       "pill": "CONFIRMED",
@@ -1006,7 +1006,7 @@
    "id": "clocks",
    "type": "stats",
    "kicker": "WHAT THE VAULT HAS TO HOLD · FOUR EXTERNAL CLOCKS ALREADY RUNNING",
-   "headline": "Four external clocks set the pace for Phase 1: PCI 4.0.1 is live, the GENIUS Act takes effect by January 2027, the networks are tokenizing everything by 2030, and agent credentials arrived in 2025.",
+   "headline": "Four external clocks set the pace for Phase 1, and none of them is set by a vendor.",
    "tiles": [
     {
      "label": "PCI DSS 4.0.1",
@@ -1171,7 +1171,7 @@
    "type": "divider",
    "num": "06",
    "title": "The Yuno token vault",
-   "sub": "Vault · Proxy · Decision layer",
+   "sub": "Vault · Proxy · Decision layer · Product direction",
    "notes": "Section six is the RFP itself: the vault, the proxy and the decision layer. What the vault does for cards, what it holds beyond cards, how a stored card reaches a provider you chose, including providers Yuno does not connect to, and the question you asked most: who decides which bank and which provider each creator lands on. The proxy is in beta and we say so on each slide."
   },
   {
@@ -1179,7 +1179,7 @@
    "type": "cards_row",
    "kicker": "THE YUNO TOKEN VAULT · CARDS",
    "headline": "One vaulted token works on every processor you connect, so no processor owns your cards.",
-   "source": "Source: docs.y.uno, read 7 October 2026. Page list on slide 57.",
+   "source": "Source: docs.y.uno, read 7 October 2026. Page list on slide 60.",
    "cards": [
     {
      "pill": "CONFIRMED",
@@ -1500,7 +1500,7 @@
      }
     ]
    },
-   "notes": "The proxy sends stored card data to any provider API you choose. Your backend builds the exact request a provider expects and puts token expressions where the card data goes. Yuno resolves them inside its PCI environment and forwards the call. The destination does not have to be a provider Yuno integrates. For issuers specifically, note the limits on slide 54: capturing or displaying a card your issuer creates is not something the proxy does today. To be clear on status: this has been in our API changelog since July, it is in beta, and production access is switched on per organization. Your team can test it in the sandbox now."
+   "notes": "The proxy sends stored card data to any provider API you choose. Your backend builds the exact request a provider expects and puts token expressions where the card data goes. Yuno resolves them inside its PCI environment and forwards the call. The destination does not have to be a provider Yuno integrates. For issuers specifically, note the limits on slide 57: capturing or displaying a card your issuer creates is not something the proxy does today. To be clear on status: this has been in our API changelog since July, it is in beta, and production access is switched on per organization. Your team can test it in the sandbox now."
   },
   {
    "id": "proxy-controls",
@@ -1744,6 +1744,248 @@
    "notes": "You asked this more than once, so here is the precise answer. Today, for banking, the decision is literally yours on every call: the onboarding request names the provider connection, so your allocation policy picks the bank and Yuno executes. For card payments, rule-based routing is a mature product: conditions, splits, fallbacks and monitors, set by you. What we told you about rule-based allocation across banks and issuers is where the product is going; it is not in the public reference yet, so we mark it open and owe you a written answer."
   },
   {
+   "id": "direction-architecture",
+   "type": "diagram",
+   "kicker": "THE YUNO TOKEN VAULT · PRODUCT DIRECTION · HOW IT WORKS",
+   "headline": "One creator account. Every bank behind it.",
+   "tag": [
+    "DIRECTION"
+   ],
+   "source": "Product direction, not a delivery commitment. Rule-based allocation, the US banks and issuers behind the API, and the yield providers are open items 2, 3 and 6 on slide 53.",
+   "boxes": [
+    {
+     "id": "creators",
+     "x": 0,
+     "y": 0,
+     "w": 130,
+     "h": 44,
+     "title": "Creators",
+     "body": "Sign up once",
+     "style": "outline"
+    },
+    {
+     "id": "of",
+     "x": 145,
+     "y": 0,
+     "w": 275,
+     "h": 44,
+     "title": "OnlyFans",
+     "body": "One account per creator · Sets the rules",
+     "style": "outline"
+    },
+    {
+     "id": "orch",
+     "x": 0,
+     "y": 66,
+     "w": 205,
+     "h": 70,
+     "title": "Yuno · orchestration",
+     "body": "Decides where money lives and moves. Opens accounts, runs your rules, routes every transfer, shows every balance in one view.",
+     "style": "blue"
+    },
+    {
+     "id": "vault",
+     "x": 215,
+     "y": 66,
+     "w": 205,
+     "h": 70,
+     "title": "Yuno · vault",
+     "body": "Holds the data every provider needs: KYC, SSN and tax IDs, bank details, W-9s and cards. Collected once, sent to any provider through the proxy.",
+     "style": "blue"
+    },
+    {
+     "id": "banks",
+     "x": 0,
+     "y": 160,
+     "w": 98,
+     "h": 58,
+     "title": "Banks",
+     "body": "2 to 5 per creator",
+     "style": "light"
+    },
+    {
+     "id": "issuers",
+     "x": 107,
+     "y": 160,
+     "w": 98,
+     "h": 58,
+     "title": "Card issuers",
+     "body": "Add or swap at any time",
+     "style": "light"
+    },
+    {
+     "id": "rails",
+     "x": 215,
+     "y": 160,
+     "w": 98,
+     "h": 58,
+     "title": "Transfer rails",
+     "body": "ACH and wire",
+     "style": "light"
+    },
+    {
+     "id": "ramps",
+     "x": 322,
+     "y": 160,
+     "w": 98,
+     "h": 58,
+     "title": "Stablecoin ramps",
+     "body": "On and off-ramp partners",
+     "style": "light"
+    }
+   ],
+   "connectors": [
+    {
+     "from": "creators",
+     "to": "of"
+    },
+    {
+     "from": "of",
+     "to": "orch",
+     "label": "rules"
+    },
+    {
+     "from": "orch",
+     "to": "vault",
+     "label": "creator data as tokens"
+    },
+    {
+     "from": "orch",
+     "to": "banks"
+    },
+    {
+     "from": "orch",
+     "to": "issuers"
+    },
+    {
+     "from": "vault",
+     "to": "rails"
+    },
+    {
+     "from": "vault",
+     "to": "ramps"
+    }
+   ],
+   "side": {
+    "header": "WHAT IT MEANS",
+    "items": [
+     {
+      "title": "Yuno never holds the money",
+      "body": "The banks do. Yuno opens the accounts, runs your rules and routes the transfers."
+     },
+     {
+      "title": "One platform, both directions",
+      "body": "Fan payments in and creator payouts out run on the same platform, with every balance in one view."
+     },
+     {
+      "title": "Collected once",
+      "body": "The vault holds what every provider asks for, so adding a bank or an issuer does not mean asking the creator again."
+     }
+    ]
+   },
+   "notes": "This is where the product is going, and we label it as direction rather than as a delivery commitment. A creator signs up once. OnlyFans holds one account per creator and sets the rules. Yuno's orchestration decides where the money lives and moves: it opens the accounts, applies your rules, routes every transfer and shows every balance in one view. The vault underneath holds the data every provider needs, collected once and sent to any provider through the proxy. Behind it sit two to five banks per creator, card issuers you can add or swap, ACH and wire rails, and stablecoin on and off-ramp partners. Yuno never holds the money; the banks do. The pieces that are not yet in our public documentation are open items 2, 3 and 6, with owners."
+  },
+  {
+   "id": "direction-rules",
+   "type": "two_column",
+   "kicker": "THE YUNO TOKEN VAULT · PRODUCT DIRECTION · CONTROL AND RESILIENCE",
+   "headline": "You set the rules. No single bank can cut a creator off.",
+   "tag": [
+    "DIRECTION"
+   ],
+   "source": "Product direction, not a delivery commitment. Rule-based allocation, the US banks and issuers behind the API, and the yield providers are open items 2, 3 and 6 on slide 53.",
+   "cols": [
+    {
+     "header": "YOU SET THE RULES · ONLYFANS DECIDES, YUNO RUNS IT",
+     "items": [
+      {
+       "title": "Write the policy once",
+       "body": "Yuno applies it to every creator and logs each decision with the rule that triggered it."
+      },
+      {
+       "title": "Spread each creator across 2 to 5 banks",
+       "body": "And cap how much any one bank can hold."
+      },
+      {
+       "title": "Send each payout on the cheapest or fastest rail",
+       "body": "Per transfer, by rule, not by code."
+      },
+      {
+       "title": "Send new creators to the bank you choose",
+       "body": "Allocation is a setting you own, changeable without a deployment."
+      }
+     ]
+    },
+    {
+     "header": "NO SINGLE POINT OF FAILURE · BACKUP BANKS READY BEFORE YOU NEED THEM",
+     "items": [
+      {
+       "title": "Backup accounts opened at sign-up",
+       "body": "Yuno opens the backup accounts when the creator signs up, not after an incident."
+      },
+      {
+       "title": "Automatic move on a freeze or closure",
+       "body": "If a bank freezes or closes an account, inbound funds and payouts move to the next bank automatically."
+      },
+      {
+       "title": "The bank's ledger stays the record of truth",
+       "body": "Yuno reconciles with each bank every day."
+      }
+     ]
+    }
+   ],
+   "bar": "**Why it matters.** In 2021 one group of banks nearly stopped the business. Under this design losing a bank is a reallocation your rules already anticipated, logged decision by decision.",
+   "notes": "Two things you asked for, as product direction. First, you set the rules: write the policy once, and Yuno applies it to every creator and logs each decision with the rule that triggered it. Spread each creator across two to five banks, cap how much one bank can hold, send each payout on the cheapest or fastest rail, send new creators to the bank you choose. Second, no single point of failure: backup accounts are opened when the creator signs up, so if a bank freezes or closes an account, inbound funds and payouts move to the next bank automatically. The bank's ledger stays the record of truth and Yuno reconciles with each bank every day. Rule-based allocation across banks and issuers is open item 2; which US banks sit behind the API is open item 3."
+  },
+  {
+   "id": "direction-yield",
+   "type": "two_column",
+   "kicker": "THE YUNO TOKEN VAULT · PRODUCT DIRECTION · BEYOND THE ACCOUNT",
+   "headline": "Earn on idle balances. Swap issuers freely.",
+   "tag": [
+    "DIRECTION"
+   ],
+   "source": "Product direction, not a delivery commitment. Rule-based allocation, the US banks and issuers behind the API, and the yield providers are open items 2, 3 and 6 on slide 53.",
+   "cols": [
+    {
+     "header": "YIELD · TWO WAYS TO EARN ON IDLE BALANCES",
+     "items": [
+      {
+       "title": "Treasury-backed balances",
+       "body": "Balances that sit in US T-bills, through Jiko."
+      },
+      {
+       "title": "Or convert to stablecoins",
+       "body": "Through Coinbase and Triple-A."
+      },
+      {
+       "title": "Your rules decide how much moves and when",
+       "body": "Yuno never holds funds or crypto. The yield rules under the GENIUS Act are still settling, which is why conversion and custody credentials stay portable."
+      }
+     ]
+    },
+    {
+     "header": "PLUGGABLE ISSUERS · ADD OR SWAP CARD ISSUERS LIKE ANY OTHER CONNECTION",
+     "items": [
+      {
+       "title": "Issuers connect like PSPs and banks",
+       "body": "A card issuer connects to Yuno the same way a processor or a bank does."
+      },
+      {
+       "title": "No new KYC from the creator",
+       "body": "The vault already holds the creator's data, so a new issuer needs no new KYC and no change to your integration."
+      },
+      {
+       "title": "Swap without a project",
+       "body": "Adding or replacing an issuer is a configuration change on your side."
+      }
+     ]
+    }
+   ],
+   "bar": "**One platform for the full creator money flow.** Fan payments in, balances across banks, payouts and cards out.",
+   "notes": "Beyond the account, two parts of your design, as product direction. Yield: idle balances can sit in Treasury-backed accounts through Jiko, or be converted to stablecoins through Coinbase and Triple-A; your rules decide how much moves and when, and Yuno never holds funds or crypto. The stablecoin providers are open item 6. Pluggable issuers: a card issuer connects to Yuno the same way a processor or a bank does, and because the vault already holds the creator's data, a new issuer needs no new KYC and no change to your integration. Showing an issued card to its holder and setting a PIN are not in our documentation today, as the appendix states."
+  },
+  {
    "id": "d07",
    "type": "divider",
    "num": "07",
@@ -1777,7 +2019,7 @@
      "body": "The rules for which bank, issuer or processor each request goes to\nRetries, fallbacks and failover between providers\nEvery provider integration, and its upkeep when an API changes\nMoving money: accounts, transfers and payouts"
     }
    ],
-   "bar": "**So what.** You already asked the hard question: who decides. With a standalone vault, the rules and every connection are yours to build and maintain. With Yuno, card routing is a rule you configure today and bank allocation is a value you set per call; rules for banks are an open item on slide 50.",
+   "bar": "**So what.** You already asked the hard question: who decides. With a standalone vault, the rules and every connection are yours to build and maintain. With Yuno, card routing is a rule you configure today and bank allocation is a value you set per call; rules for banks are an open item on slide 53.",
    "notes": "This is the one difference that matters for your design, in the vendors' own words. VGS says plainly that it does not make routing decisions for you. Basis Theory describes its vault as independent of any processor or orchestration layer. That independence is a real strength if storage is the whole job. In a product with two to five banks, several issuers and several transfer providers per creator, it means the rules, the failover logic and the upkeep of every integration sit with you. Ask each vendor exactly how much of that they run for you."
   },
   {
@@ -1785,7 +2027,7 @@
    "type": "comparison_grid",
    "kicker": "VERSUS A STANDALONE VAULT · THE MODEL",
    "headline": "One project instead of two: what stays on your roadmap with a standalone vault, with an orchestrator on top, and with Yuno.",
-   "quote": "\"VGS powers orchestration, but does not act as the orchestrator.\" verygoodsecurity.com · Basis Theory's vault \"operates independently of any payment processor or orchestration layer.\" Basis Theory, 14 October 2025 · Its Payments Routing guide: \"This guide is currently under construction.\" developers.basistheory.com, read 8 October 2026",
+   "quote": "\"VGS powers orchestration, but does not act as the orchestrator.\" verygoodsecurity.com · Basis Theory's vault \"operates independently of any payment processor or orchestration layer.\" 14 October 2025",
    "legend": [
     "Stays on your roadmap",
     "Partly covered",
@@ -1812,7 +2054,7 @@
      "cells": [
       {
        "state": "closed",
-       "text": "Covered. VGS and Basis Theory both run a Level 1 vault with hosted capture."
+       "text": "Both vaults run a Level 1 vault with hosted capture."
       },
       {
        "state": "closed",
@@ -1820,7 +2062,7 @@
       },
       {
        "state": "closed",
-       "text": "Covered. SDK enrollment into a Level 1 vault, documented export."
+       "text": "SDK enrollment into a Level 1 vault, documented export."
       }
      ]
     },
@@ -1834,11 +2076,11 @@
       },
       {
        "state": "partial",
-       "text": "The partner's rules for card payments. Bank and issuer allocation depends on the partner."
+       "text": "The partner's rules for cards. Bank and issuer allocation depends on the partner."
       },
       {
        "state": "partial",
-       "text": "Card payments: rules, splits, fallbacks and Monitors today. Banks: per call today; by rule is open item 2."
+       "text": "Cards: rules, splits, fallbacks, Monitors today. Banks: per call today; by rule is open item 2."
       }
      ]
     },
@@ -1848,15 +2090,15 @@
      "cells": [
       {
        "state": "open",
-       "text": "Each provider call is a proxy request your engineers write and keep current."
+       "text": "Every provider call is a proxy request your engineers write and maintain."
       },
       {
        "state": "partial",
-       "text": "Processors through the partner; banks and issuers still through your own proxy requests."
+       "text": "Processors via the partner; banks and issuers still via your own proxy requests."
       },
       {
        "state": "partial",
-       "text": "460+ processor integrations maintained by Yuno. US banking and issuing providers: open item 3."
+       "text": "460+ processor integrations maintained by Yuno. US banks and issuers: open item 3."
       }
      ]
     },
@@ -1866,7 +2108,7 @@
      "cells": [
       {
        "state": "open",
-       "text": "No accounts or transfers API found at either vault. Bank details are stored and forwarded."
+       "text": "No accounts or transfers API found at either vault; bank details stored and forwarded."
       },
       {
        "state": "open",
@@ -1874,7 +2116,7 @@
       },
       {
        "state": "closed",
-       "text": "Banking Connectivity API: entities, onboarding, accounts and transfers, named per connection."
+       "text": "Banking Connectivity API: entities, onboarding, accounts, transfers, per connection."
       }
      ]
     },
@@ -1892,7 +2134,7 @@
       },
       {
        "state": "closed",
-       "text": "Payouts API and split payments on the same platform as the vault."
+       "text": "Payouts API and split payments on the same platform."
       }
      ]
     },
@@ -1902,7 +2144,7 @@
      "cells": [
       {
        "state": "open",
-       "text": "One vendor for storage, your team for everything above it."
+       "text": "One vendor for storage; your team for everything above it."
       },
       {
        "state": "partial",
@@ -1910,7 +2152,7 @@
       },
       {
        "state": "closed",
-       "text": "One vendor, one contract, one support line, a published SLA with critical response within 5 minutes."
+       "text": "One vendor, one contract, one support line, published SLA (P1 response within 5 minutes)."
       }
      ]
     }
