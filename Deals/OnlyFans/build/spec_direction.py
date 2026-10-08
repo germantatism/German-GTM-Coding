@@ -27,7 +27,7 @@ SLIDES["direction-architecture"] = {
         {"id": "ramps", "x": 322, "y": 160, "w": 98, "h": 58, "title": "Stablecoin ramps", "body": "On and off-ramp partners", "style": "light"},
     ],
     "connectors": [
-        {"from": "creators", "to": "of"}, {"from": "of", "to": "orch", "label": "rules"}, {"from": "orch", "to": "vault", "label": "creator data as tokens"},
+        {"from": "creators", "to": "of"}, {"from": "of", "to": "orch", "label": "rules"}, {"from": "orch", "to": "vault"},
         {"from": "orch", "to": "banks"}, {"from": "orch", "to": "issuers"}, {"from": "vault", "to": "rails"}, {"from": "vault", "to": "ramps"},
     ],
     "side": {"header": "WHAT IT MEANS", "items": [

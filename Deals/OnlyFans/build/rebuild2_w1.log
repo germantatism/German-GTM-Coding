@@ -1,0 +1,55 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[41] diagram            banking
+  applied    1 requests blank slide n41r1_g3f77215683c_2_2968
+  applied  182 requests n41r1
+  applied    2 requests notes n41r1_g3f77215683c_2_2968
+[43] diagram            direction-architecture
+  applied    1 requests blank slide n43r2_g3f77215683c_2_2968
+  applied  194 requests n43r2
+  applied    2 requests notes n43r2_g3f77215683c_2_2968
+  applied    2 requests replace slide 43
+[45] two_column         direction-yield
+  applied    1 requests blank slide n45r2_g3f77215683c_2_2968
+  applied  141 requests n45r2
+  applied    2 requests notes n45r2_g3f77215683c_2_2968
+  applied    2 requests replace slide 45
+[48] comparison_grid    versus-model
+  FIT PROBLEM: slide versus-model: comparison_grid rows need 172 pt, have 167 (7 pt, 5 rows)
+  applied    1 requests blank slide n48r1p_g3f77215683c_2_2968
+  applied   38 requests n48r1p
+  applied    2 requests notes n48r1p_g3f77215683c_2_2968
+  applied    2 requests replace slide 48
+[50] table              versus-bt
+  applied    1 requests blank slide n50r1_g3f77215683c_2_2968
+  applied  315 requests n50r1
+  applied    2 requests notes n50r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 50
+[53] phases             shape
+  applied    1 requests blank slide n53r1_g3f77215683c_2_2968
+  applied  122 requests n53r1
+  applied    2 requests notes n53r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 53
+[55] next_steps         next
+  applied    1 requests blank slide n55r1_g3f77215683c_2_2968
+  applied   94 requests n55r1
+  applied    2 requests notes n55r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 55
+[59] stats              app-who
+  applied    1 requests blank slide n59r1_g3f77215683c_2_2968
+  applied  112 requests n59r1
+  applied    2 requests notes n59r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 59
+[61] sources            app-sources
+  applied    1 requests blank slide n61r2_g3f77215683c_2_2968
+  applied  224 requests n61r2
+  applied    2 requests notes n61r2_g3f77215683c_2_2968
+  applied    2 requests replace slide 61
+
+SLIDES THAT NEED SHORTER COPY (placeholder inserted):
+  [48] versus-model: slide versus-model: comparison_grid rows need 172 pt, have 167 (7 pt, 5 rows)

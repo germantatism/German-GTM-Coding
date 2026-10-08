@@ -78,9 +78,9 @@ SLIDES["move"] = {
     "headline": "Import your existing cards and network tokens in, and read the export process before you sign anything.",
     "source": "Source: docs.y.uno, Token migration process; Network token migration process; Exporting tokens from Yuno. Read 8 October 2026.",
     "cards": [
-        {"pill": "CONFIRMED", "eyebrow": "IMPORT", "title": "Cards, from your current gateway or vault", "body": "Your provider exports; Yuno and the provider exchange the file with PGP keys over SFTP; you map old tokens to vaulted tokens through the API. Mandatory fields: cardholder name, expiry, card number and the provider's card ID. It starts with a viability assessment."},
-        {"pill": "CONFIRMED", "pill2": "OPEN", "eyebrow": "IMPORT", "title": "Network tokens, a separate documented process", "body": "The file includes the network token number, the card's last digits, the network transaction ID and the parent wallet type (Apple Pay, Google Pay), one file per parent type. Which requestor IDs can be imported is confirmed in writing (open item 4)."},
-        {"pill": "CONFIRMED", "pill2": "OPEN", "eyebrow": "EXPORT", "title": "Your exit: written request, encrypted file", "body": "Four written items, the recipient's current PCI DSS attestation, a PGP key from the recipient, a Yuno-hosted SFTP. The documented file holds cardholder name, card number, token and expiry. Network transaction IDs and network tokens are not in it today: open item 4."},
+        {"pill": "CONFIRMED", "eyebrow": "IMPORT", "title": "Cards from your current vault", "body": "Your provider exports; Yuno and the provider exchange the file with PGP keys over SFTP; you map old tokens to vaulted tokens through the API. Mandatory fields: cardholder name, expiry, card number and the provider's card ID. It starts with a viability assessment."},
+        {"pill": "CONFIRMED", "pill2": "OPEN", "eyebrow": "IMPORT", "title": "Network tokens, documented too", "body": "The file includes the network token number, the card's last digits, the network transaction ID and the parent wallet type (Apple Pay, Google Pay), one file per parent type. Which requestor IDs can be imported is confirmed in writing (open item 4)."},
+        {"pill": "CONFIRMED", "pill2": "OPEN", "eyebrow": "EXPORT", "title": "Your exit, documented", "body": "Four written items, the recipient's current PCI DSS attestation, a PGP key from the recipient, a Yuno-hosted SFTP. The documented file holds cardholder name, card number, token and expiry. Network transaction IDs and network tokens are not in it today: open item 4."},
     ],
     "side": {"header": "WHAT YOU GET", "items": [
         {"title": "No re-collection", "body": "Fans do not re-enter cards when the vault changes."},
@@ -134,15 +134,15 @@ SLIDES["versus-model"] = {
     "quote": "\"VGS powers orchestration, but does not act as the orchestrator.\" verygoodsecurity.com, read 8 October 2026",
     "legend": ["Stays on your roadmap", "Partly covered", "Covered"],
     "options": [
-        {"header": "OPTION A", "sub": "Standalone vault, the rest built in-house"},
+        {"header": "OPTION A", "sub": "Vault, rest built in-house"},
         {"header": "OPTION B", "sub": "Vault plus an orchestrator on top"},
-        {"header": "OPTION C · YUNO", "sub": "Vault and the layer above it, one platform"},
+        {"header": "OPTION C · YUNO", "sub": "Vault and layer above, one platform"},
     ],
     "rows": [
-        {"label": "PCI DSS Level 1 card vault", "sub": "Hosted capture, tokens, export", "cells": [
+        {"label": "PCI DSS Level 1 card vault", "sub": "", "cells": [
             {"state": "closed", "text": "Both vaults: Level 1, hosted capture."},
             {"state": "closed", "text": "Covered by the vault vendor."},
-            {"state": "closed", "text": "SDK enrollment, documented export."}]},
+            {"state": "closed", "text": "Level 1 vault, documented export."}]},
         {"label": "Rules for where each request goes", "sub": "Bank, issuer or processor per creator", "cells": [
             {"state": "open", "text": "Yours to write and maintain."},
             {"state": "partial", "text": "Partner rules for cards; banks and issuers depend on the partner."},
@@ -155,7 +155,7 @@ SLIDES["versus-model"] = {
             {"state": "open", "text": "No accounts, transfers or payouts API found at either vault."},
             {"state": "open", "text": "Outside a payments orchestrator's scope."},
             {"state": "closed", "text": "Banking Connectivity API plus Payouts and split payments."}]},
-        {"label": "Vendors and incidents", "sub": "Contracts, and who you call when a creator cannot be paid", "cells": [
+        {"label": "Vendors and incidents", "sub": "", "cells": [
             {"state": "open", "text": "One vendor for storage; your team for the rest."},
             {"state": "partial", "text": "Two vendors, two contracts, one incident."},
             {"state": "closed", "text": "One vendor, one contract, published SLA (P1 in 5 minutes)."}]},

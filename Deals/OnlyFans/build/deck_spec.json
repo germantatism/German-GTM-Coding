@@ -1,5 +1,5 @@
 {
- "presentation_id": "1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA",
+ "presentation_id": "1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js",
  "merchant": "OnlyFans",
  "footer": "For: OnlyFans",
  "slides": [
@@ -8,7 +8,7 @@
    "type": "cover",
    "title": "The vault under creator banking",
    "subtitle": "Your credentials, your connections, your rules.",
-   "presenter": "Samuel Vieira · Business Development · October 2026 · Strictly confidential",
+   "presenter": "German Tatis · Business Development · October 2026 · Strictly confidential",
    "logo_url": "https://deck.yuno.tools/merchants/onlyfans.png",
    "notes": "You have an RFP open for a token vault, and you told us where the product is going: one creator account on top, several banks, issuers and transfer providers underneath. This deck answers the vault question and the question you asked us most, which is who decides where each creator lands. Every claim in it is labeled with its basis, so your payments team can check it without us in the room."
   },
@@ -43,10 +43,6 @@
     {
      "num": "07",
      "title": "VERSUS A STANDALONE VAULT"
-    },
-    {
-     "num": "08",
-     "title": "THE PATH FORWARD"
     }
    ]
   },
@@ -252,7 +248,7 @@
    "id": "answer",
    "type": "stats",
    "kicker": "WHY WE ARE HERE · THE ANSWER UP FRONT",
-   "headline": "A vault stores the credential. Your design also needs a layer that decides where it goes. Yuno does both; here is how far each goes today.",
+   "headline": "A vault stores the credential. Your design also needs a layer that decides where it goes. Yuno does both.",
    "source": "Nine things your design needs: item by item on slide 49, vendor by vendor on slides 50 and 51. Competitor lines from public pages, read 7 October 2026.",
    "tiles": [
     {
@@ -678,7 +674,7 @@
    "id": "cof-today",
    "type": "cards_row",
    "kicker": "HOW ONLYFANS VAULTS TODAY · KNOWN, INFERRED, UNKNOWN",
-   "headline": "Today the cards live with your processor and the bank accounts with OnlyFans. The RFP is the moment to put both under one set of keys.",
+   "headline": "Today the cards live with your processor and the bank accounts with OnlyFans. The RFP can put both under one key set.",
    "cards": [
     {
      "eyebrow": "KNOWN · YOUR OWN DOCUMENTS",
@@ -1057,9 +1053,9 @@
      "caption": "Visa Intelligent Commerce, Mastercard Agent Pay and Visa's Trusted Agent Protocol launched."
     }
    ],
-   "bar": "They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and the dates behind the phases in Section 08.",
+   "bar": "They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1.",
    "source": "PCI SSC, Mar 2025; Paul Hastings, Mar 2026; Digital Transactions, Nov 2024; Visa and Mastercard newsrooms, Apr and Oct 2025.",
-   "notes": "None of these clocks is set by a vendor. They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and they are the dates we use in Section 08 when we propose the phases."
+   "notes": "None of these clocks is set by a vendor. They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1."
   },
   {
    "id": "d05",
@@ -1207,7 +1203,7 @@
    "type": "cards_row",
    "kicker": "THE YUNO TOKEN VAULT · CARDS",
    "headline": "One vaulted token works on every processor you connect, so no processor owns your cards.",
-   "source": "Source: docs.y.uno, read 7 October 2026. Page list on slide 61.",
+   "source": "Source: docs.y.uno, read 7 October 2026. Page list on slide 58.",
    "cards": [
     {
      "pill": "CONFIRMED",
@@ -1258,7 +1254,7 @@
      "x": 0,
      "y": 0,
      "w": 100,
-     "h": 225,
+     "h": 180,
      "title": "cards · PCI",
      "body": "number · •••• 3456\nexpiration · ••/27\nholder_name · string\nnetwork_token · DPAN\nnetwork_transaction_id\nThe CVV is never stored.",
      "pill": "CONFIRMED",
@@ -1269,9 +1265,9 @@
      "x": 107,
      "y": 0,
      "w": 100,
-     "h": 225,
-     "title": "bank accounts · ACH",
-     "body": "type · ACH_ENROLLMENT\nrouting_number · string\nbeneficiary_name · string\naccount_type · enum\nvault_only · true\nIn the enroll API reference. Access rules to confirm.",
+     "h": 180,
+     "title": "bank accounts",
+     "body": "ACH_ENROLLMENT\nrouting_number · string\nbeneficiary_name · string\naccount_type · enum\nvault_only · true\nIn the enroll API reference. Access rules to confirm.",
      "pill": "CONFIRMED",
      "style": "dark"
     },
@@ -1280,8 +1276,8 @@
      "x": 214,
      "y": 0,
      "w": 100,
-     "h": 225,
-     "title": "entities · KYC · KYB",
+     "h": 180,
+     "title": "entities · KYC",
      "body": "national_entity · INDIVIDUAL\ntax_id · •••• 6789\ndocument_number · •••• 4421\ndocumentation · KYC files\nonboarding · SUCCEEDED\nBanking API. Responses return the last four.",
      "pill": "CONFIRMED",
      "style": "dark"
@@ -1291,8 +1287,8 @@
      "x": 321,
      "y": 0,
      "w": 99,
-     "h": 225,
-     "title": "your own tables · PII",
+     "h": 180,
+     "title": "your tables · PII",
      "body": "customer_records · table\nidentity_documents · table\nprotection · per column\nretention · per record\naccess · per role\nOn our product page. API reference not yet public.",
      "pill": "OPEN",
      "style": "outline"
@@ -1452,21 +1448,21 @@
     {
      "pill": "CONFIRMED",
      "eyebrow": "IMPORT",
-     "title": "Cards, from your current gateway or vault",
+     "title": "Cards from your current vault",
      "body": "Your provider exports; Yuno and the provider exchange the file with PGP keys over SFTP; you map old tokens to vaulted tokens through the API. Mandatory fields: cardholder name, expiry, card number and the provider's card ID. It starts with a viability assessment."
     },
     {
      "pill": "CONFIRMED",
      "pill2": "OPEN",
      "eyebrow": "IMPORT",
-     "title": "Network tokens, a separate documented process",
+     "title": "Network tokens, documented too",
      "body": "The file includes the network token number, the card's last digits, the network transaction ID and the parent wallet type (Apple Pay, Google Pay), one file per parent type. Which requestor IDs can be imported is confirmed in writing (open item 4)."
     },
     {
      "pill": "CONFIRMED",
      "pill2": "OPEN",
      "eyebrow": "EXPORT",
-     "title": "Your exit: written request, encrypted file",
+     "title": "Your exit, documented",
      "body": "Four written items, the recipient's current PCI DSS attestation, a PGP key from the recipient, a Yuno-hosted SFTP. The documented file holds cardholder name, card number, token and expiry. Network transaction IDs and network tokens are not in it today: open item 4."
     }
    ],
@@ -1529,7 +1525,7 @@
      }
     ]
    },
-   "notes": "The proxy sends stored card data to any provider API you choose. Your backend builds the exact request a provider expects and puts token expressions where the card data goes. Yuno resolves them inside its PCI environment and forwards the call. The destination does not have to be a provider Yuno integrates. For issuers specifically, note the limits on slide 58: capturing or displaying a card your issuer creates is not something the proxy does today. To be clear on status: this has been in our API changelog since July, it is in beta, and production access is switched on per organization. Your team can test it in the sandbox now."
+   "notes": "The proxy sends stored card data to any provider API you choose. Your backend builds the exact request a provider expects and puts token expressions where the card data goes. Yuno resolves them inside its PCI environment and forwards the call. The destination does not have to be a provider Yuno integrates. For issuers specifically, note the limits on slide 55: capturing or displaying a card your issuer creates is not something the proxy does today. To be clear on status: this has been in our API changelog since July, it is in beta, and production access is switched on per organization. Your team can test it in the sandbox now."
   },
   {
    "id": "proxy-controls",
@@ -1875,8 +1871,7 @@
     },
     {
      "from": "orch",
-     "to": "vault",
-     "label": "creator data as tokens"
+     "to": "vault"
     },
     {
      "from": "orch",
@@ -2065,7 +2060,7 @@
    "options": [
     {
      "header": "OPTION A",
-     "sub": "Standalone vault, the rest built in-house"
+     "sub": "Vault, rest built in-house"
     },
     {
      "header": "OPTION B",
@@ -2073,13 +2068,13 @@
     },
     {
      "header": "OPTION C · YUNO",
-     "sub": "Vault and the layer above it, one platform"
+     "sub": "Vault and layer above, one platform"
     }
    ],
    "rows": [
     {
      "label": "PCI DSS Level 1 card vault",
-     "sub": "Hosted capture, tokens, export",
+     "sub": "",
      "cells": [
       {
        "state": "closed",
@@ -2091,7 +2086,7 @@
       },
       {
        "state": "closed",
-       "text": "SDK enrollment, documented export."
+       "text": "Level 1 vault, documented export."
       }
      ]
     },
@@ -2151,7 +2146,7 @@
     },
     {
      "label": "Vendors and incidents",
-     "sub": "Contracts, and who you call when a creator cannot be paid",
+     "sub": "",
      "cells": [
       {
        "state": "open",
@@ -2566,46 +2561,24 @@
    "notes": "VGS on its own. It is one of the longest-established independent vaults, and it leads us on four rows today: aliases for personal and bank data, inbound and outbound proxy routes with custom code, a card issuing guide with card display, and network token reach, where it says it is the only neutral vault connected to all four major networks. VGS is also explicit about where its scope ends. Its orchestration page says it does not make routing decisions for you, and its guide to integrating a second payment provider says your application keeps ownership of provider selection, routing and failover logic. For a product with several banks, issuers and transfer providers per creator, that logic is most of the work. That is the part Yuno covers for card payments today, and the part we are extending to banks. On network tokens, VGS's own documentation scopes Discover to US merchant IDs and American Express to direct merchants, so ask for the exact coverage for your entity. VGS's public pricing starts at 1,000 dollars a month; ask both of us for the cost at your scale."
   },
   {
-   "id": "d08",
-   "type": "divider",
-   "num": "08",
-   "title": "The path forward"
+   "id": "closing",
+   "type": "closing",
+   "line": "Let's grow together",
+   "name": "German Tatis",
+   "title": "Business Development Manager",
+   "phone": "+1 786 238 4554",
+   "email": "german.tatis@y.uno"
   },
   {
-   "id": "shape",
-   "type": "phases",
-   "kicker": "THE PATH FORWARD · PROPOSED SHAPE",
-   "headline": "Three phases that mirror your scope, each with a test you can run to close it.",
-   "cards": [
-    {
-     "eyebrow": "PHASE 0 · SANDBOX PROOF",
-     "title": "Prove it on your own requests",
-     "body": "Your engineers vault test cards and bank details, forward the cards through the proxy to two destinations you pick, and walk the banking API with our product team.",
-     "exit_label": "THE EXIT",
-     "exit": "Every Confirmed capability your Phase 1 relies on is shown working to your engineers, or we change the label."
-    },
-    {
-     "eyebrow": "PHASE 1 · US BALANCES",
-     "title": "Cards, accounts and your first banks",
-     "body": "The vault in production for US creators. Banking connections live. Allocation by your policy, per call, with API activity in the audit log.",
-     "exit_label": "THE EXIT",
-     "exit": "One creator holds accounts on two banking connections, opened from one entity record. Depends on open item 3."
-    },
-    {
-     "eyebrow": "PHASE 2 · ISSUERS AND BEYOND",
-     "title": "Issuers, and more records",
-     "body": "Stored card data sent to issuer APIs through the proxy. Tables for identity and customer records as they land. Stablecoin conversion providers scoped with you.",
-     "exit_label": "THE EXIT",
-     "exit": "Adding or swapping a provider is a configuration change on your side, not a project."
-    }
-   ],
-   "bar": "**At any phase.** You can leave with your cards: a documented export, on written request, to a recipient with a valid PCI DSS attestation. Export of bank and entity data is one of the open items.",
-   "notes": "We are proposing phases, not dates, until we have seen your RFP timeline. Phase 0 is a sandbox proof on your own requests, and its exit is simple: every capability this deck marks Confirmed that your Phase 1 relies on has to run for your engineers, or we change the label. Phase 1 is your stated scope, US balances. Phase 2 brings in issuers through the proxy and the wider data vault as it lands."
+   "id": "d-appx",
+   "type": "divider",
+   "num": "",
+   "title": "Appendix"
   },
   {
    "id": "owe",
    "type": "open_items_table",
-   "kicker": "THE PATH FORWARD · WHAT WE OWE YOU",
+   "kicker": "APPENDIX · WHAT WE OWE YOU",
    "headline": "Six open items, each with an owner and a written answer in our RFP response.",
    "columns": [
     "#",
@@ -2680,49 +2653,6 @@
     ]
    ],
    "notes": "These are the six things we have not confirmed in writing, collected in one place. Each has an owning team at Yuno, and each gets a written answer with our RFP response. If any of them is a deciding factor for you, tell us now and we will answer it first."
-  },
-  {
-   "id": "next",
-   "type": "next_steps",
-   "kicker": "THE PATH FORWARD · NEXT STEPS",
-   "headline": "Include us, then test us.",
-   "cards": [
-    {
-     "eyebrow": "STEP 01 · ONLYFANS",
-     "num": "01",
-     "title": "Share the RFP requirements",
-     "body": "And the timeline, so we answer in your format and to your deadline."
-    },
-    {
-     "eyebrow": "STEP 02 · TOGETHER",
-     "num": "02",
-     "title": "One working session",
-     "body": "Your payments and engineering leads with our Trust & Vault product team: vault, proxy and banking API in the sandbox."
-    },
-    {
-     "eyebrow": "STEP 03 · YUNO",
-     "num": "03",
-     "title": "Written answers",
-     "body": "The six open items and the full RFP response, with nothing left as a placeholder."
-    }
-   ],
-   "contact": "Samuel Vieira · Business Development · samuel@y.uno",
-   "notes": "The ask is simple: include Yuno in the RFP, and then test what we have shown you. Send us the requirements and the timeline. Give us one working session with your payments and engineering leads and our Trust & Vault product team, in the sandbox. We will come back with written answers to every open item and a complete response."
-  },
-  {
-   "id": "closing",
-   "type": "closing",
-   "line": "Let's grow together",
-   "name": "Samuel Vieira",
-   "title": "Business Development Manager",
-   "phone": "",
-   "email": "samuel@y.uno"
-  },
-  {
-   "id": "d-appx",
-   "type": "divider",
-   "num": "",
-   "title": "Appendix"
   },
   {
    "id": "app-limits",

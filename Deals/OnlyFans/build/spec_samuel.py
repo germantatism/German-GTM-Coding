@@ -16,7 +16,7 @@ SLIDES["cover"] = {
     "id": "cover", "type": "cover",
     "title": "The vault under creator banking",
     "subtitle": "Your credentials, your connections, your rules.",
-    "presenter": "Samuel Vieira · Business Development · October 2026 · Strictly confidential",
+    "presenter": "German Tatis · Business Development · October 2026 · Strictly confidential",
     "logo_url": "https://deck.yuno.tools/merchants/onlyfans.png",
     "notes": "You have an RFP open for a token vault, and you told us where the product is going: one creator account on top, several banks, issuers and transfer providers underneath. This deck answers the vault question and the question you asked us most, which is who decides where each creator lands. Every claim in it is labeled with its basis, so your payments team can check it without us in the room.",
 }
@@ -66,7 +66,7 @@ SLIDES["howtoread"] = {
 SLIDES["answer"] = {
     "id": "answer", "type": "stats",
     "kicker": "WHY WE ARE HERE · THE ANSWER UP FRONT",
-    "headline": "A vault stores the credential. Your design also needs a layer that decides where it goes. Yuno does both; here is how far each goes today.",
+    "headline": "A vault stores the credential. Your design also needs a layer that decides where it goes. Yuno does both.",
     "source": "Nine things your design needs: item by item on slide {{slide:versus-table}}, vendor by vendor on slides {{slide:versus-bt}} and {{slide:versus-vgs}}. Competitor lines from public pages, read 7 October 2026.",
     "tiles": [
         {"label": "WHERE YUNO LEADS", "value": "4 of 9", "caption": "Routing rules for card payments, processor integrations already built, a banking API across providers, and payouts."},
@@ -102,10 +102,10 @@ SLIDES["vault-data"] = {
     "kicker": K_VAULT + " · BEYOND CARDS",
     "headline": "Creator banking adds account numbers, tax IDs and identity documents. Here is where each one lives in Yuno today.",
     "boxes": [
-        {"id": "cards", "x": 0, "y": 0, "w": 100, "h": 225, "title": "cards · PCI", "body": "number · •••• 3456\nexpiration · ••/27\nholder_name · string\nnetwork_token · DPAN\nnetwork_transaction_id\nThe CVV is never stored.", "pill": "CONFIRMED", "style": "dark"},
-        {"id": "bank", "x": 107, "y": 0, "w": 100, "h": 225, "title": "bank accounts · ACH", "body": "type · ACH_ENROLLMENT\nrouting_number · string\nbeneficiary_name · string\naccount_type · enum\nvault_only · true\nIn the enroll API reference. Access rules to confirm.", "pill": "CONFIRMED", "style": "dark"},
-        {"id": "entities", "x": 214, "y": 0, "w": 100, "h": 225, "title": "entities · KYC · KYB", "body": "national_entity · INDIVIDUAL\ntax_id · •••• 6789\ndocument_number · •••• 4421\ndocumentation · KYC files\nonboarding · SUCCEEDED\nBanking API. Responses return the last four.", "pill": "CONFIRMED", "style": "dark"},
-        {"id": "tables", "x": 321, "y": 0, "w": 99, "h": 225, "title": "your own tables · PII", "body": "customer_records · table\nidentity_documents · table\nprotection · per column\nretention · per record\naccess · per role\nOn our product page. API reference not yet public.", "pill": "OPEN", "style": "outline"},
+        {"id": "cards", "x": 0, "y": 0, "w": 100, "h": 180, "title": "cards · PCI", "body": "number · •••• 3456\nexpiration · ••/27\nholder_name · string\nnetwork_token · DPAN\nnetwork_transaction_id\nThe CVV is never stored.", "pill": "CONFIRMED", "style": "dark"},
+        {"id": "bank", "x": 107, "y": 0, "w": 100, "h": 180, "title": "bank accounts", "body": "ACH_ENROLLMENT\nrouting_number · string\nbeneficiary_name · string\naccount_type · enum\nvault_only · true\nIn the enroll API reference. Access rules to confirm.", "pill": "CONFIRMED", "style": "dark"},
+        {"id": "entities", "x": 214, "y": 0, "w": 100, "h": 180, "title": "entities · KYC", "body": "national_entity · INDIVIDUAL\ntax_id · •••• 6789\ndocument_number · •••• 4421\ndocumentation · KYC files\nonboarding · SUCCEEDED\nBanking API. Responses return the last four.", "pill": "CONFIRMED", "style": "dark"},
+        {"id": "tables", "x": 321, "y": 0, "w": 99, "h": 180, "title": "your tables · PII", "body": "customer_records · table\nidentity_documents · table\nprotection · per column\nretention · per record\naccess · per role\nOn our product page. API reference not yet public.", "pill": "OPEN", "style": "outline"},
     ],
     "connectors": [],
     "side": {"header": "WHY IT MATTERS", "items": [
@@ -323,7 +323,7 @@ SLIDES["shape"] = {
 # ---------------------------------------------------------------- S21 owe
 SLIDES["owe"] = {
     "id": "owe", "type": "open_items_table",
-    "kicker": K_PATH + " · WHAT WE OWE YOU",
+    "kicker": "APPENDIX · WHAT WE OWE YOU",
     "headline": "Six open items, each with an owner and a written answer in our RFP response.",
     "columns": ["#", "Open item", "Why it matters to you", "Owner at Yuno"],
     "col_widths": [0.04, 0.46, 0.34, 0.16],

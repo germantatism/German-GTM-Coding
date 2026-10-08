@@ -329,6 +329,11 @@ class Deck:
             for el, tr in elements(s):
                 if el['objectId'].endswith(suffix) and 'image' in el:
                     return el['image']['contentUrl']
+        if suffix.endswith('_2969'):   # template gone: use the wordmark drawn on any rebuilt white slide (x~645, y~24 pt)
+            for s in self.pres['slides']:
+                for el, tr in elements(s):
+                    if 'image' in el and abs(tr.get('translateX', 0) / 12700 - 645) < 4 and abs(tr.get('translateY', 0) / 12700 - 24) < 4:
+                        return el['image']['contentUrl']
         return None
     def has_template(self):
         if not hasattr(self, '_has_tpl'): self._has_tpl = len(self.template_live_ids()) == N_TEMPLATE

@@ -205,7 +205,7 @@ SLIDES["four-numbers"] = {
 SLIDES["cof-today"] = {
     "id": "cof-today", "type": "cards_row",
     "kicker": "HOW ONLYFANS VAULTS TODAY · KNOWN, INFERRED, UNKNOWN",
-    "headline": "Today the cards live with your processor and the bank accounts with OnlyFans. The RFP is the moment to put both under one set of keys.",
+    "headline": "Today the cards live with your processor and the bank accounts with OnlyFans. The RFP can put both under one key set.",
     "cards": [
         {"eyebrow": "KNOWN · YOUR OWN DOCUMENTS", "title": "Card data never reaches OnlyFans; bank data does", "body": "\"We do not receive your full payment card number, payment card expiration date, or the security code.\" Payments are processed by third-party providers. Bank account details for direct-transfer payouts are stored by OnlyFans. Identity documents, selfies and tax identifiers are collected and kept up to 7 years where required."},
         {"eyebrow": "INFERRED · FROM HOW THE PRODUCT BEHAVES", "title": "A stored credential exists, held by the processor", "body": "Auto-renewing subscriptions and a \"Your Cards\" section mean a stored credential and merchant-initiated charges exist today. On the public evidence that credential is held by the processor, so it is tied to that processor. An inference, for OnlyFans to confirm."},
@@ -248,7 +248,7 @@ SLIDES["clocks"] = {
         {"label": "MASTERCARD", "value": "2030", "caption": "Stated goal to tokenize all online transactions."},
         {"label": "AGENT CREDENTIALS", "value": "2025", "caption": "Visa Intelligent Commerce, Mastercard Agent Pay and Visa's Trusted Agent Protocol launched."},
     ],
-    "bar": "They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and the dates behind the phases in Section 08.",
+    "bar": "They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1.",
     "source": "PCI SSC, Mar 2025; Paul Hastings, Mar 2026; Digital Transactions, Nov 2024; Visa and Mastercard newsrooms, Apr and Oct 2025.",
-    "notes": "None of these clocks is set by a vendor. They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and they are the dates we use in Section 08 when we propose the phases.",
+    "notes": "None of these clocks is set by a vendor. They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1.",
 }

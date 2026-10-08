@@ -1,0 +1,46 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[42] cards_row          who-decides
+  applied    1 requests blank slide n42r1_g3f77215683c_2_2968
+  applied  135 requests n42r1
+  applied    2 requests notes n42r1_g3f77215683c_2_2968
+[44] two_column         direction-rules
+  applied    1 requests blank slide n44r2_g3f77215683c_2_2968
+  applied  156 requests n44r2
+  applied    2 requests notes n44r2_g3f77215683c_2_2968
+  applied    2 requests replace slide 44
+[47] cards_row          versus-thesis
+  applied    1 requests blank slide n47r1_g3f77215683c_2_2968
+  applied  108 requests n47r1
+  applied    2 requests notes n47r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 47
+[49] table              versus-table
+  applied    1 requests blank slide n49r1_g3f77215683c_2_2968
+  applied  455 requests n49r1
+  applied    2 requests notes n49r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 49
+[51] table              versus-vgs
+  applied    1 requests blank slide n51r1_g3f77215683c_2_2968
+  applied  315 requests n51r1
+  applied    2 requests notes n51r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 51
+[54] open_items_table   owe
+  applied    1 requests blank slide n54r1_g3f77215683c_2_2968
+  applied  219 requests n54r1
+  applied    2 requests notes n54r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 54
+[58] table              app-limits
+  applied    1 requests blank slide n58r1_g3f77215683c_2_2968
+  applied  256 requests n58r1
+  applied    2 requests notes n58r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 58
+[60] cards_row          credentials
+  applied    1 requests blank slide n60r1_g3f77215683c_2_2968
+  applied  102 requests n60r1
+  applied    2 requests notes n60r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 60

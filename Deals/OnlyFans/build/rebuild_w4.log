@@ -42,3 +42,17 @@ target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFa
   retry 1 on chunk 0 (replace slide 42): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
   retry 2 on chunk 0 (replace slide 42): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
   retry 3 on chunk 0 (replace slide 42): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
+Traceback (most recent call last):
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1468, in <module>
+    build_from_spec(a[1], final='--final' in a, only=only, replace='--replace' in a)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1435, in build_from_spec
+    deck.run([{'updateSlidesPosition': {'slideObjectIds': [sid], 'insertionIndex': idx}}] + [{'deleteObject': {'objectId': o}} for o in old], f'replace slide {n}')
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 287, in run
+    if reqs: run(self.svc, self.pid, reqs, label=label)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 145, in run
+    svc.presentations().batchUpdate(presentationId=pid, body={'requests': part}).execute(); break
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=json returned "Quota exceeded for quota metric 'Write requests' and limit 'Write requests per minute per user' of service 'slides.googleapis.com' for consumer 'project_number:8018955664'.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'quota_location': 'global', 'quota_limit_value': '60', 'quota_metric': 'slides.googleapis.com/write_requests', 'consumer': 'projects/8018955664', 'quota_unit': '1/min/{project}/{user}', 'service': 'slides.googleapis.com', 'window_start_time': '1791451561', 'quota_limit': 'WriteRequestsPerMinutePerUser'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]">

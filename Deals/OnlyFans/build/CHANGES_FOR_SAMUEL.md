@@ -1,11 +1,11 @@
-# OnlyFans deck · what changed beyond layout (for Samuel) · 8 Oct 2026
+# OnlyFans deck · what changed vs Samuel's 25-slide content · 8 Oct 2026 (deck owner: German Tatis)
 
-Google Slides: https://docs.google.com/presentation/d/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA/edit
+Google Slides: https://docs.google.com/presentation/d/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js/edit
 
 Built on German's Eventbrite template (the 46-slide Google Slides deck). German asked for a deck that covers the whole story in his section order, so your 25 slides are the spine and the deck grew to 57 slides. Your wording, labels, quotes, the 4 / 1 / 4 tally and the six open items are carried over verbatim. Changes beyond layout:
 
 ## Structure
-1. Sections renumbered to German's order: 01 Why we are here · 02 Industry context · 03 How OnlyFans runs payments today · 04 What the vault has to hold · 05 Why Yuno · 06 The Yuno token vault (your 01 Vault, 02 Proxy, 03 Decision layer) · 07 Versus a standalone vault (your 04) · 08 The path forward · Appendix. Your four dividers became the 06 and 07 dividers; their speaker notes were merged.
+1. Sections renumbered to German's order: 01 Why we are here · 02 Industry context · 03 How OnlyFans runs payments today · 04 What the vault has to hold · 05 Why Yuno · 06 The Yuno token vault (your 01 Vault, 02 Proxy, 03 Decision layer) · 07 Versus a standalone vault (your 04) · Appendix. German removed the "Path forward" section (your phases and next-steps slides); the six open items table moved to the appendix because every OPEN label points to it. The cover and closing carry German Tatis as the sender. Your four dividers became the 06 and 07 dividers; their speaker notes were merged.
 2. An agenda slide was added (German's decks always open with one).
 3. Cross-references updated to the new numbers: "slide 21" (open items) → 54; "17, 18 and 19" → 49, 50, 51; "slide 25" (sources) → 61; "slide 23" (limits, in notes) → 58; "Sections 01 to 03" on your slide 2 → "Section 06". Footer page numbers follow the new positions. "Open item 3" references are unchanged.
 4. Your slide 8 (seven buyer questions) is now "1 of 3"; two more slides add eight questions (rows 8 to 15) built from the standard vault RFP question set: export file contents, subprocessors and direct network connections, behaviour when the vault is unreachable, NTID capture through the proxy, SAQ impact of the proxy, bank accounts and APMs in the vault, bringing existing network tokens in, data location. Each row carries CONFIRMED with the docs.y.uno page or OPEN with an owner. Your seven rows are untouched, so the "five of the seven" count in your notes still holds.

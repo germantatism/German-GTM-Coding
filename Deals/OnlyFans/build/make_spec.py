@@ -8,7 +8,7 @@ Cross-references written as {{slide:<id>}} are resolved to final slide numbers h
 Run: python3 make_spec.py  -> writes deck_spec.json and prints the final slide map."""
 import json, re, importlib, sys
 
-PRESENTATION_ID = "1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA"
+PRESENTATION_ID = "1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js"
 
 def load(mod):
     try:
@@ -38,7 +38,7 @@ ORDER = [
         {"num": "01", "title": "WHY WE ARE HERE"}, {"num": "02", "title": "INDUSTRY CONTEXT"},
         {"num": "03", "title": "HOW ONLYFANS RUNS PAYMENTS TODAY"}, {"num": "04", "title": "WHAT THE VAULT HAS TO HOLD"},
         {"num": "05", "title": "WHY YUNO"}, {"num": "06", "title": "THE YUNO TOKEN VAULT"},
-        {"num": "07", "title": "VERSUS A STANDALONE VAULT"}, {"num": "08", "title": "THE PATH FORWARD"},
+        {"num": "07", "title": "VERSUS A STANDALONE VAULT"},
     ]},
     divider("d01", "01", "Why we are here", "An RFP for a token vault, and a design that needs more than one."),
     S.get("understood"), A.get("exec"), S.get("howtoread"), S.get("answer"),
@@ -58,11 +58,9 @@ ORDER = [
     D.get("direction-architecture"), D.get("direction-rules"), D.get("direction-yield"),
     divider("d07", "07", "Versus a standalone vault", "Where VGS and Basis Theory lead, and where they stop.", DN["d07"]),
     S.get("versus-thesis"), B.get("versus-model"), S.get("versus-table"), S.get("versus-bt"), S.get("versus-vgs"),
-    divider("d08", "08", "The path forward"),
-    S.get("shape"), S.get("owe"), S.get("next"),
-    {"id": "closing", "type": "closing", "line": "Let's grow together", "name": "Samuel Vieira", "title": "Business Development Manager", "phone": "", "email": "samuel@y.uno"},
+    {"id": "closing", "type": "closing", "line": "Let's grow together", "name": "German Tatis", "title": "Business Development Manager", "phone": "+1 786 238 4554", "email": "german.tatis@y.uno"},
     divider("d-appx", "", "Appendix"),
-    S.get("app-limits"), S.get("app-who"), B.get("credentials") or keep("credentials", 40), S.get("app-sources"),
+    S.get("owe"), S.get("app-limits"), S.get("app-who"), B.get("credentials") or keep("credentials", 40), S.get("app-sources"),
 ]
 
 slides = [s for s in ORDER if s]

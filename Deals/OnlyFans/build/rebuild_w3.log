@@ -41,3 +41,25 @@ target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFa
   retry 1 on chunk 0 (notes n41r2_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
   retry 2 on chunk 0 (notes n41r2_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
   retry 3 on chunk 0 (notes n41r2_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
+Traceback (most recent call last):
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1468, in <module>
+    build_from_spec(a[1], final='--final' in a, only=only, replace='--replace' in a)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1425, in build_from_spec
+    sid = render_one(deck, s, tag, n, footer)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1394, in render_one
+    return RENDERERS[t](deck, s, tag, n, footer)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1161, in r_diagram
+    return _finish(deck, sb, sid, s, n, footer)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 862, in _finish
+    sb.flush(); deck.set_notes(sid, s.get('notes')); return sid
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 320, in set_notes
+    self.run(reqs, f'notes {slide_id}')
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 287, in run
+    if reqs: run(self.svc, self.pid, reqs, label=label)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 145, in run
+    svc.presentations().batchUpdate(presentationId=pid, body={'requests': part}).execute(); break
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=json returned "Quota exceeded for quota metric 'Write requests' and limit 'Write requests per minute per user' of service 'slides.googleapis.com' for consumer 'project_number:8018955664'.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'RATE_LIMIT_EXCEEDED', 'domain': 'googleapis.com', 'metadata': {'service': 'slides.googleapis.com', 'quota_limit': 'WriteRequestsPerMinutePerUser', 'window_start_time': '1791451561', 'quota_unit': '1/min/{project}/{user}', 'quota_metric': 'slides.googleapis.com/write_requests', 'consumer': 'projects/8018955664', 'quota_location': 'global', 'quota_limit_value': '60'}}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Request a higher quota limit.', 'url': 'https://cloud.google.com/docs/quotas/help/request_increase'}]}]">

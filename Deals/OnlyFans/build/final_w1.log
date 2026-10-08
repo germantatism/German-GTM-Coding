@@ -1,0 +1,17 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[01] cover              cover
+  applied    2 requests duplicate t1 -> n01_g3f77215683c_1_445
+  applied   16 requests n01
+  applied    2 requests notes n01_g3f77215683c_1_445
+[04] diagram            understood
+  applied    2 requests duplicate t7 -> n04_g3f77215683c_2_2968
+  applied  174 requests n04
+  applied    3 requests notes n04_g3f77215683c_2_2968
+[07] stats              answer
+  applied    2 requests duplicate t7 -> n07_g3f77215683c_2_2968

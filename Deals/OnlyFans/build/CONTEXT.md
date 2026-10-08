@@ -15,7 +15,7 @@ Owner: German Tatis (Senior AE, Yuno, german.tatis@y.uno). Requested by Samuel V
 - `template_dump.json` + `thumbs_template/`: Slides API dump and PNG thumbnails of the template copy.
 
 ## The working Google Slides file (final deliverable)
-- Copy of the template, owned by German, shared as writer with the service account: presentation id `1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA` (title "Deck - OnlyFans + Yuno · Token Vault (Oct 2026)").
+- Copy of the template, owned by German, shared as writer with the service account: presentation id `1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js` (title "Deck - OnlyFans + Yuno · Token Vault (Oct 2026)").
 - Service account: `gtm-claude-editor@gtm-claude-tools-260922.iam.gserviceaccount.com`, key at `~/.config/gsuite/sa.json`, scope `https://www.googleapis.com/auth/presentations`. The OAuth tokens in the repo are dead (client deleted). Prior Slides API builds to learn from: `Industry/AI/Higgsfield/build/engine.py` (text replace preserving styles, element walker), `Deals/Thinkific/build/common.py` + `build_tk.py` (SA auth, box()/bar() primitives, fmt_requests with **bold** markup, thumbnails).
 - OnlyFans logo, white on transparent, 1024x179: local `yuno-sales-pitch-maker/public/merchants/onlyfans.png`, public URL `https://deck.yuno.tools/merchants/onlyfans.png` (HTTP 200).
 
