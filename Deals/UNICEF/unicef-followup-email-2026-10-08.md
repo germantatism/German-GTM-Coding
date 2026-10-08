@@ -4,7 +4,7 @@
 **Asunto:** Re: UNICEF + Yuno (respuesta en el hilo, al mensaje de Sebastián del 6-oct)
 **Estado:** BORRADOR en Gmail, creado 8-oct-2026 tras la reunión "Unicef + Yuno" (10:30 COT). Sin enviar.
 
-**German debe agregar antes de enviar:** la propuesta actualizada adjunta (tramo 0 a 50,000 + precio de conciliación), el link a la documentación de la API, y crear las cuentas sandbox para los tres (las invitaciones salen desde la plataforma). Confirmar si lo de ACH (tiempos y prenotificación) ya se resolvió en la llamada; si sí, borrar esa frase.
+**v2 (8-oct, misma mañana):** German pidió incluir el link https://docs.y.uno/ y decir que el sandbox se prepara hoy y las invitaciones llegan en el día. Borrador recreado como reply (nunca update_draft). **German debe agregar antes de enviar:** la propuesta actualizada adjunta (tramo 0 a 50,000 + precio de conciliación) y crear las cuentas sandbox para los tres. Confirmar si lo de ACH (tiempos y prenotificación) ya se resolvió en la llamada; si sí, borrar esa frase.
 
 **Lo que salió de la llamada (resumen automático pegado por German, con correcciones de nombres):** pricing percentual para proteger el ticket bajo, 0.28% / 0.24%; motor de suscripciones opcional (si no se usa, la línea sale); rechazadas no pagan; montos del donante los capturan ellos en sus formularios (el monto libre en checkout no les aplica); acuerdos con adquirentes intactos; pidieron un primer tramo más bajo (0 a 50,000) y Yuno está abierto; conciliación hoy la hace finanzas (área de Lorena) a mano cruzando dashboards de cada procesador; UNICEF evalúa internamente tarifas y volúmenes antes de sumar otros equipos; Idual prefiere una prueba de concepto acotada antes de escalar. ⚠️ El resumen dice "primeras 100,000 gratis" en suscripciones; el deck dice 50,000: confirmar qué se dijo.
 
@@ -28,7 +28,7 @@ Gracias por el espacio de hoy. Me quedo con que la conversación ya está en ter
 
 Adjunto la propuesta actualizada con esos dos cambios. Para calibrar bien el tramo inicial me ayuda saber cuántas transacciones aprobadas cierran al mes y cómo se reparten entre tarjeta, débito a cuenta y billeteras.
 
-**Accesos y documentación:** los accesos al sandbox les llegan a cada uno en una invitación aparte desde la plataforma, y también les comparto la documentación de la API para que Idual y el equipo técnico la revisen con calma.
+**Accesos y documentación:** las cuentas de sandbox las estamos preparando hoy mismo, y en el transcurso del día les llega a cada uno la invitación desde la plataforma. La documentación de la API está en https://docs.y.uno/ para que Idual y el equipo técnico la revisen con calma.
 
 Idual, me gustó la idea de empezar con una prueba de concepto acotada sobre un solo flujo antes de extenderla a los demás canales. Propongo que definamos juntos el alcance y el cronograma de esa prueba en una sesión técnica con nuestro Solutions Engineer: la integración es vía API, así que los tiempos dependen sobre todo de cómo decidan conectar Salesforce y el middleware. Sigo además pendiente de confirmarles por escrito los tiempos de respuesta de los débitos a cuenta y la prenotificación de cuentas nuevas.
 
