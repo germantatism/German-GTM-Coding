@@ -4,7 +4,7 @@
 **Asunto:** Re: UNICEF + Yuno (respuesta en el hilo, al mensaje de Sebastián del 6-oct)
 **Estado:** BORRADOR en Gmail, creado 8-oct-2026 tras la reunión "Unicef + Yuno" (10:30 COT). Sin enviar.
 
-**v3 (8-oct): cuatro tramos 0.28/0.26/0.24/0.22 en el correo y en el deck. v2:** German pidió incluir el link https://docs.y.uno/ y decir que el sandbox se prepara hoy y las invitaciones llegan en el día. Borrador recreado como reply (nunca update_draft). **German debe agregar antes de enviar:** la propuesta actualizada adjunta (tramo 0 a 50,000 + precio de conciliación) y crear las cuentas sandbox para los tres. Confirmar si lo de ACH (tiempos y prenotificación) ya se resolvió en la llamada; si sí, borrar esa frase.
+**v4 (8-oct): conciliación $0.012/trx conciliada ($1,800 a 150K) y monitores en la plataforma. v3: cuatro tramos 0.28/0.26/0.24/0.22 en el correo y en el deck. v2:** German pidió incluir el link https://docs.y.uno/ y decir que el sandbox se prepara hoy y las invitaciones llegan en el día. Borrador recreado como reply (nunca update_draft). **German debe agregar antes de enviar:** la propuesta actualizada adjunta (tramo 0 a 50,000 + precio de conciliación) y crear las cuentas sandbox para los tres. Confirmar si lo de ACH (tiempos y prenotificación) ya se resolvió en la llamada; si sí, borrar esa frase.
 
 **Lo que salió de la llamada (resumen automático pegado por German, con correcciones de nombres):** pricing percentual para proteger el ticket bajo, 0.28% / 0.24%; motor de suscripciones opcional (si no se usa, la línea sale); rechazadas no pagan; montos del donante los capturan ellos en sus formularios (el monto libre en checkout no les aplica); acuerdos con adquirentes intactos; pidieron un primer tramo más bajo (0 a 50,000) y Yuno está abierto; conciliación hoy la hace finanzas (área de Lorena) a mano cruzando dashboards de cada procesador; UNICEF evalúa internamente tarifas y volúmenes antes de sumar otros equipos; Idual prefiere una prueba de concepto acotada antes de escalar. ⚠️ El resumen dice "primeras 100,000 gratis" en suscripciones; el deck dice 50,000: confirmar qué se dijo.
 
@@ -24,9 +24,10 @@ Gracias por el espacio de hoy. Me quedo con que la conversación ya está en ter
 **Lo que ajusto con base en lo que pidieron:**
 
 1. Los tramos ahora empiezan más abajo y son cuatro: 0.28% de 0 a 50,000 transacciones aprobadas al mes, 0.26% de 50,000 a 100,000, 0.24% de 100,000 a 150,000 y 0.22% por encima de 150,000. Cada tramo se cobra a su tarifa dentro del mes, así que el precio acompaña el volumen desde el inicio.
-2. El precio del motor de conciliación: un solo reporte configurable con la información de todos los procesadores, para reemplazar el cruce manual que hoy hace el equipo de finanzas.
+2. El motor de conciliación, opcional: $0.012 por transacción conciliada, es decir $1,800 al mes a 150,000 transacciones. Es un solo reporte configurable con la información de todos los procesadores, para reemplazar el cruce manual que hoy hace el equipo de finanzas.
+3. Los monitores y alertas quedan incluidos en el fee de plataforma.
 
-Adjunto la propuesta actualizada con esos dos cambios. Para calibrar bien el tramo inicial me ayuda saber cuántas transacciones aprobadas cierran al mes y cómo se reparten entre tarjeta, débito a cuenta y billeteras.
+Adjunto la propuesta actualizada con esos cambios. Para calibrar bien el tramo inicial me ayuda saber cuántas transacciones aprobadas cierran al mes y cómo se reparten entre tarjeta, débito a cuenta y billeteras.
 
 **Accesos y documentación:** las cuentas de sandbox las estamos preparando hoy mismo, y en el transcurso del día les llega a cada uno la invitación desde la plataforma. La documentación de la API está en https://docs.y.uno/ para que Idual y el equipo técnico la revisen con calma.
 
