@@ -56,7 +56,7 @@ SLIDES["howtoread"] = {
     "cards": [
         {"pill": "CONFIRMED", "title": "Written in Yuno's public documentation", "body": "Read at docs.y.uno on 7 October 2026; company figures come from y.uno. Most of it can be tested in the sandbox. A Beta tag marks anything in beta."},
         {"pill": "PUBLIC DOCS", "title": "Read on another vendor's public pages", "body": "VGS and Basis Theory, read on 7 October 2026. Treat every one of these lines as a question to confirm with them."},
-        {"pill": "OPEN", "title": "Not yet confirmed in writing inside Yuno", "body": "Shown with an owner, never as a fact. The six open items are listed together on slide {{slide:owe}}. In the appendix, Not in docs marks a gap in our public reference."},
+        {"pill": "OPEN", "title": "Not yet confirmed in writing inside Yuno", "body": "Shown with an owner, never as a fact. The six open items are listed together on slide {{slide:owe}}. Direction marks product direction, not a delivery commitment. In the appendix, Not in docs marks a gap in our public reference."},
     ],
     "bar": "**Why it matters.** A vault sits under everything you build on it. We would rather show you an open item today than have your engineers find it in the sandbox.",
     "notes": "We label every claim. Confirmed means it is in our public documentation, and most of it can be tried in the sandbox: the proxy sandbox is open today, while the cryptogram API and the account updater are switched on for your organization. Public docs means we read it on a competitor's own pages and you should confirm it with them. Open means we have not confirmed it in writing internally, so we will not present it as a fact. A vault is the wrong place for surprises.",
@@ -85,7 +85,7 @@ SLIDES["vault-cards"] = {
     "source": "Source: docs.y.uno, read 7 October 2026. Page list on slide {{slide:app-sources}}.",
     "cards": [
         {"pill": "CONFIRMED", "eyebrow": "STORE", "title": "Collect a card without charging it", "body": "SDK enrollment on Web, iOS and Android creates a vaulted token without a charge. Card numbers never reach your pages, which is why most SDK merchants qualify for SAQ A. Zero-amount verification is optional where the provider supports it."},
-        {"pill": "CONFIRMED", "eyebrow": "KEEP CURRENT", "title": "Network tokens and account updater", "body": "Once activated, network tokens are provisioned for enrolled cards with Visa, Mastercard and American Express. The account updater refreshes reissued Visa and Mastercard cards while the vaulted token stays the same."},
+        {"pill": "CONFIRMED", "eyebrow": "KEEP", "title": "Network tokens and account updater", "body": "Once activated, network tokens are provisioned for enrolled cards with Visa, Mastercard and American Express. The account updater refreshes reissued Visa and Mastercard cards while the vaulted token stays the same."},
         {"pill": "CONFIRMED", "eyebrow": "MOVE", "title": "Import in, export out", "body": "Cards arrive from your current gateway or vault as PGP-encrypted files over SFTP. Card export is documented too: on written request, to a recipient with a valid PCI DSS attestation."},
     ],
     "side": {"header": "WHAT YOU GET", "items": [
@@ -102,10 +102,10 @@ SLIDES["vault-data"] = {
     "kicker": K_VAULT + " · BEYOND CARDS",
     "headline": "Creator banking adds account numbers, tax IDs and identity documents. Here is where each one lives in Yuno today.",
     "boxes": [
-        {"id": "cards", "x": 0, "y": 0, "w": 100, "h": 160, "title": "cards · PCI", "body": "number · •••• 3456\nexpiration · ••/27\nholder_name · string\nnetwork_token · DPAN\nnetwork_transaction_id\nThe CVV is never stored.", "pill": "CONFIRMED", "style": "dark"},
-        {"id": "bank", "x": 107, "y": 0, "w": 100, "h": 160, "title": "bank accounts · ACH", "body": "type · ACH_ENROLLMENT\nrouting_number · string\nbeneficiary_name · string\naccount_type · enum\nvault_only · true\nIn the enroll API reference. Access rules to confirm.", "pill": "CONFIRMED", "style": "dark"},
-        {"id": "entities", "x": 214, "y": 0, "w": 100, "h": 160, "title": "entities · KYC · KYB", "body": "national_entity · INDIVIDUAL\ntax_id · •••• 6789\ndocument_number · •••• 4421\ndocumentation · KYC files\nonboarding · SUCCEEDED\nTaken by the banking API. Responses return the last four.", "pill": "CONFIRMED", "style": "dark"},
-        {"id": "tables", "x": 321, "y": 0, "w": 99, "h": 160, "title": "your own tables · PII", "body": "customer_records · table\nidentity_documents · table\nprotection · per column\nretention · per record\naccess · per role\nOn our product page. API reference not yet public.", "pill": "OPEN", "style": "outline"},
+        {"id": "cards", "x": 0, "y": 0, "w": 100, "h": 225, "title": "cards · PCI", "body": "number · •••• 3456\nexpiration · ••/27\nholder_name · string\nnetwork_token · DPAN\nnetwork_transaction_id\nThe CVV is never stored.", "pill": "CONFIRMED", "style": "dark"},
+        {"id": "bank", "x": 107, "y": 0, "w": 100, "h": 225, "title": "bank accounts · ACH", "body": "type · ACH_ENROLLMENT\nrouting_number · string\nbeneficiary_name · string\naccount_type · enum\nvault_only · true\nIn the enroll API reference. Access rules to confirm.", "pill": "CONFIRMED", "style": "dark"},
+        {"id": "entities", "x": 214, "y": 0, "w": 100, "h": 225, "title": "entities · KYC · KYB", "body": "national_entity · INDIVIDUAL\ntax_id · •••• 6789\ndocument_number · •••• 4421\ndocumentation · KYC files\nonboarding · SUCCEEDED\nBanking API. Responses return the last four.", "pill": "CONFIRMED", "style": "dark"},
+        {"id": "tables", "x": 321, "y": 0, "w": 99, "h": 225, "title": "your own tables · PII", "body": "customer_records · table\nidentity_documents · table\nprotection · per column\nretention · per record\naccess · per role\nOn our product page. API reference not yet public.", "pill": "OPEN", "style": "outline"},
     ],
     "connectors": [],
     "side": {"header": "WHY IT MATTERS", "items": [
@@ -130,9 +130,9 @@ SLIDES["questions-1"] = {
         ["4", {"text": "Can we charge with network tokens on our own processor and stay out of PCI scope?", "bold": True}, "Yes. Cryptogram-only mode (Visa, Mastercard; enabled per organization) needs no PCI certification: it returns no card data and the proxy fills in the token. Recurring charges add the network transaction ID.", {"text": "", "pill": "CONFIRMED", "pill2": "BETA"}],
         ["5", {"text": "Whose name are network tokens registered in?", "bold": True}, "Our API reference says Yuno holds the token requestor ID. Whether requestor IDs can be registered in your name is open, per network. Written answer with the RFP response.", {"text": "", "pill": "OPEN"}],
         ["6", {"text": "How do we leave?", "bold": True}, "A documented card export: a written request, the recipient's PCI DSS attestation, and a PGP-encrypted file over SFTP.", {"text": "", "pill": "CONFIRMED"}],
-        ["7", {"text": "What uptime do you commit to, and how does it fail over?", "bold": True}, "You get a contractual figure and the failover design with the RFP response, not a number on a slide.", {"text": "", "pill": "OPEN"}],
+        ["7", {"text": "What uptime do you commit to, and how does it fail over?", "bold": True}, "Our published SLA (y.uno/sla) commits to 99.90% monthly availability and a 5-minute response on critical incidents. The contractual figure for OnlyFans, the failover design and rate limits come with the RFP response.", {"text": "Engineering", "pill": "CONFIRMED", "pill2": "OPEN"}],
     ],
-    "notes": "These are the questions that decide a vault evaluation, and the ones that get tested in a sandbox. Five of the seven are documented today; three of those depend on the proxy, which is in beta and switched on per organization. Two are open and we say so: the token requestor model per network, and the contractual uptime and failover design. On both you get a written answer with the RFP response. Row 3: the proxy overview and guide document the 3-hour window; the Invoke Forward Proxy API reference page states that the security code cannot be injected, and Phase 0 shows the actual behaviour. Row 7: our published SLA annex at y.uno/sla states 99.90% monthly availability and a 5-minute response on critical incidents; the figure that binds is the one in your contract. Eight more questions continue on the next two slides.",
+    "notes": "These are the questions that decide a vault evaluation, and the ones that get tested in a sandbox. Six of the seven are documented today; three of those depend on the proxy, which is in beta and switched on per organization. Two are open and we say so: the token requestor model per network, and the contractual uptime and failover design. On both you get a written answer with the RFP response. Row 3: the proxy overview and guide document the 3-hour window; the Invoke Forward Proxy API reference page states that the security code cannot be injected, and Phase 0 shows the actual behavior. Row 7: the published SLA annex is at y.uno/sla; the figure that binds is the one in your contract. Eight more questions continue on the next two slides.",
 }
 
 # ---------------------------------------------------------------- S10 proxy how
@@ -144,7 +144,7 @@ SLIDES["proxy-how"] = {
     "source": "Source: docs.y.uno, PCI Proxy. In the API changelog since 11 July 2026. Read 7 October 2026.",
     "left": {"title": "AS ONLYFANS SENDS IT", "code": "POST /v1/pci-proxy/forward\nyuno-proxy-destination-url:\n  https://api.provider.example/v1/payouts\n{\n  \"amount\": 2500,\n  \"number\": \"{{vaulted_token.9f2a….number}}\",\n  \"name\": \"{{vaulted_token.9f2a….holder_name}}\"\n}"},
     "middle": {"title": "Yuno proxy", "sub": "Tokens resolved inside PCI DSS Level 1"},
-    "right": {"title": "AS THE DESTINATION RECEIVES IT", "code": "POST https://api.provider.example/v1/payouts\n{\n  \"amount\": 2500,\n  \"number\": \"4821 •••• •••• 0193\",\n  \"name\": \"ANA SOUZA\"\n}", "caption": "Destination and body are illustrative; header and expression syntax are as documented. The full card number is masked here for the slide."},
+    "right": {"title": "AS THE DESTINATION RECEIVES IT", "code": "POST https://api.provider.example/v1/payouts\n{\n  \"amount\": 2500,\n  \"number\": \"4821 •••• •••• 0193\",\n  \"name\": \"ANA SOUZA\"\n}", "caption": "Destination and body illustrative; header and expression syntax as documented. Card number masked for the slide."},
     "side": {"header": "WHAT YOU GET", "items": [
         {"title": "Your format", "body": "Your request body, your provider. No waiting for Yuno to build a connector."},
         {"title": "Any destination", "body": "A processor Yuno does not orchestrate, a fraud or issuer service, or your own acquiring connection."},
@@ -182,10 +182,10 @@ SLIDES["banking"] = {
         {"id": "creator", "x": 0, "y": 20, "w": 90, "h": 50, "title": "Creator", "body": "One entity: individual or business", "style": "outline"},
         {"id": "onb", "x": 0, "y": 110, "w": 90, "h": 56, "title": "Onboarding", "body": "KYC or KYB, on a named provider connection", "style": "light"},
         {"id": "yuno", "x": 118, "y": 60, "w": 100, "h": 70, "title": "Yuno", "body": "Banking Connectivity API", "style": "blue"},
-        {"id": "accA", "x": 246, "y": 0, "w": 92, "h": 50, "title": "Account · connection A", "body": "account and routing number", "style": "light"},
-        {"id": "accB", "x": 246, "y": 60, "w": 92, "h": 50, "title": "Account · connection B", "body": "account and routing number", "style": "light"},
-        {"id": "accC", "x": 246, "y": 120, "w": 92, "h": 50, "title": "Account · connection C", "body": "account and routing number", "style": "light"},
-        {"id": "transfers", "x": 356, "y": 40, "w": 64, "h": 90, "title": "Transfers", "body": "ACH: standard, same day\nWire and RTP\nBook transfers", "style": "dark"},
+        {"id": "accA", "x": 240, "y": 0, "w": 104, "h": 50, "title": "Account · connection A", "body": "Account and routing number", "style": "light"},
+        {"id": "accB", "x": 240, "y": 60, "w": 104, "h": 50, "title": "Account · connection B", "body": "Account and routing number", "style": "light"},
+        {"id": "accC", "x": 240, "y": 120, "w": 104, "h": 50, "title": "Account · connection C", "body": "Account and routing number", "style": "light"},
+        {"id": "transfers", "x": 354, "y": 40, "w": 66, "h": 90, "title": "Transfers", "body": "ACH: standard, same day\nWire and RTP\nBook transfers", "style": "dark"},
         {"id": "code", "x": 0, "y": 200, "w": 420, "h": 50, "title": "\"yuno_connection_id\": \"your Bank A connection\"", "body": "A required field on every onboarding request. Your system sets it.", "style": "dark"},
     ],
     "connectors": [
@@ -208,9 +208,9 @@ SLIDES["who-decides"] = {
     "headline": "You asked who decides where each creator lands. You do: per call for banking today, and by rule for card payments.",
     "source": "Source: docs.y.uno, Banking Connectivity; Routing; Monitors; Audit logs; Roles. Read 7 October 2026.",
     "cards": [
-        {"pill": "CONFIRMED", "eyebrow": "PER CALL · BANKING", "title": "Your policy names the provider", "body": "Every onboarding request carries the provider connection it should run on. Your own allocation logic picks the bank. Yuno executes on it and reports status back by webhook."},
-        {"pill": "CONFIRMED", "eyebrow": "BY RULE · CARD PAYMENTS", "title": "Rules you configure", "body": "Conditions on country, amount, BIN, brand and your own metadata. Percentage splits. Fallback steps on decline, error rate or timeout. Monitors that move traffic away and bring it back."},
-        {"pill": "OPEN", "eyebrow": "BY RULE · BANKS AND ISSUERS", "title": "The same rules for accounts", "body": "Allocating creators across banks and issuers by rules you set is what we described to you. It is not in the public API reference yet. Owner: Yuno product, in writing with the RFP response."},
+        {"pill": "CONFIRMED", "eyebrow": "PER CALL", "title": "Banking: your policy names the provider", "body": "Every onboarding request carries the provider connection it should run on. Your own allocation logic picks the bank. Yuno executes on it and reports status back by webhook."},
+        {"pill": "CONFIRMED", "eyebrow": "BY RULE", "title": "Cards: rules you configure", "body": "Conditions on country, amount, BIN, brand and your own metadata. Percentage splits. Fallback steps on decline, error rate or timeout. Monitors that move traffic away and bring it back."},
+        {"pill": "OPEN", "eyebrow": "BY RULE", "title": "Banks and issuers: the same rules for accounts", "body": "Allocating creators across banks and issuers by rules you set is what we described to you. It is not in the public API reference yet. Owner: Yuno product, in writing with the RFP response."},
     ],
     "side": {"header": "WHAT YOU GET", "items": [
         {"title": "Yours", "body": "The policy belongs to OnlyFans. The API takes the connection you name on each onboarding."},
@@ -279,7 +279,7 @@ SLIDES["versus-bt"] = {
         ["Bank accounts and transfers", "Banking Connectivity API: entities, accounts, ACH, wire and RTP", "No accounts or transfers API found. Stores bank details and forwards them to your processor", {"text": "Yuno", "bold": True}],
         ["Payouts", "Payouts API and split payments", "No payouts product found. Forwards to payout processors you choose", {"text": "Yuno", "bold": True}],
     ],
-    "notes": "Basis Theory on its own. It is a strong vault, and it knows your sector: its creator-economy page quotes a creator platform whose processor shut it off without warning. It leads us on four rows today: token types for personal data, a proxy with transforms and serverless code, card issuing guides, and a clear statement that it creates the token requestor ID for you. We lead on the four rows above the vault: a rules product for routing and failover, processor integrations that are already built, a banking API, and payouts. Two questions worth asking them: who writes and maintains the routing rules they market, and what the cost is at your scale. On 8 October 2026 their Payments Routing guide still read \"This guide is currently under construction.\" Their network tokens page lists Pagos as the subprocessor behind network tokens and the account updater, which is worth a question about subprocessors. Their public list price is 995 dollars a month for 20,000 stored tokens, then 5 cents per additional token each month; ask for the enterprise schedule at your volume.",
+    "notes": "Basis Theory on its own. It is a strong vault, and it knows your sector: its creator-economy page quotes a creator platform whose processor shut it off without warning. It leads us on four rows today: token types for personal data, a proxy with transforms and serverless code, card issuing guides, and a clear statement that it creates the token requestor ID for you. We lead on the four rows above the vault: a rules product for routing and failover, processor integrations that are already built, a banking API, and payouts. Two questions worth asking them: who writes and maintains the routing rules they market, and what the cost is at your scale. On 8 October 2026 their Payments Routing guide still read \"This guide is currently under construction.\" Their network tokens page names Pagos as the subprocessor behind network tokens and the account updater; ask both of us for the equivalent list. Their public list price is 995 dollars a month for 20,000 stored tokens, then 5 cents per additional token each month; ask for the enterprise schedule at your volume.",
 }
 
 # ---------------------------------------------------------------- S19 versus VGS
@@ -332,9 +332,9 @@ SLIDES["owe"] = {
         ["1", "Tables you define for identity and customer records, and how bank and entity data is stored and accessed: availability and API reference", "Banking as a service puts far more than cards in the vault.", {"text": "Trust & Vault product", "bold": True}],
         ["2", "Rule-based allocation of creators across banks and issuers", "It turns \"who decides\" from code you maintain into a rule you set.", {"text": "Product", "bold": True}],
         ["3", "US banking and issuing providers connected today, their policy for your category, and one entity on several connections", "No single bank should be able to cut a creator off. That depends on which banks are behind the API.", {"text": "Partnerships", "bold": True}],
-        ["4", "Token requestor model for each card network, scheme activation per network, and export of network transaction IDs, bank and entity data", "Together they decide what you can take with you if you ever change vault.", {"text": "Trust & Vault product, Legal", "bold": True}],
-        ["5", "Contractual uptime, failover design, rate limits and the subprocessor list", "A vault in the payment path must never be the weak point.", {"text": "Engineering, Security", "bold": True}],
-        ["6", "Stablecoin conversion providers", "Yield on balances is part of your design, and outside the vault itself.", {"text": "Partnerships", "bold": True}],
+        ["4", "Token requestor model and scheme activation per network; network transaction IDs captured through the proxy and included in the export, with bank and entity data", "Together they decide what you can take with you if you ever change vault.", {"text": "Trust & Vault product, Legal", "bold": True}],
+        ["5", "Contractual uptime, failover design, rate limits, and the security pack: subprocessors, connection model per card network, key management and regions", "A vault in the payment path must never be the weak point.", {"text": "Engineering, Security", "bold": True}],
+        ["6", "Yield and stablecoin partners (Jiko, Coinbase, Triple-A): confirmation of the connections and their terms", "Yield on balances is part of your design, and outside the vault itself.", {"text": "Partnerships", "bold": True}],
     ],
     "notes": "These are the six things we have not confirmed in writing, collected in one place. Each has an owning team at Yuno, and each gets a written answer with our RFP response. If any of them is a deciding factor for you, tell us now and we will answer it first.",
 }
@@ -371,6 +371,7 @@ SLIDES["app-limits"] = {
         ["What the proxy resolves", "Card fields only: number, expiration, holder name, network token, network transaction ID and, per the proxy guide, the security code inside its window. Bank data is not resolved by the proxy.", {"text": "", "pill": "CONFIRMED"}],
         ["Token search", "Stored payment methods are listed per customer. There is no vault-wide search in the reference.", {"text": "", "pill": "CONFIRMED"}],
         ["Idempotent forwards", "Not in the public API reference. Until it is, a retry after a timeout needs a status check at the destination.", {"text": "", "pill": "NOT IN DOCS"}],
+        ["Agent credentials", "Visa Intelligent Commerce and Mastercard Agent Pay credentials are not in our documentation today.", {"text": "", "pill": "NOT IN DOCS"}],
     ],
     "notes": "Appendix. These are the limits as they stand today, so nobody on your side discovers them later. The two that matter most for an issuing use case are the first two: there is no inbound proxy in the public reference, and a card number that comes back from your issuer is redacted rather than vaulted. If your Phase 1 needs to show an issued card to a creator or set a PIN, that is a gap for us today and a strength of a standalone vault.",
 }

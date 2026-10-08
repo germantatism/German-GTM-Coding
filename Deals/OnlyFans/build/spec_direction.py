@@ -20,10 +20,10 @@ SLIDES["direction-architecture"] = {
         {"id": "creators", "x": 0, "y": 0, "w": 130, "h": 44, "title": "Creators", "body": "Sign up once", "style": "outline"},
         {"id": "of", "x": 145, "y": 0, "w": 275, "h": 44, "title": "OnlyFans", "body": "One account per creator · Sets the rules", "style": "outline"},
         {"id": "orch", "x": 0, "y": 66, "w": 205, "h": 70, "title": "Yuno · orchestration", "body": "Decides where money lives and moves. Opens accounts, runs your rules, routes every transfer, shows every balance in one view.", "style": "blue"},
-        {"id": "vault", "x": 215, "y": 66, "w": 205, "h": 70, "title": "Yuno · vault", "body": "Holds the data every provider needs: KYC, SSN and tax IDs, bank details, W-9s and cards. Collected once, sent to any provider through the proxy.", "style": "blue"},
+        {"id": "vault", "x": 215, "y": 66, "w": 205, "h": 70, "title": "Yuno · vault", "body": "Holds the data every provider needs: KYC, tax IDs, bank details, W-9s and cards. Collected once, reused for every provider you add; cards forwarded through the proxy.", "style": "blue"},
         {"id": "banks", "x": 0, "y": 160, "w": 98, "h": 58, "title": "Banks", "body": "2 to 5 per creator", "style": "light"},
         {"id": "issuers", "x": 107, "y": 160, "w": 98, "h": 58, "title": "Card issuers", "body": "Add or swap at any time", "style": "light"},
-        {"id": "rails", "x": 215, "y": 160, "w": 98, "h": 58, "title": "Transfer rails", "body": "ACH and wire", "style": "light"},
+        {"id": "rails", "x": 215, "y": 160, "w": 98, "h": 58, "title": "Transfer rails", "body": "ACH, wire and RTP", "style": "light"},
         {"id": "ramps", "x": 322, "y": 160, "w": 98, "h": 58, "title": "Stablecoin ramps", "body": "On and off-ramp partners", "style": "light"},
     ],
     "connectors": [
@@ -46,13 +46,13 @@ SLIDES["direction-rules"] = {
     "tag": ["DIRECTION"],
     "source": DISCLAIMER,
     "cols": [
-        {"header": "YOU SET THE RULES · ONLYFANS DECIDES, YUNO RUNS IT", "items": [
+        {"header": "YOU SET THE RULES", "items": [
             {"title": "Write the policy once", "body": "Yuno applies it to every creator and logs each decision with the rule that triggered it."},
             {"title": "Spread each creator across 2 to 5 banks", "body": "And cap how much any one bank can hold."},
             {"title": "Send each payout on the cheapest or fastest rail", "body": "Per transfer, by rule, not by code."},
             {"title": "Send new creators to the bank you choose", "body": "Allocation is a setting you own, changeable without a deployment."},
         ]},
-        {"header": "NO SINGLE POINT OF FAILURE · BACKUP BANKS READY BEFORE YOU NEED THEM", "items": [
+        {"header": "NO SINGLE POINT OF FAILURE", "items": [
             {"title": "Backup accounts opened at sign-up", "body": "Yuno opens the backup accounts when the creator signs up, not after an incident."},
             {"title": "Automatic move on a freeze or closure", "body": "If a bank freezes or closes an account, inbound funds and payouts move to the next bank automatically."},
             {"title": "The bank's ledger stays the record of truth", "body": "Yuno reconciles with each bank every day."},
@@ -70,14 +70,14 @@ SLIDES["direction-yield"] = {
     "tag": ["DIRECTION"],
     "source": DISCLAIMER,
     "cols": [
-        {"header": "YIELD · TWO WAYS TO EARN ON IDLE BALANCES", "items": [
+        {"header": "YIELD ON IDLE BALANCES", "items": [
             {"title": "Treasury-backed balances", "body": "Balances that sit in US T-bills, through Jiko."},
             {"title": "Or convert to stablecoins", "body": "Through Coinbase and Triple-A."},
             {"title": "Your rules decide how much moves and when", "body": "Yuno never holds funds or crypto. The yield rules under the GENIUS Act are still settling, which is why conversion and custody credentials stay portable."},
         ]},
-        {"header": "PLUGGABLE ISSUERS · ADD OR SWAP CARD ISSUERS LIKE ANY OTHER CONNECTION", "items": [
+        {"header": "PLUGGABLE ISSUERS", "items": [
             {"title": "Issuers connect like PSPs and banks", "body": "A card issuer connects to Yuno the same way a processor or a bank does."},
-            {"title": "No new KYC from the creator", "body": "The vault already holds the creator's data, so a new issuer needs no new KYC and no change to your integration."},
+            {"title": "No new KYC from the creator", "body": "The vault already holds the creator's verified data, so a new issuer's onboarding can reuse it instead of asking the creator again."},
             {"title": "Swap without a project", "body": "Adding or replacing an issuer is a configuration change on your side."},
         ]},
     ],

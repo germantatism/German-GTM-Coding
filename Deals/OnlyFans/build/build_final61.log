@@ -4,6 +4,7 @@
   warnings.warn(eol_message.format("3.9"), FutureWarning)
 /Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
   warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
 [01] cover              cover
   applied    2 requests duplicate t1 -> n01_g3f77215683c_1_445
   applied   16 requests n01
@@ -78,4 +79,47 @@
 [19] divider            d04
   applied    2 requests duplicate t3 -> n19_g3f769a0f446_0_988
   applied    8 requests n19
-Error: rehearsal stopped; final build moves to the coordinator's copy
+  applied    1 requests notes n19_g3f769a0f446_0_988
+[20] cards_row          cof-today
+  applied    2 requests duplicate t7 -> n20_g3f77215683c_2_2968
+  applied   93 requests n20
+  applied    3 requests notes n20_g3f77215683c_2_2968
+[21] table              five-data
+  applied    2 requests duplicate t7 -> n21_g3f77215683c_2_2968
+  applied  237 requests n21
+  applied    3 requests notes n21_g3f77215683c_2_2968
+[22] checklist_table    questions-1
+  applied    2 requests duplicate t7 -> n22_g3f77215683c_2_2968
+  applied  290 requests n22
+  applied    3 requests notes n22_g3f77215683c_2_2968
+[23] checklist_table    questions-2
+  applied    2 requests duplicate t7 -> n23_g3f77215683c_2_2968
+  applied  225 requests n23
+  applied    3 requests notes n23_g3f77215683c_2_2968
+[24] checklist_table    questions-3
+  applied    2 requests duplicate t7 -> n24_g3f77215683c_2_2968
+  applied  215 requests n24
+  applied    3 requests notes n24_g3f77215683c_2_2968
+[25] stats              clocks
+  applied    2 requests duplicate t7 -> n25_g3f77215683c_2_2968
+  applied  109 requests n25
+  applied    3 requests notes n25_g3f77215683c_2_2968
+[26] divider            d05
+  applied    2 requests duplicate t3 -> n26_g3f769a0f446_0_988
+  applied    8 requests n26
+  applied    1 requests notes n26_g3f769a0f446_0_988
+[27] template_keep      yuno-story
+  WARNING slide yuno-story: template_index 23 is 'four pillars' in template_dump order; using 22 ('Yuno story stats') from the slide id
+  WARNING slide yuno-story: template_index 23 is 'four pillars' in template_dump order; using 22 ('Yuno story stats') from the slide id
+  applied    2 requests duplicate t22 -> n27_g3f769a0f446_0_14188
+  applied   11 requests n27
+  applied    1 requests notes n27_g3f769a0f446_0_14188
+[28] template_keep      four-pillars
+  WARNING slide four-pillars: template_index 24 is 'offices map' in template_dump order; using 23 ('four pillars') from the slide id
+  WARNING slide four-pillars: template_index 24 is 'offices map' in template_dump order; using 23 ('four pillars') from the slide id
+  applied    2 requests duplicate t23 -> n28_g3f769a0f446_0_7028
+  applied   10 requests n28
+[29] table              compliance
+  applied    2 requests duplicate t7 -> n29_g3f77215683c_2_2968
+  applied  285 requests n29
+Error: sequential build stopped by operator, switching to 4 parallel workers

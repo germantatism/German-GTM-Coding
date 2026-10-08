@@ -182,6 +182,48 @@
    "notes": "This is your design as we understood it from our conversation. Correct anything we have wrong before we go further. The two blue bands are where Yuno would sit: the vault at the base, and the layer that decides which bank, issuer and rail each creator lands on. You asked several times who makes that decision. The short answer is that OnlyFans does, and Section 06 shows exactly how."
   },
   {
+   "id": "exec",
+   "type": "exec_summary",
+   "kicker": "WHY WE ARE HERE · EXECUTIVE SUMMARY",
+   "headline": "Executive summary",
+   "left_header": "WHERE ONLYFANS STANDS TODAY",
+   "left_items": [
+    {
+     "title": "A payout business at scale, run lean",
+     "body": "FY2025 accounts (year to 30 November 2025), as reported in August 2026: $1.55B net revenue, $6.3B paid to creators in the year, more than $30B since 2016, 47 employees. Anything added underneath must run by configuration, not headcount."
+    },
+    {
+     "title": "An RFP for a token vault, with a bigger design behind it",
+     "body": "One creator account on top. Two to five banks, pluggable card issuers and bank-transfer providers underneath, so no single partner can cut a creator off. US balances first, banking as a service next, stablecoin yield on balances."
+    },
+    {
+     "title": "The question you asked most",
+     "body": "Who decides which bank, issuer and rail each creator lands on. The answer in this deck: OnlyFans does. The mechanism is shown in writing, with what exists today and what is open."
+    },
+    {
+     "title": "A vault alone stores the credential",
+     "body": "Your design also needs the rules, the provider connections, the accounts and the money movement above it. With a standalone vault, all of that stays on your roadmap."
+    }
+   ],
+   "right_header": "WHAT ONLYFANS GETS WITH YUNO",
+   "right_cards": [
+    {
+     "title": "A PCI DSS LEVEL 1 VAULT WITH A PUBLIC EXIT",
+     "body": "One vaulted token that works on every processor you connect, network tokens and account updater to keep it current, documented import and export."
+    },
+    {
+     "title": "A PROXY TO ANY DESTINATION YOU CHOOSE",
+     "body": "Stored card data forwarded to providers Yuno does not orchestrate, including issuers and your own acquiring connections, behind an allowlist, mutual TLS and audit logs."
+    },
+    {
+     "title": "THE DECISION LAYER, WITH YOUR RULES",
+     "body": "Per call for banking today, by rule for card payments. Entities, onboarding, accounts and transfers across providers through one API, with payouts and split payments on the same platform."
+    }
+   ],
+   "source": "Fenix International Ltd FY2025 accounts as reported by Tubefilter, 26 Aug 2026; design as described by OnlyFans to Yuno, Oct 2026.",
+   "notes": "The summary before the detail. Your filed numbers say the payout side alone is more than six billion dollars a year, operated by a team of 47. You opened an RFP for a token vault, but the design you described needs more than storage: a layer that decides where each creator lands and the connections to execute on it. This deck answers both, and it says plainly where a standalone vault leads today and what we still owe you in writing."
+  },
+  {
    "id": "howtoread",
    "type": "cards_row",
    "kicker": "WHY WE ARE HERE · HOW TO READ THIS DECK",
@@ -200,7 +242,7 @@
     {
      "pill": "OPEN",
      "title": "Not yet confirmed in writing inside Yuno",
-     "body": "Shown with an owner, never as a fact. The six open items are listed together on slide 54. In the appendix, Not in docs marks a gap in our public reference."
+     "body": "Shown with an owner, never as a fact. The six open items are listed together on slide 54. Direction marks product direction, not a delivery commitment. In the appendix, Not in docs marks a gap in our public reference."
     }
    ],
    "bar": "**Why it matters.** A vault sits under everything you build on it. We would rather show you an open item today than have your engineers find it in the sandbox.",
@@ -233,48 +275,6 @@
    "notes": "Here is the conclusion before the detail. We compared Yuno with VGS and Basis Theory on nine things your design needs. On four of them a standalone vault leads today, and we say so. On one we are level. On four Yuno leads, and those four are the ones your architecture adds on top of a vault: routing rules for card payments, processor integrations that are already built, a banking API across providers, and payouts. Where any of these is only partly there today, the deck says so."
   },
   {
-   "id": "exec",
-   "type": "exec_summary",
-   "kicker": "WHY WE ARE HERE · EXECUTIVE SUMMARY",
-   "headline": "Executive summary",
-   "left_header": "WHERE ONLYFANS STANDS TODAY",
-   "left_items": [
-    {
-     "title": "A payout business at scale, run lean",
-     "body": "FY2025 accounts filed 20 September 2026: $1.55B net revenue, $6.3B paid to creators in the year, more than $30B since 2016, 47 employees. Anything added underneath must run by configuration, not headcount."
-    },
-    {
-     "title": "An RFP for a token vault, with a bigger design behind it",
-     "body": "One creator account on top. Two to five banks, pluggable card issuers and bank-transfer providers underneath, so no single partner can cut a creator off. US balances first, banking as a service next, stablecoin yield on balances."
-    },
-    {
-     "title": "The question you asked most",
-     "body": "Who decides which bank, issuer and rail each creator lands on. The answer in this deck: OnlyFans does. The mechanism is shown in writing, with what exists today and what is open."
-    },
-    {
-     "title": "A vault alone stores the credential",
-     "body": "Your design also needs the rules, the provider connections, the accounts and the money movement above it. With a standalone vault, all of that stays on your roadmap."
-    }
-   ],
-   "right_header": "WHAT ONLYFANS GETS WITH YUNO",
-   "right_cards": [
-    {
-     "title": "A PCI DSS LEVEL 1 VAULT WITH A PUBLIC EXIT",
-     "body": "One vaulted token that works on every processor you connect, network tokens and account updater to keep it current, documented import and export."
-    },
-    {
-     "title": "A PROXY TO ANY DESTINATION YOU CHOOSE",
-     "body": "Stored card data forwarded to providers Yuno does not orchestrate, including issuers and your own acquiring connections, behind an allowlist, mutual TLS and audit logs."
-    },
-    {
-     "title": "THE DECISION LAYER, WITH YOUR RULES",
-     "body": "Per call for banking today, by rule for card payments. Entities, onboarding, accounts and transfers across providers through one API, with payouts and split payments on the same platform."
-    }
-   ],
-   "source": "Fenix International Ltd accounts to 30 Nov 2025 (Companies House, filed 20 Sep 2026) as reported by Tubefilter, 26 Aug 2026; design as described by OnlyFans to Yuno, Oct 2026.",
-   "notes": "The summary before the detail. Your filed numbers say the payout side alone is more than six billion dollars a year, operated by a team of 47. You opened an RFP for a token vault, but the design you described needs more than storage: a layer that decides where each creator lands and the connections to execute on it. This deck answers both, and it says plainly where a standalone vault leads today and what we still owe you in writing."
-  },
-  {
    "id": "d02",
    "type": "divider",
    "num": "02",
@@ -285,7 +285,7 @@
    "id": "industry-glance",
    "type": "stats",
    "kicker": "INDUSTRY CONTEXT · CREATOR BANKING AT A GLANCE",
-   "headline": "Creator platforms are becoming the creator's bank. OnlyFans brings a longer payout record to that shift than anyone launching it.",
+   "headline": "Creator platforms are becoming the creator's bank. OnlyFans brings a ten-year, $30B payout record to that shift.",
    "tiles": [
     {
      "label": "CREATOR ECONOMY, 2027",
@@ -300,7 +300,7 @@
     {
      "label": "PAID TO CREATORS SINCE 2016",
      "value": "$30B+",
-     "caption": "OnlyFans, per the FY2025 accounts as reported in August 2026."
+     "caption": "OnlyFans, FY2025 accounts as reported in August 2026."
     },
     {
      "label": "ARCHITECT CAPITAL, MAY 2026",
@@ -308,7 +308,7 @@
      "caption": "About 16% of Fenix at a $3.15B valuation, to develop new financial services and products for creators."
     }
    ],
-   "paragraph": "**Who launched what, 2025 to 2026.** Karat Banking (May 2025): creator business banking with Visa and Grasshopper Bank, more than $1.5B of credit and advances issued through its creator card. Manifest with Mastercard (July 2026): a business debit Mastercard for creators; Mastercard calls creators \"some of today's most dynamic small businesses\". OnlyFans with Architect (May 2026): Architect's founder joined the Fenix board on 8 May 2026 with a stated plan to \"add financial products for creators\" and to help creators \"address challenges with things like payment processors and banks\".",
+   "paragraph": "**Who launched what.** Karat (May 2025): creator business banking with Visa and Grasshopper Bank, $1.5B+ of credit and advances issued. Manifest (July 2026): a business debit Mastercard for creators. OnlyFans with Architect (May 2026): Architect's founder joined the Fenix board on 8 May 2026 with a stated plan to add financial products for creators.",
    "bar": "The money is moving from front-end creator tools to the financial stack underneath. A platform that already knows the creator's income is the natural bank partner, and the credentials that make that work need one neutral home.",
    "source": "Goldman Sachs Research, Apr 2023; Tubefilter, 28 May 2025 and 14 Aug 2026; PYMNTS, 23 Jul 2026; Bloomberg, 8 May 2026; Companies House officer appointments, read 8 Oct 2026.",
    "notes": "The creator economy is roughly doubling between 2023 and 2027 on Goldman's numbers, and the money is moving from front-end tools to the financial stack underneath. Karat and Manifest show the pattern: a card, a bank partner and a platform that already knows the creator's income. OnlyFans has paid out more than 30 billion dollars, which is the kind of record a bank partner can underwrite, and Architect's investment is explicitly about building financial services on it."
@@ -317,7 +317,7 @@
    "id": "no-single-bank",
    "type": "cards_row",
    "kicker": "INDUSTRY CONTEXT · WHY A MULTI-BANK ARCHITECTURE",
-   "headline": "Platforms that depended on one bank, one network or one middleware learned the cost in 2020, 2021 and 2024. Your design makes redundancy the product.",
+   "headline": "One bank, one network or one middleware was a kill switch in 2020, 2021 and 2024. Your design makes redundancy the product.",
    "cards": [
     {
      "eyebrow": "DEC 2020 · ONE NETWORK DECISION",
@@ -325,7 +325,7 @@
      "body": "Mastercard terminated and Visa suspended card acceptance at a major adult platform within a day of a newspaper column; Discover followed."
     },
     {
-     "eyebrow": "AUG 2021 · ONE PAYOUT BANK",
+     "eyebrow": "AUG 2021 · THE PAYOUT BANKS",
      "title": "A content ban announced, then reversed",
      "body": "OnlyFans announced a ban for 1 October 2021 after banks were \"broadly rejecting money transfers and closing related accounts\". Reversed six days later once assurances were secured."
     },
@@ -335,7 +335,7 @@
      "body": "Synapse's collapse left partner banks holding about $180M against $265M owed and more than 100,000 customers locked out. The Federal Reserve ordered Evolve to fix fintech partnership risk management on 14 June 2024."
     },
     {
-     "eyebrow": "2024 TO 2025 · THE REGULATORS' ANSWER",
+     "eyebrow": "2024 TO 2025 · REGULATORS",
      "title": "Third-party risk became the exam question",
      "body": "FDIC consent orders on Lineage, Sutton and Piermont for third-party risk; an August 2025 executive order directing regulators to drop \"reputation risk\" from bank exams."
     }
@@ -348,7 +348,7 @@
    "id": "vault-2026",
    "type": "cards_row",
    "kicker": "INDUSTRY CONTEXT · WHAT A TOKEN VAULT IS EXPECTED TO DO IN 2026",
-   "headline": "In 2026 a vault is judged on five things beyond storing a card: script controls, network tokens, lifecycle updates, agent credentials, stablecoin rules.",
+   "headline": "A 2026 vault is judged on more than storage: script controls, network tokens, lifecycle updates, agent credentials, stablecoin rules.",
    "cards": [
     {
      "eyebrow": "PCI DSS 4.0.1",
@@ -368,18 +368,18 @@
     {
      "eyebrow": "AGENT CREDENTIALS",
      "title": "A new token type since 2025",
-     "body": "Visa Intelligent Commerce (30 April 2025) and Mastercard Agent Pay (29 April 2025) issue tokenized credentials for AI agents. Visa, April 2026: agent platforms should \"avoid being locked into a single token vault/vendor\"."
+     "body": "Visa Intelligent Commerce (30 April 2025) and Mastercard Agent Pay (29 April 2025) issue tokenized credentials for AI agents. Visa, April 2026: agent platforms should avoid being locked into a single token vault or vendor."
     }
    ],
-   "bar": "**Stablecoin balances.** The GENIUS Act (signed 18 July 2025) bars permitted issuers from paying holders \"any form of interest or yield\" for holding a stablecoin. It does not define \"holder\" or explicitly stop platforms from paying rewards; the OCC proposed on 25 February 2026 to presume a violation when yield flows through an issuer's affiliate or \"related third party\", and no final rule had issued by 8 October 2026. Conversion and custody credentials should stay portable while that settles.",
-   "source": "PCI SSC blog, 26 Mar 2025; Visa newsroom, Jun 2024, Apr 2025, Apr 2026; Mastercard newsroom, Apr 2025; Digital Transactions, 14 Nov 2024; CRS IF13174, 6 Mar 2026; Paul Hastings, 12 Mar 2026.",
+   "bar": "**Stablecoin balances.** The GENIUS Act (18 July 2025) bars permitted issuers from paying holders \"any form of interest or yield\" and does not define \"holder\". The OCC proposed on 25 February 2026 to presume a violation when yield flows through an affiliate or related third party; no final rule by 8 October 2026. Keep conversion and custody credentials portable while that settles.",
+   "source": "PCI SSC, Mar 2025; Visa and Mastercard newsrooms, 2024 to 2026; Digital Transactions, Nov 2024; CRS IF13174, Mar 2026; Paul Hastings, Mar 2026.",
    "notes": "Storing a card number safely is table stakes. The questions that separate vaults in 2026 are whether the stored credential keeps working after reissue, whether it can be presented as a network or agent token, and whether the script controls keep you at SAQ A. The stablecoin point matters for your yield feature: today the prohibition sits on issuers, the status of platform-paid rewards is an open regulatory question, and the design should keep conversion and custody credentials portable while that settles."
   },
   {
    "id": "vault-market",
    "type": "table",
    "kicker": "INDUSTRY CONTEXT · WHERE THE INDEPENDENT VAULT MARKET STANDS",
-   "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, data privacy vault. The RFP should state which one it is buying.",
+   "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, data privacy vault. State which one the RFP buys.",
    "columns": [
     "Vendor",
     "HQ",
@@ -408,7 +408,7 @@
     ],
     [
      "Basis Theory",
-     "California (HQ not stated by the company)",
+     "Not stated by the company",
      "2020",
      "About $50M; $33M Series B, Oct 2025",
      "Pure payment vault"
@@ -437,7 +437,7 @@
     [
      "Evervault",
      "Dublin",
-     "2018",
+     "2019",
      "$46M; $25M Series B, Mar 2026",
      "Encryption-first payment vault"
     ],
@@ -450,7 +450,7 @@
     ]
    ],
    "note": "Yuno's vault is described in Section 06 and compared row by row with VGS and Basis Theory in Section 07. Funding figures are third-party estimates where the vendor does not publish them.",
-   "source": "Vendor pages and press releases, read 7 and 8 Oct 2026; Spreedly blog, Nov 2019; BusinessWire, Mar 2024; Crowdfund Insider, Mar 2026; y.uno About and newsroom; CB Insights profiles (estimates).",
+   "source": "Vendor pages and press releases, read 7 and 8 Oct 2026; y.uno About and newsroom; CB Insights profiles (estimates).",
    "notes": "We list the market as it is, including vendors we partner with. The shape matters more than the logo: a pure vault keeps routing out of scope by design, an orchestrator's vault assumes its routing, and a data privacy vault is built for personal data first. Your design needs card, bank, identity and issued-card objects under one key set plus a decision layer you control, which is the lens we apply in Section 07."
   },
   {
@@ -463,7 +463,7 @@
    "id": "of-numbers",
    "type": "scale",
    "kicker": "HOW ONLYFANS RUNS PAYMENTS TODAY · ONLYFANS IN NUMBERS",
-   "headline": "OnlyFans moves more than $6 billion a year to 2.5 million creators with 47 employees. Any new payments layer has to scale without headcount.",
+   "headline": "More than $6 billion a year to 2.5 million active creators, run by 47 people: anything underneath must scale without headcount.",
    "left_header": "THE SCALE TODAY · FY ENDED 30 NOV 2025",
    "tiles": [
     {
@@ -479,20 +479,20 @@
    "mid_header": "WHERE THE COMPANY IS HEADING",
    "mid_items": [
     "Architect Capital bought about 16% for $535M at a $3.15B valuation (May 2026) to develop new financial services and products for creators.",
-    "Architect's founder joined the Fenix International board on 8 May 2026, alongside the CEO and the owner; the CFO has been a director since December 2021.",
+    "Architect's founder joined the Fenix International board on 8 May 2026, alongside the CEO; the CFO has been a director since December 2021.",
     "The stated direction: add financial products for creators and address their challenges with payment processors and banks."
    ],
    "right_header": "THE FOOTPRINT",
    "right_body": "**2.5M** active creators and **132M** active fan accounts in FY2025, as reported from the filing. **47** employees. Revenue by geography, latest public split (FY2023): **66%** United States, **18%** UK and Europe, **16%** rest of world. Every fan payment and creator payout is in USD.",
    "bar": "A payout operation above $6 billion a year across millions of accounts, run by a team of 47: whatever sits underneath has to be operated by configuration, not by people.",
-   "source": "Fenix International Ltd group accounts to 30 Nov 2025 (Companies House, filed 20 Sep 2026) as reported by Tubefilter, 26 Aug 2026 and Eastern Eye, 25 Aug 2026; FY2024 per RTÉ, 22 Aug 2025; FY2023 geography via Mostly Metrics; Bloomberg, 8 May 2026; Companies House officers, read 8 Oct 2026.",
+   "source": "Fenix International FY2025 accounts as reported by Tubefilter and Eastern Eye, Aug 2026; FY2024 per RTÉ, Aug 2025; FY2023 split via Mostly Metrics; Bloomberg, May 2026.",
    "notes": "These are your own filed numbers, as reported in August. We show them to size the vault conversation: the payout side alone is more than six billion dollars a year across millions of accounts, run by a team of 47. Anything added underneath has to be operated by configuration, not by people. The geography split is the latest one published in your accounts; if you have a newer one we will use it."
   },
   {
    "id": "traffic",
    "type": "traffic_list",
    "kicker": "HOW ONLYFANS RUNS PAYMENTS TODAY · WHERE DEMAND SITS",
-   "headline": "The United States is about two thirds of revenue and more than 40% of traffic, which is why a US-first vault scope is the right Phase 1.",
+   "headline": "The US was two thirds of revenue in the last published split and is over 40% of traffic today, so US-first is the right Phase 1.",
    "rows": [
     {
      "country": "United States",
@@ -536,14 +536,14 @@
      }
     ]
    },
-   "source": "Share of web traffic by country: Similarweb, onlyfans.com, September 2026 (estimate, top five as published). Revenue split: Fenix International FY2023 accounts via Mostly Metrics. OnlyFans Terms of Service, last updated Aug 2024.",
+   "source": "Traffic: Similarweb, onlyfans.com, Sept 2026 (estimate, top five). Revenue split: Fenix FY2023 accounts via Mostly Metrics. OnlyFans Terms, Aug 2024.",
    "notes": "Your traffic is global but your revenue is American, and your pricing is in dollars everywhere. That makes US balances the right first scope for creator accounts, and it also means the vault must be ready for European and Canadian creators in Phase 2 without a second architecture. The geography split is the latest one published in your accounts; if you have a newer one we will use it."
   },
   {
    "id": "stack",
    "type": "cards_row",
    "kicker": "HOW ONLYFANS RUNS PAYMENTS TODAY · THE STACK AS PUBLICLY EVIDENCED",
-   "headline": "Publicly, OnlyFans runs card pay-ins through a third-party processor, pays out on location-dependent rails and holds the bank data itself. No vault is named.",
+   "headline": "Publicly: cards through a third-party processor, payouts on country-dependent rails, bank data held by OnlyFans, and no vault named.",
    "cards": [
     {
      "eyebrow": "PAY-IN",
@@ -574,7 +574,7 @@
    "id": "lesson-2021",
    "type": "table",
    "kicker": "HOW ONLYFANS RUNS PAYMENTS TODAY · THE 2021 LESSON IN ONE SLIDE",
-   "headline": "In 2021 the payout rail, not the checkout, nearly stopped the business. The multi-bank design is the answer, and the vault is what makes it operable.",
+   "headline": "In 2021 the payout banks, not the checkout, forced a six-day ban. The multi-bank design answers it; the vault makes it operable.",
    "columns": [
     "When",
     "What happened",
@@ -629,7 +629,7 @@
    "id": "four-numbers",
    "type": "four_numbers",
    "kicker": "HOW ONLYFANS RUNS PAYMENTS TODAY · PAYMENTS TODAY, IN FOUR NUMBERS",
-   "headline": "Four published rules describe the payment operation a vault has to serve: one fee, one currency, one pending window and one payout clock.",
+   "headline": "Four published rules set the envelope a vault has to serve: one fee, one currency, one pending window and one payout clock.",
    "tiles": [
     {
      "value": "20%",
@@ -641,7 +641,7 @@
     },
     {
      "value": "7 days",
-     "label": "Pending balance before earnings can be withdrawn; 21 in a small number of countries"
+     "label": "Pending balance before withdrawal (21 in a few countries)"
     },
     {
      "value": "3 to 5",
@@ -655,12 +655,12 @@
      "body": "US balances in USD, with no FX leg inside the vault scope."
     },
     {
-     "title": "Two clocks the banks must meet",
+     "title": "Two clocks the design must meet",
      "body": "A 7-day pending window and a 3-to-5-day payout clock define how fast funds must move between the banks in your design."
     },
     {
      "title": "A $20 minimum payout for most methods",
-     "body": "Small, frequent transfers across many accounts, which favours rails like same-day ACH and RTP."
+     "body": "Small, frequent transfers across many accounts, which favors rails like same-day ACH and RTP."
     }
    ],
    "bar": "These four numbers come from your Terms and Help Center. They set the operational envelope for anything underneath.",
@@ -671,13 +671,14 @@
    "id": "d04",
    "type": "divider",
    "num": "04",
-   "title": "How OnlyFans vaults today, and what the RFP has to cover"
+   "title": "What the vault has to hold",
+   "sub": "How OnlyFans vaults today, and what the RFP has to cover."
   },
   {
    "id": "cof-today",
    "type": "cards_row",
    "kicker": "HOW ONLYFANS VAULTS TODAY · KNOWN, INFERRED, UNKNOWN",
-   "headline": "Today the cards live with the processors and the bank accounts live with OnlyFans. The RFP is the moment to put both under one set of keys.",
+   "headline": "Today the cards live with your processor and the bank accounts with OnlyFans. The RFP is the moment to put both under one set of keys.",
    "cards": [
     {
      "eyebrow": "KNOWN · YOUR OWN DOCUMENTS",
@@ -702,8 +703,8 @@
   {
    "id": "five-data",
    "type": "table",
-   "kicker": "WHAT THE VAULT HAS TO HOLD · WHAT THE DESIGN IMPLIES THE VAULT MUST HOLD",
-   "headline": "A vault for this design holds six kinds of secret, and payment cards are the smallest of them by count.",
+   "kicker": "WHAT THE VAULT HAS TO HOLD · SIX DATA CLASSES",
+   "headline": "A vault for this design holds six kinds of secret, and only one of them is a payment card.",
    "columns": [
     "Data class",
     "Where it comes from",
@@ -865,14 +866,15 @@
       "text": "What uptime do you commit to, and how does it fail over?",
       "bold": true
      },
-     "You get a contractual figure and the failover design with the RFP response, not a number on a slide.",
+     "Our published SLA (y.uno/sla) commits to 99.90% monthly availability and a 5-minute response on critical incidents. The contractual figure for OnlyFans, the failover design and rate limits come with the RFP response.",
      {
-      "text": "",
-      "pill": "OPEN"
+      "text": "Engineering",
+      "pill": "CONFIRMED",
+      "pill2": "OPEN"
      }
     ]
    ],
-   "notes": "These are the questions that decide a vault evaluation, and the ones that get tested in a sandbox. Five of the seven are documented today; three of those depend on the proxy, which is in beta and switched on per organization. Two are open and we say so: the token requestor model per network, and the contractual uptime and failover design. On both you get a written answer with the RFP response. Row 3: the proxy overview and guide document the 3-hour window; the Invoke Forward Proxy API reference page states that the security code cannot be injected, and Phase 0 shows the actual behaviour. Row 7: our published SLA annex at y.uno/sla states 99.90% monthly availability and a 5-minute response on critical incidents; the figure that binds is the one in your contract. Eight more questions continue on the next two slides."
+   "notes": "These are the questions that decide a vault evaluation, and the ones that get tested in a sandbox. Six of the seven are documented today; three of those depend on the proxy, which is in beta and switched on per organization. Two are open and we say so: the token requestor model per network, and the contractual uptime and failover design. On both you get a written answer with the RFP response. Row 3: the proxy overview and guide document the 3-hour window; the Invoke Forward Proxy API reference page states that the security code cannot be injected, and Phase 0 shows the actual behavior. Row 7: the published SLA annex is at y.uno/sla; the figure that binds is the one in your contract. Eight more questions continue on the next two slides."
   },
   {
    "id": "questions-2",
@@ -916,9 +918,9 @@
       "text": "Who are your subprocessors, and are your card-network connections direct?",
       "bold": true
      },
-     "A subprocessor list and the connection model for each network come in writing with the RFP response.",
+     "A subprocessor list and the connection model for each card network come in writing with the RFP response (open item 5).",
      {
-      "text": "Security, Product",
+      "text": "Engineering, Security",
       "pill": "OPEN"
      }
     ],
@@ -928,7 +930,7 @@
       "text": "What happens at checkout and at renewal time if the vault is unreachable?",
       "bold": true
      },
-     "Failover between the processors you connect is a routing feature (Monitors). Capture and recurring behaviour during a vault outage comes with the failover design, not asserted here.",
+     "Failover between the processors you connect is a routing feature (Monitors). Capture and recurring behavior during a vault outage comes with the failover design, not asserted here.",
      {
       "text": "Engineering",
       "pill": "CONFIRMED",
@@ -941,7 +943,7 @@
       "text": "Do you capture the network transaction ID when we charge through the proxy on our own processor?",
       "bold": true
      },
-     "For payments Yuno processes, the ID is stored on the token and replayed on every merchant-initiated charge, whichever provider. Through the proxy the stored ID is injected into your request; capturing a new one from your processor's response is open.",
+     "For payments Yuno processes, the ID is stored on the token and replayed on every merchant-initiated charge, whichever provider. Through the proxy the stored ID is injected into your request; capturing a new one from your processor's response is open item 4.",
      {
       "text": "Beta · Product",
       "pill": "CONFIRMED",
@@ -949,7 +951,7 @@
      }
     ]
    ],
-   "notes": "Eight more questions a vault RFP always contains, on two slides. Export file contents, subprocessors and direct connections, behaviour during a vault outage and capturing a new network transaction ID through the proxy. Two of these four are open today and we say so; each has an owner on the open items slide and a written answer in our RFP response."
+   "notes": "Eight more questions a vault RFP always contains, on two slides. Export file contents, subprocessors and direct connections, behavior during a vault outage and capturing a new network transaction ID through the proxy. Two of these four are open today and we say so; each has an owner on the open items slide and a written answer in our RFP response."
   },
   {
    "id": "questions-3",
@@ -993,11 +995,10 @@
       "text": "Can we vault bank accounts and other payment methods, not only cards?",
       "bold": true
      },
-     "Yes. ACH and SEPA details with a mandate record through the enroll API, with no provider involved if you choose; PayPal and several wallets are enrollable. Other methods confirmed per method in writing.",
+     "Yes. ACH and SEPA details with a mandate record through the enroll API, with no provider involved if you choose; PayPal and several wallets are enrollable. Other methods are confirmed per method in writing.",
      {
-      "text": "Product",
-      "pill": "CONFIRMED",
-      "pill2": "OPEN"
+      "text": "",
+      "pill": "CONFIRMED"
      }
     ],
     [
@@ -1006,10 +1007,11 @@
       "text": "Can we bring our own network tokens, or move existing ones in?",
       "bold": true
      },
-     "Yes. A documented import process for network tokens (file over SFTP, including the network transaction ID) and a passthrough mode for tokens you hold. Tokens under another requestor's ID are re-provisioned, as with any vendor.",
+     "Yes. A documented import process for network tokens (file over SFTP, including the network transaction ID) and a passthrough mode for tokens you hold. Which requestor IDs can be imported is confirmed in writing (open item 4).",
      {
-      "text": "",
-      "pill": "CONFIRMED"
+      "text": "Trust & Vault product",
+      "pill": "CONFIRMED",
+      "pill2": "OPEN"
      }
     ],
     [
@@ -1018,7 +1020,7 @@
       "text": "Where does the data live, and which region do we integrate with?",
       "bold": true
      },
-     "Separate production environments for the US (api.y.uno) and EMEA (api.eu.y.uno), on AWS with AES-256 at rest per our trust page. Key management and regional detail come in the security pack with the RFP response.",
+     "Separate production environments for the US (api.y.uno) and EMEA (api.eu.y.uno), on AWS with AES-256 at rest per our trust page. Key management and regions come in the security pack with the RFP response (open item 5).",
      {
       "text": "Engineering, Security",
       "pill": "CONFIRMED",
@@ -1032,17 +1034,17 @@
    "id": "clocks",
    "type": "stats",
    "kicker": "WHAT THE VAULT HAS TO HOLD · FOUR EXTERNAL CLOCKS ALREADY RUNNING",
-   "headline": "Four external clocks set the pace for Phase 1, and none of them is set by a vendor.",
+   "headline": "Four external clocks are already running, and none of them is set by a vendor.",
    "tiles": [
     {
      "label": "PCI DSS 4.0.1",
-     "value": "31 Mar 2025",
-     "caption": "Script controls (6.4.3, 11.6.1) became mandatory."
+     "value": "Mar 2025",
+     "caption": "Script controls (6.4.3, 11.6.1) mandatory since 31 March 2025."
     },
     {
      "label": "GENIUS ACT",
-     "value": "18 Jan 2027",
-     "caption": "Latest effective date, or 120 days after final rules; the OCC yield rule is still proposed."
+     "value": "Jan 2027",
+     "caption": "Effective by 18 January 2027 at the latest; the OCC yield rule is still proposed."
     },
     {
      "label": "MASTERCARD",
@@ -1055,7 +1057,7 @@
      "caption": "Visa Intelligent Commerce, Mastercard Agent Pay and Visa's Trusted Agent Protocol launched."
     }
    ],
-   "bar": "None of these clocks is set by a vendor. They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and the dates behind the phases in Section 08.",
+   "bar": "They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and the dates behind the phases in Section 08.",
    "source": "PCI SSC, Mar 2025; Paul Hastings, Mar 2026; Digital Transactions, Nov 2024; Visa and Mastercard newsrooms, Apr and Oct 2025.",
    "notes": "None of these clocks is set by a vendor. They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and they are the dates we use in Section 08 when we propose the phases."
   },
@@ -1081,8 +1083,8 @@
    "id": "compliance",
    "type": "table",
    "kicker": "WHY YUNO · SECURITY AND COMPLIANCE",
-   "headline": "Yuno meets the security, privacy and resilience requirements that regulated institutions and vault buyers test for.",
-   "source": "Source: y.uno vault and trust pages, y.uno/sla (last update 24 October 2025), status.y.uno, docs.y.uno API environments. Read 8 October 2026. Reports and attestations through our security team.",
+   "headline": "Yuno's published security posture by risk dimension, with the two places where detail still comes with the RFP response marked open.",
+   "source": "Source: y.uno vault, trust and SLA pages; status.y.uno; docs.y.uno API environments. Read 8 October 2026.",
    "columns": [
     "Risk dimension",
     "What a vault buyer asks",
@@ -1121,7 +1123,7 @@
     [
      "Privacy and data location",
      "Personal data handling; where data is processed",
-     "ISO 27701 and GDPR. Separate production environments for the US (api.y.uno) and EMEA (api.eu.y.uno); accounts are not synchronized between regions. Key management and regional detail in the security pack.",
+     "ISO 27701 per our trust page. Separate production environments for the US (api.y.uno) and EMEA (api.eu.y.uno); accounts are not synchronized between regions. Key management and regional detail in the security pack.",
      {
       "text": "Engineering, Security",
       "pill": "CONFIRMED",
@@ -1215,7 +1217,7 @@
     },
     {
      "pill": "CONFIRMED",
-     "eyebrow": "KEEP CURRENT",
+     "eyebrow": "KEEP",
      "title": "Network tokens and account updater",
      "body": "Once activated, network tokens are provisioned for enrolled cards with Visa, Mastercard and American Express. The account updater refreshes reissued Visa and Mastercard cards while the vaulted token stays the same."
     },
@@ -1256,7 +1258,7 @@
      "x": 0,
      "y": 0,
      "w": 100,
-     "h": 160,
+     "h": 225,
      "title": "cards · PCI",
      "body": "number · •••• 3456\nexpiration · ••/27\nholder_name · string\nnetwork_token · DPAN\nnetwork_transaction_id\nThe CVV is never stored.",
      "pill": "CONFIRMED",
@@ -1267,7 +1269,7 @@
      "x": 107,
      "y": 0,
      "w": 100,
-     "h": 160,
+     "h": 225,
      "title": "bank accounts · ACH",
      "body": "type · ACH_ENROLLMENT\nrouting_number · string\nbeneficiary_name · string\naccount_type · enum\nvault_only · true\nIn the enroll API reference. Access rules to confirm.",
      "pill": "CONFIRMED",
@@ -1278,9 +1280,9 @@
      "x": 214,
      "y": 0,
      "w": 100,
-     "h": 160,
+     "h": 225,
      "title": "entities · KYC · KYB",
-     "body": "national_entity · INDIVIDUAL\ntax_id · •••• 6789\ndocument_number · •••• 4421\ndocumentation · KYC files\nonboarding · SUCCEEDED\nTaken by the banking API. Responses return the last four.",
+     "body": "national_entity · INDIVIDUAL\ntax_id · •••• 6789\ndocument_number · •••• 4421\ndocumentation · KYC files\nonboarding · SUCCEEDED\nBanking API. Responses return the last four.",
      "pill": "CONFIRMED",
      "style": "dark"
     },
@@ -1289,7 +1291,7 @@
      "x": 321,
      "y": 0,
      "w": 99,
-     "h": 160,
+     "h": 225,
      "title": "your own tables · PII",
      "body": "customer_records · table\nidentity_documents · table\nprotection · per column\nretention · per record\naccess · per role\nOn our product page. API reference not yet public.",
      "pill": "OPEN",
@@ -1316,7 +1318,7 @@
    "id": "keep-current",
    "type": "diagram",
    "kicker": "THE YUNO TOKEN VAULT · KEEP CURRENT",
-   "headline": "Card on file does not have to break: network tokens and the account updater keep the vaulted token valid across reissues and processors.",
+   "headline": "Network tokens and the account updater keep the vaulted token valid across reissues and processors, so card on file does not break.",
    "tag": [
     "CONFIRMED"
    ],
@@ -1336,36 +1338,36 @@
      "id": "enr",
      "x": 0,
      "y": 22,
-     "w": 110,
-     "h": 56,
+     "w": 90,
+     "h": 74,
      "title": "Card enrolled once",
      "body": "Hosted fields, no charge",
      "style": "outline"
     },
     {
      "id": "vault1",
-     "x": 136,
+     "x": 106,
      "y": 22,
-     "w": 150,
-     "h": 56,
+     "w": 160,
+     "h": 74,
      "title": "Yuno vault",
-     "body": "PAN stays here. Network token provisioned for enrolled cards (Visa, Mastercard, American Express per docs), updated when the card is renewed or reissued",
+     "body": "PAN stays here. A network token is provisioned once per enrolled card (Visa, Mastercard, American Express per docs) and updated on renewal or reissue",
      "style": "blue"
     },
     {
      "id": "psp",
-     "x": 312,
+     "x": 282,
      "y": 22,
-     "w": 108,
-     "h": 56,
+     "w": 138,
+     "h": 74,
      "title": "Any processor you connect",
-     "body": "Token plus cryptogram (Visa, Mastercard). The network transaction ID is stored on the token and sent on every merchant-initiated charge, whichever provider is used",
+     "body": "Token plus cryptogram (Visa, Mastercard). The network transaction ID travels with every merchant-initiated charge",
      "style": "light"
     },
     {
      "id": "l2",
      "x": 0,
-     "y": 100,
+     "y": 116,
      "w": 420,
      "h": 18,
      "title": "LANE 2 · ACCOUNT UPDATER · ASYNCHRONOUS, VISA AND MASTERCARD",
@@ -1375,29 +1377,29 @@
     {
      "id": "old",
      "x": 0,
-     "y": 122,
-     "w": 110,
-     "h": 56,
+     "y": 138,
+     "w": 90,
+     "h": 74,
      "title": "Stored •••• 0193",
-     "body": "exp 09/26, past expiry or account closed, disabled or flagged",
+     "body": "exp 09/26. Past expiry, or account closed, disabled or flagged",
      "style": "outline"
     },
     {
      "id": "vault2",
-     "x": 136,
-     "y": 122,
-     "w": 150,
-     "h": 56,
+     "x": 106,
+     "y": 138,
+     "w": 160,
+     "h": 74,
      "title": "Yuno asks the networks",
      "body": "Independently of the payment flow. Webhook enrollment.update carries the new expiry, last four and reason",
      "style": "blue"
     },
     {
      "id": "new",
-     "x": 312,
-     "y": 122,
-     "w": 108,
-     "h": 56,
+     "x": 282,
+     "y": 138,
+     "w": 138,
+     "h": 74,
      "title": "Updated •••• 7740",
      "body": "exp 09/29. The vaulted token and fingerprint stay the same, so nothing changes on your side",
      "style": "light"
@@ -1449,21 +1451,22 @@
    "cards": [
     {
      "pill": "CONFIRMED",
-     "eyebrow": "IMPORT · CARDS",
-     "title": "From your current gateway or vault",
+     "eyebrow": "IMPORT",
+     "title": "Cards, from your current gateway or vault",
      "body": "Your provider exports; Yuno and the provider exchange the file with PGP keys over SFTP; you map old tokens to vaulted tokens through the API. Mandatory fields: cardholder name, expiry, card number and the provider's card ID. It starts with a viability assessment."
     },
     {
      "pill": "CONFIRMED",
-     "eyebrow": "IMPORT · NETWORK TOKENS",
-     "title": "A separate documented process",
-     "body": "The file includes the network token number, the card's last digits, the network transaction ID and the parent wallet type (Apple Pay, Google Pay), one file per parent type. Tokens under another requestor's ID are re-provisioned, as with any vendor."
+     "pill2": "OPEN",
+     "eyebrow": "IMPORT",
+     "title": "Network tokens, a separate documented process",
+     "body": "The file includes the network token number, the card's last digits, the network transaction ID and the parent wallet type (Apple Pay, Google Pay), one file per parent type. Which requestor IDs can be imported is confirmed in writing (open item 4)."
     },
     {
      "pill": "CONFIRMED",
      "pill2": "OPEN",
-     "eyebrow": "EXPORT · YOUR EXIT",
-     "title": "Written request, encrypted file",
+     "eyebrow": "EXPORT",
+     "title": "Your exit: written request, encrypted file",
      "body": "Four written items, the recipient's current PCI DSS attestation, a PGP key from the recipient, a Yuno-hosted SFTP. The documented file holds cardholder name, card number, token and expiry. Network transaction IDs and network tokens are not in it today: open item 4."
     }
    ],
@@ -1507,7 +1510,7 @@
    "right": {
     "title": "AS THE DESTINATION RECEIVES IT",
     "code": "POST https://api.provider.example/v1/payouts\n{\n  \"amount\": 2500,\n  \"number\": \"4821 •••• •••• 0193\",\n  \"name\": \"ANA SOUZA\"\n}",
-    "caption": "Destination and body are illustrative; header and expression syntax are as documented. The full card number is masked here for the slide."
+    "caption": "Destination and body illustrative; header and expression syntax as documented. Card number masked for the slide."
    },
    "side": {
     "header": "WHAT YOU GET",
@@ -1622,39 +1625,39 @@
     },
     {
      "id": "accA",
-     "x": 246,
+     "x": 240,
      "y": 0,
-     "w": 92,
+     "w": 104,
      "h": 50,
      "title": "Account · connection A",
-     "body": "account and routing number",
+     "body": "Account and routing number",
      "style": "light"
     },
     {
      "id": "accB",
-     "x": 246,
+     "x": 240,
      "y": 60,
-     "w": 92,
+     "w": 104,
      "h": 50,
      "title": "Account · connection B",
-     "body": "account and routing number",
+     "body": "Account and routing number",
      "style": "light"
     },
     {
      "id": "accC",
-     "x": 246,
+     "x": 240,
      "y": 120,
-     "w": 92,
+     "w": 104,
      "h": 50,
      "title": "Account · connection C",
-     "body": "account and routing number",
+     "body": "Account and routing number",
      "style": "light"
     },
     {
      "id": "transfers",
-     "x": 356,
+     "x": 354,
      "y": 40,
-     "w": 64,
+     "w": 66,
      "h": 90,
      "title": "Transfers",
      "body": "ACH: standard, same day\nWire and RTP\nBook transfers",
@@ -1733,20 +1736,20 @@
    "cards": [
     {
      "pill": "CONFIRMED",
-     "eyebrow": "PER CALL · BANKING",
-     "title": "Your policy names the provider",
+     "eyebrow": "PER CALL",
+     "title": "Banking: your policy names the provider",
      "body": "Every onboarding request carries the provider connection it should run on. Your own allocation logic picks the bank. Yuno executes on it and reports status back by webhook."
     },
     {
      "pill": "CONFIRMED",
-     "eyebrow": "BY RULE · CARD PAYMENTS",
-     "title": "Rules you configure",
+     "eyebrow": "BY RULE",
+     "title": "Cards: rules you configure",
      "body": "Conditions on country, amount, BIN, brand and your own metadata. Percentage splits. Fallback steps on decline, error rate or timeout. Monitors that move traffic away and bring it back."
     },
     {
      "pill": "OPEN",
-     "eyebrow": "BY RULE · BANKS AND ISSUERS",
-     "title": "The same rules for accounts",
+     "eyebrow": "BY RULE",
+     "title": "Banks and issuers: the same rules for accounts",
      "body": "Allocating creators across banks and issuers by rules you set is what we described to you. It is not in the public API reference yet. Owner: Yuno product, in writing with the RFP response."
     }
    ],
@@ -1816,7 +1819,7 @@
      "w": 205,
      "h": 70,
      "title": "Yuno · vault",
-     "body": "Holds the data every provider needs: KYC, SSN and tax IDs, bank details, W-9s and cards. Collected once, sent to any provider through the proxy.",
+     "body": "Holds the data every provider needs: KYC, tax IDs, bank details, W-9s and cards. Collected once, reused for every provider you add; cards forwarded through the proxy.",
      "style": "blue"
     },
     {
@@ -1846,7 +1849,7 @@
      "w": 98,
      "h": 58,
      "title": "Transfer rails",
-     "body": "ACH and wire",
+     "body": "ACH, wire and RTP",
      "style": "light"
     },
     {
@@ -1922,7 +1925,7 @@
    "source": "Product direction, not a delivery commitment. Rule-based allocation, the US banks and issuers behind the API, and the yield providers are open items 2, 3 and 6 on slide 54.",
    "cols": [
     {
-     "header": "YOU SET THE RULES · ONLYFANS DECIDES, YUNO RUNS IT",
+     "header": "YOU SET THE RULES",
      "items": [
       {
        "title": "Write the policy once",
@@ -1943,7 +1946,7 @@
      ]
     },
     {
-     "header": "NO SINGLE POINT OF FAILURE · BACKUP BANKS READY BEFORE YOU NEED THEM",
+     "header": "NO SINGLE POINT OF FAILURE",
      "items": [
       {
        "title": "Backup accounts opened at sign-up",
@@ -1974,7 +1977,7 @@
    "source": "Product direction, not a delivery commitment. Rule-based allocation, the US banks and issuers behind the API, and the yield providers are open items 2, 3 and 6 on slide 54.",
    "cols": [
     {
-     "header": "YIELD · TWO WAYS TO EARN ON IDLE BALANCES",
+     "header": "YIELD ON IDLE BALANCES",
      "items": [
       {
        "title": "Treasury-backed balances",
@@ -1991,7 +1994,7 @@
      ]
     },
     {
-     "header": "PLUGGABLE ISSUERS · ADD OR SWAP CARD ISSUERS LIKE ANY OTHER CONNECTION",
+     "header": "PLUGGABLE ISSUERS",
      "items": [
       {
        "title": "Issuers connect like PSPs and banks",
@@ -1999,7 +2002,7 @@
       },
       {
        "title": "No new KYC from the creator",
-       "body": "The vault already holds the creator's data, so a new issuer needs no new KYC and no change to your integration."
+       "body": "The vault already holds the creator's verified data, so a new issuer's onboarding can reuse it instead of asking the creator again."
       },
       {
        "title": "Swap without a project",
@@ -2052,8 +2055,8 @@
    "id": "versus-model",
    "type": "comparison_grid",
    "kicker": "VERSUS A STANDALONE VAULT · THE MODEL",
-   "headline": "One project instead of two: what stays on your roadmap with a standalone vault, with an orchestrator on top, and with Yuno.",
-   "quote": "\"VGS powers orchestration, but does not act as the orchestrator.\" verygoodsecurity.com · Basis Theory's vault \"operates independently of any payment processor or orchestration layer.\" 14 October 2025",
+   "headline": "One project instead of two: what stays on your roadmap under each of the three models.",
+   "quote": "\"VGS powers orchestration, but does not act as the orchestrator.\" verygoodsecurity.com, read 8 October 2026",
    "legend": [
     "Stays on your roadmap",
     "Partly covered",
@@ -2066,7 +2069,7 @@
     },
     {
      "header": "OPTION B",
-     "sub": "Standalone vault, plus an orchestrator on top"
+     "sub": "Vault plus an orchestrator on top"
     },
     {
      "header": "OPTION C · YUNO",
@@ -2111,8 +2114,8 @@
      ]
     },
     {
-     "label": "Provider connections, built and maintained",
-     "sub": "PSPs, acquirers, banks, issuers",
+     "label": "Provider connections",
+     "sub": "Built and maintained: PSPs, acquirers, banks, issuers",
      "cells": [
       {
        "state": "open",
@@ -2129,8 +2132,8 @@
      ]
     },
     {
-     "label": "Bank accounts, transfers and payouts by API",
-     "sub": "Entities, onboarding, accounts, ACH, wire, RTP, payouts",
+     "label": "Accounts, transfers, payouts",
+     "sub": "Entities, onboarding, ACH, wire, RTP, payouts by API",
      "cells": [
       {
        "state": "open",
@@ -2147,8 +2150,8 @@
      ]
     },
     {
-     "label": "Vendors, contracts and incident ownership",
-     "sub": "Who you call when a creator cannot be paid",
+     "label": "Vendors and incidents",
+     "sub": "Contracts, and who you call when a creator cannot be paid",
      "cells": [
       {
        "state": "open",
@@ -2172,7 +2175,7 @@
     },
     {
      "label": "Covered or partly",
-     "value": "3 of 5"
+     "value": "4 of 5"
     },
     {
      "label": "Covered or partly",
@@ -2450,7 +2453,7 @@
      }
     ]
    ],
-   "notes": "Basis Theory on its own. It is a strong vault, and it knows your sector: its creator-economy page quotes a creator platform whose processor shut it off without warning. It leads us on four rows today: token types for personal data, a proxy with transforms and serverless code, card issuing guides, and a clear statement that it creates the token requestor ID for you. We lead on the four rows above the vault: a rules product for routing and failover, processor integrations that are already built, a banking API, and payouts. Two questions worth asking them: who writes and maintains the routing rules they market, and what the cost is at your scale. On 8 October 2026 their Payments Routing guide still read \"This guide is currently under construction.\" Their network tokens page lists Pagos as the subprocessor behind network tokens and the account updater, which is worth a question about subprocessors. Their public list price is 995 dollars a month for 20,000 stored tokens, then 5 cents per additional token each month; ask for the enterprise schedule at your volume."
+   "notes": "Basis Theory on its own. It is a strong vault, and it knows your sector: its creator-economy page quotes a creator platform whose processor shut it off without warning. It leads us on four rows today: token types for personal data, a proxy with transforms and serverless code, card issuing guides, and a clear statement that it creates the token requestor ID for you. We lead on the four rows above the vault: a rules product for routing and failover, processor integrations that are already built, a banking API, and payouts. Two questions worth asking them: who writes and maintains the routing rules they market, and what the cost is at your scale. On 8 October 2026 their Payments Routing guide still read \"This guide is currently under construction.\" Their network tokens page names Pagos as the subprocessor behind network tokens and the account updater; ask both of us for the equivalent list. Their public list price is 995 dollars a month for 20,000 stored tokens, then 5 cents per additional token each month; ask for the enterprise schedule at your volume."
   },
   {
    "id": "versus-vgs",
@@ -2650,7 +2653,7 @@
     ],
     [
      "4",
-     "Token requestor model for each card network, scheme activation per network, and export of network transaction IDs, bank and entity data",
+     "Token requestor model and scheme activation per network; network transaction IDs captured through the proxy and included in the export, with bank and entity data",
      "Together they decide what you can take with you if you ever change vault.",
      {
       "text": "Trust & Vault product, Legal",
@@ -2659,7 +2662,7 @@
     ],
     [
      "5",
-     "Contractual uptime, failover design, rate limits and the subprocessor list",
+     "Contractual uptime, failover design, rate limits, and the security pack: subprocessors, connection model per card network, key management and regions",
      "A vault in the payment path must never be the weak point.",
      {
       "text": "Engineering, Security",
@@ -2668,7 +2671,7 @@
     ],
     [
      "6",
-     "Stablecoin conversion providers",
+     "Yield and stablecoin partners (Jiko, Coinbase, Triple-A): confirmation of the connections and their terms",
      "Yield on balances is part of your design, and outside the vault itself.",
      {
       "text": "Partnerships",
@@ -2805,6 +2808,14 @@
       "text": "",
       "pill": "NOT IN DOCS"
      }
+    ],
+    [
+     "Agent credentials",
+     "Visa Intelligent Commerce and Mastercard Agent Pay credentials are not in our documentation today.",
+     {
+      "text": "",
+      "pill": "NOT IN DOCS"
+     }
     ]
    ],
    "notes": "Appendix. These are the limits as they stand today, so nobody on your side discovers them later. The two that matter most for an issuing use case are the first two: there is no inbound proxy in the public reference, and a card number that comes back from your issuer is redacted rather than vaulted. If your Phase 1 needs to show an issued card to a creator or set a PIN, that is a gap for us today and a strength of a standalone vault."
@@ -2851,7 +2862,7 @@
     {
      "eyebrow": "INDRIVE · MOBILITY",
      "title": "90% payment approval rate",
-     "body": "Expanded into new countries within eight months on one integration."
+     "body": "Expanded into new countries within eight months."
     },
     {
      "eyebrow": "RAPPI · DELIVERY",

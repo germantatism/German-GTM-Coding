@@ -84,6 +84,7 @@ def report(deck, slides, start=1, engine_prefix=('n', 'c')):
             if built and 'shape' in el and E.text_of(el).strip():
                 x, y, w, h = x + E.INSET_X, y + E.INSET_Y, w - 2 * E.INSET_X, h - 2 * E.INSET_Y
             if 'image' in el and w >= 719 and abs(h) >= 404: continue   # full bleed
+            if 'line' in el: continue                                     # connectors are drawn with signed scale; geometry is not a box
             if x < -0.6 or y < -0.6 or x + w > E.PAGE_W + 0.6 or y + h > E.PAGE_H + 0.6:
                 probs.append(f"OUT {el['objectId']} ({x:.0f},{y:.0f},{w:.0f}x{h:.0f}) '{E.text_of(el).strip()[:30]}'")
             t = E.text_of(el).strip()
@@ -94,7 +95,7 @@ def report(deck, slides, start=1, engine_prefix=('n', 'c')):
                     probs.append(f"OVERFLOW {el['objectId']} needs {r[0]:.0f} pt ({r[1]} lines) in {r[2]:.0f} pt: '{t[:40]}'")
                 if slide_built:
                     small = [sz for _, sz, _ in runs_of(el) if sz and sz < E.MIN_FONT - 0.01]
-                    if small: probs.append(f"FONT {el['objectId']} {min(small)} pt '{t[:30]}'")
+                    if small: probs.append(f"FONT{'' if built else '(template text)'} {el['objectId']} {min(small)} pt '{t[:30]}'")
         for i in range(len(texts)):
             for j in range(i + 1, len(texts)):
                 a, b = texts[i], texts[j]

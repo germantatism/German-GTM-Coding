@@ -16,7 +16,7 @@ SLIDES["exec"] = {
     "headline": "Executive summary",
     "left_header": "WHERE ONLYFANS STANDS TODAY",
     "left_items": [
-        {"title": "A payout business at scale, run lean", "body": "FY2025 accounts filed 20 September 2026: $1.55B net revenue, $6.3B paid to creators in the year, more than $30B since 2016, 47 employees. Anything added underneath must run by configuration, not headcount."},
+        {"title": "A payout business at scale, run lean", "body": "FY2025 accounts (year to 30 November 2025), as reported in August 2026: $1.55B net revenue, $6.3B paid to creators in the year, more than $30B since 2016, 47 employees. Anything added underneath must run by configuration, not headcount."},
         {"title": "An RFP for a token vault, with a bigger design behind it", "body": "One creator account on top. Two to five banks, pluggable card issuers and bank-transfer providers underneath, so no single partner can cut a creator off. US balances first, banking as a service next, stablecoin yield on balances."},
         {"title": "The question you asked most", "body": "Who decides which bank, issuer and rail each creator lands on. The answer in this deck: OnlyFans does. The mechanism is shown in writing, with what exists today and what is open."},
         {"title": "A vault alone stores the credential", "body": "Your design also needs the rules, the provider connections, the accounts and the money movement above it. With a standalone vault, all of that stays on your roadmap."},
@@ -27,7 +27,7 @@ SLIDES["exec"] = {
         {"title": "A PROXY TO ANY DESTINATION YOU CHOOSE", "body": "Stored card data forwarded to providers Yuno does not orchestrate, including issuers and your own acquiring connections, behind an allowlist, mutual TLS and audit logs."},
         {"title": "THE DECISION LAYER, WITH YOUR RULES", "body": "Per call for banking today, by rule for card payments. Entities, onboarding, accounts and transfers across providers through one API, with payouts and split payments on the same platform."},
     ],
-    "source": "Fenix International Ltd accounts to 30 Nov 2025 (Companies House, filed 20 Sep 2026) as reported by Tubefilter, 26 Aug 2026; design as described by OnlyFans to Yuno, Oct 2026.",
+    "source": "Fenix International Ltd FY2025 accounts as reported by Tubefilter, 26 Aug 2026; design as described by OnlyFans to Yuno, Oct 2026.",
     "notes": "The summary before the detail. Your filed numbers say the payout side alone is more than six billion dollars a year, operated by a team of 47. You opened an RFP for a token vault, but the design you described needs more than storage: a layer that decides where each creator lands and the connections to execute on it. This deck answers both, and it says plainly where a standalone vault leads today and what we still owe you in writing.",
 }
 
@@ -35,14 +35,14 @@ SLIDES["exec"] = {
 SLIDES["industry-glance"] = {
     "id": "industry-glance", "type": "stats",
     "kicker": K02 + " · CREATOR BANKING AT A GLANCE",
-    "headline": "Creator platforms are becoming the creator's bank. OnlyFans brings a longer payout record to that shift than anyone launching it.",
+    "headline": "Creator platforms are becoming the creator's bank. OnlyFans brings a ten-year, $30B payout record to that shift.",
     "tiles": [
         {"label": "CREATOR ECONOMY, 2027", "value": "$480B", "caption": "Addressable market projected for 2027, from about $250B in 2023 (Goldman Sachs Research)."},
         {"label": "GLOBAL CREATORS", "value": "50M", "caption": "Growing 10% to 20% a year (Goldman Sachs Research)."},
-        {"label": "PAID TO CREATORS SINCE 2016", "value": "$30B+", "caption": "OnlyFans, per the FY2025 accounts as reported in August 2026."},
+        {"label": "PAID TO CREATORS SINCE 2016", "value": "$30B+", "caption": "OnlyFans, FY2025 accounts as reported in August 2026."},
         {"label": "ARCHITECT CAPITAL, MAY 2026", "value": "$535M", "caption": "About 16% of Fenix at a $3.15B valuation, to develop new financial services and products for creators."},
     ],
-    "paragraph": "**Who launched what, 2025 to 2026.** Karat Banking (May 2025): creator business banking with Visa and Grasshopper Bank, more than $1.5B of credit and advances issued through its creator card. Manifest with Mastercard (July 2026): a business debit Mastercard for creators; Mastercard calls creators \"some of today's most dynamic small businesses\". OnlyFans with Architect (May 2026): Architect's founder joined the Fenix board on 8 May 2026 with a stated plan to \"add financial products for creators\" and to help creators \"address challenges with things like payment processors and banks\".",
+    "paragraph": "**Who launched what.** Karat (May 2025): creator business banking with Visa and Grasshopper Bank, $1.5B+ of credit and advances issued. Manifest (July 2026): a business debit Mastercard for creators. OnlyFans with Architect (May 2026): Architect's founder joined the Fenix board on 8 May 2026 with a stated plan to add financial products for creators.",
     "bar": "The money is moving from front-end creator tools to the financial stack underneath. A platform that already knows the creator's income is the natural bank partner, and the credentials that make that work need one neutral home.",
     "source": "Goldman Sachs Research, Apr 2023; Tubefilter, 28 May 2025 and 14 Aug 2026; PYMNTS, 23 Jul 2026; Bloomberg, 8 May 2026; Companies House officer appointments, read 8 Oct 2026.",
     "notes": "The creator economy is roughly doubling between 2023 and 2027 on Goldman's numbers, and the money is moving from front-end tools to the financial stack underneath. Karat and Manifest show the pattern: a card, a bank partner and a platform that already knows the creator's income. OnlyFans has paid out more than 30 billion dollars, which is the kind of record a bank partner can underwrite, and Architect's investment is explicitly about building financial services on it.",
@@ -52,12 +52,12 @@ SLIDES["industry-glance"] = {
 SLIDES["no-single-bank"] = {
     "id": "no-single-bank", "type": "cards_row",
     "kicker": K02 + " · WHY A MULTI-BANK ARCHITECTURE",
-    "headline": "Platforms that depended on one bank, one network or one middleware learned the cost in 2020, 2021 and 2024. Your design makes redundancy the product.",
+    "headline": "One bank, one network or one middleware was a kill switch in 2020, 2021 and 2024. Your design makes redundancy the product.",
     "cards": [
         {"eyebrow": "DEC 2020 · ONE NETWORK DECISION", "title": "Card acceptance switched off in a day", "body": "Mastercard terminated and Visa suspended card acceptance at a major adult platform within a day of a newspaper column; Discover followed."},
-        {"eyebrow": "AUG 2021 · ONE PAYOUT BANK", "title": "A content ban announced, then reversed", "body": "OnlyFans announced a ban for 1 October 2021 after banks were \"broadly rejecting money transfers and closing related accounts\". Reversed six days later once assurances were secured."},
+        {"eyebrow": "AUG 2021 · THE PAYOUT BANKS", "title": "A content ban announced, then reversed", "body": "OnlyFans announced a ban for 1 October 2021 after banks were \"broadly rejecting money transfers and closing related accounts\". Reversed six days later once assurances were secured."},
         {"eyebrow": "2024 · ONE MIDDLEWARE LEDGER", "title": "Customers locked out of their own money", "body": "Synapse's collapse left partner banks holding about $180M against $265M owed and more than 100,000 customers locked out. The Federal Reserve ordered Evolve to fix fintech partnership risk management on 14 June 2024."},
-        {"eyebrow": "2024 TO 2025 · THE REGULATORS' ANSWER", "title": "Third-party risk became the exam question", "body": "FDIC consent orders on Lineage, Sutton and Piermont for third-party risk; an August 2025 executive order directing regulators to drop \"reputation risk\" from bank exams."},
+        {"eyebrow": "2024 TO 2025 · REGULATORS", "title": "Third-party risk became the exam question", "body": "FDIC consent orders on Lineage, Sutton and Piermont for third-party risk; an August 2025 executive order directing regulators to drop \"reputation risk\" from bank exams."},
     ],
     "bar": "**What this means for the vault.** Credentials for every bank, issuer and transfer provider must sit in one place, independent of any of them, so that swapping a partner is a configuration change and losing one is a reallocation, not an outage.",
     "source": "Bloomberg, 10 Dec 2020; Fortune, 25 Aug 2021; Banking Dive, 12 Jun 2024; Federal Reserve, 14 Jun 2024; FDIC orders Jan to Feb 2024; executive order of 7 Aug 2025.",
@@ -68,15 +68,15 @@ SLIDES["no-single-bank"] = {
 SLIDES["vault-2026"] = {
     "id": "vault-2026", "type": "cards_row",
     "kicker": K02 + " · WHAT A TOKEN VAULT IS EXPECTED TO DO IN 2026",
-    "headline": "In 2026 a vault is judged on five things beyond storing a card: script controls, network tokens, lifecycle updates, agent credentials, stablecoin rules.",
+    "headline": "A 2026 vault is judged on more than storage: script controls, network tokens, lifecycle updates, agent credentials, stablecoin rules.",
     "cards": [
         {"eyebrow": "PCI DSS 4.0.1", "title": "Script controls are live", "body": "Future-dated requirements became mandatory on 31 March 2025. Requirement 6.4.3 covers payment-page script authorization, integrity and monitoring; 11.6.1 covers detection of unauthorized page changes. SAQ A merchants must still confirm the site is not susceptible to script attacks."},
         {"eyebrow": "NETWORK TOKENS", "title": "The default credential", "body": "More than 16 billion Visa tokens issued. More than 30% of Mastercard transactions are tokenized, with a stated goal of all online transactions by 2030 and approval gains of three to six percentage points."},
         {"eyebrow": "ACCOUNT UPDATER", "title": "Cards that keep billing after reissue", "body": "Issuers push reissued numbers and expiries to Visa Account Updater, and updates are shared with the Visa Token Vault, so a card on file keeps billing after reissue."},
-        {"eyebrow": "AGENT CREDENTIALS", "title": "A new token type since 2025", "body": "Visa Intelligent Commerce (30 April 2025) and Mastercard Agent Pay (29 April 2025) issue tokenized credentials for AI agents. Visa, April 2026: agent platforms should \"avoid being locked into a single token vault/vendor\"."},
+        {"eyebrow": "AGENT CREDENTIALS", "title": "A new token type since 2025", "body": "Visa Intelligent Commerce (30 April 2025) and Mastercard Agent Pay (29 April 2025) issue tokenized credentials for AI agents. Visa, April 2026: agent platforms should avoid being locked into a single token vault or vendor."},
     ],
-    "bar": "**Stablecoin balances.** The GENIUS Act (signed 18 July 2025) bars permitted issuers from paying holders \"any form of interest or yield\" for holding a stablecoin. It does not define \"holder\" or explicitly stop platforms from paying rewards; the OCC proposed on 25 February 2026 to presume a violation when yield flows through an issuer's affiliate or \"related third party\", and no final rule had issued by 8 October 2026. Conversion and custody credentials should stay portable while that settles.",
-    "source": "PCI SSC blog, 26 Mar 2025; Visa newsroom, Jun 2024, Apr 2025, Apr 2026; Mastercard newsroom, Apr 2025; Digital Transactions, 14 Nov 2024; CRS IF13174, 6 Mar 2026; Paul Hastings, 12 Mar 2026.",
+    "bar": "**Stablecoin balances.** The GENIUS Act (18 July 2025) bars permitted issuers from paying holders \"any form of interest or yield\" and does not define \"holder\". The OCC proposed on 25 February 2026 to presume a violation when yield flows through an affiliate or related third party; no final rule by 8 October 2026. Keep conversion and custody credentials portable while that settles.",
+    "source": "PCI SSC, Mar 2025; Visa and Mastercard newsrooms, 2024 to 2026; Digital Transactions, Nov 2024; CRS IF13174, Mar 2026; Paul Hastings, Mar 2026.",
     "notes": "Storing a card number safely is table stakes. The questions that separate vaults in 2026 are whether the stored credential keeps working after reissue, whether it can be presented as a network or agent token, and whether the script controls keep you at SAQ A. The stablecoin point matters for your yield feature: today the prohibition sits on issuers, the status of platform-paid rewards is an open regulatory question, and the design should keep conversion and custody credentials portable while that settles.",
 }
 
@@ -84,21 +84,21 @@ SLIDES["vault-2026"] = {
 SLIDES["vault-market"] = {
     "id": "vault-market", "type": "table",
     "kicker": K02 + " · WHERE THE INDEPENDENT VAULT MARKET STANDS",
-    "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, data privacy vault. The RFP should state which one it is buying.",
+    "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, data privacy vault. State which one the RFP buys.",
     "columns": ["Vendor", "HQ", "Founded", "Funding (public)", "Shape"],
     "col_widths": [0.18, 0.20, 0.10, 0.28, 0.24],
     "header_style": "dark", "font_size": 7.5, "bold_first_col": True, "zebra": True,
     "rows": [
         ["VGS", "San Francisco", "2015", "About $104M raised, last priced round 2020", "Pure payment vault"],
-        ["Basis Theory", "California (HQ not stated by the company)", "2020", "About $50M; $33M Series B, Oct 2025", "Pure payment vault"],
+        ["Basis Theory", "Not stated by the company", "2020", "About $50M; $33M Series B, Oct 2025", "Pure payment vault"],
         ["Spreedly", "Durham, North Carolina", "2008", "$75M growth round, Nov 2019; about $81M total", "Vault inside an orchestrator"],
         ["IXOPAY (TokenEx)", "Tulsa and Vienna", "Merger announced 17 Apr 2024", "K1-backed", "Vault inside an orchestrator"],
         ["Skyflow", "Palo Alto", "2019", "About $105M, last round Mar 2024", "Data privacy vault for PCI, PII and AI data"],
-        ["Evervault", "Dublin", "2018", "$46M; $25M Series B, Mar 2026", "Encryption-first payment vault"],
+        ["Evervault", "Dublin", "2019", "$46M; $25M Series B, Mar 2026", "Encryption-first payment vault"],
         ["Yuno", "16 offices, 5 continents", "2021", "About $80M; $45M Series B, Aug 2026", "Vault inside an operating system for payments and banking connectivity"],
     ],
     "note": "Yuno's vault is described in Section 06 and compared row by row with VGS and Basis Theory in Section 07. Funding figures are third-party estimates where the vendor does not publish them.",
-    "source": "Vendor pages and press releases, read 7 and 8 Oct 2026; Spreedly blog, Nov 2019; BusinessWire, Mar 2024; Crowdfund Insider, Mar 2026; y.uno About and newsroom; CB Insights profiles (estimates).",
+    "source": "Vendor pages and press releases, read 7 and 8 Oct 2026; y.uno About and newsroom; CB Insights profiles (estimates).",
     "notes": "We list the market as it is, including vendors we partner with. The shape matters more than the logo: a pure vault keeps routing out of scope by design, an orchestrator's vault assumes its routing, and a data privacy vault is built for personal data first. Your design needs card, bank, identity and issued-card objects under one key set plus a decision layer you control, which is the lens we apply in Section 07.",
 }
 
@@ -106,20 +106,20 @@ SLIDES["vault-market"] = {
 SLIDES["of-numbers"] = {
     "id": "of-numbers", "type": "scale",
     "kicker": K03 + " · ONLYFANS IN NUMBERS",
-    "headline": "OnlyFans moves more than $6 billion a year to 2.5 million creators with 47 employees. Any new payments layer has to scale without headcount.",
+    "headline": "More than $6 billion a year to 2.5 million active creators, run by 47 people: anything underneath must scale without headcount.",
     "left_header": "THE SCALE TODAY · FY ENDED 30 NOV 2025",
     "tiles": [{"value": "$1.55B", "label": "Net revenue, up 10%"}, {"value": "$6.3B", "label": "Paid to creators in the year"}],
     "left_note": "**$714M** pre-tax profit, up 5%. **$30B+** paid to creators since 2016. **5,076** creators have earned $1M or more since 2016. FY2024 for reference: $7.2B of fan payments, $1.41B revenue, $5.8B paid to creators.",
     "mid_header": "WHERE THE COMPANY IS HEADING",
     "mid_items": [
         "Architect Capital bought about 16% for $535M at a $3.15B valuation (May 2026) to develop new financial services and products for creators.",
-        "Architect's founder joined the Fenix International board on 8 May 2026, alongside the CEO and the owner; the CFO has been a director since December 2021.",
+        "Architect's founder joined the Fenix International board on 8 May 2026, alongside the CEO; the CFO has been a director since December 2021.",
         "The stated direction: add financial products for creators and address their challenges with payment processors and banks.",
     ],
     "right_header": "THE FOOTPRINT",
     "right_body": "**2.5M** active creators and **132M** active fan accounts in FY2025, as reported from the filing. **47** employees. Revenue by geography, latest public split (FY2023): **66%** United States, **18%** UK and Europe, **16%** rest of world. Every fan payment and creator payout is in USD.",
     "bar": "A payout operation above $6 billion a year across millions of accounts, run by a team of 47: whatever sits underneath has to be operated by configuration, not by people.",
-    "source": "Fenix International Ltd group accounts to 30 Nov 2025 (Companies House, filed 20 Sep 2026) as reported by Tubefilter, 26 Aug 2026 and Eastern Eye, 25 Aug 2026; FY2024 per RTÉ, 22 Aug 2025; FY2023 geography via Mostly Metrics; Bloomberg, 8 May 2026; Companies House officers, read 8 Oct 2026.",
+    "source": "Fenix International FY2025 accounts as reported by Tubefilter and Eastern Eye, Aug 2026; FY2024 per RTÉ, Aug 2025; FY2023 split via Mostly Metrics; Bloomberg, May 2026.",
     "notes": "These are your own filed numbers, as reported in August. We show them to size the vault conversation: the payout side alone is more than six billion dollars a year across millions of accounts, run by a team of 47. Anything added underneath has to be operated by configuration, not by people. The geography split is the latest one published in your accounts; if you have a newer one we will use it.",
 }
 
@@ -127,7 +127,7 @@ SLIDES["of-numbers"] = {
 SLIDES["traffic"] = {
     "id": "traffic", "type": "traffic_list",
     "kicker": K03 + " · WHERE DEMAND SITS",
-    "headline": "The United States is about two thirds of revenue and more than 40% of traffic, which is why a US-first vault scope is the right Phase 1.",
+    "headline": "The US was two thirds of revenue in the last published split and is over 40% of traffic today, so US-first is the right Phase 1.",
     "rows": [
         {"country": "United States", "pct": "42.78%"}, {"country": "United Kingdom", "pct": "5.41%"},
         {"country": "Germany", "pct": "5.32%"}, {"country": "Canada", "pct": "5.27%"}, {"country": "Spain", "pct": "2.96%"},
@@ -138,7 +138,7 @@ SLIDES["traffic"] = {
         {"title": "16% Rest of world", "body": "$214M."},
         {"title": "One currency", "body": "All fan payments and creator earnings are transacted in USD, per the Terms of Service."},
     ]},
-    "source": "Share of web traffic by country: Similarweb, onlyfans.com, September 2026 (estimate, top five as published). Revenue split: Fenix International FY2023 accounts via Mostly Metrics. OnlyFans Terms of Service, last updated Aug 2024.",
+    "source": "Traffic: Similarweb, onlyfans.com, Sept 2026 (estimate, top five). Revenue split: Fenix FY2023 accounts via Mostly Metrics. OnlyFans Terms, Aug 2024.",
     "notes": "Your traffic is global but your revenue is American, and your pricing is in dollars everywhere. That makes US balances the right first scope for creator accounts, and it also means the vault must be ready for European and Canadian creators in Phase 2 without a second architecture. The geography split is the latest one published in your accounts; if you have a newer one we will use it.",
 }
 
@@ -146,7 +146,7 @@ SLIDES["traffic"] = {
 SLIDES["stack"] = {
     "id": "stack", "type": "cards_row",
     "kicker": K03 + " · THE STACK AS PUBLICLY EVIDENCED",
-    "headline": "Publicly, OnlyFans runs card pay-ins through a third-party processor, pays out on location-dependent rails and holds the bank data itself. No vault is named.",
+    "headline": "Publicly: cards through a third-party processor, payouts on country-dependent rails, bank data held by OnlyFans, and no vault named.",
     "cards": [
         {"eyebrow": "PAY-IN", "title": "Cards, in USD, through an approved provider", "body": "\"All Fan Payments will be received and processed by a third-party payment provider we approve.\" Charged in USD; subscriptions renew automatically on the stored card; a wallet can be set as the primary method for rebills. Descriptors: \"OnlyFans\", \"OF\", \"OnlyFans.com\"."},
         {"eyebrow": "PAYOUTS", "title": "Rails that depend on where the creator lives", "body": "Method \"will depend on where you live\"; $20 minimum for most methods; manual or automatic daily, weekly or monthly where available. Earnings pend 7 days, 21 in a small number of high-reversal countries; payouts within 3 to 5 business days, up to 10."},
@@ -162,7 +162,7 @@ SLIDES["stack"] = {
 SLIDES["lesson-2021"] = {
     "id": "lesson-2021", "type": "table",
     "kicker": K03 + " · THE 2021 LESSON IN ONE SLIDE",
-    "headline": "In 2021 the payout rail, not the checkout, nearly stopped the business. The multi-bank design is the answer, and the vault is what makes it operable.",
+    "headline": "In 2021 the payout banks, not the checkout, forced a six-day ban. The multi-bank design answers it; the vault makes it operable.",
     "columns": ["When", "What happened", "What it shows"],
     "col_widths": [0.14, 0.52, 0.34],
     "header_style": "dark", "font_size": 7.5, "bold_first_col": True, "zebra": True,
@@ -183,18 +183,18 @@ SLIDES["lesson-2021"] = {
 SLIDES["four-numbers"] = {
     "id": "four-numbers", "type": "four_numbers",
     "kicker": K03 + " · PAYMENTS TODAY, IN FOUR NUMBERS",
-    "headline": "Four published rules describe the payment operation a vault has to serve: one fee, one currency, one pending window and one payout clock.",
+    "headline": "Four published rules set the envelope a vault has to serve: one fee, one currency, one pending window and one payout clock.",
     "tiles": [
         {"value": "20%", "label": "Platform fee deducted from each fan payment"},
         {"value": "1", "label": "Currency: every fan payment and creator payout is in USD"},
-        {"value": "7 days", "label": "Pending balance before earnings can be withdrawn; 21 in a small number of countries"},
+        {"value": "7 days", "label": "Pending balance before withdrawal (21 in a few countries)"},
         {"value": "3 to 5", "label": "Business days for a payout to arrive after request, up to 10"},
     ],
     "right_header": "WHAT THE ENVELOPE MEANS FOR THE VAULT",
     "right_items": [
         {"title": "One currency simplifies Phase 1", "body": "US balances in USD, with no FX leg inside the vault scope."},
-        {"title": "Two clocks the banks must meet", "body": "A 7-day pending window and a 3-to-5-day payout clock define how fast funds must move between the banks in your design."},
-        {"title": "A $20 minimum payout for most methods", "body": "Small, frequent transfers across many accounts, which favours rails like same-day ACH and RTP."},
+        {"title": "Two clocks the design must meet", "body": "A 7-day pending window and a 3-to-5-day payout clock define how fast funds must move between the banks in your design."},
+        {"title": "A $20 minimum payout for most methods", "body": "Small, frequent transfers across many accounts, which favors rails like same-day ACH and RTP."},
     ],
     "bar": "These four numbers come from your Terms and Help Center. They set the operational envelope for anything underneath.",
     "source": "OnlyFans Terms of Service and Help Center, read 8 Oct 2026.",
@@ -205,7 +205,7 @@ SLIDES["four-numbers"] = {
 SLIDES["cof-today"] = {
     "id": "cof-today", "type": "cards_row",
     "kicker": "HOW ONLYFANS VAULTS TODAY · KNOWN, INFERRED, UNKNOWN",
-    "headline": "Today the cards live with the processors and the bank accounts live with OnlyFans. The RFP is the moment to put both under one set of keys.",
+    "headline": "Today the cards live with your processor and the bank accounts with OnlyFans. The RFP is the moment to put both under one set of keys.",
     "cards": [
         {"eyebrow": "KNOWN · YOUR OWN DOCUMENTS", "title": "Card data never reaches OnlyFans; bank data does", "body": "\"We do not receive your full payment card number, payment card expiration date, or the security code.\" Payments are processed by third-party providers. Bank account details for direct-transfer payouts are stored by OnlyFans. Identity documents, selfies and tax identifiers are collected and kept up to 7 years where required."},
         {"eyebrow": "INFERRED · FROM HOW THE PRODUCT BEHAVES", "title": "A stored credential exists, held by the processor", "body": "Auto-renewing subscriptions and a \"Your Cards\" section mean a stored credential and merchant-initiated charges exist today. On the public evidence that credential is held by the processor, so it is tied to that processor. An inference, for OnlyFans to confirm."},
@@ -219,8 +219,8 @@ SLIDES["cof-today"] = {
 # ---------------------------------------------------------------- 04.2 six kinds of secret
 SLIDES["five-data"] = {
     "id": "five-data", "type": "table",
-    "kicker": K04 + " · WHAT THE DESIGN IMPLIES THE VAULT MUST HOLD",
-    "headline": "A vault for this design holds six kinds of secret, and payment cards are the smallest of them by count.",
+    "kicker": K04 + " · SIX DATA CLASSES",
+    "headline": "A vault for this design holds six kinds of secret, and only one of them is a payment card.",
     "columns": ["Data class", "Where it comes from", "Why the vault must hold it", "Today"],
     "col_widths": [0.24, 0.30, 0.34, 0.12],
     "header_style": "dark", "font_size": 7.5, "bold_first_col": True, "zebra": True,
@@ -241,14 +241,14 @@ SLIDES["five-data"] = {
 SLIDES["clocks"] = {
     "id": "clocks", "type": "stats",
     "kicker": K04 + " · FOUR EXTERNAL CLOCKS ALREADY RUNNING",
-    "headline": "Four external clocks set the pace for Phase 1, and none of them is set by a vendor.",
+    "headline": "Four external clocks are already running, and none of them is set by a vendor.",
     "tiles": [
-        {"label": "PCI DSS 4.0.1", "value": "31 Mar 2025", "caption": "Script controls (6.4.3, 11.6.1) became mandatory."},
-        {"label": "GENIUS ACT", "value": "18 Jan 2027", "caption": "Latest effective date, or 120 days after final rules; the OCC yield rule is still proposed."},
+        {"label": "PCI DSS 4.0.1", "value": "Mar 2025", "caption": "Script controls (6.4.3, 11.6.1) mandatory since 31 March 2025."},
+        {"label": "GENIUS ACT", "value": "Jan 2027", "caption": "Effective by 18 January 2027 at the latest; the OCC yield rule is still proposed."},
         {"label": "MASTERCARD", "value": "2030", "caption": "Stated goal to tokenize all online transactions."},
         {"label": "AGENT CREDENTIALS", "value": "2025", "caption": "Visa Intelligent Commerce, Mastercard Agent Pay and Visa's Trusted Agent Protocol launched."},
     ],
-    "bar": "None of these clocks is set by a vendor. They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and the dates behind the phases in Section 08.",
+    "bar": "They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and the dates behind the phases in Section 08.",
     "source": "PCI SSC, Mar 2025; Paul Hastings, Mar 2026; Digital Transactions, Nov 2024; Visa and Mastercard newsrooms, Apr and Oct 2025.",
     "notes": "None of these clocks is set by a vendor. They are the reason to scope the vault for bank, identity and agent credentials now rather than after Phase 1, and they are the dates we use in Section 08 when we propose the phases.",
 }

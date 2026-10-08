@@ -1,0 +1,32 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[14] scale              of-numbers
+  applied    1 requests blank slide n14r1_g3f77215683c_2_2968
+  applied  132 requests n14r1
+  applied    2 requests notes n14r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 14
+[29] table              compliance
+  applied    1 requests blank slide n29r1_g3f77215683c_2_2968
+  applied  277 requests n29r1
+  applied    2 requests notes n29r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 29
+[38] cards_row          move
+  applied    1 requests blank slide n38r1_g3f77215683c_2_2968
+  applied  142 requests n38r1
+  applied    2 requests notes n38r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 38
+[42] cards_row          who-decides
+  applied    1 requests blank slide n42r1_g3f77215683c_2_2968
+  applied  135 requests n42r1
+  applied    2 requests notes n42r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 42
+[45] two_column         direction-yield
+  applied    1 requests blank slide n45r1_g3f77215683c_2_2968
+  applied  141 requests n45r1
+  applied    2 requests notes n45r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 45

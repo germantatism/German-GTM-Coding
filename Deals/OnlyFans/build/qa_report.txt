@@ -1,0 +1,119 @@
+61 slides in the deck
+61 thumbnails -> /Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/thumbs_build
+[01] OK  n01_g3f77215683c_1_445
+[02] OK  n02_g3f769a0f446_0_0
+[03] OK  n03_g3f769a0f446_0_988
+[04] OK  n04_g3f77215683c_2_2968
+[05]  1  n05_g3f77215683c_2_2968
+       OVERFLOW n05_e017 needs 23 pt (2 lines) in 12 pt: 'Why it matters. A vault sits under every'
+[06] OK  n06_g3f77215683c_2_2968
+[07] OK  n07_g3f77215683c_2_2968
+[08] OK  n08_g3f769a0f446_0_988
+[09]  1  n09_g3f77215683c_2_2968
+       OVERFLOW n09_e017 needs 72 pt (5 lines) in 58 pt: 'Who launched what, 2025 to 2026. Karat B'
+[10]  1  n10r1_g3f77215683c_2_2968
+       OVERFLOW n10r1_e017 needs 17 pt (2 lines) in 11 pt: '2024 TO 2025 · THE REGULATORS' ANSWER'
+[11] OK  n11r1_g3f77215683c_2_2968
+[12] OK  n12r1_g3f77215683c_2_2968
+[13] OK  n13_g3f769a0f446_0_988
+[14] OK  n14r1_g3f77215683c_2_2968
+[15] OK  n15r1_g3f77215683c_2_2968
+[16] OK  n16_g3f77215683c_2_2968
+[17] OK  n17_g3f77215683c_2_2968
+[18]  1  n18_g3f77215683c_2_2968
+       OVERFLOW n18_e009 needs 31 pt (3 lines) in 24 pt: 'Pending balance before earnings can be w'
+[19] OK  n19_g3f769a0f446_0_988
+[20] OK  n20_g3f77215683c_2_2968
+[21] OK  n21_g3f77215683c_2_2968
+[22] OK  n22_g3f77215683c_2_2968
+[23] OK  n23_g3f77215683c_2_2968
+[24] OK  n24_g3f77215683c_2_2968
+[25] OK  n25r1_g3f77215683c_2_2968
+[26] OK  n26_g3f769a0f446_0_988
+[27]  2  n27_g3f769a0f446_0_14188
+       FONT(template text) n27_g3f769a0f446_0_14192 6 pt 'THE YUNO STORY'
+       OVERFLOW n27_g3f769a0f446_0_14202 needs 57 pt (2 lines) in 32 pt: '1,000+'
+[28]  4  n28_g3f769a0f446_0_7028
+       OUT n28_g3f769a0f446_0_7031 (195,164,0x246) ''
+       OUT n28_g3f769a0f446_0_7032 (360,164,0x246) ''
+       OUT n28_g3f769a0f446_0_7033 (525,164,0x246) ''
+       FONT(template text) n28_g3f769a0f446_0_7106 6 pt 'ABOUT YUNO · PLATFORM'
+[29] OK  n29r1_g3f77215683c_2_2968
+[30]  1  n30_g3f769a0f446_0_15222
+       FONT(template text) n30_g3f769a0f446_0_15224 6 pt 'WHY YUNO?'
+[31]  1  n31_g3f769a0f446_0_8218
+       FONT(template text) n31_g3f769a0f446_0_8220 6 pt 'WHY YUNO?'
+[32] 25  n32_g3f77215683c_1_1334
+       FONT(template text) n32_g3f77215683c_1_1357 6 pt 'CRO'
+       FONT(template text) n32_g3f77215683c_1_1358 6 pt '🇦🇷 Argentina'
+       FONT(template text) n32_g3f77215683c_1_1359 6 pt 'Led dLocal’s enterprise integr'
+       FONT(template text) n32_g3f77215683c_1_1364 6 pt 'CTO'
+       FONT(template text) n32_g3f77215683c_1_1365 6 pt '🇳🇱 Netherlands'
+       FONT(template text) n32_g3f77215683c_1_1366 6 pt '20+ years of experience in
+tec'
+       FONT(template text) n32_g3f77215683c_1_1371 6 pt 'CHIEF BANKING & FI'
+       FONT(template text) n32_g3f77215683c_1_1372 6 pt '🇲🇽 Mexico'
+       FONT(template text) n32_g3f77215683c_1_1373 6 pt 'Former Country Manager at Mast'
+       FONT(template text) n32_g3f77215683c_1_1378 6 pt 'GM LATAM'
+       FONT(template text) n32_g3f77215683c_1_1379 6 pt '🇧🇷 Brazil'
+       FONT(template text) n32_g3f77215683c_1_1380 6 pt '20+ years in LATAM payments at'
+       FONT(template text) n32_g3f77215683c_1_1385 6 pt 'GM APAC'
+       FONT(template text) n32_g3f77215683c_1_1386 6 pt '🇸🇬 Singapore'
+       FONT(template text) n32_g3f77215683c_1_1387 6 pt '20+ years in payments; ex-Dire'
+       FONT(template text) n32_g3f77215683c_1_1392 6 pt 'SVP, PRODUCT'
+       FONT(template text) n32_g3f77215683c_1_1393 6 pt '🇦🇪 UAE'
+       FONT(template text) n32_g3f77215683c_1_1394 6 pt '12+ years in fintech product '
+       FONT(template text) n32_g3f77215683c_1_1399 6 pt 'HEAD, GTM'
+       FONT(template text) n32_g3f77215683c_1_1400 6 pt '🇦🇷 Argentina'
+       FONT(template text) n32_g3f77215683c_1_1401 6 pt '10+ years in fintech; former D'
+       FONT(template text) n32_g3f77215683c_1_1406 6 pt 'VP, ENGINEERING'
+       FONT(template text) n32_g3f77215683c_1_1407 6 pt '🇳🇱 Netherlands'
+       FONT(template text) n32_g3f77215683c_1_1408 6 pt '20+ years in payments; former
+'
+       FONT(template text) n32_g3f77215683c_2_69 6 pt 'WHY YUNO?'
+[33]  5  n33_g3f77215683c_2_1368
+       FONT(template text) n33_g3f77215683c_2_1373 5 pt 'MARKETING & PARTNERSHIPS'
+       FONT(template text) n33_g3f77215683c_2_1383 5 pt 'TECHNICAL ACCOUNT MGMT'
+       FONT(template text) n33_g3f77215683c_2_1393 5 pt 'SALES ENGINEERING'
+       FONT(template text) n33_g3f77215683c_2_1403 5 pt 'KEY ACCOUNT MGMT'
+       FONT(template text) n33_g3f77215683c_2_1407 6 pt 'QBRs on funnel performance and'
+[34] OK  n34_g3f769a0f446_0_988
+[35] OK  n35r1_g3f77215683c_2_2968
+[36] OK  n36r1_g3f77215683c_2_2968
+[37]  3  n37_g3f77215683c_2_2968
+       OVERFLOW n37_e013 needs 41 pt (4 lines) in 30 pt: 'PAN stays here. Network token provisione'
+       OVERFLOW n37_e016 needs 61 pt (6 lines) in 18 pt: 'Token plus cryptogram (Visa, Mastercard)'
+       OVERFLOW n37_e026 needs 41 pt (4 lines) in 30 pt: 'exp 09/29. The vaulted token and fingerp'
+[38] OK  n38r1_g3f77215683c_2_2968
+[39] OK  n39r1_g3f77215683c_2_2968
+[40] OK  n40_g3f77215683c_2_2968
+[41] OK  n41r1_g3f77215683c_2_2968
+[42]  1  n42r1_g3f77215683c_2_2968
+       OVERFLOW n42r1_e019 needs 17 pt (2 lines) in 11 pt: 'BY RULE · BANKS AND ISSUERS'
+[43]  1  n43r1_g3f77215683c_2_2968
+       OVERLAP 'rules' x 'creator data as tokens' (20x6 pt)
+[44] OK  n44r1_g3f77215683c_2_2968
+[45] OK  n45r1_g3f77215683c_2_2968
+[46] OK  n46_g3f769a0f446_0_988
+[47] OK  n47_g3f77215683c_2_2968
+[48]  6  n48_g3f77215683c_2_2968
+       OVERFLOW n48_e001 needs 33 pt (3 lines) in 22 pt: '"VGS powers orchestration, but does not '
+       FONT n48_e009 6 pt 'THE GAP'
+       FONT n48_e012 6 pt 'STANDALONE VAULT, THE REST BUI'
+       OVERFLOW n48_e015 needs 15 pt (2 lines) in 8 pt: 'STANDALONE VAULT, PLUS AN ORCHESTRATOR O'
+       FONT n48_e015 6 pt 'STANDALONE VAULT, PLUS AN ORCH'
+       FONT n48_e018 6 pt 'VAULT AND THE LAYER ABOVE IT, '
+[49] OK  n49_g3f77215683c_2_2968
+[50] OK  n50_g3f77215683c_2_2968
+[51] OK  n51_g3f77215683c_2_2968
+[52] OK  n52_g3f769a0f446_0_988
+[53] OK  n53_g3f77215683c_2_2968
+[54] OK  n54_g3f77215683c_2_2968
+[55] OK  n55_g3f77215683c_2_2968
+[56] OK  n56_g3c99cf7678e_0_44
+[57] OK  n57_g3f769a0f446_0_988
+[58] OK  n58_g3f77215683c_2_2968
+[59] OK  n59_g3f77215683c_2_2968
+[60] OK  n60_g3f77215683c_2_2968
+[61] OK  n61r1_g3f77215683c_2_2968
+47 clean, 14 with findings

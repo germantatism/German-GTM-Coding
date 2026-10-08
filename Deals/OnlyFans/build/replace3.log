@@ -1,0 +1,32 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[12] table              vault-market
+  applied    1 requests blank slide n12r1_g3f77215683c_2_2968
+  applied  313 requests n12r1
+  applied    2 requests notes n12r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 12
+[25] stats              clocks
+  applied    1 requests blank slide n25r1_g3f77215683c_2_2968
+  applied  101 requests n25r1
+  applied    2 requests notes n25r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 25
+[36] diagram            vault-data
+  applied    1 requests blank slide n36r1_g3f77215683c_2_2968
+  applied  124 requests n36r1
+  applied    2 requests notes n36r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 36
+[41] diagram            banking
+  applied    1 requests blank slide n41r1_g3f77215683c_2_2968
+  applied  182 requests n41r1
+  applied    2 requests notes n41r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 41
+[44] two_column         direction-rules
+  applied    1 requests blank slide n44r1_g3f77215683c_2_2968
+  applied  156 requests n44r1
+  applied    2 requests notes n44r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 44

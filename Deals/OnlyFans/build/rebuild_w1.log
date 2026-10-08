@@ -1,0 +1,46 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[04] diagram            understood
+  applied    1 requests blank slide n04r1_g3f77215683c_2_2968
+  applied  166 requests n04r1
+  applied    2 requests notes n04r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 4
+[09] stats              industry-glance
+  applied    1 requests blank slide n09r1_g3f77215683c_2_2968
+  applied  107 requests n09r1
+  applied    2 requests notes n09r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 9
+[14] scale              of-numbers
+  applied    1 requests blank slide n14r2_g3f77215683c_2_2968
+  applied  132 requests n14r2
+  applied    2 requests notes n14r2_g3f77215683c_2_2968
+  applied    2 requests replace slide 14
+[18] four_numbers       four-numbers
+  applied    1 requests blank slide n18r1_g3f77215683c_2_2968
+  applied  116 requests n18r1
+  applied    2 requests notes n18r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 18
+[23] checklist_table    questions-2
+  applied    1 requests blank slide n23r1_g3f77215683c_2_2968
+  applied  217 requests n23r1
+  applied    2 requests notes n23r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 23
+[35] cards_row          vault-cards
+  applied    1 requests blank slide n35r2_g3f77215683c_2_2968
+  applied  135 requests n35r2
+  applied    2 requests notes n35r2_g3f77215683c_2_2968
+  applied    2 requests replace slide 35
+[39] code_before_after  proxy-how
+  applied    1 requests blank slide n39r2_g3f77215683c_2_2968
+  applied  121 requests n39r2
+  applied    2 requests notes n39r2_g3f77215683c_2_2968
+  applied    2 requests replace slide 39
+[43] diagram            direction-architecture
+  retry 1 on chunk 0 (blank slide n43r2_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
+  retry 2 on chunk 0 (blank slide n43r2_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
+  retry 3 on chunk 0 (blank slide n43r2_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j

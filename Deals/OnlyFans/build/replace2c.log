@@ -1,0 +1,32 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[15] traffic_list       traffic
+  applied    1 requests blank slide n15r1_g3f77215683c_2_2968
+  applied  153 requests n15r1
+  applied    2 requests notes n15r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 15
+[35] cards_row          vault-cards
+  applied    1 requests blank slide n35r1_g3f77215683c_2_2968
+  applied  135 requests n35r1
+  applied    2 requests notes n35r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 35
+[39] code_before_after  proxy-how
+  applied    1 requests blank slide n39r1_g3f77215683c_2_2968
+  applied  121 requests n39r1
+  applied    2 requests notes n39r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 39
+[43] diagram            direction-architecture
+  applied    1 requests blank slide n43r1_g3f77215683c_2_2968
+  applied  194 requests n43r1
+  applied    2 requests notes n43r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 43
+[61] sources            app-sources
+  applied    1 requests blank slide n61r1_g3f77215683c_2_2968
+  applied  224 requests n61r1
+  applied    2 requests notes n61r1_g3f77215683c_2_2968
+  applied    2 requests replace slide 61

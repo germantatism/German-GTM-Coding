@@ -1,0 +1,30 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[10] cards_row          no-single-bank
+Traceback (most recent call last):
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1467, in <module>
+    build_from_spec(a[1], final='--final' in a, only=only, replace='--replace' in a)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1424, in build_from_spec
+    sid = render_one(deck, s, tag, n, footer)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1393, in render_one
+    return RENDERERS[t](deck, s, tag, n, footer)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 1006, in r_cards_row
+    sid, sb = _content_base(deck, s, tag)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 850, in _content_base
+    sid = deck.create_blank(tag); sb = SB(deck, sid, tag, {}, dark=False)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 341, in create_blank
+    self.run([{'createSlide': {'objectId': sid, 'slideLayoutReference': {'layoutId': layout}}}], f'blank slide {sid}')
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 287, in run
+    if reqs: run(self.svc, self.pid, reqs, label=label)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/OnlyFans/build/gs_engine.py", line 145, in run
+    svc.presentations().batchUpdate(presentationId=pid, body={'requests': part}).execute(); break
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/http.py", line 938, in execute
+    raise HttpError(resp, content, uri=self.uri)
+googleapiclient.errors.HttpError: <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=json returned "Invalid requests[0].createSlide: The object ID (n10r1_g3f77215683c_2_2968) should be unique among all pages and page elements.". Details: "Invalid requests[0].createSlide: The object ID (n10r1_g3f77215683c_2_2968) should be unique among all pages and page elements.">

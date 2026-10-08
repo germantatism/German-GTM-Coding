@@ -1,0 +1,44 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA (Deck - OnlyFans + Yuno · Token Vault (Oct 2026))
+[32] template_keep      team
+  WARNING slide team: template_index 27 is 'dedicated team' in template_dump order; using 26 ('team') from the slide id
+  WARNING slide team: template_index 27 is 'dedicated team' in template_dump order; using 26 ('team') from the slide id
+  applied    2 requests duplicate t26 -> n32_g3f77215683c_1_1334
+  applied   10 requests n32
+  applied    1 requests notes n32_g3f77215683c_1_1334
+[36] diagram            vault-data
+  applied    2 requests duplicate t7 -> n36_g3f77215683c_2_2968
+  applied  132 requests n36
+  applied    3 requests notes n36_g3f77215683c_2_2968
+[40] cards_row          proxy-controls
+  applied    2 requests duplicate t7 -> n40_g3f77215683c_2_2968
+  applied  180 requests n40
+  applied    3 requests notes n40_g3f77215683c_2_2968
+[44] two_column         direction-rules
+  applied    2 requests duplicate t7 -> n44_g3f77215683c_2_2968
+  applied  164 requests n44
+  applied    3 requests notes n44_g3f77215683c_2_2968
+[48] comparison_grid    versus-model
+  applied    2 requests duplicate t7 -> n48_g3f77215683c_2_2968
+  applied  394 requests n48
+  applied    3 requests notes n48_g3f77215683c_2_2968
+[52] divider            d08
+  applied    2 requests duplicate t3 -> n52_g3f769a0f446_0_988
+  retry 1 on chunk 0 (n52): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
+  retry 2 on chunk 0 (n52): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
+  retry 3 on chunk 0 (n52): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA:batchUpdate?alt=j
+  applied    8 requests n52
+  applied    1 requests notes n52_g3f769a0f446_0_988
+[56] closing            closing
+  applied    2 requests duplicate t46 -> n56_g3c99cf7678e_0_44
+  applied   12 requests closing text
+  applied    6 requests closing lockup
+[60] cards_row          credentials
+  applied    2 requests duplicate t7 -> n60_g3f77215683c_2_2968
+  applied  110 requests n60
+  applied    3 requests notes n60_g3f77215683c_2_2968

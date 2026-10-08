@@ -511,8 +511,8 @@ class SB:
         if wm_url: self.image(wm_url, 645.2, 24.0, 38.8, 10.5)
     def source_line(self, text):
         if not text: return
-        lines = wrap_count(text, 6.5, W0 * 0.9)
-        self.text(X0, 369.5 - (lines - 1) * 8.5, W0, 9 * lines, text, size=6.5, color=(ONDARK2 if self.dark else GREY), ls=100)
+        lines = wrap_count(text, 6.5, W0)
+        self.text(X0, 369.5 - (lines - 1) * 4, W0, 9 * lines, text, size=6.5, color=(ONDARK2 if self.dark else GREY), ls=100)
     def footer(self, text, n):
         col = ONDARK2 if self.dark else GREY
         if text: self.text(X0, 383, 400, 9, text, size=6.5, color=col, ls=100)
@@ -546,7 +546,7 @@ class SB:
             self.text(cx, cy, 24, 11, str(num), size=8, color=(WHITE if blue else LBLUE), font=MONO, ls=100); row = True
         if eyebrow:
             ex = cx + (24 if num else 0); avail = cw - (24 if num else 0) - (pill_w + 8 if pill_w else 0)
-            if text_width(eyebrow.upper(), 7, True) * 1.18 <= avail:
+            if text_width(eyebrow.upper(), 7, True) <= avail:
                 self.text(ex, cy, avail, 11, eyebrow.upper(), size=7, bold=True, color=(PALE if blue else GREY), ls=100); row = True
             else:                                   # own line under the pill row
                 if row: cy += 15
@@ -1014,9 +1014,8 @@ def r_cards_row(deck, s, tag, n, footer, numbered_default=False):
     need = max([card_need(cw, c.get('eyebrow'), c.get('num'), c.get('title'), c.get('body'), c.get('foot'), c.get('pill'), c.get('pill2')) for c in cards] + [0])
     if need > max_h + 1: raise FitError(f"slide {s.get('id')}: cards need {need:.0f} pt, have {max_h:.0f} pt")
     h = max_h if (not bar and not limits) else max(110.0, min(need, max_h))   # no band: cards use the zone like the template
-    hc = max(150.0, min(need + 16, max_h)) if side else h
     for i, c in enumerate(cards):
-        sb.card(X0 + i * (cw + gap), y, cw, hc, eyebrow=c.get('eyebrow'), num=c.get('num'), title=c.get('title'), body=c.get('body'), foot=c.get('foot'), pill=c.get('pill'), pill2=c.get('pill2'))
+        sb.card(X0 + i * (cw + gap), y, cw, h, eyebrow=c.get('eyebrow'), num=c.get('num'), title=c.get('title'), body=c.get('body'), foot=c.get('foot'), pill=c.get('pill'), pill2=c.get('pill2'))
     if side: _side_column(sb, X0 + width + 20, y, 684 - (X0 + width + 20), h, side)
     if limits:   # four-tile strip under the cards
         ly = y + h + 12
