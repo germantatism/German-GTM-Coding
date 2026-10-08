@@ -1,6 +1,6 @@
 # OnlyFans deck · what changed beyond layout (for Samuel) · 8 Oct 2026
 
-Google Slides: https://docs.google.com/presentation/d/10A2GokDXPEPkeqqS29H7a460R6j5ux60nILIqUXmUKc/edit
+Google Slides: https://docs.google.com/presentation/d/1JSaFLC6QEIoNDFq1RbmMglAyuf8bLx7HDk2qzeeEbbA/edit
 
 Built on German's Eventbrite template (the 46-slide Google Slides deck). German asked for a deck that covers the whole story in his section order, so your 25 slides are the spine and the deck grew to 57 slides. Your wording, labels, quotes, the 4 / 1 / 4 tally and the six open items are carried over verbatim. Changes beyond layout:
 

@@ -40,7 +40,7 @@ Source: `template_dump.json` (presentations.get of the working copy `10A2GokDXPE
 
 **Speaker notes.** 42 of 46 slides have Eventbrite notes text in `notesPage.notesProperties.speakerNotesObjectId` (a BODY placeholder, parent `n_i5`). Duplicating a slide duplicates its notes, so the engine deletes notes text (`deleteText ALL`) on every duplicate before writing new notes.
 
-**Internal names present in the template.** Slide 25 "trusted by" logo wall includes a SpaceX logo (image `g3f769a0f446_0_8223` at x 96.1, y 168.2 is McDonald's; the SpaceX mark is one of the images in row 2). CONTEXT.md forbids SpaceX in this deck: if slide 25 is reused, delete that image. Slides 5, 6, 10, 13, 15, 16, 21 carry Eventbrite PSP logos (Stripe, Braintree, Authorize.net, Wells Fargo, Mercado Pago, Adyen, EBANX): those slides are not safe to reuse except as chrome.
+**Internal names present in the template.** Slide 25 "trusted by" logo wall includes a SpaceX logo: image `g3f76accd9b2_0_4` at x 80.7, y 229.1, w 74.2, h 9.1 (verified on the thumbnail crop). CONTEXT.md forbids SpaceX in this deck: `template_keep` with `delete_images_matching: ["g3f76accd9b2_0_4"]` removes it (the placeholder `SPACEX_LOGO_OBJECT_ID` resolves to the same id). Slides 5, 6, 10, 13, 15, 16, 21 carry Eventbrite PSP logos (Stripe, Braintree, Authorize.net, Wells Fargo, Mercado Pago, Adyen, EBANX): those slides are not safe to reuse except as chrome.
 
 ## 1. Slide by slide
 

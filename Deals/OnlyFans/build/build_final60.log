@@ -1,0 +1,54 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+[01] cover              cover
+  applied    2 requests duplicate t1 -> n01_g3f77215683c_1_445
+  applied   16 requests n01
+  applied    2 requests notes n01_g3f77215683c_1_445
+[02] agenda             agenda
+  applied    2 requests duplicate t2 -> n02_g3f769a0f446_0_0
+  applied  108 requests n02
+[03] divider            d01
+  applied    2 requests duplicate t3 -> n03_g3f769a0f446_0_988
+  applied   13 requests n03
+  applied    1 requests notes n03_g3f769a0f446_0_988
+[04] diagram            understood
+  applied    2 requests duplicate t7 -> n04_g3f77215683c_2_2968
+  applied  174 requests n04
+  applied    3 requests notes n04_g3f77215683c_2_2968
+[05] cards_row          howtoread
+  applied    2 requests duplicate t7 -> n05_g3f77215683c_2_2968
+  applied   94 requests n05
+  applied    3 requests notes n05_g3f77215683c_2_2968
+[06] stats              answer
+  applied    2 requests duplicate t7 -> n06_g3f77215683c_2_2968
+  applied   94 requests n06
+  applied    3 requests notes n06_g3f77215683c_2_2968
+[07] exec_summary       exec
+  applied    2 requests duplicate t7 -> n07_g3f77215683c_2_2968
+  applied  116 requests n07
+  applied    3 requests notes n07_g3f77215683c_2_2968
+[08] divider            d02
+  applied    2 requests duplicate t3 -> n08_g3f769a0f446_0_988
+  applied   13 requests n08
+  applied    1 requests notes n08_g3f769a0f446_0_988
+[09] stats              industry-glance
+  applied    2 requests duplicate t7 -> n09_g3f77215683c_2_2968
+  applied  115 requests n09
+  applied    3 requests notes n09_g3f77215683c_2_2968
+[10] cards_row          no-single-bank
+  applied    2 requests duplicate t7 -> n10_g3f77215683c_2_2968
+  applied  111 requests n10
+  applied    3 requests notes n10_g3f77215683c_2_2968
+[11] cards_row          vault-2026
+  applied    2 requests duplicate t7 -> n11_g3f77215683c_2_2968
+  applied  111 requests n11
+  applied    3 requests notes n11_g3f77215683c_2_2968
+[12] table              vault-market
+  applied    2 requests duplicate t7 -> n12_g3f77215683c_2_2968
+  applied  322 requests n12
+  applied    3 requests notes n12_g3f77215683c_2_2968
+[13] divider            d03

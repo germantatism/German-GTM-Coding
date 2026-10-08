@@ -22,7 +22,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build as gbuild
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PID = '10A2GokDXPEPkeqqS29H7a460R6j5ux60nILIqUXmUKc'
+PID = os.environ.get('OF_PID', '10A2GokDXPEPkeqqS29H7a460R6j5ux60nILIqUXmUKc')
 SA = os.path.expanduser('~/.config/gsuite/sa.json')
 TEMPLATE_DUMP = os.path.join(HERE, 'template_dump.json')
 STATE = os.path.join(HERE, 'build_state.json')
@@ -51,6 +51,7 @@ PILLS = {  # label: (text colour, fill)
     'PUBLIC DOCS': ('#3E4FE0', '#E8EAF5'),
     'OPEN': ('#9A5B00', '#FBEFD9'),
     'NOT IN DOCS': ('#424449', '#EFF0F2'),
+    'DIRECTION': ('#424449', '#D5D9F5'),
 }
 STATE_GLYPH = {'open': ('✕', GREY), 'partial': ('◐', LBLUE), 'closed': ('✓', BLUE)}
 
@@ -246,8 +247,8 @@ def replace_text_requests(el, new_text, size=None, color=None):
 
 # ================================================================= the deck
 class Deck:
-    def __init__(self, pid=PID, sa=SA):
-        self.pid = pid; self.svc = service()
+    def __init__(self, pid=None, sa=SA):
+        self.pid = pid or os.environ.get('OF_PID') or PID; self.svc = service()
         self.tpl = json.load(open(TEMPLATE_DUMP))
         self.tpl_slides = self.tpl['slides']
         self.pres = None
@@ -1305,7 +1306,9 @@ def build_from_spec(spec_path, final=False, only=None, replace=False):
     spec = json.load(open(spec_path))
     errs = validate(spec)
     if errs: raise SystemExit('spec errors:\n  ' + '\n  '.join(errs))
-    deck = Deck(spec.get('presentation_id') or PID); deck.fetch()
+    deck = Deck(os.environ.get('OF_PID') or spec.get('presentation_id') or PID); deck.fetch()
+    if len(deck.template_live_ids()) != N_TEMPLATE and not only:
+        raise SystemExit(f'template incomplete in {deck.pid}: {len(deck.template_live_ids())} of {N_TEMPLATE} slides; point --pid at a fresh copy of the Eventbrite deck')
     footer = spec.get('footer', '')
     slides = spec['slides']
     built = []; problems = []
@@ -1318,11 +1321,11 @@ def build_from_spec(spec_path, final=False, only=None, replace=False):
             tag = f"{tag}r{k}"
         t = s['type']; print(f"[{n:02d}] {t:18s} {s.get('id')}")
         try:
+            render_one(DryDeck(), s, tag, n, footer)          # offline rehearsal, no API calls
             sid = render_one(deck, s, tag, n, footer)
         except FitError as e:
             print(f"  FIT PROBLEM: {e}"); problems.append((n, s.get('id'), str(e)))
-            tag2 = tag + 'p'
-            sid = r_placeholder(deck, s, tag2, n, footer, str(e))
+            sid = r_placeholder(deck, s, tag + 'p', n, footer, str(e))
         built.append(sid)
         if replace:
             live = deck.slide_ids()
@@ -1334,7 +1337,9 @@ def build_from_spec(spec_path, final=False, only=None, replace=False):
     if final:
         tpl = deck.template_live_ids()
         if len(built) != len(slides): raise SystemExit('refusing --final on a partial build')
+        if len(tpl) != N_TEMPLATE: raise SystemExit(f'refusing --final: {len(tpl)} of {N_TEMPLATE} template slides present')
         deck.delete_slides(tpl)
+        deck.state['built'] = []; deck.state['finalized'] = time.strftime('%Y-%m-%d %H:%M'); deck.save_state()   # the build IS the deck now; cleanup must never touch it
         print(f"deleted {len(tpl)} template slides in one call; deck now has {len(deck.slide_ids())} slides")
     if problems:
         print('\nSLIDES THAT NEED SHORTER COPY (placeholder inserted):')
@@ -1343,6 +1348,8 @@ def build_from_spec(spec_path, final=False, only=None, replace=False):
 
 def cleanup():
     deck = Deck()
+    if len(deck.template_live_ids()) != N_TEMPLATE:
+        raise SystemExit('refusing cleanup: the 46 template slides are not all present, so the built slides are the deck itself')
     live = set(deck.slide_ids()); ids = [s for s in deck.state.get('built', []) if s in live]
     if ids: deck.delete_slides(ids)
     deck.state['built'] = []; deck.save_state()
@@ -1350,6 +1357,9 @@ def cleanup():
 
 if __name__ == '__main__':
     a = sys.argv[1:]
+    if '--pid' in a:
+        PID = a[a.index('--pid') + 1]; os.environ['OF_PID'] = PID
+        del a[a.index('--pid'):a.index('--pid') + 2]
     if not a: print(__doc__); sys.exit(0)
     if a[0] == 'check': sys.exit(1 if check_spec(a[1]) else 0)
     if a[0] == 'build':

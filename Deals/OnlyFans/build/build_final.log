@@ -231,3 +231,19 @@
 [55] stats              app-who
   applied    2 requests duplicate t7 -> n55_g3f77215683c_2_2968
   applied  120 requests n55
+  applied    3 requests notes n55_g3f77215683c_2_2968
+[56] cards_row          credentials
+  applied    2 requests duplicate t7 -> n56_g3f77215683c_2_2968
+  applied  110 requests n56
+  applied    3 requests notes n56_g3f77215683c_2_2968
+[57] sources            app-sources
+  applied    2 requests duplicate t7 -> n57_g3f77215683c_2_2968
+  applied  232 requests n57
+  applied    3 requests notes n57_g3f77215683c_2_2968
+  applied   46 requests delete 46 slides
+deleted 46 template slides in one call; deck now has 59 slides
+
+SLIDES THAT NEED SHORTER COPY (placeholder inserted):
+  [23] questions-2: table needs 314 pt, zone has 271 pt (font 7, 8 rows)
+  [44] versus-model: slide versus-model: comparison_grid rows need 219 pt, have 156
+Error: build stopped by operator before --final (spec regenerated with 60 slides)

@@ -11,7 +11,7 @@ SLIDES = {}
 SLIDES["questions-2"] = {
     "id": "questions-2", "type": "checklist_table",
     "kicker": "WHAT THE VAULT HAS TO HOLD · THE QUESTIONS",
-    "headline": "The questions a careful vault buyer asks first, answered before you ask (2 of 2).",
+    "headline": "The questions a careful vault buyer asks first, answered before you ask (2 of 3).",
     "source": "Yuno answers from docs.y.uno and y.uno, read 8 October 2026. Open rows map to the open items on slide {{slide:owe}}.",
     "columns": ["#", "The question", "Our answer", "Basis"],
     "col_widths": [0.04, 0.28, 0.52, 0.16],
@@ -21,13 +21,29 @@ SLIDES["questions-2"] = {
         ["9", {"text": "Who are your subprocessors, and are your card-network connections direct?", "bold": True}, "A subprocessor list and the connection model for each network come in writing with the RFP response.", {"text": "Security, Product", "pill": "OPEN"}],
         ["10", {"text": "What happens at checkout and at renewal time if the vault is unreachable?", "bold": True}, "Failover between the processors you connect is a routing feature (Monitors). Capture and recurring behaviour during a vault outage comes with the failover design, not asserted here.", {"text": "Engineering", "pill": "CONFIRMED", "pill2": "OPEN"}],
         ["11", {"text": "Do you capture the network transaction ID when we charge through the proxy on our own processor?", "bold": True}, "For payments Yuno processes, the ID is stored on the token and replayed on every merchant-initiated charge, whichever provider. Through the proxy the stored ID is injected into your request; capturing a new one from your processor's response is open.", {"text": "Beta · Product", "pill": "CONFIRMED", "pill2": "OPEN"}],
+    ],
+    "notes": "Eight more questions a vault RFP always contains, on two slides. Export file contents, subprocessors and direct connections, behaviour during a vault outage and capturing a new network transaction ID through the proxy. Two of these four are open today and we say so; each has an owner on the open items slide and a written answer in our RFP response.",
+}
+
+
+SLIDES["questions-3"] = {
+    "id": "questions-3", "type": "checklist_table",
+    "kicker": "WHAT THE VAULT HAS TO HOLD · THE QUESTIONS",
+    "headline": "The questions a careful vault buyer asks first, answered before you ask (3 of 3).",
+    "source": "Yuno answers from docs.y.uno and y.uno, read 8 October 2026. Open rows map to the open items on slide {{slide:owe}}.",
+    "columns": ["#", "The question", "Our answer", "Basis"],
+    "col_widths": [0.04, 0.28, 0.52, 0.16],
+    "header_style": "dark", "font_size": 7, "bold_first_col": False, "zebra": True,
+    "rows": [
         ["12", {"text": "Does using the proxy change our SAQ?", "bold": True}, "Capture stays in our hosted fields and the proxy resolves data inside Yuno's PCI environment, so per our documentation your scope does not change. Sending a raw CVV yourself outside the 3-hour window keeps that request in your scope. Your QSA confirms your SAQ.", {"text": "", "pill": "CONFIRMED", "pill2": "BETA"}],
         ["13", {"text": "Can we vault bank accounts and other payment methods, not only cards?", "bold": True}, "Yes. ACH and SEPA details with a mandate record through the enroll API, with no provider involved if you choose; PayPal and several wallets are enrollable. Other methods confirmed per method in writing.", {"text": "Product", "pill": "CONFIRMED", "pill2": "OPEN"}],
         ["14", {"text": "Can we bring our own network tokens, or move existing ones in?", "bold": True}, "Yes. A documented import process for network tokens (file over SFTP, including the network transaction ID) and a passthrough mode for tokens you hold. Tokens under another requestor's ID are re-provisioned, as with any vendor.", {"text": "", "pill": "CONFIRMED"}],
         ["15", {"text": "Where does the data live, and which region do we integrate with?", "bold": True}, "Separate production environments for the US (api.y.uno) and EMEA (api.eu.y.uno), on AWS with AES-256 at rest per our trust page. Key management and regional detail come in the security pack with the RFP response.", {"text": "Engineering, Security", "pill": "CONFIRMED", "pill2": "OPEN"}],
+
     ],
-    "notes": "These are the questions a vault RFP always contains and a sandbox cannot answer on its own. Three of them are open today and we say so: subprocessors and direct connections, behaviour during a vault outage, and capturing a new network transaction ID through the proxy. Each has an owner on the open items slide and a written answer in our RFP response. The rest can be read in our public documentation today, and we would rather you read it before we talk than after. Two more documented capabilities worth knowing for a US card base: Yuno 3DS Standalone returns ECI and CAVV so you can authenticate once and authorize on any acquirer, and the web SDK exposes the BIN in real time through the card.onChange callback, so you can act on card type before the payment is sent.",
+    "notes": "The last four: SAQ impact of the proxy, bank accounts and other payment methods in the vault, bringing existing network tokens in, and where the data lives. The rest can be read in our public documentation today, and we would rather you read it before we talk than after. Two more documented capabilities worth knowing for a US card base: Yuno 3DS Standalone returns ECI and CAVV so you can authenticate once and authorize on any acquirer, and the web SDK exposes the BIN in real time through the card.onChange callback, so you can act on card type before the payment is sent.",
 }
+
 
 # ---------------------------------------------------------------- keep current (network tokens + account updater)
 SLIDES["keep-current"] = {
@@ -124,32 +140,28 @@ SLIDES["versus-model"] = {
     ],
     "rows": [
         {"label": "PCI DSS Level 1 card vault", "sub": "Hosted capture, tokens, export", "cells": [
-            {"state": "closed", "text": "Both vaults run a Level 1 vault with hosted capture."},
+            {"state": "closed", "text": "Both vaults: Level 1, hosted capture."},
             {"state": "closed", "text": "Covered by the vault vendor."},
-            {"state": "closed", "text": "SDK enrollment into a Level 1 vault, documented export."}]},
+            {"state": "closed", "text": "SDK enrollment, documented export."}]},
         {"label": "Rules for where each request goes", "sub": "Bank, issuer or processor per creator", "cells": [
-            {"state": "open", "text": "Yours to write and maintain. VGS: \"does not make routing decisions for you.\""},
-            {"state": "partial", "text": "The partner's rules for cards. Bank and issuer allocation depends on the partner."},
-            {"state": "partial", "text": "Cards: rules, splits, fallbacks, Monitors today. Banks: per call today; by rule is open item 2."}]},
+            {"state": "open", "text": "Yours to write and maintain."},
+            {"state": "partial", "text": "Partner rules for cards; banks and issuers depend on the partner."},
+            {"state": "partial", "text": "Cards: rules, splits, fallbacks, Monitors. Banks by rule: open item 2."}]},
         {"label": "Provider connections, built and maintained", "sub": "PSPs, acquirers, banks, issuers", "cells": [
-            {"state": "open", "text": "Every provider call is a proxy request your engineers write and maintain."},
-            {"state": "partial", "text": "Processors via the partner; banks and issuers still via your own proxy requests."},
-            {"state": "partial", "text": "460+ processor integrations maintained by Yuno. US banks and issuers: open item 3."}]},
-        {"label": "Bank accounts and transfers by API", "sub": "Entities, onboarding, accounts, ACH, wire, RTP", "cells": [
-            {"state": "open", "text": "No accounts or transfers API found at either vault; bank details stored and forwarded."},
+            {"state": "open", "text": "Proxy requests your engineers write and maintain."},
+            {"state": "partial", "text": "Processors via the partner; banks and issuers still yours."},
+            {"state": "partial", "text": "460+ processor integrations. US banks and issuers: open item 3."}]},
+        {"label": "Bank accounts, transfers and payouts by API", "sub": "Entities, onboarding, accounts, ACH, wire, RTP, payouts", "cells": [
+            {"state": "open", "text": "No accounts, transfers or payouts API found at either vault."},
             {"state": "open", "text": "Outside a payments orchestrator's scope."},
-            {"state": "closed", "text": "Banking Connectivity API: entities, onboarding, accounts, transfers, per connection."}]},
-        {"label": "Payouts and split payments", "sub": "Creator disbursement across rails", "cells": [
-            {"state": "open", "text": "Via partners such as TabaPay or Astra, or not offered."},
-            {"state": "partial", "text": "Depends on the partner's payout coverage."},
-            {"state": "closed", "text": "Payouts API and split payments on the same platform."}]},
+            {"state": "closed", "text": "Banking Connectivity API plus Payouts and split payments."}]},
         {"label": "Vendors, contracts and incident ownership", "sub": "Who you call when a creator cannot be paid", "cells": [
-            {"state": "open", "text": "One vendor for storage; your team for everything above it."},
-            {"state": "partial", "text": "Two vendors, two contracts, two support desks, one incident."},
-            {"state": "closed", "text": "One vendor, one contract, one support line, published SLA (P1 response within 5 minutes)."}]},
+            {"state": "open", "text": "One vendor for storage; your team for the rest."},
+            {"state": "partial", "text": "Two vendors, two contracts, one incident."},
+            {"state": "closed", "text": "One vendor, one contract, published SLA (P1 in 5 minutes)."}]},
     ],
-    "footer": [{"label": "Covered", "value": "1 of 6"}, {"label": "Covered or partly", "value": "4 of 6"}, {"label": "Covered or partly", "value": "6 of 6"}],
-    "closing_line": "Option A keeps the vault narrow and the roadmap long. Option B closes part of it with a second vendor. Option C covers all six on one platform, with two cells marked partly covered on purpose and listed as open items with owners.",
+    "footer": [{"label": "Covered", "value": "1 of 5"}, {"label": "Covered or partly", "value": "3 of 5"}, {"label": "Covered or partly", "value": "5 of 5"}],
+    "closing_line": "Option A keeps the vault narrow and the roadmap long. Option B closes part of it with a second vendor. Option C covers all five on one platform, with two cells marked partly covered on purpose and listed as open items with owners.",
     "source": "Vendor lines from public pages read 7 and 8 October 2026; Yuno lines from docs.y.uno and y.uno/sla. States are our reading; please confirm with each vendor.",
-    "notes": "This is the same comparison from the point of view of your roadmap rather than feature by feature. With a standalone vault alone, the rules, the connections, the accounts and the payouts are yours to build. Adding an orchestrator on top closes part of that with a second vendor and a second contract. Yuno covers all six rows on one platform. Two of our cells are marked partly covered on purpose: rule-based allocation across banks and issuers, and the US banking and issuing providers behind the API. Both are open items with owners and come back in writing with the RFP response. Both vendors are good at what they say they do, and both are Yuno partners; the quotes are theirs, and we would ask you to confirm each one with them.",
+    "notes": "This is the same comparison from the point of view of your roadmap rather than feature by feature. With a standalone vault alone, the rules, the connections, the accounts and the payouts are yours to build. Adding an orchestrator on top closes part of that with a second vendor and a second contract. Yuno covers all five rows on one platform. Two of our cells are marked partly covered on purpose: rule-based allocation across banks and issuers, and the US banking and issuing providers behind the API. Both are open items with owners and come back in writing with the RFP response. Both vendors are good at what they say they do, and both are Yuno partners; the quotes are theirs, and we would ask you to confirm each one with them.",
 }

@@ -17,9 +17,10 @@ Field names are the ones agreed with the coordinator on 8 Oct 2026. `python3 gs_
 - Content slides (every type except cover, agenda, divider, closing, template_keep) need `kicker` (rendered ALL CAPS 7 pt grey at the template's kicker position) and `headline`.
 - `headline`: a full sentence. 20 pt when it fits in two lines (box 602 pt wide), else 18 pt in two lines, else 18 pt in three lines (the content zone then starts 17 pt lower). A headline that needs a fourth line raises `FitError` naming the slide id. Never below 18 pt.
 - `source` optional one line, 6.5 pt grey at y 369.5. `notes` optional. `tag` optional list of pills shown on the kicker line, right-aligned next to the Yuno wordmark.
-- Pill values: `CONFIRMED` (green on #E2F3EB), `BETA` (grey on #EFF0F2), `PUBLIC DOCS` (blue on #E8EAF5), `OPEN` (amber on #FBEFD9), `NOT IN DOCS` (grey). Any other string is rendered as a free-text chip (blue #1227AD on #E8EAF5), used for diagram boxes such as "Rules set by OnlyFans".
+- Pill values: `CONFIRMED` (green #1F8A5B on #E2F3EB), `BETA` (grey #424449 on #EFF0F2), `PUBLIC DOCS` (blue #3E4FE0 on #E8EAF5), `OPEN` (amber #9A5B00 on #FBEFD9), `NOT IN DOCS` (grey #424449 on #EFF0F2), `DIRECTION` (grey #424449 on lavender #D5D9F5). Any other string is rendered as a free-text chip (blue #1227AD on #E8EAF5), used for diagram boxes such as "Rules set by OnlyFans".
 - Text items: a cell, card body, list item or bullet may be a string or `{"text": "...", "pill": "OPEN", "pill2": "BETA", "bold": true}`. `**bold**` markup is allowed inside any text. House rules are enforced by `validate()`: no em dash, no " - " as punctuation, never "no small feat".
-- Geometry: page 720 x 405 pt, margins 36 pt, content zone x 36..684 (648 wide) from y 95 to 365 (y 112..365 under a three-line headline). Text sizes: body 7.5 to 10 pt, kicker 7 pt caps, source and footer 6.5 pt, nothing below 6.5 pt. When a slide type cannot fit its content at its minimum sizes the builder raises `FitError("slide <id>: ...")` instead of shrinking or overflowing.
+- Geometry: page 720 x 405 pt, margins 36 pt, content zone x 36..684 (648 wide) from y 95 to 365 (y 112..365 under a three-line headline). Text sizes: body 7.5 to 10 pt, kicker 7 pt caps, source and footer 6.5 pt, nothing below 6.5 pt. When a slide type cannot fit its content at its minimum sizes the builder raises `FitError("slide <id>: ...")` instead of shrinking or overflowing. During `build`, every slide is first rehearsed offline; a slide that fails gets an amber placeholder (kicker, headline, the reason) at its position so numbering holds, and the build prints the list of slides that need shorter copy. Rebuild one of them in place with `--only <id> --replace` after editing the spec.
+- Cards (`cards_row`, `phases`, `next_steps`): every card in a row takes the height of the tallest content (minimum 110 pt); the bottom band sits 12 pt under the cards. Without a band the cards use the whole zone, like the template.
 
 ## Types
 
@@ -167,12 +168,17 @@ Template slide 46. The layout's `yuno |` lockup is covered and redrawn right-ali
 ```
 Duplicates a template slide verbatim (index in `template_dump.json` order: 22 Yuno story stats, 23 four pillars, 24 offices, 25 trusted-by logos, 26 team, 27 dedicated team, 38 awards, 40 coverage, 41 credentials, 42 quotes, 45 compliance). `replacements` rewrite every text element containing `find`, preserving styles. `delete_images_matching` takes element objectIds; the placeholder `SPACEX_LOGO_OBJECT_ID` resolves to `g3f76accd9b2_0_4` (SpaceX mark on slide 25). The Eventbrite speaker notes of the source slide are always wiped. If the slide `id` names a known template (yuno-story, four-pillars, offices, trusted, team, dedicated) and `template_index` points elsewhere, the engine prints a warning and uses the slide the id names; `template_ref` can name it explicitly.
 
+## Presentation id
+The engine targets, in this order: `--pid <id>` on the command line, the `OF_PID` environment variable, `presentation_id` in the spec, then its built-in default. The build needs all 46 template slides present (it refuses otherwise), so a final build always starts from a fresh Drive copy of "Deck - Eventbrite (BSP) + Yuno" (`1qe5p-D3Cgx63UuHj8nf3JaY_4wxOqytJKgo9IDzGI_E`) shared as writer with `gtm-claude-editor@gtm-claude-tools-260922.iam.gserviceaccount.com`. Drive copies keep every object id, so `template_dump.json` stays valid. The 8 Oct 2026 build lives in `15NrORuI9CaYWwrYoWpGeplhZXeuLIiGwGaFFgD_IlTM` (v2); the first working copy `10A2GokDXPEPkeqqS29H7a460R6j5ux60nILIqUXmUKc` was emptied by a cleanup run after a finalized build and now holds one blank slide (its previous version is restorable from File > Version history).
+
 ## Commands
 ```
-python3 gs_engine.py check deck_spec.json              # offline validation + fit check, no API calls
-python3 gs_engine.py build deck_spec.json              # append all slides after the 46 template slides
-python3 gs_engine.py build deck_spec.json --only d01,exec
-python3 gs_engine.py build deck_spec.json --final      # append all, then delete the 46 template slides in one call
-python3 gs_engine.py cleanup                           # delete every slide this engine appended (build_state.json)
-python3 qa_thumbs.py [--out thumbs_build] [--from 47]  # thumbnails, contact sheets, geometry and overflow report
+python3 gs_engine.py check deck_spec.json                       # offline validation + fit check, no API calls
+python3 gs_engine.py build deck_spec.json --pid <copy id>       # append all slides after the 46 template slides
+python3 gs_engine.py build deck_spec.json --only d01,exec       # a subset, appended
+python3 gs_engine.py build deck_spec.json --only d01 --replace  # rebuild one slide in place (old one deleted, position kept)
+python3 gs_engine.py build deck_spec.json --final               # append all, then delete the 46 template slides in one call
+python3 gs_engine.py cleanup                                    # delete every slide this engine appended; refuses once a build is finalized
+python3 qa_thumbs.py [--pid <id>] [--out thumbs_build] [--from 47]   # thumbnails, contact sheets, geometry and overflow report
 ```
+After `--final` the built slides are the deck: `cleanup` refuses to run (the template is gone) and `--replace` is the way to swap a slide.

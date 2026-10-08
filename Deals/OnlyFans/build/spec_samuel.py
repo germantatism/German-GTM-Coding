@@ -119,7 +119,7 @@ SLIDES["vault-data"] = {
 SLIDES["questions-1"] = {
     "id": "questions-1", "type": "checklist_table",
     "kicker": "WHAT THE VAULT HAS TO HOLD · THE QUESTIONS",
-    "headline": "The questions a careful vault buyer asks first, answered before you ask (1 of 2).",
+    "headline": "The questions a careful vault buyer asks first, answered before you ask (1 of 3).",
     "columns": ["#", "The question", "Our answer", "Basis"],
     "col_widths": [0.04, 0.30, 0.52, 0.14],
     "header_style": "dark", "font_size": 7.5, "bold_first_col": False, "zebra": True,
@@ -132,7 +132,7 @@ SLIDES["questions-1"] = {
         ["6", {"text": "How do we leave?", "bold": True}, "A documented card export: a written request, the recipient's PCI DSS attestation, and a PGP-encrypted file over SFTP.", {"text": "", "pill": "CONFIRMED"}],
         ["7", {"text": "What uptime do you commit to, and how does it fail over?", "bold": True}, "You get a contractual figure and the failover design with the RFP response, not a number on a slide.", {"text": "", "pill": "OPEN"}],
     ],
-    "notes": "These are the questions that decide a vault evaluation, and the ones that get tested in a sandbox. Five of the seven are documented today; three of those depend on the proxy, which is in beta and switched on per organization. Two are open and we say so: the token requestor model per network, and the contractual uptime and failover design. On both you get a written answer with the RFP response. Row 3: the proxy overview and guide document the 3-hour window; the Invoke Forward Proxy API reference page states that the security code cannot be injected, and Phase 0 shows the actual behaviour. Row 7: our published SLA annex at y.uno/sla states 99.90% monthly availability and a 5-minute response on critical incidents; the figure that binds is the one in your contract. Eight more questions continue on the next slide.",
+    "notes": "These are the questions that decide a vault evaluation, and the ones that get tested in a sandbox. Five of the seven are documented today; three of those depend on the proxy, which is in beta and switched on per organization. Two are open and we say so: the token requestor model per network, and the contractual uptime and failover design. On both you get a written answer with the RFP response. Row 3: the proxy overview and guide document the 3-hour window; the Invoke Forward Proxy API reference page states that the security code cannot be injected, and Phase 0 shows the actual behaviour. Row 7: our published SLA annex at y.uno/sla states 99.90% monthly availability and a 5-minute response on critical incidents; the figure that binds is the one in your contract. Eight more questions continue on the next two slides.",
 }
 
 # ---------------------------------------------------------------- S10 proxy how

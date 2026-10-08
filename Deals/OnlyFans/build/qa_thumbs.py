@@ -113,6 +113,7 @@ if __name__ == '__main__':
     a = sys.argv[1:]
     out = os.path.join(HERE, a[a.index('--out') + 1] if '--out' in a else 'thumbs_build')
     start = int(a[a.index('--from') + 1]) if '--from' in a else 1
+    if '--pid' in a: os.environ['OF_PID'] = a[a.index('--pid') + 1]
     deck = E.Deck(); pres = deck.fetch(); slides = pres['slides']
     print(f"{len(slides)} slides in the deck")
     if '--no-thumbs' not in a:
