@@ -1,6 +1,6 @@
 # Hostinger: executed NDA to Paulius (Gmail draft, 2026-10-08)
 
-Gmail draft created 8-oct-2026 as a reply in the thread "Hostinger + Yuno | Demo" (reply to German's 2-oct message, id 1a0fd5b6d661ae10).
+Gmail draft v2 created 8-oct-2026 (v1 deleted; added the Warsaw note after Piotr and Paulius met in person and sent German a photo) as a reply in the thread "Hostinger + Yuno | Demo" (reply to German's 2-oct message, id 1a0fd5b6d661ae10).
 
 To: paulius.lapenas@hostinger.com
 Cc: antoine.cathelin@y.uno, dirk.meulen@y.uno, justo@y.uno, piotr@y.uno, tautvydas@y.uno, ivvy@y.uno
@@ -10,6 +10,8 @@ Source of the PDF: Ivvy, #salesops-legal thread "NDA - Hostinger", file "Complet
 ---
 
 Hi Paulius,
+
+Glad you and Piotr got to meet in Warsaw, loved the photo! Hope you both had a great time.
 
 Attached is the fully executed copy of the mutual NDA for your records. Thanks again to you and your legal team for turning it around so quickly.
 
