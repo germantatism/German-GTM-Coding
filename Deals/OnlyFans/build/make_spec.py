@@ -79,7 +79,7 @@ def resolve(obj):
     if isinstance(obj, dict): return {k: resolve(v) for k, v in obj.items()}
     return obj
 
-spec = {"presentation_id": PRESENTATION_ID, "merchant": "OnlyFans", "footer": "For: OnlyFans", "slides": resolve(slides)}
+spec = {"presentation_id": PRESENTATION_ID, "merchant": "OnlyFans", "footer": "", "slides": resolve(slides)}
 # house checks
 blob = json.dumps(spec, ensure_ascii=False)
 for bad in ["—", " - ", "no small feat", "SpaceX", "Spike", "Ria ", "Chess.com", "+12%", "20-30%", "20–30%"]:

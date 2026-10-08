@@ -15,3 +15,81 @@ target presentation: 1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js (Deck - OnlyFa
   applied    3 requests notes n04_g3f77215683c_2_2968
 [07] stats              answer
   applied    2 requests duplicate t7 -> n07_g3f77215683c_2_2968
+  applied   93 requests n07
+  applied    3 requests notes n07_g3f77215683c_2_2968
+[10] cards_row          no-single-bank
+  applied    2 requests duplicate t7 -> n10_g3f77215683c_2_2968
+  applied  110 requests n10
+  applied    3 requests notes n10_g3f77215683c_2_2968
+[13] divider            d03
+  applied    2 requests duplicate t3 -> n13_g3f769a0f446_0_988
+  applied    8 requests n13
+  applied    1 requests notes n13_g3f769a0f446_0_988
+[16] cards_row          stack
+  applied    2 requests duplicate t7 -> n16_g3f77215683c_2_2968
+  applied  111 requests n16
+  applied    3 requests notes n16_g3f77215683c_2_2968
+[19] divider            d04
+  applied    2 requests duplicate t3 -> n19_g3f769a0f446_0_988
+  applied   13 requests n19
+  applied    1 requests notes n19_g3f769a0f446_0_988
+[22] checklist_table    questions-1
+  retry 1 on chunk 0 (duplicate t7 -> n22_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  retry 2 on chunk 0 (duplicate t7 -> n22_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  applied    2 requests duplicate t7 -> n22_g3f77215683c_2_2968
+  applied  302 requests n22
+  applied    3 requests notes n22_g3f77215683c_2_2968
+[25] stats              clocks
+  applied    2 requests duplicate t7 -> n25_g3f77215683c_2_2968
+  applied  109 requests n25
+  applied    3 requests notes n25_g3f77215683c_2_2968
+[28] template_keep      four-pillars
+  WARNING slide four-pillars: template_index 24 is 'offices map' in template_dump order; using 23 ('four pillars') from the slide id
+  WARNING slide four-pillars: template_index 24 is 'offices map' in template_dump order; using 23 ('four pillars') from the slide id
+  applied    2 requests duplicate t23 -> n28_g3f769a0f446_0_7028
+  applied   10 requests n28
+[31] template_keep      trusted
+  WARNING slide trusted: template_index 26 is 'team' in template_dump order; using 25 ('trusted-by logos') from the slide id
+  WARNING slide trusted: template_index 26 is 'team' in template_dump order; using 25 ('trusted-by logos') from the slide id
+  applied    2 requests duplicate t25 -> n31_g3f769a0f446_0_8218
+  applied   11 requests n31
+  applied    1 requests notes n31_g3f769a0f446_0_8218
+[34] divider            d06
+  applied    2 requests duplicate t3 -> n34_g3f769a0f446_0_988
+  applied   13 requests n34
+  applied    3 requests notes n34_g3f769a0f446_0_988
+[37] diagram            keep-current
+  applied    2 requests duplicate t7 -> n37_g3f77215683c_2_2968
+  applied  168 requests n37
+  applied    3 requests notes n37_g3f77215683c_2_2968
+[40] cards_row          proxy-controls
+  applied    2 requests duplicate t7 -> n40_g3f77215683c_2_2968
+  applied  180 requests n40
+  applied    3 requests notes n40_g3f77215683c_2_2968
+[43] diagram            direction-architecture
+  applied    2 requests duplicate t7 -> n43_g3f77215683c_2_2968
+  applied  195 requests n43
+  retry 1 on chunk 0 (notes n43_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  retry 2 on chunk 0 (notes n43_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  retry 3 on chunk 0 (notes n43_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  applied    3 requests notes n43_g3f77215683c_2_2968
+[46] divider            d07
+  applied    2 requests duplicate t3 -> n46_g3f769a0f446_0_988
+  applied   13 requests n46
+  applied    3 requests notes n46_g3f769a0f446_0_988
+[49] table              versus-table
+  applied    2 requests duplicate t7 -> n49_g3f77215683c_2_2968
+  applied  463 requests n49
+  applied    3 requests notes n49_g3f77215683c_2_2968
+[52] closing            closing
+  applied    2 requests duplicate t46 -> n52_g3c99cf7678e_0_44
+  applied   15 requests closing text
+  applied    6 requests closing lockup
+[55] table              app-limits
+  applied    2 requests duplicate t7 -> n55_g3f77215683c_2_2968
+  applied  264 requests n55
+  applied    3 requests notes n55_g3f77215683c_2_2968
+[58] sources            app-sources
+  applied    2 requests duplicate t7 -> n58_g3f77215683c_2_2968
+  applied  232 requests n58
+  applied    3 requests notes n58_g3f77215683c_2_2968

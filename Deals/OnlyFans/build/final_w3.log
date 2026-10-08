@@ -16,3 +16,79 @@ target presentation: 1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js (Deck - OnlyFa
 [09] stats              industry-glance
   applied    2 requests duplicate t7 -> n09_g3f77215683c_2_2968
   applied  115 requests n09
+  applied    3 requests notes n09_g3f77215683c_2_2968
+[12] table              vault-market
+  applied    2 requests duplicate t7 -> n12_g3f77215683c_2_2968
+  applied  321 requests n12
+  applied    3 requests notes n12_g3f77215683c_2_2968
+[15] traffic_list       traffic
+  applied    2 requests duplicate t7 -> n15_g3f77215683c_2_2968
+  applied  161 requests n15
+  applied    3 requests notes n15_g3f77215683c_2_2968
+[18] four_numbers       four-numbers
+  applied    2 requests duplicate t7 -> n18_g3f77215683c_2_2968
+  applied  124 requests n18
+  applied    3 requests notes n18_g3f77215683c_2_2968
+[21] table              five-data
+  applied    2 requests duplicate t7 -> n21_g3f77215683c_2_2968
+  applied  237 requests n21
+  applied    3 requests notes n21_g3f77215683c_2_2968
+[24] checklist_table    questions-3
+  retry 1 on chunk 0 (duplicate t7 -> n24_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  retry 2 on chunk 0 (duplicate t7 -> n24_g3f77215683c_2_2968): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  applied    2 requests duplicate t7 -> n24_g3f77215683c_2_2968
+  applied  215 requests n24
+  applied    3 requests notes n24_g3f77215683c_2_2968
+[27] template_keep      yuno-story
+  WARNING slide yuno-story: template_index 23 is 'four pillars' in template_dump order; using 22 ('Yuno story stats') from the slide id
+  WARNING slide yuno-story: template_index 23 is 'four pillars' in template_dump order; using 22 ('Yuno story stats') from the slide id
+  applied    2 requests duplicate t22 -> n27_g3f769a0f446_0_14188
+  applied   11 requests n27
+  applied    1 requests notes n27_g3f769a0f446_0_14188
+[30] template_keep      offices
+  WARNING slide offices: template_index 25 is 'trusted-by logos' in template_dump order; using 24 ('offices map') from the slide id
+  WARNING slide offices: template_index 25 is 'trusted-by logos' in template_dump order; using 24 ('offices map') from the slide id
+  applied    2 requests duplicate t24 -> n30_g3f769a0f446_0_15222
+  applied   10 requests n30
+  applied    1 requests notes n30_g3f769a0f446_0_15222
+[33] template_keep      dedicated
+  WARNING slide dedicated: template_index 29 is 'marketplace hero' in template_dump order; using 27 ('dedicated team') from the slide id
+  WARNING slide dedicated: template_index 29 is 'marketplace hero' in template_dump order; using 27 ('dedicated team') from the slide id
+  applied    2 requests duplicate t27 -> n33_g3f77215683c_2_1368
+  applied   22 requests n33
+  applied    1 requests notes n33_g3f77215683c_2_1368
+[36] diagram            vault-data
+  applied    2 requests duplicate t7 -> n36_g3f77215683c_2_2968
+  applied  132 requests n36
+  applied    3 requests notes n36_g3f77215683c_2_2968
+[39] code_before_after  proxy-how
+  applied    2 requests duplicate t7 -> n39_g3f77215683c_2_2968
+  applied  129 requests n39
+  applied    3 requests notes n39_g3f77215683c_2_2968
+[42] cards_row          who-decides
+  applied    2 requests duplicate t7 -> n42_g3f77215683c_2_2968
+  applied  143 requests n42
+  applied    3 requests notes n42_g3f77215683c_2_2968
+[45] two_column         direction-yield
+  applied    2 requests duplicate t7 -> n45_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n45): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  retry 2 on chunk 0 (n45): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  retry 3 on chunk 0 (n45): <HttpError 429 when requesting https://slides.googleapis.com/v1/presentations/1_W9Xr8MWsNcv-y3I2baUFl1WUMnvVxxyrLCjKu3t5js:batchUpdate?alt=j
+  applied  149 requests n45
+  applied    3 requests notes n45_g3f77215683c_2_2968
+[48] comparison_grid    versus-model
+  applied    2 requests duplicate t7 -> n48_g3f77215683c_2_2968
+  applied  384 requests n48
+  applied    3 requests notes n48_g3f77215683c_2_2968
+[51] table              versus-vgs
+  applied    2 requests duplicate t7 -> n51_g3f77215683c_2_2968
+  applied  323 requests n51
+  applied    3 requests notes n51_g3f77215683c_2_2968
+[54] open_items_table   owe
+  applied    2 requests duplicate t7 -> n54_g3f77215683c_2_2968
+  applied  227 requests n54
+  applied    3 requests notes n54_g3f77215683c_2_2968
+[57] cards_row          credentials
+  applied    2 requests duplicate t7 -> n57_g3f77215683c_2_2968
+  applied  110 requests n57
+  applied    3 requests notes n57_g3f77215683c_2_2968
