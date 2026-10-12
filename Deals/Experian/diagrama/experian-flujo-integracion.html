@@ -78,6 +78,11 @@
   .box.pend{background:var(--black);color:var(--white);border-color:var(--black)}
   .box.pend h3{color:var(--lime)}
   .box.pend li:before{background:var(--lime)}
+  .methods{margin:22px 48px 0;padding:18px 26px;border-radius:16px;background:var(--lilac);display:flex;gap:56px;flex-wrap:wrap;align-items:center}
+  .m-col{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .m-h{font-size:13px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue);margin-right:6px}
+  .chip{font-size:15px;font-weight:600;padding:5px 14px;border-radius:20px;background:var(--blue);color:var(--white)}
+  .chip.next{background:var(--lime);color:var(--black)}
   footer{padding:22px 48px 34px;font-size:13px;font-weight:300;color:var(--gray-dk);display:flex;justify-content:space-between}
 </style>
 </head>
@@ -92,7 +97,7 @@
         <span class="ename">Experian DataCrédito</span>
       </div>
       <h1>flujo de integración de suscripciones</h1>
-      <p class="sub">Cómo se conecta Midatacrédito con el motor de suscripciones de Yuno de punta a punta: alta, primer cobro, recurrencia, reintentos y cancelación, y cómo se entera su core en cada paso. El flujo muestra el cobro con tarjeta, que es como opera hoy el motor.</p>
+      <p class="sub">Cómo se conecta Midatacrédito con el motor de suscripciones de Yuno de punta a punta: alta, primer cobro, recurrencia, reintentos y cancelación, y cómo se entera su core en cada paso. El ejemplo usa tarjeta; el mismo flujo aplica a Apple Pay, Google Pay y PayPal.</p>
     </div>
     <div class="legend">
       <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#7C89EF" stroke-width="3"/><path d="M44 1 L52 6 L44 11 Z" fill="#7C89EF"/></svg>Llamada API de Experian a Yuno</div>
@@ -140,7 +145,7 @@
     <div class="cell band-y"><div class="card y" id="y5">Cancela de inmediato o en una fecha programada. La pausa detiene los cobros hasta reanudar.</div></div>
 
     <!-- lane: procesadores -->
-    <div class="lane l-p"><div class="lt">Procesadores</div><div class="ld">Tarjetas</div></div>
+    <div class="lane l-p"><div class="lt">Procesadores</div><div class="ld">Tarjetas y billeteras</div></div>
     <div class="cell band-p"><div class="card p mig" id="p0">El proveedor actual (PayU, Wompi) entrega los datos de tarjeta cifrados a Yuno, en el proceso de migración PCI.</div></div>
     <div class="cell band-p"><div class="card p" id="p1">Opcional: verifica la tarjeta con el procesador antes de guardarla.</div></div>
     <div class="cell band-p"><div class="card p" id="p2">Responde aprobado o declinado.</div></div>
@@ -188,12 +193,16 @@
     <div class="box pend">
       <h3>Por definir juntos</h3>
       <ul>
-        <li>Débito automático a cuentas de ahorro y corriente: hoy el motor cobra con tarjeta; la cobertura de cuentas por entidad está en validación.</li>
+        <li>Débito automático a cuentas de ahorro y corriente: cobertura por entidad, en validación.</li>
         <li>Migración de las cuentas bancarias ya inscritas: en análisis.</li>
-        <li>Bre-B como medio recurrente: en habilitación.</li>
         <li>Piloto con un grupo de cuentas en Yuno frente al modelo actual.</li>
       </ul>
     </div>
+  </div>
+
+  <div class="methods">
+    <div class="m-col"><span class="m-h">Medios recurrentes hoy</span><span class="chip">Tarjetas</span><span class="chip">Apple Pay</span><span class="chip">Google Pay</span><span class="chip">PayPal</span></div>
+    <div class="m-col"><span class="m-h">En integración para cobro recurrente</span><span class="chip next">Bre-B</span><span class="chip next">Nequi</span><span class="chip next">Daviplata</span></div>
   </div>
 
   <footer>
