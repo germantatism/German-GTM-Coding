@@ -92,12 +92,12 @@
         <span class="ename">Experian DataCrédito</span>
       </div>
       <h1>flujo de integración de suscripciones</h1>
-      <p class="sub">Cómo se conecta Midatacrédito con Yuno de punta a punta: alta del usuario, primer cobro, recurrencia, reintentos, cancelación y la sincronización con su core en cada paso.</p>
+      <p class="sub">Cómo se conecta Midatacrédito con el motor de suscripciones de Yuno de punta a punta: alta, primer cobro, recurrencia, reintentos y cancelación, y cómo se entera su core en cada paso. El flujo muestra el cobro con tarjeta, que es como opera hoy el motor.</p>
     </div>
     <div class="legend">
       <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#7C89EF" stroke-width="3"/><path d="M44 1 L52 6 L44 11 Z" fill="#7C89EF"/></svg>Llamada API de Experian a Yuno</div>
       <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#E0ED80" stroke-width="3" stroke-dasharray="6 5"/><path d="M44 1 L52 6 L44 11 Z" fill="#E0ED80"/></svg>Webhook de Yuno a Experian</div>
-      <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#92959B" stroke-width="3"/><path d="M44 1 L52 6 L44 11 Z" fill="#92959B"/></svg>Yuno con procesadores y entidades</div>
+      <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#92959B" stroke-width="3"/><path d="M44 1 L52 6 L44 11 Z" fill="#92959B"/></svg>Yuno con procesadores</div>
       <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#C9CBD3" stroke-width="2" stroke-dasharray="2 4"/><path d="M44 1 L52 6 L44 11 Z" fill="#C9CBD3"/></svg>Acción del usuario</div>
     </div>
   </header>
@@ -114,38 +114,38 @@
 
     <!-- lane: usuario -->
     <div class="lane l-u"><div class="lt">Usuario</div><div class="ld">Suscriptor de Midatacrédito</div></div>
-    <div class="cell band-u"><div class="card u mig" id="u0">Con tarjeta, no vuelve a registrar su medio de pago.</div></div>
-    <div class="cell band-u"><div class="card u" id="u1">Elige su plan en Midatacrédito y registra su medio de pago en el checkout de Yuno.</div></div>
-    <div class="cell band-u"><div class="card u" id="u2">Su plan queda activo.</div></div>
+    <div class="cell band-u"><div class="card u mig" id="u0">No vuelve a registrar su tarjeta.</div></div>
+    <div class="cell band-u"><div class="card u" id="u1">Elige su plan en Midatacrédito y registra su tarjeta en el formulario seguro de Yuno.</div></div>
+    <div class="cell band-u"><div class="card u" id="u2">Su plan queda activo si el primer cobro se aprueba.</div></div>
     <div class="cell band-u"><div class="card u" id="u3">Sigue con el servicio, sin volver a pagar a mano.</div></div>
     <div class="cell band-u"><div class="card u" id="u4">Recupera el servicio cuando el cobro pasa.</div></div>
     <div class="cell band-u"><div class="card u" id="u5">Cancela, pausa o cambia de plan en Midatacrédito.</div></div>
 
     <!-- lane: experian -->
     <div class="lane l-e"><div class="lt">Experian</div><div class="ld">Core de Midatacrédito</div></div>
-    <div class="cell band-e"><div class="card e mig" id="e0">Entrega la base activa: suscripciones, planes y fechas de cobro.</div></div>
-    <div class="cell band-e"><div class="card e" id="e1">Crea el cliente en Yuno y abre el checkout.<br><code>POST /customers</code></div></div>
-    <div class="cell band-e"><div class="card e" id="e2">Crea la suscripción: plan, monto, frecuencia y día de cobro.<br><code>POST /subscriptions</code><br>Con la confirmación, <b>activa el plan</b>.</div></div>
-    <div class="cell band-e"><div class="card e" id="e3">Recibe el resultado de <b>cada ciclo</b> y actualiza su core. Aviso opcional días antes de cada renovación.</div></div>
-    <div class="cell band-e"><div class="card e" id="e4">Aplica su regla: suspende el plan mientras está en mora y lo reactiva al recuperarse. Ustedes deciden si se mantiene o se reinicia la fecha de cobro.</div></div>
+    <div class="cell band-e"><div class="card e mig" id="e0">Entrega la base activa: clientes, planes y próximas fechas de cobro.</div></div>
+    <div class="cell band-e"><div class="card e" id="e1">Crea el cliente en Yuno y abre el formulario de registro.<br><code>POST /customers</code></div></div>
+    <div class="cell band-e"><div class="card e" id="e2">Crea la suscripción con el token: plan, monto y frecuencia.<br><code>POST /subscriptions</code><br>Con la confirmación del pago, <b>activa el plan</b>.</div></div>
+    <div class="cell band-e"><div class="card e" id="e3">Recibe el resultado de <b>cada ciclo</b> y actualiza su core. Opcional: aviso unos días antes de cada renovación.</div></div>
+    <div class="cell band-e"><div class="card e" id="e4">Aplica su propia regla, por ejemplo: suspende el plan mientras está en mora y lo reactiva cuando el cobro se recupera.</div></div>
     <div class="cell band-e"><div class="card e" id="e5">Le informa a Yuno el cambio.<br><code>/cancel</code> <code>/pause</code> <code>/resume</code> <code>/plan</code></div></div>
 
     <!-- lane: yuno -->
     <div class="lane l-y"><div class="lt">Yuno</div><div class="ld">Bóveda, motor de suscripciones y orquestación</div></div>
-    <div class="cell band-y"><div class="card y mig" id="y0">Carga los tokens en la bóveda con su network transaction ID y crea cada suscripción con su fecha de cobro actual.<br><span class="tag val">Cuentas bancarias: en análisis</span></div></div>
-    <div class="cell band-y"><div class="card y" id="y1">Tokeniza el medio de pago y lo guarda en la bóveda (<code>vaulted_token</code>). <b>El medio que se registra es el mismo que se cobra.</b></div></div>
-    <div class="cell band-y"><div class="card y" id="y2">Cobra el primer ciclo con el usuario presente (CIT) y lo rutea según sus reglas.</div></div>
-    <div class="cell band-y"><div class="card y" id="y3">En cada fecha de cobro el motor genera el cargo (MIT) con el token guardado. Ruteo por %, BIN, emisor o metadata, con hasta 2 respaldos.</div></div>
-    <div class="cell band-y"><div class="card y" id="y4">La suscripción pasa a <b>en mora</b> y sigue reintentando: estándar, Smart Recharge (ML) o calendario propio. Con un cobro exitoso vuelve a activa.</div></div>
-    <div class="cell band-y"><div class="card y" id="y5">Detiene o ajusta los cobros desde ese momento o en una fecha programada.</div></div>
+    <div class="cell band-y"><div class="card y mig" id="y0">Carga las tarjetas en su bóveda y crea cada suscripción con su próxima fecha de cobro.<br><span class="tag val">Cuentas bancarias: en análisis</span></div></div>
+    <div class="cell band-y"><div class="card y" id="y1">Guarda la tarjeta en su bóveda y devuelve un token (<code>vaulted_token</code>). <b>La tarjeta que se registra es la misma que se cobra.</b></div></div>
+    <div class="cell band-y"><div class="card y" id="y2">Cobra el primer ciclo y lo rutea según sus reglas. Con validación del primer pago: aprobado, la suscripción queda activa; rechazado, se cancela.</div></div>
+    <div class="cell band-y"><div class="card y" id="y3">En cada fecha de cobro el motor genera el cargo con la tarjeta guardada y su network transaction ID. Ruteo por porcentaje, BIN, marca, monto o metadata.</div></div>
+    <div class="cell band-y"><div class="card y" id="y4">La suscripción pasa a <b>en mora</b> y Yuno reintenta, hasta 6 veces: calendario estándar, inteligente (ML) o propio. Con un cobro exitoso vuelve a activa.</div></div>
+    <div class="cell band-y"><div class="card y" id="y5">Cancela de inmediato o en una fecha programada. La pausa detiene los cobros hasta reanudar.</div></div>
 
     <!-- lane: procesadores -->
-    <div class="lane l-p"><div class="lt">Procesadores y entidades</div><div class="ld">Tarjetas, cuentas bancarias y Bre-B</div></div>
-    <div class="cell band-p"><div class="card p mig" id="p0">El proveedor actual (PayU, Wompi) transfiere los tokens de tarjeta en una migración PCI.</div></div>
-    <div class="cell band-p"><div class="card p" id="p1">Valida el medio de pago con el procesador o la entidad.</div></div>
+    <div class="lane l-p"><div class="lt">Procesadores</div><div class="ld">Tarjetas</div></div>
+    <div class="cell band-p"><div class="card p mig" id="p0">El proveedor actual (PayU, Wompi) entrega los datos de tarjeta cifrados a Yuno, en el proceso de migración PCI.</div></div>
+    <div class="cell band-p"><div class="card p" id="p1">Opcional: verifica la tarjeta con el procesador antes de guardarla.</div></div>
     <div class="cell band-p"><div class="card p" id="p2">Responde aprobado o declinado.</div></div>
-    <div class="cell band-p"><div class="card p" id="p3">Procesador principal. Si declina, el respaldo intenta rescatar el cobro.</div></div>
-    <div class="cell band-p"><div class="card p" id="p4">Cada reintento puede ir por otro procesador.</div></div>
+    <div class="cell band-p"><div class="card p" id="p3">Procesador principal. Si declina, la ruta puede pasar a un procesador de respaldo.</div></div>
+    <div class="cell band-p"><div class="card p" id="p4">Los reintentos también pasan por el ruteo y pueden ir por otro procesador.</div></div>
     <div class="cell band-p"><div class="card p" id="p5">Sin nuevos cargos después de la cancelación.</div></div>
 
     <svg id="wires"></svg>
@@ -158,8 +158,8 @@
         <div>
           <h4>Experian llama a Yuno (API)</h4>
           <ul>
-            <li>Clientes y medios de pago: <code>/customers</code></li>
-            <li>Suscripciones: <code>/subscriptions</code></li>
+            <li>Clientes y registro de tarjeta: <code>/customers</code></li>
+            <li>Suscripciones: <code>POST /subscriptions</code></li>
             <li>Cambios: <code>/cancel</code> <code>/pause</code> <code>/resume</code> <code>/plan</code></li>
             <li>Consulta del estado para conciliar: <code>GET /subscriptions/{id}</code></li>
           </ul>
@@ -167,9 +167,10 @@
         <div>
           <h4>Yuno le avisa a Experian (webhooks)</h4>
           <ul>
-            <li>Cada cobro: <code>payment.purchase</code></li>
+            <li>Registro de tarjeta: <code>enrollment.enroll</code></li>
+            <li>Cada cobro, aprobado o rechazado: <code>payment.purchase</code></li>
             <li>Alta y activación: <code>subscription.create</code> <code>subscription.active</code></li>
-            <li>Mora: <code>subscription.past_due</code></li>
+            <li>Mora: <code>subscription.past_due</code> (se habilita por cuenta)</li>
             <li>Cambios: <code>cancel</code> <code>pause</code> <code>resume</code> <code>plan_changed</code></li>
           </ul>
         </div>
@@ -179,7 +180,7 @@
       <h3>Visibilidad para operación</h3>
       <ul>
         <li>Dashboard de suscripciones por estado (activa, en mora, pausada, cancelada) y por plan.</li>
-        <li>Tasa de aprobación por intento y por procesador.</li>
+        <li>Historial de cobros de cada suscripción, con el resultado de cada intento.</li>
         <li>Próxima fecha de cobro de cada suscripción, para proyectar el recaudo del mes.</li>
         <li>Conciliación de cada cobro contra procesadores y entidades: sesión dedicada con su equipo de operaciones.</li>
       </ul>
@@ -187,7 +188,7 @@
     <div class="box pend">
       <h3>Por definir juntos</h3>
       <ul>
-        <li>Débito automático a cuentas de ahorro y corriente: cobertura por entidad, en validación.</li>
+        <li>Débito automático a cuentas de ahorro y corriente: hoy el motor cobra con tarjeta; la cobertura de cuentas por entidad está en validación.</li>
         <li>Migración de las cuentas bancarias ya inscritas: en análisis.</li>
         <li>Bre-B como medio recurrente: en habilitación.</li>
         <li>Piloto con un grupo de cuentas en Yuno frente al modelo actual.</li>
@@ -209,14 +210,14 @@ const wires = [
   ['e0','y0','api','base activa',-34],
   ['p0','y0','psp','tokens',34],
   ['u1','e1','usr','',0],
-  ['e1','y1','api','checkout',-34],
+  ['e1','y1','api','customers',-34],
   ['y1','p1','psp','',-34],
   ['p1','y1','psp','',34],
-  ['y1','e1','wh','vaulted_token',34],
+  ['y1','e1','wh','enroll',34],
   ['e2','y2','api','POST',-34],
   ['y2','p2','psp','',-34],
   ['p2','y2','psp','',34],
-  ['y2','e2','wh','active',34],
+  ['y2','e2','wh','purchase · active',34],
   ['e2','u2','usr','',0],
   ['y3','p3','psp','',-34],
   ['p3','y3','psp','',34],
@@ -224,7 +225,7 @@ const wires = [
   ['e3','u3','usr','',0],
   ['y4','p4','psp','',-34],
   ['p4','y4','psp','',34],
-  ['y4','e4','wh','past_due',34],
+  ['y4','e4','wh','past_due · active',34],
   ['e4','u4','usr','',0],
   ['u5','e5','usr','',0],
   ['e5','y5','api','cancel',-34],
