@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuno After Hours SF · Venue RFI</title>
+<style>
+/* Geist, embedded from Yuno Design System fonts/Geist-VariableFont_wght.ttf */
+@font-face {
+  font-family: "Geist";
+  src: url(data:font/ttf;base64,{{GEIST}}) format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* Yuno Design System tokens (colors_and_type.css / tokens.json) */
+:root {
+  --yuno-primary-100: #1227AD;
+  --yuno-primary-80:  #3E4FE0;
+  --yuno-primary-60:  #5967E4;
+  --yuno-primary-40:  #7C89EF;
+  --yuno-primary-20:  #BDC3F6;
+  --yuno-primary-10:  #E8EAF5;
+  --yuno-black: #000000;
+  --yuno-white: #FFFFFF;
+  --yuno-ink:   #121212;
+  --yuno-ink-3: #4A4A4A;
+  --yuno-ink-4: #767676;
+  --yuno-dark-bg:   #050717;
+  --yuno-dark-bg-3: #141A4A;
+  --yuno-dark-fg-2: rgba(255,255,255,0.72);
+  --line-primary-12: rgba(18, 39, 173, 0.12);
+  --font-sans: Geist, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --space-1: 8px; --space-2: 16px; --space-3: 24px; --space-4: 32px; --space-5: 48px;
+}
+
+@page { size: 8.5in 11in; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--yuno-white); }
+body {
+  font-family: var(--font-sans);
+  color: var(--yuno-ink);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+
+.page {
+  width: 8.5in; height: 11in;
+  padding: 0.5in;
+  margin: 0 auto;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  background: var(--yuno-white);
+}
+@media screen {
+  body { background: var(--yuno-primary-10); padding: var(--space-4) 0; }
+  .page { box-shadow: 0 12px 32px rgba(18,39,173,0.14), 0 2px 6px rgba(18,39,173,0.08); }
+}
+
+/* ---------- Header band (only dark area) ---------- */
+.band {
+  background: linear-gradient(120deg, var(--yuno-dark-bg) 0%, var(--yuno-dark-bg-3) 100%);
+  color: var(--yuno-white);
+  padding: var(--space-3) var(--space-4) var(--space-3);
+}
+.band-top { display: flex; align-items: center; justify-content: space-between; }
+.band-top svg { height: 24px; width: auto; display: block; }
+.eyebrow {
+  font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.band .eyebrow { color: var(--yuno-primary-20); }
+.band h1 {
+  margin-top: var(--space-2);
+  font-size: 40px; line-height: 1.05; letter-spacing: -0.01em; font-weight: 500;
+}
+.band .sub {
+  margin-top: var(--space-1);
+  font-size: 15px; font-weight: 400; color: var(--yuno-dark-fg-2);
+}
+
+/* ---------- Body ---------- */
+.intro {
+  margin-top: var(--space-3);
+  font-size: 13.5px; line-height: 1.5; color: var(--yuno-ink);
+}
+
+section { margin-top: var(--space-3); }
+.sec-head {
+  display: flex; align-items: center; gap: var(--space-1);
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid var(--yuno-primary-80);
+}
+.sec-head::before {
+  content: ""; width: 3px; height: 14px; background: var(--yuno-primary-80);
+}
+.sec-head h2 {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--yuno-primary-80);
+}
+
+/* At a glance: 3 x 2 grid separated by hairlines */
+.glance {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+}
+.glance div {
+  padding: var(--space-1) var(--space-2) var(--space-1) 0;
+  border-bottom: 1px solid var(--line-primary-12);
+}
+.glance div:nth-child(3n+2), .glance div:nth-child(3n) {
+  padding-left: var(--space-2); border-left: 1px solid var(--line-primary-12);
+}
+.glance div:nth-child(n+4) { border-bottom: none; }
+.glance dt {
+  font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--yuno-ink-4);
+}
+.glance dd {
+  margin-top: 4px; font-size: 13px; line-height: 1.4; color: var(--yuno-ink);
+}
+
+/* Two columns */
+.cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--space-4); }
+.cols section { margin-top: var(--space-3); }
+
+ul.need, ol.send { list-style: none; margin-top: 4px; }
+ul.need li, ol.send li {
+  position: relative;
+  font-size: 12.5px; line-height: 1.4;
+  padding: 5px 0 5px 22px;
+  border-bottom: 1px solid var(--line-primary-12);
+}
+ul.need li:last-child, ol.send li:last-child { border-bottom: none; }
+ul.need li::before {
+  content: ""; position: absolute; left: 2px; top: 11px;
+  width: 8px; height: 2px; background: var(--yuno-primary-80);
+}
+ol.send { counter-reset: n; }
+ol.send li { counter-increment: n; }
+ol.send li::before {
+  content: counter(n, decimal-leading-zero);
+  position: absolute; left: 0; top: 5.5px;
+  font-size: 12px; font-weight: 600; color: var(--yuno-primary-80);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Footer */
+.foot { margin-top: auto; padding-top: var(--space-3); }
+.foot .cols section { margin-top: 0; }
+.foot ul { list-style: none; margin-top: var(--space-1); }
+.foot li { font-size: 12.5px; line-height: 1.6; }
+.foot li b { font-weight: 600; color: var(--yuno-primary-100); }
+.foot .name { font-weight: 600; }
+.foot .role { color: var(--yuno-ink-3); }
+.foot a { color: var(--yuno-primary-80); text-decoration: none; }
+.foot .sep { color: var(--yuno-ink-4); padding: 0 2px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="band">
+    <div class="band-top">
+      <!-- Official Yuno wordmark (assets/yuno-wordmark-white.svg) -->
+      {{LOGO}}
+      <span class="eyebrow">Request for Information · Venue</span>
+    </div>
+    <h1>Yuno After Hours SF</h1>
+    <p class="sub">Thursday, October 29, 2026 · San Francisco · 50+ guests</p>
+  </header>
+
+  <p class="intro">Yuno is a payment orchestration platform that connects merchants to more than 1,000 payment methods in 194+ countries through one integration. On Thursday, October 29 we are hosting an evening in San Francisco for AI founders and payments leaders, and we are looking for the right venue. Below is what we have in mind and the details we would like from you.</p>
+
+  <section>
+    <div class="sec-head"><h2>The event at a glance</h2></div>
+    <dl class="glance">
+      <div><dt>Date</dt><dd>Thursday, October 29, 2026</dd></div>
+      <div><dt>Time</dt><dd>6:30 to 10:30 PM, setup access from 5:00 PM</dd></div>
+      <div><dt>Guests</dt><dd>50+ confirmed, capacity for up to&nbsp;70</dd></div>
+      <div><dt>Audience</dt><dd>AI founders, AI company teams and payments leaders from the Bay Area</dd></div>
+      <div><dt>Format</dt><dd>Standing cocktail reception, lounge seating, a two minute welcome toast</dd></div>
+      <div><dt>Music</dt><dd>Live DJ or band for the evening</dd></div>
+    </dl>
+  </section>
+
+  <div class="cols">
+    <section>
+      <div class="sec-head"><h2>What we need</h2></div>
+      <ul class="need">
+        <li>Private or semi-private space for 50 to 70 standing guests, with some lounge seating</li>
+        <li>Full bar: signature cocktails, beer, wine and a real <span style="white-space:nowrap">zero-proof</span> selection</li>
+        <li>Passed bites or food stations through the evening</li>
+        <li>Room, power and sound for a DJ or live band, plus a mic for a short toast</li>
+        <li>Heaters or an indoor option if the space is outdoors</li>
+        <li>A check-in point at the entrance and 21+ ID checks</li>
+        <li>Light Yuno signage where allowed</li>
+        <li>Step-free access for every guest</li>
+      </ul>
+    </section>
+    <section>
+      <div class="sec-head"><h2>Please send us</h2></div>
+      <ol class="send">
+        <li>Availability on Thursday, October 29</li>
+        <li>Spaces that fit 50 to 70, with capacity, floor plan and photos</li>
+        <li>Rental fee or food and drink minimum, what it includes, service charge and tax</li>
+        <li>Food and drink packages with per-person pricing</li>
+        <li>Music policy: DJ or band, in-house sound, volume limits and hard end time</li>
+        <li>Which outside vendors are allowed (DJ, band, photographer, decor)</li>
+        <li>Insurance requirements, deposit and cancellation terms</li>
+        <li>Your point of contact and times for a site visit</li>
+      </ol>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <div class="cols">
+      <section>
+        <div class="sec-head"><h2>Timeline</h2></div>
+        <ul>
+          <!-- ===== EDIT TIMELINE DATES HERE ===== -->
+          <li>Responses by <b class="edit-date" data-edit="responses-due">Wednesday, October 14</b></li>
+          <li>Site visits <b class="edit-date" data-edit="site-visits">October 14 to 16</b></li>
+          <li>Decision and deposit by <b class="edit-date" data-edit="decision-due">Friday, October 16</b></li>
+          <!-- ===== END TIMELINE DATES ===== -->
+        </ul>
+      </section>
+      <section>
+        <div class="sec-head"><h2>Contact</h2></div>
+        <ul>
+          <li class="name">German Tatis</li>
+          <li class="role">Business Development Manager, Yuno</li>
+          <li><a href="mailto:german.tatis@y.uno">german.tatis@y.uno</a><span class="sep"> · </span><a href="https://y.uno">y.uno</a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
