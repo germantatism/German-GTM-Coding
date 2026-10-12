@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Experian + Yuno | Flujo de integración</title>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#3E4FE0; --blue-dk:#1227AD; --blue-2:#5967E4; --blue-3:#7C89EF; --blue-4:#BDC3F6;
+    --lilac:#E8EAF5; --black:#282A30; --gray:#92959B; --gray-dk:#616366; --lime:#E0ED80; --white:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1920px;background:var(--white);font-family:'Titillium Web',sans-serif;color:var(--black)}
+  .page{width:1920px;position:relative}
+
+  /* header */
+  header{background:var(--black);color:var(--white);padding:40px 64px 36px;display:flex;justify-content:space-between;align-items:flex-end}
+  .lockup{display:flex;align-items:center;gap:22px;margin-bottom:26px}
+  .lockup img.y{height:34px}
+  .lockup .bar{width:2px;height:40px;background:rgba(255,255,255,.45)}
+  .lockup img.e{height:44px}
+  .lockup .ename{font-size:26px;font-weight:600;letter-spacing:.5px}
+  h1{font-weight:400;font-size:52px;line-height:1;text-transform:lowercase}
+  .sub{margin-top:14px;font-size:20px;font-weight:300;color:#C9CBD3;max-width:1050px;line-height:1.35}
+  .legend{display:flex;flex-direction:column;gap:12px;font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:.8px}
+  .legend div{display:flex;align-items:center;gap:12px}
+  .legend svg{flex:none}
+
+  /* grid */
+  .grid{display:grid;grid-template-columns:190px repeat(6,1fr);padding:30px 48px 0 48px;column-gap:14px;position:relative}
+  .ph{padding:0 0 14px;display:flex;flex-direction:column}
+  .ph .bar{margin-top:auto !important}
+  .ph .t{margin-bottom:12px}
+  .ph .n{font-size:13px;font-weight:700;color:var(--blue);letter-spacing:1.4px;text-transform:uppercase}
+  .ph .t{font-size:22px;font-weight:600;line-height:1.1;margin-top:4px}
+  .ph .bar{height:6px;border-radius:3px;background:var(--blue);margin-top:12px}
+  .ph.mig .bar{background:var(--gray)}
+  .ph.mig .n{color:var(--gray-dk)}
+  .lane{grid-column:1;display:flex;flex-direction:column;justify-content:center;padding:14px 16px;border-radius:14px;min-height:150px}
+  .lane .lt{font-size:20px;font-weight:700;line-height:1.1}
+  .lane .ld{font-size:13px;font-weight:400;line-height:1.3;margin-top:6px;color:var(--gray-dk)}
+  .l-u{background:#F4F5F7}
+  .l-e{background:var(--lilac)}
+  .l-y{background:var(--blue);color:var(--white)} .l-y .ld{color:#DDE0FB}
+  .l-p{background:#F4F5F7}
+  .cell{display:flex;align-items:center;justify-content:center;padding:12px 0;min-height:150px}
+  .band-u,.band-p{background:#FAFAFB}
+  .band-e{background:#F6F7FC}
+  .band-y{background:#F1F2FD}
+
+  .card{width:100%;border-radius:12px;padding:12px 14px 12px;font-size:14.5px;line-height:1.32;position:relative;background:var(--white);border:1.5px solid #D9DBE3;z-index:2}
+  .card b{font-weight:700}
+  .card.e{border-color:var(--blue-3)}
+  .card.y{background:var(--blue);border-color:var(--blue);color:var(--white)}
+  .card.y code{background:rgba(255,255,255,.16);color:var(--white)}
+  .card.p{border-style:solid}
+  .card.u{border-style:dashed;border-color:#BFC2CA;color:var(--gray-dk)}
+  .card.mig{border-style:dashed}
+  code{font-family:'JetBrains Mono',monospace;font-size:12px;background:var(--lilac);color:var(--blue-dk);padding:1px 5px;border-radius:4px;white-space:nowrap}
+  .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:20px;margin-top:8px}
+  .tag.val{background:var(--lime);color:var(--black)}
+  .card.y .tag.val{background:var(--lime);color:var(--black)}
+
+  svg#wires{position:absolute;left:0;top:0;pointer-events:none;z-index:3;overflow:visible}
+  .lbl{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500}
+
+  /* bottom */
+  .bottom{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:22px;padding:30px 48px 0}
+  .box{border-radius:16px;padding:22px 26px;border:1.5px solid #D9DBE3}
+  .box h3{font-size:14px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+  .box p,.box li{font-size:15.5px;line-height:1.42}
+  .box ul{list-style:none}
+  .box li{padding-left:18px;position:relative;margin-bottom:7px}
+  .box li:before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--blue)}
+  .box.sync{background:var(--lilac);border-color:var(--lilac)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .two h4{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;color:var(--black)}
+  .box.pend{background:var(--black);color:var(--white);border-color:var(--black)}
+  .box.pend h3{color:var(--lime)}
+  .box.pend li:before{background:var(--lime)}
+  footer{padding:22px 48px 34px;font-size:13px;font-weight:300;color:var(--gray-dk);display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="page" id="page">
+  <header>
+    <div>
+      <div class="lockup">
+        <img class="y" src="yuno-white.svg" alt="yuno">
+        <span class="bar"></span>
+        <img class="e" src="experian.png" alt="Experian">
+        <span class="ename">Experian DataCrédito</span>
+      </div>
+      <h1>flujo de integración de suscripciones</h1>
+      <p class="sub">Cómo se conecta Midatacrédito con Yuno de punta a punta: alta del usuario, primer cobro, recurrencia, reintentos, cancelación y la sincronización con su core en cada paso.</p>
+    </div>
+    <div class="legend">
+      <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#7C89EF" stroke-width="3"/><path d="M44 1 L52 6 L44 11 Z" fill="#7C89EF"/></svg>Llamada API de Experian a Yuno</div>
+      <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#E0ED80" stroke-width="3" stroke-dasharray="6 5"/><path d="M44 1 L52 6 L44 11 Z" fill="#E0ED80"/></svg>Webhook de Yuno a Experian</div>
+      <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#92959B" stroke-width="3"/><path d="M44 1 L52 6 L44 11 Z" fill="#92959B"/></svg>Yuno con procesadores y entidades</div>
+      <div><svg width="54" height="12"><line x1="0" y1="6" x2="46" y2="6" stroke="#C9CBD3" stroke-width="2" stroke-dasharray="2 4"/><path d="M44 1 L52 6 L44 11 Z" fill="#C9CBD3"/></svg>Acción del usuario</div>
+    </div>
+  </header>
+
+  <div class="grid" id="grid">
+    <!-- phase headers -->
+    <div></div>
+    <div class="ph mig"><div class="n">Paso 0 · una sola vez</div><div class="t">Migración de la base actual</div><div class="bar"></div></div>
+    <div class="ph"><div class="n">Paso 1</div><div class="t">Alta y registro del medio de pago</div><div class="bar"></div></div>
+    <div class="ph"><div class="n">Paso 2</div><div class="t">Primer cobro y activación del plan</div><div class="bar"></div></div>
+    <div class="ph"><div class="n">Paso 3</div><div class="t">Cobro recurrente</div><div class="bar"></div></div>
+    <div class="ph"><div class="n">Paso 4</div><div class="t">Cobro fallido y reintentos</div><div class="bar"></div></div>
+    <div class="ph"><div class="n">Paso 5</div><div class="t">Cambios y cancelación</div><div class="bar"></div></div>
+
+    <!-- lane: usuario -->
+    <div class="lane l-u"><div class="lt">Usuario</div><div class="ld">Suscriptor de Midatacrédito</div></div>
+    <div class="cell band-u"><div class="card u mig" id="u0">Con tarjeta, no vuelve a registrar su medio de pago.</div></div>
+    <div class="cell band-u"><div class="card u" id="u1">Elige su plan en Midatacrédito y registra su medio de pago en el checkout de Yuno.</div></div>
+    <div class="cell band-u"><div class="card u" id="u2">Su plan queda activo.</div></div>
+    <div class="cell band-u"><div class="card u" id="u3">Sigue con el servicio, sin volver a pagar a mano.</div></div>
+    <div class="cell band-u"><div class="card u" id="u4">Recupera el servicio cuando el cobro pasa.</div></div>
+    <div class="cell band-u"><div class="card u" id="u5">Cancela, pausa o cambia de plan en Midatacrédito.</div></div>
+
+    <!-- lane: experian -->
+    <div class="lane l-e"><div class="lt">Experian</div><div class="ld">Core de Midatacrédito</div></div>
+    <div class="cell band-e"><div class="card e mig" id="e0">Entrega la base activa: suscripciones, planes y fechas de cobro.</div></div>
+    <div class="cell band-e"><div class="card e" id="e1">Crea el cliente en Yuno y abre el checkout.<br><code>POST /customers</code></div></div>
+    <div class="cell band-e"><div class="card e" id="e2">Crea la suscripción: plan, monto, frecuencia y día de cobro.<br><code>POST /subscriptions</code><br>Con la confirmación, <b>activa el plan</b>.</div></div>
+    <div class="cell band-e"><div class="card e" id="e3">Recibe el resultado de <b>cada ciclo</b> y actualiza su core. Aviso opcional días antes de cada renovación.</div></div>
+    <div class="cell band-e"><div class="card e" id="e4">Aplica su regla: suspende el plan mientras está en mora y lo reactiva al recuperarse. Ustedes deciden si se mantiene o se reinicia la fecha de cobro.</div></div>
+    <div class="cell band-e"><div class="card e" id="e5">Le informa a Yuno el cambio.<br><code>/cancel</code> <code>/pause</code> <code>/resume</code> <code>/plan</code></div></div>
+
+    <!-- lane: yuno -->
+    <div class="lane l-y"><div class="lt">Yuno</div><div class="ld">Bóveda, motor de suscripciones y orquestación</div></div>
+    <div class="cell band-y"><div class="card y mig" id="y0">Carga los tokens en la bóveda con su network transaction ID y crea cada suscripción con su fecha de cobro actual.<br><span class="tag val">Cuentas bancarias: en análisis</span></div></div>
+    <div class="cell band-y"><div class="card y" id="y1">Tokeniza el medio de pago y lo guarda en la bóveda (<code>vaulted_token</code>). <b>El medio que se registra es el mismo que se cobra.</b></div></div>
+    <div class="cell band-y"><div class="card y" id="y2">Cobra el primer ciclo con el usuario presente (CIT) y lo rutea según sus reglas.</div></div>
+    <div class="cell band-y"><div class="card y" id="y3">En cada fecha de cobro el motor genera el cargo (MIT) con el token guardado. Ruteo por %, BIN, emisor o metadata, con hasta 2 respaldos.</div></div>
+    <div class="cell band-y"><div class="card y" id="y4">La suscripción pasa a <b>en mora</b> y sigue reintentando: estándar, Smart Recharge (ML) o calendario propio. Con un cobro exitoso vuelve a activa.</div></div>
+    <div class="cell band-y"><div class="card y" id="y5">Detiene o ajusta los cobros desde ese momento o en una fecha programada.</div></div>
+
+    <!-- lane: procesadores -->
+    <div class="lane l-p"><div class="lt">Procesadores y entidades</div><div class="ld">Tarjetas, cuentas bancarias y Bre-B</div></div>
+    <div class="cell band-p"><div class="card p mig" id="p0">El proveedor actual (PayU, Wompi) transfiere los tokens de tarjeta en una migración PCI.</div></div>
+    <div class="cell band-p"><div class="card p" id="p1">Valida el medio de pago con el procesador o la entidad.</div></div>
+    <div class="cell band-p"><div class="card p" id="p2">Responde aprobado o declinado.</div></div>
+    <div class="cell band-p"><div class="card p" id="p3">Procesador principal. Si declina, el respaldo intenta rescatar el cobro.</div></div>
+    <div class="cell band-p"><div class="card p" id="p4">Cada reintento puede ir por otro procesador.</div></div>
+    <div class="cell band-p"><div class="card p" id="p5">Sin nuevos cargos después de la cancelación.</div></div>
+
+    <svg id="wires"></svg>
+  </div>
+
+  <div class="bottom">
+    <div class="box sync">
+      <h3>Sincronización con su core</h3>
+      <div class="two">
+        <div>
+          <h4>Experian llama a Yuno (API)</h4>
+          <ul>
+            <li>Clientes y medios de pago: <code>/customers</code></li>
+            <li>Suscripciones: <code>/subscriptions</code></li>
+            <li>Cambios: <code>/cancel</code> <code>/pause</code> <code>/resume</code> <code>/plan</code></li>
+            <li>Consulta del estado para conciliar: <code>GET /subscriptions/{id}</code></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Yuno le avisa a Experian (webhooks)</h4>
+          <ul>
+            <li>Cada cobro: <code>payment.purchase</code></li>
+            <li>Alta y activación: <code>subscription.create</code> <code>subscription.active</code></li>
+            <li>Mora: <code>subscription.past_due</code></li>
+            <li>Cambios: <code>cancel</code> <code>pause</code> <code>resume</code> <code>plan_changed</code></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <h3>Visibilidad para operación</h3>
+      <ul>
+        <li>Dashboard de suscripciones por estado (activa, en mora, pausada, cancelada) y por plan.</li>
+        <li>Tasa de aprobación por intento y por procesador.</li>
+        <li>Próxima fecha de cobro de cada suscripción, para proyectar el recaudo del mes.</li>
+        <li>Conciliación de cada cobro contra procesadores y entidades: sesión dedicada con su equipo de operaciones.</li>
+      </ul>
+    </div>
+    <div class="box pend">
+      <h3>Por definir juntos</h3>
+      <ul>
+        <li>Débito automático a cuentas de ahorro y corriente: cobertura por entidad, en validación.</li>
+        <li>Migración de las cuentas bancarias ya inscritas: en análisis.</li>
+        <li>Bre-B como medio recurrente: en habilitación.</li>
+        <li>Piloto con un grupo de cuentas en Yuno frente al modelo actual.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <span>Basado en las sesiones del 23 y 29 de septiembre de 2026. Endpoints y eventos según la documentación de la API de Yuno.</span>
+    <span>Yuno · Confidencial</span>
+  </footer>
+</div>
+
+<script>
+/* draws arrows between cards stacked in the same column */
+const C = {api:'#7C89EF', wh:'#C7D44E', psp:'#92959B', usr:'#B3B6BE'};
+const wires = [
+  // [from, to, kind, label, xOffset]
+  ['e0','y0','api','base activa',-34],
+  ['p0','y0','psp','tokens',34],
+  ['u1','e1','usr','',0],
+  ['e1','y1','api','checkout',-34],
+  ['y1','p1','psp','',-34],
+  ['p1','y1','psp','',34],
+  ['y1','e1','wh','vaulted_token',34],
+  ['e2','y2','api','POST',-34],
+  ['y2','p2','psp','',-34],
+  ['p2','y2','psp','',34],
+  ['y2','e2','wh','active',34],
+  ['e2','u2','usr','',0],
+  ['y3','p3','psp','',-34],
+  ['p3','y3','psp','',34],
+  ['y3','e3','wh','purchase',34],
+  ['e3','u3','usr','',0],
+  ['y4','p4','psp','',-34],
+  ['p4','y4','psp','',34],
+  ['y4','e4','wh','past_due',34],
+  ['e4','u4','usr','',0],
+  ['u5','e5','usr','',0],
+  ['e5','y5','api','cancel',-34],
+  ['y5','e5','wh','cancel',34],
+  ['y5','p5','psp','',0],
+];
+function draw(){
+  const g = document.getElementById('grid');
+  const svg = document.getElementById('wires');
+  const gr = g.getBoundingClientRect();
+  svg.setAttribute('width', gr.width); svg.setAttribute('height', gr.height);
+  svg.innerHTML = '';
+  const ns='http://www.w3.org/2000/svg';
+  for (const [a,b,kind,label,dx] of wires){
+    const ra=document.getElementById(a).getBoundingClientRect();
+    const rb=document.getElementById(b).getBoundingClientRect();
+    const x = ra.left + ra.width/2 - gr.left + dx;
+    const down = rb.top > ra.top;
+    const y1 = (down ? ra.bottom : ra.top) - gr.top;
+    const y2 = (down ? rb.top : rb.bottom) - gr.top;
+    const col = C[kind];
+    const tip = down ? y2-2 : y2+2;
+    const end = down ? tip-9 : tip+9;
+    const ln=document.createElementNS(ns,'line');
+    ln.setAttribute('x1',x); ln.setAttribute('x2',x); ln.setAttribute('y1',y1); ln.setAttribute('y2',end);
+    ln.setAttribute('stroke',col); ln.setAttribute('stroke-width', kind==='usr'?2:3);
+    if(kind==='wh') ln.setAttribute('stroke-dasharray','6 5');
+    if(kind==='usr') ln.setAttribute('stroke-dasharray','2 4');
+    svg.appendChild(ln);
+    const hd=document.createElementNS(ns,'path');
+    hd.setAttribute('d', down ? `M${x-6} ${end} L${x} ${tip} L${x+6} ${end} Z` : `M${x-6} ${end} L${x} ${tip} L${x+6} ${end} Z`);
+    hd.setAttribute('fill',col);
+    svg.appendChild(hd);
+    if(label){
+      const mid=(y1+y2)/2;
+      const t=document.createElementNS(ns,'text');
+      t.setAttribute('class','lbl'); t.textContent=label;
+      t.setAttribute('fill', kind==='wh' ? '#6B7300' : (kind==='api' ? '#1227AD' : '#616366'));
+      t.setAttribute('y', mid+4);
+      if(dx<0){ t.setAttribute('x', x-8); t.setAttribute('text-anchor','end'); }
+      else { t.setAttribute('x', x+8); }
+      // background pill
+      svg.appendChild(t);
+      const bb=t.getBBox();
+      const r=document.createElementNS(ns,'rect');
+      r.setAttribute('x',bb.x-4); r.setAttribute('y',bb.y-2); r.setAttribute('width',bb.width+8); r.setAttribute('height',bb.height+4);
+      r.setAttribute('rx',4); r.setAttribute('fill','#FFFFFF'); r.setAttribute('stroke', col); r.setAttribute('stroke-width',1);
+      svg.insertBefore(r,t);
+    }
+  }
+}
+document.fonts.ready.then(()=>{ draw(); document.body.dataset.ready='1'; });
+window.addEventListener('resize', draw);
+</script>
+</body>
+</html>
