@@ -83,3 +83,40 @@ Angle: adding a second processor without adding compliance overhead. Ask for the
 > Thanks for connecting, Dariel. A question from the compliance side: when a money transmitter adds a second payment processor, what's usually the hardest part to get comfortable with?
 >
 > We help teams add a second processor behind the one they already have, keeping fraud screening and reporting in one place instead of two. Happy to compare notes for 15 minutes, or if payments decisions sit with someone else at JPay, a pointer would mean a lot.
+
+---
+
+## Intro emails (13-Oct-2026). Gmail draft creation was blocked; paste manually. Emails not found, add addresses.
+Call slots: Thu 22-Oct or Fri 23-Oct, late morning ET (German is at Money20/20 Vegas 18 to 21-Oct).
+
+### David Lovitt
+**Subject:** Payments redundancy at JPay
+
+Hi David,
+
+I'm German, part of the North America team at Yuno. I've spent some time getting to know JPay's business before reaching out, and fourteen years on the infrastructure side means you've seen just about every version of the platform, and probably most of the bad days too.
+
+From what I understand, your card deposits run entirely through Worldpay. It's a solid partner, but it also means one provider carries every deposit a family makes, across every state you serve. With the new ownership group settling in and agencies comparing fees and service levels at every re-bid, I'd imagine resilience on the payments side is getting more attention than it used to.
+
+That's the problem we work on at Yuno. We sit on top of the processor you already have and add a second one behind it, so deposits can fail over automatically, go to the better performing path, and be monitored in real time from one place. Your checkout doesn't change, and Worldpay stays where it is.
+
+Would you be open to a 30 minute call on Thursday the 22nd or Friday the 23rd? Late morning Eastern works well on my side. And if payments decisions sit with someone else at JPay, I'd be grateful for a pointer.
+
+Best,
+German
+
+### Dariel Baez
+**Subject:** A compliance view on JPay's payment stack
+
+Hi Dariel,
+
+I'm German, part of the North America team at Yuno. I've been reading up on JPay before reaching out, and your background stood out: six years in compliance at a licensed money transmitter, plus a CAMS, is exactly the perspective I was hoping to hear.
+
+From what I understand, JPay runs its card deposits through a single processor, Worldpay. Teams in that position often start looking at a second processor for resilience and pricing, and what usually slows them down is the compliance side: two sets of fraud rules, two sets of reports, two vendors to oversee.
+
+At Yuno we sit on top of the processor you already have and add a second one behind it, with fraud screening and reporting kept in one place. Worldpay stays where it is, and adding a provider doesn't mean rebuilding your controls from scratch.
+
+I'd really value your take on how JPay thinks about this. Would a 30 minute call on Thursday the 22nd or Friday the 23rd work? And if this sits with someone else on the payments side, a pointer would be much appreciated.
+
+Best,
+German
