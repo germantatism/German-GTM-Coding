@@ -74,7 +74,7 @@ Angle: uptime and redundancy. Owns infrastructure, so a single processor reads a
 > We help teams keep their current processor and add a second one behind it, with failover and monitoring in one layer and no checkout rebuild. Open to a quick call? And if payments sits with someone else, I'd appreciate a pointer.
 
 ### Dariel Baez, MBA, CAMS, Compliance Sr. Analyst (Miami; 6 yrs at JPay; 3rd degree)
-Angle: adding a second processor without adding compliance overhead. Ask for his perspective, no hard pitch. Never mention CFPB or regulatory history.
+Angle: adding a second processor without adding compliance overhead. Ask for their perspective, no hard pitch. Never mention CFPB or regulatory history.
 
 **Connection request**
 > Hi Dariel, I work on payments infrastructure at Yuno with regulated US businesses, and I always value the compliance view on how payment stacks evolve. Would be glad to connect.
