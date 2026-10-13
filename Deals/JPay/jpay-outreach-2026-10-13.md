@@ -57,3 +57,29 @@ If it's helpful, I can sketch what a dual processor setup would look like for JP
 
 Best,
 German
+
+---
+
+## Key contacts (from Sales Navigator, 13-Oct-2026)
+
+### David Lovitt, Senior Manager, Infrastructure (Fort Lauderdale; 14 yrs at JPay; 2nd degree, 1 mutual)
+Angle: uptime and redundancy. Owns infrastructure, so a single processor reads as a single point of failure.
+
+**Connection request**
+> Hi David, 14 years keeping JPay's infrastructure running says a lot. I work on payments infrastructure at Yuno, mostly with high-volume US businesses thinking about uptime and redundancy. Would be glad to connect.
+
+**Follow-up DM**
+> Thanks for connecting, David. Curious how your team thinks about redundancy on the payments side. When all deposits run through one processor, a bad hour on their end turns into families who can't fund accounts and a full support queue.
+>
+> We help teams keep their current processor and add a second one behind it, with failover and monitoring in one layer and no checkout rebuild. Open to a quick call? And if payments sits with someone else, I'd appreciate a pointer.
+
+### Dariel Baez, MBA, CAMS, Compliance Sr. Analyst (Miami; 6 yrs at JPay; 3rd degree)
+Angle: adding a second processor without adding compliance overhead. Ask for his perspective, no hard pitch. Never mention CFPB or regulatory history.
+
+**Connection request**
+> Hi Dariel, I work on payments infrastructure at Yuno with regulated US businesses, and I always value the compliance view on how payment stacks evolve. Would be glad to connect.
+
+**Follow-up DM**
+> Thanks for connecting, Dariel. A question from the compliance side: when a money transmitter adds a second payment processor, what's usually the hardest part to get comfortable with?
+>
+> We help teams add a second processor behind the one they already have, keeping fraud screening and reporting in one place instead of two. Happy to compare notes for 15 minutes, or if payments decisions sit with someone else at JPay, a pointer would mean a lot.
