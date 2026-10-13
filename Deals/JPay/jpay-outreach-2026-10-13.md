@@ -120,3 +120,9 @@ I'd really value your take on how JPay thinks about this. Would a 30 minute call
 
 Best,
 German
+
+## Email guesses (13-Oct-2026, unverified)
+Pattern {first initial}{last}@jpay.com, confirmed historically by efeldman@jpay.com (Errol Feldman, CEO) in the MI DOC 2008 and CDCR 2017 contracts. jpay.com still has live MX (Microsoft 365).
+- David Lovitt: **dlovitt@jpay.com** (backup dlovitt@securustechnologies.com, Securus pattern {f}{last} ~93% per Mailmo)
+- Dariel Baez: **dbaez@jpay.com** (backup dbaez@securustechnologies.com)
+- Aventiv corporate uses first.last@aventiv.com (~75% per Prospeo); less likely for these two.
