@@ -1,0 +1,1613 @@
+{
+ "Argentina": {
+  "n_providers": 69,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Alelo",
+   "American Express",
+   "BAC Credomatic",
+   "Bamboo",
+   "Bancard",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Cobro Digital",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "FAC",
+   "Fiserv",
+   "Getnet",
+   "Izipay",
+   "Klap",
+   "Kushki",
+   "Mercado Pago",
+   "Nave",
+   "Niubiz",
+   "NMI",
+   "Nomupay",
+   "NTT Data",
+   "Nuvei",
+   "Openpay",
+   "Pagar.me",
+   "PagBank",
+   "PagSeguro",
+   "PayAmigo",
+   "Paymentez",
+   "PayU",
+   "Payzen",
+   "Pluxee",
+   "Prisma",
+   "Prosa",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stone",
+   "Stripe",
+   "Tabapay",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "VR",
+   "Windcave",
+   "Wompi",
+   "Worldline",
+   "Worldpay"
+  ],
+  "local": {
+   "AstroPay": [
+    "AstroPay"
+   ],
+   "Bamboo": [
+    "Pago Fácil",
+    "Transferencias 3.0"
+   ],
+   "dLocal": [
+    "Bank transfer",
+    "MODO",
+    "Pago Fácil",
+    "Rapipago"
+   ],
+   "EBANX": [
+    "Checkout Pro"
+   ],
+   "Mercado Pago": [
+    "Checkout Pro",
+    "Mercado Pago Wallet"
+   ],
+   "MODO": [
+    "MODO"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Brazil": {
+  "n_providers": 83,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Alelo",
+   "BAC Credomatic",
+   "Bamboo",
+   "Barte",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Edenred",
+   "Fiserv",
+   "Getnet",
+   "Izipay",
+   "Klap",
+   "Kushki",
+   "Maya",
+   "Mercado Pago",
+   "Monnet",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Openpay",
+   "Pagar.me",
+   "PagBank",
+   "PagSeguro",
+   "PayAmigo",
+   "Paymentez",
+   "PayU",
+   "PicPay",
+   "Pinbank",
+   "Pluxee",
+   "Prisma",
+   "Prosa",
+   "QNB (MPGS)",
+   "RappiBank",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Safrapay",
+   "Splitit",
+   "Stone",
+   "Stripe",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "VR",
+   "Windcave",
+   "Wompi",
+   "Worldpay",
+   "Zesta",
+   "Zoop"
+  ],
+  "local": {
+   "Adyen": [
+    "Google Pay PIX",
+    "PIX",
+    "PIX Automático"
+   ],
+   "Alelo": [
+    "Alelo"
+   ],
+   "AstroPay": [
+    "AstroPay"
+   ],
+   "Bamboo": [
+    "PIX"
+   ],
+   "Banco do Brasil": [
+    "Boleto",
+    "PIX"
+   ],
+   "Bradesco": [
+    "Boleto",
+    "PIX"
+   ],
+   "Cielo": [
+    "PIX"
+   ],
+   "dLocal": [
+    "Boleto",
+    "NuPay",
+    "PIX",
+    "Smart PIX"
+   ],
+   "EBANX": [
+    "Boleto",
+    "Checkout Pro",
+    "PIX",
+    "PicPay"
+   ],
+   "Getnet": [
+    "PIX"
+   ],
+   "Itaú": [
+    "PIX"
+   ],
+   "Mercado Pago": [
+    "Boleto",
+    "Checkout Pro",
+    "Mercado Pago Wallet",
+    "PIX"
+   ],
+   "Nuvei": [
+    "PIX"
+   ],
+   "Okto": [
+    "PIX"
+   ],
+   "Pagaleve": [
+    "PIX",
+    "PIX Parcelado"
+   ],
+   "Pagar.me": [
+    "Boleto",
+    "PIX"
+   ],
+   "PagBank": [
+    "Boleto",
+    "PIX"
+   ],
+   "PagSeguro": [
+    "PIX"
+   ],
+   "Pagsmile": [
+    "PIX"
+   ],
+   "Pay4Fun": [
+    "PIX"
+   ],
+   "PayAmigo": [
+    "PIX"
+   ],
+   "PayRetailers": [
+    "PIX",
+    "PIX Automático"
+   ],
+   "PicPay": [
+    "PIX",
+    "PicPay"
+   ],
+   "Pinbank": [
+    "PIX"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ],
+   "Safeway": [
+    "PIX"
+   ],
+   "Santander": [
+    "PIX"
+   ],
+   "Spinpay": [
+    "NuPay",
+    "PIX"
+   ],
+   "Stark Bank": [
+    "PIX"
+   ],
+   "Stripe": [
+    "PIX Automático"
+   ],
+   "Transfeera": [
+    "PIX"
+   ],
+   "Unlimint": [
+    "PIX"
+   ],
+   "Volt": [
+    "PIX"
+   ],
+   "Zoop": [
+    "PIX"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Chile": {
+  "n_providers": 51,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Fiserv",
+   "Getnet",
+   "Izipay",
+   "Klap",
+   "Kushki",
+   "Mercado Pago",
+   "Monnet",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Openpay",
+   "Pagar.me",
+   "PagBank",
+   "PagSeguro",
+   "Paymentez",
+   "PayU",
+   "Prisma",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "Windcave",
+   "Wompi",
+   "Worldpay"
+  ],
+  "local": {
+   "Bamboo": [
+    "Khipu",
+    "Webpay"
+   ],
+   "BCI MACH": [
+    "MACH QR"
+   ],
+   "dLocal": [
+    "Khipu"
+   ],
+   "EBANX": [
+    "Checkout Pro",
+    "MACH",
+    "Servipag",
+    "Webpay"
+   ],
+   "Khipu": [
+    "Khipu"
+   ],
+   "Mercado Pago": [
+    "Checkout Pro",
+    "Mercado Pago Wallet"
+   ],
+   "Nuvei": [
+    "Webpay"
+   ],
+   "Paymentez": [
+    "Webpay"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ],
+   "Transbank": [
+    "Webpay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Colombia": {
+  "n_providers": 89,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "AllInPay",
+   "Azul",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "CIBC",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "emerchantpay",
+   "FAC",
+   "Fiserv",
+   "Getnet",
+   "Inovio",
+   "Izipay",
+   "Klap",
+   "Kushki",
+   "Maya",
+   "Mercado Pago",
+   "Monnet",
+   "Monri",
+   "Movii",
+   "Niubiz",
+   "NMI",
+   "Nomupay",
+   "Nuvei",
+   "Openpay",
+   "Pagar.me",
+   "PagBank",
+   "PagSeguro",
+   "Paymentez",
+   "PayU",
+   "PicPay",
+   "Pinbank",
+   "PlacetoPay",
+   "Pluxee",
+   "Prisma",
+   "Prosa",
+   "QNB (MPGS)",
+   "RappiPay",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stone",
+   "Stripe",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "Windcave",
+   "Wompi",
+   "Worldline",
+   "Worldpay",
+   "XacBank",
+   "Xendit",
+   "Zesta"
+  ],
+  "local": {
+   "ADDI": [
+    "ADDI"
+   ],
+   "AstroPay": [
+    "AstroPay"
+   ],
+   "Bamboo": [
+    "Nequi",
+    "Nequi QR",
+    "PSE"
+   ],
+   "Daviplata": [
+    "Daviplata"
+   ],
+   "dLocal": [
+    "Bre-B",
+    "Efecty",
+    "Nequi",
+    "PSE"
+   ],
+   "Kushki": [
+    "PSE"
+   ],
+   "Mercado Pago": [
+    "Checkout Pro",
+    "Mercado Pago Wallet",
+    "PSE"
+   ],
+   "Nequi": [
+    "Nequi"
+   ],
+   "Nuvei": [
+    "Daviplata",
+    "Nequi",
+    "PSE"
+   ],
+   "PagSeguro": [
+    "Efecty",
+    "PSE"
+   ],
+   "Paymentez": [
+    "Daviplata",
+    "Efecty",
+    "Nequi",
+    "PSE"
+   ],
+   "PayU": [
+    "PSE"
+   ],
+   "Refacil": [
+    "Bre-B"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ],
+   "Unlimint": [
+    "Efecty",
+    "PSE"
+   ],
+   "Wompi": [
+    "Bancolombia BNPL",
+    "Bancolombia QR",
+    "Bancolombia transfer",
+    "Botón Bancolombia",
+    "Daviplata",
+    "Nequi",
+    "PSE"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Mexico": {
+  "n_providers": 69,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "American Express",
+   "BAC Credomatic",
+   "Bamboo",
+   "Banorte",
+   "BBVA",
+   "Braintree",
+   "Checkout.com",
+   "CIBC",
+   "Cielo",
+   "Conekta",
+   "Credibanco",
+   "Cybersource",
+   "Diners Club",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Edenred",
+   "EVO",
+   "Fiserv",
+   "Getnet",
+   "Izipay",
+   "Klap",
+   "Kushki",
+   "Mercado Pago",
+   "Monnet",
+   "Monri",
+   "Niubiz",
+   "NMI",
+   "Nomupay",
+   "NTT Data",
+   "Nuvei",
+   "Openpay",
+   "Pagar.me",
+   "PagBank",
+   "PagSeguro",
+   "PayAmigo",
+   "Paymentez",
+   "PayU",
+   "PicPay",
+   "Pinbank",
+   "Prosa",
+   "QNB (MPGS)",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "T1Pagos",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "Windcave",
+   "Wompi",
+   "Worldpay"
+  ],
+  "local": {
+   "Aplazo": [
+    "Aplazo"
+   ],
+   "AstroPay": [
+    "AstroPay"
+   ],
+   "Bamboo": [
+    "OXXO Pay"
+   ],
+   "Belvo": [
+    "Direct debit"
+   ],
+   "dLocal": [
+    "7-Eleven",
+    "CoDi",
+    "OXXO",
+    "Paynet",
+    "SPEI"
+   ],
+   "EBANX": [
+    "Checkout Pro",
+    "OXXO Pay",
+    "SPEI"
+   ],
+   "Kushki": [
+    "PayCash",
+    "Paynet",
+    "SPEI"
+   ],
+   "Mercado Pago": [
+    "Checkout Pro",
+    "Mercado Pago Wallet"
+   ],
+   "Nuvei": [
+    "SPEI"
+   ],
+   "PagSeguro": [
+    "OXXO Pay",
+    "SPEI"
+   ],
+   "Paymentez": [
+    "OXXO"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ],
+   "STP": [
+    "SPEI"
+   ],
+   "Unlimint": [
+    "CoDi",
+    "OXXO",
+    "SPEI"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Peru": {
+  "n_providers": 55,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Cobro Digital",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Getnet",
+   "Izipay",
+   "Kushki",
+   "Mercado Pago",
+   "Monnet",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Openpay",
+   "Pagar.me",
+   "PayAmigo",
+   "Paymentez",
+   "PayU",
+   "Prisma",
+   "QNB (MPGS)",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "Wompi",
+   "Worldpay"
+  ],
+  "local": {
+   "aCuotaz": [
+    "aCuotaz"
+   ],
+   "AstroPay": [
+    "AstroPay"
+   ],
+   "Bamboo": [
+    "PagoEfectivo",
+    "Yape"
+   ],
+   "Cuotéalo": [
+    "Cuotéalo BCP"
+   ],
+   "dLocal": [
+    "PagoEfectivo",
+    "Yape"
+   ],
+   "EBANX": [
+    "PagoEfectivo",
+    "SafetyPay"
+   ],
+   "Mercado Pago": [
+    "Checkout Pro"
+   ],
+   "Monnet": [
+    "Monnet QR",
+    "Monnet wallet",
+    "Yape"
+   ],
+   "Niubiz": [
+    "Yape"
+   ],
+   "Nuvei": [
+    "PagoEfectivo"
+   ],
+   "PagoEfectivo": [
+    "PagoEfectivo"
+   ],
+   "Paymentez": [
+    "PagoEfectivo"
+   ],
+   "Powerpay": [
+    "Powerpay"
+   ],
+   "SafetyPay": [
+    "PagoEfectivo",
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Uruguay": {
+  "n_providers": 40,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Fiserv",
+   "Getnet",
+   "Izipay",
+   "Kushki",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nomupay",
+   "Nuvei",
+   "Openpay",
+   "PayAmigo",
+   "Prisma",
+   "Rede",
+   "Redeban",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "Wompi",
+   "Worldpay"
+  ],
+  "local": {
+   "AstroPay": [
+    "AstroPay"
+   ],
+   "Mercado Pago": [
+    "Checkout Pro"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Bolivia": {
+  "n_providers": 30,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Getnet",
+   "Izipay",
+   "Kushki",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "PayU",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Worldpay"
+  ],
+  "local": {
+   "dLocal": [
+    "Pago al Paso"
+   ],
+   "EBANX": [
+    "PagosNet"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Costa Rica": {
+  "n_providers": 37,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Credix",
+   "Cybersource",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "FAC",
+   "Fiserv",
+   "Izipay",
+   "Kushki",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Wompi",
+   "Worldline",
+   "Worldpay"
+  ],
+  "local": {
+   "dLocal": [
+    "Banco Nacional cash",
+    "PuntoXpress"
+   ],
+   "PagSeguro": [
+    "Banco Nacional cash",
+    "Banco Nacional transfer"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Dominican Republic": {
+  "n_providers": 35,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Azul",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Izipay",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Openpay",
+   "PayU",
+   "Rede",
+   "Redeban",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "Wompi",
+   "Worldpay"
+  ],
+  "local": {
+   "dLocal": [
+    "Banco Popular"
+   ],
+   "Inswitch": [
+    "Banreservas",
+    "Local bank transfers and cash (11 banks)",
+    "Pagatodo"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Ecuador": {
+  "n_providers": 36,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Diners Club",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Getnet",
+   "Izipay",
+   "Kushki",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Paymentez",
+   "Rede",
+   "Redeban",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Worldpay"
+  ],
+  "local": {
+   "Deuna": [
+    "Deuna"
+   ],
+   "dLocal": [
+    "Deuna",
+    "PagoEfectivo"
+   ],
+   "EBANX": [
+    "SafetyPay"
+   ],
+   "Paymentez": [
+    "PagoEfectivo"
+   ],
+   "SafetyPay": [
+    "PagoEfectivo",
+    "SafetyPay"
+   ],
+   "Unlimint": [
+    "PagoEfectivo"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "El Salvador": {
+  "n_providers": 30,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Izipay",
+   "Kushki",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Worldpay"
+  ],
+  "local": {
+   "PuntoXpress": [
+    "PuntoXpress"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Guatemala": {
+  "n_providers": 30,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Izipay",
+   "Kushki",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Pagalo",
+   "Rede",
+   "Redeban",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Worldpay"
+  ],
+  "local": {
+   "Monnet": [
+    "Monnet QR",
+    "Monnet wallet"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Honduras": {
+  "n_providers": 26,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Izipay",
+   "Mercado Pago",
+   "Niubiz",
+   "Nuvei",
+   "Rede",
+   "Redeban",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Wompi",
+   "Worldpay"
+  ],
+  "local": {},
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Nicaragua": {
+  "n_providers": 23,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Izipay",
+   "Mercado Pago",
+   "Niubiz",
+   "Nuvei",
+   "Redeban",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Worldpay"
+  ],
+  "local": {},
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Panama": {
+  "n_providers": 39,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Banorte",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "FAC",
+   "Fiserv",
+   "Izipay",
+   "Kushki",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "PayU",
+   "Prosa",
+   "Rede",
+   "Redeban",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "Wompi",
+   "Worldline",
+   "Worldpay"
+  ],
+  "local": {
+   "Bamboo": [
+    "Nequi"
+   ],
+   "dLocal": [
+    "Nequi",
+    "Punto Pago"
+   ],
+   "Pluxee": [
+    "Pluxee"
+   ],
+   "SafetyPay": [
+    "SafetyPay"
+   ],
+   "Yappy": [
+    "Yappy"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Paraguay": {
+  "n_providers": 38,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Bancard",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Getnet",
+   "Izipay",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Openpay",
+   "Pagar.me",
+   "PayU",
+   "Rede",
+   "Redeban",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Transbank",
+   "Unlimint",
+   "Wompi",
+   "Worldpay"
+  ],
+  "local": {
+   "SafetyPay": [
+    "SafetyPay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Indonesia": {
+  "n_providers": 30,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "Ecommpay",
+   "Izipay",
+   "Maya",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Pagar.me",
+   "QNB (MPGS)",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Windcave",
+   "Worldpay",
+   "Xendit"
+  ],
+  "local": {
+   "Airwallex": [
+    "DANA"
+   ],
+   "Boku": [
+    "ShopeePay"
+   ],
+   "dLocal": [
+    "Alfamart",
+    "OVO",
+    "QRIS",
+    "Virtual Account"
+   ],
+   "Xendit": [
+    "Alfamart",
+    "DANA",
+    "Indomaret",
+    "OVO",
+    "QRIS",
+    "ShopeePay",
+    "Virtual Account"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Malaysia": {
+  "n_providers": 29,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Antom",
+   "Braintree",
+   "Checkout.com",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "Ecommpay",
+   "Izipay",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Prosa",
+   "QNB (MPGS)",
+   "Rede",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Windcave",
+   "Worldpay",
+   "Xendit"
+  ],
+  "local": {
+   "Boku": [
+    "Touch 'n Go"
+   ],
+   "dLocal": [
+    "7-Eleven",
+    "Boost",
+    "FPX",
+    "Touch 'n Go"
+   ],
+   "Xendit": [
+    "FPX",
+    "ShopeePay",
+    "Touch 'n Go"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Philippines": {
+  "n_providers": 29,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "Ecommpay",
+   "Izipay",
+   "Maya",
+   "Niubiz",
+   "NMI",
+   "Nomupay",
+   "Nuvei",
+   "QNB (MPGS)",
+   "Rede",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Windcave",
+   "Worldpay",
+   "Xendit"
+  ],
+  "local": {
+   "Airwallex": [
+    "GCash"
+   ],
+   "Checkout.com": [
+    "GCash"
+   ],
+   "dLocal": [
+    "GCash"
+   ],
+   "Ecommpay": [
+    "GCash"
+   ],
+   "Maya": [
+    "Maya"
+   ],
+   "Xendit": [
+    "7-Eleven",
+    "Direct debit",
+    "GCash",
+    "GrabPay",
+    "Maya",
+    "ShopeePay"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Singapore": {
+  "n_providers": 32,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "AllInPay",
+   "BAC Credomatic",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "EBANX",
+   "Ecommpay",
+   "Izipay",
+   "MCTPay",
+   "Niubiz",
+   "NMI",
+   "Nomupay",
+   "Nuvei",
+   "QNB (MPGS)",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Windcave",
+   "Worldpay",
+   "Zesta"
+  ],
+  "local": {
+   "AllInPay": [
+    "PayNow"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Thailand": {
+  "n_providers": 31,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Antom",
+   "BAC Credomatic",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "EBANX",
+   "Ecommpay",
+   "Izipay",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "QNB (MPGS)",
+   "Rede",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Windcave",
+   "Worldpay",
+   "Xendit",
+   "Zesta"
+  ],
+  "local": {
+   "dLocal": [
+    "Big C",
+    "ShopeePay",
+    "Thai QR (PromptPay)",
+    "TrueMoney"
+   ],
+   "Xendit": [
+    "ShopeePay",
+    "Thai QR (PromptPay)",
+    "TrueMoney"
+   ]
+  },
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Vietnam": {
+  "n_providers": 27,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "BAC Credomatic",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "Cybersource",
+   "dLocal",
+   "Ecommpay",
+   "Izipay",
+   "Niubiz",
+   "NMI",
+   "Nomupay",
+   "Nuvei",
+   "QNB (MPGS)",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Windcave",
+   "Worldpay"
+  ],
+  "local": {},
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Myanmar": {
+  "n_providers": 15,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Bamboo",
+   "Checkout.com",
+   "Mercado Pago",
+   "Nuvei",
+   "Redsys",
+   "Splitit",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Worldpay"
+  ],
+  "local": {},
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ },
+ "Israel": {
+  "n_providers": 29,
+  "cards": [
+   "Adyen",
+   "Airwallex",
+   "Antom",
+   "Bamboo",
+   "Braintree",
+   "Checkout.com",
+   "Cielo",
+   "Credibanco",
+   "dLocal",
+   "Ecommpay",
+   "Getnet",
+   "Izipay",
+   "Mercado Pago",
+   "Niubiz",
+   "NMI",
+   "Nuvei",
+   "Rede",
+   "Redeban",
+   "Redsys",
+   "Splitit",
+   "Stone",
+   "Stripe",
+   "Tap Payments",
+   "Unlimint",
+   "Windcave",
+   "Worldpay"
+  ],
+  "local": {},
+  "wallets": [
+   "Apple Pay",
+   "Google Pay",
+   "PayPal"
+  ]
+ }
+}
