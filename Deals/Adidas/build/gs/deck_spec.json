@@ -1,118 +1,364 @@
 {
-  "presentation_id": "PENDING_TEMPLATE_COPY",
-  "merchant": "adidas",
-  "footer": "",
-  "slides": [
+ "presentation_id": "1d3j0pkbI6IiENDRrf9gYGNXqoJIk1ram09h0DOsgogs",
+ "merchant": "adidas",
+ "footer": "",
+ "slides": [
+  {
+   "id": "cover",
+   "type": "cover",
+   "title": "Connections and payment methods",
+   "subtitle": "Mercado Pago, dLocal, PayU, 2C2P and PayPlus across LATAM, Southeast Asia and Israel",
+   "presenter": "German Tatis, Yuno · October 2026",
+   "logo_url": "https://deck.yuno.tools/merchants/adidas.png"
+  },
+  {
+   "id": "glance",
+   "type": "table",
+   "kicker": "COVERAGE › AT A GLANCE",
+   "headline": "Four of the five providers you named are live on Yuno today; PayPlus would be a new connection.",
+   "columns": [
+    "Provider",
+    "Region",
+    "Status on Yuno",
+    "Countries",
+    "Payment methods through Yuno"
+   ],
+   "col_widths": [
+    0.15,
+    0.12,
+    0.15,
+    0.13,
+    0.45
+   ],
+   "rows": [
+    [
+     "Mercado Pago",
+     "LATAM",
+     {
+      "text": "Live",
+      "bold": true
+     },
+     "7",
+     "Cards (Checkout API), Checkout Pro, Mercado Pago Wallet, Wallet Connect, QR, PIX, Boleto, PSE"
+    ],
+    [
+     "dLocal",
+     "LATAM + SEA",
+     {
+      "text": "Live",
+      "bold": true
+     },
+     "17 LATAM, 5 SEA",
+     "Cards, bank transfer and real time payments (PIX, SPEI, PSE, FPX), cash vouchers (OXXO, Boleto, Efecty), wallets (Nequi, Yape, OVO, TrueMoney)"
+    ],
+    [
+     "PayU",
+     "LATAM",
+     {
+      "text": "Live",
+      "bold": true
+     },
+     "6",
+     "Cards, PSE"
+    ],
+    [
+     "2C2P",
+     "SEA",
+     {
+      "text": "Live",
+      "bold": true
+     },
+     "7",
+     "Cards"
+    ],
+    [
+     "PayPlus",
+     "Israel",
+     {
+      "text": "New connection",
+      "bold": true
+     },
+     "1",
+     "Scoped on request. Israel is covered today through other providers (see Israel slide)"
+    ]
+   ],
+   "header_style": "dark",
+   "font_size": 10,
+   "bold_first_col": true,
+   "zebra": true,
+   "note": "adidas integrates once with Yuno: every connection here sits behind the same API and checkout, so you can route, retry and fail over between providers in the same country.",
+   "source": "Yuno API reference, Payment Type list (docs.y.uno) and Yuno Integrations Directory (y.uno/integrations), Oct 2026",
+   "notes": "PayPlus does not appear in Yuno's public catalog. Confirm scope and timeline with the integrations team before committing a date."
+  },
+  {
+   "id": "latam-core",
+   "type": "table",
+   "kicker": "COVERAGE › LATAM CORE MARKETS",
+   "headline": "In the seven core LATAM markets, every country has at least two of your providers live on Yuno.",
+   "columns": [
+    "Country",
+    "Mercado Pago",
+    "dLocal",
+    "PayU"
+   ],
+   "col_widths": [
+    0.13,
+    0.31,
+    0.38,
+    0.18
+   ],
+   "rows": [
+    [
+     "Argentina",
+     "Cards · Checkout Pro · MP Wallet",
+     "Cards · Pago Fácil · Rapipago · MODO",
+     "Cards"
+    ],
+    [
+     "Brazil",
+     "Cards · Checkout Pro · MP Wallet · PIX · Boleto",
+     "Cards · PIX · Smart PIX · Boleto · NuPay",
+     "Cards"
+    ],
+    [
+     "Chile",
+     "Cards · Checkout Pro · MP Wallet",
+     "Cards · Khipu",
+     "Cards"
+    ],
+    [
+     "Colombia",
+     "Cards · Checkout Pro · MP Wallet · PSE",
+     "Cards · PSE · Bre-B QR · Efecty · Nequi",
+     "Cards · PSE"
+    ],
+    [
+     "Mexico",
+     "Cards · Checkout Pro · MP Wallet",
+     "Cards · SPEI · CoDi · OXXO · Paynet · 7-Eleven",
+     "Cards"
+    ],
+    [
+     "Peru",
+     "Cards · Checkout Pro · MP Wallet",
+     "Cards · PagoEfectivo · Yape",
+     "Cards"
+    ],
+    [
+     "Uruguay",
+     "Cards · Checkout Pro · MP Wallet",
+     "Cards",
+     "Not available"
+    ]
+   ],
+   "header_style": "dark",
+   "font_size": 10.5,
+   "bold_first_col": true,
+   "zebra": true,
+   "note": "Mercado Pago also offers Wallet Connect and QR through Yuno. Checkout Pro is Mercado Pago's hosted checkout (cards, wallet and local methods in one redirect).",
+   "source": "Yuno Payment Type list (docs.y.uno) and Integrations Directory (y.uno/integrations), Oct 2026. Method availability per country is confirmed with each provider during setup."
+  },
+  {
+   "id": "latam-rest",
+   "type": "table",
+   "kicker": "COVERAGE › LATAM REST OF REGION",
+   "headline": "dLocal extends coverage to ten more LATAM markets with cards plus local cash and wallet methods.",
+   "columns": [
+    "Country",
+    "dLocal through Yuno",
+    "Country",
+    "dLocal through Yuno"
+   ],
+   "col_widths": [
+    0.15,
+    0.35,
+    0.15,
+    0.35
+   ],
+   "rows": [
+    [
+     "Bolivia",
+     "Cards · Pago al Paso",
+     {
+      "text": "Guatemala",
+      "bold": true
+     },
+     "Cards"
+    ],
+    [
+     "Costa Rica",
+     "Cards · Banco Nacional (cash) · PuntoXpress",
+     {
+      "text": "Honduras",
+      "bold": true
+     },
+     "Cards"
+    ],
+    [
+     "Dominican Rep.",
+     "Cards · Banco Popular Dominicano",
+     {
+      "text": "Nicaragua",
+      "bold": true
+     },
+     "Cards · PuntoXpress"
+    ],
+    [
+     "Ecuador",
+     "Cards · Deuna",
+     {
+      "text": "Panama",
+      "bold": true
+     },
+     "Cards · Clave · Punto Pago"
+    ],
+    [
+     "El Salvador",
+     "Cards · PuntoXpress",
+     {
+      "text": "Paraguay",
+      "bold": true
+     },
+     "Cards"
+    ]
+   ],
+   "header_style": "dark",
+   "font_size": 11,
+   "bold_first_col": true,
+   "zebra": true,
+   "note": "Mercado Pago and PayU are not live in these ten countries through Yuno. dLocal is the route today, and a second provider can be added for redundancy from Yuno's wider catalog.",
+   "source": "Yuno Payment Type list (docs.y.uno) and Integrations Directory (y.uno/integrations), Oct 2026. Method availability per country is confirmed with each provider during setup."
+  },
+  {
+   "id": "sea",
+   "type": "table",
+   "kicker": "COVERAGE › SOUTHEAST ASIA",
+   "headline": "In Southeast Asia, 2C2P covers cards in seven markets and dLocal adds wallets, QR and bank methods in five.",
+   "columns": [
+    "Country",
+    "2C2P",
+    "dLocal"
+   ],
+   "col_widths": [
+    0.15,
+    0.13,
+    0.72
+   ],
+   "rows": [
+    [
+     "Indonesia",
+     "Cards",
+     "Cards · Virtual Account · QRIS · OVO · ShopeePay · Alfamart"
+    ],
+    [
+     "Malaysia",
+     "Cards",
+     "Cards · FPX · Touch 'n Go · Boost · ShopeePay · 7-Eleven"
+    ],
+    [
+     "Philippines",
+     "Cards",
+     "Cards · ShopeePay"
+    ],
+    [
+     "Singapore",
+     "Cards",
+     "Not available"
+    ],
+    [
+     "Thailand",
+     "Cards",
+     "Cards · Thai QR (PromptPay) · TrueMoney · ShopeePay · Big C"
+    ],
+    [
+     "Vietnam",
+     "Cards",
+     "Cards · ShopeePay"
+    ],
+    [
+     "Myanmar",
+     "Cards",
+     "Not available"
+    ]
+   ],
+   "header_style": "dark",
+   "font_size": 10.5,
+   "bold_first_col": true,
+   "zebra": true,
+   "note": "Through Yuno, 2C2P is connected for card processing. 2C2P's own local methods can be scoped as an extension of the existing connection.",
+   "source": "Yuno Payment Type list (docs.y.uno) and Integrations Directory (y.uno/integrations), Oct 2026. Method availability per country is confirmed with each provider during setup."
+  },
+  {
+   "id": "israel",
+   "type": "two_column",
+   "kicker": "COVERAGE › ISRAEL",
+   "headline": "PayPlus is not yet in Yuno's catalog; Israel is live today through global acquirers and wallets.",
+   "cols": [
     {
-      "id": "cover", "type": "cover",
-      "title": "Connections and payment methods",
-      "subtitle": "Mercado Pago, dLocal, PayU, 2C2P and PayPlus across LATAM, Southeast Asia and Israel",
-      "presenter": "German Tatis, Yuno · October 2026",
-      "logo_url": "https://deck.yuno.tools/merchants/adidas.png"
+     "header": "PAYPLUS: NEW CONNECTION",
+     "items": [
+      {
+       "title": "Status",
+       "body": "Not in Yuno's current catalog. Built as a new connection on request."
+      },
+      {
+       "title": "What we need",
+       "body": "adidas's PayPlus account setup, the methods you want on it, and expected volume in Israel."
+      },
+      {
+       "title": "Same integration",
+       "body": "Once built, PayPlus sits behind the same Yuno API and routing as every other provider. No extra work on the adidas side."
+      }
+     ]
     },
     {
-      "id": "glance", "type": "table",
-      "kicker": "COVERAGE › AT A GLANCE",
-      "headline": "Four of the five providers you named are live on Yuno today; PayPlus would be a new connection.",
-      "columns": ["Provider", "Region", "Status on Yuno", "Countries", "Payment methods through Yuno"],
-      "col_widths": [0.15, 0.12, 0.15, 0.13, 0.45],
-      "rows": [
-        ["Mercado Pago", "LATAM", {"text": "Live", "bold": true}, "7", "Cards (Checkout API), Checkout Pro, Mercado Pago Wallet, Wallet Connect, QR, PIX, Boleto, PSE"],
-        ["dLocal", "LATAM + SEA", {"text": "Live", "bold": true}, "17 LATAM, 5 SEA", "Cards, bank transfer and real time payments (PIX, SPEI, PSE, FPX), cash vouchers (OXXO, Boleto, Efecty), wallets (Nequi, Yape, OVO, TrueMoney)"],
-        ["PayU", "LATAM", {"text": "Live", "bold": true}, "6", "Cards, PSE"],
-        ["2C2P", "SEA", {"text": "Live", "bold": true}, "7", "Cards"],
-        ["PayPlus", "Israel", {"text": "New connection", "bold": true}, "1", "Scoped on request. Israel is covered today through other providers (see Israel slide)"]
-      ],
-      "header_style": "dark", "font_size": 8.5, "bold_first_col": true, "zebra": true,
-      "note": "adidas integrates once with Yuno: every connection here sits behind the same API and checkout, so you can route, retry and fail over between providers in the same country.",
-      "source": "Yuno API reference, Payment Type list (docs.y.uno) and Yuno Integrations Directory (y.uno/integrations), Oct 2026",
-      "notes": "PayPlus does not appear in Yuno's public catalog. Confirm scope and timeline with the integrations team before committing a date."
-    },
-    {
-      "id": "latam-core", "type": "table",
-      "kicker": "COVERAGE › LATAM CORE MARKETS",
-      "headline": "In the seven core LATAM markets, every country has at least two of your providers live on Yuno.",
-      "columns": ["Country", "Mercado Pago", "dLocal", "PayU"],
-      "col_widths": [0.13, 0.31, 0.38, 0.18],
-      "rows": [
-        ["Argentina", "Cards · Checkout Pro · MP Wallet", "Cards · Pago Fácil · Rapipago · MODO", "Cards"],
-        ["Brazil", "Cards · Checkout Pro · MP Wallet · PIX · Boleto", "Cards · PIX · Smart PIX · Boleto · NuPay", "Cards"],
-        ["Chile", "Cards · Checkout Pro · MP Wallet", "Cards · Khipu", "Cards"],
-        ["Colombia", "Cards · Checkout Pro · MP Wallet · PSE", "Cards · PSE · Bre-B QR · Efecty · Nequi", "Cards · PSE"],
-        ["Mexico", "Cards · Checkout Pro · MP Wallet", "Cards · SPEI · CoDi · OXXO · Paynet · 7-Eleven", "Cards"],
-        ["Peru", "Cards · Checkout Pro · MP Wallet", "Cards · PagoEfectivo · Yape", "Cards"],
-        ["Uruguay", "Cards · Checkout Pro · MP Wallet", "Cards", "Not available"]
-      ],
-      "header_style": "dark", "font_size": 8.5, "bold_first_col": true, "zebra": true,
-      "note": "Mercado Pago also offers Wallet Connect and QR through Yuno. Checkout Pro is Mercado Pago's hosted checkout (cards, wallet and local methods in one redirect).",
-      "source": "Yuno Payment Type list (docs.y.uno) and Integrations Directory (y.uno/integrations), Oct 2026. Method availability per country is confirmed with each provider during setup."
-    },
-    {
-      "id": "latam-rest", "type": "table",
-      "kicker": "COVERAGE › LATAM REST OF REGION",
-      "headline": "dLocal extends coverage to ten more LATAM markets with cards plus local cash and wallet methods.",
-      "columns": ["Country", "dLocal through Yuno", "Country", "dLocal through Yuno"],
-      "col_widths": [0.15, 0.35, 0.15, 0.35],
-      "rows": [
-        ["Bolivia", "Cards · Pago al Paso", {"text": "Guatemala", "bold": true}, "Cards"],
-        ["Costa Rica", "Cards · Banco Nacional (cash) · PuntoXpress", {"text": "Honduras", "bold": true}, "Cards"],
-        ["Dominican Rep.", "Cards · Banco Popular Dominicano", {"text": "Nicaragua", "bold": true}, "Cards · PuntoXpress"],
-        ["Ecuador", "Cards · Deuna", {"text": "Panama", "bold": true}, "Cards · Clave · Punto Pago"],
-        ["El Salvador", "Cards · PuntoXpress", {"text": "Paraguay", "bold": true}, "Cards"]
-      ],
-      "header_style": "dark", "font_size": 8.5, "bold_first_col": true, "zebra": true,
-      "note": "Mercado Pago and PayU are not live in these ten countries through Yuno. dLocal is the route today, and a second provider can be added for redundancy from Yuno's wider catalog.",
-      "source": "Yuno Payment Type list (docs.y.uno) and Integrations Directory (y.uno/integrations), Oct 2026. Method availability per country is confirmed with each provider during setup."
-    },
-    {
-      "id": "sea", "type": "table",
-      "kicker": "COVERAGE › SOUTHEAST ASIA",
-      "headline": "In Southeast Asia, 2C2P covers cards in seven markets and dLocal adds wallets, QR and bank methods in five.",
-      "columns": ["Country", "2C2P", "dLocal"],
-      "col_widths": [0.15, 0.13, 0.72],
-      "rows": [
-        ["Indonesia", "Cards", "Cards · Virtual Account · QRIS · OVO · ShopeePay · Alfamart"],
-        ["Malaysia", "Cards", "Cards · FPX · Touch 'n Go · Boost · ShopeePay · 7-Eleven"],
-        ["Philippines", "Cards", "Cards · ShopeePay"],
-        ["Singapore", "Cards", "Not available"],
-        ["Thailand", "Cards", "Cards · Thai QR (PromptPay) · TrueMoney · ShopeePay · Big C"],
-        ["Vietnam", "Cards", "Cards · ShopeePay"],
-        ["Myanmar", "Cards", "Not available"]
-      ],
-      "header_style": "dark", "font_size": 8.5, "bold_first_col": true, "zebra": true,
-      "note": "Through Yuno, 2C2P is connected for card processing. 2C2P's own local methods can be scoped as an extension of the existing connection.",
-      "source": "Yuno Payment Type list (docs.y.uno) and Integrations Directory (y.uno/integrations), Oct 2026. Method availability per country is confirmed with each provider during setup."
-    },
-    {
-      "id": "israel", "type": "two_column",
-      "kicker": "COVERAGE › ISRAEL",
-      "headline": "PayPlus is not yet in Yuno's catalog; Israel is live today through global acquirers and wallets.",
-      "cols": [
-        {"header": "PAYPLUS: NEW CONNECTION", "items": [
-          {"title": "Status", "body": "Not in Yuno's current catalog. Built as a new connection on request."},
-          {"title": "What we need", "body": "adidas's PayPlus account setup, the methods you want on it, and expected volume in Israel."},
-          {"title": "Same integration", "body": "Once built, PayPlus sits behind the same Yuno API and routing as every other provider. No extra work on the adidas side."}
-        ]},
-        {"header": "LIVE IN ISRAEL THROUGH YUNO TODAY", "items": [
-          {"title": "Card processing", "body": "Cybersource, Nuvei, Worldline, Ecommpay"},
-          {"title": "Wallets", "body": "Apple Pay, Google Pay, PayPal"},
-          {"title": "Fraud and 3DS", "body": "Clearsale, Netcetera (3DS)"}
-        ]}
-      ],
-      "bar": "While PayPlus is scoped, adidas can process in Israel through the live providers and move volume to PayPlus through routing once it is connected.",
-      "source": "Yuno Payment Type list (docs.y.uno) and Integrations Directory (y.uno/integrations), Oct 2026",
-      "notes": "Do not commit a PayPlus delivery date. Confirm scope and timeline with Yuno's integrations team first."
-    },
-    {
-      "id": "next", "type": "next_steps",
-      "kicker": "NEXT STEP",
-      "headline": "Share the country list and we will narrow this to your markets.",
-      "cards": [
-        {"eyebrow": "ADIDAS", "num": "01", "title": "Countries", "body": "The exact markets in LATAM, Southeast Asia and Israel where adidas needs coverage."},
-        {"eyebrow": "YUNO", "num": "02", "title": "Confirm per country", "body": "Yuno confirms method activation with each provider for those markets and flags any gap."},
-        {"eyebrow": "TOGETHER", "num": "03", "title": "PayPlus scope", "body": "We align on PayPlus requirements and come back with a delivery plan."}
-      ],
-      "contact": "german.tatis@y.uno"
+     "header": "LIVE IN ISRAEL THROUGH YUNO TODAY",
+     "items": [
+      {
+       "title": "Card processing",
+       "body": "Cybersource, Nuvei, Worldline, Ecommpay"
+      },
+      {
+       "title": "Wallets",
+       "body": "Apple Pay, Google Pay, PayPal"
+      },
+      {
+       "title": "Fraud and 3DS",
+       "body": "Clearsale, Netcetera (3DS)"
+      }
+     ]
     }
-  ]
+   ],
+   "bar": "While PayPlus is scoped, adidas can process in Israel through the live providers and move volume to PayPlus through routing once it is connected.",
+   "source": "Yuno Payment Type list (docs.y.uno) and Integrations Directory (y.uno/integrations), Oct 2026",
+   "notes": "Do not commit a PayPlus delivery date. Confirm scope and timeline with Yuno's integrations team first."
+  },
+  {
+   "id": "next",
+   "type": "next_steps",
+   "kicker": "NEXT STEP",
+   "headline": "Share the country list and we will narrow this to your markets.",
+   "cards": [
+    {
+     "eyebrow": "ADIDAS",
+     "num": "01",
+     "title": "Countries",
+     "body": "The exact markets in LATAM, Southeast Asia and Israel where adidas needs coverage."
+    },
+    {
+     "eyebrow": "YUNO",
+     "num": "02",
+     "title": "Confirm per country",
+     "body": "Yuno confirms method activation with each provider for those markets and flags any gap."
+    },
+    {
+     "eyebrow": "TOGETHER",
+     "num": "03",
+     "title": "PayPlus scope",
+     "body": "We align on PayPlus requirements and come back with a delivery plan."
+    }
+   ],
+   "contact": "german.tatis@y.uno"
+  }
+ ]
 }
