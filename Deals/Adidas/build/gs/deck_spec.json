@@ -15,7 +15,7 @@
    "id": "named",
    "type": "table",
    "kicker": "COVERAGE › THE PROVIDERS YOU NAMED",
-   "headline": "Mercado Pago, dLocal and PayU are live through Yuno; 2C2P is integrated but not yet in production, and PayPlus would be new.",
+   "headline": "Mercado Pago, dLocal, PayU and 2C2P are live through Yuno; PayPlus would be a new connection.",
    "columns": [
     "Provider",
     "Status",
@@ -59,11 +59,11 @@
     [
      "2C2P",
      {
-      "text": "Integrated, no production traffic yet",
+      "text": "Live",
       "bold": true
      },
-     "Card integration built; no live payments recorded",
-     "Cards only. No local methods connected"
+     "7: Indonesia, Malaysia, Philippines, Singapore, Thailand, Vietnam, Myanmar",
+     "Cards"
     ],
     [
      "PayPlus",
@@ -79,8 +79,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "notes": "2C2P: the integration matrix shows card integration code only, with zero recorded production transactions in any country. Earlier we told adidas 2C2P is live with many SEA merchants; this corrects it."
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
   },
   {
    "id": "sum-latam1",
@@ -138,7 +137,7 @@
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
   },
   {
    "id": "sum-latam2",
@@ -211,7 +210,7 @@
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
   },
   {
    "id": "sum-apac",
@@ -231,37 +230,37 @@
    "rows": [
     [
      "Indonesia",
-     "30",
+     "31",
      "Alfamart · DANA · OVO · QRIS · ShopeePay · Virtual Account · +1 more"
     ],
     [
      "Malaysia",
-     "29",
+     "30",
      "Touch 'n Go · FPX · 7-Eleven · Boost · ShopeePay"
     ],
     [
      "Philippines",
-     "29",
+     "30",
      "GCash · Maya · 7-Eleven · Direct debit · GrabPay · ShopeePay"
     ],
     [
      "Singapore",
-     "32",
+     "33",
      "PayNow"
     ],
     [
      "Thailand",
-     "31",
+     "32",
      "ShopeePay · Thai QR (PromptPay) · TrueMoney · Big C"
     ],
     [
      "Vietnam",
-     "27",
+     "28",
      "Cards and wallets only"
     ],
     [
      "Myanmar",
-     "15",
+     "16",
      "Cards and wallets only"
     ],
     [
@@ -274,7 +273,7 @@
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
   },
   {
    "type": "table",
@@ -292,7 +291,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-argentina",
    "kicker": "COUNTRY DETAIL › ARGENTINA › CARDS AND WALLETS",
    "headline": "Argentina: 69 providers live through Yuno, 55 for cards and 11 local methods.",
@@ -325,7 +324,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-argentina-local",
    "kicker": "COUNTRY DETAIL › ARGENTINA › LOCAL METHODS",
    "headline": "Argentina: local methods live through Yuno, and which providers carry each one.",
@@ -398,7 +397,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-brazil",
    "kicker": "COUNTRY DETAIL › BRAZIL › CARDS AND WALLETS",
    "headline": "Brazil: 83 providers live through Yuno, 56 for cards and 16 local methods.",
@@ -431,7 +430,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-brazil-local",
    "kicker": "COUNTRY DETAIL › BRAZIL › LOCAL METHODS",
    "headline": "Brazil: local methods live through Yuno, and which providers carry each one.",
@@ -494,7 +493,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-chile",
    "kicker": "COUNTRY DETAIL › CHILE › CARDS AND WALLETS",
    "headline": "Chile: 51 providers live through Yuno, 39 for cards and 10 local methods.",
@@ -527,7 +526,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-chile-local",
    "kicker": "COUNTRY DETAIL › CHILE › LOCAL METHODS",
    "headline": "Chile: local methods live through Yuno, and which providers carry each one.",
@@ -595,7 +594,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-colombia",
    "kicker": "COUNTRY DETAIL › COLOMBIA › CARDS AND WALLETS",
    "headline": "Colombia: 89 providers live through Yuno, 62 for cards and 19 local methods.",
@@ -628,7 +627,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-colombia-local",
    "kicker": "COUNTRY DETAIL › COLOMBIA › LOCAL METHODS",
    "headline": "Colombia: local methods live through Yuno, and which providers carry each one.",
@@ -691,7 +690,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-mexico",
    "kicker": "COUNTRY DETAIL › MEXICO › CARDS AND WALLETS",
    "headline": "Mexico: 69 providers live through Yuno, 56 for cards and 16 local methods.",
@@ -724,7 +723,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-mexico-local",
    "kicker": "COUNTRY DETAIL › MEXICO › LOCAL METHODS",
    "headline": "Mexico: local methods live through Yuno, and which providers carry each one.",
@@ -792,7 +791,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-peru",
    "kicker": "COUNTRY DETAIL › PERU › CARDS AND WALLETS",
    "headline": "Peru: 55 providers live through Yuno, 38 for cards and 13 local methods.",
@@ -825,7 +824,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-peru-local",
    "kicker": "COUNTRY DETAIL › PERU › LOCAL METHODS",
    "headline": "Peru: local methods live through Yuno, and which providers carry each one.",
@@ -878,7 +877,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-uruguay",
    "kicker": "COUNTRY DETAIL › URUGUAY",
    "headline": "Uruguay: 40 providers live through Yuno, 32 for cards and 4 local methods.",
@@ -931,7 +930,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-bolivia",
    "kicker": "COUNTRY DETAIL › BOLIVIA",
    "headline": "Bolivia: 30 providers live through Yuno, 26 for cards and 4 local methods.",
@@ -979,7 +978,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-costa-rica",
    "kicker": "COUNTRY DETAIL › COSTA RICA",
    "headline": "Costa Rica: 37 providers live through Yuno, 31 for cards and 4 local methods.",
@@ -1032,7 +1031,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-dominican-republic",
    "kicker": "COUNTRY DETAIL › DOMINICAN REPUBLIC",
    "headline": "Dominican Republic: 35 providers live through Yuno, 29 for cards and 6 local methods.",
@@ -1080,7 +1079,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-ecuador",
    "kicker": "COUNTRY DETAIL › ECUADOR",
    "headline": "Ecuador: 36 providers live through Yuno, 27 for cards and 5 local methods.",
@@ -1138,7 +1137,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-el-salvador",
    "kicker": "COUNTRY DETAIL › EL SALVADOR",
    "headline": "El Salvador: 30 providers live through Yuno, 25 for cards and 2 local methods.",
@@ -1181,7 +1180,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-guatemala",
    "kicker": "COUNTRY DETAIL › GUATEMALA",
    "headline": "Guatemala: 30 providers live through Yuno, 25 for cards and 5 local methods.",
@@ -1224,7 +1223,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-honduras",
    "kicker": "COUNTRY DETAIL › HONDURAS",
    "headline": "Honduras: 26 providers live through Yuno, 23 for cards and no local method connected yet.",
@@ -1257,7 +1256,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-nicaragua",
    "kicker": "COUNTRY DETAIL › NICARAGUA",
    "headline": "Nicaragua: 23 providers live through Yuno, 20 for cards and no local method connected yet.",
@@ -1290,7 +1289,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-panama",
    "kicker": "COUNTRY DETAIL › PANAMA",
    "headline": "Panama: 39 providers live through Yuno, 33 for cards and 6 local methods.",
@@ -1353,7 +1352,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-paraguay",
    "kicker": "COUNTRY DETAIL › PARAGUAY",
    "headline": "Paraguay: 38 providers live through Yuno, 30 for cards and 2 local methods.",
@@ -1396,15 +1395,15 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-indonesia",
    "kicker": "COUNTRY DETAIL › INDONESIA",
-   "headline": "Indonesia: 30 providers live through Yuno, 26 for cards and 7 local methods.",
+   "headline": "Indonesia: 31 providers live through Yuno, 27 for cards and 7 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Maya, Niubiz, NMI, Nuvei, Pagar.me, QNB (MPGS), Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
-     "26"
+     "2C2P, Adyen, Airwallex, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Maya, Niubiz, NMI, Nuvei, Pagar.me, QNB (MPGS), Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
+     "27"
     ],
     [
      "Alfamart · OVO · QRIS · Virtual Account",
@@ -1449,15 +1448,15 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-malaysia",
    "kicker": "COUNTRY DETAIL › MALAYSIA",
-   "headline": "Malaysia: 29 providers live through Yuno, 25 for cards and 5 local methods.",
+   "headline": "Malaysia: 30 providers live through Yuno, 26 for cards and 5 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Antom, Braintree, Checkout.com, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Mercado Pago, Niubiz, NMI, Nuvei, Prosa, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
-     "25"
+     "2C2P, Adyen, Airwallex, Antom, Braintree, Checkout.com, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Mercado Pago, Niubiz, NMI, Nuvei, Prosa, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
+     "26"
     ],
     [
      "Touch 'n Go",
@@ -1502,15 +1501,15 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-philippines",
    "kicker": "COUNTRY DETAIL › PHILIPPINES",
-   "headline": "Philippines: 29 providers live through Yuno, 25 for cards and 6 local methods.",
+   "headline": "Philippines: 30 providers live through Yuno, 26 for cards and 6 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Maya, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
-     "25"
+     "2C2P, Adyen, Airwallex, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Maya, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
+     "26"
     ],
     [
      "GCash",
@@ -1550,15 +1549,15 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-singapore",
    "kicker": "COUNTRY DETAIL › SINGAPORE",
-   "headline": "Singapore: 32 providers live through Yuno, 28 for cards and 1 local methods.",
+   "headline": "Singapore: 33 providers live through Yuno, 29 for cards and 1 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, AllInPay, BAC Credomatic, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, EBANX, Ecommpay, Izipay, MCTPay, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Zesta",
-     "28"
+     "2C2P, Adyen, Airwallex, AllInPay, BAC Credomatic, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, EBANX, Ecommpay, Izipay, MCTPay, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Zesta",
+     "29"
     ],
     [
      "PayNow",
@@ -1588,15 +1587,15 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-thailand",
    "kicker": "COUNTRY DETAIL › THAILAND",
-   "headline": "Thailand: 31 providers live through Yuno, 27 for cards and 4 local methods.",
+   "headline": "Thailand: 32 providers live through Yuno, 28 for cards and 4 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Antom, BAC Credomatic, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, Izipay, Niubiz, NMI, Nuvei, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit, Zesta",
-     "27"
+     "2C2P, Adyen, Airwallex, Antom, BAC Credomatic, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, Izipay, Niubiz, NMI, Nuvei, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit, Zesta",
+     "28"
     ],
     [
      "ShopeePay · Thai QR (PromptPay) · TrueMoney",
@@ -1631,15 +1630,15 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-vietnam",
    "kicker": "COUNTRY DETAIL › VIETNAM",
-   "headline": "Vietnam: 27 providers live through Yuno, 24 for cards and no local method connected yet.",
+   "headline": "Vietnam: 28 providers live through Yuno, 25 for cards and no local method connected yet.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay",
-     "24"
+     "2C2P, Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay",
+     "25"
     ],
     [
      "Wallets",
@@ -1664,15 +1663,15 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-myanmar",
    "kicker": "COUNTRY DETAIL › MYANMAR",
-   "headline": "Myanmar: 15 providers live through Yuno, 12 for cards and no local method connected yet.",
+   "headline": "Myanmar: 16 providers live through Yuno, 13 for cards and no local method connected yet.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Bamboo, Checkout.com, Mercado Pago, Nuvei, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Worldpay",
-     "12"
+     "2C2P, Adyen, Airwallex, Bamboo, Checkout.com, Mercado Pago, Nuvei, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Worldpay",
+     "13"
     ],
     [
      "Wallets",
@@ -1697,7 +1696,7 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
+   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-israel",
    "kicker": "COUNTRY DETAIL › ISRAEL",
    "headline": "Israel: 29 providers live through Yuno, 26 for cards and no local method connected yet.",
@@ -1717,16 +1716,12 @@
   {
    "id": "gaps",
    "type": "two_column",
-   "kicker": "WHAT IS NOT LIVE YET",
-   "headline": "2C2P and PayPlus are not processing through Yuno today, and five integrations are built but not yet live.",
+   "kicker": "IN THE PIPELINE",
+   "headline": "PayPlus would be a new connection, and five more integrations are built and close to live.",
    "cols": [
     {
-     "header": "2C2P AND PAYPLUS",
+     "header": "PAYPLUS",
      "items": [
-      {
-       "title": "2C2P",
-       "body": "Card integration built, no production payments recorded in any country. No local methods (PromptPay, TrueMoney and others) connected. In SEA those run through dLocal, Xendit and others today."
-      },
       {
        "title": "PayPlus (Israel)",
        "body": "No connection built and none in progress. Built as a new connection on request; scope and timeline confirmed with Yuno's integrations team."

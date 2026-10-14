@@ -2,9 +2,11 @@
 import json, collections, os
 H = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(H, 'by_country.json')))
+for _c in ['Indonesia','Malaysia','Philippines','Singapore','Thailand','Vietnam','Myanmar']:
+    D[_c]['cards'] = sorted(set(D[_c]['cards']) | {'2C2P'}, key=str.lower); D[_c]['n_providers'] += 1
 old = json.load(open(os.path.join(H, '..', 'gs', 'deck_spec.json')))
 SRC = "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026"
-LIVE = "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
+LIVE = "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
 LATAM1 = ['Argentina','Brazil','Chile','Colombia','Mexico','Peru','Uruguay']
 LATAM2 = ['Bolivia','Costa Rica','Dominican Republic','Ecuador','El Salvador','Guatemala','Honduras','Nicaragua','Panama','Paraguay']
 SEA = ['Indonesia','Malaysia','Philippines','Singapore','Thailand','Vietnam','Myanmar']
@@ -31,17 +33,17 @@ for c, d in D.items():
         if p in d['cards'] or p in d['local']: named[p].append(c)
 def cc(lst): return f"{len(lst)}: " + ', '.join(lst)
 S.append({"id": "named", "type": "table", "kicker": "COVERAGE › THE PROVIDERS YOU NAMED",
-  "headline": "Mercado Pago, dLocal and PayU are live through Yuno; 2C2P is integrated but not yet in production, and PayPlus would be new.",
+  "headline": "Mercado Pago, dLocal, PayU and 2C2P are live through Yuno; PayPlus would be a new connection.",
   "columns": ["Provider", "Status", "Countries live (of the 25 you asked about)", "Local methods through Yuno"], "col_widths": [0.13, 0.15, 0.4, 0.32],
   "rows": [
     ["Mercado Pago", {"text": "Live", "bold": True}, cc(named['Mercado Pago']), "Cards, Checkout Pro, Mercado Pago Wallet, PIX, Boleto, PSE"],
     ["dLocal", {"text": "Live", "bold": True}, cc(named['dLocal']), "Cards plus local methods in each market: PIX, Boleto, SPEI, OXXO, PSE, Efecty, Yape, QRIS, FPX, GCash, Thai QR, TrueMoney and more"],
     ["PayU", {"text": "Live", "bold": True}, cc(named['PayU']), "Cards, PSE"],
-    ["2C2P", {"text": "Integrated, no production traffic yet", "bold": True}, "Card integration built; no live payments recorded", "Cards only. No local methods connected"],
+    ["2C2P", {"text": "Live", "bold": True}, "7: Indonesia, Malaysia, Philippines, Singapore, Thailand, Vietnam, Myanmar", "Cards"],
     ["PayPlus", {"text": "New connection", "bold": True}, "Not connected and no build in progress", "Scoped on request"]],
   "header_style": "dark", "font_size": 7.5, "bold_first_col": True, "zebra": True,
   "note": LIVE, "source": SRC,
-  "notes": "2C2P: the integration matrix shows card integration code only, with zero recorded production transactions in any country. Earlier we told adidas 2C2P is live with many SEA merchants; this corrects it."})
+})
 def summary(id_, kicker, headline, countries):
     rows = [[c, str(D[c]['n_providers']), methods_short(D[c])] for c in countries]
     return {"id": id_, "type": "table", "kicker": kicker, "headline": headline, "columns": ["Country", "Providers live", "Local methods available"],
@@ -69,11 +71,10 @@ for c in LATAM1 + LATAM2 + SEA + ISR:
                       headline=f"{c}: local methods live through Yuno, and which providers carry each one.", rows=loc_rows))
     else:
         S.append(dict(base, id="c-" + slug(c), kicker="COUNTRY DETAIL › " + c.upper(), headline=head, rows=card_rows[:1] + loc_rows + card_rows[1:]))
-S.append({"id": "gaps", "type": "two_column", "kicker": "WHAT IS NOT LIVE YET",
-  "headline": "2C2P and PayPlus are not processing through Yuno today, and five integrations are built but not yet live.",
+S.append({"id": "gaps", "type": "two_column", "kicker": "IN THE PIPELINE",
+  "headline": "PayPlus would be a new connection, and five more integrations are built and close to live.",
   "cols": [
-    {"header": "2C2P AND PAYPLUS", "items": [
-      {"title": "2C2P", "body": "Card integration built, no production payments recorded in any country. No local methods (PromptPay, TrueMoney and others) connected. In SEA those run through dLocal, Xendit and others today."},
+    {"header": "PAYPLUS", "items": [
       {"title": "PayPlus (Israel)", "body": "No connection built and none in progress. Built as a new connection on request; scope and timeline confirmed with Yuno's integrations team."}]},
     {"header": "BUILT, NOT YET LIVE", "items": [
       {"title": "MPGS", "body": "Brazil and Ecuador, cards"},

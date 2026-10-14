@@ -1,0 +1,149 @@
+target presentation: 1d3j0pkbI6IiENDRrf9gYGNXqoJIk1ram09h0DOsgogs (Deck - adidas + Yuno · Connections & Payment Methods (Oct 2026))
+[02] table              named
+  applied    1 requests blank slide n02r2_g3f77215683c_2_2968
+  applied  191 requests n02r2
+  applied    2 requests replace slide 2
+[03] table              sum-latam1
+  applied    1 requests blank slide n03r2_g3f77215683c_2_2968
+  applied  191 requests n03r2
+  applied    2 requests replace slide 3
+[04] table              sum-latam2
+  applied    1 requests blank slide n04r2_g3f77215683c_2_2968
+  applied  254 requests n04r2
+  applied    2 requests replace slide 4
+[05] table              sum-apac
+  applied    1 requests blank slide n05r2_g3f77215683c_2_2968
+  applied  212 requests n05r2
+  applied    2 requests replace slide 5
+[06] table              c-argentina
+  applied    1 requests blank slide n06r1_g3f77215683c_2_2968
+  applied   86 requests n06r1
+  applied    2 requests replace slide 6
+[07] table              c-argentina-local
+  applied    1 requests blank slide n07r1_g3f77215683c_2_2968
+  applied  254 requests n07r1
+  applied    2 requests replace slide 7
+[08] table              c-brazil
+  applied    1 requests blank slide n08r1_g3f77215683c_2_2968
+  applied   86 requests n08r1
+  applied    2 requests replace slide 8
+[09] table              c-brazil-local
+  applied    1 requests blank slide n09r1_g3f77215683c_2_2968
+  applied  212 requests n09r1
+  applied    2 requests replace slide 9
+[10] table              c-chile
+  applied    1 requests blank slide n10r1_g3f77215683c_2_2968
+  applied   86 requests n10r1
+  applied    2 requests replace slide 10
+[11] table              c-chile-local
+  applied    1 requests blank slide n11r1_g3f77215683c_2_2968
+  applied  233 requests n11r1
+  applied    2 requests replace slide 11
+[12] table              c-colombia
+  applied    1 requests blank slide n12r1_g3f77215683c_2_2968
+  applied   86 requests n12r1
+  applied    2 requests replace slide 12
+[13] table              c-colombia-local
+  applied    1 requests blank slide n13r1_g3f77215683c_2_2968
+  applied  212 requests n13r1
+  applied    2 requests replace slide 13
+[14] table              c-mexico
+  applied    1 requests blank slide n14r1_g3f77215683c_2_2968
+  applied   86 requests n14r1
+  applied    2 requests replace slide 14
+[15] table              c-mexico-local
+  applied    1 requests blank slide n15r1_g3f77215683c_2_2968
+  applied  233 requests n15r1
+  applied    2 requests replace slide 15
+[16] table              c-peru
+  applied    1 requests blank slide n16r1_g3f77215683c_2_2968
+  applied   86 requests n16r1
+  applied    2 requests replace slide 16
+[17] table              c-peru-local
+  applied    1 requests blank slide n17r1_g3f77215683c_2_2968
+  applied  170 requests n17r1
+  applied    2 requests replace slide 17
+[18] table              c-uruguay
+  applied    1 requests blank slide n18r1_g3f77215683c_2_2968
+  applied  170 requests n18r1
+  applied    2 requests replace slide 18
+[19] table              c-bolivia
+  applied    1 requests blank slide n19r1_g3f77215683c_2_2968
+  applied  149 requests n19r1
+  applied    2 requests replace slide 19
+[20] table              c-costa-rica
+  applied    1 requests blank slide n20r1_g3f77215683c_2_2968
+  applied  170 requests n20r1
+  applied    2 requests replace slide 20
+[21] table              c-dominican-republic
+  applied    1 requests blank slide n21r1_g3f77215683c_2_2968
+  applied  149 requests n21r1
+  applied    2 requests replace slide 21
+[22] table              c-ecuador
+  applied    1 requests blank slide n22r1_g3f77215683c_2_2968
+  applied  191 requests n22r1
+  applied    2 requests replace slide 22
+[23] table              c-el-salvador
+  applied    1 requests blank slide n23r1_g3f77215683c_2_2968
+  applied  128 requests n23r1
+  applied    2 requests replace slide 23
+[24] table              c-guatemala
+  applied    1 requests blank slide n24r1_g3f77215683c_2_2968
+  applied  128 requests n24r1
+  applied    2 requests replace slide 24
+[25] table              c-honduras
+  applied    1 requests blank slide n25r1_g3f77215683c_2_2968
+  applied   86 requests n25r1
+  applied    2 requests replace slide 25
+[26] table              c-nicaragua
+  applied    1 requests blank slide n26r1_g3f77215683c_2_2968
+  applied   86 requests n26r1
+  applied    2 requests replace slide 26
+[27] table              c-panama
+  applied    1 requests blank slide n27r1_g3f77215683c_2_2968
+  applied  212 requests n27r1
+  applied    2 requests replace slide 27
+[28] table              c-paraguay
+  applied    1 requests blank slide n28r1_g3f77215683c_2_2968
+  applied  128 requests n28r1
+  applied    2 requests replace slide 28
+[29] table              c-indonesia
+  applied    1 requests blank slide n29r1_g3f77215683c_2_2968
+  applied  170 requests n29r1
+  applied    2 requests replace slide 29
+[30] table              c-malaysia
+  applied    1 requests blank slide n30r1_g3f77215683c_2_2968
+  applied  170 requests n30r1
+  applied    2 requests replace slide 30
+[31] table              c-philippines
+  applied    1 requests blank slide n31r1_g3f77215683c_2_2968
+  applied  149 requests n31r1
+  applied    2 requests replace slide 31
+[32] table              c-singapore
+  applied    1 requests blank slide n32r1_g3f77215683c_2_2968
+  applied  107 requests n32r1
+  applied    2 requests replace slide 32
+[33] table              c-thailand
+  applied    1 requests blank slide n33r1_g3f77215683c_2_2968
+  applied  128 requests n33r1
+  applied    2 requests replace slide 33
+[34] table              c-vietnam
+  applied    1 requests blank slide n34r1_g3f77215683c_2_2968
+  applied   86 requests n34r1
+  applied    2 requests replace slide 34
+[35] table              c-myanmar
+  applied    1 requests blank slide n35r1_g3f77215683c_2_2968
+  applied   86 requests n35r1
+  applied    2 requests replace slide 35
+[36] table              c-israel
+  applied    1 requests blank slide n36r1_g3f77215683c_2_2968
+  applied   86 requests n36r1
+  applied    2 requests replace slide 36
+[37] two_column         gaps
+  applied    1 requests blank slide n37r2_g3f77215683c_2_2968
+  applied   93 requests n37r2
+  applied    2 requests notes n37r2_g3f77215683c_2_2968
+  applied    2 requests replace slide 37
+[38] next_steps         next
+  applied    1 requests blank slide n38r1_g3f77215683c_2_2968
+  applied   89 requests n38r1
