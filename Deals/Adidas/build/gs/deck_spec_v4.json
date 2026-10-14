@@ -399,7 +399,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -439,12 +439,12 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Transfero",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -483,7 +483,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -578,14 +578,14 @@
       "2"
      ],
      [
-      "Pago Fácil",
-      "Bamboo, dLocal",
-      "2"
+      "Other local methods",
+      "AstroPay (AstroPay); MODO · Rapipago (dLocal); Mercado Pago Fast Payments · Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); Pago Fácil (Bamboo, dLocal); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX); Transferencias 3.0 (Bamboo)",
+      "1 to 2 each"
      ],
      [
-      "Other local methods",
-      "AstroPay (AstroPay); MODO · Rapipago (dLocal); Mercado Pago Fast Payments · Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX); Transferencias 3.0 (Bamboo)",
-      "1 to 2 each"
+      "Wallets and global methods via providers",
+      "Apple Pay (Fiserv, Worldpay); PayPal (EBANX, Ecommpay); Google Pay (Fiserv); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "7"
      ]
     ]
    }
@@ -716,7 +716,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -771,7 +771,7 @@
       },
       {
        "name": "Safrapay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=safrapay.com.br&sz=128",
        "aspect": 1.0
       },
       {
@@ -781,12 +781,12 @@
       },
       {
        "name": "Stark Bank",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=starkbank.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Stone",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=stone.com.br&sz=128",
        "aspect": 1.0
       },
       {
@@ -836,17 +836,17 @@
      "chips": [
       {
        "name": "Banco Rendimento",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=rendimento.com.br&sz=128",
        "aspect": 1.0
       },
       {
        "name": "BTG Pactual",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=btgpactual.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Commerce Gate",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=commercegate.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -856,7 +856,7 @@
       },
       {
        "name": "Facilitapay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=facilitapay.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -876,7 +876,7 @@
       },
       {
        "name": "Pag Brasil",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagbrasil.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -886,12 +886,12 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Primefy",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=primefy.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -901,22 +901,22 @@
       },
       {
        "name": "Trace Finance",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=tracefinance.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Transfero",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Unico",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unico.io&sz=128",
        "aspect": 1.0
       },
       {
        "name": "We Payments",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=wepayments.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -970,7 +970,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1015,7 +1015,7 @@
       },
       {
        "name": "Samsung Pay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1075,14 +1075,14 @@
       "4"
      ],
      [
-      "Bank transfer",
-      "Bamboo, dLocal, Inswitch",
-      "3"
+      "Other local methods",
+      "AstroPay (AstroPay); BB Pay (Banco do Brasil); Bank transfer (Bamboo, dLocal, Inswitch); Cash (EBANX, Inswitch, PayU); Checkout Pro (EBANX, Mercado Pago); Google Pay PIX · PIX biométrico (Adyen); Mercado Pago Fast Payments · Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); NuPay · Smart PIX (dLocal); PIX Parcelado (Koin, Pagaleve); PicPay (EBANX, PicPay); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX); Samsung Pay (Rede)",
+      "1 to 2 each"
      ],
      [
-      "Other local methods",
-      "AstroPay (AstroPay); BB Pay (Banco do Brasil); Cash (EBANX, Inswitch, PayU); Checkout Pro (EBANX, Mercado Pago); Google Pay PIX · PIX biométrico (Adyen); Mercado Pago Fast Payments · Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); NuPay · Smart PIX (dLocal); PIX Parcelado (Koin, Pagaleve); PicPay (EBANX, PicPay); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX); Samsung Pay (Rede)",
-      "1 to 2 each"
+      "Wallets and global methods via providers",
+      "Apple Pay (Adyen, Cielo, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Cielo, Fiserv, Rapyd, Rede); PayPal (EBANX, Ecommpay, Pockyt, Stripe); Alipay (Antom); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "17"
      ]
     ]
    }
@@ -1158,7 +1158,7 @@
       },
       {
        "name": "Mach Pay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=mach.cl&sz=128",
        "aspect": 1.0
       },
       {
@@ -1183,7 +1183,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1253,7 +1253,7 @@
       },
       {
        "name": "Commerce Gate",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=commercegate.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1263,7 +1263,7 @@
       },
       {
        "name": "Etpay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=etpay.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1283,7 +1283,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1293,7 +1293,7 @@
       },
       {
        "name": "Transfero",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1332,7 +1332,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1432,14 +1432,14 @@
       "3"
      ],
      [
-      "Checkout Pro",
-      "EBANX, Mercado Pago",
-      "2"
+      "Other local methods",
+      "AstroPay (AstroPay); Checkout Pro (EBANX, Mercado Pago); Khipu (Bamboo, dLocal); MACH (EBANX, SafetyPay); MACH QR (Mach Pay); Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) · Servipag (EBANX)",
+      "1 to 2 each"
      ],
      [
-      "Other local methods",
-      "AstroPay (AstroPay); Khipu (Bamboo, dLocal); MACH (EBANX, SafetyPay); MACH QR (Mach Pay); Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) · Servipag (EBANX)",
-      "1 to 2 each"
+      "Wallets and global methods via providers",
+      "PayPal (EBANX, Ecommpay, Pockyt); Apple Pay (Rapyd, Worldpay); Alipay (Antom); Google Pay (Rapyd); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "9"
      ]
     ]
    }
@@ -1545,7 +1545,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1630,7 +1630,7 @@
       },
       {
        "name": "Commerce Gate",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=commercegate.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1645,7 +1645,7 @@
       },
       {
        "name": "Facilitapay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=facilitapay.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1670,7 +1670,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1680,7 +1680,7 @@
       },
       {
        "name": "Transfero",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -1734,7 +1734,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -1844,14 +1844,14 @@
       "5"
      ],
      [
-      "Nequi",
-      "Bamboo, dLocal, Nuvei, SafetyPay, Wompi",
-      "5"
+      "Other local methods",
+      "Acciones y Valores (cash) (Inswitch); AstroPay (AstroPay); Bancolombia BNPL · Bancolombia QR · Bancolombia Tokenbox · Bancolombia transfer · Botón Bancolombia · SU+ Pay (Wompi); Bre-B (dLocal); Checkout Pro (EBANX, Mercado Pago); Daviplata (Nuvei, Wompi); Efecty (dLocal, Nuvei, PagSeguro, Unlimit); Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); Nequi (Bamboo, dLocal, Nuvei, SafetyPay, Wompi); Nequi QR (Bamboo); Payvalida (Payvalida); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX); Transfiya (Movii)",
+      "1 to 2 each"
      ],
      [
-      "Other local methods",
-      "Acciones y Valores (cash) (Inswitch); AstroPay (AstroPay); Bancolombia BNPL · Bancolombia QR · Bancolombia Tokenbox · Bancolombia transfer · Botón Bancolombia · SU+ Pay (Wompi); Bre-B (dLocal); Checkout Pro (EBANX, Mercado Pago); Daviplata (Nuvei, Wompi); Efecty (dLocal, Nuvei, PagSeguro, Unlimit); Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); Nequi QR (Bamboo); Payvalida (Payvalida); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX); Transfiya (Movii)",
-      "1 to 2 each"
+      "Wallets and global methods via providers",
+      "Apple Pay (Fiserv, Rapyd, Worldpay); Google Pay (Fiserv, Rapyd); PayPal (EBANX, Ecommpay); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "9"
      ]
     ]
    }
@@ -1982,7 +1982,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -2067,12 +2067,12 @@
       },
       {
        "name": "Commerce Gate",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=commercegate.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Coppel",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=coppel.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -2082,12 +2082,12 @@
       },
       {
        "name": "Etpay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=etpay.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Facilitapay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=facilitapay.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -2127,12 +2127,12 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Transfero",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -2241,7 +2241,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -2421,19 +2421,14 @@
      "3"
     ],
     [
-     "Checkout Pro",
-     "EBANX, Mercado Pago",
-     "2"
-    ],
-    [
-     "CoDi",
-     "dLocal, Unlimit",
-     "2"
-    ],
-    [
      "Other local methods",
-     "Alsuper (cash) · Banorte (cash deposit) · BBVA (cash deposit) · Bodega Aurrera (cash) · Calimax (cash) · Círculo K (cash) · El Asturiano (cash) · Extra (cash) · Farmacias Benavides (cash) · Farmacias del Ahorro (cash) · Farmacias Roma (cash) · Farmacias Santa María (cash) · Farmacias Unión (cash) · Farmatodo (cash) · Kiosko (cash) · La Más Barata (cash) · Puntos Hey · Sam's Club (cash) · San Francisco de Asís (cash) · Soriana (cash) · Telecomm (cash) · Waldo's (cash) · Walmart (cash) (Unlimit); AstroPay (AstroPay); Farmacias Benavides and Del Ahorro (cash) (PayU); Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); PayCash (Kushki, Unlimit); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
+     "Alsuper (cash) · Banorte (cash deposit) · BBVA (cash deposit) · Bodega Aurrera (cash) · Calimax (cash) · Círculo K (cash) · El Asturiano (cash) · Extra (cash) · Farmacias Benavides (cash) · Farmacias del Ahorro (cash) · Farmacias Roma (cash) · Farmacias Santa María (cash) · Farmacias Unión (cash) · Farmatodo (cash) · Kiosko (cash) · La Más Barata (cash) · Puntos Hey · Sam's Club (cash) · San Francisco de Asís (cash) · Soriana (cash) · Telecomm (cash) · Waldo's (cash) · Walmart (cash) (Unlimit); AstroPay (AstroPay); Checkout Pro (EBANX, Mercado Pago); CoDi (dLocal, Unlimit); Farmacias Benavides and Del Ahorro (cash) (PayU); Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); PayCash (Kushki, Unlimit); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
      "1 to 2 each"
+    ],
+    [
+     "Wallets and global methods via providers",
+     "Apple Pay (Adyen, Fiserv, Rapyd, Worldpay); PayPal (EBANX, Ecommpay, Pockyt, Stripe); Google Pay (Adyen, Fiserv, Rapyd); Alipay (Antom); Neteller (Ecommpay); UnionPay (Ecommpay)",
+     "14"
     ]
    ],
    "header_style": "dark",
@@ -2531,7 +2526,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -2611,7 +2606,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -2655,7 +2650,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -2750,14 +2745,14 @@
       "4"
      ],
      [
-      "Yape",
-      "Bamboo, dLocal, Monnet, Niubiz",
-      "4"
+      "Other local methods",
+      "AstroPay (AstroPay); Checkout Pro (EBANX, Mercado Pago); Mercado Pago (SafetyPay); Monnet QR · Monnet wallet (Monnet); Payvalida (Payvalida); Plin (Niubiz); SafetyPay (EBANX, SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX); Yape (Bamboo, dLocal, Monnet, Niubiz)",
+      "1 to 2 each"
      ],
      [
-      "Other local methods",
-      "AstroPay (AstroPay); Checkout Pro (EBANX, Mercado Pago); Mercado Pago (SafetyPay); Monnet QR · Monnet wallet (Monnet); Payvalida (Payvalida); Plin (Niubiz); SafetyPay (EBANX, SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
-      "1 to 2 each"
+      "Wallets and global methods via providers",
+      "PayPal (EBANX, Ecommpay); Alipay (Antom); Apple Pay (Rapyd); Google Pay (Rapyd); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "7"
      ]
     ]
    }
@@ -2927,6 +2922,11 @@
       "Other local methods",
       "AstroPay (AstroPay); Cash (Inswitch); Checkout Pro (Mercado Pago)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "Apple Pay (Fiserv); Google Pay (Fiserv)",
+      "2"
      ]
     ]
    }
@@ -3091,7 +3091,7 @@
       },
       {
        "name": "FAC (First Atlantic Commerce)",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=fac.bm&sz=128",
        "aspect": 1.0
       },
       {
@@ -3106,7 +3106,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3116,7 +3116,7 @@
       },
       {
        "name": "Powertranz",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=powertranz.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3195,7 +3195,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3276,6 +3276,11 @@
       "1 to 2 each"
      ],
      [
+      "Wallets and global methods via providers",
+      "Apple Pay (Rapyd); Google Pay (Rapyd); PayPal (EBANX)",
+      "3"
+     ],
+     [
       "SINPE Móvil (signed)",
       "dLocal, Inswitch",
       "2"
@@ -3319,7 +3324,7 @@
       },
       {
        "name": "FAC (First Atlantic Commerce)",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=fac.bm&sz=128",
        "aspect": 1.0
       },
       {
@@ -3334,7 +3339,7 @@
       },
       {
        "name": "Powertranz",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=powertranz.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3385,7 +3390,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3433,6 +3438,11 @@
       "Other local methods",
       "Banco Popular (dLocal); Local bank transfers and cash · Pagatodo (Inswitch); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (EBANX)",
+      "1"
      ]
     ]
    }
@@ -3493,7 +3503,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3538,7 +3548,7 @@
      "chips": [
       {
        "name": "Commerce Gate",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=commercegate.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3597,7 +3607,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3655,6 +3665,11 @@
       "Other local methods",
       "Payvalida (Payvalida); SafetyPay (SafetyPay)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "Apple Pay (Rapyd); Google Pay (Rapyd)",
+      "2"
      ]
     ]
    }
@@ -3685,7 +3700,7 @@
       },
       {
        "name": "FAC (First Atlantic Commerce)",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=fac.bm&sz=128",
        "aspect": 1.0
       },
       {
@@ -3700,7 +3715,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3710,7 +3725,7 @@
       },
       {
        "name": "Powertranz",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=powertranz.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3740,7 +3755,7 @@
       },
       {
        "name": "Ibex",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ibexpay.io&sz=128",
        "aspect": 1.0
       }
      ],
@@ -3756,7 +3771,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3809,6 +3824,11 @@
       "Other local methods",
       "Cash (Inswitch); Payvalida (Payvalida); PuntoXpress (dLocal); SafetyPay (SafetyPay)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "Apple Pay (Rapyd); Google Pay (Rapyd)",
+      "2"
      ]
     ]
    }
@@ -3844,7 +3864,7 @@
       },
       {
        "name": "FAC (First Atlantic Commerce)",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=fac.bm&sz=128",
        "aspect": 1.0
       },
       {
@@ -3869,7 +3889,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3879,7 +3899,7 @@
       },
       {
        "name": "Powertranz",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=powertranz.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3909,7 +3929,7 @@
       },
       {
        "name": "Ibex",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ibexpay.io&sz=128",
        "aspect": 1.0
       },
       {
@@ -3943,7 +3963,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3996,6 +4016,11 @@
       "Other local methods",
       "BAM (Banco Agromercantil) (Unlimit); Monnet QR · Monnet wallet (Monnet); Payvalida (Payvalida); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "Apple Pay (Rapyd); Google Pay (Rapyd); PayPal (EBANX)",
+      "3"
      ]
     ]
    }
@@ -4026,7 +4051,7 @@
       },
       {
        "name": "FAC (First Atlantic Commerce)",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=fac.bm&sz=128",
        "aspect": 1.0
       },
       {
@@ -4046,7 +4071,7 @@
       },
       {
        "name": "Powertranz",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=powertranz.com&sz=128",
        "aspect": 1.0
       }
      ]
@@ -4082,7 +4107,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -4160,7 +4185,7 @@
       },
       {
        "name": "FAC (First Atlantic Commerce)",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=fac.bm&sz=128",
        "aspect": 1.0
       },
       {
@@ -4170,7 +4195,7 @@
       },
       {
        "name": "Powertranz",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=powertranz.com&sz=128",
        "aspect": 1.0
       }
      ]
@@ -4273,7 +4298,7 @@
       },
       {
        "name": "FAC (First Atlantic Commerce)",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=fac.bm&sz=128",
        "aspect": 1.0
       },
       {
@@ -4293,7 +4318,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -4308,7 +4333,7 @@
       },
       {
        "name": "Powertranz",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=powertranz.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -4409,14 +4434,14 @@
       "2"
      ],
      [
-      "Clave",
-      "BAC Credomatic, dLocal",
-      "2"
+      "Other local methods",
+      "Clave (BAC Credomatic, dLocal); Nequi (dLocal, Nuvei); Punto Pago (dLocal); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
+      "1 to 2 each"
      ],
      [
-      "Other local methods",
-      "Nequi (dLocal, Nuvei); Punto Pago (dLocal); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
-      "1 to 2 each"
+      "Wallets and global methods via providers",
+      "Apple Pay (Fiserv, Rapyd); Google Pay (Fiserv, Rapyd); PayPal (EBANX)",
+      "5"
      ]
     ]
    }
@@ -4493,7 +4518,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -4601,7 +4626,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -4666,7 +4691,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -4700,7 +4725,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -4730,7 +4755,7 @@
       },
       {
        "name": "UnionPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -4755,12 +4780,12 @@
      "chips": [
       {
        "name": "GoPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=gopay.co.id&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Kredivo",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=kredivo.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -4791,19 +4816,14 @@
       "3"
      ],
      [
-      "ShopeePay",
-      "Boku, dLocal, Xendit",
-      "3"
-     ],
-     [
-      "Alfamart · Virtual Account",
-      "dLocal, Xendit",
-      "2"
-     ],
-     [
       "Other local methods",
-      "AstroPay (AstroPay); DANA (Boku, Xendit); Indomaret (Xendit)",
+      "Alfamart · Virtual Account (dLocal, Xendit); AstroPay (AstroPay); DANA (Boku, Xendit); Indomaret (Xendit); ShopeePay (Boku, dLocal, Xendit)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt, Stripe); Alipay (Antom); Neteller (Ecommpay); UnionPay (Ecommpay); WeChat Pay (Xendit)",
+      "7"
      ],
      [
       "GoPay (signed)",
@@ -4889,7 +4909,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -4949,7 +4969,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -4993,7 +5013,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5023,7 +5043,7 @@
       },
       {
        "name": "UnionPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5079,14 +5099,14 @@
       "3"
      ],
      [
-      "FPX · ShopeePay",
-      "dLocal, Xendit",
-      "2"
+      "Other local methods",
+      "Atome (Adyen); Boost (dLocal); FPX · ShopeePay (dLocal, Xendit); GrabPay (Adyen, Xendit)",
+      "1 to 2 each"
      ],
      [
-      "Other local methods",
-      "Atome (Adyen); Boost (dLocal); GrabPay (Adyen, Xendit)",
-      "1 to 2 each"
+      "Wallets and global methods via providers",
+      "Apple Pay (Adyen, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Fiserv, Rapyd); PayPal (Braintree, Stripe); Alipay (Antom); WeChat Pay (Xendit)",
+      "11"
      ],
      [
       "DuitNow QR (signed)",
@@ -5167,7 +5187,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5212,7 +5232,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -5246,7 +5266,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5276,7 +5296,7 @@
       },
       {
        "name": "UnionPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5331,19 +5351,14 @@
       "2"
      ],
      [
-      "QR Ph",
-      "Ecommpay, Maya",
-      "2"
-     ],
-     [
-      "ShopeePay",
-      "dLocal, Xendit",
-      "2"
-     ],
-     [
       "Other local methods",
-      "Direct debit (Xendit)",
+      "Direct debit (Xendit); QR Ph (Ecommpay, Maya); ShopeePay (dLocal, Xendit)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "Apple Pay (Adyen, Rapyd); Google Pay (Adyen, Rapyd); PayPal (Ecommpay, Pockyt); Alipay (Antom); Neteller (Ecommpay); UnionPay (Ecommpay); WeChat Pay (Xendit)",
+      "10"
      ]
     ]
    }
@@ -5419,7 +5434,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5464,7 +5479,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -5523,7 +5538,7 @@
       },
       {
        "name": "Samsung Pay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5543,7 +5558,7 @@
       },
       {
        "name": "UnionPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5581,6 +5596,11 @@
       "Other local methods",
       "Atome · GrabPay (Adyen)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); PayPal (Braintree, Ecommpay, Pockyt, Stripe); Alipay (Airwallex, Antom); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "17"
      ]
     ]
    }
@@ -5646,7 +5666,7 @@
       },
       {
        "name": "Pagsmile",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5711,7 +5731,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -5745,7 +5765,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5780,7 +5800,7 @@
       },
       {
        "name": "UnionPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5823,6 +5843,11 @@
       "Other local methods",
       "Big C (dLocal)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt, Stripe); Google Pay (Adyen, Rapyd); Alipay (Antom); Neteller (Ecommpay); UnionPay (Ecommpay); WeChat Pay (Xendit)",
+      "9"
      ]
     ]
    }
@@ -5918,7 +5943,7 @@
       },
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -5952,7 +5977,7 @@
       },
       {
        "name": "Discover",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5972,7 +5997,7 @@
       },
       {
        "name": "UnionPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -5997,27 +6022,27 @@
      "chips": [
       {
        "name": "MoMo",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=momo.vn&sz=128",
        "aspect": 1.0
       },
       {
        "name": "NAPAS domestic cards and VietQR",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=napas.com.vn&sz=128",
        "aspect": 1.0
       },
       {
        "name": "VNPay QR",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=vnpay.vn&sz=128",
        "aspect": 1.0
       },
       {
        "name": "Viettel Money (ViettelPay)",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=viettelmoney.vn&sz=128",
        "aspect": 1.0
       },
       {
        "name": "ZaloPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=zalopay.vn&sz=128",
        "aspect": 1.0
       }
      ],
@@ -6038,34 +6063,19 @@
     "font_size": 7.5,
     "rows": [
      [
-      "MoMo",
-      "Adyen, Antom, Ecommpay (integrated) · 2C2P, Nuvei, Unlimit, dLocal (signed)",
-      "7"
+      "Other local methods",
+      "MoMo (Adyen, Antom, Ecommpay); ShopeePay (dLocal, Xendit)",
+      "1 to 2 each"
      ],
      [
-      "ShopeePay",
-      "dLocal, Xendit",
-      "2"
+      "Wallets and global methods via providers",
+      "Apple Pay (Adyen, Rapyd); Google Pay (Adyen, Rapyd); Alipay (Antom); Neteller (Ecommpay); PayPal (Ecommpay); UnionPay (Ecommpay); WeChat Pay (Xendit)",
+      "9"
      ],
      [
-      "NAPAS domestic cards and VietQR (signed)",
-      "dLocal",
-      "1"
-     ],
-     [
-      "VNPay QR (signed)",
-      "2C2P, dLocal, Unlimit",
-      "3"
-     ],
-     [
-      "Viettel Money (ViettelPay) (signed)",
-      "2C2P, dLocal",
-      "2"
-     ],
-     [
-      "ZaloPay (signed)",
-      "2C2P",
-      "1"
+      "Signed with partners, not yet integrated",
+      "MoMo (2C2P, dLocal, Nuvei, Unlimit); NAPAS domestic cards and VietQR (dLocal); VNPay QR (2C2P, dLocal, Unlimit); Viettel Money (ViettelPay) (2C2P, dLocal); ZaloPay (2C2P)",
+      "5"
      ]
     ]
    }
@@ -6096,7 +6106,7 @@
       },
       {
        "name": "UnionPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -6134,7 +6144,7 @@
      "chips": [
       {
        "name": "PPRO",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -6170,7 +6180,7 @@
       },
       {
        "name": "UnionPay",
-       "logo": "",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
       },
       {

@@ -7,11 +7,13 @@ H = os.path.dirname(os.path.abspath(__file__)); LOG = sys.argv[1]
 D = json.load(open(os.path.join(H, 'deck_data.json')))
 old = json.load(open(os.path.join(H, '..', 'gs', 'deck_spec.json')))
 usable = json.load(open(os.path.join(LOG, 'usable.json'))); aspect = json.load(open(os.path.join(LOG, 'aspect.json')))
+fallback = json.load(open(os.path.join(LOG, 'fallback.json'))) if os.path.exists(os.path.join(LOG, 'fallback.json')) else {}
 def nk(s): return re.sub(r'[^a-z0-9]', '', (s or '').lower())
 ALIAS = {'facfirstatlanticcommerce': 'fac', 'antom': 'antomalipay', 'morepayments': 'morepaymentsuniteller', 'banbajo': 'banbajio', 'thaiqrpromptpay': 'thaiqr', 'ovo': 'ovowallet', 'pagofcil': 'pagofacil'}
 def chip(name):
     k = nk(name); k = ALIAS.get(k, k) if ALIAS.get(k, k) in usable else k
-    return {'name': name, 'logo': usable.get(k, ''), 'aspect': aspect.get(k, 1.0)}
+    if k in usable: return {'name': name, 'logo': usable[k], 'aspect': aspect.get(k, 1.0)}
+    return {'name': name, 'logo': fallback.get(nk(name), ''), 'aspect': 1.0}
 LATAM1 = ['Argentina', 'Brazil', 'Chile', 'Colombia', 'Mexico', 'Peru', 'Uruguay']
 LATAM2 = ['Bolivia', 'Costa Rica', 'Dominican Republic', 'Ecuador', 'El Salvador', 'Guatemala', 'Honduras', 'Nicaragua', 'Panama', 'Paraguay']
 SEA = ['Indonesia', 'Malaysia', 'Philippines', 'Singapore', 'Thailand', 'Vietnam', 'Myanmar']
@@ -50,7 +52,7 @@ def grouped(d):
 def method_table(d, max_rows):
     gr = grouped(d); multi = [(m, p) for m, p in gr if len(p) > 1]; single = [(m, p) for m, p in gr if len(p) == 1]
     signed = sorted(set(list(d['signed_m']) + d['signed']))
-    while len(multi) + (1 if single else 0) + len(signed) > max_rows and multi:
+    while len(multi) + (1 if single else 0) + (1 if d.get('global_m') else 0) + len(signed) > max_rows and multi:
         single.append(multi.pop())
     rows = []
     for m, p in multi:
@@ -58,11 +60,17 @@ def method_table(d, max_rows):
         if sg: rows.append([m, f"{', '.join(p)} (integrated) · {', '.join(sg)} (signed)", str(len(p) + len(sg))])
         else: rows.append([m, ', '.join(p), str(len(p))])
     if single: rows.append(["Other local methods", '; '.join(f"{m} ({', '.join(p)})" for m, p in sorted(single)), "1 to 2 each"])
+    glob = d.get('global_m', {})
+    if glob:
+        rows.append(["Wallets and global methods via providers", '; '.join(f"{m} ({', '.join(sorted(ps, key=str.lower))})" for m, ps in sorted(glob.items(), key=lambda kv: (-len(kv[1]), kv[0]))), str(sum(len(v) for v in glob.values()))])
     covered = {x for m, _ in multi for x in m.split(' · ')}
+    sg_rows = []
     for m in signed:
         if m in covered: continue
-        ps = d['signed_m'].get(m, []); rows.append([f"{m} (signed)", ', '.join(ps) if ps else 'Contracted partners', str(len(ps)) if ps else ''])
-    return rows
+        ps = d['signed_m'].get(m, []); sg_rows.append([f"{m} (signed)", ', '.join(ps) if ps else 'Contracted partners', str(len(ps)) if ps else ''])
+    if len(rows) + len(sg_rows) > max_rows and len(sg_rows) > 1:   # fold the signed items into one row when the slide is over its cap
+        sg_rows = [["Signed with partners, not yet integrated", '; '.join(f"{r[0][:-9]} ({r[1]})" for r in sg_rows), str(len(sg_rows))]]
+    return rows + sg_rows
 for c in T:
     d = D[c]; live = sorted(d['live'], key=str.lower); hom = sorted(d['homolog'], key=str.lower)
     cards = d['methods'].get('Cards', []); direct = sorted(d['direct'], key=lambda x: (x not in WALLETS, x.lower())); signed = sorted(d['signed'])
@@ -85,11 +93,11 @@ for c in T:
         s = {"id": "c-" + slug(c) + "-methods", "type": "logo_grid", "kicker": "COUNTRY DETAIL › " + c.upper() + " › PAYMENT METHODS", "headline": headB, "sections": secB}
         if len(direct) > 24:   # dense markets (Mexico): the table gets its own slide
             S.append(s)
-            rows = method_table(d, 10)
+            rows = method_table(d, 9)
             if rows: S.append({"id": "c-" + slug(c) + "-local", "type": "table", "kicker": "COUNTRY DETAIL › " + c.upper() + " › LOCAL METHODS",
                                "headline": f"{c}: local methods through Yuno, and which providers carry each one.", **tbl, "rows": rows, "header_style": "dark", "bold_first_col": True, "zebra": True})
         else:
-            rows = method_table(d, 7 if len(direct) <= 14 else 5)
+            rows = method_table(d, 6 if len(direct) <= 14 else 5)
             if rows: s["table"] = dict(tbl, rows=rows)
             S.append(s)
 signed_all = sorted({(c, m) for c in T for m in D[c]['signed']})
