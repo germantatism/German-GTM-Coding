@@ -83,8 +83,8 @@ PTL = {norm_key(k): v for k, v in MF.parse_ptl(os.path.join(HERE, '..', 'csv', '
 CODEPAIRS = {norm_key(k): {pm for pm, conf in v} for k, v in json.load(open(os.path.join(HERE, '..', 'csv', 'code_pm_pairs.json'))).items() if not k.startswith('_')}
 PTL_ALIAS = {'cybersourcegtw': 'cybersource', 'redebandirect': 'redeban', 'prosaiso': 'prosa', 'klap2': 'klap', 'transbank2': 'transbank', 'bcimach': 'bcimach', 'unlimint': 'unlimint'}
 UNKNOWN = collections.Counter()
-# Caio Freitas, payment-method-coverage-gaps (14 Oct 2026), tab "Sheet names, no repo": directory providers with no Yuno integration repo. Not shown as providers.
-NO_INTEGRATION = {'Alignet', 'AsiaPay', 'BTG Pactual', 'BanBajío', 'Banco Azteca', 'Banco Estado de Chile', 'Banco Rendimento', 'Banco de Bogota', 'Bancolombia', 'Cardnet', 'Cobre', 'Commerce Gate', 'Coppel',
+# Caio Freitas, payment-method-coverage-gaps (14 Oct 2026), tab "Sheet names, no repo": directory providers with no Yuno integration repo yet. German 14 Oct 2026: keep them, Status "Homologating".
+HOMOLOGATING = {'Alignet', 'AsiaPay', 'BTG Pactual', 'BanBajío', 'Banco Azteca', 'Banco Estado de Chile', 'Banco Rendimento', 'Banco de Bogota', 'Bancolombia', 'Cardnet', 'Cobre', 'Commerce Gate', 'Coppel',
                   'Davivienda', 'Directa 24', 'Doku', 'Etpay', 'Facilitapay', 'Ibex', 'Local Payment', 'Midtrans', 'More Payments', 'Netpay', 'Nium', 'Openco', 'PPRO', 'Pag Brasil', 'PagosNet', 'PayCash',
                   'Payments Way', 'Paynet', 'Paysafe', 'Primefy', 'Pronto Paga', 'Sistecredito', 'Totalnet', 'Trace Finance', 'Transfero', 'Unico', 'Venti', 'We Payments'}
 CATALOG_CARD = {'Datafast', 'Medianet'}   # in the Yuno catalog (Caio's mapping) without a repo scan; card acquirers in Ecuador
@@ -153,16 +153,16 @@ rows = [['Country', 'Region', 'Type', 'Name', 'Payment methods supported by prov
 for c in T:
     for d in sorted(prov_by_c[c], key=lambda d: disp(d['name']).lower()):
         name = disp(d['name'])
-        if name in NO_INTEGRATION: REMOVED.append((c, name)); continue
         _ck = code_for(d['name'])
         if _ck in SEEN_CODE.get(c, set()): REMOVED.append((c, name + ' (duplicate of same connection)')); continue   # e.g. BBVA + BBVA Bancomer in Mexico
         SEEN_CODE.setdefault(c, set()).add(_ck)
-        m = methods_for(c, d['name'])
+        status = 'Homologating' if name in HOMOLOGATING else 'Live'
+        m = NO_DATA_NOTE if name in HOMOLOGATING else methods_for(c, d['name'])
         extra = signed_by_prov.get((c, name), [])
         if extra:
             base = [x for x in m.split(', ') if x and x not in extra and x != NO_DATA_NOTE]
             m = ', '.join(base + [f"{x} (signed)" for x in extra])
-        rows.append([c, REGION[c], 'Provider', name, m, 'Live'])
+        rows.append([c, REGION[c], 'Provider', name, m, status])
     for d in sorted(meth_by_c[c], key=lambda d: disp(d['name']).lower()):
         rows.append([c, REGION[c], 'Direct payment method', disp(d['name']), '', 'Live'])
     for sc, name, provs in SIGNED:
@@ -172,7 +172,7 @@ cnt = collections.Counter((r[0], r[2]) for r in rows[1:])
 for c in T: print(f"{c:20s} providers={cnt[(c, 'Provider')]:3d} methods={cnt[(c, 'Direct payment method')]:3d}")
 print(len(rows) - 1, 'rows;', sum(1 for r in rows[1:] if r[2] == 'Provider' and not r[4]), 'provider rows without a method list')
 print('unmapped codes:', dict(UNKNOWN.most_common(40)))
-print('removed (no integration):', len(REMOVED), 'rows,', len({n for _, n in REMOVED}), 'providers')
+print('removed (duplicates):', REMOVED); print('homologating rows:', sum(1 for r in rows[1:] if r[5] == 'Homologating'))
 print('no-data rows:', [(r[0], r[3]) for r in rows[1:] if r[4] == NO_DATA_NOTE])
 json.dump(rows, open(os.path.join(HERE, 'rows.json'), 'w'), ensure_ascii=False)
 if not WRITE: sys.exit(0)
