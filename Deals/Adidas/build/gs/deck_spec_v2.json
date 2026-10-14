@@ -35,7 +35,7 @@
       "text": "Live",
       "bold": true
      },
-     "20: Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay, Bolivia, Costa Rica, Dominican Republic, Ecuador, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Paraguay, Malaysia, Myanmar, Israel",
+     "7: Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay",
      "Cards, Checkout Pro, Mercado Pago Wallet, PIX, Boleto, PSE"
     ],
     [
@@ -44,7 +44,7 @@
       "text": "Live",
       "bold": true
      },
-     "23: Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay, Bolivia, Costa Rica, Dominican Republic, Ecuador, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Paraguay, Indonesia, Malaysia, Philippines, Thailand, Vietnam, Israel",
+     "22: Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay, Bolivia, Costa Rica, Dominican Republic, Ecuador, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Paraguay, Indonesia, Malaysia, Philippines, Thailand, Vietnam",
      "Cards plus local methods in each market: PIX, Boleto, SPEI, OXXO, PSE, Efecty, Yape, QRIS, FPX, GCash, Thai QR, TrueMoney and more"
     ],
     [
@@ -53,7 +53,7 @@
       "text": "Live",
       "bold": true
      },
-     "10: Argentina, Brazil, Chile, Colombia, Mexico, Peru, Bolivia, Dominican Republic, Panama, Paraguay",
+     "7: Argentina, Brazil, Chile, Colombia, Mexico, Peru, Panama",
      "Cards, PSE"
     ],
     [
@@ -99,38 +99,38 @@
    "rows": [
     [
      "Argentina",
-     "69",
-     "Bank transfer · Checkout Pro · MODO · Pago Fácil · AstroPay · Cash · +5 more"
+     "33",
+     "Bank transfer · Checkout Pro · MODO · Pago Fácil · AstroPay · Cash · +4 more"
     ],
     [
      "Brazil",
-     "83",
-     "PIX · Boleto · Bank transfer · PIX Automático · Checkout Pro · NuPay · +10 more"
+     "57",
+     "PIX · Boleto · PIX Automático · Bank transfer · Checkout Pro · NuPay · +9 more"
     ],
     [
      "Chile",
-     "51",
+     "33",
      "Webpay · Khipu · Bank transfer · Checkout Pro · Cash · MACH · +4 more"
     ],
     [
      "Colombia",
-     "89",
+     "41",
      "PSE · Nequi · Bank transfer · Daviplata · Efecty · Cash · +13 more"
     ],
     [
      "Mexico",
-     "69",
+     "46",
      "SPEI · Cash · Bank transfer · OXXO · OXXO Pay · Checkout Pro · +10 more"
     ],
     [
      "Peru",
-     "55",
-     "PagoEfectivo · Yape · Bank transfer · Cash · SafetyPay · AstroPay · +7 more"
+     "31",
+     "PagoEfectivo · Yape · Cash · SafetyPay · AstroPay · Bank transfer · +7 more"
     ],
     [
      "Uruguay",
-     "40",
-     "AstroPay · Bank transfer · Checkout Pro · SafetyPay"
+     "18",
+     "AstroPay · Checkout Pro"
     ]
    ],
    "header_style": "dark",
@@ -157,53 +157,53 @@
    "rows": [
     [
      "Bolivia",
-     "30",
-     "Multipago · Pago al Paso · PagosNet · SafetyPay"
+     "10",
+     "Multipago · Pago al Paso · PagosNet"
     ],
     [
      "Costa Rica",
-     "37",
-     "Banco Nacional cash · Banco Nacional transfer · PuntoXpress · SafetyPay"
+     "19",
+     "Banco Nacional cash · PuntoXpress · SafetyPay"
     ],
     [
      "Dominican Republic",
-     "35",
-     "Banco Popular · Banreservas · Cash · Local bank transfers and cash (11 banks) · Pagatodo · SafetyPay"
+     "13",
+     "Banco Popular · Banreservas · Cash · Local bank transfers and cash (11 banks) · Pagatodo"
     ],
     [
      "Ecuador",
-     "36",
-     "PagoEfectivo · Bank transfer · Deuna · SafetyPay · Cash"
+     "19",
+     "PagoEfectivo · Deuna · SafetyPay · Bank transfer · Cash"
     ],
     [
      "El Salvador",
-     "30",
+     "14",
      "PuntoXpress · SafetyPay"
     ],
     [
      "Guatemala",
-     "30",
+     "16",
      "Bank transfer · Cash · Monnet QR · Monnet wallet · SafetyPay"
     ],
     [
      "Honduras",
-     "26",
+     "13",
      "Cards and wallets only"
     ],
     [
      "Nicaragua",
-     "23",
+     "10",
      "Cards and wallets only"
     ],
     [
      "Panama",
-     "39",
-     "Nequi · Cash · Pluxee · Punto Pago · SafetyPay · Yappy"
+     "19",
+     "Cash · Nequi · Pluxee · Punto Pago · Yappy"
     ],
     [
      "Paraguay",
-     "38",
-     "Bank transfer · SafetyPay"
+     "11",
+     "Cards and wallets only"
     ]
    ],
    "header_style": "dark",
@@ -230,42 +230,42 @@
    "rows": [
     [
      "Indonesia",
-     "31",
+     "20",
      "Alfamart · DANA · OVO · QRIS · ShopeePay · Virtual Account · +1 more"
     ],
     [
      "Malaysia",
-     "30",
+     "21",
      "Touch 'n Go · FPX · 7-Eleven · Boost · ShopeePay"
     ],
     [
      "Philippines",
-     "30",
+     "20",
      "GCash · Maya · 7-Eleven · Direct debit · GrabPay · ShopeePay"
     ],
     [
      "Singapore",
-     "33",
+     "19",
      "PayNow"
     ],
     [
      "Thailand",
-     "32",
+     "20",
      "ShopeePay · Thai QR (PromptPay) · TrueMoney · Big C"
     ],
     [
      "Vietnam",
-     "28",
-     "Cards and wallets only"
-    ],
-    [
-     "Myanmar",
      "16",
      "Cards and wallets only"
     ],
     [
+     "Myanmar",
+     "5",
+     "Cards and wallets only"
+    ],
+    [
      "Israel",
-     "29",
+     "7",
      "Cards and wallets only"
     ]
    ],
@@ -293,46 +293,18 @@
    "zebra": true,
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-argentina",
-   "kicker": "COUNTRY DETAIL › ARGENTINA › CARDS AND WALLETS",
-   "headline": "Argentina: 69 providers live through Yuno, 55 for cards and 11 local methods.",
+   "kicker": "COUNTRY DETAIL › ARGENTINA",
+   "headline": "Argentina: 33 providers live through Yuno, 25 for cards and 10 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Alelo, American Express, BAC Credomatic, Bamboo, Bancard, Braintree, Checkout.com, Cielo, Cobro Digital, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, FAC, Fiserv, Getnet, Izipay, Klap, Kushki, Mercado Pago, Nave, Niubiz, NMI, Nomupay, NTT Data, Nuvei, Openpay, Pagar.me, PagBank, PagSeguro, PayAmigo, Paymentez, PayU, Payzen, Pluxee, Prisma, Prosa, Rede, Redeban, Redsys, Splitit, Stone, Stripe, Tabapay, Tap Payments, Transbank, Unlimint, VR, Windcave, Wompi, Worldline, Worldpay",
-     "55"
+     "American Express, Bamboo, BBVA, Cobro Digital, Cybersource, dLocal, EBANX, Ecommpay, emerchantpay, Fiserv, Getnet, Inswitch, Mercado Pago, Nave, Nuvei, Openpay, PagSeguro, PayAmigo, Paymentez, PayU, Payzen, Prisma, Unlimint, Worldline, Worldpay",
+     "25"
     ],
     [
-     "Wallets",
-     "Apple Pay, Google Pay, PayPal",
-     "3"
-    ]
-   ]
-  },
-  {
-   "type": "table",
-   "columns": [
-    "Method",
-    "Providers live through Yuno",
-    "#"
-   ],
-   "col_widths": [
-    0.2,
-    0.74,
-    0.06
-   ],
-   "header_style": "dark",
-   "font_size": 7.5,
-   "bold_first_col": true,
-   "zebra": true,
-   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "id": "c-argentina-local",
-   "kicker": "COUNTRY DETAIL › ARGENTINA › LOCAL METHODS",
-   "headline": "Argentina: local methods live through Yuno, and which providers carry each one.",
-   "rows": [
-    [
      "Bank transfer",
-     "dLocal, Fintoc, Unlimint",
-     "3"
+     "dLocal, Unlimint",
+     "2"
     ],
     [
      "Checkout Pro",
@@ -370,14 +342,14 @@
      "1"
     ],
     [
-     "SafetyPay",
-     "SafetyPay",
-     "1"
-    ],
-    [
      "Transferencias 3.0",
      "Bamboo",
      "1"
+    ],
+    [
+     "Wallets",
+     "Apple Pay, Google Pay, PayPal",
+     "3"
     ]
    ]
   },
@@ -400,12 +372,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-brazil",
    "kicker": "COUNTRY DETAIL › BRAZIL › CARDS AND WALLETS",
-   "headline": "Brazil: 83 providers live through Yuno, 56 for cards and 16 local methods.",
+   "headline": "Brazil: 57 providers live through Yuno, 36 for cards and 15 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Alelo, BAC Credomatic, Bamboo, Barte, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, Edenred, Fiserv, Getnet, Izipay, Klap, Kushki, Maya, Mercado Pago, Monnet, Niubiz, NMI, Nuvei, Openpay, Pagar.me, PagBank, PagSeguro, PayAmigo, Paymentez, PayU, PicPay, Pinbank, Pluxee, Prisma, Prosa, QNB (MPGS), RappiBank, Rede, Redeban, Redsys, Safrapay, Splitit, Stone, Stripe, Tap Payments, Transbank, Unlimint, VR, Windcave, Wompi, Worldpay, Zesta, Zoop",
-     "56"
+     "Adyen, Airwallex, Alelo, Bamboo, Barte, Braintree, Cielo, Cybersource, dLocal, EBANX, Ecommpay, Edenred, emerchantpay, Fiserv, Getnet, Inswitch, Mercado Pago, Nuvei, Pagar.me, PagBank, PagSeguro, Paymentez, PayU, PicPay, Pinbank, Pluxee, RappiBank, Rede, Safrapay, Stone, Stripe, Unlimint, VR, Worldline, Worldpay, Zoop",
+     "36"
     ],
     [
      "Wallets",
@@ -437,8 +409,8 @@
    "rows": [
     [
      "PIX",
-     "Adyen, Bamboo, Banco do Brasil, Bradesco, Cielo, dLocal, EBANX, Getnet, Itaú, Mercado Pago, Nuvei, Okto, Pagaleve, Pagar.me, PagBank, PagSeguro, Pagsmile, Pay4Fun, PayAmigo, PayRetailers, PicPay, Pinbank, Safeway, Santander, Spinpay, Stark Bank, Transfeera, Unlimint, Volt, Zoop",
-     "30"
+     "Adyen, Bamboo, Banco do Brasil, Bradesco, Cielo, dLocal, EBANX, Getnet, Itaú, Mercado Pago, Nuvei, Okto, Pagaleve, Pagar.me, PagBank, PagSeguro, Pagsmile, Pay4Fun, PayRetailers, PicPay, Pinbank, Safeway, Santander, Spinpay, Stark Bank, Transfeera, Unlimint, Volt, Zoop",
+     "29"
     ],
     [
      "Boleto",
@@ -446,14 +418,14 @@
      "7"
     ],
     [
-     "Bank transfer",
-     "Bamboo, dLocal, Fintoc, Monnet",
-     "4"
-    ],
-    [
      "PIX Automático",
      "Adyen, PayRetailers, Stripe",
      "3"
+    ],
+    [
+     "Bank transfer",
+     "Bamboo, dLocal",
+     "2"
     ],
     [
      "Checkout Pro",
@@ -472,7 +444,7 @@
     ],
     [
      "Other local methods",
-     "Alelo (Alelo); AstroPay (AstroPay); Cash (Monnet); DolarApp (DolarApp); Google Pay PIX (Adyen); Mercado Pago Wallet (Mercado Pago); PIX Parcelado (Pagaleve); SafetyPay (SafetyPay); Smart PIX (dLocal)",
+     "Alelo (Alelo); AstroPay (AstroPay); DolarApp (DolarApp); Google Pay PIX (Adyen); Mercado Pago Wallet (Mercado Pago); PIX Parcelado (Pagaleve); SafetyPay (SafetyPay); Smart PIX (dLocal)",
      "1 each"
     ]
    ]
@@ -495,42 +467,14 @@
    "zebra": true,
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-chile",
-   "kicker": "COUNTRY DETAIL › CHILE › CARDS AND WALLETS",
-   "headline": "Chile: 51 providers live through Yuno, 39 for cards and 10 local methods.",
+   "kicker": "COUNTRY DETAIL › CHILE",
+   "headline": "Chile: 33 providers live through Yuno, 24 for cards and 10 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Fiserv, Getnet, Izipay, Klap, Kushki, Mercado Pago, Monnet, Niubiz, NMI, Nuvei, Openpay, Pagar.me, PagBank, PagSeguro, Paymentez, PayU, Prisma, Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Transbank, Unlimint, Windcave, Wompi, Worldpay",
-     "39"
+     "AstroPay, Bamboo, BBVA, Cybersource, dLocal, EBANX, Ecommpay, Fiserv, Getnet, Inswitch, Klap, Kushki, Mercado Pago, Monnet, Nuvei, PagSeguro, Paymentez, PayRetailers, PayU, PlacetoPay, Transbank, Unlimint, Worldline, Worldpay",
+     "24"
     ],
-    [
-     "Wallets",
-     "Apple Pay, Google Pay, PayPal",
-     "3"
-    ]
-   ]
-  },
-  {
-   "type": "table",
-   "columns": [
-    "Method",
-    "Providers live through Yuno",
-    "#"
-   ],
-   "col_widths": [
-    0.2,
-    0.74,
-    0.06
-   ],
-   "header_style": "dark",
-   "font_size": 7.5,
-   "bold_first_col": true,
-   "zebra": true,
-   "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "id": "c-chile-local",
-   "kicker": "COUNTRY DETAIL › CHILE › LOCAL METHODS",
-   "headline": "Chile: local methods live through Yuno, and which providers carry each one.",
-   "rows": [
     [
      "Webpay",
      "Bamboo, EBANX, Nuvei, Paymentez, Transbank",
@@ -575,6 +519,11 @@
      "SafetyPay",
      "SafetyPay",
      "1"
+    ],
+    [
+     "Wallets",
+     "Apple Pay, Google Pay, PayPal",
+     "3"
     ]
    ]
   },
@@ -597,12 +546,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-colombia",
    "kicker": "COUNTRY DETAIL › COLOMBIA › CARDS AND WALLETS",
-   "headline": "Colombia: 89 providers live through Yuno, 62 for cards and 19 local methods.",
+   "headline": "Colombia: 41 providers live through Yuno, 28 for cards and 19 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, AllInPay, Azul, BAC Credomatic, Bamboo, Braintree, Checkout.com, CIBC, Cielo, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, emerchantpay, FAC, Fiserv, Getnet, Inovio, Izipay, Klap, Kushki, Maya, Mercado Pago, Monnet, Monri, Movii, Niubiz, NMI, Nomupay, Nuvei, Openpay, Pagar.me, PagBank, PagSeguro, Paymentez, PayU, PicPay, Pinbank, PlacetoPay, Pluxee, Prisma, Prosa, QNB (MPGS), RappiPay, Rede, Redeban, Redsys, Splitit, Stone, Stripe, Tap Payments, Transbank, Unlimint, Windcave, Wompi, Worldline, Worldpay, XacBank, Xendit, Zesta",
-     "62"
+     "Bamboo, BBVA, CIBC, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, emerchantpay, Fiserv, Kushki, Mercado Pago, Monnet, Movii, Nuvei, Openpay, PagSeguro, Paymentez, PayRetailers, PayU, PlacetoPay, Pluxee, RappiPay, Redeban, Unlimint, Wompi, Worldline, Worldpay",
+     "28"
     ],
     [
      "Wallets",
@@ -644,8 +593,8 @@
     ],
     [
      "Bank transfer",
-     "Bamboo, dLocal, Fintoc, Monnet, Unlimint",
-     "5"
+     "Bamboo, dLocal, Monnet, Unlimint",
+     "4"
     ],
     [
      "Daviplata",
@@ -693,12 +642,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-mexico",
    "kicker": "COUNTRY DETAIL › MEXICO › CARDS AND WALLETS",
-   "headline": "Mexico: 69 providers live through Yuno, 56 for cards and 16 local methods.",
+   "headline": "Mexico: 46 providers live through Yuno, 36 for cards and 16 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, American Express, BAC Credomatic, Bamboo, Banorte, BBVA, Braintree, Checkout.com, CIBC, Cielo, Conekta, Credibanco, Cybersource, Diners Club, dLocal, EBANX, Ecommpay, Edenred, EVO, Fiserv, Getnet, Izipay, Klap, Kushki, Mercado Pago, Monnet, Monri, Niubiz, NMI, Nomupay, NTT Data, Nuvei, Openpay, Pagar.me, PagBank, PagSeguro, PayAmigo, Paymentez, PayU, PicPay, Pinbank, Prosa, QNB (MPGS), Rede, Redeban, Redsys, Splitit, Stripe, T1Pagos, Tap Payments, Transbank, Unlimint, Windcave, Wompi, Worldpay",
-     "56"
+     "Adyen, Airwallex, American Express, Bamboo, Banorte, BBVA, CIBC, Conekta, Cybersource, dLocal, EBANX, Ecommpay, Edenred, emerchantpay, EVO, Fintoc, Fiserv, Getnet, Inswitch, Kushki, Mercado Pago, Monnet, Nuvei, Openpay, PagSeguro, Paymentez, PayRetailers, PayU, PlacetoPay, Prosa, Splitit, Stripe, T1Pagos, Unlimint, Worldline, Worldpay",
+     "36"
     ],
     [
      "Wallets",
@@ -794,12 +743,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-peru",
    "kicker": "COUNTRY DETAIL › PERU › CARDS AND WALLETS",
-   "headline": "Peru: 55 providers live through Yuno, 38 for cards and 13 local methods.",
+   "headline": "Peru: 31 providers live through Yuno, 20 for cards and 13 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Cobro Digital, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, Getnet, Izipay, Kushki, Mercado Pago, Monnet, Niubiz, NMI, Nuvei, Openpay, Pagar.me, PayAmigo, Paymentez, PayU, Prisma, QNB (MPGS), Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Transbank, Unlimint, Wompi, Worldpay",
-     "38"
+     "Bamboo, BBVA, Cybersource, dLocal, EBANX, Ecommpay, Inswitch, Izipay, Kushki, Mercado Pago, Monnet, Niubiz, Nuvei, Openpay, Paymentez, PayRetailers, PayU, PlacetoPay, Unlimint, Worldline",
+     "20"
     ],
     [
      "Wallets",
@@ -840,11 +789,6 @@
      "4"
     ],
     [
-     "Bank transfer",
-     "Fintoc, Monnet",
-     "2"
-    ],
-    [
      "Cash",
      "Monnet, Paymentez",
      "2"
@@ -856,7 +800,7 @@
     ],
     [
      "Other local methods",
-     "AstroPay (AstroPay); Checkout Pro (Mercado Pago); Cuotéalo BCP (Cuotéalo); Monnet QR · Monnet wallet (Monnet); Payvalida (Payvalida); Powerpay (Powerpay); aCuotaz (aCuotaz)",
+     "AstroPay (AstroPay); Bank transfer · Monnet QR · Monnet wallet (Monnet); Checkout Pro (Mercado Pago); Cuotéalo BCP (Cuotéalo); Payvalida (Payvalida); Powerpay (Powerpay); aCuotaz (aCuotaz)",
      "1 each"
     ]
    ]
@@ -880,31 +824,21 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-uruguay",
    "kicker": "COUNTRY DETAIL › URUGUAY",
-   "headline": "Uruguay: 40 providers live through Yuno, 32 for cards and 4 local methods.",
+   "headline": "Uruguay: 18 providers live through Yuno, 14 for cards and 2 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Fiserv, Getnet, Izipay, Kushki, Mercado Pago, Niubiz, NMI, Nomupay, Nuvei, Openpay, PayAmigo, Prisma, Rede, Redeban, Splitit, Stripe, Tap Payments, Transbank, Unlimint, Wompi, Worldpay",
-     "32"
+     "Bamboo, BBVA, Cybersource, dLocal, EBANX, Ecommpay, emerchantpay, Fiserv, Getnet, Inswitch, Mercado Pago, Nuvei, PlacetoPay, Worldline",
+     "14"
     ],
     [
      "AstroPay",
      "AstroPay",
-     "1"
-    ],
-    [
-     "Bank transfer",
-     "Fintoc",
      "1"
     ],
     [
      "Checkout Pro",
      "Mercado Pago",
-     "1"
-    ],
-    [
-     "SafetyPay",
-     "SafetyPay",
      "1"
     ],
     [
@@ -933,12 +867,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-bolivia",
    "kicker": "COUNTRY DETAIL › BOLIVIA",
-   "headline": "Bolivia: 30 providers live through Yuno, 26 for cards and 4 local methods.",
+   "headline": "Bolivia: 10 providers live through Yuno, 7 for cards and 3 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Getnet, Izipay, Kushki, Mercado Pago, Niubiz, NMI, Nuvei, PayU, Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Worldpay",
-     "26"
+     "AstroPay, Cybersource, dLocal, EBANX, Ecommpay, Inswitch, Nuvei",
+     "7"
     ],
     [
      "Multipago · Pago al Paso",
@@ -948,11 +882,6 @@
     [
      "PagosNet",
      "EBANX",
-     "1"
-    ],
-    [
-     "SafetyPay",
-     "SafetyPay",
      "1"
     ],
     [
@@ -981,25 +910,15 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-costa-rica",
    "kicker": "COUNTRY DETAIL › COSTA RICA",
-   "headline": "Costa Rica: 37 providers live through Yuno, 31 for cards and 4 local methods.",
+   "headline": "Costa Rica: 19 providers live through Yuno, 15 for cards and 3 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, Credix, Cybersource, dLocal, EBANX, Ecommpay, FAC, Fiserv, Izipay, Kushki, Mercado Pago, Niubiz, NMI, Nuvei, Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Wompi, Worldline, Worldpay",
-     "31"
+     "AstroPay, BAC Credomatic, Bamboo, Credix, Cybersource, dLocal, EBANX, Ecommpay, FAC, Fiserv, Inswitch, Nuvei, Pagalo, PlacetoPay, Unlimint",
+     "15"
     ],
     [
-     "Banco Nacional cash",
-     "dLocal, PagSeguro",
-     "2"
-    ],
-    [
-     "Banco Nacional transfer",
-     "PagSeguro",
-     "1"
-    ],
-    [
-     "PuntoXpress",
+     "Banco Nacional cash · PuntoXpress",
      "dLocal",
      "1"
     ],
@@ -1034,12 +953,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-dominican-republic",
    "kicker": "COUNTRY DETAIL › DOMINICAN REPUBLIC",
-   "headline": "Dominican Republic: 35 providers live through Yuno, 29 for cards and 6 local methods.",
+   "headline": "Dominican Republic: 13 providers live through Yuno, 9 for cards and 5 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Azul, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, Izipay, Mercado Pago, Niubiz, NMI, Nuvei, Openpay, PayU, Rede, Redeban, Splitit, Stripe, Tap Payments, Transbank, Unlimint, Wompi, Worldpay",
-     "29"
+     "Azul, Cybersource, dLocal, EBANX, Ecommpay, FAC, Fiserv, Nuvei, Worldline",
+     "9"
     ],
     [
      "Banco Popular · Cash",
@@ -1049,11 +968,6 @@
     [
      "Banreservas · Local bank transfers and cash (11 banks) · Pagatodo",
      "Inswitch",
-     "1"
-    ],
-    [
-     "SafetyPay",
-     "SafetyPay",
      "1"
     ],
     [
@@ -1082,22 +996,17 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-ecuador",
    "kicker": "COUNTRY DETAIL › ECUADOR",
-   "headline": "Ecuador: 36 providers live through Yuno, 27 for cards and 5 local methods.",
+   "headline": "Ecuador: 19 providers live through Yuno, 13 for cards and 5 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, Diners Club, dLocal, EBANX, Ecommpay, Getnet, Izipay, Kushki, Mercado Pago, Niubiz, NMI, Nuvei, Paymentez, Rede, Redeban, Splitit, Stripe, Tap Payments, Unlimint, Worldpay",
-     "27"
+     "Bamboo, Cybersource, Diners Club, dLocal, EBANX, Inswitch, Kushki, Nuvei, Paymentez, PayRetailers, PlacetoPay, Unlimint, Worldline",
+     "13"
     ],
     [
      "PagoEfectivo",
      "dLocal, Paymentez, SafetyPay, Unlimint",
      "4"
-    ],
-    [
-     "Bank transfer",
-     "Fintoc, Monnet",
-     "2"
     ],
     [
      "Deuna",
@@ -1110,7 +1019,7 @@
      "2"
     ],
     [
-     "Cash",
+     "Bank transfer · Cash",
      "Monnet",
      "1"
     ],
@@ -1140,12 +1049,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-el-salvador",
    "kicker": "COUNTRY DETAIL › EL SALVADOR",
-   "headline": "El Salvador: 30 providers live through Yuno, 25 for cards and 2 local methods.",
+   "headline": "El Salvador: 14 providers live through Yuno, 9 for cards and 2 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Izipay, Kushki, Mercado Pago, Niubiz, NMI, Nuvei, Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Worldpay",
-     "25"
+     "BAC Credomatic, Cybersource, dLocal, EBANX, Ecommpay, FAC, Inswitch, Nuvei, Wompi",
+     "9"
     ],
     [
      "PuntoXpress",
@@ -1183,12 +1092,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-guatemala",
    "kicker": "COUNTRY DETAIL › GUATEMALA",
-   "headline": "Guatemala: 30 providers live through Yuno, 25 for cards and 5 local methods.",
+   "headline": "Guatemala: 16 providers live through Yuno, 11 for cards and 5 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Izipay, Kushki, Mercado Pago, Niubiz, NMI, Nuvei, Pagalo, Rede, Redeban, Splitit, Stripe, Tap Payments, Unlimint, Worldpay",
-     "25"
+     "BAC Credomatic, Cybersource, dLocal, EBANX, FAC, Fiserv, Inswitch, Nuvei, Pagalo, PayRetailers, Unlimint",
+     "11"
     ],
     [
      "Bank transfer · Cash · Monnet QR · Monnet wallet",
@@ -1226,12 +1135,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-honduras",
    "kicker": "COUNTRY DETAIL › HONDURAS",
-   "headline": "Honduras: 26 providers live through Yuno, 23 for cards and no local method connected yet.",
+   "headline": "Honduras: 13 providers live through Yuno, 10 for cards and no local method connected yet.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Izipay, Mercado Pago, Niubiz, Nuvei, Rede, Redeban, Splitit, Stripe, Tap Payments, Unlimint, Wompi, Worldpay",
-     "23"
+     "BAC Credomatic, Cybersource, dLocal, Ecommpay, FAC, Inswitch, Monnet, Nuvei, Pagalo, PlacetoPay",
+     "10"
     ],
     [
      "Wallets",
@@ -1259,12 +1168,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-nicaragua",
    "kicker": "COUNTRY DETAIL › NICARAGUA",
-   "headline": "Nicaragua: 23 providers live through Yuno, 20 for cards and no local method connected yet.",
+   "headline": "Nicaragua: 10 providers live through Yuno, 7 for cards and no local method connected yet.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Izipay, Mercado Pago, Niubiz, Nuvei, Redeban, Splitit, Stripe, Tap Payments, Unlimint, Worldpay",
-     "20"
+     "BAC Credomatic, Bamboo, Cybersource, dLocal, EBANX, FAC, Inswitch",
+     "7"
     ],
     [
      "Wallets",
@@ -1292,17 +1201,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-panama",
    "kicker": "COUNTRY DETAIL › PANAMA",
-   "headline": "Panama: 39 providers live through Yuno, 33 for cards and 6 local methods.",
+   "headline": "Panama: 19 providers live through Yuno, 14 for cards and 5 local methods.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Banorte, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, FAC, Fiserv, Izipay, Kushki, Mercado Pago, Niubiz, NMI, Nuvei, PayU, Prosa, Rede, Redeban, Splitit, Stripe, Tap Payments, Transbank, Unlimint, Wompi, Worldline, Worldpay",
-     "33"
-    ],
-    [
-     "Nequi",
-     "Bamboo, dLocal",
-     "2"
+     "BAC Credomatic, Cybersource, dLocal, EBANX, Ecommpay, FAC, Fiserv, Inswitch, Monnet, Nuvei, PayRetailers, PayU, PlacetoPay, Unlimint",
+     "14"
     ],
     [
      "Cash",
@@ -1310,18 +1214,13 @@
      "1"
     ],
     [
-     "Pluxee",
-     "Pluxee",
-     "1"
-    ],
-    [
-     "Punto Pago",
+     "Nequi · Punto Pago",
      "dLocal",
      "1"
     ],
     [
-     "SafetyPay",
-     "SafetyPay",
+     "Pluxee",
+     "Pluxee",
      "1"
     ],
     [
@@ -1355,22 +1254,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-paraguay",
    "kicker": "COUNTRY DETAIL › PARAGUAY",
-   "headline": "Paraguay: 38 providers live through Yuno, 30 for cards and 2 local methods.",
+   "headline": "Paraguay: 11 providers live through Yuno, 8 for cards and no local method connected yet.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, BAC Credomatic, Bamboo, Bancard, Braintree, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Getnet, Izipay, Mercado Pago, Niubiz, NMI, Nuvei, Openpay, Pagar.me, PayU, Rede, Redeban, Splitit, Stripe, Tap Payments, Transbank, Unlimint, Wompi, Worldpay",
-     "30"
-    ],
-    [
-     "Bank transfer",
-     "Fintoc",
-     "1"
-    ],
-    [
-     "SafetyPay",
-     "SafetyPay",
-     "1"
+     "Bamboo, Bancard, Cybersource, dLocal, EBANX, Ecommpay, Inswitch, Nuvei",
+     "8"
     ],
     [
      "Wallets",
@@ -1398,12 +1287,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-indonesia",
    "kicker": "COUNTRY DETAIL › INDONESIA",
-   "headline": "Indonesia: 31 providers live through Yuno, 27 for cards and 7 local methods.",
+   "headline": "Indonesia: 20 providers live through Yuno, 16 for cards and 7 local methods.",
    "rows": [
     [
      "Cards",
-     "2C2P, Adyen, Airwallex, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Maya, Niubiz, NMI, Nuvei, Pagar.me, QNB (MPGS), Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
-     "27"
+     "2C2P, Adyen, Airwallex, AstroPay, Checkout.com, Cybersource, dLocal, Ecommpay, Fiserv, NTT Data, Nuvei, Stripe, Unlimint, Worldline, Worldpay, Xendit",
+     "16"
     ],
     [
      "Alfamart · OVO · QRIS · Virtual Account",
@@ -1451,12 +1340,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-malaysia",
    "kicker": "COUNTRY DETAIL › MALAYSIA",
-   "headline": "Malaysia: 30 providers live through Yuno, 26 for cards and 5 local methods.",
+   "headline": "Malaysia: 21 providers live through Yuno, 17 for cards and 5 local methods.",
    "rows": [
     [
      "Cards",
-     "2C2P, Adyen, Airwallex, Antom, Braintree, Checkout.com, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Mercado Pago, Niubiz, NMI, Nuvei, Prosa, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
-     "26"
+     "2C2P, Adyen, Airwallex, Antom, Braintree, Checkout.com, Cybersource, dLocal, Fiserv, NTT Data, Nuvei, Splitit, Stripe, Unlimint, Worldline, Worldpay, Xendit",
+     "17"
     ],
     [
      "Touch 'n Go",
@@ -1504,12 +1393,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-philippines",
    "kicker": "COUNTRY DETAIL › PHILIPPINES",
-   "headline": "Philippines: 30 providers live through Yuno, 26 for cards and 6 local methods.",
+   "headline": "Philippines: 20 providers live through Yuno, 17 for cards and 6 local methods.",
    "rows": [
     [
      "Cards",
-     "2C2P, Adyen, Airwallex, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Maya, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit",
-     "26"
+     "2C2P, Adyen, Airwallex, Boku, Checkout.com, Cybersource, dLocal, Ecommpay, Fiserv, Maya, Nomupay, NTT Data, Nuvei, Unlimint, Worldline, Worldpay, Xendit",
+     "17"
     ],
     [
      "GCash",
@@ -1552,12 +1441,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-singapore",
    "kicker": "COUNTRY DETAIL › SINGAPORE",
-   "headline": "Singapore: 33 providers live through Yuno, 29 for cards and 1 local methods.",
+   "headline": "Singapore: 19 providers live through Yuno, 16 for cards and 1 local methods.",
    "rows": [
     [
      "Cards",
-     "2C2P, Adyen, Airwallex, AllInPay, BAC Credomatic, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, EBANX, Ecommpay, Izipay, MCTPay, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Zesta",
-     "29"
+     "2C2P, Adyen, Airwallex, AllInPay, Boku, Braintree, Checkout.com, Cybersource, Ecommpay, Fiserv, MCTPay, Nuvei, Splitit, Stripe, Worldline, Worldpay",
+     "16"
     ],
     [
      "PayNow",
@@ -1590,12 +1479,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-thailand",
    "kicker": "COUNTRY DETAIL › THAILAND",
-   "headline": "Thailand: 32 providers live through Yuno, 28 for cards and 4 local methods.",
+   "headline": "Thailand: 20 providers live through Yuno, 17 for cards and 4 local methods.",
    "rows": [
     [
      "Cards",
-     "2C2P, Adyen, Airwallex, Antom, BAC Credomatic, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, Izipay, Niubiz, NMI, Nuvei, QNB (MPGS), Rede, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay, Xendit, Zesta",
-     "28"
+     "2C2P, Adyen, Antom, Boku, Checkout.com, Cybersource, dLocal, EBANX, Ecommpay, Fiserv, NTT Data, Nuvei, Stripe, Unlimint, Worldline, Worldpay, Xendit",
+     "17"
     ],
     [
      "ShopeePay · Thai QR (PromptPay) · TrueMoney",
@@ -1633,12 +1522,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-vietnam",
    "kicker": "COUNTRY DETAIL › VIETNAM",
-   "headline": "Vietnam: 28 providers live through Yuno, 25 for cards and no local method connected yet.",
+   "headline": "Vietnam: 16 providers live through Yuno, 13 for cards and no local method connected yet.",
    "rows": [
     [
      "Cards",
-     "2C2P, Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, Cybersource, dLocal, Ecommpay, Izipay, Niubiz, NMI, Nomupay, Nuvei, QNB (MPGS), Redsys, Splitit, Stripe, Tap Payments, Unlimint, Windcave, Worldpay",
-     "25"
+     "2C2P, Adyen, Boku, Cybersource, dLocal, Ecommpay, Fiserv, NTT Data, Nuvei, Unlimint, Worldline, Worldpay, Xendit",
+     "13"
     ],
     [
      "Wallets",
@@ -1666,12 +1555,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-myanmar",
    "kicker": "COUNTRY DETAIL › MYANMAR",
-   "headline": "Myanmar: 16 providers live through Yuno, 13 for cards and no local method connected yet.",
+   "headline": "Myanmar: 5 providers live through Yuno, 2 for cards and no local method connected yet.",
    "rows": [
     [
      "Cards",
-     "2C2P, Adyen, Airwallex, Bamboo, Checkout.com, Mercado Pago, Nuvei, Redsys, Splitit, Stripe, Tap Payments, Unlimint, Worldpay",
-     "13"
+     "2C2P, Cybersource",
+     "2"
     ],
     [
      "Wallets",
@@ -1699,12 +1588,12 @@
    "note": "Live means the connection is built and available to process payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-israel",
    "kicker": "COUNTRY DETAIL › ISRAEL",
-   "headline": "Israel: 29 providers live through Yuno, 26 for cards and no local method connected yet.",
+   "headline": "Israel: 7 providers live through Yuno, 4 for cards and no local method connected yet.",
    "rows": [
     [
      "Cards",
-     "Adyen, Airwallex, Antom, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, dLocal, Ecommpay, Getnet, Izipay, Mercado Pago, Niubiz, NMI, Nuvei, Rede, Redeban, Redsys, Splitit, Stone, Stripe, Tap Payments, Unlimint, Windcave, Worldpay",
-     "26"
+     "Cybersource, Ecommpay, Nuvei, Worldline",
+     "4"
     ],
     [
      "Wallets",

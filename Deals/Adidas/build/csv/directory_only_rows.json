@@ -1,0 +1,778 @@
+[
+ {
+  "Country": "Philippines",
+  "Provider": "BOKU",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Singapore",
+  "Provider": "BOKU",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Thailand",
+  "Provider": "BOKU",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Vietnam",
+  "Provider": "BOKU",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Chile",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Uruguay",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Bolivia",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Ecuador",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "El Salvador",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Guatemala",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Honduras",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Nicaragua",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Paraguay",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Myanmar",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Israel",
+  "Provider": "CYBERSOURCE_GTW",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Argentina",
+  "Provider": "E_MERCHANT_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Brazil",
+  "Provider": "E_MERCHANT_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Mexico",
+  "Provider": "E_MERCHANT_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Uruguay",
+  "Provider": "E_MERCHANT_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Dominican Republic",
+  "Provider": "FISERV",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Guatemala",
+  "Provider": "FISERV",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Indonesia",
+  "Provider": "FISERV",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Malaysia",
+  "Provider": "FISERV",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Philippines",
+  "Provider": "FISERV",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Singapore",
+  "Provider": "FISERV",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Thailand",
+  "Provider": "FISERV",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Vietnam",
+  "Provider": "FISERV",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Indonesia",
+  "Provider": "NTT_DATA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Malaysia",
+  "Provider": "NTT_DATA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Philippines",
+  "Provider": "NTT_DATA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Thailand",
+  "Provider": "NTT_DATA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Vietnam",
+  "Provider": "NTT_DATA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Brazil",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Chile",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Mexico",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Peru",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Uruguay",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Dominican Republic",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Ecuador",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Indonesia",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Malaysia",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Philippines",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Singapore",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Thailand",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Vietnam",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Israel",
+  "Provider": "WORLDLINE",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Vietnam",
+  "Provider": "XENDIT",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Chile",
+  "Provider": "ASTROPAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Bolivia",
+  "Provider": "ASTROPAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Costa Rica",
+  "Provider": "ASTROPAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Indonesia",
+  "Provider": "ASTROPAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Argentina",
+  "Provider": "BBVA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Chile",
+  "Provider": "BBVA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Colombia",
+  "Provider": "BBVA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Peru",
+  "Provider": "BBVA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Uruguay",
+  "Provider": "BBVA",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Dominican Republic",
+  "Provider": "FAC",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "El Salvador",
+  "Provider": "FAC",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Guatemala",
+  "Provider": "FAC",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Honduras",
+  "Provider": "FAC",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Nicaragua",
+  "Provider": "FAC",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Mexico",
+  "Provider": "FINTOC",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Argentina",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Brazil",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Chile",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Mexico",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Peru",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Uruguay",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Bolivia",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Costa Rica",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Ecuador",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "El Salvador",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Guatemala",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Honduras",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Nicaragua",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Panama",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Paraguay",
+  "Provider": "INSWITCH",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Honduras",
+  "Provider": "MONNET",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Panama",
+  "Provider": "MONNET",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Costa Rica",
+  "Provider": "PAGALO",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Honduras",
+  "Provider": "PAGALO",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Chile",
+  "Provider": "PAY_RETAILERS",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Colombia",
+  "Provider": "PAY_RETAILERS",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Mexico",
+  "Provider": "PAY_RETAILERS",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Peru",
+  "Provider": "PAY_RETAILERS",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Ecuador",
+  "Provider": "PAY_RETAILERS",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Guatemala",
+  "Provider": "PAY_RETAILERS",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Panama",
+  "Provider": "PAY_RETAILERS",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Chile",
+  "Provider": "PLACE_TO_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Mexico",
+  "Provider": "PLACE_TO_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Peru",
+  "Provider": "PLACE_TO_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Uruguay",
+  "Provider": "PLACE_TO_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Costa Rica",
+  "Provider": "PLACE_TO_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Ecuador",
+  "Provider": "PLACE_TO_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Honduras",
+  "Provider": "PLACE_TO_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "Panama",
+  "Provider": "PLACE_TO_PAY",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ },
+ {
+  "Country": "El Salvador",
+  "Provider": "WOMPI",
+  "Connection Type": "Card acquirer/gateway (PSP)",
+  "Payment Methods (via Yuno)": "CARD",
+  "Status": "Available (Yuno Integrations Directory)",
+  "Source": "y.uno/integrations, 14 Oct 2026"
+ }
+]

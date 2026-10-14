@@ -1,0 +1,725 @@
+{
+ "ADYEN": [
+  "Brazil",
+  "Mexico",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore",
+  "Thailand",
+  "Vietnam"
+ ],
+ "AIRWALLEX": [
+  "Brazil",
+  "Mexico",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore"
+ ],
+ "ALL_IN_PAY": [
+  "Singapore"
+ ],
+ "AMEX": [
+  "Argentina",
+  "Mexico"
+ ],
+ "ANTOM": [
+  "Malaysia",
+  "Thailand"
+ ],
+ "BOKU": [
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore",
+  "Thailand",
+  "Vietnam"
+ ],
+ "BRAINTREE": [
+  "Brazil",
+  "Malaysia",
+  "Singapore"
+ ],
+ "CHECKOUT": [
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore",
+  "Thailand"
+ ],
+ "COINFLOW": [],
+ "CYBERSOURCE_GTW": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Bolivia",
+  "Costa Rica",
+  "Dominican Republic",
+  "Ecuador",
+  "El Salvador",
+  "Guatemala",
+  "Honduras",
+  "Nicaragua",
+  "Panama",
+  "Paraguay",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore",
+  "Thailand",
+  "Vietnam",
+  "Myanmar",
+  "Israel"
+ ],
+ "DINERS": [
+  "Ecuador"
+ ],
+ "ECOMMPAY": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Bolivia",
+  "Costa Rica",
+  "Dominican Republic",
+  "El Salvador",
+  "Honduras",
+  "Panama",
+  "Paraguay",
+  "Indonesia",
+  "Philippines",
+  "Singapore",
+  "Thailand",
+  "Vietnam",
+  "Israel"
+ ],
+ "EVO": [
+  "Mexico"
+ ],
+ "E_MERCHANT_PAY": [
+  "Argentina",
+  "Brazil",
+  "Colombia",
+  "Mexico",
+  "Uruguay"
+ ],
+ "FISERV": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Uruguay",
+  "Costa Rica",
+  "Dominican Republic",
+  "Guatemala",
+  "Panama",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore",
+  "Thailand",
+  "Vietnam"
+ ],
+ "INOVIO": [],
+ "MAYA": [
+  "Philippines"
+ ],
+ "MCTPAY": [
+  "Singapore"
+ ],
+ "MONRI": [],
+ "NMI": [],
+ "NOMUPAY": [
+  "Philippines"
+ ],
+ "NTT_DATA": [
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Thailand",
+  "Vietnam"
+ ],
+ "NUVEI": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Bolivia",
+  "Costa Rica",
+  "Dominican Republic",
+  "Ecuador",
+  "El Salvador",
+  "Guatemala",
+  "Honduras",
+  "Panama",
+  "Paraguay",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore",
+  "Thailand",
+  "Vietnam",
+  "Israel"
+ ],
+ "PAYZEN": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay"
+ ],
+ "QNB_MPGS": [],
+ "REDSYS": [],
+ "REVOLUT": [],
+ "SPLITIT": [
+  "Mexico",
+  "Malaysia",
+  "Singapore"
+ ],
+ "STRIPE": [
+  "Brazil",
+  "Mexico",
+  "Indonesia",
+  "Malaysia",
+  "Singapore",
+  "Thailand"
+ ],
+ "TABAPAY": [],
+ "TAP_PAYMENTS": [],
+ "VOLT": [
+  "Brazil"
+ ],
+ "WINDCAVE": [],
+ "WORLDLINE": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Dominican Republic",
+  "Ecuador",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore",
+  "Thailand",
+  "Vietnam",
+  "Israel"
+ ],
+ "WORLDPAY": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Singapore",
+  "Thailand",
+  "Vietnam"
+ ],
+ "XACBANK": [],
+ "XENDIT": [
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Thailand",
+  "Vietnam"
+ ],
+ "ZESTA": [],
+ "ACUOTAZ": [
+  "Peru"
+ ],
+ "ADDI": [
+  "Brazil",
+  "Colombia"
+ ],
+ "ALELO": [
+  "Brazil"
+ ],
+ "APLAZO": [
+  "Mexico"
+ ],
+ "ASTROPAY": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Bolivia",
+  "Costa Rica",
+  "Indonesia"
+ ],
+ "AZUL": [
+  "Dominican Republic"
+ ],
+ "BAC_CREDOMATIC": [
+  "Costa Rica",
+  "El Salvador",
+  "Guatemala",
+  "Honduras",
+  "Nicaragua",
+  "Panama"
+ ],
+ "BAMBOO": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Costa Rica",
+  "Ecuador",
+  "Nicaragua",
+  "Paraguay"
+ ],
+ "BANCARD": [
+  "Paraguay"
+ ],
+ "BANCO_DO_BRASIL": [
+  "Brazil"
+ ],
+ "BANORTE": [
+  "Mexico"
+ ],
+ "BARTE": [
+  "Brazil"
+ ],
+ "BBVA": [
+  "Argentina",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay"
+ ],
+ "BCI_MACH": [
+  "Chile"
+ ],
+ "BELVO": [
+  "Brazil",
+  "Colombia",
+  "Mexico"
+ ],
+ "BRADESCO": [
+  "Brazil"
+ ],
+ "CIBC": [
+  "Colombia",
+  "Mexico"
+ ],
+ "CIELO": [
+  "Brazil"
+ ],
+ "COBRO_DIGITAL": [
+  "Argentina"
+ ],
+ "CONEKTA": [
+  "Mexico"
+ ],
+ "CREDIBANCO": [
+  "Colombia"
+ ],
+ "CREDIX": [
+  "Costa Rica"
+ ],
+ "CUOTEALO": [
+  "Peru"
+ ],
+ "DAVIPLATA": [
+  "Colombia"
+ ],
+ "DE_UNA": [
+  "Ecuador"
+ ],
+ "DLOCAL": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Bolivia",
+  "Costa Rica",
+  "Dominican Republic",
+  "Ecuador",
+  "El Salvador",
+  "Guatemala",
+  "Honduras",
+  "Nicaragua",
+  "Panama",
+  "Paraguay",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Thailand",
+  "Vietnam"
+ ],
+ "DOLARAPP": [
+  "Argentina",
+  "Brazil",
+  "Colombia",
+  "Mexico"
+ ],
+ "EBANX": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Bolivia",
+  "Costa Rica",
+  "Dominican Republic",
+  "Ecuador",
+  "El Salvador",
+  "Guatemala",
+  "Nicaragua",
+  "Panama",
+  "Paraguay",
+  "Thailand"
+ ],
+ "EDENRED": [
+  "Argentina",
+  "Brazil",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Costa Rica",
+  "Nicaragua",
+  "Singapore",
+  "Thailand"
+ ],
+ "FAC": [
+  "Costa Rica",
+  "Dominican Republic",
+  "El Salvador",
+  "Guatemala",
+  "Honduras",
+  "Nicaragua",
+  "Panama"
+ ],
+ "FINTOC": [
+  "Chile",
+  "Mexico"
+ ],
+ "GETNET": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Mexico",
+  "Uruguay"
+ ],
+ "INSWITCH": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Bolivia",
+  "Costa Rica",
+  "Dominican Republic",
+  "Ecuador",
+  "El Salvador",
+  "Guatemala",
+  "Honduras",
+  "Nicaragua",
+  "Panama",
+  "Paraguay"
+ ],
+ "ITAU": [
+  "Brazil"
+ ],
+ "IZIPAY": [
+  "Peru"
+ ],
+ "KHIPU": [
+  "Argentina",
+  "Chile",
+  "Mexico",
+  "Peru"
+ ],
+ "KLAP": [
+  "Chile"
+ ],
+ "KLAP_2": [
+  "Chile"
+ ],
+ "KUSHKI": [
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Ecuador"
+ ],
+ "MERCADO_PAGO": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay"
+ ],
+ "MODO": [
+  "Argentina"
+ ],
+ "MONNET": [
+  "Argentina",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Ecuador",
+  "Guatemala",
+  "Honduras",
+  "Panama"
+ ],
+ "MOVII": [
+  "Colombia"
+ ],
+ "NAVE": [
+  "Argentina"
+ ],
+ "NEQUI": [
+  "Colombia"
+ ],
+ "NIUBIZ": [
+  "Peru"
+ ],
+ "OKTO": [
+  "Brazil"
+ ],
+ "OPENPAY": [
+  "Argentina",
+  "Colombia",
+  "Mexico",
+  "Peru"
+ ],
+ "PAGALEVE": [
+  "Brazil"
+ ],
+ "PAGALO": [
+  "Costa Rica",
+  "Guatemala",
+  "Honduras"
+ ],
+ "PAGARME": [
+  "Brazil"
+ ],
+ "PAGBANK": [
+  "Brazil"
+ ],
+ "PAGO_EFECTIVO": [
+  "Peru"
+ ],
+ "PAGSEGURO": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico"
+ ],
+ "PAGSMILE": [
+  "Brazil"
+ ],
+ "PAY4FUN": [
+  "Brazil"
+ ],
+ "PAYAMIGO": [
+  "Argentina"
+ ],
+ "PAYMENTEZ": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Ecuador"
+ ],
+ "PAYU": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Panama"
+ ],
+ "PAYVALIDA": [
+  "Colombia",
+  "Peru"
+ ],
+ "PAY_RETAILERS": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Ecuador",
+  "Guatemala",
+  "Panama"
+ ],
+ "PICPAY": [
+  "Brazil"
+ ],
+ "PINBANK": [
+  "Brazil"
+ ],
+ "PLACE_TO_PAY": [
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Uruguay",
+  "Costa Rica",
+  "Ecuador",
+  "Honduras",
+  "Panama"
+ ],
+ "PLUXEE": [
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Panama"
+ ],
+ "POWERPAY": [
+  "Peru"
+ ],
+ "PRISMA": [
+  "Argentina"
+ ],
+ "PROSA": [
+  "Mexico"
+ ],
+ "PROSA_ISO": [
+  "Mexico"
+ ],
+ "PUNTOXPRESS": [
+  "Costa Rica",
+  "El Salvador",
+  "Nicaragua"
+ ],
+ "RAPPIBANK": [
+  "Brazil",
+  "Colombia",
+  "Mexico",
+  "Peru"
+ ],
+ "RAPPIPAY": [
+  "Colombia"
+ ],
+ "REDE": [
+  "Brazil"
+ ],
+ "REDEBAN": [
+  "Colombia"
+ ],
+ "REDEBAN_DIRECT": [
+  "Colombia"
+ ],
+ "REFACIL": [
+  "Colombia"
+ ],
+ "SAFETYPAY": [
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Costa Rica",
+  "Ecuador",
+  "El Salvador",
+  "Guatemala"
+ ],
+ "SAFEWAY": [
+  "Brazil"
+ ],
+ "SAFRAPAY": [
+  "Brazil"
+ ],
+ "SANTANDER": [
+  "Brazil"
+ ],
+ "SPINPAY": [
+  "Brazil"
+ ],
+ "STARKBANK": [
+  "Brazil"
+ ],
+ "STONE": [
+  "Brazil"
+ ],
+ "STP": [
+  "Mexico"
+ ],
+ "T1PAGOS": [
+  "Mexico"
+ ],
+ "TRANSBANK": [
+  "Chile"
+ ],
+ "TRANSBANK_2": [
+  "Chile"
+ ],
+ "TRANSFEERA": [
+  "Brazil"
+ ],
+ "UNLIMINT": [
+  "Argentina",
+  "Brazil",
+  "Chile",
+  "Colombia",
+  "Mexico",
+  "Peru",
+  "Costa Rica",
+  "Ecuador",
+  "Guatemala",
+  "Panama",
+  "Indonesia",
+  "Malaysia",
+  "Philippines",
+  "Thailand",
+  "Vietnam"
+ ],
+ "VR": [
+  "Brazil"
+ ],
+ "WOMPI": [
+  "Colombia",
+  "El Salvador"
+ ],
+ "YAPPY": [
+  "Panama"
+ ],
+ "ZOOP": [
+  "Brazil"
+ ]
+}

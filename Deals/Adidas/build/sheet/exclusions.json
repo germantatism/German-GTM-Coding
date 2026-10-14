@@ -1,0 +1,818 @@
+{
+ "adyen": {
+  "Uruguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Bolivia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Ecuador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "El Salvador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Guatemala": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Honduras": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Panama": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Paraguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Myanmar": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Israel": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "airwallex": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Myanmar": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "allinpay": {
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "antom": {
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "braintree": {
+  "Argentina": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Chile": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Colombia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Mexico": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Peru": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Uruguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Ecuador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "El Salvador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Guatemala": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Honduras": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Panama": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Paraguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Indonesia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Philippines": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Thailand": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Vietnam": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Israel": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Brazil": "Not a supported market per the provider's own coverage list | https://www.paypal.com/sg/enterprise/paypal-braintree-fees"
+ },
+ "checkoutcom": {
+  "Argentina": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Brazil": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Chile": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Colombia": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Mexico": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Peru": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Ecuador": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Guatemala": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Panama": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Myanmar": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Israel": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)"
+ },
+ "checkout": {
+  "Argentina": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Brazil": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Chile": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Colombia": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Mexico": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Peru": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Ecuador": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Guatemala": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Panama": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Myanmar": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)",
+  "Israel": "Not a supported market per the provider's own coverage list | https://www.checkout.com/docs/payments/add-payment-methods (Dana, Touch n Go, GCash, PayNow, TrueMoney)"
+ },
+ "coinflow": {
+  "Argentina": "Not a supported market per the provider's own coverage list | "
+ },
+ "diners": {
+  "Mexico": "Not a supported market per the provider's own coverage list | "
+ },
+ "ecommpay": {
+  "Ecuador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Guatemala": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Malaysia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html",
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html",
+  "Israel": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html",
+  "Panama": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html",
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://developers.ecommpay.com/en/en_pm_about.html"
+ },
+ "inovio": {
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "maya": {
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | "
+ },
+ "monri": {
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | "
+ },
+ "nmi": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "nomupay": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | "
+ },
+ "nttdata": {
+  "Argentina": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Mexico": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Indonesia": "Not a supported market per the provider's own coverage list | https://www.nttdatapay.com/",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://www.nttdatapay.com/"
+ },
+ "nttdatapaymentservices": {
+  "Argentina": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Mexico": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Indonesia": "Not a supported market per the provider's own coverage list | https://www.nttdatapay.com/",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://www.nttdatapay.com/"
+ },
+ "nuvei": {
+  "Nicaragua": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Myanmar": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://www.nuvei.com/apm/cash-payments---latam",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://www.nuvei.com/apm/cash-payments---latam"
+ },
+ "qnb": {
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | "
+ },
+ "redsys": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Myanmar": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "revolut": {
+  "Brazil": "Not a supported market per the provider's own coverage list | "
+ },
+ "splitit": {
+  "Argentina": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Brazil": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Chile": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Colombia": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Peru": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Ecuador": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Guatemala": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Panama": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Indonesia": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Philippines": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Thailand": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Myanmar": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores",
+  "Israel": "Not a supported market per the provider's own coverage list | https://support.splitit.com/hc/en-us/articles/360019048520-Which-regions-support-Splitit-in-their-stores"
+ },
+ "stripe": {
+  "Argentina": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Chile": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Colombia": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Peru": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Ecuador": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Guatemala": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Panama": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Philippines": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Myanmar": "Not a supported market per the provider's own coverage list | https://stripe.com/global",
+  "Israel": "Not a supported market per the provider's own coverage list | https://stripe.com/global"
+ },
+ "tabapay": {
+  "Argentina": "Not a supported market per the provider's own coverage list | "
+ },
+ "tappayments": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Myanmar": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "windcave": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "worldpay": {
+  "Peru": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Uruguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Bolivia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Ecuador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "El Salvador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Guatemala": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Honduras": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Panama": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Paraguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Myanmar": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Israel": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Indonesia": "Not a supported market per the provider's own coverage list | https://www.worldpay.com/en/press-releases/worldpay-continues-expansion-latin-america-domestic-acquiring",
+  "Philippines": "Not a supported market per the provider's own coverage list | https://www.worldpay.com/en/press-releases/worldpay-continues-expansion-latin-america-domestic-acquiring",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://www.worldpay.com/en/press-releases/worldpay-continues-expansion-latin-america-domestic-acquiring"
+ },
+ "xacbank": {
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "xendit": {
+  "Colombia": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "acuotaz": {
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "alelo": {
+  "Argentina": "Not a supported market per the provider's own coverage list | "
+ },
+ "azul": {
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "baccredomatic": {
+  "Argentina": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Brazil": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Chile": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Colombia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Mexico": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Peru": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Uruguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Bolivia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Ecuador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Paraguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Singapore": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Thailand": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Vietnam": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "bamboo": {
+  "Bolivia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "El Salvador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Guatemala": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Honduras": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Panama": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Philippines": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Vietnam": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Myanmar": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Israel": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://docs.bamboopayment.com/docs/payment-methods",
+  "Ecuador": "Not a supported market per the provider's own coverage list | https://docs.bamboopayment.com/docs/payment-methods",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://docs.bamboopayment.com/docs/payment-methods",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://docs.bamboopayment.com/docs/payment-methods"
+ },
+ "bancard": {
+  "Argentina": "Not a supported market per the provider's own coverage list | "
+ },
+ "banorte": {
+  "Panama": "Not a supported market per the provider's own coverage list | "
+ },
+ "machpay": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | "
+ },
+ "bcimach": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | "
+ },
+ "bradesco": {
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "cielo": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "cobrodigital": {
+  "Peru": "Not a supported market per the provider's own coverage list | "
+ },
+ "credibanco": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "cuotealo": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "dlocal": {
+  "Israel": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "fac": {
+  "Argentina": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Colombia": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "firstatlanticcommerce": {
+  "Argentina": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Colombia": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "fintoc": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | "
+ },
+ "getnet": {
+  "Colombia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Peru": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Bolivia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Ecuador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Paraguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Israel": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "itau": {
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "izipay": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "klap": {
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | "
+ },
+ "kushki": {
+  "Argentina": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Brazil": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Uruguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Bolivia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "El Salvador": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "mercadopago": {
+  "Bolivia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Ecuador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "El Salvador": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Guatemala": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Honduras": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Panama": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Paraguay": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Malaysia": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Thailand": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Myanmar": "Not a supported market per the provider's own coverage list | yuno_directory",
+  "Israel": "Not a supported market per the provider's own coverage list | yuno_directory"
+ },
+ "modo": {
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | "
+ },
+ "nequi": {
+  "Brazil": "Not a supported market per the provider's own coverage list | "
+ },
+ "niubiz": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Vietnam": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "openpay": {
+  "Brazil": "Not a supported market per the provider's own coverage list | https://www.bbva.com/en/openpay-reaches-an-annual-volume-of-360-million-transactions-processed-in-latin-america/",
+  "Chile": "Not a supported market per the provider's own coverage list | https://www.bbva.com/en/openpay-reaches-an-annual-volume-of-360-million-transactions-processed-in-latin-america/",
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://www.bbva.com/en/openpay-reaches-an-annual-volume-of-360-million-transactions-processed-in-latin-america/",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://www.bbva.com/en/openpay-reaches-an-annual-volume-of-360-million-transactions-processed-in-latin-america/",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://www.bbva.com/en/openpay-reaches-an-annual-volume-of-360-million-transactions-processed-in-latin-america/"
+ },
+ "pagaleve": {
+  "Peru": "Not a supported market per the provider's own coverage list | "
+ },
+ "pagarme": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | "
+ },
+ "pagbank": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | "
+ },
+ "payu": {
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://developers.payulatam.com/latam/en/docs/getting-started.html",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://developers.payulatam.com/latam/en/docs/getting-started.html",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://developers.payulatam.com/latam/en/docs/getting-started.html",
+  "Singapore": "Not a supported market per the provider's own coverage list | https://developers.payulatam.com/latam/en/docs/getting-started.html"
+ },
+ "picpay": {
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | "
+ },
+ "pinbank": {
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | "
+ },
+ "pluxee": {
+  "Argentina": "Not a supported market per the provider's own coverage list | https://www.pluxeegroup.com/local-websites/"
+ },
+ "prisma": {
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | "
+ },
+ "prosa": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | "
+ },
+ "rede": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Malaysia": "Not a supported market per the provider's own coverage list | ",
+  "Philippines": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Thailand": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "redeban": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Bolivia": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "El Salvador": "Not a supported market per the provider's own coverage list | ",
+  "Guatemala": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Indonesia": "Not a supported market per the provider's own coverage list | ",
+  "Singapore": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "santander": {
+  "Chile": "Not a supported market per the provider's own coverage list | "
+ },
+ "spinpay": {
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | "
+ },
+ "stone": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Israel": "Not a supported market per the provider's own coverage list | "
+ },
+ "stp": {
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | "
+ },
+ "transbank": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | "
+ },
+ "transfeera": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Colombia": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | "
+ },
+ "unlimit": {
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Singapore": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Myanmar": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Israel": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/"
+ },
+ "unlimint": {
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Singapore": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Myanmar": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/",
+  "Israel": "Not a supported market per the provider's own coverage list | https://www.unlimit.com/payment-methods/"
+ },
+ "vr": {
+  "Argentina": "Not a supported market per the provider's own coverage list | "
+ },
+ "wompi": {
+  "Argentina": "Not a supported market per the provider's own coverage list | ",
+  "Brazil": "Not a supported market per the provider's own coverage list | ",
+  "Chile": "Not a supported market per the provider's own coverage list | ",
+  "Mexico": "Not a supported market per the provider's own coverage list | ",
+  "Peru": "Not a supported market per the provider's own coverage list | ",
+  "Uruguay": "Not a supported market per the provider's own coverage list | ",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | ",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | ",
+  "Ecuador": "Not a supported market per the provider's own coverage list | ",
+  "Honduras": "Not a supported market per the provider's own coverage list | ",
+  "Panama": "Not a supported market per the provider's own coverage list | ",
+  "Paraguay": "Not a supported market per the provider's own coverage list | "
+ },
+ "yappy": {
+  "Colombia": "Not a supported market per the provider's own coverage list | "
+ },
+ "bbva": {
+  "Chile": "Not a supported market per the provider's own coverage list | https://shareholdersandinvestors.bbva.com/bbva-group/business-areas/"
+ },
+ "cibc": {
+  "Colombia": "Not a supported market per the provider's own coverage list | https://www.cibc.com/en/cibc-websites.html",
+  "Mexico": "Not a supported market per the provider's own coverage list | https://www.cibc.com/en/cibc-websites.html"
+ },
+ "cybersource": {
+  "Israel": "Not a supported market per the provider's own coverage list | https://developer.cybersource.com/docs/cybs/en-us/payments/developer/ctv/so/payments/payments-intro/payments-intro-banks-overview/payments-intro-processors/payments-intro-ctv-acqs.html",
+  "Myanmar": "Not a supported market per the provider's own coverage list | https://developer.cybersource.com/docs/cybs/en-us/payments/developer/ctv/so/payments/payments-intro/payments-intro-banks-overview/payments-intro-processors/payments-intro-ctv-acqs.html"
+ },
+ "fiserv": {
+  "Chile": "Not a supported market per the provider's own coverage list | https://www.fiserv.com/en/country-selector.html",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://www.fiserv.com/en/country-selector.html",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://www.fiserv.com/en/country-selector.html",
+  "Guatemala": "Not a supported market per the provider's own coverage list | https://www.fiserv.com/en/country-selector.html",
+  "Indonesia": "Not a supported market per the provider's own coverage list | https://www.fiserv.com/en/country-selector.html",
+  "Philippines": "Not a supported market per the provider's own coverage list | https://www.fiserv.com/en/country-selector.html",
+  "Thailand": "Not a supported market per the provider's own coverage list | https://www.fiserv.com/en/country-selector.html",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://www.fiserv.com/en/country-selector.html"
+ },
+ "monnet": {
+  "Colombia": "Not a supported market per the provider's own coverage list | https://monnetpayments.com/cobertura/",
+  "Panama": "Not a supported market per the provider's own coverage list | https://monnetpayments.com/cobertura/"
+ },
+ "pagalo": {
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://pagalo.com/",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://pagalo.com/"
+ },
+ "payretailers": {
+  "Guatemala": "Not a supported market per the provider's own coverage list | https://payretailers.com/en/markets/latam",
+  "Panama": "Not a supported market per the provider's own coverage list | https://payretailers.com/en/markets/latam"
+ },
+ "placetopay": {
+  "Peru": "Not a supported market per the provider's own coverage list | https://placetopay.dev/pagos-en-latam"
+ },
+ "worldline": {
+  "Ecuador": "Not a supported market per the provider's own coverage list | https://worldline.com/en/home/main-navigation/git/office-locations.html",
+  "Israel": "Not a supported market per the provider's own coverage list | https://worldline.com/en/home/main-navigation/git/office-locations.html",
+  "Philippines": "Not a supported market per the provider's own coverage list | https://worldline.com/en/home/main-navigation/git/office-locations.html",
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://worldline.com/en/home/main-navigation/git/office-locations.html",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://worldline.com/en/home/main-navigation/git/office-locations.html"
+ },
+ "applepay": {
+  "Bolivia": "Not on Apple Pay official availability list | https://support.apple.com/en-us/102775",
+  "Nicaragua": "Not on Apple Pay official availability list | https://support.apple.com/en-us/102775",
+  "Indonesia": "Not on Apple Pay official availability list | https://support.apple.com/en-us/102775",
+  "Thailand": "Not on Apple Pay official availability list | https://support.apple.com/en-us/102775",
+  "Myanmar": "Not on Apple Pay official availability list | https://support.apple.com/en-us/102775"
+ },
+ "googlepay": {
+  "Indonesia": "Not on Google Pay official online-payments country list | https://support.google.com/googlepay/answer/12429287"
+ },
+ "paypal": {
+  "Myanmar": "Not on PayPal country list | https://developer.paypal.com/api/codes/country-region/"
+ }
+}

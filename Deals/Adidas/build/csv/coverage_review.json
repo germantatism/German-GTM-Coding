@@ -1,0 +1,894 @@
+{
+ "unverified": {
+  "ADYEN": [
+   "Argentina",
+   "Chile",
+   "Colombia",
+   "Peru"
+  ],
+  "AIRWALLEX": [
+   "Thailand"
+  ],
+  "BOKU": [
+   "Colombia"
+  ],
+  "NOMUPAY": [
+   "Singapore",
+   "Vietnam"
+  ],
+  "QNB_MPGS": [
+   "Indonesia"
+  ],
+  "WINDCAVE": [
+   "Malaysia",
+   "Singapore"
+  ],
+  "WORLDLINE": [
+   "Costa Rica",
+   "Panama"
+  ],
+  "ZESTA": [
+   "Brazil",
+   "Colombia",
+   "Singapore",
+   "Thailand"
+  ],
+  "EBANX": [
+   "Honduras",
+   "Singapore"
+  ],
+  "KUSHKI": [
+   "Costa Rica",
+   "Guatemala",
+   "Panama"
+  ],
+  "MONNET": [
+   "Brazil"
+  ],
+  "PAGSEGURO": [
+   "Costa Rica"
+  ],
+  "PAYAMIGO": [
+   "Brazil",
+   "Mexico",
+   "Peru",
+   "Uruguay"
+  ],
+  "SAFETYPAY": [
+   "Argentina",
+   "Uruguay",
+   "Bolivia",
+   "Dominican Republic",
+   "Panama",
+   "Paraguay"
+  ]
+ },
+ "dropped": {
+  "ADYEN": [
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Myanmar",
+   "Israel"
+  ],
+  "AIRWALLEX": [
+   "Argentina",
+   "Chile",
+   "Colombia",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Vietnam",
+   "Myanmar",
+   "Israel"
+  ],
+  "ALL_IN_PAY": [
+   "Colombia"
+  ],
+  "ANTOM": [
+   "Israel"
+  ],
+  "BRAINTREE": [
+   "Argentina",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Philippines",
+   "Thailand",
+   "Vietnam",
+   "Israel"
+  ],
+  "CHECKOUT": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Vietnam",
+   "Myanmar",
+   "Israel"
+  ],
+  "COINFLOW": [
+   "Argentina"
+  ],
+  "DINERS": [
+   "Mexico"
+  ],
+  "ECOMMPAY": [
+   "Ecuador",
+   "Guatemala",
+   "Nicaragua",
+   "Malaysia"
+  ],
+  "INOVIO": [
+   "Colombia"
+  ],
+  "MAYA": [
+   "Brazil",
+   "Colombia",
+   "Mexico",
+   "Indonesia"
+  ],
+  "MONRI": [
+   "Colombia",
+   "Mexico"
+  ],
+  "NMI": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Malaysia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Vietnam",
+   "Israel"
+  ],
+  "NOMUPAY": [
+   "Argentina",
+   "Colombia",
+   "Mexico",
+   "Uruguay"
+  ],
+  "NTT_DATA": [
+   "Argentina",
+   "Mexico"
+  ],
+  "NUVEI": [
+   "Nicaragua",
+   "Myanmar"
+  ],
+  "QNB_MPGS": [
+   "Brazil",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Malaysia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Vietnam"
+  ],
+  "REDSYS": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Bolivia",
+   "Costa Rica",
+   "El Salvador",
+   "Indonesia",
+   "Malaysia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Vietnam",
+   "Myanmar",
+   "Israel"
+  ],
+  "REVOLUT": [
+   "Brazil"
+  ],
+  "SPLITIT": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Philippines",
+   "Thailand",
+   "Vietnam",
+   "Myanmar",
+   "Israel"
+  ],
+  "STRIPE": [
+   "Argentina",
+   "Chile",
+   "Colombia",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Philippines",
+   "Vietnam",
+   "Myanmar",
+   "Israel"
+  ],
+  "TABAPAY": [
+   "Argentina"
+  ],
+  "TAP_PAYMENTS": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Malaysia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Vietnam",
+   "Myanmar",
+   "Israel"
+  ],
+  "WINDCAVE": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Indonesia",
+   "Philippines",
+   "Thailand",
+   "Vietnam",
+   "Israel"
+  ],
+  "WORLDPAY": [
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Myanmar",
+   "Israel"
+  ],
+  "XACBANK": [
+   "Colombia"
+  ],
+  "XENDIT": [
+   "Colombia"
+  ],
+  "ACUOTAZ": [
+   "Colombia"
+  ],
+  "ALELO": [
+   "Argentina"
+  ],
+  "AZUL": [
+   "Colombia"
+  ],
+  "BAC_CREDOMATIC": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Dominican Republic",
+   "Ecuador",
+   "Paraguay",
+   "Singapore",
+   "Thailand",
+   "Vietnam"
+  ],
+  "BAMBOO": [
+   "Bolivia",
+   "Dominican Republic",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Panama",
+   "Philippines",
+   "Vietnam",
+   "Myanmar",
+   "Israel"
+  ],
+  "BANCARD": [
+   "Argentina"
+  ],
+  "BANORTE": [
+   "Panama"
+  ],
+  "BCI_MACH": [
+   "Argentina",
+   "Brazil",
+   "Colombia",
+   "Peru",
+   "Uruguay",
+   "Dominican Republic",
+   "Paraguay"
+  ],
+  "BRADESCO": [
+   "Colombia"
+  ],
+  "CIELO": [
+   "Argentina",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Vietnam",
+   "Israel"
+  ],
+  "COBRO_DIGITAL": [
+   "Peru"
+  ],
+  "CREDIBANCO": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Malaysia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Vietnam",
+   "Israel"
+  ],
+  "CUOTEALO": [
+   "Argentina",
+   "Colombia"
+  ],
+  "DLOCAL": [
+   "Israel"
+  ],
+  "FAC": [
+   "Argentina",
+   "Colombia"
+  ],
+  "FINTOC": [
+   "Argentina",
+   "Brazil",
+   "Colombia",
+   "Peru",
+   "Uruguay",
+   "Ecuador",
+   "Paraguay"
+  ],
+  "GETNET": [
+   "Colombia",
+   "Peru",
+   "Bolivia",
+   "Ecuador",
+   "Paraguay",
+   "Israel"
+  ],
+  "ITAU": [
+   "Colombia"
+  ],
+  "IZIPAY": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Malaysia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Vietnam",
+   "Israel"
+  ],
+  "KLAP": [
+   "Brazil",
+   "Colombia"
+  ],
+  "KLAP_2": [
+   "Argentina",
+   "Colombia",
+   "Mexico"
+  ],
+  "KUSHKI": [
+   "Argentina",
+   "Brazil",
+   "Uruguay",
+   "Bolivia",
+   "El Salvador"
+  ],
+  "MERCADO_PAGO": [
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Malaysia",
+   "Thailand",
+   "Myanmar",
+   "Israel"
+  ],
+  "MODO": [
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Ecuador",
+   "Paraguay"
+  ],
+  "NEQUI": [
+   "Brazil"
+  ],
+  "NIUBIZ": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Malaysia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Vietnam",
+   "Israel"
+  ],
+  "OPENPAY": [
+   "Brazil",
+   "Chile",
+   "Uruguay",
+   "Dominican Republic",
+   "Paraguay"
+  ],
+  "PAGALEVE": [
+   "Peru"
+  ],
+  "PAGARME": [
+   "Argentina",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Paraguay",
+   "Indonesia"
+  ],
+  "PAGBANK": [
+   "Argentina",
+   "Chile",
+   "Colombia",
+   "Mexico"
+  ],
+  "PAYU": [
+   "Bolivia",
+   "Dominican Republic",
+   "Paraguay",
+   "Singapore"
+  ],
+  "PICPAY": [
+   "Colombia",
+   "Mexico"
+  ],
+  "PINBANK": [
+   "Colombia",
+   "Mexico"
+  ],
+  "PLUXEE": [
+   "Argentina"
+  ],
+  "PRISMA": [
+   "Brazil",
+   "Chile",
+   "Colombia",
+   "Peru",
+   "Uruguay"
+  ],
+  "PROSA_ISO": [
+   "Argentina",
+   "Brazil",
+   "Colombia",
+   "Panama",
+   "Malaysia"
+  ],
+  "REDE": [
+   "Argentina",
+   "Chile",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Malaysia",
+   "Philippines",
+   "Singapore",
+   "Thailand",
+   "Israel"
+  ],
+  "REDEBAN_DIRECT": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Bolivia",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "El Salvador",
+   "Guatemala",
+   "Honduras",
+   "Nicaragua",
+   "Panama",
+   "Paraguay",
+   "Indonesia",
+   "Singapore",
+   "Israel"
+  ],
+  "SANTANDER": [
+   "Chile"
+  ],
+  "SPINPAY": [
+   "Colombia",
+   "Paraguay"
+  ],
+  "STONE": [
+   "Argentina",
+   "Colombia",
+   "Israel"
+  ],
+  "STP": [
+   "Chile",
+   "Colombia",
+   "Peru"
+  ],
+  "TRANSBANK": [
+   "Argentina",
+   "Brazil",
+   "Colombia",
+   "Peru",
+   "Uruguay",
+   "Dominican Republic",
+   "Panama",
+   "Paraguay"
+  ],
+  "TRANSBANK_2": [
+   "Brazil",
+   "Colombia",
+   "Mexico"
+  ],
+  "TRANSFEERA": [
+   "Argentina",
+   "Colombia",
+   "Mexico",
+   "Peru",
+   "Costa Rica"
+  ],
+  "UNLIMINT": [
+   "Uruguay",
+   "Bolivia",
+   "Dominican Republic",
+   "El Salvador",
+   "Honduras",
+   "Nicaragua",
+   "Paraguay",
+   "Singapore",
+   "Myanmar",
+   "Israel"
+  ],
+  "VR": [
+   "Argentina"
+  ],
+  "WOMPI": [
+   "Argentina",
+   "Brazil",
+   "Chile",
+   "Mexico",
+   "Peru",
+   "Uruguay",
+   "Costa Rica",
+   "Dominican Republic",
+   "Ecuador",
+   "Honduras",
+   "Panama",
+   "Paraguay"
+  ],
+  "YAPPY": [
+   "Colombia"
+  ]
+ },
+ "notes": {
+  "ADYEN": "Full-stack acquiring LatAm only BR/MX; AR/CL/CO/PE possibly via partner acquirers but no official country list found",
+  "AIRWALLEX": "BR PI licence + MexPago (MX); Vietnam page marked coming soon",
+  "ALL_IN_PAY": "Singapore MPI with acquiring; no Colombia presence",
+  "AMEX": "Direct-acquiring markets",
+  "ANTOM": "Local acquiring in 6 core SEA markets; Israel not supported",
+  "BOKU": "Colombia not in directory; Boku Colombia coverage unconfirmed",
+  "BRAINTREE": "Directory list; rest is cross-border card only",
+  "CHECKOUT": "No LatAm local methods/acquiring on official docs (dLocal LatAm route deprecated)",
+  "COINFLOW": "Argentina only global USD card/wallet acceptance, no local method",
+  "CYBERSOURCE_GTW": "Gateway; directory lists all",
+  "DINERS": "No direct Diners acquiring in Mexico found",
+  "ECOMMPAY": "Directory list; Ecuador/Guatemala/Nicaragua/Malaysia absent",
+  "EVO": "Local acquirer in Mexico",
+  "E_MERCHANT_PAY": "",
+  "FISERV": "All in directory",
+  "INOVIO": "US gateway; no Colombia market evidence",
+  "MAYA": "Philippines-only provider",
+  "MCTPAY": "Singapore MAS MPI licence",
+  "MONRI": "Balkans/Croatia gateway; no LatAm market",
+  "NMI": "US-centric gateway; no local LatAm/SEA/Israel acquiring evidence",
+  "NOMUPAY": "SG licence and VN entry announced as plans in 2025; no LatAm",
+  "NTT_DATA": "Directory lists SEA only, not AR/MX",
+  "NUVEI": "Directory list; Nicaragua/Myanmar absent",
+  "PAYZEN": "",
+  "QNB_MPGS": "QNB acquires in Qatar/MENA; QNB has an Indonesian bank but no acquiring evidence",
+  "REDSYS": "Spanish card network/gateway; no non-Spain markets",
+  "REVOLUT": "Revolut merchant acquiring UK/EEA/AU; Brazil retail only",
+  "SPLITIT": "Merchant-eligible regions list",
+  "STRIPE": "Indonesia is preview (contact sales)",
+  "TABAPAY": "US-only processor",
+  "TAP_PAYMENTS": "GCC/MENA provider; none of these countries",
+  "VOLT": "Pix",
+  "WINDCAVE": "Official offices AU/NZ/UK/US/LT/MT; MY/SG only in third-party onboarding list",
+  "WORLDLINE": "LatAm gateway to local acquirers, no country list for CR/PA",
+  "WORLDPAY": "Directory list",
+  "XACBANK": "Mongolian bank",
+  "XENDIT": "SEA only",
+  "ZESTA": "Could not identify provider officially (SBP suggests Russia focus)",
+  "ACUOTAZ": "Peruvian BNPL; Colombia is cross-border noise",
+  "ADDI": "Addi operates in Colombia and Brazil",
+  "ALELO": "Brazilian benefit cards only",
+  "APLAZO": "Mexican BNPL",
+  "ASTROPAY": "All CSV countries in Yuno directory list",
+  "AZUL": "Dominican acquirer",
+  "BAC_CREDOMATIC": "Central American acquirer; South America/Asia rows are cross-border cards",
+  "BAMBOO": "Bamboo claims 11 pay-in countries (matches directory); Bolivia, DR, SV, GT, HN, PA, Israel are payouts-only; PH/VN/MM absent",
+  "BANCARD": "Paraguayan card network",
+  "BANCO_DO_BRASIL": "",
+  "BANORTE": "Mexican bank acquirer",
+  "BARTE": "",
+  "BBVA": "BBVA Mexico acquiring",
+  "BCI_MACH": "Chilean wallet QR",
+  "BELVO": "",
+  "BRADESCO": "",
+  "CIBC": "Kept only on Yuno directory; CIBC presence in CO/MX acquiring is not otherwise confirmed, worth a sanity check",
+  "CIELO": "Brazilian acquirer; 22 other countries are cross-border card noise",
+  "COBRO_DIGITAL": "",
+  "CONEKTA": "Mexican PSP",
+  "CREDIBANCO": "Colombian acquirer",
+  "CREDIX": "",
+  "CUOTEALO": "BCP Peru installments",
+  "DAVIPLATA": "",
+  "DE_UNA": "",
+  "DLOCAL": "Israel not in dLocal 64-country reference",
+  "DOLARAPP": "DolarApp (now ARQ) live in MX, CO, AR, BR",
+  "EBANX": "Thailand live since Apr-2026 SEA launch; Singapore is APAC hub/MAS license, not a listed local market; Honduras not found",
+  "EDENRED": "",
+  "FAC": "Caribbean/Central America gateway; AR and CO not covered",
+  "FINTOC": "Fintoc = Chile + Mexico; other CSV rows are noise",
+  "GETNET": "Santander Getnet markets per directory",
+  "INSWITCH": "",
+  "ITAU": "PIX is Brazil-only",
+  "IZIPAY": "",
+  "KHIPU": "",
+  "KLAP": "",
+  "KLAP_2": "",
+  "KUSHKI": "Central America marked \"coming soon\" (gateway model) on a Kushki preview page",
+  "MERCADO_PAGO": "MP operates in 7 LATAM markets",
+  "MODO": "",
+  "MONNET": "Brazil reported in press via PagSeguro partnership, not on official/directory list",
+  "MOVII": "",
+  "NAVE": "Banco Galicia acquirer",
+  "NEQUI": "",
+  "NIUBIZ": "",
+  "OKTO": "Brazilian PIX provider",
+  "OPENPAY": "BBVA Openpay operates in MX, CO, PE and AR only",
+  "PAGALEVE": "Pix Parcelado BNPL, Brazil only; no Peru presence found",
+  "PAGALO": "Directory lists GT/CR/HN",
+  "PAGARME": "Brazilian gateway (Stone group)",
+  "PAGBANK": "Brazilian acquirer",
+  "PAGO_EFECTIVO": "Peruvian cash/bank APM",
+  "PAGSEGURO": "PagSeguro International (BoaCompra) names BR/MX/PE/CO/CL/AR among 17 LatAm countries; Costa Rica (Banco Nacional method in Yuno) not confirmed officially",
+  "PAGSMILE": "Pagsmile is a LatAm cross-border APM aggregator; Brazil PIX is core",
+  "PAY4FUN": "Brazilian wallet/PIX",
+  "PAYAMIGO": "Only Argentina license confirmed; no public country list found",
+  "PAYMENTEZ": "Nuvei release: local acquiring in MX, EC, VE, CO, BR, PE, AR, UY, CL",
+  "PAYU": "PayU Latam docs: AR, BR, CL, CO, MX, PA, PE; BO/DO/PY/SG not PayU markets",
+  "PAYVALIDA": "Docs: CO, EC, SV, GT, PE",
+  "PAY_RETAILERS": "Both in directory list",
+  "PICPAY": "Brazilian wallet",
+  "PINBANK": "Brazilian acquirer",
+  "PLACE_TO_PAY": "Colombia in directory list",
+  "PLUXEE": "Pluxee country list has BR, CL, CO, MX, PA, PE, UY; no Argentina",
+  "POWERPAY": "Peruvian BNPL",
+  "PRISMA": "Argentine acquirer/network",
+  "PROSA": "Mexican switch/acquirer",
+  "PROSA_ISO": "Mexican switch/acquirer",
+  "PUNTOXPRESS": "Directory lists CR/SV/NI",
+  "RAPPIBANK": "Directory lists BR/CO/MX/PE",
+  "RAPPIPAY": "RappiPay Colombia card issuer/acquiring",
+  "REDE": "Itau's Brazilian acquirer; all others are cross-border card artifacts",
+  "REDEBAN": "Colombian acquirer network",
+  "REDEBAN_DIRECT": "Colombian acquirer network",
+  "REFACIL": "Colombian Bre-B provider",
+  "SAFETYPAY": "Directory list kept; SafetyPay claims 16 countries but no official public list for the rest",
+  "SAFEWAY": "Brazilian PIX provider",
+  "SAFRAPAY": "Banco Safra acquirer",
+  "SANTANDER": "Santander Brasil PIX connection; Chile is a different entity",
+  "SPINPAY": "Nubank's NuPay (Brazil) provider",
+  "STARKBANK": "Brazilian bank/PIX",
+  "STONE": "Brazilian acquirer",
+  "STP": "SPEI participant, Mexico only",
+  "T1PAGOS": "Mexico in directory",
+  "TRANSBANK": "Chilean acquirer (Webpay)",
+  "TRANSBANK_2": "Chilean acquirer",
+  "TRANSFEERA": "Brazilian PIX provider",
+  "UNLIMINT": "Unlimit coverage page and Yuno directory agree; UY/BO/DO/SV/HN/NI/PY/SG/MM/IL not listed",
+  "VR": "Brazilian benefits card",
+  "WOMPI": "Bancolombia gateway; directory also lists El Salvador (not in csv)",
+  "YAPPY": "Banco General wallet, Panama",
+  "ZOOP": "Brazilian payments infra"
+ }
+}

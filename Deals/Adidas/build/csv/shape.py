@@ -3,6 +3,8 @@ The matrix country = country of the payment (cross-border included), so local me
 and global methods listed under a provider (iDEAL, SEPA, Cash App...) are dropped outside their market."""
 import csv, json, sys, collections
 SRC = sys.argv[1]; OUT = sys.argv[2]
+# optional 3rd arg: coverage.json {provider: [countries the provider officially serves]} from the 14 Oct 2026 research; rows outside it are cross-border artifacts
+COV = json.load(open(sys.argv[3])) if len(sys.argv) > 3 else None
 NATIVE = {  # method -> (label, home countries)
  'PAGO_FACIL':('Pago Fácil',['Argentina']),'RAPI_PAGO':('Rapipago',['Argentina']),'MODO':('MODO',['Argentina']),
  'TRANSFERENCIA_30':('Transferencias 3.0',['Argentina']),'BANK_TRANSFER_AR':('Bank transfer',['Argentina']),
@@ -35,6 +37,8 @@ NATIVE = {  # method -> (label, home countries)
 }
 DR_BANKS = {'ASOCIACION_BONAO','ASOCIACION_CIBAO','ASOCIACION_LA_NACIONAL','BANCO_ADOPEM','BANCO_ATLANTICO','BANCO_BANESCO','BANCO_JMMB','BANCO_LAFISE','BANCO_SANTA_CRUZ','BANCO_VIMENCA'}
 WALLET_PROV = {'APPLE_PAY':'Apple Pay','GOOGLE_PAY':'Google Pay','PAYPAL':'PayPal'}
+# official availability, checked 14 Oct 2026: Apple support.apple.com/102775, Google support.google.com/googlepay/answer/12429287 (online payments), PayPal developer.paypal.com/api/codes/country-region
+WALLET_NOT = {'Apple Pay': {'Bolivia','Nicaragua','Indonesia','Thailand','Myanmar'}, 'Google Pay': {'Indonesia'}, 'PayPal': {'Myanmar'}}
 NAME = {'DLOCAL':'dLocal','MERCADO_PAGO':'Mercado Pago','PAYU':'PayU','CHECKOUT':'Checkout.com','CYBERSOURCE_GTW':'Cybersource','EBANX':'EBANX',
  'NMI':'NMI','BAC_CREDOMATIC':'BAC Credomatic','QNB_MPGS':'QNB (MPGS)','REDEBAN_DIRECT':'Redeban','REDEBAN':'Redeban','PAGSEGURO':'PagSeguro','PAGBANK':'PagBank',
  'PAGARME':'Pagar.me','PICPAY':'PicPay','TAP_PAYMENTS':'Tap Payments','E_MERCHANT_PAY':'emerchantpay','NTT_DATA':'NTT Data','PROSA_ISO':'Prosa','PROSA':'Prosa',
@@ -48,13 +52,17 @@ rows = list(csv.DictReader(open(SRC)))
 out = collections.OrderedDict()
 for r in rows:
     c, p = r['Country'], r['Provider']
+    if COV is not None and p not in WALLET_PROV and c not in COV.get(p, []): continue
     d = out.setdefault(c, {'cards':set(), 'local':collections.defaultdict(set), 'wallets':set(), 'providers':set()})
     d['providers'].add(p)
     ms = r['Payment Methods (via Yuno)'].split('; ')
-    if p in WALLET_PROV: d['wallets'].add(WALLET_PROV[p]); continue
+    if p in WALLET_PROV:
+        if c not in WALLET_NOT[WALLET_PROV[p]]: d['wallets'].add(WALLET_PROV[p])
+        continue
     for m in ms:
         if m == 'CARD': d['cards'].add(nm(p))
-        elif m in ('PAYPAL','PAYPAL_ENROLLMENT','PAYPAL_BRAINTREE'): d['wallets'].add('PayPal')
+        elif m in ('PAYPAL','PAYPAL_ENROLLMENT','PAYPAL_BRAINTREE'):
+            if c not in WALLET_NOT['PayPal']: d['wallets'].add('PayPal')
         elif m in NATIVE and c in NATIVE[m][1]: d['local'][nm(p)].add(NATIVE[m][0])
         elif m in DR_BANKS or m == 'PAGA_TODO':
             if c == 'Dominican Republic': d['local'][nm(p)].add('Local bank transfers and cash (11 banks)' if m in DR_BANKS else 'Pagatodo')
