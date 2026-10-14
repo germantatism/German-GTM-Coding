@@ -119,3 +119,6 @@ Instrucción de German tras la llamada ("quitales el mínimo de 7.5k de transacc
 - Laura Galan (Finance, #salesops-legal 18-ago-2026): "for each new entity we need them to fill out the info request"; (#legal-latam 2-jul-2026): una entidad colombiana no puede facturar a otra colombiana en USD, se calcula mensual con la tasa de cambio. Es decir, si Yuno Colombia factura a Línea Directa S.A.S., va en pesos; Perú se factura en USD desde Yuno MX (estándar).
 - Pricing Policy: multi-entidad legal, el platform fee se define por prorrata, peso fijo o una sola entidad.
 - Pendiente de German: confirmar con Finance (#finance-merchants, Laura Galan / Sebastián Díaz) entidad emisora y moneda para cada país antes del contrato.
+
+## Pricing v4b (14-oct-2026, tarde): card izquierda solo con los tramos
+Instrucción de German: quitar la fila "Fee de plataforma $7,500/mes" de la primera card porque ya está en la segunda. Aplicado con build/fix5_left_card.py (solo S16): card izquierda vuelve a "Tarifa por transacción exitosa" con los dos tramos; la nota sube debajo de los tramos (y=222) y conserva "sin compromiso mínimo de volumen". El fee de plataforma queda en la card del medio ($7,500 / mes) y en la tabla de la derecha.

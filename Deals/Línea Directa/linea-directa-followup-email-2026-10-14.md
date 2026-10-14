@@ -1,6 +1,6 @@
 # Línea Directa: follow-up tras presentar la propuesta (14-oct-2026)
 
-Borrador en Gmail, reply al hilo "Pasos a seguir Linea Directa x Yuno" sobre el último mensaje de Susana (8-oct, confirmación de la reunión).
+Borrador en Gmail (v2, 14-oct tarde: frase "para su tranquilidad" pedida por German; el borrador v1 se borró y se recreó con replyToMessageId), reply al hilo "Pasos a seguir Linea Directa x Yuno" sobre el último mensaje de Susana (8-oct, confirmación de la reunión).
 - Para: luis.paternina@lineadirecta.com.co
 - CC: jesus.cubides@lineadirecta.com.co, susana.awad@y.uno
 - German adjunta/pega a mano: la propuesta (Google Slides 126rE0kn…, S16 ya en v4) y la documentación técnica (docs.y.uno).
@@ -12,7 +12,7 @@ Hola Luis, hola Jesús,
 
 Muchas gracias por el espacio de hoy, quedamos muy contentos con la conversación. Les comparto la propuesta que revisamos, ya con los dos ajustes que salieron de la reunión.
 
-Sobre el mínimo: quitamos el compromiso de transacciones. El único fijo es el fee de plataforma de $7,500 al mes y las transacciones se facturan según lo que realmente procesen cada mes, $0.06 hasta 150,000 y $0.05 de ahí en adelante. Con su volumen actual de 325,000 el estimado sigue en $25,250 al mes, pero ya sin ningún piso de volumen.
+Para su tranquilidad, y según lo que hablamos, quitamos el fee mínimo por transacciones. El único fijo es el fee de plataforma de $7,500 al mes y las transacciones se facturan según lo que realmente procesen cada mes, $0.06 hasta 150,000 y $0.05 de ahí en adelante. Con su volumen actual de 325,000 el estimado sigue en $25,250 al mes, pero ya sin ningún piso de volumen.
 
 Sobre la facturación por país: sí podemos facturar por separado a la compañía de Colombia y a la de Perú, cada una por su propio volumen. El fee de plataforma lo asignamos a una de las dos o lo repartimos en una proporción fija, como les resulte más cómodo. Lo único que necesitaríamos más adelante son los datos de facturación de cada entidad.
 
