@@ -802,6 +802,47 @@
   "Uruguay": "Not a supported market per the provider's own coverage list | https://worldline.com/en/home/main-navigation/git/office-locations.html",
   "Vietnam": "Not a supported market per the provider's own coverage list | https://worldline.com/en/home/main-navigation/git/office-locations.html"
  },
+ "elavon": {
+  "Panama": "Not a supported market per the provider's own coverage list | https://www.elavon.com/country-selector.html"
+ },
+ "ibex": {
+  "Mexico": "Not a supported market per the provider's own coverage list | https://www.ibexpay.io/support",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://www.ibexpay.io/support",
+  "Panama": "Not a supported market per the provider's own coverage list | https://www.ibexpay.io/support"
+ },
+ "paycash": {
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://www.paycashglobal.com/",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://www.paycashglobal.com/"
+ },
+ "pockyt": {
+  "Argentina": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Colombia": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Peru": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Uruguay": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Bolivia": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Dominican Republic": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "El Salvador": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Honduras": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Panama": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Paraguay": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Vietnam": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
+  "Israel": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods"
+ },
+ "brinta": {
+  "Brazil": "Tax and e-invoicing provider, not a payment processor | https://brinta.com",
+  "Chile": "Tax and e-invoicing provider, not a payment processor | https://brinta.com",
+  "Colombia": "Tax and e-invoicing provider, not a payment processor | https://brinta.com",
+  "Uruguay": "Tax and e-invoicing provider, not a payment processor | https://brinta.com"
+ },
+ "nium": {
+  "Brazil": "Payouts only in this market, no pay-in acquiring | https://www.nium.com",
+  "Malaysia": "Payouts only in this market, no pay-in acquiring | https://www.nium.com"
+ },
+ "prontopaga": {
+  "Mexico": "Payouts only in this market | https://prontopaga.com"
+ },
  "applepay": {
   "Bolivia": "Not on Apple Pay official availability list | https://support.apple.com/en-us/102775",
   "Nicaragua": "Not on Apple Pay official availability list | https://support.apple.com/en-us/102775",

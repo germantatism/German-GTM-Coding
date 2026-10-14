@@ -1,0 +1,2202 @@
+[
+ {
+  "country": "Argentina",
+  "name": "Mercado Pago (wallet)",
+  "kind": "Payment method",
+  "why_it_matters": "E-wallets are 34% of Argentine e-commerce (PPRO); Infobae calls Mercado Pago 'la principal billetera digital'.",
+  "source_url": "https://www.ppro.com/countries/argentina/",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "Mercado Pago (Provider; Mercado Pago Wallet, Checkout Pro)",
+  "priority": "High"
+ },
+ {
+  "country": "Argentina",
+  "name": "MODO",
+  "kind": "Payment method",
+  "why_it_matters": "Bank-consortium wallet linking bank accounts and cards for online and in-person purchases (dLocal docs); widely used.",
+  "source_url": "https://docs.dlocal.com/docs/argentina",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "dLocal carries MODO (processed-methods column); no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Argentina",
+  "name": "QR Interoperable / Transferencias 3.0",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer is 14% of e-commerce (PPRO); interoperable QR lets any bank or wallet app pay by transfer (dLocal docs).",
+  "source_url": "https://www.ppro.com/countries/argentina/",
+  "on_yuno": "Partial",
+  "yuno_entry": "Bamboo (Transferencias 3.0), dLocal (bank transfer)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Argentina",
+  "name": "Rapipago / Pago Facil",
+  "kind": "Payment method",
+  "why_it_matters": "Cash is 4% of e-commerce (PPRO); dLocal describes Rapipago as 'one of the most popular' extra-bank cash chains.",
+  "source_url": "https://docs.dlocal.com/docs/argentina",
+  "on_yuno": "Yes",
+  "yuno_entry": "Rapipago, Pago Facil (Payment method); Bamboo, dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Argentina",
+  "name": "Naranja X / Cabal (local card schemes)",
+  "kind": "Payment method",
+  "why_it_matters": "Local schemes (Naranja, Cabal, etc.) are 5% of card volume (PPRO); dLocal lists Tarjeta Naranja, Cabal, Nativa, Argencard, Cencosud.",
+  "source_url": "https://www.ppro.com/countries/argentina/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Argentina",
+  "name": "American Express",
+  "kind": "Payment method",
+  "why_it_matters": "Amex is 6% of card volume in Argentina (PPRO); not listed as a scheme anywhere in rows.json or the directory.",
+  "source_url": "https://www.ppro.com/countries/argentina/",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "americanexpress",
+  "priority": "Medium"
+ },
+ {
+  "country": "Argentina",
+  "name": "Payway (Prisma)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Prisma's acquiring unit; named with Fiserv and Mercado Pago as the leading acquirers (Infobae, Feb-2026); Fiserv and Prisma each held about half of acquiring (Ambito, 2020).",
+  "source_url": "https://www.infobae.com/economia/2026/02/19/visa-compra-prisma-y-expande-su-negocio-de-pagos-digitales-en-la-argentina/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Argentina",
+  "name": "Fiserv (Posnet)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "One of the leading acquirers (Infobae); about 400,000 merchants on Posnet terminals (Ambito).",
+  "source_url": "https://www.ambito.com/economia/billetera-digital/medios-pago-digitales-crece-la-competencia-y-se-acelera-el-lanzamiento-nuevos-productos-n5155100",
+  "on_yuno": "Yes",
+  "yuno_entry": "Fiserv (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Argentina",
+  "name": "Getnet (Santander)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Named as a newer entrant acquirer alongside Mercado Pago (Infobae/Ambito).",
+  "source_url": "https://www.ambito.com/economia/billetera-digital/medios-pago-digitales-crece-la-competencia-y-se-acelera-el-lanzamiento-nuevos-productos-n5155100",
+  "on_yuno": "Yes",
+  "yuno_entry": "Getnet (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Argentina",
+  "name": "Uala",
+  "kind": "Payment method",
+  "why_it_matters": "Named among the leading digital-payment players with Mercado Pago, Cuenta DNI and Getnet (Ambito); widely used; no share figure found.",
+  "source_url": "https://www.ambito.com/economia/billetera-digital/medios-pago-digitales-crece-la-competencia-y-se-acelera-el-lanzamiento-nuevos-productos-n5155100",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Argentina",
+  "name": "Cuenta DNI (Banco Provincia)",
+  "kind": "Payment method",
+  "why_it_matters": "Named among the leading bank wallets (Ambito); widely used; no share figure found.",
+  "source_url": "https://www.ambito.com/economia/billetera-digital/medios-pago-digitales-crece-la-competencia-y-se-acelera-el-lanzamiento-nuevos-productos-n5155100",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Brazil",
+  "name": "Pix",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer incl. Pix is 41% of Brazilian e-commerce, ahead of cards at 39% (PPRO).",
+  "source_url": "https://www.ppro.com/countries/brazil/",
+  "on_yuno": "Yes",
+  "yuno_entry": "PIX (Payment method); 25 providers",
+  "priority": "High"
+ },
+ {
+  "country": "Brazil",
+  "name": "Pix Automatico",
+  "kind": "Payment method",
+  "why_it_matters": "Recurring Pix after a one-time bank authorisation (dLocal docs); key for subscriptions.",
+  "source_url": "https://docs.dlocal.com/docs/brazil",
+  "on_yuno": "Yes",
+  "yuno_entry": "Adyen, PayRetailers, Stripe (PIX Automatico)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Brazil",
+  "name": "Boleto",
+  "kind": "Payment method",
+  "why_it_matters": "Cash incl. Boleto is 3% of e-commerce (PPRO); dLocal: 'very popular' with unbanked consumers.",
+  "source_url": "https://www.ppro.com/countries/brazil/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Boleto (Payment method); 7 providers",
+  "priority": "Medium"
+ },
+ {
+  "country": "Brazil",
+  "name": "Elo",
+  "kind": "Payment method",
+  "why_it_matters": "Local schemes (Elo, Hipercard) are 13% of card volume (PPRO).",
+  "source_url": "https://www.ppro.com/countries/brazil/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Brazil",
+  "name": "Hipercard",
+  "kind": "Payment method",
+  "why_it_matters": "Part of the 13% local-scheme card share (PPRO); listed by dLocal as a local scheme.",
+  "source_url": "https://docs.dlocal.com/docs/brazil",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Brazil",
+  "name": "NuPay",
+  "kind": "Payment method",
+  "why_it_matters": "Nubank's wallet; named by PPRO and dLocal as a leading local method.",
+  "source_url": "https://www.ppro.com/countries/brazil/",
+  "on_yuno": "Yes",
+  "yuno_entry": "NuPay (Payment method); dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Brazil",
+  "name": "PicPay",
+  "kind": "Payment method",
+  "why_it_matters": "dLocal: 'the country's largest payments app' with 60M+ users.",
+  "source_url": "https://docs.dlocal.com/docs/brazil",
+  "on_yuno": "Yes",
+  "yuno_entry": "PicPay (Provider); EBANX",
+  "priority": "Medium"
+ },
+ {
+  "country": "Brazil",
+  "name": "Mercado Pago (wallet)",
+  "kind": "Payment method",
+  "why_it_matters": "E-wallets are 16% of e-commerce (PPRO); Mercado Pago Checkout Pro and Wallet Connect (dLocal docs).",
+  "source_url": "https://www.ppro.com/countries/brazil/",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "Mercado Pago (Provider; Wallet, Checkout Pro)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Brazil",
+  "name": "Rede (Itau)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Leads acquiring by volume at 18% (UBS BB, Jan-2026).",
+  "source_url": "https://www.letsmoney.com.br/noticias/rede-itau-lidera-volume-adquirentes/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Rede (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Brazil",
+  "name": "Cielo",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "17% of acquiring volume, 28% of users (UBS BB, Jan-2026).",
+  "source_url": "https://www.letsmoney.com.br/noticias/rede-itau-lidera-volume-adquirentes/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Cielo (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Brazil",
+  "name": "PagBank (PagSeguro)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "17% of acquiring volume, 26% of users (UBS BB, Jan-2026).",
+  "source_url": "https://www.letsmoney.com.br/noticias/rede-itau-lidera-volume-adquirentes/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Pagbank, PagSeguro (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Brazil",
+  "name": "Stone",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "15% of acquiring volume (UBS BB); top-5 acquirers hold ~96% of card volume (ABECS).",
+  "source_url": "https://maquininhareview.com.br/noticias/mercado/cinco-adquirentes-96-por-cento-volume/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Stone (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Brazil",
+  "name": "Getnet (Santander)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "5% of acquiring volume, 9% of users (UBS BB, Jan-2026).",
+  "source_url": "https://www.letsmoney.com.br/noticias/rede-itau-lidera-volume-adquirentes/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Getnet (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Chile",
+  "name": "Webpay (Transbank)",
+  "kind": "Payment method",
+  "why_it_matters": "dLocal: 'the most popular payment platform in Chile'; Transbank still 40-50% of e-commerce acquiring in 2025 (FNE via Chocale).",
+  "source_url": "https://docs.dlocal.com/docs/chile",
+  "on_yuno": "Yes",
+  "yuno_entry": "Webpay, Transbank (Provider/Payment method)",
+  "priority": "High"
+ },
+ {
+  "country": "Chile",
+  "name": "Local card schemes (domestic-only cards)",
+  "kind": "Payment method",
+  "why_it_matters": "Local schemes are 44% of card volume in Chile, more than Visa (30%) or Mastercard (26%) (PPRO).",
+  "source_url": "https://www.ppro.com/countries/chile/",
+  "on_yuno": "Partial",
+  "yuno_entry": "Domestic cards reach Yuno through Transbank/Webpay and local acquirers; no scheme-level entry",
+  "priority": "High"
+ },
+ {
+  "country": "Chile",
+  "name": "Mercado Pago (wallet and acquiring)",
+  "kind": "Payment method",
+  "why_it_matters": "E-wallets are 22% of e-commerce (PPRO); Mercado Pago holds 20-30% of e-commerce acquiring (FNE).",
+  "source_url": "https://chocale.cl/2026/07/transbank-cede-terreno-mientras-getnet-y-mercado-pago-ganan-participacion-en-adquirencia/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Mercado Pago (Provider; Wallet, Checkout Pro)",
+  "priority": "High"
+ },
+ {
+  "country": "Chile",
+  "name": "MACH",
+  "kind": "Payment method",
+  "why_it_matters": "Prepaid card and QR wallet (dLocal docs); widely used.",
+  "source_url": "https://docs.dlocal.com/docs/chile",
+  "on_yuno": "Yes",
+  "yuno_entry": "MACH (Payment method); Mach Pay, EBANX",
+  "priority": "Medium"
+ },
+ {
+  "country": "Chile",
+  "name": "Khipu",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer is 21% of e-commerce (PPRO); Khipu is the redirect transfer from all Chilean banks (dLocal).",
+  "source_url": "https://www.ppro.com/countries/chile/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Khipu (Payment method); Bamboo, dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Chile",
+  "name": "Fintoc (bank transfer)",
+  "kind": "Payment method",
+  "why_it_matters": "High-ticket bank transfer via Fintoc up to CLP 15M (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/chile",
+  "on_yuno": "Yes",
+  "yuno_entry": "Fintoc (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Chile",
+  "name": "Servipag",
+  "kind": "Payment method",
+  "why_it_matters": "Cash and card bill-payment network with 1,000+ stores (dLocal docs); cash is 3% of e-commerce (PPRO).",
+  "source_url": "https://docs.dlocal.com/docs/chile",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "EBANX carries Servipag; no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Chile",
+  "name": "Sencillito",
+  "kind": "Payment method",
+  "why_it_matters": "Cash voucher network for bills and online purchases (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/chile",
+  "on_yuno": "Yes",
+  "yuno_entry": "Sencillito (Payment method)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Chile",
+  "name": "CMR Falabella (card)",
+  "kind": "Payment method",
+  "why_it_matters": "Retailer credit card listed by dLocal as a Chilean card type; widely used.",
+  "source_url": "https://docs.dlocal.com/docs/chile",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Chile",
+  "name": "Getnet (Santander)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "20-30% of in-person acquiring in 2025 (FNE via Chocale).",
+  "source_url": "https://chocale.cl/2026/07/transbank-cede-terreno-mientras-getnet-y-mercado-pago-ganan-participacion-en-adquirencia/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Getnet (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Chile",
+  "name": "Kushki",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "20-30% of e-commerce acquiring in 2025, up from under 5% in 2023 (FNE via Chocale).",
+  "source_url": "https://chocale.cl/2026/07/transbank-cede-terreno-mientras-getnet-y-mercado-pago-ganan-participacion-en-adquirencia/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Kushki (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Chile",
+  "name": "Klap",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "0-5% of acquiring but 70-80% of third-party acquirer processing (FNE via NotPay/Chocale).",
+  "source_url": "https://notpay.substack.com/p/notpay-87",
+  "on_yuno": "Yes",
+  "yuno_entry": "Klap (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Colombia",
+  "name": "PSE (ACH Colombia)",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer is 29% of e-commerce (PPRO); PSE is the online bank payment platform run by ACH Colombia (dLocal).",
+  "source_url": "https://www.ppro.com/countries/colombia/",
+  "on_yuno": "Yes",
+  "yuno_entry": "PSE via PayU, Wompi, Kushki, Nuvei, dLocal, Bamboo, PagSeguro, Mercado Pago, Unlimit",
+  "priority": "High"
+ },
+ {
+  "country": "Colombia",
+  "name": "Nequi",
+  "kind": "Payment method",
+  "why_it_matters": "E-wallets are 26% of e-commerce (PPRO); dLocal: 'a widely used payment method in Colombia'.",
+  "source_url": "https://docs.dlocal.com/docs/colombia",
+  "on_yuno": "Yes",
+  "yuno_entry": "Nequi (Payment method); Bamboo, Nuvei, Wompi, dLocal",
+  "priority": "High"
+ },
+ {
+  "country": "Colombia",
+  "name": "Daviplata",
+  "kind": "Payment method",
+  "why_it_matters": "Davivienda wallet, second major wallet after Nequi (onepay.la comparison).",
+  "source_url": "https://onepay.la/pasarelas-de-pago-colombia",
+  "on_yuno": "Yes",
+  "yuno_entry": "Daviplata (Payment method); Nuvei, Wompi",
+  "priority": "Medium"
+ },
+ {
+  "country": "Colombia",
+  "name": "Bre-B",
+  "kind": "Payment method",
+  "why_it_matters": "Banco de la Republica instant payments: 370.4M transactions and COP 59T settled Oct-2025 to Jan-2026, 2.8M active merchants (PayRetailers).",
+  "source_url": "https://www.payretailers.com/en/blog/bre-b-colombia-payment-system",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "dLocal carries Bre-B; no standalone entry",
+  "priority": "High"
+ },
+ {
+  "country": "Colombia",
+  "name": "Efecty",
+  "kind": "Payment method",
+  "why_it_matters": "Cash is 8% of e-commerce (PPRO); dLocal: Efecty 'widely used' to pay bills and online purchases in cash.",
+  "source_url": "https://docs.dlocal.com/docs/colombia",
+  "on_yuno": "Yes",
+  "yuno_entry": "Efecty (Payment method); PagSeguro, Unlimit, dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Colombia",
+  "name": "Mercado Pago (wallet)",
+  "kind": "Payment method",
+  "why_it_matters": "Listed by dLocal as a wallet with Checkout Pro and Wallet Connect flows; widely used.",
+  "source_url": "https://docs.dlocal.com/docs/colombia",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "Mercado Pago (Provider; Wallet, Checkout Pro)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Colombia",
+  "name": "Transfiya (Redeban)",
+  "kind": "Payment method",
+  "why_it_matters": "Instant transfer scheme operated by Redeban that coexists with Bre-B (Colombia Tramita guide).",
+  "source_url": "https://colombiatramita.co/bancario-financiero/bre-b-pagos-inmediatos/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Colombia",
+  "name": "Wompi (Bancolombia)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Among the seven most-compared gateways (Wompi, ePayco, PayU, PlacetoPay, Kushki, Mercado Pago, ComboPay) (onepay.la).",
+  "source_url": "https://onepay.la/pasarelas-de-pago-colombia",
+  "on_yuno": "Yes",
+  "yuno_entry": "Wompi (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Colombia",
+  "name": "PayU",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Among the leading Colombian gateways (onepay.la); Bre-B participant (Colombia Tramita).",
+  "source_url": "https://onepay.la/pasarelas-de-pago-colombia",
+  "on_yuno": "Yes",
+  "yuno_entry": "PayU (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Colombia",
+  "name": "ePayco",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Among the leading Colombian gateways (onepay.la).",
+  "source_url": "https://onepay.la/pasarelas-de-pago-colombia",
+  "on_yuno": "Yes",
+  "yuno_entry": "Epayco (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Colombia",
+  "name": "PlacetoPay (Evertec)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Among the leading Colombian gateways (onepay.la).",
+  "source_url": "https://onepay.la/pasarelas-de-pago-colombia",
+  "on_yuno": "Yes",
+  "yuno_entry": "PlacetoPay (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Colombia",
+  "name": "Redeban / Credibanco",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "The two domestic card acquiring networks; Redeban is a Bre-B participant (Colombia Tramita).",
+  "source_url": "https://colombiatramita.co/bancario-financiero/bre-b-pagos-inmediatos/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Redeban, Credibanco (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "OXXO Pay",
+  "kind": "Payment method",
+  "why_it_matters": "PPRO: OXXO Pay used for nearly 20% of online payments; 22,000+ stores.",
+  "source_url": "https://www.ppro.com/countries/mexico/",
+  "on_yuno": "Yes",
+  "yuno_entry": "OXXO Pay (Payment method); Bamboo, EBANX, PagSeguro, dLocal, Unlimit",
+  "priority": "High"
+ },
+ {
+  "country": "Mexico",
+  "name": "SPEI",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer is 7% of e-commerce and 'emerging' (PPRO); SPEI is the Banxico transfer system.",
+  "source_url": "https://www.ppro.com/countries/mexico/",
+  "on_yuno": "Yes",
+  "yuno_entry": "SPEI (Payment method); EBANX, Kushki, Nuvei, dLocal",
+  "priority": "High"
+ },
+ {
+  "country": "Mexico",
+  "name": "Mercado Pago (wallet)",
+  "kind": "Payment method",
+  "why_it_matters": "E-wallets are 28% of e-commerce; PPRO names Mercado Pago the leading wallet; 30M+ active accounts in Mexico (growflowautomat).",
+  "source_url": "https://www.ppro.com/countries/mexico/",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "Mercado Pago (Provider; Wallet, Checkout Pro)",
+  "priority": "High"
+ },
+ {
+  "country": "Mexico",
+  "name": "CoDi / DiMo",
+  "kind": "Payment method",
+  "why_it_matters": "Banxico QR and push-notification transfer rails (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/mexico",
+  "on_yuno": "Yes",
+  "yuno_entry": "CoDi, DIMO (Payment method); Unlimit, dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "Carnet",
+  "kind": "Payment method",
+  "why_it_matters": "Local scheme; 'Other incl. Carnet' is 2% of card volume (PPRO); dLocal lists Carnet credit and debit.",
+  "source_url": "https://www.ppro.com/countries/mexico/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "American Express",
+  "kind": "Payment method",
+  "why_it_matters": "Amex is 3% of card volume in Mexico (PPRO); not listed as a scheme in rows.json or the directory.",
+  "source_url": "https://www.ppro.com/countries/mexico/",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "americanexpress",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "Kueski Pay",
+  "kind": "Payment method",
+  "why_it_matters": "BNPL in installments, often interest-free (dLocal docs); BNPL is 1% of e-commerce (PPRO).",
+  "source_url": "https://docs.dlocal.com/docs/mexico",
+  "on_yuno": "Yes",
+  "yuno_entry": "Kueski (Payment method)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "DiDi Paga Despues",
+  "kind": "Payment method",
+  "why_it_matters": "BNPL up to 6 months (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/mexico",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "Clip",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Aggregator with 2M+ merchants and 4M daily transactions (Mordor); aggregators run 78% of Mexico's 6.3M terminals (Banxico via FinTech Mexico).",
+  "source_url": "https://www.mordorintelligence.com/industry-reports/mexico-pos-terminals-market",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Mexico",
+  "name": "Conekta",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Mexico-founded gateway with mid-market focus and the widest cash network (OXXO, 7-Eleven, Walmart, Soriana) (growflowautomat); ASAMEP member (Milenio).",
+  "source_url": "https://growflowautomat.com/en/blog/ecommerce-mexico-stripe-vs-mercadopago-vs-conekta-2026",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "conekta",
+  "priority": "High"
+ },
+ {
+  "country": "Mexico",
+  "name": "Openpay (BBVA)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Named among Mexico's main e-commerce gateways (growflowautomat).",
+  "source_url": "https://growflowautomat.com/en/blog/ecommerce-mexico-stripe-vs-mercadopago-vs-conekta-2026",
+  "on_yuno": "Yes",
+  "yuno_entry": "OpenPay (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "BBVA",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Commercial banks still clear 91.3% of card value; BBVA rolled out 45,000 NFC devices across OXXO (Mordor).",
+  "source_url": "https://www.mordorintelligence.com/industry-reports/mexico-pos-terminals-market",
+  "on_yuno": "Yes",
+  "yuno_entry": "BBVA, BBVA Bancomer (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "Banorte",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Acquirer estate grew 18% year-on-year (Mordor).",
+  "source_url": "https://www.mordorintelligence.com/industry-reports/mexico-pos-terminals-market",
+  "on_yuno": "Yes",
+  "yuno_entry": "Banorte (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Mexico",
+  "name": "Global Payments / Banamex",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Partnership renewed July 2025 with a 900M-transaction pipeline (Mordor).",
+  "source_url": "https://www.mordorintelligence.com/industry-reports/mexico-pos-terminals-market",
+  "on_yuno": "Yes",
+  "yuno_entry": "Global Payments (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Peru",
+  "name": "Yape (BCP)",
+  "kind": "Payment method",
+  "why_it_matters": "Digital-wallet transfers are 68.5% of retail payments by number (BCRP, Mar-2025); Yape plus Plin exceed 50% of cashless transactions (Spreedly).",
+  "source_url": "https://www.bcrp.gob.pe/docs/Publicaciones/reporte-del-sistema-nacional-de-pagos/2025/marzo/rspf-marzo-2025.html",
+  "on_yuno": "Yes",
+  "yuno_entry": "Yape (Payment method); Bamboo, Monnet, Niubiz, dLocal",
+  "priority": "High"
+ },
+ {
+  "country": "Peru",
+  "name": "Plin (BBVA, Interbank, Scotiabank)",
+  "kind": "Payment method",
+  "why_it_matters": "One of the two dominant wallets with Yape (Spreedly); interoperable Yape-Plin transfers peaked at 2.5M per day (Dec-2023).",
+  "source_url": "https://www.spreedly.com/blog/perus-payments-revolution-yape",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Peru",
+  "name": "PagoEfectivo",
+  "kind": "Payment method",
+  "why_it_matters": "Cash is 10% of e-commerce (PPRO); dLocal: PagoEfectivo widely used for bills and online purchases via CIP code.",
+  "source_url": "https://docs.dlocal.com/docs/peru",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "Bamboo, EBANX, Nuvei, SafetyPay, dLocal carry PagoEfectivo; no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Peru",
+  "name": "BCP bank transfer",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer is 17% of e-commerce (PPRO); dLocal: BCP is the main bank with almost half the market.",
+  "source_url": "https://docs.dlocal.com/docs/peru",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Peru",
+  "name": "Niubiz",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Acquirer and processor named by the BCRP interoperability strategy; cards are 52% of e-commerce (PPRO).",
+  "source_url": "https://www.bcrp.gob.pe/docs/Sistema-Pagos/articulos/estrategia-de-interoperabilidad-2024.pdf",
+  "on_yuno": "Yes",
+  "yuno_entry": "Niubiz (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Peru",
+  "name": "Izipay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Acquirer and processor named by the BCRP interoperability strategy.",
+  "source_url": "https://www.bcrp.gob.pe/docs/Sistema-Pagos/articulos/estrategia-de-interoperabilidad-2024.pdf",
+  "on_yuno": "Yes",
+  "yuno_entry": "IziPay (Payment method)",
+  "priority": "High"
+ },
+ {
+  "country": "Peru",
+  "name": "Culqi",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "BCP-ecosystem payment platform for online and in-person collection; supports Yape, Plin, BIM, PagoEfectivo (culqi.com).",
+  "source_url": "https://culqi.com/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Peru",
+  "name": "Mercado Pago",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Checkout Pro wallet payments (rows.json); widely used.",
+  "source_url": "https://docs.dlocal.com/docs/peru",
+  "on_yuno": "Yes",
+  "yuno_entry": "Mercado Pago (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Peru",
+  "name": "Kushki",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Regional gateway live in Peru (rows.json); widely used.",
+  "source_url": "https://olaclick.com/es/pos/medios-pago-en-linea-ecuador/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Kushki (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Uruguay",
+  "name": "OCA (local card scheme)",
+  "kind": "Payment method",
+  "why_it_matters": "Credit cards are 54% and debit 14% of e-commerce (PCMI); OCA and Lider are local card brands listed by dLocal.",
+  "source_url": "https://docs.dlocal.com/docs/uruguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Uruguay",
+  "name": "Mercado Pago (wallet)",
+  "kind": "Payment method",
+  "why_it_matters": "Wallets are 11% of e-commerce (PCMI); Mercado Pago is 64-77% of wallet volume (Agile.uy, provider estimate).",
+  "source_url": "https://agile.uy/recursos/guia-ecommerce-uruguay-2026/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Mercado Pago (Provider; Checkout Pro)",
+  "priority": "High"
+ },
+ {
+  "country": "Uruguay",
+  "name": "Abitab",
+  "kind": "Payment method",
+  "why_it_matters": "Cash is 3% of e-commerce; Abitab and Redpagos are the main cash networks (PCMI); 'one of the largest collection networks' (dLocal).",
+  "source_url": "https://paymentscmi.com/insights/comercio-electronico-uruguay-datos-proyecciones/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Uruguay",
+  "name": "Redpagos",
+  "kind": "Payment method",
+  "why_it_matters": "'One of the biggest collection networks' present in all cities (dLocal).",
+  "source_url": "https://docs.dlocal.com/docs/uruguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Uruguay",
+  "name": "Online bank transfer / instant transfers (Toke QR)",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer is 15% of e-commerce (PCMI); instant transfers hit 45% of interbank volume in Aug-2024 and BCU launched Toke QR transfers (BCU).",
+  "source_url": "https://www.bcu.gub.uy/Comunicaciones/Paginas/Detalle-Noticia.aspx?noticia=362",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Uruguay",
+  "name": "Getnet (Santander)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Live acquirer in Uruguay (rows.json); card acquiring for the 68% card share (PCMI).",
+  "source_url": "https://paymentscmi.com/insights/comercio-electronico-uruguay-datos-proyecciones/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Getnet (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Uruguay",
+  "name": "Fiserv",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Live acquirer in Uruguay (rows.json).",
+  "source_url": "https://paymentscmi.com/insights/comercio-electronico-uruguay-datos-proyecciones/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Fiserv (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Bolivia",
+  "name": "QR BCB (interoperable QR)",
+  "kind": "Payment method",
+  "why_it_matters": "QR payments were 38% of 1,004M electronic operations in 2024 (BCB via ATB); 290M QR transactions by Oct-2024, up 4,733% since 2021 (Los Tiempos).",
+  "source_url": "https://www.atb.com.bo/2025/02/28/pagos-electronicos-crecieron-en-116-en-el-sistema-financiero/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Bolivia",
+  "name": "Tigo Money (Bolivia)",
+  "kind": "Payment method",
+  "why_it_matters": "Tigo Money operates in Bolivia (Millicom release); digital-wallet transactions grew 415% to 278M by Oct-2024 (BCB via Los Tiempos).",
+  "source_url": "https://www.lostiempos.com/actualidad/economia/20241221/incrementa-numero-pagos-qr-bolivia-bcb",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Bolivia",
+  "name": "Pago al Paso / Multipago",
+  "kind": "Payment method",
+  "why_it_matters": "Cash voucher networks paid at pharmacies and gas stations (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/bolivia",
+  "on_yuno": "Yes",
+  "yuno_entry": "Pago al Paso (Payment method); dLocal (Multipago)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Bolivia",
+  "name": "Yape Bolivia",
+  "kind": "Payment method",
+  "why_it_matters": "One million users in its first month (Spreedly).",
+  "source_url": "https://www.spreedly.com/blog/perus-payments-revolution-yape",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Bolivia",
+  "name": "ATC Red Enlace",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Card administrator working with 17+ financial entities issuing Visa and Mastercard; Cybersource-based e-commerce gateway (Red Enlace).",
+  "source_url": "https://www.redenlace.com.bo/sobre-red-enlace/quienes-somos/historia",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Bolivia",
+  "name": "Linkser",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Issuer and acquirer processor for Visa and Mastercard with national coverage (linkser.com.bo); cards grew to 83M transactions by Oct-2024 (BCB).",
+  "source_url": "https://www.linkser.com.bo/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Costa Rica",
+  "name": "SINPE Movil",
+  "kind": "Payment method",
+  "why_it_matters": "648.6M transactions and 4.23M active users in 2024 (BCCR via La Nacion); state banks handle 65% of transactions.",
+  "source_url": "https://www.nacion.com/economia/quien-manda-en-sinpe-movil-asi-se-reparten-el/BTKQR4EEVBG6JA3ZBPFQERN3GU/story/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Costa Rica",
+  "name": "SINPE (bank transfer)",
+  "kind": "Payment method",
+  "why_it_matters": "BCCR real-time transfer channel linking all financial entities (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/costa-rica",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Costa Rica",
+  "name": "BAC Credomatic",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "One of the three institutions handling ~80% of SINPE Movil transactions (BCCR); leading card acquirer.",
+  "source_url": "https://www.nacion.com/economia/quien-manda-en-sinpe-movil-asi-se-reparten-el/BTKQR4EEVBG6JA3ZBPFQERN3GU/story/",
+  "on_yuno": "Yes",
+  "yuno_entry": "BAC Credomatic (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Costa Rica",
+  "name": "Banco Nacional",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Largest state bank by SINPE Movil transactions (BCCR via La Nacion).",
+  "source_url": "https://www.nacion.com/economia/quien-manda-en-sinpe-movil-asi-se-reparten-el/BTKQR4EEVBG6JA3ZBPFQERN3GU/story/",
+  "on_yuno": "Yes",
+  "yuno_entry": "BANCO NACIONAL DE COSTA RICA (Payment method); dLocal (Banco Nacional cash)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Costa Rica",
+  "name": "Banco de Costa Rica (BCR)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Among the three institutions with ~80% of SINPE Movil transactions (BCCR via La Nacion).",
+  "source_url": "https://www.nacion.com/economia/quien-manda-en-sinpe-movil-asi-se-reparten-el/BTKQR4EEVBG6JA3ZBPFQERN3GU/story/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Costa Rica",
+  "name": "Tilopay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Central America gateway: 65K+ merchants, 33 markets, 47 partner banks; SINPE Movil, BAC installments, Yappy (tilopay.com).",
+  "source_url": "https://tilopay.com/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Dominican Republic",
+  "name": "Azul (Grupo Popular)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "'Uno de los procesadores de pago mas usados' (Takum); credit cards are 66% and debit 21% of e-commerce (PCMI).",
+  "source_url": "https://takum.io/pasarelas-de-pago-rd/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Azul (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Dominican Republic",
+  "name": "Cardnet",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "'La otra gran protagonista' of processing; with Azul covers the large majority of cardholders (Takum).",
+  "source_url": "https://takum.io/pasarelas-de-pago-rd/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Cardnet (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Dominican Republic",
+  "name": "tPago",
+  "kind": "Payment method",
+  "why_it_matters": "Dominican wallet via USSD or app with tPago Net for online collection (Nexux); wallets are 7% of e-commerce (PCMI).",
+  "source_url": "https://nexux.do/articulo/pasarelas-de-pago-republica-dominicana-2025/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Dominican Republic",
+  "name": "Banco Popular (online and cash)",
+  "kind": "Payment method",
+  "why_it_matters": "Cash collection and home-banking payment (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/dominican-republic",
+  "on_yuno": "Yes",
+  "yuno_entry": "Banco Popular Dominicana (Payment method); dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Dominican Republic",
+  "name": "Banreservas transfers",
+  "kind": "Payment method",
+  "why_it_matters": "State bank settling real-time transfers through the central bank LBTR (ecommerce.com.do).",
+  "source_url": "http://www.ecommerce.com.do/medios-de-pago-en-republica-dominicana/",
+  "on_yuno": "Partial",
+  "yuno_entry": "Inswitch carries Banreservas; no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Ecuador",
+  "name": "Datafast",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "'La red lider de terminales de pagos y cobros en POS' (CCQ, Sep-2025); 45,000+ POS enabled for Deuna QR.",
+  "source_url": "https://ccq.ec/deuna-deuna-y-datafast-amplian-el-acceso-a-pagos-digitales-con-una-alianza-estrategica-que-llegara-a-mas-de-45-000-puntos-de-venta-en-ecuador/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Datafast (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Ecuador",
+  "name": "Medianet",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Second acquiring network, similar services to Datafast (OlaClick).",
+  "source_url": "https://olaclick.com/es/pos/medios-pago-en-linea-ecuador/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Medianet (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Ecuador",
+  "name": "Deuna (Banco Pichincha)",
+  "kind": "Payment method",
+  "why_it_matters": "5.5M+ payers (CCQ); 6M+ users and 620,000+ merchants (OlaClick).",
+  "source_url": "https://ccq.ec/deuna-deuna-y-datafast-amplian-el-acceso-a-pagos-digitales-con-una-alianza-estrategica-que-llegara-a-mas-de-45-000-puntos-de-venta-en-ecuador/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Deuna (Payment method); dLocal",
+  "priority": "High"
+ },
+ {
+  "country": "Ecuador",
+  "name": "Payphone",
+  "kind": "Payment method",
+  "why_it_matters": "'Una de las aplicaciones de pago mas reconocidas por los ecuatorianos' (OlaClick).",
+  "source_url": "https://olaclick.com/es/pos/medios-pago-en-linea-ecuador/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Ecuador",
+  "name": "Kushki (incl. Paymentez)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Gateway that absorbed Paymentez; 'una de las pasarelas mas modernas' (OlaClick).",
+  "source_url": "https://olaclick.com/es/pos/medios-pago-en-linea-ecuador/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Kushki (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Ecuador",
+  "name": "PlacetoPay (Evertec)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "'Ampliamente utilizada' by service companies and institutions (OlaClick).",
+  "source_url": "https://olaclick.com/es/pos/medios-pago-en-linea-ecuador/",
+  "on_yuno": "Yes",
+  "yuno_entry": "PlacetoPay (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Ecuador",
+  "name": "PagoEfectivo (Ecuador)",
+  "kind": "Payment method",
+  "why_it_matters": "Cash payment network with CIP code (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/ecuador",
+  "on_yuno": "Partial",
+  "yuno_entry": "SafetyPay, Unlimit, dLocal carry PagoEfectivo; no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Ecuador",
+  "name": "SPI bank transfers",
+  "kind": "Payment method",
+  "why_it_matters": "Immediate interbank transfers, generally free (OlaClick).",
+  "source_url": "https://olaclick.com/es/pos/medios-pago-en-linea-ecuador/",
+  "on_yuno": "Partial",
+  "yuno_entry": "Monnet (bank transfer); no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "El Salvador",
+  "name": "Transfer365 (BCR)",
+  "kind": "Payment method",
+  "why_it_matters": "93% of interbank transfers and 5M+ operations per month (ENIEF 2025 via elsalvador.com); 91.12% of instant transfers in 2025 (Infobae).",
+  "source_url": "https://www.elsalvador.com/dinero-y-negocios/entorno-economico/transfer365-servicio-transferencias-el-salvador/1258080/2026/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "El Salvador",
+  "name": "PuntoXpress",
+  "kind": "Payment method",
+  "why_it_matters": "Cards are 55% of online purchases; PuntoXpress cash collection at supermarkets, pharmacies, gas stations (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/el-salvador",
+  "on_yuno": "Yes",
+  "yuno_entry": "PuntoXpress (Payment method)",
+  "priority": "Medium"
+ },
+ {
+  "country": "El Salvador",
+  "name": "Akipago",
+  "kind": "Payment method",
+  "why_it_matters": "Cash voucher network at pharmacies and stores (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/el-salvador",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "El Salvador",
+  "name": "Tigo Money (El Salvador)",
+  "kind": "Payment method",
+  "why_it_matters": "Wallet with merchant payment button, no card needed (Tigo help centre).",
+  "source_url": "https://ayuda.tigo.com.sv/hc/centro-de-ayuda/es/categories/tigo-money",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "El Salvador",
+  "name": "BAC Credomatic",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Leading regional acquirer; Transfer365 free 24/7 in its online banking (BAC help).",
+  "source_url": "https://ayuda.baccredomatic.com/transferencias_bancarias/enviar_dinero/horarios-de-transferencias-banca-en-linea-y-banca-movil?country=es-sv",
+  "on_yuno": "Yes",
+  "yuno_entry": "BAC Credomatic (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "El Salvador",
+  "name": "Wompi (Banco Agricola)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Live gateway in El Salvador (rows.json); widely used.",
+  "source_url": "https://onepay.la/pasarelas-de-pago-colombia",
+  "on_yuno": "Yes",
+  "yuno_entry": "Wompi (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "El Salvador",
+  "name": "Tilopay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Central America gateway with 65K+ merchants and 47 partner banks (tilopay.com).",
+  "source_url": "https://tilopay.com/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Guatemala",
+  "name": "NeoNet (formerly VisaNet Guatemala)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "'La red mas grande de aceptacion de medios de pago electronico' with NEOLINK/NEOPAY e-commerce products (visanet.com.gt); international credit cards are 63% of e-commerce (PCMI).",
+  "source_url": "https://www.visanet.com.gt/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Guatemala",
+  "name": "BAC Credomatic",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Leading regional acquirer; live in Guatemala (rows.json).",
+  "source_url": "https://paymentscmi.com/insights/mercado-comercio-electronico-guatemala/",
+  "on_yuno": "Yes",
+  "yuno_entry": "BAC Credomatic (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Guatemala",
+  "name": "Bank transfer",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfers are 18% of e-commerce (PCMI 2024).",
+  "source_url": "https://paymentscmi.com/insights/mercado-comercio-electronico-guatemala/",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "Monnet (bank transfer, QR, wallet); no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Guatemala",
+  "name": "Tigo Money (Guatemala)",
+  "kind": "Payment method",
+  "why_it_matters": "Tigo Money operates in Guatemala with a linked Visa card (Millicom release); wallets are 3% of e-commerce (PCMI).",
+  "source_url": "https://ml-eu.globenewswire.com/Resource/Download/df34344e-1a45-4922-8749-c439438bb51a",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Guatemala",
+  "name": "SoyFRI",
+  "kind": "Payment method",
+  "why_it_matters": "Mobile wallet listed by dLocal for Guatemala.",
+  "source_url": "https://docs.dlocal.com/docs/guatemala",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Guatemala",
+  "name": "Cash on delivery",
+  "kind": "Payment method",
+  "why_it_matters": "52% of merchants use cash on delivery, 59% debit cards (Camara de Comercio survey via Prensa Latina).",
+  "source_url": "https://www.prensa-latina.cu/2025/05/11/compras-digitales-crecieron-ocho-por-ciento-en-2024-en-guatemala/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Guatemala",
+  "name": "PayCash",
+  "kind": "Payment method",
+  "why_it_matters": "Cash payment at main commercial chains and banks (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/guatemala",
+  "on_yuno": "Yes",
+  "yuno_entry": "Paycash (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Guatemala",
+  "name": "Tilopay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Central America gateway with 65K+ merchants (tilopay.com).",
+  "source_url": "https://tilopay.com/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Honduras",
+  "name": "Tigo Money (Honduras)",
+  "kind": "Payment method",
+  "why_it_matters": "Over one million registered customers (CEMLA mobile-money panorama, 2017); operates in Honduras (Millicom release).",
+  "source_url": "https://www.cemla.org/PDF/otros/2017-06-panorama-del-dinero-movil.pdf",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Honduras",
+  "name": "BAC Credomatic",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Leading regional acquirer; live in Honduras (rows.json); only cards listed by dLocal for Honduras.",
+  "source_url": "https://docs.dlocal.com/docs/honduras",
+  "on_yuno": "Yes",
+  "yuno_entry": "BAC Credomatic (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Honduras",
+  "name": "Tilopay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Central America gateway with 65K+ merchants and 47 partner banks (tilopay.com).",
+  "source_url": "https://tilopay.com/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Honduras",
+  "name": "Transfer365 CA-RD (regional transfers)",
+  "kind": "Payment method",
+  "why_it_matters": "Regional instant transfer with 6 Honduran banks affiliated, fee capped at $1 (BCR El Salvador).",
+  "source_url": "https://www.bcr.gob.sv/2023/07/18/bcr-une-fronteras-interbancarias-con-su-nuevo-servicio-transfer365-ca-rd/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Nicaragua",
+  "name": "Banpro Billetera Movil",
+  "kind": "Payment method",
+  "why_it_matters": "701,764 registered users, 83% of all wallet users in Nicaragua (BCN Q1-2026 via Nicaragua Investiga).",
+  "source_url": "https://nicaraguainvestiga.com/economia/174909-billeteras-digitales-caen-nicaragua-2026/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Nicaragua",
+  "name": "BAC Credomatic",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Leading regional acquirer; live in Nicaragua (rows.json).",
+  "source_url": "https://docs.dlocal.com/docs/nicaragua",
+  "on_yuno": "Yes",
+  "yuno_entry": "BAC Credomatic (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Nicaragua",
+  "name": "PuntoXpress",
+  "kind": "Payment method",
+  "why_it_matters": "Cash collection at supermarkets, pharmacies, gas stations (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/nicaragua",
+  "on_yuno": "Yes",
+  "yuno_entry": "PuntoXpress (Payment method)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Nicaragua",
+  "name": "Tilopay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Central America gateway with 65K+ merchants (tilopay.com).",
+  "source_url": "https://tilopay.com/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Panama",
+  "name": "Yappy (Banco General)",
+  "kind": "Payment method",
+  "why_it_matters": "1.4M+ users and $9,500M in operations in 2023 (Prensa); 1.6M+ users by 2025 (Tilopay press note).",
+  "source_url": "https://www.prensa.com/economia/yappy-nequi-zinli-y-ahora-kuara-compiten-en-el-mercado-de-los-pagos-digitales-en-panama/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Yappy (Payment method)",
+  "priority": "High"
+ },
+ {
+  "country": "Panama",
+  "name": "Clave (Telered debit network)",
+  "kind": "Payment method",
+  "why_it_matters": "264M+ Clave transactions and 2.4M cardholders in 2024 (Telered); online acceptance planned via Discover.",
+  "source_url": "https://panamabankingnews.com/notas-de-prensa/telered-proceso-mas-de-b-108963-millones-en-transacciones-durante-2024-un-aumento-del-7-61-en-comparacion-con-el-2023/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Panama",
+  "name": "Nequi Panama (Banistmo)",
+  "kind": "Payment method",
+  "why_it_matters": "Second wallet competing with Yappy (Prensa).",
+  "source_url": "https://www.prensa.com/economia/yappy-nequi-zinli-y-ahora-kuara-compiten-en-el-mercado-de-los-pagos-digitales-en-panama/",
+  "on_yuno": "Partial",
+  "yuno_entry": "dLocal carries Nequi in Panama; no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Panama",
+  "name": "ACH Xpress",
+  "kind": "Payment method",
+  "why_it_matters": "1.9M+ instant transfers worth B/.346M in 2024, up 165% (Telered).",
+  "source_url": "https://panamabankingnews.com/notas-de-prensa/telered-proceso-mas-de-b-108963-millones-en-transacciones-durante-2024-un-aumento-del-7-61-en-comparacion-con-el-2023/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Panama",
+  "name": "Zinli",
+  "kind": "Payment method",
+  "why_it_matters": "2.5M downloads and 10M transactions in the last year (Prensa, May-2024).",
+  "source_url": "https://www.prensa.com/economia/yappy-nequi-zinli-y-ahora-kuara-compiten-en-el-mercado-de-los-pagos-digitales-en-panama/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Panama",
+  "name": "BAC Credomatic",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Leading regional acquirer; live in Panama (rows.json).",
+  "source_url": "https://docs.dlocal.com/docs/panama",
+  "on_yuno": "Yes",
+  "yuno_entry": "BAC Credomatic (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Panama",
+  "name": "Tilopay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Gateway with a Yappy alliance in Panama (tilopay.com press note).",
+  "source_url": "https://tilopay.com/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Paraguay",
+  "name": "Bancard",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "100,000+ merchants, 100M+ monthly transactions, 4.5M cards; 'la red que acepta la mayor cantidad de marcas' (bancard.com.py).",
+  "source_url": "https://www.bancard.com.py/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Bancard (Provider)",
+  "priority": "High"
+ },
+ {
+  "country": "Paraguay",
+  "name": "Tigo Money (Paraguay)",
+  "kind": "Payment method",
+  "why_it_matters": "dLocal: 'widely used payment method in Paraguay'.",
+  "source_url": "https://docs.dlocal.com/docs/paraguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Paraguay",
+  "name": "Personal Pay",
+  "kind": "Payment method",
+  "why_it_matters": "Wallet with QR merchant payments and SIPAP transfers to all banks (dLocal docs, personalpay.com.py).",
+  "source_url": "https://docs.dlocal.com/docs/paraguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Paraguay",
+  "name": "Zimple",
+  "kind": "Payment method",
+  "why_it_matters": "E-wallet connected to the Paraguayan financial system (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/paraguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Paraguay",
+  "name": "Wally (ueno)",
+  "kind": "Payment method",
+  "why_it_matters": "Wallet usable from any phone with no fees (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/paraguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Paraguay",
+  "name": "Infonet (Bancard cash network)",
+  "kind": "Payment method",
+  "why_it_matters": "Cash network with agencies nationwide, some 24/7 (dLocal docs); Infonet Cobranzas covers 1,000+ services (Bancard).",
+  "source_url": "https://docs.dlocal.com/docs/paraguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Paraguay",
+  "name": "Practipago / Wepa",
+  "kind": "Payment method",
+  "why_it_matters": "Cash collection networks with branches across Paraguay (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/paraguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Paraguay",
+  "name": "QR payments / SIPAP transfers",
+  "kind": "Payment method",
+  "why_it_matters": "QR payable with any method and bank transfer from any Paraguayan bank (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/paraguay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "QRIS",
+  "kind": "Payment method",
+  "why_it_matters": "Bank Indonesia QR standard; volume up 163% year-on-year (BI, Jul-2025 via 2C2P); 57M+ users (PaymentBrief).",
+  "source_url": "https://2c2p.com/articles/indonesia-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "QRIS (Payment method); Xendit, dLocal",
+  "priority": "High"
+ },
+ {
+  "country": "Indonesia",
+  "name": "GoPay",
+  "kind": "Payment method",
+  "why_it_matters": "21% of e-commerce wallet use (Ipsos via 2C2P); 32% (Tazapay) and 10% (PPRO) in other surveys.",
+  "source_url": "https://2c2p.com/articles/indonesia-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Indonesia",
+  "name": "ShopeePay",
+  "kind": "Payment method",
+  "why_it_matters": "57% of e-commerce wallet use (Ipsos via 2C2P).",
+  "source_url": "https://2c2p.com/articles/indonesia-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "ShopeePay (Payment method); Boku, Xendit",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "DANA",
+  "kind": "Payment method",
+  "why_it_matters": "13% of e-commerce wallet use (Ipsos via 2C2P); ~200M registered users claimed (Tazapay).",
+  "source_url": "https://2c2p.com/articles/indonesia-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Dana (Payment method); Xendit",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "OVO",
+  "kind": "Payment method",
+  "why_it_matters": "6% of e-commerce wallet use (Ipsos via 2C2P).",
+  "source_url": "https://2c2p.com/articles/indonesia-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "OVO (Payment method); Xendit, dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "Virtual Account (bank transfer)",
+  "kind": "Payment method",
+  "why_it_matters": "Domestic payments (virtual accounts, BI-FAST) are 34% of e-commerce, the largest category (2C2P/IDC 2026).",
+  "source_url": "https://2c2p.com/articles/indonesia-payment-methods/",
+  "on_yuno": "Partial",
+  "yuno_entry": "Xendit, dLocal carry Virtual Account; no standalone entry",
+  "priority": "High"
+ },
+ {
+  "country": "Indonesia",
+  "name": "BI-FAST",
+  "kind": "Payment method",
+  "why_it_matters": "Real-time A2A rail named as a domestic payment driver (2C2P/IDC).",
+  "source_url": "https://2c2p.com/articles/indonesia-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "LinkAja",
+  "kind": "Payment method",
+  "why_it_matters": "Integrated e-wallet for top-ups, bills and merchant payments (dLocal docs; PPRO).",
+  "source_url": "https://docs.dlocal.com/docs/indonesia",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "Kredivo / Akulaku (BNPL)",
+  "kind": "Payment method",
+  "why_it_matters": "BNPL is 6% of e-commerce (2C2P/IDC); Kredivo 4,000+ merchants, Akulaku 1,000+ (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/indonesia/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "Indomaret",
+  "kind": "Payment method",
+  "why_it_matters": "Convenience-store cash point alongside Alfamart (PPRO, 2C2P).",
+  "source_url": "https://www.ppro.com/countries/indonesia/",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "Xendit carries Indomaret; Alfamart is a standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "Midtrans (GoTo)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "'Dominant local gateway' (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/indonesia/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Midtrans (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "Xendit / DOKU",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Developer-focused and bank-owned gateways (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/indonesia/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Xendit, Doku (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Indonesia",
+  "name": "Faspay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Licensed local PSP option (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/indonesia/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Malaysia",
+  "name": "FPX (PayNet)",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer is 37% of e-commerce (PPRO); DuitNow and FPX domestic payments are 35% (2C2P/IDC 2026).",
+  "source_url": "https://www.ppro.com/countries/malaysia/",
+  "on_yuno": "Yes",
+  "yuno_entry": "FPX (Payment method); Xendit, dLocal",
+  "priority": "High"
+ },
+ {
+  "country": "Malaysia",
+  "name": "DuitNow QR",
+  "kind": "Payment method",
+  "why_it_matters": "Interoperable QR across banks and wallets; 870M transactions worth RM31.1B in 2024 (Xendit).",
+  "source_url": "https://www.xendit.co/en-my/blog/how-to-choose-the-best-payment-gateway-in-malaysia/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Malaysia",
+  "name": "Touch 'n Go eWallet",
+  "kind": "Payment method",
+  "why_it_matters": "23M+ verified users, 2M+ merchants; 92% of surveyed users used it in the past 3 months (Statista 2024 via Fintech News MY).",
+  "source_url": "https://fintechnews.my/50928/payments-remittance-malaysia/top-ewallets-in-malaysia/",
+  "on_yuno": "Partial",
+  "yuno_entry": "Boku, Xendit, dLocal carry Touch 'n Go; no standalone entry",
+  "priority": "High"
+ },
+ {
+  "country": "Malaysia",
+  "name": "GrabPay / Boost / ShopeePay",
+  "kind": "Payment method",
+  "why_it_matters": "E-wallets are 24% of e-commerce (PPRO); named among the top wallets (dLocal, 2C2P).",
+  "source_url": "https://2c2p.com/articles/malaysia-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "GRABPAY, Boost, ShopeePay (Payment method)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Malaysia",
+  "name": "MAE (Maybank2U)",
+  "kind": "Payment method",
+  "why_it_matters": "Bank-linked wallet with DuitNow QR (Fintech News MY); Maybank bank transfer listed by dLocal.",
+  "source_url": "https://fintechnews.my/50928/payments-remittance-malaysia/top-ewallets-in-malaysia/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Malaysia",
+  "name": "SPayLater (Shopee)",
+  "kind": "Payment method",
+  "why_it_matters": "56.5% of BNPL users (CCOB H1-2025 via 2C2P); BNPL is 4% of e-commerce.",
+  "source_url": "https://2c2p.com/articles/malaysia-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Malaysia",
+  "name": "Atome",
+  "kind": "Payment method",
+  "why_it_matters": "26.5% of BNPL users (CCOB H1-2025 via 2C2P); listed by dLocal.",
+  "source_url": "https://2c2p.com/articles/malaysia-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Malaysia",
+  "name": "iPay88",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Domestic BNM-licensed gateway named in Xendit's comparison.",
+  "source_url": "https://www.xendit.co/en-my/blog/how-to-choose-the-best-payment-gateway-in-malaysia/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Malaysia",
+  "name": "Fiuu (formerly Razer Merchant Services)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Domestic BNM-licensed gateway named in Xendit's comparison.",
+  "source_url": "https://www.xendit.co/en-my/blog/how-to-choose-the-best-payment-gateway-in-malaysia/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Malaysia",
+  "name": "2C2P / Adyen / Stripe",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "International PSPs live in Malaysia (rows.json).",
+  "source_url": "https://2c2p.com/articles/malaysia-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "2C2P, Adyen, Stripe (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Philippines",
+  "name": "GCash (Mynt)",
+  "kind": "Payment method",
+  "why_it_matters": "89% of domestic wallet share (Antom 2023 via 2C2P); 94M+ users in 2025; wallets are 33% of e-commerce (PPRO).",
+  "source_url": "https://2c2p.com/articles/philippines-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "GCASH (Payment method); Checkout.com, Ecommpay, Xendit, dLocal",
+  "priority": "High"
+ },
+ {
+  "country": "Philippines",
+  "name": "Maya",
+  "kind": "Payment method",
+  "why_it_matters": "5% of domestic wallet share (Antom 2023 via 2C2P); 'very popular, millions of users' (dLocal).",
+  "source_url": "https://2c2p.com/articles/philippines-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Maya (Provider); Xendit",
+  "priority": "Medium"
+ },
+ {
+  "country": "Philippines",
+  "name": "QR Ph",
+  "kind": "Payment method",
+  "why_it_matters": "Domestic payments (QR Ph, InstaPay) are 24% of e-commerce (2C2P/IDC 2026); one QR accepts InstaPay, bank apps and wallets.",
+  "source_url": "https://2c2p.com/articles/philippines-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Philippines",
+  "name": "InstaPay / PESONet",
+  "kind": "Payment method",
+  "why_it_matters": "InstaPay ~4.7B transactions worth ~PHP 11.6T in 2025 (PiqPay); static virtual accounts via InstaPay/PESONet (dLocal docs).",
+  "source_url": "https://piqpay.com/blog/accept-gcash-maya-payments-philippines",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Philippines",
+  "name": "Dragonpay",
+  "kind": "Payment method",
+  "why_it_matters": "Named by PPRO as the Philippine bank-transfer and over-the-counter method.",
+  "source_url": "https://www.ppro.com/countries/philippines/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Philippines",
+  "name": "GrabPay / ShopeePay",
+  "kind": "Payment method",
+  "why_it_matters": "GrabPay among the top 4 wallets; ShopeePay 'widely used' (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/philippines",
+  "on_yuno": "Yes",
+  "yuno_entry": "GRABPAY, ShopeePay (Payment method); Xendit",
+  "priority": "Medium"
+ },
+ {
+  "country": "Philippines",
+  "name": "Billease (BNPL)",
+  "kind": "Payment method",
+  "why_it_matters": "Named among the top three BNPL providers with SPayLater and Home Credit; BNPL is 5% of e-commerce (2C2P/IDC).",
+  "source_url": "https://2c2p.com/articles/philippines-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Philippines",
+  "name": "7-Eleven / OTC cash",
+  "kind": "Payment method",
+  "why_it_matters": "Cash and other is 22% of e-commerce (2C2P/IDC); 7-Eleven cash via Xendit.",
+  "source_url": "https://2c2p.com/articles/philippines-payment-methods/",
+  "on_yuno": "Partial",
+  "yuno_entry": "Xendit carries 7-Eleven; no standalone entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Philippines",
+  "name": "BPI / UnionBank direct debit",
+  "kind": "Payment method",
+  "why_it_matters": "Direct debit and recurring from BPI and Union Bank accounts (dLocal docs).",
+  "source_url": "https://docs.dlocal.com/docs/philippines",
+  "on_yuno": "Partial",
+  "yuno_entry": "Xendit carries Direct debit; no bank-level entry",
+  "priority": "Medium"
+ },
+ {
+  "country": "Philippines",
+  "name": "Xendit / Maya (PSP)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Local PSPs live in the Philippines (rows.json).",
+  "source_url": "https://www.xendit.co/en-ph/blog/e-wallets-in-the-philippines-a-business-guide-to-accepting-gcash-maya-and-more/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Xendit, Maya (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Singapore",
+  "name": "PayNow",
+  "kind": "Payment method",
+  "why_it_matters": "Used by 80% of consumers and businesses; 99% of bank transfers (Antom via 2C2P); RTP is 9% of e-commerce (2C2P/IDC).",
+  "source_url": "https://2c2p.com/articles/singapore-payment-methods/",
+  "on_yuno": "Yes (connection built; not listed on y.uno/integrations)",
+  "yuno_entry": "paynow",
+  "priority": "High"
+ },
+ {
+  "country": "Singapore",
+  "name": "DBS PayLah!",
+  "kind": "Payment method",
+  "why_it_matters": "Top wallet for online shopping at 26% (Fintech News 2025 via 2C2P).",
+  "source_url": "https://2c2p.com/articles/singapore-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Singapore",
+  "name": "GrabPay",
+  "kind": "Payment method",
+  "why_it_matters": "17% wallet share for online shopping (via 2C2P); 'dominant super-app wallet' (HitPay).",
+  "source_url": "https://2c2p.com/articles/singapore-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "GRABPAY (Payment method)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Singapore",
+  "name": "NETS",
+  "kind": "Payment method",
+  "why_it_matters": "Domestic debit and NETS QR for online and in-app payment (nets.com.sg); widely used.",
+  "source_url": "https://www.nets.com.sg/about-us",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Singapore",
+  "name": "Atome (BNPL)",
+  "kind": "Payment method",
+  "why_it_matters": "BNPL is 5% of e-commerce (2C2P/IDC); Atome 'leading the market' (Primer).",
+  "source_url": "https://primer.io/blog/singapore-payment-methods-paynow-api",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Singapore",
+  "name": "HitPay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "SME gateway with native PayNow, PayLah!, GrabPay and Atome (HitPay).",
+  "source_url": "https://hitpayapp.com/blog/paynow-payment-gateway-singapore",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Singapore",
+  "name": "Adyen / Stripe / 2C2P / Checkout.com",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "International PSPs live in Singapore (rows.json); cards are 73% of e-commerce (2C2P/IDC).",
+  "source_url": "https://2c2p.com/articles/singapore-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Adyen, Stripe, 2C2P, Checkout.com (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Thailand",
+  "name": "PromptPay / Thai QR",
+  "kind": "Payment method",
+  "why_it_matters": "Bank transfer is 42% of e-commerce (PPRO); 24.3B+ PromptPay transactions in 2024 (2C2P).",
+  "source_url": "https://2c2p.com/articles/thailand-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Thai QR (PromptPay) (Payment method); Xendit, dLocal",
+  "priority": "High"
+ },
+ {
+  "country": "Thailand",
+  "name": "TrueMoney",
+  "kind": "Payment method",
+  "why_it_matters": "52.6% of Thai wallet share (2023 via 2C2P); 'the leading wallet' (dLocal).",
+  "source_url": "https://2c2p.com/articles/thailand-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "TrueMoney (Payment method); Xendit, dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Thailand",
+  "name": "Rabbit LINE Pay",
+  "kind": "Payment method",
+  "why_it_matters": "24.7% of wallet share (2023 via 2C2P); popular with transit users (dLocal).",
+  "source_url": "https://2c2p.com/articles/thailand-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Thailand",
+  "name": "K PLUS (KBank mobile banking)",
+  "kind": "Payment method",
+  "why_it_matters": "Kasikorn mobile banking app listed as a bank transfer method (dLocal docs); KBank 'strong in e-commerce' (PaymentBrief).",
+  "source_url": "https://docs.dlocal.com/docs/thailand",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Thailand",
+  "name": "SCB Easy",
+  "kind": "Payment method",
+  "why_it_matters": "Bank-linked payment app of Siam Commercial Bank (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/thailand",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Thailand",
+  "name": "ShopeePay",
+  "kind": "Payment method",
+  "why_it_matters": "8.1% of wallet share (2023 via 2C2P).",
+  "source_url": "https://2c2p.com/articles/thailand-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "ShopeePay (Payment method); Xendit, dLocal",
+  "priority": "Medium"
+ },
+ {
+  "country": "Thailand",
+  "name": "Alipay / WeChat Pay (inbound tourists)",
+  "kind": "Payment method",
+  "why_it_matters": "Listed by dLocal among popular options in Thailand.",
+  "source_url": "https://docs.dlocal.com/docs/thailand",
+  "on_yuno": "Partial",
+  "yuno_entry": "WeChat Pay (Payment method); Antom (Alipay)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Thailand",
+  "name": "Opn Payments (formerly Omise)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Thai-founded PSP (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/thailand",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Thailand",
+  "name": "KBank / SCB acquiring",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "KBank strong in e-commerce; SCB and Bangkok Bank named for merchant services (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/thailand",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Vietnam",
+  "name": "MoMo",
+  "kind": "Payment method",
+  "why_it_matters": "69% of wallet users (Decision Lab Q3-2024 via 2C2P); 68% share in Q1-2023 (VIR); wallets are 31% of e-commerce (PPRO).",
+  "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Vietnam",
+  "name": "ZaloPay",
+  "kind": "Payment method",
+  "why_it_matters": "44% of wallet users (Decision Lab Q3-2024 via 2C2P).",
+  "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Vietnam",
+  "name": "VietQR / NAPAS 247",
+  "kind": "Payment method",
+  "why_it_matters": "Domestic payments (VietQR) are 29% of e-commerce (2C2P/IDC 2026); 15M+ VietQR transactions daily (NAPAS 2025).",
+  "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Vietnam",
+  "name": "Napas domestic debit cards",
+  "kind": "Payment method",
+  "why_it_matters": "Local schemes are 87% of card volume (PPRO); Napas listed as the local debit scheme (dLocal).",
+  "source_url": "https://www.ppro.com/countries/vietnam/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Vietnam",
+  "name": "VNPay-QR",
+  "kind": "Payment method",
+  "why_it_matters": "QR solution integrated into many banking and wallet apps (dLocal docs); strongest at physical POS (PaymentBrief).",
+  "source_url": "https://docs.dlocal.com/docs/vietnam",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Vietnam",
+  "name": "ViettelPay / Viettel Money",
+  "kind": "Payment method",
+  "why_it_matters": "27% of wallet users (Decision Lab Q3-2024 via 2C2P).",
+  "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Vietnam",
+  "name": "ShopeePay",
+  "kind": "Payment method",
+  "why_it_matters": "26% of wallet users (Decision Lab Q3-2024 via 2C2P).",
+  "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "ShopeePay (Payment method)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Vietnam",
+  "name": "OnePay",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Domestic gateway (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/vietnam/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Vietnam",
+  "name": "Payoo",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Bill-payment and utility-focused gateway (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/vietnam/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Vietnam",
+  "name": "Ngan Luong",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Bank-backed mid-market gateway (PaymentBrief).",
+  "source_url": "https://paymentbrief.com/markets/vietnam/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Vietnam",
+  "name": "2C2P / Adyen",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "International PSPs live in Vietnam (rows.json); cards are 27-30% of e-commerce (PPRO, 2C2P).",
+  "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "2C2P, Adyen (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Myanmar",
+  "name": "KBZPay",
+  "kind": "Payment method",
+  "why_it_matters": "19M active users, 43% of the adult population, in 2024 (KBZ via FinanceAsia, promoted content).",
+  "source_url": "https://www.financeasia.com/article/winner-spotlight-2025-kbz-bank/503374",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Myanmar",
+  "name": "Wave Pay (Wave Money)",
+  "kind": "Payment method",
+  "why_it_matters": "About 80% share of mobile financial services (GSMA interview); 11.5M+ wallet users and 59,000+ agents (Marketing Myanmar).",
+  "source_url": "https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/programme/mobile-money/mobile-money-in-myanmar-wave-money-on-financial-inclusion/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Myanmar",
+  "name": "AYA Pay",
+  "kind": "Payment method",
+  "why_it_matters": "Bank-linked wallet of AYA Bank with cash collection (Marketing Myanmar).",
+  "source_url": "https://marketingmyanmar.com/digital-payment-marketing-in-myanmar-kbzpay-wave-money-ayapay-and-beyond/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Myanmar",
+  "name": "CB Pay",
+  "kind": "Payment method",
+  "why_it_matters": "Wallet of CB Bank for corporate and professional account holders (Marketing Myanmar).",
+  "source_url": "https://marketingmyanmar.com/digital-payment-marketing-in-myanmar-kbzpay-wave-money-ayapay-and-beyond/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Myanmar",
+  "name": "MMQR (MyanmarPay)",
+  "kind": "Payment method",
+  "why_it_matters": "Central Bank of Myanmar national QR standard launched Feb/Mar-2025, accepted across participating wallets and banks (Wikipedia).",
+  "source_url": "https://en.wikipedia.org/wiki/MyanmarPay",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Myanmar",
+  "name": "MPU (Myanmar Payment Union)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Domestic card network: 39,000+ POS, 600+ e-commerce merchants, 905,000+ e-commerce members, 158,000+ daily transactions (mpu.com.mm).",
+  "source_url": "https://www.mpu.com.mm/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Myanmar",
+  "name": "2C2P",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Only PSP live in Myanmar on Yuno (rows.json); cards only.",
+  "source_url": "https://2c2p.com/articles/myanmar-payment-methods/",
+  "on_yuno": "Yes",
+  "yuno_entry": "2C2P (Provider)",
+  "priority": "Medium"
+ },
+ {
+  "country": "Israel",
+  "name": "Isracard",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Issues or administers about 42% of active credit cards (OECD 2024); cards are 71% of e-commerce (PPRO).",
+  "source_url": "https://one.oecd.org/document/DAF/COMP/WD(2024)25/en/pdf",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Israel",
+  "name": "Cal (Israel Credit Cards)",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Second-largest card company by active cards (Statista 2025); one of three companies administering all bank-issued cards (OECD).",
+  "source_url": "https://www.statista.com/statistics/1482029/israel-credit-card-companies-by-active-cards/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Israel",
+  "name": "Max",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Third card company by active cards (Statista 2025); one of three administering all bank-issued cards (OECD).",
+  "source_url": "https://www.statista.com/statistics/1482029/israel-credit-card-companies-by-active-cards/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Israel",
+  "name": "Bit (Bank Hapoalim)",
+  "kind": "Payment method",
+  "why_it_matters": "E-wallets are 26% of e-commerce (PPRO); 42% of money sent through Bit and Paybox goes to businesses (Bank of Israel survey, Oct-2023).",
+  "source_url": "https://www.boi.org.il/media/3pjpq0wa/overview-of-the-payments-system-in-israel-final.pdf",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Israel",
+  "name": "Paybox",
+  "kind": "Payment method",
+  "why_it_matters": "P2P payment app surveyed with Bit by the Bank of Israel; 'niche popularity' for e-commerce (PayAtlas).",
+  "source_url": "https://payatlas.com/countries/israel-il",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Israel",
+  "name": "Local card schemes / Isracard-branded cards",
+  "kind": "Payment method",
+  "why_it_matters": "Local schemes are 16% of card volume (PPRO); Isracard listed as a local card working online and offline (PayAtlas).",
+  "source_url": "https://www.ppro.com/countries/israel/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Israel",
+  "name": "American Express (Israel)",
+  "kind": "Payment method",
+  "why_it_matters": "Amex is 6% of card volume (PPRO); not listed as a scheme in rows.json or the directory.",
+  "source_url": "https://www.ppro.com/countries/israel/",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Israel",
+  "name": "Tranzila",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "One of Israel's oldest gateways (1999), official Shopify gateway, supports Bit (Boa Ideas case study).",
+  "source_url": "https://boaideas.com/case_study/tranzila",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "High"
+ },
+ {
+  "country": "Israel",
+  "name": "Cardcom",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Local gateway supporting Bit, cited as boosting conversion (PayAtlas).",
+  "source_url": "https://payatlas.com/countries/israel-il",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Israel",
+  "name": "PayPlus",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Local gateway with Bit and in-checkout card payments for Shopify (payplus.co.il, Preneuriat).",
+  "source_url": "https://payplus.co.il/en",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Israel",
+  "name": "Pelecard",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Local gateway connected to Shopify Israel (Preneuriat).",
+  "source_url": "https://preneuriat.com/blog/shopify-payment-gateways-israel",
+  "on_yuno": "No",
+  "yuno_entry": "",
+  "priority": "Medium"
+ },
+ {
+  "country": "Israel",
+  "name": "Nuvei",
+  "kind": "Acquirer/PSP",
+  "why_it_matters": "Only card acquirer live in Israel on Yuno (rows.json).",
+  "source_url": "https://www.ppro.com/countries/israel/",
+  "on_yuno": "Yes",
+  "yuno_entry": "Nuvei (Provider)",
+  "priority": "Medium"
+ }
+]
