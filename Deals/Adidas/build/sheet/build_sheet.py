@@ -98,36 +98,37 @@ DISPLAY = {'Dlocal': 'dLocal', 'Astropay': 'AstroPay', 'Ebanx': 'EBANX', 'Fac': 
            'PUNTO PAGO': 'Punto Pago', 'YAPE': 'Yape', 'PIX': 'PIX', 'Nupay': 'NuPay', 'RapiPago': 'Rapipago', 'Pago Facil': 'Pago Fácil', 'SAMSclub': "Sam's Club", 'Mach': 'MACH',
            'SPEI': 'SPEI', 'QRIS': 'QRIS', 'FPX': 'FPX', 'Click-to-Pay': 'Click to Pay', 'De Una': 'Deuna', 'PuntosHey': 'Puntos Hey', 'T1Pagos': 'T1 Pagos'}
 def disp(name): return DISPLAY.get(name, name)
-# ---- single tab: one row per country x entry (providers first, then payment methods)
-rows = [['Country', 'Region', 'Type', 'Name', 'Payment methods processed through Yuno to date', 'Providers carrying it through Yuno', 'Status on Yuno', 'Website']]
-for c in T:
-    for d in sorted(prov_by_c[c], key=lambda d: d['name'].lower()):
-        rows.append([c, REGION[c], 'Provider', disp(d['name']), methods_via_yuno(c, d['name']), '', 'Live', d['website'] or ''])
-    for d in sorted(meth_by_c[c], key=lambda d: d['name'].lower()):
-        rows.append([c, REGION[c], 'Payment method', disp(d['name']), '', providers_for_method(c, d['name']), 'Live', d['website'] or ''])
-# partner-signed methods, not yet integrated (Ali Partnerships, #partnerships--sales, Mar/May 2026; German 14 Oct 2026: show them with Status "Signed")
+# ---- single tab: Country | Region | Type | Name | Payment methods supported by provider | Status
+# partner-signed methods, not yet integrated (Ali Partnerships, #partnerships--sales, Mar/May 2026; German 14 Oct 2026: Status "Signed")
 SIGNED = [
-    ('Costa Rica', 'SINPE Móvil', 'dLocal, Inswitch', 'https://www.bccr.fi.cr/sistema-de-pagos/sinpe-movil'),
-    ('Indonesia', 'GoPay', 'Contracted partners', 'https://gopay.co.id'),
-    ('Indonesia', 'Kredivo', 'Contracted partners', 'https://www.kredivo.com'),
-    ('Malaysia', 'DuitNow QR', 'Contracted partners', 'https://www.duitnow.my'),
-    ('Philippines', 'Billease', 'Contracted partners', 'https://billease.ph'),
-    ('Vietnam', 'MoMo', 'dLocal, 2C2P, Directa 24, Unlimit, Nuvei, Terrapay', 'https://www.momo.vn'),
-    ('Vietnam', 'ZaloPay', '2C2P, Directa 24, Terrapay', 'https://zalopay.vn'),
-    ('Vietnam', 'VNPay QR', '2C2P, Unlimit, dLocal, Terrapay', 'https://vnpay.vn'),
-    ('Vietnam', 'Viettel Money (ViettelPay)', '2C2P, dLocal', 'https://viettelmoney.vn'),
-    ('Vietnam', 'NAPAS (domestic cards, VietQR)', 'dLocal', 'https://napas.com.vn'),
+    ('Costa Rica', 'SINPE Móvil', ['dLocal', 'Inswitch']),
+    ('Indonesia', 'GoPay', []), ('Indonesia', 'Kredivo', []), ('Malaysia', 'DuitNow QR', []), ('Philippines', 'Billease', []),
+    ('Vietnam', 'MoMo', ['dLocal', '2C2P', 'Directa 24', 'Unlimit', 'Nuvei', 'Terrapay']),
+    ('Vietnam', 'ZaloPay', ['2C2P', 'Directa 24', 'Terrapay']),
+    ('Vietnam', 'VNPay QR', ['2C2P', 'Unlimit', 'dLocal', 'Terrapay']),
+    ('Vietnam', 'Viettel Money (ViettelPay)', ['2C2P', 'dLocal']),
+    ('Vietnam', 'NAPAS (domestic cards, VietQR)', ['dLocal']),
 ]
-_ins = {}
-for c, name, provs, site in SIGNED: _ins.setdefault(c, []).append([c, REGION[c], 'Payment method', name, '', provs, 'Signed', site])
-_out = [rows[0]]
+signed_by_prov = collections.defaultdict(list)   # (country, provider display name) -> methods signed
+for c, name, provs in SIGNED:
+    for pv in provs: signed_by_prov[(c, pv)].append(name)
+DISPLAY.update({'Pagbank': 'PagBank', 'Paycash': 'PayCash', 'Dana': 'DANA', 'GCASH': 'GCash', 'GRABPAY': 'GrabPay', 'BANCO NACIONAL DE COSTA RICA': 'Banco Nacional de Costa Rica',
+                'BANCO CONTINENTAL': 'Banco Continental', 'OpenPay': 'Openpay', 'IziPay': 'Izipay', 'Epayco': 'ePayco', 'Unlimint': 'Unlimit'})
+rows = [['Country', 'Region', 'Type', 'Name', 'Payment methods supported by provider', 'Status on Yuno']]
 for c in T:
-    _out += [r for r in rows[1:] if r[0] == c] + _ins.get(c, [])
-rows = _out
+    for d in sorted(prov_by_c[c], key=lambda d: disp(d['name']).lower()):
+        name = disp(d['name']); m = methods_via_yuno(c, d['name'])
+        extra = signed_by_prov.get((c, name), [])
+        if extra: m = (m + ', ' if m else '') + ', '.join(f"{x} (signed)" for x in extra)
+        rows.append([c, REGION[c], 'Provider', name, m, 'Live'])
+    for d in sorted(meth_by_c[c], key=lambda d: disp(d['name']).lower()):
+        rows.append([c, REGION[c], 'Direct payment method', disp(d['name']), '', 'Live'])
+    for sc, name, provs in SIGNED:
+        if sc == c: rows.append([c, REGION[c], 'Direct payment method', name, '', 'Signed'])
 TABS = [('Connections by country', rows)]
 cnt = collections.Counter((r[0], r[2]) for r in rows[1:])
-for c in T: print(f"{c:20s} providers={cnt[(c, 'Provider')]:3d} methods={cnt[(c, 'Payment method')]:3d}")
-print(len(rows) - 1, 'rows')
+for c in T: print(f"{c:20s} providers={cnt[(c, 'Provider')]:3d} methods={cnt[(c, 'Direct payment method')]:3d}")
+print(len(rows) - 1, 'rows;', sum(1 for r in rows[1:] if r[2] == 'Provider' and not r[4]), 'provider rows without a method list')
 json.dump(rows, open(os.path.join(HERE, 'rows.json'), 'w'), ensure_ascii=False)
 if not WRITE: sys.exit(0)
 
@@ -139,6 +140,10 @@ api = build('sheets', 'v4', credentials=cr, cache_discovery=False).spreadsheets(
 meta = api.get(spreadsheetId=WRITE, fields='sheets.properties').execute()
 existing = {s['properties']['title']: s['properties']['sheetId'] for s in meta['sheets']}
 reqs = []
+stale = []
+for t in list(existing):
+    if t in dict(TABS):
+        reqs.append({'updateSheetProperties': {'properties': {'sheetId': existing[t], 'title': t + ' (old)'}, 'fields': 'title'}}); stale.append(existing.pop(t))
 for i, (t, v) in enumerate(TABS):
     if t not in existing: reqs.append({'addSheet': {'properties': {'title': t, 'index': i, 'gridProperties': {'rowCount': len(v) + 5, 'columnCount': len(v[0])}}}})
 if reqs:
@@ -146,12 +151,13 @@ if reqs:
     for r in res['replies']:
         if 'addSheet' in r: existing[r['addSheet']['properties']['title']] = r['addSheet']['properties']['sheetId']
 for t0, sid0 in list(existing.items()):
-    if t0 not in dict(TABS): api.batchUpdate(spreadsheetId=WRITE, body={'requests': [{'deleteSheet': {'sheetId': sid0}}]}).execute(); existing.pop(t0)
+    if t0 not in dict(TABS): stale.append(sid0); existing.pop(t0)
+if stale: api.batchUpdate(spreadsheetId=WRITE, body={'requests': [{'deleteSheet': {'sheetId': x}} for x in stale]}).execute()
 api.values().batchClear(spreadsheetId=WRITE, body={'ranges': [f"'{t}'" for t, _ in TABS]}).execute()
 api.values().batchUpdate(spreadsheetId=WRITE, body={'valueInputOption': 'RAW', 'data': [{'range': f"'{t}'!A1", 'values': v} for t, v in TABS]}).execute()
 NAVY = {'red': 0x10 / 255, 'green': 0x28 / 255, 'blue': 0x4A / 255}; WHITE = {'red': 1, 'green': 1, 'blue': 1}
 thin = {'style': 'SOLID', 'width': 1, 'color': {'red': 0.8, 'green': 0.8, 'blue': 0.8}}
-WIDTHS = {'Connections by country': [150, 110, 120, 200, 320, 320, 110, 220], 'Summary': [150, 110, 90, 120, 520, 520], 'Named providers': [130, 120, 100, 420, 320, 380], 'Providers by country': [140, 110, 170, 220, 260, 160, 220, 220],
+WIDTHS = {'Connections by country': [140, 110, 170, 230, 520, 110], 'Summary': [150, 110, 90, 120, 520, 520], 'Named providers': [130, 120, 100, 420, 320, 380], 'Providers by country': [140, 110, 170, 220, 260, 160, 220, 220],
           'Payment methods by country': [140, 110, 190, 300, 420, 220], 'Integrations directory': [190, 120, 160, 420, 220, 420, 220, 220],
           'Internal review (delete before sharing)': [190, 140, 420, 320]}
 fmt = []
@@ -163,6 +169,7 @@ for t, v in TABS:
         {'repeatCell': {'range': {**rng, 'endRowIndex': 1}, 'cell': {'userEnteredFormat': {'backgroundColor': NAVY, 'textFormat': {'fontFamily': 'Roboto', 'fontSize': 10, 'bold': True, 'foregroundColor': WHITE}, 'verticalAlignment': 'MIDDLE', 'wrapStrategy': 'WRAP'}}, 'fields': 'userEnteredFormat(backgroundColor,textFormat,verticalAlignment,wrapStrategy)'}},
         {'updateBorders': {'range': rng, 'top': thin, 'bottom': thin, 'left': thin, 'right': thin, 'innerHorizontal': thin, 'innerVertical': thin}},
         {'updateSheetProperties': {'properties': {'sheetId': sid, 'gridProperties': {'frozenRowCount': 1, 'frozenColumnCount': 1, 'hideGridlines': True}}, 'fields': 'gridProperties(frozenRowCount,frozenColumnCount,hideGridlines)'}},
+        {'setBasicFilter': {'filter': {'range': rng}}},
     ]
     for ci, w in enumerate(WIDTHS.get(t, [])[:ncol]):
         fmt.append({'updateDimensionProperties': {'range': {'sheetId': sid, 'dimension': 'COLUMNS', 'startIndex': ci, 'endIndex': ci + 1}, 'properties': {'pixelSize': w}, 'fields': 'pixelSize'}})
