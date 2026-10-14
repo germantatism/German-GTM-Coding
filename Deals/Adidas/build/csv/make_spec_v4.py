@@ -52,9 +52,15 @@ def method_table(d, max_rows):
     signed = sorted(set(list(d['signed_m']) + d['signed']))
     while len(multi) + (1 if single else 0) + len(signed) > max_rows and multi:
         single.append(multi.pop())
-    rows = [[m, ', '.join(p), str(len(p))] for m, p in multi]
+    rows = []
+    for m, p in multi:
+        sg = [d['signed_m'].get(x, []) for x in m.split(' · ')]; sg = sorted({y for z in sg for y in z})
+        if sg: rows.append([m, f"{', '.join(p)} (integrated) · {', '.join(sg)} (signed)", str(len(p) + len(sg))])
+        else: rows.append([m, ', '.join(p), str(len(p))])
     if single: rows.append(["Other local methods", '; '.join(f"{m} ({', '.join(p)})" for m, p in sorted(single)), "1 to 2 each"])
+    covered = {x for m, _ in multi for x in m.split(' · ')}
     for m in signed:
+        if m in covered: continue
         ps = d['signed_m'].get(m, []); rows.append([f"{m} (signed)", ', '.join(ps) if ps else 'Contracted partners', str(len(ps)) if ps else ''])
     return rows
 for c in T:
@@ -65,9 +71,9 @@ for c in T:
     secA = [{"header": f"Live through Yuno ({len(live)})", "chips": [chip(x) for x in live]}]
     if hom: secA.append({"header": f"Homologating ({len(hom)})", "chips": [chip(x) for x in hom], "muted": True})
     secB = [{"header": f"Wallets and payment methods available ({len(direct)})", "chips": [chip(x) for x in direct]}]
-    if signed: secB.append({"header": f"Signed with partners, not yet integrated ({len(signed)})", "chips": [chip(x) for x in signed], "muted": True})
+    if signed: secB.append({"header": f"Signed with partners, not yet integrated ({len(signed)})", "chips": [chip(x) for x in signed], "style": "signed"})
     tbl = {"columns": ["Local method", "Providers carrying it through Yuno", "#"], "col_widths": [0.22, 0.72, 0.06], "font_size": 7.5}
-    small = len(live) + len(hom) <= 8 and len(direct) <= 10
+    small = len(live) + len(hom) <= 16 and len(direct) <= 10
     if small:
         rows = method_table(d, 4)
         s = {"id": "c-" + slug(c), "type": "logo_grid", "kicker": "COUNTRY DETAIL › " + c.upper(), "headline": headA, "sections": secA + secB}

@@ -1335,6 +1335,7 @@ def r_logo_grid(deck, s, tag, n, footer):
         if sec.get('header'):
             sb.text(X0, y, W0, 9, sec['header'].upper(), size=6.5, bold=True, color=GREY, ls=100); y += 12
         muted = sec.get('muted'); fill = '#F3F3F3' if muted else '#F4F5FD'; tcol = GREY if muted else INK
+        if sec.get('style') == 'signed': fill, tcol = '#E8EAF5', DEEP
         x = X0
         for c in chips:
             lw = min(LH * float(c.get('aspect') or 1.0), 30.0) if c.get('logo') else 0.0

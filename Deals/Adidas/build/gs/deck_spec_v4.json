@@ -2765,7 +2765,7 @@
   {
    "id": "c-uruguay",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › URUGUAY › PROVIDERS",
+   "kicker": "COUNTRY DETAIL › URUGUAY",
    "headline": "Uruguay: 12 providers live through Yuno, 12 for cards, 3 more providers in homologation.",
    "sections": [
     {
@@ -2853,15 +2853,7 @@
       }
      ],
      "muted": true
-    }
-   ]
-  },
-  {
-   "id": "c-uruguay-methods",
-   "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › URUGUAY › PAYMENT METHODS",
-   "headline": "Uruguay: 9 payment methods available and 4 local methods carried by the providers.",
-   "sections": [
+    },
     {
      "header": "Wallets and payment methods available (9)",
      "chips": [
@@ -2942,7 +2934,7 @@
   {
    "id": "c-bolivia",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › BOLIVIA › PROVIDERS",
+   "kicker": "COUNTRY DETAIL › BOLIVIA",
    "headline": "Bolivia: 6 providers live through Yuno, 5 for cards, 3 more providers in homologation.",
    "sections": [
     {
@@ -3000,15 +2992,7 @@
       }
      ],
      "muted": true
-    }
-   ]
-  },
-  {
-   "id": "c-bolivia-methods",
-   "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › BOLIVIA › PAYMENT METHODS",
-   "headline": "Bolivia: 5 payment methods available and 4 local methods carried by the providers.",
-   "sections": [
+    },
     {
      "header": "Wallets and payment methods available (5)",
      "chips": [
@@ -3260,7 +3244,7 @@
        "aspect": 1.0
       }
      ],
-     "muted": true
+     "style": "signed"
     }
    ],
    "table": {
@@ -3302,7 +3286,7 @@
   {
    "id": "c-dominican-republic",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › DOMINICAN REPUBLIC › PROVIDERS",
+   "kicker": "COUNTRY DETAIL › DOMINICAN REPUBLIC",
    "headline": "Dominican Republic: 10 providers live through Yuno, 7 for cards, 3 more providers in homologation.",
    "sections": [
     {
@@ -3380,15 +3364,7 @@
       }
      ],
      "muted": true
-    }
-   ]
-  },
-  {
-   "id": "c-dominican-republic-methods",
-   "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › DOMINICAN REPUBLIC › PAYMENT METHODS",
-   "headline": "Dominican Republic: 7 payment methods available and 5 local methods carried by the providers.",
-   "sections": [
+    },
     {
      "header": "Wallets and payment methods available (7)",
      "chips": [
@@ -3686,7 +3662,7 @@
   {
    "id": "c-el-salvador",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › EL SALVADOR › PROVIDERS",
+   "kicker": "COUNTRY DETAIL › EL SALVADOR",
    "headline": "El Salvador: 12 providers live through Yuno, 8 for cards, 2 more providers in homologation.",
    "sections": [
     {
@@ -3769,15 +3745,7 @@
       }
      ],
      "muted": true
-    }
-   ]
-  },
-  {
-   "id": "c-el-salvador-methods",
-   "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › EL SALVADOR › PAYMENT METHODS",
-   "headline": "El Salvador: 7 payment methods available and 5 local methods carried by the providers.",
-   "sections": [
+    },
     {
      "header": "Wallets and payment methods available (7)",
      "chips": [
@@ -4035,7 +4003,7 @@
   {
    "id": "c-honduras",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › HONDURAS › PROVIDERS",
+   "kicker": "COUNTRY DETAIL › HONDURAS",
    "headline": "Honduras: 8 providers live through Yuno, 7 for cards, 3 more providers in homologation.",
    "sections": [
     {
@@ -4103,15 +4071,7 @@
       }
      ],
      "muted": true
-    }
-   ]
-  },
-  {
-   "id": "c-honduras-methods",
-   "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › HONDURAS › PAYMENT METHODS",
-   "headline": "Honduras: 6 payment methods available and 2 local methods carried by the providers.",
-   "sections": [
+    },
     {
      "header": "Wallets and payment methods available (6)",
      "chips": [
@@ -4285,7 +4245,7 @@
   {
    "id": "c-panama",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › PANAMA › PROVIDERS",
+   "kicker": "COUNTRY DETAIL › PANAMA",
    "headline": "Panama: 14 providers live through Yuno, 11 for cards, 2 more providers in homologation.",
    "sections": [
     {
@@ -4378,15 +4338,7 @@
       }
      ],
      "muted": true
-    }
-   ]
-  },
-  {
-   "id": "c-panama-methods",
-   "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › PANAMA › PAYMENT METHODS",
-   "headline": "Panama: 8 payment methods available and 6 local methods carried by the providers.",
-   "sections": [
+    },
     {
      "header": "Wallets and payment methods available (8)",
      "chips": [
@@ -4462,13 +4414,8 @@
       "2"
      ],
      [
-      "Nequi",
-      "dLocal, Nuvei",
-      "2"
-     ],
-     [
       "Other local methods",
-      "Punto Pago (dLocal); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
+      "Nequi (dLocal, Nuvei); Punto Pago (dLocal); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
       "1 to 2 each"
      ]
     ]
@@ -4817,7 +4764,7 @@
        "aspect": 1.0
       }
      ],
-     "muted": true
+     "style": "signed"
     }
    ],
    "table": {
@@ -5105,7 +5052,7 @@
        "aspect": 1.0
       }
      ],
-     "muted": true
+     "style": "signed"
     }
    ],
    "table": {
@@ -6074,7 +6021,7 @@
        "aspect": 1.0
       }
      ],
-     "muted": true
+     "style": "signed"
     }
    ],
    "table": {
@@ -6092,18 +6039,13 @@
     "rows": [
      [
       "MoMo",
-      "Adyen, Antom, Ecommpay",
-      "3"
+      "Adyen, Antom, Ecommpay (integrated) · 2C2P, Nuvei, Unlimit, dLocal (signed)",
+      "7"
      ],
      [
       "ShopeePay",
       "dLocal, Xendit",
       "2"
-     ],
-     [
-      "MoMo (signed)",
-      "2C2P, dLocal, Nuvei, Unlimit",
-      "4"
      ],
      [
       "NAPAS domestic cards and VietQR (signed)",
