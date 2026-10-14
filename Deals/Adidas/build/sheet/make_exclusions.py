@@ -9,6 +9,7 @@ CODE2DIR = {'CYBERSOURCE_GTW': ['cybersource'], 'MERCADO_PAGO': ['mercadopago'],
 ex = {}
 def add(key, c, why): ex.setdefault(key, {})[c] = why
 for f in sorted(glob.glob(os.path.join(RD, 'result_*.json'))):
+    if os.path.basename(f) == 'result_F.json': continue   # different schema, handled below
     for r in json.load(open(f)):
         p = r['provider']; keys = CODE2DIR.get(p, [nk(p)])
         if os.path.basename(f) == 'result_E.json': keys = [nk(p)]
@@ -21,11 +22,13 @@ if os.path.exists(fF):
     F = json.load(open(fF))
     DISP2KEY = {'dlocal': 'dlocal', 'facfirstatlanticcommerce': 'fac', 'mercadopago': 'mercadopago', 'ppro': 'ppro', 'pagsmile': 'pagsmile', 'antom': 'antomalipay', 'morepayments': 'morepaymentsuniteller',
                 'placetopay': 'placetopay', 'elavon': 'elavon', 'paynet': 'paynet', 'btgpactual': 'btgpactual', 'banbajo': 'banbajio', 'bcimach': 'bcimach', 'evopayments': 'evopayments', 'pagarme': 'pagarme', 'astropay': 'astropay', 'ebanx': 'ebanx', '2c2p': '2c2p', 'safetypay': 'safetypay'}
+    KEEP_ANYWAY = {('2c2p', 'Myanmar'): 'German 14 Oct 2026: 2C2P live; y.uno/integrations lists Myanmar', ('applepay', 'Philippines'): 'Apple official list includes the Philippines'}
     for r in F.get('providers', []):
         k = nk(r['provider']); k = DISP2KEY.get(k, k)
-        for c in r.get('drop', []): add(k, c, f"Not a supported market per the provider's own coverage list | {r.get('evidence_url', '')}")
+        for c in r.get('drop', []):
+            if (k, c) not in KEEP_ANYWAY: add(k, c, f"Not a supported market per the provider's own coverage list | {r.get('evidence_url', '')}")
     for m in F.get('method_flags', []):
-        add(nk(m['method']), m['country'], f"{m.get('reason', 'Flagged in truth check')} | truth check 14 Oct 2026")
+        if (nk(m['method']), m['country']) not in KEEP_ANYWAY: add(nk(m['method']), m['country'], f"{m.get('reason', 'Flagged in truth check')} | truth check 14 Oct 2026")
 # not payment acceptance (research notes, batch E): Brinta is tax/e-invoicing; Nium coverage in these markets is payouts only; Pronto Paga Mexico is payouts only
 for c in ['Brazil', 'Chile', 'Colombia', 'Uruguay']: add('brinta', c, 'Tax and e-invoicing provider, not a payment processor | https://brinta.com')
 for c in ['Brazil', 'Malaysia']: add('nium', c, 'Payouts only in this market, no pay-in acquiring | https://www.nium.com')

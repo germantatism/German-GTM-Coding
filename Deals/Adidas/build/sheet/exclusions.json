@@ -830,6 +830,72 @@
   "Vietnam": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods",
   "Israel": "Not a supported market per the provider's own coverage list | https://docs.pockyt.io/reference/available-payment-methods"
  },
+ "ebanx": {
+  "Nicaragua": "Not a supported market per the provider's own coverage list | https://www.ebanx.com/en/latin-america/more-markets/"
+ },
+ "pagsmile": {
+  "Honduras": "Not a supported market per the provider's own coverage list | https://docs.pagsmile.com/payin/data/payment-method"
+ },
+ "payvalida": {
+  "Costa Rica": "Not a supported market per the provider's own coverage list | https://docs.payvalida.com/",
+  "Panama": "Not a supported market per the provider's own coverage list | https://docs.payvalida.com/"
+ },
+ "prontopaga": {
+  "Mexico": "Payouts only in this market | https://prontopaga.com"
+ },
+ "stcpay": {
+  "Argentina": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Brazil": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Colombia": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Indonesia": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Malaysia": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Mexico": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Peru": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Philippines": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Singapore": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Thailand": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026",
+  "Uruguay": "Saudi Arabian wallet (stc Bank); operates only in Saudi Arabia, Bahrain and Kuwait, not offered to consumers in this country. High confidence. | truth check 14 Oct 2026"
+ },
+ "dana": {
+  "Malaysia": "DANA is an Indonesia-only e-wallet; it does not operate in this country. High confidence. | truth check 14 Oct 2026",
+  "Singapore": "DANA is an Indonesia-only e-wallet; it does not operate in this country. High confidence. | truth check 14 Oct 2026",
+  "Thailand": "DANA is an Indonesia-only e-wallet; it does not operate in this country. High confidence. | truth check 14 Oct 2026"
+ },
+ "visacheckout": {
+  "Argentina": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026",
+  "Brazil": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026",
+  "Chile": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026",
+  "Colombia": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026",
+  "Mexico": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026",
+  "Peru": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026",
+  "Uruguay": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026",
+  "Malaysia": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026",
+  "Singapore": "Visa Checkout was retired in 2020-2021 and replaced by Click to Pay; listing a discontinued product. Medium-high confidence. | truth check 14 Oct 2026"
+ },
+ "khipu": {
+  "Mexico": "Khipu official docs: \"operating in Chile, Argentina, Peru, and soon in Mexico and Spain\" (docs.khipu.com); not live in Mexico. High confidence. | truth check 14 Oct 2026"
+ },
+ "edenred": {
+  "Thailand": "Edenred official 44-country presence list (edenred.com/en/group/our-international-presence) has no Thailand. High confidence. | truth check 14 Oct 2026"
+ },
+ "ticketedenred": {
+  "Thailand": "Same as Edenred: no Thailand on Edenred official presence list. High confidence. | truth check 14 Oct 2026"
+ },
+ "addi": {
+  "Brazil": "Addi wound down its Brazil operation in 2023 and is Colombia-only today. Medium confidence; verify before sending. | truth check 14 Oct 2026"
+ },
+ "comercialmexicana": {
+  "Mexico": "Retail brand retired (became La Comer in 2016; remaining stores sold to Soriana); cash network should read La Comer/Soriana. Medium confidence. | truth check 14 Oct 2026"
+ },
+ "superama": {
+  "Mexico": "Walmart Mexico rebranded Superama stores to Walmart Express in 2020-2021; brand no longer exists. Medium confidence. | truth check 14 Oct 2026"
+ },
+ "trustly": {
+  "Brazil": "Trustly publishes no Brazil coverage (Europe, US, Canada, Australia); likely not live for Brazilian consumers. Low confidence; verify. | truth check 14 Oct 2026"
+ },
+ "klarna": {
+  "Mexico": "Klarna does not operate in Mexico (appears only in Ecommpay MX table); likely not live for Mexican consumers. Low confidence; verify. | truth check 14 Oct 2026"
+ },
  "brinta": {
   "Brazil": "Tax and e-invoicing provider, not a payment processor | https://brinta.com",
   "Chile": "Tax and e-invoicing provider, not a payment processor | https://brinta.com",
@@ -839,9 +905,6 @@
  "nium": {
   "Brazil": "Payouts only in this market, no pay-in acquiring | https://www.nium.com",
   "Malaysia": "Payouts only in this market, no pay-in acquiring | https://www.nium.com"
- },
- "prontopaga": {
-  "Mexico": "Payouts only in this market | https://prontopaga.com"
  },
  "applepay": {
   "Bolivia": "Not on Apple Pay official availability list | https://support.apple.com/en-us/102775",
