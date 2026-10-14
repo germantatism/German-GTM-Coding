@@ -4,8 +4,8 @@ GAPS, SID = sys.argv[1], sys.argv[2]
 ORDER = ['Argentina', 'Brazil', 'Chile', 'Colombia', 'Mexico', 'Peru', 'Uruguay', 'Bolivia', 'Costa Rica', 'Dominican Republic', 'Ecuador', 'El Salvador', 'Guatemala',
          'Honduras', 'Nicaragua', 'Panama', 'Paraguay', 'Indonesia', 'Malaysia', 'Philippines', 'Singapore', 'Thailand', 'Vietnam', 'Myanmar', 'Israel']
 G = json.load(open(GAPS))
-H = ['Country', 'Region', 'Type', 'Category', 'Name', 'Why it matters', 'Market relevance', 'On Yuno today', 'Yuno entry', 'Action', 'Source']
-rows = [H] + [[r['country'], r['region'], r['type'], r['category'], r['name'], r['why'], r['relevance'], r['on'], r['entry'], r['action'], r['source']] for r in G]
+H = ['Country', 'Region', 'Type', 'Category', 'Name', 'Why it matters', 'Market relevance', 'Relevance /100 (estimate)', 'Published share or metric', 'On Yuno today', 'Yuno entry', 'Action', 'Source']
+rows = [H] + [[r['country'], r['region'], r['type'], r['category'], r['name'], r['why'], r['relevance'], r.get('score', ''), r.get('metric', ''), r['on'], r['entry'], r['action'], r['source']] for r in G]
 # summary tab
 S = [['Country', 'Region', 'Rows', 'Covered', 'Covered via provider', 'Confirm with Integrations', 'Gap: High', 'Gap: Medium', 'High-relevance gaps (not on Yuno)', 'Items to confirm']]
 for c in ORDER:
@@ -34,7 +34,7 @@ api.values().batchClear(spreadsheetId=SID, body={'ranges': [f"'{t}'" for t, _ in
 api.values().batchUpdate(spreadsheetId=SID, body={'valueInputOption': 'RAW', 'data': [{'range': f"'{t}'!A1", 'values': v} for t, v in TABS]}).execute()
 NAVY = {'red': 0x10 / 255, 'green': 0x28 / 255, 'blue': 0x4A / 255}; WHITE = {'red': 1, 'green': 1, 'blue': 1}
 thin = {'style': 'SOLID', 'width': 1, 'color': {'red': 0.8, 'green': 0.8, 'blue': 0.8}}
-W = {'Gaps by country': [130, 100, 110, 150, 210, 460, 90, 160, 320, 170, 260], 'Summary': [130, 100, 60, 70, 90, 100, 70, 80, 420, 420]}
+W = {'Gaps by country': [130, 100, 110, 150, 210, 420, 90, 90, 300, 160, 300, 170, 260], 'Summary': [130, 100, 60, 70, 90, 100, 70, 80, 420, 420]}
 fmt = []
 for t, v in TABS:
     sid = existing[t]; ncol = len(v[0]); nrow = len(v)

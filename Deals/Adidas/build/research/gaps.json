@@ -67,7 +67,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.forbesargentina.com/negocios/visa-compra-prisma-newpay-acelera-su-expansion-argentina-n86464",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 80,
+  "metric": "Fiserv and Prisma each ~half of acquiring (Ambito 2020); Payway kept independent after Visa bought Prisma (Feb 2026)"
  },
  {
   "country": "Argentina",
@@ -109,7 +111,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.forbesargentina.com/negocios/visa-compra-prisma-newpay-acelera-su-expansion-argentina-n86464",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "No public share; issuer-side processor (Visa-owned since 2026)"
  },
  {
   "country": "Argentina",
@@ -123,7 +127,9 @@
   "entry": "Processed through dLocal, Unlimit (Payments Concierge matrix)",
   "action": "Covered via provider (confirm routing)",
   "source": "https://www.bcra.gob.ar/archivos/Pdfs/PublicacionesEstadisticas/informes/informe_anual_pagos_minoristas_2025.pdf",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "14% of e-commerce (PPRO); push transfers 54.5% of retail payments by count, QR 841M tx (BCRA 2025)"
  },
  {
   "country": "Argentina",
@@ -165,7 +171,9 @@
   "entry": "americanexpress",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.ppro.com/countries/argentina/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "6% of card volume; cards 46% of e-commerce (PPRO)"
  },
  {
   "country": "Argentina",
@@ -179,7 +187,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.ambito.com/economia/billetera-digital/medios-pago-digitales-crece-la-competencia-y-se-acelera-el-lanzamiento-nuevos-productos-n5155100",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 35,
+  "metric": "No public share; named among leading bank wallets (Ambito)"
  },
  {
   "country": "Argentina",
@@ -193,7 +203,9 @@
   "entry": "dLocal carries MODO (processed-methods column); no standalone entry",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.modo.com.ar/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 40,
+  "metric": "No public user figure; wallet of 30+ banks"
  },
  {
   "country": "Argentina",
@@ -207,7 +219,9 @@
   "entry": "PayU, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.ppro.com/countries/argentina/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "Local schemes 5% of card spend; Naranja 10M+ cardholders (PPRO)"
  },
  {
   "country": "Argentina",
@@ -249,7 +263,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.ambito.com/economia/billetera-digital/medios-pago-digitales-crece-la-competencia-y-se-acelera-el-lanzamiento-nuevos-productos-n5155100",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "No public share; named among leading digital-payment players (Ambito)"
  },
  {
   "country": "Brazil",
@@ -403,7 +419,9 @@
   "entry": "dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.moneytimes.com.br/ipo-a-vista-elo-contrata-bancos-para-abertura-de-capital-nos-eua-dizem-fontes-igdl/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "Elo + Hipercard 13% of card spend (PPRO); 34M active cards, R$310.9bn in 2025; cards 40% of e-commerce (GPR 2026)"
  },
  {
   "country": "Brazil",
@@ -459,7 +477,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.dlocal.com/docs/brazil",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "Within the 13% local-scheme card share (PPRO)"
  },
  {
   "country": "Brazil",
@@ -711,7 +731,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.dlocal.com/docs/chile",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 40,
+  "metric": "Local/retailer schemes 44% of card spend; cards 53% of e-commerce (PPRO); no CMR-only figure"
  },
  {
   "country": "Chile",
@@ -753,7 +775,9 @@
   "entry": "EBANX carries Servipag; no standalone entry",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.ebanx.com/en/online-payment-methods/cash-voucher-payments/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 20,
+  "metric": "Cash 3% of e-commerce (PPRO); 16% of population are users (EBANX 2022)"
  },
  {
   "country": "Colombia",
@@ -893,7 +917,9 @@
   "entry": "dLocal carries Bre-B; no standalone entry",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.larepublica.co/finanzas/que-bancos-lideran-por-llaves-y-transacciones-en-el-primer-aniversario-de-bre-b-4498200",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 65,
+  "metric": "116M keys, 36M clients, COP 262T moved in year one (Oct 2026); no e-commerce share yet"
  },
  {
   "country": "Colombia",
@@ -963,7 +989,9 @@
   "entry": "Processed through Wompi (Payments Concierge matrix)",
   "action": "Covered via provider (confirm routing)",
   "source": "https://developers.payulatam.com/latam/en/docs/integrations/api-integration/payments-api-colombia.html",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "No public share"
  },
  {
   "country": "Colombia",
@@ -1019,7 +1047,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.mordorintelligence.com/industry-reports/mexico-pos-terminals-market",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 45,
+  "metric": "2M+ merchants, 4M daily tx (Mordor); aggregators run 78% of 6.3M terminals (Banxico); mostly in-person"
  },
  {
   "country": "Mexico",
@@ -1033,7 +1063,9 @@
   "entry": "conekta",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.conekta.com/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "8K+ merchants, 428M tx, USD 15B processed (company)"
  },
  {
   "country": "Mexico",
@@ -1243,7 +1275,9 @@
   "entry": "americanexpress",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.ppro.com/countries/mexico/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 20,
+  "metric": "3% of card volume; cards 56% of e-commerce (PPRO)"
  },
  {
   "country": "Mexico",
@@ -1271,7 +1305,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.ppro.com/countries/mexico/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 15,
+  "metric": "Carnet and other 2% of card volume (PPRO)"
  },
  {
   "country": "Mexico",
@@ -1299,7 +1335,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.dlocal.com/docs/mexico",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 20,
+  "metric": "No public share"
  },
  {
   "country": "Peru",
@@ -1369,7 +1407,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.culqi.com/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 35,
+  "metric": "No public volume; BCP-owned acquirer since 2024"
  },
  {
   "country": "Peru",
@@ -1439,7 +1479,9 @@
   "entry": "Bamboo, EBANX, Nuvei, SafetyPay, dLocal carry PagoEfectivo; no standalone entry",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.ebanx.com/en/online-payment-methods/cash-voucher-payments/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 50,
+  "metric": "Cash 10% of e-commerce (PPRO); 18% of payments (EBANX 2022)"
  },
  {
   "country": "Peru",
@@ -1453,7 +1495,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.peru-retail.com/desde-hoy-ya-puedes-transferir-dinero-entre-yape-y-plin-sin-costo-adicional/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "Yape-Plin network 1,300M tx in 2024 (Niubiz); no Plin-only share"
  },
  {
   "country": "Peru",
@@ -1481,7 +1525,9 @@
   "entry": "Processed through Monnet (Payments Concierge matrix)",
   "action": "Covered via provider (confirm routing)",
   "source": "https://docs.dlocal.com/docs/peru",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 45,
+  "metric": "Bank transfer 17% of e-commerce (PPRO)"
  },
  {
   "country": "Uruguay",
@@ -1537,7 +1583,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.montevideo.com.uy/Negocios-y-Tendencias/La-nueva-competencia-por-procesar-las-ventas-de-los-comercios-uruguayos-uc817940",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 70,
+  "metric": "~30,000 merchants; 56% of Resonance (2022); credit cards 61-74% of online purchases"
  },
  {
   "country": "Uruguay",
@@ -1551,7 +1599,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.bamboopayment.com/docs/uy-gateway-cash",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "No public volume"
  },
  {
   "country": "Uruguay",
@@ -1565,7 +1615,9 @@
   "entry": "Ebanx (Provider) listed for Dominican Republic, Ghana, Guatemala, India, Kenya, Mexico, Nicaragua, Panama…",
   "action": "Confirm with Integrations",
   "source": "https://www.ebanx.com/en/latin-america/more-markets/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 20,
+  "metric": "Cards only for Uruguay (EBANX coverage page)"
  },
  {
   "country": "Uruguay",
@@ -1593,7 +1645,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.montevideo.com.uy/Negocios-y-Tendencias/La-nueva-competencia-por-procesar-las-ventas-de-los-comercios-uruguayos-uc817940",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "No public share since multi-acquiring opened (2022)"
  },
  {
   "country": "Uruguay",
@@ -1621,7 +1675,9 @@
   "entry": "dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://docs.dlocal.com/docs/uruguay",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 60,
+  "metric": "No public share; domestic brand not reachable via cross-border acquiring"
  },
  {
   "country": "Uruguay",
@@ -1635,7 +1691,9 @@
   "entry": "Bamboo, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://docs.bamboopayment.com/docs/uy-gateway-cash",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 25,
+  "metric": "Cash 4% of e-commerce (dLocal)"
  },
  {
   "country": "Uruguay",
@@ -1649,7 +1707,9 @@
   "entry": "dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://dlocal.com/payment-processors-in-latin-america/uruguay-payment-methods-processors-e-commerce-market-dlocal/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 40,
+  "metric": "Bank transfer 10% of e-commerce (dLocal)"
  },
  {
   "country": "Uruguay",
@@ -1677,7 +1737,9 @@
   "entry": "Bamboo, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://docs.bamboopayment.com/docs/uy-gateway-cash",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 25,
+  "metric": "Cash 4% of e-commerce (dLocal); 450+ locations"
  },
  {
   "country": "Bolivia",
@@ -1691,7 +1753,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.redenlace.com.bo/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 70,
+  "metric": "No public share; largest electronic payments network (ASFI-supervised)"
  },
  {
   "country": "Bolivia",
@@ -1719,7 +1783,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.linkser.com.bo/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "No public share; second card acquirer"
  },
  {
   "country": "Bolivia",
@@ -1775,7 +1841,9 @@
   "entry": "Local Payment is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.lostiempos.com/actualidad/economia/20260614/banco-central-bolivia-resalta-uso-del-qr-28-veces-segundo-pais",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 85,
+  "metric": "QR 36% of payments vs cash 64%; 892M ops in 2025 (BCB); 94% of interbank e-transfer orders (Asoban)"
  },
  {
   "country": "Bolivia",
@@ -1803,7 +1871,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://eju.tv/?p=3473550",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 30,
+  "metric": "1M+ users (May 2023)"
  },
  {
   "country": "Bolivia",
@@ -1817,7 +1887,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.spreedly.com/blog/perus-payments-revolution-yape",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "1M users in first month (Spreedly)"
  },
  {
   "country": "Costa Rica",
@@ -1859,7 +1931,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://tilopay.com/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "65K+ businesses, 47 partner banks (company)"
  },
  {
   "country": "Costa Rica",
@@ -1873,7 +1947,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.nacion.com/economia/quien-manda-en-sinpe-movil-asi-se-reparten-el/BTKQR4EEVBG6JA3ZBPFQERN3GU/story/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 40,
+  "metric": "Among 3 banks with ~80% of SINPE Movil tx (BCCR); no acquiring share"
  },
  {
   "country": "Costa Rica",
@@ -1943,7 +2019,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://semanariouniversidad.com/?p=385712",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 75,
+  "metric": "4.52M subscribers, 747.5M tx, CRC 12.53T in 2025 (BCCR); no e-commerce share yet"
  },
  {
   "country": "Costa Rica",
@@ -1971,7 +2049,9 @@
   "entry": "Local Payment, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://docs.dlocal.com/docs/costa-rica.md",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "No public e-commerce share"
  },
  {
   "country": "Dominican Republic",
@@ -2041,7 +2121,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.pagadito.com/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "10,000+ merchants across 13 countries (company)"
  },
  {
   "country": "Dominican Republic",
@@ -2055,7 +2137,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://eldinero.com.do/15645/pagos-con-tarjetas-de-credito-y-debito-en-republica-dominicana/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "No recent public figures; third local acquirer"
  },
  {
   "country": "Dominican Republic",
@@ -2097,7 +2181,9 @@
   "entry": "Inswitch carries Banreservas; no standalone entry",
   "action": "Confirm with Integrations",
   "source": "http://www.ecommerce.com.do/medios-de-pago-en-republica-dominicana/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "Bank transfers 4% of e-commerce (PCMI 2025)"
  },
  {
   "country": "Dominican Republic",
@@ -2111,7 +2197,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://revistamercado.do/money-invest/daily-news/como-cambio-la-forma-de-pagar-en-rd-y-que-opciones-tienes-actualmente/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "43.3M ops in 2025 (BCRD); bank transfers 4% of e-commerce (PCMI 2025)"
  },
  {
   "country": "Dominican Republic",
@@ -2125,7 +2213,9 @@
   "entry": "Processed through PayPal (Payments Concierge matrix)",
   "action": "Covered via provider (confirm routing)",
   "source": "https://paymentscmi.com/insights/dominican-republic-e-commerce-market/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "58% of wallet volume; wallets 7% of e-commerce (PCMI 2025)"
  },
  {
   "country": "Dominican Republic",
@@ -2139,7 +2229,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://paymentscmi.com/insights/dominican-republic-e-commerce-market/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 25,
+  "metric": "40% of wallet volume; wallets 7% of e-commerce (PCMI 2025)"
  },
  {
   "country": "Ecuador",
@@ -2279,7 +2371,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.descubre.vc/noticia/payphone-ampl-a-su-cartera-de-tarjetas-para-pagos-m-viles-en-ecuador-2025-07-02",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "600K active users, 50K+ merchants (Jul 2025)"
  },
  {
   "country": "Ecuador",
@@ -2293,7 +2387,9 @@
   "entry": "Processed through Monnet (Payments Concierge matrix)",
   "action": "Covered via provider (confirm routing)",
   "source": "https://www.nuvei.com/event/regions/latin-america",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 35,
+  "metric": "No public share; transfers common but unmeasured (CECE 2024)"
  },
  {
   "country": "Ecuador",
@@ -2307,7 +2403,9 @@
   "entry": "Processed through dLocal, Paymentez (Kushki), SafetyPay, Unlimit (Payments Concierge matrix)",
   "action": "Covered via provider (confirm routing)",
   "source": "https://docs.dlocal.com/docs/ecuador.md",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 25,
+  "metric": "No public share"
  },
  {
   "country": "El Salvador",
@@ -2349,7 +2447,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.pagadito.com/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 45,
+  "metric": "10,000+ merchants across 13 countries (company); HQ in El Salvador"
  },
  {
   "country": "El Salvador",
@@ -2363,7 +2463,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://diario.elmundo.sv/economia/mas-de-10000-negocios-usan-la-pasarela-de-pagos-de-n1co",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "10,000+ businesses; 1M monthly tx (Jun 2023)"
  },
  {
   "country": "El Salvador",
@@ -2377,7 +2479,9 @@
   "entry": "PayU (Provider) listed for Brazil, Colombia, Peru, Mexico, Argentina, Chile, South Africa, Nigeria…",
   "action": "Confirm with Integrations",
   "source": "https://thepaypers.com/online-payments/payu-announces-central-america-expansion--1259508",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 25,
+  "metric": "No volume figure; cards only (2022 expansion)"
  },
  {
   "country": "El Salvador",
@@ -2391,7 +2495,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.revistaeyn.com/finanzas/serfinsa-busca-masificar-el-uso-de-pagos-por-qr-en-el-salvador-EX8918464",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "25,000+ payment points, 24M+ tx/yr (2022)"
  },
  {
   "country": "El Salvador",
@@ -2405,7 +2511,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://tilopay.com/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 35,
+  "metric": "65K+ merchants regionally (company)"
  },
  {
   "country": "El Salvador",
@@ -2447,7 +2555,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://diario.elmundo.sv/economia/el-88-de-las-transferencias-interbancarias-son-canalizadas-por-transfer365",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 65,
+  "metric": "88.7% of interbank transfers; 68M+ cumulative ops (BCR, Jan 2025); no e-commerce share"
  },
  {
   "country": "El Salvador",
@@ -2461,7 +2571,9 @@
   "entry": "dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://docs.dlocal.com/docs/el-salvador.md",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 20,
+  "metric": "No public share"
  },
  {
   "country": "El Salvador",
@@ -2489,7 +2601,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://ayuda.tigo.com.sv/hc/centro-de-ayuda/es/categories/tigo-money",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "No public share"
  },
  {
   "country": "Guatemala",
@@ -2531,7 +2645,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.neonet.com.gt/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 75,
+  "metric": "'Principal empresa de medios de pago locales' (ICEX 2025); 11 partner banks; credit cards 63% of e-commerce (PCMI 2024)"
  },
  {
   "country": "Guatemala",
@@ -2559,7 +2675,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.pagadito.com/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "10,000+ merchants across 13 countries (company)"
  },
  {
   "country": "Guatemala",
@@ -2573,7 +2691,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.icex.es/content/dam/icex/centros/guatemala/documentos/2025/resumen-ejecutivo-informe-e-pais-guatemala-2025.pdf",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "No public volume"
  },
  {
   "country": "Guatemala",
@@ -2587,7 +2707,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.icex.es/content/dam/icex/centros/guatemala/documentos/2025/resumen-ejecutivo-informe-e-pais-guatemala-2025.pdf",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 35,
+  "metric": "No public volume; 'gained relevance 2024-2025' (ICEX)"
  },
  {
   "country": "Guatemala",
@@ -2601,7 +2723,9 @@
   "entry": "Monnet (bank transfer, QR, wallet); no standalone entry",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.icex.es/content/dam/icex/centros/guatemala/documentos/2025/resumen-ejecutivo-informe-e-pais-guatemala-2025.pdf",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "18% of e-commerce, second after credit cards (PCMI 2024 via ICEX)"
  },
  {
   "country": "Guatemala",
@@ -2643,7 +2767,9 @@
   "entry": "Local Payment, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://docs.localpayment.com/docs/qr-fri-guatemala.md",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 20,
+  "metric": "Wallets 3% of e-commerce (PCMI 2024)"
  },
  {
   "country": "Guatemala",
@@ -2671,7 +2797,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://ml-eu.globenewswire.com/Resource/Download/df34344e-1a45-4922-8749-c439438bb51a",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 20,
+  "metric": "Wallets 3% of e-commerce (PCMI 2024)"
  },
  {
   "country": "Honduras",
@@ -2713,7 +2841,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://diario.elmundo.sv/economia/mas-de-10000-negocios-usan-la-pasarela-de-pagos-de-n1co",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "10,000+ businesses across 3 countries (Jun 2023)"
  },
  {
   "country": "Honduras",
@@ -2727,7 +2857,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.pagadito.com/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "10,000+ merchants across 13 countries (company)"
  },
  {
   "country": "Honduras",
@@ -2741,7 +2873,9 @@
   "entry": "PayU (Provider) listed for Brazil, Colombia, Peru, Mexico, Argentina, Chile, South Africa, Nigeria…",
   "action": "Confirm with Integrations",
   "source": "https://thepaypers.com/online-payments/payu-announces-central-america-expansion--1259508",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 25,
+  "metric": "No volume figure; cards only (2022 expansion)"
  },
  {
   "country": "Honduras",
@@ -2755,7 +2889,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://tilopay.com/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 35,
+  "metric": "65K+ merchants regionally (company)"
  },
  {
   "country": "Honduras",
@@ -2783,7 +2919,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.laprensa.hn/economia/dineroynegocios/crece-uso-de-la-banca-electronica-y-su-regulacion-KSLP979223",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 50,
+  "metric": "1M+ users, ~2M tx/month (2016); no recent figure"
  },
  {
   "country": "Honduras",
@@ -2797,7 +2935,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.localpayment.com/docs/honduras.md",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "No public share"
  },
  {
   "country": "Honduras",
@@ -2825,7 +2965,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.bcr.gob.sv/2023/07/18/bcr-une-fronteras-interbancarias-con-su-nuevo-servicio-transfer365-ca-rd/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 20,
+  "metric": "6 Honduran banks affiliated (BCR)"
  },
  {
   "country": "Nicaragua",
@@ -2867,7 +3009,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.pagadito.com/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "10,000+ merchants across 13 countries (company)"
  },
  {
   "country": "Nicaragua",
@@ -2881,7 +3025,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://tilopay.com/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "65K+ merchants regionally (company)"
  },
  {
   "country": "Nicaragua",
@@ -2895,7 +3041,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.revistaeyn.com/finanzas/tarjetas-de-pago-en-circulacion-en-nicaragua-se-incrementaron-un-167-en-2025-PJ29316081",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 45,
+  "metric": "892,834 wallet users all brands (BCN Q4 2025); no brand split"
  },
  {
   "country": "Nicaragua",
@@ -2965,7 +3113,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.paguelofacil.com/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 55,
+  "metric": "No public volume; licensed e-money issuer (SBP 2025)"
  },
  {
   "country": "Panama",
@@ -2979,7 +3129,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.telered.com.pa/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 65,
+  "metric": "National switch: Clave debit network, ACH Directo, ACH Xpress; no public share"
  },
  {
   "country": "Panama",
@@ -3007,7 +3159,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://decisionespanama.com/llega-a-panama-un-nuevo-ecosistema-de-pagos-digitales-para-negocios/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 35,
+  "metric": "1,200 Panamanian businesses (Apr 2025)"
  },
  {
   "country": "Panama",
@@ -3035,7 +3189,9 @@
   "entry": "Nuvei, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://pymnts.com/?p=907867",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 60,
+  "metric": "'Among the primary payment methods in Panama' (dLocal 2020); no public share"
  },
  {
   "country": "Panama",
@@ -3063,7 +3219,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.telered.com.pa/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 35,
+  "metric": "No public share"
  },
  {
   "country": "Panama",
@@ -3077,7 +3235,9 @@
   "entry": "dLocal carries Nequi in Panama; no standalone entry",
   "action": "Confirm with Integrations",
   "source": "https://www.icex.es/content/dam/icex/centros/panama/documentos/2024/informe-epais-comercio-electronico-panama-2024-resumen-ejecutivo.pdf",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 30,
+  "metric": "No public share; 'ganando terreno' (ICEX 2024)"
  },
  {
   "country": "Panama",
@@ -3105,7 +3265,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.prensa.com/economia/yappy-nequi-zinli-y-ahora-kuara-compiten-en-el-mercado-de-los-pagos-digitales-en-panama/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "2.5M downloads, 10M tx/yr (May 2024)"
  },
  {
   "country": "Paraguay",
@@ -3147,7 +3309,9 @@
   "entry": "Ebanx (Provider) listed for Dominican Republic, Ghana, Guatemala, India, Kenya, Mexico, Nicaragua, Panama…",
   "action": "Confirm with Integrations",
   "source": "https://www.ebanx.com/en/latin-america/more-markets/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 20,
+  "metric": "Cards only for Paraguay (EBANX coverage page)"
  },
  {
   "country": "Paraguay",
@@ -3161,7 +3325,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.procard.com.py/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "30,000+ merchants, 90+ member entities (company)"
  },
  {
   "country": "Paraguay",
@@ -3189,7 +3355,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.lanacion.com.py/negocios/2026/03/16/bcp-libera-funciones-para-transferir-dinero-via-qr-y-nfc/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 70,
+  "metric": "180M+ tx in 2025; 25M in Aug 2026 (+53% YoY) (Bancard)"
  },
  {
   "country": "Paraguay",
@@ -3203,7 +3371,9 @@
   "entry": "dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://infonegocios.com.py/y-ademas/el-futuro-es-qr-tigo-money-y-bancard-se-unen-para-revolucionar-el-mercado-paraguayo",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "1M+ monthly users; 60-65% of e-money (Apr 2024)"
  },
  {
   "country": "Paraguay",
@@ -3217,7 +3387,9 @@
   "entry": "dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://docs.dlocal.com/docs/paraguay.md",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "100,000+ merchants on Bancard network; no e-commerce cash share"
  },
  {
   "country": "Paraguay",
@@ -3231,7 +3403,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.dlocal.com/docs/paraguay",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "No public share"
  },
  {
   "country": "Paraguay",
@@ -3245,7 +3419,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.dlocal.com/docs/paraguay",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 20,
+  "metric": "No public share"
  },
  {
   "country": "Paraguay",
@@ -3259,7 +3435,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.lanacion.com.py/negocios/2025/11/28/auge-de-las-transferencias-el-uso-del-alias-se-multiplico-por-8/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 45,
+  "metric": "~379M ops projected 2025; alias transfers 58.1M to Oct 2025 (BCP)"
  },
  {
   "country": "Paraguay",
@@ -3273,7 +3451,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.dlocal.com/docs/paraguay",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 20,
+  "metric": "No public share"
  },
  {
   "country": "Paraguay",
@@ -3287,7 +3467,9 @@
   "entry": "dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.zimple.com.py/app/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 25,
+  "metric": "29,000+ merchants (Bancard); no user figure"
  },
  {
   "country": "Indonesia",
@@ -3329,7 +3511,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://pustaka.bca.co.id/bisnis/produk/penerimaan-bisnis/e-commerce-acquiring-riplay-en-20260403.pdf",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 65,
+  "metric": "23% of payments industry (Bank Indonesia via Kompas 2020); no current acquiring share"
  },
  {
   "country": "Indonesia",
@@ -3371,7 +3555,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://go.kompas.com/read/2020/11/10/190538174/ovo-leads-indonesias-e-money-sector-as-digital-payment-skyrockets",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 50,
+  "metric": "16% of payments industry (Bank Indonesia via Kompas 2020)"
  },
  {
   "country": "Indonesia",
@@ -3413,7 +3599,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://paymentbrief.com/markets/indonesia/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "No public share"
  },
  {
   "country": "Indonesia",
@@ -3427,7 +3615,9 @@
   "entry": "Processed through dLocal, Xendit (Payments Concierge matrix)",
   "action": "Covered via provider (confirm routing)",
   "source": "https://www.ppro.com/countries/indonesia/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 85,
+  "metric": "Bank transfer 27% of e-commerce value (PPRO)"
  },
  {
   "country": "Indonesia",
@@ -3469,7 +3659,9 @@
   "entry": "2C2P, Adyen, Antom, Boku, Midtrans is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://finansial.bisnis.com/read/20260227/563/1956444/survei-persaingan-ketat-shopeepay-dana-gopay-ovo",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 75,
+  "metric": "67% used in past 3 months (Ipsos Feb 2026); 10% of e-commerce (PPRO); wallets 39%"
  },
  {
   "country": "Indonesia",
@@ -3525,7 +3717,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://2c2p.com/articles/indonesia-payment-methods/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "No public e-commerce share"
  },
  {
   "country": "Indonesia",
@@ -3539,7 +3733,9 @@
   "entry": "Antom, Doku, Midtrans, PPRO is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.businesswire.com/news/home/20250221857016/en",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 45,
+  "metric": "BNPL market US$8.59bn in 2025 (ResearchAndMarkets)"
  },
  {
   "country": "Indonesia",
@@ -3553,7 +3749,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://docs.dlocal.com/docs/indonesia",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "No public share"
  },
  {
   "country": "Indonesia",
@@ -3595,7 +3793,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://hitpayapp.com/blog/malaysia-payment-gateway-comparison",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 50,
+  "metric": "No public share; 37+ channels (HitPay comparison)"
  },
  {
   "country": "Malaysia",
@@ -3609,7 +3809,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.globaldata.com/store/report/malaysia-cards-and-payments-market-analysis/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "Largest bank, first key player (GlobalData 2026); no acquiring share"
  },
  {
   "country": "Malaysia",
@@ -3623,7 +3825,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.razer.com/newsroom/company-news/razer-merchant-services-the-first-online-acquirer-in-malaysia-to-enable-acceptance-of-discover-global-network-at-e-commmerce-merchants",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "US$7bn TPV FY2021 (Razer Fintech); 110+ methods"
  },
  {
   "country": "Malaysia",
@@ -3665,7 +3869,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.globaldata.com/store/report/malaysia-cards-and-payments-market-analysis/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "Key player (GlobalData 2026); no acquiring share"
  },
  {
   "country": "Malaysia",
@@ -3679,7 +3885,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://hitpayapp.com/blog/malaysia-payment-gateway-comparison",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "No public share; 100+ channels"
  },
  {
   "country": "Malaysia",
@@ -3693,7 +3901,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.globaldata.com/store/report/malaysia-cards-and-payments-market-analysis/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "Key player (GlobalData 2026); no acquiring share"
  },
  {
   "country": "Malaysia",
@@ -3721,7 +3931,9 @@
   "entry": "Adyen, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://fintechnews.my/58266/payments-remittance-malaysia/qr-payments-malaysia/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 75,
+  "metric": "3bn QR tx in 2025 (BNM); 3M+ touchpoints (PayNet); bank transfer 37% of e-commerce (PPRO)"
  },
  {
   "country": "Malaysia",
@@ -3749,7 +3961,9 @@
   "entry": "Processed through dLocal, Xendit (Payments Concierge matrix)",
   "action": "Covered via provider (confirm routing)",
   "source": "https://malaymail.com/news/malaysia/2025/12/02/three-in-five-malaysians-now-use-digital-payments-ipsos-study-finds/200476",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 80,
+  "metric": "78% of e-wallet users (Ipsos Dec 2025); wallets 26% of e-commerce (GPR 2026)"
  },
  {
   "country": "Malaysia",
@@ -3777,7 +3991,9 @@
   "entry": "Adyen is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.adyen.com/payment-methods/atome",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 30,
+  "metric": "No public share"
  },
  {
   "country": "Malaysia",
@@ -3847,7 +4063,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://bdo.com.ph/node/12873",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 65,
+  "metric": "Self-described largest card acquirer; first key player (GlobalData 2025); cards 30% of e-commerce"
  },
  {
   "country": "Philippines",
@@ -3875,7 +4093,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.paymongo.com/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 55,
+  "metric": "350K+ businesses, US$18bn+ (company)"
  },
  {
   "country": "Philippines",
@@ -3917,7 +4137,9 @@
   "entry": "Xendit carries Direct debit; no bank-level entry",
   "action": "Confirm with Integrations",
   "source": "https://www.bpi.com.ph/about-bpi/bpi-and-robinsons-bank-merger/faqs/merchant-acquiring",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 40,
+  "metric": "No public acquiring share"
  },
  {
   "country": "Philippines",
@@ -3945,7 +4167,9 @@
   "entry": "Adyen, PPRO is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.airwallex.com/docs/payments/payment-methods/apac",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 35,
+  "metric": "No public share"
  },
  {
   "country": "Philippines",
@@ -4001,7 +4225,9 @@
   "entry": "Xendit carries 7-Eleven; no standalone entry",
   "action": "Confirm with Integrations",
   "source": "https://www.ppro.com/countries/philippines/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "Cash 15% of e-commerce value (PPRO)"
  },
  {
   "country": "Philippines",
@@ -4015,7 +4241,9 @@
   "entry": "Maya, Xendit, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://mb.com.ph/2026/08/17/digital-payments-hit-647-of-philippine-retail-transactions-nearing-bsps-70-target",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 65,
+  "metric": "2.47bn QR Ph tx in 2025, above card tx (BSP); A2A 13% of e-commerce (GPR 2026)"
  },
  {
   "country": "Philippines",
@@ -4029,7 +4257,9 @@
   "entry": "Antom is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.businesswire.com/news/home/20250312094336/en/Philippines-Buy-Now-Pay-Later-Business-Report-2025-Featuring-BillEase-TendoPay-Cashalo-PayLater-Akulaku-UnaPay-Plentina-Atome-ShopBack-PayLater-Grab-PayLater---ResearchAndMarkets.com",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 35,
+  "metric": "BNPL market US$3.21bn in 2025 (ResearchAndMarkets)"
  },
  {
   "country": "Philippines",
@@ -4099,7 +4329,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.dbs.com.sg/corporate/solutions/cash-management/credit-card-acceptance-for-e-commerce-businesses",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 60,
+  "metric": "Largest local bank; Visa-listed acquirer; no acquiring share"
  },
  {
   "country": "Singapore",
@@ -4141,7 +4373,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://hitpayapp.com/blog/paynow-payment-gateway-singapore",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "SME gateway; no public share"
  },
  {
   "country": "Singapore",
@@ -4155,7 +4389,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.visa.com.sg/run-your-business/accept-visa-payments/acquirers.html",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 40,
+  "metric": "Domestic debit network; no public share"
  },
  {
   "country": "Singapore",
@@ -4169,7 +4405,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.visa.com.sg/run-your-business/accept-visa-payments/acquirers.html",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "Visa-listed acquirer; no acquiring share"
  },
  {
   "country": "Singapore",
@@ -4183,7 +4421,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.visa.com.sg/run-your-business/accept-visa-payments/acquirers.html",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 45,
+  "metric": "Visa-listed acquirer; no acquiring share"
  },
  {
   "country": "Singapore",
@@ -4239,7 +4479,9 @@
   "entry": "paynow",
   "action": "Covered (connection built; not on public directory)",
   "source": "https://www.crowdfundinsider.com/2026/06/287873-singapores-paynow-system-set-for-significant-enhancements-following-mas-and-abs-review/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 65,
+  "metric": "~11M registrations, SGD 154bn consumer payments in 2025 (MAS/ABS); A2A 13% of e-commerce (GPR 2026)"
  },
  {
   "country": "Singapore",
@@ -4267,7 +4509,9 @@
   "entry": "Adyen, Airwallex is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.adyen.com/payment-methods/atome",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 35,
+  "metric": "No public share"
  },
  {
   "country": "Singapore",
@@ -4281,7 +4525,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://2c2p.com/articles/singapore-payment-methods/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 45,
+  "metric": "26% top wallet for online shopping (Fintech News 2025); wallets 40% of e-commerce (GPR 2026)"
  },
  {
   "country": "Singapore",
@@ -4295,7 +4541,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.adyen.com/payment-methods-guides/asia-pacific/singapore",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "No public e-commerce share"
  },
  {
   "country": "Singapore",
@@ -4351,7 +4599,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.adyen.com/en_SG/payment-methods/online-banking-thailand",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "Top-5 bank; key player (GlobalData 2025); no acquiring share"
  },
  {
   "country": "Thailand",
@@ -4365,7 +4615,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.omise.co/en/newsroom",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "No public share; leading domestic gateway"
  },
  {
   "country": "Thailand",
@@ -4393,7 +4645,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.adyen.com/en_SG/payment-methods/online-banking-thailand",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "Top-5 bank; no acquiring share"
  },
  {
   "country": "Thailand",
@@ -4407,7 +4661,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.krungsri.com/en/business/cash-management/collection/merchant/krungsri-epayment",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "No acquiring share"
  },
  {
   "country": "Thailand",
@@ -4421,7 +4677,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.adyen.com/en_SG/payment-methods/online-banking-thailand",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 45,
+  "metric": "Top-5 bank; no acquiring share"
  },
  {
   "country": "Thailand",
@@ -4463,7 +4721,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://docs.dlocal.com/docs/thailand",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 50,
+  "metric": "No public share; 'strong in e-commerce' (PaymentBrief)"
  },
  {
   "country": "Thailand",
@@ -4477,7 +4737,9 @@
   "entry": "2C2P, Adyen, Antom, Worldpay, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.ppro.com/countries/thailand/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 80,
+  "metric": "Bank transfer 42% of e-commerce value, top method (PPRO)"
  },
  {
   "country": "Thailand",
@@ -4505,7 +4767,9 @@
   "entry": "2C2P, Antom, Worldpay, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.airwallex.com/docs/payments/payment-methods/apac/rabbit-line-pay",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "Top-2 wallet (Airwallex); wallets 25% of e-commerce (PPRO)"
  },
  {
   "country": "Thailand",
@@ -4547,7 +4811,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.businesswire.com/news/home/20250221411775/en/Thailand-Buy-Now-Pay-Later-Business-Report-2025-2030-Atome-K-PAY-LATER-SpayLater-and-Pay-Next-Dominate-the-$6.6-Billion-Market-Driving-Competition-with-Diverse-Installment-based-Payment-Options---ResearchAndMarkets.com",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 35,
+  "metric": "BNPL market US$3.94bn in 2025 (ResearchAndMarkets)"
  },
  {
   "country": "Thailand",
@@ -4561,7 +4827,9 @@
   "entry": "2C2P is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.adyen.com/payment-methods-guides/asia-pacific/thailand",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 50,
+  "metric": "35% of online purchases paid via COD or convenience stores (Adyen); cash 10% of e-commerce (PPRO)"
  },
  {
   "country": "Thailand",
@@ -4575,7 +4843,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://paymentbrief.com/markets/thailand",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 35,
+  "metric": "No public share"
  },
  {
   "country": "Thailand",
@@ -4603,7 +4873,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://en.napas.com.vn/napas-payment-gateway-service",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 85,
+  "metric": "Local schemes 87% of card mix (PPRO); 40 member banks"
  },
  {
   "country": "Vietnam",
@@ -4617,7 +4889,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://en.vietstock.vn/2024/08/e-wallet-players-look-to-take-hold-of-market-gaps-37-577397.htm",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "350K+ acceptance points (Vietstock 2024); 16% wallet share (Decision Lab 2023)"
  },
  {
   "country": "Vietnam",
@@ -4645,7 +4919,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.malaymail.com/news/money/mediaoutreach/2025/06/09/visa-introduces-click-to-pay-with-leading-banks-and-payment-facilitators-in-vietnam-transforming-the-online-shopping-experience/387550",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "No public share"
  },
  {
   "country": "Vietnam",
@@ -4687,7 +4963,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://paymentbrief.com/markets/vietnam/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 25,
+  "metric": "No public share"
  },
  {
   "country": "Vietnam",
@@ -4701,7 +4979,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://paymentbrief.com/markets/vietnam/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "No public share"
  },
  {
   "country": "Vietnam",
@@ -4715,7 +4995,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.malaymail.com/news/money/mediaoutreach/2025/06/09/visa-introduces-click-to-pay-with-leading-banks-and-payment-facilitators-in-vietnam-transforming-the-online-shopping-experience/387550",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 30,
+  "metric": "No public share"
  },
  {
   "country": "Vietnam",
@@ -4729,7 +5011,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://en.napas.com.vn/napas-2025-member-organization-conference-184260317124736875.htm",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "Key player (GlobalData); no acquiring share"
  },
  {
   "country": "Vietnam",
@@ -4743,7 +5027,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.globaldata.com/store/report/vietnam-cards-and-payments-market-analysis/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "Key player (GlobalData); no acquiring share"
  },
  {
   "country": "Vietnam",
@@ -4785,7 +5071,9 @@
   "entry": "Adyen, Antom, PPRO, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://en.vietstock.vn/2024/08/e-wallet-players-look-to-take-hold-of-market-gaps-37-577397.htm",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 85,
+  "metric": "68% wallet share (Decision Lab 2023); 40M+ active users claimed (2025); wallets 31% of e-commerce (PPRO)"
  },
  {
   "country": "Vietnam",
@@ -4799,7 +5087,9 @@
   "entry": "PPRO, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.ppro.com/countries/vietnam/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 80,
+  "metric": "87% of card mix; cards 27% of e-commerce (PPRO)"
  },
  {
   "country": "Vietnam",
@@ -4813,7 +5103,9 @@
   "entry": "dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://en.napas.com.vn/napas-2025-member-organization-conference-184260317124736875.htm",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 75,
+  "metric": "Bank transfer 21% of e-commerce (PPRO); VietQR +52% volume Jan-Oct 2025 (NAPAS)"
  },
  {
   "country": "Vietnam",
@@ -4827,7 +5119,9 @@
   "entry": "Antom, PPRO is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://digitalinasia.com/momo-vs-zalopay/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "53% wallet share (Decision Lab 2023); 20M active users mid-2025 (VNG)"
  },
  {
   "country": "Vietnam",
@@ -4841,7 +5135,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.businesswire.com/news/home/20250221652599/en/Vietnam-Buy-Now-Pay-Later-Business-Report-2025-An-8.5-Billion-Market-by-2030-with-Fundiin-MoMo-Atome-and-Kredivo-Leading-by-Leveraging-Strategic-Partnerships-and-Innovative-Product-Offerings---ResearchAndMarkets.com",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 25,
+  "metric": "Market projected US$8.5bn by 2030 (ResearchAndMarkets); no provider shares"
  },
  {
   "country": "Vietnam",
@@ -4869,7 +5165,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://2c2p.com/articles/vietnam-payment-methods/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 40,
+  "metric": "27% of wallet users (Decision Lab Q3 2024)"
  },
  {
   "country": "Myanmar",
@@ -4897,7 +5195,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://fintechnews.sg/79622/myanmar/banking-the-unbanked-kbzpay-and-financial-inclusion/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 70,
+  "metric": "Largest private bank; ~910,000 merchants on KBZPay (Fintech News 2023)"
  },
  {
   "country": "Myanmar",
@@ -4911,7 +5211,9 @@
   "entry": "2C2P is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.mpu.com.mm/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 60,
+  "metric": "600+ e-commerce merchants, 905K+ registered e-commerce members (MPU)"
  },
  {
   "country": "Myanmar",
@@ -4925,7 +5227,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://thefintechtimes.com/?p=133703",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "~80% of mobile financial services market (GSMA, dated); 60,000 agents"
  },
  {
   "country": "Myanmar",
@@ -4939,7 +5243,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://thefintechtimes.com/?p=133703",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 30,
+  "metric": "No public figures"
  },
  {
   "country": "Myanmar",
@@ -4953,7 +5259,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://thefintechtimes.com/?p=133703",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 30,
+  "metric": "No public figures"
  },
  {
   "country": "Myanmar",
@@ -4967,7 +5275,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://e.huawei.com/it/case-studies/industries/finance/kbzpay",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 85,
+  "metric": "22M+ users, ~60% of adults, 3.8bn tx in 2025 (Huawei, vendor-reported); 19M active (Fintech News)"
  },
  {
   "country": "Myanmar",
@@ -4981,7 +5291,9 @@
   "entry": "2C2P is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://www.mpu.com.mm/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 60,
+  "metric": "Domestic scheme; 905K+ e-commerce members (MPU)"
  },
  {
   "country": "Myanmar",
@@ -4995,7 +5307,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://thefintechtimes.com/?p=133703",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 55,
+  "metric": "~80% of MFS market (GSMA, dated); 200,000+ merchants"
  },
  {
   "country": "Myanmar",
@@ -5009,7 +5323,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://thefintechtimes.com/?p=133703",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "No public figures"
  },
  {
   "country": "Myanmar",
@@ -5037,7 +5353,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://en.wikipedia.org/wiki/MyanmarPay",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "National QR standard since 2025; no volume published"
  },
  {
   "country": "Israel",
@@ -5051,7 +5369,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.duns100.co.il/en/rating/Financial_Services/Credit_cards/2024",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 75,
+  "metric": "#2 card company, NIS 2,883M revenue 2024 (DUNS100); 29.3% of card transactions (Globes, H1 2019)"
  },
  {
   "country": "Israel",
@@ -5065,7 +5385,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://grow.business/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 55,
+  "metric": "100,000+ businesses, NIS 6bn+/yr (company)"
  },
  {
   "country": "Israel",
@@ -5079,7 +5401,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.duns100.co.il/en/rating/Financial_Services/Credit_cards/2024",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 80,
+  "metric": "#1 card company, NIS 3,150M revenue 2024 (DUNS100); cards 71% of e-commerce (PPRO)"
  },
  {
   "country": "Israel",
@@ -5093,7 +5417,9 @@
   "entry": "Nuvei is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
   "action": "Confirm with Integrations",
   "source": "https://en.globes.co.il/en/article-max-buys-creditguard-from-safecharge-for-nis-70m-1001317842",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 70,
+  "metric": "#3 card company, NIS 2,118M revenue 2024 (DUNS100); 24.1% of card transactions (Globes, H1 2019)"
  },
  {
   "country": "Israel",
@@ -5107,7 +5433,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://www.payplus.co.il/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 55,
+  "metric": "'Tens of thousands of businesses' (company); works with all card companies"
  },
  {
   "country": "Israel",
@@ -5121,7 +5449,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://apps.shopify.com/tranzila-payment-app",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 45,
+  "metric": "No public share; gateway since 1999, Shopify app"
  },
  {
   "country": "Israel",
@@ -5135,7 +5465,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.cardcom.solutions/",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 40,
+  "metric": "'Tens of thousands of businesses', 'billions per month' (company)"
  },
  {
   "country": "Israel",
@@ -5149,7 +5481,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://developers.hyp.co.il/pay/common-use-cases/installments",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 40,
+  "metric": "No public share"
  },
  {
   "country": "Israel",
@@ -5177,7 +5511,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://preneuriat.com/blog/shopify-payment-gateways-israel",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "No public share"
  },
  {
   "country": "Israel",
@@ -5205,7 +5541,9 @@
   "entry": "",
   "action": "Gap: High",
   "source": "https://en.globes.co.il/en/article-payment-apps-bit-and-paybox-to-charge-fees-from-january-1001483104",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 70,
+  "metric": "3.5M customers, ~90% of app transfers (Globes Jul 2024); e-wallets 26% of e-commerce (PPRO)"
  },
  {
   "country": "Israel",
@@ -5233,7 +5571,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.ppro.com/countries/israel/",
-  "origin": "prior pass 14-Oct"
+  "origin": "prior pass 14-Oct",
+  "score": 30,
+  "metric": "6% of card volume; cards 71% of e-commerce (PPRO)"
  },
  {
   "country": "Israel",
@@ -5247,7 +5587,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://stripe.com/resources/more/payments-in-israel",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 30,
+  "metric": "BNPL market US$1.37bn in 2025 (Stripe guide)"
  },
  {
   "country": "Israel",
@@ -5261,7 +5603,9 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://www.ppro.com/countries/israel/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep)",
+  "score": 55,
+  "metric": "Local schemes 16% of card volume; cards 71% of e-commerce (PPRO)"
  },
  {
   "country": "Israel",
@@ -5275,6 +5619,8 @@
   "entry": "",
   "action": "Gap: Medium",
   "source": "https://en.globes.co.il/en/article-payment-apps-bit-and-paybox-to-charge-fees-from-january-1001483104",
-  "origin": "research 14-Oct (deep) + prior"
+  "origin": "research 14-Oct (deep) + prior",
+  "score": 30,
+  "metric": "1.4M customers, ~10% of app transfers (Globes Jul 2024)"
  }
 ]
