@@ -136,7 +136,7 @@ def disp(name): return DISPLAY.get(name, name)
 # partner-signed methods, not yet integrated (Ali Partnerships, #partnerships--sales, Mar/May 2026; German 14 Oct 2026: Status "Signed")
 SIGNED = [
     ('Costa Rica', 'SINPE Móvil', ['dLocal', 'Inswitch']),
-    ('Indonesia', 'GoPay', []), ('Indonesia', 'Kredivo', []), ('Malaysia', 'DuitNow QR', []), ('Philippines', 'Billease', []),
+    ('Indonesia', 'GoPay', ['Boku']), ('Indonesia', 'Kredivo', []), ('Malaysia', 'DuitNow QR', []), ('Philippines', 'Billease', []),
     ('Vietnam', 'MoMo', ['dLocal', '2C2P', 'Directa 24', 'Unlimit', 'Nuvei', 'Terrapay']),
     ('Vietnam', 'ZaloPay', ['2C2P', 'Directa 24', 'Terrapay']),
     ('Vietnam', 'VNPay QR', ['2C2P', 'Unlimit', 'dLocal', 'Terrapay']),
@@ -148,12 +148,15 @@ for c, name, provs in SIGNED:
     for pv in provs: signed_by_prov[(c, pv)].append(name)
 DISPLAY.update({'Pagbank': 'PagBank', 'Paycash': 'PayCash', 'Dana': 'DANA', 'GCASH': 'GCash', 'GRABPAY': 'GrabPay', 'BANCO NACIONAL DE COSTA RICA': 'Banco Nacional de Costa Rica',
                 'BANCO CONTINENTAL': 'Banco Continental', 'OpenPay': 'Openpay', 'IziPay': 'Izipay', 'Epayco': 'ePayco', 'Unlimint': 'Unlimit'})
-REMOVED = []
+REMOVED = []; SEEN_CODE = {}
 rows = [['Country', 'Region', 'Type', 'Name', 'Payment methods supported by provider', 'Status on Yuno']]
 for c in T:
     for d in sorted(prov_by_c[c], key=lambda d: disp(d['name']).lower()):
         name = disp(d['name'])
         if name in NO_INTEGRATION: REMOVED.append((c, name)); continue
+        _ck = code_for(d['name'])
+        if _ck in SEEN_CODE.get(c, set()): REMOVED.append((c, name + ' (duplicate of same connection)')); continue   # e.g. BBVA + BBVA Bancomer in Mexico
+        SEEN_CODE.setdefault(c, set()).add(_ck)
         m = methods_for(c, d['name'])
         extra = signed_by_prov.get((c, name), [])
         if extra: m = (m + ', ' if m else '') + ', '.join(f"{x} (signed)" for x in extra)
