@@ -6127,9 +6127,10 @@
    "id": "c-israel",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › ISRAEL",
+   "headline": "Israel: 6 providers live through Yuno, 6 for cards, 1 more provider in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno: Nuvei acquires locally, the others process Israeli cards cross-border (6)",
+     "header": "Live through Yuno (6)",
      "chips": [
       {
        "name": "Nuvei",
@@ -6164,7 +6165,18 @@
      ]
     },
     {
-     "header": "Wallets and payment methods live (10)",
+     "header": "Homologating (1)",
+     "chips": [
+      {
+       "name": "PPRO",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "muted": true
+    },
+    {
+     "header": "Wallets and payment methods available (10)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -6235,18 +6247,7 @@
      "style": "signed"
     },
     {
-     "header": "Homologating (1)",
-     "chips": [
-      {
-       "name": "PPRO",
-       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
-       "aspect": 1.0
-      }
-     ],
-     "muted": true
-    },
-    {
-     "header": "New connections on request, built by Yuno (9)",
+     "header": "New connections on request (9)",
      "chips": [
       {
        "name": "Cal (Israel Credit Cards)",
@@ -6294,32 +6295,10 @@
        "aspect": 1.0
       }
      ],
-     "style": "request"
+     "muted": true
     }
    ],
-   "table": {
-    "columns": [
-     "Tier",
-     "What it means for adidas"
-    ],
-    "col_widths": [
-     0.26,
-     0.74
-    ],
-    "font_size": 7.5,
-    "rows": [
-     [
-      "Activation on request",
-      "Already integrated with Yuno and covering Israel; switched on for adidas without a build. Rapyd holds an Israeli payment licence since July 2025."
-     ],
-     [
-      "New connection on request",
-      "Not connected yet; Yuno scopes and builds it on request: PayPlus, Isracard, Cal, Max, the local gateways and Bit."
-     ]
-    ]
-   },
-   "headline": "Israel: 6 providers process Israeli cards through Yuno today, 2 more can be activated, and the local acquirers are new connections on request.",
-   "notes": "Evidence: Yuno integration matrix (Israeli card traffic through Adyen, Airwallex, Braintree, Stripe, Worldpay), partners database (Israel in the coverage of Airwallex, Braintree, Stripe, Worldline, Worldpay), Nutrameg live on Adyen and PayPal since Aug 2026, Israeli payment licences for Rapyd and Airwallex (Calcalist, Jul 2025). Finaro/Credorax was checked internally in Sep 2026 and is not connected. German's stated build time to Marko: 1 to 2 days plus 2 days of production testing; keep it verbal."
+   "notes": "Live through Yuno (6): Nuvei acquires locally; Adyen, Airwallex, Braintree, Stripe and Worldpay process Israeli cards cross-border. Integrated with Yuno, activation on request (2): Rapyd and Worldline are already integrated and cover Israel; switched on for adidas without a build. Rapyd holds an Israeli payment licence since July 2025. New connections on request (9): not connected yet; Yuno scopes and builds them on request (PayPlus, Isracard, Cal, Max, the local gateways and Bit). Evidence: Yuno integration matrix (Israeli card traffic through Adyen, Airwallex, Braintree, Stripe, Worldpay), partners database (Israel in the coverage of Airwallex, Braintree, Stripe, Worldline, Worldpay), Nutrameg live on Adyen and PayPal since Aug 2026, Israeli payment licences for Rapyd and Airwallex (Calcalist, Jul 2025). Finaro/Credorax was checked internally in Sep 2026 and is not connected. German's stated build time to Marko: 1 to 2 days plus 2 days of production testing; keep it verbal."
   },
   {
    "id": "next-wave",
