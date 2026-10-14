@@ -43,7 +43,7 @@ def overview(id_, kicker, headline, countries):
             "col_widths": [0.17, 0.12, 0.13, 0.58], "rows": rows, "header_style": "dark", "font_size": 8, "bold_first_col": True, "zebra": True}
 S.append(overview("sum-latam1", "OVERVIEW › LATAM CORE MARKETS", "Every core LATAM market has dozens of live providers and its main local methods through Yuno.", LATAM1))
 S.append(overview("sum-latam2", "OVERVIEW › LATAM REST OF REGION", "The rest of LATAM is covered with redundancy in every country and local methods where they matter.", LATAM2))
-S.append(overview("sum-apac", "OVERVIEW › SOUTHEAST ASIA AND ISRAEL", "Southeast Asia runs on global acquirers plus local wallets and QR; Israel runs on Nuvei and five cross-border acquirers today.", SEA + ['Israel']))
+S.append(overview("sum-apac", "OVERVIEW › SOUTHEAST ASIA AND ISRAEL", "Southeast Asia runs on global acquirers plus local wallets and QR; Israel on six acquirers today.", SEA + ['Israel']))
 def grouped(d):
     g = collections.defaultdict(list)
     for m, ps in d['methods'].items():
