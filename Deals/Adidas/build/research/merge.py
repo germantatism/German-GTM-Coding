@@ -169,7 +169,7 @@ if PRIOR != '-':
 print(len(P), 'prior rows')
 
 out = []; used_prior = set()
-EQUIV = {'fiuuformerlyrazermerchantservices': 'razermerchantservices', 'opnpaymentsformerlyomise': 'omise', 'kbankscbacquiring': 'kasikornbank', 'qrph': 'qrphinstapayonlinebanking', 'clavetelereddebitnetwork': 'tarjetaclave', 'qrpaymentssipaptransfers': 'spiinstanttransferssipap', 'localcardschemesisracardbrandedcards': 'localcardschemesisracardbrandedcards'}
+EQUIV = {'7elevenotccash': 'overthecountercash', 'fiuuformerlyrazermerchantservices': 'razermerchantservices', 'opnpaymentsformerlyomise': 'omise', 'kbankscbacquiring': 'kasikornbank', 'qrph': 'qrphinstapayonlinebanking', 'clavetelereddebitnetwork': 'tarjetaclave', 'qrpaymentssipaptransfers': 'spiinstanttransferssipap', 'localcardschemesisracardbrandedcards': 'localcardschemesisracardbrandedcards'}
 def match_prior(c, name):
     """all prior rows for this country that name the same thing (first = best match)"""
     ks = {ROW_ALIAS.get(nk(x), nk(x)) for x in cands(name, True)} | {nk(x) for x in cands(name, True)}; ks -= {None, ''}

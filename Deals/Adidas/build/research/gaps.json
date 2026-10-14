@@ -3997,11 +3997,11 @@
   "name": "Over-the-counter cash (7-Eleven, Cebuana, M Lhuillier, LBC)",
   "why": "Cash was 15% of e-commerce value (PPRO) and Worldpay GPR 2026 puts cash at 42% of in-store value in 2025; OTC networks are offered by Xendit (7-Eleven, Cebuana, Palawan, M Lhuillier), dLocal and Dragonpay.",
   "relevance": "High",
-  "on": "Not connected (possible via live provider)",
-  "entry": "Xendit, dLocal is live on Yuno here and lists this method publicly; not verified in the Yuno matrix",
+  "on": "Partial",
+  "entry": "Xendit carries 7-Eleven; no standalone entry",
   "action": "Confirm with Integrations",
   "source": "https://www.ppro.com/countries/philippines/",
-  "origin": "research 14-Oct (deep)"
+  "origin": "research 14-Oct (deep) + prior"
  },
  {
   "country": "Philippines",
@@ -4016,20 +4016,6 @@
   "action": "Confirm with Integrations",
   "source": "https://mb.com.ph/2026/08/17/digital-payments-hit-647-of-philippine-retail-transactions-nearing-bsps-70-target",
   "origin": "research 14-Oct (deep) + prior"
- },
- {
-  "country": "Philippines",
-  "region": "Southeast Asia",
-  "type": "Payment method",
-  "category": "Cash voucher",
-  "name": "7-Eleven / OTC cash",
-  "why": "Cash and other is 22% of e-commerce (2C2P/IDC); 7-Eleven cash via Xendit.",
-  "relevance": "Medium",
-  "on": "Yes (via provider)",
-  "entry": "Processed through Xendit (Payments Concierge matrix)",
-  "action": "Covered via provider (confirm routing)",
-  "source": "https://2c2p.com/articles/philippines-payment-methods/",
-  "origin": "prior pass 14-Oct"
  },
  {
   "country": "Philippines",
