@@ -141,7 +141,7 @@ SIGNED = [
     ('Vietnam', 'ZaloPay', ['2C2P', 'Directa 24', 'Terrapay']),
     ('Vietnam', 'VNPay QR', ['2C2P', 'Unlimit', 'dLocal', 'Terrapay']),
     ('Vietnam', 'Viettel Money (ViettelPay)', ['2C2P', 'dLocal']),
-    ('Vietnam', 'NAPAS (domestic cards, VietQR)', ['dLocal']),
+    ('Vietnam', 'NAPAS domestic cards and VietQR', ['dLocal']),
 ]
 signed_by_prov = collections.defaultdict(list)   # (country, provider display name) -> methods signed
 for c, name, provs in SIGNED:
