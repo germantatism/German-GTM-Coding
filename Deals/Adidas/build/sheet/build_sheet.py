@@ -72,6 +72,40 @@ for r in M:
         elif m in ('BANK_TRANSFER', 'CASH') and c in LATAM and p in ('BAMBOO', 'DLOCAL', 'UNLIMINT', 'MONNET', 'PAYMENTEZ', 'EBANX', 'FINTOC'): matrix[c][p].add('Bank transfer' if m == 'BANK_TRANSFER' else 'Cash')
         elif m == 'PAGA_TODO' and c == 'Dominican Republic': matrix[c][p].add('Pagatodo')
         elif m in g['DR_BANKS'] and c == 'Dominican Republic': matrix[c][p].add('Local bank transfers and cash')
+# ---- combined method sources (matrix raw codes + docs.y.uno payment type list + Caio's code scan), see methods_fill.py
+import importlib.util as _ilu
+_spec = _ilu.spec_from_file_location('methods_fill', os.path.join(HERE, 'methods_fill.py')); MF = _ilu.module_from_spec(_spec); _spec.loader.exec_module(MF)
+matrix_codes = collections.defaultdict(lambda: collections.defaultdict(set))
+for r in M:
+    c, p = r['Country'], r['Provider']
+    if c in T and p not in WALLET_PROV: matrix_codes[c][norm_key(p)] |= set(r['Payment Methods (via Yuno)'].split('; '))
+PTL = {norm_key(k): v for k, v in MF.parse_ptl(os.path.join(HERE, '..', 'csv', 'docs_payment_type_list.md')).items()}
+CODEPAIRS = {norm_key(k): {pm for pm, conf in v} for k, v in json.load(open(os.path.join(HERE, '..', 'csv', 'code_pm_pairs.json'))).items() if not k.startswith('_')}
+PTL_ALIAS = {'cybersourcegtw': 'cybersource', 'redebandirect': 'redeban', 'prosaiso': 'prosa', 'klap2': 'klap', 'transbank2': 'transbank', 'bcimach': 'bcimach', 'unlimint': 'unlimint'}
+UNKNOWN = collections.Counter()
+# Caio Freitas, payment-method-coverage-gaps (14 Oct 2026), tab "Sheet names, no repo": directory providers with no Yuno integration repo. Not shown as providers.
+NO_INTEGRATION = {'Alignet', 'AsiaPay', 'BTG Pactual', 'BanBajío', 'Banco Azteca', 'Banco Estado de Chile', 'Banco Rendimento', 'Banco de Bogota', 'Bancolombia', 'Cardnet', 'Cobre', 'Commerce Gate', 'Coppel',
+                  'Davivienda', 'Directa 24', 'Doku', 'Etpay', 'Facilitapay', 'Ibex', 'Local Payment', 'Midtrans', 'More Payments', 'Netpay', 'Nium', 'Openco', 'PPRO', 'Pag Brasil', 'PagosNet', 'PayCash',
+                  'Payments Way', 'Paynet', 'Paysafe', 'Primefy', 'Pronto Paga', 'Sistecredito', 'Totalnet', 'Trace Finance', 'Transfero', 'Unico', 'Venti', 'We Payments'}
+CATALOG_CARD = {'Datafast', 'Medianet'}   # in the Yuno catalog (Caio's mapping) without a repo scan; card acquirers in Ecuador
+CATALOG_EXTRA = {('baccredomatic', 'Panama'): {'TARJETA_CLAVE'}}   # catalog flow: TARJETA_CLAVE -> BAC_CREDOMATIC;DLOCAL
+NO_DATA_NOTE = 'Methods confirmed on activation'
+def _all_codes(dirname):
+    code = code_for(dirname); dk = norm_key(DISPLAY.get(dirname, dirname)); out = set()
+    for cc in matrix_codes.values(): out |= cc.get(code, set())
+    for k in {code, PTL_ALIAS.get(code, code), norm_key(dirname), dk}: out |= PTL.get(k, set())
+    for k in {dk, norm_key(dirname), code}: out |= CODEPAIRS.get(k, set())
+    return out
+def methods_for(c, dirname):
+    code = code_for(dirname); dk = norm_key(DISPLAY.get(dirname, dirname))
+    codes = set(matrix_codes.get(c, {}).get(code, set()))
+    for k in {code, PTL_ALIAS.get(code, code), norm_key(dirname), dk}: codes |= PTL.get(k, set())
+    for k in {dk, norm_key(dirname), code}: codes |= CODEPAIRS.get(k, set())
+    if 'CARD' in _all_codes(dirname) or DISPLAY.get(dirname, dirname) in CATALOG_CARD: codes.add('CARD')   # card processing is not country-specific
+    codes |= CATALOG_EXTRA.get((dk, c), set())
+    labs, unk = MF.labels(codes, c, dk)
+    for u in unk: UNKNOWN[u] += 1
+    return ', '.join(labs) if labs else NO_DATA_NOTE
 def code_for(name):
     k = norm_key(name); k = CODE_ALIAS.get(k, k)
     return k
@@ -114,10 +148,13 @@ for c, name, provs in SIGNED:
     for pv in provs: signed_by_prov[(c, pv)].append(name)
 DISPLAY.update({'Pagbank': 'PagBank', 'Paycash': 'PayCash', 'Dana': 'DANA', 'GCASH': 'GCash', 'GRABPAY': 'GrabPay', 'BANCO NACIONAL DE COSTA RICA': 'Banco Nacional de Costa Rica',
                 'BANCO CONTINENTAL': 'Banco Continental', 'OpenPay': 'Openpay', 'IziPay': 'Izipay', 'Epayco': 'ePayco', 'Unlimint': 'Unlimit'})
+REMOVED = []
 rows = [['Country', 'Region', 'Type', 'Name', 'Payment methods supported by provider', 'Status on Yuno']]
 for c in T:
     for d in sorted(prov_by_c[c], key=lambda d: disp(d['name']).lower()):
-        name = disp(d['name']); m = methods_via_yuno(c, d['name'])
+        name = disp(d['name'])
+        if name in NO_INTEGRATION: REMOVED.append((c, name)); continue
+        m = methods_for(c, d['name'])
         extra = signed_by_prov.get((c, name), [])
         if extra: m = (m + ', ' if m else '') + ', '.join(f"{x} (signed)" for x in extra)
         rows.append([c, REGION[c], 'Provider', name, m, 'Live'])
@@ -129,6 +166,9 @@ TABS = [('Connections by country', rows)]
 cnt = collections.Counter((r[0], r[2]) for r in rows[1:])
 for c in T: print(f"{c:20s} providers={cnt[(c, 'Provider')]:3d} methods={cnt[(c, 'Direct payment method')]:3d}")
 print(len(rows) - 1, 'rows;', sum(1 for r in rows[1:] if r[2] == 'Provider' and not r[4]), 'provider rows without a method list')
+print('unmapped codes:', dict(UNKNOWN.most_common(40)))
+print('removed (no integration):', len(REMOVED), 'rows,', len({n for _, n in REMOVED}), 'providers')
+print('no-data rows:', [(r[0], r[3]) for r in rows[1:] if r[4] == NO_DATA_NOTE])
 json.dump(rows, open(os.path.join(HERE, 'rows.json'), 'w'), ensure_ascii=False)
 if not WRITE: sys.exit(0)
 
