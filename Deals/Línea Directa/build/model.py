@@ -19,12 +19,12 @@ L4 = tuple(w / 52 * FTE for w in weeks)
 LEV = [L1, L2, L3, L4]
 cons, opt = sum(l[0] for l in LEV), sum(l[1] for l in LEV)
 avg = [(l[0] + l[1]) / 2 for l in LEV]
-# Pricing v2 (German, 30-sep-2026): platform $7,500 + compromiso mínimo de $7,500 en transacciones = facturación mínima mensual $15,000;
-# $0.06 tramo 1 / $0.05 tramo 2; corte de tramo 150,000 (supuesto). v1 era platform $15,000 sin compromiso.
-PLATFORM, COMMIT, P1, P2, CUT = 7_500, 7_500, 0.06, 0.05, 150_000
-MIN_BILL = PLATFORM + COMMIT
-COMMIT_TX = COMMIT / P1                          # transacciones exitosas que cubren el compromiso (dentro del tramo 1)
-assert COMMIT_TX <= CUT
+# Pricing v4 (German, 14-oct-2026, tras presentar la propuesta): SIN compromiso mínimo de transacciones. Solo el fee de plataforma
+# de $7,500 fijo; $0.06 tramo 1 / $0.05 tramo 2; corte de tramo 150,000 (supuesto). Historial: v1 platform $15,000 sin compromiso;
+# v2/v3 platform $7,500 + compromiso $7,500 (125,000 trx) = facturación mínima $15,000.
+PLATFORM, COMMIT, P1, P2, CUT = 7_500, 0, 0.06, 0.05, 150_000
+MIN_BILL = PLATFORM + COMMIT                     # = $7,500: el único fijo
+COMMIT_TX = COMMIT / P1                          # 0 desde v4
 def monthly(tx):
     var = max(min(tx, CUT) * P1 + max(tx - CUT, 0) * P2, COMMIT)
     return var, var + PLATFORM

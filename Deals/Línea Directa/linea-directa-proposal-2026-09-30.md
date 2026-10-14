@@ -94,3 +94,28 @@ Instrucción de German. Aplicado con build/fix3_orchestration_recon.py (solo el 
 - **Interpretación mía:** los $1,000 cubren las primeras 200,000 y los $0.03 aplican a las adicionales. Si German quiso decir otra cosa (por ejemplo dos alternativas, o fijo más variable desde la primera), cambiar el texto de la franja.
 - Si conciliaran las 325,000: $1,000 + 125,000 × $0.03 = $4,750 / mes. No está en el deck.
 - Contra la Pricing Policy: el fijo de conciliación de $1,000 queda por debajo del mínimo de $1,500 / mes (zona roja, requiere aprobación); los $0.03 por transacción están en list.
+
+## Propuesta PRESENTADA (14-oct-2026, 2:00 pm COT, German + Susana con Luis y Jesús; 20 min)
+Transcript de Meet otra vez ilegible (auto-transcripción en inglés de una llamada en español); la fuente es el resumen de Granola de German.
+- Se presentaron conexiones CO y PE, estructura de fees y funcionalidades. Dudas de Línea Directa: (1) facturación separada por país, son dos empresas distintas; (2) preocupación por no alcanzar las 125,000 trx del mínimo (German ofreció bajarlo a $12,000 en la llamada); (3) integración vía API sin problema técnico, pero deben priorizar con TI. Revisan interna (financiera y técnica) y responden la semana del 19-oct.
+- Next steps acordados: German confirma split de facturación por país, comparte documentación técnica, y se agenda seguimiento la semana del 19-oct.
+
+## Pricing v4 (14-oct-2026): SIN compromiso mínimo de transacciones
+Instrucción de German tras la llamada ("quitales el mínimo de 7.5k de transacción, que solo sea 7.5k platform fee"). Aplicado con build/fix4_no_commitment.py (solo S16).
+| Concepto | Precio | A 325,000 tx exitosas |
+|---|---|---|
+| Fee de plataforma (único fijo) | $7,500 / mes | $7,500 |
+| Tramo 1: 0 a 150,000 | $0.06 / tx | $9,000 |
+| Tramo 2: más de 150,000 | $0.05 / tx | $8,750 |
+| **Total** | | **$25,250 / mes ($303,000 / año), $0.078 por tx** |
+- Cambios en S16: header sin la frase de facturación mínima; card izquierda retitulada "Fee de plataforma y tarifa por transacción" y la fila del compromiso pasa a ser "Fee de plataforma $7,500/mes" con la nota "Fijo mensual. Sin compromiso mínimo de volumen."; nota de la card sin "se factura la diferencia"; tabla derecha sin la fila "Compromiso mínimo: Cubierto" (total sube una fila); nota derecha reescrita; franja inferior izquierda añade "Facturación por separado a la entidad de Colombia y a la de Perú, cada una por su propio volumen."
+- Conciliación opcional tal como la dejó German a mano: $1,000 / mes fijos por 225,000 trx conciliadas + $0.015 / trx adicional (sin tocar).
+- Contra la Pricing Policy: platform $7,500 sigue bajo el list de V3 ($10,000) y sobre el mínimo; sin MMG. Facturar mensual y sin MMG van por zona amarilla. Validar en el calculator y Salesforce antes de la propuesta formal.
+
+## Facturación separada por país: sí se puede (verificado en Slack, 14-oct-2026)
+- Cencosud (Samuel Vieira, #salesops-legal, 14-jul-2026): MSA con HQ + adenda por país, firmada y facturada a la entidad local (Chile y Colombia); el mínimo mensual se calcula a nivel master sobre el volumen combinado.
+- Virgin Mobile / Beyond One (Sebastián Díaz, Finance, #finance-merchants, 4-sep-2026): volumen CO facturado a Virgin Mobile Colombia SAS, MX a Virgin Mobile México, resto a Beyond One MEA.
+- Monnet (Juan Bernate, may-2025): facturación separada por países según adenda; el fijo se mantuvo en una sola entidad (Perú). inDrive Chile (may-2025): entidad local factura lo que genera Chile; Finance pide nombre comercial, dirección y tax ID de cada entidad.
+- Laura Galan (Finance, #salesops-legal 18-ago-2026): "for each new entity we need them to fill out the info request"; (#legal-latam 2-jul-2026): una entidad colombiana no puede facturar a otra colombiana en USD, se calcula mensual con la tasa de cambio. Es decir, si Yuno Colombia factura a Línea Directa S.A.S., va en pesos; Perú se factura en USD desde Yuno MX (estándar).
+- Pricing Policy: multi-entidad legal, el platform fee se define por prorrata, peso fijo o una sola entidad.
+- Pendiente de German: confirmar con Finance (#finance-merchants, Laura Galan / Sebastián Díaz) entidad emisora y moneda para cada país antes del contrato.

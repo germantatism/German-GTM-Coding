@@ -11,7 +11,8 @@ Orden de ejecución (ya aplicado, no volver a correr sobre el mismo deck):
 5. `fix1.py`: segunda pasada tras la revisión visual.
 6. `fix2_commitment.py`: pricing v2 (platform $7,500 + compromiso mínimo de $7,500 = facturación mínima de $15,000); solo el slide de pricing.
 7. `fix3_orchestration_recon.py`: pricing v3 (orquestación y smart routing incluidos; conciliación $1,000 por 200,000 trx + $0.03 adicional en la franja inferior). Compara contra el estado anterior para no pisar ediciones manuales.
-8. `qa.py`: tokens prohibidos, guiones, elementos fuera de página y hoja de contacto.
+8. `fix4_no_commitment.py`: pricing v4 (14-oct, tras presentar): se elimina el compromiso mínimo de $7,500 en transacciones; queda solo el fee de plataforma de $7,500 fijo + tramos según consumo; la franja inferior izquierda añade facturación separada por entidad (CO y PE). Solo el slide de pricing (S16). JSON antes/después en el scratchpad de la sesión del 14-oct.
+9. `qa.py`: tokens prohibidos, guiones, elementos fuera de página y hoja de contacto.
 
 - `model.py`: toda la aritmética del business case y del pricing. Cambiar ahí el corte de tramo, las tarifas o los supuestos y volver a generar los textos.
 - `common.py`: `fmt_requests` reemplaza texto con marcas `**negrita**` conservando los estilos regular y negrita del elemento original; `box_req` mueve y redimensiona en puntos.
