@@ -26,6 +26,10 @@ if len(_cs) == 2:
     keep, dup = sorted(_cs, key=lambda d: 0 if d['description'] else 1)
     keep['name'] = 'Cybersource'; keep['countries'] = sorted(set(keep['countries']) | set(dup['countries'])); keep['features'] = sorted(set(keep['features']) | set(dup['features']))
     D.remove(dup)
+_ul = [d for d in D if norm_key(d['name']) in ('unlimit', 'unlimint')]
+if len(_ul) == 2:
+    keep = next(d for d in _ul if norm_key(d['name']) == 'unlimit'); dup = next(d for d in _ul if d is not keep)
+    keep['countries'] = sorted(set(keep['countries']) | set(dup['countries'])); D.remove(dup)
 PTYPE = {'clearsale': 'Fraud prevention', 'kount': 'Fraud prevention', 'striperadar': 'Fraud prevention', 'netcetera': '3DS authentication', 'cybersource3ds': '3DS authentication',
          'terrapay': 'Payouts and remittances', 'uniteller': 'Payouts and remittances', 'vtex': 'Commerce platform', 'skrill': 'Digital wallet', 'neteller': 'Digital wallet'}
 def ptype(d):
