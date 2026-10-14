@@ -8,6 +8,14 @@
   "Homologation"
  ],
  [
+  "Uruguay",
+  "LATAM",
+  "Provider",
+  "OCA",
+  "",
+  "Homologation"
+ ],
+ [
   "Bolivia",
   "LATAM",
   "Provider",
@@ -18,7 +26,7 @@
  [
   "Bolivia",
   "LATAM",
-  "Payment method",
+  "Direct payment method",
   "QR BCB (QR Simple)",
   "",
   "Homologation"
@@ -32,18 +40,50 @@
   "Homologation"
  ],
  [
+  "Paraguay",
+  "LATAM",
+  "Direct payment method",
+  "QR Bancard",
+  "",
+  "Homologation"
+ ],
+ [
   "Indonesia",
   "Southeast Asia",
-  "Payment method",
+  "Direct payment method",
   "Virtual Account (bank transfer)",
   "",
   "Live"
  ],
  [
-  "Israel",
-  "Middle East",
+  "Malaysia",
+  "Southeast Asia",
+  "Direct payment method",
+  "Touch 'n Go eWallet",
+  "",
+  "Live"
+ ],
+ [
+  "Thailand",
+  "Southeast Asia",
+  "Direct payment method",
+  "Online banking (SCB, KBank, Bangkok Bank, Krungsri, KTB)",
+  "",
+  "Homologation"
+ ],
+ [
+  "Myanmar",
+  "Southeast Asia",
   "Provider",
-  "Isracard",
+  "KBZ Bank",
+  "",
+  "Homologation"
+ ],
+ [
+  "Myanmar",
+  "Southeast Asia",
+  "Direct payment method",
+  "KBZPay",
   "",
   "Homologation"
  ],
@@ -59,6 +99,14 @@
   "Israel",
   "Middle East",
   "Provider",
+  "Isracard",
+  "",
+  "Homologation"
+ ],
+ [
+  "Israel",
+  "Middle East",
+  "Provider",
   "Max",
   "",
   "Homologation"
@@ -66,72 +114,8 @@
  [
   "Israel",
   "Middle East",
-  "Payment method",
+  "Direct payment method",
   "Bit",
-  "",
-  "Homologation"
- ],
- [
-  "Malaysia",
-  "Southeast Asia",
-  "Payment method",
-  "Touch 'n Go eWallet",
-  "",
-  "Live"
- ],
- [
-  "Myanmar",
-  "Southeast Asia",
-  "Provider",
-  "KBZ Bank",
-  "",
-  "Homologation"
- ],
- [
-  "Myanmar",
-  "Southeast Asia",
-  "Payment method",
-  "KBZPay",
-  "",
-  "Homologation"
- ],
- [
-  "Paraguay",
-  "LATAM",
-  "Payment method",
-  "QR Bancard",
-  "",
-  "Homologation"
- ],
- [
-  "Thailand",
-  "Southeast Asia",
-  "Payment method",
-  "Online banking (SCB, KBank, Bangkok Bank, Krungsri, KTB)",
-  "",
-  "Homologation"
- ],
- [
-  "Uruguay",
-  "LATAM",
-  "Provider",
-  "OCA",
-  "",
-  "Homologation"
- ],
- [
-  "Vietnam",
-  "Southeast Asia",
-  "Payment method",
-  "NAPAS domestic cards",
-  "",
-  "Homologation"
- ],
- [
-  "Vietnam",
-  "Southeast Asia",
-  "Payment method",
-  "VietQR",
   "",
   "Homologation"
  ]
