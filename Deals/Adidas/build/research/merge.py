@@ -1,12 +1,12 @@
 """adidas · market research (processors + payment methods per country) crossed with Yuno coverage.
 Inputs: market/*.json (research rows), prior gaps sheet export (optional), rows.json (connections sheet), Payments Concierge matrix CSV,
 integrations directory. Output: gaps.json (one row per country x name) + a console summary.
-python3 merge.py <market_dir> <prior_gaps.json|-> <integrations_full.json> <out gaps.json>
+python3 merge.py <market_dir> <prior_gaps.json|-> <integrations_full.json> <out gaps.json> [customer_sheet_export.json]
 """
 import json, glob, csv, re, os, sys, collections
 MD, PRIOR, DIRJ, OUT = sys.argv[1:5]
 HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.abspath(os.path.join(HERE, '..', '..', '..', '..'))
-ROWS = os.path.join(HERE, '..', 'sheet', 'rows.json'); CSVP = os.path.join(REPO, 'Deals', 'Adidas', 'adidas_payment_connections_live.csv')
+ROWS = sys.argv[5] if len(sys.argv) > 5 else os.path.join(HERE, 'customer_sheet_2026-10-14.json'); CSVP = os.path.join(REPO, 'Deals', 'Adidas', 'adidas_payment_connections_live.csv')
 ORDER = ['Argentina', 'Brazil', 'Chile', 'Colombia', 'Mexico', 'Peru', 'Uruguay', 'Bolivia', 'Costa Rica', 'Dominican Republic', 'Ecuador', 'El Salvador', 'Guatemala',
          'Honduras', 'Nicaragua', 'Panama', 'Paraguay', 'Indonesia', 'Malaysia', 'Philippines', 'Singapore', 'Thailand', 'Vietnam', 'Myanmar', 'Israel']
 LATAM = ORDER[:17]; REGION = {**{c: 'LATAM' for c in LATAM}, **{c: 'Southeast Asia' for c in ORDER[17:24]}, 'Israel': 'Middle East'}
@@ -18,7 +18,7 @@ def cands(name, paren=False):
         if part.strip(): out.append(part.strip())
     out.append(base(name)); out.append(name)
     inside = re.findall(r'\((.*?)\)', name) if paren else []
-    out += [i.strip() for i in inside if i and not re.search(r'formerly|incl|local|wallet|bank|card|online|cash|network|debit|acquir|BNPL|region', i, re.I)]
+    out += [i.strip() for i in inside if i and len(i.split()) <= 2 and not re.search(r'\b(formerly|incl|local|wallet|bank|cards?|online|cash|network|debit|acquiring|BNPL|regional|scheme|interoperable|ex|mobile|QR|transfer|voucher)\b', i, re.I)]
     seen = set(); res = []
     for x in out:
         k = nk(x)
@@ -29,7 +29,7 @@ def cands(name, paren=False):
 rows = json.load(open(ROWS))
 live = collections.defaultdict(lambda: {'Provider': {}, 'Payment method': {}})
 for r in rows[1:]: live[r[0]][r[2]][nk(r[3])] = r
-ROW_ALIAS = {'mercadopagowallet': 'mercadopago', 'transbank': 'webpay', 'webpaytransbank': 'webpay', 'rede': 'rede', 'pagbank': 'pagbank', 'placetopayevertec': 'placetopay',
+ROW_ALIAS = {'unlimint': 'unlimit', 'pagbank': 'pagbank', 'paycash': 'paycash', 'epayco': 'epayco', 'openpay': 'openpay', 'mercadopagowallet': 'mercadopago', 'transbank': 'webpay', 'webpaytransbank': 'webpay', 'rede': 'rede', 'pagbank': 'pagbank', 'placetopayevertec': 'placetopay',
              'facfirstatlanticcommerce': 'fac', 'firstatlanticcommerce': 'fac', 'cal': 'cal', 'machpay': 'mach', 'bcimach': 'mach', 'xendit': 'xendit', 'maya': 'maya', 'mayabusiness': 'maya',
              'nuvei': 'nuvei', 'dlocal': 'dlocal', 'ebanx': 'ebanx', 'payu': 'payu', 'adyen': 'adyen', 'stripe': 'stripe', 'checkoutcom': 'checkoutcom', 'checkout': 'checkoutcom',
              'antom': 'antom', 'antomalipay': 'antom', 'alipayplus': 'antom', 'midtrans': 'midtrans', 'doku': 'doku', '2c2p': '2c2p', 'kushki': 'kushki', 'getnet': 'getnet',
@@ -57,7 +57,7 @@ def direct_hit(c, name):
 D = json.load(open(DIRJ)); dirn = {}
 for d in D: dirn.setdefault(nk(d['name']), d)
 DIR_ALIAS = {'mercadopago': 'mercadopago', 'checkoutcom': 'checkoutcom', 'antom': 'antomalipay', 'fac': 'fac', 'mach': 'mach', 'oxxopay': 'oxxopay', 'thaiqrpromptpay': 'thaiqr',
-             'ovo': 'ovowallet', 'bancopopulardominicana': 'bancopopulardominicana', 'banconacionaldecostarica': 'banconacionaldecostarica', 'touchngo': None}
+             'ovo': 'ovowallet', 'payway': None, 'prisma': None, 'clip': None, 'oca': None, 'visanet': None, 'culqi': None, 'bit': None, 'max': None, 'cal': None, 'bancopopulardominicana': 'bancopopulardominicana', 'banconacionaldecostarica': 'banconacionaldecostarica', 'touchngo': None}
 def dir_hit(name):
     for x in cands(name):
         k = ROW_ALIAS.get(nk(x), nk(x)); k = DIR_ALIAS.get(k, k)
@@ -84,7 +84,7 @@ CODE_ALIAS = {'pix': ['PIX', 'SMART_PIX'], 'pixautomatico': ['PIX_AUTOMATIC'], '
               'thaiqrpromptpay': ['THAI_QR'], 'truemoney': ['TRUEMONEY'], 'bigc': ['BIG_C'], 'yappy': ['YAPPY'], 'puntopago': ['PUNTO_PAGO'], 'puntoxpress': ['PUNTO_XPRESS'], 'deuna': ['DE_UNA'],
               'pagoalpaso': ['PAGO_AL_PASO'], 'pagosnet': ['PAGOSNET'], 'multipago': ['MULTIPAGO'], 'picpay': ['PICPAY'], 'nupay': ['NU_PAY'], 'addi': ['ADDI'], 'aplazo': ['APLAZO'],
               'acuotaz': ['ACUOTAZ'], 'cuotealo': ['CUOTEALO_BCP'], 'cuotealobcp': ['CUOTEALO_BCP'], 'paycash': ['PAYCASH'], 'paynet': ['PAYNET'], 'applepay': ['APPLE_PAY'], 'googlepay': ['GOOGLE_PAY'],
-              'paypal': ['PAYPAL'], 'klarna': ['KLARNA'], 'bancolombia': ['BOTON_BANCOLOMBIA', 'BANCOLOMBIA_TRANSFER', 'BANCOLOMBIA_QR'], 'botonbancolombia': ['BOTON_BANCOLOMBIA'],
+              'paypal': ['PAYPAL'], 'klarna': ['KLARNA'], 'bancolombia': ['BOTON_BANCOLOMBIA', 'BANCOLOMBIA_TRANSFER', 'BANCOLOMBIA_QR'], 'botonbancolombia': ['BOTON_BANCOLOMBIA'], 'bancolombiabutton': ['BOTON_BANCOLOMBIA'], 'botnbancolombia': ['BOTON_BANCOLOMBIA'],
               'banconacional': ['BANCO_NACIONAL_TRANSFER', 'BANCO_NACIONAL_CASH'], 'bancopopular': ['BANCO_POPULAR'], 'banreservas': ['BANRESERVAS'], 'pagatodo': ['PAGA_TODO'],
               'monnet': ['MONNET_QR', 'MONNET_WALLET'], 'powerpay': ['POWERPAY'], 'pluxee': ['PLUXEE_PA'], 'alipay': ['ALIPAY'], 'wechatpay': ['WECHAT_PAY', 'WECHAT'], 'cards': ['CARD'], 'card': ['CARD'],
               'creditanddebitcards': ['CARD'], 'cardswithinstallments': ['CARD'], 'cash': ['CASH'], 'cashvouchers': ['CASH'], 'banktransfer': ['BANK_TRANSFER', 'BANK_TRANSFER_AR'],
@@ -101,10 +101,12 @@ def via_hit(c, name):
         if code in NATIVE and c not in NATIVE[code][1]: continue
         if code in ('CASH', 'BANK_TRANSFER', 'MULTIPAGO') and c not in LATAM: continue
         if code == 'MULTIPAGO' and c != 'Bolivia': continue
-        if code in ('CASH', 'BANK_TRANSFER'): provs |= {p for p in via[c].get(code, set()) if p in LATAM_ONLY_PROV}
+        if code in ('CASH', 'BANK_TRANSFER', 'BANK_TRANSFER_AR', 'CARD', 'DIRECT_DEBIT', 'DIRECT_DEBIT_ENROLLMENT'):
+            livep = set(live[c]['Provider'].keys())
+            provs |= {p for p in via[c].get(code, set()) if p in LATAM_ONLY_PROV and nk(pname(p)) in livep}
         else: provs |= via[c].get(code, set())
     return codes, provs
-DISP = {'Dlocal': 'dLocal', 'Ebanx': 'EBANX', 'Payu': 'PayU', 'Mercado Pago': 'Mercado Pago', 'Pagseguro': 'PagSeguro', 'Pagbank': 'PagBank', 'Unlimint': 'Unlimit', 'Fac': 'FAC',
+DISP = {'Unlimint': 'Unlimit', 'Paycash': 'PayCash', 'Epayco': 'ePayco', 'Openpay': 'Openpay', 'Dlocal': 'dLocal', 'Ebanx': 'EBANX', 'Payu': 'PayU', 'Mercado Pago': 'Mercado Pago', 'Pagseguro': 'PagSeguro', 'Pagbank': 'PagBank', 'Unlimint': 'Unlimit', 'Fac': 'FAC',
         'Cybersource Gtw': 'Cybersource', 'Checkout': 'Checkout.com', 'Bci Mach': 'BCI MACH', 'E Merchant Pay': 'emerchantpay', 'Pay Retailers': 'PayRetailers', 'Place To Pay': 'PlacetoPay',
         'Klap 2': 'Klap', 'Transbank 2': 'Transbank', 'Redeban Direct': 'Redeban', 'Qnb Mpgs': 'QNB MPGS', 'Evo': 'EVO Payments', 'Prosa Iso': 'Prosa', 'Bbva': 'BBVA', 'Btg': 'BTG Pactual',
         'Pagarme': 'Pagar.me', 'Paymentez': 'Paymentez (Kushki)', '2C2P': '2C2P', 'Ntt Data': 'NTT Data', 'Asiapay': 'AsiaPay', 'Astropay': 'AstroPay', 'Paypal': 'PayPal', 'Safetypay': 'SafetyPay'}
@@ -138,6 +140,7 @@ def status(c, name, kind, typical_access=''):
     if hits: return 'Not connected (possible via live provider)', f"{', '.join(sorted(set(hits)))} is live on Yuno here and lists this method publicly; not verified in the Yuno matrix"
     return 'No', ''
 def action(rel, on):
+    if on == 'n/a': return 'Not applicable (merchant-side COD, not a payment connection)'
     if on.startswith('Yes (connection built'): return 'Covered (connection built; not on public directory)'
     if on == 'Yes': return 'Covered'
     if on == 'Yes (via provider)': return 'Covered via provider (confirm routing)'
@@ -166,27 +169,38 @@ if PRIOR != '-':
 print(len(P), 'prior rows')
 
 out = []; used_prior = set()
+EQUIV = {'fiuuformerlyrazermerchantservices': 'razermerchantservices', 'opnpaymentsformerlyomise': 'omise', 'kbankscbacquiring': 'kasikornbank', 'qrph': 'qrphinstapayonlinebanking', 'clavetelereddebitnetwork': 'tarjetaclave', 'qrpaymentssipaptransfers': 'spiinstanttransferssipap', 'localcardschemesisracardbrandedcards': 'localcardschemesisracardbrandedcards'}
 def match_prior(c, name):
-    ks = {ROW_ALIAS.get(nk(x), nk(x)) for x in cands(name, True)} | {nk(x) for x in cands(name, True)}
+    """all prior rows for this country that name the same thing (first = best match)"""
+    ks = {ROW_ALIAS.get(nk(x), nk(x)) for x in cands(name, True)} | {nk(x) for x in cands(name, True)}; ks -= {None, ''}
+    tn = set(re.findall(r'[a-z0-9]+', base(name).lower())) - STOP; nb = nk(base(name))
+    found = []
     for i, p in enumerate(P):
         if p['country'] != c or i in used_prior: continue
-        pk = {ROW_ALIAS.get(nk(x), nk(x)) for x in cands(p['name'], True)} | {nk(x) for x in cands(p['name'], True)}
-        if ks & pk - {None, ''}: used_prior.add(i); return p
-    return None
+        pk = {ROW_ALIAS.get(nk(x), nk(x)) for x in cands(p['name'], True)} | {nk(x) for x in cands(p['name'], True)} | {EQUIV.get(nk(p['name']), '')}; pk -= {None, ''}
+        tp = set(re.findall(r'[a-z0-9]+', base(p['name']).lower())) - STOP; pb = nk(base(p['name']))
+        ok = bool(ks & pk) or (len(tn) >= 2 and len(tp) >= 2 and (tn <= tp or tp <= tn)) or (len(pb) >= 5 and pb in nk(name)) or (len(nb) >= 5 and nb in nk(p['name']))
+        if ok: used_prior.add(i); found.append(p)
+    found.sort(key=lambda p: -RANK.get(p['on'], 0))
+    return found[0] if found else None
+STOP = {'the', 'and', 'of', 'online', 'local', 'instant', 'transfers', 'transfer', 'wallet', 'cards', 'card', 'bank', 'banking', 'scheme', 'schemes', 'domestic', 'network', 'qr', 'cash', 'otc', 'payments', 'mobile'}
 for x in R:
     c = x['country']; kind = 'Acquirer/PSP' if x['kind'] == 'Processor' else 'Payment method'
     on, entry = status(c, x['name'], kind, x.get('typical_access', ''))
+    if 'cash on delivery' in x['name'].lower(): on, entry = 'n/a', 'Cash on delivery is collected by the carrier; not a Yuno connection'
     p = match_prior(c, x['name'])
-    if p and RANK.get(p['on'], 0) > RANK.get(on, 0):
+    if p and on != 'n/a' and RANK.get(p['on'], 0) > RANK.get(on, 0):
         on, entry = p['on'], p['entry']
     rel = x.get('relevance', 'Medium')
+    if p and p.get('priority') == 'High': rel = 'High'
     out.append({'country': c, 'region': REGION.get(c, ''), 'type': kind, 'category': x.get('category', ''), 'name': x['name'], 'why': x.get('why_it_matters', ''), 'relevance': rel,
                 'on': on, 'entry': entry, 'action': action(rel, on), 'source': x.get('source_url', ''), 'origin': 'research 14-Oct (deep)' + (' + prior' if p else '')})
 for i, p in enumerate(P):
     if i in used_prior: continue
     c = p['country']; on, entry = status(c, p['name'], p['type'])
+    if 'cash on delivery' in p['name'].lower(): on, entry = 'n/a', 'Cash on delivery is collected by the carrier; not a Yuno connection'
     pon = p['on']
-    if RANK.get(pon, 0) > RANK.get(on, 0): on, entry = pon, p['entry']
+    if on != 'n/a' and RANK.get(pon, 0) > RANK.get(on, 0): on, entry = pon, p['entry']
     rel = p['priority'] or 'Medium'
     out.append({'country': c, 'region': REGION.get(c, ''), 'type': p['type'], 'category': CAT_FROM_TYPE(p['type']) or guess_cat(p['name'], p['why']), 'name': p['name'], 'why': p['why'],
                 'relevance': rel, 'on': on, 'entry': entry, 'action': action(rel, on), 'source': p['source'], 'origin': 'prior pass 14-Oct'})

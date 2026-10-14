@@ -45,8 +45,8 @@
   "kind": "Payment method",
   "why_it_matters": "Local schemes (Naranja, Cabal, etc.) are 5% of card volume (PPRO); dLocal lists Tarjeta Naranja, Cabal, Nativa, Argencard, Cencosud.",
   "source_url": "https://www.ppro.com/countries/argentina/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partial",
+  "yuno_entry": "Local schemes are not tracked brand by brand; accepted through the connected local acquirers' card rails (Prisma, Fiserv (Posnet), Getnet). Concierge, 19-Aug-2026",
   "priority": "Medium"
  },
  {
@@ -65,8 +65,8 @@
   "kind": "Acquirer/PSP",
   "why_it_matters": "Prisma's acquiring unit; named with Fiserv and Mercado Pago as the leading acquirers (Infobae, Feb-2026); Fiserv and Prisma each held about half of acquiring (Ambito, 2020).",
   "source_url": "https://www.infobae.com/economia/2026/02/19/visa-compra-prisma-y-expande-su-negocio-de-pagos-digitales-en-la-argentina/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Yes",
+  "yuno_entry": "Prisma card connection (PRISMA) live in Argentina · docs.y.uno + integration matrix",
   "priority": "High"
  },
  {
@@ -145,8 +145,8 @@
   "kind": "Payment method",
   "why_it_matters": "Local schemes (Elo, Hipercard) are 13% of card volume (PPRO).",
   "source_url": "https://www.ppro.com/countries/brazil/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partial",
+  "yuno_entry": "Local schemes are not tracked brand by brand; accepted through the connected local acquirers' card rails (Cielo, Rede, Getnet, Stone, PagSeguro). Concierge, 19-Aug-2026",
   "priority": "High"
  },
  {
@@ -155,8 +155,8 @@
   "kind": "Payment method",
   "why_it_matters": "Part of the 13% local-scheme card share (PPRO); listed by dLocal as a local scheme.",
   "source_url": "https://docs.dlocal.com/docs/brazil",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partial",
+  "yuno_entry": "Local schemes are not tracked brand by brand; accepted through the connected local acquirers' card rails (Cielo, Rede, Getnet, Stone). Concierge, 19-Aug-2026",
   "priority": "Medium"
  },
  {
@@ -256,7 +256,7 @@
   "why_it_matters": "Local schemes are 44% of card volume in Chile, more than Visa (30%) or Mastercard (26%) (PPRO).",
   "source_url": "https://www.ppro.com/countries/chile/",
   "on_yuno": "Partial",
-  "yuno_entry": "Domestic cards reach Yuno through Transbank/Webpay and local acquirers; no scheme-level entry",
+  "yuno_entry": "Local schemes are not tracked brand by brand; accepted through the connected local acquirers' card rails (Transbank, Klap). Concierge, 19-Aug-2026",
   "priority": "High"
  },
  {
@@ -425,8 +425,8 @@
   "kind": "Payment method",
   "why_it_matters": "Instant transfer scheme operated by Redeban that coexists with Bre-B (Colombia Tramita guide).",
   "source_url": "https://colombiatramita.co/bancario-financiero/bre-b-pagos-inmediatos/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Yes",
+  "yuno_entry": "Movii (TRANSFIYA) · docs.y.uno",
   "priority": "Medium"
  },
  {
@@ -525,8 +525,8 @@
   "kind": "Payment method",
   "why_it_matters": "Local scheme; 'Other incl. Carnet' is 2% of card volume (PPRO); dLocal lists Carnet credit and debit.",
   "source_url": "https://www.ppro.com/countries/mexico/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partial",
+  "yuno_entry": "Local schemes are not tracked brand by brand; accepted through the connected local acquirers' card rails (Prosa, Banorte, BBVA, Openpay). Concierge, 19-Aug-2026",
   "priority": "Medium"
  },
  {
@@ -635,8 +635,8 @@
   "kind": "Payment method",
   "why_it_matters": "One of the two dominant wallets with Yape (Spreedly); interoperable Yape-Plin transfers peaked at 2.5M per day (Dec-2023).",
   "source_url": "https://www.spreedly.com/blog/perus-payments-revolution-yape",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Yes",
+  "yuno_entry": "Niubiz (PLIN, pay with QR) · docs.y.uno payment type list",
   "priority": "High"
  },
  {
@@ -715,8 +715,8 @@
   "kind": "Payment method",
   "why_it_matters": "Credit cards are 54% and debit 14% of e-commerce (PCMI); OCA and Lider are local card brands listed by dLocal.",
   "source_url": "https://docs.dlocal.com/docs/uruguay",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partial",
+  "yuno_entry": "Local schemes are not tracked brand by brand; accepted through the connected local acquirers' card rails (Getnet, Fiserv). Concierge, 19-Aug-2026",
   "priority": "High"
  },
  {
@@ -845,8 +845,8 @@
   "kind": "Payment method",
   "why_it_matters": "648.6M transactions and 4.23M active users in 2024 (BCCR via La Nacion); state banks handle 65% of transactions.",
   "source_url": "https://www.nacion.com/economia/quien-manda-en-sinpe-movil-asi-se-reparten-el/BTKQR4EEVBG6JA3ZBPFQERN3GU/story/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Partner capability, not in Yuno catalog: dLocal and Inswitch offer SINPE Movil (Ali Partnerships 29-Apr-2026; Concierge: no SINPE row in active catalog)",
   "priority": "High"
  },
  {
@@ -1275,8 +1275,8 @@
   "kind": "Payment method",
   "why_it_matters": "264M+ Clave transactions and 2.4M cardholders in 2024 (Telered); online acceptance planned via Discover.",
   "source_url": "https://panamabankingnews.com/notas-de-prensa/telered-proceso-mas-de-b-108963-millones-en-transacciones-durante-2024-un-aumento-del-7-61-en-comparacion-con-el-2023/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Yes",
+  "yuno_entry": "dLocal (TARJETA_CLAVE) · docs.y.uno",
   "priority": "High"
  },
  {
@@ -1425,8 +1425,8 @@
   "kind": "Payment method",
   "why_it_matters": "21% of e-commerce wallet use (Ipsos via 2C2P); 32% (Tazapay) and 10% (PPRO) in other surveys.",
   "source_url": "https://2c2p.com/articles/indonesia-payment-methods/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Contracted via partners, not integrated (Ali Partnerships, 26-Mar-2026)",
   "priority": "High"
  },
  {
@@ -1495,8 +1495,8 @@
   "kind": "Payment method",
   "why_it_matters": "BNPL is 6% of e-commerce (2C2P/IDC); Kredivo 4,000+ merchants, Akulaku 1,000+ (PaymentBrief).",
   "source_url": "https://paymentbrief.com/markets/indonesia/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Kredivo contracted via partners, not integrated (Ali Partnerships, 26-Mar-2026)",
   "priority": "Medium"
  },
  {
@@ -1555,8 +1555,8 @@
   "kind": "Payment method",
   "why_it_matters": "Interoperable QR across banks and wallets; 870M transactions worth RM31.1B in 2024 (Xendit).",
   "source_url": "https://www.xendit.co/en-my/blog/how-to-choose-the-best-payment-gateway-in-malaysia/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Contracted via partners, not integrated (Ali Partnerships 26-Mar-2026; Concierge 30-Apr-2026: no DuitNow integration in catalog)",
   "priority": "High"
  },
  {
@@ -1605,8 +1605,8 @@
   "kind": "Payment method",
   "why_it_matters": "26.5% of BNPL users (CCOB H1-2025 via 2C2P); listed by dLocal.",
   "source_url": "https://2c2p.com/articles/malaysia-payment-methods/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Yes",
+  "yuno_entry": "Adyen (ATOME) · docs.y.uno",
   "priority": "Medium"
  },
  {
@@ -1665,8 +1665,8 @@
   "kind": "Payment method",
   "why_it_matters": "Domestic payments (QR Ph, InstaPay) are 24% of e-commerce (2C2P/IDC 2026); one QR accepts InstaPay, bank apps and wallets.",
   "source_url": "https://2c2p.com/articles/philippines-payment-methods/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Yes",
+  "yuno_entry": "Maya (QRPH) · docs.y.uno; Boku QRPH pending (PRIOR-669)",
   "priority": "High"
  },
  {
@@ -1705,8 +1705,8 @@
   "kind": "Payment method",
   "why_it_matters": "Named among the top three BNPL providers with SPayLater and Home Credit; BNPL is 5% of e-commerce (2C2P/IDC).",
   "source_url": "https://2c2p.com/articles/philippines-payment-methods/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Contracted via partners, not integrated (Ali Partnerships, 26-Mar-2026)",
   "priority": "Medium"
  },
  {
@@ -1785,8 +1785,8 @@
   "kind": "Payment method",
   "why_it_matters": "BNPL is 5% of e-commerce (2C2P/IDC); Atome 'leading the market' (Primer).",
   "source_url": "https://primer.io/blog/singapore-payment-methods-paynow-api",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Yes",
+  "yuno_entry": "Adyen (ATOME) · docs.y.uno",
   "priority": "Medium"
  },
  {
@@ -1905,8 +1905,8 @@
   "kind": "Payment method",
   "why_it_matters": "69% of wallet users (Decision Lab Q3-2024 via 2C2P); 68% share in Q1-2023 (VIR); wallets are 31% of e-commerce (PPRO).",
   "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Partner signed, not integrated: dLocal, 2C2P/Ant Intl, D24, Unlimit, Nuvei, Terrapay (Ali Partnerships, 18-May-2026); MoMo via Adyen in sandbox test 12-Oct-2026 (#qa-guardian)",
   "priority": "High"
  },
  {
@@ -1915,8 +1915,8 @@
   "kind": "Payment method",
   "why_it_matters": "44% of wallet users (Decision Lab Q3-2024 via 2C2P).",
   "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Partner signed, not integrated: 2C2P/Ant Intl, D24, Terrapay (Ali Partnerships, 18-May-2026)",
   "priority": "High"
  },
  {
@@ -1925,8 +1925,8 @@
   "kind": "Payment method",
   "why_it_matters": "Domestic payments (VietQR) are 29% of e-commerce (2C2P/IDC 2026); 15M+ VietQR transactions daily (NAPAS 2025).",
   "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Partner signed, not integrated: dLocal (NAPAS) (Ali Partnerships, 18-May-2026)",
   "priority": "High"
  },
  {
@@ -1935,8 +1935,8 @@
   "kind": "Payment method",
   "why_it_matters": "Local schemes are 87% of card volume (PPRO); Napas listed as the local debit scheme (dLocal).",
   "source_url": "https://www.ppro.com/countries/vietnam/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partial",
+  "yuno_entry": "Local schemes are not tracked brand by brand; accepted through the connected local acquirers' card rails (2C2P (domestic card processing)). Concierge, 19-Aug-2026",
   "priority": "High"
  },
  {
@@ -1945,8 +1945,8 @@
   "kind": "Payment method",
   "why_it_matters": "QR solution integrated into many banking and wallet apps (dLocal docs); strongest at physical POS (PaymentBrief).",
   "source_url": "https://docs.dlocal.com/docs/vietnam",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Partner signed, not integrated: 2C2P/Ant Intl, Unlimit, dLocal, Terrapay (Ali Partnerships, 18-May-2026)",
   "priority": "High"
  },
  {
@@ -1955,8 +1955,8 @@
   "kind": "Payment method",
   "why_it_matters": "27% of wallet users (Decision Lab Q3-2024 via 2C2P).",
   "source_url": "https://2c2p.com/articles/vietnam-payment-methods/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partner signed, not integrated",
+  "yuno_entry": "Partner signed, not integrated: 2C2P/Ant Intl, dLocal (Ali Partnerships, 18-May-2026)",
   "priority": "Medium"
  },
  {
@@ -2135,8 +2135,8 @@
   "kind": "Payment method",
   "why_it_matters": "Local schemes are 16% of card volume (PPRO); Isracard listed as a local card working online and offline (PayAtlas).",
   "source_url": "https://www.ppro.com/countries/israel/",
-  "on_yuno": "No",
-  "yuno_entry": "",
+  "on_yuno": "Partial",
+  "yuno_entry": "Local schemes are not tracked brand by brand; accepted through the connected local acquirers' card rails (Nuvei (local acquiring)). Concierge, 19-Aug-2026",
   "priority": "High"
  },
  {
