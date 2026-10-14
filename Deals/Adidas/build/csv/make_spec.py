@@ -83,6 +83,7 @@ S.append({"id": "gaps", "type": "two_column", "kicker": "WHAT IS NOT LIVE YET",
   "source": SRC,
   "notes": "Owner and usual timeline for new connection requests are not recorded in the data; ask the Partnerships/Integrations team before committing a PayPlus date."})
 S.append(old['slides'][-1])
+for _s in S: _s.pop("source", None)
 spec = {"presentation_id": old['presentation_id'], "merchant": "adidas", "footer": "", "slides": S}
 json.dump(spec, open(os.path.join(H, '..', 'gs', 'deck_spec_v2.json'), 'w'), indent=1, ensure_ascii=False)
 print(len(S), 'slides')

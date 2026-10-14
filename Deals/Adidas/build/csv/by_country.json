@@ -68,12 +68,19 @@
    ],
    "dLocal": [
     "Bank transfer",
+    "Cash",
     "MODO",
     "Pago Fácil",
     "Rapipago"
    ],
+   "DolarApp": [
+    "DolarApp"
+   ],
    "EBANX": [
     "Checkout Pro"
+   ],
+   "Fintoc": [
+    "Bank transfer"
    ],
    "Mercado Pago": [
     "Checkout Pro",
@@ -84,6 +91,9 @@
    ],
    "SafetyPay": [
     "SafetyPay"
+   ],
+   "Unlimint": [
+    "Bank transfer"
    ]
   },
   "wallets": [
@@ -165,6 +175,7 @@
     "AstroPay"
    ],
    "Bamboo": [
+    "Bank transfer",
     "PIX"
    ],
    "Banco do Brasil": [
@@ -179,16 +190,23 @@
     "PIX"
    ],
    "dLocal": [
+    "Bank transfer",
     "Boleto",
     "NuPay",
     "PIX",
     "Smart PIX"
+   ],
+   "DolarApp": [
+    "DolarApp"
    ],
    "EBANX": [
     "Boleto",
     "Checkout Pro",
     "PIX",
     "PicPay"
+   ],
+   "Fintoc": [
+    "Bank transfer"
    ],
    "Getnet": [
     "PIX"
@@ -201,6 +219,10 @@
     "Checkout Pro",
     "Mercado Pago Wallet",
     "PIX"
+   ],
+   "Monnet": [
+    "Bank transfer",
+    "Cash"
    ],
    "Nuvei": [
     "PIX"
@@ -341,6 +363,9 @@
     "Servipag",
     "Webpay"
    ],
+   "Fintoc": [
+    "Bank transfer"
+   ],
    "Khipu": [
     "Khipu"
    ],
@@ -348,10 +373,14 @@
     "Checkout Pro",
     "Mercado Pago Wallet"
    ],
+   "Monnet": [
+    "Bank transfer"
+   ],
    "Nuvei": [
     "Webpay"
    ],
    "Paymentez": [
+    "Cash",
     "Webpay"
    ],
    "SafetyPay": [
@@ -441,6 +470,7 @@
     "AstroPay"
    ],
    "Bamboo": [
+    "Bank transfer",
     "Nequi",
     "Nequi QR",
     "PSE"
@@ -449,10 +479,18 @@
     "Daviplata"
    ],
    "dLocal": [
+    "Bank transfer",
     "Bre-B",
+    "Cash",
     "Efecty",
     "Nequi",
     "PSE"
+   ],
+   "DolarApp": [
+    "DolarApp"
+   ],
+   "Fintoc": [
+    "Bank transfer"
    ],
    "Kushki": [
     "PSE"
@@ -461,6 +499,9 @@
     "Checkout Pro",
     "Mercado Pago Wallet",
     "PSE"
+   ],
+   "Monnet": [
+    "Bank transfer"
    ],
    "Nequi": [
     "Nequi"
@@ -475,6 +516,7 @@
     "PSE"
    ],
    "Paymentez": [
+    "Cash",
     "Daviplata",
     "Efecty",
     "Nequi",
@@ -483,6 +525,9 @@
    "PayU": [
     "PSE"
    ],
+   "Payvalida": [
+    "Payvalida"
+   ],
    "Refacil": [
     "Bre-B"
    ],
@@ -490,6 +535,8 @@
     "SafetyPay"
    ],
    "Unlimint": [
+    "Bank transfer",
+    "Cash",
     "Efecty",
     "PSE"
    ],
@@ -577,6 +624,8 @@
     "AstroPay"
    ],
    "Bamboo": [
+    "Bank transfer",
+    "Cash",
     "OXXO Pay"
    ],
    "Belvo": [
@@ -584,10 +633,15 @@
    ],
    "dLocal": [
     "7-Eleven",
+    "Bank transfer",
+    "Cash",
     "CoDi",
     "OXXO",
     "Paynet",
     "SPEI"
+   ],
+   "DolarApp": [
+    "DolarApp"
    ],
    "EBANX": [
     "Checkout Pro",
@@ -611,6 +665,7 @@
     "SPEI"
    ],
    "Paymentez": [
+    "Cash",
     "OXXO"
    ],
    "SafetyPay": [
@@ -620,6 +675,8 @@
     "SPEI"
    ],
    "Unlimint": [
+    "Bank transfer",
+    "Cash",
     "CoDi",
     "OXXO",
     "SPEI"
@@ -695,10 +752,15 @@
     "PagoEfectivo",
     "SafetyPay"
    ],
+   "Fintoc": [
+    "Bank transfer"
+   ],
    "Mercado Pago": [
     "Checkout Pro"
    ],
    "Monnet": [
+    "Bank transfer",
+    "Cash",
     "Monnet QR",
     "Monnet wallet",
     "Yape"
@@ -713,7 +775,11 @@
     "PagoEfectivo"
    ],
    "Paymentez": [
+    "Cash",
     "PagoEfectivo"
+   ],
+   "Payvalida": [
+    "Payvalida"
    ],
    "Powerpay": [
     "Powerpay"
@@ -769,6 +835,9 @@
    "AstroPay": [
     "AstroPay"
    ],
+   "Fintoc": [
+    "Bank transfer"
+   ],
    "Mercado Pago": [
     "Checkout Pro"
    ],
@@ -814,6 +883,7 @@
   ],
   "local": {
    "dLocal": [
+    "Multipago",
     "Pago al Paso"
    ],
    "EBANX": [
@@ -918,7 +988,8 @@
   ],
   "local": {
    "dLocal": [
-    "Banco Popular"
+    "Banco Popular",
+    "Cash"
    ],
    "Inswitch": [
     "Banreservas",
@@ -976,6 +1047,13 @@
    ],
    "EBANX": [
     "SafetyPay"
+   ],
+   "Fintoc": [
+    "Bank transfer"
+   ],
+   "Monnet": [
+    "Bank transfer",
+    "Cash"
    ],
    "Paymentez": [
     "PagoEfectivo"
@@ -1068,6 +1146,8 @@
   ],
   "local": {
    "Monnet": [
+    "Bank transfer",
+    "Cash",
     "Monnet QR",
     "Monnet wallet"
    ],
@@ -1197,6 +1277,9 @@
    "SafetyPay": [
     "SafetyPay"
    ],
+   "Unlimint": [
+    "Cash"
+   ],
    "Yappy": [
     "Yappy"
    ]
@@ -1242,6 +1325,9 @@
    "Worldpay"
   ],
   "local": {
+   "Fintoc": [
+    "Bank transfer"
+   ],
    "SafetyPay": [
     "SafetyPay"
    ]

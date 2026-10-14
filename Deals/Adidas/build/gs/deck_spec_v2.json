@@ -80,7 +80,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "notes": "2C2P: the integration matrix shows card integration code only, with zero recorded production transactions in any country. Earlier we told adidas 2C2P is live with many SEA merchants; this corrects it."
   },
   {
@@ -102,45 +101,44 @@
     [
      "Argentina",
      "69",
-     "Checkout Pro · MODO · Pago Fácil · AstroPay · Bank transfer · Mercado Pago Wallet · +3 more"
+     "Bank transfer · Checkout Pro · MODO · Pago Fácil · AstroPay · Cash · +5 more"
     ],
     [
      "Brazil",
      "83",
-     "PIX · Boleto · PIX Automático · Checkout Pro · NuPay · PicPay · +7 more"
+     "PIX · Boleto · Bank transfer · PIX Automático · Checkout Pro · NuPay · +10 more"
     ],
     [
      "Chile",
      "51",
-     "Webpay · Khipu · Checkout Pro · MACH · MACH QR · Mercado Pago Wallet · +2 more"
+     "Webpay · Khipu · Bank transfer · Checkout Pro · Cash · MACH · +4 more"
     ],
     [
      "Colombia",
      "89",
-     "PSE · Nequi · Daviplata · Efecty · Bre-B · ADDI · +9 more"
+     "PSE · Nequi · Bank transfer · Daviplata · Efecty · Cash · +13 more"
     ],
     [
      "Mexico",
      "69",
-     "SPEI · OXXO · OXXO Pay · Checkout Pro · CoDi · Paynet · +7 more"
+     "SPEI · Cash · Bank transfer · OXXO · OXXO Pay · Checkout Pro · +10 more"
     ],
     [
      "Peru",
      "55",
-     "PagoEfectivo · Yape · SafetyPay · AstroPay · Checkout Pro · Cuotéalo BCP · +4 more"
+     "PagoEfectivo · Yape · Bank transfer · Cash · SafetyPay · AstroPay · +7 more"
     ],
     [
      "Uruguay",
      "40",
-     "AstroPay · Checkout Pro · SafetyPay"
+     "AstroPay · Bank transfer · Checkout Pro · SafetyPay"
     ]
    ],
    "header_style": "dark",
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026"
+   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
   },
   {
    "id": "sum-latam2",
@@ -161,7 +159,7 @@
     [
      "Bolivia",
      "30",
-     "Pago al Paso · PagosNet · SafetyPay"
+     "Multipago · Pago al Paso · PagosNet · SafetyPay"
     ],
     [
      "Costa Rica",
@@ -171,12 +169,12 @@
     [
      "Dominican Republic",
      "35",
-     "Banco Popular · Banreservas · Local bank transfers and cash (11 banks) · Pagatodo · SafetyPay"
+     "Banco Popular · Banreservas · Cash · Local bank transfers and cash (11 banks) · Pagatodo · SafetyPay"
     ],
     [
      "Ecuador",
      "36",
-     "PagoEfectivo · Deuna · SafetyPay"
+     "PagoEfectivo · Bank transfer · Deuna · SafetyPay · Cash"
     ],
     [
      "El Salvador",
@@ -186,7 +184,7 @@
     [
      "Guatemala",
      "30",
-     "Monnet QR · Monnet wallet · SafetyPay"
+     "Bank transfer · Cash · Monnet QR · Monnet wallet · SafetyPay"
     ],
     [
      "Honduras",
@@ -201,20 +199,19 @@
     [
      "Panama",
      "39",
-     "Nequi · Pluxee · Punto Pago · SafetyPay · Yappy"
+     "Nequi · Cash · Pluxee · Punto Pago · SafetyPay · Yappy"
     ],
     [
      "Paraguay",
      "38",
-     "SafetyPay"
+     "Bank transfer · SafetyPay"
     ]
    ],
    "header_style": "dark",
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026"
+   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
   },
   {
    "id": "sum-apac",
@@ -277,8 +274,7 @@
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026"
+   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant."
   },
   {
    "type": "table",
@@ -297,55 +293,14 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-argentina",
-   "kicker": "COUNTRY DETAIL › ARGENTINA",
-   "headline": "Argentina: 69 providers live through Yuno, 55 for cards and 9 local methods.",
+   "kicker": "COUNTRY DETAIL › ARGENTINA › CARDS AND WALLETS",
+   "headline": "Argentina: 69 providers live through Yuno, 55 for cards and 11 local methods.",
    "rows": [
     [
      "Cards",
      "Adyen, Airwallex, Alelo, American Express, BAC Credomatic, Bamboo, Bancard, Braintree, Checkout.com, Cielo, Cobro Digital, Credibanco, Cybersource, dLocal, EBANX, Ecommpay, FAC, Fiserv, Getnet, Izipay, Klap, Kushki, Mercado Pago, Nave, Niubiz, NMI, Nomupay, NTT Data, Nuvei, Openpay, Pagar.me, PagBank, PagSeguro, PayAmigo, Paymentez, PayU, Payzen, Pluxee, Prisma, Prosa, Rede, Redeban, Redsys, Splitit, Stone, Stripe, Tabapay, Tap Payments, Transbank, Unlimint, VR, Windcave, Wompi, Worldline, Worldpay",
      "55"
-    ],
-    [
-     "Checkout Pro",
-     "EBANX, Mercado Pago",
-     "2"
-    ],
-    [
-     "MODO",
-     "dLocal, MODO",
-     "2"
-    ],
-    [
-     "Pago Fácil",
-     "Bamboo, dLocal",
-     "2"
-    ],
-    [
-     "AstroPay",
-     "AstroPay",
-     "1"
-    ],
-    [
-     "Bank transfer · Rapipago",
-     "dLocal",
-     "1"
-    ],
-    [
-     "Mercado Pago Wallet",
-     "Mercado Pago",
-     "1"
-    ],
-    [
-     "SafetyPay",
-     "SafetyPay",
-     "1"
-    ],
-    [
-     "Transferencias 3.0",
-     "Bamboo",
-     "1"
     ],
     [
      "Wallets",
@@ -371,10 +326,82 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
+   "id": "c-argentina-local",
+   "kicker": "COUNTRY DETAIL › ARGENTINA › LOCAL METHODS",
+   "headline": "Argentina: local methods live through Yuno, and which providers carry each one.",
+   "rows": [
+    [
+     "Bank transfer",
+     "dLocal, Fintoc, Unlimint",
+     "3"
+    ],
+    [
+     "Checkout Pro",
+     "EBANX, Mercado Pago",
+     "2"
+    ],
+    [
+     "MODO",
+     "dLocal, MODO",
+     "2"
+    ],
+    [
+     "Pago Fácil",
+     "Bamboo, dLocal",
+     "2"
+    ],
+    [
+     "AstroPay",
+     "AstroPay",
+     "1"
+    ],
+    [
+     "Cash · Rapipago",
+     "dLocal",
+     "1"
+    ],
+    [
+     "DolarApp",
+     "DolarApp",
+     "1"
+    ],
+    [
+     "Mercado Pago Wallet",
+     "Mercado Pago",
+     "1"
+    ],
+    [
+     "SafetyPay",
+     "SafetyPay",
+     "1"
+    ],
+    [
+     "Transferencias 3.0",
+     "Bamboo",
+     "1"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "columns": [
+    "Method",
+    "Providers live through Yuno",
+    "#"
+   ],
+   "col_widths": [
+    0.2,
+    0.74,
+    0.06
+   ],
+   "header_style": "dark",
+   "font_size": 7.5,
+   "bold_first_col": true,
+   "zebra": true,
+   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-brazil",
    "kicker": "COUNTRY DETAIL › BRAZIL › CARDS AND WALLETS",
-   "headline": "Brazil: 83 providers live through Yuno, 56 for cards and 13 local methods.",
+   "headline": "Brazil: 83 providers live through Yuno, 56 for cards and 16 local methods.",
    "rows": [
     [
      "Cards",
@@ -405,7 +432,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-brazil-local",
    "kicker": "COUNTRY DETAIL › BRAZIL › LOCAL METHODS",
    "headline": "Brazil: local methods live through Yuno, and which providers carry each one.",
@@ -419,6 +445,11 @@
      "Boleto",
      "Banco do Brasil, Bradesco, dLocal, EBANX, Mercado Pago, Pagar.me, PagBank",
      "7"
+    ],
+    [
+     "Bank transfer",
+     "Bamboo, dLocal, Fintoc, Monnet",
+     "4"
     ],
     [
      "PIX Automático",
@@ -442,7 +473,7 @@
     ],
     [
      "Other local methods",
-     "Alelo (Alelo); AstroPay (AstroPay); Google Pay PIX (Adyen); Mercado Pago Wallet (Mercado Pago); PIX Parcelado (Pagaleve); SafetyPay (SafetyPay); Smart PIX (dLocal)",
+     "Alelo (Alelo); AstroPay (AstroPay); Cash (Monnet); DolarApp (DolarApp); Google Pay PIX (Adyen); Mercado Pago Wallet (Mercado Pago); PIX Parcelado (Pagaleve); SafetyPay (SafetyPay); Smart PIX (dLocal)",
      "1 each"
     ]
    ]
@@ -464,50 +495,14 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-chile",
-   "kicker": "COUNTRY DETAIL › CHILE",
-   "headline": "Chile: 51 providers live through Yuno, 39 for cards and 8 local methods.",
+   "kicker": "COUNTRY DETAIL › CHILE › CARDS AND WALLETS",
+   "headline": "Chile: 51 providers live through Yuno, 39 for cards and 10 local methods.",
    "rows": [
     [
      "Cards",
      "Adyen, Airwallex, BAC Credomatic, Bamboo, Braintree, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Fiserv, Getnet, Izipay, Klap, Kushki, Mercado Pago, Monnet, Niubiz, NMI, Nuvei, Openpay, Pagar.me, PagBank, PagSeguro, Paymentez, PayU, Prisma, Rede, Redeban, Redsys, Splitit, Stripe, Tap Payments, Transbank, Unlimint, Windcave, Wompi, Worldpay",
      "39"
-    ],
-    [
-     "Webpay",
-     "Bamboo, EBANX, Nuvei, Paymentez, Transbank",
-     "5"
-    ],
-    [
-     "Khipu",
-     "Bamboo, dLocal, Khipu",
-     "3"
-    ],
-    [
-     "Checkout Pro",
-     "EBANX, Mercado Pago",
-     "2"
-    ],
-    [
-     "MACH QR",
-     "BCI MACH",
-     "1"
-    ],
-    [
-     "MACH · Servipag",
-     "EBANX",
-     "1"
-    ],
-    [
-     "Mercado Pago Wallet",
-     "Mercado Pago",
-     "1"
-    ],
-    [
-     "SafetyPay",
-     "SafetyPay",
-     "1"
     ],
     [
      "Wallets",
@@ -533,10 +528,77 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
+   "id": "c-chile-local",
+   "kicker": "COUNTRY DETAIL › CHILE › LOCAL METHODS",
+   "headline": "Chile: local methods live through Yuno, and which providers carry each one.",
+   "rows": [
+    [
+     "Webpay",
+     "Bamboo, EBANX, Nuvei, Paymentez, Transbank",
+     "5"
+    ],
+    [
+     "Khipu",
+     "Bamboo, dLocal, Khipu",
+     "3"
+    ],
+    [
+     "Bank transfer",
+     "Fintoc, Monnet",
+     "2"
+    ],
+    [
+     "Checkout Pro",
+     "EBANX, Mercado Pago",
+     "2"
+    ],
+    [
+     "Cash",
+     "Paymentez",
+     "1"
+    ],
+    [
+     "MACH QR",
+     "BCI MACH",
+     "1"
+    ],
+    [
+     "MACH · Servipag",
+     "EBANX",
+     "1"
+    ],
+    [
+     "Mercado Pago Wallet",
+     "Mercado Pago",
+     "1"
+    ],
+    [
+     "SafetyPay",
+     "SafetyPay",
+     "1"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "columns": [
+    "Method",
+    "Providers live through Yuno",
+    "#"
+   ],
+   "col_widths": [
+    0.2,
+    0.74,
+    0.06
+   ],
+   "header_style": "dark",
+   "font_size": 7.5,
+   "bold_first_col": true,
+   "zebra": true,
+   "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
    "id": "c-colombia",
    "kicker": "COUNTRY DETAIL › COLOMBIA › CARDS AND WALLETS",
-   "headline": "Colombia: 89 providers live through Yuno, 62 for cards and 15 local methods.",
+   "headline": "Colombia: 89 providers live through Yuno, 62 for cards and 19 local methods.",
    "rows": [
     [
      "Cards",
@@ -567,7 +629,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-colombia-local",
    "kicker": "COUNTRY DETAIL › COLOMBIA › LOCAL METHODS",
    "headline": "Colombia: local methods live through Yuno, and which providers carry each one.",
@@ -583,6 +644,11 @@
      "6"
     ],
     [
+     "Bank transfer",
+     "Bamboo, dLocal, Fintoc, Monnet, Unlimint",
+     "5"
+    ],
+    [
      "Daviplata",
      "Daviplata, Nuvei, Paymentez, Wompi",
      "4"
@@ -593,13 +659,18 @@
      "4"
     ],
     [
+     "Cash",
+     "dLocal, Paymentez, Unlimint",
+     "3"
+    ],
+    [
      "Bre-B",
      "dLocal, Refacil",
      "2"
     ],
     [
      "Other local methods",
-     "ADDI (ADDI); AstroPay (AstroPay); Bancolombia BNPL · Bancolombia QR · Bancolombia transfer · Botón Bancolombia (Wompi); Checkout Pro · Mercado Pago Wallet (Mercado Pago); Nequi QR (Bamboo); SafetyPay (SafetyPay)",
+     "ADDI (ADDI); AstroPay (AstroPay); Bancolombia BNPL · Bancolombia QR · Bancolombia transfer · Botón Bancolombia (Wompi); Checkout Pro · Mercado Pago Wallet (Mercado Pago); DolarApp (DolarApp); Nequi QR (Bamboo); Payvalida (Payvalida); SafetyPay (SafetyPay)",
      "1 each"
     ]
    ]
@@ -621,10 +692,9 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-mexico",
    "kicker": "COUNTRY DETAIL › MEXICO › CARDS AND WALLETS",
-   "headline": "Mexico: 69 providers live through Yuno, 56 for cards and 13 local methods.",
+   "headline": "Mexico: 69 providers live through Yuno, 56 for cards and 16 local methods.",
    "rows": [
     [
      "Cards",
@@ -655,7 +725,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-mexico-local",
    "kicker": "COUNTRY DETAIL › MEXICO › LOCAL METHODS",
    "headline": "Mexico: local methods live through Yuno, and which providers carry each one.",
@@ -664,6 +733,16 @@
      "SPEI",
      "dLocal, EBANX, Kushki, Nuvei, PagSeguro, STP, Unlimint",
      "7"
+    ],
+    [
+     "Cash",
+     "Bamboo, dLocal, Paymentez, Unlimint",
+     "4"
+    ],
+    [
+     "Bank transfer",
+     "Bamboo, dLocal, Unlimint",
+     "3"
     ],
     [
      "OXXO",
@@ -692,7 +771,7 @@
     ],
     [
      "Other local methods",
-     "7-Eleven (dLocal); Aplazo (Aplazo); AstroPay (AstroPay); Direct debit (Belvo); Mercado Pago Wallet (Mercado Pago); PayCash (Kushki); SafetyPay (SafetyPay)",
+     "7-Eleven (dLocal); Aplazo (Aplazo); AstroPay (AstroPay); Direct debit (Belvo); DolarApp (DolarApp); Mercado Pago Wallet (Mercado Pago); PayCash (Kushki); SafetyPay (SafetyPay)",
      "1 each"
     ]
    ]
@@ -714,10 +793,9 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-peru",
    "kicker": "COUNTRY DETAIL › PERU › CARDS AND WALLETS",
-   "headline": "Peru: 55 providers live through Yuno, 38 for cards and 10 local methods.",
+   "headline": "Peru: 55 providers live through Yuno, 38 for cards and 13 local methods.",
    "rows": [
     [
      "Cards",
@@ -748,7 +826,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-peru-local",
    "kicker": "COUNTRY DETAIL › PERU › LOCAL METHODS",
    "headline": "Peru: local methods live through Yuno, and which providers carry each one.",
@@ -764,39 +841,24 @@
      "4"
     ],
     [
+     "Bank transfer",
+     "Fintoc, Monnet",
+     "2"
+    ],
+    [
+     "Cash",
+     "Monnet, Paymentez",
+     "2"
+    ],
+    [
      "SafetyPay",
      "EBANX, SafetyPay",
      "2"
     ],
     [
-     "AstroPay",
-     "AstroPay",
-     "1"
-    ],
-    [
-     "Checkout Pro",
-     "Mercado Pago",
-     "1"
-    ],
-    [
-     "Cuotéalo BCP",
-     "Cuotéalo",
-     "1"
-    ],
-    [
-     "Monnet QR · Monnet wallet",
-     "Monnet",
-     "1"
-    ],
-    [
-     "Powerpay",
-     "Powerpay",
-     "1"
-    ],
-    [
-     "aCuotaz",
-     "aCuotaz",
-     "1"
+     "Other local methods",
+     "AstroPay (AstroPay); Checkout Pro (Mercado Pago); Cuotéalo BCP (Cuotéalo); Monnet QR · Monnet wallet (Monnet); Payvalida (Payvalida); Powerpay (Powerpay); aCuotaz (aCuotaz)",
+     "1 each"
     ]
    ]
   },
@@ -817,10 +879,9 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-uruguay",
    "kicker": "COUNTRY DETAIL › URUGUAY",
-   "headline": "Uruguay: 40 providers live through Yuno, 32 for cards and 3 local methods.",
+   "headline": "Uruguay: 40 providers live through Yuno, 32 for cards and 4 local methods.",
    "rows": [
     [
      "Cards",
@@ -830,6 +891,11 @@
     [
      "AstroPay",
      "AstroPay",
+     "1"
+    ],
+    [
+     "Bank transfer",
+     "Fintoc",
      "1"
     ],
     [
@@ -866,10 +932,9 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-bolivia",
    "kicker": "COUNTRY DETAIL › BOLIVIA",
-   "headline": "Bolivia: 30 providers live through Yuno, 26 for cards and 3 local methods.",
+   "headline": "Bolivia: 30 providers live through Yuno, 26 for cards and 4 local methods.",
    "rows": [
     [
      "Cards",
@@ -877,7 +942,7 @@
      "26"
     ],
     [
-     "Pago al Paso",
+     "Multipago · Pago al Paso",
      "dLocal",
      "1"
     ],
@@ -915,7 +980,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-costa-rica",
    "kicker": "COUNTRY DETAIL › COSTA RICA",
    "headline": "Costa Rica: 37 providers live through Yuno, 31 for cards and 4 local methods.",
@@ -969,10 +1033,9 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-dominican-republic",
    "kicker": "COUNTRY DETAIL › DOMINICAN REPUBLIC",
-   "headline": "Dominican Republic: 35 providers live through Yuno, 29 for cards and 5 local methods.",
+   "headline": "Dominican Republic: 35 providers live through Yuno, 29 for cards and 6 local methods.",
    "rows": [
     [
      "Cards",
@@ -980,7 +1043,7 @@
      "29"
     ],
     [
-     "Banco Popular",
+     "Banco Popular · Cash",
      "dLocal",
      "1"
     ],
@@ -1018,10 +1081,9 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-ecuador",
    "kicker": "COUNTRY DETAIL › ECUADOR",
-   "headline": "Ecuador: 36 providers live through Yuno, 27 for cards and 3 local methods.",
+   "headline": "Ecuador: 36 providers live through Yuno, 27 for cards and 5 local methods.",
    "rows": [
     [
      "Cards",
@@ -1034,6 +1096,11 @@
      "4"
     ],
     [
+     "Bank transfer",
+     "Fintoc, Monnet",
+     "2"
+    ],
+    [
      "Deuna",
      "Deuna, dLocal",
      "2"
@@ -1042,6 +1109,11 @@
      "SafetyPay",
      "EBANX, SafetyPay",
      "2"
+    ],
+    [
+     "Cash",
+     "Monnet",
+     "1"
     ],
     [
      "Wallets",
@@ -1067,7 +1139,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-el-salvador",
    "kicker": "COUNTRY DETAIL › EL SALVADOR",
    "headline": "El Salvador: 30 providers live through Yuno, 25 for cards and 2 local methods.",
@@ -1111,10 +1182,9 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-guatemala",
    "kicker": "COUNTRY DETAIL › GUATEMALA",
-   "headline": "Guatemala: 30 providers live through Yuno, 25 for cards and 3 local methods.",
+   "headline": "Guatemala: 30 providers live through Yuno, 25 for cards and 5 local methods.",
    "rows": [
     [
      "Cards",
@@ -1122,7 +1192,7 @@
      "25"
     ],
     [
-     "Monnet QR · Monnet wallet",
+     "Bank transfer · Cash · Monnet QR · Monnet wallet",
      "Monnet",
      "1"
     ],
@@ -1155,7 +1225,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-honduras",
    "kicker": "COUNTRY DETAIL › HONDURAS",
    "headline": "Honduras: 26 providers live through Yuno, 23 for cards and no local method connected yet.",
@@ -1189,7 +1258,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-nicaragua",
    "kicker": "COUNTRY DETAIL › NICARAGUA",
    "headline": "Nicaragua: 23 providers live through Yuno, 20 for cards and no local method connected yet.",
@@ -1223,10 +1291,9 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-panama",
    "kicker": "COUNTRY DETAIL › PANAMA",
-   "headline": "Panama: 39 providers live through Yuno, 33 for cards and 5 local methods.",
+   "headline": "Panama: 39 providers live through Yuno, 33 for cards and 6 local methods.",
    "rows": [
     [
      "Cards",
@@ -1237,6 +1304,11 @@
      "Nequi",
      "Bamboo, dLocal",
      "2"
+    ],
+    [
+     "Cash",
+     "Unlimint",
+     "1"
     ],
     [
      "Pluxee",
@@ -1282,15 +1354,19 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-paraguay",
    "kicker": "COUNTRY DETAIL › PARAGUAY",
-   "headline": "Paraguay: 38 providers live through Yuno, 30 for cards and 1 local methods.",
+   "headline": "Paraguay: 38 providers live through Yuno, 30 for cards and 2 local methods.",
    "rows": [
     [
      "Cards",
      "Adyen, Airwallex, BAC Credomatic, Bamboo, Bancard, Braintree, Checkout.com, Cielo, Credibanco, dLocal, EBANX, Ecommpay, Getnet, Izipay, Mercado Pago, Niubiz, NMI, Nuvei, Openpay, Pagar.me, PayU, Rede, Redeban, Splitit, Stripe, Tap Payments, Transbank, Unlimint, Wompi, Worldpay",
      "30"
+    ],
+    [
+     "Bank transfer",
+     "Fintoc",
+     "1"
     ],
     [
      "SafetyPay",
@@ -1321,7 +1397,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-indonesia",
    "kicker": "COUNTRY DETAIL › INDONESIA",
    "headline": "Indonesia: 30 providers live through Yuno, 26 for cards and 7 local methods.",
@@ -1375,7 +1450,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-malaysia",
    "kicker": "COUNTRY DETAIL › MALAYSIA",
    "headline": "Malaysia: 29 providers live through Yuno, 25 for cards and 5 local methods.",
@@ -1429,7 +1503,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-philippines",
    "kicker": "COUNTRY DETAIL › PHILIPPINES",
    "headline": "Philippines: 29 providers live through Yuno, 25 for cards and 6 local methods.",
@@ -1478,7 +1551,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-singapore",
    "kicker": "COUNTRY DETAIL › SINGAPORE",
    "headline": "Singapore: 32 providers live through Yuno, 28 for cards and 1 local methods.",
@@ -1517,7 +1589,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-thailand",
    "kicker": "COUNTRY DETAIL › THAILAND",
    "headline": "Thailand: 31 providers live through Yuno, 27 for cards and 4 local methods.",
@@ -1561,7 +1632,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-vietnam",
    "kicker": "COUNTRY DETAIL › VIETNAM",
    "headline": "Vietnam: 27 providers live through Yuno, 24 for cards and no local method connected yet.",
@@ -1595,7 +1665,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-myanmar",
    "kicker": "COUNTRY DETAIL › MYANMAR",
    "headline": "Myanmar: 15 providers live through Yuno, 12 for cards and no local method connected yet.",
@@ -1629,7 +1698,6 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Live means the provider has processed production payments through Yuno for this country, cross-border acquiring included. Method activation is set per merchant.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "id": "c-israel",
    "kicker": "COUNTRY DETAIL › ISRAEL",
    "headline": "Israel: 29 providers live through Yuno, 26 for cards and no local method connected yet.",
@@ -1684,7 +1752,6 @@
     }
    ],
    "bar": "In every country you asked about, cards already have several live providers, so none of these gaps leaves a market without coverage.",
-   "source": "Yuno integration matrix (product_matrix.matrix_v1) and Yuno integration code, via Payments Concierge, 14 Oct 2026",
    "notes": "Owner and usual timeline for new connection requests are not recorded in the data; ask the Partnerships/Integrations team before committing a PayPlus date."
   },
   {

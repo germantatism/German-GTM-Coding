@@ -43,6 +43,7 @@ NAME = {'DLOCAL':'dLocal','MERCADO_PAGO':'Mercado Pago','PAYU':'PayU','CHECKOUT'
  'PAYAMIGO':'PayAmigo','MCTPAY':'MCTPay','T1PAGOS':'T1Pagos','ALL_IN_PAY':'AllInPay','DOLARAPP':'DolarApp','PUNTOXPRESS':'PuntoXpress','PAGO_EFECTIVO':'PagoEfectivo',
  'COBRO_DIGITAL':'Cobro Digital','BANCO_DO_BRASIL':'Banco do Brasil','STARKBANK':'Stark Bank','UNLIMINT':'Unlimint','ECOMMPAY':'Ecommpay','XACBANK':'XacBank','ZOOP':'Zoop','ASTROPAY':'AstroPay','SAFETYPAY':'SafetyPay','ADDI':'ADDI','ITAU':'Itaú','OPENPAY':'Openpay','PAGALEVE':'Pagaleve','KUSHKI':'Kushki','WOMPI':'Wompi','PAYMENTEZ':'Paymentez','INSWITCH':'Inswitch','FINTOC':'Fintoc','XENDIT':'Xendit','SPINPAY':'Spinpay','OKTO':'Okto','PAGSMILE':'Pagsmile','REFACIL':'Refacil','MONNET':'Monnet','NIUBIZ':'Niubiz','IZIPAY':'Izipay','CUOTEALO':'Cuotéalo','ACUOTAZ':'aCuotaz','POWERPAY':'Powerpay','BOKU':'Boku','MAYA':'Maya','APLAZO':'Aplazo','BELVO':'Belvo','PAYVALIDA':'Payvalida','TRANSFEERA':'Transfeera','PINBANK':'Pinbank','BAMBOO':'Bamboo','DAVIPLATA':'Daviplata','NEQUI':'Nequi','YAPPY':'Yappy','MODO':'MODO','PLUXEE':'Pluxee'}
 def nm(p): return NAME.get(p, p.replace('_',' ').title())
+LATAM = {'Argentina','Brazil','Chile','Colombia','Mexico','Peru','Uruguay','Bolivia','Costa Rica','Dominican Republic','Ecuador','El Salvador','Guatemala','Honduras','Nicaragua','Panama','Paraguay'}
 rows = list(csv.DictReader(open(SRC)))
 out = collections.OrderedDict()
 for r in rows:
@@ -58,6 +59,11 @@ for r in rows:
         elif m in DR_BANKS or m == 'PAGA_TODO':
             if c == 'Dominican Republic': d['local'][nm(p)].add('Local bank transfers and cash (11 banks)' if m in DR_BANKS else 'Pagatodo')
         elif m == 'SAFETYPAY' and c not in ('Israel',): d['local'][nm(p)].add('SafetyPay')
+        elif m in ('BANK_TRANSFER','CASH') and p in ('BAMBOO','DLOCAL','UNLIMINT','MONNET','PAYMENTEZ','EBANX','FINTOC') and c in LATAM:
+            d['local'][nm(p)].add('Bank transfer' if m == 'BANK_TRANSFER' else 'Cash')
+        elif m == 'MULTIPAGO' and c == 'Bolivia': d['local'][nm(p)].add('Multipago')
+        elif m == 'PAYVALIDA' and c in ('Colombia', 'Peru'): d['local'][nm(p)].add('Payvalida')
+        elif m == 'DOLARAPP' and c in ('Argentina', 'Brazil', 'Colombia', 'Mexico'): d['local'][nm(p)].add('DolarApp')
         elif m in ('ASTROPAY','ASTROPAY_ENROLLABLE') and c in ('Argentina','Brazil','Colombia','Mexico','Peru','Uruguay'): d['local'][nm(p)].add('AstroPay')
 res = {}
 for c, d in out.items():
