@@ -159,7 +159,9 @@ for c in T:
         SEEN_CODE.setdefault(c, set()).add(_ck)
         m = methods_for(c, d['name'])
         extra = signed_by_prov.get((c, name), [])
-        if extra: m = (m + ', ' if m else '') + ', '.join(f"{x} (signed)" for x in extra)
+        if extra:
+            base = [x for x in m.split(', ') if x and x not in extra and x != NO_DATA_NOTE]
+            m = ', '.join(base + [f"{x} (signed)" for x in extra])
         rows.append([c, REGION[c], 'Provider', name, m, 'Live'])
     for d in sorted(meth_by_c[c], key=lambda d: disp(d['name']).lower()):
         rows.append([c, REGION[c], 'Direct payment method', disp(d['name']), '', 'Live'])
