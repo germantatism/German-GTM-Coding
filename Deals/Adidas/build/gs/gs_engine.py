@@ -145,7 +145,7 @@ def run(svc, pid, reqs, chunk=300, label=''):
                 svc.presentations().batchUpdate(presentationId=pid, body={'requests': part}).execute(); break
             except Exception as e:
                 msg = str(e)
-                if attempt == 3 or ('400' in msg and 'rateLimit' not in msg and 'Internal' not in msg):
+                if attempt == 3 or ('400' in msg and 'rateLimit' not in msg and 'Internal' not in msg and 'createImage' not in msg and 'image' not in msg.lower()):
                     raise
                 print(f"  retry {attempt + 1} on chunk {i} ({label}): {msg[:140]}"); time.sleep(3 + 3 * attempt)
         done += len(part)
@@ -1324,11 +1324,43 @@ def r_template_keep(deck, s, tag, n, footer):
     sb.footer(footer, n)
     sb.flush(); deck.set_notes(sid, s.get('notes')); return sid
 
+def r_logo_grid(deck, s, tag, n, footer):
+    """Chips with a small logo and the name, flowing in rows; sections stack; an optional table sits under the chips.
+    spec: sections=[{header, chips=[{name, logo, aspect}], muted}], table={columns, col_widths, rows, font_size}"""
+    sid, sb = _content_base(deck, s, tag)
+    y = sb.zy; CH, LH, PITCH, GAP, FS = 16.0, 10.0, 19.5, 4.0, 7.0
+    for sec in s.get('sections', []):
+        chips = sec.get('chips', [])
+        if not chips: continue
+        if sec.get('header'):
+            sb.text(X0, y, W0, 9, sec['header'].upper(), size=6.5, bold=True, color=GREY, ls=100); y += 12
+        muted = sec.get('muted'); fill = '#F3F3F3' if muted else '#F4F5FD'; tcol = GREY if muted else INK
+        x = X0
+        for c in chips:
+            lw = min(LH * float(c.get('aspect') or 1.0), 30.0) if c.get('logo') else 0.0
+            tw = text_width(c['name'], FS); w = 6 + (lw + 5 if lw else 0) + tw + 7
+            if x + w > X0 + W0 + 0.5: x = X0; y += PITCH
+            if y + CH > 366: raise FitError(f"slide {s.get('id')}: chips overflow the zone")
+            sb.round_rect(x, y, w, CH, fill=fill)
+            if lw: sb.image(c['logo'], x + 6, y + (CH - LH) / 2, lw, LH)
+            sb.text(x + 6 + (lw + 5 if lw else 0), y + 1.5, tw + 8, CH - 3, c['name'], size=FS, color=tcol, ls=100, valign='MIDDLE')
+            x += w + GAP
+        y += PITCH + 4
+    t = s.get('table')
+    if t:
+        y += 2
+        cols = t.get('columns', []); fr = t.get('col_widths') or [1.0 / max(len(cols), 1)] * len(cols); tot = sum(fr)
+        max_h = 366 - y
+        if max_h < 40: raise FitError(f"slide {s.get('id')}: no room left for the table ({max_h:.0f} pt)")
+        sb.table(X0, y, [W0 * f / tot for f in fr], t.get('rows', []), header=cols, header_style=t.get('header_style', 'dark'),
+                 font_size=t.get('font_size', 7.5), bold_first_col=True, zebra=True, max_h=max_h, native=bool(t.get('native')))
+    return _finish(deck, sb, sid, s, n, footer)
+
 RENDERERS = {
     'exec_summary': r_exec_summary, 'stats': r_stats, 'scale': r_scale, 'four_numbers': r_four_numbers, 'traffic_list': r_traffic_list,
     'cards_row': r_cards_row, 'two_column': r_two_column, 'table': r_table, 'checklist_table': r_table, 'open_items_table': r_table,
     'comparison_grid': r_comparison_grid, 'diagram': r_diagram, 'code_before_after': r_code_before_after, 'phases': r_phases,
-    'next_steps': r_next_steps, 'sources': r_sources, 'template_keep': r_template_keep,
+    'next_steps': r_next_steps, 'logo_grid': r_logo_grid, 'sources': r_sources, 'template_keep': r_template_keep,
 }
 
 def validate(spec):
