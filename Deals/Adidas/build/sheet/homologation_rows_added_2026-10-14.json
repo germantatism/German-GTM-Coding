@@ -1,0 +1,138 @@
+[
+ [
+  "Argentina",
+  "LATAM",
+  "Provider",
+  "Payway",
+  "",
+  "Homologation"
+ ],
+ [
+  "Bolivia",
+  "LATAM",
+  "Provider",
+  "ATC Red Enlace",
+  "",
+  "Homologation"
+ ],
+ [
+  "Bolivia",
+  "LATAM",
+  "Payment method",
+  "QR BCB (QR Simple)",
+  "",
+  "Homologation"
+ ],
+ [
+  "Guatemala",
+  "LATAM",
+  "Provider",
+  "NeoNet",
+  "",
+  "Homologation"
+ ],
+ [
+  "Indonesia",
+  "Southeast Asia",
+  "Payment method",
+  "Virtual Account (bank transfer)",
+  "",
+  "Live"
+ ],
+ [
+  "Israel",
+  "Middle East",
+  "Provider",
+  "Isracard",
+  "",
+  "Homologation"
+ ],
+ [
+  "Israel",
+  "Middle East",
+  "Provider",
+  "Cal (Visa Cal)",
+  "",
+  "Homologation"
+ ],
+ [
+  "Israel",
+  "Middle East",
+  "Provider",
+  "Max",
+  "",
+  "Homologation"
+ ],
+ [
+  "Israel",
+  "Middle East",
+  "Payment method",
+  "Bit",
+  "",
+  "Homologation"
+ ],
+ [
+  "Malaysia",
+  "Southeast Asia",
+  "Payment method",
+  "Touch 'n Go eWallet",
+  "",
+  "Live"
+ ],
+ [
+  "Myanmar",
+  "Southeast Asia",
+  "Provider",
+  "KBZ Bank",
+  "",
+  "Homologation"
+ ],
+ [
+  "Myanmar",
+  "Southeast Asia",
+  "Payment method",
+  "KBZPay",
+  "",
+  "Homologation"
+ ],
+ [
+  "Paraguay",
+  "LATAM",
+  "Payment method",
+  "QR Bancard",
+  "",
+  "Homologation"
+ ],
+ [
+  "Thailand",
+  "Southeast Asia",
+  "Payment method",
+  "Online banking (SCB, KBank, Bangkok Bank, Krungsri, KTB)",
+  "",
+  "Homologation"
+ ],
+ [
+  "Uruguay",
+  "LATAM",
+  "Provider",
+  "OCA",
+  "",
+  "Homologation"
+ ],
+ [
+  "Vietnam",
+  "Southeast Asia",
+  "Payment method",
+  "NAPAS domestic cards",
+  "",
+  "Homologation"
+ ],
+ [
+  "Vietnam",
+  "Southeast Asia",
+  "Payment method",
+  "VietQR",
+  "",
+  "Homologation"
+ ]
+]
