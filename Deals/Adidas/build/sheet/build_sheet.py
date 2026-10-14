@@ -136,7 +136,7 @@ def disp(name): return DISPLAY.get(name, name)
 # partner-signed methods, not yet integrated (Ali Partnerships, #partnerships--sales, Mar/May 2026; German 14 Oct 2026: Status "Signed")
 SIGNED = [
     ('Costa Rica', 'SINPE Móvil', ['dLocal', 'Inswitch']),
-    ('Indonesia', 'GoPay', ['Boku']), ('Indonesia', 'Kredivo', []), ('Malaysia', 'DuitNow QR', []), ('Philippines', 'Billease', []),
+    ('Indonesia', 'GoPay', ['Boku']), ('Indonesia', 'Kredivo', []), ('Malaysia', 'DuitNow QR', []),   # Billease removed (German, 14 Oct 2026)
     ('Vietnam', 'MoMo', ['dLocal', '2C2P', 'Directa 24', 'Unlimit', 'Nuvei', 'Terrapay']),
     ('Vietnam', 'ZaloPay', ['2C2P', 'Directa 24', 'Terrapay']),
     ('Vietnam', 'VNPay QR', ['2C2P', 'Unlimit', 'dLocal', 'Terrapay']),
