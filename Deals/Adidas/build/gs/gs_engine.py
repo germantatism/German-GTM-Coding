@@ -1336,13 +1336,15 @@ def r_logo_grid(deck, s, tag, n, footer):
             sb.text(X0, y, W0, 9, sec['header'].upper(), size=6.5, bold=True, color=GREY, ls=100); y += 12
         muted = sec.get('muted'); fill = '#F3F3F3' if muted else '#F4F5FD'; tcol = GREY if muted else INK
         if sec.get('style') == 'signed': fill, tcol = '#E8EAF5', DEEP
+        outline = '#BDC3F6' if sec.get('style') == 'request' else None
+        if sec.get('style') == 'request': fill, tcol = WHITE, GREY
         x = X0
         for c in chips:
             lw = min(LH * float(c.get('aspect') or 1.0), 30.0) if c.get('logo') else 0.0
             tw = text_width(c['name'], FS); w = 6 + (lw + 5 if lw else 0) + tw + 7
             if x + w > X0 + W0 + 0.5: x = X0; y += PITCH
             if y + CH > 366: raise FitError(f"slide {s.get('id')}: chips overflow the zone")
-            sb.round_rect(x, y, w, CH, fill=fill)
+            sb.round_rect(x, y, w, CH, fill=fill, outline=outline, outline_w=0.5)
             if lw: sb.image(c['logo'], x + 6, y + (CH - LH) / 2, lw, LH)
             sb.text(x + 6 + (lw + 5 if lw else 0), y + 1.5, tw + 8, CH - 3, c['name'], size=FS, color=tcol, ls=100, valign='MIDDLE')
             x += w + GAP
@@ -1467,7 +1469,7 @@ def build_from_spec(spec_path, final=False, only=None, replace=False):
         built.append(sid)
         if replace:
             live = deck.slide_ids()
-            old = [i for i in live if i != sid and re.match(rf"^n{n:02d}(r\d+|p)?_", i)]
+            old = [i for i in live if i != sid and re.match(rf"^n{n:02d}(r\d+)?p?_", i)]   # placeholders are tagged <tag>p
             if old:
                 idx = live.index(old[0])
                 deck.run([{'updateSlidesPosition': {'slideObjectIds': [sid], 'insertionIndex': idx}}] + [{'deleteObject': {'objectId': o}} for o in old], f'replace slide {n}')

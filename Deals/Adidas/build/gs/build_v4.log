@@ -1,149 +1,197 @@
 target presentation: 1d3j0pkbI6IiENDRrf9gYGNXqoJIk1ram09h0DOsgogs (Deck - adidas + Yuno · Connections & Payment Methods (Oct 2026))
 [02] table              named
-  applied    1 requests blank slide n02r2_g3f77215683c_2_2968
-  applied  191 requests n02r2
+  applied    1 requests blank slide n02r1_g3f77215683c_2_2968
+  applied  191 requests n02r1
   applied    2 requests replace slide 2
 [03] table              sum-latam1
-  applied    1 requests blank slide n03r2_g3f77215683c_2_2968
-  applied  191 requests n03r2
+  applied    1 requests blank slide n03r1_g3f77215683c_2_2968
+  applied  242 requests n03r1
   applied    2 requests replace slide 3
 [04] table              sum-latam2
-  applied    1 requests blank slide n04r2_g3f77215683c_2_2968
-  applied  254 requests n04r2
+  applied    1 requests blank slide n04r1_g3f77215683c_2_2968
+  applied  326 requests n04r1
   applied    2 requests replace slide 4
 [05] table              sum-apac
-  applied    1 requests blank slide n05r2_g3f77215683c_2_2968
-  applied  212 requests n05r2
+  applied    1 requests blank slide n05r1_g3f77215683c_2_2968
+  applied  270 requests n05r1
   applied    2 requests replace slide 5
-[06] table              c-argentina
-  applied    1 requests blank slide n06r1_g3f77215683c_2_2968
-  applied   86 requests n06r1
+[06] logo_grid          c-argentina
+  applied    1 requests blank slide n06r2_g3f77215683c_2_2968
+  applied  231 requests n06r2
   applied    2 requests replace slide 6
-[07] table              c-argentina-local
-  applied    1 requests blank slide n07r1_g3f77215683c_2_2968
-  applied  254 requests n07r1
+[07] logo_grid          c-argentina-methods
+  applied    1 requests blank slide n07r2_g3f77215683c_2_2968
+  applied  283 requests n07r2
   applied    2 requests replace slide 7
-[08] table              c-brazil
-  applied    1 requests blank slide n08r1_g3f77215683c_2_2968
-  applied   86 requests n08r1
+[08] logo_grid          c-brazil
+  applied    1 requests blank slide n08r2_g3f77215683c_2_2968
+  applied  513 requests n08r2
   applied    2 requests replace slide 8
-[09] table              c-brazil-local
-  applied    1 requests blank slide n09r1_g3f77215683c_2_2968
-  applied  212 requests n09r1
+[09] logo_grid          c-brazil-methods
+  applied    1 requests blank slide n09r2_g3f77215683c_2_2968
+  applied  322 requests n09r2
   applied    2 requests replace slide 9
-[10] table              c-chile
-  applied    1 requests blank slide n10r1_g3f77215683c_2_2968
-  applied   86 requests n10r1
+[10] logo_grid          c-chile
+  applied    1 requests blank slide n10r2_g3f77215683c_2_2968
+  applied  339 requests n10r2
   applied    2 requests replace slide 10
-[11] table              c-chile-local
-  applied    1 requests blank slide n11r1_g3f77215683c_2_2968
-  applied  233 requests n11r1
+[11] logo_grid          c-chile-methods
+  applied    1 requests blank slide n11r2_g3f77215683c_2_2968
+  applied  283 requests n11r2
   applied    2 requests replace slide 11
-[12] table              c-colombia
-  applied    1 requests blank slide n12r1_g3f77215683c_2_2968
-  applied   86 requests n12r1
+[12] logo_grid          c-colombia
+  applied    1 requests blank slide n12r2_g3f77215683c_2_2968
+  applied  380 requests n12r2
   applied    2 requests replace slide 12
-[13] table              c-colombia-local
-  applied    1 requests blank slide n13r1_g3f77215683c_2_2968
-  applied  212 requests n13r1
+[13] logo_grid          c-colombia-methods
+  applied    1 requests blank slide n13r2_g3f77215683c_2_2968
+  applied  331 requests n13r2
   applied    2 requests replace slide 13
-[14] table              c-mexico
-  applied    1 requests blank slide n14r1_g3f77215683c_2_2968
-  applied   86 requests n14r1
+[14] logo_grid          c-mexico
+  applied    1 requests blank slide n14r2_g3f77215683c_2_2968
+  applied  443 requests n14r2
   applied    2 requests replace slide 14
-[15] table              c-mexico-local
-  applied    1 requests blank slide n15r1_g3f77215683c_2_2968
-  applied  233 requests n15r1
+[15] logo_grid          c-mexico-methods
+  applied    1 requests blank slide n15r2_g3f77215683c_2_2968
+  applied  362 requests n15r2
   applied    2 requests replace slide 15
-[16] table              c-peru
-  applied    1 requests blank slide n16r1_g3f77215683c_2_2968
-  applied   86 requests n16r1
+[16] table              c-mexico-local
+  applied    1 requests blank slide n16r2_g3f77215683c_2_2968
+  applied  249 requests n16r2
   applied    2 requests replace slide 16
-[17] table              c-peru-local
-  applied    1 requests blank slide n17r1_g3f77215683c_2_2968
-  applied  170 requests n17r1
+[17] logo_grid          c-peru
+  applied    1 requests blank slide n17r2_g3f77215683c_2_2968
+  applied  288 requests n17r2
   applied    2 requests replace slide 17
-[18] table              c-uruguay
-  applied    1 requests blank slide n18r1_g3f77215683c_2_2968
-  applied  170 requests n18r1
+[18] logo_grid          c-peru-methods
+  applied    1 requests blank slide n18r2_g3f77215683c_2_2968
+  applied  283 requests n18r2
   applied    2 requests replace slide 18
-[19] table              c-bolivia
-  applied    1 requests blank slide n19r1_g3f77215683c_2_2968
-  applied  149 requests n19r1
+[19] logo_grid          c-uruguay
+  applied    1 requests blank slide n19r2_g3f77215683c_2_2968
+  applied  145 requests n19r2
   applied    2 requests replace slide 19
-[20] table              c-costa-rica
-  applied    1 requests blank slide n20r1_g3f77215683c_2_2968
-  applied  170 requests n20r1
+[20] logo_grid          c-uruguay-methods
+  applied    1 requests blank slide n20r2_g3f77215683c_2_2968
+  applied  157 requests n20r2
   applied    2 requests replace slide 20
-[21] table              c-dominican-republic
-  applied    1 requests blank slide n21r1_g3f77215683c_2_2968
-  applied  149 requests n21r1
+[21] logo_grid          c-bolivia
+  applied    1 requests blank slide n21r2_g3f77215683c_2_2968
+  applied   98 requests n21r2
   applied    2 requests replace slide 21
-[22] table              c-ecuador
-  applied    1 requests blank slide n22r1_g3f77215683c_2_2968
-  applied  191 requests n22r1
+[22] logo_grid          c-bolivia-methods
+  applied    1 requests blank slide n22r2_g3f77215683c_2_2968
+  applied  125 requests n22r2
   applied    2 requests replace slide 22
-[23] table              c-el-salvador
-  applied    1 requests blank slide n23r1_g3f77215683c_2_2968
-  applied  128 requests n23r1
+[23] logo_grid          c-costa-rica
+  applied    1 requests blank slide n23r2_g3f77215683c_2_2968
+  applied  167 requests n23r2
   applied    2 requests replace slide 23
-[24] table              c-guatemala
-  applied    1 requests blank slide n24r1_g3f77215683c_2_2968
-  applied  128 requests n24r1
+[24] logo_grid          c-costa-rica-methods
+  applied    1 requests blank slide n24r2_g3f77215683c_2_2968
+  applied  242 requests n24r2
   applied    2 requests replace slide 24
-[25] table              c-honduras
-  applied    1 requests blank slide n25r1_g3f77215683c_2_2968
-  applied   86 requests n25r1
+[25] logo_grid          c-dominican-republic
+  applied    1 requests blank slide n25r2_g3f77215683c_2_2968
+  applied  128 requests n25r2
   applied    2 requests replace slide 25
-[26] table              c-nicaragua
-  applied    1 requests blank slide n26r1_g3f77215683c_2_2968
-  applied   86 requests n26r1
+[26] logo_grid          c-dominican-republic-methods
+  applied    1 requests blank slide n26r2_g3f77215683c_2_2968
+  applied  161 requests n26r2
   applied    2 requests replace slide 26
-[27] table              c-panama
-  applied    1 requests blank slide n27r1_g3f77215683c_2_2968
-  applied  212 requests n27r1
+[27] logo_grid          c-ecuador
+  applied    1 requests blank slide n27r2_g3f77215683c_2_2968
+  applied  199 requests n27r2
   applied    2 requests replace slide 27
-[28] table              c-paraguay
-  applied    1 requests blank slide n28r1_g3f77215683c_2_2968
-  applied  128 requests n28r1
+[28] logo_grid          c-ecuador-methods
+  applied    1 requests blank slide n28r2_g3f77215683c_2_2968
+  applied  211 requests n28r2
   applied    2 requests replace slide 28
-[29] table              c-indonesia
-  applied    1 requests blank slide n29r1_g3f77215683c_2_2968
-  applied  170 requests n29r1
+[29] logo_grid          c-el-salvador
+  applied    1 requests blank slide n29r2_g3f77215683c_2_2968
+  applied  134 requests n29r2
   applied    2 requests replace slide 29
-[30] table              c-malaysia
-  applied    1 requests blank slide n30r1_g3f77215683c_2_2968
-  applied  170 requests n30r1
+[30] logo_grid          c-el-salvador-methods
+  applied    1 requests blank slide n30r2_g3f77215683c_2_2968
+  applied  140 requests n30r2
   applied    2 requests replace slide 30
-[31] table              c-philippines
-  applied    1 requests blank slide n31r1_g3f77215683c_2_2968
-  applied  149 requests n31r1
+[31] logo_grid          c-guatemala
+  applied    1 requests blank slide n31r2_g3f77215683c_2_2968
+  applied  174 requests n31r2
   applied    2 requests replace slide 31
-[32] table              c-singapore
-  applied    1 requests blank slide n32r1_g3f77215683c_2_2968
-  applied  107 requests n32r1
+[32] logo_grid          c-guatemala-methods
+  applied    1 requests blank slide n32r2_g3f77215683c_2_2968
+  applied  153 requests n32r2
   applied    2 requests replace slide 32
-[33] table              c-thailand
-  applied    1 requests blank slide n33r1_g3f77215683c_2_2968
-  applied  128 requests n33r1
+[33] logo_grid          c-honduras
+  applied    1 requests blank slide n33r2_g3f77215683c_2_2968
+  applied  112 requests n33r2
   applied    2 requests replace slide 33
-[34] table              c-vietnam
-  applied    1 requests blank slide n34r1_g3f77215683c_2_2968
-  applied   86 requests n34r1
+[34] logo_grid          c-honduras-methods
+  applied    1 requests blank slide n34r2_g3f77215683c_2_2968
+  applied  132 requests n34r2
   applied    2 requests replace slide 34
-[35] table              c-myanmar
-  applied    1 requests blank slide n35r1_g3f77215683c_2_2968
-  applied   86 requests n35r1
+[35] logo_grid          c-nicaragua
+  applied    1 requests blank slide n35r2_g3f77215683c_2_2968
+  applied  192 requests n35r2
   applied    2 requests replace slide 35
-[36] table              c-israel
-  applied    1 requests blank slide n36r1_g3f77215683c_2_2968
-  applied   86 requests n36r1
+[36] logo_grid          c-panama
+  applied    1 requests blank slide n36r2_g3f77215683c_2_2968
+  applied  151 requests n36r2
   applied    2 requests replace slide 36
-[37] two_column         gaps
-  applied    1 requests blank slide n37r2_g3f77215683c_2_2968
-  applied   93 requests n37r2
-  applied    2 requests notes n37r2_g3f77215683c_2_2968
+[37] logo_grid          c-panama-methods
+  applied    1 requests blank slide n37r1_g3f77215683c_2_2968
+  applied  212 requests n37r1
   applied    2 requests replace slide 37
-[38] next_steps         next
-  applied    1 requests blank slide n38r1_g3f77215683c_2_2968
-  applied   89 requests n38r1
+[38] logo_grid          c-paraguay
+  applied    1 requests blank slide n38r2_g3f77215683c_2_2968
+  applied  206 requests n38r2
+  applied    2 requests replace slide 38
+[39] logo_grid          c-indonesia
+  applied    1 requests blank slide n39r1_g3f77215683c_2_2968
+  applied  208 requests n39r1
+[40] logo_grid          c-indonesia-methods
+  applied    1 requests blank slide n40r1_g3f77215683c_2_2968
+  applied  306 requests n40r1
+[41] logo_grid          c-malaysia
+  applied    1 requests blank slide n41r1_g3f77215683c_2_2968
+  applied  216 requests n41r1
+[42] logo_grid          c-malaysia-methods
+  applied    1 requests blank slide n42r1_g3f77215683c_2_2968
+  applied  274 requests n42r1
+[43] logo_grid          c-philippines
+  applied    1 requests blank slide n43r1_g3f77215683c_2_2968
+  applied  192 requests n43r1
+[44] logo_grid          c-philippines-methods
+  applied    1 requests blank slide n44r1_g3f77215683c_2_2968
+  applied  292 requests n44r1
+[45] logo_grid          c-singapore
+  applied    1 requests blank slide n45r1_g3f77215683c_2_2968
+  applied  192 requests n45r1
+[46] logo_grid          c-singapore-methods
+  applied    1 requests blank slide n46r1_g3f77215683c_2_2968
+  applied  190 requests n46r1
+[47] logo_grid          c-thailand
+  applied    1 requests blank slide n47r1_g3f77215683c_2_2968
+  applied  208 requests n47r1
+[48] logo_grid          c-thailand-methods
+  applied    1 requests blank slide n48r1_g3f77215683c_2_2968
+  applied  195 requests n48r1
+[49] logo_grid          c-vietnam
+  applied    1 requests blank slide n49r1_g3f77215683c_2_2968
+  applied  152 requests n49r1
+[50] logo_grid          c-vietnam-methods
+  applied    1 requests blank slide n50r1_g3f77215683c_2_2968
+  applied  316 requests n50r1
+[51] logo_grid          c-myanmar
+  applied    1 requests blank slide n51r1_g3f77215683c_2_2968
+  applied   65 requests n51r1
+[52] logo_grid          c-israel
+  applied    1 requests blank slide n52r1_g3f77215683c_2_2968
+  applied  116 requests n52r1
+[53] two_column         next-wave
+  applied    1 requests blank slide n53r1_g3f77215683c_2_2968
+  applied   93 requests n53r1
+[54] next_steps         next
+  applied    1 requests blank slide n54r1_g3f77215683c_2_2968
+  applied   89 requests n54r1

@@ -68,11 +68,11 @@
     [
      "PayPlus",
      {
-      "text": "New connection",
+      "text": "On request",
       "bold": true
      },
-     "Not connected and no build in progress",
-     "Scoped on request"
+     "Israel: not connected yet; scoped and built by Yuno on request",
+     "Cards and local methods per PayPlus scope"
     ]
    ],
    "header_style": "dark",
@@ -235,7 +235,7 @@
    "id": "sum-apac",
    "type": "table",
    "kicker": "OVERVIEW › SOUTHEAST ASIA AND ISRAEL",
-   "headline": "Southeast Asia runs on global acquirers plus local wallets and QR; Israel runs on Nuvei today.",
+   "headline": "Southeast Asia runs on global acquirers plus local wallets and QR; Israel runs on Nuvei and five cross-border acquirers today.",
    "columns": [
     "Country",
     "Providers live",
@@ -293,9 +293,9 @@
     ],
     [
      "Israel",
+     "6",
      "1",
-     "1",
-     "Cards and wallets"
+     "Cards and wallets · 2 providers to activate · 9 new connections on request"
     ]
    ],
    "header_style": "dark",
@@ -6127,31 +6127,44 @@
    "id": "c-israel",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › ISRAEL",
-   "headline": "Israel: 1 provider live through Yuno, 1 for cards, 1 more provider in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (1)",
+     "header": "Live through Yuno: Nuvei acquires locally, the others process Israeli cards cross-border (6)",
      "chips": [
       {
        "name": "Nuvei",
        "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
        "aspect": 1.0
+      },
+      {
+       "name": "Adyen",
+       "logo": "https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f4276a734a3f06_678303aaf872b2b85fd78040_673acbe2eaa24fed0492bf8a_adyen_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Airwallex",
+       "logo": "https://y.uno/vendor/webflow/68df53ff3fac1ce361553dc1_6789cc5bade0cb0f7e569468_678316e2d146a2cd32954c1c_678303ad4b92192a060135f6_673ac5430f6cca562dfdf278_airwallex_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Braintree",
+       "logo": "https://y.uno/vendor/webflow/68df540a171f10ee4680f704_6789cc634ecd423306d4ad1b_678316e5121980e08d828d0b_678303ab7d668197482d68ff_673acb0473d5818c0ba4e04c_braintree_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Stripe",
+       "logo": "https://y.uno/vendor/webflow/68df5445a8ef8a62bf6afaec_6789cc79c8c462843dab8e35_678316f2c376a1c58e0975d0_6783057c9c28a58ed23f20ac_stripe_logosimbolo%252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldpay",
+       "logo": "https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121980e08d82933e_678303aa53424d2385a60043_673acbda09c217998145f662_worldpay_logosimbolo%25252525202.png",
+       "aspect": 1.0
       }
      ]
     },
     {
-     "header": "Homologating (1)",
-     "chips": [
-      {
-       "name": "PPRO",
-       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
-       "aspect": 1.0
-      }
-     ],
-     "muted": true
-    },
-    {
-     "header": "Wallets and payment methods available (9)",
+     "header": "Wallets and payment methods live (10)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -6179,6 +6192,11 @@
        "aspect": 1.0
       },
       {
+       "name": "Skrill",
+       "logo": "https://www.google.com/s2/favicons?domain=skrill.com&sz=128",
+       "aspect": 1.0
+      },
+      {
        "name": "UnionPay",
        "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
        "aspect": 1.0
@@ -6199,21 +6217,122 @@
        "aspect": 1.0
       }
      ]
+    },
+    {
+     "header": "Integrated with Yuno, activation on request (2)",
+     "chips": [
+      {
+       "name": "Rapyd",
+       "logo": "https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    },
+    {
+     "header": "Homologating (1)",
+     "chips": [
+      {
+       "name": "PPRO",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "muted": true
+    },
+    {
+     "header": "New connections on request, built by Yuno (9)",
+     "chips": [
+      {
+       "name": "Cal (Israel Credit Cards)",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cardcom",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Finaro (Shift4)",
+       "logo": "https://www.google.com/s2/favicons?domain=finaro.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Isracard",
+       "logo": "https://www.google.com/s2/favicons?domain=isracard.co.il&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Max",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPlus",
+       "logo": "https://www.google.com/s2/favicons?domain=payplus.co.il&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pelecard",
+       "logo": "https://www.google.com/s2/favicons?domain=pelecard.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tranzila",
+       "logo": "https://www.google.com/s2/favicons?domain=tranzila.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bit",
+       "logo": "https://www.google.com/s2/favicons?domain=bitpay.co.il&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "request"
     }
-   ]
+   ],
+   "table": {
+    "columns": [
+     "Tier",
+     "What it means for adidas"
+    ],
+    "col_widths": [
+     0.26,
+     0.74
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Activation on request",
+      "Already integrated with Yuno and covering Israel; switched on for adidas without a build. Rapyd holds an Israeli payment licence since July 2025."
+     ],
+     [
+      "New connection on request",
+      "Not connected yet; Yuno scopes and builds it on request: PayPlus, Isracard, Cal, Max, the local gateways and Bit."
+     ]
+    ]
+   },
+   "headline": "Israel: 6 providers process Israeli cards through Yuno today, 2 more can be activated, and the local acquirers are new connections on request.",
+   "notes": "Evidence: Yuno integration matrix (Israeli card traffic through Adyen, Airwallex, Braintree, Stripe, Worldpay), partners database (Israel in the coverage of Airwallex, Braintree, Stripe, Worldline, Worldpay), Nutrameg live on Adyen and PayPal since Aug 2026, Israeli payment licences for Rapyd and Airwallex (Calcalist, Jul 2025). Finaro/Credorax was checked internally in Sep 2026 and is not connected. German's stated build time to Marko: 1 to 2 days plus 2 days of production testing; keep it verbal."
   },
   {
    "id": "next-wave",
    "type": "two_column",
    "kicker": "WHAT COMES NEXT",
-   "headline": "PayPlus would be a new connection; nine local methods are signed with partners and 41 providers are in homologation.",
+   "headline": "Israel is a build-on-request market; nine local methods are signed with partners and 41 providers are in homologation.",
    "cols": [
     {
      "header": "PAYPLUS AND SIGNED METHODS",
      "items": [
       {
-       "title": "PayPlus (Israel)",
-       "body": "No connection built and none in progress. Built as a new connection on request; scope and timeline confirmed with Yuno's integrations team."
+       "title": "Israel",
+       "body": "Six providers process Israeli cards today; Rapyd and Worldline can be activated; PayPlus and the local card companies and gateways are new connections Yuno builds on request."
       },
       {
        "title": "Signed, not yet integrated",

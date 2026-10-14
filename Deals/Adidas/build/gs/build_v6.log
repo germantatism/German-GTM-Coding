@@ -1,0 +1,187 @@
+target presentation: 1d3j0pkbI6IiENDRrf9gYGNXqoJIk1ram09h0DOsgogs (Deck - adidas + Yuno · Connections & Payment Methods (Oct 2026))
+[02] table              named
+  applied    1 requests blank slide n02r1_g3f77215683c_2_2968
+  applied  191 requests n02r1
+  applied    2 requests replace slide 2
+[03] table              sum-latam1
+  applied    1 requests blank slide n03r1_g3f77215683c_2_2968
+  applied  242 requests n03r1
+  applied    2 requests replace slide 3
+[04] table              sum-latam2
+  applied    1 requests blank slide n04r1_g3f77215683c_2_2968
+  applied  326 requests n04r1
+  applied    2 requests replace slide 4
+[05] table              sum-apac
+  applied    1 requests blank slide n05r1_g3f77215683c_2_2968
+  applied  270 requests n05r1
+  applied    2 requests replace slide 5
+[06] logo_grid          c-argentina
+  applied    1 requests blank slide n06r2_g3f77215683c_2_2968
+  applied  234 requests n06r2
+  applied    2 requests replace slide 6
+[07] logo_grid          c-argentina-methods
+  applied    1 requests blank slide n07r2_g3f77215683c_2_2968
+  applied  284 requests n07r2
+  applied    2 requests replace slide 7
+[08] logo_grid          c-brazil
+  applied    1 requests blank slide n08r2_g3f77215683c_2_2968
+  applied  528 requests n08r2
+  applied    2 requests replace slide 8
+[09] logo_grid          c-brazil-methods
+  applied    1 requests blank slide n09r2_g3f77215683c_2_2968
+  applied  324 requests n09r2
+  applied    2 requests replace slide 9
+[10] logo_grid          c-chile
+  applied    1 requests blank slide n10r2_g3f77215683c_2_2968
+  applied  345 requests n10r2
+  applied    2 requests replace slide 10
+[11] logo_grid          c-chile-methods
+  applied    1 requests blank slide n11r2_g3f77215683c_2_2968
+  applied  284 requests n11r2
+  applied    2 requests replace slide 11
+[12] logo_grid          c-colombia
+  applied    1 requests blank slide n12r2_g3f77215683c_2_2968
+  applied  385 requests n12r2
+  applied    2 requests replace slide 12
+[13] logo_grid          c-colombia-methods
+  applied    1 requests blank slide n13r2_g3f77215683c_2_2968
+  applied  332 requests n13r2
+  applied    2 requests replace slide 13
+[14] logo_grid          c-mexico
+  applied    1 requests blank slide n14r2_g3f77215683c_2_2968
+  applied  450 requests n14r2
+  applied    2 requests replace slide 14
+[15] logo_grid          c-mexico-methods
+  applied    1 requests blank slide n15r2_g3f77215683c_2_2968
+  applied  363 requests n15r2
+  applied    2 requests replace slide 15
+[16] table              c-mexico-local
+  applied    1 requests blank slide n16r2_g3f77215683c_2_2968
+  applied  228 requests n16r2
+  applied    2 requests replace slide 16
+[17] logo_grid          c-peru
+  applied    1 requests blank slide n17r2_g3f77215683c_2_2968
+  applied  290 requests n17r2
+  applied    2 requests replace slide 17
+[18] logo_grid          c-peru-methods
+  applied    1 requests blank slide n18r2_g3f77215683c_2_2968
+  applied  284 requests n18r2
+  applied    2 requests replace slide 18
+[19] logo_grid          c-uruguay
+  applied    1 requests blank slide n19r2_g3f77215683c_2_2968
+  applied  307 requests n19r2
+  applied    2 requests replace slide 19
+[20] logo_grid          c-bolivia
+  applied    1 requests blank slide n20r2_g3f77215683c_2_2968
+  applied  207 requests n20r2
+  applied    2 requests replace slide 20
+[21] logo_grid          c-costa-rica
+  applied    1 requests blank slide n21r2_g3f77215683c_2_2968
+  applied  170 requests n21r2
+  applied    2 requests replace slide 21
+[22] logo_grid          c-costa-rica-methods
+  applied    1 requests blank slide n22r2_g3f77215683c_2_2968
+  applied  264 requests n22r2
+  applied    2 requests replace slide 22
+[23] logo_grid          c-dominican-republic
+  applied    1 requests blank slide n23r2_g3f77215683c_2_2968
+  applied  297 requests n23r2
+  applied    2 requests replace slide 23
+[24] logo_grid          c-ecuador
+  applied    1 requests blank slide n24r2_g3f77215683c_2_2968
+  applied  201 requests n24r2
+  applied    2 requests replace slide 24
+[25] logo_grid          c-ecuador-methods
+  applied    1 requests blank slide n25r2_g3f77215683c_2_2968
+  applied  233 requests n25r2
+  applied    2 requests replace slide 25
+[26] logo_grid          c-el-salvador
+  applied    1 requests blank slide n26r2_g3f77215683c_2_2968
+  applied  284 requests n26r2
+  applied    2 requests replace slide 26
+[27] logo_grid          c-guatemala
+  applied    1 requests blank slide n27r2_g3f77215683c_2_2968
+  applied  178 requests n27r2
+  applied    2 requests replace slide 27
+[28] logo_grid          c-guatemala-methods
+  applied    1 requests blank slide n28r2_g3f77215683c_2_2968
+  applied  175 requests n28r2
+  applied    2 requests replace slide 28
+[29] logo_grid          c-honduras
+  applied    1 requests blank slide n29r2_g3f77215683c_2_2968
+  applied  231 requests n29r2
+  applied    2 requests replace slide 29
+[30] logo_grid          c-nicaragua
+  applied    1 requests blank slide n30r2_g3f77215683c_2_2968
+  applied  194 requests n30r2
+  applied    2 requests replace slide 30
+[31] logo_grid          c-panama
+  applied    1 requests blank slide n31r2_g3f77215683c_2_2968
+  applied  329 requests n31r2
+  applied    2 requests replace slide 31
+[32] logo_grid          c-paraguay
+  applied    1 requests blank slide n32r2_g3f77215683c_2_2968
+  applied  207 requests n32r2
+  applied    2 requests replace slide 32
+[33] logo_grid          c-indonesia
+  applied    1 requests blank slide n33r2_g3f77215683c_2_2968
+  applied  210 requests n33r2
+  applied    2 requests replace slide 33
+[34] logo_grid          c-indonesia-methods
+  applied    1 requests blank slide n34r2_g3f77215683c_2_2968
+  applied  289 requests n34r2
+  applied    2 requests replace slide 34
+[35] logo_grid          c-malaysia
+  applied    1 requests blank slide n35r2_g3f77215683c_2_2968
+  applied  218 requests n35r2
+  applied    2 requests replace slide 35
+[36] logo_grid          c-malaysia-methods
+  applied    1 requests blank slide n36r2_g3f77215683c_2_2968
+  applied  276 requests n36r2
+  applied    2 requests replace slide 36
+[37] logo_grid          c-philippines
+  applied    1 requests blank slide n37r1_g3f77215683c_2_2968
+  applied  194 requests n37r1
+  applied    2 requests replace slide 37
+[38] logo_grid          c-philippines-methods
+  applied    1 requests blank slide n38r2_g3f77215683c_2_2968
+  applied  273 requests n38r2
+  applied    2 requests replace slide 38
+[39] logo_grid          c-singapore
+  applied    1 requests blank slide n39r1_g3f77215683c_2_2968
+  applied  194 requests n39r1
+  applied    2 requests replace slide 39
+[40] logo_grid          c-singapore-methods
+  applied    1 requests blank slide n40r1_g3f77215683c_2_2968
+  applied  213 requests n40r1
+  applied    2 requests replace slide 40
+[41] logo_grid          c-thailand
+  applied    1 requests blank slide n41r1_g3f77215683c_2_2968
+  applied  210 requests n41r1
+  applied    2 requests replace slide 41
+[42] logo_grid          c-thailand-methods
+  applied    1 requests blank slide n42r1_g3f77215683c_2_2968
+  applied  218 requests n42r1
+  applied    2 requests replace slide 42
+[43] logo_grid          c-vietnam
+  applied    1 requests blank slide n43r1_g3f77215683c_2_2968
+  applied  153 requests n43r1
+  applied    2 requests replace slide 43
+[44] logo_grid          c-vietnam-methods
+  applied    1 requests blank slide n44r1_g3f77215683c_2_2968
+  applied  239 requests n44r1
+  applied    2 requests replace slide 44
+[45] logo_grid          c-myanmar
+  applied    1 requests blank slide n45r1_g3f77215683c_2_2968
+  applied   66 requests n45r1
+  applied    2 requests replace slide 45
+[46] logo_grid          c-israel
+  applied    1 requests blank slide n46r1_g3f77215683c_2_2968
+  applied  118 requests n46r1
+  applied    2 requests replace slide 46
+[47] two_column         next-wave
+  applied    1 requests blank slide n47r1_g3f77215683c_2_2968
+  applied   93 requests n47r1
+[48] next_steps         next
+  applied    1 requests blank slide n48r1_g3f77215683c_2_2968
+  applied   89 requests n48r1

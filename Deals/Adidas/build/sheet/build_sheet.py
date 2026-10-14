@@ -167,6 +167,31 @@ for c in T:
         rows.append([c, REGION[c], 'Direct payment method', disp(d['name']), '', 'Live'])
     for sc, name, provs in SIGNED:
         if sc == c: rows.append([c, REGION[c], 'Direct payment method', name, '', 'Signed'])
+ISRAEL_EXTRA = [
+    ('Provider', 'Adyen', 'Cards (cross-border acquiring of Israeli cards; live Israeli merchant traffic through Yuno)', 'Live (cross-border)'),
+    ('Provider', 'Airwallex', 'Cards, Alipay (cross-border acquiring; Israeli payment licence, Jul 2025)', 'Live (cross-border)'),
+    ('Provider', 'Braintree', 'Cards, PayPal (cross-border acquiring)', 'Live (cross-border)'),
+    ('Provider', 'Stripe', 'Cards (cross-border acquiring)', 'Live (cross-border)'),
+    ('Provider', 'Worldpay', 'Cards (cross-border acquiring)', 'Live (cross-border)'),
+    ('Provider', 'Rapyd', 'Integrated with Yuno; Israel coverage per partner (Israeli payment licence, Jul 2025); no Israeli traffic yet', 'Activation on request'),
+    ('Provider', 'Worldline', 'Integrated with Yuno; Israel in partner coverage; no Israeli traffic yet', 'Activation on request'),
+    ('Provider', 'PayPlus', 'New connection, scoped and built on request', 'On request'),
+    ('Provider', 'Isracard', 'New connection, scoped and built on request (local card company)', 'On request'),
+    ('Provider', 'Cal (Israel Credit Cards)', 'New connection, scoped and built on request (local card company)', 'On request'),
+    ('Provider', 'Max', 'New connection, scoped and built on request (local card company)', 'On request'),
+    ('Provider', 'Tranzila', 'New connection, scoped and built on request (local gateway)', 'On request'),
+    ('Provider', 'Cardcom', 'New connection, scoped and built on request (local gateway)', 'On request'),
+    ('Provider', 'Pelecard', 'New connection, scoped and built on request (local gateway)', 'On request'),
+    ('Provider', 'Finaro (Shift4)', 'New connection, scoped and built on request (local acquirer)', 'On request'),
+    ('Direct payment method', 'Bit', 'New connection, scoped and built on request (Bank Hapoalim wallet)', 'On request'),
+    ('Direct payment method', 'Skrill', '', 'Live'),
+]
+_il = [r for r in rows if r[0] == 'Israel']; _others = [r for r in rows[1:] if r[0] != 'Israel']
+_il_prov = [r for r in _il if r[2] == 'Provider'] + [['Israel', 'Middle East', t, n, m, st] for t, n, m, st in ISRAEL_EXTRA if t == 'Provider']
+_il_meth = [r for r in _il if r[2] != 'Provider'] + [['Israel', 'Middle East', t, n, m, st] for t, n, m, st in ISRAEL_EXTRA if t != 'Provider']
+_order = {'Live': 0, 'Live (cross-border)': 1, 'Activation on request': 2, 'Homologating': 3, 'Signed': 4, 'On request': 5}
+_il_prov.sort(key=lambda r: (_order.get(r[5], 9), r[3].lower())); _il_meth.sort(key=lambda r: (_order.get(r[5], 9), r[3].lower()))
+rows = [rows[0]] + _others + _il_prov + _il_meth
 TABS = [('Connections by country', rows)]
 cnt = collections.Counter((r[0], r[2]) for r in rows[1:])
 for c in T: print(f"{c:20s} providers={cnt[(c, 'Provider')]:3d} methods={cnt[(c, 'Direct payment method')]:3d}")
