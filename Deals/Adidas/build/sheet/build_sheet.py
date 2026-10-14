@@ -105,6 +105,25 @@ for c in T:
         rows.append([c, REGION[c], 'Provider', disp(d['name']), methods_via_yuno(c, d['name']), '', 'Live', d['website'] or ''])
     for d in sorted(meth_by_c[c], key=lambda d: d['name'].lower()):
         rows.append([c, REGION[c], 'Payment method', disp(d['name']), '', providers_for_method(c, d['name']), 'Live', d['website'] or ''])
+# partner-signed methods, not yet integrated (Ali Partnerships, #partnerships--sales, Mar/May 2026; German 14 Oct 2026: show them with Status "Signed")
+SIGNED = [
+    ('Costa Rica', 'SINPE Móvil', 'dLocal, Inswitch', 'https://www.bccr.fi.cr/sistema-de-pagos/sinpe-movil'),
+    ('Indonesia', 'GoPay', 'Contracted partners', 'https://gopay.co.id'),
+    ('Indonesia', 'Kredivo', 'Contracted partners', 'https://www.kredivo.com'),
+    ('Malaysia', 'DuitNow QR', 'Contracted partners', 'https://www.duitnow.my'),
+    ('Philippines', 'Billease', 'Contracted partners', 'https://billease.ph'),
+    ('Vietnam', 'MoMo', 'dLocal, 2C2P, Directa 24, Unlimit, Nuvei, Terrapay', 'https://www.momo.vn'),
+    ('Vietnam', 'ZaloPay', '2C2P, Directa 24, Terrapay', 'https://zalopay.vn'),
+    ('Vietnam', 'VNPay QR', '2C2P, Unlimit, dLocal, Terrapay', 'https://vnpay.vn'),
+    ('Vietnam', 'Viettel Money (ViettelPay)', '2C2P, dLocal', 'https://viettelmoney.vn'),
+    ('Vietnam', 'NAPAS (domestic cards, VietQR)', 'dLocal', 'https://napas.com.vn'),
+]
+_ins = {}
+for c, name, provs, site in SIGNED: _ins.setdefault(c, []).append([c, REGION[c], 'Payment method', name, '', provs, 'Signed', site])
+_out = [rows[0]]
+for c in T:
+    _out += [r for r in rows[1:] if r[0] == c] + _ins.get(c, [])
+rows = _out
 TABS = [('Connections by country', rows)]
 cnt = collections.Counter((r[0], r[2]) for r in rows[1:])
 for c in T: print(f"{c:20s} providers={cnt[(c, 'Provider')]:3d} methods={cnt[(c, 'Payment method')]:3d}")
