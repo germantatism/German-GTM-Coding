@@ -1,0 +1,63 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+88 slides in the deck
+42 thumbnails -> /Users/germantatis/Desktop/GTMCoding/Deals/Carry1st/build/qa/thumbs
+[47] OK  n01_g3f77215683c_1_445
+[48] OK  n02_g3f769a0f446_0_0
+[49] OK  n03_g3f769a0f446_0_988
+[50] OK  n04r1_g3f77215683c_2_2968
+[51] OK  n05_g3f769a0f446_0_988
+[52] OK  n06_g3f77215683c_2_2968
+[53] OK  n07_g3f77215683c_2_2968
+[54] OK  n08_g3f77215683c_2_2968
+[55] OK  n09_g3f769a0f446_0_988
+[56] OK  n10_g3f77215683c_2_2968
+[57] OK  n11_g3f77215683c_2_2968
+[58] OK  n12_g3f769a0f446_0_988
+[59] OK  n13_g3f77215683c_2_2968
+[60]  4  n14_g3f769a0f446_0_7028
+       OUT n14_g3f769a0f446_0_7031 (195,164,0x246) ''
+       OUT n14_g3f769a0f446_0_7032 (360,164,0x246) ''
+       OUT n14_g3f769a0f446_0_7033 (525,164,0x246) ''
+       FONT(template text) n14_g3f769a0f446_0_7106 6 pt 'ABOUT YUNO · PLATFORM'
+[61] OK  n15_g3f77215683c_2_2968
+[62]  1  n16_g3f769a0f446_0_8218
+       FONT(template text) n16_g3f769a0f446_0_8220 6 pt 'WHY YUNO?'
+[63] OK  n17_g3f769a0f446_0_988
+[64]  3  n18r2_g3f77215683c_2_2968
+       OVERLAP '$45.0K' x '$49.0K' (13x6 pt)
+       OVERLAP '$90.0K' x '$92.0K' (13x8 pt)
+       OVERLAP '$202.5K' x '$198.8K' (13x6 pt)
+[65] OK  n19r1_g3f77215683c_2_2968
+[66] OK  n20r1_g3f77215683c_2_2968
+[67] OK  n21_g3f769a0f446_0_988
+[68]  4  n22r2_g3f77215683c_2_2968
+       OVERLAP 'INCLUDED' x '$0' (3x9 pt)
+       OVERLAP 'TRANCHE 1' x '0.30%' (3x9 pt)
+       OVERLAP 'TRANCHE 2' x '0.25%' (3x9 pt)
+       OVERLAP 'TRANCHE 3' x '0.20%' (3x9 pt)
+[69] OK  n23r1_g3f77215683c_2_2968
+[70] OK  n24_g3f769a0f446_0_988
+[71] OK  n25r1_g3f77215683c_2_2968
+[72] OK  n26r1_g3f77215683c_2_2968
+[73] OK  n27_g3f769a0f446_0_988
+[74] OK  n28_g3f77215683c_2_2968
+[75] OK  n29_g3c99cf7678e_0_44
+[76] OK  n30_g3f769a0f446_0_988
+[77] OK  n31r1_g3f77215683c_2_2968
+[78] OK  n32_g3f77215683c_2_2968
+[79] OK  n33r1_g3f77215683c_2_2968
+[80] OK  n34_g3f77215683c_2_2968
+[81] OK  n35r1_g3f77215683c_2_2968
+[82] OK  n36_g3f77215683c_2_2968
+[83] OK  n37r1_g3f77215683c_2_2968
+[84] OK  n38_g3f77215683c_2_2968
+[85] OK  n39r2_g3f77215683c_2_2968
+[86] OK  n40_g3f77215683c_2_2968
+[87] OK  n41_g3f77215683c_2_2968
+[88] OK  n42r1_g3f77215683c_2_2968
+38 clean, 4 with findings

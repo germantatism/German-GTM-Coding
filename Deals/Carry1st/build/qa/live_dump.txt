@@ -1,0 +1,1881 @@
+
+===== POS 47 · objectId=n01_g3f77215683c_1_445 =====
+[n01_g3f77215683c_1_527 (29,251,493x79) pt=[30]] 'Carry1st Shop in Latin America by Black Friday'
+[IMG n01_g3f77215683c_1_529 (29,39,59x16)] 
+[IMG n01_e001 (115,36,87x22)] https://drive.google.com/uc?export=download&id=1wVGCJ4_z9hEkR8aM59-S7KjlKH8EWnvI
+[n01_e002 (29,331,574x30) pt=[12]] 'One integration, two merchant-of-record providers, and the economics that work at a $10 ticket'
+[n01_e003 (29,351,574x26) pt=[8.5]] 'German Tatis, Yuno · 16 October 2026'
+[NOTES] "Cordel, Fatih: this deck answers the three things you asked for on the discovery call, the economics, pricing that works for small purchases, and how Yuno fits alongside EBANX, plus Fatih's two, checkout demos and merchant of record against local presence. Every number carries its label: confirmed in public documentation, read on a third party's public page, a Yuno estimate with the assumption stated, or open with an owner. The appendix holds the market detail for each of the five countries."
+
+===== POS 48 · objectId=n02_g3f769a0f446_0_0 =====
+[n02_g3f769a0f446_0_20 (36,36,45x13) pt=[8]] 'AGENDA'
+[IMG n02_g3f769a0f446_0_21 (648,38,36x10)] 
+[n02_e001 (29,115,54x28) pt=[10]] '01'
+[n02_e002 (67,111,563x31) pt=[11]] 'EXECUTIVE SUMMARY'
+[n02_e004 (29,142,54x28) pt=[10]] '02'
+[n02_e005 (67,138,563x31) pt=[11]] 'WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n02_e007 (29,169,54x28) pt=[10]] '03'
+[n02_e008 (67,165,563x31) pt=[11]] 'TWO WAYS TO LAUNCH'
+[n02_e010 (29,196,54x28) pt=[10]] '04'
+[n02_e011 (67,192,563x31) pt=[11]] 'WHY YUNO'
+[n02_e013 (29,223,54x28) pt=[10]] '05'
+[n02_e014 (67,219,563x31) pt=[11]] 'BUSINESS CASE'
+[n02_e016 (29,250,54x28) pt=[10]] '06'
+[n02_e017 (67,246,563x31) pt=[11]] 'PROPOSAL'
+[n02_e019 (29,277,54x28) pt=[10]] '07'
+[n02_e020 (67,273,563x31) pt=[11]] 'LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n02_e022 (29,305,54x28) pt=[10]] '08'
+[n02_e023 (67,301,563x31) pt=[11]] 'NEXT STEPS'
+[n02_e025 (29,332,54x28) pt=[10]] 'A'
+[n02_e026 (67,328,563x31) pt=[11]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] "Thirty minutes: the executive summary and the two ways to launch first, then the business case and the proposal, then the launch plan. The appendix is for Fatih's team to read afterwards."
+
+===== POS 49 · objectId=n03_g3f769a0f446_0_988 =====
+[IMG n03_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n03_g3f769a0f446_0_990 (648,36,36x10)] 
+[n03_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Executive summary'
+[n03_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] '01'
+[n03_e001 (29,345,593x28) pt=[10]] 'The decision, the recommended path, and what it returns at launch and at run rate'
+[n03_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n03_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n03_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n03_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n03_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n03_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n03_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n03_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n03_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] 'One slide: the decision in front of Carry1st, what Yuno proposes, and what it is worth at launch volume and at the end-2027 run rate.'
+
+===== POS 50 · objectId=n04r1_g3f77215683c_2_2968 =====
+[IMG n04r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n04r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'EXECUTIVE SUMMARY'
+[n04r1_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Through Yuno, EBANX and dLocal cost less than EBANX direct at run rate, add a second rail, and pay back in month two.'
+[n04r1_e002 (580,19,64x24) pt=[7]] 'ESTIMATE'
+[n04r1_e004 (406,104,265x26) pt=[8.5]] 'WHAT YUNO PROPOSES'
+[n04r1_e005 (406,126,265x26) pt=[8]] 'ONE INTEGRATION, TWO MERCHANTS OF RECORD'
+[n04r1_e006 (406,139,265x49) pt=[8]] 'EBANX primary, dLocal second, both as connections on the Yuno SDK: retries and failover between them, local methods per market, Phase 2 local acquirers without touching checkout.'
+[n04r1_e007 (406,186,265x26) pt=[8]] 'A FEE THAT SCALES WITH SALES, NOT WITH TRANSACTIONS'
+[n04r1_e008 (406,200,265x49) pt=[8]] '$7,500 a month including the first $500K of monthly sales, then 30 / 25 / 20 bps on sales above it. At launch: $7,500 and nothing per transaction; at $4.5M: $18,750 a month, 0.42% of sales.'
+[n04r1_e009 (406,247,265x26) pt=[8]] 'A CASE THAT PAYS BACK IN MONTH TWO'
+[n04r1_e010 (406,260,265x49) pt=[8]] "Base case at run rate: $44.2 per $1,000 of sales through Yuno against $45.0 direct, +$29.1K a month net ($349K a year, 2.6x Yuno's cost); break-even about 65,000 transactions a month."
+[n04r1_e011 (29,88,352x26) pt=[8]] 'WHERE CARRY1ST STANDS'
+[n04r1_e012 (29,104,352x27) pt=[9]] 'The decision'
+[n04r1_e013 (29,117,352x50) pt=[8.5]] 'Launch the Carry1st Shop in Brazil, Argentina, Mexico, Colombia and Bolivia by Black Friday, 27 November 2026, through a merchant of record: EBANX direct, or EBANX and dLocal through Yuno.'
+[n04r1_e014 (29,161,352x27) pt=[9]] 'The economics to beat'
+[n04r1_e015 (29,174,352x38) pt=[8.5]] 'A $10 average and $5 median ticket, so every fixed fee per transaction is punished; $4 to 5M a month in LatAm by end 2027 (Carry1st, Cordel, Oct 2026, estimate).'
+[n04r1_e016 (29,206,352x27) pt=[9]] 'What EBANX direct gives'
+[n04r1_e017 (29,220,352x38) pt=[8.5]] 'One agreement and one integration for all five countries once EBANX enables each; but one approval rate, one price, Bolivia cash only, no MODO.'
+[n04r1_e018 (29,252,352x27) pt=[9]] 'What is still open'
+[n04r1_e019 (29,265,352x38) pt=[8.5]] "Volumes by country, EBANX's proposed rates, Carry1st's take rate and the tax treatment under each MoR. Every modeled number in this deck carries its label and an owner."
+[n04r1_e021 (41,338,638x27) pt=[8.5]] 'Decide by 23 Oct, onboard EBANX and dLocal in parallel, launch Brazil by 27 Nov; the conservative case is cost-neutral at run rate.'
+[n04r1_e022 (29,354,662x32) pt=[6.5]] "Yuno business-case model, 15 Oct 2026, base scenario: EBANX direct all-in 4.5% of sales and a 15% take rate are estimates, replaced by EBANX's quote and Shop margins. Volumes: Carry1st, Cordel, Oct 2026, estimate."
+[n04r1_e023 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n04r1_e024 (633,376,58x23) pt=[6.5]] '4'
+[NOTES] "The whole deck on one slide. Left, where you stand: five markets, six weeks, a $5 median ticket and a run-rate estimate that is yours. Right, what we propose: one integration carrying EBANX and dLocal, a fee that is a share of what you sell with the first $500K of monthly sales inside the platform fee, and a business case that, in the base scenario, makes the Yuno route the cheaper cost line at run rate before counting approval or coverage gains. Two numbers to keep: break-even at about 65,000 transactions a month, and the conservative case cost-neutral at run rate. Everything modeled is labelled and will be re-cut on your volumes and EBANX's quote."
+
+===== POS 51 · objectId=n05_g3f769a0f446_0_988 =====
+[IMG n05_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n05_g3f769a0f446_0_990 (648,36,36x10)] 
+[n05_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Where Carry1st stands and what Black Friday needs'
+[n05_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] '02'
+[n05_e001 (29,345,593x28) pt=[10]] 'What we heard, the Shop and the plan, and what the five markets demand'
+[n05_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n05_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n05_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n05_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n05_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n05_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n05_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n05_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n05_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] 'Section 02 restates what we heard from Cordel and Fatih, sizes the plan as you described it, and shows what the five markets require of a checkout.'
+
+===== POS 52 · objectId=n06_g3f77215683c_2_2968 =====
+[IMG n06_g3f77215683c_2_2969 (645,24,39x11)] 
+[n06_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'WHERE CARRY1ST STANDS · WHAT WE HEARD'
+[n06_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Three asks from Cordel and two from Fatih set the bar for this deck; each one has a section that answers it.'
+[n06_e001 (29,88,326x26) pt=[9]] "CORDEL'S THREE ASKS"
+[n06_e002 (29,107,34x24) pt=[7]] '01'
+[n06_e003 (51,106,304x27) pt=[9]] 'Demonstrate the economics'
+[n06_e004 (51,119,304x38) pt=[8.5]] "Show how processing savings, improved conversion and reduced engineering work justify Yuno's additional fee. Answered in section 05."
+[n06_e005 (29,152,34x24) pt=[7]] '02'
+[n06_e006 (51,151,304x27) pt=[9]] 'Make pricing work for small purchases'
+[n06_e007 (51,165,304x38) pt=[8.5]] 'The average ticket is about $10 and the median closer to $5, so fixed transaction fees are especially sensitive. Answered in sections 05 and 06.'
+[n06_e008 (29,198,34x24) pt=[7]] '03'
+[n06_e009 (51,197,304x27) pt=[9]] 'Clarify the EBANX arrangement'
+[n06_e010 (51,210,304x38) pt=[8.5]] 'How working with Yuno fits alongside EBANX, including starting through a particular provider or integrating directly. Answered in section 03.'
+[n06_e011 (365,88,326x26) pt=[9]] "FATIH'S TWO ASKS"
+[n06_e012 (365,107,34x24) pt=[7]] '01'
+[n06_e013 (387,106,304x27) pt=[9]] 'Checkout demos'
+[n06_e014 (387,119,304x50) pt=[8.5]] 'A working prototype of the Shop checkout on the Yuno SDK, checkout examples and test access to a live gaming checkout. Answered in section 04 and in the live demo.'
+[n06_e015 (365,164,34x24) pt=[7]] '02'
+[n06_e016 (387,163,304x27) pt=[9]] 'Merchant of record versus local presence'
+[n06_e017 (387,176,304x38) pt=[8.5]] 'Launch timelines and the longer-term customer experience under each model. Answered in section 07.'
+[n06_e019 (41,338,638x27) pt=[8.5]] 'Everything else in this deck exists to answer these five questions; the appendix carries the market detail behind the answers.'
+[n06_e020 (29,362,662x23) pt=[6.5]] 'Discovery call between Carry1st and Yuno, October 2026, as summarized by Yuno.'
+[n06_e021 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n06_e022 (633,376,58x23) pt=[6.5]] '6'
+[NOTES] 'We wrote down your five asks as close to verbatim as we could, so you can check that the deck answers what you actually asked rather than what we wanted to pitch. If we misheard any of them, this is the slide to correct.'
+
+===== POS 53 · objectId=n07_g3f77215683c_2_2968 =====
+[IMG n07_g3f77215683c_2_2969 (645,24,39x11)] 
+[n07_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'WHERE CARRY1ST STANDS · THE SHOP AND THE PLAN'
+[n07_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Five markets, a $10 average ticket and six weeks to Black Friday: the launch has to be fast, local and cheap per transaction.'
+[n07_e004 (40,100,198x24) pt=[7]] 'THE SHOP TODAY'
+[n07_e005 (40,122,198x40) pt=[22]] '21'
+[n07_e006 (40,148,198x40) pt=[8]] 'storefronts across Africa, the Middle East and the US: game top-ups and gift cards, instant delivery'
+[n07_e007 (40,181,198x40) pt=[22]] '$10'
+[n07_e008 (40,207,198x40) pt=[8]] 'average ticket; median about $5 (Carry1st, Cordel, Oct 2026, estimate)'
+[n07_e010 (40,248,198x76) pt=[8]] 'Founded 2018 in Cape Town; backed by a16z, BITKRAFT, Google, Konvoy and Sony. Publishing partners include Activision, Supercell and EA. The US storefront already lists Free Fire Diamonds (LATAM) and Brazil SKUs.'
+[n07_e011 (261,100,198x24) pt=[7]] 'THE LATAM PLAN AS YOU DESCRIBED IT'
+[n07_e012 (261,121,28x26) pt=[10]] '↗'
+[n07_e013 (277,122,182x64) pt=[8]] 'Brazil first, then Argentina, Mexico, Bolivia and Colombia; all five together if payments, localization and support fit in two to three weeks.'
+[n07_e014 (261,180,28x26) pt=[10]] '↗'
+[n07_e015 (277,181,182x52) pt=[8]] 'Launch through a merchant of record (no LatAm entities today); non-resident accounts and local entities are a Phase 2 decision.'
+[n07_e016 (261,228,28x26) pt=[10]] '↗'
+[n07_e017 (277,228,182x64) pt=[8]] '$4 to 5M a month by end 2027 (Carry1st, Cordel, Oct 2026, estimate): about 450,000 transactions a month at a $10 ticket. Volumes by country to come.'
+[n07_e018 (481,100,198x24) pt=[7]] 'WHAT BLACK FRIDAY NEEDS'
+[n07_e019 (481,122,198x136) pt=[8]] 'Live by 27 November 2026. Local methods that confirm in seconds (Pix, PSE, SPEI, wallets), because the Shop promises instant delivery. A domestic charge in local currency, so cards are not declined as cross-border and gamers do not pay FX or foreign-purchase taxes. One approval rate to beat, not to accept: a second provider in play from day one. Spanish and Portuguese checkout and support. Costs that scale with a $5 median, never a fixed fee per transaction.'
+[n07_e021 (41,338,638x27) pt=[8.5]] 'Six weeks to Black Friday: provider contracts and KYC are the critical path; the Yuno integration itself is measured in days (Yuno estimate, section 07).'
+[n07_e022 (29,362,662x23) pt=[6.5]] "Discovery call, Oct 2026 (Cordel's figures are estimates, not yet aligned internally); shop.carry1st.com sitemap and Carry1st press releases 2021 to 2026, read 15 Oct 2026."
+[n07_e023 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n07_e024 (633,376,58x23) pt=[6.5]] '7'
+[NOTES] 'This is the plan as you described it, in your numbers. We label the run rate as your estimate because you told us it is not yet aligned internally, and the model in this deck runs at four volumes so it holds whichever way the alignment lands. The right-hand column is the checklist we built the launch against: speed, local methods that confirm instantly, domestic presentation of the charge, a second provider from day one, and costs that behave at a $5 median.'
+
+===== POS 54 · objectId=n08_g3f77215683c_2_2968 =====
+[IMG n08_g3f77215683c_2_2969 (645,24,39x11)] 
+[n08_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'WHERE CARRY1ST STANDS · WHAT THE FIVE MARKETS DEMAND'
+[n08_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'In every launch market the method that wins is local and instant, and most of it sits outside international card rails.'
+[n08_e002 (40,104,130x42) pt=[24]] '42%'
+[n08_e003 (40,136,130x38) pt=[7.599999904632568]] "of Brazil's online purchases are Pix (2025); cards 41%"
+[n08_e005 (186,104,130x42) pt=[24]] '63.9%'
+[n08_e006 (186,136,130x38) pt=[7.599999904632568]] "of Colombia's e-commerce transactions run on PSE (Q2 2025)"
+[n08_e008 (40,188,130x42) pt=[24]] '46%'
+[n08_e009 (40,220,130x38) pt=[7.599999904632568]] "of Argentina's e-commerce value is in digital wallets (2024)"
+[n08_e011 (186,188,130x42) pt=[24]] '74%'
+[n08_e012 (186,220,130x38) pt=[7.599999904632568]] 'of Mexican online buyers pay with debit cards (AMVO 2024)'
+[n08_e013 (337,92,354x25) pt=[7.5]] 'WHAT THIS MEANS FOR THE SHOP'
+[n08_e014 (337,108,354x26) pt=[8.199999809265137]] 'INSTANT CONFIRMATION IS THE PRODUCT'
+[n08_e015 (337,120,354x50) pt=[8.5]] 'Pix, PSE, SPEI and wallets confirm in seconds, which matches instant top-up delivery. Cash vouchers (Boleto, OXXO, Rapipago) confirm hours or days later and belong in a second wave.'
+[n08_e016 (337,164,354x26) pt=[8.199999809265137]] 'DOMESTIC PRESENTATION DECIDES APPROVAL'
+[n08_e017 (337,176,354x50) pt=[8.5]] 'Vendor-reported ranges put cross-border card approval at 30 to 60% against 80 to 90% for local processing (2017 to 2026). A merchant of record charging in local currency is what lets a Brazilian or Mexican debit card approve.'
+[n08_e018 (337,220,354x26) pt=[8.199999809265137]] 'TAXES FOLLOW THE RAIL'
+[n08_e019 (337,232,354x50) pt=[8.5]] "Argentina adds a 30% perception on foreign-currency card purchases; Brazil charges 3.5% IOF on international card payments. A local-currency charge through the MoR's local entity is domestic for the gamer. TO VALIDATE with EBANX and dLocal."
+[n08_e020 (337,276,354x26) pt=[8.199999809265137]] 'BOLIVIA AND ARGENTINA NEED A SECOND PROVIDER'
+[n08_e021 (337,288,354x38) pt=[8.5]] 'EBANX lists only PagosNet cash in Bolivia and no MODO or interoperable QR in Argentina; dLocal carries cards, QR and MODO there.'
+[n08_e023 (41,338,638x27) pt=[8.5]] "The Shop's African playbook, local methods in local currency, is exactly what LatAm requires; the open question is which rail carries it."
+[n08_e024 (29,354,662x32) pt=[6.5]] 'Reuters on PCMI data, 10 Feb 2026; CCCE via Valora Analitik, 24 Aug 2025; PCMI 2024 data; AMVO Estudio 2024; approval ranges are vendor-reported (Worldline, Rapyd, Nuvei, Antom, EBANX, 2017 to 2026); ARCA RG 5617/2024; Decree 12.499/2025. PUBLIC DOCS.'
+[n08_e025 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n08_e026 (633,376,58x23) pt=[6.5]] '8'
+[NOTES] 'Four numbers, one per market, and they point the same way: the winning method is local and it confirms instantly. Pix in Brazil, PSE in Colombia, wallets in Argentina and debit cards in Mexico are the rails the Shop needs on day one. The approval ranges on the right are vendor claims, not independent studies, so we show them as ranges and label them; the direction is not in dispute. The two tax lines explain why a local-currency charge through a merchant of record matters for the gamer, and both are items we will confirm in writing with EBANX and dLocal.'
+
+===== POS 55 · objectId=n09_g3f769a0f446_0_988 =====
+[IMG n09_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n09_g3f769a0f446_0_990 (648,36,36x10)] 
+[n09_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Two ways to launch'
+[n09_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] '03'
+[n09_e001 (29,345,593x28) pt=[10]] 'EBANX direct, or EBANX and dLocal through Yuno'
+[n09_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n09_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n09_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n09_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n09_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n09_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n09_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n09_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n09_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] 'The decision in one grid, then a picture of how Yuno sits alongside EBANX.'
+
+===== POS 56 · objectId=n10_g3f77215683c_2_2968 =====
+[IMG n10_g3f77215683c_2_2969 (645,24,39x11)] 
+[n10_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'TWO WAYS TO LAUNCH · THE COMPARISON'
+[n10_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'EBANX direct can switch on all five markets with one integration; what it cannot give Carry1st is a second rail.'
+[n10_e002 (575,19,68x24) pt=[7]] 'CONFIRMED'
+[n10_e004 (511,19,74x24) pt=[7]] 'PUBLIC DOCS'
+[n10_e005 (643,87,24x24) pt=[8]] '✓'
+[n10_e006 (654,88,37x24) pt=[6.5]] 'Closed'
+[n10_e007 (583,87,24x24) pt=[8]] '◐'
+[n10_e008 (594,88,55x24) pt=[6.5]] 'Partly closed'
+[n10_e009 (516,87,24x24) pt=[8]] '✕'
+[n10_e010 (527,88,62x24) pt=[6.5]] 'Gap stays open'
+[n10_e012 (36,109,157x23) pt=[6.5]] 'WHAT THE LAUNCH NEEDS'
+[n10_e013 (36,119,157x25) pt=[7.5]] 'Six rows that decide the economics'
+[n10_e015 (194,109,163x23) pt=[6.5]] "TODAY'S DEFAULT"
+[n10_e016 (194,119,163x25) pt=[7.5]] 'EBANX direct'
+[n10_e018 (357,109,163x23) pt=[6.5]] 'OPTION A'
+[n10_e019 (357,119,163x25) pt=[7.5]] 'EBANX plus a second direct build'
+[n10_e021 (521,109,163x23) pt=[6.5]] 'OPTION B · RECOMMENDED'
+[n10_e022 (521,119,163x25) pt=[7.5]] 'EBANX and dLocal through Yuno'
+[n10_e025 (36,136,157x25) pt=[7.5]] 'Integrations to build'
+[n10_e026 (36,147,157x24) pt=[6.5]] 'now, and when a second provider arrives'
+[n10_e028 (194,135,26x26) pt=[9]] '◐'
+[n10_e029 (208,136,149x35) pt=[7]] 'One now. Each later provider is a new build.'
+[n10_e031 (357,135,26x26) pt=[9]] '✕'
+[n10_e032 (371,136,149x35) pt=[7]] 'Two now; a third provider means a third build.'
+[n10_e034 (521,135,26x26) pt=[9]] '✓'
+[n10_e035 (535,136,149x35) pt=[7]] 'One now. EBANX, dLocal and later providers are connections.'
+[n10_e037 (36,165,157x25) pt=[7.5]] 'Countries on one integration'
+[n10_e038 (36,176,157x33) pt=[6.5]] 'Brazil, Argentina, Mexico, Colombia, Bolivia'
+[n10_e040 (194,164,26x26) pt=[9]] '◐'
+[n10_e041 (208,165,149x43) pt=[7]] 'All five once EBANX enables each; Bolivia cash only.'
+[n10_e043 (357,164,26x26) pt=[9]] '✓'
+[n10_e044 (371,165,149x43) pt=[7]] 'All five; dLocal adds Bolivia cards, Argentina MODO.'
+[n10_e046 (521,164,26x26) pt=[9]] '✓'
+[n10_e047 (535,165,149x43) pt=[7]] 'All five, same coverage, one integration.'
+[n10_e049 (36,203,157x25) pt=[7.5]] 'Approval levers'
+[n10_e050 (36,214,157x24) pt=[6.5]] 'retries, routing, failover'
+[n10_e052 (194,202,26x26) pt=[9]] '✕'
+[n10_e053 (208,203,149x35) pt=[7]] 'One rail, one approval rate; outages wait for EBANX.'
+[n10_e055 (357,202,26x26) pt=[9]] '◐'
+[n10_e056 (371,203,149x35) pt=[7]] 'Second rail exists; retry and failover are yours to build.'
+[n10_e058 (521,202,26x26) pt=[9]] '✓'
+[n10_e059 (535,203,149x35) pt=[7]] 'Retry on the second rail; Monitors reroute on a drop.'
+[n10_e061 (36,232,157x25) pt=[7.5]] 'Cost leverage'
+[n10_e062 (36,243,157x24) pt=[6.5]] 'MDR negotiation'
+[n10_e064 (194,231,26x26) pt=[9]] '✕'
+[n10_e065 (208,232,149x35) pt=[7]] 'One counterparty, no alternative route.'
+[n10_e067 (357,231,26x26) pt=[9]] '◐'
+[n10_e068 (371,232,149x35) pt=[7]] 'Two counterparties; moving volume is a code change.'
+[n10_e070 (521,231,26x26) pt=[9]] '✓'
+[n10_e071 (535,232,149x35) pt=[7]] 'Volume moves by rule: a real negotiating position.'
+[n10_e073 (36,262,157x25) pt=[7.5]] 'Tokens, dashboard, reconciliation'
+[n10_e075 (194,261,26x26) pt=[9]] '◐'
+[n10_e076 (208,262,149x34) pt=[7]] 'Tokens held at EBANX; one portal.'
+[n10_e078 (357,261,26x26) pt=[9]] '✕'
+[n10_e079 (371,262,149x34) pt=[7]] 'Two vaults, two portals, two reconciliations.'
+[n10_e081 (521,261,26x26) pt=[9]] '✓'
+[n10_e082 (535,262,149x34) pt=[7]] 'One vault, portable tokens; one dashboard for all.'
+[n10_e084 (36,291,157x25) pt=[7.5]] 'Time to 27 Nov, and Phase 2'
+[n10_e085 (36,301,157x24) pt=[6.5]] 'local entities later'
+[n10_e087 (194,290,26x26) pt=[9]] '◐'
+[n10_e088 (208,291,149x35) pt=[7]] 'EBANX onboarding sets the pace; Phase 2 is a new build.'
+[n10_e090 (357,290,26x26) pt=[9]] '✕'
+[n10_e091 (371,291,149x35) pt=[7]] 'Two onboardings and two builds in six weeks.'
+[n10_e093 (521,290,26x26) pt=[9]] '✓'
+[n10_e094 (535,291,149x35) pt=[7]] 'Same onboarding in parallel; Yuno setup in days; Phase 2 is a connection.'
+[n10_e097 (36,320,157x24) pt=[6.5]] 'Rows closed'
+[n10_e099 (194,320,163x24) pt=[6.5]] '0 of 6'
+[n10_e101 (357,320,163x24) pt=[6.5]] '1 of 6'
+[n10_e103 (521,320,163x24) pt=[6.5]] '6 of 6'
+[n10_e104 (229,338,462x26) pt=[7.5]] 'One integration either way; through Yuno it carries EBANX, dLocal and the path to local acquiring.'
+[n10_e105 (29,354,662x32) pt=[6.5]] 'EBANX docs (api-operability, DEUNA partner page, pay-in guide, Bolivia and Argentina overviews) and status.ebanx.com, read 15 Oct 2026 (PUBLIC DOCS); docs.y.uno connections, routing, monitors, tokens (CONFIRMED). Yuno setup time is a Yuno estimate.'
+[n10_e106 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n10_e107 (633,376,58x23) pt=[6.5]] '10'
+[NOTES] 'We start with the honest answer to your question. One EBANX integration and one agreement can switch on all five countries: the country is a field in the request, and EBANX enables each country on your account during onboarding, with sandbox tests per country and an integration review before production. So EBANX direct is a real option and we say so. What it cannot give you is a second rail: no retry on a decline, no failover in an outage, no cards or QR in Bolivia, no MODO in Argentina, and one counterparty on price. The middle column shows what it costs to fix that with a second direct build. The right column is the same fix as a routing rule.'
+
+===== POS 57 · objectId=n11_g3f77215683c_2_2968 =====
+[IMG n11_g3f77215683c_2_2969 (645,24,39x11)] 
+[n11_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'TWO WAYS TO LAUNCH · HOW YUNO SITS ALONGSIDE EBANX'
+[n11_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Yuno sits between the Shop and both merchants of record: EBANX for what it covers, dLocal for what it does not, one integration.'
+[n11_e006 (300,225,33x24) pt=[6.5]] 'later'
+[n11_e007 (29,88,214x26) pt=[7]] 'CARRY1ST'
+[n11_e009 (37,108,418x26) pt=[9]] 'Carry1st Shop · web and app'
+[n11_e010 (37,121,418x28) pt=[7.5]] 'Same checkout in every market; Spanish and Portuguese; instant delivery after confirmation'
+[n11_e013 (364,160,93x23) pt=[6.5]] 'Rules set by Carry1st'
+[n11_e014 (37,161,330x26) pt=[9]] 'Yuno · one integration'
+[n11_e015 (37,174,418x54) pt=[7.5]] 'Checkout and SDK with local methods per market · routing and retries · Monitors and failover · vault with portable tokens · one dashboard and reconciliation'
+[n11_e016 (29,232,314x26) pt=[7]] 'MERCHANTS OF RECORD · YOUR CONTRACTS, YUNO HOLDS THE CREDENTIALS'
+[n11_e019 (107,252,65x23) pt=[6.5]] 'CONFIRMED'
+[n11_e020 (37,253,72x37) pt=[9]] 'EBANX · primary MoR'
+[n11_e021 (37,277,133x47) pt=[7.5]] 'Brazil, Mexico, Colombia, Argentina: cards, Pix, OXXO Pay, SPEI, PSE, Nequi, Checkout Pro'
+[n11_e024 (249,252,65x23) pt=[6.5]] 'CONFIRMED'
+[n11_e025 (179,253,72x37) pt=[9]] 'dLocal · second MoR'
+[n11_e026 (179,277,133x47) pt=[7.5]] 'Bolivia cards, QR and cash; Argentina MODO and QR; Mexico CoDi; failover in every market'
+[n11_e029 (409,252,49x23) pt=[6.5]] 'LATER'
+[n11_e030 (321,253,90x37) pt=[9]] 'Phase 2 · local acquirers'
+[n11_e031 (321,277,134x47) pt=[7.5]] 'Local entity or non-resident account per country, added as a connection and routed by country'
+[n11_e033 (37,326,418x26) pt=[9]] 'One agreement per provider, one integration for all of them'
+[n11_e034 (37,339,418x28) pt=[7.5]] 'Carry1st signs and completes KYC with EBANX and with dLocal; both become connections on the same checkout.'
+[n11_e035 (469,88,222x25) pt=[7.5]] 'WHAT THIS ARRANGEMENT GIVES CARRY1ST'
+[n11_e037 (469,110,222x26) pt=[8.5]] 'One integration unlocks every MoR'
+[n11_e038 (469,123,222x48) pt=[8]] "EBANX for what it covers, dLocal for what it does not. Both are connections on the same checkout, with the rest of Yuno's catalog behind them for Phase 2."
+[n11_e039 (469,163,222x26) pt=[8.5]] 'One dashboard, one reconciliation'
+[n11_e040 (469,176,222x48) pt=[8]] 'Approval by provider and country, retries, settlements and chargebacks in one console; Payment Concierge answers questions in Slack.'
+[n11_e041 (469,216,222x26) pt=[8.5]] 'MoR swap insurance'
+[n11_e042 (469,229,222x48) pt=[8]] "If EBANX pricing or service slips, Brazil moves to dLocal by routing rule, not by sprint. Card tokens stay in Yuno's vault; cash methods have nothing to tokenize."
+[n11_e043 (29,362,662x23) pt=[6.5]] 'docs.y.uno connections, routing, monitors, tokens (CONFIRMED); EBANX and dLocal country pages, read 15 Oct 2026 (PUBLIC DOCS). EBANX card coverage in Bolivia: OPEN, owner Yuno integrations.'
+[n11_e044 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n11_e045 (633,376,58x23) pt=[6.5]] '11'
+[NOTES] 'This is the arrangement Cordel asked us to clarify. Carry1st keeps a direct agreement with EBANX and signs one with dLocal; Yuno never sits in the money flow. What changes is the integration: the Shop talks to one SDK, and EBANX and dLocal are credentials entered as connections, with routing rules deciding which one carries each payment. The Phase 2 box is the point for Fatih: when a country justifies a local entity, the local acquirer is one more connection and the checkout does not change.'
+
+===== POS 58 · objectId=n12_g3f769a0f446_0_988 =====
+[IMG n12_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n12_g3f769a0f446_0_990 (648,36,36x10)] 
+[n12_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Why Yuno'
+[n12_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] '04'
+[n12_e001 (29,345,593x28) pt=[10]] 'Requirement, benefit, proof: what the Shop needs, what it gets, how we show it'
+[n12_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n12_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n12_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n12_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n12_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n12_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n12_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n12_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n12_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] 'Section 04 is the value proposition in the order you would check it: what the Shop needs, what each need gets through Yuno, and the proof behind it.'
+
+===== POS 59 · objectId=n13_g3f77215683c_2_2968 =====
+[IMG n13_g3f77215683c_2_2969 (645,24,39x11)] 
+[n13_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'WHY YUNO · REQUIREMENT, BENEFIT, PROOF'
+[n13_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Seven things the Shop needs in Latin America, what each one gets through Yuno, and how we prove it.'
+[n13_e002 (575,19,68x24) pt=[7]] 'CONFIRMED'
+[n13_e004 (35,93,145x26) pt=[6.5]] 'REQUIREMENT'
+[n13_e006 (177,93,236x26) pt=[6.5]] 'BENEFIT FOR THE SHOP'
+[n13_e008 (411,93,210x26) pt=[6.5]] 'PROOF'
+[n13_e010 (618,93,67x26) pt=[6.5]] 'LABEL'
+[n13_e013 (35,115,145x33) pt=[7]] 'One integration for five countries'
+[n13_e015 (177,115,236x33) pt=[7]] 'EBANX and dLocal as connections on one SDK; later providers and local acquirers added without touching checkout'
+[n13_e017 (411,115,210x33) pt=[7]] 'Connections are credentials entered in the dashboard or by API; Rappi: new-provider implementation time down to zero'
+[n13_e020 (618,119,68x24) pt=[7]] 'CONFIRMED'
+[n13_e022 (35,143,145x33) pt=[7]] 'Local methods per market'
+[n13_e024 (177,143,236x33) pt=[7]] 'Pix, PSE, Nequi, Bre-B, SPEI, OXXO Pay, CoDi, MODO, Rapipago, QR in Bolivia and wallets, returned per country by the checkout session'
+[n13_e026 (411,143,210x33) pt=[7]] 'Yuno directory, Oct 2026: 46 providers live in Brazil, 36 in Mexico, 31 in Colombia, 23 in Argentina, 6 in Bolivia'
+[n13_e029 (618,148,68x24) pt=[7]] 'CONFIRMED'
+[n13_e031 (35,171,145x42) pt=[7]] 'Higher approval, fewer lost sales'
+[n13_e033 (177,171,236x42) pt=[7]] 'A decline on EBANX retries on dLocal; routing by BIN, brand, amount and country; Smart Routing as data builds'
+[n13_e035 (411,171,210x42) pt=[7]] 'Published across Yuno merchants: up to 7% authorization uplift, 30% recovered revenue. Carry1st uplift modeled at +1.5 to +5 points'
+[n13_e038 (618,180,68x24) pt=[7]] 'CONFIRMED'
+[n13_e040 (35,209,145x33) pt=[7]] 'No single point of failure'
+[n13_e042 (177,209,236x33) pt=[7]] 'Monitors move traffic to the fallback provider when approval drops, and move it back on recovery'
+[n13_e044 (411,209,210x33) pt=[7]] 'docs.y.uno monitors and automation; status.ebanx.com shows degradations and daily maintenance windows'
+[n13_e047 (618,213,68x24) pt=[7]] 'CONFIRMED'
+[n13_e049 (35,237,145x33) pt=[7]] 'Cost that scales with a $5 median'
+[n13_e051 (177,237,236x33) pt=[7]] 'Two MoRs on one checkout make the MDR negotiable; Yuno is billed as a share of what Carry1st sells, never a fixed fee per transaction'
+[n13_e053 (411,237,210x33) pt=[7]] 'Business case in section 05 and the proposal in section 06'
+[n13_e056 (618,242,64x24) pt=[7]] 'ESTIMATE'
+[n13_e058 (35,265,145x42) pt=[7]] 'A checkout that converts, shipped in days'
+[n13_e060 (177,265,236x42) pt=[7]] 'Web and mobile SDKs; local prices and methods per market; tokens portable across providers; PCI DSS, SOC 2 Type 2, ISO 27001 and 27701'
+[n13_e062 (411,265,210x42) pt=[7]] 'Working prototype of the Shop checkout on the Yuno SDK, sandbox, four LatAm markets, 15 Oct 2026'
+[n13_e065 (618,274,68x24) pt=[7]] 'CONFIRMED'
+[n13_e067 (35,303,145x42) pt=[7]] 'One view of the business, and a team that has done this'
+[n13_e069 (177,303,236x42) pt=[7]] 'Approval, retries, chargebacks and reconciliation by provider and country; Payment Concierge; dedicated KAM and TAM; teams in São Paulo, Mexico City, Bogotá, Buenos Aires'
+[n13_e071 (411,303,210x42) pt=[7]] 'y.uno/about; inDrive: around 90% approval and 11 new countries in under eight months'
+[n13_e074 (618,312,68x24) pt=[7]] 'CONFIRMED'
+[n13_e075 (29,340,662x23) pt=[6.5]] 'Labels: CONFIRMED in docs.y.uno or y.uno, read 15 Oct 2026; ESTIMATE is modeled with the assumption stated in section 05.'
+[n13_e076 (29,362,662x23) pt=[6.5]] 'docs.y.uno (connections, routing, monitors, tokens, insights), y.uno homepage, about and success stories, Yuno integrations directory, read 14 and 15 Oct 2026.'
+[n13_e077 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n13_e078 (633,376,58x23) pt=[6.5]] '13'
+[NOTES] 'We read this table top-down: the left column is what the Shop needs, the middle is what it gets, the right is how you can check it. Five of the seven rows are confirmed in our public documentation or on y.uno; the cost row is modeled and we label it so. The one number we lean on for approval is the published ceiling of up to 7%, and the Carry1st model stays well under it.'
+
+===== POS 60 · objectId=n14_g3f769a0f446_0_7028 =====
+[IMG n14_g3f76accd9b2_2_5601 (0,405,720x-405)] 
+[n14_g3f769a0f446_0_7037 (45,177,140x13) pt=[9]] '01'
+[n14_g3f769a0f446_0_7038 (45,211,140x14) pt=[9]] 'Route & recover'
+[n14_g3f769a0f446_0_7039 (45,190,137x22) pt=[12]] 'ORCHESTRATION'
+[n14_g3f769a0f446_0_7041 (210,177,140x13) pt=[9]] '02'
+[n14_g3f769a0f446_0_7042 (210,211,140x14) pt=[9]] 'Convert everywhere'
+[n14_g3f769a0f446_0_7043 (210,190,137x22) pt=[12]] 'CHECKOUT & SDKS'
+[n14_g3f769a0f446_0_7045 (375,177,140x13) pt=[9]] '03'
+[n14_g3f769a0f446_0_7046 (375,211,140x14) pt=[9]] 'Protect every card'
+[n14_g3f769a0f446_0_7047 (375,190,137x22) pt=[12]] 'SECURITY & RISK'
+[n14_g3f769a0f446_0_7049 (540,177,140x13) pt=[9]] '04'
+[n14_g3f769a0f446_0_7050 (540,211,140x14) pt=[9]] 'The brain'
+[n14_g3f769a0f446_0_7051 (540,190,137x22) pt=[12]] 'AI & INTELLIGENCE'
+[n14_g3f769a0f446_0_7106 (45,33,145x13) pt=[6]] 'ABOUT YUNO · PLATFORM'
+[n14_g3f769a0f446_0_7107 (45,55,545x22) pt=[20]] 'A complete suite · Four pillars · One brain'
+[n14_g3f769a0f446_0_7109 (44,109,80x25) pt=[23.68079948425293]] '16'
+[n14_g3f769a0f446_0_7110 (44,136,80x16) pt=[9.472299575805664]] 'OFFICES'
+[n14_g3f769a0f446_0_7112 (223,109,80x25) pt=[23.68079948425293]] '190+'
+[n14_g3f769a0f446_0_7113 (223,136,80x16) pt=[9.472299575805664]] 'COUNTRIES'
+[n14_g3f769a0f446_0_7115 (401,109,80x25) pt=[23.68079948425293]] '1,000+'
+[n14_g3f769a0f446_0_7116 (401,136,80x16) pt=[9.472299575805664]] 'METHODS'
+[n14_g3f769a0f446_0_7118 (580,109,80x25) pt=[23.68079948425293]] '180+'
+[n14_g3f769a0f446_0_7119 (580,136,80x16) pt=[9.472299575805664]] 'CURRENCIES'
+[n14_g3f769a0f446_0_7130 (45,235,115x15) pt=[8]] 'Orchestration engine'
+[n14_g3f769a0f446_0_7131 (45,246,115x28) pt=[7]] 'Pay-in, payouts, tax, KYC/KYB, fraud and reconciliation on one control plane.'
+[n14_g3f769a0f446_0_7132 (45,286,115x15) pt=[8]] 'Smart routing'
+[n14_g3f769a0f446_0_7133 (45,297,115x12) pt=[7]] 'Per-transaction decisioning.'
+[n14_g3f769a0f446_0_7134 (45,321,115x15) pt=[8]] 'Monitors & auto-failover'
+[n14_g3f769a0f446_0_7135 (45,332,115x12) pt=[7]] 'Checkout stays live, always.'
+[n14_g3f76accd9b2_2_5542 (210,235,115x15) pt=[8]] 'Customizable checkout'
+[n14_g3f76accd9b2_2_5543 (210,246,115x13) pt=[7]] 'Local methods, native feel.'
+[n14_g3f76accd9b2_2_5545 (210,269,115x15) pt=[8]] 'Subscription management'
+[n14_g3f76accd9b2_2_5546 (210,280,115x12) pt=[7]] 'Recurring, with less engineering.'
+[n14_g3f76accd9b2_2_5548 (210,301,115x15) pt=[8]] 'Mobile SDKs'
+[n14_g3f76accd9b2_2_5549 (210,312,115x12) pt=[7]] 'One interface, iOS + Android.'
+[n14_g3f76accd9b2_2_5557 (375,235,115x15) pt=[8]] 'PCI Vault Tokenization'
+[n14_g3f76accd9b2_2_5558 (375,246,115x13) pt=[7]] 'Stay valid across networks.'
+[n14_g3f76accd9b2_2_5560 (375,265,115x15) pt=[8]] '3DS authentication'
+[n14_g3f76accd9b2_2_5561 (375,277,115x12) pt=[7]] 'Reduce fraud, lift auth.'
+[n14_g3f76accd9b2_2_5574 (375,294,115x15) pt=[8]] 'Account updater'
+[n14_g3f76accd9b2_2_5575 (375,305,115x12) pt=[7]] 'Credentials always fresh.'
+[n14_g3f76accd9b2_2_5577 (375,323,115x15) pt=[8]] 'Network tokens'
+[n14_g3f76accd9b2_2_5578 (375,334,115x22) pt=[7]] 'Lower scheme fees, higher approvals.'
+[n14_g3f76accd9b2_2_5586 (540,235,128x12) pt=[8]] 'Analytics'
+[n14_g3f76accd9b2_2_5587 (540,248,128x12) pt=[7]] 'Fees, FX, approvals. Decision-ready.'
+[n14_g3f76accd9b2_2_5595 (540,267,128x12) pt=[8]] 'Reconciliation'
+[n14_g3f76accd9b2_2_5596 (540,280,128x12) pt=[7]] 'One ledger across every PSP.'
+[n14_g3f76accd9b2_2_5598 (540,301,128x12) pt=[8]] 'Payments Concierge'
+[n14_g3f76accd9b2_2_5599 (540,314,128x21) pt=[7]] 'Natural-language copilot\nfor payments ops.'
+[IMG n14_g3f77215683c_2_850 (625,33,41x11)] 
+[n14_e001 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n14_e002 (633,376,58x23) pt=[6.5]] '14'
+[NOTES] 'The Yuno platform in one view: orchestration, checkout and SDKs, security and risk, and the intelligence layer. The four figures are the ones published on y.uno: 16 offices, 190+ countries, 1,000+ payment methods and providers, 180+ currencies. For the Shop the modules that matter first are smart routing, Monitors and auto-failover, the customizable checkout and the PCI vault; the rest is there when you need it.'
+
+===== POS 61 · objectId=n15_g3f77215683c_2_2968 =====
+[IMG n15_g3f77215683c_2_2969 (645,24,39x11)] 
+[n15_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'WHY YUNO · PROOF'
+[n15_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'The checkout already exists: a working prototype of the Shop on the Yuno SDK runs in four LatAm markets today.'
+[n15_e002 (39,97,202x24) pt=[7]] 'PROTOTYPE'
+[n15_e003 (39,110,202x44) pt=[24]] '4'
+[n15_e004 (39,142,202x88) pt=[7.5]] 'LatAm markets in the sandbox replica of the Shop checkout (Brazil, Colombia, Argentina, Mexico): local prices, with Pix, OXXO, PSE, Nequi, Daviplata and Mercado Pago returned by the checkout session. Bolivia next.'
+[n15_e006 (259,97,202x24) pt=[7]] 'PUBLISHED'
+[n15_e007 (259,110,202x44) pt=[24]] 'up to 7%'
+[n15_e008 (259,142,202x88) pt=[7.5]] 'authorization uplift across Yuno merchants, with 30% recovered revenue (y.uno, read 15 Oct 2026).'
+[n15_e010 (479,97,202x24) pt=[7]] 'REFERENCES'
+[n15_e011 (479,110,202x44) pt=[24]] '11'
+[n15_e012 (479,142,202x88) pt=[7.5]] 'new countries in under eight months for inDrive, at around 90% approval; Rappi cut new-provider implementation time to zero (y.uno success stories).'
+[n15_e014 (29,239,83x24) pt=[7.5]] 'NetEase Games'
+[n15_e016 (104,239,53x24) pt=[7.5]] 'Garena'
+[n15_e018 (149,239,54x24) pt=[7.5]] 'inDrive'
+[n15_e020 (194,239,49x24) pt=[7.5]] 'Rappi'
+[n15_e022 (235,239,125x24) pt=[7.5]] "McDonald's (Arcos Dorados)"
+[n15_e024 (351,239,59x24) pt=[7.5]] 'PCI DSS'
+[n15_e026 (402,239,77x24) pt=[7.5]] 'SOC 2 Type 2'
+[n15_e028 (470,239,66x24) pt=[7.5]] 'ISO 27001'
+[n15_e030 (527,239,66x24) pt=[7.5]] 'ISO 27701'
+[n15_e031 (29,265,662x73) pt=[9.5]] "The prototype replicates the Shop's Call of Duty: Mobile top-up flow with a market switcher: the South Africa flow as it runs today, and the same page on the Yuno Web SDK against the sandbox for Brazil, Colombia, Argentina and Mexico, with an under-the-hood panel showing what changed, the methods wired per market and the request timeline. It is a sandbox prototype, not production. NetEase Games and Garena are gaming publishers live on Yuno; one more mobile-games reference is to be confirmed."
+[n15_e033 (41,338,638x27) pt=[8.5]] "The prototype is live in the sandbox today; access details go to Fatih's team after the call, and we extend it to Bolivia and to the Shop's real SKUs before signing."
+[n15_e034 (29,362,662x23) pt=[6.5]] 'Carry1st Shop prototype on the Yuno SDK, Yuno sandbox, 15 Oct 2026; y.uno homepage and success stories (inDrive, Rappi), read 15 Oct 2026. CONFIRMED.'
+[n15_e035 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n15_e036 (633,376,58x23) pt=[6.5]] '15'
+[NOTES] 'Proof you can click. The prototype is a replica of your Call of Duty: Mobile top-up page running on the Yuno Web SDK against our sandbox for four of the five markets, and we will walk through it live. The published figures are the only Yuno-wide numbers we use anywhere in this deck: up to 7% authorization uplift and 30% recovered revenue. The gaming publishers named are live on Yuno and shown on y.uno; one further mobile-games reference will be confirmed with you after the call.'
+
+===== POS 62 · objectId=n16_g3f769a0f446_0_8218 =====
+[IMG n16_g3f769a0f446_0_9197 (0,0,720x405)] 
+[n16_g3f769a0f446_0_8220 (36,36,67x13) pt=[6]] 'WHY YUNO?'
+[IMG n16_g3f769a0f446_0_8221 (648,38,36x10)] 
+[n16_g3f769a0f446_0_8222 (36,77,648x60) pt=[24]] 'Yuno is trusted by leading \ncompanies worldwide'
+[IMG n16_g3f769a0f446_0_8223 (96,168,22x17)] 
+[IMG n16_g3f769a0f446_0_8224 (194,168,40x21)] 
+[IMG n16_g3f769a0f446_0_8225 (297,168,85x17)] 
+[IMG n16_g3f769a0f446_0_8227 (567,171,77x15)] 
+[IMG n16_g3f769a0f446_0_8230 (306,221,67x26)] 
+[IMG n16_g3f769a0f446_0_8231 (445,225,58x17)] 
+[IMG n16_g3f769a0f446_0_8232 (583,225,55x17)] 
+[IMG n16_g3f769a0f446_0_8233 (82,280,49x17)] 
+[IMG n16_g3f769a0f446_0_8242 (588,332,46x17)] 
+[IMG n16_g3f76accd9b2_0_0 (453,328,47x26)] 
+[IMG n16_g3f76accd9b2_0_2 (452,158,44x44)] 
+[IMG n16_g3f76accd9b2_0_5 (196,224,38x19)] 
+[IMG n16_g3f76accd9b2_0_6 (585,278,58x20)] 
+[IMG n16_g3f76accd9b2_0_7 (443,281,64x19)] 
+[IMG n16_g3f76accd9b2_0_8 (310,280,57x17)] 
+[IMG n16_g3f76accd9b2_0_9 (186,336,58x12)] 
+[IMG n16_g3f76accd9b2_0_10 (76,337,59x9)] 
+[IMG n16_g3f76accd9b2_0_11 (194,276,38x27)] 
+[IMG n16_g3f76accd9b2_0_12 (298,333,82x16)] 
+[n16_e001 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n16_e002 (633,376,58x23) pt=[6.5]] '16'
+[NOTES] 'A selection of the companies that run payments on Yuno, including gaming publishers NetEase and Garena and marketplaces and mobility companies that operate across Latin America. Logos as shown on y.uno.'
+
+===== POS 63 · objectId=n17_g3f769a0f446_0_988 =====
+[IMG n17_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n17_g3f769a0f446_0_990 (648,36,36x10)] 
+[n17_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Business case'
+[n17_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] '05'
+[n17_e001 (29,345,593x28) pt=[10]] 'EBANX direct against EBANX and dLocal through Yuno, at four volumes and three scenarios'
+[n17_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n17_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n17_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n17_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n17_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n17_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n17_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n17_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n17_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] 'Three slides: both options at four volumes, three scenarios with the levers, and why the shape of the fee matters at a $5 median ticket.'
+
+===== POS 64 · objectId=n18r2_g3f77215683c_2_2968 =====
+[IMG n18r2_g3f77215683c_2_2969 (645,24,39x11)] 
+[n18r2_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'BUSINESS CASE · BOTH OPTIONS AT FOUR VOLUMES'
+[n18r2_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'The Yuno route costs $44.2 per $1,000 of sales at run rate against $45.0 direct, and covers its fee from about 65K transactions.'
+[n18r2_e002 (580,19,64x24) pt=[7]] 'ESTIMATE'
+[n18r2_e004 (39,92,94x24) pt=[6.5]] 'Option A · EBANX direct'
+[n18r2_e006 (134,92,201x24) pt=[6.5]] 'Option B · EBANX and dLocal through Yuno, provider plus fee'
+[n18r2_e008 (337,92,89x24) pt=[6.5]] 'Net benefit, base case'
+[n18r2_e011 (32,239,55x23) pt=[6.5]] '$22.5K'
+[n18r2_e013 (60,236,55x23) pt=[6.5]] '$27.5K'
+[n18r2_e014 (88,255,55x23) pt=[6.5]] '($1.1K)'
+[n18r2_e015 (29,269,118x23) pt=[7]] '50K tx a month'
+[n18r2_e016 (29,278,118x23) pt=[6.5]] '$0.5M of sales'
+[n18r2_e018 (136,223,55x23) pt=[6.5]] '$45.0K'
+[n18r2_e020 (164,220,55x23) pt=[6.5]] '$49.0K'
+[n18r2_e022 (192,253,55x23) pt=[6.5]] '+$2.6K'
+[n18r2_e023 (132,269,118x23) pt=[7]] '100K'
+[n18r2_e024 (132,278,118x23) pt=[6.5]] '$1.0M'
+[n18r2_e026 (240,191,55x23) pt=[6.5]] '$90.0K'
+[n18r2_e028 (268,190,55x23) pt=[6.5]] '$92.0K'
+[n18r2_e030 (295,248,55x23) pt=[6.5]] '+$9.9K'
+[n18r2_e031 (236,269,118x23) pt=[7]] '200K'
+[n18r2_e032 (236,278,118x23) pt=[6.5]] '$2.0M'
+[n18r2_e034 (343,112,55x23) pt=[6.5]] '$202.5K'
+[n18r2_e036 (371,114,55x23) pt=[6.5]] '$198.8K'
+[n18r2_e038 (399,235,55x23) pt=[6.5]] '+$29.1K'
+[n18r2_e039 (340,269,118x23) pt=[7]] '450K'
+[n18r2_e040 (340,278,118x23) pt=[6.5]] '$4.5M'
+[n18r2_e041 (29,289,429x36) pt=[6.5]] "Monthly, USD thousands. Option A: all-in 4.5% of sales (Yuno estimate, range 3 to 6%, replaced by EBANX's quote). Option B: provider cost after a 50 bps routing saving, plus Yuno's fee. Net benefit: base case, contribution view at a 15% take rate (estimate), after Yuno's fee."
+[n18r2_e042 (462,92,230x25) pt=[7.5]] 'COST PER $1,000 OF SALES'
+[n18r2_e044 (462,114,230x26) pt=[8.5]] 'EBANX direct'
+[n18r2_e045 (462,127,230x26) pt=[8]] '$45.0 at every volume: one rate, one rail.'
+[n18r2_e046 (462,145,230x26) pt=[8.5]] 'Through Yuno, provider plus fee'
+[n18r2_e047 (462,158,230x48) pt=[8]] '$55.0 at 50K · $49.0 at 100K · $46.0 at 200K · $44.2 at 450K. Yuno alone: $7.5K, $9.0K, $12.0K and $18.8K a month.'
+[n18r2_e048 (462,199,230x26) pt=[8.5]] 'Through Yuno, after all levers'
+[n18r2_e049 (462,212,230x37) pt=[8]] '$47.3 · $42.5 · $40.1 · $38.5 per $1,000 of sales (base case).'
+[n18r2_e050 (462,241,230x26) pt=[8.5]] 'Break-even'
+[n18r2_e051 (462,254,230x48) pt=[8]] 'About 65,000 transactions a month ($0.65M of sales) in the base case; about 29,000 optimistic; about 269,000 conservative.'
+[n18r2_e053 (41,327,638x38) pt=[8.5]] 'At launch (50K a month) the base case is ($1.1K) a month: Carry1st pays about $1.1K net for failover, a second provider in play and local-method coverage until volume passes about 65,000 transactions a month.'
+[n18r2_e054 (29,362,662x23) pt=[6.5]] 'Yuno business-case model (bc_model.xlsx), 15 Oct 2026. Volumes: Carry1st, Cordel, Oct 2026, estimate. Every assumption is on the risks slide in the appendix. ESTIMATE.'
+[n18r2_e055 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n18r2_e056 (633,376,58x23) pt=[6.5]] '18'
+[NOTES] "Both options at the four volumes you gave us. The light bars are EBANX direct at an all-in 4.5% of sales, which is our estimate until EBANX's quote replaces it. The blue bars are EBANX and dLocal through Yuno: the provider cost after a 50 basis-point routing saving, plus Yuno's fee. At launch the Yuno route costs about $5K more a month and the net, after the approval and coverage levers, is about $1.1K negative. From about 65,000 transactions a month the net turns positive, and at run rate the Yuno route is the cheaper cost line before any revenue lever is counted."
+
+===== POS 65 · objectId=n19r1_g3f77215683c_2_2968 =====
+[IMG n19r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n19r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'BUSINESS CASE · THREE SCENARIOS AND THE LEVERS'
+[n19r1_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Processing savings carry the case, then engineering avoided, then approval: the base case returns $29.1K a month net at run rate.'
+[n19r1_e002 (575,19,68x24) pt=[7]] 'CONFIRMED'
+[n19r1_e004 (522,19,64x24) pt=[7]] 'ESTIMATE'
+[n19r1_e006 (35,93,242x26) pt=[7]] 'MONTHLY, CONTRIBUTION VIEW'
+[n19r1_e008 (275,93,138x26) pt=[7]] 'CONSERVATIVE'
+[n19r1_e010 (411,93,138x26) pt=[7]] 'BASE'
+[n19r1_e012 (547,93,138x26) pt=[7]] 'OPTIMISTIC'
+[n19r1_e015 (35,115,242x34) pt=[7.5]] '1 · Processing saving at 450K (second MoR, volume routed to the cheaper rail)'
+[n19r1_e017 (275,115,138x34) pt=[7.5]] '$11.3K'
+[n19r1_e019 (411,115,138x34) pt=[7.5]] '$22.5K'
+[n19r1_e021 (547,115,138x34) pt=[7.5]] '$33.8K'
+[n19r1_e023 (35,144,242x34) pt=[7.5]] '2 · Engineering avoided (direct integrations not built, 24-month equivalent)'
+[n19r1_e025 (275,144,138x34) pt=[7.5]] '$0.5K'
+[n19r1_e027 (411,144,138x34) pt=[7.5]] '$1.5K'
+[n19r1_e029 (547,144,138x34) pt=[7.5]] '$3.2K'
+[n19r1_e031 (35,174,242x34) pt=[7.5]] '3 · Approval, retries and failover at 450K (contribution on recovered sales)'
+[n19r1_e033 (275,174,138x34) pt=[7.5]] '$9.3K ($90K of sales)'
+[n19r1_e035 (411,174,138x34) pt=[7.5]] '$19.1K ($180K of sales)'
+[n19r1_e037 (547,174,138x34) pt=[7.5]] '$32.5K ($300K of sales)'
+[n19r1_e039 (35,204,242x34) pt=[7.5]] '4 · Local-method coverage at 450K (contribution on incremental sales)'
+[n19r1_e041 (275,204,138x34) pt=[7.5]] '$2.3K ($22.5K)'
+[n19r1_e043 (411,204,138x34) pt=[7.5]] '$4.8K ($45K)'
+[n19r1_e045 (547,204,138x34) pt=[7.5]] '$9.8K ($90K)'
+[n19r1_e047 (35,233,242x24) pt=[7.5]] "Gross benefit at 450K against Yuno's $18.8K"
+[n19r1_e049 (275,233,138x24) pt=[7.5]] '$23.3K · 1.2x'
+[n19r1_e051 (411,233,138x24) pt=[7.5]] '$47.8K · 2.6x'
+[n19r1_e053 (547,233,138x24) pt=[7.5]] '$79.2K · 4.2x'
+[n19r1_e055 (35,253,242x24) pt=[7.5]] 'Net at 450K, a month · a year'
+[n19r1_e057 (275,253,138x24) pt=[7.5]] '+$4.6K · +$55K'
+[n19r1_e059 (411,253,138x24) pt=[7.5]] '+$29.1K · +$349K'
+[n19r1_e061 (547,253,138x24) pt=[7.5]] '+$60.5K · +$725K'
+[n19r1_e063 (35,273,242x24) pt=[7.5]] 'Net at launch (50K), a month'
+[n19r1_e065 (275,273,138x24) pt=[7.5]] '($4.6K)'
+[n19r1_e067 (411,273,138x24) pt=[7.5]] '($1.1K)'
+[n19r1_e069 (547,273,138x24) pt=[7.5]] '+$3.7K'
+[n19r1_e071 (35,293,242x24) pt=[7.5]] 'Break-even · cumulative payback on the ramp'
+[n19r1_e073 (275,293,138x24) pt=[7.5]] 'about 269K tx · after Dec 2027'
+[n19r1_e075 (411,293,138x24) pt=[7.5]] 'about 65K tx · Jan 2027'
+[n19r1_e077 (547,293,138x24) pt=[7.5]] 'about 29K tx · Dec 2026'
+[n19r1_e079 (35,312,242x34) pt=[7.5]] 'Break-even by gross margin (41.7 bps all-in at run rate)'
+[n19r1_e081 (275,312,138x34) pt=[7.5]] '+4.2% more approved sales at a 10% margin'
+[n19r1_e083 (411,312,138x34) pt=[7.5]] '+2.8% at a 15% margin'
+[n19r1_e085 (547,312,138x34) pt=[7.5]] '+2.1% at 20%; published Yuno uplift up to 7%'
+[n19r1_e086 (29,342,662x23) pt=[6.5]] 'Levers: MDR 25 / 50 / 75 bps; 1 / 2 / 3 integrations avoided; +1.5 / +3.0 / +5.0 pts approval on a 75% baseline; +0.5 / 1.0 / 2.0% local-method sales; 15% take rate (estimate). Yuno model, 15 Oct 2026.'
+[n19r1_e087 (29,362,662x23) pt=[6.5]] 'Yuno business-case model, 15 Oct 2026 (ESTIMATE, assumptions on the risks slide). Published Yuno uplift: y.uno, read 15 Oct 2026 (CONFIRMED).'
+[n19r1_e088 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n19r1_e089 (633,376,58x23) pt=[6.5]] '19'
+[NOTES] 'Resale margins are thin, so we did not build this case on conversion. The first lever is a processing saving: with two merchants of record live on the same checkout, volume moves to the cheaper rail by rule, and a saving on processing is worth one hundred cents on the dollar. The second is the engineering you do not build. Approval and coverage come third and are counted at your margin, not at face value. The last row is the test a CFO applies: at 41.7 basis points all-in, the fee pays for itself with about 4% more approved sales at a 10% margin, half that at 20%, against a published uplift of up to 7%.'
+
+===== POS 66 · objectId=n20r1_g3f77215683c_2_2968 =====
+[IMG n20r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n20r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'BUSINESS CASE · SMALL-TICKET SENSITIVITY'
+[n20r1_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'A fixed fee doubles as a share of sales when the ticket halves; a share of sales does not: usage on a $5 purchase is one to two cents.'
+[n20r1_e002 (580,19,64x24) pt=[7]] 'ESTIMATE'
+[n20r1_e004 (35,93,242x26) pt=[7]] 'YUNO ALL-IN AT 450,000 TRANSACTIONS A MONTH'
+[n20r1_e006 (275,93,138x26) pt=[7]] '$5 MEDIAN TICKET'
+[n20r1_e008 (411,93,138x26) pt=[7]] '$10 AVERAGE TICKET'
+[n20r1_e010 (547,93,138x26) pt=[7]] '$15 TICKET'
+[n20r1_e013 (35,115,242x24) pt=[7.5]] 'Sales a month'
+[n20r1_e015 (275,115,138x24) pt=[7.5]] '$2.25M'
+[n20r1_e017 (411,115,138x24) pt=[7.5]] '$4.5M'
+[n20r1_e019 (547,115,138x24) pt=[7.5]] '$6.75M'
+[n20r1_e021 (35,135,242x24) pt=[7.5]] 'Yuno a month (platform fee plus usage)'
+[n20r1_e023 (275,135,138x24) pt=[7.5]] '$12.8K'
+[n20r1_e025 (411,135,138x24) pt=[7.5]] '$18.8K'
+[n20r1_e027 (547,135,138x24) pt=[7.5]] '$24.0K'
+[n20r1_e029 (35,154,242x24) pt=[7.5]] 'Yuno as a share of sales'
+[n20r1_e031 (275,154,138x24) pt=[7.5]] '0.57%'
+[n20r1_e033 (411,154,138x24) pt=[7.5]] '0.42%'
+[n20r1_e035 (547,154,138x24) pt=[7.5]] '0.36%'
+[n20r1_e037 (35,174,242x24) pt=[7.5]] 'Yuno per successful transaction, all-in'
+[n20r1_e039 (275,174,138x24) pt=[7.5]] '$0.028'
+[n20r1_e041 (411,174,138x24) pt=[7.5]] '$0.042'
+[n20r1_e043 (547,174,138x24) pt=[7.5]] '$0.053'
+[n20r1_e045 (35,194,242x24) pt=[7.5]] 'Marginal usage per transaction by band (30 / 25 / 20 bps)'
+[n20r1_e047 (275,194,138x24) pt=[7.5]] '$0.015 / $0.0125 / $0.010'
+[n20r1_e049 (411,194,138x24) pt=[7.5]] '$0.030 / $0.025 / $0.020'
+[n20r1_e051 (547,194,138x24) pt=[7.5]] '$0.045 / $0.0375 / $0.030'
+[n20r1_e053 (35,214,242x24) pt=[7.5]] 'A fixed $0.05 per transaction, as a share of sales'
+[n20r1_e055 (275,214,138x24) pt=[7.5]] '1.00%'
+[n20r1_e057 (411,214,138x24) pt=[7.5]] '0.50%'
+[n20r1_e059 (547,214,138x24) pt=[7.5]] '0.33%'
+[n20r1_e061 (35,234,242x24) pt=[7.5]] 'A fixed $0.10 per transaction, as a share of sales'
+[n20r1_e063 (275,234,138x24) pt=[7.5]] '2.00%'
+[n20r1_e065 (411,234,138x24) pt=[7.5]] '1.00%'
+[n20r1_e067 (547,234,138x24) pt=[7.5]] '0.67%'
+[n20r1_e069 (35,253,242x24) pt=[7.5]] 'At launch, 50,000 transactions a month: Yuno all-in'
+[n20r1_e071 (275,253,138x24) pt=[7.5]] '$7.5K · 3.00% of sales'
+[n20r1_e073 (411,253,138x24) pt=[7.5]] '$7.5K · 1.50%'
+[n20r1_e075 (547,253,138x24) pt=[7.5]] '$8.3K · 1.10%'
+[n20r1_e076 (29,273,662x23) pt=[6.5]] 'The platform fee is the one fixed element, so at launch and a $5 ticket it is 3.00% of sales; the structure pays off as volume ramps. Yuno business-case model, 15 Oct 2026; tickets: Carry1st, Cordel, Oct 2026 (estimate).'
+[n20r1_e077 (29,362,662x23) pt=[6.5]] 'Yuno business-case model (bc_model.xlsx), Pricing and Sensitivity sheets, 15 Oct 2026. Ticket profile: Carry1st, Cordel, Oct 2026, estimate.'
+[n20r1_e078 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n20r1_e079 (633,376,58x23) pt=[6.5]] '20'
+[NOTES] "Cordel asked us to make pricing work for small purchases, so here is the same 450,000 transactions at three tickets. A fixed fee is blind to the ticket: five cents is 0.5% of a $10 sale and 1% of a $5 sale, ten cents twice that. Yuno's usage is a share of what you sell, so on a $5 purchase the marginal cost is one to one and a half cents, and all-in at run rate 0.57% of sales. We are upfront about the one fixed element: at launch volume and a $5 ticket the platform fee alone is 3% of sales, and the structure earns its keep as volume ramps rather than in month one."
+
+===== POS 67 · objectId=n21_g3f769a0f446_0_988 =====
+[IMG n21_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n21_g3f769a0f446_0_990 (648,36,36x10)] 
+[n21_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Proposal'
+[n21_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] '06'
+[n21_e001 (29,345,593x28) pt=[10]] 'A platform fee and a share of what Carry1st sells, never a fee per transaction'
+[n21_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n21_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n21_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n21_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n21_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n21_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n21_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n21_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n21_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] 'The commercial proposal on one slide, followed by what Yuno puts in before signing and what the platform fee already covers.'
+
+===== POS 68 · objectId=n22r2_g3f77215683c_2_2968 =====
+[IMG n22r2_g3f77215683c_2_2969 (645,24,39x11)] 
+[n22r2_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'PROPOSAL'
+[n22r2_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'One platform fee covering the first $500K of monthly sales, then a share of sales that falls as Carry1st grows.'
+[n22r2_e001 (29,88,662x26) pt=[8]] '$7,500 a month covering the first $500K of monthly sales, plus a share of the sales above it: $18,750 a month at 450,000 transactions, 0.42% of sales.'
+[n22r2_e003 (40,113,168x25) pt=[8]] 'TRANSACTION FEE'
+[n22r2_e004 (40,127,168x34) pt=[7]] "A share of the month's sales above the included block, pooled across the five markets"
+[n22r2_e006 (40,157,110x23) pt=[6.5]] 'INCLUDED'
+[n22r2_e007 (132,156,76x30) pt=[12]] '$0'
+[n22r2_e008 (40,166,110x35) pt=[7.5]] 'First $500K of monthly sales'
+[n22r2_e010 (40,194,110x23) pt=[6.5]] 'TRANCHE 1'
+[n22r2_e011 (132,193,76x30) pt=[12]] '0.30%'
+[n22r2_e012 (40,203,110x25) pt=[7.5]] '$500K to $3M'
+[n22r2_e014 (40,220,110x23) pt=[6.5]] 'TRANCHE 2'
+[n22r2_e015 (132,219,76x30) pt=[12]] '0.25%'
+[n22r2_e016 (40,229,110x25) pt=[7.5]] '$3M to $6M'
+[n22r2_e018 (40,247,110x23) pt=[6.5]] 'TRANCHE 3'
+[n22r2_e019 (132,246,76x30) pt=[12]] '0.20%'
+[n22r2_e020 (40,256,110x25) pt=[7.5]] 'Above $6M'
+[n22r2_e022 (47,300,154x53) pt=[7]] 'No setup fee, no fixed amount per transaction. Only successful transactions count: declines are not billed. Each tranche applies only to the volume inside it.'
+[n22r2_e024 (226,113,180x25) pt=[8]] 'PLATFORM FEE'
+[n22r2_e025 (226,127,93x42) pt=[22]] '$7,500'
+[n22r2_e026 (304,138,102x26) pt=[8]] '/ month'
+[n22r2_e027 (226,155,180x34) pt=[7]] '$90,000 a year. Covers the first $500K of monthly sales. This is what covers the stack.'
+[n22r2_e028 (226,180,180x23) pt=[6.5]] 'WHAT IT INCLUDES'
+[n22r2_e029 (226,191,140x26) pt=[7.5]] 'Orchestration and rules engine'
+[n22r2_e030 (355,191,51x26) pt=[7.5]] 'Included'
+[n22r2_e031 (226,203,140x26) pt=[7.5]] 'Smart routing and retries'
+[n22r2_e032 (355,203,51x26) pt=[7.5]] 'Included'
+[n22r2_e033 (226,214,140x26) pt=[7.5]] 'Monitors and auto-failover'
+[n22r2_e034 (355,214,51x26) pt=[7.5]] 'Included'
+[n22r2_e035 (226,226,140x26) pt=[7.5]] 'Methods, PSPs, fraud solutions'
+[n22r2_e036 (355,226,51x26) pt=[7.5]] '1,000+'
+[n22r2_e037 (226,237,140x26) pt=[7.5]] 'Checkout, web and mobile SDKs'
+[n22r2_e038 (355,237,51x26) pt=[7.5]] 'Included'
+[n22r2_e039 (226,249,140x26) pt=[7.5]] 'PCI token vault'
+[n22r2_e040 (355,249,51x26) pt=[7.5]] 'Included'
+[n22r2_e041 (226,261,140x26) pt=[7.5]] 'Dashboard and insights'
+[n22r2_e042 (355,261,51x26) pt=[7.5]] 'Included'
+[n22r2_e043 (226,272,140x26) pt=[7.5]] 'Dedicated KAM and TAM'
+[n22r2_e044 (355,272,51x26) pt=[7.5]] 'Included'
+[n22r2_e046 (233,297,166x23) pt=[6.5]] 'ADD-ONS'
+[n22r2_e047 (233,308,126x25) pt=[7]] 'Network tokens'
+[n22r2_e048 (348,308,51x25) pt=[7]] 'On usage'
+[n22r2_e049 (233,319,126x25) pt=[7]] '3DS authentication'
+[n22r2_e050 (348,319,51x25) pt=[7]] 'On usage'
+[n22r2_e052 (424,113,256x25) pt=[8]] 'WHAT IT MEANS FOR CARRY1ST'
+[n22r2_e053 (424,127,256x25) pt=[7]] 'At a $10 average ticket, across the five markets'
+[n22r2_e054 (424,144,111x23) pt=[6.5]] 'LINE'
+[n22r2_e055 (521,144,63x23) pt=[6.5]] '50K'
+[n22r2_e056 (569,144,63x23) pt=[6.5]] '200K'
+[n22r2_e057 (617,144,63x23) pt=[6.5]] '450K'
+[n22r2_e059 (424,156,111x27) pt=[7.5]] 'Sales a month'
+[n22r2_e060 (521,156,63x27) pt=[7.5]] '$0.5M'
+[n22r2_e061 (569,156,63x27) pt=[7.5]] '$2.0M'
+[n22r2_e062 (617,156,63x27) pt=[7.5]] '$4.5M'
+[n22r2_e063 (424,169,111x27) pt=[7.5]] 'Platform fee'
+[n22r2_e064 (521,169,63x27) pt=[7.5]] '$7,500'
+[n22r2_e065 (569,169,63x27) pt=[7.5]] '$7,500'
+[n22r2_e066 (617,169,63x27) pt=[7.5]] '$7,500'
+[n22r2_e067 (424,182,111x27) pt=[7.5]] 'Usage · tranche 1'
+[n22r2_e068 (521,182,63x27) pt=[7.5]] '$0'
+[n22r2_e069 (569,182,63x27) pt=[7.5]] '$4,500'
+[n22r2_e070 (617,182,63x27) pt=[7.5]] '$7,500'
+[n22r2_e071 (424,195,111x27) pt=[7.5]] 'Usage · tranche 2'
+[n22r2_e072 (521,195,63x27) pt=[7.5]] '$0'
+[n22r2_e073 (569,195,63x27) pt=[7.5]] '$0'
+[n22r2_e074 (617,195,63x27) pt=[7.5]] '$3,750'
+[n22r2_e076 (424,208,111x27) pt=[7.5]] 'Total a month'
+[n22r2_e077 (521,208,63x27) pt=[7.5]] '$7,500'
+[n22r2_e078 (569,208,63x27) pt=[7.5]] '$12,000'
+[n22r2_e079 (617,208,63x27) pt=[7.5]] '$18,750'
+[n22r2_e080 (424,221,111x27) pt=[7.5]] 'Total a year'
+[n22r2_e081 (521,221,63x27) pt=[7.5]] '$90,000'
+[n22r2_e082 (569,221,63x27) pt=[7.5]] '$144,000'
+[n22r2_e083 (617,221,63x27) pt=[7.5]] '$225,000'
+[n22r2_e084 (424,234,111x27) pt=[7.5]] 'Share of sales'
+[n22r2_e085 (521,234,63x27) pt=[7.5]] '1.50%'
+[n22r2_e086 (569,234,63x27) pt=[7.5]] '0.60%'
+[n22r2_e087 (617,234,63x27) pt=[7.5]] '0.42%'
+[n22r2_e088 (424,247,111x27) pt=[7.5]] 'Per successful transaction'
+[n22r2_e089 (521,247,63x27) pt=[7.5]] '$0.150'
+[n22r2_e090 (569,247,63x27) pt=[7.5]] '$0.060'
+[n22r2_e091 (617,247,63x27) pt=[7.5]] '$0.042'
+[n22r2_e093 (432,269,240x48) pt=[8]] 'At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 0.42% of sales, falling as volume grows.'
+[n22r2_e094 (424,315,256x34) pt=[7]] 'Usage on a $5 purchase: $0.015 in tranche 1, $0.010 in tranche 3. A fixed fee stays the same whatever the ticket.'
+[n22r2_e095 (29,362,662x23) pt=[6.5]] 'Platform fee billed annually. Usage billed monthly in arrears on successful transactions, net 30. Rates locked, tranches reviewed annually as volume grows. All figures in USD.'
+[n22r2_e096 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n22r2_e097 (633,376,58x23) pt=[6.5]] '22'
+[NOTES] 'The proposal in one slide. A flat platform fee of $7,500 a month that already covers the first $500K of monthly sales, and above that a share of what you sell: 30 basis points to $3M, 25 to $6M, 20 above, each band on the volume inside it, only on approved payments, never a fee per transaction. At launch you pay the platform fee and nothing else; at the $4.5M run rate the all-in cost is $18,750 a month, 0.42% of sales, about four cents on a $10 purchase. Orchestration, smart routing, Monitors, the vault, the dashboard and a dedicated team are inside the platform fee; network tokens and 3DS are billed on usage and quoted separately.'
+
+===== POS 69 · objectId=n23r1_g3f77215683c_2_2968 =====
+[IMG n23r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n23r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'INCLUDED, AT NO EXTRA COST'
+[n23r1_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'What Yuno puts in before signing, and what the platform fee already covers.'
+[n23r1_e001 (29,88,326x26) pt=[9]] 'BEFORE YOU SIGN'
+[n23r1_e002 (29,107,34x24) pt=[7]] '01'
+[n23r1_e003 (51,106,304x27) pt=[9]] 'Shop prototype on the Yuno SDK'
+[n23r1_e004 (51,119,304x38) pt=[8.5]] "Already running in the sandbox for four markets; extended to Bolivia and the Shop's real SKUs before signature."
+[n23r1_e005 (29,152,34x24) pt=[7]] '02'
+[n23r1_e006 (51,151,304x27) pt=[9]] 'Localization support'
+[n23r1_e007 (51,165,304x38) pt=[8.5]] "Spanish and Portuguese checkout copy and market conventions, with Yuno's teams in São Paulo, Mexico City, Bogotá and Buenos Aires."
+[n23r1_e008 (29,198,34x24) pt=[7]] '03'
+[n23r1_e009 (51,197,304x27) pt=[9]] 'Local provider negotiation'
+[n23r1_e010 (51,210,304x38) pt=[8.5]] "Yuno brings EBANX and dLocal to the table on Carry1st's behalf, including how the EBANX arrangement sits alongside Yuno."
+[n23r1_e011 (365,88,326x26) pt=[9]] 'INSIDE THE PLATFORM FEE'
+[n23r1_e012 (365,107,34x24) pt=[7]] '01'
+[n23r1_e013 (387,106,304x27) pt=[9]] 'No setup or implementation fee'
+[n23r1_e014 (387,119,304x38) pt=[8.5]] 'Integration support, sandbox, go-live runbook and on-call during the launch weeks.'
+[n23r1_e015 (365,152,34x24) pt=[7]] '02'
+[n23r1_e016 (387,151,304x27) pt=[9]] 'Adding a provider later is a routing change, not a fee'
+[n23r1_e017 (387,165,304x38) pt=[8.5]] 'A local acquirer in Phase 2, a wallet or a new cash network is a new connection on the same checkout.'
+[n23r1_e018 (365,198,34x24) pt=[7]] '03'
+[n23r1_e019 (387,197,304x27) pt=[9]] 'The stack'
+[n23r1_e020 (387,210,304x38) pt=[8.5]] 'PCI token vault, risk conditions, Monitors and auto-failover, dashboard and insights with 20 seats.'
+[n23r1_e021 (365,243,34x24) pt=[7]] '04'
+[n23r1_e022 (387,242,304x27) pt=[9]] 'Dedicated KAM and TAM'
+[n23r1_e023 (387,256,304x38) pt=[8.5]] 'A named account manager and a technical account manager through the LatAm launch and after it.'
+[n23r1_e025 (41,338,638x27) pt=[8.5]] 'The platform fee is the only fixed element in the proposal; everything on this slide sits inside it or comes before it.'
+[n23r1_e026 (29,362,662x23) pt=[6.5]] 'Yuno commitments to Carry1st, October 2026.'
+[n23r1_e027 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n23r1_e028 (633,376,58x23) pt=[6.5]] '23'
+[NOTES] 'Everything on this slide is included. The prototype and the localization support were offered on the discovery call and we stand by them; the provider negotiation is part of how we work with EBANX and dLocal for every merchant on the platform. Inside the platform fee there is no setup charge, and adding a provider later is configuration, not a project or a fee.'
+
+===== POS 70 · objectId=n24_g3f769a0f446_0_988 =====
+[IMG n24_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n24_g3f769a0f446_0_990 (648,36,36x10)] 
+[n24_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Launch plan to Black Friday and Phase 2'
+[n24_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] '07'
+[n24_e001 (29,345,593x28) pt=[10]] 'Six weeks to 27 November, then merchant of record against local presence'
+[n24_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n24_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n24_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n24_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n24_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n24_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n24_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n24_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n24_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] 'The week-by-week plan to Black Friday, and the comparison Fatih asked for: merchant of record, non-resident account, local entity.'
+
+===== POS 71 · objectId=n25r1_g3f77215683c_2_2968 =====
+[IMG n25r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n25r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'LAUNCH PLAN · SIX WEEKS TO 27 NOVEMBER 2026'
+[n25r1_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Six weeks to 27 November: provider contracts and KYC are the critical path; the Yuno work is measured in days.'
+[n25r1_e002 (580,19,64x24) pt=[7]] 'ESTIMATE'
+[n25r1_e004 (516,19,74x24) pt=[7]] 'PUBLIC DOCS'
+[n25r1_e006 (35,93,100x26) pt=[6.5]] 'WEEK'
+[n25r1_e008 (132,93,242x26) pt=[6.5]] 'CARRY1ST, EBANX AND DLOCAL (CRITICAL PATH)'
+[n25r1_e010 (372,93,197x26) pt=[6.5]] 'YUNO'
+[n25r1_e012 (566,93,119x26) pt=[6.5]] 'EXIT'
+[n25r1_e015 (35,115,100x42) pt=[7]] 'Week 1 · 19 to 23 Oct'
+[n25r1_e017 (132,115,242x42) pt=[7]] "Scope confirmed (Brazil first or all five) and owners named; decision on the proposal; EBANX and dLocal agreements requested; volumes by country and EBANX's rates shared"
+[n25r1_e019 (372,115,197x42) pt=[7]] "Implementation lead named; sandbox keys and prototype access to Fatih's team; routing design agreed (EBANX primary, dLocal fallback)"
+[n25r1_e021 (566,115,119x42) pt=[7]] 'Decision taken, agreements in motion'
+[n25r1_e023 (35,152,100x42) pt=[7]] 'Week 2 · 26 to 30 Oct'
+[n25r1_e025 (132,152,242x42) pt=[7]] 'Agreements signed, KYC submitted to both providers; country enablement requested from EBANX for each market; Spanish and Portuguese copy started'
+[n25r1_e027 (372,152,197x42) pt=[7]] 'Checkout build on the Yuno SDK starts from the prototype; payment-method list per market locked'
+[n25r1_e029 (566,152,119x42) pt=[7]] 'KYC submitted; build under way'
+[n25r1_e031 (35,190,100x42) pt=[7]] 'Week 3 · 2 to 6 Nov'
+[n25r1_e033 (132,190,242x42) pt=[7]] 'Provider sandbox credentials received; test transactions per country as EBANX requires'
+[n25r1_e035 (372,190,197x42) pt=[7]] 'Connections created the day credentials arrive (1 to 2 days); routing rules and Monitors configured; webhooks and reconciliation set up'
+[n25r1_e037 (566,190,119x42) pt=[7]] 'Both connections live in sandbox'
+[n25r1_e039 (35,227,100x33) pt=[7]] 'Week 4 · 9 to 13 Nov'
+[n25r1_e041 (132,227,242x33) pt=[7]] 'EBANX Integration Review requested; dLocal go-live activation requested; support playbook and refund policy per market'
+[n25r1_e043 (372,227,197x33) pt=[7]] 'End-to-end QA (3 to 5 days): decline retry EBANX to dLocal, refunds, Pix and PSE confirmation to delivery'
+[n25r1_e045 (566,227,119x33) pt=[7]] 'Production credentials requested'
+[n25r1_e047 (35,255,100x33) pt=[7]] 'Week 5 · 16 to 20 Nov'
+[n25r1_e049 (132,255,242x33) pt=[7]] 'Production credentials from both providers; soft launch in Brazil with internal buyers; local-currency pricing checked'
+[n25r1_e051 (372,255,197x33) pt=[7]] 'Production connections, routing published, live monitoring; go-live runbook'
+[n25r1_e053 (566,255,119x33) pt=[7]] 'Brazil live in production (soft)'
+[n25r1_e055 (35,284,100x33) pt=[7]] 'Week 6 · 23 to 27 Nov'
+[n25r1_e057 (132,284,242x33) pt=[7]] 'Brazil open to all users; Argentina, Mexico and Colombia follow as each enablement lands; Bolivia through dLocal'
+[n25r1_e059 (372,284,197x33) pt=[7]] 'On-call through launch; daily approval review by provider and country; Monitors active'
+[n25r1_e061 (566,284,119x33) pt=[7]] 'Black Friday, 27 Nov: Shop live in LatAm'
+[n25r1_e062 (29,312,662x23) pt=[6.5]] 'Provider onboarding and country enablement have no published SLA at EBANX or dLocal; Yuno durations are Yuno estimates. Dates assume the decision in week 1.'
+[n25r1_e063 (29,362,662x23) pt=[6.5]] 'EBANX pay-in guide and DEUNA partner page; docs.dlocal.com go-live prerequisites; docs.y.uno connections, read 15 Oct 2026 (PUBLIC DOCS and CONFIRMED). Yuno durations: Yuno estimate.'
+[n25r1_e064 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n25r1_e065 (633,376,58x23) pt=[6.5]] '25'
+[NOTES] 'The honest version of the timeline. The critical path is not Yuno: it is the two provider onboardings, which neither EBANX nor dLocal puts a day count on, so we run them in parallel from week 1 and we start the Yuno build from the prototype while they progress. Once credentials exist, a connection takes a day or two and QA a few days. Brazil goes live softly in week 5 so that Black Friday is an opening, not a first test.'
+
+===== POS 72 · objectId=n26r1_g3f77215683c_2_2968 =====
+[IMG n26r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n26r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'PHASE 2 · MERCHANT OF RECORD AGAINST LOCAL PRESENCE'
+[n26r1_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'A merchant of record launches in weeks, local presence in months; through Yuno the move happens without a rebuild.'
+[n26r1_e002 (598,19,46x24) pt=[7]] 'OPEN'
+[n26r1_e004 (534,19,74x24) pt=[7]] 'PUBLIC DOCS'
+[n26r1_e006 (35,93,87x26) pt=[6.5]] 'DIMENSION'
+[n26r1_e008 (119,93,164x26) pt=[6.5]] 'MERCHANT OF RECORD (LAUNCH)'
+[n26r1_e010 (281,93,132x26) pt=[6.5]] 'NON-RESIDENT ACCOUNT'
+[n26r1_e012 (411,93,164x26) pt=[6.5]] 'LOCAL ENTITY AND LOCAL ACQUIRER'
+[n26r1_e014 (573,93,113x26) pt=[6.5]] "YUNO'S ROLE"
+[n26r1_e017 (35,115,87x51) pt=[7]] 'Time to launch'
+[n26r1_e019 (119,115,164x51) pt=[7]] 'Weeks: agreement, KYC, sandbox, review (dLocal cites up to 8 weeks for market entry)'
+[n26r1_e021 (281,115,132x51) pt=[7]] 'Weeks to months: local bank account and tax registration without a company; rules vary by country'
+[n26r1_e023 (411,115,164x51) pt=[7]] 'Months: Brazil 6 to 12 weeks for registration plus the bank account; Mexico 4 to 12 weeks; Argentina SAS 7 to 15 business days plus bank; Colombia, Bolivia not published'
+[n26r1_e025 (573,115,113x51) pt=[7]] 'Checkout unchanged across all three; the acquirer is a new connection'
+[n26r1_e027 (35,161,87x51) pt=[7]] 'Who carries tax and FX'
+[n26r1_e029 (119,161,164x51) pt=[7]] 'The MoR: local-currency charge, FX and remittance; Carry1st is paid in USD. Tax treatment per country to be confirmed in writing (OPEN)'
+[n26r1_e031 (281,161,132x51) pt=[7]] 'Carry1st registers for digital-services VAT: Mexico 16%, Colombia 19%, Argentina IVA withheld by issuers; Brazil CBS and IBS from 2026'
+[n26r1_e033 (411,161,164x51) pt=[7]] 'Carry1st as a local taxpayer: VAT, income tax and FX remittance in each country'
+[n26r1_e035 (573,161,113x51) pt=[7]] 'Routing by country keeps each model on its own rail'
+[n26r1_e037 (35,208,87x51) pt=[7]] 'Approval and customer experience'
+[n26r1_e039 (119,208,164x51) pt=[7]] "Domestic card presentation via the MoR's local entity; local methods; the gamer avoids FX and foreign-purchase taxes (AR 30% perception, BR 3.5% IOF)"
+[n26r1_e041 (281,208,132x51) pt=[7]] 'Depends on whether the acquirer treats the merchant as domestic; often still cross-border'
+[n26r1_e043 (411,208,164x51) pt=[7]] 'Local acquiring: vendor-reported 80 to 90% approval against 30 to 60% cross-border; installments and local brands (Elo, Naranja, Carnet)'
+[n26r1_e045 (573,208,113x51) pt=[7]] 'Retries and failover apply whichever rail is live'
+[n26r1_e047 (35,255,87x42) pt=[7]] 'Cost'
+[n26r1_e049 (119,255,164x42) pt=[7]] "All-in rate with FX and tax pass-through inside it (Yuno estimate 3 to 6% of sales; EBANX's quote replaces it)"
+[n26r1_e051 (281,255,132x42) pt=[7]] "Lower processing, plus Carry1st's own tax and compliance overhead"
+[n26r1_e053 (411,255,164x42) pt=[7]] 'Lowest processing cost at scale; highest fixed overhead (entity, accounting, treasury)'
+[n26r1_e055 (573,255,113x42) pt=[7]] 'Two MoRs in play at launch keep the rate negotiable'
+[n26r1_e057 (35,292,87x42) pt=[7]] 'When it makes sense'
+[n26r1_e059 (119,292,164x42) pt=[7]] 'Now: six weeks to Black Friday and volumes still unproven'
+[n26r1_e061 (281,292,132x42) pt=[7]] 'When a country sustains volume and the MoR margin exceeds the compliance cost'
+[n26r1_e063 (411,292,164x42) pt=[7]] 'At the $4 to 5M a month run rate, Brazil and Mexico first'
+[n26r1_e065 (573,292,113x42) pt=[7]] 'Move country by country, no re-integration'
+[n26r1_e066 (29,329,662x23) pt=[6.5]] 'Approval ranges are vendor-reported (2017 to 2026). Tax treatment under each MoR: OPEN, owner German, requested in writing from EBANX and dLocal.'
+[n26r1_e067 (29,354,662x32) pt=[6.5]] 'dLocal dMoRe release 26 Aug 2026; EBANX api-operability; Healy, Commenda, BizLatinHub, TMF 2025 to 2026 (incorporation); Kintsugi 2026, Estatuto Tributario, Ley 27.430, Decree 12.499/2025, RG 5617/2024 (tax); docs.y.uno connections and routing. PUBLIC DOCS unless marked.'
+[n26r1_e068 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n26r1_e069 (633,376,58x23) pt=[6.5]] '26'
+[NOTES] 'Fatih asked for merchant of record against local presence with launch time and the long-term customer experience. The short version: the MoR launches in weeks and gives the gamer a domestic charge in local currency from day one; a local entity takes months and pays off at scale through lower processing and local acquiring. The Yuno column is the point: because the acquirer is a connection, Carry1st can make that move in Brazil first and Mexico second without touching the checkout, and keep the MoR live as fallback while it does.'
+
+===== POS 73 · objectId=n27_g3f769a0f446_0_988 =====
+[IMG n27_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n27_g3f769a0f446_0_990 (648,36,36x10)] 
+[n27_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Next steps'
+[n27_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] '08'
+[n27_e001 (29,345,593x28) pt=[10]] 'Three weeks, owners on both sides, and a decision date'
+[n27_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n27_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n27_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n27_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n27_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n27_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n27_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n27_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n27_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] 'What happens in the next three weeks, who owns each step on each side, and the date by which the decision is needed so provider onboarding can start in time.'
+
+===== POS 74 · objectId=n28_g3f77215683c_2_2968 =====
+[IMG n28_g3f77215683c_2_2969 (645,24,39x11)] 
+[n28_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'NEXT STEPS · THE NEXT THREE WEEKS'
+[n28_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Three weeks, owners on both sides, and a decision by 23 October so provider onboarding can start in time for Black Friday.'
+[n28_e002 (40,98,38x25) pt=[8]] '01'
+[n28_e003 (64,98,176x25) pt=[7]] 'WEEK 1 · 19 TO 23 OCT'
+[n28_e004 (40,113,200x28) pt=[10]] 'Decide and sign'
+[n28_e005 (40,130,200x86) pt=[8.5]] "Carry1st (Cordel): confirm Brazil first or all five, send volumes by country and EBANX's proposed rates, decide on this proposal by Friday 23 October. Yuno (German, Justo): final terms and order form; JP confirms the localization support."
+[n28_e007 (260,98,38x25) pt=[8]] '02'
+[n28_e008 (284,98,176x25) pt=[7]] 'WEEK 2 · 26 TO 30 OCT'
+[n28_e009 (260,113,200x28) pt=[10]] 'Onboard the providers'
+[n28_e010 (260,130,200x86) pt=[8.5]] "Carry1st (Cordel, Fatih): EBANX and dLocal agreements and KYC in parallel, the critical path to 27 November. Yuno (solutions engineering): kickoff with Fatih's team, prototype extended to Bolivia and the Shop's real SKUs, routing design agreed."
+[n28_e012 (480,98,38x25) pt=[8]] '03'
+[n28_e013 (504,98,176x25) pt=[7]] 'WEEK 3 · 2 TO 6 NOV'
+[n28_e014 (480,113,200x28) pt=[10]] 'Connect and build'
+[n28_e015 (480,130,200x86) pt=[8.5]] 'Carry1st (Fatih): checkout build on the Yuno SDK from the prototype; Spanish and Portuguese copy. Yuno (solutions engineering, German): connections live the day credentials arrive, Monitors and routing configured, QA plan for weeks 4 to 6.'
+[n28_e017 (43,237,634x26) pt=[9]] 'Decision date: Friday 23 October 2026 · German Tatis · german.tatis@y.uno · +1 786 238 4554'
+[n28_e018 (29,362,662x23) pt=[6.5]] 'Owners and dates proposed by Yuno, 15 Oct 2026; to be confirmed on the call.'
+[n28_e019 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n28_e020 (633,376,58x23) pt=[6.5]] '28'
+[NOTES] "We propose a decision by Friday 23 October. Not because of us: the two provider onboardings are the critical path to 27 November, and they cannot start until the direction is set. Each step has an owner on both sides. If the decision is to go, the kickoff with Fatih's team happens the following week and the prototype becomes the starting point of the real build."
+
+===== POS 75 · objectId=n29_g3c99cf7678e_0_44 =====
+[n29_g3c99cf7678e_0_45 (50,190,321x29) pt=[]] "Let's grow together"
+[n29_g3c99cf7678e_0_46 (37,228,260x48) pt=[11]] 'German Tatis | Senior Account Executive, Yuno\n+1 786 238 4554\ngerman.tatis@y.uno'
+[IMG n29_e002 (551,201,52x14)] https://docs.google.com/slides-images-rt/AE1YXSYISU_wX4mcKqULeg7T4s_lPhpkTKoa3BOi3ifcBwGHP
+[IMG n29_e004 (629,201,55x14)] https://drive.google.com/uc?export=download&id=1wVGCJ4_z9hEkR8aM59-S7KjlKH8EWnvI
+[NOTES] 'Thank you. German Tatis, Yuno.'
+
+===== POS 76 · objectId=n30_g3f769a0f446_0_988 =====
+[IMG n30_g3f769a0f446_0_989 (0,0,720x405)] 
+[IMG n30_g3f769a0f446_0_990 (648,36,36x10)] 
+[n30_g3f769a0f446_0_993 (36,285,579x62) pt=[29]] 'Appendix: LatAm deep dive and sources'
+[n30_g3f769a0f446_0_994 (36,265,582x13) pt=[8]] 'A'
+[n30_e001 (29,345,593x28) pt=[10]] 'Country levers show one fifth of the base case at run rate, an equal split until volumes by country arrive.'
+[n30_e002 (29,71,414x24) pt=[7]] '01 EXECUTIVE SUMMARY'
+[n30_e003 (29,84,414x24) pt=[7]] '02 WHERE CARRY1ST STANDS AND WHAT BLACK FRIDAY NEEDS'
+[n30_e004 (29,97,414x24) pt=[7]] '03 TWO WAYS TO LAUNCH'
+[n30_e005 (29,110,414x24) pt=[7]] '04 WHY YUNO'
+[n30_e006 (29,123,414x24) pt=[7]] '05 BUSINESS CASE'
+[n30_e007 (29,136,414x24) pt=[7]] '06 PROPOSAL'
+[n30_e008 (29,149,414x24) pt=[7]] '07 LAUNCH PLAN TO BLACK FRIDAY AND PHASE 2'
+[n30_e009 (29,162,414x24) pt=[7]] '08 NEXT STEPS'
+[n30_e010 (29,175,414x24) pt=[7]] 'APPENDIX: LATAM DEEP DIVE AND SOURCES'
+[NOTES] "One market slide and one connections slide per country, then the assumptions behind every modeled number and the sources. The lever cards split the base-case run-rate figures in equal fifths as a placeholder; they will be re-cut on Carry1st's volume projections by country."
+
+===== POS 77 · objectId=n31r1_g3f77215683c_2_2968 =====
+[IMG n31r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n31r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · BRAZIL'
+[n31r1_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Brazil is the launch market: Pix and domestic cards carry more than 80% of online purchases and confirm in seconds.'
+[IMG n31r1_e001 (108,25,14x9)] https://flagcdn.com/w80/br.png
+[n31r1_e003 (39,95,156x34) pt=[16]] '42%'
+[n31r1_e004 (39,115,156x23) pt=[6.5]] 'PIX, SHARE OF ONLINE PURCHASES'
+[n31r1_e005 (39,124,156x23) pt=[6.5]] 'Reuters on PCMI, Feb 2026; cards 41%'
+[n31r1_e007 (201,95,156x34) pt=[16]] '$2.5B'
+[n31r1_e008 (201,115,156x23) pt=[6.5]] 'GAMES REVENUE, 100M+ PLAYERS'
+[n31r1_e009 (201,124,156x23) pt=[6.5]] 'Newzoo and Allcorrect via press, 2025'
+[n31r1_e011 (363,95,156x34) pt=[16]] '93%'
+[n31r1_e012 (363,115,156x23) pt=[6.5]] 'OF ADULTS USED PIX IN APR 2026'
+[n31r1_e013 (363,124,156x23) pt=[6.5]] 'Banco Central via press, May 2026'
+[n31r1_e015 (525,95,156x34) pt=[16]] '46'
+[n31r1_e016 (525,115,156x23) pt=[6.5]] 'PROVIDERS LIVE THROUGH YUNO'
+[n31r1_e017 (525,124,156x23) pt=[6.5]] 'Yuno integrations directory, Oct 2026'
+[n31r1_e020 (39,153,28x26) pt=[7]] '1'
+[n31r1_e021 (58,155,185x23) pt=[6.5]] 'LOCAL METHODS'
+[n31r1_e022 (39,169,204x30) pt=[13]] '+1.0% of TPV'
+[n31r1_e023 (39,184,204x24) pt=[8]] '$9K incremental GMV a month, one fifth'
+[n31r1_e024 (39,194,204x32) pt=[6.5]] 'Pix and domestic cards (Elo, Hipercard) through EBANX and dLocal from day one; Boleto in a second wave.'
+[n31r1_e027 (258,153,28x26) pt=[7]] '2'
+[n31r1_e028 (277,155,185x23) pt=[6.5]] 'APPROVAL AND RETRIES'
+[n31r1_e029 (258,169,204x30) pt=[13]] '+3.0 pts approval'
+[n31r1_e030 (258,184,204x24) pt=[8]] '$36K incremental GMV a month, one fifth'
+[n31r1_e031 (258,194,204x32) pt=[6.5]] 'Retry EBANX card declines on dLocal; present as a domestic charge so domestic-only cards (about 70%) can pay.'
+[n31r1_e034 (477,153,28x26) pt=[7]] '3'
+[n31r1_e035 (496,155,185x23) pt=[6.5]] 'COST AND LEVERAGE'
+[n31r1_e036 (477,169,204x30) pt=[13]] '50 bps of TPV'
+[n31r1_e037 (477,184,204x24) pt=[8]] '$4.5K saved a month, one fifth of base'
+[n31r1_e038 (477,194,204x32) pt=[6.5]] 'Two MoRs live on Pix and cards; move share to the cheaper route by rule once both are live.'
+[n31r1_e039 (29,222,390x23) pt=[6.5]] 'PAYMENT METHOD PRIORITY'
+[n31r1_e041 (35,236,51x24) pt=[6.5]] 'PRIORITY'
+[n31r1_e043 (84,236,85x24) pt=[6.5]] 'METHOD'
+[n31r1_e045 (166,236,81x24) pt=[6.5]] 'SCALE'
+[n31r1_e047 (245,236,85x24) pt=[6.5]] 'ROLE FOR THE SHOP'
+[n31r1_e049 (328,236,85x24) pt=[6.5]] 'CARRIED BY'
+[n31r1_e052 (35,252,51x31) pt=[6.5]] 'Must-have'
+[n31r1_e054 (84,252,85x31) pt=[6.5]] 'Pix'
+[n31r1_e056 (166,252,81x31) pt=[6.5]] '42% of online purchases'
+[n31r1_e058 (245,252,85x31) pt=[6.5]] 'Primary rail, instant confirmation'
+[n31r1_e060 (328,252,85x31) pt=[6.5]] 'EBANX, dLocal and 25 more'
+[n31r1_e062 (35,275,51x31) pt=[6.5]] 'Must-have'
+[n31r1_e064 (84,275,85x31) pt=[6.5]] 'Cards incl. Elo, Hipercard'
+[n31r1_e066 (166,275,81x31) pt=[6.5]] '40 to 41% of value'
+[n31r1_e068 (245,275,85x31) pt=[6.5]] 'Mainstream; installments later'
+[n31r1_e070 (328,275,85x31) pt=[6.5]] 'EBANX, dLocal, Adyen, Cielo'
+[n31r1_e072 (35,298,51x31) pt=[6.5]] 'Optional'
+[n31r1_e074 (84,298,85x31) pt=[6.5]] 'Boleto'
+[n31r1_e076 (166,298,81x31) pt=[6.5]] 'Legacy cash voucher'
+[n31r1_e078 (245,298,85x31) pt=[6.5]] 'Second wave; slow confirmation'
+[n31r1_e080 (328,298,85x31) pt=[6.5]] 'EBANX, dLocal, Mercado Pago'
+[n31r1_e082 (427,230,255x23) pt=[6.5]] 'WHAT IT MEANS FOR THE SHOP'
+[n31r1_e083 (427,242,255x25) pt=[7.5]] 'Pix is the product fit'
+[n31r1_e084 (427,252,255x25) pt=[7]] 'Confirms in seconds; 93% of adults use it.'
+[n31r1_e085 (427,267,255x25) pt=[7.5]] 'Domestic-only cards need a local rail'
+[n31r1_e086 (427,277,255x25) pt=[7]] 'About 70% of Brazilian cards cannot pay cross-border.'
+[n31r1_e087 (427,291,255x25) pt=[7.5]] 'IOF makes the charge model matter'
+[n31r1_e088 (427,302,255x25) pt=[7]] '3.5% IOF on international card payments; TO VALIDATE per MoR.'
+[n31r1_e090 (39,341,58x23) pt=[7]] 'SO WHAT'
+[n31r1_e091 (85,340,596x25) pt=[7.5]] 'Launch Brazil on Pix and local cards through the MoR; keep Boleto off at launch, and keep dLocal live behind EBANX from day one.'
+[n31r1_e092 (29,354,662x32) pt=[6.5]] 'Reuters 10 Feb 2026 (PCMI); Banco Central via press 2026; Newzoo and Allcorrect 2025; IQPC (undated); Decree 12.499/2025 (IOF); Yuno directory Oct 2026. TO VALIDATE: Boleto share 2025; IOF treatment of MoR charges (owner German).'
+[n31r1_e093 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n31r1_e094 (633,376,58x23) pt=[6.5]] '31'
+[NOTES] 'Brazil is where the Shop launches, and it is the market where the two rails that matter, Pix and domestic cards, both confirm instantly. The levers show one fifth of the base case at run rate as a placeholder until your volumes by country arrive. The one thing we would not do at launch is Boleto: it confirms late and the Shop promises instant delivery.'
+
+===== POS 78 · objectId=n32_g3f77215683c_2_2968 =====
+[IMG n32_g3f77215683c_2_2969 (645,24,39x11)] 
+[n32_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · BRAZIL · CONNECTIONS THROUGH YUNO'
+[n32_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Brazil: EBANX and dLocal are two of 46 providers live through Yuno; Pix is carried by 27 of them.'
+[n32_e001 (29,88,662x23) pt=[6.5]] 'MERCHANT-OF-RECORD ROUTES FOR THE LAUNCH'
+[IMG n32_e003 (42,110,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n32_e004 (50,101,45x27) pt=[7]] 'EBANX'
+[IMG n32_e006 (96,110,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n32_e007 (104,101,44x27) pt=[7]] 'dLocal'
+[n32_e008 (29,123,662x23) pt=[6.5]] 'LIVE THROUGH YUNO (46)'
+[IMG n32_e010 (42,146,10x10)] https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f
+[n32_e011 (50,137,42x27) pt=[7]] 'Adyen'
+[IMG n32_e013 (93,146,10x10)] https://y.uno/vendor/webflow/68df540166da8c37368bcf41_6789cc5c3897af7356fa69bf_678316e2320
+[n32_e014 (101,137,42x27) pt=[7]] 'Antom'
+[IMG n32_e016 (145,146,10x10)] https://y.uno/vendor/webflow/68df5402959815c021accf84_682cfb9301e9624ceb349be4_Isotype-Col
+[n32_e017 (153,137,50x27) pt=[7]] 'AstroPay'
+[IMG n32_e019 (205,146,10x10)] https://y.uno/vendor/webflow/68df5405ad017602ddca5ed7_6789cc60285f3ca4ce18c891_678316e4328
+[n32_e020 (213,137,47x27) pt=[7]] 'Bamboo'
+[IMG n32_e022 (262,146,10x10)] https://y.uno/vendor/webflow/68df5406c1e4a994ba426312_6789cc6272061cb2483dadd4_678316e4298
+[n32_e023 (270,137,72x27) pt=[7]] 'Banco do Brasil'
+[IMG n32_e025 (343,146,10x10)] https://y.uno/vendor/webflow/68df5456fd49ff67c9814651_Barte.png
+[n32_e026 (351,137,39x27) pt=[7]] 'Barte'
+[IMG n32_e028 (391,146,10x10)] https://y.uno/vendor/webflow/68df540a02642ea430eb6755_6789cc63048e7844116a07c7_678316e5534
+[n32_e029 (399,137,51x27) pt=[7]] 'Bradesco'
+[IMG n32_e031 (452,146,10x10)] https://y.uno/vendor/webflow/68df540b02642ea430eb67cc_6789cc654ecd423306d4adb9_678316e6765
+[n32_e032 (460,137,39x27) pt=[7]] 'Cielo'
+[IMG n32_e034 (500,146,10x10)] https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d
+[n32_e035 (508,137,61x27) pt=[7]] 'Cybersource'
+[IMG n32_e037 (571,146,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n32_e038 (578,137,44x27) pt=[7]] 'dLocal'
+[IMG n32_e040 (624,146,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n32_e041 (632,137,45x27) pt=[7]] 'EBANX'
+[IMG n32_e043 (42,165,10x10)] https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%
+[n32_e044 (49,156,57x27) pt=[7]] 'Ecommpay'
+[IMG n32_e046 (108,165,29x10)] https://y.uno/vendor/webflow/68df541394b9393f1b0c13ae_67b40586ac75800b7abb780e_Screenshot%
+[n32_e047 (135,156,66x27) pt=[7]] 'emerchantpay'
+[IMG n32_e049 (202,165,10x10)] https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93ee
+[n32_e050 (210,156,42x27) pt=[7]] 'Fiserv'
+[IMG n32_e052 (254,165,10x10)] https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65
+[n32_e053 (262,156,42x27) pt=[7]] 'Getnet'
+[IMG n32_e055 (306,165,10x10)] https://y.uno/vendor/webflow/68df5418ef478f2e318a27ed_6789cc6c7d7b8ce401d2e636_678316e9010
+[n32_e056 (314,156,49x27) pt=[7]] 'Inswitch'
+[IMG n32_e058 (365,165,10x10)] https://y.uno/vendor/webflow/68df541b2968391d5a59698d_6789cc6de3126602b05439bf_678316ea410
+[n32_e059 (373,156,36x27) pt=[7]] 'Koin'
+[IMG n32_e061 (411,165,10x10)] https://y.uno/vendor/webflow/68df5420f51801928225ad25_6789cc6e048e7844116a106a_678316eb13e
+[n32_e062 (419,156,66x27) pt=[7]] 'Mercado Pago'
+[IMG n32_e064 (487,165,10x10)] https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc
+[n32_e065 (495,156,40x27) pt=[7]] 'Nuvei'
+[IMG n32_e067 (537,165,10x10)] https://y.uno/vendor/webflow/68df542bcb277fcd52b5c040_6789cc71285f3ca4ce18d09e_678316edcb1
+[n32_e068 (544,156,51x27) pt=[7]] 'Pagaleve'
+[IMG n32_e070 (597,165,10x10)] https://y.uno/vendor/webflow/68df542bdd6919f447f67b70_6789cc72244a2a4112ec8416_678316ed9c2
+[n32_e071 (605,156,52x27) pt=[7]] 'Pagar.me'
+[IMG n32_e073 (42,184,10x10)] https://y.uno/vendor/webflow/68df542cfed9aee64769620a_6789cc735fa294c6c36df810_678316ee765
+[n32_e074 (50,176,50x27) pt=[7]] 'PagBank'
+[IMG n32_e076 (102,184,10x10)] https://y.uno/vendor/webflow/68df542a9df0c977b7542cce_6789cc71244a2a4112ec8356_678316edfc6
+[n32_e077 (109,176,56x27) pt=[7]] 'PagSeguro'
+[IMG n32_e079 (167,184,10x10)] https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128
+[n32_e080 (175,176,52x27) pt=[7]] 'Pagsmile'
+[IMG n32_e082 (228,184,10x10)] https://y.uno/vendor/webflow/68df542c7fcfdc890681778c_6789cc72e8ffdd3fd5a6e64d_678316ee3ee
+[n32_e083 (236,176,57x27) pt=[7]] 'Panda blue'
+[IMG n32_e085 (295,184,9x10)] https://y.uno/vendor/webflow/68df542f3228702a3a84d067_67b4155fd3554621648bcefc_Screenshot%
+[n32_e086 (302,176,62x27) pt=[7]] 'PayRetailers'
+[IMG n32_e088 (366,184,10x10)] https://y.uno/vendor/webflow/68df5430c1e4a994ba426912_6789cc7328ddfc7fd85520dd_678316eef87
+[n32_e089 (374,176,39x27) pt=[7]] 'PayU'
+[IMG n32_e091 (414,184,10x10)] https://y.uno/vendor/webflow/68df54354c769dfb488d4ab7_6789cc74404949fd079f8d4e_678316ef1d4
+[n32_e092 (422,176,45x27) pt=[7]] 'PicPay'
+[IMG n32_e094 (468,184,10x10)] https://y.uno/vendor/webflow/68df54367ac41b4c08e8d60b_6789cc740b7516aa4489b905_678316ef328
+[n32_e095 (476,176,48x27) pt=[7]] 'Pinbank'
+[IMG n32_e097 (525,184,10x10)] https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png
+[n32_e098 (533,176,44x27) pt=[7]] 'Pockyt'
+[IMG n32_e100 (579,184,10x10)] https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png
+[n32_e101 (587,176,42x27) pt=[7]] 'Rapyd'
+[IMG n32_e103 (630,184,10x10)] https://y.uno/vendor/webflow/68df543b8fadd3f28366c5b2_6789cc76bf80c9ad43c422cc_678316f1585
+[n32_e104 (638,176,38x27) pt=[7]] 'Rede'
+[IMG n32_e106 (42,204,10x10)] https://y.uno/vendor/webflow/68df543f059aab268c24a6f2_67ad60d8ead7cbb57426f653_safe2pay_lo
+[n32_e107 (50,195,52x27) pt=[7]] 'Safe2Pay'
+[IMG n32_e109 (104,204,10x10)] https://y.uno/vendor/webflow/68df5440b4393881bb14cf15_6789cc7876a470d6b6deb6c8_678316f1328
+[n32_e110 (112,195,54x27) pt=[7]] 'SafetyPay'
+[IMG n32_e112 (168,204,10x10)] https://www.google.com/s2/favicons?domain=safrapay.com.br&sz=128
+[n32_e113 (175,195,50x27) pt=[7]] 'Safrapay'
+[IMG n32_e115 (227,204,10x10)] https://y.uno/vendor/webflow/68df5441ad017602ddca6393_6789cc788bb705ec04da4986_678316f21a9
+[n32_e116 (235,195,53x27) pt=[7]] 'Santander'
+[IMG n32_e118 (290,204,10x10)] https://www.google.com/s2/favicons?domain=starkbank.com&sz=128
+[n32_e119 (298,195,56x27) pt=[7]] 'Stark Bank'
+[IMG n32_e121 (356,204,10x10)] https://www.google.com/s2/favicons?domain=stone.com.br&sz=128
+[n32_e122 (363,195,40x27) pt=[7]] 'Stone'
+[IMG n32_e124 (405,204,10x10)] https://y.uno/vendor/webflow/68df5445a8ef8a62bf6afaec_6789cc79c8c462843dab8e35_678316f2c37
+[n32_e125 (413,195,41x27) pt=[7]] 'Stripe'
+[IMG n32_e127 (455,204,10x10)] https://y.uno/vendor/webflow/68df544a70a819358abeaa99_67abc19ee67bea98459eed7e_transfeera-
+[n32_e128 (463,195,55x27) pt=[7]] 'Transfeera'
+[IMG n32_e130 (520,204,10x10)] https://y.uno/vendor/webflow/68df544ceb8af581358600cd_6789cc7a3897af7356fa79ad_678316f37e9
+[n32_e131 (528,195,45x27) pt=[7]] 'Unlimit'
+[IMG n32_e133 (575,204,10x10)] https://y.uno/vendor/webflow/68df544f1eff69545da1eb16_6789cc7ab5901ecb61f764c0_678316f3db6
+[n32_e134 (583,195,39x27) pt=[7]] 'Vindi'
+[IMG n32_e136 (623,204,10x10)] https://y.uno/vendor/webflow/68df5450981fbc62f2717deb_6789cc7b07d59d7e6b6c5ab3_678316f3ca1
+[n32_e137 (631,195,35x27) pt=[7]] 'Volt'
+[IMG n32_e139 (42,224,10x10)] https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0
+[n32_e140 (50,215,51x27) pt=[7]] 'Worldline'
+[IMG n32_e142 (103,224,10x10)] https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121
+[n32_e143 (111,215,51x27) pt=[7]] 'Worldpay'
+[IMG n32_e145 (163,224,10x10)] https://y.uno/vendor/webflow/68df5455c3ff446a8c70e611_6789cc7ee8ffdd3fd5a6ec0f_678316f59c2
+[n32_e146 (171,215,38x27) pt=[7]] 'Zoop'
+[n32_e147 (29,237,662x23) pt=[6.5]] 'WALLETS AND PAYMENT METHODS (SELECTED)'
+[IMG n32_e149 (42,259,10x10)] https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0
+[n32_e150 (50,250,54x27) pt=[7]] 'Apple Pay'
+[IMG n32_e152 (106,259,10x10)] https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e9765
+[n32_e153 (114,250,58x27) pt=[7]] 'Google Pay'
+[IMG n32_e155 (173,259,10x10)] https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png
+[n32_e156 (181,250,45x27) pt=[7]] 'PayPal'
+[IMG n32_e158 (227,259,10x10)] https://y.uno/vendor/webflow/68df542a5004c775ba715dd2_6789cc71e6119c429e725624_678316ed010
+[n32_e159 (235,250,33x27) pt=[7]] 'PIX'
+[IMG n32_e161 (270,259,10x10)] https://y.uno/vendor/webflow/68df5409cd34721ca33805cd_6789cc63e8ffdd3fd5a6de49_678316e5765
+[n32_e162 (278,250,42x27) pt=[7]] 'Boleto'
+[IMG n32_e164 (322,259,10x10)] https://y.uno/vendor/webflow/68df5426a82c6c308c3a4048_6789cc6f72061cb2483db7e6_678316ec121
+[n32_e165 (330,250,42x27) pt=[7]] 'NuPay'
+[IMG n32_e167 (374,259,10x10)] https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e99
+[n32_e168 (382,250,36x27) pt=[7]] 'Visa'
+[IMG n32_e170 (420,259,10x10)] https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a9
+[n32_e171 (428,250,57x27) pt=[7]] 'Mastercard'
+[n32_e173 (35,279,132x26) pt=[6.5]] 'LOCAL METHOD'
+[n32_e175 (164,279,482x26) pt=[6.5]] 'CARRIED THROUGH YUNO BY'
+[n32_e177 (644,279,41x26) pt=[6.5]] '#'
+[n32_e180 (35,301,132x24) pt=[7]] 'Pix'
+[n32_e182 (164,301,482x24) pt=[7]] 'EBANX, dLocal, Adyen, Cielo, Getnet, Mercado Pago, PagSeguro, Pagar.me, PagBank, Nuvei, Stripe, PayRetailers, Fiserv, Santander and 13 more'
+[n32_e184 (644,301,41x24) pt=[7]] '27'
+[n32_e186 (35,320,132x24) pt=[7]] 'Boleto'
+[n32_e188 (164,320,482x24) pt=[7]] 'EBANX, dLocal, Mercado Pago, Pagar.me, PagBank, Banco do Brasil, Bradesco, Bamboo'
+[n32_e190 (644,320,41x24) pt=[7]] '8'
+[n32_e191 (29,362,662x23) pt=[6.5]] "Yuno integrations directory (docs.y.uno Payment Type list and y.uno/integrations), pulled 14 Oct 2026. CONFIRMED. Logos are the providers' own marks."
+[n32_e192 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n32_e193 (633,376,58x23) pt=[6.5]] '32'
+[NOTES] 'Every provider live through Yuno in Brazil, from the Yuno integrations directory. The two merchant-of-record routes for the launch are highlighted; the rest is what Phase 2 can draw on without a new integration. Pix alone is carried by 27 providers, which is what makes the cost lever real.'
+
+===== POS 79 · objectId=n33r1_g3f77215683c_2_2968 =====
+[IMG n33r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n33r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · ARGENTINA'
+[n33r1_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Argentina is a wallet market where the 30% perception makes local-currency pricing the whole game; MODO arrives via dLocal.'
+[IMG n33r1_e001 (122,25,14x8)] https://flagcdn.com/w80/ar.png
+[n33r1_e003 (39,95,156x34) pt=[16]] '46%'
+[n33r1_e004 (39,115,156x23) pt=[6.5]] 'WALLETS, SHARE OF E-COMMERCE'
+[n33r1_e005 (39,124,156x23) pt=[6.5]] 'PCMI 2024 by value; above 55% in GPR 2026'
+[n33r1_e007 (201,95,156x34) pt=[16]] '22%'
+[n33r1_e008 (201,115,156x23) pt=[6.5]] 'DOMESTIC-ONLY CREDIT CARDS'
+[n33r1_e009 (201,124,156x23) pt=[6.5]] 'PCMI 2024: cannot be charged cross-border'
+[n33r1_e011 (363,95,156x34) pt=[16]] '17M+'
+[n33r1_e012 (363,115,156x23) pt=[6.5]] 'MODO USERS; 100M+ QR A MONTH'
+[n33r1_e013 (363,124,156x23) pt=[6.5]] 'Play Digital 2024; Descubre, Jul 2026'
+[n33r1_e015 (525,95,156x34) pt=[16]] '30%'
+[n33r1_e016 (525,115,156x23) pt=[6.5]] 'PERCEPTION ON FOREIGN CARDS'
+[n33r1_e017 (525,124,156x23) pt=[6.5]] 'ARCA RG 5617/2024, in force Sep 2026'
+[n33r1_e020 (39,153,28x26) pt=[7]] '1'
+[n33r1_e021 (58,155,185x23) pt=[6.5]] 'LOCAL METHODS'
+[n33r1_e022 (39,169,204x30) pt=[13]] '+1.0% of TPV'
+[n33r1_e023 (39,184,204x24) pt=[8]] '$9K incremental GMV a month, one fifth'
+[n33r1_e024 (39,194,204x32) pt=[6.5]] 'Mercado Pago wallet and cards via EBANX and dLocal at launch; MODO and interoperable QR via dLocal as fast follow.'
+[n33r1_e027 (258,153,28x26) pt=[7]] '2'
+[n33r1_e028 (277,155,185x23) pt=[6.5]] 'APPROVAL AND RETRIES'
+[n33r1_e029 (258,169,204x30) pt=[13]] '+3.0 pts approval'
+[n33r1_e030 (258,184,204x24) pt=[8]] '$36K incremental GMV a month, one fifth'
+[n33r1_e031 (258,194,204x32) pt=[6.5]] 'A local-currency charge through the MoR avoids the 30% perception; retry declines across EBANX and dLocal.'
+[n33r1_e034 (477,153,28x26) pt=[7]] '3'
+[n33r1_e035 (496,155,185x23) pt=[6.5]] 'COST AND LEVERAGE'
+[n33r1_e036 (477,169,204x30) pt=[13]] '50 bps of TPV'
+[n33r1_e037 (477,184,204x24) pt=[8]] '$4.5K saved a month, one fifth of base'
+[n33r1_e038 (477,194,204x32) pt=[6.5]] 'Both MoRs carry cards and Mercado Pago; move share by rule. Cash (Rapipago, Pago Fácil) stays optional.'
+[n33r1_e039 (29,222,390x23) pt=[6.5]] 'PAYMENT METHOD PRIORITY'
+[n33r1_e041 (35,236,51x24) pt=[6.5]] 'PRIORITY'
+[n33r1_e043 (84,236,85x24) pt=[6.5]] 'METHOD'
+[n33r1_e045 (166,236,81x24) pt=[6.5]] 'SCALE'
+[n33r1_e047 (245,236,85x24) pt=[6.5]] 'ROLE FOR THE SHOP'
+[n33r1_e049 (328,236,85x24) pt=[6.5]] 'CARRIED BY'
+[n33r1_e052 (35,252,51x31) pt=[6.5]] 'Must-have'
+[n33r1_e054 (84,252,85x31) pt=[6.5]] 'Mercado Pago Wallet'
+[n33r1_e056 (166,252,81x31) pt=[6.5]] '46 to 55% of e-commerce'
+[n33r1_e058 (245,252,85x31) pt=[6.5]] 'Primary rail'
+[n33r1_e060 (328,252,85x31) pt=[6.5]] 'EBANX, dLocal, Mercado Pago'
+[n33r1_e062 (35,275,51x31) pt=[6.5]] 'Must-have'
+[n33r1_e064 (84,275,85x31) pt=[6.5]] 'Cards incl. Naranja, Cabal'
+[n33r1_e066 (166,275,81x31) pt=[6.5]] '45% of value across card lines'
+[n33r1_e068 (245,275,85x31) pt=[6.5]] 'Needs local presentation'
+[n33r1_e070 (328,275,85x31) pt=[6.5]] 'EBANX, dLocal, Prisma, Fiserv'
+[n33r1_e072 (35,298,51x31) pt=[6.5]] 'Fast follow'
+[n33r1_e074 (84,298,85x31) pt=[6.5]] 'MODO, interoperable QR'
+[n33r1_e076 (166,298,81x31) pt=[6.5]] '17M+ users'
+[n33r1_e078 (245,298,85x31) pt=[6.5]] 'Not available on EBANX'
+[n33r1_e080 (328,298,85x31) pt=[6.5]] 'dLocal'
+[n33r1_e082 (427,230,255x23) pt=[6.5]] 'WHAT IT MEANS FOR THE SHOP'
+[n33r1_e083 (427,242,255x25) pt=[7.5]] 'Price in pesos through the MoR'
+[n33r1_e084 (427,252,255x25) pt=[7]] 'A USD card charge costs the gamer 30% more; TO VALIDATE per MoR.'
+[n33r1_e085 (427,267,255x25) pt=[7.5]] 'Domestic-only cards are 22% of value'
+[n33r1_e086 (427,277,255x25) pt=[7]] 'Cross-border rails cannot charge them at all.'
+[n33r1_e087 (427,291,255x25) pt=[7.5]] 'Refund timing differs by provider'
+[n33r1_e088 (427,302,255x25) pt=[7]] 'EBANX card refunds can take 89 to 120 days (EBANX docs).'
+[n33r1_e090 (39,341,58x23) pt=[7]] 'SO WHAT'
+[n33r1_e091 (85,340,596x25) pt=[7.5]] 'Argentina rewards the second provider immediately: MODO and QR exist only on dLocal, and the perception rule makes local-currency pricing non-negotiable.'
+[n33r1_e092 (29,354,662x32) pt=[6.5]] 'PCMI 2024 via press; Global Payments Report 2026 via Forbes Argentina; Descubre 14 Jul 2026; ARCA RG 5617/2024 (Fortuna, 2026); Newzoo 2024 via iProUP; EBANX Argentina overview; Yuno directory Oct 2026. TO VALIDATE: perception treatment per MoR (owner German).'
+[n33r1_e093 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n33r1_e094 (633,376,58x23) pt=[6.5]] '33'
+[NOTES] 'Argentina is a wallet market, and it is the market where the rail decides the price the gamer sees: a foreign-currency card purchase carries a 30% perception that a local-currency charge through the merchant of record does not. MODO and interoperable QR are only reachable through dLocal, which is the second-provider argument in one line.'
+
+===== POS 80 · objectId=n34_g3f77215683c_2_2968 =====
+[IMG n34_g3f77215683c_2_2969 (645,24,39x11)] 
+[n34_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · ARGENTINA · CONNECTIONS THROUGH YUNO'
+[n34_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Argentina: 23 providers live through Yuno; MODO and interoperable QR reach the Shop only through dLocal.'
+[n34_e001 (29,88,662x23) pt=[6.5]] 'MERCHANT-OF-RECORD ROUTES FOR THE LAUNCH'
+[IMG n34_e003 (42,110,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n34_e004 (50,101,45x27) pt=[7]] 'EBANX'
+[IMG n34_e006 (96,110,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n34_e007 (104,101,44x27) pt=[7]] 'dLocal'
+[n34_e008 (29,123,662x23) pt=[6.5]] 'LIVE THROUGH YUNO (23)'
+[IMG n34_e010 (42,146,10x10)] https://y.uno/vendor/webflow/68df5402959815c021accf84_682cfb9301e9624ceb349be4_Isotype-Col
+[n34_e011 (50,137,50x27) pt=[7]] 'AstroPay'
+[IMG n34_e013 (102,146,10x10)] https://y.uno/vendor/webflow/68df5405ad017602ddca5ed7_6789cc60285f3ca4ce18c891_678316e4328
+[n34_e014 (110,137,47x27) pt=[7]] 'Bamboo'
+[IMG n34_e016 (159,146,10x10)] https://y.uno/vendor/webflow/68df54067e631e603edd2c96_6789cc6107d59d7e6b6c444c_678316e413e
+[n34_e017 (167,137,66x27) pt=[7]] 'Banco Galicia'
+[IMG n34_e019 (234,146,13x10)] https://y.uno/vendor/webflow/68df5403c3ff446a8c70dce3_67ad64a07c605912a4a48ce5_bbva.jpeg
+[n34_e020 (245,137,40x27) pt=[7]] 'BBVA'
+[IMG n34_e022 (287,146,10x10)] https://y.uno/vendor/webflow/68df540c62984004e6d94e44_6789cc6609bc1fa384ed92a0_678316e6814
+[n34_e023 (295,137,63x27) pt=[7]] 'Cobro Digital'
+[IMG n34_e025 (359,146,10x10)] https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d
+[n34_e026 (367,137,61x27) pt=[7]] 'Cybersource'
+[IMG n34_e028 (430,146,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n34_e029 (437,137,44x27) pt=[7]] 'dLocal'
+[IMG n34_e031 (483,146,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n34_e032 (491,137,45x27) pt=[7]] 'EBANX'
+[IMG n34_e034 (537,146,10x10)] https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%
+[n34_e035 (545,137,57x27) pt=[7]] 'Ecommpay'
+[IMG n34_e037 (42,165,29x10)] https://y.uno/vendor/webflow/68df541394b9393f1b0c13ae_67b40586ac75800b7abb780e_Screenshot%
+[n34_e038 (69,156,66x27) pt=[7]] 'emerchantpay'
+[IMG n34_e040 (136,165,10x10)] https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93ee
+[n34_e041 (144,156,42x27) pt=[7]] 'Fiserv'
+[IMG n34_e043 (188,165,10x10)] https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65
+[n34_e044 (196,156,42x27) pt=[7]] 'Getnet'
+[IMG n34_e046 (240,165,10x10)] https://y.uno/vendor/webflow/68df5418ef478f2e318a27ed_6789cc6c7d7b8ce401d2e636_678316e9010
+[n34_e047 (248,156,49x27) pt=[7]] 'Inswitch'
+[IMG n34_e049 (299,165,10x10)] https://y.uno/vendor/webflow/68df5420f51801928225ad25_6789cc6e048e7844116a106a_678316eb13e
+[n34_e050 (306,156,66x27) pt=[7]] 'Mercado Pago'
+[IMG n34_e052 (375,165,10x10)] https://y.uno/vendor/webflow/68df5421259785112e047d0d_6789cc6e6fe30f3f883ef471_678316eb9e0
+[n34_e053 (382,156,45x27) pt=[7]] 'Monnet'
+[IMG n34_e055 (429,165,10x10)] https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc
+[n34_e056 (437,156,40x27) pt=[7]] 'Nuvei'
+[IMG n34_e058 (479,165,10x10)] https://y.uno/vendor/webflow/68df542a9df0c977b7542cce_6789cc71244a2a4112ec8356_678316edfc6
+[n34_e059 (487,156,56x27) pt=[7]] 'PagSeguro'
+[IMG n34_e061 (544,165,10x10)] https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128
+[n34_e062 (552,156,52x27) pt=[7]] 'Pagsmile'
+[IMG n34_e064 (606,165,9x10)] https://y.uno/vendor/webflow/68df542f3228702a3a84d067_67b4155fd3554621648bcefc_Screenshot%
+[n34_e065 (613,156,62x27) pt=[7]] 'PayRetailers'
+[IMG n34_e067 (42,184,10x10)] https://y.uno/vendor/webflow/68df5430c1e4a994ba426912_6789cc7328ddfc7fd85520dd_678316eef87
+[n34_e068 (50,176,39x27) pt=[7]] 'PayU'
+[IMG n34_e070 (90,184,10x10)] https://y.uno/vendor/webflow/68df544ceb8af581358600cd_6789cc7a3897af7356fa79ad_678316f37e9
+[n34_e071 (98,176,45x27) pt=[7]] 'Unlimit'
+[IMG n34_e073 (145,184,10x10)] https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0
+[n34_e074 (153,176,51x27) pt=[7]] 'Worldline'
+[IMG n34_e076 (206,184,10x10)] https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121
+[n34_e077 (213,176,51x27) pt=[7]] 'Worldpay'
+[n34_e078 (29,198,662x23) pt=[6.5]] 'WALLETS AND PAYMENT METHODS (SELECTED)'
+[IMG n34_e080 (42,220,10x10)] https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0
+[n34_e081 (50,211,54x27) pt=[7]] 'Apple Pay'
+[IMG n34_e083 (106,220,10x10)] https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e9765
+[n34_e084 (114,211,58x27) pt=[7]] 'Google Pay'
+[IMG n34_e086 (173,220,10x10)] https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png
+[n34_e087 (181,211,45x27) pt=[7]] 'PayPal'
+[IMG n34_e089 (227,220,10x10)] https://y.uno/vendor/webflow/68df542c505de00cafd9a566_6789cc72d77f3b0e827fc40d_678316ee320
+[n34_e090 (235,211,56x27) pt=[7]] 'Pago Fácil'
+[IMG n34_e092 (293,220,10x10)] https://y.uno/vendor/webflow/68df543a171f10ee4680fc41_6789cc7576a470d6b6deb5ae_678316f0010
+[n34_e093 (301,211,51x27) pt=[7]] 'Rapipago'
+[IMG n34_e095 (354,220,10x10)] https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e99
+[n34_e096 (362,211,36x27) pt=[7]] 'Visa'
+[IMG n34_e098 (400,220,10x10)] https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a9
+[n34_e099 (408,211,57x27) pt=[7]] 'Mastercard'
+[IMG n34_e101 (466,220,11x10)] https://y.uno/vendor/webflow/68df540cef364b1307eec434_67abc0f0b0aad9c410050eef_1525258644-
+[n34_e102 (475,211,60x27) pt=[7]] 'Click to Pay'
+[n34_e104 (35,240,145x26) pt=[6.5]] 'LOCAL METHOD'
+[n34_e106 (177,240,469x26) pt=[6.5]] 'CARRIED THROUGH YUNO BY'
+[n34_e108 (644,240,41x26) pt=[6.5]] '#'
+[n34_e111 (35,262,145x24) pt=[7]] 'Cards'
+[n34_e113 (177,262,469x24) pt=[7]] 'EBANX, dLocal, Prisma via Fiserv, Getnet, Mercado Pago, Nuvei, PayU, Worldline, Worldpay and others'
+[n34_e115 (644,262,41x24) pt=[7]] '21'
+[n34_e117 (35,281,145x24) pt=[7]] 'Mercado Pago (Checkout Pro, Wallet)'
+[n34_e119 (177,281,469x24) pt=[7]] 'EBANX (Checkout Pro), Mercado Pago (Wallet, QR, Checkout Pro), dLocal'
+[n34_e121 (644,281,41x24) pt=[7]] '3'
+[n34_e123 (35,301,145x24) pt=[7]] 'MODO, interoperable QR'
+[n34_e125 (177,301,469x24) pt=[7]] 'dLocal'
+[n34_e127 (644,301,41x24) pt=[7]] '1'
+[n34_e129 (35,320,145x24) pt=[7]] 'Rapipago, Pago Fácil (cash)'
+[n34_e131 (177,320,469x24) pt=[7]] 'dLocal; Bamboo (Pago Fácil); EBANX and PayU (cash)'
+[n34_e133 (644,320,41x24) pt=[7]] '4'
+[n34_e134 (29,362,662x23) pt=[6.5]] "Yuno integrations directory (docs.y.uno Payment Type list and y.uno/integrations), pulled 14 Oct 2026. CONFIRMED. Logos are the providers' own marks."
+[n34_e135 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n34_e136 (633,376,58x23) pt=[6.5]] '34'
+[NOTES] 'The Argentina connections live through Yuno. Cards and Mercado Pago are on both merchant-of-record routes; MODO and interoperable QR are on dLocal only, which is why the second route matters here from day one.'
+
+===== POS 81 · objectId=n35r1_g3f77215683c_2_2968 =====
+[IMG n35r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n35r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · MEXICO'
+[n35r1_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Mexico is a debit market: three in four online buyers pay with debit cards foreign acquirers decline; the MoR must look domestic.'
+[IMG n35r1_e001 (110,25,14x8)] https://flagcdn.com/w80/mx.png
+[n35r1_e003 (39,95,156x34) pt=[16]] '74%'
+[n35r1_e004 (39,115,156x23) pt=[6.5]] 'ONLINE BUYERS USING DEBIT CARDS'
+[n35r1_e005 (39,124,156x23) pt=[6.5]] 'AMVO Estudio de Venta Online 2024'
+[n35r1_e007 (201,95,156x34) pt=[16]] '77M'
+[n35r1_e008 (201,115,156x23) pt=[6.5]] 'DIGITAL BUYERS IN 2025'
+[n35r1_e009 (201,124,156x23) pt=[6.5]] 'AMVO 2026; retail e-commerce +19% in 2025'
+[n35r1_e011 (363,95,156x34) pt=[16]] '76M+'
+[n35r1_e012 (363,115,156x23) pt=[6.5]] 'PLAYERS; $2.3B GAMES REVENUE'
+[n35r1_e013 (363,124,156x23) pt=[6.5]] 'Endeavor México and Santander, 2025'
+[n35r1_e015 (525,95,156x34) pt=[16]] '36'
+[n35r1_e016 (525,115,156x23) pt=[6.5]] 'PROVIDERS LIVE THROUGH YUNO'
+[n35r1_e017 (525,124,156x23) pt=[6.5]] 'Yuno integrations directory, Oct 2026'
+[n35r1_e020 (39,153,28x26) pt=[7]] '1'
+[n35r1_e021 (58,155,185x23) pt=[6.5]] 'LOCAL METHODS'
+[n35r1_e022 (39,169,204x30) pt=[13]] '+1.0% of TPV'
+[n35r1_e023 (39,184,204x24) pt=[8]] '$9K incremental GMV a month, one fifth'
+[n35r1_e024 (39,194,204x32) pt=[6.5]] 'Debit and credit cards incl. Carnet, SPEI and OXXO Pay through EBANX and dLocal; CoDi and 7-Eleven through dLocal later.'
+[n35r1_e027 (258,153,28x26) pt=[7]] '2'
+[n35r1_e028 (277,155,185x23) pt=[6.5]] 'APPROVAL AND RETRIES'
+[n35r1_e029 (258,169,204x30) pt=[13]] '+3.0 pts approval'
+[n35r1_e030 (258,184,204x24) pt=[8]] '$36K incremental GMV a month, one fifth'
+[n35r1_e031 (258,194,204x32) pt=[6.5]] 'Local presentation lifts debit approval (Nuvei cites 20 to 30 points); retry EBANX declines on dLocal.'
+[n35r1_e034 (477,153,28x26) pt=[7]] '3'
+[n35r1_e035 (496,155,185x23) pt=[6.5]] 'COST AND LEVERAGE'
+[n35r1_e036 (477,169,204x30) pt=[13]] '50 bps of TPV'
+[n35r1_e037 (477,184,204x24) pt=[8]] '$4.5K saved a month, one fifth of base'
+[n35r1_e038 (477,194,204x32) pt=[6.5]] 'Both MoRs carry cards, SPEI and OXXO; the largest LatAm card base gives routing share real weight.'
+[n35r1_e039 (29,222,390x23) pt=[6.5]] 'PAYMENT METHOD PRIORITY'
+[n35r1_e041 (35,236,51x24) pt=[6.5]] 'PRIORITY'
+[n35r1_e043 (84,236,85x24) pt=[6.5]] 'METHOD'
+[n35r1_e045 (166,236,81x24) pt=[6.5]] 'SCALE'
+[n35r1_e047 (245,236,85x24) pt=[6.5]] 'ROLE FOR THE SHOP'
+[n35r1_e049 (328,236,85x24) pt=[6.5]] 'CARRIED BY'
+[n35r1_e052 (35,252,51x31) pt=[6.5]] 'Must-have'
+[n35r1_e054 (84,252,85x31) pt=[6.5]] 'Debit and credit cards incl. Carnet'
+[n35r1_e056 (166,252,81x31) pt=[6.5]] '74% and 54% usage'
+[n35r1_e058 (245,252,85x31) pt=[6.5]] 'Domestic presentation, 3DS tuned'
+[n35r1_e060 (328,252,85x31) pt=[6.5]] 'EBANX, dLocal and 31 more'
+[n35r1_e062 (35,275,51x31) pt=[6.5]] 'Must-have'
+[n35r1_e064 (84,275,85x31) pt=[6.5]] 'SPEI'
+[n35r1_e066 (166,275,81x31) pt=[6.5]] '8 of 10 buyers use cards or SPEI'
+[n35r1_e068 (245,275,85x31) pt=[6.5]] 'Instant bank transfer'
+[n35r1_e070 (328,275,85x31) pt=[6.5]] 'EBANX, dLocal, Kushki, STP'
+[n35r1_e072 (35,298,51x31) pt=[6.5]] 'Must-have'
+[n35r1_e074 (84,298,85x31) pt=[6.5]] 'OXXO Pay and OXXO cash'
+[n35r1_e076 (166,298,81x31) pt=[6.5]] 'Cash 17% of usage'
+[n35r1_e078 (245,298,85x31) pt=[6.5]] 'OXXO Pay confirms faster'
+[n35r1_e080 (328,298,85x31) pt=[6.5]] 'EBANX, dLocal, Bamboo'
+[n35r1_e082 (427,230,255x23) pt=[6.5]] 'WHAT IT MEANS FOR THE SHOP'
+[n35r1_e083 (427,242,255x25) pt=[7.5]] '16% IVA on digital services'
+[n35r1_e084 (427,252,255x25) pt=[7]] 'Sits inside the MoR rate; TO VALIDATE per provider.'
+[n35r1_e085 (427,267,255x25) pt=[7.5]] 'Debit declines are structural'
+[n35r1_e086 (427,277,255x25) pt=[7]] 'Many debit cards are blocked cross-border or fail 3DS abroad.'
+[n35r1_e087 (427,291,255x25) pt=[7.5]] 'The prototype already runs Mexico'
+[n35r1_e088 (427,302,255x25) pt=[7]] 'OXXO and local prices run in the sandbox demo today.'
+[n35r1_e090 (39,341,58x23) pt=[7]] 'SO WHAT'
+[n35r1_e091 (85,340,596x25) pt=[7.5]] 'Mexico converts on debit and SPEI presented as domestic; the second MoR matters most for failover, and for CoDi and convenience-store cash later.'
+[n35r1_e092 (29,354,662x32) pt=[6.5]] 'AMVO Estudio 2024 and 2026; Endeavor México and Santander via Forbes México 2025; Nuvei, Unlimit and Antom vendor pages 2025 to 2026 (vendor claims); Kintsugi 2026 (IVA); Yuno directory Oct 2026. TO VALIDATE: AMVO 2026 method shares; OXXO share.'
+[n35r1_e093 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n35r1_e094 (633,376,58x23) pt=[6.5]] '35'
+[NOTES] 'Mexico is the largest card base in the region and a debit market: three in four online buyers use debit, and debit is the card type most often declined when the merchant looks foreign. That is why the merchant of record has to present the charge as domestic. SPEI and OXXO Pay complete the set; CoDi and the convenience-store networks can follow through dLocal.'
+
+===== POS 82 · objectId=n36_g3f77215683c_2_2968 =====
+[IMG n36_g3f77215683c_2_2969 (645,24,39x11)] 
+[n36_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · MEXICO · CONNECTIONS THROUGH YUNO'
+[n36_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Mexico: 36 providers live through Yuno; SPEI and OXXO reach the Shop through either MoR, CoDi and 7-Eleven through dLocal.'
+[n36_e001 (29,88,662x23) pt=[6.5]] 'MERCHANT-OF-RECORD ROUTES FOR THE LAUNCH'
+[IMG n36_e003 (42,110,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n36_e004 (50,101,45x27) pt=[7]] 'EBANX'
+[IMG n36_e006 (96,110,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n36_e007 (104,101,44x27) pt=[7]] 'dLocal'
+[n36_e008 (29,123,662x23) pt=[6.5]] 'LIVE THROUGH YUNO (36)'
+[IMG n36_e010 (42,146,10x10)] https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f
+[n36_e011 (50,137,42x27) pt=[7]] 'Adyen'
+[IMG n36_e013 (93,146,10x10)] https://y.uno/vendor/webflow/68df540166da8c37368bcf41_6789cc5c3897af7356fa69bf_678316e2320
+[n36_e014 (101,137,42x27) pt=[7]] 'Antom'
+[IMG n36_e016 (145,146,10x10)] https://y.uno/vendor/webflow/68df5402959815c021accf84_682cfb9301e9624ceb349be4_Isotype-Col
+[n36_e017 (153,137,50x27) pt=[7]] 'AstroPay'
+[IMG n36_e019 (205,146,10x10)] https://y.uno/vendor/webflow/68df5405ad017602ddca5ed7_6789cc60285f3ca4ce18c891_678316e4328
+[n36_e020 (213,137,47x27) pt=[7]] 'Bamboo'
+[IMG n36_e022 (262,146,10x10)] https://y.uno/vendor/webflow/68df54074016148961f113bc_6789cc6273863d34426b9dc5_678316e47e9
+[n36_e023 (270,137,46x27) pt=[7]] 'Banorte'
+[IMG n36_e025 (318,146,13x10)] https://y.uno/vendor/webflow/68df5403c3ff446a8c70dce3_67ad64a07c605912a4a48ce5_bbva.jpeg
+[n36_e026 (328,137,40x27) pt=[7]] 'BBVA'
+[IMG n36_e028 (370,146,10x10)] https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d
+[n36_e029 (378,137,61x27) pt=[7]] 'Cybersource'
+[IMG n36_e031 (441,146,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n36_e032 (448,137,44x27) pt=[7]] 'dLocal'
+[IMG n36_e034 (494,146,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n36_e035 (502,137,45x27) pt=[7]] 'EBANX'
+[IMG n36_e037 (549,146,10x10)] https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%
+[n36_e038 (556,137,57x27) pt=[7]] 'Ecommpay'
+[IMG n36_e040 (42,165,29x10)] https://y.uno/vendor/webflow/68df541394b9393f1b0c13ae_67b40586ac75800b7abb780e_Screenshot%
+[n36_e041 (69,156,66x27) pt=[7]] 'emerchantpay'
+[IMG n36_e043 (136,165,10x10)] https://y.uno/vendor/webflow/68df5413affdc2f96adbb9c5_6793f7ec770025215398c98e_Untitled%25
+[n36_e044 (144,156,69x27) pt=[7]] 'EVO Payments'
+[IMG n36_e046 (215,165,10x10)] https://y.uno/vendor/webflow/68df5415b4393881bb14c127_687fc85b592f7e7bbd5137af_Isologo%252
+[n36_e047 (222,156,42x27) pt=[7]] 'Fintoc'
+[IMG n36_e049 (266,165,10x10)] https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93ee
+[n36_e050 (274,156,42x27) pt=[7]] 'Fiserv'
+[IMG n36_e052 (318,165,10x10)] https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65
+[n36_e053 (326,156,42x27) pt=[7]] 'Getnet'
+[IMG n36_e055 (370,165,10x10)] https://y.uno/vendor/webflow/68df5416bcaf40b055aef984_6789cc6a7d7b8ce401d2e595_678316e982a
+[n36_e056 (378,156,75x27) pt=[7]] 'Global Payments'
+[IMG n36_e058 (455,165,10x10)] https://y.uno/vendor/webflow/68df5418ef478f2e318a27ed_6789cc6c7d7b8ce401d2e636_678316e9010
+[n36_e059 (463,156,49x27) pt=[7]] 'Inswitch'
+[IMG n36_e061 (514,165,10x10)] https://y.uno/vendor/webflow/68df541b23a777518d9acb43_6789cc6d4ecd423306d4b749_678316f0632
+[n36_e062 (521,156,44x27) pt=[7]] 'Kushki'
+[IMG n36_e064 (567,165,10x10)] https://y.uno/vendor/webflow/68df5420f51801928225ad25_6789cc6e048e7844116a106a_678316eb13e
+[n36_e065 (575,156,66x27) pt=[7]] 'Mercado Pago'
+[IMG n36_e067 (42,184,10x10)] https://y.uno/vendor/webflow/68df5421259785112e047d0d_6789cc6e6fe30f3f883ef471_678316eb9e0
+[n36_e068 (50,176,45x27) pt=[7]] 'Monnet'
+[IMG n36_e070 (97,184,10x10)] https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc
+[n36_e071 (104,176,40x27) pt=[7]] 'Nuvei'
+[IMG n36_e073 (146,184,10x10)] https://y.uno/vendor/webflow/68df54299fc053d07569a529_6789cc70b5901ecb61f75dc9_678316ec320
+[n36_e074 (154,176,49x27) pt=[7]] 'Openpay'
+[IMG n36_e076 (205,184,10x10)] https://y.uno/vendor/webflow/68df542a9df0c977b7542cce_6789cc71244a2a4112ec8356_678316edfc6
+[n36_e077 (213,176,56x27) pt=[7]] 'PagSeguro'
+[IMG n36_e079 (270,184,10x10)] https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128
+[n36_e080 (278,176,52x27) pt=[7]] 'Pagsmile'
+[IMG n36_e082 (332,184,10x10)] https://y.uno/vendor/webflow/68df542c7fcfdc890681778c_6789cc72e8ffdd3fd5a6e64d_678316ee3ee
+[n36_e083 (340,176,57x27) pt=[7]] 'Panda blue'
+[IMG n36_e085 (398,184,9x10)] https://y.uno/vendor/webflow/68df542f3228702a3a84d067_67b4155fd3554621648bcefc_Screenshot%
+[n36_e086 (406,176,62x27) pt=[7]] 'PayRetailers'
+[IMG n36_e088 (469,184,10x10)] https://y.uno/vendor/webflow/68df5430c1e4a994ba426912_6789cc7328ddfc7fd85520dd_678316eef87
+[n36_e089 (477,176,39x27) pt=[7]] 'PayU'
+[IMG n36_e091 (518,184,10x10)] https://y.uno/vendor/webflow/68df54353282fc23c5606260_6789cc74b5901ecb61f76012_678316efca1
+[n36_e092 (526,176,58x27) pt=[7]] 'PlacetoPay'
+[IMG n36_e094 (585,184,10x10)] https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png
+[n36_e095 (593,176,44x27) pt=[7]] 'Pockyt'
+[IMG n36_e097 (639,184,10x10)] https://y.uno/vendor/webflow/68df54377d7d0b2abf511694_6789cc7520c2ca8eeaf1c13a_678316f09c2
+[n36_e098 (646,176,40x27) pt=[7]] 'Prosa'
+[IMG n36_e100 (42,204,10x10)] https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png
+[n36_e101 (50,195,42x27) pt=[7]] 'Rapyd'
+[IMG n36_e103 (93,204,10x10)] https://y.uno/vendor/webflow/68df5440b4393881bb14cf15_6789cc7876a470d6b6deb6c8_678316f1328
+[n36_e104 (101,195,54x27) pt=[7]] 'SafetyPay'
+[IMG n36_e106 (157,204,10x10)] https://y.uno/vendor/webflow/68df5445a8ef8a62bf6afaec_6789cc79c8c462843dab8e35_678316f2c37
+[n36_e107 (165,195,41x27) pt=[7]] 'Stripe'
+[IMG n36_e109 (207,204,10x10)] https://y.uno/vendor/webflow/68df544ceb8af581358600cd_6789cc7a3897af7356fa79ad_678316f37e9
+[n36_e110 (215,195,45x27) pt=[7]] 'Unlimit'
+[IMG n36_e112 (262,204,10x10)] https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0
+[n36_e113 (269,195,51x27) pt=[7]] 'Worldline'
+[IMG n36_e115 (323,204,10x10)] https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121
+[n36_e116 (330,195,51x27) pt=[7]] 'Worldpay'
+[n36_e117 (29,217,662x23) pt=[6.5]] 'WALLETS AND PAYMENT METHODS (SELECTED)'
+[IMG n36_e119 (42,240,10x10)] https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0
+[n36_e120 (50,231,54x27) pt=[7]] 'Apple Pay'
+[IMG n36_e122 (106,240,10x10)] https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e9765
+[n36_e123 (114,231,58x27) pt=[7]] 'Google Pay'
+[IMG n36_e125 (173,240,10x10)] https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png
+[n36_e126 (181,231,45x27) pt=[7]] 'PayPal'
+[IMG n36_e128 (227,240,10x10)] https://y.uno/vendor/webflow/68df542946af4753b53eecde_6789cc709899d4b4b841e3df_678316ec010
+[n36_e129 (235,231,54x27) pt=[7]] 'OXXO Pay'
+[IMG n36_e131 (291,240,10x10)] https://y.uno/vendor/webflow/68df543e0e698e806d221f99_6789cc77b6e94dcfc69bff38_678316f1deb
+[n36_e132 (299,231,38x27) pt=[7]] 'SPEI'
+[IMG n36_e134 (339,240,10x10)] https://y.uno/vendor/webflow/68df540a908b15610ea48a4e_6789cc65bafc481a657e59b1_678316e5db2
+[n36_e135 (347,231,37x27) pt=[7]] 'CoDi'
+[IMG n36_e137 (386,240,10x10)] https://y.uno/vendor/webflow/68df53fd7fcfdc8906817071_6789cc5a28ddfc7fd8551249_678316e1320
+[n36_e138 (393,231,50x27) pt=[7]] '7-Eleven'
+[IMG n36_e140 (445,240,10x10)] https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e99
+[n36_e141 (453,231,36x27) pt=[7]] 'Visa'
+[IMG n36_e143 (491,240,10x10)] https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a9
+[n36_e144 (499,231,57x27) pt=[7]] 'Mastercard'
+[IMG n36_e146 (557,240,17x10)] https://y.uno/vendor/webflow/68df541ba8ef8a62bf6af549_67b3ca9b0085451c19aadd38_Screenshot%
+[n36_e147 (572,231,44x27) pt=[7]] 'Kueski'
+[n36_e149 (35,260,145x26) pt=[6.5]] 'LOCAL METHOD'
+[n36_e151 (177,260,469x26) pt=[6.5]] 'CARRIED THROUGH YUNO BY'
+[n36_e153 (644,260,41x26) pt=[6.5]] '#'
+[n36_e156 (35,282,145x24) pt=[7]] 'SPEI'
+[n36_e158 (177,282,469x24) pt=[7]] 'EBANX, dLocal, Kushki, Nuvei, PagSeguro, STP, Unlimit, Bamboo'
+[n36_e160 (644,282,41x24) pt=[7]] '8'
+[n36_e162 (35,301,145x24) pt=[7]] 'OXXO Pay and OXXO cash'
+[n36_e164 (177,301,469x24) pt=[7]] 'EBANX (OXXO Pay), dLocal (OXXO, 7-Eleven, Paynet), Bamboo, PagSeguro, Unlimit'
+[n36_e166 (644,301,41x24) pt=[7]] '6'
+[n36_e168 (35,320,145x24) pt=[7]] 'CoDi, Mercado Pago wallet'
+[n36_e170 (177,320,469x24) pt=[7]] 'dLocal (CoDi), Mercado Pago, EBANX (Checkout Pro), Unlimit'
+[n36_e172 (644,320,41x24) pt=[7]] '4'
+[n36_e173 (29,362,662x23) pt=[6.5]] "Yuno integrations directory (docs.y.uno Payment Type list and y.uno/integrations), pulled 14 Oct 2026. CONFIRMED. Logos are the providers' own marks."
+[n36_e174 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n36_e175 (633,376,58x23) pt=[6.5]] '36'
+[NOTES] 'The Mexico connections live through Yuno. Cards, SPEI and OXXO are on both merchant-of-record routes; CoDi and the convenience-store cash networks are on dLocal. The 36 providers behind them are what Phase 2 local acquiring can draw on.'
+
+===== POS 83 · objectId=n37r1_g3f77215683c_2_2968 =====
+[IMG n37r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n37r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · COLOMBIA'
+[n37r1_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Colombia is an account-to-account market: PSE carries 64% of e-commerce transactions and Bre-B is the next rail; cards a third.'
+[IMG n37r1_e001 (118,25,14x9)] https://flagcdn.com/w80/co.png
+[n37r1_e003 (39,95,156x34) pt=[16]] '63.9%'
+[n37r1_e004 (39,115,156x23) pt=[6.5]] 'PSE, SHARE OF ONLINE PURCHASES'
+[n37r1_e005 (39,124,156x23) pt=[6.5]] 'CCCE via Valora Analitik, Q2 2025'
+[n37r1_e007 (201,95,156x34) pt=[16]] '36M+'
+[n37r1_e008 (201,115,156x23) pt=[6.5]] 'BRE-B USERS IN ITS FIRST YEAR'
+[n37r1_e009 (201,124,156x23) pt=[6.5]] 'Banco de la República, 6 Oct 2026; 1.7B tx'
+[n37r1_e011 (363,95,156x34) pt=[16]] '28M'
+[n37r1_e012 (363,115,156x23) pt=[6.5]] 'NEQUI ACTIVE USERS'
+[n37r1_e013 (363,124,156x23) pt=[6.5]] 'Nequi via press, May 2026'
+[n37r1_e015 (525,95,156x34) pt=[16]] '31'
+[n37r1_e016 (525,115,156x23) pt=[6.5]] 'PROVIDERS LIVE THROUGH YUNO'
+[n37r1_e017 (525,124,156x23) pt=[6.5]] 'Yuno integrations directory, Oct 2026'
+[n37r1_e020 (39,153,28x26) pt=[7]] '1'
+[n37r1_e021 (58,155,185x23) pt=[6.5]] 'LOCAL METHODS'
+[n37r1_e022 (39,169,204x30) pt=[13]] '+1.0% of TPV'
+[n37r1_e023 (39,184,204x24) pt=[8]] '$9K incremental GMV a month, one fifth'
+[n37r1_e024 (39,194,204x32) pt=[6.5]] 'PSE and Nequi through dLocal and EBANX, Bre-B as fast follow through dLocal; cards through both MoRs.'
+[n37r1_e027 (258,153,28x26) pt=[7]] '2'
+[n37r1_e028 (277,155,185x23) pt=[6.5]] 'APPROVAL AND RETRIES'
+[n37r1_e029 (258,169,204x30) pt=[13]] '+3.0 pts approval'
+[n37r1_e030 (258,184,204x24) pt=[8]] '$36K incremental GMV a month, one fifth'
+[n37r1_e031 (258,194,204x32) pt=[6.5]] 'Account-to-account methods approve or fail instantly; retry card declines across both MoRs.'
+[n37r1_e034 (477,153,28x26) pt=[7]] '3'
+[n37r1_e035 (496,155,185x23) pt=[6.5]] 'COST AND LEVERAGE'
+[n37r1_e036 (477,169,204x30) pt=[13]] '50 bps of TPV'
+[n37r1_e037 (477,184,204x24) pt=[8]] '$4.5K saved a month, one fifth of base'
+[n37r1_e038 (477,194,204x32) pt=[6.5]] 'PSE and cards sit on both MoRs: route by method and by cost; 19% IVA handled by the MoR (TO VALIDATE).'
+[n37r1_e039 (29,222,390x23) pt=[6.5]] 'PAYMENT METHOD PRIORITY'
+[n37r1_e041 (35,236,51x24) pt=[6.5]] 'PRIORITY'
+[n37r1_e043 (84,236,85x24) pt=[6.5]] 'METHOD'
+[n37r1_e045 (166,236,81x24) pt=[6.5]] 'SCALE'
+[n37r1_e047 (245,236,85x24) pt=[6.5]] 'ROLE FOR THE SHOP'
+[n37r1_e049 (328,236,85x24) pt=[6.5]] 'CARRIED BY'
+[n37r1_e052 (35,252,51x31) pt=[6.5]] 'Must-have'
+[n37r1_e054 (84,252,85x31) pt=[6.5]] 'PSE'
+[n37r1_e056 (166,252,81x31) pt=[6.5]] '63.9% of transactions'
+[n37r1_e058 (245,252,85x31) pt=[6.5]] 'Primary rail, instant'
+[n37r1_e060 (328,252,85x31) pt=[6.5]] 'dLocal, EBANX, PayU, Kushki, Wompi'
+[n37r1_e062 (35,275,51x31) pt=[6.5]] 'Must-have'
+[n37r1_e064 (84,275,85x31) pt=[6.5]] 'Nequi, Bre-B'
+[n37r1_e066 (166,275,81x31) pt=[6.5]] '28M and 36M users'
+[n37r1_e068 (245,275,85x31) pt=[6.5]] 'Wallet and QR reach'
+[n37r1_e070 (328,275,85x31) pt=[6.5]] 'dLocal, Wompi, Nuvei; Bre-B: dLocal'
+[n37r1_e072 (35,298,51x31) pt=[6.5]] 'Must-have'
+[n37r1_e074 (84,298,85x31) pt=[6.5]] 'Cards'
+[n37r1_e076 (166,298,81x31) pt=[6.5]] '33% of transactions, 43% of value'
+[n37r1_e078 (245,298,85x31) pt=[6.5]] 'Local presentation'
+[n37r1_e080 (328,298,85x31) pt=[6.5]] 'EBANX, dLocal, Credibanco, Redeban'
+[n37r1_e082 (427,230,255x23) pt=[6.5]] 'WHAT IT MEANS FOR THE SHOP'
+[n37r1_e083 (427,242,255x25) pt=[7.5]] 'EBANX rails in Colombia to confirm'
+[n37r1_e084 (427,252,255x25) pt=[7]] 'PSE Avanza and Bre-B in EBANX docs; confirm on your account.'
+[n37r1_e085 (427,267,255x25) pt=[7.5]] 'Significant economic presence rules'
+[n37r1_e086 (427,277,255x25) pt=[7]] 'Local pricing can trigger PES; a MoR keeps Carry1st offshore.'
+[n37r1_e087 (427,291,255x25) pt=[7.5]] 'The prototype already runs Colombia'
+[n37r1_e088 (427,302,255x25) pt=[7]] 'PSE, Nequi and Daviplata run in the sandbox demo today.'
+[n37r1_e090 (39,341,58x23) pt=[7]] 'SO WHAT'
+[n37r1_e091 (85,340,596x25) pt=[7.5]] 'Colombia runs on PSE today and Bre-B tomorrow; both reach the Shop through dLocal on day one, with cards on either MoR.'
+[n37r1_e092 (29,354,662x32) pt=[6.5]] "CCCE via Valora Analitik 24 Aug 2025; Banco de la República 6 Oct 2026; Nequi via press May 2026; Estatuto Tributario art. 20-3 and Decreto 2039/2023; EBANX Colombia overview; Yuno directory Oct 2026. TO VALIDATE: EBANX PSE Avanza and Bre-B on Carry1st's account; credit-card penetration 2025."
+[n37r1_e093 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n37r1_e094 (633,376,58x23) pt=[6.5]] '37'
+[NOTES] "Colombia moved from cards to account-to-account in three years: PSE is now two thirds of e-commerce transactions and Bre-B, the central bank's instant rail, passed 36 million users in its first year. Both are instant, which fits the Shop. Cards are a third of transactions and sit on both merchant-of-record routes."
+
+===== POS 84 · objectId=n38_g3f77215683c_2_2968 =====
+[IMG n38_g3f77215683c_2_2969 (645,24,39x11)] 
+[n38_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · COLOMBIA · CONNECTIONS THROUGH YUNO'
+[n38_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Colombia: 31 providers live through Yuno; PSE is carried by 12 of them and Bre-B by dLocal today.'
+[n38_e001 (29,88,662x23) pt=[6.5]] 'MERCHANT-OF-RECORD ROUTES FOR THE LAUNCH'
+[IMG n38_e003 (42,110,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n38_e004 (50,101,45x27) pt=[7]] 'EBANX'
+[IMG n38_e006 (96,110,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n38_e007 (104,101,44x27) pt=[7]] 'dLocal'
+[n38_e008 (29,123,662x23) pt=[6.5]] 'LIVE THROUGH YUNO (31)'
+[IMG n38_e010 (42,146,10x10)] https://y.uno/vendor/webflow/68df5402959815c021accf84_682cfb9301e9624ceb349be4_Isotype-Col
+[n38_e011 (50,137,50x27) pt=[7]] 'AstroPay'
+[IMG n38_e013 (102,146,10x10)] https://y.uno/vendor/webflow/68df5405ad017602ddca5ed7_6789cc60285f3ca4ce18c891_678316e4328
+[n38_e014 (110,137,47x27) pt=[7]] 'Bamboo'
+[IMG n38_e016 (159,146,13x10)] https://y.uno/vendor/webflow/68df5403c3ff446a8c70dce3_67ad64a07c605912a4a48ce5_bbva.jpeg
+[n38_e017 (170,137,40x27) pt=[7]] 'BBVA'
+[IMG n38_e019 (212,146,10x10)] https://y.uno/vendor/webflow/68df540d3f1ccc8ea5cec9b9_6789cc673897af7356fa6f2b_678316e6121
+[n38_e020 (220,137,57x27) pt=[7]] 'Credibanco'
+[IMG n38_e022 (278,146,10x10)] https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d
+[n38_e023 (286,137,61x27) pt=[7]] 'Cybersource'
+[IMG n38_e025 (349,146,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n38_e026 (357,137,44x27) pt=[7]] 'dLocal'
+[IMG n38_e028 (402,146,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n38_e029 (410,137,45x27) pt=[7]] 'EBANX'
+[IMG n38_e031 (457,146,10x10)] https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%
+[n38_e032 (464,137,57x27) pt=[7]] 'Ecommpay'
+[IMG n38_e034 (523,146,29x10)] https://y.uno/vendor/webflow/68df541394b9393f1b0c13ae_67b40586ac75800b7abb780e_Screenshot%
+[n38_e035 (549,137,66x27) pt=[7]] 'emerchantpay'
+[IMG n38_e037 (617,146,10x10)] https://y.uno/vendor/webflow/68df5413eb5ea2a0b9b47afb_6789cc68e91ef1bff17d8f6f_678316e7bd2
+[n38_e038 (624,137,45x27) pt=[7]] 'ePayco'
+[IMG n38_e040 (42,165,10x10)] https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93ee
+[n38_e041 (50,156,42x27) pt=[7]] 'Fiserv'
+[IMG n38_e043 (94,165,10x10)] https://y.uno/vendor/webflow/68df5418ef478f2e318a27ed_6789cc6c7d7b8ce401d2e636_678316e9010
+[n38_e044 (102,156,49x27) pt=[7]] 'Inswitch'
+[IMG n38_e046 (153,165,10x10)] https://y.uno/vendor/webflow/68df541b23a777518d9acb43_6789cc6d4ecd423306d4b749_678316f0632
+[n38_e047 (160,156,44x27) pt=[7]] 'Kushki'
+[IMG n38_e049 (206,165,10x10)] https://y.uno/vendor/webflow/68df5420f51801928225ad25_6789cc6e048e7844116a106a_678316eb13e
+[n38_e050 (214,156,66x27) pt=[7]] 'Mercado Pago'
+[IMG n38_e052 (282,165,10x10)] https://y.uno/vendor/webflow/68df5421ccbc0017fda4f2ac_6789cc6eade0cb0f7e569f5a_678316eb1d4
+[n38_e053 (290,156,40x27) pt=[7]] 'Movii'
+[IMG n38_e055 (332,165,10x10)] https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc
+[n38_e056 (339,156,40x27) pt=[7]] 'Nuvei'
+[IMG n38_e058 (381,165,10x10)] https://y.uno/vendor/webflow/68df54299fc053d07569a529_6789cc70b5901ecb61f75dc9_678316ec320
+[n38_e059 (389,156,49x27) pt=[7]] 'Openpay'
+[IMG n38_e061 (440,165,10x10)] https://y.uno/vendor/webflow/68df542a9df0c977b7542cce_6789cc71244a2a4112ec8356_678316edfc6
+[n38_e062 (448,156,56x27) pt=[7]] 'PagSeguro'
+[IMG n38_e064 (505,165,10x10)] https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128
+[n38_e065 (513,156,52x27) pt=[7]] 'Pagsmile'
+[IMG n38_e067 (567,165,10x10)] https://y.uno/vendor/webflow/68df542c7fcfdc890681778c_6789cc72e8ffdd3fd5a6e64d_678316ee3ee
+[n38_e068 (574,156,57x27) pt=[7]] 'Panda blue'
+[IMG n38_e070 (42,184,9x10)] https://y.uno/vendor/webflow/68df542f3228702a3a84d067_67b4155fd3554621648bcefc_Screenshot%
+[n38_e071 (49,176,62x27) pt=[7]] 'PayRetailers'
+[IMG n38_e073 (113,184,10x10)] https://y.uno/vendor/webflow/68df5430c1e4a994ba426912_6789cc7328ddfc7fd85520dd_678316eef87
+[n38_e074 (121,176,39x27) pt=[7]] 'PayU'
+[IMG n38_e076 (161,184,10x10)] https://y.uno/vendor/webflow/68df5433ec3d8a0ae53ae074_6789cc74285f3ca4ce18d208_678316ef010
+[n38_e077 (169,176,53x27) pt=[7]] 'Payvalida'
+[IMG n38_e079 (224,184,10x10)] https://y.uno/vendor/webflow/68df54353282fc23c5606260_6789cc74b5901ecb61f76012_678316efca1
+[n38_e080 (232,176,58x27) pt=[7]] 'PlacetoPay'
+[IMG n38_e082 (292,184,10x10)] https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png
+[n38_e083 (300,176,42x27) pt=[7]] 'Rapyd'
+[IMG n38_e085 (343,184,10x10)] https://y.uno/vendor/webflow/68df543b1e1e56415a9a285b_6789cc76285f3ca4ce18d4c1_678316f1765
+[n38_e086 (351,176,49x27) pt=[7]] 'Redeban'
+[IMG n38_e088 (402,184,10x10)] https://y.uno/vendor/webflow/68df5440b4393881bb14cf15_6789cc7876a470d6b6deb6c8_678316f1328
+[n38_e089 (410,176,54x27) pt=[7]] 'SafetyPay'
+[IMG n38_e091 (466,184,10x10)] https://y.uno/vendor/webflow/68df544ceb8af581358600cd_6789cc7a3897af7356fa79ad_678316f37e9
+[n38_e092 (473,176,45x27) pt=[7]] 'Unlimit'
+[IMG n38_e094 (520,184,10x10)] https://y.uno/vendor/webflow/68df54533fac1ce361554649_6789cc7c72061cb2483dc06f_678316f43ee
+[n38_e095 (528,176,43x27) pt=[7]] 'Wompi'
+[IMG n38_e097 (573,184,10x10)] https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0
+[n38_e098 (581,176,51x27) pt=[7]] 'Worldline'
+[IMG n38_e100 (634,184,10x10)] https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121
+[n38_e101 (642,176,51x27) pt=[7]] 'Worldpay'
+[n38_e102 (29,198,662x23) pt=[6.5]] 'WALLETS AND PAYMENT METHODS (SELECTED)'
+[IMG n38_e104 (42,220,10x10)] https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0
+[n38_e105 (50,211,54x27) pt=[7]] 'Apple Pay'
+[IMG n38_e107 (106,220,10x10)] https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e9765
+[n38_e108 (114,211,58x27) pt=[7]] 'Google Pay'
+[IMG n38_e110 (173,220,10x10)] https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png
+[n38_e111 (181,211,45x27) pt=[7]] 'PayPal'
+[IMG n38_e113 (227,220,10x10)] https://y.uno/vendor/webflow/68df5424bacc8a568f90e66b_6789cc6ee446800618f8340c_678316eb7d6
+[n38_e114 (235,211,40x27) pt=[7]] 'Nequi'
+[IMG n38_e116 (277,220,10x10)] https://y.uno/vendor/webflow/68df540f63d2428a2265d35c_6789cc67dd92eede61f72561_678316e7010
+[n38_e117 (285,211,52x27) pt=[7]] 'Daviplata'
+[IMG n38_e119 (338,220,19x10)] https://y.uno/vendor/webflow/68df5413affdc2f96adbb98e_67b404903a852cbd41ed5bad_Screenshot%
+[n38_e120 (356,211,42x27) pt=[7]] 'Efecty'
+[IMG n38_e122 (400,220,10x10)] https://y.uno/vendor/webflow/68df53ff8fadd3f28366bbf0_6789cc5a4c05d3c3d4724cc1_678316e1410
+[n38_e123 (407,211,38x27) pt=[7]] 'ADDI'
+[IMG n38_e125 (447,220,10x10)] https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e99
+[n38_e126 (455,211,36x27) pt=[7]] 'Visa'
+[IMG n38_e128 (493,220,10x10)] https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a9
+[n38_e129 (501,211,57x27) pt=[7]] 'Mastercard'
+[n38_e131 (35,240,145x26) pt=[6.5]] 'LOCAL METHOD'
+[n38_e133 (177,240,469x26) pt=[6.5]] 'CARRIED THROUGH YUNO BY'
+[n38_e135 (644,240,41x26) pt=[6.5]] '#'
+[n38_e138 (35,262,145x24) pt=[7]] 'PSE'
+[n38_e140 (177,262,469x24) pt=[7]] 'Bamboo, dLocal, EBANX, Ecommpay, Kushki, Mercado Pago, Nuvei, PagSeguro, PayU, SafetyPay, Unlimit, Wompi'
+[n38_e142 (644,262,41x24) pt=[7]] '12'
+[n38_e144 (35,281,145x24) pt=[7]] 'Nequi, Daviplata'
+[n38_e146 (177,281,469x24) pt=[7]] 'Nequi: Bamboo, dLocal, Nuvei, SafetyPay, Wompi · Daviplata: Nuvei, Wompi'
+[n38_e148 (644,281,41x24) pt=[7]] '5'
+[n38_e150 (35,301,145x24) pt=[7]] 'Bre-B'
+[n38_e152 (177,301,469x24) pt=[7]] 'dLocal'
+[n38_e154 (644,301,41x24) pt=[7]] '1'
+[n38_e156 (35,320,145x24) pt=[7]] 'Efecty (cash)'
+[n38_e158 (177,320,469x24) pt=[7]] 'dLocal, Nuvei, PagSeguro, Unlimit'
+[n38_e160 (644,320,41x24) pt=[7]] '4'
+[n38_e161 (29,362,662x23) pt=[6.5]] "Yuno integrations directory (docs.y.uno Payment Type list and y.uno/integrations), pulled 14 Oct 2026. CONFIRMED. Logos are the providers' own marks."
+[n38_e162 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n38_e163 (633,376,58x23) pt=[6.5]] '38'
+[NOTES] 'The Colombia connections live through Yuno. PSE is carried by twelve providers including both merchant-of-record routes; Nequi by five; Bre-B by dLocal today, with more providers expected as the rail matures.'
+
+===== POS 85 · objectId=n39r2_g3f77215683c_2_2968 =====
+[IMG n39r2_g3f77215683c_2_2969 (645,24,39x11)] 
+[n39r2_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · BOLIVIA'
+[n39r2_g3f77215683c_2_3006 (36,41,603x44) pt=[18]] 'Bolivia is the clearest case for a second provider: EBANX direct means cash vouchers only; dLocal adds cards and QR on day one.'
+[IMG n39r2_e001 (110,25,14x9)] https://flagcdn.com/w80/bo.png
+[n39r2_e003 (39,95,156x34) pt=[16]] '36%'
+[n39r2_e004 (39,115,156x23) pt=[6.5]] 'QR SHARE OF PAYMENTS, 2025'
+[n39r2_e005 (39,124,156x23) pt=[6.5]] 'BCB via Los Tiempos, Jun 2026; 15% in 2020'
+[n39r2_e007 (201,95,156x34) pt=[16]] '64%'
+[n39r2_e008 (201,115,156x23) pt=[6.5]] 'CASH SHARE OF PAYMENTS, 2025'
+[n39r2_e009 (201,124,156x23) pt=[6.5]] 'BCB via Los Tiempos, Jun 2026; 85% in 2020'
+[n39r2_e011 (363,95,156x34) pt=[16]] '$500'
+[n39r2_e012 (363,115,156x23) pt=[6.5]] 'FOREIGN DEBIT-CARD LIMIT A MONTH'
+[n39r2_e013 (363,124,156x23) pt=[6.5]] 'Asoban via Los Tiempos, 9 Apr 2026'
+[n39r2_e015 (525,95,156x34) pt=[16]] '6'
+[n39r2_e016 (525,115,156x23) pt=[6.5]] 'PROVIDERS LIVE THROUGH YUNO'
+[n39r2_e017 (525,124,156x23) pt=[6.5]] 'Yuno integrations directory, Oct 2026'
+[n39r2_e020 (39,153,28x26) pt=[7]] '1'
+[n39r2_e021 (58,155,185x23) pt=[6.5]] 'LOCAL METHODS'
+[n39r2_e022 (39,169,204x30) pt=[13]] '+1.0% of TPV'
+[n39r2_e023 (39,184,204x24) pt=[8]] '$9K incremental GMV a month, one fifth'
+[n39r2_e024 (39,194,204x32) pt=[6.5]] 'Cards and interoperable QR through dLocal; cash vouchers (Pago al Paso, Multipago) as the fallback.'
+[n39r2_e027 (258,153,28x26) pt=[7]] '2'
+[n39r2_e028 (277,155,185x23) pt=[6.5]] 'APPROVAL AND RETRIES'
+[n39r2_e029 (258,169,204x30) pt=[13]] '+3.0 pts approval'
+[n39r2_e030 (258,184,204x24) pt=[8]] '$36K incremental GMV a month, one fifth'
+[n39r2_e031 (258,194,204x32) pt=[6.5]] 'Local processing avoids the foreign-card limit and FX; QR confirms instantly.'
+[n39r2_e034 (477,153,28x26) pt=[7]] '3'
+[n39r2_e035 (496,155,185x23) pt=[6.5]] 'COST AND LEVERAGE'
+[n39r2_e036 (477,169,204x30) pt=[13]] '50 bps of TPV'
+[n39r2_e037 (477,184,204x24) pt=[8]] '$4.5K saved a month, one fifth of base'
+[n39r2_e038 (477,194,204x32) pt=[6.5]] 'A single-route market today: leverage comes from the pooled five-country volume, not from Bolivia alone.'
+[n39r2_e039 (29,222,390x23) pt=[6.5]] 'PAYMENT METHOD PRIORITY'
+[n39r2_e041 (35,236,51x24) pt=[6.5]] 'PRIORITY'
+[n39r2_e043 (84,236,85x24) pt=[6.5]] 'METHOD'
+[n39r2_e045 (166,236,81x24) pt=[6.5]] 'SCALE'
+[n39r2_e047 (245,236,85x24) pt=[6.5]] 'ROLE FOR THE SHOP'
+[n39r2_e049 (328,236,85x24) pt=[6.5]] 'CARRIED BY'
+[n39r2_e052 (35,252,51x31) pt=[6.5]] 'Must-have'
+[n39r2_e054 (84,252,85x31) pt=[6.5]] 'QR (BCB interoperable)'
+[n39r2_e056 (166,252,81x31) pt=[6.5]] '36% of payments, rising'
+[n39r2_e058 (245,252,85x31) pt=[6.5]] 'Instant; confirm on dLocal'
+[n39r2_e060 (328,252,85x31) pt=[6.5]] 'dLocal'
+[n39r2_e062 (35,275,51x31) pt=[6.5]] 'Must-have'
+[n39r2_e064 (84,275,85x31) pt=[6.5]] 'Visa, Mastercard (local)'
+[n39r2_e066 (166,275,81x31) pt=[6.5]] 'Foreign cards capped at $500'
+[n39r2_e068 (245,275,85x31) pt=[6.5]] 'Domestic charge, no FX'
+[n39r2_e070 (328,275,85x31) pt=[6.5]] 'dLocal (EBANX: open)'
+[n39r2_e072 (35,298,51x31) pt=[6.5]] 'Optional'
+[n39r2_e074 (84,298,85x31) pt=[6.5]] 'Cash: Pago al Paso, Multipago, PagosNet'
+[n39r2_e076 (166,298,81x31) pt=[6.5]] '64% of payments'
+[n39r2_e078 (245,298,85x31) pt=[6.5]] 'Slow confirmation; second wave'
+[n39r2_e080 (328,298,85x31) pt=[6.5]] 'dLocal, EBANX'
+[n39r2_e082 (427,230,255x23) pt=[6.5]] 'WHAT IT MEANS FOR THE SHOP'
+[n39r2_e083 (427,242,255x25) pt=[7.5]] 'The second provider is the whole point'
+[n39r2_e084 (427,252,255x25) pt=[7]] 'EBANX direct: PagosNet cash and bank only (EBANX docs).'
+[n39r2_e085 (427,267,255x25) pt=[7.5]] 'Cards need local processing'
+[n39r2_e086 (427,277,255x25) pt=[7]] 'Foreign debit capped at $500 a month, FX at the daily reference rate.'
+[n39r2_e087 (427,291,255x25) pt=[7.5]] 'Phase the market'
+[n39r2_e088 (427,302,255x25) pt=[7]] 'Smallest of the five; launch after Brazil, through dLocal only.'
+[n39r2_e090 (39,341,58x23) pt=[7]] 'SO WHAT'
+[n39r2_e091 (85,340,596x25) pt=[7.5]] "Route Bolivia to dLocal from day one; EBANX's Bolivia card coverage stays an open item, not a dependency."
+[n39r2_e092 (29,354,662x32) pt=[6.5]] 'BCB via Los Tiempos 14 Jun 2026 and 9 Apr 2026; EBANX Bolivia overview and status.ebanx.com; docs.dlocal.com/docs/bolivia; Yuno directory Oct 2026. TO VALIDATE: QR enabled on the dLocal connection; EBANX Bolivia cards (owner Yuno integrations).'
+[n39r2_e093 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n39r2_e094 (633,376,58x23) pt=[6.5]] '39'
+[NOTES] "Bolivia is small and it is the clearest argument for a second provider: EBANX's own documentation lists only PagosNet cash and bank for Bolivia, while dLocal processes Visa and Mastercard locally and carries the interoperable QR that is now a third of all payments in the country. The Yuno directory lists EBANX under Bolivia cards, which conflicts with EBANX's docs, so we treat it as open and route Bolivia to dLocal."
+
+===== POS 86 · objectId=n40_g3f77215683c_2_2968 =====
+[IMG n40_g3f77215683c_2_2969 (645,24,39x11)] 
+[n40_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · BOLIVIA · CONNECTIONS THROUGH YUNO'
+[n40_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Bolivia: dLocal is the route for cards, QR and cash through Yuno; EBANX in Bolivia stays an open item.'
+[n40_e001 (29,88,662x23) pt=[6.5]] 'MERCHANT-OF-RECORD ROUTES FOR THE LAUNCH'
+[IMG n40_e003 (42,110,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n40_e004 (50,101,44x27) pt=[7]] 'dLocal'
+[n40_e005 (29,123,662x23) pt=[6.5]] 'OPEN: EBANX IN BOLIVIA'
+[IMG n40_e007 (42,146,10x10)] https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328
+[n40_e008 (50,137,45x27) pt=[7]] 'EBANX'
+[n40_e009 (29,159,662x23) pt=[6.5]] 'LIVE THROUGH YUNO (6)'
+[IMG n40_e011 (42,181,10x10)] https://y.uno/vendor/webflow/68df5402959815c021accf84_682cfb9301e9624ceb349be4_Isotype-Col
+[n40_e012 (50,172,50x27) pt=[7]] 'AstroPay'
+[IMG n40_e014 (102,181,10x10)] https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d
+[n40_e015 (110,172,61x27) pt=[7]] 'Cybersource'
+[IMG n40_e017 (172,181,10x10)] https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b
+[n40_e018 (180,172,44x27) pt=[7]] 'dLocal'
+[IMG n40_e020 (226,181,10x10)] https://y.uno/vendor/webflow/68df5418ef478f2e318a27ed_6789cc6c7d7b8ce401d2e636_678316e9010
+[n40_e021 (234,172,49x27) pt=[7]] 'Inswitch'
+[IMG n40_e023 (285,181,10x10)] https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc
+[n40_e024 (292,172,40x27) pt=[7]] 'Nuvei'
+[IMG n40_e026 (334,181,10x10)] https://y.uno/vendor/webflow/68df542c7fcfdc890681778c_6789cc72e8ffdd3fd5a6e64d_678316ee3ee
+[n40_e027 (342,172,57x27) pt=[7]] 'Panda blue'
+[n40_e028 (29,194,662x23) pt=[6.5]] 'WALLETS AND PAYMENT METHODS (SELECTED)'
+[IMG n40_e030 (42,216,10x10)] https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png
+[n40_e031 (50,208,45x27) pt=[7]] 'PayPal'
+[IMG n40_e033 (96,216,10x10)] https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e99
+[n40_e034 (104,208,36x27) pt=[7]] 'Visa'
+[IMG n40_e036 (142,216,10x10)] https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a9
+[n40_e037 (150,208,57x27) pt=[7]] 'Mastercard'
+[IMG n40_e039 (208,216,10x10)] https://y.uno/vendor/webflow/68df542a07991d602e8e8e19_6789cc71a84ee7a87181bcc1_678316ed3ee
+[n40_e040 (216,208,64x27) pt=[7]] 'Pago al Paso'
+[n40_e042 (35,237,158x26) pt=[6.5]] 'METHOD'
+[n40_e044 (190,237,365x26) pt=[6.5]] 'CARRIED THROUGH YUNO BY'
+[n40_e046 (553,237,132x26) pt=[6.5]] 'STATUS'
+[n40_e049 (35,259,158x29) pt=[7]] 'Cards (Visa, Mastercard)'
+[n40_e051 (190,259,365x29) pt=[7]] 'dLocal; also AstroPay, Cybersource, Inswitch, Nuvei'
+[n40_e054 (553,261,68x24) pt=[7]] 'CONFIRMED'
+[n40_e056 (35,283,158x40) pt=[7]] 'QR (BCB interoperable)'
+[n40_e058 (190,283,365x40) pt=[7]] 'dLocal per its docs; to confirm on the Yuno dLocal connection'
+[n40_e061 (553,285,46x24) pt=[7]] 'OPEN'
+[n40_e062 (553,299,132x30) pt=[7]] 'owner German'
+[n40_e064 (35,319,158x40) pt=[7]] 'EBANX in Bolivia'
+[n40_e066 (190,319,365x40) pt=[7]] 'Directory lists EBANX under cards; EBANX docs show PagosNet cash and bank only'
+[n40_e069 (553,321,46x24) pt=[7]] 'OPEN'
+[n40_e070 (553,334,132x30) pt=[7]] 'owner Yuno integrations'
+[n40_e071 (29,354,662x32) pt=[6.5]] 'Yuno integrations directory, pulled 14 Oct 2026 (CONFIRMED); EBANX Bolivia overview and status.ebanx.com, docs.dlocal.com/docs/bolivia, read 15 Oct 2026 (PUBLIC DOCS). OPEN items carry an owner.'
+[n40_e072 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n40_e073 (633,376,58x23) pt=[6.5]] '40'
+[NOTES] "Bolivia has six providers live through Yuno and dLocal is the merchant-of-record route for the launch: cards, QR and cash. EBANX appears under Bolivia cards in the Yuno directory but EBANX's own documentation shows cash only, so we carry it as an open item and do not depend on it."
+
+===== POS 87 · objectId=n41_g3f77215683c_2_2968 =====
+[IMG n41_g3f77215683c_2_2969 (645,24,39x11)] 
+[n41_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · RISKS AND ASSUMPTIONS'
+[n41_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Every modeled number in this deck rests on nine assumptions, each with an owner and a replacement path.'
+[n41_e002 (598,19,46x24) pt=[7]] 'OPEN'
+[n41_e004 (544,19,64x24) pt=[7]] 'ESTIMATE'
+[n41_e006 (35,93,132x26) pt=[6.5]] 'ASSUMPTION'
+[n41_e008 (164,93,158x26) pt=[6.5]] 'VALUE IN THE DECK'
+[n41_e010 (320,93,197x26) pt=[6.5]] 'BASIS AND REPLACEMENT'
+[n41_e012 (514,93,87x26) pt=[6.5]] 'OWNER'
+[n41_e014 (599,93,87x26) pt=[6.5]] 'STATUS'
+[n41_e017 (35,115,132x29) pt=[7]] 'Run-rate volume and ticket'
+[n41_e019 (164,115,158x29) pt=[7]] '450K tx, $4.5M a month; $10 / $5 ticket'
+[n41_e021 (320,115,197x29) pt=[7]] 'Carry1st, Cordel, Oct 2026; not aligned internally'
+[n41_e023 (514,115,87x29) pt=[7]] 'Cordel'
+[n41_e026 (599,117,64x24) pt=[7]] 'ESTIMATE'
+[n41_e028 (35,139,132x29) pt=[7]] 'Launch volume and ramp'
+[n41_e030 (164,139,158x29) pt=[7]] '50K a month, linear to 450K by Dec 2027'
+[n41_e032 (320,139,197x29) pt=[7]] 'Yuno placeholder until volumes by country arrive'
+[n41_e034 (514,139,87x29) pt=[7]] 'Cordel'
+[n41_e037 (599,142,46x24) pt=[7]] 'OPEN'
+[n41_e039 (35,164,132x29) pt=[7]] 'EBANX direct all-in cost'
+[n41_e041 (164,164,158x29) pt=[7]] '4.5% of sales (range 3 to 6%)'
+[n41_e043 (320,164,197x29) pt=[7]] "Yuno estimate; EBANX's quote to Carry1st replaces it"
+[n41_e045 (514,164,87x29) pt=[7]] 'Cordel'
+[n41_e048 (599,166,64x24) pt=[7]] 'ESTIMATE'
+[n41_e050 (35,188,132x29) pt=[7]] 'Carry1st take rate on GMV'
+[n41_e052 (164,188,158x29) pt=[7]] '15%'
+[n41_e054 (320,188,197x29) pt=[7]] 'Yuno estimate; to validate with Shop margins'
+[n41_e056 (514,188,87x29) pt=[7]] 'Cordel'
+[n41_e059 (599,190,64x24) pt=[7]] 'ESTIMATE'
+[n41_e061 (35,212,132x29) pt=[7]] 'Approval uplift, two providers'
+[n41_e063 (164,212,158x29) pt=[7]] '+1.5 / +3.0 / +5.0 points'
+[n41_e065 (320,212,197x29) pt=[7]] 'Yuno estimate under the published 7% ceiling'
+[n41_e067 (514,212,87x29) pt=[7]] 'Cordel, Yuno'
+[n41_e070 (599,215,64x24) pt=[7]] 'ESTIMATE'
+[n41_e072 (35,237,132x29) pt=[7]] 'MDR reduction, routing leverage'
+[n41_e074 (164,237,158x29) pt=[7]] '25 / 50 / 75 bps of sales'
+[n41_e076 (320,237,197x29) pt=[7]] 'Yuno estimate; provider rates through Yuno pending'
+[n41_e078 (514,237,87x29) pt=[7]] 'Yuno'
+[n41_e081 (599,239,46x24) pt=[7]] 'OPEN'
+[n41_e083 (35,261,132x29) pt=[7]] 'Provider onboarding time'
+[n41_e085 (164,261,158x29) pt=[7]] 'Weeks; no published SLA'
+[n41_e087 (320,261,197x29) pt=[7]] 'Provider docs; run both in parallel from week 1'
+[n41_e089 (514,261,87x29) pt=[7]] 'Cordel, Yuno lead'
+[n41_e092 (599,264,74x24) pt=[7]] 'PUBLIC DOCS'
+[n41_e094 (35,286,132x29) pt=[7]] 'EBANX cards in Bolivia'
+[n41_e096 (164,286,158x29) pt=[7]] 'Not assumed; Bolivia on dLocal'
+[n41_e098 (320,286,197x29) pt=[7]] 'Yuno directory says cards; EBANX docs say cash only'
+[n41_e100 (514,286,87x29) pt=[7]] 'Yuno integrations'
+[n41_e103 (599,288,46x24) pt=[7]] 'OPEN'
+[n41_e105 (35,310,132x29) pt=[7]] 'Tax treatment under each MoR'
+[n41_e107 (164,310,158x29) pt=[7]] 'Domestic charge; taxes in the MoR rate'
+[n41_e109 (320,310,197x29) pt=[7]] 'Not documented publicly; requested in writing'
+[n41_e111 (514,310,87x29) pt=[7]] 'German'
+[n41_e114 (599,312,46x24) pt=[7]] 'OPEN'
+[n41_e115 (29,334,662x23) pt=[6.5]] "Every yellow input in the model swaps for Carry1st's data as it arrives; the deck is rebuilt from the same model."
+[n41_e116 (29,362,662x23) pt=[6.5]] 'model/bc_numbers.md, Section D (Yuno, 15 Oct 2026); research files of the same date.'
+[n41_e117 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n41_e118 (633,376,58x23) pt=[6.5]] '41'
+[NOTES] 'This is the list of everything we assumed, with the value we used, where it came from, who owns the replacement and its status. Nothing on it is hidden inside a chart. The two that move the business case most are the EBANX all-in rate and your take rate; both are yours to replace, and the model is built so that swapping them re-cuts every slide in section 05.'
+
+===== POS 88 · objectId=n42r1_g3f77215683c_2_2968 =====
+[IMG n42r1_g3f77215683c_2_2969 (645,24,39x11)] 
+[n42r1_g3f77215683c_2_3005 (36,25,322x10) pt=[7]] 'APPENDIX · SOURCES'
+[n42r1_g3f77215683c_2_3006 (36,41,603x44) pt=[20]] 'Every page behind this deck, read on 15 October 2026 unless dated otherwise.'
+[n42r1_e001 (29,88,106x25) pt=[7.5]] 'YUNO AND THE MODEL'
+[n42r1_e003 (125,87,68x24) pt=[7]] 'CONFIRMED'
+[n42r1_e005 (29,110,30x23) pt=[6.5]] '01'
+[n42r1_e006 (47,110,308x46) pt=[7.5]] 'docs.y.uno · Connections; Routing and routing resource shape; Monitors; Automation (retries); Tokens, network tokens, PCI compliance, stored credentials; Provider installments; Insights; Reconciliations; AI capabilities; SDK overview'
+[n42r1_e007 (29,146,30x23) pt=[6.5]] '02'
+[n42r1_e008 (47,145,308x56) pt=[7.5]] "y.uno · Homepage (up to 7% uplift, 30% recovered revenue, 1,000+ methods, PSPs and fraud solutions); About (16 offices, 190+ countries, 180+ currencies, certifications); success stories: inDrive (10 Sep 2024), Rappi (21 Nov 2024), McDonald's (18 Feb 2025)"
+[n42r1_e009 (29,191,30x23) pt=[6.5]] '03'
+[n42r1_e010 (47,191,308x36) pt=[7.5]] 'Yuno integrations directory · docs.y.uno Payment Type list and y.uno/integrations, pulled 14 Oct 2026 (providers and methods per country, logos)'
+[n42r1_e011 (29,217,30x23) pt=[6.5]] '04'
+[n42r1_e012 (47,216,308x36) pt=[7.5]] 'Carry1st Shop prototype on the Yuno SDK · Yuno sandbox, 15 Oct 2026 (four LatAm markets)'
+[n42r1_e013 (29,242,30x23) pt=[6.5]] '05'
+[n42r1_e014 (47,242,308x36) pt=[7.5]] 'Yuno business-case model · bc_model.xlsx, 15 Oct 2026: four volumes, three scenarios, small-ticket sensitivity; every assumption on the risks slide'
+[n42r1_e015 (365,88,167x25) pt=[7.5]] 'CARRY1ST, PROVIDERS AND MARKETS'
+[n42r1_e017 (521,87,74x24) pt=[7]] 'PUBLIC DOCS'
+[n42r1_e019 (365,110,30x23) pt=[6.5]] '01'
+[n42r1_e020 (383,110,308x43) pt=[7]] 'Carry1st · carry1st.com, shop.carry1st.com and sitemap, press releases 2021 to 2026, App Store listing, BITKRAFT job post 28 Jul 2026, TechCabal, TechCrunch, GlobeNewswire 29 Jan 2024'
+[n42r1_e021 (365,143,30x23) pt=[6.5]] '02'
+[n42r1_e022 (383,143,308x43) pt=[7]] 'EBANX · docs.ebanx.com (api-operability, pay-in guide, payment methods, country overviews BR, MX, CO, AR, BO, DEUNA page, FAQ); ebanx.com; business.ebanx.com press room; status.ebanx.com'
+[n42r1_e023 (365,176,30x23) pt=[6.5]] '03'
+[n42r1_e024 (383,176,308x34) pt=[7]] 'dLocal · dlocal.com; docs.dlocal.com (Brazil, Argentina, Mexico, Colombia, Bolivia, go-live); dMoRe release 26 Aug 2026'
+[n42r1_e025 (365,200,30x23) pt=[6.5]] '04'
+[n42r1_e026 (383,199,308x34) pt=[7]] 'Brazil · Reuters 10 Feb 2026 (PCMI); Banco Central via press 2026; Newzoo, Allcorrect 2025; Decree 12.499/2025 and ARQ Finance 29 Sep 2026 (IOF); VATCalc, Fonoa 2026'
+[n42r1_e027 (365,223,30x23) pt=[6.5]] '05'
+[n42r1_e028 (383,223,308x34) pt=[7]] 'Argentina · PCMI 2024; Global Payments Report 2026 via Forbes Argentina; Descubre 14 Jul 2026; Fortuna 2026 and ARCA RG 5617/2024; Ley 27.430; Newzoo 2024 via iProUP'
+[n42r1_e029 (365,247,30x23) pt=[6.5]] '06'
+[n42r1_e030 (383,247,308x34) pt=[7]] 'Mexico · AMVO Estudio 2024 and 2026; Endeavor México and Santander 2025 via Forbes México; Nuvei, Unlimit, Antom pages; Kintsugi 2026 (IVA); BizLatinHub, Commenda'
+[n42r1_e031 (365,271,30x23) pt=[6.5]] '07'
+[n42r1_e032 (383,270,308x34) pt=[7]] 'Colombia · CCCE via Valora Analitik 24 Aug 2025; Banco de la República 6 Oct 2026; Nequi via press May 2026; Estatuto Tributario art. 20-3, Decreto 2039/2023'
+[n42r1_e033 (365,294,30x23) pt=[6.5]] '08'
+[n42r1_e034 (383,294,308x34) pt=[7]] 'Bolivia · BCB via Los Tiempos 14 Jun 2026 and 9 Apr 2026 (Asoban); Ministerial Resolution 245/2026 (exchange rate); AGN 2026 tax card'
+[n42r1_e035 (365,318,30x23) pt=[6.5]] '09'
+[n42r1_e036 (383,318,308x34) pt=[7]] 'Approval ranges · Worldline, Rapyd, Nuvei, Antom, EBANX 11 Sep 2017 (AMI); vendor-reported, 2017 to 2026'
+[n42r1_e037 (29,350,662x23) pt=[6.5]] 'Third-party lines are our reading of public pages on the dates shown; confirm each with the provider before relying on it. Carry1st call figures are estimates until confirmed.'
+[n42r1_e038 (29,376,414x23) pt=[6.5]] 'For: Carry1st'
+[n42r1_e039 (633,376,58x23) pt=[6.5]] '42'
+[NOTES] 'Appendix. The pages behind every claim, so your team can open them. Yuno claims come from our public documentation, y.uno and the model in this deck; provider and market lines come from their own public pages or dated press, and we would rather you confirm them with each provider than take our reading.'
