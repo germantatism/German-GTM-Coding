@@ -48,7 +48,7 @@ def pending(id_, kicker, headline):
             'source': 'Placeholder, 15 Oct 2026.', 'notes': 'Placeholder slide; the final version replaces it before the review.'}
 
 # ---------------------------------------------------------------- per-country appendix content
-LEVER_MONEY = {'local': '$9K incremental GMV a month at run rate, one fifth of base', 'appr': '$36K incremental GMV a month at run rate, one fifth of base', 'mdr': '$4.5K saved a month at run rate, one fifth of base'}
+LEVER_MONEY = {'local': '$9K incremental GMV a month, one fifth', 'appr': '$36K incremental GMV a month, one fifth', 'mdr': '$4.5K saved a month, one fifth of base'}
 
 def levers(t1, t2, t3):
     return [{'num': '1', 'label': 'LOCAL METHODS', 'value': '+1.0% of TPV', 'money': LEVER_MONEY['local'], 'tactic': t1},
@@ -90,7 +90,22 @@ S.append({'id': 'agenda', 'type': 'agenda', 'items': [{'num': '01', 'title': 'Ex
 S.append(divider('d01', '01', 'Executive summary', 'The decision, the recommended path, and what it returns at launch and at run rate',
                  'One slide: the decision in front of Carry1st, what Yuno proposes, and what it is worth at launch volume and at the end-2027 run rate.'))
 
-S.append(pending('exec', 'EXECUTIVE SUMMARY', 'The recommended path and what it returns at launch and at run rate.'))
+S.append({'id': 'exec', 'type': 'exec_summary', 'kicker': 'EXECUTIVE SUMMARY', 'tag': ['ESTIMATE'],
+          'headline': 'Through Yuno, EBANX and dLocal cost less than EBANX direct at run rate, add a second rail, and pay back in month two.',
+          'left_header': 'WHERE CARRY1ST STANDS',
+          'left_items': [
+            {'title': 'The decision', 'body': 'Launch the Carry1st Shop in Brazil, Argentina, Mexico, Colombia and Bolivia by Black Friday, 27 November 2026, through a merchant of record: EBANX direct, or EBANX and dLocal through Yuno.'},
+            {'title': 'The economics to beat', 'body': 'A $10 average and $5 median ticket, so every fixed fee per transaction is punished; $4 to 5M a month in LatAm by end 2027 (Carry1st, Cordel, Oct 2026, estimate).'},
+            {'title': 'What EBANX direct gives', 'body': 'One agreement and one integration for all five countries once EBANX enables each; but one approval rate, one price, Bolivia cash only, no MODO.'},
+            {'title': 'What is still open', 'body': 'Volumes by country, EBANX\'s proposed rates, Carry1st\'s take rate and the tax treatment under each MoR. Every modeled number in this deck carries its label and an owner.'}],
+          'right_header': 'WHAT YUNO PROPOSES',
+          'right_cards': [
+            {'title': 'One integration, two merchants of record', 'body': 'EBANX primary, dLocal second, both as connections on the Yuno SDK: retries and failover between them, local methods per market, Phase 2 local acquirers without touching checkout.'},
+            {'title': 'A fee that scales with sales, not with transactions', 'body': '$7,500 a month including the first $500K of monthly sales, then 30 / 25 / 20 bps on sales above it. At launch: $7,500 and nothing per transaction; at $4.5M: $18,750 a month, 0.42% of sales.'},
+            {'title': 'A case that pays back in month two', 'body': 'Base case at run rate: $44.2 per $1,000 of sales through Yuno against $45.0 direct, +$29.1K a month net ($349K a year, 2.6x Yuno\'s cost); break-even about 65,000 transactions a month.'}],
+          'bottom': 'Decide by 23 Oct, onboard EBANX and dLocal in parallel, launch Brazil by 27 Nov; the conservative case is cost-neutral at run rate.',
+          'source': 'Yuno business-case model, 15 Oct 2026, base scenario: EBANX direct all-in 4.5% of sales and a 15% take rate are estimates, replaced by EBANX\'s quote and Shop margins. Volumes: Carry1st, Cordel, Oct 2026, estimate.',
+          'notes': 'The whole deck on one slide. Left, where you stand: five markets, six weeks, a $5 median ticket and a run-rate estimate that is yours. Right, what we propose: one integration carrying EBANX and dLocal, a fee that is a share of what you sell with the first $500K of monthly sales inside the platform fee, and a business case that, in the base scenario, makes the Yuno route the cheaper cost line at run rate before counting approval or coverage gains. Two numbers to keep: break-even at about 65,000 transactions a month, and the conservative case cost-neutral at run rate. Everything modeled is labelled and will be re-cut on your volumes and EBANX\'s quote.'})
 
 S.append(divider('d02', '02', 'Where Carry1st stands and what Black Friday needs', 'What we heard, the Shop and the plan, and what the five markets demand',
                  'Section 02 restates what we heard from Cordel and Fatih, sizes the plan as you described it, and shows what the five markets require of a checkout.'))
@@ -235,19 +250,81 @@ S.append({'id': 'trusted', 'type': 'template_keep', 'template_index': 25, 'templ
 S.append(divider('d05', '05', 'Business case', 'EBANX direct against EBANX and dLocal through Yuno, at four volumes and three scenarios',
                  'Three slides: both options at four volumes, three scenarios with the levers, and why the shape of the fee matters at a $5 median ticket.'))
 
-S.append(pending('bc-tiers', 'BUSINESS CASE · BOTH OPTIONS AT FOUR VOLUMES', 'EBANX direct against EBANX and dLocal through Yuno, cost per $1,000 of sales at four volumes.'))
-S.append(pending('bc-scenarios', 'BUSINESS CASE · THREE SCENARIOS AND THE LEVERS', 'Processing savings first, engineering avoided second, approval third: the three scenarios at launch and at run rate.'))
-S.append(pending('bc-ticket', 'BUSINESS CASE · SMALL-TICKET SENSITIVITY', 'A fixed fee doubles as a share of sales when the ticket halves; a share of what Carry1st sells does not.'))
+S.append({'id': 'bc-tiers', 'type': 'bar_chart', 'kicker': 'BUSINESS CASE · BOTH OPTIONS AT FOUR VOLUMES', 'tag': ['ESTIMATE'],
+          'headline': 'The Yuno route costs $44.2 per $1,000 of sales at run rate against $45.0 direct, and covers its fee from about 65K transactions.',
+          'unit': '$K',
+          'series': [{'name': 'Option A · EBANX direct', 'color': '#B0B7F2'}, {'name': 'Option B · EBANX and dLocal through Yuno, provider plus fee', 'color': '#344FE0'}, {'name': 'Net benefit, base case', 'color': '#1F8A5B'}],
+          'groups': [{'label': '50K tx a month', 'sub': '$0.5M of sales', 'values': [22.5, 27.5, 0], 'labels': ['$22.5K', '$27.5K', '($1.1K)']},
+                     {'label': '100K', 'sub': '$1.0M', 'values': [45.0, 49.0, 2.6], 'labels': ['$45.0K', '$49.0K', '+$2.6K']},
+                     {'label': '200K', 'sub': '$2.0M', 'values': [90.0, 92.0, 9.9], 'labels': ['$90.0K', '$92.0K', '+$9.9K']},
+                     {'label': '450K', 'sub': '$4.5M', 'values': [202.5, 198.8, 29.1], 'labels': ['$202.5K', '$198.8K', '+$29.1K']}],
+          'note': 'Monthly, USD thousands. Option A: all-in 4.5% of sales (Yuno estimate, range 3 to 6%, replaced by EBANX\'s quote). Option B: provider cost after a 50 bps routing saving, plus Yuno\'s fee. Net benefit: base case, contribution view at a 15% take rate (estimate), after Yuno\'s fee.',
+          'side': {'header': 'COST PER $1,000 OF SALES', 'items': [
+              {'title': 'EBANX direct', 'body': '$45.0 at every volume: one rate, one rail.'},
+              {'title': 'Through Yuno, provider plus fee', 'body': '$55.0 at 50K · $49.0 at 100K · $46.0 at 200K · $44.2 at 450K. Yuno alone: $7.5K, $9.0K, $12.0K and $18.8K a month.'},
+              {'title': 'Through Yuno, after all levers', 'body': '$47.3 · $42.5 · $40.1 · $38.5 per $1,000 of sales (base case).'},
+              {'title': 'Break-even', 'body': 'About 65,000 transactions a month ($0.65M of sales) in the base case; about 29,000 optimistic; about 269,000 conservative.'}]},
+          'bar': 'At launch (50K a month) the base case is ($1.1K) a month: Carry1st pays about $1.1K net for failover, a second provider in play and local-method coverage until volume passes about 65,000 transactions a month.',
+          'source': 'Yuno business-case model (bc_model.xlsx), 15 Oct 2026. Volumes: Carry1st, Cordel, Oct 2026, estimate. Every assumption is on the risks slide in the appendix. ESTIMATE.',
+          'notes': 'Both options at the four volumes you gave us. The light bars are EBANX direct at an all-in 4.5% of sales, which is our estimate until EBANX\'s quote replaces it. The blue bars are EBANX and dLocal through Yuno: the provider cost after a 50 basis-point routing saving, plus Yuno\'s fee. At launch the Yuno route costs about $5K more a month and the net, after the approval and coverage levers, is about $1.1K negative. From about 65,000 transactions a month the net turns positive, and at run rate the Yuno route is the cheaper cost line before any revenue lever is counted.'})
+S.append({'id': 'bc-scenarios', 'type': 'table', 'kicker': 'BUSINESS CASE · THREE SCENARIOS AND THE LEVERS', 'tag': ['ESTIMATE', 'CONFIRMED'],
+          'headline': 'Processing savings carry the case, then engineering avoided, then approval: the base case returns $29.1K a month net at run rate.',
+          'columns': ['Monthly, contribution view', 'Conservative', 'Base', 'Optimistic'], 'col_widths': [0.37, 0.21, 0.21, 0.21], 'header_style': 'dark', 'font_size': 7.5, 'bold_first_col': True, 'zebra': True,
+          'rows': [
+            ['1 · Processing saving at 450K (second MoR, volume routed to the cheaper rail)', '$11.3K', '$22.5K', '$33.8K'],
+            ['2 · Engineering avoided (direct integrations not built, 24-month equivalent)', '$0.5K', '$1.5K', '$3.2K'],
+            ['3 · Approval, retries and failover at 450K (contribution on recovered sales)', '$9.3K ($90K of sales)', '$19.1K ($180K of sales)', '$32.5K ($300K of sales)'],
+            ['4 · Local-method coverage at 450K (contribution on incremental sales)', '$2.3K ($22.5K)', '$4.8K ($45K)', '$9.8K ($90K)'],
+            ['Gross benefit at 450K against Yuno\'s $18.8K', '$23.3K · 1.2x', '$47.8K · 2.6x', '$79.2K · 4.2x'],
+            [{'text': 'Net at 450K, a month · a year', 'bold': True}, {'text': '+$4.6K · +$55K', 'bold': True}, {'text': '+$29.1K · +$349K', 'bold': True}, {'text': '+$60.5K · +$725K', 'bold': True}],
+            ['Net at launch (50K), a month', '($4.6K)', '($1.1K)', '+$3.7K'],
+            ['Break-even · cumulative payback on the ramp', 'about 269K tx · after Dec 2027', 'about 65K tx · Jan 2027', 'about 29K tx · Dec 2026'],
+            ['Break-even by gross margin (41.7 bps all-in at run rate)', '+4.2% more approved sales at a 10% margin', '+2.8% at a 15% margin', '+2.1% at 20%; published Yuno uplift up to 7%']],
+          'note': 'Levers: MDR 25 / 50 / 75 bps; 1 / 2 / 3 integrations avoided; +1.5 / +3.0 / +5.0 pts approval on a 75% baseline; +0.5 / 1.0 / 2.0% local-method sales; 15% take rate (estimate). Yuno model, 15 Oct 2026.',
+          'source': 'Yuno business-case model, 15 Oct 2026 (ESTIMATE, assumptions on the risks slide). Published Yuno uplift: y.uno, read 15 Oct 2026 (CONFIRMED).',
+          'notes': 'Resale margins are thin, so we did not build this case on conversion. The first lever is a processing saving: with two merchants of record live on the same checkout, volume moves to the cheaper rail by rule, and a saving on processing is worth one hundred cents on the dollar. The second is the engineering you do not build. Approval and coverage come third and are counted at your margin, not at face value. The last row is the test a CFO applies: at 41.7 basis points all-in, the fee pays for itself with about 4% more approved sales at a 10% margin, half that at 20%, against a published uplift of up to 7%.'})
+S.append({'id': 'bc-ticket', 'type': 'table', 'kicker': 'BUSINESS CASE · SMALL-TICKET SENSITIVITY', 'tag': ['ESTIMATE'],
+          'headline': 'A fixed fee doubles as a share of sales when the ticket halves; a share of sales does not: usage on a $5 purchase is one to two cents.',
+          'columns': ['Yuno all-in at 450,000 transactions a month', '$5 median ticket', '$10 average ticket', '$15 ticket'], 'col_widths': [0.37, 0.21, 0.21, 0.21], 'header_style': 'dark', 'font_size': 7.5, 'bold_first_col': True, 'zebra': True,
+          'rows': [
+            ['Sales a month', '$2.25M', '$4.5M', '$6.75M'],
+            ['Yuno a month (platform fee plus usage)', '$12.8K', '$18.8K', '$24.0K'],
+            [{'text': 'Yuno as a share of sales', 'bold': True}, {'text': '0.57%', 'bold': True}, {'text': '0.42%', 'bold': True}, {'text': '0.36%', 'bold': True}],
+            ['Yuno per successful transaction, all-in', '$0.028', '$0.042', '$0.053'],
+            ['Marginal usage per transaction by band (30 / 25 / 20 bps)', '$0.015 / $0.0125 / $0.010', '$0.030 / $0.025 / $0.020', '$0.045 / $0.0375 / $0.030'],
+            ['A fixed $0.05 per transaction, as a share of sales', '1.00%', '0.50%', '0.33%'],
+            ['A fixed $0.10 per transaction, as a share of sales', '2.00%', '1.00%', '0.67%'],
+            ['At launch, 50,000 transactions a month: Yuno all-in', '$7.5K · 3.00% of sales', '$7.5K · 1.50%', '$8.3K · 1.10%']],
+          'note': 'The platform fee is the one fixed element, so at launch and a $5 ticket it is 3.00% of sales; the structure pays off as volume ramps. Yuno business-case model, 15 Oct 2026; tickets: Carry1st, Cordel, Oct 2026 (estimate).',
+          'source': 'Yuno business-case model (bc_model.xlsx), Pricing and Sensitivity sheets, 15 Oct 2026. Ticket profile: Carry1st, Cordel, Oct 2026, estimate.',
+          'notes': 'Cordel asked us to make pricing work for small purchases, so here is the same 450,000 transactions at three tickets. A fixed fee is blind to the ticket: five cents is 0.5% of a $10 sale and 1% of a $5 sale, ten cents twice that. Yuno\'s usage is a share of what you sell, so on a $5 purchase the marginal cost is one to one and a half cents, and all-in at run rate 0.57% of sales. We are upfront about the one fixed element: at launch volume and a $5 ticket the platform fee alone is 3% of sales, and the structure earns its keep as volume ramps rather than in month one.'})
 
 S.append(divider('d06', '06', 'Proposal', 'A platform fee and a share of what Carry1st sells, never a fee per transaction',
                  'The commercial proposal on one slide, followed by what Yuno puts in before signing and what the platform fee already covers.'))
 
-S.append(pending('proposal', 'PROPOSAL', 'One platform fee with the first block of monthly sales inside it, then a share of what Carry1st sells that falls as volume grows.'))
+S.append({'id': 'proposal', 'type': 'pricing_cards', 'kicker': 'PROPOSAL',
+          'headline': 'One platform fee covering the first $500K of monthly sales, then a share of sales that falls as Carry1st grows.',
+          'subline': '$7,500 a month covering the first $500K of monthly sales, plus a share of the sales above it: $18,750 a month at 450,000 transactions, 0.42% of sales.',
+          'left': {'title': 'TRANSACTION FEE', 'sub': 'A share of the month\'s sales above the included block, pooled across the five markets',
+                   'rows': [{'label': 'INCLUDED', 'range': 'First $500K of monthly sales', 'rate': '$0'}, {'label': 'TRANCHE 1', 'range': '$500K to $3M', 'rate': '0.30%'}, {'label': 'TRANCHE 2', 'range': '$3M to $6M', 'rate': '0.25%'}, {'label': 'TRANCHE 3', 'range': 'Above $6M', 'rate': '0.20%'}],
+                   'note': 'No setup fee, no fixed amount per transaction. Only successful transactions count: declines are not billed. Each tranche applies only to the volume inside it.'},
+          'middle': {'title': 'PLATFORM FEE', 'value': '$7,500', 'unit': '/ month', 'sub': '$90,000 a year. Covers the first $500K of monthly sales. This is what covers the stack.',
+                     'includes_label': 'WHAT IT INCLUDES',
+                     'includes': [['Orchestration and rules engine', 'Included'], ['Smart routing and retries', 'Included'], ['Monitors and auto-failover', 'Included'], ['Methods, PSPs, fraud solutions', '1,000+'], ['Checkout, web and mobile SDKs', 'Included'], ['PCI token vault', 'Included'], ['Dashboard and insights', 'Included'], ['Dedicated KAM and TAM', 'Included']],
+                     'addons': {'title': 'ADD-ONS', 'sub': 'Billed on usage, quoted separately, not in the totals on this slide.', 'rows': [['Network tokens', 'On usage'], ['3DS authentication', 'On usage']]},
+                     'foot': 'Every integration maintained by Yuno. Adding dLocal, a local acquirer or a new local method later is a routing change, not a new project.'},
+          'right': {'title': 'WHAT IT MEANS FOR CARRY1ST', 'sub': 'At a $10 average ticket, across the five markets', 'columns': ['Line', '50K', '200K', '450K'], 'col_widths': [2.0, 1, 1, 1], 'font_size': 7.5,
+                    'rows': [['Sales a month', '$0.5M', '$2.0M', '$4.5M'], ['Platform fee', '$7,500', '$7,500', '$7,500'], ['Usage · tranche 1', '$0', '$4,500', '$7,500'], ['Usage · tranche 2', '$0', '$0', '$3,750'],
+                             {'bold': True, 'cells': ['Total a month', '$7,500', '$12,000', '$18,750']}, ['Total a year', '$90,000', '$144,000', '$225,000'], ['Share of sales', '1.50%', '0.60%', '0.42%'], ['Per successful transaction', '$0.150', '$0.060', '$0.042']],
+                    'callout': 'At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 0.42% of sales, falling as volume grows.',
+                    'paragraph': 'Usage on a $5 purchase: $0.015 in tranche 1, $0.010 in tranche 3. A fixed fee stays the same whatever the ticket.'},
+          'source': 'Platform fee billed annually. Usage billed monthly in arrears on successful transactions, net 30. Rates locked, tranches reviewed annually as volume grows. All figures in USD.',
+          'notes': 'The proposal in one slide. A flat platform fee of $7,500 a month that already covers the first $500K of monthly sales, and above that a share of what you sell: 30 basis points to $3M, 25 to $6M, 20 above, each band on the volume inside it, only on approved payments, never a fee per transaction. At launch you pay the platform fee and nothing else; at the $4.5M run rate the all-in cost is $18,750 a month, 0.42% of sales, about four cents on a $10 purchase. Orchestration, smart routing, Monitors, the vault, the dashboard and a dedicated team are inside the platform fee; network tokens and 3DS are billed on usage and quoted separately.'})
 
 S.append({'id': 'onus', 'type': 'two_column', 'kicker': 'INCLUDED, AT NO EXTRA COST',
           'headline': 'What Yuno puts in before signing, and what the platform fee already covers.',
           'cols': [{'header': 'BEFORE YOU SIGN', 'items': [
-                      {'title': 'Shop prototype on the Yuno SDK', 'body': 'Already running in the sandbox for four markets; extended to Bolivia and to the Shop\'s real SKUs before signature, so Fatih\'s team tests the real thing.'},
+                      {'title': 'Shop prototype on the Yuno SDK', 'body': 'Already running in the sandbox for four markets; extended to Bolivia and the Shop\'s real SKUs before signature.'},
                       {'title': 'Localization support', 'body': 'Spanish and Portuguese checkout copy and market conventions, with Yuno\'s teams in São Paulo, Mexico City, Bogotá and Buenos Aires.'},
                       {'title': 'Local provider negotiation', 'body': 'Yuno brings EBANX and dLocal to the table on Carry1st\'s behalf, including how the EBANX arrangement sits alongside Yuno.'}]},
                    {'header': 'INSIDE THE PLATFORM FEE', 'items': [
@@ -263,7 +340,7 @@ S.append(divider('d07', '07', 'Launch plan to Black Friday and Phase 2', 'Six we
                  'The week-by-week plan to Black Friday, and the comparison Fatih asked for: merchant of record, non-resident account, local entity.'))
 
 S.append({'id': 'launch', 'type': 'table', 'kicker': 'LAUNCH PLAN · SIX WEEKS TO 27 NOVEMBER 2026', 'tag': ['PUBLIC DOCS', 'ESTIMATE'],
-          'headline': 'Six weeks to 27 November: provider contracts and KYC are the critical path; the Yuno connection, integration and QA are measured in days.',
+          'headline': 'Six weeks to 27 November: provider contracts and KYC are the critical path; the Yuno work is measured in days.',
           'columns': ['Week', 'Carry1st, EBANX and dLocal (critical path)', 'Yuno', 'Exit'], 'col_widths': [0.15, 0.37, 0.30, 0.18], 'header_style': 'dark', 'font_size': 7, 'bold_first_col': True, 'zebra': True,
           'rows': [
             ['Week 1 · 19 to 23 Oct', 'Scope confirmed (Brazil first or all five) and owners named; decision on the proposal; EBANX and dLocal agreements requested; volumes by country and EBANX\'s rates shared', 'Implementation lead named; sandbox keys and prototype access to Fatih\'s team; routing design agreed (EBANX primary, dLocal fallback)', 'Decision taken, agreements in motion'],
@@ -277,7 +354,7 @@ S.append({'id': 'launch', 'type': 'table', 'kicker': 'LAUNCH PLAN · SIX WEEKS T
           'notes': 'The honest version of the timeline. The critical path is not Yuno: it is the two provider onboardings, which neither EBANX nor dLocal puts a day count on, so we run them in parallel from week 1 and we start the Yuno build from the prototype while they progress. Once credentials exist, a connection takes a day or two and QA a few days. Brazil goes live softly in week 5 so that Black Friday is an opening, not a first test.'})
 
 S.append({'id': 'phase2', 'type': 'table', 'kicker': 'PHASE 2 · MERCHANT OF RECORD AGAINST LOCAL PRESENCE', 'tag': ['PUBLIC DOCS', 'OPEN'],
-          'headline': 'A merchant of record launches in weeks and local presence in months; through Yuno the move happens without rebuilding checkout.',
+          'headline': 'A merchant of record launches in weeks, local presence in months; through Yuno the move happens without a rebuild.',
           'columns': ['Dimension', 'Merchant of record (launch)', 'Non-resident account', 'Local entity and local acquirer', 'Yuno\'s role'], 'col_widths': [0.13, 0.25, 0.20, 0.25, 0.17], 'header_style': 'dark', 'font_size': 7, 'bold_first_col': True, 'zebra': True,
           'rows': [
             ['Time to launch', 'Weeks: agreement, KYC, sandbox, review (dLocal cites up to 8 weeks for market entry)', 'Weeks to months: local bank account and tax registration without a company; rules vary by country', 'Months: Brazil 6 to 12 weeks for registration plus the bank account; Mexico 4 to 12 weeks; Argentina SAS 7 to 15 business days plus bank; Colombia, Bolivia not published', 'Checkout unchanged across all three; the acquirer is a new connection'],
@@ -310,7 +387,7 @@ S.append(divider('dA', 'A', 'Appendix: LatAm deep dive and sources', 'Country le
 # ---- Brazil
 S.append(country('cty-br', 'br', 'Brazil',
     'Brazil is the launch market: Pix and domestic cards carry more than 80% of online purchases and confirm in seconds.',
-    [{'value': '42%', 'label': 'Pix share of online purchases, 2025', 'caption': 'Reuters on PCMI data, Feb 2026; cards 41%'},
+    [{'value': '42%', 'label': 'Pix, share of online purchases', 'caption': 'Reuters on PCMI, Feb 2026; cards 41%'},
      {'value': '$2.5B', 'label': 'Games revenue, 100M+ players', 'caption': 'Newzoo and Allcorrect via press, 2025'},
      {'value': '93%', 'label': 'Of adults used Pix in Apr 2026', 'caption': 'Banco Central via press, May 2026'},
      {'value': '46', 'label': 'Providers live through Yuno', 'caption': 'Yuno integrations directory, Oct 2026'}],
@@ -338,10 +415,10 @@ S.append(connections('cty-br-connections', 'Brazil',
 # ---- Argentina
 S.append(country('cty-ar', 'ar', 'Argentina',
     'Argentina is a wallet market where the 30% perception makes local-currency pricing the whole game; MODO arrives via dLocal.',
-    [{'value': '46%', 'label': 'Digital wallets, share of e-commerce value', 'caption': 'PCMI 2024; above 55% in GPR 2026'},
+    [{'value': '46%', 'label': 'Wallets, share of e-commerce', 'caption': 'PCMI 2024 by value; above 55% in GPR 2026'},
      {'value': '22%', 'label': 'Domestic-only credit cards', 'caption': 'PCMI 2024: cannot be charged cross-border'},
-     {'value': '17M+', 'label': 'MODO users; 100M+ QR payments a month', 'caption': 'Play Digital 2024; Descubre, Jul 2026'},
-     {'value': '30%', 'label': 'Perception on foreign-currency cards', 'caption': 'ARCA RG 5617/2024, in force Sep 2026'}],
+     {'value': '17M+', 'label': 'MODO users; 100M+ QR a month', 'caption': 'Play Digital 2024; Descubre, Jul 2026'},
+     {'value': '30%', 'label': 'Perception on foreign cards', 'caption': 'ARCA RG 5617/2024, in force Sep 2026'}],
     levers('Mercado Pago wallet and cards via EBANX and dLocal at launch; MODO and interoperable QR via dLocal as fast follow.',
            'A local-currency charge through the MoR avoids the 30% perception; retry declines across EBANX and dLocal.',
            'Both MoRs carry cards and Mercado Pago; move share by rule. Cash (Rapipago, Pago Fácil) stays optional.'),
@@ -369,8 +446,8 @@ S.append(connections('cty-ar-connections', 'Argentina',
 S.append(country('cty-mx', 'mx', 'Mexico',
     'Mexico is a debit market: three in four online buyers pay with debit cards foreign acquirers decline; the MoR must look domestic.',
     [{'value': '74%', 'label': 'Online buyers using debit cards', 'caption': 'AMVO Estudio de Venta Online 2024'},
-     {'value': '77M', 'label': 'Digital buyers in 2025; e-commerce +19%', 'caption': 'AMVO Estudio 2026, Mar 2026'},
-     {'value': '76M+', 'label': 'Active players; $2.3B games revenue', 'caption': 'Endeavor México and Santander, 2025'},
+     {'value': '77M', 'label': 'Digital buyers in 2025', 'caption': 'AMVO 2026; retail e-commerce +19% in 2025'},
+     {'value': '76M+', 'label': 'Players; $2.3B games revenue', 'caption': 'Endeavor México and Santander, 2025'},
      {'value': '36', 'label': 'Providers live through Yuno', 'caption': 'Yuno integrations directory, Oct 2026'}],
     levers('Debit and credit cards incl. Carnet, SPEI and OXXO Pay through EBANX and dLocal; CoDi and 7-Eleven through dLocal later.',
            'Local presentation lifts debit approval (Nuvei cites 20 to 30 points); retry EBANX declines on dLocal.',
@@ -397,8 +474,8 @@ S.append(connections('cty-mx-connections', 'Mexico',
 # ---- Colombia
 S.append(country('cty-co', 'co', 'Colombia',
     'Colombia is an account-to-account market: PSE carries 64% of e-commerce transactions and Bre-B is the next rail; cards a third.',
-    [{'value': '63.9%', 'label': 'PSE share of e-commerce transactions', 'caption': 'CCCE via Valora Analitik, Q2 2025'},
-     {'value': '36M+', 'label': 'Bre-B users; 1.7B transactions in year one', 'caption': 'Banco de la República, 6 Oct 2026'},
+    [{'value': '63.9%', 'label': 'PSE, share of online purchases', 'caption': 'CCCE via Valora Analitik, Q2 2025'},
+     {'value': '36M+', 'label': 'Bre-B users in its first year', 'caption': 'Banco de la República, 6 Oct 2026; 1.7B tx'},
      {'value': '28M', 'label': 'Nequi active users', 'caption': 'Nequi via press, May 2026'},
      {'value': '31', 'label': 'Providers live through Yuno', 'caption': 'Yuno integrations directory, Oct 2026'}],
     levers('PSE and Nequi through dLocal and EBANX, Bre-B as fast follow through dLocal; cards through both MoRs.',
@@ -437,7 +514,7 @@ S.append(country('cty-bo', 'bo', 'Bolivia',
     [['Must-have', 'QR (BCB interoperable)', '36% of payments, rising', 'Instant; confirm on dLocal', 'dLocal'],
      ['Must-have', 'Visa, Mastercard (local)', 'Foreign cards capped at $500', 'Domestic charge, no FX', 'dLocal (EBANX: open)'],
      ['Optional', 'Cash: Pago al Paso, Multipago, PagosNet', '64% of payments', 'Slow confirmation; second wave', 'dLocal, EBANX']],
-    [{'title': 'The second provider is the whole point', 'body': 'EBANX direct: PagosNet cash and bank only (EBANX docs and status page).'},
+    [{'title': 'The second provider is the whole point', 'body': 'EBANX direct: PagosNet cash and bank only (EBANX docs).'},
      {'title': 'Cards need local processing', 'body': 'Foreign debit capped at $500 a month, FX at the daily reference rate.'},
      {'title': 'Phase the market', 'body': 'Smallest of the five; launch after Brazil, through dLocal only.'}],
     'Route Bolivia to dLocal from day one; EBANX\'s Bolivia card coverage stays an open item, not a dependency.',
@@ -491,7 +568,7 @@ S.append({'id': 'sources', 'type': 'sources', 'kicker': 'APPENDIX · SOURCES',
                       'Colombia · CCCE via Valora Analitik 24 Aug 2025; Banco de la República 6 Oct 2026; Nequi via press May 2026; Estatuto Tributario art. 20-3, Decreto 2039/2023',
                       'Bolivia · BCB via Los Tiempos 14 Jun 2026 and 9 Apr 2026 (Asoban); Ministerial Resolution 245/2026 (exchange rate); AGN 2026 tax card',
                       'Approval ranges · Worldline, Rapyd, Nuvei, Antom, EBANX 11 Sep 2017 (AMI); vendor-reported, 2017 to 2026']}],
-          'footnote': 'Third-party lines are our reading of public pages on the dates shown; providers change their documentation. Please confirm each one with the provider before you rely on it. Carry1st figures from the discovery call are estimates until confirmed in writing.',
+          'footnote': 'Third-party lines are our reading of public pages on the dates shown; confirm each with the provider before relying on it. Carry1st call figures are estimates until confirmed.',
           'notes': 'Appendix. The pages behind every claim, so your team can open them. Yuno claims come from our public documentation, y.uno and the model in this deck; provider and market lines come from their own public pages or dated press, and we would rather you confirm them with each provider than take our reading.'})
 
 SPEC = {'presentation_id': PID, 'merchant': 'Carry1st', 'footer': 'For: Carry1st', 'slides': S}

@@ -636,7 +636,7 @@ class SB:
         hfill = DARK if header_style == 'dark' else BRAND
         cells = []; row_h = []
         for i, r in enumerate(allrows):
-            is_h = bool(header) and i == 0; fs = (font_size - 0.5) if is_h else font_size
+            is_h = bool(header) and i == 0; fs = max(font_size - 0.5, 6.5) if is_h else font_size   # header never under the 6.5 pt floor (15 Oct 2026)
             need = 0; crow = []
             for j in range(ncols):
                 c = r[j] if j < len(r) else ''
@@ -672,7 +672,7 @@ class SB:
                     self.text(cx + pad_x, cy + pad_y, cw - 2 * pad_x, row_h[i] - 2 * pad_y, txt, size=tfs, bold=base_bold, color=color, align=d.get('align', 'START'), ls=108, valign='MIDDLE')
             if is_h: self.hairline(x, cy + row_h[i] - 0.4, sum(col_widths), alpha=0.24)
             cy += row_h[i]
-        self.min_font = min(self.min_font, font_size - 0.5)
+        self.min_font = min(self.min_font, max(font_size - 0.5, 6.5))
         return self.table_h
 
     def table_native(self, x, y, col_widths, rows, header=None, header_style='dark', font_size=8, bold_first_col=True, zebra=True,
@@ -882,10 +882,10 @@ def r_exec_summary(deck, s, tag, n, footer):
     cards = s.get('right_cards', [])[:3]
     avail = y_end - 12 - cy; per = avail / max(len(cards), 1)
     for c in cards:
-        th = text_h(c.get('title', ''), 8, pw - 40, 105, True); bh = text_h(c.get('body', ''), 8, pw - 40, 115)
-        if th + bh + 6 > per + 1: raise FitError(f"slide {s.get('id')}: exec_summary right card '{c.get('title')}' overflows")
+        th = text_h(c.get('title', ''), 8, pw - 40, 105, True); cb = text_h(c.get('body', ''), 8, pw - 40, 115)   # cb, not bh: bh is the band height (fixed 15 Oct 2026)
+        if th + cb + 6 > per + 1: raise FitError(f"slide {s.get('id')}: exec_summary right card '{c.get('title')}' overflows")
         sb.text(px + 20, cy, pw - 40, th, c.get('title', '').upper(), size=8, bold=True, color=WHITE, ls=105)
-        sb.text(px + 20, cy + th + 2, pw - 40, bh, c.get('body', ''), size=8, color=WHITE, ls=115)
+        sb.text(px + 20, cy + th + 2, pw - 40, cb, c.get('body', ''), size=8, color=WHITE, ls=115)
         cy += per
     # left column
     lx, lw = X0, px - 20 - X0
