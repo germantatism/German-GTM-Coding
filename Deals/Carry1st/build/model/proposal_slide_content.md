@@ -1,26 +1,26 @@
 # Proposal slide · Carry1st + Yuno (customer-facing text, one slide, three-card format)
 
 Eyebrow: **06 · Proposal**
-Title (action title): **One platform fee with 50,000 transactions inside it, then a share of volume that falls as Carry1st grows**
-Sub-line (grey, one line): "A $7,500 monthly platform fee that already covers the first 50,000 successful transactions, plus a percentage of the volume above it: $22,750 a month at 450,000 transactions, 0.51% of TPV, $0.051 per transaction."
+Title (action title): **One platform fee that already covers the first $500K of monthly volume, then a share of volume that falls as Carry1st grows**
+Sub-line (grey, one line): "A $7,500 monthly platform fee that covers the first $500K of monthly volume, plus a percentage of the volume above it: $18,750 a month at 450,000 transactions, 0.42% of TPV, $0.042 per transaction."
 
 ## Left card · TRANSACTION FEE
 
-Sub-line (grey): "A percentage of the month's TPV above the included block, pooled across Brazil, Argentina, Mexico, Bolivia and Colombia"
+Sub-line (grey): "A percentage of the month's volume above the included block, pooled across Brazil, Argentina, Mexico, Bolivia and Colombia"
 
-| Label | Range (monthly TPV) | Rate |
+| Label | Range (monthly volume) | Rate |
 |---|---|---|
-| INCLUDED | First 50,000 successful transactions each month | **$0** |
-| TRANCHE 1 | $0 to $2M | **0.45%** |
-| TRANCHE 2 | $2M to $4M | **0.35%** |
-| TRANCHE 3 | Above $4M | **0.30%** |
+| INCLUDED | First $500K of monthly volume | **$0** |
+| TRANCHE 1 | $500K to $3M | **0.30%** |
+| TRANCHE 2 | $3M to $6M | **0.25%** |
+| TRANCHE 3 | Above $6M | **0.20%** |
 
-Note box (light grey): "No setup fee. No fixed amount per transaction. Declines and card verification attempts are not billed; the billable event is a successful transaction. Each tranche applies only to the volume inside it, so Carry1st's highest volume always pays the lowest rate. At a $10 ticket, 0.45% is $0.045 per transaction; at a $5 ticket, $0.0225."
+Note box (light grey): "No setup fee. No fixed amount per transaction. Volume means successful transactions only: declines and card verification attempts are not billed. Each tranche applies only to the volume inside it, so Carry1st's highest volume always pays the lowest rate. At a $10 ticket, 0.30% is $0.030 per transaction; at a $5 ticket, $0.015."
 
 ## Middle card · PLATFORM FEE
 
 Big figure (Yuno blue): **$7,500** with "/ month" in grey.
-Sub-line: "$90,000 / year. Includes the first 50,000 successful transactions every month. This is what covers the stack."
+Sub-line: "$90,000 / year. Covers the first $500K of monthly volume. This is what covers the stack."
 
 **WHAT IT INCLUDES**
 
@@ -29,8 +29,7 @@ Sub-line: "$90,000 / year. Includes the first 50,000 successful transactions eve
 | Orchestration & rules engine | **Included** |
 | Smart routing & retries | **Included** |
 | Monitors & auto-failover | **Included** |
-| Payment providers | **450+** |
-| Payment methods | **1,000+** |
+| Payment methods, PSPs and fraud solutions | **1,000+** |
 | Checkout & SDKs (web, iOS, Android) | **Included** |
 | PCI token vault | **Included** |
 | Dashboard & insights | **Included** |
@@ -51,19 +50,19 @@ Sub-line: "At a $10 average ticket, across the five markets"
 
 | LINE | 50,000 tx / month | 200,000 tx / month | 450,000 tx / month |
 |---|---|---|---|
-| TPV a month | $0.5M | $2.0M | $4.5M |
+| Volume a month | $0.5M | $2.0M | $4.5M |
 | Platform fee | $7,500 | $7,500 | $7,500 |
-| Usage · tranche 1 | $0 | $6,750 | $6,750 |
-| Usage · tranche 2 | $0 | $0 | $7,000 |
-| Usage · tranche 3 | $0 | $0 | $1,500 |
-| **Total a month** | **$7,500** | **$14,250** | **$22,750** |
-| Total a year | $90,000 | $171,000 | $273,000 |
-| Share of TPV | 1.50% | 0.71% | 0.51% |
-| Per successful transaction | $0.150 | $0.071 | $0.051 |
+| Usage · tranche 1 | $0 | $4,500 | $7,500 |
+| Usage · tranche 2 | $0 | $0 | $3,750 |
+| Usage · tranche 3 | $0 | $0 | $0 |
+| **Total a month** | **$7,500** | **$12,000** | **$18,750** |
+| Total a year | $90,000 | $144,000 | $225,000 |
+| Share of volume | 1.50% | 0.60% | 0.42% |
+| Per successful transaction | $0.150 | $0.060 | $0.042 |
 
-Callout box (darker blue, bold white): "At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is half a percent of volume, falling as volume grows."
+Callout box (darker blue, bold white): "At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 0.42% of volume, falling as volume grows."
 
-Paragraph under it: "Usage at the $5 median ticket is $0.0225 per transaction in tranche 1 and $0.015 in tranche 3, where a fixed fee would stay at the same dollar amount whatever the ticket. The business case in this deck returns about $47.6K a month in savings and contribution at the run rate (base case), 2.1 times this cost."
+Paragraph under it: "Usage at the $5 median ticket is $0.015 per transaction in tranche 1 and $0.010 in tranche 3, where a fixed fee would stay at the same dollar amount whatever the ticket. The business case in this deck returns about $47.8K a month in savings and contribution at the run rate (base case), 2.6x this cost."
 
 ## Footer (small grey, bottom left)
 
@@ -72,7 +71,8 @@ Paragraph under it: "Usage at the $5 median ticket is $0.0225 per transaction in
 ## Build notes for the content agent (not on the slide)
 
 - Three cards: left white with light border (about 28% of content width), middle light panel (about 30%), right solid Yuno blue with white text (about 32%), the same card language as German's previous three-card proposal slides.
-- Only the quoted price appears. Apply the forbidden-word rule in CONTEXT.md to every figure on the slide. The platform fee is simply the platform fee, never phrased as a commitment threshold.
-- If the nine rows plus the add-ons box do not fit at body size, merge "Monitors & auto-failover" and "PCI token vault" into one row "Monitors, auto-failover & PCI token vault · Included". Never go below the body size used on the business-case slides.
-- Numbers must match `bc_model.xlsx` Pricing sheet (average-ticket block) exactly: $7,500 / $14,250 / $22,750; 1.50% / 0.71% / 0.51%; $0.150 / $0.071 / $0.051; tranche 1 at 200K = $1.5M billable x 0.45% = $6,750; at 450K tranche 1 $6,750 + tranche 2 $2.0M x 0.35% = $7,000 + tranche 3 $0.5M x 0.30% = $1,500.
+- Only the quoted price appears. Apply the forbidden-word rule in CONTEXT.md to every figure on the slide. The platform fee is simply the platform fee, never phrased as a commitment threshold. Nothing beyond the quoted structure goes on the slide: no alternative block size, no term length, no launch-month variation.
+- If the eight rows plus the add-ons box do not fit at body size, merge "Monitors & auto-failover" and "PCI token vault" into one row "Monitors, auto-failover & PCI token vault · Included". Never go below the body size used on the business-case slides.
+- Numbers must match `bc_model.xlsx` Pricing sheet (average-ticket block) exactly: $7,500 / $12,000 / $18,750; 1.50% / 0.60% / 0.42%; $0.150 / $0.060 / $0.042; at 200K tranche 1 = $1.5M x 0.30% = $4,500; at 450K tranche 1 $2.5M x 0.30% = $7,500 + tranche 2 $1.5M x 0.25% = $3,750.
+- "1,000+" is the y.uno figure for payment methods, PSPs and fraud solutions combined; do not split it into separate provider and method counts.
 - No em dashes and no spaced hyphens as punctuation anywhere. Use "·", commas, colons.

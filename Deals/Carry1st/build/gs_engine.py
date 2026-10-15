@@ -60,6 +60,7 @@ PILLS = {  # label: (text colour, fill)
     'OPEN': ('#9A5B00', '#FBEFD9'),
     'NOT IN DOCS': ('#424449', '#EFF0F2'),
     'DIRECTION': ('#424449', '#D5D9F5'),
+    'ESTIMATE': ('#5B3FA0', '#EEE9F8'),   # modeled figure, assumption stated (Carry1st deck, 15 Oct 2026)
 }
 STATE_GLYPH = {'open': ('✕', GREY), 'partial': ('◐', LBLUE), 'closed': ('✓', BLUE)}
 
