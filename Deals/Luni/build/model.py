@@ -8,18 +8,19 @@ APPROVAL = 0.40              # blended approval (reported, "a little bit more th
 TICKET = 18                  # average ticket USD (acknowledged on the call)
 APPROVED = int(ATTEMPTS * APPROVAL)                 # 16,000 approved payments / month today
 TPV = APPROVED * TICKET * 12                        # approved volume / year ≈ $3.46M
-# L1 approval uplift via routing, local route for EU cards and decline-type retries: +10 pts conservative, +20 pts optimistic
-L1_PTS = (0.10, 0.20)
+# L1 approval uplift via routing, local route for EU cards and decline-type retries: +8 pts conservative, +16 pts optimistic
+# (v1 was +10 / +20; German asked for a slightly more conservative case on 15-oct)
+L1_PTS = (0.08, 0.16)
 L1 = tuple(ATTEMPTS * p * TICKET * 12 for p in L1_PTS)
 L1_PAY = tuple(int(ATTEMPTS * p) for p in L1_PTS)   # +4,000 / +8,000 approved payments a month
-# L2 checkout & payment methods (PayPal, local methods, better checkout): +2% to +5% more approved payments on today's base
-L2_PCT = (0.02, 0.05)
+# L2 checkout & payment methods (PayPal, local methods, better checkout): +2% to +4% more approved payments on today's base (v1: +2% / +5%)
+L2_PCT = (0.02, 0.04)
 L2 = tuple(APPROVED * p * TICKET * 12 for p in L2_PCT)
-# L3 processing cost (cross-border fees avoided, cheapest provider at equal approval): 25 to 50 bps of approved volume
-L3_BPS = (25, 50)
+# L3 processing cost (cross-border fees avoided, cheapest provider at equal approval): 20 to 40 bps of approved volume (v1: 25 / 50)
+L3_BPS = (20, 40)
 L3 = tuple(TPV * b / 10_000 for b in L3_BPS)
 # L4 integrations avoided: PayPal US (in progress) + EU acquirer + local processing/MoR + methods for new markets
-NEW, CUR, FTE = (3, 4), 3, 80_000                    # new integrations (cons, opt); current = Stripe US, Stripe FR, Paddle; $80K per engineer
+NEW, CUR, FTE = (2, 3), 3, 80_000                    # new integrations (cons, opt; v1 was 3 / 4); current = Stripe US, Stripe FR, Paddle; $80K per engineer
 WEEKS = (NEW[0] * 8 + (NEW[0] + CUR) * 8 * 0.20, NEW[1] * 12 + (NEW[1] + CUR) * 12 * 0.30)
 L4 = tuple(w / 52 * FTE for w in WEEKS)
 LEV = [L1, L2, L3, L4]
@@ -32,8 +33,9 @@ def var(tx):
     return min(tx, CUT1) * P1 + max(min(tx, CUT2) - CUT1, 0) * P2
 def monthly(tx):
     v = var(tx); return v, v + PLATFORM
-SCEN = {  # label -> successful trx / month
-    'today': APPROVED, '50%': int(ATTEMPTS * 0.50), '60%': int(ATTEMPTS * 0.60), 'full': CUT2}
+SCEN = {  # label -> successful trx / month ('cons' / 'opt' follow the L1 scenarios; '50%' / '60%' kept for the earlier fixes)
+    'today': APPROVED, 'cons': int(ATTEMPTS * (APPROVAL + L1_PTS[0])), 'opt': int(ATTEMPTS * (APPROVAL + L1_PTS[1])),
+    '50%': int(ATTEMPTS * 0.50), '60%': int(ATTEMPTS * 0.60), 'full': CUT2}
 def M(v):   # $1.73M / $864K / $8.6K
     if v >= 1e6: return f"${v/1e6:.2f}M"
     if v >= 100e3: return f"${round(v/1e3):,.0f}K"

@@ -10,6 +10,8 @@ R = 'g3f8f3224ab6_2_'       # pricing S16
 H = 'h4623285e90de4e9f_0_'  # proposal title, footer, build vs buy
 c50, c60, cfull = SCEN['50%'], SCEN['60%'], SCEN['full']
 v50, t50 = monthly(c50); v60, t60 = monthly(c60); vf, tf = monthly(cfull); v0, t0 = monthly(APPROVED)
+cc, co = SCEN['cons'], SCEN['opt']; vc, tc = monthly(cc); vo, to_ = monthly(co)
+APP_C, APP_O = int(round((APPROVAL + L1_PTS[0]) * 100)), int(round((APPROVAL + L1_PTS[1]) * 100))
 T = {
 # S1 cover
 K1+'1': 'POWERING SEAMLESS GLOBAL MONEY MOVEMENT FOR LUNI',
@@ -22,25 +24,25 @@ K1+'28719': '**Global payment method coverage** and **leading capabilities for p
 K1+'28722': 'Stripe and Paddle stay, Yuno routes across them',
 K1+'28726': 'Local routes for European cards and new methods',
 # S13 value levers
-B+'2704': f'On {ATTEMPTS:,} monthly payment attempts at an ${TICKET} ticket, every 10 points of approval are worth about ${L1[0]/1e6:.1f}M a year',
+B+'2704': f'On {ATTEMPTS:,} monthly payment attempts at an ${TICKET} ticket, every 10 points of approval are worth about ${ATTEMPTS*0.10*TICKET*12/1e6:.1f}M a year',
 B+'1941': 'Approval uplift', B+'1945': 'Checkout & methods', B+'1949': 'Processing cost', B+'1953': 'Integrations avoided',
 B+'1958': f'+{int(L1_PTS[0]*100)} to +{int(L1_PTS[1]*100)} pts', B+'1961': f'+{int(L2_PCT[0]*100)}% to +{int(L2_PCT[1]*100)}%',
 B+'1964': f'{L3_BPS[0]} to {L3_BPS[1]} bps', B+'1967': f'{NEW[0]} to {NEW[1]} integrations',
 B+'1959': 'Every attempt goes to one Stripe account today, and European cards are processed cross-border from it. Routing by issuer country and card type, a local route for EU cards and a second provider for recoverable declines lift approvals, while unrecoverable ones are no longer retried.',
 B+'1962': 'The checkout is a basic card form with Apple Pay and Google Pay. PayPal, now being built, local methods for the markets Luni wants to open and a checkout that shows each customer the methods that work for them turn more sessions into approved payments.',
 B+'1965': 'Cross-border processing adds international and currency fees on top of the base rate. Routing European cards through the French entity or a local acquirer, and picking the cheapest provider at equal approval, lowers the blended cost per transaction.',
-B+'1968': f'PayPal US is being built in-house today; a European acquirer, local processing and the methods for new markets would follow, each 8 to 12 engineering weeks plus upkeep. On Yuno they are connections switched on from the dashboard, not projects.',
+B+'1968': f'PayPal US is being built in-house today; a European acquirer and local processing would follow, then the methods for new markets, each 8 to 12 engineering weeks plus upkeep. On Yuno they are connections switched on from the dashboard, not projects.',
 B+'1972': f'+{K(L1[0])}/yr', B+'1975': f'+{K(L2[0])}/yr', B+'1978': f'+{K(L3[0])}/yr', B+'1981': f'+{K(L4[0])}/yr',
 B+'1984': f'+{K(L1[1])}/yr', B+'1986': f'+{K(L2[1])}/yr', B+'1988': f'+{K(L3[1])}/yr', B+'1990': f'+{K(L4[1])}/yr',
 B+'1992': f'**Assumptions** All figures in USD. Base case {ATTEMPTS:,} monthly payment attempts (September, as shared by Luni) at a blended {int(APPROVAL*100)}% approval, about {APPROVED:,} approved payments a month, and an ${TICKET} average ticket, about ${TPV/1e6:.1f}M a year of approved volume. L1: +{int(L1_PTS[0]*100)} points conservative and +{int(L1_PTS[1]*100)} optimistic, {L1_PAY[0]:,} to {L1_PAY[1]:,} more approved payments a month at full ticket; part of the measured lift comes from no longer retrying unrecoverable declines. L2: +{int(L2_PCT[0]*100)}% to +{int(L2_PCT[1]*100)}% more approved payments from new methods and checkout. L3: {L3_BPS[0]} to {L3_BPS[1]} bps on approved volume. L4: {NEW[0]} to {NEW[1]} integrations at 8 to 12 engineering weeks each plus 20% to 30% yearly upkeep, at ${FTE//1000}K per engineer. Ranges are Yuno modelling assumptions, to be recalibrated with the decline breakdown by category Luni is sharing.',
 # S14 total impact
-B+'2174': f'On {ATTEMPTS:,} monthly payment attempts at an ${TICKET} average ticket, with approval moving from {int(APPROVAL*100)}% to 50% and 60%.',
+B+'2174': f'On {ATTEMPTS:,} monthly payment attempts at an ${TICKET} average ticket, with approval moving from {int(APPROVAL*100)}% to {APP_C}% and {APP_O}%.',
 B+'2462': 'L1 Approval', B+'2464': 'L2 Checkout', B+'2466': 'L3 Cost', B+'2468': 'L4 Integrations',
 B+'2474': K(L1[0]), B+'2476': K(L2[0]), B+'2478': K(L3[0]), B+'2480': K(L4[0]), B+'2483': T(cons),
 B+'2487': K(avg[0]), B+'2489': K(avg[1]), B+'2491': K(avg[2]), B+'2493': K(avg[3]), B+'2495': T(mid),
 B+'2499': K(L1[1]), B+'2501': K(L2[1]), B+'2503': K(L3[1]), B+'2505': K(L4[1]), B+'2508': T(opt),
 B+'2510': T(mid),
-B+'2512': f'of average identifiable **annual value** across the four levers, within a {T(cons)} to {T(opt)} range, on {ATTEMPTS:,} monthly attempts at an ${TICKET} ticket, against about ${t0*12/1e3:.0f}K to ${t60*12/1e3:.0f}K a year on the proposal that follows.',
+B+'2512': f'of average identifiable **annual value** across the four levers, within a {T(cons)} to {T(opt)} range, on {ATTEMPTS:,} monthly attempts at an ${TICKET} ticket, against about ${t0*12/1e3:.0f}K to ${to_*12/1e3:.0f}K a year on the proposal that follows.',
 B+'2513': 'The approval lever carries it',
 B+'2514': f'L1 is {avg[0]/mid:.0%} of the value. It is measured one way: approved payments divided by attempts, per provider and per market, before and after.',
 B+'2515': 'Nothing here needs a rebuild',
