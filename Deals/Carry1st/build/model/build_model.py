@@ -144,7 +144,7 @@ inp("take", "Carry1st take rate on GMV (contribution per $1 of ticket)", "%", 0.
 inp("netflag", "Net incremental GMV of processing cost? (1 = yes, 0 = no)", "flag", 1, source="Yuno modeling choice. With 1, contribution on incremental GMV = GMV x (take rate minus Option B all-in processing %). With 0, contribution = GMV x take rate (the simpler, higher view).", owner="German", fmt="0")
 
 section("2 · Baseline provider cost (EBANX direct, cross-border MoR all-in incl. FX and local taxes passed through)")
-inp("base_cost", "Baseline provider all-in cost, % of TPV  <<< REPLACE FIRST with EBANX's quote to Carry1st", "%", 0.045, source="ESTIMATE, range 3 to 6% of TPV. Anchors: dLocal FY2025 revenue / TPV = 2.68% (2.92% in 2024), a blended figure across pay-ins, pay-outs and very large merchants, so a floor for a $0.5 to 4.5M a month digital-goods merchant (FXC Intelligence, 26 Mar 2026, on dLocal's results of 18 Mar 2026). EBANX reviewer: about 5% per transaction plus a $200 monthly fee (Capterra, Nov 2021). FX spread of 1 to 3% on top of processing (Nuvei, 2026). Brazil IOF on FX 3.5% (Decree 12,466/2025, PayPro Global).", owner="Cordel (EBANX quote) · Justo", fmt=FMT_PCT2, estimate=True)
+inp("base_cost", "Baseline provider all-in cost, % of TPV  <<< REPLACE FIRST with EBANX's quote to Carry1st", "%", 0.045, source="ESTIMATE, range 3 to 6% of TPV. Anchors: dLocal FY2025 revenue / TPV = 2.68% (2.92% in 2024), a blended figure across pay-ins, pay-outs and very large merchants, so a low anchor for a $0.5 to 4.5M a month digital-goods merchant (FXC Intelligence, 26 Mar 2026, on dLocal's results of 18 Mar 2026). EBANX reviewer: about 5% per transaction plus a $200 monthly fee (Capterra, Nov 2021). FX spread of 1 to 3% on top of processing (Nuvei, 2026). Brazil IOF on FX 3.5% (Decree 12,466/2025, PayPro Global).", owner="Cordel (EBANX quote) · Justo", fmt=FMT_PCT2, estimate=True)
 inp("base_cost_lo", "Baseline provider cost · low end (sensitivity)", "%", 0.03, source="Low end of the sourced range (dLocal blended take rate, large-merchant pricing).", owner="", fmt=FMT_PCT2)
 inp("base_cost_hi", "Baseline provider cost · high end (sensitivity)", "%", 0.06, source="High end of the sourced range (small-ticket digital goods, FX spread and taxes passed through).", owner="", fmt=FMT_PCT2)
 
@@ -162,15 +162,15 @@ section("6 · Lever 4 · Engineering saved (one integration for five countries)"
 inp("integ", "Direct integrations avoided over the horizon (dLocal as second provider, then local-entity processors)", "count", 1, 2, 3, source="Yuno estimate. Option A needs a second direct integration (dLocal) for failover and leverage, then re-integration to local processors when Phase 2 (local entities) lands. Under Option B each is a routing change. The launch integration itself is not counted (both options need one).", owner="Fatih (Carry1st tech)", fmt="0", estimate=True)
 inp("weeks", "Engineer-weeks per direct PSP integration (build, certification, QA)", "weeks", 4, 6, 8, source="Server-to-server PSP integration 4 to 8 weeks; orchestration or direct acquiring 8 to 12+ weeks (spd.tech, 2026). Razorpay: 2 to 3 developer-weeks per gateway for code alone (dev.to, 2025). Gateway migration 2 to 4 weeks (mctaba.com).", owner="Fatih", fmt="0", estimate=True)
 inp("wk_cost", "Loaded cost per engineer-week", "USD", 2000, source="ESTIMATE, about $104K a year loaded. Sits between Cape Town senior engineer market pay (PayScale, 2026; Carry1st engineers are in Cape Town) and LatAm loaded cost of $87.5K to $100.8K a year (Second Talent, 2026); US fully loaded is $200K to $280K (Revelo, 2026).", owner="Fatih", fmt=FMT_USD, estimate=True)
-inp("maint", "Annual maintenance, % of build cost per integration", "%", 0.20, 0.25, 0.30, source="Yuno estimate; 20 to 30% upkeep is the convention used in Yuno business cases (Luni, Oct 2026).", owner="", fmt=FMT_PCT, estimate=True)
+inp("maint", "Annual maintenance, % of build cost per integration", "%", 0.20, 0.25, 0.30, source="Yuno estimate; 20 to 30% upkeep is the convention used in Yuno business cases (Oct 2026).", owner="", fmt=FMT_PCT, estimate=True)
 inp("horizon", "Horizon to spread one-time engineering (months)", "months", 24, source="Yuno modeling choice: build cost plus maintenance spread over 24 months, shown as a monthly equivalent.", owner="", fmt="0")
 
 section("7 · Yuno cost line (the proposal)")
 inp("pf", "Platform fee a month", "USD", 7500, source="Justo Benetti, 15 Oct 2026: $7.5K a month platform commitment with a block of transactions included.", owner="Justo · Finance (approval pending)", fmt=FMT_USD)
 inp("N", "Successful transactions included in the platform fee each month", "tx", 50000, source="Proposal: equals the launch tier, so at 50K a month Carry1st pays the platform fee and nothing else. Billable TPV = TPV x max(0, 1 minus N / transactions), i.e. the TPV of the transactions above the block at the month's average ticket.", owner="Justo · Finance", fmt=FMT_INT)
-inp("t1_up", "Tranche 1 · monthly TPV up to", "USD", 2000000, source="Proposal (ladder: each tranche applies only to the TPV inside it).", owner="Justo", fmt=FMT_USD)
+inp("t1_up", "Tranche 1 · monthly TPV ceiling", "USD", 2000000, source="Proposal (ladder: each tranche applies only to the TPV inside it).", owner="Justo", fmt=FMT_USD)
 inp("t1_rate", "Tranche 1 · usage rate, % of billable TPV", "%", 0.0045, source="Proposal. At a $10 ticket this is $0.045 per successful transaction; at $5, $0.0225.", owner="Justo · Finance", fmt=FMT_PCT2)
-inp("t2_up", "Tranche 2 · monthly TPV up to", "USD", 4000000, source="Proposal.", owner="Justo", fmt=FMT_USD)
+inp("t2_up", "Tranche 2 · monthly TPV ceiling", "USD", 4000000, source="Proposal.", owner="Justo", fmt=FMT_USD)
 inp("t2_rate", "Tranche 2 · usage rate, % of billable TPV", "%", 0.0035, source="Proposal. $0.035 per transaction at a $10 ticket.", owner="Justo · Finance", fmt=FMT_PCT2)
 inp("t3_rate", "Tranche 3 · usage rate above tranche 2, % of billable TPV", "%", 0.0030, source="Proposal. $0.030 per transaction at a $10 ticket.", owner="Justo · Finance", fmt=FMT_PCT2)
 inp("fixA", "Hypothetical fixed fee A (comparison only)", "USD/tx", 0.05, source="Illustrative fixed per-transaction fee for the small-ticket argument. Not a Yuno quote.", owner="", fmt=FMT_USD3)
@@ -371,9 +371,9 @@ hdr(ws_pr, 4, 1, "Proposal terms", span=3)
 P = 5
 terms = [("Platform fee a month", f"={I('pf')}", FMT_USD),
          ("Successful transactions included each month", f"={I('N')}", FMT_INT),
-         ("Tranche 1 · TPV up to", f"={I('t1_up')}", FMT_USD),
+         ("Tranche 1 · TPV ceiling", f"={I('t1_up')}", FMT_USD),
          ("Tranche 1 · rate", f"={I('t1_rate')}", FMT_PCT2),
-         ("Tranche 2 · TPV up to", f"={I('t2_up')}", FMT_USD),
+         ("Tranche 2 · TPV ceiling", f"={I('t2_up')}", FMT_USD),
          ("Tranche 2 · rate", f"={I('t2_rate')}", FMT_PCT2),
          ("Tranche 3 · rate above tranche 2", f"={I('t3_rate')}", FMT_PCT2),
          ("Tranche 1 rate, $ per transaction at the average ticket", f"={I('t1_rate')}*{I('ticket')}", FMT_USD3),
@@ -797,6 +797,7 @@ put(ws_sum, r, 2, "How to read: Option A = EBANX direct at the baseline all-in c
 ws_sum.merge_cells(start_row=r, start_column=2, end_row=r + 3, end_column=7)
 ws_sum.row_dimensions[r].height = 15
 
+wb.calculation.fullCalcOnLoad = True  # openpyxl writes no cached values; force Excel / Sheets to compute on open
 wb.save(OUT)
 print("saved", OUT)
 print("INPUT_ROWS", R)
