@@ -4,7 +4,7 @@
 - To: Clem Bason, GM Travel, Super.com (based in Oakland)
 - Email: clem@super.com (UNVERIFIED, pattern guess from sarah@ / rick@super.com)
 - LinkedIn: https://www.linkedin.com/in/clembason/
-- Status: Gmail draft, not sent
+- Status: Gmail draft v2, not sent. v1 named Carol as the source of the team insights; German: "no puedo echar al agua a Carol". v2 only mentions Carol as part of the on-record July thread.
 
 ## Context used
 
@@ -19,15 +19,15 @@
 
 Super.com + Yuno | Mexico and a coffee?
 
-## Body
+## Body (v2, Carol not exposed as source)
 
 Hi Clem,
 
 German from Yuno here, hope the week is treating you well. We haven't met, but I've been talking with your team on and off for about a year now: first Akshay and Sarah, and this summer Carol, mostly about what Super was planning in Latin America. We left it at revisiting toward the end of the year once the 2027 priorities were clearer.
 
-I caught up with Carol here in SF this week and she mentioned you're the person to talk to on the travel side. She had great things to say about you, by the way. From those conversations my understanding is that Mexico is the market that matters right now: live, but not quite where you'd want it, and local processing there is the thing on the list.
+A few of those folks have since moved on, and looking at who runs travel at Super today, you seemed like the right person to pick the conversation back up with. My read from those conversations is that Mexico is the market that matters right now: live, but not quite where you'd want it yet.
 
-That's very much our thing. We connect local acquirers, domestic cards, installments and methods like SPEI and OXXO through a single integration, so you can turn on local processing in Mexico without your team having to build and maintain it. It's usually what moves approval rates and cost the most when a market is live but still running cross-border.
+If local processing in Mexico is on your list, that's very much our thing. We connect local acquirers, domestic cards, installments and methods like SPEI and OXXO through a single integration, so you can turn it on without your team having to build and maintain it. It's usually what moves approval rates and cost the most when a market is live but still running cross-border.
 
 I'd love to catch up properly and hear how you're thinking about it. Are you going to Money20/20 next week? If so, a coffee between sessions would be great. If not, no problem at all: I'm based in SF these days, so a coffee or a beer in the city, or on your side of the bridge in Oakland, works just as well.
 
