@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
-"""Carry1st Shop LatAm: pricing arithmetic v1 (15-oct-2026). Platform fee $7,500 flat, NO free transactions,
+"""Carry1st Shop LatAm: pricing arithmetic v2 (15-oct-2026). Platform fee $7,500 flat that INCLUDES the first $1M of monthly Net TPV
+(Justo: give them volume for free, but in TPV, never in trx),
 pay-ins billed in bps on monthly Net TPV (successful tx only, no declines / chargebacks), tranches (ladder).
 Client inputs (Cordel, call w/ JP 15-oct-2026): $4-5M/month LatAm TPV by end-2027 (to be aligned), avg ticket ~$10, median ~$5.
 Zones (green/yellow/red) must be confirmed in Finance's Pricing Calculator for V3 x gaming margin band before sending."""
 PLATFORM = 7_500
-LADDER = [(2_000_000, 0.0030), (5_000_000, 0.0025), (float("inf"), 0.0020)]   # (upper bound of band, rate) ; 30 / 25 / 20 bps
+INCLUDED = 1_000_000                      # monthly Net TPV included in the platform fee (single month, no rollover)
+LADDER = [(INCLUDED, 0.0), (3_000_000, 0.0030), (6_000_000, 0.0025), (float("inf"), 0.0020)]   # (upper bound, rate); 0 / 30 / 25 / 20 bps
+LADDER_V1 = [(2_000_000, 0.0030), (5_000_000, 0.0025), (float("inf"), 0.0020)]              # v1, no allotment, kept for reference
 AVG_TICKET, MEDIAN_TICKET = 10.0, 5.0
 CREDIT, CREDIT_MONTHS = 3_750, 3          # optional launch lever: Dec-2026 to Feb-2027 (billing start 1-Dec-2026)
 
-def usage(tpv):
+def usage(tpv, ladder=None):
     fee, lo = 0.0, 0.0
-    for hi, rate in LADDER:
+    for hi, rate in (ladder or LADDER):
         if tpv > lo:
             fee += (min(tpv, hi) - lo) * rate
         lo = hi
@@ -24,7 +27,7 @@ def bps(x, tpv):
     return x / tpv * 1e4 if tpv else float("nan")
 
 if __name__ == "__main__":
-    print(f"platform ${PLATFORM:,} | ladder " + " / ".join(f"{r*1e4:.0f} bps to ${hi/1e6:g}M" if hi != float('inf') else f"{r*1e4:.0f} bps above" for hi, r in LADDER))
+    print(f"platform ${PLATFORM:,} incl. first ${INCLUDED/1e6:g}M TPV | ladder " + " / ".join(f"{r*1e4:.0f} bps to ${hi/1e6:g}M" if hi != float('inf') else f"{r*1e4:.0f} bps above" for hi, r in LADDER[1:]))
     print(f"{'TPV/mo':>9} {'trx@$10':>8} {'usage':>9} {'eff bps':>8} {'all-in':>9} {'all-in bps':>10} {'$/avg trx':>10} {'$/median':>9} {'annual':>11}")
     for tpv in (500_000, 1_000_000, 2_000_000, 3_000_000, 4_000_000, 4_500_000, 5_000_000, 8_000_000, 10_000_000):
         u, t = monthly(tpv)
