@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Carry1st Shop LatAm: pricing arithmetic v2 (15-oct-2026). Platform fee $7,500 flat that INCLUDES the first $1M of monthly Net TPV
+"""Carry1st Shop LatAm: pricing arithmetic v3 (15-oct-2026). Platform fee $7,500 flat that INCLUDES the first $500K of monthly Net TPV (German; $1M kept as pocket concession)
 (Justo: give them volume for free, but in TPV, never in trx),
 pay-ins billed in bps on monthly Net TPV (successful tx only, no declines / chargebacks), tranches (ladder).
 Client inputs (Cordel, call w/ JP 15-oct-2026): $4-5M/month LatAm TPV by end-2027 (to be aligned), avg ticket ~$10, median ~$5.
 Zones (green/yellow/red) must be confirmed in Finance's Pricing Calculator for V3 x gaming margin band before sending."""
 PLATFORM = 7_500
-INCLUDED = 1_000_000                      # monthly Net TPV included in the platform fee (single month, no rollover)
+INCLUDED = 500_000                        # monthly Net TPV included in the platform fee (single month, no rollover)
 LADDER = [(INCLUDED, 0.0), (3_000_000, 0.0030), (6_000_000, 0.0025), (float("inf"), 0.0020)]   # (upper bound, rate); 0 / 30 / 25 / 20 bps
 LADDER_V1 = [(2_000_000, 0.0030), (5_000_000, 0.0025), (float("inf"), 0.0020)]              # v1, no allotment, kept for reference
 AVG_TICKET, MEDIAN_TICKET = 10.0, 5.0
