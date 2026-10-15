@@ -94,3 +94,12 @@ Slide count: 42 against the 30 to 34 target. The two slides the coordinator adde
 
 ## Hygiene checks run on the final spec
 No em dashes, no " - ", no exclamation marks, no "no small feat", no minimum / list price / discount / starting at / from or up to next to a price, no 450+ / 460+ (except the find-string of the template rewrite), no +12%, no McDonald's percentage or dollar figure, no Moon Active, Riot, Saudi, GCC, Pay1st, partnership or pocket concessions. USD only. PayPal appears only in wallet chips, never as a PSP.
+
+## Reframe pass (15 Oct 2026, evening): EBANX plus any rail, Luni-format business case, 39 slides
+- Framing: EBANX plus any local rail, acquirer, APM or additional MoR through Yuno; never "EBANX and dLocal". Connection slides now show "Merchant of record at launch" (EBANX) and "Local rails and acquirers live through Yuno (N)"; headlines lead with the provider count.
+- Removed: `launch`, `d08`, `next` (live slides deleted). `d07` is now "Phase 2: merchant of record or local presence"; agenda and every divider list 01 to 07 plus Appendix (edited in place: agenda and divider types cannot be re-created after `--final`).
+- `heard` rewritten as Yuno's read of what the launch has to get right (no names, no "you asked").
+- Business case: `bc-tiers` and `bc-scenarios` replaced by `bc-levers` (`lever_grid`) and `bc-impact` (`impact_table`), Luni format; annual per-lever values at 450K from `model/model_numbers.json` (x12, contribution view): totals $280K / $574K / $950K vs Yuno $225K a year. `bc-ticket` kept.
+- "For: Carry1st" footer removed everywhere (spec footer is empty; leftover shapes deleted live, 0 remain).
+- Live update ran through `apply_reframe_live.py` (one-off): `--replace` matched old slides by id prefix, which breaks once slides are removed from the spec; `gs_engine.py` now matches by position on a finalized deck.
+- Live cover subtitle still reads "One integration for five markets, EBANX and dLocal behind it, priced on what Carry1st sells" (left as instructed; to decide).

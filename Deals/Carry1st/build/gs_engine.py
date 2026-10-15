@@ -1590,12 +1590,123 @@ def r_bar_chart(deck, s, tag, n, footer):
     return _finish(deck, sb, sid, s, n, footer)
 
 
+def r_lever_grid(deck, s, tag, n, footer):
+    """Luni-format value levers (15 Oct 2026). spec: groups[{label, span}], row_labels[4], levers[{num, name, range, body,
+    conservative, optimistic}], assumptions (markup, '**Assumptions**' lead), closing (blue line), source, notes."""
+    sid, sb = _content_base(deck, s, tag)
+    levers = s.get('levers', [])[:4]; L = max(len(levers), 1)
+    lab_w = 60.0; gx = X0 + lab_w + 6; gap = 6.0; gw = 684 - gx; cw = (gw - gap * (L - 1)) / L
+    y = sb.zy
+    # group headers: pale band with a blue rule underneath, spanning their columns
+    ci = 0
+    for g in s.get('groups', []):
+        span = int(g.get('span', 1)); x = gx + ci * (cw + gap); w = span * cw + (span - 1) * gap
+        sb.rect(x, y, w, 16, fill=PANEL); sb.rect(x, y + 15.4, w, 0.8, fill=LBLUE)
+        sb.text(x, y + 4.2, w, 9, g.get('label', ''), size=7, bold=True, color=INK, align='CENTER', ls=100)
+        ci += span
+    y += 21
+    body_w = cw - 16
+    bh = max(text_h(l.get('body', ''), 6.8, body_w, 118) for l in levers) if levers else 0
+    card_h = 40 + bh + 8
+    # bottom-up budget
+    closing = s.get('closing'); ch = text_h(closing, 8, W0, 110) if closing else 0
+    assum = s.get('assumptions'); ah = (text_h(assum, 6.5, W0 - 20, 118) + 10) if assum else 0
+    src_top = 369.5 - (wrap_count(s.get('source'), 6.5, W0 * 0.9) - 1) * 8.5 if s.get('source') else 372
+    row_h = 23.0
+    need = card_h + 3 + row_h + 3 + row_h + 8 + ah + (6 + ch if closing else 0)
+    if y + need > src_top - 4:
+        raise FitError(f"slide {s.get('id')}: lever_grid needs {need:.0f} pt, zone has {src_top - 4 - y:.0f} pt")
+    labels = s.get('row_labels') or ['Lever', 'How it works', 'Conservative', 'Optimistic']
+    sb.text(X0, y + 8, lab_w, 9, labels[0], size=7, bold=True, color=INK, align='END', ls=100)
+    sb.text(X0, y + 24, lab_w, 9, labels[1], size=7, bold=True, color=INK, align='END', ls=100)
+    r1 = y + card_h + 3; r2 = r1 + row_h + 3
+    sb.text(X0, r1 + 7.5, lab_w, 9, labels[2], size=7, bold=True, color=INK, align='END', ls=100)
+    sb.text(X0, r2 + 7.5, lab_w, 9, labels[3], size=7, bold=True, color=INK, align='END', ls=100)
+    name_sz = next((z for z in (8.5, 8, 7.5, 7) if all(text_width(l.get('name', ''), z, True) <= cw - 32 for l in levers)), None)
+    rng_sz = next((z for z in (14, 13, 12, 11, 10) if all(text_width(l.get('range', ''), z, True) <= cw - 18 for l in levers)), None)
+    if not name_sz or not rng_sz: raise FitError(f"slide {s.get('id')}: lever_grid lever name or range too long for one line")
+    for i, l in enumerate(levers):
+        x = gx + i * (cw + gap)
+        sb.rect(x, y, cw, card_h, fill=PANEL2)
+        sb.text(x + 8, y + 7, cw - 30, 10, l.get('name', ''), size=name_sz, bold=True, color=INK, ls=100)
+        cx = x + cw - 19; oid = sb.shape('ELLIPSE', cx, y + 6, 12, 12, fill=BLUE)
+        sb.text(cx, y + 8.3, 12, 8, str(l.get('num', i + 1)), size=7, bold=True, color=WHITE, align='CENTER', ls=100)
+        sb.text(x + 8, y + 20 + (14 - rng_sz) / 2, cw - 16, 17, l.get('range', ''), size=rng_sz, bold=True, color=INK, ls=100)
+        sb.text(x + 8, y + 40, body_w, bh, l.get('body', ''), size=6.8, color=MUTED, ls=118)
+        sb.rect(x, r1, cw, row_h, fill=PANEL2)
+        sb.text(x, r1 + 6.5, cw, 11, l.get('conservative', ''), size=10, bold=True, color=INK, align='CENTER', ls=100)
+        sb.rect(x, r2, cw, row_h, fill=PANEL)
+        sb.text(x, r2 + 6.5, cw, 11, l.get('optimistic', ''), size=10, bold=True, color=BLUE, align='CENTER', ls=100)
+    y = r2 + row_h + 8
+    if assum:
+        sb.rect(X0, y, W0, ah, fill='#EFF0F2')
+        sb.text(X0 + 10, y + 5, W0 - 20, ah - 10, assum, size=6.5, color=MUTED, ls=118)
+        y += ah + 6
+    if closing:
+        sb.text(X0, y, W0, ch, closing, size=8, bold=True, color=BLUE, align='CENTER', ls=110)
+    return _finish(deck, sb, sid, s, n, footer)
+
+def r_impact_table(deck, s, tag, n, footer):
+    """Luni-format total impact (15 Oct 2026). The headline is drawn as a large blue title ('Total impact').
+    spec: subline, columns[] (first = scenario, last = total), rows[{label, cells[], total, highlight}], hero{value, text (markup)},
+    takeaways[{title, body}] (three), source, notes."""
+    sid, sb = _content_base(deck, dict(s, headline=''), tag)
+    sb.text(X0, 40, 602, 26, s.get('headline', ''), size=22, color=BLUE, ls=100)
+    y = 70
+    if s.get('subline'):
+        sb.text(X0, y, W0, 10, s['subline'], size=8, color=MUTED, ls=110); y += 18
+    cols = s.get('columns', []); rows = s.get('rows', []); C = len(cols)
+    fr = s.get('col_widths') or ([0.22] + [0.13] * (C - 2) + [0.26])
+    tot = sum(fr); ws = [W0 * f / tot for f in fr]; xs = [X0 + sum(ws[:i]) for i in range(C)]
+    hh, rh = 24.0, 30.0
+    for j, c in enumerate(cols):
+        last = j == C - 1
+        sb.rect(xs[j], y, ws[j], hh, fill=BLUE if last else DARK)
+        if 0 < j and not last: sb.vline(xs[j], y, hh, color=WHITE, alpha=0.18)
+        sb.text(xs[j] + 10, y + 8, ws[j] - 20, 9, c.upper() if (j == 0 or last) else c, size=6.8, bold=(j == 0 or last), color=WHITE,
+                align='START' if j == 0 else 'END', ls=100)
+    y += hh
+    for r in rows:
+        hi = r.get('highlight')
+        if hi: sb.rect(X0, y, W0, rh, fill=BLUE)
+        else:
+            sb.rect(xs[-1], y, ws[-1], rh, fill=PANEL3); sb.hairline(X0, y + rh, W0 - ws[-1])
+        tc = WHITE if hi else INK
+        sb.text(xs[0] + 10, y + 10, ws[0] - 20, 10, r.get('label', ''), size=8.5, bold=True, color=tc, ls=100)
+        for j, v in enumerate(r.get('cells', [])[:C - 2], 1):
+            if hi and j > 0: sb.vline(xs[j], y, rh, color=WHITE, alpha=0.18)
+            sb.text(xs[j] + 6, y + 10, ws[j] - 16, 10, v, size=8.5, color=tc, align='END', ls=100)
+        sb.text(xs[-1] + 6, y + 7.5, ws[-1] - 16, 15, r.get('total', ''), size=13, bold=True, color=WHITE if hi else BLUE, align='END', ls=100)
+        y += rh
+    y += 12
+    hero = s.get('hero')
+    if hero:
+        tw = W0 - 150 - 24; th = text_h(hero.get('text', ''), 8.5, tw, 125); hh2 = max(44.0, th + 18)
+        sb.rect(X0, y, W0, hh2, fill=PANEL3)
+        sb.text(X0 + 14, y + (hh2 - 26) / 2, 124, 26, hero.get('value', ''), size=24, bold=True, color=BLUE, ls=100)
+        sb.vline(X0 + 146, y + 10, hh2 - 20, color=GREY, alpha=0.5)
+        sb.text(X0 + 160, y + (hh2 - th) / 2, tw, th, hero.get('text', ''), size=8.5, color=INK, ls=125)
+        y += hh2 + 16
+    tk = s.get('takeaways', [])[:3]
+    if tk:
+        K = len(tk); g = 24.0; w = (W0 - g * (K - 1)) / K
+        src_top = 369.5 - (wrap_count(s.get('source'), 6.5, W0 * 0.9) - 1) * 8.5 if s.get('source') else 372
+        need = max(12 + text_h(t.get('body', ''), 7.2, w, 120) for t in tk)
+        if y + need > src_top - 4: raise FitError(f"slide {s.get('id')}: impact_table takeaways need {need:.0f} pt, zone has {src_top - 4 - y:.0f} pt")
+        for i, t in enumerate(tk):
+            x = X0 + i * (w + g)
+            sb.text(x, y, w, 10, t.get('title', ''), size=8, bold=True, color=INK, ls=100)
+            sb.text(x, y + 13, w, need - 12, t.get('body', ''), size=7.2, color=MUTED, ls=120)
+    return _finish(deck, sb, sid, s, n, footer)
+
+
 RENDERERS = {
     'exec_summary': r_exec_summary, 'stats': r_stats, 'scale': r_scale, 'four_numbers': r_four_numbers, 'traffic_list': r_traffic_list,
     'cards_row': r_cards_row, 'two_column': r_two_column, 'table': r_table, 'checklist_table': r_table, 'open_items_table': r_table,
     'comparison_grid': r_comparison_grid, 'diagram': r_diagram, 'code_before_after': r_code_before_after, 'phases': r_phases,
     'next_steps': r_next_steps, 'logo_grid': r_logo_grid, 'sources': r_sources, 'template_keep': r_template_keep,
     'pricing_cards': r_pricing_cards, 'country_deepdive': r_country_deepdive, 'bar_chart': r_bar_chart,
+    'lever_grid': r_lever_grid, 'impact_table': r_impact_table,
 }
 
 def validate(spec):
@@ -1701,7 +1812,11 @@ def build_from_spec(spec_path, final=False, only=None, replace=False):
         built.append(sid)
         if replace:
             live = deck.slide_ids()
-            old = [i for i in live if i != sid and re.match(rf"^n{n:02d}(r\d+)?p?_", i)]   # placeholders are tagged <tag>p
+            rest = [i for i in live if i != sid]
+            if not deck.has_template() and len(rest) == len(slides):
+                old = [rest[n - 1]]   # finalized deck: the live position IS the spec index (ids keep the tag of an earlier index after slides were removed, 15 Oct 2026)
+            else:
+                old = [i for i in live if i != sid and re.match(rf"^n{n:02d}(r\d+)?p?_", i)]   # placeholders are tagged <tag>p
             if old:
                 idx = live.index(old[0])
                 deck.run([{'updateSlidesPosition': {'slideObjectIds': [sid], 'insertionIndex': idx}}] + [{'deleteObject': {'objectId': o}} for o in old], f'replace slide {n}')

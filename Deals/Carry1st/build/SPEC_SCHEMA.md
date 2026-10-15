@@ -218,3 +218,29 @@ Flag 13.5 x 9.5 pt right after the kicker text. Stat bar: deep blue (#1227AD) ba
  "note": "small grey line under the axis", "side": {"header": "...", "items": [{"title": "...", "body": "..."}]}, "bar": "bottom band", "source": "...", "notes": "..."}
 ```
 Legend top-left, baseline hairline, value labels above each bar (`unit` "$K" prints $12.3K / $202K, "%" prints 0.61%, "" prints the number; `labels` override), group label + sub under the axis. Negative values hang below the baseline. With `side` the chart takes 64 percent of the width.
+
+## Luni-format business case (15 Oct 2026): lever_grid · impact_table
+
+Ported from the Luni proposal deck (`Deals/Luni/build`, slides "value levers" and "Total impact"; reference images in `refs/`), drawn with the engine primitives in the template palette and Geist.
+
+### lever_grid
+Four lever columns under group headers, a row-label column on the left, two value rows, an assumptions box and a blue closing line.
+- `groups`: `[{label, span}]`, e.g. `[{"label": "Cost levers", "span": 2}, {"label": "Operational levers", "span": 2}]` (pale band with a blue rule, spans its columns).
+- `row_labels`: four strings, default `["Lever", "How it works", "Conservative", "Optimistic"]`.
+- `levers`: up to four `{num, name, range, body, conservative, optimistic}`. `name` sits next to a numbered blue circle; `range` is the big figure (14 pt, shrinks to 10 pt so every range fits one line; names shrink 8.5 to 7 pt); `body` is the "How it works" paragraph (6.8 pt); `conservative` (ink on #F6F7FB) and `optimistic` (blue on #E8EAF5) are the per-lever values, e.g. `"+$135K/yr"`.
+- `assumptions`: markup string, lead with `**Assumptions**` (6.5 pt on a grey box).
+- `closing`: one blue bold line under the assumptions.
+- Plus the usual `kicker`, `headline`, `tag`, `source`, `notes`. Raises FitError when the stack does not fit above the source line.
+
+### impact_table
+"Total impact" in the Luni style: the `headline` is drawn as a large blue regular title (22 pt), not the bold action headline.
+- `subline`: one line under the title with the base inputs.
+- `columns`: first = scenario, last = total, levers in between (header row dark, total header blue).
+- `col_widths`: optional fractions (default 0.22, 0.13 per lever, 0.26 total).
+- `rows`: `[{label, cells[], total, highlight}]`; the `highlight` row (the base case) is solid blue with white text; other rows carry the total in a light-blue (#F4F5FD) cell in blue bold 13 pt.
+- `hero`: `{value, text}`: big blue number, a vertical rule, then the sentence (markup, `**bold**` allowed) on a light-blue band.
+- `takeaways`: three `{title, body}` columns under the hero.
+- Plus `kicker`, `tag`, `source`, `notes`.
+
+### Replacing slides after --final
+After `--final` the live position equals the spec index, so `--only <id> --replace` now picks the old slide by position (not by id prefix) when the template is gone and the live slide count equals the spec length. Slide ids keep the tag of the index they were first built at, so after removing slides from the spec the id prefix no longer identifies a slide.

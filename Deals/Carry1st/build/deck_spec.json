@@ -1,7 +1,7 @@
 {
  "presentation_id": "1-IdPVaPu5FE4P36ByuiQ2vupRFocujdFcmmQeuPI9kk",
  "merchant": "Carry1st",
- "footer": "For: Carry1st",
+ "footer": "",
  "slides": [
   {
    "id": "cover",
@@ -9,7 +9,7 @@
    "title": "Carry1st Shop in Latin America by Black Friday",
    "subtitle": "One integration for five markets, EBANX and dLocal behind it, priced on what Carry1st sells",
    "presenter": "German Tatis, Yuno · 16 October 2026",
-   "notes": "Cordel, Fatih: this deck answers the three things you asked for on the discovery call, the economics, pricing that works for small purchases, and how Yuno fits alongside EBANX, plus Fatih's two, checkout demos and merchant of record against local presence. Every number carries its label: confirmed in public documentation, read on a third party's public page, a Yuno estimate with the assumption stated, or open with an owner. The appendix holds the market detail for each of the five countries."
+   "notes": "Cordel, Fatih: this deck sets out how the Carry1st Shop can launch in Latin America with EBANX plus any other rail, acquirer or merchant of record each market needs, through one integration; what that is worth at a $5 to $10 ticket; how the fee is shaped; and how the move from merchant of record to local presence works later. Every number carries its label: confirmed in public documentation, read on a third party's public page, a Yuno estimate with the assumption stated, or open with an owner. The appendix holds the market detail for each of the five countries."
   },
   {
    "id": "agenda",
@@ -21,7 +21,7 @@
     },
     {
      "num": "02",
-     "title": "Where Carry1st stands and what Black Friday needs"
+     "title": "Where Carry1st stands"
     },
     {
      "num": "03",
@@ -41,18 +41,14 @@
     },
     {
      "num": "07",
-     "title": "Launch plan to Black Friday and Phase 2"
-    },
-    {
-     "num": "08",
-     "title": "Next steps"
+     "title": "Phase 2"
     },
     {
      "num": "A",
      "title": "Appendix: LatAm deep dive and sources"
     }
    ],
-   "notes": "Thirty minutes: the executive summary and the two ways to launch first, then the business case and the proposal, then the launch plan. The appendix is for Fatih's team to read afterwards."
+   "notes": "Thirty minutes: the executive summary and the two ways to launch first, then the business case and the proposal, then Phase 2. The appendix holds the market detail for each country, to read afterwards."
   },
   {
    "id": "d01",
@@ -62,13 +58,12 @@
    "sub": "The decision, the recommended path, and what it returns at launch and at run rate",
    "section_list": [
     "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
+    "02 Where Carry1st stands",
     "03 Two ways to launch",
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
+    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "One slide: the decision in front of Carry1st, what Yuno proposes, and what it is worth at launch volume and at the end-2027 run rate."
@@ -80,12 +75,12 @@
    "tag": [
     "ESTIMATE"
    ],
-   "headline": "Through Yuno, EBANX and dLocal cost less than EBANX direct at run rate, add a second rail, and pay back in month two.",
+   "headline": "Through Yuno, EBANX plus local rails per market costs less than EBANX direct at run rate, and pays back in month two.",
    "left_header": "WHERE CARRY1ST STANDS",
    "left_items": [
     {
      "title": "The decision",
-     "body": "Launch the Carry1st Shop in Brazil, Argentina, Mexico, Colombia and Bolivia by Black Friday, 27 November 2026, through a merchant of record: EBANX direct, or EBANX and dLocal through Yuno."
+     "body": "Launch the Carry1st Shop in Brazil, Argentina, Mexico, Colombia and Bolivia by Black Friday, 27 November 2026, through a merchant of record: EBANX direct, or EBANX plus the rails each market needs, through Yuno."
     },
     {
      "title": "The economics to beat",
@@ -103,8 +98,8 @@
    "right_header": "WHAT YUNO PROPOSES",
    "right_cards": [
     {
-     "title": "One integration, two merchants of record",
-     "body": "EBANX primary, dLocal second, both as connections on the Yuno SDK: retries and failover between them, local methods per market, Phase 2 local acquirers without touching checkout."
+     "title": "One integration, every rail Carry1st needs",
+     "body": "EBANX plus any other MoR, acquirer or local method each market needs, all connections on the Yuno SDK: retries and failover across them, Phase 2 without touching checkout."
     },
     {
      "title": "A fee that scales with sales, not with transactions",
@@ -115,69 +110,68 @@
      "body": "Base case at run rate: $44.2 per $1,000 of sales through Yuno against $45.0 direct, +$29.1K a month net ($349K a year, 2.6x Yuno's cost); break-even about 65,000 transactions a month."
     }
    ],
-   "bottom": "Decide by 23 Oct, onboard EBANX and dLocal in parallel, launch Brazil by 27 Nov; the conservative case is cost-neutral at run rate.",
+   "bottom": "EBANX stays at the center and Yuno adds every rail around it; even the conservative case is cost-neutral at run rate.",
    "source": "Yuno business-case model, 15 Oct 2026, base scenario: EBANX direct all-in 4.5% of sales and a 15% take rate are estimates, replaced by EBANX's quote and Shop margins. Volumes: Carry1st, Cordel, Oct 2026, estimate.",
-   "notes": "The whole deck on one slide. Left, where you stand: five markets, six weeks, a $5 median ticket and a run-rate estimate that is yours. Right, what we propose: one integration carrying EBANX and dLocal, a fee that is a share of what you sell with the first $500K of monthly sales inside the platform fee, and a business case that, in the base scenario, makes the Yuno route the cheaper cost line at run rate before counting approval or coverage gains. Two numbers to keep: break-even at about 65,000 transactions a month, and the conservative case cost-neutral at run rate. Everything modeled is labelled and will be re-cut on your volumes and EBANX's quote."
+   "notes": "The whole deck on one slide. Left, where you stand: five markets, six weeks, a $5 median ticket and a run-rate estimate that is yours. Right, what we propose: one integration carrying EBANX plus any other merchant of record, acquirer or local method each market needs, a fee that is a share of what you sell with the first $500K of monthly sales inside the platform fee, and a business case that, in the base scenario, makes the Yuno route the cheaper cost line at run rate before counting approval or coverage gains. Two numbers to keep: break-even at about 65,000 transactions a month, and the conservative case cost-neutral at run rate. Everything modeled is labelled and will be re-cut on your volumes and EBANX's quote."
   },
   {
    "id": "d02",
    "type": "divider",
    "num": "02",
    "title": "Where Carry1st stands and what Black Friday needs",
-   "sub": "What we heard, the Shop and the plan, and what the five markets demand",
+   "sub": "What the launch has to get right, the Shop and the plan, and what the five markets demand",
    "section_list": [
     "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
+    "02 Where Carry1st stands",
     "03 Two ways to launch",
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
+    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
-   "notes": "Section 02 restates what we heard from Cordel and Fatih, sizes the plan as you described it, and shows what the five markets require of a checkout."
+   "notes": "Section 02 sets out what the Latin America launch has to get right, sizes the plan, and shows what the five markets require of a checkout."
   },
   {
    "id": "heard",
    "type": "two_column",
-   "kicker": "WHERE CARRY1ST STANDS · WHAT WE HEARD",
-   "headline": "Three asks from Cordel and two from Fatih set the bar for this deck; each one has a section that answers it.",
+   "kicker": "WHERE CARRY1ST STANDS · WHAT THE LAUNCH HAS TO GET RIGHT",
+   "headline": "The Latin America launch has to get five things right, from economics at a $5 ticket to a path to local presence.",
    "cols": [
     {
-     "header": "CORDEL'S THREE ASKS",
+     "header": "THE COMMERCIAL TEST",
      "items": [
       {
-       "title": "Demonstrate the economics",
-       "body": "Show how processing savings, improved conversion and reduced engineering work justify Yuno's additional fee. Answered in section 05."
+       "title": "Economics that hold at a $5 to $10 ticket",
+       "body": "Processing savings, higher approval and engineering avoided have to cover the cost of orchestration at small tickets, not only at scale."
       },
       {
-       "title": "Make pricing work for small purchases",
-       "body": "The average ticket is about $10 and the median closer to $5, so fixed transaction fees are especially sensitive. Answered in sections 05 and 06."
+       "title": "Pricing that scales with sales, not transactions",
+       "body": "With a median ticket near $5, a fixed fee per transaction taxes the core basket; cost should be a share of what the Shop sells."
       },
       {
-       "title": "Clarify the EBANX arrangement",
-       "body": "How working with Yuno fits alongside EBANX, including starting through a particular provider or integrating directly. Answered in section 03."
+       "title": "One integration for EBANX and any rail added later",
+       "body": "EBANX stays where it is strong; other merchants of record, local acquirers and methods arrive as connections, not new builds."
       }
      ]
     },
     {
-     "header": "FATIH'S TWO ASKS",
+     "header": "THE GAMER AND THE ROADMAP",
      "items": [
       {
-       "title": "Checkout demos",
-       "body": "A working prototype of the Shop checkout on the Yuno SDK, checkout examples and test access to a live gaming checkout. Answered in section 04 and in the live demo."
+       "title": "A checkout that converts with local methods",
+       "body": "Pix, PSE, SPEI, wallets and QR in local currency, confirming in seconds to match instant top-up delivery."
       },
       {
-       "title": "Merchant of record versus local presence",
-       "body": "Launch timelines and the longer-term customer experience under each model. Answered in section 07."
+       "title": "A path from merchant of record to local presence",
+       "body": "Launch on a merchant of record now; move country by country to non-resident accounts or local entities later, without a rebuild."
       }
      ]
     }
    ],
-   "bar": "Everything else in this deck exists to answer these five questions; the appendix carries the market detail behind the answers.",
-   "source": "Discovery call between Carry1st and Yuno, October 2026, as summarized by Yuno.",
-   "notes": "We wrote down your five asks as close to verbatim as we could, so you can check that the deck answers what you actually asked rather than what we wanted to pitch. If we misheard any of them, this is the slide to correct."
+   "bar": "This is our read of what the launch needs; the rest of the deck tests EBANX direct and the Yuno route against these five points.",
+   "source": "Yuno analysis of the Carry1st Latin America launch, October 2026.",
+   "notes": "Our read of what the Latin America launch has to get right, in five points. Two are commercial: economics that hold at a small ticket, and a fee that follows sales rather than transactions. One is architectural: EBANX plus whatever else each market needs, without a new build each time. Two are about the gamer and the roadmap: local methods that confirm instantly, and a path to local presence that does not mean rebuilding the checkout. The rest of the deck is built against these five points."
   },
   {
    "id": "stands",
@@ -204,7 +198,7 @@
    ],
    "right_header": "WHAT BLACK FRIDAY NEEDS",
    "right_body": "**Live by 27 November 2026.** Local methods that confirm in seconds (Pix, PSE, SPEI, wallets), because the Shop promises instant delivery. **A domestic charge in local currency,** so cards are not declined as cross-border and gamers do not pay FX or foreign-purchase taxes. **One approval rate to beat, not to accept:** a second provider in play from day one. **Spanish and Portuguese** checkout and support. **Costs that scale with a $5 median,** never a fixed fee per transaction.",
-   "bar": "Six weeks to Black Friday: provider contracts and KYC are the critical path; the Yuno integration itself is measured in days (Yuno estimate, section 07).",
+   "bar": "Six weeks to Black Friday: provider contracts and KYC are the critical path; the Yuno integration itself is measured in days (Yuno estimate).",
    "source": "Discovery call, Oct 2026 (Cordel's figures are estimates, not yet aligned internally); shop.carry1st.com sitemap and Carry1st press releases 2021 to 2026, read 15 Oct 2026.",
    "notes": "This is the plan as you described it, in your numbers. We label the run rate as your estimate because you told us it is not yet aligned internally, and the model in this deck runs at four volumes so it holds whichever way the alignment lands. The right-hand column is the checklist we built the launch against: speed, local methods that confirm instantly, domestic presentation of the charge, a second provider from day one, and costs that behave at a $5 median."
   },
@@ -243,32 +237,31 @@
     },
     {
      "title": "Taxes follow the rail",
-     "body": "Argentina adds a 30% perception on foreign-currency card purchases; Brazil charges 3.5% IOF on international card payments. A local-currency charge through the MoR's local entity is domestic for the gamer. TO VALIDATE with EBANX and dLocal."
+     "body": "Argentina adds a 30% perception on foreign-currency card purchases; Brazil charges 3.5% IOF on international card payments. A local-currency charge through the MoR's local entity is domestic for the gamer. TO VALIDATE with each MoR."
     },
     {
-     "title": "Bolivia and Argentina need a second provider",
-     "body": "EBANX lists only PagosNet cash in Bolivia and no MODO or interoperable QR in Argentina; dLocal carries cards, QR and MODO there."
+     "title": "Bolivia and Argentina need more than EBANX",
+     "body": "EBANX lists only PagosNet cash in Bolivia and no MODO or interoperable QR in Argentina; other providers live on Yuno carry them."
     }
    ],
    "bar": "The Shop's African playbook, local methods in local currency, is exactly what LatAm requires; the open question is which rail carries it.",
    "source": "Reuters on PCMI data, 10 Feb 2026; CCCE via Valora Analitik, 24 Aug 2025; PCMI 2024 data; AMVO Estudio 2024; approval ranges are vendor-reported (Worldline, Rapyd, Nuvei, Antom, EBANX, 2017 to 2026); ARCA RG 5617/2024; Decree 12.499/2025. PUBLIC DOCS.",
-   "notes": "Four numbers, one per market, and they point the same way: the winning method is local and it confirms instantly. Pix in Brazil, PSE in Colombia, wallets in Argentina and debit cards in Mexico are the rails the Shop needs on day one. The approval ranges on the right are vendor claims, not independent studies, so we show them as ranges and label them; the direction is not in dispute. The two tax lines explain why a local-currency charge through a merchant of record matters for the gamer, and both are items we will confirm in writing with EBANX and dLocal."
+   "notes": "Four numbers, one per market, and they point the same way: the winning method is local and it confirms instantly. Pix in Brazil, PSE in Colombia, wallets in Argentina and debit cards in Mexico are the rails the Shop needs on day one. The approval ranges on the right are vendor claims, not independent studies, so we show them as ranges and label them; the direction is not in dispute. The two tax lines explain why a local-currency charge through a merchant of record matters for the gamer, and both are items we will confirm in writing with each merchant of record."
   },
   {
    "id": "d03",
    "type": "divider",
    "num": "03",
    "title": "Two ways to launch",
-   "sub": "EBANX direct, or EBANX and dLocal through Yuno",
+   "sub": "EBANX direct, or EBANX plus any local rail through Yuno",
    "section_list": [
     "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
+    "02 Where Carry1st stands",
     "03 Two ways to launch",
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
+    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "The decision in one grid, then a picture of how Yuno sits alongside EBANX."
@@ -299,7 +292,7 @@
      "sub": "OPTION A"
     },
     {
-     "header": "EBANX and dLocal through Yuno",
+     "header": "EBANX plus local rails through Yuno",
      "sub": "OPTION B · RECOMMENDED"
     }
    ],
@@ -318,7 +311,7 @@
       },
       {
        "state": "closed",
-       "text": "One now. EBANX, dLocal and later providers are connections."
+       "text": "One now. EBANX and every later provider is a connection."
       }
      ]
     },
@@ -332,11 +325,11 @@
       },
       {
        "state": "closed",
-       "text": "All five; dLocal adds Bolivia cards, Argentina MODO."
+       "text": "All five; a second provider adds Bolivia cards, MODO."
       },
       {
        "state": "closed",
-       "text": "All five, same coverage, one integration."
+       "text": "All five, plus any rail live on Yuno, one integration."
       }
      ]
     },
@@ -427,15 +420,15 @@
      "value": "6 of 6"
     }
    ],
-   "closing_line": "One integration either way; through Yuno it carries EBANX, dLocal and the path to local acquiring.",
+   "closing_line": "One integration either way; through Yuno it carries EBANX, any other rail and the path to local acquiring.",
    "source": "EBANX docs (api-operability, DEUNA partner page, pay-in guide, Bolivia and Argentina overviews) and status.ebanx.com, read 15 Oct 2026 (PUBLIC DOCS); docs.y.uno connections, routing, monitors, tokens (CONFIRMED). Yuno setup time is a Yuno estimate.",
-   "notes": "We start with the honest answer to your question. One EBANX integration and one agreement can switch on all five countries: the country is a field in the request, and EBANX enables each country on your account during onboarding, with sandbox tests per country and an integration review before production. So EBANX direct is a real option and we say so. What it cannot give you is a second rail: no retry on a decline, no failover in an outage, no cards or QR in Bolivia, no MODO in Argentina, and one counterparty on price. The middle column shows what it costs to fix that with a second direct build. The right column is the same fix as a routing rule."
+   "notes": "We start with the honest answer on EBANX direct. One EBANX integration and one agreement can switch on all five countries: the country is a field in the request, and EBANX enables each country on your account during onboarding, with sandbox tests per country and an integration review before production. So EBANX direct is a real option and we say so. What it cannot give you is a second rail: no retry on a decline, no failover in an outage, no cards or QR in Bolivia, no MODO in Argentina, and one counterparty on price. The middle column shows what it costs to fix that with a second direct build. The right column is the same fix as a routing rule."
   },
   {
    "id": "arrangement",
    "type": "diagram",
    "kicker": "TWO WAYS TO LAUNCH · HOW YUNO SITS ALONGSIDE EBANX",
-   "headline": "Yuno sits between the Shop and both merchants of record: EBANX for what it covers, dLocal for what it does not, one integration.",
+   "headline": "Yuno sits between the Shop and every provider: EBANX as merchant of record, plus whatever rail each market needs.",
    "boxes": [
     {
      "id": "l1",
@@ -468,45 +461,46 @@
      "body": "Checkout and SDK with local methods per market · routing and retries · Monitors and failover · vault with portable tokens · one dashboard and reconciliation"
     },
     {
-     "id": "l2",
-     "x": 0,
-     "y": 144,
-     "w": 300,
-     "h": 12,
-     "style": "label",
-     "title": "MERCHANTS OF RECORD · YOUR CONTRACTS, YUNO HOLDS THE CREDENTIALS"
-    },
-    {
      "id": "ebanx",
      "x": 0,
      "y": 158,
-     "w": 135,
+     "w": 101,
      "h": 66,
      "style": "light",
-     "title": "EBANX · primary MoR",
-     "body": "Brazil, Mexico, Colombia, Argentina: cards, Pix, OXXO Pay, SPEI, PSE, Nequi, Checkout Pro",
+     "title": "EBANX · MoR",
+     "body": "Brazil, Mexico, Colombia, Argentina: cards and the main local methods",
      "pill": "CONFIRMED"
     },
     {
-     "id": "dlocal",
-     "x": 142,
+     "id": "mor2",
+     "x": 106,
      "y": 158,
-     "w": 135,
+     "w": 101,
      "h": 66,
      "style": "light",
-     "title": "dLocal · second MoR",
-     "body": "Bolivia cards, QR and cash; Argentina MODO and QR; Mexico CoDi; failover in every market",
+     "title": "More MoRs as needed",
+     "body": "A second MoR where a market needs one, chosen with Carry1st (OPEN)"
+    },
+    {
+     "id": "apms",
+     "x": 212,
+     "y": 158,
+     "w": 102,
+     "h": 66,
+     "style": "light",
+     "title": "Local rails",
+     "body": "Acquirers and APMs: Pix, PSE, Bre-B, SPEI, OXXO, MODO, QR",
      "pill": "CONFIRMED"
     },
     {
      "id": "local",
-     "x": 284,
+     "x": 319,
      "y": 158,
-     "w": 136,
+     "w": 101,
      "h": 66,
      "style": "panel",
-     "title": "Phase 2 · local acquirers",
-     "body": "Local entity or non-resident account per country, added as a connection and routed by country",
+     "title": "Phase 2",
+     "body": "Local acquiring on a local entity or account, one more connection",
      "pill": "LATER"
     },
     {
@@ -517,7 +511,7 @@
      "h": 36,
      "style": "panel",
      "title": "One agreement per provider, one integration for all of them",
-     "body": "Carry1st signs and completes KYC with EBANX and with dLocal; both become connections on the same checkout."
+     "body": "Your contracts, Yuno holds the credentials: Carry1st signs with EBANX and each provider it adds, each one a connection."
     }
    ],
    "connectors": [
@@ -531,7 +525,11 @@
     },
     {
      "from": "yuno",
-     "to": "dlocal"
+     "to": "mor2"
+    },
+    {
+     "from": "yuno",
+     "to": "apms"
     },
     {
      "from": "yuno",
@@ -543,8 +541,8 @@
     "header": "WHAT THIS ARRANGEMENT GIVES CARRY1ST",
     "items": [
      {
-      "title": "One integration unlocks every MoR",
-      "body": "EBANX for what it covers, dLocal for what it does not. Both are connections on the same checkout, with the rest of Yuno's catalog behind them for Phase 2."
+      "title": "One integration unlocks every rail",
+      "body": "EBANX for what it covers; other MoRs, acquirers and local methods for what it does not. All are connections on the same checkout."
      },
      {
       "title": "One dashboard, one reconciliation",
@@ -552,12 +550,12 @@
      },
      {
       "title": "MoR swap insurance",
-      "body": "If EBANX pricing or service slips, Brazil moves to dLocal by routing rule, not by sprint. Card tokens stay in Yuno's vault; cash methods have nothing to tokenize."
+      "body": "If EBANX pricing or service slips, a market moves to another provider live on Yuno by routing rule, not by sprint. Card tokens stay in Yuno's vault."
      }
     ]
    },
-   "source": "docs.y.uno connections, routing, monitors, tokens (CONFIRMED); EBANX and dLocal country pages, read 15 Oct 2026 (PUBLIC DOCS). EBANX card coverage in Bolivia: OPEN, owner Yuno integrations.",
-   "notes": "This is the arrangement Cordel asked us to clarify. Carry1st keeps a direct agreement with EBANX and signs one with dLocal; Yuno never sits in the money flow. What changes is the integration: the Shop talks to one SDK, and EBANX and dLocal are credentials entered as connections, with routing rules deciding which one carries each payment. The Phase 2 box is the point for Fatih: when a country justifies a local entity, the local acquirer is one more connection and the checkout does not change."
+   "source": "docs.y.uno connections, routing, monitors, tokens; Yuno integrations directory (CONFIRMED); EBANX country pages, read 15 Oct 2026 (PUBLIC DOCS). Second MoR per market: OPEN, owner Justo.",
+   "notes": "This is how Yuno fits alongside EBANX. Carry1st keeps a direct agreement with EBANX and signs with whichever other providers each market needs: a second merchant of record, local acquirers, local methods. Yuno never sits in the money flow. What changes is the integration: the Shop talks to one SDK, every provider is a set of credentials entered as a connection, and routing rules decide which one carries each payment. Which second merchant of record to add is a choice we make with you market by market, on coverage and price. The Phase 2 box is about local presence: when a country justifies a local entity, the local acquirer is one more connection and the checkout does not change."
   },
   {
    "id": "d04",
@@ -567,13 +565,12 @@
    "sub": "Requirement, benefit, proof: what the Shop needs, what it gets, how we show it",
    "section_list": [
     "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
+    "02 Where Carry1st stands",
     "03 Two ways to launch",
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
+    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "Section 04 is the value proposition in the order you would check it: what the Shop needs, what each need gets through Yuno, and the proof behind it."
@@ -605,7 +602,7 @@
    "rows": [
     [
      "One integration for five countries",
-     "EBANX and dLocal as connections on one SDK; later providers and local acquirers added without touching checkout",
+     "EBANX and every other provider as connections on one SDK; later MoRs, acquirers and local methods added without touching checkout",
      "Connections are credentials entered in the dashboard or by API; Rappi: new-provider implementation time down to zero",
      {
       "text": "",
@@ -623,7 +620,7 @@
     ],
     [
      "Higher approval, fewer lost sales",
-     "A decline on EBANX retries on dLocal; routing by BIN, brand, amount and country; Smart Routing as data builds",
+     "A decline on EBANX retries on a second provider; routing by BIN, brand, amount and country; Smart Routing as data builds",
      "Published across Yuno merchants: up to 7% authorization uplift, 30% recovered revenue. Carry1st uplift modeled at +1.5 to +5 points",
      {
       "text": "",
@@ -641,7 +638,7 @@
     ],
     [
      "Cost that scales with a $5 median",
-     "Two MoRs on one checkout make the MDR negotiable; Yuno is billed as a share of what Carry1st sells, never a fixed fee per transaction",
+     "More than one provider per rail makes the MDR negotiable; Yuno is billed as a share of what Carry1st sells, never a fixed fee per transaction",
      "Business case in section 05 and the proposal in section 06",
      {
       "text": "",
@@ -741,223 +738,154 @@
    "type": "divider",
    "num": "05",
    "title": "Business case",
-   "sub": "EBANX direct against EBANX and dLocal through Yuno, at four volumes and three scenarios",
+   "sub": "EBANX direct against EBANX plus local rails through Yuno: four levers, three scenarios, one ticket test",
    "section_list": [
     "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
+    "02 Where Carry1st stands",
     "03 Two ways to launch",
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
+    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
-   "notes": "Three slides: both options at four volumes, three scenarios with the levers, and why the shape of the fee matters at a $5 median ticket."
+   "notes": "Three slides: the four levers and what each is worth at run rate, the total impact across three scenarios, and why the shape of the fee matters at a $5 median ticket."
   },
   {
-   "id": "bc-tiers",
-   "type": "bar_chart",
-   "kicker": "BUSINESS CASE · BOTH OPTIONS AT FOUR VOLUMES",
+   "id": "bc-levers",
+   "type": "lever_grid",
+   "kicker": "BUSINESS CASE · FOUR LEVERS AT RUN RATE",
    "tag": [
     "ESTIMATE"
    ],
-   "headline": "The Yuno route costs $44.2 per $1,000 of sales at run rate against $45.0 direct, and covers its fee from about 65K transactions.",
-   "unit": "$K",
-   "series": [
-    {
-     "name": "Option A · EBANX direct",
-     "color": "#B0B7F2"
-    },
-    {
-     "name": "Option B · EBANX and dLocal through Yuno, provider plus fee",
-     "color": "#344FE0"
-    },
-    {
-     "name": "Net benefit, base case",
-     "color": "#1F8A5B"
-    }
-   ],
+   "headline": "At $4.5M a month of sales, the four levers are worth about $574K a year to Carry1st in the base case.",
    "groups": [
     {
-     "label": "50K tx a month",
-     "sub": "$0.5M of sales",
-     "values": [
-      22.5,
-      27.5,
-      0
-     ],
-     "labels": [
-      "$22.5K",
-      "$27.5K",
-      "($1.1K)"
-     ]
+     "label": "Cost levers",
+     "span": 2
     },
     {
-     "label": "100K",
-     "sub": "$1.0M",
-     "values": [
-      45.0,
-      49.0,
-      2.6
-     ],
-     "labels": [
-      "$45.0K",
-      "$49.0K",
-      "+$2.6K"
-     ]
-    },
-    {
-     "label": "200K",
-     "sub": "$2.0M",
-     "values": [
-      90.0,
-      92.0,
-      9.9
-     ],
-     "labels": [
-      "$90.0K",
-      "$92.0K",
-      "+$9.9K"
-     ]
-    },
-    {
-     "label": "450K",
-     "sub": "$4.5M",
-     "values": [
-      202.5,
-      198.8,
-      29.1
-     ],
-     "labels": [
-      "$202.5K",
-      "$198.8K",
-      "+$29.1K"
-     ]
+     "label": "Operational levers",
+     "span": 2
     }
    ],
-   "note": "Monthly, USD thousands. Option A: all-in 4.5% of sales (Yuno estimate, range 3 to 6%, replaced by EBANX's quote). Option B: provider cost after a 50 bps routing saving, plus Yuno's fee. Net benefit: base case, contribution view at a 15% take rate (estimate), after Yuno's fee.",
-   "side": {
-    "header": "COST PER $1,000 OF SALES",
-    "items": [
-     {
-      "title": "EBANX direct",
-      "body": "$45.0 at every volume: one rate, one rail."
-     },
-     {
-      "title": "Through Yuno, provider plus fee",
-      "body": "$55.0 at 50K · $49.0 at 100K · $46.0 at 200K · $44.2 at 450K. Yuno alone: $7.5K, $9.0K, $12.0K and $18.8K a month."
-     },
-     {
-      "title": "Through Yuno, after all levers",
-      "body": "$47.3 · $42.5 · $40.1 · $38.5 per $1,000 of sales (base case)."
-     },
-     {
-      "title": "Break-even",
-      "body": "About 65,000 transactions a month ($0.65M of sales) in the base case; about 29,000 optimistic; about 269,000 conservative."
-     }
-    ]
-   },
-   "bar": "At launch (50K a month) the base case is ($1.1K) a month: Carry1st pays about $1.1K net for failover, a second provider in play and local-method coverage until volume passes about 65,000 transactions a month.",
-   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. Volumes: Carry1st, Cordel, Oct 2026, estimate. Every assumption is on the risks slide in the appendix. ESTIMATE.",
-   "notes": "Both options at the four volumes you gave us. The light bars are EBANX direct at an all-in 4.5% of sales, which is our estimate until EBANX's quote replaces it. The blue bars are EBANX and dLocal through Yuno: the provider cost after a 50 basis-point routing saving, plus Yuno's fee. At launch the Yuno route costs about $5K more a month and the net, after the approval and coverage levers, is about $1.1K negative. From about 65,000 transactions a month the net turns positive, and at run rate the Yuno route is the cheaper cost line before any revenue lever is counted."
-  },
-  {
-   "id": "bc-scenarios",
-   "type": "table",
-   "kicker": "BUSINESS CASE · THREE SCENARIOS AND THE LEVERS",
-   "tag": [
-    "ESTIMATE",
-    "CONFIRMED"
-   ],
-   "headline": "Processing savings carry the case, then engineering avoided, then approval: the base case returns $29.1K a month net at run rate.",
-   "columns": [
-    "Monthly, contribution view",
+   "row_labels": [
+    "Lever",
+    "How it works",
     "Conservative",
-    "Base",
     "Optimistic"
    ],
-   "col_widths": [
-    0.37,
-    0.21,
-    0.21,
-    0.21
+   "levers": [
+    {
+     "num": 1,
+     "name": "Processing cost",
+     "range": "25 to 75 bps",
+     "body": "With EBANX and other providers live on the same rails (Pix runs on 27 in Brazil, PSE on 12 in Colombia), volume moves by rule to the cheaper route, and every rate is negotiated against a real alternative. A processing saving is 100% contribution.",
+     "conservative": "+$135K/yr",
+     "optimistic": "+$405K/yr"
+    },
+    {
+     "num": 2,
+     "name": "Integrations avoided",
+     "range": "1 to 3 integrations",
+     "body": "A second merchant of record, a local acquirer, a new wallet: built direct, each is 4 to 8 engineering weeks plus 20 to 30% yearly upkeep. On Yuno they are connections already live, switched on from the dashboard, not projects.",
+     "conservative": "+$5.6K/yr",
+     "optimistic": "+$38K/yr"
+    },
+    {
+     "num": 3,
+     "name": "Approval uplift",
+     "range": "+1.5 to +5 pts",
+     "body": "Direct, every payment goes to one provider. Through Yuno a decline on EBANX retries on a second provider, Monitors reroute on a drop, and routing by BIN and country lifts approval from a 75% baseline. Counted at the take rate, not at face value.",
+     "conservative": "+$112K/yr",
+     "optimistic": "+$390K/yr"
+    },
+    {
+     "num": 4,
+     "name": "Local methods, checkout",
+     "range": "+0.5 to +2% of sales",
+     "body": "One checkout returns Pix, PSE, Nequi, SPEI, OXXO, MODO and QR per market, in local currency, so gamers without an international card can pay. Incremental sales are counted at the take rate, net of processing.",
+     "conservative": "+$28K/yr",
+     "optimistic": "+$117K/yr"
+    }
    ],
-   "header_style": "dark",
-   "font_size": 7.5,
-   "bold_first_col": true,
-   "zebra": true,
+   "assumptions": "**Assumptions** All figures in USD, a year, at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (ESTIMATE, replaced by EBANX's quote); 15% take rate on sales (ESTIMATE). Contribution view: L1 and L2 count in full, L3 and L4 at the take rate net of processing. L2: 4 to 8 weeks per integration at $2,000 a week plus upkeep, 24-month equivalent. Ranges are Yuno modelling assumptions, recalibrated on Carry1st's data.",
+   "closing": "The value can be monetized from launch: Yuno's connections to EBANX and the local rails already exist, so each lever is switched on, not built.",
+   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE; every assumption is on the risks slide in the appendix.",
+   "notes": "Four levers, two that cut cost and two that add sales. Processing cost comes first because resale margins are thin: with EBANX and other providers live on the same rails, volume moves to the cheaper route by rule, and a saving on processing is worth one hundred cents on the dollar. Integrations avoided is the engineering Carry1st does not spend each time a market needs a new provider. Approval and local methods add sales, and we count them at your take rate, not at face value. The two rows show the conservative and optimistic value of each lever a year at the $4.5M run rate; the base case totals about $574K a year."
+  },
+  {
+   "id": "bc-impact",
+   "type": "impact_table",
+   "kicker": "BUSINESS CASE · TOTAL IMPACT",
+   "tag": [
+    "ESTIMATE"
+   ],
+   "headline": "Total impact",
+   "subline": "At run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales, contribution view, a year.",
+   "columns": [
+    "Scenario",
+    "L1 Processing cost",
+    "L2 Integrations",
+    "L3 Approval",
+    "L4 Local methods",
+    "Total annual"
+   ],
    "rows": [
-    [
-     "1 · Processing saving at 450K (second MoR, volume routed to the cheaper rail)",
-     "$11.3K",
-     "$22.5K",
-     "$33.8K"
-    ],
-    [
-     "2 · Engineering avoided (direct integrations not built, 24-month equivalent)",
-     "$0.5K",
-     "$1.5K",
-     "$3.2K"
-    ],
-    [
-     "3 · Approval, retries and failover at 450K (contribution on recovered sales)",
-     "$9.3K ($90K of sales)",
-     "$19.1K ($180K of sales)",
-     "$32.5K ($300K of sales)"
-    ],
-    [
-     "4 · Local-method coverage at 450K (contribution on incremental sales)",
-     "$2.3K ($22.5K)",
-     "$4.8K ($45K)",
-     "$9.8K ($90K)"
-    ],
-    [
-     "Gross benefit at 450K against Yuno's $18.8K",
-     "$23.3K · 1.2x",
-     "$47.8K · 2.6x",
-     "$79.2K · 4.2x"
-    ],
-    [
-     {
-      "text": "Net at 450K, a month · a year",
-      "bold": true
-     },
-     {
-      "text": "+$4.6K · +$55K",
-      "bold": true
-     },
-     {
-      "text": "+$29.1K · +$349K",
-      "bold": true
-     },
-     {
-      "text": "+$60.5K · +$725K",
-      "bold": true
-     }
-    ],
-    [
-     "Net at launch (50K), a month",
-     "($4.6K)",
-     "($1.1K)",
-     "+$3.7K"
-    ],
-    [
-     "Break-even · cumulative payback on the ramp",
-     "about 269K tx · after Dec 2027",
-     "about 65K tx · Jan 2027",
-     "about 29K tx · Dec 2026"
-    ],
-    [
-     "Break-even by gross margin (41.7 bps all-in at run rate)",
-     "+4.2% more approved sales at a 10% margin",
-     "+2.8% at a 15% margin",
-     "+2.1% at 20%; published Yuno uplift up to 7%"
-    ]
+    {
+     "label": "Conservative",
+     "cells": [
+      "$135K",
+      "$5.6K",
+      "$112K",
+      "$28K"
+     ],
+     "total": "$280K",
+     "highlight": false
+    },
+    {
+     "label": "Base",
+     "cells": [
+      "$270K",
+      "$18K",
+      "$229K",
+      "$57K"
+     ],
+     "total": "$574K",
+     "highlight": true
+    },
+    {
+     "label": "Optimistic",
+     "cells": [
+      "$405K",
+      "$38K",
+      "$390K",
+      "$117K"
+     ],
+     "total": "$950K",
+     "highlight": false
+    }
    ],
-   "note": "Levers: MDR 25 / 50 / 75 bps; 1 / 2 / 3 integrations avoided; +1.5 / +3.0 / +5.0 pts approval on a 75% baseline; +0.5 / 1.0 / 2.0% local-method sales; 15% take rate (estimate). Yuno model, 15 Oct 2026.",
-   "source": "Yuno business-case model, 15 Oct 2026 (ESTIMATE, assumptions on the risks slide). Published Yuno uplift: y.uno, read 15 Oct 2026 (CONFIRMED).",
-   "notes": "Resale margins are thin, so we did not build this case on conversion. The first lever is a processing saving: with two merchants of record live on the same checkout, volume moves to the cheaper rail by rule, and a saving on processing is worth one hundred cents on the dollar. The second is the engineering you do not build. Approval and coverage come third and are counted at your margin, not at face value. The last row is the test a CFO applies: at 41.7 basis points all-in, the fee pays for itself with about 4% more approved sales at a 10% margin, half that at 20%, against a published uplift of up to 7%."
+   "hero": {
+    "value": "$574K",
+    "text": "of base-case **annual value** across the four levers, within a $280K to $950K range, against $225,000 a year on the proposal that follows: **+$349K a year net** in the base case, +$55K in the conservative case, roughly cost-neutral."
+   },
+   "takeaways": [
+    {
+     "title": "Processing cost carries it",
+     "body": "L1 is 47% of the base case: a saving on processing counts in full, while extra sales count only at the take rate."
+    },
+    {
+     "title": "Nothing here needs a rebuild",
+     "body": "EBANX stays. Other merchants of record, local acquirers and methods are connections already live on Yuno, switched on per market."
+    },
+    {
+     "title": "The baseline is yours to set",
+     "body": "75% approval, a 4.5% all-in rate and a 15% take rate are our estimates; your data and EBANX's quote replace them before anything is committed."
+    }
+   ],
+   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE. Yuno cost: the proposal in section 06, $18,750 a month at $4.5M.",
+   "notes": "The same four levers added up. In the base case they are worth about $574K a year at the $4.5M run rate, against $225,000 a year for Yuno, so about $349K a year net. We show the conservative case honestly: about $280K of value against the same $225,000, roughly cost-neutral, which is why the case leans on processing cost first. Every input is a placeholder for your data: approval baseline, EBANX's quote and your take rate."
   },
   {
    "id": "bc-ticket",
@@ -1047,7 +975,7 @@
    ],
    "note": "The platform fee is the one fixed element, so at launch and a $5 ticket it is 3.00% of sales; the structure pays off as volume ramps. Yuno business-case model, 15 Oct 2026; tickets: Carry1st, Cordel, Oct 2026 (estimate).",
    "source": "Yuno business-case model (bc_model.xlsx), Pricing and Sensitivity sheets, 15 Oct 2026. Ticket profile: Carry1st, Cordel, Oct 2026, estimate.",
-   "notes": "Cordel asked us to make pricing work for small purchases, so here is the same 450,000 transactions at three tickets. A fixed fee is blind to the ticket: five cents is 0.5% of a $10 sale and 1% of a $5 sale, ten cents twice that. Yuno's usage is a share of what you sell, so on a $5 purchase the marginal cost is one to one and a half cents, and all-in at run rate 0.57% of sales. We are upfront about the one fixed element: at launch volume and a $5 ticket the platform fee alone is 3% of sales, and the structure earns its keep as volume ramps rather than in month one."
+   "notes": "Pricing has to work for small purchases, so here is the same 450,000 transactions at three tickets. A fixed fee is blind to the ticket: five cents is 0.5% of a $10 sale and 1% of a $5 sale, ten cents twice that. Yuno's usage is a share of what you sell, so on a $5 purchase the marginal cost is one to one and a half cents, and all-in at run rate 0.57% of sales. We are upfront about the one fixed element: at launch volume and a $5 ticket the platform fee alone is 3% of sales, and the structure earns its keep as volume ramps rather than in month one."
   },
   {
    "id": "d06",
@@ -1057,13 +985,12 @@
    "sub": "A platform fee and a share of what Carry1st sells, never a fee per transaction",
    "section_list": [
     "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
+    "02 Where Carry1st stands",
     "03 Two ways to launch",
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
+    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "The commercial proposal on one slide, followed by what Yuno puts in before signing and what the platform fee already covers."
@@ -1155,7 +1082,7 @@
       ]
      ]
     },
-    "foot": "Every integration maintained by Yuno. Adding dLocal, a local acquirer or a new local method later is a routing change, not a new project."
+    "foot": "Every integration maintained by Yuno. Adding another MoR, a local acquirer or a new local method later is a routing change, not a new project."
    },
    "right": {
     "title": "WHAT IT MEANS FOR CARRY1ST",
@@ -1251,7 +1178,7 @@
       },
       {
        "title": "Local provider negotiation",
-       "body": "Yuno brings EBANX and dLocal to the table on Carry1st's behalf, including how the EBANX arrangement sits alongside Yuno."
+       "body": "Yuno brings EBANX and the other providers each market needs to the table on Carry1st's behalf, alongside the EBANX arrangement."
       }
      ]
     },
@@ -1279,93 +1206,25 @@
    ],
    "bar": "The platform fee is the only fixed element in the proposal; everything on this slide sits inside it or comes before it.",
    "source": "Yuno commitments to Carry1st, October 2026.",
-   "notes": "Everything on this slide is included. The prototype and the localization support were offered on the discovery call and we stand by them; the provider negotiation is part of how we work with EBANX and dLocal for every merchant on the platform. Inside the platform fee there is no setup charge, and adding a provider later is configuration, not a project or a fee."
+   "notes": "Everything on this slide is included. The prototype and the localization support were offered on the discovery call and we stand by them; the provider negotiation is part of how we work with EBANX and the local providers on the platform for every merchant. Inside the platform fee there is no setup charge, and adding a provider later is configuration, not a project or a fee."
   },
   {
    "id": "d07",
    "type": "divider",
    "num": "07",
-   "title": "Launch plan to Black Friday and Phase 2",
-   "sub": "Six weeks to 27 November, then merchant of record against local presence",
+   "title": "Phase 2: merchant of record or local presence",
+   "sub": "Launch on a merchant of record now, then move country by country to local presence",
    "section_list": [
     "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
+    "02 Where Carry1st stands",
     "03 Two ways to launch",
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
+    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
-   "notes": "The week-by-week plan to Black Friday, and the comparison Fatih asked for: merchant of record, non-resident account, local entity."
-  },
-  {
-   "id": "launch",
-   "type": "table",
-   "kicker": "LAUNCH PLAN · SIX WEEKS TO 27 NOVEMBER 2026",
-   "tag": [
-    "PUBLIC DOCS",
-    "ESTIMATE"
-   ],
-   "headline": "Six weeks to 27 November: provider contracts and KYC are the critical path; the Yuno work is measured in days.",
-   "columns": [
-    "Week",
-    "Carry1st, EBANX and dLocal (critical path)",
-    "Yuno",
-    "Exit"
-   ],
-   "col_widths": [
-    0.15,
-    0.37,
-    0.3,
-    0.18
-   ],
-   "header_style": "dark",
-   "font_size": 7,
-   "bold_first_col": true,
-   "zebra": true,
-   "rows": [
-    [
-     "Week 1 · 19 to 23 Oct",
-     "Scope confirmed (Brazil first or all five) and owners named; decision on the proposal; EBANX and dLocal agreements requested; volumes by country and EBANX's rates shared",
-     "Implementation lead named; sandbox keys and prototype access to Fatih's team; routing design agreed (EBANX primary, dLocal fallback)",
-     "Decision taken, agreements in motion"
-    ],
-    [
-     "Week 2 · 26 to 30 Oct",
-     "Agreements signed, KYC submitted to both providers; country enablement requested from EBANX for each market; Spanish and Portuguese copy started",
-     "Checkout build on the Yuno SDK starts from the prototype; payment-method list per market locked",
-     "KYC submitted; build under way"
-    ],
-    [
-     "Week 3 · 2 to 6 Nov",
-     "Provider sandbox credentials received; test transactions per country as EBANX requires",
-     "Connections created the day credentials arrive (1 to 2 days); routing rules and Monitors configured; webhooks and reconciliation set up",
-     "Both connections live in sandbox"
-    ],
-    [
-     "Week 4 · 9 to 13 Nov",
-     "EBANX Integration Review requested; dLocal go-live activation requested; support playbook and refund policy per market",
-     "End-to-end QA (3 to 5 days): decline retry EBANX to dLocal, refunds, Pix and PSE confirmation to delivery",
-     "Production credentials requested"
-    ],
-    [
-     "Week 5 · 16 to 20 Nov",
-     "Production credentials from both providers; soft launch in Brazil with internal buyers; local-currency pricing checked",
-     "Production connections, routing published, live monitoring; go-live runbook",
-     "Brazil live in production (soft)"
-    ],
-    [
-     "Week 6 · 23 to 27 Nov",
-     "Brazil open to all users; Argentina, Mexico and Colombia follow as each enablement lands; Bolivia through dLocal",
-     "On-call through launch; daily approval review by provider and country; Monitors active",
-     "Black Friday, 27 Nov: Shop live in LatAm"
-    ]
-   ],
-   "note": "Provider onboarding and country enablement have no published SLA at EBANX or dLocal; Yuno durations are Yuno estimates. Dates assume the decision in week 1.",
-   "source": "EBANX pay-in guide and DEUNA partner page; docs.dlocal.com go-live prerequisites; docs.y.uno connections, read 15 Oct 2026 (PUBLIC DOCS and CONFIRMED). Yuno durations: Yuno estimate.",
-   "notes": "The honest version of the timeline. The critical path is not Yuno: it is the two provider onboardings, which neither EBANX nor dLocal puts a day count on, so we run them in parallel from week 1 and we start the Yuno build from the prototype while they progress. Once credentials exist, a connection takes a day or two and QA a few days. Brazil goes live softly in week 5 so that Black Friday is an opening, not a first test."
+   "notes": "Merchant of record, non-resident account and local entity compared on launch time, tax, approval and cost, and where Yuno fits as Carry1st moves between them."
   },
   {
    "id": "phase2",
@@ -1397,7 +1256,7 @@
    "rows": [
     [
      "Time to launch",
-     "Weeks: agreement, KYC, sandbox, review (dLocal cites up to 8 weeks for market entry)",
+     "Weeks: agreement, KYC, sandbox tests per country and an integration review",
      "Weeks to months: local bank account and tax registration without a company; rules vary by country",
      "Months: Brazil 6 to 12 weeks for registration plus the bank account; Mexico 4 to 12 weeks; Argentina SAS 7 to 15 business days plus bank; Colombia, Bolivia not published",
      "Checkout unchanged across all three; the acquirer is a new connection"
@@ -1421,7 +1280,7 @@
      "All-in rate with FX and tax pass-through inside it (Yuno estimate 3 to 6% of sales; EBANX's quote replaces it)",
      "Lower processing, plus Carry1st's own tax and compliance overhead",
      "Lowest processing cost at scale; highest fixed overhead (entity, accounting, treasury)",
-     "Two MoRs in play at launch keep the rate negotiable"
+     "More than one provider per rail keeps the rate negotiable"
     ],
     [
      "When it makes sense",
@@ -1431,57 +1290,9 @@
      "Move country by country, no re-integration"
     ]
    ],
-   "note": "Approval ranges are vendor-reported (2017 to 2026). Tax treatment under each MoR: OPEN, owner German, requested in writing from EBANX and dLocal.",
-   "source": "dLocal dMoRe release 26 Aug 2026; EBANX api-operability; Healy, Commenda, BizLatinHub, TMF 2025 to 2026 (incorporation); Kintsugi 2026, Estatuto Tributario, Ley 27.430, Decree 12.499/2025, RG 5617/2024 (tax); docs.y.uno connections and routing. PUBLIC DOCS unless marked.",
-   "notes": "Fatih asked for merchant of record against local presence with launch time and the long-term customer experience. The short version: the MoR launches in weeks and gives the gamer a domestic charge in local currency from day one; a local entity takes months and pays off at scale through lower processing and local acquiring. The Yuno column is the point: because the acquirer is a connection, Carry1st can make that move in Brazil first and Mexico second without touching the checkout, and keep the MoR live as fallback while it does."
-  },
-  {
-   "id": "d08",
-   "type": "divider",
-   "num": "08",
-   "title": "Next steps",
-   "sub": "Three weeks, owners on both sides, and a decision date",
-   "section_list": [
-    "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
-    "03 Two ways to launch",
-    "04 Why Yuno",
-    "05 Business case",
-    "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
-    "Appendix: LatAm deep dive and sources"
-   ],
-   "notes": "What happens in the next three weeks, who owns each step on each side, and the date by which the decision is needed so provider onboarding can start in time."
-  },
-  {
-   "id": "next",
-   "type": "next_steps",
-   "kicker": "NEXT STEPS · THE NEXT THREE WEEKS",
-   "headline": "Three weeks, owners on both sides, and a decision by 23 October so provider onboarding can start in time for Black Friday.",
-   "cards": [
-    {
-     "eyebrow": "WEEK 1 · 19 TO 23 OCT",
-     "num": "01",
-     "title": "Decide and sign",
-     "body": "Carry1st (Cordel): confirm Brazil first or all five, send volumes by country and EBANX's proposed rates, decide on this proposal by Friday 23 October. Yuno (German, Justo): final terms and order form; JP confirms the localization support."
-    },
-    {
-     "eyebrow": "WEEK 2 · 26 TO 30 OCT",
-     "num": "02",
-     "title": "Onboard the providers",
-     "body": "Carry1st (Cordel, Fatih): EBANX and dLocal agreements and KYC in parallel, the critical path to 27 November. Yuno (solutions engineering): kickoff with Fatih's team, prototype extended to Bolivia and the Shop's real SKUs, routing design agreed."
-    },
-    {
-     "eyebrow": "WEEK 3 · 2 TO 6 NOV",
-     "num": "03",
-     "title": "Connect and build",
-     "body": "Carry1st (Fatih): checkout build on the Yuno SDK from the prototype; Spanish and Portuguese copy. Yuno (solutions engineering, German): connections live the day credentials arrive, Monitors and routing configured, QA plan for weeks 4 to 6."
-    }
-   ],
-   "contact": "Decision date: Friday 23 October 2026 · German Tatis · german.tatis@y.uno · +1 786 238 4554",
-   "source": "Owners and dates proposed by Yuno, 15 Oct 2026; to be confirmed on the call.",
-   "notes": "We propose a decision by Friday 23 October. Not because of us: the two provider onboardings are the critical path to 27 November, and they cannot start until the direction is set. Each step has an owner on both sides. If the decision is to go, the kickoff with Fatih's team happens the following week and the prototype becomes the starting point of the real build."
+   "note": "Approval ranges are vendor-reported (2017 to 2026). Tax treatment under each MoR: OPEN, owner German, requested in writing from each MoR.",
+   "source": "EBANX api-operability and pay-in guide; Healy, Commenda, BizLatinHub, TMF 2025 to 2026 (incorporation); Kintsugi 2026, Estatuto Tributario, Ley 27.430, Decree 12.499/2025, RG 5617/2024 (tax); docs.y.uno connections and routing. PUBLIC DOCS unless marked.",
+   "notes": "Merchant of record against local presence, on launch time and the long-term customer experience. The short version: the MoR launches in weeks and gives the gamer a domestic charge in local currency from day one; a local entity takes months and pays off at scale through lower processing and local acquiring. The Yuno column is the point: because the acquirer is a connection, Carry1st can make that move in Brazil first and Mexico second without touching the checkout, and keep the MoR live as fallback while it does."
   },
   {
    "id": "closing",
@@ -1501,13 +1312,12 @@
    "sub": "Country levers show one fifth of the base case at run rate, an equal split until volumes by country arrive.",
    "section_list": [
     "01 Executive summary",
-    "02 Where Carry1st stands and what Black Friday needs",
+    "02 Where Carry1st stands",
     "03 Two ways to launch",
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Launch plan to Black Friday and Phase 2",
-    "08 Next steps",
+    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "One market slide and one connections slide per country, then the assumptions behind every modeled number and the sources. The lever cards split the base-case run-rate figures in equal fifths as a placeholder; they will be re-cut on Carry1st's volume projections by country."
@@ -1546,21 +1356,21 @@
      "label": "LOCAL METHODS",
      "value": "+1.0% of TPV",
      "money": "$9K incremental GMV a month, one fifth",
-     "tactic": "Pix and domestic cards (Elo, Hipercard) through EBANX and dLocal from day one; Boleto in a second wave."
+     "tactic": "Pix and domestic cards (Elo, Hipercard) through EBANX from day one, with more providers live on both; Boleto later."
     },
     {
      "num": "2",
      "label": "APPROVAL AND RETRIES",
      "value": "+3.0 pts approval",
      "money": "$36K incremental GMV a month, one fifth",
-     "tactic": "Retry EBANX card declines on dLocal; present as a domestic charge so domestic-only cards (about 70%) can pay."
+     "tactic": "Retry EBANX card declines on a second provider; present as a domestic charge so domestic-only cards (about 70%) can pay."
     },
     {
      "num": "3",
      "label": "COST AND LEVERAGE",
      "value": "50 bps of TPV",
      "money": "$4.5K saved a month, one fifth of base",
-     "tactic": "Two MoRs live on Pix and cards; move share to the cheaper route by rule once both are live."
+     "tactic": "Pix runs on 27 providers live on Yuno; move share to the cheaper route by rule once a second one is live."
     }
    ],
    "table": {
@@ -1587,21 +1397,21 @@
       "Pix",
       "42% of online purchases",
       "Primary rail, instant confirmation",
-      "EBANX, dLocal and 25 more"
+      "EBANX and 26 more on Yuno"
      ],
      [
       "Must-have",
       "Cards incl. Elo, Hipercard",
       "40 to 41% of value",
       "Mainstream; installments later",
-      "EBANX, dLocal, Adyen, Cielo"
+      "EBANX, Adyen, Cielo, Getnet"
      ],
      [
       "Optional",
       "Boleto",
       "Legacy cash voucher",
       "Second wave; slow confirmation",
-      "EBANX, dLocal, Mercado Pago"
+      "EBANX, Mercado Pago, Pagar.me"
      ]
     ]
    },
@@ -1622,7 +1432,7 @@
      }
     ]
    },
-   "sowhat": "Launch Brazil on Pix and local cards through the MoR; keep Boleto off at launch, and keep dLocal live behind EBANX from day one.",
+   "sowhat": "Launch Brazil on Pix and local cards through the MoR; keep Boleto off at launch, and keep a second provider live behind EBANX from day one.",
    "source": "Reuters 10 Feb 2026 (PCMI); Banco Central via press 2026; Newzoo and Allcorrect 2025; IQPC (undated); Decree 12.499/2025 (IOF); Yuno directory Oct 2026. TO VALIDATE: Boleto share 2025; IOF treatment of MoR charges (owner German).",
    "notes": "Brazil is where the Shop launches, and it is the market where the two rails that matter, Pix and domestic cards, both confirm instantly. The levers show one fifth of the base case at run rate as a placeholder until your volumes by country arrive. The one thing we would not do at launch is Boleto: it confirms late and the Shop promises instant delivery."
   },
@@ -1630,26 +1440,21 @@
    "id": "cty-br-connections",
    "type": "logo_grid",
    "kicker": "APPENDIX · BRAZIL · CONNECTIONS THROUGH YUNO",
-   "headline": "Brazil: EBANX and dLocal are two of 46 providers live through Yuno; Pix is carried by 27 of them.",
+   "headline": "Brazil: 46 providers live through Yuno, EBANX among them; 27 of them carry Pix and eight carry Boleto.",
    "sections": [
     {
-     "header": "Merchant-of-record routes for the launch",
+     "header": "Merchant of record at launch",
      "style": "signed",
      "chips": [
       {
        "name": "EBANX",
        "logo": "https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328eb3ff8db20bce_678303ab410d52a65abf28f4_673acac481b89b8d0ad6bd7c_ebanx_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "dLocal",
-       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
-       "aspect": 1.0
       }
      ]
     },
     {
-     "header": "Live through Yuno (46)",
+     "header": "Local rails and acquirers live through Yuno (46)",
      "chips": [
       {
        "name": "Adyen",
@@ -1930,7 +1735,7 @@
     }
    ],
    "source": "Yuno integrations directory (docs.y.uno Payment Type list and y.uno/integrations), pulled 14 Oct 2026. CONFIRMED. Logos are the providers' own marks.",
-   "notes": "Every provider live through Yuno in Brazil, from the Yuno integrations directory. The two merchant-of-record routes for the launch are highlighted; the rest is what Phase 2 can draw on without a new integration. Pix alone is carried by 27 providers, which is what makes the cost lever real.",
+   "notes": "Every provider live through Yuno in Brazil, from the Yuno integrations directory. EBANX, the merchant of record at launch, is highlighted; the 46 below are the local rails and acquirers the Shop can add by routing rule, at launch or in Phase 2, without a new integration. Pix alone is carried by 27 providers, which is what makes the cost lever real.",
    "table": {
     "columns": [
      "Local method",
@@ -1962,7 +1767,7 @@
    "type": "country_deepdive",
    "kicker": "APPENDIX · ARGENTINA",
    "flag": "https://flagcdn.com/w80/ar.png",
-   "headline": "Argentina is a wallet market where the 30% perception makes local-currency pricing the whole game; MODO arrives via dLocal.",
+   "headline": "Argentina is a wallet market where the 30% perception makes local pricing decisive; MODO and QR need rails beyond EBANX.",
    "stats": [
     {
      "value": "46%",
@@ -1991,21 +1796,21 @@
      "label": "LOCAL METHODS",
      "value": "+1.0% of TPV",
      "money": "$9K incremental GMV a month, one fifth",
-     "tactic": "Mercado Pago wallet and cards via EBANX and dLocal at launch; MODO and interoperable QR via dLocal as fast follow."
+     "tactic": "Mercado Pago and cards via EBANX at launch; MODO and interoperable QR through local rails on Yuno as fast follow."
     },
     {
      "num": "2",
      "label": "APPROVAL AND RETRIES",
      "value": "+3.0 pts approval",
      "money": "$36K incremental GMV a month, one fifth",
-     "tactic": "A local-currency charge through the MoR avoids the 30% perception; retry declines across EBANX and dLocal."
+     "tactic": "A local-currency charge through the MoR avoids the 30% perception; retry declines on a second provider."
     },
     {
      "num": "3",
      "label": "COST AND LEVERAGE",
      "value": "50 bps of TPV",
      "money": "$4.5K saved a month, one fifth of base",
-     "tactic": "Both MoRs carry cards and Mercado Pago; move share by rule. Cash (Rapipago, Pago Fácil) stays optional."
+     "tactic": "Cards run on 21 providers live on Yuno; move share by rule. Cash (Rapipago, Pago Fácil) stays optional."
     }
    ],
    "table": {
@@ -2032,21 +1837,21 @@
       "Mercado Pago Wallet",
       "46 to 55% of e-commerce",
       "Primary rail",
-      "EBANX, dLocal, Mercado Pago"
+      "EBANX, Mercado Pago and more"
      ],
      [
       "Must-have",
       "Cards incl. Naranja, Cabal",
       "45% of value across card lines",
       "Needs local presentation",
-      "EBANX, dLocal, Prisma, Fiserv"
+      "EBANX, Prisma, Fiserv and more"
      ],
      [
       "Fast follow",
       "MODO, interoperable QR",
       "17M+ users",
       "Not available on EBANX",
-      "dLocal"
+      "dLocal, MODO, Mercado Pago"
      ]
     ]
    },
@@ -2067,34 +1872,29 @@
      }
     ]
    },
-   "sowhat": "Argentina rewards the second provider immediately: MODO and QR exist only on dLocal, and the perception rule makes local-currency pricing non-negotiable.",
+   "sowhat": "Argentina rewards a second rail immediately: MODO and QR sit outside EBANX, and the perception rule makes local-currency pricing non-negotiable.",
    "source": "PCMI 2024 via press; Global Payments Report 2026 via Forbes Argentina; Descubre 14 Jul 2026; ARCA RG 5617/2024 (Fortuna, 2026); Newzoo 2024 via iProUP; EBANX Argentina overview; Yuno directory Oct 2026. TO VALIDATE: perception treatment per MoR (owner German).",
-   "notes": "Argentina is a wallet market, and it is the market where the rail decides the price the gamer sees: a foreign-currency card purchase carries a 30% perception that a local-currency charge through the merchant of record does not. MODO and interoperable QR are only reachable through dLocal, which is the second-provider argument in one line."
+   "notes": "Argentina is a wallet market, and it is the market where the rail decides the price the gamer sees: a foreign-currency card purchase carries a 30% perception that a local-currency charge through the merchant of record does not. MODO and interoperable QR are not on EBANX; through Yuno they come from local rails such as dLocal, MODO itself and Mercado Pago QR, which is the second-provider argument in one line."
   },
   {
    "id": "cty-ar-connections",
    "type": "logo_grid",
    "kicker": "APPENDIX · ARGENTINA · CONNECTIONS THROUGH YUNO",
-   "headline": "Argentina: 23 providers live through Yuno; MODO and interoperable QR reach the Shop only through dLocal.",
+   "headline": "Argentina: 23 providers live through Yuno; 21 carry cards, and MODO and QR come through rails beyond EBANX.",
    "sections": [
     {
-     "header": "Merchant-of-record routes for the launch",
+     "header": "Merchant of record at launch",
      "style": "signed",
      "chips": [
       {
        "name": "EBANX",
        "logo": "https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328eb3ff8db20bce_678303ab410d52a65abf28f4_673acac481b89b8d0ad6bd7c_ebanx_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "dLocal",
-       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
-       "aspect": 1.0
       }
      ]
     },
     {
-     "header": "Live through Yuno (23)",
+     "header": "Local rails and acquirers live through Yuno (23)",
      "chips": [
       {
        "name": "AstroPay",
@@ -2260,7 +2060,7 @@
     }
    ],
    "source": "Yuno integrations directory (docs.y.uno Payment Type list and y.uno/integrations), pulled 14 Oct 2026. CONFIRMED. Logos are the providers' own marks.",
-   "notes": "The Argentina connections live through Yuno. Cards and Mercado Pago are on both merchant-of-record routes; MODO and interoperable QR are on dLocal only, which is why the second route matters here from day one.",
+   "notes": "The Argentina connections live through Yuno. EBANX carries cards and Mercado Pago Checkout Pro; MODO and interoperable QR come from other rails live on Yuno (dLocal and MODO direct for MODO, Mercado Pago for QR), which is why more than one rail matters here from day one.",
    "table": {
     "columns": [
      "Local method",
@@ -2286,8 +2086,8 @@
      ],
      [
       "MODO, interoperable QR",
-      "dLocal",
-      "1"
+      "MODO: dLocal, MODO direct · QR: Mercado Pago",
+      "3"
      ],
      [
       "Rapipago, Pago Fácil (cash)",
@@ -2331,21 +2131,21 @@
      "label": "LOCAL METHODS",
      "value": "+1.0% of TPV",
      "money": "$9K incremental GMV a month, one fifth",
-     "tactic": "Debit and credit cards incl. Carnet, SPEI and OXXO Pay through EBANX and dLocal; CoDi and 7-Eleven through dLocal later."
+     "tactic": "Debit and credit cards incl. Carnet, SPEI and OXXO Pay through EBANX; CoDi and store cash through local rails later."
     },
     {
      "num": "2",
      "label": "APPROVAL AND RETRIES",
      "value": "+3.0 pts approval",
      "money": "$36K incremental GMV a month, one fifth",
-     "tactic": "Local presentation lifts debit approval (Nuvei cites 20 to 30 points); retry EBANX declines on dLocal."
+     "tactic": "Local presentation lifts debit approval (Nuvei cites 20 to 30 points); retry EBANX declines on a second provider."
     },
     {
      "num": "3",
      "label": "COST AND LEVERAGE",
      "value": "50 bps of TPV",
      "money": "$4.5K saved a month, one fifth of base",
-     "tactic": "Both MoRs carry cards, SPEI and OXXO; the largest LatAm card base gives routing share real weight."
+     "tactic": "Cards, SPEI and OXXO each run on several providers; the largest LatAm card base gives routing share real weight."
     }
    ],
    "table": {
@@ -2372,21 +2172,21 @@
       "Debit and credit cards incl. Carnet",
       "74% and 54% usage",
       "Domestic presentation, 3DS tuned",
-      "EBANX, dLocal and 31 more"
+      "EBANX and 32 more on Yuno"
      ],
      [
       "Must-have",
       "SPEI",
       "8 of 10 buyers use cards or SPEI",
       "Instant bank transfer",
-      "EBANX, dLocal, Kushki, STP"
+      "EBANX, Kushki, STP and 5 more"
      ],
      [
       "Must-have",
       "OXXO Pay and OXXO cash",
       "Cash 17% of usage",
       "OXXO Pay confirms faster",
-      "EBANX, dLocal, Bamboo"
+      "EBANX, Bamboo, PagSeguro"
      ]
     ]
    },
@@ -2407,34 +2207,29 @@
      }
     ]
    },
-   "sowhat": "Mexico converts on debit and SPEI presented as domestic; the second MoR matters most for failover, and for CoDi and convenience-store cash later.",
+   "sowhat": "Mexico converts on debit and SPEI presented as domestic; a second rail matters most for failover, and for CoDi and convenience-store cash later.",
    "source": "AMVO Estudio 2024 and 2026; Endeavor México and Santander via Forbes México 2025; Nuvei, Unlimit and Antom vendor pages 2025 to 2026 (vendor claims); Kintsugi 2026 (IVA); Yuno directory Oct 2026. TO VALIDATE: AMVO 2026 method shares; OXXO share.",
-   "notes": "Mexico is the largest card base in the region and a debit market: three in four online buyers use debit, and debit is the card type most often declined when the merchant looks foreign. That is why the merchant of record has to present the charge as domestic. SPEI and OXXO Pay complete the set; CoDi and the convenience-store networks can follow through dLocal."
+   "notes": "Mexico is the largest card base in the region and a debit market: three in four online buyers use debit, and debit is the card type most often declined when the merchant looks foreign. That is why the merchant of record has to present the charge as domestic. SPEI and OXXO Pay complete the set; CoDi and the convenience-store networks can follow through other rails live on Yuno, for example dLocal or Unlimit."
   },
   {
    "id": "cty-mx-connections",
    "type": "logo_grid",
    "kicker": "APPENDIX · MEXICO · CONNECTIONS THROUGH YUNO",
-   "headline": "Mexico: 36 providers live through Yuno; SPEI and OXXO reach the Shop through either MoR, CoDi and 7-Eleven through dLocal.",
+   "headline": "Mexico: 36 providers live through Yuno; SPEI runs on eight of them, OXXO on six and CoDi on two.",
    "sections": [
     {
-     "header": "Merchant-of-record routes for the launch",
+     "header": "Merchant of record at launch",
      "style": "signed",
      "chips": [
       {
        "name": "EBANX",
        "logo": "https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328eb3ff8db20bce_678303ab410d52a65abf28f4_673acac481b89b8d0ad6bd7c_ebanx_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "dLocal",
-       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
-       "aspect": 1.0
       }
      ]
     },
     {
-     "header": "Live through Yuno (36)",
+     "header": "Local rails and acquirers live through Yuno (36)",
      "chips": [
       {
        "name": "Adyen",
@@ -2675,7 +2470,7 @@
     }
    ],
    "source": "Yuno integrations directory (docs.y.uno Payment Type list and y.uno/integrations), pulled 14 Oct 2026. CONFIRMED. Logos are the providers' own marks.",
-   "notes": "The Mexico connections live through Yuno. Cards, SPEI and OXXO are on both merchant-of-record routes; CoDi and the convenience-store cash networks are on dLocal. The 36 providers behind them are what Phase 2 local acquiring can draw on.",
+   "notes": "The Mexico connections live through Yuno. EBANX carries cards, SPEI and OXXO Pay, and each of them also runs on several other providers; CoDi and the convenience-store cash networks come from local rails such as dLocal and Unlimit. The 36 providers behind them are what Phase 2 local acquiring can draw on.",
    "table": {
     "columns": [
      "Local method",
@@ -2741,21 +2536,21 @@
      "label": "LOCAL METHODS",
      "value": "+1.0% of TPV",
      "money": "$9K incremental GMV a month, one fifth",
-     "tactic": "PSE and Nequi through dLocal and EBANX, Bre-B as fast follow through dLocal; cards through both MoRs."
+     "tactic": "PSE and Nequi from day one; Bre-B as fast follow through local rails on Yuno; cards on several providers."
     },
     {
      "num": "2",
      "label": "APPROVAL AND RETRIES",
      "value": "+3.0 pts approval",
      "money": "$36K incremental GMV a month, one fifth",
-     "tactic": "Account-to-account methods approve or fail instantly; retry card declines across both MoRs."
+     "tactic": "Account-to-account methods approve or fail instantly; retry card declines on a second provider."
     },
     {
      "num": "3",
      "label": "COST AND LEVERAGE",
      "value": "50 bps of TPV",
      "money": "$4.5K saved a month, one fifth of base",
-     "tactic": "PSE and cards sit on both MoRs: route by method and by cost; 19% IVA handled by the MoR (TO VALIDATE)."
+     "tactic": "PSE runs on 12 providers live on Yuno: route by method and cost; 19% IVA handled by the MoR (TO VALIDATE)."
     }
    ],
    "table": {
@@ -2782,21 +2577,21 @@
       "PSE",
       "63.9% of transactions",
       "Primary rail, instant",
-      "dLocal, EBANX, PayU, Kushki, Wompi"
+      "EBANX, PayU, Kushki, Wompi and more"
      ],
      [
       "Must-have",
       "Nequi, Bre-B",
       "28M and 36M users",
       "Wallet and QR reach",
-      "dLocal, Wompi, Nuvei; Bre-B: dLocal"
+      "Wompi, Nuvei; Bre-B: dLocal, Refacil"
      ],
      [
       "Must-have",
       "Cards",
       "33% of transactions, 43% of value",
       "Local presentation",
-      "EBANX, dLocal, Credibanco, Redeban"
+      "EBANX, Credibanco, Redeban and more"
      ]
     ]
    },
@@ -2817,34 +2612,29 @@
      }
     ]
    },
-   "sowhat": "Colombia runs on PSE today and Bre-B tomorrow; both reach the Shop through dLocal on day one, with cards on either MoR.",
+   "sowhat": "Colombia runs on PSE today and Bre-B tomorrow; both reach the Shop through local rails live on Yuno, with cards on several providers.",
    "source": "CCCE via Valora Analitik 24 Aug 2025; Banco de la República 6 Oct 2026; Nequi via press May 2026; Estatuto Tributario art. 20-3 and Decreto 2039/2023; EBANX Colombia overview; Yuno directory Oct 2026. TO VALIDATE: EBANX PSE Avanza and Bre-B on Carry1st's account; credit-card penetration 2025.",
-   "notes": "Colombia moved from cards to account-to-account in three years: PSE is now two thirds of e-commerce transactions and Bre-B, the central bank's instant rail, passed 36 million users in its first year. Both are instant, which fits the Shop. Cards are a third of transactions and sit on both merchant-of-record routes."
+   "notes": "Colombia moved from cards to account-to-account in three years: PSE is now two thirds of e-commerce transactions and Bre-B, the central bank's instant rail, passed 36 million users in its first year. Both are instant, which fits the Shop. Cards are a third of transactions and run on several providers live through Yuno."
   },
   {
    "id": "cty-co-connections",
    "type": "logo_grid",
    "kicker": "APPENDIX · COLOMBIA · CONNECTIONS THROUGH YUNO",
-   "headline": "Colombia: 31 providers live through Yuno; PSE is carried by 12 of them and Bre-B by dLocal today.",
+   "headline": "Colombia: 31 providers live through Yuno; 12 carry PSE, five carry Nequi, and Bre-B is live through local rails.",
    "sections": [
     {
-     "header": "Merchant-of-record routes for the launch",
+     "header": "Merchant of record at launch",
      "style": "signed",
      "chips": [
       {
        "name": "EBANX",
        "logo": "https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328eb3ff8db20bce_678303ab410d52a65abf28f4_673acac481b89b8d0ad6bd7c_ebanx_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "dLocal",
-       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
-       "aspect": 1.0
       }
      ]
     },
     {
-     "header": "Live through Yuno (31)",
+     "header": "Local rails and acquirers live through Yuno (31)",
      "chips": [
       {
        "name": "AstroPay",
@@ -3055,7 +2845,7 @@
     }
    ],
    "source": "Yuno integrations directory (docs.y.uno Payment Type list and y.uno/integrations), pulled 14 Oct 2026. CONFIRMED. Logos are the providers' own marks.",
-   "notes": "The Colombia connections live through Yuno. PSE is carried by twelve providers including both merchant-of-record routes; Nequi by five; Bre-B by dLocal today, with more providers expected as the rail matures.",
+   "notes": "The Colombia connections live through Yuno. PSE is carried by twelve providers including EBANX; Nequi by five; Bre-B through local rails such as dLocal and Refacil today, with more providers expected as the rail matures.",
    "table": {
     "columns": [
      "Local method",
@@ -3081,8 +2871,8 @@
      ],
      [
       "Bre-B",
-      "dLocal",
-      "1"
+      "dLocal, Refacil",
+      "2"
      ],
      [
       "Efecty (cash)",
@@ -3097,7 +2887,7 @@
    "type": "country_deepdive",
    "kicker": "APPENDIX · BOLIVIA",
    "flag": "https://flagcdn.com/w80/bo.png",
-   "headline": "Bolivia is the clearest case for a second provider: EBANX direct means cash vouchers only; dLocal adds cards and QR on day one.",
+   "headline": "Bolivia is the clearest case for a second provider: EBANX direct means cash vouchers only; local rails on Yuno add cards and QR.",
    "stats": [
     {
      "value": "36%",
@@ -3126,7 +2916,7 @@
      "label": "LOCAL METHODS",
      "value": "+1.0% of TPV",
      "money": "$9K incremental GMV a month, one fifth",
-     "tactic": "Cards and interoperable QR through dLocal; cash vouchers (Pago al Paso, Multipago) as the fallback."
+     "tactic": "Cards on local rails live on Yuno (for example dLocal, Nuvei, Cybersource); QR via dLocal; cash as fallback."
     },
     {
      "num": "2",
@@ -3174,14 +2964,14 @@
       "Visa, Mastercard (local)",
       "Foreign cards capped at $500",
       "Domestic charge, no FX",
-      "dLocal (EBANX: open)"
+      "dLocal, Nuvei, Cybersource"
      ],
      [
       "Optional",
       "Cash: Pago al Paso, Multipago, PagosNet",
       "64% of payments",
       "Slow confirmation; second wave",
-      "dLocal, EBANX"
+      "dLocal, EBANX (PagosNet)"
      ]
     ]
    },
@@ -3198,31 +2988,20 @@
      },
      {
       "title": "Phase the market",
-      "body": "Smallest of the five; launch after Brazil, through dLocal only."
+      "body": "Smallest of the five; launch after Brazil, on local rails only."
      }
     ]
    },
-   "sowhat": "Route Bolivia to dLocal from day one; EBANX's Bolivia card coverage stays an open item, not a dependency.",
+   "sowhat": "Route Bolivia to the local rails live on Yuno from day one; EBANX's Bolivia card coverage stays an open item, not a dependency.",
    "source": "BCB via Los Tiempos 14 Jun 2026 and 9 Apr 2026; EBANX Bolivia overview and status.ebanx.com; docs.dlocal.com/docs/bolivia; Yuno directory Oct 2026. TO VALIDATE: QR enabled on the dLocal connection; EBANX Bolivia cards (owner Yuno integrations).",
-   "notes": "Bolivia is small and it is the clearest argument for a second provider: EBANX's own documentation lists only PagosNet cash and bank for Bolivia, while dLocal processes Visa and Mastercard locally and carries the interoperable QR that is now a third of all payments in the country. The Yuno directory lists EBANX under Bolivia cards, which conflicts with EBANX's docs, so we treat it as open and route Bolivia to dLocal."
+   "notes": "Bolivia is small and it is the clearest argument for a second provider: EBANX's own documentation lists only PagosNet cash and bank for Bolivia, while five providers live on Yuno process Visa and Mastercard locally (dLocal, Nuvei, Cybersource, AstroPay, Inswitch), and dLocal's documentation lists the interoperable QR that is now a third of all payments in the country. The Yuno directory lists EBANX under Bolivia cards, which conflicts with EBANX's docs, so we treat it as open and route Bolivia to the local rails."
   },
   {
    "id": "cty-bo-connections",
    "type": "logo_grid",
    "kicker": "APPENDIX · BOLIVIA · CONNECTIONS THROUGH YUNO",
-   "headline": "Bolivia: dLocal is the route for cards, QR and cash through Yuno; EBANX in Bolivia stays an open item.",
+   "headline": "Bolivia: six providers live through Yuno, five of them carrying cards locally; EBANX in Bolivia stays an open item.",
    "sections": [
-    {
-     "header": "Merchant-of-record routes for the launch",
-     "style": "signed",
-     "chips": [
-      {
-       "name": "dLocal",
-       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
-       "aspect": 1.0
-      }
-     ]
-    },
     {
      "header": "Open: EBANX in Bolivia",
      "style": "request",
@@ -3235,7 +3014,7 @@
      ]
     },
     {
-     "header": "Live through Yuno (6)",
+     "header": "Local rails and acquirers live through Yuno (6)",
      "chips": [
       {
        "name": "AstroPay",
@@ -3296,7 +3075,7 @@
     }
    ],
    "source": "Yuno integrations directory, pulled 14 Oct 2026 (CONFIRMED); EBANX Bolivia overview and status.ebanx.com, docs.dlocal.com/docs/bolivia, read 15 Oct 2026 (PUBLIC DOCS). OPEN items carry an owner.",
-   "notes": "Bolivia has six providers live through Yuno and dLocal is the merchant-of-record route for the launch: cards, QR and cash. EBANX appears under Bolivia cards in the Yuno directory but EBANX's own documentation shows cash only, so we carry it as an open item and do not depend on it.",
+   "notes": "Bolivia has six providers live through Yuno, and five of them process cards locally; dLocal also lists QR and cash, with QR to confirm on the Yuno connection. EBANX appears under Bolivia cards in the Yuno directory but EBANX's own documentation shows cash only, so we carry it as an open item and do not depend on it.",
    "table": {
     "columns": [
      "Method",
@@ -3312,7 +3091,7 @@
     "rows": [
      [
       "Cards (Visa, Mastercard)",
-      "dLocal; also AstroPay, Cybersource, Inswitch, Nuvei",
+      "AstroPay, Cybersource, dLocal, Inswitch, Nuvei",
       {
        "text": "",
        "pill": "CONFIRMED"
@@ -3345,7 +3124,7 @@
     "ESTIMATE",
     "OPEN"
    ],
-   "headline": "Every modeled number in this deck rests on nine assumptions, each with an owner and a replacement path.",
+   "headline": "Every modeled number in this deck rests on ten assumptions, each with an owner and a replacement path.",
    "columns": [
     "Assumption",
     "Value in the deck",
@@ -3406,7 +3185,7 @@
      }
     ],
     [
-     "Approval uplift, two providers",
+     "Approval uplift, second provider",
      "+1.5 / +3.0 / +5.0 points",
      "Yuno estimate under the published 7% ceiling",
      "Cordel, Yuno",
@@ -3428,7 +3207,7 @@
     [
      "Provider onboarding time",
      "Weeks; no published SLA",
-     "Provider docs; run both in parallel from week 1",
+     "Provider docs; run onboardings in parallel",
      "Cordel, Yuno lead",
      {
       "text": "",
@@ -3437,9 +3216,19 @@
     ],
     [
      "EBANX cards in Bolivia",
-     "Not assumed; Bolivia on dLocal",
+     "Not assumed; Bolivia on local rails",
      "Yuno directory says cards; EBANX docs say cash only",
      "Yuno integrations",
+     {
+      "text": "",
+      "pill": "OPEN"
+     }
+    ],
+    [
+     "Second MoR per market",
+     "Chosen per market",
+     "Coverage and price per market, with Carry1st",
+     "Justo",
      {
       "text": "",
       "pill": "OPEN"
@@ -3456,7 +3245,6 @@
      }
     ]
    ],
-   "note": "Every yellow input in the model swaps for Carry1st's data as it arrives; the deck is rebuilt from the same model.",
    "source": "model/bc_numbers.md, Section D (Yuno, 15 Oct 2026); research files of the same date.",
    "notes": "This is the list of everything we assumed, with the value we used, where it came from, who owns the replacement and its status. Nothing on it is hidden inside a chart. The two that move the business case most are the EBANX all-in rate and your take rate; both are yours to replace, and the model is built so that swapping them re-cuts every slide in section 05."
   },
@@ -3483,7 +3271,7 @@
      "items": [
       "Carry1st · carry1st.com, shop.carry1st.com and sitemap, press releases 2021 to 2026, App Store listing, BITKRAFT job post 28 Jul 2026, TechCabal, TechCrunch, GlobeNewswire 29 Jan 2024",
       "EBANX · docs.ebanx.com (api-operability, pay-in guide, payment methods, country overviews BR, MX, CO, AR, BO, DEUNA page, FAQ); ebanx.com; business.ebanx.com press room; status.ebanx.com",
-      "dLocal · dlocal.com; docs.dlocal.com (Brazil, Argentina, Mexico, Colombia, Bolivia, go-live); dMoRe release 26 Aug 2026",
+      "Local rails · provider country pages for Argentina, Mexico, Colombia and Bolivia methods (docs.dlocal.com and others), read 15 Oct 2026",
       "Brazil · Reuters 10 Feb 2026 (PCMI); Banco Central via press 2026; Newzoo, Allcorrect 2025; Decree 12.499/2025 and ARQ Finance 29 Sep 2026 (IOF); VATCalc, Fonoa 2026",
       "Argentina · PCMI 2024; Global Payments Report 2026 via Forbes Argentina; Descubre 14 Jul 2026; Fortuna 2026 and ARCA RG 5617/2024; Ley 27.430; Newzoo 2024 via iProUP",
       "Mexico · AMVO Estudio 2024 and 2026; Endeavor México and Santander 2025 via Forbes México; Nuvei, Unlimit, Antom pages; Kintsugi 2026 (IVA); BizLatinHub, Commenda",
