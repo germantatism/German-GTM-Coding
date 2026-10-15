@@ -26,8 +26,8 @@ LEV = [L1, L2, L3, L4]
 cons, opt = sum(l[0] for l in LEV), sum(l[1] for l in LEV)
 avg = [(l[0] + l[1]) / 2 for l in LEV]
 mid = (cons + opt) / 2
-# Pricing (German, 15-oct-2026): platform fee $12,000 flat + $0.06 on the first 30,000 successful trx + $0.05 on the next 10,000
-PLATFORM, P1, P2, CUT1, CUT2 = 12_000, 0.06, 0.05, 30_000, 40_000
+# Pricing (German, 15-oct-2026): platform fee $10,000 flat (opened at $12,000, lowered the same day) + $0.06 on the first 30,000 successful trx + $0.05 on the next 10,000
+PLATFORM, P1, P2, CUT1, CUT2 = 10_000, 0.06, 0.05, 30_000, 40_000   # platform $12K -> $10K (German, 15-oct, same day)
 def var(tx):
     return min(tx, CUT1) * P1 + max(min(tx, CUT2) - CUT1, 0) * P2
 def monthly(tx):
