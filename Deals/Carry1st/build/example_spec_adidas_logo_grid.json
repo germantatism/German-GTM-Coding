@@ -1,0 +1,889 @@
+{
+ "slides": [
+  {
+   "id": "cover",
+   "type": "cover",
+   "title": "Connections and payment methods",
+   "subtitle": "Mercado Pago, dLocal, PayU, 2C2P and PayPlus across LATAM, Southeast Asia and Israel",
+   "presenter": "German Tatis, Yuno · October 2026",
+   "logo_url": "https://deck.yuno.tools/merchants/adidas.png"
+  },
+  {
+   "id": "named",
+   "type": "table",
+   "kicker": "COVERAGE › THE PROVIDERS YOU NAMED",
+   "headline": "Mercado Pago, dLocal, PayU and 2C2P are live through Yuno; PayPlus would be a new connection.",
+   "columns": [
+    "Provider",
+    "Status",
+    "Countries live (of the 25 you asked about)",
+    "Payment methods through Yuno"
+   ],
+   "col_widths": [
+    0.13,
+    0.11,
+    0.42,
+    0.34
+   ],
+   "rows": [
+    [
+     "Mercado Pago",
+     {
+      "text": "Live",
+      "bold": true
+     },
+     "7: Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay",
+     "Cards, Checkout Pro, Mercado Pago Wallet, Mercado Pago QR, PIX, Boleto, PSE by market"
+    ],
+    [
+     "dLocal",
+     {
+      "text": "Live",
+      "bold": true
+     },
+     "22: Argentina, Brazil, Chile, Colombia, Mexico, Peru, Uruguay, Bolivia, Costa Rica, Dominican Republic, Ecuador, El Salvador, Guatemala, Honduras, Nicaragua, Panama, Paraguay, Indonesia, Malaysia, Philippines, Thailand, Vietnam",
+     "Cards plus the local methods of each market: PIX, Boleto, SPEI, OXXO, PSE, Efecty, Yape, Clave, QRIS, FPX, Thai QR, TrueMoney and more"
+    ],
+    [
+     "PayU",
+     {
+      "text": "Live",
+      "bold": true
+     },
+     "6: Argentina, Brazil, Chile, Colombia, Mexico, Peru",
+     "Cards, PSE, OXXO and cash networks in Mexico"
+    ],
+    [
+     "2C2P",
+     {
+      "text": "Live",
+      "bold": true
+     },
+     "7: Indonesia, Malaysia, Philippines, Singapore, Thailand, Vietnam, Myanmar",
+     "Cards"
+    ],
+    [
+     "PayPlus",
+     {
+      "text": "On request",
+      "bold": true
+     },
+     "Israel: not connected yet; scoped and built by Yuno on request",
+     "Cards and local methods per PayPlus scope"
+    ]
+   ],
+   "header_style": "dark",
+   "font_size": 7.5,
+   "bold_first_col": true,
+   "zebra": true,
+   "note": "Live means the connection is built and available to process payments through Yuno for this country. Method activation is set per merchant."
+  },
+  {
+   "id": "sum-latam1",
+   "type": "table",
+   "kicker": "OVERVIEW › LATAM CORE MARKETS",
+   "headline": "Every core LATAM market has dozens of live providers and its main local methods through Yuno.",
+   "columns": [
+    "Country",
+    "Providers live",
+    "Homologating",
+    "Local methods through Yuno"
+   ],
+   "col_widths": [
+    0.17,
+    0.12,
+    0.13,
+    0.58
+   ],
+   "rows": [
+    [
+     "Argentina",
+     "23",
+     "3",
+     "Cash · Bank transfer · Pago Fácil · Checkout Pro · AstroPay · Transferencias 3.0 · +8 more"
+    ],
+    [
+     "Brazil",
+     "46",
+     "17",
+     "PIX · Boleto · PIX Automático · Bank transfer · Cash · Checkout Pro · +16 more"
+    ],
+    [
+     "Chile",
+     "29",
+     "11",
+     "Bank transfer · Webpay · Cash · Khipu · Checkout Pro · MACH · +9 more"
+    ],
+    [
+     "Colombia",
+     "31",
+     "14",
+     "PSE · Bank transfer · Nequi · Cash · Efecty · Checkout Pro · +19 more"
+    ],
+    [
+     "Mexico",
+     "36",
+     "17",
+     "SPEI · Bank transfer · Cash · OXXO Pay · Paynet · 7-Eleven · +35 more"
+    ],
+    [
+     "Peru",
+     "25",
+     "8",
+     "PagoEfectivo · Yape · Bank transfer · Cash · Checkout Pro · SafetyPay · +8 more"
+    ],
+    [
+     "Uruguay",
+     "12",
+     "3",
+     "Bank transfer · AstroPay · Cash · Checkout Pro"
+    ]
+   ],
+   "header_style": "dark",
+   "font_size": 8,
+   "bold_first_col": true,
+   "zebra": true
+  },
+  {
+   "id": "c-brazil",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › BRAZIL › PROVIDERS",
+   "headline": "Brazil: 46 providers live through Yuno, 35 for cards, 17 more providers in homologation.",
+   "sections": [
+    {
+     "header": "Live through Yuno (46)",
+     "chips": [
+      {
+       "name": "Adyen",
+       "logo": "https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f4276a734a3f06_678303aaf872b2b85fd78040_673acbe2eaa24fed0492bf8a_adyen_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Antom",
+       "logo": "https://y.uno/vendor/webflow/68df540166da8c37368bcf41_6789cc5c3897af7356fa69bf_678316e23203c67638d3b0ef_678306a68cf0cfe32e72062d_alipay_logosimbolo%252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "AstroPay",
+       "logo": "https://y.uno/vendor/webflow/68df5402959815c021accf84_682cfb9301e9624ceb349be4_Isotype-Color.jpeg",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bamboo",
+       "logo": "https://y.uno/vendor/webflow/68df5405ad017602ddca5ed7_6789cc60285f3ca4ce18c891_678316e4328eb3ff8db209b6_678303a9c62546ef8ca3db0e_673cbd94e30ff134ac97d4f4_BAMBOO%2525252520LOGO.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Banco do Brasil",
+       "logo": "https://y.uno/vendor/webflow/68df5406c1e4a994ba426312_6789cc6272061cb2483dadd4_678316e4298fa56d124812a7_678303b0deb3c248c280c874_673cbda92918c6ba87635fd4_BANCO%2525252520DO%2525252520BRASIL%2525252520LOGO.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Barte",
+       "logo": "https://y.uno/vendor/webflow/68df5456fd49ff67c9814651_Barte.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bradesco",
+       "logo": "https://y.uno/vendor/webflow/68df540a02642ea430eb6755_6789cc63048e7844116a07c7_678316e553424d2385af6afe_678303b0a443aa2f3a2bc062_673ac1688218450ea093fc40_bradesco_logosimbolo%25252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cielo",
+       "logo": "https://y.uno/vendor/webflow/68df540b02642ea430eb67cc_6789cc654ecd423306d4adb9_678316e67658bde19f2c37d0_678303b1bfedc30388894bf8_673ac14300a0d08adff49707_cielo_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "dLocal",
+       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "EBANX",
+       "logo": "https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328eb3ff8db20bce_678303ab410d52a65abf28f4_673acac481b89b8d0ad6bd7c_ebanx_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "emerchantpay",
+       "logo": "https://y.uno/vendor/webflow/68df541394b9393f1b0c13ae_67b40586ac75800b7abb780e_Screenshot%25202025-02-17%2520at%25207.59.00%25E2%2580%25AFPM.png",
+       "aspect": 2.877
+      },
+      {
+       "name": "Fiserv",
+       "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Getnet",
+       "logo": "https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65ae45dd6a22707_678303b52c3f11a6260a4761_673abeb9945b73b0f330f900_getnet_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Inswitch",
+       "logo": "https://y.uno/vendor/webflow/68df5418ef478f2e318a27ed_6789cc6c7d7b8ce401d2e636_678316e901019e74c25f00a6_678303b563212cff9a9672fc_673abe8900a0d08adff29718_inswitch_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Koin",
+       "logo": "https://y.uno/vendor/webflow/68df541b2968391d5a59698d_6789cc6de3126602b05439bf_678316ea410d52a65ac911de_678303b6a65ae45dd69833e0_673abe706afd64c0cd58a023_koin_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mercado Pago",
+       "logo": "https://y.uno/vendor/webflow/68df5420f51801928225ad25_6789cc6e048e7844116a106a_678316eb13e73a399b33ddd1_6783060ebd2c1504a57aa390_mercadopago_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagaleve",
+       "logo": "https://y.uno/vendor/webflow/68df542bcb277fcd52b5c040_6789cc71285f3ca4ce18d09e_678316edcb192ad1b91ece16_678303bfca16eb93e3cdee7d_673a82aa0b330ab299820ef9_pagaleve_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagar.me",
+       "logo": "https://y.uno/vendor/webflow/68df542bdd6919f447f67b70_6789cc72244a2a4112ec8416_678316ed9c28a58ed247de8a_678303b87d668197482d6d97_673abd7bd94ed0bf050057d7_pagarme_logosimbolo%25252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PagBank",
+       "logo": "https://y.uno/vendor/webflow/68df542cfed9aee64769620a_6789cc735fa294c6c36df810_678316ee7658bde19f2c3a60_678303b8db64cb3e07497ee2_673abd404f77846940d24917_pagbank_logosimbolo%25252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PagSeguro",
+       "logo": "https://y.uno/vendor/webflow/68df542a9df0c977b7542cce_6789cc71244a2a4112ec8356_678316edfc63058ecb4baa6b_678303b87e970d10c4826e35_673abd2f3d717f1dc1a1b2dc_pagseguro_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Panda blue",
+       "logo": "https://y.uno/vendor/webflow/68df542c7fcfdc890681778c_6789cc72e8ffdd3fd5a6e64d_678316ee3eefa6a6387a65f5_678303b87658bde19f231001_673abd169ababb22e63a6be5_pandablue_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayRetailers",
+       "logo": "https://y.uno/vendor/webflow/68df542f3228702a3a84d067_67b4155fd3554621648bcefc_Screenshot%25202025-02-17%2520at%25209.06.36%25E2%2580%25AFPM.png",
+       "aspect": 0.938
+      },
+      {
+       "name": "PayU",
+       "logo": "https://y.uno/vendor/webflow/68df5430c1e4a994ba426912_6789cc7328ddfc7fd85520dd_678316eef872b2b85fe0bd84_678305fb8cf0cfe32e71a87f_payu_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PicPay",
+       "logo": "https://y.uno/vendor/webflow/68df54354c769dfb488d4ab7_6789cc74404949fd079f8d4e_678316ef1d48bf18af997b1e_678303b90d1089c37a672d34_673ab5a798fc4326f559f73c_picpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pinbank",
+       "logo": "https://y.uno/vendor/webflow/68df54367ac41b4c08e8d60b_6789cc740b7516aa4489b905_678316ef328eb3ff8db20e8c_678303b937b9ced4ce3a7c03_673ab592363fb0ab8ffada7d_pinbank_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pockyt",
+       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Rapyd",
+       "logo": "https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Rede",
+       "logo": "https://y.uno/vendor/webflow/68df543b8fadd3f28366c5b2_6789cc76bf80c9ad43c422cc_678316f15852c578957ed910_678303b9121980e08d7967ba_673ab5360092e895dd23f0d7_rede_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Safe2Pay",
+       "logo": "https://y.uno/vendor/webflow/68df543f059aab268c24a6f2_67ad60d8ead7cbb57426f653_safe2pay_logo.jpeg",
+       "aspect": 1.0
+      },
+      {
+       "name": "SafetyPay",
+       "logo": "https://y.uno/vendor/webflow/68df5440b4393881bb14cf15_6789cc7876a470d6b6deb6c8_678316f1328eb3ff8db20f54_678303b8121980e08d79653b_673abcd89ababb22e63a3f8b_safetypay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Safrapay",
+       "logo": "https://www.google.com/s2/favicons?domain=safrapay.com.br&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Santander",
+       "logo": "https://y.uno/vendor/webflow/68df5441ad017602ddca6393_6789cc788bb705ec04da4986_678316f21a94a8a1059cf570_678303ba46abe81b084e79a7_673ab525b28a4d350545adf1_santander_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Stark Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=starkbank.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Stone",
+       "logo": "https://www.google.com/s2/favicons?domain=stone.com.br&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Stripe",
+       "logo": "https://y.uno/vendor/webflow/68df5445a8ef8a62bf6afaec_6789cc79c8c462843dab8e35_678316f2c376a1c58e0975d0_6783057c9c28a58ed23f20ac_stripe_logosimbolo%252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Transfeera",
+       "logo": "https://y.uno/vendor/webflow/68df544a70a819358abeaa99_67abc19ee67bea98459eed7e_transfeera-logo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Unlimit",
+       "logo": "https://y.uno/vendor/webflow/68df544ceb8af581358600cd_6789cc7a3897af7356fa79ad_678316f37e970d10c48bc4bf_678303aaf872b2b85fd780f3_673ab41f342deb5c46eeaa4f_unlimit_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Vindi",
+       "logo": "https://y.uno/vendor/webflow/68df544f1eff69545da1eb16_6789cc7ab5901ecb61f764c0_678316f3db64cb3e075319c7_678303bc121980e08d796b1c_673ab3c413e892dd73801239_vindi_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Volt",
+       "logo": "https://y.uno/vendor/webflow/68df5450981fbc62f2717deb_6789cc7b07d59d7e6b6c5ab3_678316f3ca16eb93e3d7a5a8_678303bb814ce2295cf5d3e6_673cbd1b5978a226f8a08b8c_Volt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldpay",
+       "logo": "https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121980e08d82933e_678303aa53424d2385a60043_673acbda09c217998145f662_worldpay_logosimbolo%25252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Zoop",
+       "logo": "https://y.uno/vendor/webflow/68df5455c3ff446a8c70e611_6789cc7ee8ffdd3fd5a6ec0f_678316f59c28a58ed247e200_678303bd7be1a6e439614964_673ab32fa2e46cbceb6c5f86_zoop_logosimbolo%25252525202.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Homologating (17)",
+     "chips": [
+      {
+       "name": "Banco Rendimento",
+       "logo": "https://www.google.com/s2/favicons?domain=rendimento.com.br&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "BTG Pactual",
+       "logo": "https://www.google.com/s2/favicons?domain=btgpactual.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Commerce Gate",
+       "logo": "https://www.google.com/s2/favicons?domain=commercegate.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Directa 24",
+       "logo": "https://y.uno/vendor/webflow/68df541065c91e2e24ec4f99_67ad634fed27500ac52fc38f_Screenshot%25202025-02-12%2520at%252022.13.14.png",
+       "aspect": 1.079
+      },
+      {
+       "name": "Facilitapay",
+       "logo": "https://www.google.com/s2/favicons?domain=facilitapay.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Local Payment",
+       "logo": "https://y.uno/vendor/webflow/68df5459ad731b15fad115b3_LOCAL_PAYMENT.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "More Payments",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Openco",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pag Brasil",
+       "logo": "https://www.google.com/s2/favicons?domain=pagbrasil.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayCash",
+       "logo": "https://y.uno/vendor/webflow/68df5431259785112e047f78_6789cc73b5901ecb61f75f5e_678316ef90fa45540bd97f49_678303be5852c5789574da37_673a83c482767acb2d27c926_paycash_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PPRO",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Primefy",
+       "logo": "https://www.google.com/s2/favicons?domain=primefy.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pronto Paga",
+       "logo": "https://y.uno/vendor/webflow/68df5437d1b295b8aaf41fdf_67ad7f55a0bc8ea324a9ef04_GeSagt5K_400x400.jpeg",
+       "aspect": 1.0
+      },
+      {
+       "name": "Trace Finance",
+       "logo": "https://www.google.com/s2/favicons?domain=tracefinance.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Transfero",
+       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Unico",
+       "logo": "https://www.google.com/s2/favicons?domain=unico.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "We Payments",
+       "logo": "https://www.google.com/s2/favicons?domain=wepayments.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "muted": true
+    }
+   ]
+  },
+  {
+   "id": "c-brazil-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › BRAZIL › PAYMENT METHODS",
+   "headline": "Brazil: 22 payment methods available and 16 local methods carried by the providers.",
+   "sections": [
+    {
+     "header": "Wallets and payment methods available (22)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Google Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Alelo",
+       "logo": "https://y.uno/vendor/webflow/68df54007d7d0b2abf5111c8_6789cc5b09bc1fa384ed8440_678316e27e970d10c48bbea0_678303ae7d668197482d6a03_673ac3dcafeea5c14163ca88_alelo_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Belvo",
+       "logo": "https://y.uno/vendor/webflow/68df5408b13a25b062a0f900_67b3cf6b9cd29a4f78e9b0ab_Screenshot%25202025-02-17%2520at%25204.08.05%25E2%2580%25AFPM.png",
+       "aspect": 1.81
+      },
+      {
+       "name": "Boleto",
+       "logo": "https://y.uno/vendor/webflow/68df5409cd34721ca33805cd_6789cc63e8ffdd3fd5a6de49_678316e57658bde19f2c3762_678303ae94f4276a73400f7f_673ac38d945b73b0f334ef88_boleto_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Click to Pay",
+       "logo": "https://y.uno/vendor/webflow/68df540cef364b1307eec434_67abc0f0b0aad9c410050eef_1525258644-ClicToPay.jpeg",
+       "aspect": 1.124
+      },
+      {
+       "name": "Discover",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Edenred",
+       "logo": "https://y.uno/vendor/webflow/68df541264162943f4cc9342_67ad6584963571939df29f61_adenred.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "NuPay",
+       "logo": "https://y.uno/vendor/webflow/68df5426a82c6c308c3a4048_6789cc6f72061cb2483db7e6_678316ec121980e08d829001_678303b75852c5789574d666_673abdb6b32cf03625bf474c_nupay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Payzen",
+       "logo": "https://y.uno/vendor/webflow/68df54330f2385e23707029a_6789cc74bbca4bebb8b534c9_678316ef7d66819748388381_678303b99e0a1b2f05c23ec3_673cbd0ea8e36c1040538898_payzen.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PIX",
+       "logo": "https://y.uno/vendor/webflow/68df542a5004c775ba715dd2_6789cc71e6119c429e725624_678316ed01019e74c25f030c_678303af9c28a58ed23e14ce_673ac227e9962bf4ba607a88_pix_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pluxee",
+       "logo": "https://y.uno/vendor/webflow/68df54360e698e806d221ed9_6789cc7428ddfc7fd855219b_678316ef46abe81b0856d54b_678303b91f15d89d5f967b24_673ab57e9a97cb3ec907e9e9_pluxee_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "RappiBank",
+       "logo": "https://y.uno/vendor/webflow/68df543a6446e7be261f1a41_6789cc76bafc481a657e66ad_678316f05493a18101b5fb8d_678303b94b92192a060147c1_673ab56216ed64c02b708a50_rappibank_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Samsung Pay",
+       "logo": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ticket Edenred",
+       "logo": "https://y.uno/vendor/webflow/68df5448171f10ee4680fe00_6789cc7a28ddfc7fd855244b_678316f39e0a1b2f05cc364c_678303bb4b92192a0601486e_673ab4e80b330ab299a544ba_ticket_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UATP",
+       "logo": "https://y.uno/vendor/webflow/68df544b23a777518d9ad109_6789cc7a4e846d24f5e6306c_678316f337b9ced4ce436eb7_678303bb2c3f11a6260a491c_673ab4c050e3f53e92513691_uatp_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "VR",
+       "logo": "https://y.uno/vendor/webflow/68df544ef9fc69f703e4eac8_67abc2324ab2ee60536c4a62_Screenshot%25202025-02-11%2520at%252016.33.33.png",
+       "aspect": 1.088
+      },
+      {
+       "name": "Western Union",
+       "logo": "https://y.uno/vendor/webflow/68df54520dabba2fa33f7473_6789cc7ce8ffdd3fd5a6eb25_678316f49c28a58ed247e0ec_678303bbdb1c5be39294ea57_673ab3fc98fc4326f558d472_westerunion_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.22,
+     0.72,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "PIX",
+      "Adyen, Bamboo, Banco do Brasil, Bradesco, Cielo, dLocal, EBANX, Fiserv, Getnet, Mercado Pago, Nuvei, Pagaleve, Pagar.me, PagBank, PagSeguro, Pagsmile, PayRetailers, PicPay, Pinbank, SafetyPay, Santander, Stark Bank, Stripe, Transfeera, Unlimit, Volt, Zoop",
+      "27"
+     ],
+     [
+      "Boleto",
+      "Bamboo, Banco do Brasil, Bradesco, dLocal, EBANX, Mercado Pago, Pagar.me, PagBank",
+      "8"
+     ],
+     [
+      "PIX Automático",
+      "Adyen, EBANX, PayRetailers, Stripe",
+      "4"
+     ],
+     [
+      "Other local methods",
+      "AstroPay (AstroPay); BB Pay (Banco do Brasil); Bank transfer (Bamboo, dLocal, Inswitch); Cash (EBANX, Inswitch, PayU); Checkout Pro (EBANX, Mercado Pago); Google Pay PIX · PIX biométrico (Adyen); Mercado Pago Fast Payments · Mercado Pago QR · Mercado Pago Wallet · Mercado Pago Wallet Connect (Mercado Pago); NuPay · Smart PIX (dLocal); PIX Parcelado (Koin, Pagaleve); PicPay (EBANX, PicPay); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX); Samsung Pay (Rede)",
+      "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "Apple Pay (Adyen, Cielo, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Cielo, Fiserv, Rapyd, Rede); PayPal (EBANX, Ecommpay, Pockyt, Stripe); Alipay (Antom); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "17"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-colombia",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › COLOMBIA › PROVIDERS",
+   "headline": "Colombia: 31 providers live through Yuno, 27 for cards, 14 more providers in homologation.",
+   "sections": [
+    {
+     "header": "Live through Yuno (31)",
+     "chips": [
+      {
+       "name": "AstroPay",
+       "logo": "https://y.uno/vendor/webflow/68df5402959815c021accf84_682cfb9301e9624ceb349be4_Isotype-Color.jpeg",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bamboo",
+       "logo": "https://y.uno/vendor/webflow/68df5405ad017602ddca5ed7_6789cc60285f3ca4ce18c891_678316e4328eb3ff8db209b6_678303a9c62546ef8ca3db0e_673cbd94e30ff134ac97d4f4_BAMBOO%2525252520LOGO.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "BBVA",
+       "logo": "https://y.uno/vendor/webflow/68df5403c3ff446a8c70dce3_67ad64a07c605912a4a48ce5_bbva.jpeg",
+       "aspect": 1.278
+      },
+      {
+       "name": "Credibanco",
+       "logo": "https://y.uno/vendor/webflow/68df540d3f1ccc8ea5cec9b9_6789cc673897af7356fa6f2b_678316e6121980e08d828db4_678303b1410d52a65abf2ad1_673ac0f9945b73b0f332f312_credibanco_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "dLocal",
+       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "EBANX",
+       "logo": "https://y.uno/vendor/webflow/68df541323b5b6ad0c3e2cdf_6789cc6820c2ca8eeaf1bbcd_678316e7328eb3ff8db20bce_678303ab410d52a65abf28f4_673acac481b89b8d0ad6bd7c_ebanx_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "emerchantpay",
+       "logo": "https://y.uno/vendor/webflow/68df541394b9393f1b0c13ae_67b40586ac75800b7abb780e_Screenshot%25202025-02-17%2520at%25207.59.00%25E2%2580%25AFPM.png",
+       "aspect": 2.877
+      },
+      {
+       "name": "ePayco",
+       "logo": "https://y.uno/vendor/webflow/68df5413eb5ea2a0b9b47afb_6789cc68e91ef1bff17d8f6f_678316e7bd2c1504a5832eaf_678303b55493a18101acdf24_673abef7276d648b6404d21d_epayco_logosimbolo.png",
+       "aspect": 0.971
+      },
+      {
+       "name": "Fiserv",
+       "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Inswitch",
+       "logo": "https://y.uno/vendor/webflow/68df5418ef478f2e318a27ed_6789cc6c7d7b8ce401d2e636_678316e901019e74c25f00a6_678303b563212cff9a9672fc_673abe8900a0d08adff29718_inswitch_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Kushki",
+       "logo": "https://y.uno/vendor/webflow/68df541b23a777518d9acb43_6789cc6d4ecd423306d4b749_678316f063212cff9aa0274d_678303b6fdc7f8e0cca38f84_673abe01a2e46cbceb742165_kushki_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mercado Pago",
+       "logo": "https://y.uno/vendor/webflow/68df5420f51801928225ad25_6789cc6e048e7844116a106a_678316eb13e73a399b33ddd1_6783060ebd2c1504a57aa390_mercadopago_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Movii",
+       "logo": "https://y.uno/vendor/webflow/68df5421ccbc0017fda4f2ac_6789cc6eade0cb0f7e569f5a_678316eb1d48bf18af9979d9_678303b79e0c0b6adb2b50d0_673abdec13ce1d036f87e26a_movii_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Openpay",
+       "logo": "https://y.uno/vendor/webflow/68df54299fc053d07569a529_6789cc70b5901ecb61f75dc9_678316ec3203c67638d3b776_678303b7fc63058ecb422fba_673abd96e9962bf4ba5d0ccc_openpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PagSeguro",
+       "logo": "https://y.uno/vendor/webflow/68df542a9df0c977b7542cce_6789cc71244a2a4112ec8356_678316edfc63058ecb4baa6b_678303b87e970d10c4826e35_673abd2f3d717f1dc1a1b2dc_pagseguro_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Panda blue",
+       "logo": "https://y.uno/vendor/webflow/68df542c7fcfdc890681778c_6789cc72e8ffdd3fd5a6e64d_678316ee3eefa6a6387a65f5_678303b87658bde19f231001_673abd169ababb22e63a6be5_pandablue_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayRetailers",
+       "logo": "https://y.uno/vendor/webflow/68df542f3228702a3a84d067_67b4155fd3554621648bcefc_Screenshot%25202025-02-17%2520at%25209.06.36%25E2%2580%25AFPM.png",
+       "aspect": 0.938
+      },
+      {
+       "name": "PayU",
+       "logo": "https://y.uno/vendor/webflow/68df5430c1e4a994ba426912_6789cc7328ddfc7fd85520dd_678316eef872b2b85fe0bd84_678305fb8cf0cfe32e71a87f_payu_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Payvalida",
+       "logo": "https://y.uno/vendor/webflow/68df5433ec3d8a0ae53ae074_6789cc74285f3ca4ce18d208_678316ef01019e74c25f039d_678303b8bd2c1504a579390f_673ab5d0a5fe7ade4cde701c_payvalida_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PlacetoPay",
+       "logo": "https://y.uno/vendor/webflow/68df54353282fc23c5606260_6789cc74b5901ecb61f76012_678316efca16eb93e3d7a471_678303b9d146a2cd328b7f47_673ab5b48e12ecfbeb0dcd15_placetopay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Rapyd",
+       "logo": "https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Redeban",
+       "logo": "https://y.uno/vendor/webflow/68df543b1e1e56415a9a285b_6789cc76285f3ca4ce18d4c1_678316f17658bde19f2c3b37_678303ba4b92192a06014814_673ab552342deb5c46ef939e_redeban_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "SafetyPay",
+       "logo": "https://y.uno/vendor/webflow/68df5440b4393881bb14cf15_6789cc7876a470d6b6deb6c8_678316f1328eb3ff8db20f54_678303b8121980e08d79653b_673abcd89ababb22e63a3f8b_safetypay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Unlimit",
+       "logo": "https://y.uno/vendor/webflow/68df544ceb8af581358600cd_6789cc7a3897af7356fa79ad_678316f37e970d10c48bc4bf_678303aaf872b2b85fd780f3_673ab41f342deb5c46eeaa4f_unlimit_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Wompi",
+       "logo": "https://y.uno/vendor/webflow/68df54533fac1ce361554649_6789cc7c72061cb2483dc06f_678316f43eefa6a6387a6948_678303bcdb1c5be39294eafc_673ab3a153821f64277215cd_wompi_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldpay",
+       "logo": "https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121980e08d82933e_678303aa53424d2385a60043_673acbda09c217998145f662_worldpay_logosimbolo%25252525202.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Homologating (14)",
+     "chips": [
+      {
+       "name": "Banco de Bogota",
+       "logo": "https://y.uno/vendor/webflow/68df5407e6340390324be5b0_67b3cdf4553bf680ce1d804d_Screenshot%25202025-02-17%2520at%25204.01.51%25E2%2580%25AFPM.png",
+       "aspect": 2.734
+      },
+      {
+       "name": "Bancolombia",
+       "logo": "https://y.uno/vendor/webflow/68df5406ccbc0017fda4ee79_6789cc629899d4b4b841dda6_678316e41a94a8a1059cf10c_678303bc01019e74c2560281_673ab396f690c32b429da0b7_bancolombia_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cobre",
+       "logo": "https://y.uno/vendor/webflow/68df540d6d0adf125a1bac46_67b41093e38e4ea89b93b085_Screenshot%25202025-02-17%2520at%25208.46.08%25E2%2580%25AFPM.png",
+       "aspect": 1.017
+      },
+      {
+       "name": "Commerce Gate",
+       "logo": "https://www.google.com/s2/favicons?domain=commercegate.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Davivienda",
+       "logo": "https://y.uno/vendor/webflow/68df5410bcf0bfb6a1161882_67b3ccb6871f5c23aef2a97d_Screenshot%25202025-02-17%2520at%25203.56.33%25E2%2580%25AFPM.png",
+       "aspect": 2.557
+      },
+      {
+       "name": "Directa 24",
+       "logo": "https://y.uno/vendor/webflow/68df541065c91e2e24ec4f99_67ad634fed27500ac52fc38f_Screenshot%25202025-02-12%2520at%252022.13.14.png",
+       "aspect": 1.079
+      },
+      {
+       "name": "Facilitapay",
+       "logo": "https://www.google.com/s2/favicons?domain=facilitapay.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Local Payment",
+       "logo": "https://y.uno/vendor/webflow/68df5459ad731b15fad115b3_LOCAL_PAYMENT.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "More Payments",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayCash",
+       "logo": "https://y.uno/vendor/webflow/68df5431259785112e047f78_6789cc73b5901ecb61f75f5e_678316ef90fa45540bd97f49_678303be5852c5789574da37_673a83c482767acb2d27c926_paycash_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Payments Way",
+       "logo": "https://y.uno/vendor/webflow/68df5431f9fc69f703e4dd6b_67b4112e553bf680ce549b89_Screenshot%25202025-02-17%2520at%25208.48.42%25E2%2580%25AFPM.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PPRO",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Sistecredito",
+       "logo": "https://y.uno/vendor/webflow/68df5443161bb6d1132774f3_67b408c866ec70816dab8790_Screenshot%25202025-02-17%2520at%25208.12.52%25E2%2580%25AFPM.png",
+       "aspect": 3.099
+      },
+      {
+       "name": "Transfero",
+       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "muted": true
+    }
+   ]
+  }
+ ]
+}

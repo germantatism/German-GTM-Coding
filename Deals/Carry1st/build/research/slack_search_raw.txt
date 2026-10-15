@@ -1,0 +1,757 @@
+# Search Results for: 
+
+## Messages (20 results)
+### Result 1 of 20
+Channel: #secops-on-schedule (ID: C03LFFFBW31)
+From: ChatOps (ID: U03PQTCL4S1)  [BOT]
+Time: 2026-10-15 10:53:21 PDT
+Message_ts: 1792086801.481479
+Reply count: 6
+Permalink: [link](https://yunopay.slack.com/archives/C03LFFFBW31/p1792086801481479?thread_ts=1792086801.481479&cid=C03LFFFBW31)
+Text: 
+
+Context after: 
+- From: ChatOps (ID: U03PQTCL4S1) 
+  Message_ts: 1792086801.928259
+  FYI
+- From: ChatOps (ID: U03PQTCL4S1) 
+  Message_ts: 1792086802.077379
+  <@U0ACAQ68R3M|SecOps Agent> validate for this public microservice request
+- [See result above] From: SecOps Agent (ID: U0ACAQ68R3M) Message_ts: 1792086897.972129
+- From: Marcos Isaac Stupnicki <marcos.stupnicki@y.uno> (ID: U03GYUUFXHV) 
+  Message_ts: 1792087005.547149
+  Hi Cai! Checking
+- From: Marcos Isaac Stupnicki <marcos.stupnicki@y.uno> (ID: U03GYUUFXHV) 
+  Message_ts: 1792087167.284999
+  Done! redeploy to apply the change
+- [See result above] From: Caio Freitas Ferreira <caio@y.uno> (ID: U03G88W4JG4) Message_ts: 1792094977.234649
+
+---
+
+### Result 2 of 20
+Channel: #partnerships--sales (ID: C07D1BWFJMC)
+From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) 
+Time: 2026-08-31 01:00:14 PDT
+Message_ts: 1788163214.792759
+Reply count: 7
+Permalink: [link](https://yunopay.slack.com/archives/C07D1BWFJMC/p1788163214792759?thread_ts=1788163214.792759&cid=C07D1BWFJMC)
+Text: 
+<@U0ADAK39W4Q|Payments Concierge> <@U09RPE6GJTW|Glean> - These are the providers we have listed support the egyptian market, which of them support/offer MoR: APPLE PAY, ASTROPAY, BAMBOO PAYMENTS, BINANCE PAY, BOOMFI, CARRY1ST, CHECKOUT, CIRCLE, CODA PAYMENT, COINSPAID, CONFIRMO, <http://CRYPTO.COM|CRYPTO.COM>, CYBERSOURCE, DISCOVER, DLOCAL, EBANX, ECOMMPAY, EMERCHANT PAY, FLUTTERWAVE, GEIDEA, HYPERPAY, INXY PAYMENTS, MASTERCARD, NOVALNET, OPENNODE, PAGSMILE, PAYCORE, PAYFUTURE, PAYMENTWALL, PAYMOB, PAYPAL / BRAINTREE, PPRO, RAPYD, SAMSUNG PAY, TAP PAYMENTS, TERRAPAY, TRIPLE-A, VERIFONE, VISA, WE CHAT PAY TENCENT, ZENKI
+Context after: 
+- From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) 
+  Message_ts: 1788163391.671399
+  <@U0A5PCXHUQZ|Daniela Reyes> - copying you in in case you have the answer
+- [See result above] From: Glean (ID: U09RPE6GJTW) Message_ts: 1788163438.273309
+- From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) 
+  Message_ts: 1788163488.118289
+  which of the above listed payment methods supports recurring payments?
+- [See result above] From: Payments Concierge (ID: U0ADAK39W4Q) Message_ts: 1788163532.541049
+- From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) 
+  Message_ts: 1788163580.011879
+  <@U0ADAK39W4Q|Payments Concierge> <@U09RPE6GJTW|Glean> which of the above listed payment methods supports recurring payments?
+- [See result above] From: Payments Concierge (ID: U0ADAK39W4Q) Message_ts: 1788163684.780829
+- [See result above] From: Glean (ID: U09RPE6GJTW) Message_ts: 1788163842.795649
+
+---
+
+### Result 3 of 20
+Channel: #secops-on-schedule (ID: C03LFFFBW31)
+From: Caio Freitas Ferreira <caio@y.uno> (ID: U03G88W4JG4) 
+Time: 2026-10-15 13:09:37 PDT
+Message_ts: 1792094977.234649
+Permalink: [link](https://yunopay.slack.com/archives/C03LFFFBW31/p1792094977234649?thread_ts=1792086801.481479&cid=C03LFFFBW31)
+Text: 
+Thanks Marcos! Redeployed and it's live: carry1st-demo.tools.y.uno resolves, returns 401 without credentials and 200 with them, and runs on sandbox keys only
+
+One FYI: deploy 212ddfc2 (tag v2026.10.15-201038) stayed in created and never reached deployed, and the next one (tag v2026.10.15-215254) sat in created about 11 minutes before finishing. Nothing blocking on my side, sharing in case it helps
+Context before: 
+- [See result above] From: ChatOps (ID: U03PQTCL4S1) Message_ts: 1792086801.481479
+- [See result above] From: ChatOps (ID: U03PQTCL4S1) Message_ts: 1792086801.928259
+- [See result above] From: ChatOps (ID: U03PQTCL4S1) Message_ts: 1792086802.077379
+- [See result above] From: SecOps Agent (ID: U0ACAQ68R3M) Message_ts: 1792086897.972129
+- [See result above] From: Marcos Isaac Stupnicki <marcos.stupnicki@y.uno> (ID: U03GYUUFXHV) Message_ts: 1792087005.547149
+- [See result above] From: Marcos Isaac Stupnicki <marcos.stupnicki@y.uno> (ID: U03GYUUFXHV) Message_ts: 1792087167.284999
+
+---
+
+### Result 4 of 20
+Channel: #partner-leads-yuno-alliance (ID: C0C78NFE6KD)
+From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+Time: 2026-10-15 05:50:09 PDT
+Message_ts: 1792068609.987819
+Permalink: [link](https://yunopay.slack.com/archives/C0C78NFE6KD/p1792068609987819)
+Text: 
+:rotating_light: New Tier 1 partner opportunity
+Account: Riot Games
+Segment: Merchant  |  Region: North America/Other  |  Type: Both
+Warm intro partners (partner has them as a customer): Airwallex, Carry1st, dLocal
+Co-sell partners (open opportunity for Yuno and partner): Chargeflow, Stripe, Very Good Security
+Yuno owner: Needs a Yuno owner
+Former owner: Tomas Jolivet. <@U08QGL080R1|Justo Benetti> please reassign
+Why tier 1: 6 partners
+Heads up: <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened
+Context before: 
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068600.265959
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ Uber
+_Segment:_ Merchant  |  _Region:_ North America/Other  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ Airwallex, <http://Checkout.com|Checkout.com>, Stripe, dLocal
+_Co-sell partners (open opportunity for Yuno and partner):_ Airwallex, Global Payments (Hcorp), Nuvei, Stripe, Very Good Security, Worldline
+_Yuno owner:_ Needs a Yuno owner
+_Former owner:_ Maria Zuluaga. <@U08QGL080R1|Justo Benetti> please reassign
+_Why tier 1:_ 8 partners; 10k+ employees
+_Heads up:_ <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068604.052469
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ Adobe
+_Segment:_ Merchant  |  _Region:_ EMEA  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ Nuvei, PayPlug, Stripe, Very Good Security
+_Co-sell partners (open opportunity for Yuno and partner):_ Chargeflow, Global Payments (Hcorp), PayPlug, Stripe, Worldline
+_Yuno owner:_ Alejandro Albarracín
+_Why tier 1:_ 7 partners; 10k+ employees
+_Heads up:_ <@U09F2AZBUR4|Maria José Pineda> <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068605.432639
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ SHEIN
+_Segment:_ Merchant  |  _Region:_ APAC  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ <http://Checkout.com|Checkout.com>, Nuvei, Riskified, Stripe, dLocal
+_Co-sell partners (open opportunity for Yuno and partner):_ Airwallex, Nuvei, PayPlug, Stripe
+_Yuno owner:_ Dianyi Zhu
+_Why tier 1:_ 7 partners; 10k+ employees; PDF priority list
+_Heads up:_ <@U07RPGYHWSD|Chee> <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068606.643059
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ Temu
+_Segment:_ Merchant  |  _Region:_ APAC  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ <http://Checkout.com|Checkout.com>, Nuvei, Riskified, Stripe, dLocal
+_Co-sell partners (open opportunity for Yuno and partner):_ Global Payments (Hcorp), Nuvei, PayPlug, Stripe
+_Yuno owner:_ Needs a Yuno owner
+_Former owner:_ Matheus Pestana. <@U07RPGYHWSD|Chee> please reassign
+_Why tier 1:_ 7 partners
+_Heads up:_ <@U07RPGYHWSD|Chee> <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068607.944759
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ Walmart
+_Segment:_ Merchant  |  _Region:_ North America/Other  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ Signifyd, Stripe, Very Good Security
+_Co-sell partners (open opportunity for Yuno and partner):_ Airwallex, Chargeflow, Nuvei, Stripe
+_Yuno owner:_ Rasheed Bayter Cañon
+_Why tier 1:_ 6 partners; 10k+ employees
+_Heads up:_ <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068609.139349
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ Sony Group
+_Segment:_ Merchant  |  _Region:_ North America/Other  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ <http://Checkout.com|Checkout.com>, Stripe
+_Co-sell partners (open opportunity for Yuno and partner):_ Airwallex, Nuvei, Stripe, Very Good Security, Worldline
+_Yuno owner:_ Needs a Yuno owner
+_Former owner:_ Mariano Paolillo. <@U08QGL080R1|Justo Benetti> please reassign
+_Why tier 1:_ 6 partners; 10k+ employees
+_Heads up:_ <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+Context after: 
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068611.114769
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ Ticketmaster
+_Segment:_ Merchant  |  _Region:_ North America/Other  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ <http://Checkout.com|Checkout.com>, Stripe
+_Co-sell partners (open opportunity for Yuno and partner):_ Chargeflow, Riskified, Very Good Security, Worldline
+_Yuno owner:_ Alejandro Bernal
+_Why tier 1:_ 6 partners
+_Heads up:_ <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068612.727649
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ Amazon
+_Segment:_ Merchant  |  _Region:_ North America/Other  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ Airwallex, Riskified, Stripe, dLocal
+_Co-sell partners (open opportunity for Yuno and partner):_ Airwallex, Nuvei, Stripe
+_Yuno owner:_ Justo Benetti
+_Why tier 1:_ 5 partners; 10k+ employees
+_Heads up:_ <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068613.256709
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ Expedia Group
+_Segment:_ Merchant  |  _Region:_ North America/Other  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ <http://Checkout.com|Checkout.com>, Riskified, Stripe, dLocal
+_Co-sell partners (open opportunity for Yuno and partner):_ Nuvei, Riskified, Stripe
+_Yuno owner:_ Needs a Yuno owner
+_Former owner:_ Tomas Jolivet. <@U08QGL080R1|Justo Benetti> please reassign
+_Why tier 1:_ 5 partners; 10k+ employees; PDF priority list
+_Heads up:_ <@U08QGL080R1|Justo Benetti>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1792068852.251519
+  :rotating_light: _New Tier 1 partner opportunity_
+_Account:_ MetLife
+_Segment:_ Financial Services  |  _Region:_ North America/Other  |  _Type:_ Both
+_Warm intro partners (partner has them as a customer):_ Stripe
+_Co-sell partners (open opportunity for Yuno and partner):_ Stripe
+_Yuno owner:_ Needs a Yuno owner
+_Former owner:_ Vitor Mazurek. <@U0AGDUHA2L9|Mau Schwartzmann> please assign a Yuno owner
+_Why tier 1:_ 10k+ employees
+_Heads up:_ <@U0AGDUHA2L9|Mau Schwartzmann>
+React :white_check_mark: to request an intro, :x: to pass, :handshake: once the intro is made, :clipboard: to have a Salesforce opportunity opened *Sent using* <@U095HPT8VA8|Cursor>
+
+---
+
+### Result 5 of 20
+Channel: #finx-ebanx (ID: C0C6E3NGVJ5)
+From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+Time: 2026-10-13 09:47:00 PDT
+Message_ts: 1791910020.309359
+Permalink: [link](https://yunopay.slack.com/archives/C0C6E3NGVJ5/p1791910020309359)
+Text: 
+Ebanx Saudi Arabia, <@U0B4Z05K085|Sumit Tyagi> led a fantastic demo session this morning including both eBanx and Carry1st merchant. Sumit, if you wouldnt mind giving a recap and next steps here
+Context before: 
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1791909822.283139
+  Hi <@U0B5E3Y3XKQ|Alfredo Sarria>, thanks for streamlining the convo here from whatsapp. Yes, after a few knudges we have the call confirmed for this Thursday.
+Context after: 
+- From: Daniela Reyes <daniela.reyes@y.uno> (ID: U0A5PCXHUQZ) 
+  Message_ts: 1791910283.165689
+  Regarding Money2020 we have 3 planned touchpoints throughout the event:
+
+• Senior Exec Meeting with the below stakeholders on Monday morning
+• Ebanx CRO confirmed attendance for race car driving 
+• Matt Brown- separate meetup at Mastercard event on Tuesday
+
+---
+
+### Result 6 of 20
+Channel: #secops-on-schedule (ID: C03LFFFBW31)
+From: SecOps Agent (ID: U0ACAQ68R3M)  [BOT]
+Time: 2026-10-15 10:54:57 PDT
+Message_ts: 1792086897.972129
+Permalink: [link](https://yunopay.slack.com/archives/C03LFFFBW31/p1792086897972129?thread_ts=1792086801.481479&cid=C03LFFFBW31)
+Text: 
+:white_check_mark: *Task Completed*
+
+*Microservice UUID:* cb51412b-2024-4a6f-bace-abf99d4c1cb7
+*Microservice name:* carry1st-demo
+*Github link:* <https://github.com/yuno-payments/carry1st-demo>
+*Branch with auth mechanisms (as informed by user):* master
+*Analysis result:* Ok to expose microservice publicly
+*Analysis description:* 
+
+HTTP Basic authentication is correctly implemented as Express middleware on lines 105-112 of `server.js`, protecting all endpoints except Kubernetes health probes (`/health-check`, `/liveness`, `/carry1st-demo/health-check`, `/carry1st-demo/liveness`) registered on lines 95-99 before the authentication gate. The implementation uses timing-safe comparison (`crypto.timingSafeEqual` on line 104) to prevent timing attacks when validating credentials. Credentials are sourced from environment variables `DEMO_USER` and `DEMO_PASSWORD` (lines 102-103), not hardcoded.
+
+Protected endpoints include:
+- All API routes: `/api/config`, `/api/health`, `/api/checkout-session`, `/api/session-methods/:sessionId`, `/api/payments`, `/api/payments/:id`, `/api/session-payment/:sessionId`
+- Webhook endpoint: `/webhooks/yuno`
+- Static files and views: `/`, `/today`, `/improved`
+
+Yuno API credentials (`PRIVATE_SECRET_KEY`, `PUBLIC_API_KEY`, `ACCOUNT_CODE`) are loaded from environment variables or `.env` files (lines 10-31), properly excluded from git via `.gitignore`, and only the public key is exposed to the client (line 154). The service uses sandbox credentials only (`api-sandbox.y.uno` on line 32).
+
+No critical or high severity vulnerabilities found:
+- No SQL injection vectors (no database queries)
+- No command injection (no `exec`, `eval`, or `child_process`)
+- XSS properly mitigated with HTML escaping function `esc()` on line 56 of `public/app.js`, applied to all dynamic content before `innerHTML` assignment
+- User input from `req.body` and `req.params` is properly handled with `encodeURIComponent()` and validated through helper functions (`marketOf`, `packOf`)
+- Dependencies limited to `express` and `axios` with no known critical vulnerabilities in the versions specified
+
+*Fix:* N/A
+Context before: 
+- [See result above] From: ChatOps (ID: U03PQTCL4S1) Message_ts: 1792086801.481479
+- [See result above] From: ChatOps (ID: U03PQTCL4S1) Message_ts: 1792086801.928259
+- [See result above] From: ChatOps (ID: U03PQTCL4S1) Message_ts: 1792086802.077379
+Context after: 
+- [See result above] From: Marcos Isaac Stupnicki <marcos.stupnicki@y.uno> (ID: U03GYUUFXHV) Message_ts: 1792087005.547149
+- [See result above] From: Marcos Isaac Stupnicki <marcos.stupnicki@y.uno> (ID: U03GYUUFXHV) Message_ts: 1792087167.284999
+- [See result above] From: Caio Freitas Ferreira <caio@y.uno> (ID: U03G88W4JG4) Message_ts: 1792094977.234649
+
+---
+
+### Result 7 of 20
+Channel: #finx-ebanx (ID: C0C6E3NGVJ5)
+From: Sumit Tyagi <sumit@y.uno> (ID: U0B4Z05K085) 
+Time: 2026-10-14 02:25:48 PDT
+Message_ts: 1791969948.452239
+Permalink: [link](https://yunopay.slack.com/archives/C0C6E3NGVJ5/p1791969948452239)
+Text: 
+Hi <@U0A5PCXHUQZ|Daniela Reyes> thanks, yes, it was a good all hands workshop Ebanx, Yuno, Carry1st. I am sharing the workshop notes FYI.
+Context after: 
+- From: Sumit Tyagi <sumit@y.uno> (ID: U0B4Z05K085) 
+  Message_ts: 1791970471.788249
+  On the call were Edu, Karim (Regional Director MENAT), Henrique (Product Director) and Mohamed Tarek from EBANX
+- [See result above] From: Sumit Tyagi <sumit@y.uno> (ID: U0B4Z05K085) Message_ts: 1791970709.533349
+- From: Sumit Tyagi <sumit@y.uno> (ID: U0B4Z05K085) 
+  Message_ts: 1791970727.015779
+  Edu is attending Money20/20
+
+---
+
+### Result 8 of 20
+Channel: #partnerships--sales (ID: C07D1BWFJMC)
+From: Payments Concierge (ID: U0ADAK39W4Q)  [BOT]
+Time: 2026-10-02 10:53:10 PDT
+Message_ts: 1790963590.657809
+Permalink: [link](https://yunopay.slack.com/archives/C07D1BWFJMC/p1790963590657809?thread_ts=1790963404.881459&cid=C07D1BWFJMC)
+Text: 
+Good question —
+
+The partner sheet lists 44 distinct partners with signed agreements offering payment methods across 60 African countries, spanning Card, Bank Transfer, Mobile Banking/Money, Wallet, Crypto, Payout, Buy Now Pay Later, Prepaid Cards, Direct Debit, Online Banking, Carrier Billing, Payment Link, Loyalty Card, and KYC. I've attached the full row-level breakdown (partner, contract status, method category/type, card brand, country) — it's on its way as a CSV.
+
+Signed partners by method category, Africa:
+• Card: Checkout, Cybersource, Dlocal, Ebanx, Flutterwave, Carry1St, Fiserv, Lexis Nexis, MPGS by Mastercard, Mastercard, Novalnet, Pagsmile, Paymob, Paystack By Stripe, Payu, Ppro, Tap Payments, Unlimit, Visa
+• Bank Transfer: 54pay/PayGate, Carry1St, D24, Dlocal, Ebanx, Flutterwave, Paymob, Paypal/Braintree, Payretailers, Paystack By Stripe, Payu, Tazapay
+• Mobile Banking/Money: 54pay/PayGate, D24, Dlocal, Onafriq, Payaza, Paystack By Stripe, Payu, Tazapay
+• Wallet: Astropay, Boku, Carry1St, Checkout, Cybersource, D24, Dlocal, Ebanx, Emerchant Pay, Flutterwave, MPGS by Mastercard, More Payments/Uniteller, Novalnet, Onafriq, Pagsmile, Paymob, Paypal/Braintree, Payretailers, Paysafe, Payu, Ppro, Tap Payments, Tazapay, Unlimit
+• Crypto: Binance Pay, Circle, Coinspaid, Crypto.com, Dlocal, Emerchant Pay, Opennode, Triple-A, Zenki
+• Payout: Astropay, Bamboo Payments, Conduit, Emerchant Pay, Paypal/Braintree, Rapyd, Terrapay, Thunes, Unlimit
+• BNPL: Checkout, Dlocal, Paymob, Payu
+• Others: Pluxee (prepaid cards), Sumsub (KYC), Boku (carrier billing)
+
+Note: this is what each partner commercially offers across Africa — not what Yuno has actually integrated/built yet. If you want, I can cross-check which of these are live in Yuno's integration matrix for specific countries/methods, or narrow this to a specific country or method.
+
+Source: partner offerings sheet (Noco_DB/SoT), scope: cross-merchant portfolio, region = AFRICA.
+Context before: 
+- From: Samuel Carreño <samuel.carreno@y.uno> (ID: U0A22LP8E8J) 
+  Message_ts: 1790963404.881459
+  <@U0ADAK39W4Q|Payments Concierge> what are all the payment partners and payment methods we offer in Africa?
+- From: Glean (ID: U09RPE6GJTW) 
+  Message_ts: 1790963456.185319
+  Based on company knowledge *For live pay-ins, the Africa coverage matrix lists 7 countries, 13 partners, and 15 payment methods.* • *Ghana:* Apple Pay, AstroPay, Google Pay, local schemes, Mastercard, Visa — via *Apple Pay, AstroPay, Google Pay, Nuvei, dLocal, Stripe*. 
+• *Kenya:* Apple Pay, AstroPay, bank transfer, Google Pay, American Express, Diners Club, Discover, Mastercard, Visa — via *Apple Pay, AstroPay, Conduit, Google Pay, Stripe, Unlimit, dLocal*. 
+• *Morocco:* Apple Pay, Google Pay, American Express, China UnionPay, Diners Club, JCB, Mastercard, Visa — via *Apple Pay, Google Pay, CMI, dLocal*. 
+• *Nigeria:* Apple Pay, AstroPay, bank transfer, Google Pay, American Express, Diners Club, Discover, Mastercard, Verve, Visa — via *Apple Pay, AstroPay, Conduit, Tipalti (Payout), Google Pay, Stripe, Unlimit, dLocal*. 
+• *South Africa:* Apple Pay, AstroPay, bank transfer, Click to Pay, EFT, Google Pay, American Express, China UnionPay, Diners Club, Mastercard, Visa — via *Apple Pay, AstroPay, NuPay, Click to Pay, Google Pay, dLocal, EBANX, Stripe*. 
+• *Tanzania:* Apple Pay, AstroPay, Google Pay, Diners Club, Discover, Mastercard, Visa — via *Apple Pay, AstroPay, Google Pay, Unlimit*. 
+• *Uganda:* Apple Pay and Google Pay — via *Apple Pay and Google Pay*.  *Unique live partners:* Apple Pay, AstroPay, Click to Pay, CMI, Conduit, dLocal, EBANX, Google Pay, NuPay, Nuvei, Stripe, Tipalti, and Unlimit. A separate August 2026 *payout* deck claims broader African payout coverage—24+ countries—with mobile money, bank transfer, and card rails through partners including PawaPay, Flutterwave, dLocal, Peach Payments, Ozow, CinetPay, and Paystack. That is payout coverage, not the live pay-in matrix above. Slack *2 sources* View sources button Open in Glean button Tag or DM <@U09RPE6GJTW|Glean> to get answers from company knowledge in Slack, with interactive elements
+- From: Samuel Carreño <samuel.carreno@y.uno> (ID: U0A22LP8E8J) 
+  Message_ts: 1790963551.545839
+  <@U0ADAK39W4Q|Payments Concierge> answer as well
+- From: Payments Concierge (ID: U0ADAK39W4Q) 
+  Message_ts: 1790963579.197209
+  Full partner-offerings breakdown for Africa (partner, contract status, method category/type, card brand, country) — Noco_DB/SoT sheet
+Context after: 
+- From: Payments Concierge (ID: U0ADAK39W4Q) 
+  Message_ts: 1790963763.089149
+  Live pay-in integration matrix rows for the 7 African countries (country, provider, method, evidence=real-transaction data) — product_matrix.matrix_v1
+- From: Payments Concierge (ID: U0ADAK39W4Q) 
+  Message_ts: 1790963775.596589
+  Answering on the *built-and-integrated* reading — what Yuno has actually implemented with real-transaction evidence, per the integration matrix cross-checked against Yuno's GitHub integration code.  I pulled the matrix directly rather than taking Glean's figures at face value, and the real picture is bigger than "7 countries, 13 partners, 15 methods." Looking at Ghana, Kenya, Morocco, Nigeria, South Africa, Tanzania, and Uganda specifically:  *36 providers* carry real-transaction evidence (`live='data'`) across those 7 countries, covering *19 payment methods* — not 13/15. GitHub confirms dedicated integration modules for the major ones I spot-checked (Adyen, Stripe, AstroPay, etc.), so the matrix verdict is firm.  Key names showing live traffic in most/all of those 7 countries: *ADYEN, AIRWALLEX, APPLE_PAY, BRAINTREE, CHECKOUT, CIELO, GOOGLE_PAY, NETCETERA_3DS, NIUBIZ, NMI, NUVEI, PAYPAL, QNB_MPGS, SPLITIT, STRIPE, TAP_PAYMENTS, UNLIMINT, WORLDPAY, YUNO_ROUTING* — plus narrower-coverage ones like CMI (Morocco), DLOCAL (Morocco, Nigeria), EBANX (Ghana, Kenya, Nigeria, South Africa), REDE/CREDIBANCO (Morocco, South Africa, Tanzania), WINDCAVE (Kenya, South Africa, Tanzania).  Methods beyond card/wallets with live evidence: AFTERPAY, CASHAPP, CRYPTO (via Stripe), KLARNA (Nigeria, South Africa), SEPA/BANCONTACT/IDEAL (mostly Morocco/Kenya/Nigeria/South Africa), ALIPAY (via Airwallex), ACH (Nigeria), ZIP, MOBILEPAY.  On Glean's AstroPay/Conduit/Tipalti/NuPay/Click to Pay claims: I checked each — AstroPay, NuPay, and Click to Pay exist in the matrix but show **no live rows for any of these 7 countries** (AstroPay's live traffic is AR/BR/CO/UY only); Conduit and Tipalti don't appear in the matrix or in Yuno's GitHub integration code at all, so I can't confirm those for Africa from any wired source.  I've shared the full country-by-provider-by-method breakdown as a file.  I can also check this as a signed commercial agreement (partner sheet) or narrow to one country/method — say the word.  *Source:* integration matrix (`product_matrix.matrix_v1`), cross-checked with Yuno's GitHub integration code, scope: cross-merchant portfolio, countries = Ghana, Kenya, Morocco, Nigeria, South Africa, Tanzania, Uganda.
+
+---
+
+### Result 9 of 20
+Channel: #partnerships--sales (ID: C07D1BWFJMC)
+From: Payments Concierge (ID: U0ADAK39W4Q)  [BOT]
+Time: 2026-09-22 20:17:46 PDT
+Message_ts: 1790133466.919459
+Permalink: [link](https://yunopay.slack.com/archives/C07D1BWFJMC/p1790133466919459?thread_ts=1790085201.831979&cid=C07D1BWFJMC)
+Text: 
+MOR providers Yuno is connected to (contract signed = YES):
+
+GCC — Dlocal (Qatar, Saudi Arabia, UAE), Carry1St (all 6: Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, UAE). Boku and Coda Payment also appear for GCC markets but their contracts are NOT signed yet.
+
+Indonesia — D24, Dlocal, Doku. (Coda Payment also present but not signed.)
+
+United States — Emerchant Pay, Floid, Novalnet, Ppro (confirmed in our earlier pass on this same sheet; today's re-check on the US slice came back empty likely due to partner-name/country-string variance in that filter, not a change in the underlying data — flagging so you can sanity-check if it matters for the DDQ).
+
+One caveat worth carrying into the DDQ: several partners show up repeatedly per country only because the sheet has multiple rows per payment-method/card-brand combination — the "MOR provider" list above is deduped at partner level, contract-signed only.
+
+Source: partner offerings sheet (Noco_DB, tab SoT), scope: cross-merchant portfolio — commercial/partner data, not transactional.
+Context before: 
+- From: Leslie Lim <leslie.lim@y.uno> (ID: U097YB7JURZ) 
+  Message_ts: 1790132997.553269
+  <@U0ADAK39W4Q|Payments Concierge> what about fiuu, nomupay?
+
+---
+
+### Result 10 of 20
+Channel: #finx-ebanx (ID: C0C6E3NGVJ5)
+From: Sumit Tyagi <sumit@y.uno> (ID: U0B4Z05K085) 
+Time: 2026-10-14 02:38:29 PDT
+Message_ts: 1791970709.533349
+Permalink: [link](https://yunopay.slack.com/archives/C0C6E3NGVJ5/p1791970709533349)
+Text: 
+Talking points for EBANX at your Money20/20 meeting
+1. Edu saw the Yuno platform in detail for the first time and called it very useful. EBANX will integrate directly to Yuno for KSA, Yuno routes to Carry1st.
+2. Structure confirmed by Carry1st: Carry1st is seller of record in KSA under a licence model. No local entity for EBANX or merchants, no double tax. Edu accepts this may be the only route to mada even though EBANX does not do MoR anywhere else.
+3. Two open frictions, both on Carry1st’s side and both workable: no server to server today (redirect page, target end of year) and no recurring until Q1. Edu wants the fix in the merchant checkout instead of a redirect.
+4. Timeline: EBANX takes the model to merchants over the next 30 days, integration proposed in Jan, first transactions Q2 2027 at best.
+5. Pricing and volumes not discussed yet. Edu wants merchant feedback first.
+What to ask for in Vegas: the first-wave merchants and volumes, and Edu’s view on the wider global discussions he mentioned with Yuno beyond KSA. Karim is MENA day-to-day owner, I am setting up a working group and we reconvene in two weeks.
+Context before: 
+- [See result above] From: Sumit Tyagi <sumit@y.uno> (ID: U0B4Z05K085) Message_ts: 1791969948.452239
+- [See result above] From: Sumit Tyagi <sumit@y.uno> (ID: U0B4Z05K085) Message_ts: 1791970471.788249
+Context after: 
+- [See result above] From: Sumit Tyagi <sumit@y.uno> (ID: U0B4Z05K085) Message_ts: 1791970727.015779
+
+---
+
+### Result 11 of 20
+Channel: #partnerships--sales (ID: C07D1BWFJMC)
+From: Payments Concierge (ID: U0ADAK39W4Q)  [BOT]
+Time: 2026-09-22 06:55:23 PDT
+Message_ts: 1790085323.785339
+Permalink: [link](https://yunopay.slack.com/archives/C07D1BWFJMC/p1790085323785339?thread_ts=1790085201.831979&cid=C07D1BWFJMC)
+Text: 
+Good question, Leslie — pulled this from the partner offerings sheet, filtered to rows where Merchant of Record = TRUE and contract signed = YES.
+
+United States: Emerchant Pay, Floid, Novalnet, Ppro
+
+Indonesia: D24, Dlocal, Doku, Emerchant Pay, Hitpay, Novalnet, Pagsmile, Pandablue, Ppro, Tazapay, Thunes, Zesta / 8B / Carussel
+
+GCC (Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, UAE):
+• Pagsmile and Novalnet — Bahrain, Kuwait, Oman, Qatar, UAE
+• Carry1St — all six markets
+• Emerchant Pay — Kuwait, Oman, Qatar, Saudi Arabia, UAE
+• Dlocal — Qatar, Saudi Arabia, UAE
+• Ppro and Tazapay — Saudi Arabia, UAE
+• Fuze — UAE only
+
+A few other names show up as MoR-flagged in these markets but their contract isn't signed yet — Coda Payment, Verifone, Xsolla, Paymentwall, Boku, Payfuture, Midtrans, Shopeepay, Pay10. Happy to pull the assigned Partner Manager for any of those if you want to chase a signature.
+
+Source: partner offerings sheet (Noco_DB, tab SoT), scope: cross-merchant portfolio.
+Context before: 
+- From: Leslie Lim <leslie.lim@y.uno> (ID: U097YB7JURZ) 
+  Message_ts: 1790085201.831979
+  <@U0ADAK39W4Q|Payments Concierge> who are all the MOR providers in US, GCC and Indonesia we are connected to?
+Context after: 
+- From: Glean (ID: U09RPE6GJTW) 
+  Message_ts: 1790086047.694099
+  Based on company knowledge *Live MOR-connected providers (`MOR=TRUE`) currently listed:* • *US:* None flagged as live MOR.
+• *GCC:* *Nuvei* in Bahrain; none flagged for Saudi Arabia, UAE, Qatar, Kuwait, or Oman. 
+• *Indonesia:* *Boku, dLocal, DOKU, Midtrans, and Nuvei.*  *Unique provider set:* Boku, dLocal, DOKU, Midtrans, Nuvei. Gdrive *1 source* View sources button Open in Glean button Tag or DM <@U09RPE6GJTW|Glean> to get answers from company knowledge in Slack, with interactive elements
+
+---
+
+### Result 12 of 20
+Channel: #partnerships--sales (ID: C07D1BWFJMC)
+From: Glean (ID: U09RPE6GJTW)  [BOT]
+Time: 2026-08-31 01:03:58 PDT
+Message_ts: 1788163438.273309
+Permalink: [link](https://yunopay.slack.com/archives/C07D1BWFJMC/p1788163438273309?thread_ts=1788163214.792759&cid=C07D1BWFJMC)
+Text: 
+*Confirmed for Egypt MoR from your list:*  • Carry1st / Pay1st — Yes; supports Egypt MoR and local methods including Visa, Mastercard, Meeza, wallets, Fawry, WeChat Pay, and others. Legal-basis clarification and integration prioritization remain open. 
+• dLocal — Yes; explicitly confirmed for MoR in Egypt. 
+• EBANX — Yes, conditional: MoR is available for companies with a UAE entity; Egypt/EGP coverage is documented, though MENA coverage is limited. 
+• Flutterwave — Yes; classified as MoR-native, with Egypt included in its covered markets. 
+• HyperPay — Yes; classified as MoR-capable/core product for Egypt and other MENA markets. 
+• Paymob — Yes; identified as an Egypt-focused MoR provider supporting local methods such as Fawry, Vodafone Cash, InstaPay, Meeza, and wallets.   *Do not currently pitch the remaining providers as confirmed Egypt MoR.* In particular, the internal framework explicitly excludes *<http://Checkout.com|Checkout.com> Integrated Platforms* and *Braintree Commerce Platform* from MoR eligibility.  *Tap Payments* supports Egypt, but its documentation describes it as a PSP/gateway—not an MoR provider.
+Context before: 
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163214.792759
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163391.671399
+Context after: 
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163488.118289
+- [See result above] From: Payments Concierge (ID: U0ADAK39W4Q) Message_ts: 1788163532.541049
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163580.011879
+- [See result above] From: Payments Concierge (ID: U0ADAK39W4Q) Message_ts: 1788163684.780829
+- [See result above] From: Glean (ID: U09RPE6GJTW) Message_ts: 1788163842.795649
+
+---
+
+### Result 13 of 20
+Channel: #partnerships--sales (ID: C07D1BWFJMC)
+From: Glean (ID: U09RPE6GJTW)  [BOT]
+Time: 2026-08-31 01:10:42 PDT
+Message_ts: 1788163842.795649
+Permalink: [link](https://yunopay.slack.com/archives/C07D1BWFJMC/p1788163842795649?thread_ts=1788163214.792759&cid=C07D1BWFJMC)
+Text: 
+*For Egypt, the strongest recurring-payment candidates from your list are:*  • dLocal — supports recurring Visa/Mastercard cards in Egypt; Meeza is not confirmed. 
+• EBANX — supports tokenized recurring card billing, subject to contract-level enablement. 
+• Paymob — supports monthly recurring payments in Egypt, but Yuno’s card-tokenization/MIT path is currently blocked pending Paymob enablement. 
+• HyperPay — provider supports recurring billing and covers Egypt; Yuno/account readiness still needs confirmation. 
+• Geidea — supports recurring auto-debit/payment links in Egypt; Yuno readiness is unconfirmed.   *Also recurring-capable at provider level, but not confirmed as Egypt-ready through Yuno:* Apple Pay, AstroPay, Bamboo Payments, BoomFi, <http://Checkout.com|Checkout.com>, Circle, Confirmo, <http://Crypto.com|Crypto.com>, Cybersource, Ecommpay, emerchant pay, Flutterwave, Mastercard, Novalnet, Pagsmile, Paymentwall, PayPal/Braintree, PPRO, Rapyd, Samsung Pay, Tap Payments, Verifone, and Visa.  *Do not position as recurring for Egypt without further confirmation:* Coda Payment, Triple-A, and WeChat Pay Tencent. Binance Pay, Carry1st, Coinspaid, Discover, Inxy, OpenNode, Paycore, Payfuture, TerraPay, and Zenki remain unconfirmed.  Note: *Yuno’s native Subscriptions API currently supports Cards only*; APM recurring flows require provider-specific tokenization/MIT support.
+Context before: 
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163214.792759
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163391.671399
+- [See result above] From: Glean (ID: U09RPE6GJTW) Message_ts: 1788163438.273309
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163488.118289
+- [See result above] From: Payments Concierge (ID: U0ADAK39W4Q) Message_ts: 1788163532.541049
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163580.011879
+- [See result above] From: Payments Concierge (ID: U0ADAK39W4Q) Message_ts: 1788163684.780829
+
+---
+
+### Result 14 of 20
+Channel: #scorpapp- (ID: C0BJK353TMM)
+From: Ugur <ugur.demirkaya@y.uno> (ID: U09FPAQ9B7T) 
+Time: 2026-09-02 01:46:29 PDT
+Message_ts: 1788338789.256799
+Permalink: [link](https://yunopay.slack.com/archives/C0BJK353TMM/p1788338789256799)
+Text: 
+<@U082DJ2QEP2|Alessandra Rospigliosi Ibanez> by now we intoruced them to Tamatem, Traxx and carry1st all of them are woring with MOR model , they also ask PSP intoructions as well instead only MOR models
+Context before: 
+- From: Ugur <ugur.demirkaya@y.uno> (ID: U09FPAQ9B7T) 
+  Message_ts: 1788338722.088529
+  Hi <@U082DJ2QEP2|Alessandra Rospigliosi Ibanez>, merchant is asking for more PSP introductions, can you help us with their request so we can potentially get more volume from this deal? please note they are already live with Payabl, PayerMax, EMP, Rapyd and Shift4, and they also have an ongoing discussion with Unlimit
+Context after: 
+- From: Alessandra Rospigliosi Ibanez <alessandra.rospigliosi@y.uno> (ID: U082DJ2QEP2) 
+  Message_ts: 1788338902.235459
+  hii <@U09FPAQ9B7T|Ugur>!! this is the oinfo of the company, correct? or something has change? Let me know!
+
+1. Current partners: Payabl, payermax, EMP, Rapyd and Shift4
+2. Vertical: Live streaming &amp; MCC code: Dating ( similiar Bigo, Tango )
+3. Countries: They give the service globally 
+4. Legal Entity: they have multible entity , and they can go live any of them in the case if we can find potential PSPes for them (Cyprus &amp; UAE )
+5. Settlement Country: Cyprus or UAE
+6. Type of processing: cross border 
+7. Type of transactions: Online e-commerce payments through their live streaming platform, including checkout purchases and recurring subscription models.
+8. Payment Methods: credit cards , APM
+9. Average ticket per transaction: 13 usd
+10. Monthly transactions: 1M+
+11. Monthly TPV: 30M USD+
+
+- From: Alessandra Rospigliosi Ibanez <alessandra.rospigliosi@y.uno> (ID: U082DJ2QEP2) 
+  Message_ts: 1788338947.178569
+  Also, this is the one we talk to nuvei about? and they rejected them? just trying to get some memory haha
+- From: Ugur <ugur.demirkaya@y.uno> (ID: U09FPAQ9B7T) 
+  Message_ts: 1788339000.152969
+  <@U082DJ2QEP2|Alessandra Rospigliosi Ibanez> All is same , Nuvei didnt revert back on their final decision even i follow up . Now i will be sending a new follow up message if you can give your support too that wopuld be great
+- From: Alessandra Rospigliosi Ibanez <alessandra.rospigliosi@y.uno> (ID: U082DJ2QEP2) 
+  Message_ts: 1788339088.632429
+  Yes I talk to them two weeks ago and they were reviewing this internally again!!
+
+Ok I will ask Emerchantpay and Ecommpay if they can attend this merchant. Does it sounds ok to you?
+- From: Ugur <ugur.demirkaya@y.uno> (ID: U09FPAQ9B7T) 
+  Message_ts: 1788339103.959689
+  Sounds good , thnks
+
+---
+
+### Result 15 of 20
+Channel: #scorpapp- (ID: C0BJK353TMM)
+From: Alessandra Rospigliosi Ibanez <alessandra.rospigliosi@y.uno> (ID: U082DJ2QEP2) 
+Time: 2026-09-15 06:40:17 PDT
+Message_ts: 1789479617.015259
+Permalink: [link](https://yunopay.slack.com/archives/C0BJK353TMM/p1789479617015259)
+Text: 
+They also talk to Tamatem, Traxx and carry1st
+Context before: 
+- From: Justo Benetti <justo@y.uno> (ID: U08QGL080R1) 
+  Message_ts: 1789479284.598639
+  <@U082DJ2QEP2|Alessandra Rospigliosi Ibanez> <@U09FPAQ9B7T|Ugur> how can we help solving for this customer ?
+- From: Alessandra Rospigliosi Ibanez <alessandra.rospigliosi@y.uno> (ID: U082DJ2QEP2) 
+  Message_ts: 1789479469.201579
+  They already work with: Payabl, payermax, EMP, Rapyd and Shift4. And they are in conversations with Unlimit
+and we have talk to the following:
+• Nuvei: they didnt accept them 
+• Ecommpay: We can make the presentation 
+• Emerchantpay: Havent answer me but we have a meeting tomorrow 
+• Airwallex: I am waiting for a reply 
+• Checkout: Ugur already make the intro 
+• Hipay: presentation already made 
+- From: Alessandra Rospigliosi Ibanez <alessandra.rospigliosi@y.uno> (ID: U082DJ2QEP2) 
+  Message_ts: 1789479485.980049
+  <@U08QGL080R1|Justo Benetti> do you have in mind any other provider that may be able to help?
+Context after: 
+- From: Justo Benetti <justo@y.uno> (ID: U08QGL080R1) 
+  Message_ts: 1789479899.615609
+  What regions/markets ?
+- From: Justo Benetti <justo@y.uno> (ID: U08QGL080R1) 
+  Message_ts: 1789479907.918279
+  Where do thye have entities ?
+
+---
+
+### Result 16 of 20
+Channel: #partnerships--sales (ID: C07D1BWFJMC)
+From: Payments Concierge (ID: U0ADAK39W4Q)  [BOT]
+Time: 2026-08-31 01:05:32 PDT
+Message_ts: 1788163532.541049
+Permalink: [link](https://yunopay.slack.com/archives/C07D1BWFJMC/p1788163532541049?thread_ts=1788163214.792759&cid=C07D1BWFJMC)
+Text: 
+Good question — here's what the partner offerings sheet shows for Egypt.
+
+Partners recorded with Egypt in their country coverage (58 across the sheet): Amazon Payment Services, Apple Pay, Asee, Astropay, Bamboo Payments, Binance Pay, Boku, Boomfi, Carry1St, Checkout, Circle, Coda Payment, Coinspaid, Confirmo, Crypto.com, Cybersource, Diners Club, Discover, Dlocal, Ebanx, Ecommpay, Ecomprocessing, Emerchant Pay, Fawry, Flutterwave, GatePay, Geidea, Hyperpay, Inxy Payments, MPGS by Mastercard, Mastercard, Myfatoorah, Noah, Novalnet, Opennode, Pagsmile, Paycore, Payfuture, Paymentez, Paymentwall, Paymob, Paypal / Braintree, Payermax, Paysafe, Ppro, Rapyd, Samsung Pay, Tap Payments, Terrapay, Triple-A, Uatp, Ubyx, Valu, Verifone, Visa, We Chat Pay Tencent, Xsolla, Zenki.
+
+Of these, the ones most clearly focused on Egypt as a core market (local acquiring/PSPs) are Fawry, Paymob, Geidea, Myfatoorah, Hyperpay, and Valu — the rest cover Egypt as part of a broader regional or global footprint (card schemes, wallets, crypto, MoR aggregators, etc.).
+
+One caveat: the contract-signed status column in the sheet is returning broken values for this range (a formula error in the sheet itself, not a data absence), so I can't reliably confirm which of these have a signed agreement from that column right now. If you tell me which partner(s) you care about, I can check their status individually, or flag it to whoever maintains the sheet.
+
+Source: partner offerings sheet (Noco_DB / SoT tab), scope: cross-merchant portfolio, country = Egypt.
+
+Want me to narrow this to a specific payment method (e.g. cards, wallets) or confirm signed status for a shortlist?
+Context before: 
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163214.792759
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163391.671399
+- [See result above] From: Glean (ID: U09RPE6GJTW) Message_ts: 1788163438.273309
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163488.118289
+Context after: 
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163580.011879
+- [See result above] From: Payments Concierge (ID: U0ADAK39W4Q) Message_ts: 1788163684.780829
+- [See result above] From: Glean (ID: U09RPE6GJTW) Message_ts: 1788163842.795649
+
+---
+
+### Result 17 of 20
+Channel: #partnerships--sales (ID: C07D1BWFJMC)
+From: Payments Concierge (ID: U0ADAK39W4Q)  [BOT]
+Time: 2026-08-31 01:08:04 PDT
+Message_ts: 1788163684.780829
+Permalink: [link](https://yunopay.slack.com/archives/C07D1BWFJMC/p1788163684780829?thread_ts=1788163214.792759&cid=C07D1BWFJMC)
+Text: 
+Good question — pulling straight from the recurring-payments column (Payment Supports Recurring Payments) in the offerings sheet, filtered to Egypt, for each partner Glean listed:
+
+Confirmed Egypt MoR partners:
+• dLocal — Card: yes, supports recurring. All the local methods listed for Egypt (Aman, Masary, Paymob, Al Ahly Momkn, Fawry, Opay Wallet, crypto) are marked no.
+• Flutterwave — Card: yes. Apple Pay, Google Pay, Fawry: no.
+• Carry1st / Pay1st — every method listed for Egypt (Card, Masary, Fawry, Aman, Orange, WeChat Pay, Vodafone Cash, Etisalat) is marked no recurring support.
+• HyperPay — recurring flag is blank/not specified for all its Egypt methods (Fawry, Card, Apple Pay, PayPal) — can't confirm either way from the sheet.
+• Paymob — same: blank/not specified across all its Egypt methods (Card, Valu, InstaPay, Vodafone Cash, Meeza, Halan, WeChat Pay, Apple Pay, etc.).
+• EBANX — Card: blank/not specified.
+
+Excluded from MoR per Glean, but present for Egypt:
+• Checkout.com — yes, recurring supported across the board (Card, PayPal, iDEAL/Wero, Przelewy24, Multibanco, SEPA, Klarna, Tamara).
+• PayPal / Braintree — PayPal: yes. The "Smart Button" and payout-PayPal rows are blank/not specified.
+• Tap Payments — yes, recurring supported (Apple Pay, Google Pay, Card).
+
+So the clean "yes" answers are: dLocal (cards), Flutterwave (cards), Checkout.com (all its methods), PayPal (via PayPal/Braintree), and Tap Payments (all its methods). Carry1st and Card-level recurring for the others is explicitly marked no or not specified — worth flagging to Ali if you need HyperPay/Paymob/EBANX confirmed, since those are just gaps in the sheet, not a data absence I can resolve further.
+
+Source: partner offerings sheet (Noco_DB / SoT tab), scope: cross-merchant portfolio, country = Egypt, per-partner/method recurring flag.
+Context before: 
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163214.792759
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163391.671399
+- [See result above] From: Glean (ID: U09RPE6GJTW) Message_ts: 1788163438.273309
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163488.118289
+- [See result above] From: Payments Concierge (ID: U0ADAK39W4Q) Message_ts: 1788163532.541049
+- [See result above] From: Kim Reynolds <kim.reynolds@y.uno> (ID: U0A80Q3M3DJ) Message_ts: 1788163580.011879
+Context after: 
+- [See result above] From: Glean (ID: U09RPE6GJTW) Message_ts: 1788163842.795649
+
+---
+
+### Result 18 of 20
+Channel: #commercial-agents (ID: C0BKDMBHS0Y)
+From: Crossbeam Agent 1.0 (ID: U0BJGCJUE2H)  [BOT]
+Time: 2026-08-03 09:09:34 PDT
+Message_ts: 1785773374.281139
+Permalink: [link](https://yunopay.slack.com/archives/C0BKDMBHS0Y/p1785773374281139?thread_ts=1785772680.243549&cid=C0BKDMBHS0Y)
+Text: 
+Aug 1 export ingested: 885 overlap rows, 273 accounts, 13 partners. Cross-referenced against all 600 open Salesforce opps. 156 accounts are warm-intro territory (Yuno open opp + a partner already has them as a customer) — full ranked list attached.
+
+Top late-stage warm-intro plays (partner can intro right now):
+• Crypto.com — Contract Signed; customer of Airwallex, Checkout.com, Nuvei, Stripe. Closest to won. Lucca Zadra.
+• Apple — 3 open opps (Contract Signed + Implementation + Proposal); customer of Global Payments, Stripe, dLocal.
+• Google — Implementation; customer of 5 partners (Airwallex, Global Payments, PayPlug, Stripe, dLocal).
+• Uber — Negotiation; 8 partner overlaps, highest momentum of any open deal; customer of Checkout.com, Stripe, dLocal. Lucca Zadra.
+• Amazon — Negotiation but 452 days in stage (heavily stalled); customer of Airwallex, Riskified, Stripe.
+• Supercell — Negotiation; customer of Carry1st, dLocal. Senser (识季) — Contracting; customer of Riskified, Stripe (APAC lead). Shoplazza — Proposal Sent; customer of Chargeflow, Stripe, dLocal.
+
+New this export vs Jul 20: Ypf just became a customer of Global Payments (Hcorp) and Expedia of Riskified — both have Yuno open opps, so these are live re-engagement moments. Naldo dropped off the export (was on the Lost-but-CB-customer audit list).
+
+Caveat: Salesforce hides Amount/TAR/ACV/Account from my user this session (FLS), so dollar figures above are from prior memory, not freshly pulled — I matched opp→account via the opp Name field and ranked by stage + partner depth instead.
+
+Want me to (a) post the full 156-list here, (b) draft warm-intro asks to each rep for the late-stage plays, or (c) re-run the customer-population-vs-SF audit on this fresh export to check the old 36 mismatches?
+Context before: 
+- From: Melissa Pottenger <melissa.pottenger@y.uno> (ID: U0AGJ8E19NJ) 
+  Message_ts: 1785772680.243549
+  <@U0BJGCJUE2H|Crossbeam Agent 1.0> August 1 export
+- From: Crossbeam Agent 1.0 (ID: U0BJGCJUE2H) 
+  Message_ts: 1785773344.765119
+  Full ranked warm-intro list — 156 accounts where Yuno has an open opp AND a partner already counts them as a customer. Columns: account, partner-customers, partner-opps, #partners, SF stage/close/owner (where matched). Sorted by warm-intro value then partner count.
+
+---
+
+### Result 19 of 20
+Channel: #commercial-agents (ID: C0BKDMBHS0Y)
+From: Crossbeam Agent 1.0 (ID: U0BJGCJUE2H)  [BOT]
+Time: 2026-09-21 14:27:07 PDT
+Message_ts: 1790026027.025369
+Permalink: [link](https://yunopay.slack.com/archives/C0BKDMBHS0Y/p1790026027025369?thread_ts=1790025993.362049&cid=C0BKDMBHS0Y)
+Text: 
+Epic Games does not appear in the latest Crossbeam overlap export (Aug 24, 2026 — 894 rows, 269 accounts, 13 partners). None of the 13 partners in the Crossbeam network — Airwallex, Carry1st, Chargeflow, Checkout.com, Global Payments, Nuvei, PayPlug, Riskified, Signifyd, Stripe, Very Good Security, Worldline, or dLocal — report Epic Games as a customer or as an open opportunity target.
+
+They were also absent from the Aug 1 export, so this isn't a recent drop — they've simply never been in the shared partner data.
+
+Two things worth noting:
+• Crossbeam only reflects partners who have actually joined the network and shared data. A provider could be working with Epic Games but not be one of the 13 partners reporting into Crossbeam, so this isn't a complete market view.
+• If you have a fresher Crossbeam export than Aug 24, drop it in the channel and I'll re-check immediately. Otherwise, for Epic Games specifically there's no warm-intro leverage from the current partner set.
+Context before: 
+- From: Melissa Pottenger <melissa.pottenger@y.uno> (ID: U0AGJ8E19NJ) 
+  Message_ts: 1790025993.362049
+  <@U0BJGCJUE2H|Crossbeam Agent 1.0> please tell me what providers work with Epic Games.
+Context after: 
+- From: Melissa Pottenger <melissa.pottenger@y.uno> (ID: U0AGJ8E19NJ) 
+  Message_ts: 1790026192.264539
+  Ok I see that Nuvei shows them as an open opportunity, can you confirm that from previous upload of crossbeam <@U0BJGCJUE2H|Crossbeam Agent 1.0>
+- From: Crossbeam Agent 1.0 (ID: U0BJGCJUE2H) 
+  Message_ts: 1790026212.200939
+  I can't confirm that, Melissa — and I want to be straight with you rather than agree.  I checked both Crossbeam exports I have on file: - *Aug 24, 2026* (894 rows, 269 accounts, 13 partners) — Epic Games does not appear anywhere. - *Aug 1, 2026* (885 rows, 273 accounts) — Epic Games does not appear there either.  In both exports, Nuvei's reported accounts include names like Temu, SHEIN, RAZER Global, <http://Crypto.com|Crypto.com>, and Caliente — but no Epic Games row, whether as customer-of or as an open opportunity.  A couple of possibilities for what you're seeing: - You may be looking at the live Crossbeam app directly, which can show fresher data than the manual CSV exports I work from. If Nuvei added Epic Games as an opp after Aug 24, it wouldn't be in my data yet. - It's also possible the account is filed under a variant name (e.g. "Epic Games, Inc." vs. "Epic Games") that didn't match my search — though I searched broadly for "epic" and got zero hits.  If you're seeing it live in Crossbeam, the fastest way for me to confirm and act on it would be to drop the latest export CSV into the channel and I'll re-run the full analysis against it. Is that what you're looking at?
+- From: Melissa Pottenger <melissa.pottenger@y.uno> (ID: U0AGJ8E19NJ) 
+  Message_ts: 1790026319.118769
+  <@U06U4SEVB50|Samuel Vieira>
+- From: Samuel Vieira <samuel@y.uno> (ID: U06U4SEVB50) 
+  Message_ts: 1790026415.296579
+  good
+- From: Samuel Vieira <samuel@y.uno> (ID: U06U4SEVB50) 
+  Message_ts: 1790026420.231679
+  that is all the info we get ?
+- From: Samuel Vieira <samuel@y.uno> (ID: U06U4SEVB50) 
+  Message_ts: 1790026424.690099
+  thank you
+- From: Melissa Pottenger <melissa.pottenger@y.uno> (ID: U0AGJ8E19NJ) 
+  Message_ts: 1790028012.836089
+  I have some of the contacts at the companies you see, but appears none have them listed as a live customer
+- From: Samuel Vieira <samuel@y.uno> (ID: U06U4SEVB50) 
+  Message_ts: 1790028597.336619
+  hmmmmmm
+- From: Samuel Vieira <samuel@y.uno> (ID: U06U4SEVB50) 
+  Message_ts: 1790028599.734899
+  weird
+
+---
+
+### Result 20 of 20
+Channel: #global-partner-leads (ID: C0C48GGM24Q)
+From: Leado (ID: U0C4BCMMPB2)  [BOT]
+Time: 2026-09-23 08:03:41 PDT
+Message_ts: 1790175821.372359
+Permalink: [link](https://yunopay.slack.com/archives/C0C48GGM24Q/p1790175821372359)
+Text: 
+*Partnerships Weekly Recap — Sep 16–23, 2026*
+
+*Talita Gama* created 2 leads, moved 6 opportunities between stages, and has 0 lost + 3 PQLs this week.
+• Leads: Carlos Café / PicPay (converted), Ana Ferraripavoni / Fiserv Brazil (converted)
+• SafraPay Wallets: Demo → Negotiation (PQL)
+• BTG Pay (3DS Standalone): → Negotiation
+• Uniteller (New Payment Methods): Discovery → Demo (PQL, Partnerships: Daniela Reyes)
+• Fiserv Brazil: Meeting Booked → Discovery
+• PicPay: Meeting Booked → Discovery
+• Bradesco (Gateway): → Demo (PQL)
+
+*Alejandro Bernal* created 10 leads, moved 2 opportunities between stages, and has 0 lost + 0 PQLs this week.
+• Leads: Esteban Vergara / Spin, Jonathan Valdez / Ticketmaster, Maximiliano / Bold, Natalia / Bold, Alejandra / Bold, Moises / Vita Wallet, Nuria / Fiserv Mexico, Marinella / Re Fácil, Adrian / NetPay, Ana Cristina / Nequi
+• ePayco 3DS Integrations: Meeting Booked → Discovery
+• Whitelabel Orchestration - Efecty: Proposal Sent → Negotiation → Proposal Sent
+
+*Alessandra Rospigliosi* created 24 leads, moved 2 opportunities between stages, and has 0 lost + 0 PQLs this week.
+• Leads (converted): Gianmarco / Loyalz, Satispay, BLIK, Barclays UK, Boomfi
+• Leads (open): HandsIn, Emerchantpay, Ecommpay, Colibrix, Clearbank, <http://Checkout.com|Checkout.com> EU, Cellulant, Carry1st, Brite, Bank Frick, Bancontact, Avenia, ABSA, 54pay, Confirmo, Coinspaid, Bluesnap, Silverflow, Boku
+• Loyalz - POS: Meeting Booked → Discovery (converted from lead)
+• Astropay - Banking Vertical: → Discovery
+
+*Alfredo Sarria* created 0 leads, moved 2 opportunities between stages, and has 0 lost + 1 PQL this week.
+• Binance - Binance Pay: Proposal Sent → Negotiation → Contracting
+• Enazul: → Demo (PQL)
+
+*Limin Huang* created 0 leads, moved 2 opportunities between stages, and has 1 lost + 0 PQLs this week.
+• HK YAOYU TECHNOLOGY LIMITED: → Lost (Timing)
+• Pingpong - Offline: Meeting Booked → Discovery
+
+*Daniela Reyes* created 0 leads, moved 0 opportunities between stages, and has 0 lost + 0 PQLs this week.
+ (Partnerships Owner on Uniteller wich reached Demo, counted under Talita)
+
+*Melissa Porttenger* created 0 leads, moved 0 opportunities between stages, and has 0 lost + 0 PQLs this week.
+
+---
+

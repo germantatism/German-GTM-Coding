@@ -1,0 +1,7 @@
+{"presentation_id": "1-IdPVaPu5FE4P36ByuiQ2vupRFocujdFcmmQeuPI9kk", "merchant": "Carry1st", "footer": "For: Carry1st",
+ "slides": [
+  {"id": "smoke-cover", "type": "cover", "title": "Smoke test cover", "subtitle": "Engine check on the Carry1st copy", "presenter": "German Tatis, Yuno · 15 October 2026", "notes": "smoke"},
+  {"id": "smoke-exec", "type": "exec_summary", "kicker": "SMOKE TEST", "headline": "This slide only checks that the engine renders on the fresh copy.",
+   "left_header": "LEFT", "left_items": [{"title": "One", "body": "Body text one."}, {"title": "Two", "body": "Body text two."}, {"title": "Three", "body": "Body text three."}],
+   "right_header": "RIGHT", "right_cards": [{"title": "Card A", "body": "Body A."}, {"title": "Card B", "body": "Body B."}, {"title": "Card C", "body": "Body C."}], "bottom": "Band text."}
+ ]}
