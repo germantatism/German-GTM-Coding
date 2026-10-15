@@ -103,3 +103,4 @@ No em dashes, no " - ", no exclamation marks, no "no small feat", no minimum / l
 - "For: Carry1st" footer removed everywhere (spec footer is empty; leftover shapes deleted live, 0 remain).
 - Live update ran through `apply_reframe_live.py` (one-off): `--replace` matched old slides by id prefix, which breaks once slides are removed from the spec; `gs_engine.py` now matches by position on a finalized deck.
 - Live cover subtitle still reads "One integration for five markets, EBANX and dLocal behind it, priced on what Carry1st sells" (left as instructed; to decide).
+NOTE 16-oct: phase2 + d07 removed live and from deck_spec.json; make_spec.py still generates them, remove there before regenerating.

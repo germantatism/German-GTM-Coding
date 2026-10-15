@@ -40,10 +40,6 @@
      "title": "Proposal"
     },
     {
-     "num": "07",
-     "title": "Phase 2"
-    },
-    {
      "num": "A",
      "title": "Appendix: LatAm deep dive and sources"
     }
@@ -63,7 +59,6 @@
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "One slide: the decision in front of Carry1st, what Yuno proposes, and what it is worth at launch volume and at the end-2027 run rate."
@@ -127,7 +122,6 @@
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "Section 02 sets out what the Latin America launch has to get right, sizes the plan, and shows what the five markets require of a checkout."
@@ -261,7 +255,6 @@
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "The decision in one grid, then a picture of how Yuno sits alongside EBANX."
@@ -570,7 +563,6 @@
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "Section 04 is the value proposition in the order you would check it: what the Shop needs, what each need gets through Yuno, and the proof behind it."
@@ -746,7 +738,6 @@
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "Three slides: the four levers and what each is worth at run rate, the total impact across three scenarios, and why the shape of the fee matters at a $5 median ticket."
@@ -990,7 +981,6 @@
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "The commercial proposal on one slide, followed by what Yuno puts in before signing and what the platform fee already covers."
@@ -1209,92 +1199,6 @@
    "notes": "Everything on this slide is included. The prototype and the localization support were offered on the discovery call and we stand by them; the provider negotiation is part of how we work with EBANX and the local providers on the platform for every merchant. Inside the platform fee there is no setup charge, and adding a provider later is configuration, not a project or a fee."
   },
   {
-   "id": "d07",
-   "type": "divider",
-   "num": "07",
-   "title": "Phase 2: merchant of record or local presence",
-   "sub": "Launch on a merchant of record now, then move country by country to local presence",
-   "section_list": [
-    "01 Executive summary",
-    "02 Where Carry1st stands",
-    "03 Two ways to launch",
-    "04 Why Yuno",
-    "05 Business case",
-    "06 Proposal",
-    "07 Phase 2",
-    "Appendix: LatAm deep dive and sources"
-   ],
-   "notes": "Merchant of record, non-resident account and local entity compared on launch time, tax, approval and cost, and where Yuno fits as Carry1st moves between them."
-  },
-  {
-   "id": "phase2",
-   "type": "table",
-   "kicker": "PHASE 2 · MERCHANT OF RECORD AGAINST LOCAL PRESENCE",
-   "tag": [
-    "PUBLIC DOCS",
-    "OPEN"
-   ],
-   "headline": "A merchant of record launches in weeks, local presence in months; through Yuno the move happens without a rebuild.",
-   "columns": [
-    "Dimension",
-    "Merchant of record (launch)",
-    "Non-resident account",
-    "Local entity and local acquirer",
-    "Yuno's role"
-   ],
-   "col_widths": [
-    0.13,
-    0.25,
-    0.2,
-    0.25,
-    0.17
-   ],
-   "header_style": "dark",
-   "font_size": 7,
-   "bold_first_col": true,
-   "zebra": true,
-   "rows": [
-    [
-     "Time to launch",
-     "Weeks: agreement, KYC, sandbox tests per country and an integration review",
-     "Weeks to months: local bank account and tax registration without a company; rules vary by country",
-     "Months: Brazil 6 to 12 weeks for registration plus the bank account; Mexico 4 to 12 weeks; Argentina SAS 7 to 15 business days plus bank; Colombia, Bolivia not published",
-     "Checkout unchanged across all three; the acquirer is a new connection"
-    ],
-    [
-     "Who carries tax and FX",
-     "The MoR: local-currency charge, FX and remittance; Carry1st is paid in USD. Tax treatment per country to be confirmed in writing (OPEN)",
-     "Carry1st registers for digital-services VAT: Mexico 16%, Colombia 19%, Argentina IVA withheld by issuers; Brazil CBS and IBS from 2026",
-     "Carry1st as a local taxpayer: VAT, income tax and FX remittance in each country",
-     "Routing by country keeps each model on its own rail"
-    ],
-    [
-     "Approval and customer experience",
-     "Domestic card presentation via the MoR's local entity; local methods; the gamer avoids FX and foreign-purchase taxes (AR 30% perception, BR 3.5% IOF)",
-     "Depends on whether the acquirer treats the merchant as domestic; often still cross-border",
-     "Local acquiring: vendor-reported 80 to 90% approval against 30 to 60% cross-border; installments and local brands (Elo, Naranja, Carnet)",
-     "Retries and failover apply whichever rail is live"
-    ],
-    [
-     "Cost",
-     "All-in rate with FX and tax pass-through inside it (Yuno estimate 3 to 6% of sales; EBANX's quote replaces it)",
-     "Lower processing, plus Carry1st's own tax and compliance overhead",
-     "Lowest processing cost at scale; highest fixed overhead (entity, accounting, treasury)",
-     "More than one provider per rail keeps the rate negotiable"
-    ],
-    [
-     "When it makes sense",
-     "Now: six weeks to Black Friday and volumes still unproven",
-     "When a country sustains volume and the MoR margin exceeds the compliance cost",
-     "At the $4 to 5M a month run rate, Brazil and Mexico first",
-     "Move country by country, no re-integration"
-    ]
-   ],
-   "note": "Approval ranges are vendor-reported (2017 to 2026). Tax treatment under each MoR: OPEN, owner German, requested in writing from each MoR.",
-   "source": "EBANX api-operability and pay-in guide; Healy, Commenda, BizLatinHub, TMF 2025 to 2026 (incorporation); Kintsugi 2026, Estatuto Tributario, Ley 27.430, Decree 12.499/2025, RG 5617/2024 (tax); docs.y.uno connections and routing. PUBLIC DOCS unless marked.",
-   "notes": "Merchant of record against local presence, on launch time and the long-term customer experience. The short version: the MoR launches in weeks and gives the gamer a domestic charge in local currency from day one; a local entity takes months and pays off at scale through lower processing and local acquiring. The Yuno column is the point: because the acquirer is a connection, Carry1st can make that move in Brazil first and Mexico second without touching the checkout, and keep the MoR live as fallback while it does."
-  },
-  {
    "id": "closing",
    "type": "closing",
    "line": "Let's grow together",
@@ -1317,7 +1221,6 @@
     "04 Why Yuno",
     "05 Business case",
     "06 Proposal",
-    "07 Phase 2",
     "Appendix: LatAm deep dive and sources"
    ],
    "notes": "One market slide and one connections slide per country, then the assumptions behind every modeled number and the sources. The lever cards split the base-case run-rate figures in equal fifths as a placeholder; they will be re-cut on Carry1st's volume projections by country."
