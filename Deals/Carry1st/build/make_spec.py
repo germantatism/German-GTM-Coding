@@ -79,7 +79,7 @@ def connections(id_, name, headline, mor, methods, table, notes, extra_sections=
 S = []
 
 S.append({'id': 'cover', 'type': 'cover', 'title': 'Carry1st Shop in Latin America by Black Friday',
-          'subtitle': 'One integration for five markets, EBANX and dLocal behind it, priced on what Carry1st sells',
+          'subtitle': 'One integration for five markets, EBANX plus any rail each market needs, priced on what Carry1st sells',
           'presenter': 'German Tatis, Yuno · 16 October 2026',
           'notes': 'Cordel, Fatih: this deck sets out how the Carry1st Shop can launch in Latin America with EBANX plus any other rail, acquirer or merchant of record each market needs, through one integration; what that is worth at a $5 to $10 ticket; how the fee is shaped; and how the move from merchant of record to local presence works later. Every number carries its label: confirmed in public documentation, read on a third party\'s public page, a Yuno estimate with the assumption stated, or open with an owner. The appendix holds the market detail for each of the five countries.'})
 
