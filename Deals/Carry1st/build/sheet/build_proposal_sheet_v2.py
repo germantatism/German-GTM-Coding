@@ -9,7 +9,7 @@ M=json.load(open(os.path.join(os.path.dirname(__file__),'..','model','model_numb
 meta=sh.get(spreadsheetId=SID).execute(); sheets=meta['sheets']
 keep=sheets[0]['properties']['sheetId']
 req=[{'deleteSheet':{'sheetId':s['properties']['sheetId']}} for s in sheets[1:]]
-req+=[{'updateSheetProperties':{'properties':{'sheetId':keep,'title':'Proposal'},'fields':'title'}},{'addSheet':{'properties':{'title':'Business case','index':1}}}]
+req+=[{'updateSheetProperties':{'properties':{'sheetId':keep,'title':'Proposal'},'fields':'title'}}]
 sh.batchUpdate(spreadsheetId=SID,body={'requests':req}).execute()
 meta=sh.get(spreadsheetId=SID).execute(); ids={s['properties']['title']:s['properties']['sheetId'] for s in meta['sheets']}
 for t in ids: sh.values().clear(spreadsheetId=SID,range=f"'{t}'!A1:Z200").execute()
@@ -99,3 +99,5 @@ o=sh.values().batchGet(spreadsheetId=SID,ranges=["'Proposal'!A1:F29","'Business 
 for vr in o['valueRanges']:
     for r in vr.get('values',[]): print(r)
     print('--')
+
+# NOTE 16 Oct 2026: German asked for a single Proposal tab, no business-case data. The Business case tab was deleted; the block above that writes it is obsolete.
