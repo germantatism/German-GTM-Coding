@@ -3254,6 +3254,45 @@
    "bar": "Going direct, each of these is a project Carry1st runs alone. Through Yuno, they are settings on the same integration.",
    "source": "docs.y.uno (routing, retries, monitors, connections); Yuno integrations directory, Oct 2026; Yuno business-case model, 15 Oct 2026.",
    "notes": "Each lever is a mechanism, not a promise. Routing and retries lift approval; competition on the same rails lowers price; one integration replaces market-by-market builds and their upkeep; and local methods widen who can pay. All four get stronger as Carry1st adds volume and markets."
+  },
+  {
+   "id": "needs-today",
+   "type": "cards_row",
+   "kicker": "WHAT CARRY1ST NEEDS TODAY",
+   "headline": "To sell in five Latin American markets, the Shop needs local methods, small-ticket economics and room to grow.",
+   "cards": [
+    {
+     "num": "01",
+     "eyebrow": "LAUNCH",
+     "title": "Five markets, no local entity",
+     "body": "Brazil first, then Argentina, Mexico, Colombia and Bolivia, all through a merchant of record, with one checkout in Spanish and Portuguese.",
+     "foot": "One integration that covers every market"
+    },
+    {
+     "num": "02",
+     "eyebrow": "CONVERSION",
+     "title": "Local methods that confirm in seconds",
+     "body": "Pix, PSE, SPEI and wallets, because the Shop promises instant delivery; cards charged as domestic so they are not declined as cross-border.",
+     "foot": "Approval not capped by one provider"
+    },
+    {
+     "num": "03",
+     "eyebrow": "ECONOMICS",
+     "title": "A cost that holds at a $5 ticket",
+     "body": "With a $10 average and a $5 median ticket, a fixed fee per transaction takes a large share of every sale.",
+     "foot": "Pay a share of sales, never a fixed fee"
+    },
+    {
+     "num": "04",
+     "eyebrow": "GROWTH",
+     "title": "Room to grow without rebuilding",
+     "body": "New providers, new markets and, later, local accounts or entities as volume reaches $4 to 5M a month.",
+     "foot": "Each addition a connection, not a project"
+    }
+   ],
+   "source": "Discovery call with Carry1st, Oct 2026; volume and ticket figures are Carry1st estimates.",
+   "notes": "This is what the Latin America launch has to deliver: every market through a merchant of record, local methods that confirm instantly, a cost that works at a $5 ticket, and room to add providers and local presence later without rebuilding checkout. The rest of the deck shows how each option meets these needs.",
+   "bar": "**Where it starts:** a $10 average and $5 median ticket, Brazil first, and $4 to 5M a month in Latin America by end 2027 (Carry1st estimate)."
   }
  ]
 }
