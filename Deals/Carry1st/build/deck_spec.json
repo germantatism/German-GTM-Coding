@@ -3185,14 +3185,12 @@
    "columns": [
     "Lever",
     "Going direct with EBANX",
-    "Through Yuno: how it works",
-    "Base case value"
+    "Through Yuno: how it works"
    ],
    "col_widths": [
-    0.16,
-    0.27,
-    0.43,
-    0.14
+    0.18,
+    0.34,
+    0.48
    ],
    "header_style": "dark",
    "font_size": 7.2,
@@ -3202,51 +3200,30 @@
     [
      "Approval rate",
      "One route: a decline is a lost sale, and an EBANX outage stops sales",
-     "Smart routing by BIN, card brand, country and amount sends each payment to the route most likely to approve; soft declines retry on another provider; Monitors fail over on a drop",
-     {
-      "text": "+3 pts approval\n$228K a year",
-      "bold": true
-     }
+     "Smart routing by BIN, card brand, country and amount sends each payment to the route most likely to approve; soft declines retry on another provider; Monitors fail over on a drop"
     ],
     [
      "Local methods",
      "Bolivia cash only; no MODO or interoperable QR in Argentina",
-     "Adds what one provider does not carry (MODO and QR in Argentina, Bre-B and Nequi in Colombia, cards and QR in Bolivia) and tunes the method mix per market",
-     {
-      "text": "+4% of sales\n$228K a year",
-      "bold": true
-     }
+     "Adds what one provider does not carry (MODO and QR in Argentina, Bre-B and Nequi in Colombia, cards and QR in Bolivia) and tunes the method mix per market"
     ],
     [
      "Time to market",
      "Markets enabled one by one, so the ramp to $4 to 5M a month runs to end 2027",
-     "All five markets live together on one integration, with local methods and more than one provider, reaching run rate by mid 2027",
-     {
-      "text": "+$12M sales in 2027\n$1.26M in 2027",
-      "bold": true
-     }
+     "All five markets live together on one integration, with local methods and more than one provider, reaching run rate by mid 2027"
     ],
     [
      "Processing cost",
      "One counterparty and one price, with nothing to negotiate against",
-     "A second provider on the same rails: volume moves by rule to the cheaper route, and every rate is negotiated against a real alternative",
-     {
-      "text": "50 bps lower\n$270K a year",
-      "bold": true
-     }
+     "A second provider on the same rails: volume moves by rule to the cheaper route, and every rate is negotiated against a real alternative"
     ],
     [
      "Integrations and upkeep",
      "Integrate, test and certify EBANX market by market, maintain it, and build each new provider",
-     "One integration ready for every market; new providers and local acquirers are connections, and Yuno maintains them",
-     {
-      "text": "5 markets + 2 builds\n$79K a year",
-      "bold": true
-     }
+     "One integration ready for every market; new providers and local acquirers are connections, and Yuno maintains them"
     ]
    ],
-   "bar": "**$804K a year in the base case, plus $1.26M in 2027 from reaching run rate sooner,** and it compounds: more volume gives more leverage on price and more data for routing, and every new market or provider is a connection, not a project.",
-   "source": "Yuno business-case model, 15 Oct 2026, base case at $4.5M of monthly sales; mechanism, detail by lever and scenarios on the slides that follow.",
+   "source": "docs.y.uno (routing, retries, monitors, connections); Yuno integrations directory, Oct 2026. Values by lever on the slides that follow.",
    "notes": "This is the case against going direct, lever by lever. Smart routing and retries lift the approval rate; local methods reach buyers an international card cannot; launching all five markets together on one integration brings the $4 to 5M a month run rate forward from end 2027 to mid 2027; a second provider on the same rails gives real leverage on price; and one integration replaces market-by-market EBANX work and its upkeep. Four of the levers recur every year, about $804K in the base case. Time to market is a 2027 value, about $1.26M, from roughly $12M of extra sales in the year, and we keep it apart from the yearly total."
   },
   {
