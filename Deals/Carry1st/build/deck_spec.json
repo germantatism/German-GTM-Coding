@@ -707,7 +707,7 @@
    "id": "bc-levers",
    "type": "lever_grid",
    "kicker": "BUSINESS CASE · FIVE LEVERS AT RUN RATE",
-   "headline": "Five levers in the base case: about $975K a year at the $4.5M run rate, plus $843K in 2027 from reaching it sooner.",
+   "headline": "Five levers in the base case: about $975K a year at the $4.5M run rate, plus $632K in 2027 from reaching it sooner.",
    "groups": [
     {
      "label": "Operational levers",
@@ -744,10 +744,10 @@
     {
      "num": 3,
      "name": "Time to market",
-     "range": "2 to 5 months",
+     "range": "1 to 4 months",
      "body": "Direct, markets are enabled one by one and run rate comes at end 2027. Through Yuno all five go live together on one integration, reaching run rate by Q3 2027. A 2027 value.",
-     "conservative": "+$411K in 2027",
-     "optimistic": "+$1.08M in 2027"
+     "conservative": "+$206K in 2027",
+     "optimistic": "+$863K in 2027"
     },
     {
      "num": 4,
@@ -766,10 +766,10 @@
      "optimistic": "+$413K/yr"
     }
    ],
-   "assumptions": "**Assumptions** All figures in USD at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (estimate, replaced by EBANX's quote); 15% take rate on sales (estimate). Contribution view: L1, L2 and L3 count at the take rate net of processing, L4 and L5 in full. L3: going direct ramps from $0.5M in Dec 2026 to $4.5M in Dec 2027; through Yuno $4.5M comes in Oct, Aug or Jul 2027, a 2027 value kept apart from the yearly totals. L5: 5 markets x 3 to 6 weeks on EBANX plus 2 to 4 later integrations x 6 to 10 weeks over 24 months, plus 1 to 2.5 FTE upkeep a year, at $2,500 a week ($130K a year, a senior payments engineer). Ranges are Yuno modelling assumptions, recalibrated on Carry1st's data.",
+   "assumptions": "**Assumptions** All figures in USD at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (estimate, replaced by EBANX's quote); 15% take rate on sales (estimate). Contribution view: L1, L2 and L3 count at the take rate net of processing, L4 and L5 in full. L3: going direct ramps from $0.5M in Dec 2026 to $4.5M in Dec 2027; through Yuno $4.5M comes in Nov, Sep or Aug 2027, a 2027 value kept apart from the yearly totals. L5: 5 markets x 3 to 6 weeks on EBANX plus 2 to 4 later integrations x 6 to 10 weeks over 24 months, plus 1 to 2.5 FTE upkeep a year, at $2,500 a week ($130K a year, a senior payments engineer). Ranges are Yuno modelling assumptions, recalibrated on Carry1st's data.",
    "closing": "The value can be monetized from launch: Yuno's connections to EBANX and the local rails already exist, so each lever is switched on, not built.",
    "source": "Ranges are Yuno modelling assumptions.",
-   "notes": "Five levers: three operational and two that cut cost. Approval and local methods add sales, and we count them at your take rate, not at face value. Local methods matter more here than anywhere: Pix is 42% of online purchases in Brazil, PSE 64% of e-commerce in Colombia and wallets 46% in Argentina. Time to market is the speed of launching all five markets together on one integration: run rate by Q3 2027 instead of end 2027, about $8M more sales in 2027 in the base case, worth about $843K at your take rate. It is a first-year value, so we show it apart from the yearly totals. Processing cost counts in full because a saving on processing is worth one hundred cents on the dollar, and integrations avoided is the engineering Carry1st does not spend: market-by-market EBANX work, later direct integrations and their upkeep, about $250K a year in the base case at $130K a year per senior payments engineer. The two rows show the conservative and optimistic value of each lever; the four recurring levers total about $975K a year in the base case."
+   "notes": "Five levers: three operational and two that cut cost. Approval and local methods add sales, and we count them at your take rate, not at face value. Local methods matter more here than anywhere: Pix is 42% of online purchases in Brazil, PSE 64% of e-commerce in Colombia and wallets 46% in Argentina. Time to market is the speed of launching all five markets together on one integration: run rate by Q3 2027 instead of end 2027, about $6M more sales in 2027 in the base case, worth about $632K at your take rate. It is a first-year value, so we show it apart from the yearly totals. Processing cost counts in full because a saving on processing is worth one hundred cents on the dollar, and integrations avoided is the engineering Carry1st does not spend: market-by-market EBANX work, later direct integrations and their upkeep, about $250K a year in the base case at $130K a year per senior payments engineer. The two rows show the conservative and optimistic value of each lever; the four recurring levers total about $975K a year in the base case."
   },
   {
    "id": "bc-impact",
@@ -793,13 +793,13 @@
      "cells": [
       "$111K",
       "$111K",
-      "$411K",
+      "$206K",
       "$135K",
       "$164K"
      ],
      "totals": [
       "$521K",
-      "$932K"
+      "$727K"
      ],
      "highlight": false
     },
@@ -808,13 +808,13 @@
      "cells": [
       "$228K",
       "$228K",
-      "$843K",
+      "$632K",
       "$270K",
       "$250K"
      ],
      "totals": [
       "$975K",
-      "$1.82M"
+      "$1.61M"
      ],
      "highlight": true
     },
@@ -823,20 +823,20 @@
      "cells": [
       "$388K",
       "$349K",
-      "$1.08M",
+      "$863K",
       "$405K",
       "$413K"
      ],
      "totals": [
       "$1.56M",
-      "$2.63M"
+      "$2.42M"
      ],
      "highlight": false
     }
    ],
    "hero": {
     "value": "$975K",
-    "text": "of base-case **annual value** from the four recurring levers ($521K to $1.56M), against $252,000 a year on the proposal that follows: **+$723K a year net**, 3.9x. Reaching run rate by Q3 2027 adds **$843K in 2027**, so 2027 totals $1.82M, 7.2x Yuno's cost."
+    "text": "of base-case **annual value** from the four recurring levers ($521K to $1.56M), against $252,000 a year on the proposal that follows: **+$723K a year net**, 3.9x. Reaching run rate by Q3 2027 adds **$632K in 2027**, so 2027 totals $1.61M, 6.4x Yuno's cost."
    },
    "takeaways": [
     {
@@ -845,7 +845,7 @@
     },
     {
      "title": "Speed pays most in the first year",
-     "body": "All five markets live together reach $4.5M a month by Q3 2027, not end 2027: about $8M more sales in 2027 and $843K of contribution."
+     "body": "All five markets live together reach $4.5M a month by Q3 2027, not end 2027: about $6M more sales in 2027 and $632K of contribution."
     },
     {
      "title": "The baseline is yours to set",
@@ -853,7 +853,7 @@
     }
    ],
    "source": "Yuno cost: the proposal that follows, $21,000 a month at $4.5M.",
-   "notes": "The same five levers added up. The four recurring levers are worth about $975K a year in the base case at the $4.5M run rate, against $252,000 a year for Yuno, so about $723K a year net, 3.9 times the cost. Time to market sits in its own column because it is a first-year value: launching all five markets together brings run rate forward to Q3 2027, about $843K in 2027, which takes 2027 to about $1.82M, 7.2 times Yuno's cost. We show the conservative case honestly: about $521K a year against the same $252,000, about $269K a year net. Every input is a placeholder for your data: approval baseline, EBANX's quote, your take rate and your volumes by country.",
+   "notes": "The same five levers added up. The four recurring levers are worth about $975K a year in the base case at the $4.5M run rate, against $252,000 a year for Yuno, so about $723K a year net, 3.9 times the cost. Time to market sits in its own column because it is a first-year value: launching all five markets together brings run rate forward to Q3 2027, about $632K in 2027, which takes 2027 to about $1.61M, 6.4 times Yuno's cost. We show the conservative case honestly: about $521K a year against the same $252,000, about $269K a year net. Every input is a placeholder for your data: approval baseline, EBANX's quote, your take rate and your volumes by country.",
    "n_totals": 2,
    "col_widths": [
     0.12,
@@ -3224,7 +3224,7 @@
     ]
    ],
    "source": "docs.y.uno (routing, retries, monitors, connections); Yuno integrations directory, Oct 2026. Values by lever on the slides that follow.",
-   "notes": "This is the case against going direct, lever by lever. Smart routing and retries lift the approval rate; local methods reach buyers an international card cannot; launching all five markets together on one integration brings the $4 to 5M a month run rate forward from end 2027 to Q3 2027; a second provider on the same rails gives real leverage on price; and one integration replaces market-by-market EBANX work and its upkeep. Four of the levers recur every year, about $804K in the base case. Time to market is a 2027 value, about $843K, from roughly $8M of extra sales in the year, and we keep it apart from the yearly total."
+   "notes": "This is the case against going direct, lever by lever. Smart routing and retries lift the approval rate; local methods reach buyers an international card cannot; launching all five markets together on one integration brings the $4 to 5M a month run rate forward from end 2027 to Q3 2027; a second provider on the same rails gives real leverage on price; and one integration replaces market-by-market EBANX work and its upkeep. Four of the levers recur every year, about $804K in the base case. Time to market is a 2027 value, about $632K, from roughly $6M of extra sales in the year, and we keep it apart from the yearly total."
   },
   {
    "id": "bc-how",
