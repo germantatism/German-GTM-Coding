@@ -12,9 +12,9 @@ INP = dict(
     netflag=1,                # 1 = contribution on incremental GMV nets the Option B processing cost
     base_cost=0.045, base_lo=0.03, base_hi=0.06,   # EBANX direct all-in, ESTIMATE, range 3 to 6%
     appr=0.75,                # baseline approval on a single MoR route, ESTIMATE
-    wk_cost=2000.0, horizon=24,
+    wk_cost=2500.0, horizon=24,   # loaded cost per engineer-week, integrations lever only (senior payments engineer, $130K a year; Justo 15 Oct 2026: dev cost above $150K a year)
     markets=5,                # LatAm launch markets EBANX must enable, test and certify one by one (BR, AR, MX, CO, BO)
-    fte_weeks=52,             # engineer-weeks in one FTE year: 52 x $2,000 = $104K a year loaded
+    fte_weeks=52,             # engineer-weeks in one FTE year: 52 x $2,500 = $130K a year loaded (senior payments engineer)
     # ---- Yuno cost line, pricing v4 ----
     pf=7500.0,                # platform fee a month, flat
     incl_tpv=500_000.0,       # monthly Net TPV included in the platform fee (single month, no rollover)
@@ -32,9 +32,9 @@ SCEN = {
     # local methods), one-time; integ x weeks = later direct integrations avoided, one-time; fte = ongoing maintenance of the direct integrations a year.
     # Time-to-market lever (model L5, deck L3): rr_m = months after Dec 2026 in which the Yuno route reaches the run rate (all five markets
     # live together on one integration); 9 = Sep 2027, 6 = Jun 2027, 4 = Apr 2027. Going direct reaches it in Dec 2027 (ramp_m - 1 = 12).
-    "Conservative": dict(mdr=25, uplift=0.015, local=0.02,  mkt_weeks=2, integ=1, weeks=4, fte=0.25, rr_m=9),
-    "Base":         dict(mdr=50, uplift=0.03,  local=0.04,  mkt_weeks=3, integ=2, weeks=6, fte=0.50, rr_m=6),
-    "Optimistic":   dict(mdr=75, uplift=0.05,  local=0.06,  mkt_weeks=4, integ=3, weeks=8, fte=1.00, rr_m=4),
+    "Conservative": dict(mdr=25, uplift=0.015, local=0.02,  mkt_weeks=3, integ=2, weeks=6, fte=1.0, rr_m=9),
+    "Base":         dict(mdr=50, uplift=0.03,  local=0.04,  mkt_weeks=4, integ=3, weeks=8, fte=1.5, rr_m=6),
+    "Optimistic":   dict(mdr=75, uplift=0.05,  local=0.06,  mkt_weeks=6, integ=4, weeks=10, fte=2.5, rr_m=4),
 }
 MONTHS = ["Dec 2026", "Jan 2027", "Feb 2027", "Mar 2027", "Apr 2027", "May 2027", "Jun 2027", "Jul 2027", "Aug 2027", "Sep 2027", "Oct 2027", "Nov 2027", "Dec 2027"]
 # INTERNAL pocket concessions (kept off every slide; mirror_check.py prices them for pricing_internal.md)
