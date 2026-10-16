@@ -1093,12 +1093,12 @@ def r_comparison_grid(deck, s, tag, n, footer):
         sb.text(lx, y - 1, 10, 10, g, size=8, color=c, ls=100); sb.text(lx + 11, y, w - 11, 10, lab, size=6.5, color=MUTED, ls=100)
         lx -= 8
     y += max(qh, 12) + 6
-    opts = s.get('options', [])[:3]; rows = s.get('rows', [])[:6]
+    opts = s.get('options', [])[:3]; NO = max(len(opts), 2); rows = s.get('rows', [])[:6]
     foot = s.get('footer') or []; closing = s.get('closing_line')
     hh = 26; pad = 9
     avail = 365 - (y + hh) - (18 if foot else 0) - ((text_h(closing, 7.5, W0 - 200, 112) + 6) if closing else 0) - 2
     def heights(c0, fs):
-        cwid = (W0 - c0) / 3; out = []
+        cwid = (W0 - c0) / NO; out = []
         for r in rows:
             lh = text_h(r.get('label', ''), 7.5, (c0 - 15) * 0.9, 105, True) + (text_h(r.get('sub', ''), 6.5, (c0 - 15) * 0.9, 110) if r.get('sub') else 0)
             ch = max([text_h(c.get('text', ''), fs, (cwid - 29) * 0.95, 112) for c in r.get('cells', [])] + [0])
@@ -1113,8 +1113,8 @@ def r_comparison_grid(deck, s, tag, n, footer):
     if not choice:
         hs = heights(157.5, 7)
         raise FitError(f"slide {s.get('id')}: comparison_grid rows need {sum(hs):.0f} pt, have {avail:.0f} (7 pt, {len(rows)} rows)")
-    c0, fs, hs = choice; cwid = (W0 - c0) / 3
-    heads = [(X0, c0, BLUE, WHITE, WHITE)] + [(X0 + c0 + i * cwid, cwid, (DEEP if i == 2 else PANEL), (PALE if i == 2 else GREY), (WHITE if i == 2 else INK)) for i in range(3)]
+    c0, fs, hs = choice; cwid = (W0 - c0) / NO
+    heads = [(X0, c0, BLUE, WHITE, WHITE)] + [(X0 + c0 + i * cwid, cwid, (DEEP if i == NO - 1 else PANEL), (PALE if i == NO - 1 else GREY), (WHITE if i == NO - 1 else INK)) for i in range(NO)]
     for i, (hx, hw, fill, c_sub, c_main) in enumerate(heads):
         sb.rect(hx, y, hw, hh, fill=fill)
         if i == 0:
@@ -1130,13 +1130,13 @@ def r_comparison_grid(deck, s, tag, n, footer):
         lh = text_h(r.get('label', ''), 7.5, (c0 - 15) * 0.9, 105, True)
         sb.text(X0 + 7.5, y + pad / 2, c0 - 15, lh, r.get('label', ''), size=7.5, bold=True, color=BLUE, ls=105)
         if r.get('sub'): sb.text(X0 + 7.5, y + pad / 2 + lh, c0 - 15, rh - pad - lh, r['sub'], size=6.5, color=GREY, ls=110)
-        for ci in range(3):
+        for ci in range(NO):
             cx = X0 + c0 + ci * cwid; cell = r.get('cells', [])[ci] if ci < len(r.get('cells', [])) else {}
-            fill = PANEL if ci == 2 else (WHITE if ri % 2 == 0 else PANEL2)
+            fill = PANEL if ci == NO - 1 else (WHITE if ri % 2 == 0 else PANEL2)
             sb.rect(cx, y, cwid, rh, fill=fill)
             g, gc = STATE_GLYPH.get(cell.get('state', 'open'), STATE_GLYPH['open'])
             sb.text(cx + 7.5, y + pad / 2 - 1, 12, 12, g, size=9, color=gc, ls=100)
-            sb.text(cx + 21.5, y + pad / 2, cwid - 29, rh - pad, cell.get('text', ''), size=fs, bold=(ci == 2), color=INK, ls=112)
+            sb.text(cx + 21.5, y + pad / 2, cwid - 29, rh - pad, cell.get('text', ''), size=fs, bold=(ci == NO - 1), color=INK, ls=112)
         y += rh
     if foot:
         sb.hairline(X0, y, W0, alpha=0.24)
@@ -1147,10 +1147,10 @@ def r_comparison_grid(deck, s, tag, n, footer):
             if isinstance(f, dict):
                 if 'value' in f: vals.append(f['value'])
             else: vals.append(str(f))
-        if len(vals) < 3 and all(isinstance(f, dict) and 'label' in f for f in foot) and len(foot) >= 4: vals = [f.get('value') or f.get('label') for f in foot[1:4]]
-        for ci in range(3):
+        if len(vals) < 3 and all(isinstance(f, dict) and 'label' in f for f in foot) and len(foot) >= 4: vals = [f.get('value') or f.get('label') for f in foot[1:NO + 1]]
+        for ci in range(NO):
             cx = X0 + c0 + ci * cwid
-            sb.rect(cx, y, cwid, 18, fill=(PANEL if ci == 2 else PANEL2))
+            sb.rect(cx, y, cwid, 18, fill=(PANEL if ci == NO - 1 else PANEL2))
             sb.text(cx + 7.5, y + 4.5, cwid - 15, 10, str(vals[ci]) if ci < len(vals) else '', size=6.5, bold=True, color=DEEP, ls=100)
         y += 18
     if closing:
