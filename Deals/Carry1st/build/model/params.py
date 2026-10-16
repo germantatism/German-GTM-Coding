@@ -32,9 +32,9 @@ SCEN = {
     # local methods), one-time; integ x weeks = later direct integrations avoided, one-time; fte = ongoing maintenance of the direct integrations a year.
     # Time-to-market lever (model L5, deck L3): rr_m = months after Dec 2026 in which the Yuno route reaches the run rate (all five markets
     # live together on one integration); 9 = Sep 2027, 6 = Jun 2027, 4 = Apr 2027. Going direct reaches it in Dec 2027 (ramp_m - 1 = 12).
-    "Conservative": dict(mdr=25, uplift=0.015, local=0.02,  mkt_weeks=3, integ=2, weeks=6, fte=1.0, rr_m=9),
-    "Base":         dict(mdr=50, uplift=0.03,  local=0.04,  mkt_weeks=4, integ=3, weeks=8, fte=1.5, rr_m=6),
-    "Optimistic":   dict(mdr=75, uplift=0.05,  local=0.06,  mkt_weeks=6, integ=4, weeks=10, fte=2.5, rr_m=5),
+    "Conservative": dict(mdr=25, uplift=0.015, local=0.02,  mkt_weeks=3, integ=2, weeks=6, fte=1.0, rr_m=10),
+    "Base":         dict(mdr=50, uplift=0.03,  local=0.04,  mkt_weeks=4, integ=3, weeks=8, fte=1.5, rr_m=8),
+    "Optimistic":   dict(mdr=75, uplift=0.05,  local=0.06,  mkt_weeks=6, integ=4, weeks=10, fte=2.5, rr_m=7),
 }
 MONTHS = ["Dec 2026", "Jan 2027", "Feb 2027", "Mar 2027", "Apr 2027", "May 2027", "Jun 2027", "Jul 2027", "Aug 2027", "Sep 2027", "Oct 2027", "Nov 2027", "Dec 2027"]
 # INTERNAL pocket concessions (kept off every slide; mirror_check.py prices them for pricing_internal.md)
