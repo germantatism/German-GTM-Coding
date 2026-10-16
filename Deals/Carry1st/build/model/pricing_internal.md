@@ -51,7 +51,7 @@ Deal size check: "overall deal size cannot be under 10k" (the draft does not say
 - TPV definition matches the policy: Net TPV of successful transactions, no declines, no chargebacks.
 - Units match (Justo's rule): the included block is in TPV because the usage is in bps on TPV. An allotment in transactions on a bps price is not billable without an average-ticket conversion, which is why v1 was dropped.
 - Why we need it for this merchant: average ticket $10, median $5, with a reseller margin on GMV (take rate about 15%, to validate). A fixed $0.05 per transaction is 1.0% of TPV at the median ticket and about 7% of Carry1st's contribution on that sale; $0.10 is 2.0% and about 13%. Cordel named fixed fees as the sensitivity on the discovery call (15 Oct 2026).
-- Where it lands against the brief's corridor: Justo asked for about 0.5 to 0.7% of TPV all-in at 450K. v4 lands at 0.47% (46.7 bps), below the corridor, which is what makes the conservative business case break even at about 342K transactions a month instead of only at the run rate.
+- Where it lands against the brief's corridor: Justo asked for about 0.5 to 0.7% of TPV all-in at 450K. v4 lands at 0.47% (46.7 bps), below the corridor, which is what makes the conservative business case break even at about 206K transactions a month instead of only at the run rate.
 
 ## 5. What needs sign-off
 
@@ -76,16 +76,16 @@ Option F4, if Finance wants the allotment out: platform fee $7,000 (V2 list) wit
 
 | Concession | Yuno revenue given a month | Where it bites | Carry1st base net at 450K | Base break-even |
 |---|---|---|---|---|
-| As quoted (v4): $500K included, steps at $2M, $5M, $10M | 0 | reference | +$26.7K | about 67.9K |
-| Included block to $1M | $2,000 once TPV passes $1M | 100K tier: Yuno $7,500 instead of $9,500; 450K: $19,000 | +$28.8K | about 60.7K |
-| Launch credit $3,750 x 3 months | $11,250 in total (Dec 2026 to Feb 2027) | ramp only; Yuno over the ramp $179.6K instead of $190.8K | payback Dec 2026 instead of Feb 2027 | n/a |
+| As quoted (v4): $500K included, steps at $2M, $5M, $10M | 0 | reference | +$31.8K | about 12.3K |
+| Included block to $1M | $2,000 once TPV passes $1M | 100K tier: Yuno $7,500 instead of $9,500; 450K: $19,000 | +$33.9K | about 12.3K |
+| Launch credit $3,750 x 3 months | $11,250 in total (Dec 2026 to Feb 2027) | ramp only; Yuno over the ramp $179.6K instead of $190.8K | payback unchanged (Dec 2026); conservative Dec 2026 instead of Sep 2027 | n/a |
 | 3-year rate lock | none today; forgoes the annual tranche review | contract term | n/a | n/a |
 
 ## 8. Business case numbers Finance will ask about (base case, contribution view)
 
 - Yuno revenue: $7,500 a month at 50,000; $9,500 a month at 100,000; $13,500 a month at 200,000; $21,000 a month at 450,000 ($252,000 a year). Over the modeled 13-month ramp (Dec 2026 to Dec 2027, linear): $190,833.
-- Carry1st net benefit after Yuno's fee: ($1,125) at 50,000; $2,025 at 100,000; $8,325 at 200,000; $26,700 at 450,000 ($320,400 a year at 450K). Break-even about 67.9K transactions a month; cumulative payback Feb 2027 on the linear ramp. Conservative: break-even about 342K, payback not within the ramp. Optimistic: break-even about 28.7K, payback Dec 2026.
-- Switch "Net incremental GMV of processing cost" to 0 (GMV x take rate, the simpler view) and the base case covers the $7,500 at about 48.0K transactions, $250 a month at 50K and $36,750 a month at 450K. We keep the netted view as the default because a CFO-type buyer will net it anyway.
+- Carry1st net benefit after Yuno's fee: $3,958 at 50,000; $7,108 at 100,000; $13,408 at 200,000; $31,783 at 450,000 ($381,400 a year at 450K). Break-even about 12.3K transactions a month; cumulative payback Dec 2026 on the linear ramp. Conservative: break-even about 206K, payback Sep 2027. Optimistic: break-even about 5.0K, payback Dec 2026.
+- Switch "Net incremental GMV of processing cost" to 0 (GMV x take rate, the simpler view) and the base case covers the $7,500 at about 7.3K transactions, $5,333 a month at 50K and $41,833 a month at 450K. We keep the netted view as the default because a CFO-type buyer will net it anyway.
 - Option A vs Option B all-in at 450K, base: $202,500 vs $201,000 a month ($45.0 vs $44.7 per $1,000 TPV). The pitch to Carry1st is "a lower cost line with failover, a second provider and local methods included; the revenue levers are on top".
 
 ## 9. Open items before Salesforce

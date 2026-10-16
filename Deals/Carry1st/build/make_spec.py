@@ -92,7 +92,7 @@ S.append(divider('d01', '01', 'Executive summary', 'The decision, the recommende
                  'One slide: the decision in front of Carry1st, what Yuno proposes, and what it is worth at launch volume and at the end-2027 run rate.'))
 
 S.append({'id': 'exec', 'type': 'exec_summary', 'kicker': 'EXECUTIVE SUMMARY', 'tag': ['ESTIMATE'],
-          'headline': 'Through Yuno, EBANX plus local rails per market costs less than EBANX direct at run rate, and pays back in month three.',
+          'headline': 'Through Yuno, EBANX plus local rails per market costs less than EBANX direct at run rate, and pays back in month one.',
           'left_header': 'WHERE CARRY1ST STANDS',
           'left_items': [
             {'title': 'The decision', 'body': 'Launch the Carry1st Shop in Brazil, Argentina, Mexico, Colombia and Bolivia by Black Friday, 27 November 2026, through a merchant of record: EBANX direct, or EBANX plus the rails each market needs, through Yuno.'},
@@ -103,10 +103,10 @@ S.append({'id': 'exec', 'type': 'exec_summary', 'kicker': 'EXECUTIVE SUMMARY', '
           'right_cards': [
             {'title': 'One integration, every rail Carry1st needs', 'body': 'EBANX plus any other MoR, acquirer or local method each market needs, all connections on the Yuno SDK: retries and failover across them, Phase 2 without touching checkout.'},
             {'title': 'A fee that scales with sales, not with transactions', 'body': '$7,500 a month including the first $500K of monthly sales, then 40 / 30 / 20 / 10 bps on sales above it. At launch: $7,500 and nothing per transaction; at $4.5M: $21,000 a month, 0.47% of sales.'},
-            {'title': 'A case that pays back in month three', 'body': 'Base case at run rate: $44.7 per $1,000 of sales through Yuno against $45.0 direct, +$26.7K a month net ($320K a year, 2.3x Yuno\'s cost); break-even about 68,000 transactions a month.'}],
-          'bottom': 'EBANX stays at the center and Yuno adds every rail around it; even the conservative case is cost-neutral at run rate.',
+            {'title': 'A case that pays back in month one', 'body': 'Base case at run rate: $44.7 per $1,000 of sales through Yuno against $45.0 direct, +$31.8K a month net ($381K a year, 2.5x Yuno\'s cost); break-even about 12,000 transactions a month.'}],
+          'bottom': 'EBANX stays at the center and Yuno adds every rail around it; even the conservative case is positive at run rate.',
           'source': 'Yuno business-case model, 15 Oct 2026, base scenario: EBANX direct all-in 4.5% of sales and a 15% take rate are estimates, replaced by EBANX\'s quote and Shop margins. Volumes: Carry1st, Cordel, Oct 2026, estimate.',
-          'notes': 'The whole deck on one slide. Left, where you stand: five markets, six weeks, a $5 median ticket and a run-rate estimate that is yours. Right, what we propose: one integration carrying EBANX plus any other merchant of record, acquirer or local method each market needs, a fee that is a share of what you sell with the first $500K of monthly sales inside the platform fee, and a business case that, in the base scenario, makes the Yuno route the cheaper cost line at run rate before counting approval or coverage gains. Two numbers to keep: break-even at about 68,000 transactions a month, and the conservative case cost-neutral at run rate. Everything modeled is labelled and will be re-cut on your volumes and EBANX\'s quote.'})
+          'notes': 'The whole deck on one slide. Left, where you stand: five markets, six weeks, a $5 median ticket and a run-rate estimate that is yours. Right, what we propose: one integration carrying EBANX plus any other merchant of record, acquirer or local method each market needs, a fee that is a share of what you sell with the first $500K of monthly sales inside the platform fee, and a business case that, in the base scenario, makes the Yuno route the cheaper cost line at run rate before counting approval or coverage gains. Two numbers to keep: break-even at about 12,000 transactions a month, and the conservative case still positive at run rate. Everything modeled is labelled and will be re-cut on your volumes and EBANX\'s quote.'})
 
 S.append(divider('d02', '02', 'Where Carry1st stands and what Black Friday needs', 'What the launch has to get right, the Shop and the plan, and what the five markets demand',
                  'Section 02 sets out what the Latin America launch has to get right, sizes the plan, and shows what the five markets require of a checkout.'))
@@ -252,9 +252,9 @@ S.append(divider('d05', '05', 'Business case', 'EBANX direct against EBANX plus 
                  'Three slides: the four levers and what each is worth at run rate, the total impact across three scenarios, and why the shape of the fee matters at a $5 median ticket.'))
 
 # Business case in the Luni format (German, 15 Oct 2026): annual $ per lever at the 450K run rate, contribution view,
-# from model/model_numbers.json (l1 MDR, l4 engineering, l2c approval, l3c local methods; x12). Checked against bc_numbers.md Section B.
+# from model/model_numbers.json (l1 MDR, l4 integrations avoided: per-market EBANX work, later integrations, maintenance; l2c approval, l3c local methods; x12). Checked against bc_numbers.md Section B.
 _MN = json.load(open(os.path.join(HERE, 'model', 'model_numbers.json')))['model']
-def _k(v): return f'${v / 1e3:,.0f}K' if v >= 9500 else f'${v / 1e3:,.1f}K'
+def _k(v): return f'${v / 1e6:,.2f}M' if v >= 1e6 else (f'${v / 1e3:,.0f}K' if v >= 9500 else f'${v / 1e3:,.1f}K')
 _LV = {sc: [_MN[sc]['450000'][k] * 12 for k in ('l1', 'l4', 'l2c', 'l3c')] for sc in ('Conservative', 'Base', 'Optimistic')}
 _TOT = {sc: sum(v) for sc, v in _LV.items()}
 _YUNO_YR = _MN['Base']['450000']['yuno'] * 12
@@ -269,8 +269,8 @@ S.append({'id': 'bc-levers', 'type': 'lever_grid', 'kicker': 'BUSINESS CASE · F
             {'num': 1, 'name': 'Processing cost', 'range': '25 to 75 bps',
              'body': 'With EBANX and other providers live on the same rails (Pix runs on 27 in Brazil, PSE on 12 in Colombia), volume moves by rule to the cheaper route, and every rate is negotiated against a real alternative. A processing saving is 100% contribution.',
              'conservative': f'+{_k(_LV["Conservative"][0])}/yr', 'optimistic': f'+{_k(_LV["Optimistic"][0])}/yr'},
-            {'num': 2, 'name': 'Integrations avoided', 'range': '1 to 3 integrations',
-             'body': 'A second merchant of record, a local acquirer, a new wallet: built direct, each is 4 to 8 engineering weeks plus 20 to 30% yearly upkeep. On Yuno they are connections already live, switched on from the dashboard, not projects.',
+            {'num': 2, 'name': 'Integrations avoided', 'range': '5 markets + 1 to 3',
+             'body': 'Direct, EBANX is enabled, tested and certified market by market, each later provider is a new build, and Carry1st maintains every integration. Through Yuno: one integration, ready for every market, and Yuno maintains the connections.',
              'conservative': f'+{_k(_LV["Conservative"][1])}/yr', 'optimistic': f'+{_k(_LV["Optimistic"][1])}/yr'},
             {'num': 3, 'name': 'Approval uplift', 'range': '+1.5 to +5 pts',
              'body': 'Direct, every payment goes to one provider. Through Yuno a decline on EBANX retries on a second provider, Monitors reroute on a drop, and routing by BIN and country lifts approval from a 75% baseline. Counted at the take rate, not at face value.',
@@ -278,10 +278,10 @@ S.append({'id': 'bc-levers', 'type': 'lever_grid', 'kicker': 'BUSINESS CASE · F
             {'num': 4, 'name': 'Local methods, checkout', 'range': '+0.5 to +2% of sales',
              'body': 'One checkout returns Pix, PSE, Nequi, SPEI, OXXO, MODO and QR per market, in local currency, so gamers without an international card can pay. Incremental sales are counted at the take rate, net of processing.',
              'conservative': f'+{_k(_LV["Conservative"][3])}/yr', 'optimistic': f'+{_k(_LV["Optimistic"][3])}/yr'}],
-          'assumptions': '**Assumptions** All figures in USD, a year, at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (ESTIMATE, replaced by EBANX\'s quote); 15% take rate on sales (ESTIMATE). Contribution view: L1 and L2 count in full, L3 and L4 at the take rate net of processing. L2: 4 to 8 weeks per integration at $2,000 a week plus upkeep, 24-month equivalent. Ranges are Yuno modelling assumptions, recalibrated on Carry1st\'s data.',
+          'assumptions': '**Assumptions** All figures in USD, a year, at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (ESTIMATE, replaced by EBANX\'s quote); 15% take rate on sales (ESTIMATE). Contribution view: L1 and L2 count in full, L3 and L4 at the take rate net of processing. L2: 5 markets x 2 to 4 weeks on EBANX plus 1 to 3 later integrations x 4 to 8 weeks over 24 months, plus 0.25 to 1 FTE upkeep a year, at $2,000 a week. Ranges are Yuno modelling assumptions, recalibrated on Carry1st\'s data.',
           'closing': 'The value can be monetized from launch: Yuno\'s connections to EBANX and the local rails already exist, so each lever is switched on, not built.',
           'source': 'Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE; every assumption is on the risks slide in the appendix.',
-          'notes': f'Four levers, two that cut cost and two that add sales. Processing cost comes first because resale margins are thin: with EBANX and other providers live on the same rails, volume moves to the cheaper route by rule, and a saving on processing is worth one hundred cents on the dollar. Integrations avoided is the engineering Carry1st does not spend each time a market needs a new provider. Approval and local methods add sales, and we count them at your take rate, not at face value. The two rows show the conservative and optimistic value of each lever a year at the $4.5M run rate; the base case totals about {_k(_TOT["Base"])} a year.'})
+          'notes': f'Four levers, two that cut cost and two that add sales. Processing cost comes first because resale margins are thin: with EBANX and other providers live on the same rails, volume moves to the cheaper route by rule, and a saving on processing is worth one hundred cents on the dollar. Integrations avoided is the engineering Carry1st does not spend: enabling, testing and certifying EBANX market by market, building each later provider, and maintaining all of it. Through Yuno, one integration is ready for every market and Yuno maintains the connections. Approval and local methods add sales, and we count them at your take rate, not at face value. The two rows show the conservative and optimistic value of each lever a year at the $4.5M run rate; the base case totals about {_k(_TOT["Base"])} a year.'})
 
 S.append({'id': 'bc-impact', 'type': 'impact_table', 'kicker': 'BUSINESS CASE · TOTAL IMPACT', 'tag': ['ESTIMATE'],
           'headline': 'Total impact',
@@ -290,13 +290,13 @@ S.append({'id': 'bc-impact', 'type': 'impact_table', 'kicker': 'BUSINESS CASE ·
           'rows': [{'label': sc if sc != 'Base' else 'Base', 'cells': [_k(v) for v in _LV[sc]], 'total': _k(_TOT[sc]), 'highlight': sc == 'Base'}
                    for sc in ('Conservative', 'Base', 'Optimistic')],
           'hero': {'value': _k(_TOT['Base']),
-                   'text': f'of base-case **annual value** across the four levers, within a {_k(_TOT["Conservative"])} to {_k(_TOT["Optimistic"])} range, against $252,000 a year on the proposal that follows: **+{_k(_NET["Base"])} a year net** in the base case, +{_k(_NET["Conservative"])} in the conservative case, roughly cost-neutral.'},
+                   'text': f'of base-case **annual value** across the four levers, within a {_k(_TOT["Conservative"])} to {_k(_TOT["Optimistic"])} range, against $252,000 a year on the proposal that follows: **+{_k(_NET["Base"])} a year net** in the base case, +{_k(_NET["Conservative"])} in the conservative case.'},
           'takeaways': [
             {'title': 'Processing cost carries it', 'body': f'L1 is {_LV["Base"][0] / _TOT["Base"] * 100:.0f}% of the base case: a saving on processing counts in full, while extra sales count only at the take rate.'},
             {'title': 'Nothing here needs a rebuild', 'body': 'EBANX stays. Other merchants of record, local acquirers and methods are connections already live on Yuno, switched on per market.'},
             {'title': 'The baseline is yours to set', 'body': '75% approval, a 4.5% all-in rate and a 15% take rate are our estimates; your data and EBANX\'s quote replace them before anything is committed.'}],
           'source': 'Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE. Yuno cost: the proposal in section 06, $21,000 a month at $4.5M.',
-          'notes': f'The same four levers added up. In the base case they are worth about {_k(_TOT["Base"])} a year at the $4.5M run rate, against $252,000 a year for Yuno, so about {_k(_NET["Base"])} a year net. We show the conservative case honestly: about {_k(_TOT["Conservative"])} of value against the same $252,000, roughly cost-neutral, which is why the case leans on processing cost first. Every input is a placeholder for your data: approval baseline, EBANX\'s quote and your take rate.'})
+          'notes': f'The same four levers added up. In the base case they are worth about {_k(_TOT["Base"])} a year at the $4.5M run rate, against $252,000 a year for Yuno, so about {_k(_NET["Base"])} a year net. We show the conservative case honestly: about {_k(_TOT["Conservative"])} of value against the same $252,000, about {_k(_NET["Conservative"])} a year net, which is why the case leans on processing cost first. Every input is a placeholder for your data: approval baseline, EBANX\'s quote and your take rate.'})
 S.append({'id': 'bc-ticket', 'type': 'table', 'kicker': 'BUSINESS CASE · SMALL-TICKET SENSITIVITY', 'tag': ['ESTIMATE'],
           'headline': 'A fixed fee doubles as a share of sales when the ticket halves; a share of sales does not: usage on a $5 purchase is two cents or less.',
           'columns': ['Yuno all-in at 450,000 transactions a month', '$5 median ticket', '$10 average ticket', '$15 ticket'], 'col_widths': [0.37, 0.21, 0.21, 0.21], 'header_style': 'dark', 'font_size': 7.5, 'bold_first_col': True, 'zebra': True,
@@ -331,7 +331,7 @@ S.append({'id': 'proposal', 'type': 'pricing_cards', 'kicker': 'PROPOSAL',
                     'rows': [['Sales a month', '$0.5M', '$2.0M', '$4.5M'], ['Platform fee', '$7,500', '$7,500', '$7,500'], ['Usage · tranche 1', '$0', '$6,000', '$6,000'], ['Usage · tranche 2', '$0', '$0', '$7,500'],
                              {'bold': True, 'cells': ['Total a month', '$7,500', '$13,500', '$21,000']}, ['Total a year', '$90,000', '$162,000', '$252,000'], ['Share of sales', '1.50%', '0.68%', '0.47%'], ['Per successful transaction', '$0.150', '$0.068', '$0.047']],
                     'callout': 'At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 0.47% of sales, falling as volume grows.',
-                    'paragraph': 'Usage on a $5 purchase: $0.020 in tranche 1, $0.005 in tranche 4. A fixed fee stays the same whatever the ticket. The base case returns 2.3x this cost at run rate.'},
+                    'paragraph': 'Usage on a $5 purchase: $0.020 in tranche 1, $0.005 in tranche 4. A fixed fee stays the same whatever the ticket. The base case returns 2.5x this cost at run rate.'},
           'source': 'Platform fee billed annually. Usage billed monthly in arrears on successful transactions, net 30. Rates locked, tranches reviewed annually as volume grows. All figures in USD.',
           'notes': 'The proposal in one slide. A flat platform fee of $7,500 a month that already covers the first $500K of monthly sales, and above that a share of what you sell: 40 basis points to $2M, 30 to $5M, 20 to $10M, 10 above, each band on the volume inside it, only on approved payments, never a fee per transaction. At launch you pay the platform fee and nothing else; at the $4.5M run rate the all-in cost is $21,000 a month, 0.47% of sales, under five cents on a $10 purchase. Orchestration, smart routing, Monitors, the vault, the dashboard and a dedicated team are inside the platform fee; network tokens and 3DS are billed on usage and quoted separately.'})
 

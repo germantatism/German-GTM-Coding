@@ -62,7 +62,7 @@ Sub-line: "At a $10 average ticket, across the five markets"
 
 Callout box (darker blue, bold white): "At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 0.47% of volume, falling as volume grows."
 
-Paragraph under it: "Usage at the $5 median ticket is $0.020 per transaction in tranche 1 and $0.005 in tranche 4, where a fixed fee would stay at the same dollar amount whatever the ticket. The business case in this deck returns about $47.7K a month in savings and contribution at the run rate (base case), 2.3x this cost."
+Paragraph under it: "Usage at the $5 median ticket is $0.020 per transaction in tranche 1 and $0.005 in tranche 4, where a fixed fee would stay at the same dollar amount whatever the ticket. The business case in this deck returns about $52.8K a month in savings and contribution at the run rate (base case), 2.5x this cost."
 
 ## Footer (small grey, bottom left)
 

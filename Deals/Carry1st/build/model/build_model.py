@@ -159,12 +159,15 @@ inp("uplift", "Approval uplift on attempted volume (soft-decline retries, outage
 section("5 · Lever 3 · Local-method coverage uplift")
 inp("local", "Incremental GMV from local methods the single-provider route lacks, % of TPV", "%", *S("local"), source="ESTIMATE. Methods carried through Yuno via dLocal and not on the EBANX connection (docs.y.uno Payment Type list, 14 Oct 2026): Argentina MODO, Rapipago, Pago Facil; Colombia Bre-B, Nequi, PSE, Efecty; Bolivia Multipago, Pago al Paso; Mexico CoDi, Paynet, 7-Eleven. Context: Pix = 42% of Brazil e-commerce value in 2025 (Worldpay GPR 2026 via Poder360); account-to-account 15% and wallets 39% of Argentina e-commerce value 2025 (GPR 2026 via LetsMoney); QR = 36% of payments in Bolivia in 2025 (Banco Central de Bolivia via Los Tiempos, Jun 2026). EBANX direct coverage per country TO VALIDATE against its quote.", owner="German · research agent (coverage)", fmt=FMT_PCT, estimate=True)
 
-section("6 · Lever 4 · Engineering saved (one integration for five countries)")
-inp("integ", "Direct integrations avoided over the horizon (dLocal as second provider, then local-entity processors)", "count", *S("integ"), source="Yuno estimate. Option A needs a second direct integration (dLocal) for failover and leverage, then re-integration to local processors when Phase 2 (local entities) lands. Under Option B each is a routing change. The launch integration itself is not counted (both options need one).", owner="Fatih (Carry1st tech)", fmt="0", estimate=True)
-inp("weeks", "Engineer-weeks per direct PSP integration (build, certification, QA)", "weeks", *S("weeks"), source="Server-to-server PSP integration 4 to 8 weeks; orchestration or direct acquiring 8 to 12+ weeks (spd.tech, 2026). Razorpay: 2 to 3 developer-weeks per gateway for code alone (dev.to, 2025). Gateway migration 2 to 4 weeks (mctaba.com).", owner="Fatih", fmt="0", estimate=True)
+section("6 · Lever 4 (deck L2) · Integrations avoided: per-market EBANX work, later direct integrations, maintenance")
+inp("markets", "LatAm markets EBANX direct must enable, test and certify one by one", "count", INP["markets"], source="Carry1st launch plan, discovery call 15 Oct 2026: Brazil, Argentina, Mexico, Colombia, Bolivia. EBANX enables each country on the account during onboarding (not self-serve), each country must pass sandbox tests before go-live, production needs an Integration Review (EBANX developer docs, read 15 Oct 2026). Through Yuno: one integration, ready for every market.", owner="Fatih (Carry1st tech)", fmt="0")
+inp("mkt_weeks", "Engineer-weeks per market on EBANX direct (country enablement, per-country sandbox tests and certification, local methods), one-time", "weeks", *S("mkt_weeks"), source="Yuno estimate. Per country: request fields, documents and local-method flows (Pix, OXXO, SPEI, PSE, Nequi, PagosNet), sandbox test suite, Integration Review, go-live checks. Gateway migration 2 to 4 weeks (mctaba.com) used as the anchor for a per-country scope.", owner="Fatih", fmt="0", estimate=True)
+inp("integ", "Later direct integrations avoided over the horizon (second MoR, local acquirer, new provider)", "count", *S("integ"), source="Yuno estimate. Option A needs a second direct integration for failover and leverage, then re-integration to local processors when Phase 2 (local entities) lands. Under Option B each is a connection already live on Yuno. The launch integration itself is not counted (both options need one).", owner="Fatih (Carry1st tech)", fmt="0", estimate=True)
+inp("weeks", "Engineer-weeks per later direct PSP integration (build, certification, QA), one-time", "weeks", *S("weeks"), source="Server-to-server PSP integration 4 to 8 weeks; orchestration or direct acquiring 8 to 12+ weeks (spd.tech, 2026). Razorpay: 2 to 3 developer-weeks per gateway for code alone (dev.to, 2025). Gateway migration 2 to 4 weeks (mctaba.com).", owner="Fatih", fmt="0", estimate=True)
 inp("wk_cost", "Loaded cost per engineer-week", "USD", INP["wk_cost"], source="ESTIMATE, about $104K a year loaded. Sits between Cape Town senior engineer market pay (PayScale, 2026; Carry1st engineers are in Cape Town) and LatAm loaded cost of $87.5K to $100.8K a year (Second Talent, 2026); US fully loaded is $200K to $280K (Revelo, 2026).", owner="Fatih", fmt=FMT_USD, estimate=True)
-inp("maint", "Annual maintenance, % of build cost per integration", "%", *S("maint"), source="Yuno estimate; 20 to 30% upkeep is the convention used in Yuno business cases (Oct 2026).", owner="", fmt=FMT_PCT, estimate=True)
-inp("horizon", "Horizon to spread one-time engineering (months)", "months", INP["horizon"], source="Yuno modeling choice: build cost plus maintenance spread over 24 months, shown as a monthly equivalent.", owner="", fmt="0")
+inp("fte", "Ongoing maintenance of the direct integrations (API changes, certifications, incident handling), FTE a year", "FTE", *S("fte"), source="Yuno estimate. Direct: Carry1st keeps every integration current (provider API versions, per-country certification renewals, incidents and reconciliation breaks). Through Yuno: Yuno maintains the connections. Replaces the earlier 20 to 30% upkeep convention.", owner="Fatih", fmt="0.00", estimate=True)
+inp("fte_weeks", "Engineer-weeks in one FTE year", "weeks", INP["fte_weeks"], source="52 weeks x $2,000 = $104K a year loaded per FTE.", owner="", fmt="0")
+inp("horizon", "Horizon to spread one-time engineering (months)", "months", INP["horizon"], source="Yuno modeling choice: one-time build cost spread over 24 months, plus maintenance a year, shown as a monthly equivalent.", owner="", fmt="0")
 
 section("7 · Yuno cost line (the proposal, pricing v4: bps on monthly Net TPV)")
 inp("pf", "Platform fee a month (flat)", "USD", INP["pf"], source="Justo Benetti, 15 Oct 2026: $7,500 a month flat platform fee that includes a block of monthly Net TPV. Net TPV = successful transactions only, no declines, no chargebacks.", owner="Justo · Finance (approval pending)", fmt=FMT_USD)
@@ -227,7 +230,9 @@ def f_optb_pct(tpv, yuno, sc):
 
 
 def f_l4(sc):
-    return f"{I('integ', sc)}*{I('weeks', sc)}*{I('wk_cost', sc)}*(1+{I('maint', sc)}*{I('horizon', sc)}/12)/{I('horizon', sc)}"
+    """(markets x weeks per market + later integrations x weeks each) x $/week spread over the horizon, plus maintenance FTE x 52 weeks x $/week a year, monthly."""
+    return (f"(({I('markets', sc)}*{I('mkt_weeks', sc)}+{I('integ', sc)}*{I('weeks', sc)})*{I('wk_cost', sc)}/{I('horizon', sc)}"
+            f"+{I('fte', sc)}*{I('fte_weeks', sc)}*{I('wk_cost', sc)}/12)")
 
 
 def f_gross_contrib(tpv, optb, sc):
@@ -295,7 +300,7 @@ rows_spec = [
     ("l2c", "L2 · retries and routing · contribution", FMT_USD, False),
     ("l3g", "L3 · local methods · incremental GMV", FMT_USD, False),
     ("l3c", "L3 · local methods · contribution", FMT_USD, False),
-    ("l4", "L4 · engineering saved, monthly equivalent over the horizon", FMT_USD, False),
+    ("l4", "L4 (deck L2) · integrations avoided: per-market EBANX work and later integrations over the horizon, plus maintenance, monthly", FMT_USD, False),
     ("gross_c", "Gross benefit · contribution view", FMT_USD, True),
     ("gross_g", "Gross benefit · GMV view", FMT_USD, True),
     ("net_c", "Net benefit · contribution view (gross minus Yuno cost)", FMT_USD, True),
@@ -733,7 +738,7 @@ sources = [
     ("Second Talent, 'LATAM vs CEE vs APAC for hiring AI engineers', 2026 (vendor)", "LatAm loaded cost about $87.5K a year; Brazil $100.8K; Mexico $87.8K (statutory costs in).", "https://www.secondtalent.com/latam-vs-cee-vs-apac-ai-talent/"),
     ("PayScale, 'Senior Software Engineer salary, Cape Town', 2026", "Market pay reference for Carry1st's Cape Town engineering base (below the LatAm loaded figures once converted).", "https://www.payscale.com/research/ZA/Job=Senior_Software_Engineer/Salary/2eb077be/Cape-Town"),
     ("marix.app guides, gift-card reselling margins, 2026 (vendor)", "Mainstream gift cards resell at 5 to 15% above wholesale; Google Play cards 3 to 8% workable range. Context for the 15% take-rate ESTIMATE.", "https://marix.app/library/guides/google-play-pricing-strategy"),
-    ("Yuno value model (internal reference, yuno-sales-deck skill)", "Multi-acquirer leverage 7.5 to 12.5 bps mid-market; cross-border to local reclassification about 60 bps; 20 to 30% maintenance convention.", "internal"),
+    ("Yuno value model (internal reference, yuno-sales-deck skill)", "Multi-acquirer leverage 7.5 to 12.5 bps mid-market; cross-border to local reclassification about 60 bps.", "internal"),
 ]
 for i, (s, w, u) in enumerate(sources):
     r = 5 + i
@@ -805,7 +810,7 @@ ws_sum.merge_cells(start_row=r, start_column=2, end_row=r, end_column=3)
 for j, sc_name in enumerate(SCEN_COLS):
     put(ws_sum, r, 4 + j, f"=Ramp!C{RP_SUM[sc_name]}", F_VAL, None, border=True)
 r += 2
-put(ws_sum, r, 2, "How to read: Option A = EBANX direct at the baseline all-in cost (ESTIMATE until EBANX's quote replaces the baseline on Inputs). Option B = EBANX primary + dLocal second MoR through Yuno; its provider cost is the baseline minus the MDR reduction, plus Yuno's flat platform fee and usage in bps on the Net TPV above the included block. Levers: L1 MDR saving (100% contribution), L2 retries and routing, L3 local methods, L4 engineering saved. Contribution view nets the take rate and processing cost on incremental GMV. Yuno-wide figures used only as guardrails: 7% authorization uplift, 30% recovered revenue (y.uno).", F_NOTE, align=Alignment(wrap_text=True, vertical="top"))
+put(ws_sum, r, 2, "How to read: Option A = EBANX direct at the baseline all-in cost (ESTIMATE until EBANX's quote replaces the baseline on Inputs). Option B = EBANX primary + dLocal second MoR through Yuno; its provider cost is the baseline minus the MDR reduction, plus Yuno's flat platform fee and usage in bps on the Net TPV above the included block. Levers: L1 MDR saving (100% contribution), L2 retries and routing, L3 local methods, L4 integrations avoided (per-market EBANX work, later direct integrations, maintenance; deck lever L2). Contribution view nets the take rate and processing cost on incremental GMV. Yuno-wide figures used only as guardrails: 7% authorization uplift, 30% recovered revenue (y.uno).", F_NOTE, align=Alignment(wrap_text=True, vertical="top"))
 ws_sum.merge_cells(start_row=r, start_column=2, end_row=r + 3, end_column=7)
 ws_sum.row_dimensions[r].height = 15
 

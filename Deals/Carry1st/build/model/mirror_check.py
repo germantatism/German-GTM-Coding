@@ -17,7 +17,8 @@ def run(INP):
         return dict(incl=incl, t1=t1, t2=t2, t3=t3, t4=t4, usage=usage, pf=INP["pf"], total=usage + INP["pf"])
 
     def l4(s):
-        return s["integ"] * s["weeks"] * INP["wk_cost"] * (1 + s["maint"] * INP["horizon"] / 12) / INP["horizon"]
+        one_time = (INP["markets"] * s["mkt_weeks"] + s["integ"] * s["weeks"]) * INP["wk_cost"]
+        return one_time / INP["horizon"] + s["fte"] * INP["fte_weeks"] * INP["wk_cost"] / 12
 
     def model(tx, s, ticket=None, take=None, base_cost=None, credit=0.0):
         ticket = INP["ticket"] if ticket is None else ticket

@@ -95,7 +95,7 @@ A(f"Yuno line (identical in every scenario; $7,500 flat including the first {ban
 
 def scen_table(sn, full=False):
     s = SCEN[sn]
-    A(f"### {sn} scenario (MDR {s['mdr']} bps · approval +{s['uplift']*100:.1f} pts · local methods +{s['local']*100:.1f}% of TPV · {s['integ']} integration{'s' if s['integ']>1 else ''} avoided)\n")
+    A(f"### {sn} scenario (MDR {s['mdr']} bps · approval +{s['uplift']*100:.1f} pts · local methods +{s['local']*100:.1f}% of TPV · {INP['markets']} markets x {s['mkt_weeks']} weeks + {s['integ']} integration{'s' if s['integ']>1 else ''} avoided + {s['fte']:.2f} FTE maintenance)\n")
     if full:
         A("| Tx / month | TPV | Option A cost | Option A per $1,000 | Option B cost (provider + Yuno) | of which Yuno | Option B per $1,000 | Option B per $1,000 after levers | Net benefit, contribution | Net benefit, GMV view |")
         A("|---|---|---|---|---|---|---|---|---|---|")
@@ -150,7 +150,7 @@ cells = [(s, t) for t in (T[0], T[3]) for s in SC]
 A("| L1 · MDR reduction (100% contribution) | " + " | ".join(K(m[s][t]['l1']) for s, t in cells) + " |")
 A("| L2 · retries and routing recovery | " + " | ".join(f"{K(m[s][t]['l2c'])} [{K(m[s][t]['l2g'])} GMV]" for s, t in cells) + " |")
 A("| L3 · local-method coverage | " + " | ".join(f"{K(m[s][t]['l3c'])} [{K(m[s][t]['l3g'])}]" for s, t in cells) + " |")
-A("| L4 · engineering saved (24-month monthly equivalent) | " + " | ".join(K(m[s][t]['l4']) for s, t in cells) + " |")
+A("| L4 (deck L2) · integrations avoided (per-market EBANX work and later integrations over 24 months, plus maintenance), monthly | " + " | ".join(K(m[s][t]['l4']) for s, t in cells) + " |")
 A("| Gross benefit | " + " | ".join(K(m[s][t]['gross_c']) for s, t in cells) + " |")
 A("")
 A(f"L1 is the lever that matters most for a reseller: a processing saving is 100% contribution, while incremental GMV is worth take rate minus processing cost (about {r_((INP['take']-b4['b_pct'])*100,0):.0f} cents per dollar at a {PC(INP['take'])} take rate). In the base case L1 is {P1(b4['l1']/b4['gross_c'])} of the gross benefit at 450K.\n")
@@ -199,7 +199,7 @@ A(f"3. Carry1st take rate on GMV: {PC(INP['take'])}, ESTIMATE, TO VALIDATE with 
 A("4. L1 MDR reduction with a second MoR in play and routing share to the cheaper route: 25 / 50 / 75 bps of TPV (Yuno estimate; EBANX and dLocal rates through Yuno OPEN, owner Justo).")
 A("5. L2 baseline approval on a single MoR route: 75% blended, ESTIMATE, range 70 to 85% (Mexico local 80%+ vs cross-border 50 to 60%, Nuvei 2026; Brazil cross-border cards under 60%, Antom 2025; 10 to 20 point gap by setup, Rapyd 2026). Uplift from retries, failover and second-provider routing: +1.5 / +3.0 / +5.0 points on attempted volume (Yuno estimate; ceiling = Yuno published 7% authorization uplift). Proxy to validate: Carry1st's Saudi and Africa approval rates, owner Cordel.")
 A("6. L3 local-method coverage: +0.5% / +1.0% / +2.0% of TPV as incremental GMV, ESTIMATE. Methods carried through Yuno via dLocal and not on the EBANX connection (docs.y.uno, 14 Oct 2026): MODO, Rapipago, Pago Facil (Argentina); Bre-B, Nequi, PSE, Efecty (Colombia); Multipago, Pago al Paso (Bolivia); CoDi, Paynet, 7-Eleven (Mexico). EBANX direct coverage per country TO VALIDATE against its quote.")
-A("7. L4 engineering: 1 / 2 / 3 direct integrations avoided (dLocal, then local-entity processors in Phase 2) x 4 / 6 / 8 engineer-weeks (4 to 8 weeks per server-to-server PSP integration, spd.tech 2026) x $2,000 per loaded engineer-week (ESTIMATE between Cape Town market pay and LatAm loaded cost of $87.5K to $100.8K a year, Second Talent 2026) + 20 / 25 / 30% a year maintenance, spread over 24 months. The launch integration is not counted: both options need one.")
+A("7. L4 integrations avoided (deck lever L2), three parts at $2,000 per loaded engineer-week (ESTIMATE between Cape Town market pay and LatAm loaded cost of $87.5K to $100.8K a year, Second Talent 2026): (a) per-market EBANX direct work, 5 markets x 2 / 3 / 4 engineer-weeks (country enablement, per-country sandbox tests and certification, local methods; EBANX enables countries during onboarding, each country passes sandbox tests and an Integration Review before production), one-time; (b) later direct integrations avoided, 1 / 2 / 3 (second MoR, local acquirer, Phase 2 local processors) x 4 / 6 / 8 engineer-weeks (4 to 8 weeks per server-to-server PSP integration, spd.tech 2026), one-time; (c) ongoing maintenance of the direct integrations (API changes, certifications, incident handling), 0.25 / 0.5 / 1.0 FTE a year at $104K (52 x $2,000). One-time items spread over 24 months, so the yearly value is one-time / 2 + maintenance. Through Yuno: one integration ready for every market, Yuno maintains the connections. The launch integration itself is not counted.")
 A(f"8. Yuno cost: $7,500 a month flat platform fee that includes the first {band(incl)} of monthly Net TPV (successful transactions only, no declines, no chargebacks; single month, no rollover); usage on the Net TPV above it at {P2(t1r)} ({band(incl)} to {band(t1up)}), {P2(t2r)} ({band(t1up)} to {band(t2up)}), {P2(t3r)} ({band(t2up)} to {band(t3up)}), {P2(t4r)} (above {band(t3up)}), each band on the volume inside it. Declines not billed. Add-ons (network tokens, 3DS) on usage, not in these totals.")
 A("9. Ramp for payback: linear from 50K at Black Friday 2026 to 450K by Dec 2027, Yuno ESTIMATE; replaced by Cordel's written projections by country.")
 A("10. Levers are modeled on the same TPV and are additive by construction (a cost saving, two GMV effects netted of processing cost, one engineering saving); nothing is double counted. Yuno-wide figures are used only as guardrails: 7% authorization uplift and 30% recovered revenue (y.uno).\n")
@@ -238,7 +238,7 @@ A(f"| Average and median ticket | ${tick:.0f} / ${med:.0f} | Shop data by countr
 A(f"| Take rate on GMV | {PC(INP['take'])} | Carry1st Shop margin on top-ups and gift cards | Cordel |")
 A("| Baseline approval | 75% | Saudi / Africa approval and method mix as proxy, then LatAm actuals | Cordel, Yuno |")
 A("| Local-method uplift | 0.5 / 1 / 2% | Method mix by country once live; EBANX direct coverage per country | German, research |")
-A("| Engineer-weeks and loaded cost | 4 / 6 / 8 weeks, $2,000 a week | Fatih's estimate for a direct PSP integration and his team cost | Fatih |")
+A("| Engineer-weeks, maintenance and loaded cost | 2 / 3 / 4 weeks per market, 4 / 6 / 8 weeks per later integration, 0.25 / 0.5 / 1.0 FTE maintenance, $2,000 a week | Fatih's estimate for EBANX per-market work, a direct PSP integration, upkeep and his team cost | Fatih |")
 A(f"| Net incremental GMV of processing cost | 1 (yes) | Keep at 1 for a CFO audience; 0 shows the simpler GMV x take rate view (base break-even moves to {BE(J['netflag0_base_breakeven'])}) | German |")
 open(BASE + "bc_numbers.md", "w").write("\n".join(L) + "\n")
 
@@ -371,7 +371,7 @@ A("| Concession | Yuno revenue given a month | Where it bites | Carry1st base ne
 A("|---|---|---|---|---|")
 A(f"| As quoted (v4): {band(incl)} included, steps at {band(t1up)}, {band(t2up)}, {band(t3up)} | 0 | reference | {K(b4['net_c'], True)} | {BE(be['Base'])} |")
 A(f"| Included block to {band(ALT_INCL_TPV)} | {usd((ALT_INCL_TPV-incl)*t1r)} once TPV passes {band(ALT_INCL_TPV)} | 100K tier: Yuno {usd(JA['pricing']['avg'][T[1]]['total'])} instead of {usd(pa[T[1]]['total'])}; 450K: {usd(JA['pricing']['avg'][T[3]]['total'])} | {K(ma[T[3]]['net_c'], True)} | {BE(JA['breakeven']['Base'])} |")
-A(f"| Launch credit {usd(INP['credit'])} x {INP['credit_months']} months | {usd(INP['credit']*INP['credit_months'])} in total (Dec 2026 to Feb 2027) | ramp only; Yuno over the ramp {K(rpc['Base']['yuno_total'])} instead of {K(rp['Base']['yuno_total'])} | payback {rpc['Base']['payback']} instead of {rp['Base']['payback']} | n/a |")
+A(f"| Launch credit {usd(INP['credit'])} x {INP['credit_months']} months | {usd(INP['credit']*INP['credit_months'])} in total (Dec 2026 to Feb 2027) | ramp only; Yuno over the ramp {K(rpc['Base']['yuno_total'])} instead of {K(rp['Base']['yuno_total'])} | " + (f"payback {rpc['Base']['payback']} instead of {rp['Base']['payback']}" if rpc['Base']['payback'] != rp['Base']['payback'] else f"payback unchanged ({rp['Base']['payback']}); conservative {rpc['Conservative']['payback']} instead of {rp['Conservative']['payback']}") + " | n/a |")
 A("| 3-year rate lock | none today; forgoes the annual tranche review | contract term | n/a | n/a |\n")
 A("## 8. Business case numbers Finance will ask about (base case, contribution view)\n")
 A(f"- Yuno revenue: " + "; ".join(f"{usd(pa[t]['total'])} a month at {INT(int(t))}" for t in T) + f" ({usd(pa[T[3]]['total']*12)} a year). Over the modeled {INP['ramp_m']}-month ramp (Dec 2026 to Dec 2027, linear): {usd(rp['Base']['yuno_total'])}.")
