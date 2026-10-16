@@ -852,7 +852,7 @@
      "body": "75% approval, a 4.5% all-in rate and a 15% take rate are our estimates; your data and EBANX's quote replace them before anything is committed."
     }
    ],
-   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. Yuno cost: the proposal in section 06, $21,000 a month at $4.5M.",
+   "source": "Yuno cost: the proposal that follows, $21,000 a month at $4.5M.",
    "notes": "The same five levers added up. The four recurring levers are worth about $804K a year in the base case at the $4.5M run rate, against $252,000 a year for Yuno, so about $552K a year net, 3.2 times the cost. Time to market sits in its own column because it is a first-year value: launching all five markets together brings run rate forward to mid 2027, about $1.26M in 2027, which takes 2027 to about $2.07M, 8.2 times Yuno's cost. We show the conservative case honestly: about $397K a year against the same $252,000, about $145K a year net. Every input is a placeholder for your data: approval baseline, EBANX's quote, your take rate and your volumes by country.",
    "n_totals": 2,
    "col_widths": [
@@ -3269,7 +3269,7 @@
     }
    ],
    "bar": "Going direct, each of these is a project Carry1st runs alone. Through Yuno, they are settings on the same integration.",
-   "source": "docs.y.uno (routing, retries, monitors, connections); Yuno integrations directory, Oct 2026; Yuno business-case model, 15 Oct 2026.",
+   "source": "docs.y.uno (routing, retries, monitors, connections); Yuno integrations directory, Oct 2026.",
    "notes": "Each lever is a mechanism, not a promise. Routing and retries lift approval; local methods widen who can pay; one integration puts all five markets live together, so the Shop reaches run rate months sooner; competition on the same rails lowers price; and one integration replaces market-by-market builds and their upkeep. All five get stronger as Carry1st adds volume and markets."
   },
   {
