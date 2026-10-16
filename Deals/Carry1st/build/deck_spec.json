@@ -571,21 +571,16 @@
    "id": "why-rbp",
    "type": "table",
    "kicker": "WHY YUNO · REQUIREMENT, BENEFIT, PROOF",
-   "tag": [
-    "CONFIRMED"
-   ],
-   "headline": "Seven things the Shop needs in Latin America, what each one gets through Yuno, and how we prove it.",
+   "headline": "Six things the Shop needs in Latin America, what each one gets through Yuno, and how we prove it.",
    "columns": [
     "Requirement",
     "Benefit for the Shop",
-    "Proof",
-    "Label"
+    "Proof"
    ],
    "col_widths": [
-    0.22,
-    0.36,
-    0.32,
-    0.1
+    0.24,
+    0.4,
+    0.36
    ],
    "header_style": "dark",
    "font_size": 7,
@@ -595,70 +590,36 @@
     [
      "One integration for five countries",
      "EBANX and every other provider as connections on one SDK; later MoRs, acquirers and local methods added without touching checkout",
-     "Connections are credentials entered in the dashboard or by API; Rappi: new-provider implementation time down to zero",
-     {
-      "text": "",
-      "pill": "CONFIRMED"
-     }
+     "Connections are credentials entered in the dashboard or by API; Rappi: new-provider implementation time down to zero"
     ],
     [
      "Local methods per market",
      "Pix, PSE, Nequi, Bre-B, SPEI, OXXO Pay, CoDi, MODO, Rapipago, QR in Bolivia and wallets, returned per country by the checkout session",
-     "Yuno directory, Oct 2026: 46 providers live in Brazil, 36 in Mexico, 31 in Colombia, 23 in Argentina, 6 in Bolivia",
-     {
-      "text": "",
-      "pill": "CONFIRMED"
-     }
+     "Yuno directory, Oct 2026: 46 providers live in Brazil, 36 in Mexico, 31 in Colombia, 23 in Argentina, 6 in Bolivia"
     ],
     [
      "Higher approval, fewer lost sales",
      "A decline on EBANX retries on a second provider; routing by BIN, brand, amount and country; Smart Routing as data builds",
-     "Published across Yuno merchants: up to 7% authorization uplift, 30% recovered revenue. Carry1st uplift modeled at +1.5 to +5 points",
-     {
-      "text": "",
-      "pill": "CONFIRMED"
-     }
+     "Published across Yuno merchants: up to 7% authorization uplift, 30% recovered revenue. Carry1st uplift modeled at +1.5 to +5 points"
     ],
     [
      "No single point of failure",
      "Monitors move traffic to the fallback provider when approval drops, and move it back on recovery",
-     "docs.y.uno monitors and automation; status.ebanx.com shows degradations and daily maintenance windows",
-     {
-      "text": "",
-      "pill": "CONFIRMED"
-     }
-    ],
-    [
-     "Cost that scales with a $5 median",
-     "More than one provider per rail makes the MDR negotiable; Yuno is billed as a share of what Carry1st sells, never a fixed fee per transaction",
-     "Business case in section 05 and the proposal in section 06",
-     {
-      "text": "",
-      "pill": "ESTIMATE"
-     }
+     "docs.y.uno monitors and automation; status.ebanx.com shows degradations and daily maintenance windows"
     ],
     [
      "A checkout that converts, shipped in days",
      "Web and mobile SDKs; local prices and methods per market; tokens portable across providers; PCI DSS, SOC 2 Type 2, ISO 27001 and 27701",
-     "Working prototype of the Shop checkout on the Yuno SDK, sandbox, four LatAm markets, 15 Oct 2026",
-     {
-      "text": "",
-      "pill": "CONFIRMED"
-     }
+     "Working prototype of the Shop checkout on the Yuno SDK, sandbox, four LatAm markets, 15 Oct 2026"
     ],
     [
      "One view of the business, and a team that has done this",
      "Approval, retries, chargebacks and reconciliation by provider and country; Payment Concierge; dedicated KAM and TAM; teams in São Paulo, Mexico City, Bogotá, Buenos Aires",
-     "y.uno/about; inDrive: around 90% approval and 11 new countries in under eight months",
-     {
-      "text": "",
-      "pill": "CONFIRMED"
-     }
+     "y.uno/about; inDrive: around 90% approval and 11 new countries in under eight months"
     ]
    ],
-   "note": "Labels: CONFIRMED in docs.y.uno or y.uno, read 15 Oct 2026; ESTIMATE is modeled with the assumption stated in section 05.",
    "source": "docs.y.uno (connections, routing, monitors, tokens, insights), y.uno homepage, about and success stories, Yuno integrations directory, read 14 and 15 Oct 2026.",
-   "notes": "We read this table top-down: the left column is what the Shop needs, the middle is what it gets, the right is how you can check it. Five of the seven rows are confirmed in our public documentation or on y.uno; the cost row is modeled and we label it so. The one number we lean on for approval is the published ceiling of up to 7%, and the Carry1st model stays well under it."
+   "notes": "We read this table top-down: the left column is what the Shop needs, the middle is what it gets, the right is how you can check it. The one number we lean on for approval is the published ceiling of up to 7%, and the Carry1st model stays well under it."
   },
   {
    "id": "platform",
