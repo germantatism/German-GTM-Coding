@@ -570,7 +570,7 @@ class SB:
             self.text(cx, cy, cw, bh, body, size=body_size, color=body_color, ls=115)
         if foot:
             fy = y + h - pad - foot_h + 4
-            self.rect(cx, fy - 4, 10.5, 1.0, fill=(WHITE if blue else BLUE))
+            # foot tick removed at German's request (16 Oct 2026)
             self.text(cx, fy, cw, foot_h - 4, foot, size=7.5, bold=True, color=(WHITE if blue else DEEP), ls=105)
     def code_block(self, x, y, w, h, code, size=7.5, title=None):
         cy = y
