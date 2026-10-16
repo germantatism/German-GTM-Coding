@@ -990,7 +990,7 @@
    "type": "pricing_cards",
    "kicker": "PROPOSAL",
    "headline": "One platform fee covering the first $500K of monthly sales, then a share of sales that falls as Carry1st grows.",
-   "subline": "$7,500 a month covering the first $500K of monthly sales, plus a share of the sales above it: $21,000 a month at 450,000 transactions, 0.47% of sales.",
+   "subline": "$7,500 a month covering the first $500K of monthly sales, plus a share of the sales above it: $21,000 a month at 450,000 transactions, 47 bps of sales.",
    "left": {
     "title": "TRANSACTION FEE",
     "sub": "A share of the month's sales above the included block, pooled across the five markets",
@@ -1003,22 +1003,22 @@
      {
       "label": "TRANCHE 1",
       "range": "$500K to $2M",
-      "rate": "0.40%"
+      "rate": "40 bps"
      },
      {
       "label": "TRANCHE 2",
       "range": "$2M to $5M",
-      "rate": "0.30%"
+      "rate": "30 bps"
      },
      {
       "label": "TRANCHE 3",
       "range": "$5M to $10M",
-      "rate": "0.20%"
+      "rate": "20 bps"
      },
      {
       "label": "TRANCHE 4",
       "range": "Above $10M",
-      "rate": "0.10%"
+      "rate": "10 bps"
      }
     ],
     "note": "No setup fee, no fixed amount per transaction. Only successful transactions count: declines are not billed. Each tranche applies only to the volume inside it."
@@ -1137,9 +1137,9 @@
      ],
      [
       "Share of sales",
-      "1.50%",
-      "0.68%",
-      "0.47%"
+      "150 bps",
+      "68 bps",
+      "47 bps"
      ],
      [
       "Per successful transaction",
@@ -1148,11 +1148,11 @@
       "$0.047"
      ]
     ],
-    "callout": "At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 0.47% of sales, falling as volume grows.",
+    "callout": "At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 47 bps of sales, falling as volume grows.",
     "paragraph": "Usage on a $5 purchase: $0.020 in tranche 1, $0.005 in tranche 4. A fixed fee stays the same whatever the ticket. The base case returns 2.3x this cost at run rate."
    },
    "source": "Platform fee billed annually. Usage billed monthly in arrears on successful transactions, net 30. Rates locked, tranches reviewed annually as volume grows. All figures in USD.",
-   "notes": "The proposal in one slide. A flat platform fee of $7,500 a month that already covers the first $500K of monthly sales, and above that a share of what you sell: 40 basis points to $2M, 30 to $5M, 20 to $10M, 10 above, each band on the volume inside it, only on approved payments, never a fee per transaction. At launch you pay the platform fee and nothing else; at the $4.5M run rate the all-in cost is $21,000 a month, 0.47% of sales, under five cents on a $10 purchase. Orchestration, smart routing, Monitors, the vault, the dashboard and a dedicated team are inside the platform fee; network tokens and 3DS are billed on usage and quoted separately."
+   "notes": "The proposal in one slide. A flat platform fee of $7,500 a month that already covers the first $500K of monthly sales, and above that a share of what you sell: 40 basis points to $2M, 30 to $5M, 20 to $10M, 10 above, each band on the volume inside it, only on approved payments, never a fee per transaction. At launch you pay the platform fee and nothing else; at the $4.5M run rate the all-in cost is $21,000 a month, 47 bps of sales, under five cents on a $10 purchase. Orchestration, smart routing, Monitors, the vault, the dashboard and a dedicated team are inside the platform fee; network tokens and 3DS are billed on usage and quoted separately."
   },
   {
    "id": "onus",
