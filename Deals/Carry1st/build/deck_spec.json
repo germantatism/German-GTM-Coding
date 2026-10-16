@@ -3152,6 +3152,108 @@
    ],
    "footnote": "Third-party lines are our reading of public pages on the dates shown; confirm each with the provider before relying on it. Carry1st call figures are estimates until confirmed.",
    "notes": "Appendix. The pages behind every claim, so your team can open them. Yuno claims come from our public documentation, y.uno and the model in this deck; provider and market lines come from their own public pages or dated press, and we would rather you confirm them with each provider than take our reading."
+  },
+  {
+   "id": "bc-why",
+   "type": "table",
+   "kicker": "BUSINESS CASE · WHY YUNO AGAINST GOING DIRECT",
+   "headline": "Against going direct with EBANX, Yuno adds four levers, and each one grows as Carry1st grows.",
+   "columns": [
+    "Lever",
+    "Going direct with EBANX",
+    "Through Yuno: how it works",
+    "Base case, a year"
+   ],
+   "col_widths": [
+    0.16,
+    0.27,
+    0.43,
+    0.14
+   ],
+   "header_style": "dark",
+   "font_size": 7.5,
+   "bold_first_col": true,
+   "zebra": true,
+   "rows": [
+    [
+     "Approval rate",
+     "One route: a decline is a lost sale, and an EBANX outage stops sales",
+     "Smart routing by BIN, card brand, country and amount sends each payment to the route most likely to approve; soft declines retry on another provider; Monitors fail over on a drop",
+     {
+      "text": "+3 pts approval\n$228K",
+      "bold": true
+     }
+    ],
+    [
+     "Processing cost",
+     "One counterparty and one price, with nothing to negotiate against",
+     "A second provider on the same rails: volume moves by rule to the cheaper route, and every rate is negotiated against a real alternative",
+     {
+      "text": "50 bps lower\n$270K",
+      "bold": true
+     }
+    ],
+    [
+     "Integrations and upkeep",
+     "Integrate, test and certify EBANX market by market, maintain it, and build each new provider",
+     "One integration ready for every market; new providers and local acquirers are connections, and Yuno maintains them",
+     {
+      "text": "5 markets + 2 builds\n$79K",
+      "bold": true
+     }
+    ],
+    [
+     "Local methods",
+     "Bolivia cash only; no MODO or interoperable QR in Argentina",
+     "Pix, PSE, Bre-B, SPEI, OXXO, MODO and QR through the rails already live on Yuno, market by market",
+     {
+      "text": "+1% of sales\n$57K",
+      "bold": true
+     }
+    ]
+   ],
+   "bar": "**$633K a year in the base case, and it compounds:** more volume gives more leverage on price and more data for routing, and every new market or provider is a connection, not a project.",
+   "source": "Yuno business-case model, 15 Oct 2026, base case at $4.5M of monthly sales; detail by lever and scenario on the next two slides.",
+   "notes": "This is the case against going direct, lever by lever. Smart routing and retries lift the approval rate; a second provider on the same rails gives real leverage on price; one integration replaces market-by-market EBANX work and its upkeep; and local methods reach buyers an international card cannot. Each lever gets stronger as volume grows."
+  },
+  {
+   "id": "bc-how",
+   "type": "cards_row",
+   "kicker": "BUSINESS CASE · HOW YUNO MOVES EACH LEVER",
+   "headline": "How Yuno moves each lever, and why each one gets stronger as Carry1st scales.",
+   "cards": [
+    {
+     "num": "01",
+     "eyebrow": "APPROVAL",
+     "title": "Smart routing and retries",
+     "body": "Rules by BIN, card brand, country and amount send each payment to the route most likely to approve. A soft decline retries on another provider. Monitors spot an approval drop, shift traffic and return it on recovery.",
+     "foot": "Grows with volume: more data per issuer sharpens every route"
+    },
+    {
+     "num": "02",
+     "eyebrow": "COST",
+     "title": "Competition on the same rails",
+     "body": "With two providers live on the same method, volume moves by rule to the cheaper route, and every rate review is backed by Carry1st's own cost and approval data per provider.",
+     "foot": "Grows with volume: each $1M a month raises the stakes for providers"
+    },
+    {
+     "num": "03",
+     "eyebrow": "INTEGRATIONS",
+     "title": "Build once, plug in the rest",
+     "body": "One integration to the Yuno SDK covers all five markets. EBANX, a second MoR or a local acquirer is a connection switched on from the dashboard, kept current by Yuno.",
+     "foot": "Grows with expansion: a new market is a connection, not a project"
+    },
+    {
+     "num": "04",
+     "eyebrow": "LOCAL METHODS",
+     "title": "Every rail each market uses",
+     "body": "Pix, PSE, Bre-B, SPEI, OXXO, MODO and QR reach buyers an international card cannot, returned per country by the same checkout, with no extra build.",
+     "foot": "Grows with the market: new rails arrive as connections"
+    }
+   ],
+   "bar": "Going direct, each of these is a project Carry1st runs alone. Through Yuno, they are settings on the same integration.",
+   "source": "docs.y.uno (routing, retries, monitors, connections); Yuno integrations directory, Oct 2026; Yuno business-case model, 15 Oct 2026.",
+   "notes": "Each lever is a mechanism, not a promise. Routing and retries lift approval; competition on the same rails lowers price; one integration replaces market-by-market builds and their upkeep; and local methods widen who can pay. All four get stronger as Carry1st adds volume and markets."
   }
  ]
 }
