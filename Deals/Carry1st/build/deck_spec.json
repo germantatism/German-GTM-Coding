@@ -70,7 +70,7 @@
    "tag": [
     "ESTIMATE"
    ],
-   "headline": "Through Yuno, EBANX plus local rails per market costs less than EBANX direct at run rate, and pays back in month two.",
+   "headline": "Through Yuno, EBANX plus local rails per market costs less than EBANX direct at run rate, and pays back in month three.",
    "left_header": "WHERE CARRY1ST STANDS",
    "left_items": [
     {
@@ -98,16 +98,16 @@
     },
     {
      "title": "A fee that scales with sales, not with transactions",
-     "body": "$7,500 a month including the first $500K of monthly sales, then 30 / 25 / 20 bps on sales above it. At launch: $7,500 and nothing per transaction; at $4.5M: $18,750 a month, 0.42% of sales."
+     "body": "$7,500 a month including the first $500K of monthly sales, then 40 / 30 / 20 / 10 bps on sales above it. At launch: $7,500 and nothing per transaction; at $4.5M: $21,000 a month, 0.47% of sales."
     },
     {
-     "title": "A case that pays back in month two",
-     "body": "Base case at run rate: $44.2 per $1,000 of sales through Yuno against $45.0 direct, +$29.1K a month net ($349K a year, 2.6x Yuno's cost); break-even about 65,000 transactions a month."
+     "title": "A case that pays back in month three",
+     "body": "Base case at run rate: $44.7 per $1,000 of sales through Yuno against $45.0 direct, +$26.7K a month net ($320K a year, 2.3x Yuno's cost); break-even about 68,000 transactions a month."
     }
    ],
    "bottom": "EBANX stays at the center and Yuno adds every rail around it; even the conservative case is cost-neutral at run rate.",
    "source": "Yuno business-case model, 15 Oct 2026, base scenario: EBANX direct all-in 4.5% of sales and a 15% take rate are estimates, replaced by EBANX's quote and Shop margins. Volumes: Carry1st, Cordel, Oct 2026, estimate.",
-   "notes": "The whole deck on one slide. Left, where you stand: five markets, six weeks, a $5 median ticket and a run-rate estimate that is yours. Right, what we propose: one integration carrying EBANX plus any other merchant of record, acquirer or local method each market needs, a fee that is a share of what you sell with the first $500K of monthly sales inside the platform fee, and a business case that, in the base scenario, makes the Yuno route the cheaper cost line at run rate before counting approval or coverage gains. Two numbers to keep: break-even at about 65,000 transactions a month, and the conservative case cost-neutral at run rate. Everything modeled is labelled and will be re-cut on your volumes and EBANX's quote."
+   "notes": "The whole deck on one slide. Left, where you stand: five markets, six weeks, a $5 median ticket and a run-rate estimate that is yours. Right, what we propose: one integration carrying EBANX plus any other merchant of record, acquirer or local method each market needs, a fee that is a share of what you sell with the first $500K of monthly sales inside the platform fee, and a business case that, in the base scenario, makes the Yuno route the cheaper cost line at run rate before counting approval or coverage gains. Two numbers to keep: break-even at about 68,000 transactions a month, and the conservative case cost-neutral at run rate. Everything modeled is labelled and will be re-cut on your volumes and EBANX's quote."
   },
   {
    "id": "d02",
@@ -749,7 +749,7 @@
    "tag": [
     "ESTIMATE"
    ],
-   "headline": "At $4.5M a month of sales, the four levers are worth about $574K a year to Carry1st in the base case.",
+   "headline": "At $4.5M a month of sales, the four levers are worth about $572K a year to Carry1st in the base case.",
    "groups": [
     {
      "label": "Cost levers",
@@ -788,8 +788,8 @@
      "name": "Approval uplift",
      "range": "+1.5 to +5 pts",
      "body": "Direct, every payment goes to one provider. Through Yuno a decline on EBANX retries on a second provider, Monitors reroute on a drop, and routing by BIN and country lifts approval from a 75% baseline. Counted at the take rate, not at face value.",
-     "conservative": "+$112K/yr",
-     "optimistic": "+$390K/yr"
+     "conservative": "+$111K/yr",
+     "optimistic": "+$388K/yr"
     },
     {
      "num": 4,
@@ -797,13 +797,13 @@
      "range": "+0.5 to +2% of sales",
      "body": "One checkout returns Pix, PSE, Nequi, SPEI, OXXO, MODO and QR per market, in local currency, so gamers without an international card can pay. Incremental sales are counted at the take rate, net of processing.",
      "conservative": "+$28K/yr",
-     "optimistic": "+$117K/yr"
+     "optimistic": "+$116K/yr"
     }
    ],
    "assumptions": "**Assumptions** All figures in USD, a year, at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (ESTIMATE, replaced by EBANX's quote); 15% take rate on sales (ESTIMATE). Contribution view: L1 and L2 count in full, L3 and L4 at the take rate net of processing. L2: 4 to 8 weeks per integration at $2,000 a week plus upkeep, 24-month equivalent. Ranges are Yuno modelling assumptions, recalibrated on Carry1st's data.",
    "closing": "The value can be monetized from launch: Yuno's connections to EBANX and the local rails already exist, so each lever is switched on, not built.",
    "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE; every assumption is on the risks slide in the appendix.",
-   "notes": "Four levers, two that cut cost and two that add sales. Processing cost comes first because resale margins are thin: with EBANX and other providers live on the same rails, volume moves to the cheaper route by rule, and a saving on processing is worth one hundred cents on the dollar. Integrations avoided is the engineering Carry1st does not spend each time a market needs a new provider. Approval and local methods add sales, and we count them at your take rate, not at face value. The two rows show the conservative and optimistic value of each lever a year at the $4.5M run rate; the base case totals about $574K a year."
+   "notes": "Four levers, two that cut cost and two that add sales. Processing cost comes first because resale margins are thin: with EBANX and other providers live on the same rails, volume moves to the cheaper route by rule, and a saving on processing is worth one hundred cents on the dollar. Integrations avoided is the engineering Carry1st does not spend each time a market needs a new provider. Approval and local methods add sales, and we count them at your take rate, not at face value. The two rows show the conservative and optimistic value of each lever a year at the $4.5M run rate; the base case totals about $572K a year."
   },
   {
    "id": "bc-impact",
@@ -828,10 +828,10 @@
      "cells": [
       "$135K",
       "$5.6K",
-      "$112K",
+      "$111K",
       "$28K"
      ],
-     "total": "$280K",
+     "total": "$279K",
      "highlight": false
     },
     {
@@ -839,10 +839,10 @@
      "cells": [
       "$270K",
       "$18K",
-      "$229K",
+      "$228K",
       "$57K"
      ],
-     "total": "$574K",
+     "total": "$572K",
      "highlight": true
     },
     {
@@ -850,16 +850,16 @@
      "cells": [
       "$405K",
       "$38K",
-      "$390K",
-      "$117K"
+      "$388K",
+      "$116K"
      ],
-     "total": "$950K",
+     "total": "$948K",
      "highlight": false
     }
    ],
    "hero": {
-    "value": "$574K",
-    "text": "of base-case **annual value** across the four levers, within a $280K to $950K range, against $225,000 a year on the proposal that follows: **+$349K a year net** in the base case, +$55K in the conservative case, roughly cost-neutral."
+    "value": "$572K",
+    "text": "of base-case **annual value** across the four levers, within a $279K to $948K range, against $252,000 a year on the proposal that follows: **+$320K a year net** in the base case, +$27K in the conservative case, roughly cost-neutral."
    },
    "takeaways": [
     {
@@ -875,8 +875,8 @@
      "body": "75% approval, a 4.5% all-in rate and a 15% take rate are our estimates; your data and EBANX's quote replace them before anything is committed."
     }
    ],
-   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE. Yuno cost: the proposal in section 06, $18,750 a month at $4.5M.",
-   "notes": "The same four levers added up. In the base case they are worth about $574K a year at the $4.5M run rate, against $225,000 a year for Yuno, so about $349K a year net. We show the conservative case honestly: about $280K of value against the same $225,000, roughly cost-neutral, which is why the case leans on processing cost first. Every input is a placeholder for your data: approval baseline, EBANX's quote and your take rate."
+   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE. Yuno cost: the proposal in section 06, $21,000 a month at $4.5M.",
+   "notes": "The same four levers added up. In the base case they are worth about $572K a year at the $4.5M run rate, against $252,000 a year for Yuno, so about $320K a year net. We show the conservative case honestly: about $279K of value against the same $252,000, roughly cost-neutral, which is why the case leans on processing cost first. Every input is a placeholder for your data: approval baseline, EBANX's quote and your take rate."
   },
   {
    "id": "bc-ticket",
@@ -885,7 +885,7 @@
    "tag": [
     "ESTIMATE"
    ],
-   "headline": "A fixed fee doubles as a share of sales when the ticket halves; a share of sales does not: usage on a $5 purchase is one to two cents.",
+   "headline": "A fixed fee doubles as a share of sales when the ticket halves; a share of sales does not: usage on a $5 purchase is two cents or less.",
    "columns": [
     "Yuno all-in at 450,000 transactions a month",
     "$5 median ticket",
@@ -911,9 +911,9 @@
     ],
     [
      "Yuno a month (platform fee plus usage)",
-     "$12.8K",
-     "$18.8K",
-     "$24.0K"
+     "$14.3K",
+     "$21.0K",
+     "$26.0K"
     ],
     [
      {
@@ -921,29 +921,29 @@
       "bold": true
      },
      {
-      "text": "0.57%",
+      "text": "0.63%",
       "bold": true
      },
      {
-      "text": "0.42%",
+      "text": "0.47%",
       "bold": true
      },
      {
-      "text": "0.36%",
+      "text": "0.39%",
       "bold": true
      }
     ],
     [
      "Yuno per successful transaction, all-in",
-     "$0.028",
-     "$0.042",
-     "$0.053"
+     "$0.032",
+     "$0.047",
+     "$0.058"
     ],
     [
-     "Marginal usage per transaction by band (30 / 25 / 20 bps)",
-     "$0.015 / $0.0125 / $0.010",
-     "$0.030 / $0.025 / $0.020",
-     "$0.045 / $0.0375 / $0.030"
+     "Marginal usage per transaction by band (40 / 30 / 20 / 10 bps)",
+     "$0.020 / $0.015 / $0.010 / $0.005",
+     "$0.040 / $0.030 / $0.020 / $0.010",
+     "$0.060 / $0.045 / $0.030 / $0.015"
     ],
     [
      "A fixed $0.05 per transaction, as a share of sales",
@@ -961,12 +961,12 @@
      "At launch, 50,000 transactions a month: Yuno all-in",
      "$7.5K · 3.00% of sales",
      "$7.5K · 1.50%",
-     "$8.3K · 1.10%"
+     "$8.5K · 1.13%"
     ]
    ],
    "note": "The platform fee is the one fixed element, so at launch and a $5 ticket it is 3.00% of sales; the structure pays off as volume ramps. Yuno business-case model, 15 Oct 2026; tickets: Carry1st, Cordel, Oct 2026 (estimate).",
    "source": "Yuno business-case model (bc_model.xlsx), Pricing and Sensitivity sheets, 15 Oct 2026. Ticket profile: Carry1st, Cordel, Oct 2026, estimate.",
-   "notes": "Pricing has to work for small purchases, so here is the same 450,000 transactions at three tickets. A fixed fee is blind to the ticket: five cents is 0.5% of a $10 sale and 1% of a $5 sale, ten cents twice that. Yuno's usage is a share of what you sell, so on a $5 purchase the marginal cost is one to one and a half cents, and all-in at run rate 0.57% of sales. We are upfront about the one fixed element: at launch volume and a $5 ticket the platform fee alone is 3% of sales, and the structure earns its keep as volume ramps rather than in month one."
+   "notes": "Pricing has to work for small purchases, so here is the same 450,000 transactions at three tickets. A fixed fee is blind to the ticket: five cents is 0.5% of a $10 sale and 1% of a $5 sale, ten cents twice that. Yuno's usage is a share of what you sell, so on a $5 purchase the marginal cost is one and a half to two cents, and all-in at run rate 0.63% of sales. We are upfront about the one fixed element: at launch volume and a $5 ticket the platform fee alone is 3% of sales, and the structure earns its keep as volume ramps rather than in month one."
   },
   {
    "id": "d06",
@@ -990,7 +990,7 @@
    "type": "pricing_cards",
    "kicker": "PROPOSAL",
    "headline": "One platform fee covering the first $500K of monthly sales, then a share of sales that falls as Carry1st grows.",
-   "subline": "$7,500 a month covering the first $500K of monthly sales, plus a share of the sales above it: $18,750 a month at 450,000 transactions, 0.42% of sales.",
+   "subline": "$7,500 a month covering the first $500K of monthly sales, plus a share of the sales above it: $21,000 a month at 450,000 transactions, 0.47% of sales.",
    "left": {
     "title": "TRANSACTION FEE",
     "sub": "A share of the month's sales above the included block, pooled across the five markets",
@@ -1002,18 +1002,23 @@
      },
      {
       "label": "TRANCHE 1",
-      "range": "$500K to $3M",
-      "rate": "0.30%"
+      "range": "$500K to $2M",
+      "rate": "0.40%"
      },
      {
       "label": "TRANCHE 2",
-      "range": "$3M to $6M",
-      "rate": "0.25%"
+      "range": "$2M to $5M",
+      "rate": "0.30%"
      },
      {
       "label": "TRANCHE 3",
-      "range": "Above $6M",
+      "range": "$5M to $10M",
       "rate": "0.20%"
+     },
+     {
+      "label": "TRANCHE 4",
+      "range": "Above $10M",
+      "rate": "0.10%"
      }
     ],
     "note": "No setup fee, no fixed amount per transaction. Only successful transactions count: declines are not billed. Each tranche applies only to the volume inside it."
@@ -1106,48 +1111,48 @@
      [
       "Usage · tranche 1",
       "$0",
-      "$4,500",
-      "$7,500"
+      "$6,000",
+      "$6,000"
      ],
      [
       "Usage · tranche 2",
       "$0",
       "$0",
-      "$3,750"
+      "$7,500"
      ],
      {
       "bold": true,
       "cells": [
        "Total a month",
        "$7,500",
-       "$12,000",
-       "$18,750"
+       "$13,500",
+       "$21,000"
       ]
      },
      [
       "Total a year",
       "$90,000",
-      "$144,000",
-      "$225,000"
+      "$162,000",
+      "$252,000"
      ],
      [
       "Share of sales",
       "1.50%",
-      "0.60%",
-      "0.42%"
+      "0.68%",
+      "0.47%"
      ],
      [
       "Per successful transaction",
       "$0.150",
-      "$0.060",
-      "$0.042"
+      "$0.068",
+      "$0.047"
      ]
     ],
-    "callout": "At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 0.42% of sales, falling as volume grows.",
-    "paragraph": "Usage on a $5 purchase: $0.015 in tranche 1, $0.010 in tranche 3. A fixed fee stays the same whatever the ticket."
+    "callout": "At launch Carry1st pays the platform fee and nothing per transaction. At the run rate the all-in cost is 0.47% of sales, falling as volume grows.",
+    "paragraph": "Usage on a $5 purchase: $0.020 in tranche 1, $0.005 in tranche 4. A fixed fee stays the same whatever the ticket. The base case returns 2.3x this cost at run rate."
    },
    "source": "Platform fee billed annually. Usage billed monthly in arrears on successful transactions, net 30. Rates locked, tranches reviewed annually as volume grows. All figures in USD.",
-   "notes": "The proposal in one slide. A flat platform fee of $7,500 a month that already covers the first $500K of monthly sales, and above that a share of what you sell: 30 basis points to $3M, 25 to $6M, 20 above, each band on the volume inside it, only on approved payments, never a fee per transaction. At launch you pay the platform fee and nothing else; at the $4.5M run rate the all-in cost is $18,750 a month, 0.42% of sales, about four cents on a $10 purchase. Orchestration, smart routing, Monitors, the vault, the dashboard and a dedicated team are inside the platform fee; network tokens and 3DS are billed on usage and quoted separately."
+   "notes": "The proposal in one slide. A flat platform fee of $7,500 a month that already covers the first $500K of monthly sales, and above that a share of what you sell: 40 basis points to $2M, 30 to $5M, 20 to $10M, 10 above, each band on the volume inside it, only on approved payments, never a fee per transaction. At launch you pay the platform fee and nothing else; at the $4.5M run rate the all-in cost is $21,000 a month, 0.47% of sales, under five cents on a $10 purchase. Orchestration, smart routing, Monitors, the vault, the dashboard and a dedicated team are inside the platform fee; network tokens and 3DS are billed on usage and quoted separately."
   },
   {
    "id": "onus",

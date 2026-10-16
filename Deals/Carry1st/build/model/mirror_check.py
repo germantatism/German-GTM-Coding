@@ -11,9 +11,10 @@ def run(INP):
         incl = min(tpv, INP["incl_tpv"])
         t1 = max(0, min(tpv, INP["t1_up"]) - max(0, incl))
         t2 = max(0, min(tpv, INP["t2_up"]) - max(INP["t1_up"], incl))
-        t3 = max(0, tpv - max(INP["t2_up"], incl))
-        usage = t1 * INP["t1"] + t2 * INP["t2"] + t3 * INP["t3"]
-        return dict(incl=incl, t1=t1, t2=t2, t3=t3, usage=usage, pf=INP["pf"], total=usage + INP["pf"])
+        t3 = max(0, min(tpv, INP["t3_up"]) - max(INP["t2_up"], incl))
+        t4 = max(0, tpv - max(INP["t3_up"], incl))
+        usage = t1 * INP["t1"] + t2 * INP["t2"] + t3 * INP["t3"] + t4 * INP["t4"]
+        return dict(incl=incl, t1=t1, t2=t2, t3=t3, t4=t4, usage=usage, pf=INP["pf"], total=usage + INP["pf"])
 
     def l4(s):
         return s["integ"] * s["weeks"] * INP["wk_cost"] * (1 + s["maint"] * INP["horizon"] / 12) / INP["horizon"]
@@ -43,7 +44,7 @@ def run(INP):
                     l1=l1, att=att, l2g=l2g, l2c=l2c, l3g=l3g, l3c=l3c, l4=L4, gross_c=gross_c, gross_g=gross_g,
                     net_c=gross_c - ycost, net_g=gross_g - ycost,
                     b_after_k=(b_cost - l2c - l3c - L4) / tpv * 1000, delta_k=a_cost / tpv * 1000 - (b_cost - l2c - l3c - L4) / tpv * 1000,
-                    roi=gross_c / ycost, incl=y["incl"], t1=y["t1"], t2=y["t2"], t3=y["t3"])
+                    roi=gross_c / ycost, incl=y["incl"], t1=y["t1"], t2=y["t2"], t3=y["t3"], t4=y["t4"])
 
     out = {"inputs": INP, "scenarios": SCEN, "model": {}, "breakeven": {}, "ramp": {}, "ramp_credit": {}, "pricing": {}, "sensitivity": {}}
     for sn, s in SCEN.items():
@@ -129,10 +130,10 @@ out_alt2 = run(alt2)
 json.dump(out_alt2, open(BASE + "model_numbers_alt_step2m.json", "w"), indent=1, default=float)
 
 INP = out["inputs"]
-print(f"=== pricing: platform ${INP['pf']:,.0f} incl. first ${INP['incl_tpv']:,.0f} Net TPV; ladder {INP['t1']*1e4:.0f}/{INP['t2']*1e4:.0f}/{INP['t3']*1e4:.0f} bps, bands ${INP['t1_up']:,.0f} / ${INP['t2_up']:,.0f} ===")
+print(f"=== pricing: platform ${INP['pf']:,.0f} incl. first ${INP['incl_tpv']:,.0f} Net TPV; ladder {INP['t1']*1e4:.0f}/{INP['t2']*1e4:.0f}/{INP['t3']*1e4:.0f}/{INP['t4']*1e4:.0f} bps, bands ${INP['t1_up']:,.0f} / ${INP['t2_up']:,.0f} / ${INP['t3_up']:,.0f} ===")
 for tx in INP["tiers"]:
     p = out["pricing"]["avg"][str(tx)]
-    print(f"{tx:>8,} tx  TPV ${p['tpv']:>12,.0f}  usage ${p['usage']:>8,.0f} (t1 {p['t1']:,.0f} t2 {p['t2']:,.0f} t3 {p['t3']:,.0f})  total ${p['total']:>9,.0f}  {p['pct']*100:5.3f}% TPV  ${p['per_tx']:.4f}/tx  vs $0.05 {p['fixA_pct']*100:.2f}%  $0.10 {p['fixB_pct']*100:.2f}%")
+    print(f"{tx:>8,} tx  TPV ${p['tpv']:>12,.0f}  usage ${p['usage']:>8,.0f} (t1 {p['t1']:,.0f} t2 {p['t2']:,.0f} t3 {p['t3']:,.0f} t4 {p['t4']:,.0f})  total ${p['total']:>9,.0f}  {p['pct']*100:5.3f}% TPV  ${p['per_tx']:.4f}/tx  vs $0.05 {p['fixA_pct']*100:.2f}%  $0.10 {p['fixB_pct']*100:.2f}%")
 print("=== median ticket $5 ===")
 for tx in INP["tiers"]:
     p = out["pricing"]["med"][str(tx)]
@@ -148,4 +149,16 @@ print("=== ALT (included block ${:,.0f}) ===".format(ALT_INCL_TPV))
 for tx in INP["tiers"]:
     p = out_alt["pricing"]["avg"][str(tx)]; mb = out_alt["model"]["Base"][str(tx)]
     print(f"{tx:>8,} tx  Yuno ${p['total']:>8,.0f} ({p['pct']*100:.3f}%, ${p['per_tx']:.4f}/tx)  base NET_c {mb['net_c']:>8,.0f}")
+def _ref():
+    import copy as _c
+    r = run(_c.deepcopy(INP0))
+    return r
+# German's v4 reference table: monthly volume -> (pay-ins, total a month)
+REF = {500_000: (0, 7_500), 2_000_000: (6_000, 13_500), 4_500_000: (13_500, 21_000), 5_000_000: (15_000, 22_500), 10_000_000: (25_000, 32_500), 20_000_000: (35_000, 42_500)}
+def _y(tpv, P=INP0):
+    incl = min(tpv, P["incl_tpv"]); t1 = max(0, min(tpv, P["t1_up"]) - max(0, incl)); t2 = max(0, min(tpv, P["t2_up"]) - max(P["t1_up"], incl))
+    t3 = max(0, min(tpv, P["t3_up"]) - max(P["t2_up"], incl)); t4 = max(0, tpv - max(P["t3_up"], incl))
+    u = t1 * P["t1"] + t2 * P["t2"] + t3 * P["t3"] + t4 * P["t4"]; return u, u + P["pf"]
+bad = [(v, _y(v), e) for v, e in REF.items() if abs(_y(v)[0] - e[0]) > 1e-6 or abs(_y(v)[1] - e[1]) > 1e-6]
+print("v4 reference table check:", "OK" if not bad else f"MISMATCH {bad}")
 print("ALT break-even:", out_alt["breakeven"], "payback:", {k: v["payback"] for k, v in out_alt["ramp"].items()})

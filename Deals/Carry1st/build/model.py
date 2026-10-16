@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Carry1st Shop LatAm: pricing arithmetic v3 (15-oct-2026). Platform fee $7,500 flat that INCLUDES the first $500K of monthly Net TPV (German; $1M kept as pocket concession)
+"""Carry1st Shop LatAm: pricing arithmetic v4 (15-oct-2026, German, authoritative). Platform fee $7,500 flat that INCLUDES the first $500K of monthly Net TPV (German; $1M kept as pocket concession)
 (Justo: give them volume for free, but in TPV, never in trx),
 pay-ins billed in bps on monthly Net TPV (successful tx only, no declines / chargebacks), tranches (ladder).
 Client inputs (Cordel, call w/ JP 15-oct-2026): $4-5M/month LatAm TPV by end-2027 (to be aligned), avg ticket ~$10, median ~$5.
 Zones (green/yellow/red) must be confirmed in Finance's Pricing Calculator for V3 x gaming margin band before sending."""
 PLATFORM = 7_500
 INCLUDED = 500_000                        # monthly Net TPV included in the platform fee (single month, no rollover)
-LADDER = [(INCLUDED, 0.0), (3_000_000, 0.0030), (6_000_000, 0.0025), (float("inf"), 0.0020)]   # (upper bound, rate); 0 / 30 / 25 / 20 bps
+# v4 (German, 15 Oct 2026)
+LADDER = [(INCLUDED, 0.0), (2_000_000, 0.0040), (5_000_000, 0.0030), (10_000_000, 0.0020), (float("inf"), 0.0010)]   # (upper bound, rate); 0 / 40 / 30 / 20 / 10 bps
+LADDER_V3 = [(INCLUDED, 0.0), (3_000_000, 0.0030), (6_000_000, 0.0025), (float("inf"), 0.0020)]   # v3, superseded, kept for reference
 LADDER_V1 = [(2_000_000, 0.0030), (5_000_000, 0.0025), (float("inf"), 0.0020)]              # v1, no allotment, kept for reference
 AVG_TICKET, MEDIAN_TICKET = 10.0, 5.0
 CREDIT, CREDIT_MONTHS = 3_750, 3          # optional launch lever: Dec-2026 to Feb-2027 (billing start 1-Dec-2026)
@@ -29,7 +31,7 @@ def bps(x, tpv):
 if __name__ == "__main__":
     print(f"platform ${PLATFORM:,} incl. first ${INCLUDED/1e6:g}M TPV | ladder " + " / ".join(f"{r*1e4:.0f} bps to ${hi/1e6:g}M" if hi != float('inf') else f"{r*1e4:.0f} bps above" for hi, r in LADDER[1:]))
     print(f"{'TPV/mo':>9} {'trx@$10':>8} {'usage':>9} {'eff bps':>8} {'all-in':>9} {'all-in bps':>10} {'$/avg trx':>10} {'$/median':>9} {'annual':>11}")
-    for tpv in (500_000, 1_000_000, 2_000_000, 3_000_000, 4_000_000, 4_500_000, 5_000_000, 8_000_000, 10_000_000):
+    for tpv in (500_000, 1_000_000, 2_000_000, 3_000_000, 4_000_000, 4_500_000, 5_000_000, 8_000_000, 10_000_000, 20_000_000):
         u, t = monthly(tpv)
         trx = tpv / AVG_TICKET
         print(f"{tpv/1e6:>8.1f}M {trx:>8,.0f} {u:>9,.0f} {bps(u,tpv):>8.1f} {t:>9,.0f} {bps(t,tpv):>10.1f} {t/trx:>10.4f} {u/tpv*MEDIAN_TICKET:>9.4f} {t*12:>11,.0f}")

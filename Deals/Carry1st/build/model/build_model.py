@@ -2,7 +2,7 @@
 """
 Carry1st LatAm Shop launch: business case model (Option A EBANX direct vs Option B EBANX + dLocal through Yuno).
 Builds bc_model.xlsx with openpyxl. Every output is a formula; every assumption lives on the Inputs sheet and comes from params.py.
-Pricing v2 (Justo, 15 Oct 2026): platform fee flat, includes the first X of monthly Net TPV; usage in bps on Net TPV above it, ladder.
+Pricing v4 (German, 15 Oct 2026): platform fee flat, includes the first X of monthly Net TPV; usage in bps on Net TPV above it, ladder.
 Run: python3 build_model.py
 """
 from openpyxl import Workbook
@@ -166,14 +166,16 @@ inp("wk_cost", "Loaded cost per engineer-week", "USD", INP["wk_cost"], source="E
 inp("maint", "Annual maintenance, % of build cost per integration", "%", *S("maint"), source="Yuno estimate; 20 to 30% upkeep is the convention used in Yuno business cases (Oct 2026).", owner="", fmt=FMT_PCT, estimate=True)
 inp("horizon", "Horizon to spread one-time engineering (months)", "months", INP["horizon"], source="Yuno modeling choice: build cost plus maintenance spread over 24 months, shown as a monthly equivalent.", owner="", fmt="0")
 
-section("7 · Yuno cost line (the proposal, pricing v3: bps on monthly Net TPV)")
+section("7 · Yuno cost line (the proposal, pricing v4: bps on monthly Net TPV)")
 inp("pf", "Platform fee a month (flat)", "USD", INP["pf"], source="Justo Benetti, 15 Oct 2026: $7,500 a month flat platform fee that includes a block of monthly Net TPV. Net TPV = successful transactions only, no declines, no chargebacks.", owner="Justo · Finance (approval pending)", fmt=FMT_USD)
-inp("incl_tpv", "Monthly Net TPV included in the platform fee (single month, no rollover)", "USD", INP["incl_tpv"], source=f"Pricing v3, German's decision, 15 Oct 2026. Justo's rule: pay-ins are billed in bps on TPV, so the included block is in TPV, never in transactions (units must match). At a $10 ticket this block is about {INP['incl_tpv']/INP['ticket']:,.0f} transactions; at $5, about {INP['incl_tpv']/INP['median']:,.0f}.", owner="Justo · Finance", fmt=FMT_USD)
+inp("incl_tpv", "Monthly Net TPV included in the platform fee (single month, no rollover)", "USD", INP["incl_tpv"], source=f"Pricing v4, German's decision, 15 Oct 2026. Justo's rule: pay-ins are billed in bps on TPV, so the included block is in TPV, never in transactions (units must match). At a $10 ticket this block is about {INP['incl_tpv']/INP['ticket']:,.0f} transactions; at $5, about {INP['incl_tpv']/INP['median']:,.0f}.", owner="Justo · Finance", fmt=FMT_USD)
 inp("t1_up", "Tranche 1 · monthly Net TPV ceiling", "USD", INP["t1_up"], source="Proposal (ladder: each tranche applies only to the Net TPV inside it).", owner="Justo", fmt=FMT_USD)
-inp("t1_rate", "Tranche 1 · usage rate on Net TPV above the included block", "%", INP["t1"], source="Proposal: 30 bps. At a $10 ticket this is $0.030 per successful transaction; at $5, $0.015.", owner="Justo · Finance", fmt=FMT_PCT2)
+inp("t1_rate", "Tranche 1 · usage rate on Net TPV above the included block", "%", INP["t1"], source="Proposal: 40 bps. At a $10 ticket this is $0.040 per successful transaction; at $5, $0.020.", owner="Justo · Finance", fmt=FMT_PCT2)
 inp("t2_up", "Tranche 2 · monthly Net TPV ceiling", "USD", INP["t2_up"], source="Proposal.", owner="Justo", fmt=FMT_USD)
-inp("t2_rate", "Tranche 2 · usage rate", "%", INP["t2"], source="Proposal: 25 bps. $0.025 per transaction at a $10 ticket; $0.0125 at $5.", owner="Justo · Finance", fmt=FMT_PCT2)
-inp("t3_rate", "Tranche 3 · usage rate above tranche 2", "%", INP["t3"], source="Proposal: 20 bps. $0.020 per transaction at a $10 ticket; $0.010 at $5.", owner="Justo · Finance", fmt=FMT_PCT2)
+inp("t2_rate", "Tranche 2 · usage rate", "%", INP["t2"], source="Proposal: 30 bps. $0.030 per transaction at a $10 ticket; $0.015 at $5.", owner="Justo · Finance", fmt=FMT_PCT2)
+inp("t3_up", "Tranche 3 · monthly Net TPV ceiling", "USD", INP["t3_up"], source="Proposal.", owner="Justo", fmt=FMT_USD)
+inp("t3_rate", "Tranche 3 · usage rate", "%", INP["t3"], source="Proposal: 20 bps. $0.020 per transaction at a $10 ticket; $0.010 at $5.", owner="Justo · Finance", fmt=FMT_PCT2)
+inp("t4_rate", "Tranche 4 · usage rate above tranche 3", "%", INP["t4"], source="Proposal: 10 bps. $0.010 per transaction at a $10 ticket; $0.005 at $5.", owner="Justo · Finance", fmt=FMT_PCT2)
 inp("fixA", "Hypothetical fixed fee A (comparison only)", "USD/tx", INP["fixA"], source="Illustrative fixed per-transaction fee for the small-ticket argument. Not a Yuno quote.", owner="", fmt=FMT_USD3)
 inp("fixB", "Hypothetical fixed fee B (comparison only)", "USD/tx", INP["fixB"], source="Illustrative fixed per-transaction fee for the small-ticket argument. Not a Yuno quote.", owner="", fmt=FMT_USD3)
 
@@ -209,11 +211,15 @@ def f_t2(tpv, incl):
 
 
 def f_t3(tpv, incl):
-    return f"MAX(0,{tpv}-MAX({I('t2_up')},{incl}))"
+    return f"MAX(0,MIN({tpv},{I('t3_up')})-MAX({I('t2_up')},{incl}))"
+
+
+def f_t4(tpv, incl):
+    return f"MAX(0,{tpv}-MAX({I('t3_up')},{incl}))"
 
 
 def f_yuno(tpv, incl):
-    return f"={I('pf')}+{f_t1(tpv, incl)}*{I('t1_rate')}+{f_t2(tpv, incl)}*{I('t2_rate')}+{f_t3(tpv, incl)}*{I('t3_rate')}"
+    return f"={I('pf')}+{f_t1(tpv, incl)}*{I('t1_rate')}+{f_t2(tpv, incl)}*{I('t2_rate')}+{f_t3(tpv, incl)}*{I('t3_rate')}+{f_t4(tpv, incl)}*{I('t4_rate')}"
 
 
 def f_optb_pct(tpv, yuno, sc):
@@ -273,6 +279,7 @@ rows_spec = [
     ("t1", "Yuno · billable Net TPV in tranche 1", FMT_USD, False),
     ("t2", "Yuno · billable Net TPV in tranche 2", FMT_USD, False),
     ("t3", "Yuno · billable Net TPV in tranche 3", FMT_USD, False),
+    ("t4", "Yuno · billable Net TPV in tranche 4", FMT_USD, False),
     ("usage", "Yuno · usage fee", FMT_USD, False),
     ("pf", "Yuno · platform fee", FMT_USD, False),
     ("yuno", "Yuno total cost a month", FMT_USD, True),
@@ -329,7 +336,8 @@ for (c, sc_name, tk) in cols:
     F["t1"] = "=" + f_t1(cell('tpv'), cell('incl'))
     F["t2"] = "=" + f_t2(cell('tpv'), cell('incl'))
     F["t3"] = "=" + f_t3(cell('tpv'), cell('incl'))
-    F["usage"] = f"={cell('t1')}*{I('t1_rate', sc)}+{cell('t2')}*{I('t2_rate', sc)}+{cell('t3')}*{I('t3_rate', sc)}"
+    F["t4"] = "=" + f_t4(cell('tpv'), cell('incl'))
+    F["usage"] = f"={cell('t1')}*{I('t1_rate', sc)}+{cell('t2')}*{I('t2_rate', sc)}+{cell('t3')}*{I('t3_rate', sc)}+{cell('t4')}*{I('t4_rate', sc)}"
     F["pf"] = f"={I('pf', sc)}"
     F["yuno"] = f"={cell('usage')}+{cell('pf')}"
     F["yuno_pct"] = f"={cell('yuno')}/{cell('tpv')}"
@@ -380,14 +388,18 @@ terms = [("Platform fee a month (flat)", f"={I('pf')}", FMT_USD),
          ("Tranche 1 · rate", f"={I('t1_rate')}", FMT_PCT2),
          ("Tranche 2 · Net TPV ceiling", f"={I('t2_up')}", FMT_USD),
          ("Tranche 2 · rate", f"={I('t2_rate')}", FMT_PCT2),
-         ("Tranche 3 · rate above tranche 2", f"={I('t3_rate')}", FMT_PCT2),
+         ("Tranche 3 · Net TPV ceiling", f"={I('t3_up')}", FMT_USD),
+         ("Tranche 3 · rate", f"={I('t3_rate')}", FMT_PCT2),
+         ("Tranche 4 · rate above tranche 3", f"={I('t4_rate')}", FMT_PCT2),
          ("Included block, transactions at the average ticket", f"={I('incl_tpv')}/{I('ticket')}", FMT_INT),
          ("Tranche 1 rate, $ per transaction at the average ticket", f"={I('t1_rate')}*{I('ticket')}", FMT_USD3),
          ("Tranche 2 rate, $ per transaction at the average ticket", f"={I('t2_rate')}*{I('ticket')}", FMT_USD3),
          ("Tranche 3 rate, $ per transaction at the average ticket", f"={I('t3_rate')}*{I('ticket')}", FMT_USD3),
+         ("Tranche 4 rate, $ per transaction at the average ticket", f"={I('t4_rate')}*{I('ticket')}", FMT_USD3),
          ("Tranche 1 rate, $ per transaction at the median ticket", f"={I('t1_rate')}*{I('median')}", FMT_USD3),
          ("Tranche 2 rate, $ per transaction at the median ticket", f"={I('t2_rate')}*{I('median')}", FMT_USD3),
-         ("Tranche 3 rate, $ per transaction at the median ticket", f"={I('t3_rate')}*{I('median')}", FMT_USD3)]
+         ("Tranche 3 rate, $ per transaction at the median ticket", f"={I('t3_rate')}*{I('median')}", FMT_USD3),
+         ("Tranche 4 rate, $ per transaction at the median ticket", f"={I('t4_rate')}*{I('median')}", FMT_USD3)]
 for i, (lbl, f, fmt) in enumerate(terms):
     put(ws_pr, P + i, 1, lbl, F_LBL)
     put(ws_pr, P + i, 2, f, F_LINK, fmt, border=True)
@@ -406,6 +418,7 @@ def pricing_block(start_row, ticket_key, title):
              ("t1", "Billable Net TPV · tranche 1", FMT_USD),
              ("t2", "Billable Net TPV · tranche 2", FMT_USD),
              ("t3", "Billable Net TPV · tranche 3", FMT_USD),
+             ("t4", "Billable Net TPV · tranche 4", FMT_USD),
              ("usage", "Usage fee", FMT_USD),
              ("pf", "Platform fee", FMT_USD),
              ("total", "Yuno total a month", FMT_USD),
@@ -434,7 +447,8 @@ def pricing_block(start_row, ticket_key, title):
             "t1": "=" + f_t1(c('tpv'), c('incl')),
             "t2": "=" + f_t2(c('tpv'), c('incl')),
             "t3": "=" + f_t3(c('tpv'), c('incl')),
-            "usage": f"={c('t1')}*{I('t1_rate')}+{c('t2')}*{I('t2_rate')}+{c('t3')}*{I('t3_rate')}",
+            "t4": "=" + f_t4(c('tpv'), c('incl')),
+            "usage": f"={c('t1')}*{I('t1_rate')}+{c('t2')}*{I('t2_rate')}+{c('t3')}*{I('t3_rate')}+{c('t4')}*{I('t4_rate')}",
             "pf": f"={I('pf')}",
             "total": f"={c('usage')}+{c('pf')}",
             "total_y": f"={c('total')}*12",
@@ -696,7 +710,7 @@ for j, t in enumerate(["#", "Source (publisher, title, date)", "What it supports
     hdr(ws_so, 4, 1 + j, t)
 sources = [
     ("Carry1st, discovery call with Cordel and Fatih, 15 Oct 2026 (German Tatis's summary)", "Average ticket $10, median $5; $4 to 5M a month in LatAm by end 2027 (Cordel's estimate, not aligned internally); Brazil first, then AR, MX, BO, CO; Black Friday 27 Nov 2026.", "internal"),
-    ("Justo Benetti (Yuno CRO) and German Tatis, pricing v3 and business-case brief, 15 Oct 2026", "$7,500 a month flat platform fee including the first block of monthly Net TPV; usage in bps on Net TPV above it, ladder 30 / 25 / 20 bps; levers MDR 25/50/75 bps; numbers tied to a low transaction count.", "internal"),
+    ("Justo Benetti (Yuno CRO) and German Tatis, pricing v4 and business-case brief, 15 Oct 2026", "$7,500 a month flat platform fee including the first $500K of monthly Net TPV; usage in bps on Net TPV above it, ladder 40 / 30 / 20 / 10 bps (steps at $2M, $5M, $10M); levers MDR 25/50/75 bps; numbers tied to a low transaction count.", "internal"),
     ("FXC Intelligence, 'dLocal earnings Q4 2025', 26 Mar 2026 (on dLocal's results release of 18 Mar 2026)", "dLocal FY2025 TPV about $41B, revenue about $1.1B; revenue / TPV 2.68% in 2025 vs 2.92% in 2024 (blended pay-ins and pay-outs, all merchant sizes). Low anchor of the 3 to 6% MoR range.", "https://www.fxcintel.com/research/reports/ct-dlocal-earnings-q4-2025"),
     ("dLocal, 'dLocal Reports 2025 Fourth Quarter Financial Results', 18 Mar 2026", "Primary release behind the figures above (Q4 2025 TPV $13.1B; gross profit over TPV 0.88% in Q4 2025).", "https://dlocal.gcs-web.com/news-releases/news-release-details/dlocal-reports-2025-fourth-quarter-financial-results"),
     ("Capterra, EBANX pricing and reviews (verified review, Nov 2021)", "One merchant reports about 5% per transaction plus a $200 monthly fee; EBANX publishes no rate card. High anchor of the MoR range (vendor review, dated).", "https://www.capterra.com/p/178524/Online-Payments-in-Latin-America/pricing/"),

@@ -1399,7 +1399,7 @@ def r_pricing_cards(deck, s, tag, n, footer):
         while rs > 9 and text_width(rate, rs, True) > cw * 0.38: rs -= 1
         sb.text(cx + cw * 0.6, cy - 1, cw * 0.4, rs * 1.3, rate, size=rs, bold=True, color=BLUE, align='END', ls=100)
         rh = text_h(r.get('range') or '', 7.5, cw * 0.62, 108); sb.text(cx, cy + 9, cw * 0.62, rh, r.get('range') or '', size=7.5, color=INK, ls=108)
-        cy += max(9 + rh, rs * 1.25) + 3
+        cy += max(9 + rh, rs * 1.25) + (3 if len(L.get('rows', [])) <= 4 else 1)   # tighter pitch for a fifth row (pricing v4)
     if L.get('note'):
         nh = text_h(L['note'], 7, cw - 14, 112) + 12
         ny = y0 + H - pad - nh
