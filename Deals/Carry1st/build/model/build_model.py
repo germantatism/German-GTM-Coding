@@ -46,6 +46,7 @@ ws_pr = wb.create_sheet("Pricing")
 ws_md = wb.create_sheet("Model")
 ws_be = wb.create_sheet("BreakEven")
 ws_rp = wb.create_sheet("Ramp")
+ws_tm = wb.create_sheet("TimeToMarket")
 ws_se = wb.create_sheet("Sensitivity")
 ws_so = wb.create_sheet("Sources")
 
@@ -157,9 +158,9 @@ inp("appr", "Baseline approval rate on a single MoR route (blended methods)", "%
 inp("uplift", "Approval uplift on attempted volume (soft-decline retries, outage failover, second-provider retry)", "pp", *S("uplift"), source="Yuno estimate. Ceiling = Yuno published 7% authorization uplift (y.uno); the optimistic case stays below it. Soft declines are 80 to 90% of failed payments (Paddle); 20 to 40% of soft declines are recoverable with retries (vendor benchmarks, 2025). On a 75% baseline that supports 4 to 8 points; the model uses 1.5 / 3 / 5.", owner="Yuno (routing data after launch)", fmt=FMT_PCT, estimate=True)
 
 section("5 · Lever 3 · Local-method coverage uplift")
-inp("local", "Incremental GMV from local methods the single-provider route lacks, % of TPV", "%", *S("local"), source="ESTIMATE. Methods carried through Yuno via dLocal and not on the EBANX connection (docs.y.uno Payment Type list, 14 Oct 2026): Argentina MODO, Rapipago, Pago Facil; Colombia Bre-B, Nequi, PSE, Efecty; Bolivia Multipago, Pago al Paso; Mexico CoDi, Paynet, 7-Eleven. Context: Pix = 42% of Brazil e-commerce value in 2025 (Worldpay GPR 2026 via Poder360); account-to-account 15% and wallets 39% of Argentina e-commerce value 2025 (GPR 2026 via LetsMoney); QR = 36% of payments in Bolivia in 2025 (Banco Central de Bolivia via Los Tiempos, Jun 2026). EBANX direct coverage per country TO VALIDATE against its quote.", owner="German · research agent (coverage)", fmt=FMT_PCT, estimate=True)
+inp("local", "Incremental GMV from local methods the single-provider route lacks, % of TPV", "%", *S("local"), source="ESTIMATE, +2 / +4 / +6% of sales (German, 15 Oct 2026: LatAm is APM-driven). Basis: Pix is 42% of online purchases in Brazil, PSE 64% of e-commerce transactions in Colombia, wallets 46% of e-commerce in Argentina (German, 15 Oct 2026). Through Yuno the checkout adds the methods a single provider does not carry (MODO and interoperable QR in Argentina, Bre-B and Nequi in Colombia, cards and QR in Bolivia) and optimizes the method mix per market. Methods carried through Yuno via dLocal and not on the EBANX connection (docs.y.uno Payment Type list, 14 Oct 2026): Argentina MODO, Rapipago, Pago Facil; Colombia Bre-B, Nequi, PSE, Efecty; Bolivia Multipago, Pago al Paso; Mexico CoDi, Paynet, 7-Eleven. Context: Pix = 42% of Brazil e-commerce value in 2025 (Worldpay GPR 2026 via Poder360); account-to-account 15% and wallets 39% of Argentina e-commerce value 2025 (GPR 2026 via LetsMoney); QR = 36% of payments in Bolivia in 2025 (Banco Central de Bolivia via Los Tiempos, Jun 2026). EBANX direct coverage per country TO VALIDATE against its quote.", owner="German · research agent (coverage)", fmt=FMT_PCT, estimate=True)
 
-section("6 · Lever 4 (deck L2) · Integrations avoided: per-market EBANX work, later direct integrations, maintenance")
+section("6 · Lever 4 (deck L5) · Integrations avoided: per-market EBANX work, later direct integrations, maintenance")
 inp("markets", "LatAm markets EBANX direct must enable, test and certify one by one", "count", INP["markets"], source="Carry1st launch plan, discovery call 15 Oct 2026: Brazil, Argentina, Mexico, Colombia, Bolivia. EBANX enables each country on the account during onboarding (not self-serve), each country must pass sandbox tests before go-live, production needs an Integration Review (EBANX developer docs, read 15 Oct 2026). Through Yuno: one integration, ready for every market.", owner="Fatih (Carry1st tech)", fmt="0")
 inp("mkt_weeks", "Engineer-weeks per market on EBANX direct (country enablement, per-country sandbox tests and certification, local methods), one-time", "weeks", *S("mkt_weeks"), source="Yuno estimate. Per country: request fields, documents and local-method flows (Pix, OXXO, SPEI, PSE, Nequi, PagosNet), sandbox test suite, Integration Review, go-live checks. Gateway migration 2 to 4 weeks (mctaba.com) used as the anchor for a per-country scope.", owner="Fatih", fmt="0", estimate=True)
 inp("integ", "Later direct integrations avoided over the horizon (second MoR, local acquirer, new provider)", "count", *S("integ"), source="Yuno estimate. Option A needs a second direct integration for failover and leverage, then re-integration to local processors when Phase 2 (local entities) lands. Under Option B each is a connection already live on Yuno. The launch integration itself is not counted (both options need one).", owner="Fatih (Carry1st tech)", fmt="0", estimate=True)
@@ -185,7 +186,10 @@ inp("fixB", "Hypothetical fixed fee B (comparison only)", "USD/tx", INP["fixB"],
 section("8 · Ramp (for payback)")
 inp("ramp_m", "Ramp months, Dec 2026 (Black Friday launch) to Dec 2027", "months", INP["ramp_m"], source="Yuno ESTIMATE: linear ramp from tier 1 at launch to tier 4 by end 2027 (Cordel's run-rate date). Replace with Cordel's written projections by country.", owner="Cordel", fmt="0", estimate=True)
 
-section("9 · INTERNAL launch lever (switch, default 0 = off; delete this section before the file leaves Yuno)")
+section("9 · Lever 5 (deck L3) · Time to market: run rate reached sooner (2027 value, kept apart from the recurring levers)")
+inp("rr_m", "Through Yuno: months after Dec 2026 to reach the run rate (9 = Sep 2027, 6 = Jun 2027, 4 = Apr 2027), then flat", "months", *S("rr_m"), source="Yuno estimate. Through Yuno all five markets go live together on one integration, each with its local methods and more than one provider, so the Shop reaches Cordel's $4 to 5M a month (modelled $4.5M) by mid 2027. Going direct with EBANX, markets are enabled one by one, so the ramp runs linearly from tier 1 in Dec 2026 to tier 4 in Dec 2027 (the ramp months above). Value = extra GMV in 2027 x (take rate minus Option B all-in processing % at run rate). A one-off 2027 value, never added to the recurring a-year totals.", owner="Cordel (volumes by country) · Fatih (launch scope)", fmt="0", estimate=True)
+
+section("10 · INTERNAL launch lever (switch, default 0 = off; delete this section before the file leaves Yuno)")
 inp("credit_on", "Launch credit switch (1 = on, 0 = off)", "flag", INP["credit_on"], source="INTERNAL. Optional lever: a monthly credit against the platform fee for the first months after the 1 Dec 2026 billing start. Applies on the Ramp sheet only. Never on the customer slide.", owner="Justo · Finance", fmt="0")
 inp("credit", "Monthly credit against the platform fee when the switch is on", "USD", INP["credit"], source="INTERNAL. Credits are allowed against the platform fee only, for named months, written in the contract, no rollover.", owner="Justo · Finance", fmt=FMT_USD)
 inp("credit_months", "Months the credit applies (from the billing start)", "months", INP["credit_months"], source="INTERNAL. Dec 2026 to Feb 2027.", owner="Justo · Finance", fmt="0")
@@ -300,7 +304,7 @@ rows_spec = [
     ("l2c", "L2 · retries and routing · contribution", FMT_USD, False),
     ("l3g", "L3 · local methods · incremental GMV", FMT_USD, False),
     ("l3c", "L3 · local methods · contribution", FMT_USD, False),
-    ("l4", "L4 (deck L2) · integrations avoided: per-market EBANX work and later integrations over the horizon, plus maintenance, monthly", FMT_USD, False),
+    ("l4", "L4 (deck L5) · integrations avoided: per-market EBANX work and later integrations over the horizon, plus maintenance, monthly", FMT_USD, False),
     ("gross_c", "Gross benefit · contribution view", FMT_USD, True),
     ("gross_g", "Gross benefit · GMV view", FMT_USD, True),
     ("net_c", "Net benefit · contribution view (gross minus Yuno cost)", FMT_USD, True),
@@ -546,7 +550,7 @@ ws_be.freeze_panes = f"B{BE_TOP}"
 # RAMP (payback along Cordel's ramp; launch credit switch applies here only)
 # =====================================================================
 title_bar(ws_rp, "Ramp · month by month from Black Friday 2026 to the end-2027 run rate (linear ESTIMATE) and 12 months at run rate",
-          "Payback month = first month in which the cumulative net benefit (contribution view) is non-negative. The INTERNAL launch credit switch (Inputs section 9) applies on this sheet only; default off.", 20)
+          "Payback month = first month in which the cumulative net benefit (contribution view) is non-negative. The INTERNAL launch credit switch (Inputs section 10) applies on this sheet only; default off.", 20)
 ws_rp.column_dimensions["A"].width = 12
 for c in range(2, 21):
     ws_rp.column_dimensions[get_column_letter(c)].width = 13
@@ -609,6 +613,90 @@ for i, (sc_name, sc) in enumerate(SCEN_COLS.items()):
     mc4 = [cc for (cc, s, tk) in cols if s == sc_name and tk == "tier4"][0]
     put(ws_rp, r, 9, f"=Model!{get_column_letter(mc4)}{M['net_c_y']}", F_LINK, FMT_USD, border=True)
 put(ws_rp, 9, 1, "Ramp is a Yuno ESTIMATE (linear from tier 1 to tier 4 over the ramp months on Inputs). Replace the Transactions column with Cordel's written projections when they arrive.", F_NOTE)
+
+# =====================================================================
+# TIME TO MARKET (model L5, deck L3): extra 2027 sales from reaching the run rate sooner
+# =====================================================================
+title_bar(ws_tm, "Time to market · going direct (markets enabled one by one, run rate in Dec 2027) vs through Yuno (all five markets live together, run rate by mid 2027)",
+          "Monthly sales (Net TPV). Direct: linear from tier 1 in Dec 2026 to tier 4 in Dec 2027. Yuno: linear from tier 1 to tier 4 by the run-rate month on Inputs, then flat. Value = extra 2027 sales x (take rate minus Option B all-in % at run rate). One-off 2027 value, kept apart from the recurring levers.", 12)
+ws_tm.column_dimensions["A"].width = 30
+for c in range(2, 13):
+    ws_tm.column_dimensions[get_column_letter(c)].width = 14
+TM_TOP = 7
+hdr(ws_tm, TM_TOP - 1, 1, "Month")
+hdr(ws_tm, TM_TOP - 1, 2, "Months after Dec 2026")
+hdr(ws_tm, TM_TOP - 1, 3, "Going direct, sales")
+tm_cols = {}
+c0 = 4
+for sc_name in SCEN_COLS:
+    hdr(ws_tm, TM_TOP - 2, c0, sc_name, span=2, color=BLUEH if sc_name != "Base" else GREENH)
+    hdr(ws_tm, TM_TOP - 1, c0, "Through Yuno, sales")
+    hdr(ws_tm, TM_TOP - 1, c0 + 1, "Extra sales")
+    tm_cols[sc_name] = c0
+    c0 += 2
+gmv0 = f"{I('tier1')}*{I('ticket')}"
+gmv4 = f"{I('tier4')}*{I('ticket')}"
+for i, mlabel in enumerate(MONTHS):
+    r = TM_TOP + i
+    put(ws_tm, r, 1, mlabel, F_LBL)
+    put(ws_tm, r, 2, i, F_VAL, "0")
+    put(ws_tm, r, 3, f"={gmv0}+({gmv4}-{gmv0})*B{r}/({I('ramp_m')}-1)", F_VAL, FMT_USD)
+    for sc_name, sc in SCEN_COLS.items():
+        c = tm_cols[sc_name]
+        Ly = get_column_letter(c)
+        put(ws_tm, r, c, f"={gmv0}+({gmv4}-{gmv0})*MIN(B{r},{I('rr_m', sc)})/{I('rr_m', sc)}", F_VAL, FMT_USD)
+        put(ws_tm, r, c + 1, f"={Ly}{r}-C{r}", F_VAL_B, FMT_USD)
+TM_FIRST27, TM_LAST = TM_TOP + 1, TM_TOP + len(MONTHS) - 1
+rT2 = TM_LAST + 1
+put(ws_tm, rT2, 1, "Total 2027 (Jan to Dec)", F_LBL_B, fill=KPI)
+put(ws_tm, rT2, 3, f"=SUM(C{TM_FIRST27}:C{TM_LAST})", F_VAL_B, FMT_USD, fill=KPI)
+for sc_name in SCEN_COLS:
+    c = tm_cols[sc_name]
+    for k in range(2):
+        L = get_column_letter(c + k)
+        put(ws_tm, rT2, c + k, f"=SUM({L}{TM_FIRST27}:{L}{TM_LAST})", F_VAL_B, FMT_USD, fill=KPI)
+# scenario summary block
+TS = rT2 + 3
+hdr(ws_tm, TS - 1, 1, "Line")
+for j, sc_name in enumerate(SCEN_COLS):
+    hdr(ws_tm, TS - 1, 2 + j, sc_name, color=BLUEH if sc_name != "Base" else GREENH)
+TMR = {}
+tm_lines = [("rr_month", "Through Yuno: run-rate month", None),
+            ("extra", "Extra sales in 2027 (GMV)", FMT_USD),
+            ("b_pct", "Option B all-in processing, % of sales at run rate", FMT_PCT2),
+            ("margin", "Contribution per $1 of extra sales (take rate minus processing)", FMT_PCT2),
+            ("l5", "L5 (deck L3) · time to market, 2027 value from reaching run rate sooner", FMT_USD),
+            ("rec", "Recurring levers L1 to L4, a year at run rate (gross, contribution)", FMT_USD),
+            ("tot27", "2027 value including time to market (recurring + L5)", FMT_USD),
+            ("yuno_y", "Yuno cost a year at run rate", FMT_USD),
+            ("net_rec", "Net a year, recurring levers only", FMT_USD),
+            ("net27", "Net, 2027 value including time to market", FMT_USD),
+            ("x_rec", "Recurring levers / Yuno cost", FMT_X),
+            ("x27", "2027 value including time to market / Yuno cost", FMT_X)]
+for k, (key, lbl, fmt) in enumerate(tm_lines):
+    TMR[key] = TS + k
+    put(ws_tm, TS + k, 1, lbl, F_LBL_B if key in ("l5", "tot27", "net27") else F_LBL)
+for j, (sc_name, sc) in enumerate(SCEN_COLS.items()):
+    L = get_column_letter(2 + j)
+    mc4 = get_column_letter([cc for (cc, s_, tk) in cols if s_ == sc_name and tk == "tier4"][0])
+    ex = get_column_letter(tm_cols[sc_name] + 1)
+    cl = lambda key: f"{L}{TMR[key]}"
+    F = {"rr_month": f"=INDEX($A${TM_TOP}:$A${TM_LAST},{I('rr_m', sc)}+1)",
+         "extra": f"={ex}{rT2}",
+         "b_pct": f"=Model!{mc4}{M['b_pct']}",
+         "margin": f"={I('take', sc)}-{I('netflag', sc)}*{cl('b_pct')}",
+         "l5": f"={cl('extra')}*{cl('margin')}",
+         "rec": f"=Model!{mc4}{M['gross_c_y']}",
+         "tot27": f"={cl('rec')}+{cl('l5')}",
+         "yuno_y": f"=Model!{mc4}{M['yuno_y']}",
+         "net_rec": f"={cl('rec')}-{cl('yuno_y')}",
+         "net27": f"={cl('tot27')}-{cl('yuno_y')}",
+         "x_rec": f"={cl('rec')}/{cl('yuno_y')}",
+         "x27": f"={cl('tot27')}/{cl('yuno_y')}"}
+    for key, lbl, fmt in tm_lines:
+        put(ws_tm, TMR[key], 2 + j, F[key], F_LINK if key in ("b_pct", "rec", "yuno_y") else (F_VAL_B if key in ("l5", "tot27", "net27") else F_VAL), fmt, border=True)
+put(ws_tm, TS + len(tm_lines) + 1, 1, "L5 is value in the first year from reaching scale sooner: shown as a 2027 figure and never added to the recurring a-year totals. Ramp shapes are Yuno ESTIMATES; replace with Cordel's written projections by country.", F_NOTE)
+ws_tm.freeze_panes = f"B{TM_TOP}"
 
 # =====================================================================
 # SENSITIVITY
@@ -810,7 +898,21 @@ ws_sum.merge_cells(start_row=r, start_column=2, end_row=r, end_column=3)
 for j, sc_name in enumerate(SCEN_COLS):
     put(ws_sum, r, 4 + j, f"=Ramp!C{RP_SUM[sc_name]}", F_VAL, None, border=True)
 r += 2
-put(ws_sum, r, 2, "How to read: Option A = EBANX direct at the baseline all-in cost (ESTIMATE until EBANX's quote replaces the baseline on Inputs). Option B = EBANX primary + dLocal second MoR through Yuno; its provider cost is the baseline minus the MDR reduction, plus Yuno's flat platform fee and usage in bps on the Net TPV above the included block. Levers: L1 MDR saving (100% contribution), L2 retries and routing, L3 local methods, L4 integrations avoided (per-market EBANX work, later direct integrations, maintenance; deck lever L2). Contribution view nets the take rate and processing cost on incremental GMV. Yuno-wide figures used only as guardrails: 7% authorization uplift, 30% recovered revenue (y.uno).", F_NOTE, align=Alignment(wrap_text=True, vertical="top"))
+hdr(ws_sum, r, 2, "Time to market (L5, deck L3): 2027 value, kept apart", span=2, color=GREENH)
+for j, t in enumerate(["Conservative", "Base", "Optimistic"]):
+    hdr(ws_sum, r, 4 + j, t, color=GREENH)
+r += 1
+for lbl, key, fmt, bold in [("Through Yuno: run-rate month", "rr_month", None, False), ("Extra sales in 2027", "extra", FMT_USD, False),
+                            ("L5 · 2027 value from reaching run rate sooner", "l5", FMT_USD, True), ("Recurring levers a year at run rate", "rec", FMT_USD, False),
+                            ("2027 value including time to market", "tot27", FMT_USD, True), ("Net 2027 including time to market", "net27", FMT_USD, True),
+                            ("2027 value / Yuno cost", "x27", FMT_X, False)]:
+    put(ws_sum, r, 2, lbl, F_LBL_B if bold else F_LBL)
+    ws_sum.merge_cells(start_row=r, start_column=2, end_row=r, end_column=3)
+    for j in range(3):
+        put(ws_sum, r, 4 + j, f"=TimeToMarket!{get_column_letter(2 + j)}{TMR[key]}", F_VAL_B if bold else F_VAL, fmt, border=True)
+    r += 1
+r += 1
+put(ws_sum, r, 2, "How to read: Option A = EBANX direct at the baseline all-in cost (ESTIMATE until EBANX's quote replaces the baseline on Inputs). Option B = EBANX primary + dLocal second MoR through Yuno; its provider cost is the baseline minus the MDR reduction, plus Yuno's flat platform fee and usage in bps on the Net TPV above the included block. Levers: L1 MDR saving (100% contribution), L2 retries and routing, L3 local methods, L4 integrations avoided (per-market EBANX work, later direct integrations, maintenance; deck lever L5), and, kept apart as a 2027 value, L5 time to market (run rate reached by mid 2027 instead of end 2027; deck lever L3). Contribution view nets the take rate and processing cost on incremental GMV. Yuno-wide figures used only as guardrails: 7% authorization uplift, 30% recovered revenue (y.uno).", F_NOTE, align=Alignment(wrap_text=True, vertical="top"))
 ws_sum.merge_cells(start_row=r, start_column=2, end_row=r + 3, end_column=7)
 ws_sum.row_dimensions[r].height = 15
 
@@ -822,3 +924,4 @@ print("MODEL_ROWS", M)
 print("BE_SUM", BE_SUM, "RP_SUM", RP_SUM, "BE_TOP", BE_TOP, "RP_TOP", RP_TOP, "RP_COLS", rp_cols)
 print("PRICING_ROWS", PR)
 print("SENS", SE)
+print("TTM", {"TMR": TMR, "TM_TOP": TM_TOP, "rT2": rT2, "tm_cols": tm_cols})

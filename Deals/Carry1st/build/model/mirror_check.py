@@ -104,6 +104,22 @@ def run(INP):
         m = model(INP["tiers"][3], B, base_cost=bc)
         sens["base_cost"][str(bc)] = dict(a_per_k=m["a_per_k"], b_per_k=m["b_per_k"], b_after_k=m["b_after_k"], net_c=m["net_c"], net_c_y=m["net_c"] * 12)
     out["sensitivity"] = sens
+    # Time to market (model L5, deck L3): extra 2027 sales from reaching the run rate sooner; one-off 2027 value, kept apart from the recurring levers
+    g0, g4, nd = INP["tiers"][0] * INP["ticket"], INP["tiers"][3] * INP["ticket"], INP["ramp_m"] - 1
+    out["ttm"] = {}
+    for sn, s in SCEN.items():
+        rows = []
+        for i in range(INP["ramp_m"]):
+            d = g0 + (g4 - g0) * i / nd
+            y = g0 + (g4 - g0) * min(i, s["rr_m"]) / s["rr_m"]
+            rows.append(dict(month=MONTHS[i], direct=d, yuno=y, extra=y - d))
+        extra = sum(r["extra"] for r in rows[1:])
+        m4 = out["model"][sn][str(INP["tiers"][3])]
+        margin = INP["take"] - INP["netflag"] * m4["b_pct"]
+        l5 = extra * margin
+        rec = m4["gross_c"] * 12; yy = m4["yuno"] * 12
+        out["ttm"][sn] = dict(rr_month=MONTHS[s["rr_m"]], rows=rows, extra=extra, b_pct=m4["b_pct"], margin=margin, l5=l5, rec=rec, tot27=rec + l5,
+                              yuno_y=yy, net_rec=rec - yy, net27=rec + l5 - yy, x_rec=rec / yy, x27=(rec + l5) / yy)
     # netflag = 0 variant of the base case (for the internal memo)
     INPn = copy.deepcopy(INP); INPn["netflag"] = 0
     out["netflag0_base"] = {}
@@ -145,6 +161,9 @@ for sn in SCEN:
         m = out["model"][sn][str(tx)]
         print(f"{tx:>8,}  A ${m['a_cost']:>9,.0f} ({m['a_per_k']:.1f}/k)  B ${m['b_cost']:>9,.0f} ({m['b_per_k']:.2f}/k)  Yuno ${m['yuno']:>8,.0f}  L1 {m['l1']:>7,.0f} L2c {m['l2c']:>7,.0f} L3c {m['l3c']:>6,.0f} L4 {m['l4']:>6,.0f}  gross_c {m['gross_c']:>8,.0f}  NET_c {m['net_c']:>8,.0f}  NET_g {m['net_g']:>8,.0f}  B-after {m['b_after_k']:.2f}/k  ROI {m['roi']:.2f}x")
     print(f"   break-even: {out['breakeven'][sn]}   payback: {out['ramp'][sn]['payback']}   ramp cum: {out['ramp'][sn]['cum']:,.0f}   yuno over ramp: {out['ramp'][sn]['yuno_total']:,.0f}   | with credit: payback {out['ramp_credit'][sn]['payback']}, cum {out['ramp_credit'][sn]['cum']:,.0f}, credit total {out['ramp_credit'][sn]['credit_total']:,.0f}")
+for sn in SCEN:
+    t = out["ttm"][sn]
+    print(f"TTM {sn}: run rate {t['rr_month']}  extra 2027 GMV ${t['extra']:,.0f}  margin {t['margin']*100:.3f}%  L5 ${t['l5']:,.0f}  recurring ${t['rec']:,.0f}  2027 total ${t['tot27']:,.0f}  net rec ${t['net_rec']:,.0f}  net 2027 ${t['net27']:,.0f}  x_rec {t['x_rec']:.2f}  x27 {t['x27']:.2f}")
 print("netflag0 base:", {k: round(v) for k, v in out["netflag0_base"].items()}, "BE", out["netflag0_base_breakeven"])
 print("=== ALT (included block ${:,.0f}) ===".format(ALT_INCL_TPV))
 for tx in INP["tiers"]:

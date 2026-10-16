@@ -88,7 +88,7 @@ Up to 12 rows: country 9 pt, proportional blue bar, value 9 pt right-aligned, ha
  "cards": [{"eyebrow": "STORE", "num": "01", "title": "Processor-agnostic tokens", "body": "...", "foot": "docs.y.uno/vault", "pill": "CONFIRMED", "pill2": "BETA"}],
  "side": {"header": "...", "items": [{"title": "...", "body": "..."}]}, "limits": {"header": "LIMITS", "tiles": [{"value": "50", "label": "requests per second"}]}, "bar": "..."}
 ```
-2 to 4 outlined cards (num Geist Mono 8 pt #7C89EF, eyebrow 7 pt caps, pills top-right, title 10 pt bold blue, body 8.5 pt, foot 7.5 pt bold deep blue with a blue tick). `side` shrinks the cards to 65 percent width. `limits` draws a four-tile strip (#F4F5FD, 15 pt values) under the cards. Card body that does not fit raises `FitError`.
+2 to 5 outlined cards (five cards: 9 pt gaps, title 9.5 pt, body 8 pt; num Geist Mono 8 pt #7C89EF, eyebrow 7 pt caps, pills top-right, title 10 pt bold blue, body 8.5 pt, foot 7.5 pt bold deep blue with a blue tick). `side` shrinks the cards to 65 percent width. `limits` draws a four-tile strip (#F4F5FD, 15 pt values) under the cards. Card body that does not fit raises `FitError`.
 
 ### two_column
 ```json
@@ -102,7 +102,7 @@ Two numbered columns (header 9 pt bold blue caps, items 9 pt bold title + 8.5 pt
  "columns": ["Need", "Yuno", "Basis Theory", "VGS", "Who leads"], "col_widths": [0.22, 0.22, 0.2, 0.2, 0.16],
  "rows": [["Vault any secret", {"text": "", "pill": "CONFIRMED"}, "Yes", "Yes", "Even"],
           ["Decision layer", {"text": "Trust & Vault product, Legal", "pill": "OPEN", "pill2": "BETA"}, "No", "No", {"text": "Yuno", "bold": true}]],
- "header_style": "dark", "font_size": 8, "bold_first_col": true, "zebra": true, "note": "one line under the table"}
+ "header_style": "dark", "font_size": 8, "bold_first_col": true, "zebra": true, "note": "one line under the table", "bar": "optional bottom band (markup)"}
 ```
 Native Slides table (createTable). Header: #282A30 (`dark`) or #3E4FE0 (`blue`) with white 7.5 pt bold caps; body `font_size` (default 8, floor 6.5); first column bold on #E8EAF5; zebra #FFFFFF / #F6F7FB; 1 pt white borders. Pills are overlaid on the cell (one or two side by side); a cell with pills and text prints the text under them in 7 pt grey. Row heights are pinned from a text model (the API does not report rendered heights), so a table that would exceed the zone raises `FitError` with the height it needs.
 
@@ -227,7 +227,7 @@ Ported from the Luni proposal deck (`Deals/Luni/build`, slides "value levers" an
 Four lever columns under group headers, a row-label column on the left, two value rows, an assumptions box and a blue closing line.
 - `groups`: `[{label, span}]`, e.g. `[{"label": "Cost levers", "span": 2}, {"label": "Operational levers", "span": 2}]` (pale band with a blue rule, spans its columns).
 - `row_labels`: four strings, default `["Lever", "How it works", "Conservative", "Optimistic"]`.
-- `levers`: up to four `{num, name, range, body, conservative, optimistic}`. `name` sits next to a numbered blue circle; `range` is the big figure (14 pt, shrinks to 10 pt so every range fits one line; names shrink 8.5 to 7 pt); `body` is the "How it works" paragraph (6.8 pt); `conservative` (ink on #F6F7FB) and `optimistic` (blue on #E8EAF5) are the per-lever values, e.g. `"+$135K/yr"`.
+- `levers`: up to five `{num, name, range, body, conservative, optimistic}`. `name` sits next to a numbered blue circle; `range` is the big figure (14 pt, shrinks to 10 pt so every range fits one line; names shrink 8.5 to 7 pt); `body` is the "How it works" paragraph (6.8 pt); `conservative` (ink on #F6F7FB) and `optimistic` (blue on #E8EAF5) are the per-lever values, e.g. `"+$135K/yr"`.
 - `assumptions`: markup string, lead with `**Assumptions**` (6.5 pt on a grey box).
 - `closing`: one blue bold line under the assumptions.
 - Plus the usual `kicker`, `headline`, `tag`, `source`, `notes`. Raises FitError when the stack does not fit above the source line.
@@ -237,6 +237,8 @@ Four lever columns under group headers, a row-label column on the left, two valu
 - `subline`: one line under the title with the base inputs.
 - `columns`: first = scenario, last = total, levers in between (header row dark, total header blue).
 - `col_widths`: optional fractions (default 0.22, 0.13 per lever, 0.26 total).
+- `n_totals`: number of trailing total columns (default 1). With 2, each row takes `totals: [a, b]` (e.g. "Total annual" for recurring levers and "2027 with L3" for a one-off first-year lever); headers that do not fit their column raise FitError.
+- `table_note`: optional one line under the table (6.8 pt), e.g. what each total adds.
 - `rows`: `[{label, cells[], total, highlight}]`; the `highlight` row (the base case) is solid blue with white text; other rows carry the total in a light-blue (#F4F5FD) cell in blue bold 13 pt.
 - `hero`: `{value, text}`: big blue number, a vertical rule, then the sentence (markup, `**bold**` allowed) on a light-blue band.
 - `takeaways`: three `{title, body}` columns under the hero.

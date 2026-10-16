@@ -1014,19 +1014,22 @@ def r_traffic_list(deck, s, tag, n, footer):
 
 def r_cards_row(deck, s, tag, n, footer, numbered_default=False):
     sid, sb = _content_base(deck, s, tag)
-    cards = s.get('cards', [])[:4]; N = max(len(cards), 1)
+    cards = s.get('cards', [])[:5]; N = max(len(cards), 1)
     side = s.get('side'); bar = s.get('bar')
     width = W0 * 0.65 if side else W0
-    gap = 12; cw = (width - gap * (N - 1)) / N
+    gap = 12 if N < 5 else 9; cw = (width - gap * (N - 1)) / N
+    ts, bs = (10, 8.5) if N < 5 else (9.5, 8)   # five cards: narrower, a step smaller
     limits = s.get('limits'); bh = bar_h(bar)
     y = sb.zy; y_end = (363 - bh - 12) if bar else 365
     max_h = (y_end - y - 86) if limits else (y_end - y)
-    need = max([card_need(cw, c.get('eyebrow'), c.get('num'), c.get('title'), c.get('body'), c.get('foot'), c.get('pill'), c.get('pill2')) for c in cards] + [0])
+    need = max([card_need(cw, c.get('eyebrow'), c.get('num'), c.get('title'), c.get('body'), c.get('foot'), c.get('pill'), c.get('pill2'), title_size=ts, body_size=bs)
+                + (15 if (c.get('eyebrow') and text_width(c['eyebrow'].upper(), 7, True) * 1.18 > cw - 22 - (24 if c.get('num') else 0)) else 0) for c in cards] + [0])
     if need > max_h + 1: raise FitError(f"slide {s.get('id')}: cards need {need:.0f} pt, have {max_h:.0f} pt")
     h = max_h if (not bar and not limits) else max(110.0, min(need, max_h))   # no band: cards use the zone like the template
     hc = max(150.0, min(need + 16, max_h)) if side else h
     for i, c in enumerate(cards):
-        sb.card(X0 + i * (cw + gap), y, cw, hc, eyebrow=c.get('eyebrow'), num=c.get('num'), title=c.get('title'), body=c.get('body'), foot=c.get('foot'), pill=c.get('pill'), pill2=c.get('pill2'))
+        sb.card(X0 + i * (cw + gap), y, cw, hc, eyebrow=c.get('eyebrow'), num=c.get('num'), title=c.get('title'), body=c.get('body'), foot=c.get('foot'), pill=c.get('pill'), pill2=c.get('pill2'),
+                title_size=ts, body_size=bs)
     if side: _side_column(sb, X0 + width + 20, y, 684 - (X0 + width + 20), h, side)
     if limits:   # four-tile strip under the cards
         ly = y + h + 12
@@ -1068,10 +1071,12 @@ def r_table(deck, s, tag, n, footer):
     sid, sb = _content_base(deck, s, tag)
     cols = s.get('columns', []); fr = s.get('col_widths') or [1.0 / max(len(cols), 1)] * len(cols)
     tot = sum(fr); widths = [W0 * f / tot for f in fr]
-    note = s.get('note'); max_h = (366 - sb.zy) - (14 if note else 0)
+    note = s.get('note'); bar = s.get('bar'); bh = bar_h(bar)
+    max_h = ((363 - bh - 10) if bar else 366) - sb.zy - (14 if note else 0)
     sb.table(X0, sb.zy, widths, s.get('rows', []), header=cols, header_style=s.get('header_style', 'dark'), font_size=s.get('font_size', 8),
              bold_first_col=s.get('bold_first_col', True), zebra=s.get('zebra', True), max_h=max_h, native=bool(s.get('native')))
     if note: sb.text(X0, sb.zy + sb.table_h + 5, W0, 9, note, size=6.5, color=GREY, ls=100)
+    if bar: _bar(sb, 363 - bh, bar)
     return _finish(deck, sb, sid, s, n, footer)
 
 def r_comparison_grid(deck, s, tag, n, footer):
@@ -1594,7 +1599,7 @@ def r_lever_grid(deck, s, tag, n, footer):
     """Luni-format value levers (15 Oct 2026). spec: groups[{label, span}], row_labels[4], levers[{num, name, range, body,
     conservative, optimistic}], assumptions (markup, '**Assumptions**' lead), closing (blue line), source, notes."""
     sid, sb = _content_base(deck, s, tag)
-    levers = s.get('levers', [])[:4]; L = max(len(levers), 1)
+    levers = s.get('levers', [])[:5]; L = max(len(levers), 1)
     lab_w = 60.0; gx = X0 + lab_w + 6; gap = 6.0; gw = 684 - gx; cw = (gw - gap * (L - 1)) / L
     y = sb.zy
     # group headers: pale band with a blue rule underneath, spanning their columns
@@ -1651,33 +1656,45 @@ def r_impact_table(deck, s, tag, n, footer):
     spec: subline, columns[] (first = scenario, last = total), rows[{label, cells[], total, highlight}], hero{value, text (markup)},
     takeaways[{title, body}] (three), source, notes."""
     sid, sb = _content_base(deck, dict(s, headline=''), tag)
-    sb.text(X0, 40, 602, 26, s.get('headline', ''), size=22, color=BLUE, ls=100)
+    sb.text(X0, 40, 602, 26, s.get('headline', ''), size=22, bold=True, color=INK, ls=100)   # black, as German set it on the live deck
     y = 70
     if s.get('subline'):
         sb.text(X0, y, W0, 10, s['subline'], size=8, color=MUTED, ls=110); y += 18
     cols = s.get('columns', []); rows = s.get('rows', []); C = len(cols)
-    fr = s.get('col_widths') or ([0.22] + [0.13] * (C - 2) + [0.26])
+    NT = int(s.get('n_totals', 1))          # trailing total columns (e.g. recurring a year, and 2027 with a one-off lever)
+    fr = s.get('col_widths') or ([0.22] + [0.13] * (C - 1 - NT) + [0.26 / NT] * NT)
     tot = sum(fr); ws = [W0 * f / tot for f in fr]; xs = [X0 + sum(ws[:i]) for i in range(C)]
     hh, rh = 24.0, 30.0
+    pad_h = 10 if NT == 1 else 6
     for j, c in enumerate(cols):
-        last = j == C - 1
+        last = j >= C - NT
+        lab = c.upper() if (j == 0 or last) else c
+        if text_width(lab, 6.8, (j == 0 or last)) > ws[j] - 2 * pad_h + 1:
+            raise FitError(f"slide {s.get('id')}: impact_table header '{c}' too wide for its column")
         sb.rect(xs[j], y, ws[j], hh, fill=BLUE if last else DARK)
-        if 0 < j and not last: sb.vline(xs[j], y, hh, color=WHITE, alpha=0.18)
-        sb.text(xs[j] + 10, y + 8, ws[j] - 20, 9, c.upper() if (j == 0 or last) else c, size=6.8, bold=(j == 0 or last), color=WHITE,
+        if 0 < j: sb.vline(xs[j], y, hh, color=WHITE, alpha=0.18)
+        sb.text(xs[j] + pad_h, y + 8, ws[j] - 2 * pad_h, 9, lab, size=6.8, bold=(j == 0 or last), color=WHITE,
                 align='START' if j == 0 else 'END', ls=100)
     y += hh
+    tw0 = sum(ws[C - NT:])
     for r in rows:
         hi = r.get('highlight')
+        totals = r.get('totals') or [r.get('total', '')]
         if hi: sb.rect(X0, y, W0, rh, fill=BLUE)
         else:
-            sb.rect(xs[-1], y, ws[-1], rh, fill=PANEL3); sb.hairline(X0, y + rh, W0 - ws[-1])
+            sb.rect(xs[C - NT], y, tw0, rh, fill=PANEL3); sb.hairline(X0, y + rh, W0 - tw0)
         tc = WHITE if hi else INK
         sb.text(xs[0] + 10, y + 10, ws[0] - 20, 10, r.get('label', ''), size=8.5, bold=True, color=tc, ls=100)
-        for j, v in enumerate(r.get('cells', [])[:C - 2], 1):
+        for j, v in enumerate(r.get('cells', [])[:C - 1 - NT], 1):
             if hi and j > 0: sb.vline(xs[j], y, rh, color=WHITE, alpha=0.18)
-            sb.text(xs[j] + 6, y + 10, ws[j] - 16, 10, v, size=8.5, color=tc, align='END', ls=100)
-        sb.text(xs[-1] + 6, y + 7.5, ws[-1] - 16, 15, r.get('total', ''), size=13, bold=True, color=WHITE if hi else BLUE, align='END', ls=100)
+            sb.text(xs[j] + 6, y + 10, ws[j] - 6 - pad_h, 10, v, size=8.5, color=tc, align='END', ls=100)
+        for k, tv in enumerate(totals[:NT]):
+            j = C - NT + k
+            if k > 0: sb.vline(xs[j], y, rh, color=WHITE if hi else GREY, alpha=0.18 if hi else 0.35)
+            sb.text(xs[j] + 6, y + 7.5, ws[j] - 6 - pad_h, 15, tv, size=13, bold=True, color=WHITE if hi else BLUE, align='END', ls=100)
         y += rh
+    if s.get('table_note'):
+        sb.text(X0, y + 4, W0, 9, s['table_note'], size=6.8, color=MUTED, ls=100); y += 12
     y += 12
     hero = s.get('hero')
     if hero:
