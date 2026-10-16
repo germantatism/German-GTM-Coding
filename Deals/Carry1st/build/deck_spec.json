@@ -707,17 +707,14 @@
    "id": "bc-levers",
    "type": "lever_grid",
    "kicker": "BUSINESS CASE · FOUR LEVERS AT RUN RATE",
-   "tag": [
-    "ESTIMATE"
-   ],
    "headline": "At $4.5M a month of sales, the four levers are worth about $633K a year to Carry1st in the base case.",
    "groups": [
     {
-     "label": "Cost levers",
+     "label": "Operational levers",
      "span": 2
     },
     {
-     "label": "Operational levers",
+     "label": "Cost levers",
      "span": 2
     }
    ],
@@ -730,22 +727,6 @@
    "levers": [
     {
      "num": 1,
-     "name": "Processing cost",
-     "range": "25 to 75 bps",
-     "body": "With EBANX and other providers live on the same rails (Pix runs on 27 in Brazil, PSE on 12 in Colombia), volume moves by rule to the cheaper route, and every rate is negotiated against a real alternative. A processing saving is 100% contribution.",
-     "conservative": "+$135K/yr",
-     "optimistic": "+$405K/yr"
-    },
-    {
-     "num": 2,
-     "name": "Integrations avoided",
-     "range": "5 markets + 1 to 3",
-     "body": "Direct, EBANX is enabled, tested and certified market by market, each later provider is a new build, and Carry1st maintains every integration. Through Yuno: one integration, ready for every market, and Yuno maintains the connections.",
-     "conservative": "+$40K/yr",
-     "optimistic": "+$148K/yr"
-    },
-    {
-     "num": 3,
      "name": "Approval uplift",
      "range": "+1.5 to +5 pts",
      "body": "Direct, every payment goes to one provider. Through Yuno a decline on EBANX retries on a second provider, Monitors reroute on a drop, and routing by BIN and country lifts approval from a 75% baseline. Counted at the take rate, not at face value.",
@@ -753,44 +734,57 @@
      "optimistic": "+$388K/yr"
     },
     {
-     "num": 4,
+     "num": 2,
      "name": "Local methods, checkout",
      "range": "+0.5 to +2% of sales",
      "body": "One checkout returns Pix, PSE, Nequi, SPEI, OXXO, MODO and QR per market, in local currency, so gamers without an international card can pay. Incremental sales are counted at the take rate, net of processing.",
      "conservative": "+$28K/yr",
      "optimistic": "+$116K/yr"
+    },
+    {
+     "num": 3,
+     "name": "Processing cost",
+     "range": "25 to 75 bps",
+     "body": "With EBANX and other providers live on the same rails (Pix runs on 27 in Brazil, PSE on 12 in Colombia), volume moves by rule to the cheaper route, and every rate is negotiated against a real alternative. A processing saving is 100% contribution.",
+     "conservative": "+$135K/yr",
+     "optimistic": "+$405K/yr"
+    },
+    {
+     "num": 4,
+     "name": "Integrations avoided",
+     "range": "5 markets + 1 to 3",
+     "body": "Direct, EBANX is enabled, tested and certified market by market, each later provider is a new build, and Carry1st maintains every integration. Through Yuno: one integration, ready for every market, and Yuno maintains the connections.",
+     "conservative": "+$40K/yr",
+     "optimistic": "+$148K/yr"
     }
    ],
-   "assumptions": "**Assumptions** All figures in USD, a year, at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (estimate, replaced by EBANX's quote); 15% take rate on sales (estimate). Contribution view: L1 and L2 count in full, L3 and L4 at the take rate net of processing. L2: 5 markets x 2 to 4 weeks on EBANX plus 1 to 3 later integrations x 4 to 8 weeks over 24 months, plus 0.25 to 1 FTE upkeep a year, at $2,000 a week. Ranges are Yuno modelling assumptions, recalibrated on Carry1st's data.",
+   "assumptions": "**Assumptions** All figures in USD, a year, at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (estimate, replaced by EBANX's quote); 15% take rate on sales (estimate). Contribution view: L1 and L2 count at the take rate net of processing, L3 and L4 in full. L4: 5 markets x 2 to 4 weeks on EBANX plus 1 to 3 later integrations x 4 to 8 weeks over 24 months, plus 0.25 to 1 FTE upkeep a year, at $2,000 a week. Ranges are Yuno modelling assumptions, recalibrated on Carry1st's data.",
    "closing": "The value can be monetized from launch: Yuno's connections to EBANX and the local rails already exist, so each lever is switched on, not built.",
-   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE; every assumption is on the risks slide in the appendix.",
+   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. Ranges are Yuno modelling assumptions.",
    "notes": "Four levers, two that cut cost and two that add sales. Processing cost comes first because resale margins are thin: with EBANX and other providers live on the same rails, volume moves to the cheaper route by rule, and a saving on processing is worth one hundred cents on the dollar. Integrations avoided is the engineering Carry1st does not spend: enabling, testing and certifying EBANX market by market, building each later provider, and maintaining all of it. Through Yuno, one integration is ready for every market and Yuno maintains the connections. Approval and local methods add sales, and we count them at your take rate, not at face value. The two rows show the conservative and optimistic value of each lever a year at the $4.5M run rate; the base case totals about $633K a year."
   },
   {
    "id": "bc-impact",
    "type": "impact_table",
    "kicker": "BUSINESS CASE · TOTAL IMPACT",
-   "tag": [
-    "ESTIMATE"
-   ],
    "headline": "Total impact",
    "subline": "At run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales, contribution view, a year.",
    "columns": [
     "Scenario",
-    "L1 Processing cost",
-    "L2 Integrations",
-    "L3 Approval",
-    "L4 Local methods",
+    "L1 Approval",
+    "L2 Local methods",
+    "L3 Processing cost",
+    "L4 Integrations",
     "Total annual"
    ],
    "rows": [
     {
      "label": "Conservative",
      "cells": [
-      "$135K",
-      "$40K",
       "$111K",
-      "$28K"
+      "$28K",
+      "$135K",
+      "$40K"
      ],
      "total": "$314K",
      "highlight": false
@@ -798,10 +792,10 @@
     {
      "label": "Base",
      "cells": [
-      "$270K",
-      "$79K",
       "$228K",
-      "$57K"
+      "$57K",
+      "$270K",
+      "$79K"
      ],
      "total": "$633K",
      "highlight": true
@@ -809,10 +803,10 @@
     {
      "label": "Optimistic",
      "cells": [
-      "$405K",
-      "$148K",
       "$388K",
-      "$116K"
+      "$116K",
+      "$405K",
+      "$148K"
      ],
      "total": "$1.06M",
      "highlight": false
@@ -825,7 +819,7 @@
    "takeaways": [
     {
      "title": "Processing cost carries it",
-     "body": "L1 is 43% of the base case: a saving on processing counts in full, while extra sales count only at the take rate."
+     "body": "Processing cost is 43% of the base case: a saving on processing counts in full, while extra sales count only at the take rate."
     },
     {
      "title": "Nothing here needs a rebuild",
@@ -836,7 +830,7 @@
      "body": "75% approval, a 4.5% all-in rate and a 15% take rate are our estimates; your data and EBANX's quote replace them before anything is committed."
     }
    ],
-   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. ESTIMATE. Yuno cost: the proposal in section 06, $21,000 a month at $4.5M.",
+   "source": "Yuno business-case model (bc_model.xlsx), 15 Oct 2026. Yuno cost: the proposal in section 06, $21,000 a month at $4.5M.",
    "notes": "The same four levers added up. In the base case they are worth about $633K a year at the $4.5M run rate, against $252,000 a year for Yuno, so about $381K a year net. We show the conservative case honestly: about $314K of value against the same $252,000, about $62K a year net, which is why the case leans on processing cost first. Every input is a placeholder for your data: approval baseline, EBANX's quote and your take rate."
   },
   {
@@ -1009,10 +1003,6 @@
      ],
      [
       "Checkout, web and mobile SDKs",
-      "Included"
-     ],
-     [
-      "PCI token vault",
       "Included"
      ],
      [
@@ -3185,6 +3175,15 @@
      }
     ],
     [
+     "Local methods",
+     "Bolivia cash only; no MODO or interoperable QR in Argentina",
+     "Pix, PSE, Bre-B, SPEI, OXXO, MODO and QR through the rails already live on Yuno, market by market",
+     {
+      "text": "+1% of sales\n$57K",
+      "bold": true
+     }
+    ],
+    [
      "Processing cost",
      "One counterparty and one price, with nothing to negotiate against",
      "A second provider on the same rails: volume moves by rule to the cheaper route, and every rate is negotiated against a real alternative",
@@ -3201,19 +3200,10 @@
       "text": "5 markets + 2 builds\n$79K",
       "bold": true
      }
-    ],
-    [
-     "Local methods",
-     "Bolivia cash only; no MODO or interoperable QR in Argentina",
-     "Pix, PSE, Bre-B, SPEI, OXXO, MODO and QR through the rails already live on Yuno, market by market",
-     {
-      "text": "+1% of sales\n$57K",
-      "bold": true
-     }
     ]
    ],
    "bar": "**$633K a year in the base case, and it compounds:** more volume gives more leverage on price and more data for routing, and every new market or provider is a connection, not a project.",
-   "source": "Yuno business-case model, 15 Oct 2026, base case at $4.5M of monthly sales; detail by lever and scenario on the next two slides.",
+   "source": "Yuno business-case model, 15 Oct 2026, base case at $4.5M of monthly sales; mechanism, detail by lever and scenarios on the slides that follow.",
    "notes": "This is the case against going direct, lever by lever. Smart routing and retries lift the approval rate; a second provider on the same rails gives real leverage on price; one integration replaces market-by-market EBANX work and its upkeep; and local methods reach buyers an international card cannot. Each lever gets stronger as volume grows."
   },
   {
@@ -3231,24 +3221,24 @@
     },
     {
      "num": "02",
+     "eyebrow": "LOCAL METHODS",
+     "title": "Every rail each market uses",
+     "body": "Pix, PSE, Bre-B, SPEI, OXXO, MODO and QR reach buyers an international card cannot, returned per country by the same checkout, with no extra build.",
+     "foot": "Grows with the market: new rails arrive as connections"
+    },
+    {
+     "num": "03",
      "eyebrow": "COST",
      "title": "Competition on the same rails",
      "body": "With two providers live on the same method, volume moves by rule to the cheaper route, and every rate review is backed by Carry1st's own cost and approval data per provider.",
      "foot": "Grows with volume: each $1M a month raises the stakes for providers"
     },
     {
-     "num": "03",
+     "num": "04",
      "eyebrow": "INTEGRATIONS",
      "title": "Build once, plug in the rest",
      "body": "One integration to the Yuno SDK covers all five markets. EBANX, a second MoR or a local acquirer is a connection switched on from the dashboard, kept current by Yuno.",
      "foot": "Grows with expansion: a new market is a connection, not a project"
-    },
-    {
-     "num": "04",
-     "eyebrow": "LOCAL METHODS",
-     "title": "Every rail each market uses",
-     "body": "Pix, PSE, Bre-B, SPEI, OXXO, MODO and QR reach buyers an international card cannot, returned per country by the same checkout, with no extra build.",
-     "foot": "Grows with the market: new rails arrive as connections"
     }
    ],
    "bar": "Going direct, each of these is a project Carry1st runs alone. Through Yuno, they are settings on the same integration.",
