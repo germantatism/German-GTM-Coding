@@ -88,17 +88,17 @@ Going direct with EBANX, markets are enabled one by one, so sales ramp linearly 
 
 | | Conservative | Base | Optimistic |
 |---|---|---|---|
-| Through Yuno: run rate reached in | Sep 2027 | Jun 2027 | Apr 2027 |
-| Extra sales in 2027 (GMV) | $6.0M | $12.0M | $16.0M |
+| Through Yuno: run rate reached in | Sep 2027 | Jun 2027 | May 2027 |
+| Extra sales in 2027 (GMV) | $6.0M | $12.0M | $14.0M |
 | Contribution per $1 of extra sales | 10.28% | 10.53% | 10.78% |
-| L5 · 2027 value from reaching run rate sooner | $0.62M | $1.26M | $1.73M |
+| L5 · 2027 value from reaching run rate sooner | $0.62M | $1.26M | $1.51M |
 | Recurring levers a year at run rate (L1 to L4) | $520.9K | $975.0K | $1.56M |
-| 2027 value including time to market | $1.14M | $2.24M | $3.28M |
+| 2027 value including time to market | $1.14M | $2.24M | $3.06M |
 | Yuno cost a year at run rate | $252.0K | $252.0K | $252.0K |
 | Net a year, recurring levers | +$268.9K | +$723.0K | +$1.3M |
-| Net, 2027 including time to market | +$0.89M | +$1.99M | +$3.03M |
+| Net, 2027 including time to market | +$0.89M | +$1.99M | +$2.81M |
 | Multiple, recurring levers / Yuno | 2.1x | 3.9x | 6.2x |
-| Multiple, 2027 including time to market / Yuno | 4.5x | 8.9x | 13.0x |
+| Multiple, 2027 including time to market / Yuno | 4.5x | 8.9x | 12.2x |
 
 L1 is the lever that matters most for a reseller: a processing saving is 100% contribution, while incremental GMV is worth take rate minus processing cost (about 11 cents per dollar at a 15% take rate). In the base case L1 is 27.7% of the gross benefit at 450K.
 

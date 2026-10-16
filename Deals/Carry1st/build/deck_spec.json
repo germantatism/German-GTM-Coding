@@ -744,10 +744,10 @@
     {
      "num": 3,
      "name": "Time to market",
-     "range": "3 to 8 months",
+     "range": "3 to 7 months",
      "body": "Direct, markets are enabled one by one and run rate comes at end 2027. Through Yuno all five go live together on one integration, reaching run rate by mid 2027. A 2027 value.",
      "conservative": "+$617K in 2027",
-     "optimistic": "+$1.73M in 2027"
+     "optimistic": "+$1.5M in 2027"
     },
     {
      "num": 4,
@@ -766,7 +766,7 @@
      "optimistic": "+$413K/yr"
     }
    ],
-   "assumptions": "**Assumptions** All figures in USD at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (estimate, replaced by EBANX's quote); 15% take rate on sales (estimate). Contribution view: L1, L2 and L3 count at the take rate net of processing, L4 and L5 in full. L3: going direct ramps from $0.5M in Dec 2026 to $4.5M in Dec 2027; through Yuno $4.5M comes in Sep, Jun or Apr 2027, a 2027 value kept apart from the yearly totals. L5: 5 markets x 3 to 6 weeks on EBANX plus 2 to 4 later integrations x 6 to 10 weeks over 24 months, plus 1 to 2.5 FTE upkeep a year, at $2,500 a week ($130K a year, a senior payments engineer). Ranges are Yuno modelling assumptions, recalibrated on Carry1st's data.",
+   "assumptions": "**Assumptions** All figures in USD at run rate: 450,000 transactions a month at a $10 average ticket, $4.5M of monthly sales (Carry1st, Cordel, Oct 2026, estimate). Baseline approval 75%; EBANX direct all-in 4.5% of sales (estimate, replaced by EBANX's quote); 15% take rate on sales (estimate). Contribution view: L1, L2 and L3 count at the take rate net of processing, L4 and L5 in full. L3: going direct ramps from $0.5M in Dec 2026 to $4.5M in Dec 2027; through Yuno $4.5M comes in Sep, Jun or May 2027, a 2027 value kept apart from the yearly totals. L5: 5 markets x 3 to 6 weeks on EBANX plus 2 to 4 later integrations x 6 to 10 weeks over 24 months, plus 1 to 2.5 FTE upkeep a year, at $2,500 a week ($130K a year, a senior payments engineer). Ranges are Yuno modelling assumptions, recalibrated on Carry1st's data.",
    "closing": "The value can be monetized from launch: Yuno's connections to EBANX and the local rails already exist, so each lever is switched on, not built.",
    "source": "Ranges are Yuno modelling assumptions.",
    "notes": "Five levers: three operational and two that cut cost. Approval and local methods add sales, and we count them at your take rate, not at face value. Local methods matter more here than anywhere: Pix is 42% of online purchases in Brazil, PSE 64% of e-commerce in Colombia and wallets 46% in Argentina. Time to market is the speed of launching all five markets together on one integration: run rate by mid 2027 instead of end 2027, about $12M more sales in 2027 in the base case, worth about $1.26M at your take rate. It is a first-year value, so we show it apart from the yearly totals. Processing cost counts in full because a saving on processing is worth one hundred cents on the dollar, and integrations avoided is the engineering Carry1st does not spend: market-by-market EBANX work, later direct integrations and their upkeep, about $250K a year in the base case at $130K a year per senior payments engineer. The two rows show the conservative and optimistic value of each lever; the four recurring levers total about $975K a year in the base case."
@@ -823,13 +823,13 @@
      "cells": [
       "$388K",
       "$349K",
-      "$1.73M",
+      "$1.5M",
       "$405K",
       "$413K"
      ],
      "totals": [
       "$1.56M",
-      "$3.28M"
+      "$3.06M"
      ],
      "highlight": false
     }
