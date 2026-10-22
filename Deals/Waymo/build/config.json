@@ -1,7 +1,7 @@
 {
  "merchant": "Waymo",
  "deal_dir": "Deals/Waymo",
- "presentation_id": "1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4",
+ "presentation_id": "1AVE7_euq50lhzxZn-M_680DOGPj-yWXfYnnyLddjnd8",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
  "logo_aspect": 6.963,
  "recurring_only": false,
@@ -140,7 +140,7 @@
  "presentation_id_v1": "1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE",
  "signed": true,
  "presentation_id_v2": "1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI",
- "presentation_id_prev": "1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ",
+ "presentation_id_prev": "1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4",
  "intro": {
   "title": "Yuno in brief",
   "sub": "What we do, the platform, who runs on it and the team behind it",
@@ -153,5 +153,344 @@
   "section2_title": "Connections and payment methods",
   "section2_sub": "Who is live through Yuno in Waymo's seven announced markets, Latin America and the Middle East",
   "drop_spacex": false
- }
+ },
+ "extra_sections": [
+  {
+   "title": "The token vault",
+   "sub": "A PCI DSS Level 1 vault you can use on its own, measured against the pure-play vaults the RFP is looking at",
+   "slides": [
+    {
+     "id": "vault-market",
+     "type": "table",
+     "kicker": "THE TOKEN VAULT · WHERE THE INDEPENDENT VAULT MARKET STANDS",
+     "headline": "Independent vaults come in three shapes: pure vault, vault inside an orchestrator, data privacy vault. State which one the RFP buys.",
+     "columns": [
+      "Vendor",
+      "HQ",
+      "Founded",
+      "Funding (public)",
+      "Shape"
+     ],
+     "col_widths": [
+      0.18,
+      0.2,
+      0.1,
+      0.28,
+      0.24
+     ],
+     "header_style": "dark",
+     "font_size": 7.5,
+     "bold_first_col": true,
+     "zebra": true,
+     "rows": [
+      [
+       "VGS",
+       "San Francisco",
+       "2015",
+       "About $104M raised, last priced round 2020",
+       "Pure payment vault"
+      ],
+      [
+       "Basis Theory",
+       "Not stated by the company",
+       "2020",
+       "About $50M; $33M Series B, Oct 2025",
+       "Pure payment vault"
+      ],
+      [
+       "Spreedly",
+       "Durham, North Carolina",
+       "2008",
+       "$75M growth round, Nov 2019; about $81M total",
+       "Vault inside an orchestrator"
+      ],
+      [
+       "IXOPAY (TokenEx)",
+       "Tulsa and Vienna",
+       "Merger announced 17 Apr 2024",
+       "K1-backed",
+       "Vault inside an orchestrator"
+      ],
+      [
+       "Skyflow",
+       "Palo Alto",
+       "2019",
+       "About $105M, last round Mar 2024",
+       "Data privacy vault for PCI, PII and AI data"
+      ],
+      [
+       "Evervault",
+       "Dublin",
+       "2019",
+       "$46M; $25M Series B, Mar 2026",
+       "Encryption-first payment vault"
+      ],
+      [
+       "Yuno",
+       "16 offices, 5 continents",
+       "2021",
+       "About $80M; $45M Series B, Aug 2026",
+       "Vault inside an operating system for payments and banking connectivity"
+      ]
+     ],
+     "note": "Yuno's vault is on the next three slides and is compared row by row with Basis Theory, a pure vault. Funding figures are third-party estimates where the vendor does not publish them.",
+     "notes": "Vendor pages and press releases, read 7 and 8 Oct 2026; y.uno About and newsroom; CB Insights profiles (estimates). We list the market as it is, including vendors we partner with. The shape matters more than the logo: a pure vault keeps routing out of scope by design, an orchestrator's vault assumes its routing, and a data privacy vault is built for personal data first. Your design needs card, bank, identity and issued-card objects under one key set plus a decision layer you control, which is the lens we apply in Section 07."
+    },
+    {
+     "id": "vault-cards",
+     "type": "cards_row",
+     "kicker": "THE TOKEN VAULT · CARDS",
+     "headline": "One vaulted token works on every processor you connect, so no processor owns your cards.",
+     "cards": [
+      {
+       "pill": "CONFIRMED",
+       "eyebrow": "STORE",
+       "title": "Collect a card without charging it",
+       "body": "SDK enrollment on Web, iOS and Android creates a vaulted token without a charge. Card numbers never reach your pages, which is why most SDK merchants qualify for SAQ A. Zero-amount verification is optional where the provider supports it."
+      },
+      {
+       "pill": "CONFIRMED",
+       "eyebrow": "KEEP",
+       "title": "Network tokens and account updater",
+       "body": "Once activated, network tokens are provisioned for enrolled cards with Visa, Mastercard and American Express. The account updater refreshes reissued Visa and Mastercard cards while the vaulted token stays the same."
+      },
+      {
+       "pill": "CONFIRMED",
+       "eyebrow": "MOVE",
+       "title": "Import in, export out",
+       "body": "Cards arrive from your current gateway or vault as PGP-encrypted files over SFTP. Card export is documented too: on written request, to a recipient with a valid PCI DSS attestation."
+      }
+     ],
+     "side": {
+      "header": "WHAT YOU GET",
+      "items": [
+       {
+        "title": "No re-tokenization",
+        "body": "Add or swap a processor and the stored cards keep working."
+       },
+       {
+        "title": "Fewer declines",
+        "body": "Reissued and renewed cards update without the cardholder."
+       },
+       {
+        "title": "A public exit",
+        "body": "You can read the export process before you sign anything."
+       }
+      ]
+     },
+     "notes": "Source: docs.y.uno, read 7 October 2026. Page list on slide 58. The same logic you apply to banks applies to card processors: no single one should be able to cut you off. A card is collected once in our hosted fields and stored as a vaulted token that works on every processor connected to your account. Network tokens and the account updater keep it current. And the way out is documented publicly: an encrypted export to a recipient with a valid PCI DSS attestation. Your QSA confirms your own SAQ level; we describe how capture works. Scheme activation for network tokens is confirmed per network in writing before Phase 1. Network token import is also a documented process, with the network transaction ID and the wallet parent type in the file."
+    },
+    {
+     "id": "keep-current",
+     "type": "diagram",
+     "kicker": "THE TOKEN VAULT · KEEP CURRENT",
+     "headline": "Network tokens and the account updater keep the vaulted token valid across reissues and processors, so card on file does not break.",
+     "tag": [
+      "CONFIRMED"
+     ],
+     "boxes": [
+      {
+       "id": "l1",
+       "x": 0,
+       "y": 0,
+       "w": 420,
+       "h": 18,
+       "title": "LANE 1 · NETWORK TOKENS · PROVISIONED ONCE PER CARD",
+       "body": "",
+       "style": "label"
+      },
+      {
+       "id": "enr",
+       "x": 0,
+       "y": 22,
+       "w": 90,
+       "h": 74,
+       "title": "Card enrolled once",
+       "body": "Hosted fields, no charge",
+       "style": "outline"
+      },
+      {
+       "id": "vault1",
+       "x": 106,
+       "y": 22,
+       "w": 160,
+       "h": 74,
+       "title": "Yuno vault",
+       "body": "PAN stays here. A network token is provisioned once per enrolled card (Visa, Mastercard, American Express per docs) and updated on renewal or reissue",
+       "style": "blue"
+      },
+      {
+       "id": "psp",
+       "x": 282,
+       "y": 22,
+       "w": 138,
+       "h": 74,
+       "title": "Any processor you connect",
+       "body": "Token plus cryptogram (Visa, Mastercard). The network transaction ID travels with every merchant-initiated charge",
+       "style": "light"
+      },
+      {
+       "id": "l2",
+       "x": 0,
+       "y": 116,
+       "w": 420,
+       "h": 18,
+       "title": "LANE 2 · ACCOUNT UPDATER · ASYNCHRONOUS, VISA AND MASTERCARD",
+       "body": "",
+       "style": "label"
+      },
+      {
+       "id": "old",
+       "x": 0,
+       "y": 138,
+       "w": 90,
+       "h": 74,
+       "title": "Stored •••• 0193",
+       "body": "exp 09/26. Past expiry, or account closed, disabled or flagged",
+       "style": "outline"
+      },
+      {
+       "id": "vault2",
+       "x": 106,
+       "y": 138,
+       "w": 160,
+       "h": 74,
+       "title": "Yuno asks the networks",
+       "body": "Independently of the payment flow. Webhook enrollment.update carries the new expiry, last four and reason",
+       "style": "blue"
+      },
+      {
+       "id": "new",
+       "x": 282,
+       "y": 138,
+       "w": 138,
+       "h": 74,
+       "title": "Updated •••• 7740",
+       "body": "exp 09/29. The vaulted token and fingerprint stay the same, so nothing changes on your side",
+       "style": "light"
+      }
+     ],
+     "connectors": [
+      {
+       "from": "enr",
+       "to": "vault1"
+      },
+      {
+       "from": "vault1",
+       "to": "psp"
+      },
+      {
+       "from": "old",
+       "to": "vault2"
+      },
+      {
+       "from": "vault2",
+       "to": "new"
+      }
+     ],
+     "side": {
+      "header": "WHAT YOU GET",
+      "items": [
+       {
+        "title": "Fewer involuntary losses",
+        "body": "Reissued and renewed cards keep renewing without the rider re-entering a card."
+       },
+       {
+        "title": "One credential chain",
+        "body": "The same stored credential and network transaction ID work on every processor you connect, so recurring survives a processor change."
+       },
+       {
+        "title": "Per-card control",
+        "body": "Opt a card out of the updater; duplicate enrollments of one PAN map to one network token through the fingerprint."
+       }
+      ]
+     },
+     "notes": "Source: docs.y.uno, Network tokens; Card account updater; Stored credentials. Read 8 October 2026. Two mechanisms keep a stored card valid. Network tokens are provisioned once for enrolled cards and updated by the network when the card is renewed or reissued; cryptograms are generated for Visa and Mastercard. The account updater works asynchronously for Visa and Mastercard: when a card is past expiry or the account has changed, Yuno asks the network and the vaulted token stays the same, so nothing changes in your systems. The network transaction ID belongs to the card network, not to the processor, and Yuno stores it on the token and sends it on every merchant-initiated charge whichever provider is used. Scheme activation is confirmed per network in writing before Phase 1; American Express is in our documentation and we will confirm its activation for your organization explicitly rather than assume it. Account updater for American Express and Discover is not in our documentation today."
+    },
+    {
+     "id": "versus-bt",
+     "type": "table",
+     "kicker": "THE TOKEN VAULT · VERSUS A PURE VAULT, BASIS THEORY",
+     "headline": "Measured against a pure vault: Basis Theory goes deeper on the vault, Yuno goes further above it.",
+     "tag": [
+      "PUBLIC DOCS"
+     ],
+     "columns": [
+      "What you need",
+      "Yuno",
+      "Basis Theory",
+      "Who leads"
+     ],
+     "col_widths": [
+      0.2,
+      0.34,
+      0.34,
+      0.12
+     ],
+     "header_style": "dark",
+     "font_size": 7.5,
+     "bold_first_col": true,
+     "zebra": true,
+     "rows": [
+      [
+       "Card capture and storage",
+       "SDK enrollment into a PCI DSS Level 1 vault",
+       "Elements into a PCI DSS Level 1 vault",
+       {
+        "text": "Level",
+        "bold": true
+       }
+      ],
+      [
+       "Data beyond cards",
+       "Bank details through the enroll API. Tables for other personal records: confirmed in the RFP response",
+       "Token types for bank accounts, SSN, EIN and generic data",
+       {
+        "text": "Basis Theory",
+        "bold": true
+       }
+      ],
+      [
+       "Proxy and custom code",
+       "Outbound proxy, in beta. No inbound route and no custom code",
+       "Proxy with request and response transforms, plus serverless Reactors",
+       {
+        "text": "Basis Theory",
+        "bold": true
+       }
+      ],
+      [
+       "Token requestor ID",
+       "Yuno holds it, per our API reference. Issued in your name: confirmed in the RFP response",
+       "Creates one for you with each network. Existing network tokens are re-provisioned, not imported",
+       {
+        "text": "Basis Theory",
+        "bold": true
+       }
+      ],
+      [
+       "Routing rules and failover",
+       "A rules product for card payments: conditions, splits, fallbacks and monitors",
+       "Routing and retries marketed. No rules product found",
+       {
+        "text": "Yuno",
+        "bold": true
+       }
+      ],
+      [
+       "Provider integrations",
+       "460+ processor integrations",
+       "Proxy requests you write for each provider. No pre-built connectors found",
+       {
+        "text": "Yuno",
+        "bold": true
+       }
+      ]
+     ],
+     "notes": "Basis Theory: basistheory.com and developers.basistheory.com. Yuno: docs.y.uno and y.uno. Read 7 October 2026. Basis Theory is a strong pure vault; this table shows where each side leads from public pages only. Rows on card issuing, bank transfers and payouts from the original comparison were left out as not relevant to a ride-hailing checkout.",
+     "note": "Level = both have it. Read with the previous slides: the vault is a standalone product with its own SDK, import and export; the layer above it is optional."
+    }
+   ]
+  }
+ ]
 }
