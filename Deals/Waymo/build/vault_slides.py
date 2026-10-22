@@ -172,7 +172,7 @@ if sid not in have:
 sid = NEW[3]
 if sid not in have:
     p = chrome(sid, 'WHY YUNO  ›  VERSUS A STANDALONE VAULT', 'Standalone vaults lead on vault depth. Yuno leads on everything around it',
-               'VGS and Basis Theory: their public pages, read 7 October 2026 (verygoodsecurity.com, docs.verygoodsecurity.com, basistheory.com, developers.basistheory.com). Yuno: docs.y.uno and y.uno. Same table as the OnlyFans vault deck; only the owner of the token requestor ID changed.')
+               'VGS and Basis Theory: their public pages, read 7 October 2026 (verygoodsecurity.com, docs.verygoodsecurity.com, basistheory.com, developers.basistheory.com). Yuno: docs.y.uno and y.uno.')
     cols = [('WHAT WAYMO NEEDS', 36, 150), ('YUNO', 186, 148), ('VGS', 334, 128), ('BASIS THEORY', 462, 128), ('WHO LEADS', 590, 94)]
     p.shape(36, 84, 648, 22, 'RECTANGLE', DARK, None)
     for t, x, w in cols: p.text(x + 8, 89, w - 12, 12, t, size=7.5, color=WHITE, weight=600)

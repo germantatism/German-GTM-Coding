@@ -84,7 +84,7 @@ if intro:
         S.extend(x['slides'])
     n = len(titles)
     S.append({"id": f"d{n:02d}", "type": "divider", "num": f"{n:02d}", "title": intro['section2_title'], "sub": intro.get('section2_sub', ''), "section_list": secs})
-SRC_NOTE = ("Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); "
+SRC_NOTE = ("Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); "
             "Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). "
             "Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant.")
 # ---- markets slide (Waymo) ----
