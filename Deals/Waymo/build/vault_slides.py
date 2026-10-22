@@ -213,3 +213,7 @@ for n, sl in enumerate(P['slides'], 1):
             pg += [{'deleteText': {'objectId': el['objectId'], 'textRange': {'type': 'ALL'}}}, {'insertText': {'objectId': el['objectId'], 'insertionIndex': 0, 'text': str(n)}}]
 if pg: run(s, PID, pg, 'page numbers')
 print('final slides:', len(P['slides']), '| section 02 =', [x['objectId'] for x in P['slides'][d02:d02 + 6]])
+
+# ---------------------------------------------------------------- deck font: Geist (German, 22 Oct 2026: "match the font")
+import subprocess
+subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'geist_restyle.py'), PID, ','.join(NEW)], check=True)
