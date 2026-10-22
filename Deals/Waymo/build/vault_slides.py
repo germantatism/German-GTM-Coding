@@ -58,7 +58,7 @@ SRC = ("Sources: Waymo Help Center, Approved payment methods (cards, Apple Pay, 
 # ---------------------------------------------------------------- 1. the problem
 sid = NEW[0]
 if sid not in have:
-    p = chrome(sid, 'THE VAULT  ›  THE PROBLEM', 'Rider cards live with one processor. New markets mean moving them', SRC, title_size=18)
+    p = chrome(sid, 'THE VAULT  ›  THE PROBLEM', 'A second PSP is the moment to put rider cards above both processors', SRC, title_size=18)
     p.card(36, 84, 300, 286)
     p.text(50, 96, 60, 14, 'BEFORE', size=8, color=GREY, weight=600)
     p.text(104, 93, 220, 18, 'Cards tied to one processor', size=13, color=INK, weight=600)
@@ -72,7 +72,7 @@ if sid not in have:
     p.text(200, 144, 120, 14, 'each needs its own acquirer', size=9, color=GREY)
     for i, t in enumerate(('London 2026', 'Tokyo, Munich 2027', 'Singapore, Toronto 2028')):
         p.card(200, 164 + i * 24, 116, 20, fill=WHITE, line=LINE); p.text(207, 168 + i * 24, 108, 12, t, size=7.5, color=INK)
-    for i, t in enumerate(('Rider cards are locked to the processor that stores them', 'Processor tokens do not travel to a new acquirer', 'Card updates arrive only as the processor provides them')):
+    for i, t in enumerate(('Rider cards are locked to the processor that stores them', 'Processor tokens do not travel to the second PSP', 'Card updates arrive only as the processor provides them')):
         p.text(52, 256 + i * 20, 12, 14, '×', size=10, color=GREY, weight=600)
         p.text(66, 257 + i * 20, 262, 14, t, size=9.5, color=INK)
     p.text(52, 322, 272, 40, 'Waymo Help Center: a card on file is required, even to pay with Waymo Cash. Waymo Terms: card details are updated as provided by our payment processor. Read 19 Oct 2026.', size=7.5, color=GREY, ls=110)
