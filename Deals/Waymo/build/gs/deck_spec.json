@@ -1,5 +1,5 @@
 {
- "presentation_id": "1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI",
+ "presentation_id": "1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ",
  "merchant": "Waymo",
  "footer": "",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
@@ -9,7 +9,7 @@
    "id": "cover",
    "type": "cover",
    "title": "Connections and payment methods",
-   "subtitle": "Providers and local payment methods in Waymo's seven announced markets and across Latin America",
+   "subtitle": "Providers and local methods in Waymo's seven announced markets, Latin America and the Middle East",
    "presenter": "German Tatis, Yuno · October 2026",
    "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2"
   },
@@ -17,7 +17,7 @@
    "id": "markets",
    "type": "table",
    "kicker": "WAYMO'S ANNOUNCED MARKETS OUTSIDE THE US",
-   "headline": "Seven countries outside the US have a public Waymo plan today; this deck covers them plus every Latin American market.",
+   "headline": "Seven countries outside the US have a public Waymo plan today; this deck covers them plus Latin America and the Middle East.",
    "columns": [
     "Market",
     "Region",
@@ -345,10 +345,90 @@
    "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
+   "id": "sum-middle-east-1",
+   "type": "table",
+   "kicker": "OVERVIEW › MIDDLE EAST",
+   "headline": "The Gulf, Israel, Jordan and Egypt run on the regional acquirers, the local card schemes and the wallets riders already use.",
+   "columns": [
+    "Country",
+    "Providers live",
+    "Homologating · in code",
+    "Local methods and wallets through Yuno"
+   ],
+   "col_widths": [
+    0.17,
+    0.11,
+    0.14,
+    0.58
+   ],
+   "rows": [
+    [
+     "Saudi Arabia",
+     "35",
+     "2 · 0",
+     "Tamara · Tabby · Apple Pay · Google Pay · PayPal"
+    ],
+    [
+     "United Arab Emirates",
+     "32",
+     "2 · 0",
+     "Tabby · Tamara · Apple Pay · Google Pay · PayPal"
+    ],
+    [
+     "Israel",
+     "6",
+     "1 · 0",
+     "Apple Pay · Google Pay · PayPal"
+    ],
+    [
+     "Egypt",
+     "27",
+     "1 · 0",
+     "Tabby · Apple Pay · PayPal"
+    ],
+    [
+     "Qatar",
+     "18",
+     "0 · 0",
+     "Tamara · Apple Pay · Google Pay · PayPal"
+    ],
+    [
+     "Kuwait",
+     "20",
+     "0 · 0",
+     "Tabby · Tamara · Apple Pay · Google Pay · PayPal"
+    ],
+    [
+     "Oman",
+     "18",
+     "0 · 0",
+     "Apple Pay · Google Pay · PayPal"
+    ],
+    [
+     "Bahrain",
+     "18",
+     "0 · 0",
+     "Tabby · Tamara · Apple Pay · PayPal"
+    ],
+    [
+     "Jordan",
+     "19",
+     "0 · 0",
+     "Apple Pay · PayPal"
+    ]
+   ],
+   "header_style": "dark",
+   "font_size": 8,
+   "bold_first_col": true,
+   "zebra": true,
+   "note": "Gulf states, Israel, Jordan and Egypt. No Waymo launch is announced in the region; coverage shown for later waves. Israel tiers per Yuno's traffic and partner data (Oct 2026). In code = integration repo exists, not listed on y.uno/integrations yet.",
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+  },
+  {
    "id": "c-japan",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › JAPAN › PROVIDERS",
-   "headline": "Japan: 18 providers live through Yuno, 14 for cards, 2 more providers in homologation.",
+   "headline": "Japan: 18 providers live through Yuno, 15 for cards, 2 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (18)",
@@ -611,7 +691,7 @@
    "id": "c-singapore",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › SINGAPORE › PROVIDERS",
-   "headline": "Singapore: 18 providers live through Yuno, 15 for cards, 3 more providers in homologation.",
+   "headline": "Singapore: 18 providers live through Yuno, 16 for cards, 3 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (18)",
@@ -1152,7 +1232,7 @@
    "id": "c-united-kingdom",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › UNITED KINGDOM › PROVIDERS",
-   "headline": "United Kingdom: 26 providers live through Yuno, 17 for cards, 3 more providers in homologation.",
+   "headline": "United Kingdom: 26 providers live through Yuno, 18 for cards, 3 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (26)",
@@ -1485,7 +1565,7 @@
    "id": "c-germany",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › GERMANY › PROVIDERS",
-   "headline": "Germany: 25 providers live through Yuno, 18 for cards, 1 more provider in homologation.",
+   "headline": "Germany: 25 providers live through Yuno, 19 for cards, 1 more provider in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (25)",
@@ -1763,7 +1843,7 @@
    "id": "c-spain",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › SPAIN › PROVIDERS",
-   "headline": "Spain: 28 providers live through Yuno, 20 for cards, 2 more providers in homologation.",
+   "headline": "Spain: 28 providers live through Yuno, 21 for cards, 2 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (28)",
@@ -2677,7 +2757,7 @@
    "id": "c-brazil",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › BRAZIL › PROVIDERS",
-   "headline": "Brazil: 46 providers live through Yuno, 31 for cards, 17 more providers in homologation.",
+   "headline": "Brazil: 46 providers live through Yuno, 32 for cards, 17 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (46)",
@@ -3200,7 +3280,7 @@
    "id": "c-chile",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › CHILE › PROVIDERS",
-   "headline": "Chile: 29 providers live through Yuno, 20 for cards, 11 more providers in homologation.",
+   "headline": "Chile: 29 providers live through Yuno, 21 for cards, 11 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (29)",
@@ -3995,7 +4075,7 @@
    "id": "c-mexico",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › MEXICO › PROVIDERS",
-   "headline": "Mexico: 36 providers live through Yuno, 28 for cards, 17 more providers in homologation.",
+   "headline": "Mexico: 36 providers live through Yuno, 29 for cards, 17 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (36)",
@@ -4575,7 +4655,7 @@
    "id": "c-peru",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › PERU",
-   "headline": "Peru: 25 providers live through Yuno, 17 for cards, 8 more providers in homologation.",
+   "headline": "Peru: 25 providers live through Yuno, 18 for cards, 8 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (25)",
@@ -6718,6 +6798,2127 @@
       "Wallets and global methods via providers",
       "AstroPay (AstroPay)",
       "1"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-saudi-arabia",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › SAUDI ARABIA",
+   "headline": "Saudi Arabia: 35 providers live through Yuno, 9 for cards, 2 more providers in homologation.",
+   "sections": [
+    {
+     "header": "Live through Yuno (35)",
+     "chips": [
+      {
+       "name": "Al Rajhi Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=alrajhibank.com.sa&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Al Rajhi Payment Gateway",
+       "logo": "https://www.google.com/s2/favicons?domain=securepayments.alrajhibank.com.sa&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Amazon Payments Services",
+       "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bank Al Jazira",
+       "logo": "https://www.google.com/s2/favicons?domain=bankaljazira.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bank Albilad",
+       "logo": "https://www.google.com/s2/favicons?domain=bankalbilad.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bank Alinma",
+       "logo": "https://www.google.com/s2/favicons?domain=alinma.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Carry1st",
+       "logo": "https://www.google.com/s2/favicons?domain=carry1st.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Checkout.com",
+       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "dLocal",
+       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "Edaat",
+       "logo": "https://www.google.com/s2/favicons?domain=edaat.sa&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Fiserv",
+       "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Geidea",
+       "logo": "https://www.google.com/s2/favicons?domain=geidea.net&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "HyperPay",
+       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Lean Technologies",
+       "logo": "https://www.google.com/s2/favicons?domain=leantech.me&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "mada",
+       "logo": "https://y.uno/vendor/webflow/68df541d0a21b000d344e994_67ad6295a80c7a83086fec31_Mada.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Moyasar",
+       "logo": "https://www.google.com/s2/favicons?domain=moyasar.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "MyFatoorah",
+       "logo": "https://www.google.com/s2/favicons?domain=myfatoorah.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Network International",
+       "logo": "https://www.google.com/s2/favicons?domain=network.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Noon Payments",
+       "logo": "https://www.google.com/s2/favicons?domain=noonpayments.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Novalnet",
+       "logo": "https://y.uno/vendor/webflow/68df5427f31b569edbf160af_6789cc6f404949fd079f8a82_678316ec8cf0cfe32e79bfc9_678303b7ca16eb93e3cdeafc_673abdada2e46cbceb73e36d_novalnet_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Paymob",
+       "logo": "https://www.google.com/s2/favicons?domain=paymob.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayTabs",
+       "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pockyt",
+       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PostPay",
+       "logo": "https://www.google.com/s2/favicons?domain=postpay.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Saudi Awwal Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=sab.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Saudi National Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=alahli.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tap Payments",
+       "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Telr",
+       "logo": "https://www.google.com/s2/favicons?domain=telr.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Triple-A",
+       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Urway",
+       "logo": "https://www.google.com/s2/favicons?domain=urway.sa&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Homologating (2)",
+     "chips": [
+      {
+       "name": "Paysafe",
+       "logo": "https://y.uno/vendor/webflow/68df5432cba3eee36b2a733c_67ad7f1126124074b37d0c5d_Screenshot%25202025-02-12%2520at%25209.11.38%25E2%2580%25AFPM.png",
+       "aspect": 2.0
+      },
+      {
+       "name": "PPRO",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "muted": true
+    },
+    {
+     "header": "Wallets and payment methods available (13)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Google Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Al Rajhi Mokafaa",
+       "logo": "https://www.google.com/s2/favicons?domain=loyalty.alrajhibank.com.sa&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "SADAD",
+       "logo": "https://www.google.com/s2/favicons?domain=sadad.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "STC Pay",
+       "logo": "https://www.google.com/s2/favicons?domain=stcpay.com.sa&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tabby",
+       "logo": "https://y.uno/vendor/webflow/68df5447a4092968f2a04020_67ad630d04243d5701eb7180_tabby.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tamara",
+       "logo": "https://y.uno/vendor/webflow/68df5448ec43badecc065762_67ad620dead7cbb57427db02_apple-touch-icon-120x120.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UATP",
+       "logo": "https://y.uno/vendor/webflow/68df544b23a777518d9ad109_6789cc7a4e846d24f5e6306c_678316f337b9ced4ce436eb7_678303bb2c3f11a6260a491c_673ab4c050e3f53e92513691_uatp_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UnionPay",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Other local methods",
+      "Tabby (Checkout.com); Tamara (Checkout.com, dLocal)",
+      "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt); Apple Pay (Fiserv); Google Pay (Fiserv); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "6"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-united-arab-emirates",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › UNITED ARAB EMIRATES",
+   "headline": "United Arab Emirates: 32 providers live through Yuno, 9 for cards, 2 more providers in homologation.",
+   "sections": [
+    {
+     "header": "Live through Yuno (32)",
+     "chips": [
+      {
+       "name": "Abu Dhabi Commercial Bank (ADCB)",
+       "logo": "https://www.google.com/s2/favicons?domain=adcb.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Adyen",
+       "logo": "https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f4276a734a3f06_678303aaf872b2b85fd78040_673acbe2eaa24fed0492bf8a_adyen_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Amazon Payments Services",
+       "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bank Dhofar",
+       "logo": "https://www.google.com/s2/favicons?domain=bankdhofar.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Carry1st",
+       "logo": "https://www.google.com/s2/favicons?domain=carry1st.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Checkout.com",
+       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Commercial Bank of Dubai",
+       "logo": "https://www.google.com/s2/favicons?domain=cbd.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "DPO Africa",
+       "logo": "https://www.google.com/s2/favicons?domain=dpogroup.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Dubai Islamic Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=dib.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Fiserv",
+       "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Foloosi",
+       "logo": "https://www.google.com/s2/favicons?domain=foloosi.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Geidea",
+       "logo": "https://www.google.com/s2/favicons?domain=geidea.net&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Getnet",
+       "logo": "https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65ae45dd6a22707_678303b52c3f11a6260a4761_673abeb9945b73b0f330f900_getnet_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "HyperPay",
+       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Lean Technologies",
+       "logo": "https://www.google.com/s2/favicons?domain=leantech.me&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mashreqbank",
+       "logo": "https://www.google.com/s2/favicons?domain=mashreq.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "MyFatoorah",
+       "logo": "https://www.google.com/s2/favicons?domain=myfatoorah.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "National Bank of Abu Dhabi (NBAD)",
+       "logo": "https://www.google.com/s2/favicons?domain=nbad.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Network International",
+       "logo": "https://www.google.com/s2/favicons?domain=network.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Noon Payments",
+       "logo": "https://www.google.com/s2/favicons?domain=noonpayments.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Novalnet",
+       "logo": "https://y.uno/vendor/webflow/68df5427f31b569edbf160af_6789cc6f404949fd079f8a82_678316ec8cf0cfe32e79bfc9_678303b7ca16eb93e3cdeafc_673abdada2e46cbceb73e36d_novalnet_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayTabs",
+       "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PostPay",
+       "logo": "https://www.google.com/s2/favicons?domain=postpay.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Rakbank",
+       "logo": "https://www.google.com/s2/favicons?domain=rakbank.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Stripe",
+       "logo": "https://y.uno/vendor/webflow/68df5445a8ef8a62bf6afaec_6789cc79c8c462843dab8e35_678316f2c376a1c58e0975d0_6783057c9c28a58ed23f20ac_stripe_logosimbolo%252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tap Payments",
+       "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Telr",
+       "logo": "https://www.google.com/s2/favicons?domain=telr.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Triple-A",
+       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Homologating (2)",
+     "chips": [
+      {
+       "name": "Paysafe",
+       "logo": "https://y.uno/vendor/webflow/68df5432cba3eee36b2a733c_67ad7f1126124074b37d0c5d_Screenshot%25202025-02-12%2520at%25209.11.38%25E2%2580%25AFPM.png",
+       "aspect": 2.0
+      },
+      {
+       "name": "PPRO",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "muted": true
+    },
+    {
+     "header": "Wallets and payment methods available (18)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Google Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Careem Pay",
+       "logo": "https://www.google.com/s2/favicons?domain=careem.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Click to Pay",
+       "logo": "https://y.uno/vendor/webflow/68df540cef364b1307eec434_67abc0f0b0aad9c410050eef_1525258644-ClicToPay.jpeg",
+       "aspect": 1.124
+      },
+      {
+       "name": "Discover",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Edenred",
+       "logo": "https://y.uno/vendor/webflow/68df541264162943f4cc9342_67ad6584963571939df29f61_adenred.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Samsung Pay",
+       "logo": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tabby",
+       "logo": "https://y.uno/vendor/webflow/68df5447a4092968f2a04020_67ad630d04243d5701eb7180_tabby.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tamara",
+       "logo": "https://y.uno/vendor/webflow/68df5448ec43badecc065762_67ad620dead7cbb57427db02_apple-touch-icon-120x120.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ticket Edenred",
+       "logo": "https://y.uno/vendor/webflow/68df5448171f10ee4680fe00_6789cc7a28ddfc7fd855244b_678316f39e0a1b2f05cc364c_678303bb4b92192a0601486e_673ab4e80b330ab299a544ba_ticket_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UATP",
+       "logo": "https://y.uno/vendor/webflow/68df544b23a777518d9ad109_6789cc7a4e846d24f5e6306c_678316f337b9ced4ce436eb7_678303bb2c3f11a6260a491c_673ab4c050e3f53e92513691_uatp_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UnionPay",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "WeChat Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5451b7ffc027b007dec1_6789cc7bbafc481a657e6c7a_678316f437b9ced4ce436efd_678303bc7be1a6e439614905_673ab3794f77846940cb5895_wechatpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Western Union",
+       "logo": "https://y.uno/vendor/webflow/68df54520dabba2fa33f7473_6789cc7ce8ffdd3fd5a6eb25_678316f49c28a58ed247e0ec_678303bbdb1c5be39294ea57_673ab3fc98fc4326f558d472_westerunion_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Other local methods",
+      "Tabby · Tamara (Checkout.com)",
+      "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "Apple Pay (Adyen, Fiserv); Google Pay (Adyen, Fiserv); PayPal (Stripe)",
+      "5"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-israel",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › ISRAEL",
+   "headline": "Israel: 6 providers live through Yuno, 6 for cards, 1 more provider in homologation.",
+   "sections": [
+    {
+     "header": "Live through Yuno: Nuvei acquire locally, the others process Israeli cards cross-border (6)",
+     "chips": [
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Adyen",
+       "logo": "https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f4276a734a3f06_678303aaf872b2b85fd78040_673acbe2eaa24fed0492bf8a_adyen_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Airwallex",
+       "logo": "https://y.uno/vendor/webflow/68df53ff3fac1ce361553dc1_6789cc5bade0cb0f7e569468_678316e2d146a2cd32954c1c_678303ad4b92192a060135f6_673ac5430f6cca562dfdf278_airwallex_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Braintree",
+       "logo": "https://y.uno/vendor/webflow/68df540a171f10ee4680f704_6789cc634ecd423306d4ad1b_678316e5121980e08d828d0b_678303ab7d668197482d68ff_673acb0473d5818c0ba4e04c_braintree_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Stripe",
+       "logo": "https://y.uno/vendor/webflow/68df5445a8ef8a62bf6afaec_6789cc79c8c462843dab8e35_678316f2c376a1c58e0975d0_6783057c9c28a58ed23f20ac_stripe_logosimbolo%252525202.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldpay",
+       "logo": "https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121980e08d82933e_678303aa53424d2385a60043_673acbda09c217998145f662_worldpay_logosimbolo%25252525202.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Homologating (1)",
+     "chips": [
+      {
+       "name": "PPRO",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "muted": true
+    },
+    {
+     "header": "Integrated with Yuno, activation on request (2)",
+     "chips": [
+      {
+       "name": "Rapyd",
+       "logo": "https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    },
+    {
+     "header": "Wallets and payment methods available (9)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Google Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "UnionPay",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "WeChat Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5451b7ffc027b007dec1_6789cc7bbafc481a657e6c7a_678316f437b9ced4ce436efd_678303bc7be1a6e439614905_673ab3794f77846940cb5895_wechatpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Western Union",
+       "logo": "https://y.uno/vendor/webflow/68df54520dabba2fa33f7473_6789cc7ce8ffdd3fd5a6eb25_678316f49c28a58ed247e0ec_678303bbdb1c5be39294ea57_673ab3fc98fc4326f558d472_westerunion_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "New connections on request, built by Yuno (9)",
+     "chips": [
+      {
+       "name": "Bit",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cal (Israel Credit Cards)",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cardcom",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Finaro (Shift4)",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Isracard",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Max",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPlus",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pelecard",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tranzila",
+       "logo": "",
+       "aspect": 1.0
+      }
+     ],
+     "style": "request"
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Wallets and global methods via providers",
+      "Alipay (Airwallex); PayPal (Braintree)",
+      "2"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-egypt",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › EGYPT › PROVIDERS",
+   "headline": "Egypt: 27 providers live through Yuno, 7 for cards, 1 more provider in homologation.",
+   "sections": [
+    {
+     "header": "Live through Yuno (27)",
+     "chips": [
+      {
+       "name": "AAIB",
+       "logo": "https://www.google.com/s2/favicons?domain=aaib.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Amazon Payments Services",
+       "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Banque Misr",
+       "logo": "https://www.google.com/s2/favicons?domain=banquemisr.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Carry1st",
+       "logo": "https://www.google.com/s2/favicons?domain=carry1st.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Checkout.com",
+       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "CowPay",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "dLocal",
+       "logo": "https://y.uno/vendor/webflow/68df54111e1e56415a9a2353_6789cc68dd92eede61f725b8_678316e737b9ced4ce4368f6_678305586a800be58e0c77ff_dlocal_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "Fawry",
+       "logo": "https://www.google.com/s2/favicons?domain=fawry.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Fiserv",
+       "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Flutterwave",
+       "logo": "https://y.uno/vendor/webflow/68df54154c769dfb488d4875_6789cc6a09bc1fa384ed93c3_678316e8410d52a65ac91148_6783062001019e74c257281b_flutterwave_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Geidea",
+       "logo": "https://www.google.com/s2/favicons?domain=geidea.net&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "HyperPay",
+       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "JumiaPay",
+       "logo": "https://www.google.com/s2/favicons?domain=pay.jumia.com.ng&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Kashier",
+       "logo": "https://www.google.com/s2/favicons?domain=kashier.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "MyFatoorah",
+       "logo": "https://www.google.com/s2/favicons?domain=myfatoorah.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Noon Payments",
+       "logo": "https://www.google.com/s2/favicons?domain=noonpayments.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "OPay",
+       "logo": "https://www.google.com/s2/favicons?domain=opayweb.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Paymob",
+       "logo": "https://www.google.com/s2/favicons?domain=paymob.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayTabs",
+       "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pockyt",
+       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tap Payments",
+       "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Triple-A",
+       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "WePay",
+       "logo": "https://y.uno/vendor/webflow/68df5451a5f733b5a43cc0e2_67be95dc96563c7bcf7732ef_wepay.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Homologating (1)",
+     "chips": [
+      {
+       "name": "PPRO",
+       "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "muted": true
+    }
+   ]
+  },
+  {
+   "id": "c-egypt-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › EGYPT › PAYMENT METHODS",
+   "headline": "Egypt: 37 payment methods available and 1 local method carried by the providers.",
+   "sections": [
+    {
+     "header": "Wallets and payment methods available (37)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "ABK Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df53fd57c4aa1bbebc49b3_67bcadf6655a112a3ff24569_abk%2520wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Alexbank Ma7fazty",
+       "logo": "https://y.uno/vendor/webflow/68df540143c65c31dc24fe7b_67be750c6eae335b43421106_alexbank.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Aman",
+       "logo": "https://www.google.com/s2/favicons?domain=amanstores.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "AUBE Mobile Wallet-e-Pocket",
+       "logo": "https://y.uno/vendor/webflow/68df53fe908b15610ea4893d_67bd4c2fa2242214397ea28f_aube.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Audi2Pay",
+       "logo": "https://y.uno/vendor/webflow/68df540305e3f9dde2572f20_67bea662c6dcf3a14e17183d_audi2pay.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Banki Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df54076697af27591141ce_67bd4c3ded59d942c7dd5b85_banki.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Blom Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df5409bacc8a568f90e36b_67bf76b134cd192a22d4e8a8_blom%2520wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "BM Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df5404c3ff446a8c70dd13_67bf77831d79f3aff4817635_bm%2520wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "CIB E-Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df540ad2e5e60bf8fa0488_67bd4cc0dc4d1ecae82814ea_cib%2520e-wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Contact getGo",
+       "logo": "https://www.google.com/s2/favicons?domain=contact.eg&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Discover",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Etisalat Cash",
+       "logo": "https://y.uno/vendor/webflow/68df5413ae3946252254e2d8_67bd4d3f3083a6244607d382_etisalatcash.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Gebe",
+       "logo": "https://y.uno/vendor/webflow/68df54167d7d0b2abf5113d6_67bd4db244d042a1fea9d620_gebe.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Masary",
+       "logo": "https://y.uno/vendor/webflow/68df541e80e884c7bdde2c5d_67bd4f1f44d042a1feab3c5e_masary.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Meeza",
+       "logo": "https://www.google.com/s2/favicons?domain=meeza-eg.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "NBK EG Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df54222582c830c7c86039_67bd4f85432130b7246b4b61_nbk%2520eg%2520wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "OrangeCash",
+       "logo": "https://y.uno/vendor/webflow/68df54296c13d614183e7a23_67bd4fb7d586870e58e87135_orangecash.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Phone Cash",
+       "logo": "https://y.uno/vendor/webflow/68df54348775fe55e513b275_67be78d4a20e7b8fc3e0a080_phone%2520cash.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Premium Card",
+       "logo": "https://y.uno/vendor/webflow/68df543762984004e6d9525b_67bea87f3210e6345953cce1_premium%2520card.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Qahera Cash",
+       "logo": "https://y.uno/vendor/webflow/68df5439d5582a7af74db3c2_67bd50b5473a71c76deea461_qahera%2520cash.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "QNB Al-Ahli E-Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df5438f4e9282e4fb30526_67bd50da1249e9a51ac6c40b_qnb%2520ah-ahli.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Saib Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df5441432ec2d5ba659e4b_67bd511d3f2a5f272920ede8_saib%2520wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "SCB E-Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df543d857b9e5fb834516e_67bd51651ae50a34c2f962f7_scb%2520e-wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Shahry",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Souhoola",
+       "logo": "https://www.google.com/s2/favicons?domain=souhoola.net&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Sympl",
+       "logo": "https://y.uno/vendor/webflow/68df5445199df86d12a19ce7_67bd527d3fbd306614b0dcf1_sympl.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tabby",
+       "logo": "https://y.uno/vendor/webflow/68df5447a4092968f2a04020_67ad630d04243d5701eb7180_tabby.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UATP",
+       "logo": "https://y.uno/vendor/webflow/68df544b23a777518d9ad109_6789cc7a4e846d24f5e6306c_678316f337b9ced4ce436eb7_678303bb2c3f11a6260a491c_673ab4c050e3f53e92513691_uatp_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UB Digital Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df544b7a617e15bd89ac21_67bd53353f2a5f272922f01a_ub%2520digital%2520wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "ValU",
+       "logo": "https://www.google.com/s2/favicons?domain=valu.com.eg&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Vodafone Cash",
+       "logo": "https://www.google.com/s2/favicons?domain=web.vodafone.com.eg&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Western Union",
+       "logo": "https://y.uno/vendor/webflow/68df54520dabba2fa33f7473_6789cc7ce8ffdd3fd5a6eb25_678316f49c28a58ed247e0ec_678303bbdb1c5be39294ea57_673ab3fc98fc4326f558d472_westerunion_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Other local methods",
+      "Tabby (Checkout.com)",
+      "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt); Apple Pay (Fiserv); Neteller (Ecommpay)",
+      "4"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-qatar",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › QATAR",
+   "headline": "Qatar: 18 providers live through Yuno, 6 for cards.",
+   "sections": [
+    {
+     "header": "Live through Yuno (18)",
+     "chips": [
+      {
+       "name": "Amazon Payments Services",
+       "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Carry1st",
+       "logo": "https://www.google.com/s2/favicons?domain=carry1st.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Checkout.com",
+       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Commercial Bank of Qatar",
+       "logo": "https://www.google.com/s2/favicons?domain=cbq.qa&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Dibsy",
+       "logo": "https://www.google.com/s2/favicons?domain=dibsy.one&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "HyperPay",
+       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mashreqbank",
+       "logo": "https://www.google.com/s2/favicons?domain=mashreq.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "MyFatoorah",
+       "logo": "https://www.google.com/s2/favicons?domain=myfatoorah.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Novalnet",
+       "logo": "https://y.uno/vendor/webflow/68df5427f31b569edbf160af_6789cc6f404949fd079f8a82_678316ec8cf0cfe32e79bfc9_678303b7ca16eb93e3cdeafc_673abdada2e46cbceb73e36d_novalnet_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pockyt",
+       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Qatar National Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=qnb.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Skipcash",
+       "logo": "https://www.google.com/s2/favicons?domain=skipcash.app&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tap Payments",
+       "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Triple-A",
+       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Wallets and payment methods available (13)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Google Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Discover",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "NAPS/QPAY",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "QNB Al-Ahli E-Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df5438f4e9282e4fb30526_67bd50da1249e9a51ac6c40b_qnb%2520ah-ahli.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "QPay",
+       "logo": "https://www.google.com/s2/favicons?domain=qnb.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tamara",
+       "logo": "https://y.uno/vendor/webflow/68df5448ec43badecc065762_67ad620dead7cbb57427db02_apple-touch-icon-120x120.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UATP",
+       "logo": "https://y.uno/vendor/webflow/68df544b23a777518d9ad109_6789cc7a4e846d24f5e6306c_678316f337b9ced4ce436eb7_678303bb2c3f11a6260a491c_673ab4c050e3f53e92513691_uatp_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UnionPay",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Other local methods",
+      "Tamara (Checkout.com)",
+      "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "4"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-kuwait",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › KUWAIT",
+   "headline": "Kuwait: 20 providers live through Yuno, 6 for cards.",
+   "sections": [
+    {
+     "header": "Live through Yuno (20)",
+     "chips": [
+      {
+       "name": "Adyen",
+       "logo": "https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f4276a734a3f06_678303aaf872b2b85fd78040_673acbe2eaa24fed0492bf8a_adyen_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Amazon Payments Services",
+       "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bookeey",
+       "logo": "https://www.google.com/s2/favicons?domain=bookeey.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Carry1st",
+       "logo": "https://www.google.com/s2/favicons?domain=carry1st.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Checkout.com",
+       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "Gulf Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=e-gulfbank.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "HyperPay",
+       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Kuwait International Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=kib.com.kw&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "MyFatoorah",
+       "logo": "https://www.google.com/s2/favicons?domain=myfatoorah.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "NBK (National Bank of Kuwait)",
+       "logo": "https://www.google.com/s2/favicons?domain=nbk.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Network International",
+       "logo": "https://www.google.com/s2/favicons?domain=network.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayTabs",
+       "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pockyt",
+       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tap Payments",
+       "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Triple-A",
+       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "UPayments",
+       "logo": "https://www.google.com/s2/favicons?domain=upayments.com&sz=128",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Wallets and payment methods available (14)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Google Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Discover",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "KFast",
+       "logo": "https://www.google.com/s2/favicons?domain=knet.com.kw&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Knet",
+       "logo": "https://www.google.com/s2/favicons?domain=knet.com.kw&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "NBK EG Wallet",
+       "logo": "https://y.uno/vendor/webflow/68df54222582c830c7c86039_67bd4f85432130b7246b4b61_nbk%2520eg%2520wallet.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Samsung Pay",
+       "logo": "https://www.google.com/s2/favicons?domain=samsung.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tabby",
+       "logo": "https://y.uno/vendor/webflow/68df5447a4092968f2a04020_67ad630d04243d5701eb7180_tabby.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tamara",
+       "logo": "https://y.uno/vendor/webflow/68df5448ec43badecc065762_67ad620dead7cbb57427db02_apple-touch-icon-120x120.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UnionPay",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Other local methods",
+      "Tabby · Tamara (Checkout.com)",
+      "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt); Apple Pay (Adyen); Google Pay (Adyen); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "6"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-oman",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › OMAN",
+   "headline": "Oman: 18 providers live through Yuno, 6 for cards.",
+   "sections": [
+    {
+     "header": "Live through Yuno (18)",
+     "chips": [
+      {
+       "name": "Amazon Payments Services",
+       "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bank Dhofar",
+       "logo": "https://www.google.com/s2/favicons?domain=bankdhofar.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Bank Muscat",
+       "logo": "https://www.google.com/s2/favicons?domain=bankmuscat.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Carry1st",
+       "logo": "https://www.google.com/s2/favicons?domain=carry1st.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Checkout.com",
+       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "HyperPay",
+       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "MyFatoorah",
+       "logo": "https://www.google.com/s2/favicons?domain=myfatoorah.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "National bank of Oman",
+       "logo": "https://www.google.com/s2/favicons?domain=nbo.om&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Network International",
+       "logo": "https://www.google.com/s2/favicons?domain=network.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayTabs",
+       "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pockyt",
+       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tap Payments",
+       "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Thawani",
+       "logo": "https://www.google.com/s2/favicons?domain=thawani.om&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Wallets and payment methods available (9)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Google Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Discover",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "OmanNet",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "UnionPay",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "4"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-bahrain",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › BAHRAIN",
+   "headline": "Bahrain: 18 providers live through Yuno, 6 for cards.",
+   "sections": [
+    {
+     "header": "Live through Yuno (18)",
+     "chips": [
+      {
+       "name": "Adyen",
+       "logo": "https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f4276a734a3f06_678303aaf872b2b85fd78040_673acbe2eaa24fed0492bf8a_adyen_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ahli United bank",
+       "logo": "https://www.google.com/s2/favicons?domain=ahliunited.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Amazon Payments Services",
+       "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Benefit",
+       "logo": "https://www.google.com/s2/favicons?domain=benefit.bh&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Carry1st",
+       "logo": "https://www.google.com/s2/favicons?domain=carry1st.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Checkout.com",
+       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Credimax",
+       "logo": "https://www.google.com/s2/favicons?domain=credimax.com.bh&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "HyperPay",
+       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "MyFatoorah",
+       "logo": "https://www.google.com/s2/favicons?domain=myfatoorah.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Network International",
+       "logo": "https://www.google.com/s2/favicons?domain=network.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayGCC",
+       "logo": "https://www.google.com/s2/favicons?domain=paygcc.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pockyt",
+       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tap Payments",
+       "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Triple-A",
+       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Wallets and payment methods available (11)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Discover",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Neteller",
+       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tabby",
+       "logo": "https://y.uno/vendor/webflow/68df5447a4092968f2a04020_67ad630d04243d5701eb7180_tabby.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tamara",
+       "logo": "https://y.uno/vendor/webflow/68df5448ec43badecc065762_67ad620dead7cbb57427db02_apple-touch-icon-120x120.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UATP",
+       "logo": "https://y.uno/vendor/webflow/68df544b23a777518d9ad109_6789cc7a4e846d24f5e6306c_678316f337b9ced4ce436eb7_678303bb2c3f11a6260a491c_673ab4c050e3f53e92513691_uatp_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UnionPay",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Western Union",
+       "logo": "https://y.uno/vendor/webflow/68df54520dabba2fa33f7473_6789cc7ce8ffdd3fd5a6eb25_678316f49c28a58ed247e0ec_678303bbdb1c5be39294ea57_673ab3fc98fc4326f558d472_westerunion_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Other local methods",
+      "Tabby · Tamara (Checkout.com)",
+      "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt); Apple Pay (Adyen); Neteller (Ecommpay); UnionPay (Ecommpay)",
+      "5"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "c-jordan",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › JORDAN",
+   "headline": "Jordan: 19 providers live through Yuno, 6 for cards.",
+   "sections": [
+    {
+     "header": "Live through Yuno (19)",
+     "chips": [
+      {
+       "name": "Amazon Payments Services",
+       "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Arab Bank",
+       "logo": "https://www.google.com/s2/favicons?domain=arabbank.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Capital Bank of Jordan",
+       "logo": "https://www.google.com/s2/favicons?domain=capitalbank.jo&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Carry1st",
+       "logo": "https://www.google.com/s2/favicons?domain=carry1st.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Checkout.com",
+       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Cybersource",
+       "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Ecommpay",
+       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
+       "aspect": 0.967
+      },
+      {
+       "name": "HyperPay",
+       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "MadfoatCom",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Middle East Payments (MEPS)",
+       "logo": "https://www.google.com/s2/favicons?domain=mepspay.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "MyFatoorah",
+       "logo": "https://www.google.com/s2/favicons?domain=myfatoorah.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Network International",
+       "logo": "https://www.google.com/s2/favicons?domain=network.ae&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nuvei",
+       "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pagsmile",
+       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Paymob",
+       "logo": "https://www.google.com/s2/favicons?domain=paymob.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayTabs",
+       "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Pockyt",
+       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Tap Payments",
+       "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Worldline",
+       "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    },
+    {
+     "header": "Wallets and payment methods available (7)",
+     "chips": [
+      {
+       "name": "Apple Pay",
+       "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Discover",
+       "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "EFAWATEERcom",
+       "logo": "https://www.google.com/s2/favicons?domain=efawateercom.jo&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Mastercard",
+       "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "UnionPay",
+       "logo": "https://www.google.com/s2/favicons?domain=unionpayintl.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Visa",
+       "logo": "https://y.uno/vendor/webflow/68df5450f0ba1ef216476d4f_6789cc7bd31a39f7322eee4c_678316f3e993c621973a1878_678303a92c3f11a6260a411c_673acbfe8218450ea09ceb55_visa_logosimbolo.png",
+       "aspect": 1.0
+      }
+     ]
+    }
+   ],
+   "table": {
+    "columns": [
+     "Local method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Wallets and global methods via providers",
+      "PayPal (Ecommpay, Pockyt); UnionPay (Ecommpay)",
+      "3"
      ]
     ]
    }

@@ -20,16 +20,25 @@ todo = [u for u in urls if u not in known]; print(len(todo), 'to test')
 cr = service_account.Credentials.from_service_account_file(os.path.expanduser('~/.config/gsuite/sa.json'), scopes=['https://www.googleapis.com/auth/presentations'])
 svc = build('slides', 'v1', credentials=cr, cache_discovery=False)
 EMU = 12700
-first = svc.presentations().get(presentationId=pid, fields='slides.objectId').execute()['slides'][0]['objectId']
-sid = 'preflight_scratch_1'
-svc.presentations().batchUpdate(presentationId=pid, body={'requests': [{'duplicateObject': {'objectId': first, 'objectIds': {first: sid}}}]}).execute()
+def bu(reqs):
+    """batchUpdate with backoff on the 60 writes/min quota (429)"""
+    for attempt in range(6):
+        try: return svc.presentations().batchUpdate(presentationId=pid, body={'requests': reqs}).execute()
+        except HttpError as e:
+            if e.resp.status == 429: print('  quota, waiting 65 s'); time.sleep(65); continue
+            raise
+    raise RuntimeError('quota: gave up')
+slides = svc.presentations().get(presentationId=pid, fields='slides.objectId').execute()['slides']
+first = slides[0]['objectId']; sid = 'preflight_scratch_1'
+if any(x['objectId'] == sid for x in slides): bu([{'deleteObject': {'objectId': sid}}])   # leftover from an interrupted run
+bu([{'duplicateObject': {'objectId': first, 'objectIds': {first: sid}}}])
 def req(u, i):
     return {'createImage': {'url': u, 'elementProperties': {'pageObjectId': sid, 'size': {'width': {'magnitude': 20 * EMU, 'unit': 'EMU'}, 'height': {'magnitude': 20 * EMU, 'unit': 'EMU'}},
             'transform': {'scaleX': 1, 'scaleY': 1, 'translateX': (i % 30) * 22 * EMU, 'translateY': (i // 30) * 22 * EMU, 'unit': 'EMU'}}}}
 def try_batch(batch):
     for attempt in range(3):
         try:
-            svc.presentations().batchUpdate(presentationId=pid, body={'requests': [req(u, i) for i, u in enumerate(batch)]}).execute(); return None
+            bu([req(u, i) for i, u in enumerate(batch)]); return None
         except HttpError as e:
             msg = str(e)
             if 'not found' in msg or 'Invalid requests' in msg or 'could not be fetched' in msg.lower() or 'image' in msg.lower():
@@ -46,5 +55,5 @@ for k in range(0, len(todo), 15):
         if e1: bad[u] = e1[:160]; print('BAD', u[:110], '|', e1[:90])
         else: ok += 1
     time.sleep(1)
-svc.presentations().batchUpdate(presentationId=pid, body={'requests': [{'deleteObject': {'objectId': sid}}]}).execute()
+bu([{'deleteObject': {'objectId': sid}}])
 json.dump(bad, open(OUT, 'w'), indent=1); print('ok', ok, 'bad', len(bad), '->', OUT)

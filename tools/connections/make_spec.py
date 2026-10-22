@@ -22,12 +22,15 @@ def chip(name, key=None):
     return {'name': name, 'logo': '' if url in SLIDES_BAD else url, 'aspect': 1.0}
 WALLETS = {'Apple Pay', 'Google Pay', 'PayPal'}
 GLOBAL = WALLETS | {'Alipay', 'WeChat Pay', 'UnionPay', 'Neteller', 'Skrill', 'Samsung Pay', 'AstroPay'}
-by = {c: {'live': [], 'homolog': [], 'code': [], 'code_m': {}, 'signed': [], 'direct': [], 'methods': collections.defaultdict(list), 'global_m': collections.defaultdict(list), 'key': {}, 'nodata': []} for c in T}
+by = {c: {'live': [], 'homolog': [], 'code': [], 'code_m': {}, 'signed': [], 'direct': [], 'xborder': [], 'activate': [], 'request': [], 'methods': collections.defaultdict(list), 'global_m': collections.defaultdict(list), 'key': {}, 'nodata': []} for c in T}
 for c, typ, name, meths, status, key in R:
     d = by[c]; d['key'][name] = key
+    if status == 'On request': d['request'].append(name); continue
     if typ == 'Provider':
         if status == 'Homologating': d['homolog'].append(name); continue
         if status == 'Integrated (code)': d['code'].append(name); d['code_m'][name] = meths; continue
+        if status == 'Activation on request': d['activate'].append(name); continue
+        if status == 'Live (cross-border)': d['xborder'].append(name)
         d['live'].append(name)
         if not meths: d['nodata'].append(name)
         for m in meths:
@@ -113,11 +116,15 @@ def country_slides(c):
         headB = f"{cn}: {pl(len(direct), 'payment method')} available and {pl(nloc, 'local method')} carried by the providers." if nloc else f"{cn}: {pl(len(direct), 'payment method')} available through Yuno."
         secB_h = f"Wallets and payment methods available ({len(direct)})"; tcols = ["Local method", "Providers carrying it through Yuno", "#"]
     if not live and not hom: headA = f"{cn}: no provider lists this market on y.uno/integrations yet; {pl(len(direct), 'global payment method')} available." + (f" {pl(len(code), 'provider')} integrated in code." if code else "")
-    secA = [{"header": f"Live through Yuno ({len(live)})", "chips": [chip(x, d['key'].get(x)) for x in live]}] if live else []
+    live_h = f"Live through Yuno ({len(live)})"
+    if d['xborder']: live_h = f"Live through Yuno: {', '.join(x for x in live if x not in d['xborder'])} acquire locally, the others process {cn.replace('Israel', 'Israeli')} cards cross-border ({len(live)})"
+    secA = [{"header": live_h, "chips": [chip(x, d['key'].get(x)) for x in sorted(live, key=lambda x: (x in d['xborder'], x.lower()))]}] if live else []
     if hom: secA.append({"header": f"Homologating ({len(hom)})", "chips": [chip(x, d['key'].get(x)) for x in hom], "muted": True})
+    if d['activate']: secA.append({"header": f"Integrated with Yuno, activation on request ({len(d['activate'])})", "chips": [chip(x, d['key'].get(x)) for x in sorted(d['activate'])], "style": "signed"})
     if code: secA.append({"header": f"Integrated in Yuno's code, not yet listed on y.uno/integrations ({len(code)})", "chips": [chip(x, d['key'].get(x)) for x in code], "style": "signed"})
     secB = [{"header": secB_h, "chips": [chip(x, d['key'].get(x)) for x in direct]}] if direct else []
     if signed: secB.append({"header": f"Signed with partners, not yet integrated ({len(signed)})", "chips": [chip(x, d['key'].get(x)) for x in signed], "style": "request"})
+    if d['request']: secB.append({"header": f"New connections on request, built by Yuno ({len(d['request'])})", "chips": [chip(x, d['key'].get(x)) for x in sorted(d['request'])], "style": "request"})
     tbl = {"columns": tcols, "col_widths": [0.24, 0.70, 0.06], "font_size": 7.5}
     kick = "COUNTRY DETAIL › " + cn.upper()
     # 1) one combined slide

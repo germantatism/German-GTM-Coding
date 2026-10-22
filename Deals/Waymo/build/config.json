@@ -1,13 +1,13 @@
 {
  "merchant": "Waymo",
  "deal_dir": "Deals/Waymo",
- "presentation_id": "1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI",
+ "presentation_id": "1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
  "logo_aspect": 6.963,
  "recurring_only": false,
  "cover": {
   "title": "Connections and payment methods",
-  "subtitle": "Providers and local payment methods in Waymo's seven announced markets and across Latin America",
+  "subtitle": "Providers and local methods in Waymo's seven announced markets, Latin America and the Middle East",
   "presenter": "German Tatis, Yuno · October 2026"
  },
  "regions": [
@@ -56,6 +56,22 @@
    ],
    "headline": "Every Latin American market has live providers and its main local methods through Yuno, with redundancy in the large ones.",
    "note": "All Spanish- and Portuguese-speaking markets with Yuno coverage; Cuba is not served."
+  },
+  {
+   "name": "Middle East",
+   "countries": [
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Israel",
+    "Egypt",
+    "Qatar",
+    "Kuwait",
+    "Oman",
+    "Bahrain",
+    "Jordan"
+   ],
+   "headline": "The Gulf, Israel, Jordan and Egypt run on the regional acquirers, the local card schemes and the wallets riders already use.",
+   "note": "Gulf states, Israel, Jordan and Egypt. No Waymo launch is announced in the region; coverage shown for later waves. Israel tiers per Yuno's traffic and partner data (Oct 2026)."
   }
  ],
  "markets": [
@@ -95,7 +111,7 @@
    "Talks with the federal, NSW and Victoria governments reported in January 2026; no permit application filed"
   ]
  ],
- "markets_headline": "Seven countries outside the US have a public Waymo plan today; this deck covers them plus every Latin American market.",
+ "markets_headline": "Seven countries outside the US have a public Waymo plan today; this deck covers them plus Latin America and the Middle East.",
  "markets_note": "Public announcements as of 22 October 2026. No other country has an announced Waymo launch. Providers live = connections available through Yuno in that country.",
  "markets_sources": "Market status sources: Waymo blog (London, Oct 2025), CNBC (Munich, 25 Aug 2026), The Olive Press (Madrid, 25 Aug 2026), Fortune and LTA (Singapore, 17 Sep 2026), Element Fleet and TipRanks (Toronto, 2028), Nihon Kotsu and GO (Tokyo 2027), AFR via ACS (Australia, Jan 2026).",
  "next": {
@@ -122,5 +138,6 @@
   ]
  },
  "presentation_id_v1": "1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE",
- "signed": true
+ "signed": true,
+ "presentation_id_v2": "1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI"
 }

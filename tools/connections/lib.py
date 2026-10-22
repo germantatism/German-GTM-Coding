@@ -27,7 +27,8 @@ def load_directory():
     if len(cs) == 2:
         keep, dup = sorted(cs, key=lambda d: 0 if d['description'] else 1)
         keep['name'] = 'Cybersource'; keep['countries'] = sorted(set(keep['countries']) | set(dup['countries'])); keep['features'] = sorted(set(keep['features']) | set(dup['features']))
-        if not keep.get('logo'): keep['logo'] = dup.get('logo'); D.remove(dup)
+        if not keep.get('logo'): keep['logo'] = dup.get('logo')
+        D.remove(dup)
     ul = [d for d in D if nk(d['name']) in ('unlimit', 'unlimint')]
     if len(ul) == 2:
         keep = next(d for d in ul if nk(d['name']) == 'unlimit'); dup = next(d for d in ul if d is not keep)
@@ -59,7 +60,7 @@ ISO2 = {'Japan': 'jp', 'Singapore': 'sg', 'Australia': 'au', 'United Kingdom': '
         'Bangladesh': 'bd', 'Hong Kong': 'hk', 'Pakistan': 'pk', 'New Zealand': 'nz', 'Sri Lanka': 'lk', 'Myanmar': 'mm', 'Macau': 'mo', 'Cambodia': 'kh', 'Nepal': 'np', 'Papua New Guinea': 'pg',
         'Mongolia': 'mn', 'Laos': 'la', 'France': 'fr', 'Italy': 'it', 'Turkey': 'tr', 'Netherlands': 'nl', 'Switzerland': 'ch', 'Poland': 'pl', 'Belgium': 'be', 'Ireland': 'ie', 'Sweden': 'se',
         'Austria': 'at', 'Norway': 'no', 'Denmark': 'dk', 'Romania': 'ro', 'Czech Republic': 'cz', 'Portugal': 'pt', 'Finland': 'fi', 'Kazakhstan': 'kz', 'United States': 'us', 'South Korea': 'kr',
-        'India': 'in', 'Israel': 'il', 'Saudi Arabia': 'sa', 'United Arab Emirates': 'ae', 'South Africa': 'za', 'China': 'cn', 'Egypt': 'eg'}
+        'India': 'in', 'Israel': 'il', 'Saudi Arabia': 'sa', 'United Arab Emirates': 'ae', 'South Africa': 'za', 'China': 'cn', 'Egypt': 'eg', 'Qatar': 'qa', 'Kuwait': 'kw', 'Bahrain': 'bh', 'Oman': 'om', 'Jordan': 'jo'}
 _pp = os.path.join(ROOT, 'tools/connections/logos/paypal_countries_2026-10-22.json')
 PAYPAL_CC = {cc for cc, _ in json.load(open(_pp))} if os.path.exists(_pp) else None
 def paypal_ok(c):
@@ -275,6 +276,14 @@ CODE_ONLY = [
 ]
 CODE_ONLY_DOMAIN = {k: dom for _, k, _, _, _, dom in CODE_ONLY}
 # partner-signed methods, not yet integrated (Ali Partnerships, #partnerships--sales, Mar/May 2026; German 14 Oct 2026: Status "Signed"; Billease removed)
+ISRAEL_EXTRA = [
+ ('Provider', 'Adyen', ['Cards'], 'Live (cross-border)'), ('Provider', 'Airwallex', ['Cards', 'Alipay'], 'Live (cross-border)'), ('Provider', 'Braintree', ['Cards', 'PayPal'], 'Live (cross-border)'),
+ ('Provider', 'Stripe', ['Cards'], 'Live (cross-border)'), ('Provider', 'Worldpay', ['Cards'], 'Live (cross-border)'),
+ ('Provider', 'Rapyd', [], 'Activation on request'), ('Provider', 'Worldline', [], 'Activation on request'),
+ ('Provider', 'PayPlus', [], 'On request'), ('Provider', 'Isracard', [], 'On request'), ('Provider', 'Cal (Israel Credit Cards)', [], 'On request'), ('Provider', 'Max', [], 'On request'),
+ ('Provider', 'Tranzila', [], 'On request'), ('Provider', 'Cardcom', [], 'On request'), ('Provider', 'Pelecard', [], 'On request'), ('Provider', 'Finaro (Shift4)', [], 'On request'),
+ ('Direct payment method', 'Bit', [], 'On request'),
+]   # Israel research of 14 Oct 2026 (adidas): matrix shows Israeli card traffic through the five cross-border acquirers; Rapyd and Worldline integrated with Israel in partner coverage; the rest are new connections
 SIGNED = [('Costa Rica', 'SINPE Móvil'), ('Indonesia', 'GoPay'), ('Indonesia', 'Kredivo'), ('Malaysia', 'DuitNow QR'), ('Vietnam', 'MoMo'), ('Vietnam', 'ZaloPay'), ('Vietnam', 'VNPay QR'),
           ('Vietnam', 'Viettel Money (ViettelPay)'), ('Vietnam', 'NAPAS domestic cards and VietQR')]
 
@@ -361,4 +370,8 @@ class Data:
             if signed and not recurring_only:
                 for sc, name in SIGNED:
                     if sc == c: R.append([c, 'Direct payment method', name, [], 'Signed', nk(name)])
+            if c == 'Israel' and not recurring_only:
+                have = {r[2] for r in R if r[0] == c}
+                for typ, name, labs, st in ISRAEL_EXTRA:
+                    if name not in have: R.append([c, typ, name, labs, st, nk(name)])
         return R
