@@ -20,10 +20,11 @@ def kick(sl):
     return ''
 # the four engine-built vault slides sit between the dividers "02" and "03"
 d02 = next(i for i, sl in enumerate(slides) if sl['objectId'].startswith('n07'))
-old = [sl['objectId'] for sl in slides[d02 + 1:d02 + 5]]
+d03 = next(i for i, sl in enumerate(slides) if i > d02 and '_g3f769a0f446_0_988' in sl['objectId'])   # next divider
+NEW = ['wv_problem', 'wv_summary', 'wv_cards', 'wv_versus']
+old = [sl['objectId'] for sl in slides[d02 + 1:d03] if sl['objectId'] not in NEW]
 print('replacing', [(o, kick(next(x for x in slides if x['objectId'] == o))[:40]) for o in old])
 base = next(x for x in slides if x['objectId'].startswith('n13'))   # the markets table slide: white content chrome of this deck
-NEW = ['wv_problem', 'wv_summary', 'wv_cards', 'wv_versus']
 have = set(ids)
 
 def chrome(new_sid, kicker, title, notes, title_size=19):
@@ -98,33 +99,33 @@ if sid not in have:
         p.text(410, 261 + i * 22, 262, 14, t, size=9.5, color=INK)
     run(s, PID, p.R, sid); set_notes(sid, p.notes)
 
-# ---------------------------------------------------------------- 2. integrated versus standalone (redrawn from the OnlyFans summary slide)
+# ---------------------------------------------------------------- 2. today and what comes next (timeline version of the OnlyFans summary slide)
 sid = NEW[1]
 if sid not in have:
-    p = chrome(sid, 'EXECUTIVE SUMMARY  ›  INTEGRATED VERSUS STANDALONE', "Yuno's vault does everything a standalone vault does, plus the connections, with far less to build", SRC)
-    p.text(36, 98, 137, 35, 'What Waymo needs', size=10.5, color=INK, weight=700, pad=False, valign='MIDDLE')
-    p.text(180, 96, 216, 38, '**Standalone vault**\nStores the data. The rest is yours to build or buy.', size=8.5, color=BODY, weight=400, pad=False, kind='ROUND_RECTANGLE', fill='#F4F4FA', valign='MIDDLE', bold_color=INK)
-    p.text(408, 96, 276, 38, '**Yuno integrated vault**\nStores the data, connects it to processors and runs payments on it.', size=8.5, color='#E8EAF5', weight=400, pad=False, kind='ROUND_RECTANGLE', fill=BLUE, valign='MIDDLE', bold_color=WHITE)
+    p = chrome(sid, 'EXECUTIVE SUMMARY  ›  TODAY, AND WHAT COMES NEXT', 'A vault for today. As the connections grow, one place for the complexity that comes with them', SRC, title_size=17)
+    p.text(36, 98, 137, 35, 'What Waymo needs, over time', size=10.5, color=INK, weight=700, pad=False, valign='MIDDLE')
+    p.text(180, 96, 216, 38, '**Standalone vault**\nStores the data. Every new connection is yours to build and reconcile.', size=8.5, color=BODY, weight=400, pad=False, kind='ROUND_RECTANGLE', fill='#F4F4FA', valign='MIDDLE', bold_color=INK)
+    p.text(408, 96, 276, 38, '**Yuno integrated vault**\nStores the data, and absorbs each new connection as it comes.', size=8.5, color='#E8EAF5', weight=400, pad=False, kind='ROUND_RECTANGLE', fill=BLUE, valign='MIDDLE', bold_color=WHITE)
     p.pill(611, 101, 64, 'INCLUDED', fill='#2738CB', color=WHITE, size=6.5, h=12.5)
-    p.text(36, 138, 137, 32, 'Basic vault function', size=9, color=INK, weight=700, pad=False, valign='MIDDLE')
+    p.text(36, 138, 137, 32, 'Today: the vault', size=9, color=INK, weight=700, pad=False, valign='MIDDLE')
     p.text(180, 142, 504, 25, 'PCI DSS Level 1 storage   ·   Tokenisation   ·   Proxy to providers   ·   Portable tokens and contractual exit', size=8.5, color=BODY, pad=False, kind='ROUND_RECTANGLE', fill='#F7F9FC', line=LINE, align='CENTER', valign='MIDDLE')
-    p.text(36, 176, 220, 14, 'Other connections and capabilities', size=9, color=BLUE, weight=700, pad=False)
+    p.text(36, 176, 300, 14, 'What tends to come next', size=9, color=BLUE, weight=700, pad=False)
     p.shape(408, 188, 276, 164, 'RECTANGLE', '#F1F4FF', None)
-    rows = [('Data in one vault', 'PARTIAL', 'Cards and tokens; wallet tokens vary by vendor', '**Cards, network tokens and Apple Pay and Google Pay tokens** in one vault'),
-            ('Provider connections', 'Additional\nBuild', 'Each processor and local acquirer per market, built and run in-house', '**460+ processor integrations** already built and maintained'),
-            ('Payment capabilities', 'Additional\nBuild', 'Routing, retries, failover and re-authorisation, built in-house', '**Routing, retries and failover** on rules you set'),
-            ('Additional services', 'Additional\nPurchase', 'A new vendor and integration for each service', '**3DS, account updater and network tokens** on the same tokens')]
+    rows = [('Today\nA second PSP', 'Yours to\nbuild', 'Cards in the vault; routing and failover between the two PSPs built in-house', '**One token on both PSPs**, with routing and failover by rule'),
+            ('Next\nNew markets', 'Yours to\nbuild', 'A local acquirer and local methods per market, each a new integration', '**460+ processor integrations** and local methods, switched on per market'),
+            ('Then\nMore connections', 'Yours to\nreconcile', 'Every provider reports in its own format; reconciling across them is in-house work', '**One reconciliation and one ledger view** across every provider'),
+            ('Over the years\nMore services', 'More\nvendors', '3DS, account updater, network tokens and fraud tools, each a vendor and an integration', '**3DS, account updater, network tokens and fraud tools** on the same tokens')]
     for i, (lab, pill, left, right) in enumerate(rows):
         y = 192 + i * 40
-        p.text(36, y, 137, 40, lab, size=9.5, color=INK, weight=700, pad=False, valign='MIDDLE')
+        p.text(36, y, 140, 40, lab, size=9, color=INK, weight=700, pad=False, valign='MIDDLE', ls=105)
         p.text(186, y + 8, 66, 24, pill, size=7, color='#B5473A', weight=700, pad=False, kind='ROUND_RECTANGLE', fill='#F7E4E1', align='CENTER', valign='MIDDLE', ls=100)
-        p.text(258, y, 139, 40, left, size=8.5, color=BODY, pad=False, valign='MIDDLE')
+        p.text(258, y, 139, 40, left, size=8, color=BODY, pad=False, valign='MIDDLE', ls=105)
         if i < 3: p.shape(36, y + 40, 360, 0.5, 'RECTANGLE', '#E7E7ED', None)
         p.line(420, y + 19, 423, y + 22, BLUE, 1.5); p.line(423, y + 22, 429, y + 15, BLUE, 1.5)
-        p.text(433, y, 244, 40, right, size=10, color=INK, weight=400, pad=False, valign='MIDDLE', bold_color=BLUE)
+        p.text(433, y, 244, 40, right, size=9.5, color=INK, weight=400, pad=False, valign='MIDDLE', bold_color=BLUE, ls=105)
         if i < 3: p.shape(418, y + 40, 256, 0.5, 'RECTANGLE', '#DEE4F7', None)
-    p.text(36, 360, 648, 25, '**Same independence, far less to build.**   Waymo keeps portable tokens and exit terms, and decides how much of the stack Yuno runs.', size=9.5, color='#E8EAF5', pad=False, kind='ROUND_RECTANGLE', fill='#1C2DB8', align='CENTER', valign='MIDDLE', bold_color=WHITE)
-    run(s, PID, p.R, sid); set_notes(sid, p.notes)
+    p.text(36, 360, 648, 25, '**Same independence today, less complexity tomorrow.**   Waymo keeps portable tokens and exit terms; every connection added later lands in one place.', size=9.5, color='#E8EAF5', pad=False, kind='ROUND_RECTANGLE', fill='#1C2DB8', align='CENTER', valign='MIDDLE', bold_color=WHITE)
+    run(s, PID, p.R, sid); set_notes(sid, p.notes + ' Reconciliation: Yuno platform slide (Analytics and Reconciliation: one ledger across every PSP). The second PSP: told to German by Waymo, October 2026.')
 
 # ---------------------------------------------------------------- 3. cards: store, keep, move (OnlyFans vlt_cards, riders instead of fans)
 sid = NEW[2]
