@@ -1,7 +1,7 @@
 {
  "merchant": "Waymo",
  "deal_dir": "Deals/Waymo",
- "presentation_id": "1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ",
+ "presentation_id": "1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
  "logo_aspect": 6.963,
  "recurring_only": false,
@@ -139,5 +139,19 @@
  },
  "presentation_id_v1": "1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE",
  "signed": true,
- "presentation_id_v2": "1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI"
+ "presentation_id_v2": "1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI",
+ "presentation_id_prev": "1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ",
+ "intro": {
+  "title": "Yuno in brief",
+  "sub": "What we do, the platform, who runs on it and the team behind it",
+  "slides": [
+   "yuno-story",
+   "four-pillars",
+   "trusted",
+   "team"
+  ],
+  "section2_title": "Connections and payment methods",
+  "section2_sub": "Waymo's seven announced markets, Latin America and the Middle East: who is live through Yuno and which local methods they carry",
+  "drop_spacex": false
+ }
 }

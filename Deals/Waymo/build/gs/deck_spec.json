@@ -1,5 +1,5 @@
 {
- "presentation_id": "1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ",
+ "presentation_id": "1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4",
  "merchant": "Waymo",
  "footer": "",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
@@ -12,6 +12,76 @@
    "subtitle": "Providers and local methods in Waymo's seven announced markets, Latin America and the Middle East",
    "presenter": "German Tatis, Yuno · October 2026",
    "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2"
+  },
+  {
+   "id": "d01",
+   "type": "divider",
+   "num": "01",
+   "title": "Yuno in brief",
+   "sub": "What we do, the platform, who runs on it and the team behind it",
+   "section_list": [
+    "01 Yuno in brief",
+    "02 Connections and payment methods"
+   ]
+  },
+  {
+   "id": "yuno-story",
+   "type": "template_keep",
+   "template_index": 22,
+   "template_ref": "yuno-story",
+   "replacements": [
+    {
+     "find": "Eventbrite",
+     "replace": "Waymo"
+    }
+   ]
+  },
+  {
+   "id": "four-pillars",
+   "type": "template_keep",
+   "template_index": 23,
+   "template_ref": "four-pillars",
+   "replacements": [
+    {
+     "find": "Eventbrite",
+     "replace": "Waymo"
+    }
+   ]
+  },
+  {
+   "id": "trusted",
+   "type": "template_keep",
+   "template_index": 25,
+   "template_ref": "trusted",
+   "replacements": [
+    {
+     "find": "Eventbrite",
+     "replace": "Waymo"
+    }
+   ]
+  },
+  {
+   "id": "team",
+   "type": "template_keep",
+   "template_index": 26,
+   "template_ref": "team",
+   "replacements": [
+    {
+     "find": "Eventbrite",
+     "replace": "Waymo"
+    }
+   ]
+  },
+  {
+   "id": "d02",
+   "type": "divider",
+   "num": "02",
+   "title": "Connections and payment methods",
+   "sub": "Waymo's seven announced markets, Latin America and the Middle East: who is live through Yuno and which local methods they carry",
+   "section_list": [
+    "01 Yuno in brief",
+    "02 Connections and payment methods"
+   ]
   },
   {
    "id": "markets",

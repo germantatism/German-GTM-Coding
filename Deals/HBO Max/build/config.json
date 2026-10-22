@@ -1,7 +1,7 @@
 {
  "merchant": "HBO Max",
  "deal_dir": "Deals/HBO Max",
- "presentation_id": "1GyS-IR10Hd_pIP4CmrioQNeONeGAP2GZ4mU7I7IMl_A",
+ "presentation_id": "1TyFXKt2OfoBLHGn8T1xX_Z1Uic_5ZYeeGUb8g_n0jrw",
  "logo_url": "https://drive.google.com/uc?export=download&id=1l8hvOsBCmtK8a9VsB9bqTP4cay2Bl7_g",
  "logo_aspect": 6.299,
  "recurring_only": true,
@@ -116,5 +116,19 @@
   ]
  },
  "presentation_id_v1": "1Z_xHfeXnUoM_NWp5j3MShpAuTbzwQNVnVOFyPQ0mxMw",
- "signed": false
+ "signed": false,
+ "presentation_id_prev": "1GyS-IR10Hd_pIP4CmrioQNeONeGAP2GZ4mU7I7IMl_A",
+ "intro": {
+  "title": "Yuno in brief",
+  "sub": "What we do, the platform, who runs on it and the team behind it",
+  "slides": [
+   "yuno-story",
+   "four-pillars",
+   "trusted",
+   "team"
+  ],
+  "section2_title": "Connections and payment methods",
+  "section2_sub": "Recurring-capable connections across HBO Max's Asia Pacific, European and Latin American markets",
+  "drop_spacex": false
+ }
 }

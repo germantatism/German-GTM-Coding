@@ -1,5 +1,5 @@
 {
- "presentation_id": "1GyS-IR10Hd_pIP4CmrioQNeONeGAP2GZ4mU7I7IMl_A",
+ "presentation_id": "1TyFXKt2OfoBLHGn8T1xX_Z1Uic_5ZYeeGUb8g_n0jrw",
  "merchant": "HBO Max",
  "footer": "",
  "logo_url": "https://drive.google.com/uc?export=download&id=1l8hvOsBCmtK8a9VsB9bqTP4cay2Bl7_g",
@@ -12,6 +12,76 @@
    "subtitle": "Recurring-capable connections across HBO Max's Asia Pacific, European and Latin American markets",
    "presenter": "German Tatis, Yuno · October 2026",
    "logo_url": "https://drive.google.com/uc?export=download&id=1l8hvOsBCmtK8a9VsB9bqTP4cay2Bl7_g"
+  },
+  {
+   "id": "d01",
+   "type": "divider",
+   "num": "01",
+   "title": "Yuno in brief",
+   "sub": "What we do, the platform, who runs on it and the team behind it",
+   "section_list": [
+    "01 Yuno in brief",
+    "02 Connections and payment methods"
+   ]
+  },
+  {
+   "id": "yuno-story",
+   "type": "template_keep",
+   "template_index": 22,
+   "template_ref": "yuno-story",
+   "replacements": [
+    {
+     "find": "Eventbrite",
+     "replace": "HBO Max"
+    }
+   ]
+  },
+  {
+   "id": "four-pillars",
+   "type": "template_keep",
+   "template_index": 23,
+   "template_ref": "four-pillars",
+   "replacements": [
+    {
+     "find": "Eventbrite",
+     "replace": "HBO Max"
+    }
+   ]
+  },
+  {
+   "id": "trusted",
+   "type": "template_keep",
+   "template_index": 25,
+   "template_ref": "trusted",
+   "replacements": [
+    {
+     "find": "Eventbrite",
+     "replace": "HBO Max"
+    }
+   ]
+  },
+  {
+   "id": "team",
+   "type": "template_keep",
+   "template_index": 26,
+   "template_ref": "team",
+   "replacements": [
+    {
+     "find": "Eventbrite",
+     "replace": "HBO Max"
+    }
+   ]
+  },
+  {
+   "id": "d02",
+   "type": "divider",
+   "num": "02",
+   "title": "Connections and payment methods",
+   "sub": "Recurring-capable connections across HBO Max's Asia Pacific, European and Latin American markets",
+   "section_list": [
+    "01 Yuno in brief",
+    "02 Connections and payment methods"
+   ]
   },
   {
    "id": "basis",

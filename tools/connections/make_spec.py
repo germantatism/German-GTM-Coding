@@ -67,6 +67,17 @@ def fits(s):
     except GE.FitError: return False
 S = []
 cv = CFG['cover']; S.append({"id": "cover", "type": "cover", "title": cv['title'], "subtitle": cv['subtitle'], "presenter": cv['presenter'], "logo_url": CFG['logo_url']})
+# ---- intro section: the standard Yuno template slides (German, 22 Oct 2026: both audiences do not know Yuno) ----
+INTRO_REF = {'yuno-story': 22, 'four-pillars': 23, 'offices': 24, 'trusted': 25, 'team': 26, 'dedicated': 27, 'coverage': 40}
+intro = CFG.get('intro')
+if intro:
+    secs = [f"01 {intro['title']}", f"02 {intro['section2_title']}"]
+    S.append({"id": "d01", "type": "divider", "num": "01", "title": intro['title'], "sub": intro.get('sub', ''), "section_list": secs})
+    for ref in intro['slides']:
+        sl = {"id": ref, "type": "template_keep", "template_index": INTRO_REF[ref], "template_ref": ref, "replacements": [{"find": "Eventbrite", "replace": CFG['merchant']}]}
+        if ref == 'trusted' and intro.get('drop_spacex'): sl["delete_images_matching"] = ["SPACEX_LOGO_OBJECT_ID"]
+        S.append(sl)
+    S.append({"id": "d02", "type": "divider", "num": "02", "title": intro['section2_title'], "sub": intro.get('section2_sub', ''), "section_list": secs})
 SRC_NOTE = ("Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); "
             "Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). "
             "Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant.")
