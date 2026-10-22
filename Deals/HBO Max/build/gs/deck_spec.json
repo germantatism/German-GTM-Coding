@@ -561,7 +561,7 @@
    "id": "c-australia",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › AUSTRALIA › PROVIDERS",
-   "headline": "Australia: 18 providers live through Yuno, 15 for recurring card billing, 4 mores in homologation.",
+   "headline": "Australia: 18 providers live through Yuno, 15 for recurring card billing, 4 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (18)",
@@ -789,7 +789,7 @@
    "id": "c-indonesia",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › INDONESIA",
-   "headline": "Indonesia: 18 providers live through Yuno, 14 for recurring card billing, 5 mores in homologation.",
+   "headline": "Indonesia: 18 providers live through Yuno, 14 for recurring card billing, 5 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (18)",
@@ -983,7 +983,7 @@
    "id": "c-taiwan",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › TAIWAN",
-   "headline": "Taiwan: 10 providers live through Yuno, 9 for recurring card billing, 2 mores in homologation.",
+   "headline": "Taiwan: 10 providers live through Yuno, 9 for recurring card billing, 2 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (10)",
@@ -1117,7 +1117,7 @@
    "id": "c-singapore",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › SINGAPORE › PROVIDERS",
-   "headline": "Singapore: 18 providers live through Yuno, 16 for recurring card billing, 3 mores in homologation.",
+   "headline": "Singapore: 18 providers live through Yuno, 16 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (18)",
@@ -1325,7 +1325,7 @@
    "id": "c-thailand",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › THAILAND",
-   "headline": "Thailand: 19 providers live through Yuno, 16 for recurring card billing, 4 mores in homologation.",
+   "headline": "Thailand: 19 providers live through Yuno, 16 for recurring card billing, 4 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (19)",
@@ -1519,7 +1519,7 @@
    "id": "c-vietnam",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › VIETNAM",
-   "headline": "Vietnam: 12 providers live through Yuno, 10 for recurring card billing, 4 mores in homologation.",
+   "headline": "Vietnam: 12 providers live through Yuno, 10 for recurring card billing, 4 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (12)",
@@ -1683,7 +1683,7 @@
    "id": "c-philippines",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › PHILIPPINES",
-   "headline": "Philippines: 18 providers live through Yuno, 15 for recurring card billing, 3 mores in homologation.",
+   "headline": "Philippines: 18 providers live through Yuno, 15 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (18)",
@@ -1877,7 +1877,7 @@
    "id": "c-malaysia",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › MALAYSIA",
-   "headline": "Malaysia: 20 providers live through Yuno, 17 for recurring card billing, 4 mores in homologation.",
+   "headline": "Malaysia: 20 providers live through Yuno, 17 for recurring card billing, 4 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (20)",
@@ -2297,7 +2297,7 @@
    "id": "c-new-zealand",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › NEW ZEALAND",
-   "headline": "New Zealand: 11 providers live through Yuno, 10 for recurring card billing, 2 mores in homologation.",
+   "headline": "New Zealand: 11 providers live through Yuno, 10 for recurring card billing, 2 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (11)",
@@ -2562,7 +2562,7 @@
       },
       {
        "name": "Cybersource Gtw",
-       "logo": "https://www.google.com/s2/favicons?domain=cybersource.com&sz=128",
+       "logo": "",
        "aspect": 1.0
       }
      ]
@@ -3160,7 +3160,7 @@
    "id": "c-united-kingdom",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › UNITED KINGDOM › PROVIDERS",
-   "headline": "United Kingdom: 26 providers live through Yuno, 18 for recurring card billing, 3 mores in homologation.",
+   "headline": "United Kingdom: 26 providers live through Yuno, 18 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (26)",
@@ -3919,7 +3919,7 @@
    "id": "c-spain",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › SPAIN › PROVIDERS",
-   "headline": "Spain: 28 providers live through Yuno, 21 for recurring card billing, 2 mores in homologation.",
+   "headline": "Spain: 28 providers live through Yuno, 21 for recurring card billing, 2 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (28)",
@@ -4187,7 +4187,7 @@
    "id": "c-turkey",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › TÜRKIYE",
-   "headline": "Türkiye: 11 providers live through Yuno, 9 for recurring card billing, 3 mores in homologation.",
+   "headline": "Türkiye: 11 providers live through Yuno, 9 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (11)",
@@ -4749,7 +4749,7 @@
    "id": "c-poland",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › POLAND",
-   "headline": "Poland: 27 providers live through Yuno, 20 for recurring card billing, 2 mores in homologation.",
+   "headline": "Poland: 27 providers live through Yuno, 20 for recurring card billing, 2 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (27)",
@@ -7180,7 +7180,7 @@
    "id": "c-argentina",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › ARGENTINA › PROVIDERS",
-   "headline": "Argentina: 23 providers live through Yuno, 18 for recurring card billing, 3 mores in homologation.",
+   "headline": "Argentina: 23 providers live through Yuno, 18 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (23)",
@@ -7428,7 +7428,7 @@
    "id": "c-brazil",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › BRAZIL › PROVIDERS",
-   "headline": "Brazil: 46 providers live through Yuno, 32 for recurring card billing, 17 mores in homologation.",
+   "headline": "Brazil: 46 providers live through Yuno, 32 for recurring card billing, 17 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (46)",
@@ -7866,7 +7866,7 @@
    "id": "c-chile",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › CHILE",
-   "headline": "Chile: 29 providers live through Yuno, 21 for recurring card billing, 11 mores in homologation.",
+   "headline": "Chile: 29 providers live through Yuno, 21 for recurring card billing, 11 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (29)",
@@ -8145,7 +8145,7 @@
    "id": "c-colombia",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › COLOMBIA",
-   "headline": "Colombia: 31 providers live through Yuno, 24 for recurring card billing, 14 mores in homologation.",
+   "headline": "Colombia: 31 providers live through Yuno, 24 for recurring card billing, 14 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (31)",
@@ -8464,7 +8464,7 @@
    "id": "c-mexico",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › MEXICO › PROVIDERS",
-   "headline": "Mexico: 36 providers live through Yuno, 29 for recurring card billing, 17 mores in homologation.",
+   "headline": "Mexico: 36 providers live through Yuno, 29 for recurring card billing, 17 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (36)",
@@ -8837,7 +8837,7 @@
    "id": "c-peru",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › PERU",
-   "headline": "Peru: 25 providers live through Yuno, 18 for recurring card billing, 8 mores in homologation.",
+   "headline": "Peru: 25 providers live through Yuno, 18 for recurring card billing, 8 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (25)",
@@ -9086,7 +9086,7 @@
    "id": "c-uruguay",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › URUGUAY",
-   "headline": "Uruguay: 12 providers live through Yuno, 10 for recurring card billing, 3 mores in homologation.",
+   "headline": "Uruguay: 12 providers live through Yuno, 10 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (12)",
@@ -9235,7 +9235,7 @@
    "id": "c-bolivia",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › BOLIVIA",
-   "headline": "Bolivia: 6 providers live through Yuno, 3 for recurring card billing, 3 mores in homologation.",
+   "headline": "Bolivia: 6 providers live through Yuno, 3 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (6)",
@@ -9339,7 +9339,7 @@
    "id": "c-costa-rica",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › COSTA RICA",
-   "headline": "Costa Rica: 15 providers live through Yuno, 9 for recurring card billing, 3 mores in homologation.",
+   "headline": "Costa Rica: 15 providers live through Yuno, 9 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (15)",
@@ -9503,7 +9503,7 @@
    "id": "c-dominican-republic",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › DOMINICAN REPUBLIC",
-   "headline": "Dominican Republic: 10 providers live through Yuno, 6 for recurring card billing, 3 mores in homologation.",
+   "headline": "Dominican Republic: 10 providers live through Yuno, 6 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (10)",
@@ -9617,7 +9617,7 @@
    "id": "c-ecuador",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › ECUADOR",
-   "headline": "Ecuador: 17 providers live through Yuno, 11 for recurring card billing, 5 mores in homologation.",
+   "headline": "Ecuador: 17 providers live through Yuno, 11 for recurring card billing, 5 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (17)",
@@ -9801,7 +9801,7 @@
    "id": "c-el-salvador",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › EL SALVADOR",
-   "headline": "El Salvador: 12 providers live through Yuno, 7 for recurring card billing, 2 mores in homologation.",
+   "headline": "El Salvador: 12 providers live through Yuno, 7 for recurring card billing, 2 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (12)",
@@ -9935,7 +9935,7 @@
    "id": "c-guatemala",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › GUATEMALA",
-   "headline": "Guatemala: 15 providers live through Yuno, 10 for recurring card billing, 4 mores in homologation.",
+   "headline": "Guatemala: 15 providers live through Yuno, 10 for recurring card billing, 4 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (15)",
@@ -10094,7 +10094,7 @@
    "id": "c-honduras",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › HONDURAS",
-   "headline": "Honduras: 8 providers live through Yuno, 6 for recurring card billing, 3 mores in homologation.",
+   "headline": "Honduras: 8 providers live through Yuno, 6 for recurring card billing, 3 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (8)",
@@ -10251,7 +10251,7 @@
    "id": "c-panama",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › PANAMA",
-   "headline": "Panama: 14 providers live through Yuno, 10 for recurring card billing, 2 mores in homologation.",
+   "headline": "Panama: 14 providers live through Yuno, 10 for recurring card billing, 2 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (14)",
@@ -10395,7 +10395,7 @@
    "id": "c-paraguay",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › PARAGUAY",
-   "headline": "Paraguay: 5 providers live through Yuno, 4 for recurring card billing, 2 mores in homologation.",
+   "headline": "Paraguay: 5 providers live through Yuno, 4 for recurring card billing, 2 more in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (5)",

@@ -108,7 +108,7 @@ def country_slides(c):
     cards = d['methods'].get('Cards', []); direct = sorted(d['direct'], key=lambda x: (x not in WALLETS, x.lower()))
     gr = grouped(d); nloc = len(gr); cn = dcountry(c); code = sorted(d['code'], key=str.lower); signed = sorted(d['signed'], key=str.lower)
     if REC:
-        headA = f"{cn}: {pl(len(live), 'provider')} live through Yuno, {len(cards)} for recurring card billing" + (f", {pl(len(hom), 'more')} in homologation." if hom else ".")
+        headA = f"{cn}: {pl(len(live), 'provider')} live through Yuno, {len(cards)} for recurring card billing" + (f", {len(hom)} more in homologation." if hom else ".")
         headB = f"{cn}: {pl(len(direct), 'recurring-capable payment method')} available and {pl(nloc, 'recurring local method')} carried by the providers." if nloc else f"{cn}: {pl(len(direct), 'recurring-capable payment method')} available through Yuno."
         secB_h = f"Recurring-capable wallets and payment methods ({len(direct)})"; tcols = ["Recurring method", "Providers carrying it through Yuno", "#"]
     else:
@@ -117,7 +117,9 @@ def country_slides(c):
         secB_h = f"Wallets and payment methods available ({len(direct)})"; tcols = ["Local method", "Providers carrying it through Yuno", "#"]
     if not live and not hom: headA = f"{cn}: no provider lists this market on y.uno/integrations yet; {pl(len(direct), 'global payment method')} available." + (f" {pl(len(code), 'provider')} integrated in code." if code else "")
     live_h = f"Live through Yuno ({len(live)})"
-    if d['xborder']: live_h = f"Live through Yuno: {', '.join(x for x in live if x not in d['xborder'])} acquire locally, the others process {cn.replace('Israel', 'Israeli')} cards cross-border ({len(live)})"
+    if d['xborder']:
+        loc = [x for x in live if x not in d['xborder']]
+        live_h = f"Live through Yuno: {', '.join(loc)} {'acquires' if len(loc) == 1 else 'acquire'} locally, the others process {cn.replace('Israel', 'Israeli')} cards cross-border ({len(live)})"
     secA = [{"header": live_h, "chips": [chip(x, d['key'].get(x)) for x in sorted(live, key=lambda x: (x in d['xborder'], x.lower()))]}] if live else []
     if hom: secA.append({"header": f"Homologating ({len(hom)})", "chips": [chip(x, d['key'].get(x)) for x in hom], "muted": True})
     if d['activate']: secA.append({"header": f"Integrated with Yuno, activation on request ({len(d['activate'])})", "chips": [chip(x, d['key'].get(x)) for x in sorted(d['activate'])], "style": "signed"})
