@@ -1,0 +1,281 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1Z_xHfeXnUoM_NWp5j3MShpAuTbzwQNVnVOFyPQ0mxMw (Deck - HBO Max + Yuno · Connections & Payment Methods (Oct 2026))
+[01] cover              cover
+  applied    2 requests duplicate t1 -> n01_g3f77215683c_1_445
+  applied   17 requests n01
+[02] two_column         basis
+  applied    2 requests duplicate t7 -> n02_g3f77215683c_2_2968
+  applied  116 requests n02
+  applied    3 requests notes n02_g3f77215683c_2_2968
+[03] table              sum-asia-pacific-1
+  applied    2 requests duplicate t7 -> n03_g3f77215683c_2_2968
+  applied  339 requests n03
+  applied    3 requests notes n03_g3f77215683c_2_2968
+[04] table              sum-asia-pacific-2
+  applied    2 requests duplicate t7 -> n04_g3f77215683c_2_2968
+  applied  339 requests n04
+  applied    3 requests notes n04_g3f77215683c_2_2968
+[05] table              sum-europe-1
+  applied    2 requests duplicate t7 -> n05_g3f77215683c_2_2968
+  applied  340 requests n05
+  applied    3 requests notes n05_g3f77215683c_2_2968
+[06] table              sum-europe-2
+  applied    2 requests duplicate t7 -> n06_g3f77215683c_2_2968
+  applied  340 requests n06
+  applied    3 requests notes n06_g3f77215683c_2_2968
+[07] table              sum-latin-america-1
+  applied    2 requests duplicate t7 -> n07_g3f77215683c_2_2968
+  applied  340 requests n07
+  applied    3 requests notes n07_g3f77215683c_2_2968
+[08] table              sum-latin-america-2
+  applied    2 requests duplicate t7 -> n08_g3f77215683c_2_2968
+  applied  284 requests n08
+  applied    3 requests notes n08_g3f77215683c_2_2968
+[09] logo_grid          c-australia
+  applied    2 requests duplicate t7 -> n09_g3f77215683c_2_2968
+  applied  336 requests n09
+  applied    1 requests notes n09_g3f77215683c_2_2968
+[10] logo_grid          c-indonesia
+  applied    2 requests duplicate t7 -> n10_g3f77215683c_2_2968
+  applied  328 requests n10
+  applied    1 requests notes n10_g3f77215683c_2_2968
+[11] logo_grid          c-taiwan
+  applied    2 requests duplicate t7 -> n11_g3f77215683c_2_2968
+  applied  226 requests n11
+  applied    1 requests notes n11_g3f77215683c_2_2968
+[12] logo_grid          c-singapore
+  applied    2 requests duplicate t7 -> n12_g3f77215683c_2_2968
+  applied  299 requests n12
+  applied    1 requests notes n12_g3f77215683c_2_2968
+[13] logo_grid          c-thailand
+  applied    2 requests duplicate t7 -> n13_g3f77215683c_2_2968
+  applied  315 requests n13
+  applied    1 requests notes n13_g3f77215683c_2_2968
+[14] logo_grid          c-vietnam
+  applied    2 requests duplicate t7 -> n14_g3f77215683c_2_2968
+  applied  267 requests n14
+  applied    1 requests notes n14_g3f77215683c_2_2968
+[15] logo_grid          c-philippines
+  applied    2 requests duplicate t7 -> n15_g3f77215683c_2_2968
+  applied  328 requests n15
+  applied    1 requests notes n15_g3f77215683c_2_2968
+[16] logo_grid          c-malaysia
+  applied    2 requests duplicate t7 -> n16_g3f77215683c_2_2968
+  applied  331 requests n16
+  applied    1 requests notes n16_g3f77215683c_2_2968
+[17] logo_grid          c-bangladesh
+  applied    2 requests duplicate t7 -> n17_g3f77215683c_2_2968
+  applied  114 requests n17
+  applied    1 requests notes n17_g3f77215683c_2_2968
+[18] logo_grid          c-hong-kong
+  applied    2 requests duplicate t7 -> n18_g3f77215683c_2_2968
+  applied   79 requests n18
+  applied    1 requests notes n18_g3f77215683c_2_2968
+[19] logo_grid          c-pakistan
+  applied    2 requests duplicate t7 -> n19_g3f77215683c_2_2968
+  applied  130 requests n19
+  applied    1 requests notes n19_g3f77215683c_2_2968
+[20] logo_grid          c-new-zealand
+  applied    2 requests duplicate t7 -> n20_g3f77215683c_2_2968
+  applied  248 requests n20
+  applied    1 requests notes n20_g3f77215683c_2_2968
+[21] logo_grid          c-sri-lanka
+  applied    2 requests duplicate t7 -> n21_g3f77215683c_2_2968
+  applied  174 requests n21
+  applied    1 requests notes n21_g3f77215683c_2_2968
+[22] logo_grid          c-myanmar
+  applied    2 requests duplicate t7 -> n22_g3f77215683c_2_2968
+  applied   74 requests n22
+  applied    1 requests notes n22_g3f77215683c_2_2968
+[23] logo_grid          c-macau
+  applied    2 requests duplicate t7 -> n23_g3f77215683c_2_2968
+  applied   53 requests n23
+  applied    1 requests notes n23_g3f77215683c_2_2968
+[24] logo_grid          c-cambodia
+  applied    2 requests duplicate t7 -> n24_g3f77215683c_2_2968
+  applied   90 requests n24
+  applied    1 requests notes n24_g3f77215683c_2_2968
+[25] logo_grid          c-nepal
+  applied    2 requests duplicate t7 -> n25_g3f77215683c_2_2968
+  applied  106 requests n25
+  applied    1 requests notes n25_g3f77215683c_2_2968
+[26] logo_grid          c-papua-new-guinea
+  applied    2 requests duplicate t7 -> n26_g3f77215683c_2_2968
+  applied   74 requests n26
+  applied    1 requests notes n26_g3f77215683c_2_2968
+[27] logo_grid          c-mongolia
+  applied    2 requests duplicate t7 -> n27_g3f77215683c_2_2968
+  applied   98 requests n27
+  applied    1 requests notes n27_g3f77215683c_2_2968
+[28] logo_grid          c-laos
+  applied    2 requests duplicate t7 -> n28_g3f77215683c_2_2968
+  applied   98 requests n28
+  applied    1 requests notes n28_g3f77215683c_2_2968
+[29] logo_grid          c-germany
+  applied    2 requests duplicate t7 -> n29_g3f77215683c_2_2968
+  applied  352 requests n29
+  applied    1 requests notes n29_g3f77215683c_2_2968
+[30] logo_grid          c-united-kingdom
+  applied    2 requests duplicate t7 -> n30_g3f77215683c_2_2968
+  applied  400 requests n30
+  applied    1 requests notes n30_g3f77215683c_2_2968
+[31] logo_grid          c-france
+  applied    2 requests duplicate t7 -> n31_g3f77215683c_2_2968
+  applied  352 requests n31
+  applied    1 requests notes n31_g3f77215683c_2_2968
+[32] logo_grid          c-italy
+  applied    2 requests duplicate t7 -> n32_g3f77215683c_2_2968
+  applied  376 requests n32
+  applied    1 requests notes n32_g3f77215683c_2_2968
+[33] logo_grid          c-spain
+  applied    2 requests duplicate t7 -> n33_g3f77215683c_2_2968
+  applied  400 requests n33
+  applied    1 requests notes n33_g3f77215683c_2_2968
+[34] logo_grid          c-turkey
+  applied    2 requests duplicate t7 -> n34_g3f77215683c_2_2968
+  applied  227 requests n34
+  applied    1 requests notes n34_g3f77215683c_2_2968
+[35] logo_grid          c-netherlands
+  applied    2 requests duplicate t7 -> n35_g3f77215683c_2_2968
+  applied  373 requests n35
+  applied    1 requests notes n35_g3f77215683c_2_2968
+[36] logo_grid          c-switzerland
+  applied    2 requests duplicate t7 -> n36_g3f77215683c_2_2968
+  applied  296 requests n36
+  applied    1 requests notes n36_g3f77215683c_2_2968
+[37] logo_grid          c-poland
+  applied    2 requests duplicate t7 -> n37_g3f77215683c_2_2968
+  applied  363 requests n37
+  applied    1 requests notes n37_g3f77215683c_2_2968
+[38] logo_grid          c-belgium
+  applied    2 requests duplicate t7 -> n38_g3f77215683c_2_2968
+  applied  352 requests n38
+  applied    1 requests notes n38_g3f77215683c_2_2968
+[39] logo_grid          c-ireland
+  applied    2 requests duplicate t7 -> n39_g3f77215683c_2_2968
+  applied  307 requests n39
+  applied    1 requests notes n39_g3f77215683c_2_2968
+[40] logo_grid          c-sweden
+  applied    2 requests duplicate t7 -> n40_g3f77215683c_2_2968
+  applied  344 requests n40
+  applied    1 requests notes n40_g3f77215683c_2_2968
+[41] logo_grid          c-austria
+  applied    2 requests duplicate t7 -> n41_g3f77215683c_2_2968
+  applied  344 requests n41
+  applied    1 requests notes n41_g3f77215683c_2_2968
+[42] logo_grid          c-norway
+  applied    2 requests duplicate t7 -> n42_g3f77215683c_2_2968
+  applied  267 requests n42
+  applied    1 requests notes n42_g3f77215683c_2_2968
+[43] logo_grid          c-denmark
+  applied    2 requests duplicate t7 -> n43_g3f77215683c_2_2968
+  applied  352 requests n43
+  applied    1 requests notes n43_g3f77215683c_2_2968
+[44] logo_grid          c-romania
+  applied    2 requests duplicate t7 -> n44_g3f77215683c_2_2968
+  applied  307 requests n44
+  applied    1 requests notes n44_g3f77215683c_2_2968
+[45] logo_grid          c-czech-republic
+  applied    2 requests duplicate t7 -> n45_g3f77215683c_2_2968
+  applied  352 requests n45
+  applied    1 requests notes n45_g3f77215683c_2_2968
+[46] logo_grid          c-portugal
+  applied    2 requests duplicate t7 -> n46_g3f77215683c_2_2968
+  applied  360 requests n46
+  applied    1 requests notes n46_g3f77215683c_2_2968
+[47] logo_grid          c-finland
+  applied    2 requests duplicate t7 -> n47_g3f77215683c_2_2968
+  applied  344 requests n47
+  applied    1 requests notes n47_g3f77215683c_2_2968
+[48] logo_grid          c-kazakhstan
+  applied    2 requests duplicate t7 -> n48_g3f77215683c_2_2968
+  applied  106 requests n48
+  applied    1 requests notes n48_g3f77215683c_2_2968
+[49] logo_grid          c-argentina
+  applied    2 requests duplicate t7 -> n49_g3f77215683c_2_2968
+  applied  360 requests n49
+  applied    1 requests notes n49_g3f77215683c_2_2968
+[50] logo_grid          c-brazil
+  applied    2 requests duplicate t7 -> n50_g3f77215683c_2_2968
+  applied  537 requests n50
+  applied    1 requests notes n50_g3f77215683c_2_2968
+[51] logo_grid          c-brazil-methods
+  applied    2 requests duplicate t7 -> n51_g3f77215683c_2_2968
+  applied  179 requests n51
+  applied    1 requests notes n51_g3f77215683c_2_2968
+[52] logo_grid          c-chile
+  applied    2 requests duplicate t7 -> n52_g3f77215683c_2_2968
+  applied  471 requests n52
+  applied    1 requests notes n52_g3f77215683c_2_2968
+[53] logo_grid          c-colombia
+  applied    2 requests duplicate t7 -> n53_g3f77215683c_2_2968
+  applied  528 requests n53
+  applied    1 requests notes n53_g3f77215683c_2_2968
+[54] logo_grid          c-mexico
+  applied    2 requests duplicate t7 -> n54_g3f77215683c_2_2968
+  applied  583 requests n54
+  applied    1 requests notes n54_g3f77215683c_2_2968
+[55] logo_grid          c-peru
+  applied    2 requests duplicate t7 -> n55_g3f77215683c_2_2968
+  applied  416 requests n55
+  applied    1 requests notes n55_g3f77215683c_2_2968
+[56] logo_grid          c-uruguay
+  applied    2 requests duplicate t7 -> n56_g3f77215683c_2_2968
+  applied  264 requests n56
+  applied    1 requests notes n56_g3f77215683c_2_2968
+[57] logo_grid          c-bolivia
+  applied    2 requests duplicate t7 -> n57_g3f77215683c_2_2968
+  applied  179 requests n57
+  applied    1 requests notes n57_g3f77215683c_2_2968
+[58] logo_grid          c-costa-rica
+  applied    2 requests duplicate t7 -> n58_g3f77215683c_2_2968
+  applied  275 requests n58
+  applied    1 requests notes n58_g3f77215683c_2_2968
+[59] logo_grid          c-dominican-republic
+  applied    2 requests duplicate t7 -> n59_g3f77215683c_2_2968
+  applied  183 requests n59
+  applied    1 requests notes n59_g3f77215683c_2_2968
+[60] logo_grid          c-ecuador
+  applied    2 requests duplicate t7 -> n60_g3f77215683c_2_2968
+  applied  307 requests n60
+  applied    1 requests notes n60_g3f77215683c_2_2968
+[61] logo_grid          c-el-salvador
+  applied    2 requests duplicate t7 -> n61_g3f77215683c_2_2968
+  applied  227 requests n61
+  applied    1 requests notes n61_g3f77215683c_2_2968
+[62] logo_grid          c-guatemala
+  applied    2 requests duplicate t7 -> n62_g3f77215683c_2_2968
+  applied  267 requests n62
+  applied    1 requests notes n62_g3f77215683c_2_2968
+[63] logo_grid          c-honduras
+  applied    2 requests duplicate t7 -> n63_g3f77215683c_2_2968
+  applied  159 requests n63
+  applied    1 requests notes n63_g3f77215683c_2_2968
+[64] logo_grid          c-nicaragua
+  applied    2 requests duplicate t7 -> n64_g3f77215683c_2_2968
+  applied   98 requests n64
+  applied    1 requests notes n64_g3f77215683c_2_2968
+[65] logo_grid          c-panama
+  applied    2 requests duplicate t7 -> n65_g3f77215683c_2_2968
+  applied  243 requests n65
+  applied    1 requests notes n65_g3f77215683c_2_2968
+[66] logo_grid          c-paraguay
+  applied    2 requests duplicate t7 -> n66_g3f77215683c_2_2968
+  applied  135 requests n66
+  applied    1 requests notes n66_g3f77215683c_2_2968
+[67] logo_grid          c-venezuela
+  applied    2 requests duplicate t7 -> n67_g3f77215683c_2_2968
+  applied  142 requests n67
+  applied    1 requests notes n67_g3f77215683c_2_2968
+[68] next_steps         next
+  applied    2 requests duplicate t7 -> n68_g3f77215683c_2_2968
+  applied   97 requests n68
+  applied    1 requests notes n68_g3f77215683c_2_2968
+  applied   46 requests delete 46 slides
+deleted 46 template slides in one call; deck now has 68 slides
+HBO_EXIT=0
