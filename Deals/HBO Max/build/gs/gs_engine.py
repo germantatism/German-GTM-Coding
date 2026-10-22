@@ -140,18 +140,27 @@ def service():
     creds = service_account.Credentials.from_service_account_file(SA, scopes=['https://www.googleapis.com/auth/presentations'])
     return gbuild('slides', 'v1', credentials=creds, cache_discovery=False)
 
+DROPPED_IMAGES = []
 def run(svc, pid, reqs, chunk=300, label=''):
+    """batchUpdate in chunks. Image fetch errors are retried; an image Google keeps refusing (after 4 attempts) is dropped from the
+    chunk (the chip keeps its text) and recorded in DROPPED_IMAGES instead of failing the build. 429 quota errors wait a minute."""
     done = 0
     for i in range(0, len(reqs), chunk):
-        part = reqs[i:i + chunk]
-        for attempt in range(4):
+        part = list(reqs[i:i + chunk]); attempt = 0
+        while True:
             try:
-                svc.presentations().batchUpdate(presentationId=pid, body={'requests': part}).execute(); break
+                if part: svc.presentations().batchUpdate(presentationId=pid, body={'requests': part}).execute()
+                break
             except Exception as e:
-                msg = str(e)
-                if attempt == 3 or ('400' in msg and 'rateLimit' not in msg and 'Internal' not in msg and 'createImage' not in msg and 'image' not in msg.lower()):
+                msg = str(e); attempt += 1
+                if '429' in msg or 'RATE_LIMIT' in msg: print(f"  quota on chunk {i} ({label}), waiting 65 s"); time.sleep(65); attempt -= 1; continue
+                img = re.search(r'requests\[(\d+)\]\.(createImage|replaceImage)', msg)
+                if img and attempt >= 4:
+                    k = int(img.group(1)); bad = part.pop(k); url = (bad.get('createImage') or bad.get('replaceImage') or {}).get('url', '')
+                    DROPPED_IMAGES.append((label, url)); print(f"  dropped image {k} on chunk {i} ({label}): {url[:100]}"); attempt = 0; continue
+                if attempt >= 4 or ('400' in msg and 'rateLimit' not in msg and 'Internal' not in msg and 'createImage' not in msg and 'image' not in msg.lower()):
                     raise
-                print(f"  retry {attempt + 1} on chunk {i} ({label}): {msg[:140]}"); time.sleep(3 + 3 * attempt)
+                print(f"  retry {attempt} on chunk {i} ({label}): {msg[:140]}"); time.sleep(3 + 3 * attempt)
         done += len(part)
     print(f"  applied {done:4d} requests {label}")
 
