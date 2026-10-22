@@ -26,7 +26,7 @@ base = next(x for x in slides if x['objectId'].startswith('n13'))   # the market
 NEW = ['wv_problem', 'wv_summary', 'wv_cards', 'wv_versus']
 have = set(ids)
 
-def chrome(new_sid, kicker, title, notes):
+def chrome(new_sid, kicker, title, notes, title_size=19):
     """Duplicate the markets slide, keep only the yuno wordmark and the page number, draw the OnlyFans-style kicker, accent bar and title."""
     m = {base['objectId']: new_sid}
     for el in base['pageElements']: m[el['objectId']] = f"{new_sid}_{el['objectId'][-6:]}"
@@ -41,7 +41,7 @@ def chrome(new_sid, kicker, title, notes):
     p = Page(new_sid)
     p.text(36, 24.9, 322, 13.5, kicker, size=7, color=BLUE, weight=600, pad=False, kind='RECTANGLE', valign='MIDDLE')
     p.shape(20.9, 47.2, 3.2, 15.1, 'ROUND_RECTANGLE', BLUE, None)
-    p.text(36, 41.1, 648, 54, title, size=19, color=INK, weight=400, pad=False, kind='RECTANGLE', ls=100)
+    p.text(36, 41.1, 648, 54, title, size=title_size, color=INK, weight=400, pad=False, kind='RECTANGLE', ls=100)
     p.notes = notes
     return p
 
@@ -58,7 +58,7 @@ SRC = ("Sources: Waymo Help Center, Approved payment methods (cards, Apple Pay, 
 # ---------------------------------------------------------------- 1. the problem
 sid = NEW[0]
 if sid not in have:
-    p = chrome(sid, 'THE VAULT  ›  THE PROBLEM', 'Rider cards live with one processor, and every new processor or market means moving them again', SRC)
+    p = chrome(sid, 'THE VAULT  ›  THE PROBLEM', 'Rider cards live with one processor, and new markets mean moving them again', SRC, title_size=18)
     p.card(36, 84, 300, 286)
     p.text(50, 96, 60, 14, 'BEFORE', size=8, color=GREY, weight=600)
     p.text(104, 93, 220, 18, 'Cards tied to one processor', size=13, color=INK, weight=600)
@@ -72,7 +72,7 @@ if sid not in have:
     p.text(200, 144, 120, 14, 'each needs its own acquirer', size=9, color=GREY)
     for i, t in enumerate(('London 2026', 'Tokyo and Munich 2027', 'Singapore and Toronto 2028')):
         p.card(200, 164 + i * 24, 116, 20, fill=WHITE, line=LINE); p.text(207, 168 + i * 24, 108, 12, t, size=8.5, color=INK)
-    for i, t in enumerate(('Rider cards are locked to the processor that stores them', 'Processor tokens do not travel: a new acquirer starts with no cards', 'Card updates arrive only as the processor provides them')):
+    for i, t in enumerate(('Rider cards are locked to the processor that stores them', 'Processor tokens do not travel to a new acquirer', 'Card updates arrive only as the processor provides them')):
         p.text(52, 256 + i * 20, 12, 14, '×', size=10, color=GREY, weight=600)
         p.text(66, 257 + i * 20, 262, 14, t, size=9.5, color=INK)
     p.text(52, 322, 272, 40, 'Waymo Help Center: a card on file is required, even to pay with Waymo Cash. Waymo Terms: card details are updated as provided by our payment processor. Read 19 Oct 2026.', size=7.5, color=GREY, ls=110)
@@ -170,7 +170,7 @@ if sid not in have:
 # ---------------------------------------------------------------- 4. versus VGS and Basis Theory (kept as in the OnlyFans deck)
 sid = NEW[3]
 if sid not in have:
-    p = chrome(sid, 'WHY YUNO  ›  VERSUS A STANDALONE VAULT', 'Yuno matches standalone vaults on the core and leads on everything built around it',
+    p = chrome(sid, 'WHY YUNO  ›  VERSUS A STANDALONE VAULT', 'Standalone vaults lead on vault depth. Yuno leads on everything around it',
                'VGS and Basis Theory: their public pages, read 7 October 2026 (verygoodsecurity.com, docs.verygoodsecurity.com, basistheory.com, developers.basistheory.com). Yuno: docs.y.uno and y.uno. Same table as the OnlyFans vault deck; only the owner of the token requestor ID changed.')
     cols = [('WHAT WAYMO NEEDS', 36, 150), ('YUNO', 186, 148), ('VGS', 334, 128), ('BASIS THEORY', 462, 128), ('WHO LEADS', 590, 94)]
     p.shape(36, 84, 648, 22, 'RECTANGLE', DARK, None)
