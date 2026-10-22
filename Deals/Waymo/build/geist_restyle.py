@@ -24,7 +24,7 @@ for sid in sids:
             if fam not in MAP: continue
             w = wff.get('weight', 400); size = st.get('fontSize', {}).get('magnitude', 0)
             new = {'weightedFontFamily': {'fontFamily': MAP[fam], 'weight': 700 if w >= 600 else 400}}; fields = 'weightedFontFamily'
-            if fam == 'Titillium Web' and size in (18, 19):   # slide titles
+            if fam == 'Titillium Web' and size in (17, 18, 19):   # slide titles
                 new['weightedFontFamily']['weight'] = 700; new['fontSize'] = {'magnitude': 17, 'unit': 'PT'}; fields += ',fontSize'
             reqs.append({'updateTextStyle': {'objectId': el['objectId'], 'textRange': {'type': 'FIXED_RANGE', 'startIndex': te.get('startIndex', 0), 'endIndex': te['endIndex']}, 'style': new, 'fields': fields}}); n += 1
     for i in range(0, len(reqs), 300): s.presentations().batchUpdate(presentationId=pid, body={'requests': reqs[i:i + 300]}).execute()

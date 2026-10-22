@@ -124,7 +124,7 @@ if sid not in have:
         p.line(420, y + 19, 423, y + 22, BLUE, 1.5); p.line(423, y + 22, 429, y + 15, BLUE, 1.5)
         p.text(433, y, 244, 40, right, size=9.5, color=INK, weight=400, pad=False, valign='MIDDLE', bold_color=BLUE, ls=105)
         if i < 3: p.shape(418, y + 40, 256, 0.5, 'RECTANGLE', '#DEE4F7', None)
-    p.text(36, 360, 648, 25, '**Same independence today, less complexity tomorrow.**   Waymo keeps portable tokens and exit terms; every connection added later lands in one place.', size=9.5, color='#E8EAF5', pad=False, kind='ROUND_RECTANGLE', fill='#1C2DB8', align='CENTER', valign='MIDDLE', bold_color=WHITE)
+    p.text(36, 360, 648, 25, '**Same independence today, less complexity tomorrow.**   Portable tokens, exit terms, and every new connection in one place.', size=9.5, color='#E8EAF5', pad=False, kind='ROUND_RECTANGLE', fill='#1C2DB8', align='CENTER', valign='MIDDLE', bold_color=WHITE)
     run(s, PID, p.R, sid); set_notes(sid, p.notes + ' Reconciliation: Yuno platform slide (Analytics and Reconciliation: one ledger across every PSP). The second PSP: told to German by Waymo, October 2026.')
 
 # ---------------------------------------------------------------- 3. cards: store, keep, move (OnlyFans vlt_cards, riders instead of fans)
