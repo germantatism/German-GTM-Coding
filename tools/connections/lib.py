@@ -60,7 +60,7 @@ ISO2 = {'Japan': 'jp', 'Singapore': 'sg', 'Australia': 'au', 'United Kingdom': '
         'Bangladesh': 'bd', 'Hong Kong': 'hk', 'Pakistan': 'pk', 'New Zealand': 'nz', 'Sri Lanka': 'lk', 'Myanmar': 'mm', 'Macau': 'mo', 'Cambodia': 'kh', 'Nepal': 'np', 'Papua New Guinea': 'pg',
         'Mongolia': 'mn', 'Laos': 'la', 'France': 'fr', 'Italy': 'it', 'Turkey': 'tr', 'Netherlands': 'nl', 'Switzerland': 'ch', 'Poland': 'pl', 'Belgium': 'be', 'Ireland': 'ie', 'Sweden': 'se',
         'Austria': 'at', 'Norway': 'no', 'Denmark': 'dk', 'Romania': 'ro', 'Czech Republic': 'cz', 'Portugal': 'pt', 'Finland': 'fi', 'Kazakhstan': 'kz', 'United States': 'us', 'South Korea': 'kr',
-        'India': 'in', 'Israel': 'il', 'Saudi Arabia': 'sa', 'United Arab Emirates': 'ae', 'South Africa': 'za', 'China': 'cn', 'Egypt': 'eg', 'Qatar': 'qa', 'Kuwait': 'kw', 'Bahrain': 'bh', 'Oman': 'om', 'Jordan': 'jo'}
+        'India': 'in', 'Israel': 'il', 'Saudi Arabia': 'sa', 'United Arab Emirates': 'ae', 'South Africa': 'za', 'China': 'cn', 'Egypt': 'eg', 'Qatar': 'qa', 'Kuwait': 'kw', 'Bahrain': 'bh', 'Oman': 'om', 'Jordan': 'jo', 'South Korea': 'kr'}
 _pp = os.path.join(ROOT, 'tools/connections/logos/paypal_countries_2026-10-22.json')
 PAYPAL_CC = {cc for cc, _ in json.load(open(_pp))} if os.path.exists(_pp) else None
 def paypal_ok(c):
@@ -159,7 +159,7 @@ M = {
  'BANK TRANSFER (VIA KCP)': ('Bank transfer (KCP)', ['South Korea']), 'AFTER_PAY': ('Afterpay', ['Australia', 'New Zealand', 'Canada']), 'AFTERPAY': ('Afterpay', ['Australia', 'New Zealand', 'Canada']),
  'AFTER_PAY_ENROLLMENT': ('Afterpay', ['Australia', 'New Zealand', 'Canada']), 'AFTERPAY_ENROLLMENT': ('Afterpay', ['Australia', 'New Zealand', 'Canada']), 'CLEARPAY': ('Clearpay', ['United Kingdom']), 'ZIP': ('Zip', ['Australia', 'New Zealand']),
  'BECS_DIRECT_DEBIT': ('BECS direct debit', ['Australia']), 'BECS_DIRECT_DEBIT_ENROLLMENT': ('BECS direct debit', ['Australia']), 'BECS_NZ': ('BECS direct debit', ['New Zealand']), 'PAD_ENROLLMENT': ('PAD direct debit', ['Canada']), 'PADS': ('PAD direct debit', ['Canada']),
- 'INTERAC': ('Interac', ['Canada']), 'ITAU_PAY': ('Itaú Pay', ['Brazil']), 'BREB_LLAVES': ('Bre-B', ['Colombia']),
+ 'INTERAC': ('Interac', ['Canada']), 'ITAU_PAY': ('Itaú Pay', ['Brazil']), 'BREB_LLAVES': ('Bre-B', ['Colombia']), 'SSG_PAY': ('SSG Pay', ['South Korea']), 'KCP_PAYCO': ('Payco', ['South Korea']), 'SAMSUNG_PAY_KR': ('Samsung Pay', ['South Korea']),
  # Europe
  'IDEAL': ('iDEAL', ['Netherlands']), 'IDEAL_ENROLLMENT': ('iDEAL', ['Netherlands']), 'BANCONTACT': ('Bancontact', ['Belgium']), 'BANCONTACT_ENROLLMENT': ('Bancontact', ['Belgium']),
  'SEPA': ('SEPA Direct Debit', EURO), 'SEPA_ENROLLMENT': ('SEPA Direct Debit', EURO), 'EU_BANK_TRANSFER': ('EU bank transfer', EURO), 'EU_BANK_TRANSFER_ENROLLMENT': ('EU bank transfer', EURO),
@@ -273,6 +273,11 @@ CODE_ONLY = [
  ('OKTO', 'okto', ['Brazil'], {'PIX'}, 'okto-int, 2026-08-19', 'okto.com'),
  ('Payamigo', 'payamigo', ['Brazil'], {'CARD', 'PIX'}, 'integrations-x/providers/payamigo', 'payamigo.com'),
  ('Refácil', 'refacil', ['Colombia'], {'PSE', 'BREB', 'BREB_LLAVES'}, 'refacil-int, 2026-07-09', 'refacil.co'),
+ ('NHN KCP', 'kcp', ['South Korea'], {'CARD', 'KAKAO_PAY', 'BANK TRANSFER (VIA KCP)'}, 'kcp-int, 2026-10-14', 'kcp.co.kr'),
+ ('Payssion', 'payssion', ['South Korea'], {'KR_LOCAL_CARD', 'NAVER_PAY', 'SSG_PAY', 'KCP_PAYCO', 'SAMSUNG_PAY_KR'}, 'payssion-int, 2026-10-03', 'payssion.com'),
+ ('Razorpay', 'razorpay', ['India'], {'UPI'}, 'integrations-x/providers/razorpay', 'razorpay.com'),
+ ('BillDesk', 'billdesk', ['India'], {'UPI'}, 'integrations-x/providers/billdesk', 'billdesk.com'),
+ ('CCAvenue', 'ccavenue', ['India'], {'CARD'}, 'integrations-x/providers/ccavenue', 'ccavenue.com'),
 ]
 CODE_ONLY_DOMAIN = {k: dom for _, k, _, _, _, dom in CODE_ONLY}
 # partner-signed methods, not yet integrated (Ali Partnerships, #partnerships--sales, Mar/May 2026; German 14 Oct 2026: Status "Signed"; Billease removed)

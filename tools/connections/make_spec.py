@@ -91,10 +91,10 @@ SRC_NOTE = ("Sources: y.uno/integrations directory (export of 14 Oct 2026), docs
 if CFG.get('markets'):
     rows = []
     for c, region, status in CFG['markets']:
-        d = by[c]; rows.append([c, region, status, str(len(d['live'])), short_methods(d, 5)])
+        d = by[c]; rows.append([c, region, status, str(len(d['live'])), short_methods(d, CFG.get('markets_methods', 5))])
     S.append({"id": "markets", "type": "table", "kicker": "WAYMO'S ANNOUNCED MARKETS OUTSIDE THE US", "headline": CFG['markets_headline'],
               "columns": ["Market", "Region", "What Waymo has announced", "Providers live", "Local methods and wallets through Yuno"], "col_widths": [0.12, 0.1, 0.42, 0.08, 0.28],
-              "rows": rows, "header_style": "dark", "font_size": 7.5, "bold_first_col": True, "zebra": True, "note": CFG['markets_note'], "notes": CFG.get('markets_sources', '') + ' ' + SRC_NOTE})
+              "rows": rows, "header_style": "dark", "font_size": CFG.get('markets_font', 7.5), "bold_first_col": True, "zebra": True, "note": CFG['markets_note'], "notes": CFG.get('markets_sources', '') + ' ' + SRC_NOTE})
 # ---- basis slide (HBO Max) ----
 if CFG.get('basis'):
     S.append({"id": "basis", "type": "two_column", "kicker": "WHAT COUNTS AS RECURRING IN THIS DECK",

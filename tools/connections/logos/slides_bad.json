@@ -28,5 +28,6 @@
  "https://www.google.com/s2/favicons?domain=skipcash.app&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ:batchUpdate?alt=json returned \"Invali",
  "https://www.google.com/s2/favicons?domain=souhoola.net&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ:batchUpdate?alt=json returned \"Invali",
  "https://www.google.com/s2/favicons?domain=urway.sa&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ:batchUpdate?alt=json returned \"Invali",
- "https://www.google.com/s2/favicons?domain=valu.com.eg&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ:batchUpdate?alt=json returned \"Invali"
+ "https://www.google.com/s2/favicons?domain=valu.com.eg&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1vSIBr3zLbrARdVo21zhFm0tdPCfdP7QacgjJvDkm-cQ:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=kcp.co.kr&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1Qu3JvldczchxT9TrXmUkU1bSso9ltTGvOt5peT3hHjQ:batchUpdate?alt=json returned \"Invali"
 }

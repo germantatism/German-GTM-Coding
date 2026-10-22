@@ -1,13 +1,13 @@
 {
  "merchant": "Waymo",
  "deal_dir": "Deals/Waymo",
- "presentation_id": "1AVE7_euq50lhzxZn-M_680DOGPj-yWXfYnnyLddjnd8",
+ "presentation_id": "1Qu3JvldczchxT9TrXmUkU1bSso9ltTGvOt5peT3hHjQ",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
  "logo_aspect": 6.963,
  "recurring_only": false,
  "cover": {
   "title": "Connections and payment methods",
-  "subtitle": "Providers and local methods in Waymo's seven announced markets, Latin America and the Middle East",
+  "subtitle": "Providers and local methods in Waymo's next markets, Asia Pacific, Latin America and the Middle East",
   "presenter": "German Tatis, Yuno · October 2026"
  },
  "regions": [
@@ -16,10 +16,20 @@
    "countries": [
     "Japan",
     "Singapore",
-    "Australia"
+    "Australia",
+    "Thailand",
+    "Indonesia",
+    "South Korea",
+    "Taiwan",
+    "Hong Kong",
+    "Malaysia",
+    "Philippines",
+    "Vietnam",
+    "India",
+    "New Zealand"
    ],
-   "headline": "Japan, Singapore and Australia each have twenty or more providers live through Yuno, with the local wallets and konbini riders use.",
-   "note": "Japan: Tokyo 2027. Singapore: 2028. Australia: in talks."
+   "headline": "Across Asia Pacific, every market Waymo has named and the main ones around them have live processors and the local wallets riders use.",
+   "note": "Japan 2027, Singapore 2028, Australia in talks, Thailand and Indonesia per Waymo (Oct 2026); South Korea, Taiwan, Hong Kong, Malaysia, Philippines, Vietnam, India and New Zealand added as the main APAC markets for later waves."
   },
   {
    "name": "Europe and North America",
@@ -78,41 +88,51 @@
   [
    "United Kingdom",
    "Europe",
-   "London: commercial service planned for 2026, timing tied to UK approval; Moove runs fleet operations"
+   "London 2026, pending UK approval; Moove runs the fleet"
   ],
   [
    "Japan",
    "Asia Pacific",
-   "Tokyo: driverless commercial service targeted for 2027 with Nihon Kotsu and GO, subject to permits"
+   "Tokyo 2027 with Nihon Kotsu and GO, subject to permits"
   ],
   [
    "Germany",
    "Europe",
-   "Munich: testing from late 2026, public launch targeted for the end of 2027, federal permit pending"
+   "Munich: testing from late 2026, launch end of 2027, permit pending"
   ],
   [
    "Spain",
    "Europe",
-   "Madrid: Waymo Iberia SL registered, testing before the end of 2026, no launch date announced"
+   "Madrid: Waymo Iberia SL registered, tests before end 2026, no date"
+  ],
+  [
+   "Thailand",
+   "Asia Pacific",
+   "Named by Waymo as a next market (Oct 2026); not announced"
+  ],
+  [
+   "Indonesia",
+   "Asia Pacific",
+   "Named by Waymo as a next market (Oct 2026); not announced"
   ],
   [
    "Singapore",
    "Asia Pacific",
-   "Announced September 2026 with MOT and LTA: manual driving in 2027, ride-hailing launch in 2028 subject to approvals"
+   "Announced Sep 2026: manual driving 2027, launch 2028 with LTA"
   ],
   [
    "Canada",
    "North America",
-   "Toronto: first riders targeted for 2028, Element Fleet Management runs the fleet"
+   "Toronto: first riders 2028; Element Fleet runs the fleet"
   ],
   [
    "Australia",
    "Asia Pacific",
-   "Talks with the federal, NSW and Victoria governments reported in January 2026; no permit application filed"
+   "Talks with federal, NSW and Victoria governments; no permit filed"
   ]
  ],
- "markets_headline": "Seven countries outside the US have a public Waymo plan today; this deck covers them plus Latin America and the Middle East.",
- "markets_note": "Public announcements as of 22 October 2026. No other country has an announced Waymo launch. Providers live = connections available through Yuno in that country.",
+ "markets_headline": "Nine markets Waymo has named, plus the rest of APAC, Latin America and the Middle East, all with live connections through Yuno.",
+ "markets_note": "Public announcements as of 22 October 2026, plus Thailand and Indonesia as shared by Waymo. Providers live = connections available through Yuno in that country.",
  "markets_sources": "Market status sources: Waymo blog (London, Oct 2025), CNBC (Munich, 25 Aug 2026), The Olive Press (Madrid, 25 Aug 2026), Fortune and LTA (Singapore, 17 Sep 2026), Element Fleet and TipRanks (Toronto, 2028), Nihon Kotsu and GO (Tokyo 2027), AFR via ACS (Australia, Jan 2026).",
  "next": {
   "headline": "Tell us the launch order and we narrow this to each market's rider checkout.",
@@ -140,7 +160,7 @@
  "presentation_id_v1": "1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE",
  "signed": true,
  "presentation_id_v2": "1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI",
- "presentation_id_prev": "1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4",
+ "presentation_id_prev": "1AVE7_euq50lhzxZn-M_680DOGPj-yWXfYnnyLddjnd8",
  "intro": {
   "title": "Yuno in brief",
   "sub": "What we do, the platform, who runs on it and the team behind it",
@@ -492,5 +512,7 @@
     }
    ]
   }
- ]
+ ],
+ "markets_font": 7,
+ "markets_methods": 3
 }
