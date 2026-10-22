@@ -1,0 +1,238 @@
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google/api_core/_python_version_support.py:246: FutureWarning: You are using a non-supported Python version (3.9.6). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+target presentation: 1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4 (Deck - Waymo + Yuno · Connections & Payment Methods (Oct 2026))
+[01] cover              cover
+  applied    2 requests duplicate t1 -> n01_g3f77215683c_1_445
+  applied   17 requests n01
+[02] divider            d01
+  applied    2 requests duplicate t3 -> n02_g3f769a0f446_0_988
+  applied   23 requests n02
+  applied    1 requests notes n02_g3f769a0f446_0_988
+[03] template_keep      yuno-story
+  warning: template_keep find text not found on slide 22: 'Eventbrite'
+  applied    2 requests duplicate t22 -> n03_g3f769a0f446_0_14188
+  warning: template_keep find text not found on slide 22: 'Eventbrite'
+  applied    6 requests n03
+  applied    1 requests notes n03_g3f769a0f446_0_14188
+[04] template_keep      four-pillars
+  warning: template_keep find text not found on slide 23: 'Eventbrite'
+  applied    2 requests duplicate t23 -> n04_g3f769a0f446_0_7028
+  warning: template_keep find text not found on slide 23: 'Eventbrite'
+  applied    5 requests n04
+[05] template_keep      trusted
+  warning: template_keep find text not found on slide 25: 'Eventbrite'
+  applied    2 requests duplicate t25 -> n05_g3f769a0f446_0_8218
+  warning: template_keep find text not found on slide 25: 'Eventbrite'
+  applied    5 requests n05
+  applied    1 requests notes n05_g3f769a0f446_0_8218
+[06] template_keep      team
+  warning: template_keep find text not found on slide 26: 'Eventbrite'
+  applied    2 requests duplicate t26 -> n06_g3f77215683c_1_1334
+  warning: template_keep find text not found on slide 26: 'Eventbrite'
+  applied    5 requests n06
+  applied    1 requests notes n06_g3f77215683c_1_1334
+[07] divider            d02
+  applied    2 requests duplicate t3 -> n07_g3f769a0f446_0_988
+  applied   23 requests n07
+  applied    1 requests notes n07_g3f769a0f446_0_988
+[08] table              markets
+  applied    2 requests duplicate t7 -> n08_g3f77215683c_2_2968
+  applied  311 requests n08
+  applied    3 requests notes n08_g3f77215683c_2_2968
+[09] table              sum-asia-pacific-1
+  applied    2 requests duplicate t7 -> n09_g3f77215683c_2_2968
+  applied  143 requests n09
+  applied    3 requests notes n09_g3f77215683c_2_2968
+[10] table              sum-europe-and-north-america-1
+  applied    2 requests duplicate t7 -> n10_g3f77215683c_2_2968
+  applied  171 requests n10
+  applied    3 requests notes n10_g3f77215683c_2_2968
+[11] table              sum-latin-america-1
+  applied    2 requests duplicate t7 -> n11_g3f77215683c_2_2968
+  applied  339 requests n11
+  applied    3 requests notes n11_g3f77215683c_2_2968
+[12] table              sum-latin-america-2
+  applied    2 requests duplicate t7 -> n12_g3f77215683c_2_2968
+  applied  283 requests n12
+  applied    3 requests notes n12_g3f77215683c_2_2968
+[13] table              sum-middle-east-1
+  applied    2 requests duplicate t7 -> n13_g3f77215683c_2_2968
+  applied  311 requests n13
+  applied    3 requests notes n13_g3f77215683c_2_2968
+[14] logo_grid          c-japan
+  applied    2 requests duplicate t7 -> n14_g3f77215683c_2_2968
+  applied  220 requests n14
+  applied    1 requests notes n14_g3f77215683c_2_2968
+[15] logo_grid          c-japan-methods
+  applied    2 requests duplicate t7 -> n15_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n15): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  applied  269 requests n15
+  applied    1 requests notes n15_g3f77215683c_2_2968
+[16] logo_grid          c-singapore
+  applied    2 requests duplicate t7 -> n16_g3f77215683c_2_2968
+  applied  223 requests n16
+  applied    1 requests notes n16_g3f77215683c_2_2968
+[17] logo_grid          c-singapore-methods
+  applied    2 requests duplicate t7 -> n17_g3f77215683c_2_2968
+  applied  264 requests n17
+  applied    1 requests notes n17_g3f77215683c_2_2968
+[18] logo_grid          c-australia
+  applied    2 requests duplicate t7 -> n18_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n18): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  applied  239 requests n18
+  applied    1 requests notes n18_g3f77215683c_2_2968
+[19] logo_grid          c-australia-methods
+  applied    2 requests duplicate t7 -> n19_g3f77215683c_2_2968
+  applied  269 requests n19
+  applied    1 requests notes n19_g3f77215683c_2_2968
+[20] logo_grid          c-united-kingdom
+  applied    2 requests duplicate t7 -> n20_g3f77215683c_2_2968
+  applied  303 requests n20
+  applied    1 requests notes n20_g3f77215683c_2_2968
+[21] logo_grid          c-united-kingdom-methods
+  applied    2 requests duplicate t7 -> n21_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n21): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  retry 2 on chunk 0 (n21): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  applied  301 requests n21
+  applied    1 requests notes n21_g3f77215683c_2_2968
+[22] logo_grid          c-germany
+  applied    2 requests duplicate t7 -> n22_g3f77215683c_2_2968
+  applied  255 requests n22
+  applied    1 requests notes n22_g3f77215683c_2_2968
+[23] logo_grid          c-germany-methods
+  applied    2 requests duplicate t7 -> n23_g3f77215683c_2_2968
+  applied  248 requests n23
+  applied    1 requests notes n23_g3f77215683c_2_2968
+[24] logo_grid          c-spain
+  applied    2 requests duplicate t7 -> n24_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n24): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  retry 2 on chunk 0 (n24): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  applied  295 requests n24
+  applied    1 requests notes n24_g3f77215683c_2_2968
+[25] logo_grid          c-spain-methods
+  applied    2 requests duplicate t7 -> n25_g3f77215683c_2_2968
+  applied  301 requests n25
+  applied    1 requests notes n25_g3f77215683c_2_2968
+[26] logo_grid          c-canada
+  applied    2 requests duplicate t7 -> n26_g3f77215683c_2_2968
+  applied  207 requests n26
+  applied    1 requests notes n26_g3f77215683c_2_2968
+[27] logo_grid          c-canada-methods
+  applied    2 requests duplicate t7 -> n27_g3f77215683c_2_2968
+  applied  277 requests n27
+  applied    1 requests notes n27_g3f77215683c_2_2968
+[28] logo_grid          c-argentina
+  applied    2 requests duplicate t7 -> n28_g3f77215683c_2_2968
+  applied  287 requests n28
+  applied    1 requests notes n28_g3f77215683c_2_2968
+[29] logo_grid          c-argentina-methods
+  applied    2 requests duplicate t7 -> n29_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n29): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  applied  335 requests n29
+  applied    1 requests notes n29_g3f77215683c_2_2968
+[30] logo_grid          c-brazil
+  applied    2 requests duplicate t7 -> n30_g3f77215683c_2_2968
+  applied  580 requests n30
+  applied    1 requests notes n30_g3f77215683c_2_2968
+[31] logo_grid          c-brazil-methods
+  applied    2 requests duplicate t7 -> n31_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n31): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  applied  312 requests n31
+  applied    1 requests notes n31_g3f77215683c_2_2968
+[32] logo_grid          c-chile
+  applied    2 requests duplicate t7 -> n32_g3f77215683c_2_2968
+  applied  353 requests n32
+  applied    1 requests notes n32_g3f77215683c_2_2968
+[33] logo_grid          c-chile-methods
+  applied    2 requests duplicate t7 -> n33_g3f77215683c_2_2968
+  applied  356 requests n33
+  applied    1 requests notes n33_g3f77215683c_2_2968
+[34] logo_grid          c-colombia
+  applied    2 requests duplicate t7 -> n34_g3f77215683c_2_2968
+  applied  407 requests n34
+  applied    1 requests notes n34_g3f77215683c_2_2968
+[35] logo_grid          c-colombia-methods
+  applied    2 requests duplicate t7 -> n35_g3f77215683c_2_2968
+  applied  341 requests n35
+  applied    1 requests notes n35_g3f77215683c_2_2968
+[36] logo_grid          c-mexico
+  applied    2 requests duplicate t7 -> n36_g3f77215683c_2_2968
+  applied  470 requests n36
+  applied    1 requests notes n36_g3f77215683c_2_2968
+[37] logo_grid          c-mexico-methods
+  applied    2 requests duplicate t7 -> n37_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n37): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  applied  372 requests n37
+  applied    1 requests notes n37_g3f77215683c_2_2968
+[38] table              c-mexico-local
+  applied    2 requests duplicate t7 -> n38_g3f77215683c_2_2968
+  applied  194 requests n38
+  applied    1 requests notes n38_g3f77215683c_2_2968
+[39] logo_grid          c-peru
+  applied    2 requests duplicate t7 -> n39_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n39): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  applied  504 requests n39
+  applied    1 requests notes n39_g3f77215683c_2_2968
+[40] logo_grid          c-uruguay
+  applied    2 requests duplicate t7 -> n40_g3f77215683c_2_2968
+  applied  317 requests n40
+  applied    1 requests notes n40_g3f77215683c_2_2968
+[41] logo_grid          c-bolivia
+  applied    2 requests duplicate t7 -> n41_g3f77215683c_2_2968
+  applied  237 requests n41
+  applied    1 requests notes n41_g3f77215683c_2_2968
+[42] logo_grid          c-costa-rica
+  applied    2 requests duplicate t7 -> n42_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n42): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  retry 2 on chunk 0 (n42): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1dfrH6ni1hwK2Ed_g6G37dJLXMiz4uhvDgq7rBgn1Oj4:batchUpdate?alt=j
+  retry 3 on chunk 0 (n42): [Errno 49] Can't assign requested address
+Traceback (most recent call last):
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/httplib2/__init__.py", line 1369, in _conn_request
+    conn.connect()
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/httplib2/__init__.py", line 1145, in connect
+    address_info = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/Waymo/build/gs/gs_engine.py", line 1525, in <module>
+    build_from_spec(a[1], final='--final' in a, only=only, replace='--replace' in a)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/Waymo/build/gs/gs_engine.py", line 1482, in build_from_spec
+    sid = render_one(deck, s, tag, n, footer)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/Waymo/build/gs/gs_engine.py", line 1451, in render_one
+    return RENDERERS[t](deck, s, tag, n, footer)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/Waymo/build/gs/gs_engine.py", line 1377, in r_logo_grid
+    return _finish(deck, sb, sid, s, n, footer)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/Waymo/build/gs/gs_engine.py", line 884, in _finish
+    sb.flush(); deck.set_notes(sid, s.get('notes')); return sid
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/Waymo/build/gs/gs_engine.py", line 375, in flush
+    self.deck.run(self.R, label or self.tag); self.R = []
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/Waymo/build/gs/gs_engine.py", line 300, in run
+    if reqs: run(self.svc, self.pid, reqs, label=label)
+  File "/Users/germantatis/Desktop/GTMCoding/Deals/Waymo/build/gs/gs_engine.py", line 152, in run
+    if part: svc.presentations().batchUpdate(presentationId=pid, body={'requests': part}).execute()
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/http.py", line 923, in execute
+    resp, content = _retry_request(
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/http.py", line 222, in _retry_request
+    raise exception
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/googleapiclient/http.py", line 191, in _retry_request
+    resp, content = http.request(uri, method, *args, **kwargs)
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/google_auth_httplib2.py", line 216, in request
+    response, content = self.http.request(
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/httplib2/__init__.py", line 1727, in request
+    (response, content) = self._request(
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/httplib2/__init__.py", line 1447, in _request
+    (response, content) = self._conn_request(conn, request_uri, method, body, headers)
+  File "/Users/germantatis/Library/Python/3.9/lib/python/site-packages/httplib2/__init__.py", line 1376, in _conn_request
+    raise ServerNotFoundError("Unable to find the server at %s" % conn.host)
+httplib2.error.ServerNotFoundError: Unable to find the server at slides.googleapis.com
+WAYMO_EXIT=1

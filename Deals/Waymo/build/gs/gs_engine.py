@@ -154,6 +154,9 @@ def run(svc, pid, reqs, chunk=300, label=''):
             except Exception as e:
                 msg = str(e); attempt += 1
                 if '429' in msg or 'RATE_LIMIT' in msg: print(f"  quota on chunk {i} ({label}), waiting 65 s"); time.sleep(65); attempt -= 1; continue
+                if 'HttpError' not in type(e).__name__ and ('Unable to find the server' in msg or 'Errno' in msg or 'timed out' in msg.lower() or 'Connection' in msg):
+                    if attempt > 12: raise
+                    print(f"  network error on chunk {i} ({label}), waiting 30 s: {msg[:80]}"); time.sleep(30); continue
                 img = re.search(r'requests\[(\d+)\]\.(createImage|replaceImage)', msg)
                 if img and attempt >= 4:
                     k = int(img.group(1)); bad = part.pop(k); url = (bad.get('createImage') or bad.get('replaceImage') or {}).get('url', '')
