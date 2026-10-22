@@ -192,12 +192,13 @@ GENERIC_OK = {'bamboo', 'dlocal', 'unlimit', 'unlimint', 'monnet', 'paymentez', 
 
 # Recurring-capable through Yuno (docs.y.uno, 22 Oct 2026): subscriptions engine = CARD, PAYPAL_ENROLLMENT, PIX_AUTOMATIC; stored credentials = cards + Apple Pay / Google Pay
 # wallet tokens; enrollable methods (vaulted_token) = the *_ENROLLMENT / enrollable codes in the Payment Type list and API enums. Belvo = direct-debit enrollment (code scan, high).
+# Pix biométrico is NOT recurring (payer authenticates every charge); dropped from RECURRING_CODES on 22 Oct 2026 after the HBO Max review.
 RECURRING_CODES = {'CARD', 'CARD_REDIRECT', 'CHECKOUT_API', 'CREDIT CARD (VIA KCP)', 'KR_LOCAL_CARD', 'APPLE_PAY', 'GOOGLE_PAY', 'PAYPAL_ENROLLMENT', 'PAYPAL_BA_ENROLLMENT', 'PIX_AUTOMATIC', 'PIX_AUTOMATIC_ENROLLMENT', 'PIX_RECORRENTE',
-                   'PIX_BIOMETRICO', 'SMART_PIX', 'NU_PAY_ENROLLMENT', 'DAVIPLATA_ENROLLMENT', 'WALLET_CONNECT', 'YAPE_ENROLLMENT', 'ASTROPAY_ENROLLABLE', 'SEPA_ENROLLMENT', 'IDEAL_ENROLLMENT', 'BANCONTACT_ENROLLMENT',
+                   'SMART_PIX', 'NU_PAY_ENROLLMENT', 'DAVIPLATA_ENROLLMENT', 'WALLET_CONNECT', 'YAPE_ENROLLMENT', 'ASTROPAY_ENROLLABLE', 'SEPA_ENROLLMENT', 'IDEAL_ENROLLMENT', 'BANCONTACT_ENROLLMENT',
                    'EU_BANK_TRANSFER_ENROLLMENT', 'KLARNA_ENROLLMENT', 'KLARNA_PAY_NOW_ENROLLMENT', 'KLARNA_PAY_OVER_TIME_ENROLLMENT', 'AFTER_PAY_ENROLLMENT', 'ACH_ENROLLMENT', 'CASHAPP_ENROLLMENT', 'DIRECT_DEBIT', 'DIRECT_DEBIT_ENROLLMENT',
                    # catalog payment_method_type = ENROLLMENT (Caio's 'PM types not in sheet', 22 Oct 2026) and recurring rails
                    'GCASH_RECURRING', 'GCASH_ENROLLMENT', 'DANA_ENROLLMENT', 'SHOPEEPAY_ENROLLMENT', 'TOUCH_AND_GO_ENROLLMENT', 'GOPAY_ENROLLMENT', 'REVOLUT_PAY_ENROLLMENT', 'TWINT_ENROLLMENT', 'BACS_ENROLLMENT',
-                   'AUTOGIRO_ENROLLMENT', 'BETALINGSSERVICE_ENROLLMENT', 'BECS_DIRECT_DEBIT_ENROLLMENT', 'PAD_ENROLLMENT', 'NEQUI_ENROLLMENT', 'YAPE_ENROLLABLE', 'BANCOLOMBIA_TOKEN_BOX', 'KLARNA_PAY_LATER_ENROLLMENT', 'AFTERPAY_ENROLLMENT', 'PIX_BIOMETRIC'}
+                   'AUTOGIRO_ENROLLMENT', 'BETALINGSSERVICE_ENROLLMENT', 'BECS_DIRECT_DEBIT_ENROLLMENT', 'PAD_ENROLLMENT', 'NEQUI_ENROLLMENT', 'YAPE_ENROLLABLE', 'BANCOLOMBIA_TOKEN_BOX', 'KLARNA_PAY_LATER_ENROLLMENT', 'AFTERPAY_ENROLLMENT'}
 RECURRING_DIRECT = {'Visa', 'Mastercard', 'Discover', 'UnionPay', 'Apple Pay', 'Google Pay', 'Paypal', 'Klarna', 'Nupay', 'Daviplata', 'YAPE', 'Belvo'}   # directory "Payment Method" entries that are recurring-capable
 RECURRING_DIRECT_NOTE = {'Belvo': 'Direct debit enrollment'}
 
