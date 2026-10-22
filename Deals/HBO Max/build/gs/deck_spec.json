@@ -1,5 +1,5 @@
 {
- "presentation_id": "1Z_xHfeXnUoM_NWp5j3MShpAuTbzwQNVnVOFyPQ0mxMw",
+ "presentation_id": "1GyS-IR10Hd_pIP4CmrioQNeONeGAP2GZ4mU7I7IMl_A",
  "merchant": "HBO Max",
  "footer": "",
  "logo_url": "https://drive.google.com/uc?export=download&id=1l8hvOsBCmtK8a9VsB9bqTP4cay2Bl7_g",
@@ -32,7 +32,7 @@
       },
       {
        "title": "Enrollable local methods",
-       "body": "A vaulted token after a one-time consent: SEPA Direct Debit, iDEAL, Bancontact, Klarna, Afterpay, NuPay, Daviplata, Mercado Pago Wallet, Yape, Smart PIX, AstroPay and bank direct debit."
+       "body": "A vaulted token after a one-time consent: SEPA, Bacs, Autogiro, Betalingsservice, BECS and PAD direct debits, iDEAL, Bancontact, Klarna, Afterpay, TWINT, Revolut Pay, NuPay, Daviplata, Nequi, Mercado Pago Wallet, Yape, Smart PIX, AstroPay, GCash, DANA, GoPay, ShopeePay and Touch 'n Go."
       }
      ]
     },
@@ -41,17 +41,17 @@
      "items": [
       {
        "title": "One-time methods",
-       "body": "Cash and vouchers, QR codes, one-shot bank transfers and wallets without an enrollment flow (BLIK, TWINT, Swish, MobilePay, OXXO, one-time Pix and similar)."
+       "body": "Cash and vouchers, QR codes, one-shot bank transfers and wallets without an enrollment flow (BLIK, Swish, MobilePay, OXXO, one-time Pix and similar)."
       },
       {
        "title": "How to read the country slides",
-       "body": "Live means the connection is built and available through Yuno for that country. Every live card processor supports recurring card billing; local methods are listed only where the docs show an enrollment or recurring flow."
+       "body": "Live = built and available through Yuno for that country; every live card processor supports recurring card billing. Outlined chips = integration code exists but y.uno/integrations does not list the provider yet (integrated, not live). Local methods appear only where Yuno's catalog has an enrollment or recurring flow."
       }
      ]
     }
    ],
-   "bar": "Basis: docs.y.uno subscriptions, stored credentials and enrollment pages, read on 22 October 2026.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan (Caio Freitas, 14 Oct 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "bar": "Basis: docs.y.uno subscriptions, stored credentials and enrollment pages, Yuno's catalog of enrollment types and integration repo inventory, read on 22 October 2026.",
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-asia-pacific-1",
@@ -61,74 +61,74 @@
    "columns": [
     "Country",
     "Providers live",
-    "Homologating",
+    "Homologating · in code",
     "Recurring methods and wallets through Yuno"
    ],
    "col_widths": [
     0.17,
-    0.12,
-    0.13,
+    0.11,
+    0.14,
     0.58
    ],
    "rows": [
     [
      "Australia",
      "18",
-     "4",
+     "4 · 3",
      "Afterpay · Klarna · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Indonesia",
      "18",
-     "5",
-     "Direct debit · Google Pay · PayPal"
+     "5 · 0",
+     "Direct debit · DANA · GoPay · ShopeePay · Google Pay · PayPal"
     ],
     [
      "Taiwan",
      "10",
-     "2",
+     "2 · 0",
      "Apple Pay · Google Pay"
     ],
     [
      "Singapore",
      "18",
-     "3",
-     "Apple Pay · Google Pay · PayPal"
+     "3 · 1",
+     "ShopeePay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Thailand",
      "19",
-     "4",
-     "Google Pay · PayPal"
+     "4 · 0",
+     "ShopeePay · Google Pay · PayPal"
     ],
     [
      "Vietnam",
      "12",
-     "4",
-     "Apple Pay · Google Pay · PayPal"
+     "4 · 0",
+     "ShopeePay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Philippines",
      "18",
-     "3",
-     "Direct debit · Apple Pay · Google Pay · PayPal"
+     "3 · 0",
+     "GCash · ShopeePay · Direct debit · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Malaysia",
      "20",
-     "4",
-     "Apple Pay · Google Pay · PayPal"
+     "4 · 0",
+     "ShopeePay · Touch 'n Go · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Bangladesh",
      "5",
-     "0",
-     "PayPal"
+     "0 · 0",
+     "Cards"
     ],
     [
      "Hong Kong",
      "1",
-     "1",
+     "1 · 1",
      "Apple Pay"
     ]
    ],
@@ -136,8 +136,8 @@
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "The 20 largest of the 38 Asia Pacific markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF). HBO Max does not publish subscribers by country.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan (Caio Freitas, 14 Oct 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "note": "The 20 largest of the 38 Asia Pacific markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF). HBO Max does not publish subscribers by country. In code = integration repo exists, not listed on y.uno/integrations yet.",
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-asia-pacific-2",
@@ -147,74 +147,74 @@
    "columns": [
     "Country",
     "Providers live",
-    "Homologating",
+    "Homologating · in code",
     "Recurring methods and wallets through Yuno"
    ],
    "col_widths": [
     0.17,
-    0.12,
-    0.13,
+    0.11,
+    0.14,
     0.58
    ],
    "rows": [
     [
      "Pakistan",
      "7",
-     "0",
-     "PayPal"
+     "0 · 0",
+     "Cards"
     ],
     [
      "New Zealand",
      "11",
-     "2",
+     "2 · 1",
      "Afterpay · Klarna · Apple Pay · Google Pay"
     ],
     [
      "Sri Lanka",
      "6",
-     "0",
+     "0 · 0",
      "Google Pay · PayPal"
     ],
     [
      "Myanmar",
      "2",
-     "0",
+     "0 · 0",
      "Cards"
     ],
     [
      "Macau",
      "0",
-     "0",
+     "0 · 0",
      "Apple Pay"
     ],
     [
      "Cambodia",
      "4",
-     "0",
+     "0 · 0",
      "Cards"
     ],
     [
      "Nepal",
      "5",
-     "0",
+     "0 · 0",
      "PayPal"
     ],
     [
      "Papua New Guinea",
      "3",
-     "0",
+     "0 · 0",
      "Cards"
     ],
     [
      "Mongolia",
      "3",
-     "0",
+     "0 · 1",
      "Apple Pay · PayPal"
     ],
     [
      "Laos",
      "4",
-     "0",
+     "0 · 0",
      "PayPal"
     ]
    ],
@@ -222,8 +222,8 @@
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "The 20 largest of the 38 Asia Pacific markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF). HBO Max does not publish subscribers by country.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan (Caio Freitas, 14 Oct 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "note": "The 20 largest of the 38 Asia Pacific markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF). HBO Max does not publish subscribers by country. In code = integration repo exists, not listed on y.uno/integrations yet.",
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-europe-1",
@@ -233,83 +233,83 @@
    "columns": [
     "Country",
     "Providers live",
-    "Homologating",
+    "Homologating · in code",
     "Recurring methods and wallets through Yuno"
    ],
    "col_widths": [
     0.17,
-    0.12,
-    0.13,
+    0.11,
+    0.14,
     0.58
    ],
    "rows": [
     [
      "Germany",
      "25",
-     "1",
-     "EU bank transfer · SEPA Direct Debit · Apple Pay · Google Pay"
+     "1 · 1",
+     "SEPA Direct Debit · EU bank transfer · Revolut Pay · Apple Pay · Google Pay"
     ],
     [
      "United Kingdom",
      "26",
-     "3",
-     "Klarna · Apple Pay · Google Pay · PayPal"
+     "3 · 4",
+     "Bacs direct debit · Klarna · Revolut Pay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "France",
      "23",
-     "1",
-     "EU bank transfer · Klarna · SEPA Direct Debit · Apple Pay · Google Pay · PayPal"
+     "1 · 1",
+     "SEPA Direct Debit · EU bank transfer · Klarna · Revolut Pay · Apple Pay · Google Pay · +1 more"
     ],
     [
      "Italy",
      "26",
-     "1",
-     "EU bank transfer · Klarna · SEPA Direct Debit · Apple Pay · Google Pay · PayPal"
+     "1 · 1",
+     "SEPA Direct Debit · EU bank transfer · Klarna · Revolut Pay · Apple Pay · Google Pay · +1 more"
     ],
     [
      "Spain",
      "28",
-     "2",
-     "EU bank transfer · Klarna · SEPA Direct Debit · Apple Pay · Google Pay · PayPal"
+     "2 · 2",
+     "SEPA Direct Debit · EU bank transfer · Klarna · Revolut Pay · Apple Pay · Google Pay · +1 more"
     ],
     [
      "Türkiye",
      "11",
-     "3",
+     "3 · 2",
      "Cards"
     ],
     [
      "Netherlands",
      "24",
-     "1",
-     "iDEAL · EU bank transfer · Klarna · SEPA Direct Debit · Apple Pay · Google Pay · +1 more"
+     "1 · 1",
+     "iDEAL · SEPA Direct Debit · EU bank transfer · Klarna · Revolut Pay · Apple Pay · +2 more"
     ],
     [
      "Switzerland",
      "17",
-     "1",
-     "Klarna · Apple Pay · Google Pay"
+     "1 · 0",
+     "Klarna · TWINT · Apple Pay · Google Pay"
     ],
     [
      "Poland",
      "27",
-     "2",
-     "Apple Pay · Google Pay · PayPal"
+     "2 · 0",
+     "Revolut Pay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Belgium",
      "23",
-     "1",
-     "EU bank transfer · Klarna · Bancontact · SEPA Direct Debit · Apple Pay · Google Pay · +1 more"
+     "1 · 1",
+     "SEPA Direct Debit · EU bank transfer · Klarna · Revolut Pay · Bancontact · Apple Pay · +2 more"
     ]
    ],
    "header_style": "dark",
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "The 20 largest of the 46 European and Central Asian markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF).",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan (Caio Freitas, 14 Oct 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "note": "The 20 largest of the 46 European and Central Asian markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF). In code = integration repo exists, not listed on y.uno/integrations yet.",
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-europe-2",
@@ -319,74 +319,74 @@
    "columns": [
     "Country",
     "Providers live",
-    "Homologating",
+    "Homologating · in code",
     "Recurring methods and wallets through Yuno"
    ],
    "col_widths": [
     0.17,
-    0.12,
-    0.13,
+    0.11,
+    0.14,
     0.58
    ],
    "rows": [
     [
      "Ireland",
      "21",
-     "0",
-     "EU bank transfer · Klarna · SEPA Direct Debit · Apple Pay · Google Pay"
+     "0 · 2",
+     "SEPA Direct Debit · EU bank transfer · Klarna · Revolut Pay · Apple Pay · Google Pay"
     ],
     [
      "Sweden",
      "22",
-     "1",
-     "Klarna · Apple Pay · Google Pay · PayPal"
+     "1 · 2",
+     "Klarna · Revolut Pay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Austria",
      "23",
-     "1",
-     "EU bank transfer · SEPA Direct Debit · Apple Pay · Google Pay · PayPal"
+     "1 · 1",
+     "SEPA Direct Debit · EU bank transfer · Revolut Pay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Norway",
      "17",
-     "1",
+     "1 · 1",
      "Apple Pay · Google Pay"
     ],
     [
      "Denmark",
      "23",
-     "1",
-     "Klarna · Apple Pay · Google Pay · PayPal"
+     "1 · 2",
+     "Klarna · Revolut Pay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Romania",
      "20",
-     "0",
-     "Klarna · Apple Pay · Google Pay"
+     "0 · 0",
+     "Klarna · Revolut Pay · Apple Pay · Google Pay"
     ],
     [
      "Czech Republic",
      "24",
-     "1",
-     "Klarna · Apple Pay · Google Pay"
+     "1 · 0",
+     "Klarna · Revolut Pay · Apple Pay · Google Pay"
     ],
     [
      "Portugal",
      "25",
-     "1",
-     "EU bank transfer · Klarna · SEPA Direct Debit · Apple Pay · Google Pay"
+     "1 · 1",
+     "SEPA Direct Debit · EU bank transfer · Klarna · Revolut Pay · Apple Pay · Google Pay"
     ],
     [
      "Finland",
      "23",
-     "1",
-     "EU bank transfer · Klarna · SEPA Direct Debit · Apple Pay · Google Pay"
+     "1 · 2",
+     "SEPA Direct Debit · EU bank transfer · Klarna · Revolut Pay · Apple Pay · Google Pay"
     ],
     [
      "Kazakhstan",
      "4",
-     "0",
+     "0 · 0",
      "Apple Pay · Google Pay"
     ]
    ],
@@ -394,8 +394,8 @@
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "The 20 largest of the 46 European and Central Asian markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF).",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan (Caio Freitas, 14 Oct 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "note": "The 20 largest of the 46 European and Central Asian markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF). In code = integration repo exists, not listed on y.uno/integrations yet.",
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-latin-america-1",
@@ -405,74 +405,74 @@
    "columns": [
     "Country",
     "Providers live",
-    "Homologating",
+    "Homologating · in code",
     "Recurring methods and wallets through Yuno"
    ],
    "col_widths": [
     0.17,
-    0.12,
-    0.13,
+    0.11,
+    0.14,
     0.58
    ],
    "rows": [
     [
      "Argentina",
      "23",
-     "3",
+     "3 · 4",
      "Mercado Pago Wallet · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Brazil",
      "46",
-     "17",
+     "17 · 2",
      "PIX Automático · PIX biométrico · Smart PIX · Mercado Pago Wallet · Apple Pay · Google Pay · +1 more"
     ],
     [
      "Chile",
      "29",
-     "11",
+     "11 · 0",
      "Mercado Pago Wallet · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Colombia",
      "31",
-     "14",
-     "Mercado Pago Wallet · Apple Pay · Google Pay · PayPal"
+     "14 · 0",
+     "Nequi · Mercado Pago Wallet · Bancolombia Tokenbox · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Mexico",
      "36",
-     "17",
+     "17 · 1",
      "Klarna · Mercado Pago Wallet · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Peru",
      "25",
-     "8",
+     "8 · 0",
      "Yape · Mercado Pago Wallet · Apple Pay · PayPal"
     ],
     [
      "Uruguay",
      "12",
-     "3",
+     "3 · 0",
      "Mercado Pago Wallet · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Bolivia",
      "6",
-     "3",
+     "3 · 0",
      "PayPal"
     ],
     [
      "Costa Rica",
      "15",
-     "3",
+     "3 · 0",
      "Apple Pay · Google Pay · PayPal"
     ],
     [
      "Dominican Republic",
      "10",
-     "3",
+     "3 · 0",
      "Apple Pay · Google Pay"
     ]
    ],
@@ -480,8 +480,8 @@
    "font_size": 7.5,
    "bold_first_col": true,
    "zebra": true,
-   "note": "All Spanish- and Portuguese-speaking markets where HBO Max is available (help.hbomax.com); Belize, Guyana and Suriname are served by the global schemes only. Puerto Rico rides on US acquiring.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan (Caio Freitas, 14 Oct 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "note": "All Spanish- and Portuguese-speaking markets where HBO Max is available (help.hbomax.com); Belize, Guyana and Suriname are served by the global schemes only. Puerto Rico rides on US acquiring. In code = integration repo exists, not listed on y.uno/integrations yet.",
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-latin-america-2",
@@ -491,62 +491,62 @@
    "columns": [
     "Country",
     "Providers live",
-    "Homologating",
+    "Homologating · in code",
     "Recurring methods and wallets through Yuno"
    ],
    "col_widths": [
     0.17,
-    0.12,
-    0.13,
+    0.11,
+    0.14,
     0.58
    ],
    "rows": [
     [
      "Ecuador",
      "17",
-     "5",
+     "5 · 0",
      "Apple Pay · Google Pay · PayPal"
     ],
     [
      "El Salvador",
      "12",
-     "2",
+     "2 · 0",
      "Apple Pay"
     ],
     [
      "Guatemala",
      "15",
-     "4",
+     "4 · 0",
      "Apple Pay"
     ],
     [
      "Honduras",
      "8",
-     "3",
+     "3 · 0",
      "Apple Pay"
     ],
     [
      "Nicaragua",
      "6",
-     "0",
+     "0 · 0",
      "Cards"
     ],
     [
      "Panama",
      "14",
-     "2",
+     "2 · 0",
      "Apple Pay · Google Pay"
     ],
     [
      "Paraguay",
      "5",
-     "2",
+     "2 · 0",
      "Apple Pay · PayPal"
     ],
     [
      "Venezuela",
      "5",
-     "0",
+     "0 · 0",
      "Cards"
     ]
    ],
@@ -554,13 +554,13 @@
    "font_size": 8,
    "bold_first_col": true,
    "zebra": true,
-   "note": "All Spanish- and Portuguese-speaking markets where HBO Max is available (help.hbomax.com); Belize, Guyana and Suriname are served by the global schemes only. Puerto Rico rides on US acquiring.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan (Caio Freitas, 14 Oct 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "note": "All Spanish- and Portuguese-speaking markets where HBO Max is available (help.hbomax.com); Belize, Guyana and Suriname are served by the global schemes only. Puerto Rico rides on US acquiring. In code = integration repo exists, not listed on y.uno/integrations yet.",
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "c-australia",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › AUSTRALIA",
+   "kicker": "COUNTRY DETAIL › AUSTRALIA › PROVIDERS",
    "headline": "Australia: 18 providers live through Yuno, 15 for recurring card billing, 4 mores in homologation.",
    "sections": [
     {
@@ -685,6 +685,35 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (3)",
+     "chips": [
+      {
+       "name": "Fat Zebra",
+       "logo": "https://www.google.com/s2/favicons?domain=fatzebra.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Windcave",
+       "logo": "https://www.google.com/s2/favicons?domain=windcave.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-australia-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › AUSTRALIA › PAYMENT METHODS",
+   "headline": "Australia: 7 recurring-capable payment methods available and 1 recurring local method carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (7)",
      "chips": [
       {
@@ -745,8 +774,13 @@
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd)",
-      "9"
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); PayPal (Braintree)",
+      "10"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "Fat Zebra: Cards; GoCardless: BECS direct debit; Windcave: Cards",
+      "3"
      ]
     ]
    }
@@ -933,6 +967,11 @@
       "2"
      ],
      [
+      "Other recurring methods",
+      "DANA · GoPay · ShopeePay (Boku)",
+      "1 to 2 each"
+     ],
+     [
       "Wallets and global methods via providers",
       "Google Pay (Adyen, Rapyd); AstroPay (AstroPay)",
       "3"
@@ -1077,7 +1116,7 @@
   {
    "id": "c-singapore",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › SINGAPORE",
+   "kicker": "COUNTRY DETAIL › SINGAPORE › PROVIDERS",
    "headline": "Singapore: 18 providers live through Yuno, 16 for recurring card billing, 3 mores in homologation.",
    "sections": [
     {
@@ -1197,6 +1236,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "AllinPay",
+       "logo": "https://y.uno/vendor/webflow/68df5456bf87d168b498c25f_AllinPay.png",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-singapore-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › SINGAPORE › PAYMENT METHODS",
+   "headline": "Singapore: 6 recurring-capable payment methods available and 1 recurring local method carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (6)",
      "chips": [
       {
@@ -1246,9 +1304,19 @@
     "font_size": 7.5,
     "rows": [
      [
+      "Other recurring methods",
+      "ShopeePay (Boku)",
+      "1 to 2 each"
+     ],
+     [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd)",
-      "9"
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); PayPal (Braintree)",
+      "10"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "AllinPay: Cards",
+      "1"
      ]
     ]
    }
@@ -1435,6 +1503,11 @@
     "font_size": 7.5,
     "rows": [
      [
+      "Other recurring methods",
+      "ShopeePay (Boku)",
+      "1 to 2 each"
+     ],
+     [
       "Wallets and global methods via providers",
       "Google Pay (Adyen, Rapyd)",
       "2"
@@ -1593,6 +1666,11 @@
     ],
     "font_size": 7.5,
     "rows": [
+     [
+      "Other recurring methods",
+      "ShopeePay (Boku)",
+      "1 to 2 each"
+     ],
      [
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Rapyd); Google Pay (Adyen, Rapyd)",
@@ -1778,8 +1856,13 @@
     "font_size": 7.5,
     "rows": [
      [
+      "GCash",
+      "Adyen, Boku, dLocal",
+      "3"
+     ],
+     [
       "Other recurring methods",
-      "Direct debit (Xendit)",
+      "Direct debit (Xendit); ShopeePay (Boku)",
       "1 to 2 each"
      ],
      [
@@ -1982,9 +2065,14 @@
     "font_size": 7.5,
     "rows": [
      [
+      "Other recurring methods",
+      "ShopeePay · Touch 'n Go (Boku)",
+      "1 to 2 each"
+     ],
+     [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Fiserv, Rapyd)",
-      "7"
+      "Apple Pay (Adyen, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Fiserv, Rapyd); PayPal (Braintree)",
+      "8"
      ]
     ]
    }
@@ -2026,13 +2114,8 @@
      ]
     },
     {
-     "header": "Recurring-capable wallets and payment methods (5)",
+     "header": "Recurring-capable wallets and payment methods (4)",
      "chips": [
-      {
-       "name": "PayPal",
-       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
-       "aspect": 1.0
-      },
       {
        "name": "Discover",
        "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
@@ -2085,6 +2168,17 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "UseePay",
+       "logo": "https://www.google.com/s2/favicons?domain=useepay.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    },
+    {
      "header": "Recurring-capable wallets and payment methods (3)",
      "chips": [
       {
@@ -2104,7 +2198,27 @@
       }
      ]
     }
-   ]
+   ],
+   "table": {
+    "columns": [
+     "Recurring method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Via providers integrated in code, not yet listed",
+      "UseePay: Cards",
+      "1"
+     ]
+    ]
+   }
   },
   {
    "id": "c-pakistan",
@@ -2153,13 +2267,8 @@
      ]
     },
     {
-     "header": "Recurring-capable wallets and payment methods (5)",
+     "header": "Recurring-capable wallets and payment methods (4)",
      "chips": [
-      {
-       "name": "PayPal",
-       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
-       "aspect": 1.0
-      },
       {
        "name": "Discover",
        "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
@@ -2267,6 +2376,17 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "Windcave",
+       "logo": "https://www.google.com/s2/favicons?domain=windcave.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    },
+    {
      "header": "Recurring-capable wallets and payment methods (5)",
      "chips": [
       {
@@ -2319,6 +2439,11 @@
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Fiserv, Worldpay); Google Pay (Adyen, Fiserv)",
       "5"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "Windcave: Cards",
+      "1"
      ]
     ]
    }
@@ -2678,6 +2803,17 @@
      ]
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "XacBank",
+       "logo": "",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    },
+    {
      "header": "Recurring-capable wallets and payment methods (5)",
      "chips": [
       {
@@ -2707,7 +2843,27 @@
       }
      ]
     }
-   ]
+   ],
+   "table": {
+    "columns": [
+     "Recurring method",
+     "Providers carrying it through Yuno",
+     "#"
+    ],
+    "col_widths": [
+     0.24,
+     0.7,
+     0.06
+    ],
+    "font_size": 7.5,
+    "rows": [
+     [
+      "Via providers integrated in code, not yet listed",
+      "XacBank: Cards",
+      "1"
+     ]
+    ]
+   }
   },
   {
    "id": "c-laos",
@@ -2770,7 +2926,7 @@
   {
    "id": "c-germany",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › GERMANY",
+   "kicker": "COUNTRY DETAIL › GERMANY › PROVIDERS",
    "headline": "Germany: 25 providers live through Yuno, 19 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -2915,6 +3071,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-germany-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › GERMANY › PAYMENT METHODS",
+   "headline": "Germany: 5 recurring-capable payment methods available and 3 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (5)",
      "chips": [
       {
@@ -2959,14 +3134,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "EU bank transfer (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd)",
       "9"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit",
+      "1"
      ]
     ]
    }
@@ -2974,7 +3159,7 @@
   {
    "id": "c-united-kingdom",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › UNITED KINGDOM",
+   "kicker": "COUNTRY DETAIL › UNITED KINGDOM › PROVIDERS",
    "headline": "United Kingdom: 26 providers live through Yuno, 18 for recurring card billing, 3 mores in homologation.",
    "sections": [
     {
@@ -3134,6 +3319,40 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (4)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "J.P. Morgan (Orbital)",
+       "logo": "https://www.google.com/s2/favicons?domain=jpmorgan.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Opayo",
+       "logo": "https://www.google.com/s2/favicons?domain=opayo.co.uk&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Trust Payments",
+       "logo": "https://www.google.com/s2/favicons?domain=trustpayments.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-united-kingdom-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › UNITED KINGDOM › PAYMENT METHODS",
+   "headline": "United Kingdom: 8 recurring-capable payment methods available and 3 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (8)",
      "chips": [
       {
@@ -3193,14 +3412,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "Bacs direct debit",
+      "Adyen, Cybersource, Worldline",
+      "3"
+     ],
+     [
       "Other recurring methods",
-      "Klarna (Adyen)",
+      "Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd)",
-      "9"
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); PayPal (Braintree)",
+      "10"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: Bacs direct debit; J.P. Morgan (Orbital): Cards, Bacs direct debit, Google Pay; Opayo: Cards; Trust Payments: Cards",
+      "4"
      ]
     ]
    }
@@ -3208,7 +3437,7 @@
   {
    "id": "c-france",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › FRANCE",
+   "kicker": "COUNTRY DETAIL › FRANCE › PROVIDERS",
    "headline": "France: 23 providers live through Yuno, 18 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -3343,6 +3572,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-france-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › FRANCE › PAYMENT METHODS",
+   "headline": "France: 7 recurring-capable payment methods available and 3 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (7)",
      "chips": [
       {
@@ -3397,14 +3645,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "EU bank transfer · Klarna (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer · Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd)",
       "9"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit",
+      "1"
      ]
     ]
    }
@@ -3412,7 +3670,7 @@
   {
    "id": "c-italy",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › ITALY",
+   "kicker": "COUNTRY DETAIL › ITALY › PROVIDERS",
    "headline": "Italy: 26 providers live through Yuno, 20 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -3562,6 +3820,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-italy-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › ITALY › PAYMENT METHODS",
+   "headline": "Italy: 7 recurring-capable payment methods available and 3 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (7)",
      "chips": [
       {
@@ -3616,14 +3893,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "EU bank transfer · Klarna (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer · Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd)",
-      "9"
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); PayPal (Braintree)",
+      "10"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit",
+      "1"
      ]
     ]
    }
@@ -3631,7 +3918,7 @@
   {
    "id": "c-spain",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › SPAIN",
+   "kicker": "COUNTRY DETAIL › SPAIN › PROVIDERS",
    "headline": "Spain: 28 providers live through Yuno, 21 for recurring card billing, 2 mores in homologation.",
    "sections": [
     {
@@ -3796,6 +4083,30 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (2)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Redsys",
+       "logo": "https://www.google.com/s2/favicons?domain=redsys.es&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-spain-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › SPAIN › PAYMENT METHODS",
+   "headline": "Spain: 7 recurring-capable payment methods available and 3 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (7)",
      "chips": [
       {
@@ -3850,14 +4161,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "EU bank transfer · Klarna (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer · Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); AstroPay (AstroPay)",
-      "10"
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); AstroPay (AstroPay); PayPal (Braintree)",
+      "11"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit; Redsys: Cards, Apple Pay, Google Pay",
+      "2"
      ]
     ]
    }
@@ -3950,6 +4271,22 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (2)",
+     "chips": [
+      {
+       "name": "iyzico",
+       "logo": "https://www.google.com/s2/favicons?domain=iyzico.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "QNB Finansbank",
+       "logo": "https://www.google.com/s2/favicons?domain=qnb.com.tr&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    },
+    {
      "header": "Recurring-capable wallets and payment methods (4)",
      "chips": [
       {
@@ -3992,6 +4329,11 @@
       "Wallets and global methods via providers",
       "AstroPay (AstroPay)",
       "1"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "QNB Finansbank: Cards; iyzico: Cards",
+      "2"
      ]
     ]
    }
@@ -3999,7 +4341,7 @@
   {
    "id": "c-netherlands",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › NETHERLANDS",
+   "kicker": "COUNTRY DETAIL › NETHERLANDS › PROVIDERS",
    "headline": "Netherlands: 24 providers live through Yuno, 18 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -4139,6 +4481,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-netherlands-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › NETHERLANDS › PAYMENT METHODS",
+   "headline": "Netherlands: 6 recurring-capable payment methods available and 4 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (6)",
      "chips": [
       {
@@ -4188,19 +4549,29 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "iDEAL",
       "Adyen, Stripe",
       "2"
      ],
      [
       "Other recurring methods",
-      "EU bank transfer · Klarna (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer · Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd)",
-      "9"
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); PayPal (Braintree)",
+      "10"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit",
+      "1"
      ]
     ]
    }
@@ -4363,7 +4734,7 @@
     "rows": [
      [
       "Other recurring methods",
-      "Klarna (Adyen)",
+      "Klarna · TWINT (Adyen)",
       "1 to 2 each"
      ],
      [
@@ -4586,9 +4957,14 @@
     "font_size": 7.5,
     "rows": [
      [
+      "Other recurring methods",
+      "Revolut Pay (Revolut)",
+      "1 to 2 each"
+     ],
+     [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd)",
-      "9"
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); PayPal (Braintree)",
+      "10"
      ]
     ]
    }
@@ -4596,7 +4972,7 @@
   {
    "id": "c-belgium",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › BELGIUM",
+   "kicker": "COUNTRY DETAIL › BELGIUM › PROVIDERS",
    "headline": "Belgium: 23 providers live through Yuno, 16 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -4731,6 +5107,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-belgium-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › BELGIUM › PAYMENT METHODS",
+   "headline": "Belgium: 7 recurring-capable payment methods available and 4 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (7)",
      "chips": [
       {
@@ -4785,14 +5180,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "Bancontact · SEPA Direct Debit (Stripe); EU bank transfer · Klarna (Adyen)",
+      "Bancontact (Stripe); EU bank transfer · Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd)",
-      "7"
+      "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd); PayPal (Braintree)",
+      "8"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit",
+      "1"
      ]
     ]
    }
@@ -4914,6 +5319,22 @@
      ]
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (2)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Opayo",
+       "logo": "https://www.google.com/s2/favicons?domain=opayo.co.uk&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    },
+    {
      "header": "Recurring-capable wallets and payment methods (5)",
      "chips": [
       {
@@ -4958,14 +5379,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "EU bank transfer · Klarna (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer · Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd)",
       "7"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit; Opayo: Cards",
+      "2"
      ]
     ]
    }
@@ -4973,7 +5404,7 @@
   {
    "id": "c-sweden",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › SWEDEN",
+   "kicker": "COUNTRY DETAIL › SWEDEN › PROVIDERS",
    "headline": "Sweden: 22 providers live through Yuno, 15 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -5103,6 +5534,30 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (2)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nets",
+       "logo": "",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-sweden-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › SWEDEN › PAYMENT METHODS",
+   "headline": "Sweden: 7 recurring-capable payment methods available and 2 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (7)",
      "chips": [
       {
@@ -5158,13 +5613,18 @@
     "rows": [
      [
       "Other recurring methods",
-      "Klarna (Adyen)",
+      "Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd)",
-      "7"
+      "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd); PayPal (Braintree)",
+      "8"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: Autogiro; Nets: Cards",
+      "2"
      ]
     ]
    }
@@ -5172,7 +5632,7 @@
   {
    "id": "c-austria",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › AUSTRIA",
+   "kicker": "COUNTRY DETAIL › AUSTRIA › PROVIDERS",
    "headline": "Austria: 23 providers live through Yuno, 16 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -5307,6 +5767,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-austria-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › AUSTRIA › PAYMENT METHODS",
+   "headline": "Austria: 6 recurring-capable payment methods available and 3 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (6)",
      "chips": [
       {
@@ -5356,14 +5835,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "EU bank transfer (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd)",
-      "7"
+      "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd); PayPal (Braintree)",
+      "8"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit",
+      "1"
      ]
     ]
    }
@@ -5476,6 +5965,17 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "Nets",
+       "logo": "",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    },
+    {
      "header": "Recurring-capable wallets and payment methods (5)",
      "chips": [
       {
@@ -5523,6 +6023,11 @@
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Rapyd, Worldpay); Google Pay (Adyen, Rapyd)",
       "5"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "Nets: Cards",
+      "1"
      ]
     ]
    }
@@ -5530,7 +6035,7 @@
   {
    "id": "c-denmark",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › DENMARK",
+   "kicker": "COUNTRY DETAIL › DENMARK › PROVIDERS",
    "headline": "Denmark: 23 providers live through Yuno, 15 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -5665,6 +6170,30 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (2)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nets",
+       "logo": "",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-denmark-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › DENMARK › PAYMENT METHODS",
+   "headline": "Denmark: 7 recurring-capable payment methods available and 2 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (7)",
      "chips": [
       {
@@ -5720,13 +6249,18 @@
     "rows": [
      [
       "Other recurring methods",
-      "Klarna (Adyen)",
+      "Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd); AstroPay (AstroPay)",
-      "8"
+      "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd); AstroPay (AstroPay); PayPal (Braintree)",
+      "9"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: Betalingsservice; Nets: Cards",
+      "2"
      ]
     ]
    }
@@ -5893,7 +6427,7 @@
     "rows": [
      [
       "Other recurring methods",
-      "Klarna (Adyen)",
+      "Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
@@ -6097,7 +6631,7 @@
     "rows": [
      [
       "Other recurring methods",
-      "Klarna (Adyen)",
+      "Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
@@ -6111,7 +6645,7 @@
   {
    "id": "c-portugal",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › PORTUGAL",
+   "kicker": "COUNTRY DETAIL › PORTUGAL › PROVIDERS",
    "headline": "Portugal: 25 providers live through Yuno, 18 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -6256,6 +6790,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-portugal-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › PORTUGAL › PAYMENT METHODS",
+   "headline": "Portugal: 6 recurring-capable payment methods available and 3 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (6)",
      "chips": [
       {
@@ -6305,14 +6858,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "EU bank transfer · Klarna (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer · Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd); AstroPay (AstroPay)",
       "8"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit",
+      "1"
      ]
     ]
    }
@@ -6320,7 +6883,7 @@
   {
    "id": "c-finland",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › FINLAND",
+   "kicker": "COUNTRY DETAIL › FINLAND › PROVIDERS",
    "headline": "Finland: 23 providers live through Yuno, 16 for recurring card billing, 1 more in homologation.",
    "sections": [
     {
@@ -6455,6 +7018,30 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (2)",
+     "chips": [
+      {
+       "name": "GoCardless",
+       "logo": "https://www.google.com/s2/favicons?domain=gocardless.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nets",
+       "logo": "",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-finland-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › FINLAND › PAYMENT METHODS",
+   "headline": "Finland: 6 recurring-capable payment methods available and 3 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (6)",
      "chips": [
       {
@@ -6504,14 +7091,24 @@
     "font_size": 7.5,
     "rows": [
      [
+      "SEPA Direct Debit",
+      "Stripe, Worldline",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "EU bank transfer · Klarna (Adyen); SEPA Direct Debit (Stripe)",
+      "EU bank transfer · Klarna (Adyen); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Airwallex, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Rapyd)",
       "7"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "GoCardless: SEPA Direct Debit; Nets: Cards",
+      "2"
      ]
     ]
    }
@@ -6582,7 +7179,7 @@
   {
    "id": "c-argentina",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › ARGENTINA",
+   "kicker": "COUNTRY DETAIL › ARGENTINA › PROVIDERS",
    "headline": "Argentina: 23 providers live through Yuno, 18 for recurring card billing, 3 mores in homologation.",
    "sections": [
     {
@@ -6727,6 +7324,40 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (4)",
+     "chips": [
+      {
+       "name": "Mobbex",
+       "logo": "https://www.google.com/s2/favicons?domain=mobbex.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Nave",
+       "logo": "https://www.google.com/s2/favicons?domain=nave.com.ar&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Payway",
+       "logo": "https://y.uno/vendor/webflow/68df5430b13a25b062a0fdc2_6789cc737d7b8ce401d2ea43_678316ee5493a18101b5fb03_678303ad63212cff9a966fc8_673ac3fd7519d5dcb6ce0518_payway_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "Prisma",
+       "logo": "https://www.google.com/s2/favicons?domain=prismamediosdepago.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-argentina-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › ARGENTINA › PAYMENT METHODS",
+   "headline": "Argentina: 6 recurring-capable payment methods available and 1 recurring local method carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (6)",
      "chips": [
       {
@@ -6783,6 +7414,11 @@
      [
       "Wallets and global methods via providers",
       "Apple Pay (Fiserv, Worldpay); AstroPay (AstroPay); Google Pay (Fiserv)",
+      "4"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "Mobbex: Cards; Nave: Cards; Payway: Cards; Prisma: Cards",
       "4"
      ]
     ]
@@ -7119,6 +7755,22 @@
       }
      ],
      "muted": true
+    },
+    {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (2)",
+     "chips": [
+      {
+       "name": "Itaú",
+       "logo": "https://www.google.com/s2/favicons?domain=itau.com.br&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Payamigo",
+       "logo": "https://www.google.com/s2/favicons?domain=payamigo.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
     }
    ]
   },
@@ -7201,6 +7853,11 @@
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Cielo, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Cielo, Fiserv, Rapyd, Rede); AstroPay (AstroPay)",
       "11"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "Itaú: PIX Automático; Payamigo: Cards",
+      "2"
      ]
     ]
    }
@@ -7786,8 +8443,13 @@
     "font_size": 7.5,
     "rows": [
      [
+      "Nequi",
+      "dLocal, Wompi",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "Mercado Pago Wallet (Mercado Pago)",
+      "Bancolombia Tokenbox (Wompi); Mercado Pago Wallet (Mercado Pago)",
       "1 to 2 each"
      ],
      [
@@ -7801,7 +8463,7 @@
   {
    "id": "c-mexico",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › MEXICO",
+   "kicker": "COUNTRY DETAIL › MEXICO › PROVIDERS",
    "headline": "Mexico: 36 providers live through Yuno, 29 for recurring card billing, 17 mores in homologation.",
    "sections": [
     {
@@ -8081,6 +8743,25 @@
      "muted": true
     },
     {
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (1)",
+     "chips": [
+      {
+       "name": "Conekta",
+       "logo": "https://www.google.com/s2/favicons?domain=conekta.com&sz=128",
+       "aspect": 1.0
+      }
+     ],
+     "style": "signed"
+    }
+   ]
+  },
+  {
+   "id": "c-mexico-methods",
+   "type": "logo_grid",
+   "kicker": "COUNTRY DETAIL › MEXICO › PAYMENT METHODS",
+   "headline": "Mexico: 7 recurring-capable payment methods available and 2 recurring local methods carried by the providers.",
+   "sections": [
+    {
      "header": "Recurring-capable wallets and payment methods (7)",
      "chips": [
       {
@@ -8143,6 +8824,11 @@
       "Wallets and global methods via providers",
       "Apple Pay (Adyen, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Fiserv, Rapyd); AstroPay (AstroPay)",
       "8"
+     ],
+     [
+      "Via providers integrated in code, not yet listed",
+      "Conekta: Cards",
+      "1"
      ]
     ]
    }
@@ -8379,8 +9065,13 @@
     "font_size": 7.5,
     "rows": [
      [
+      "Yape",
+      "dLocal, Monnet",
+      "2"
+     ],
+     [
       "Other recurring methods",
-      "Mercado Pago Wallet (Mercado Pago); Yape (dLocal)",
+      "Mercado Pago Wallet (Mercado Pago)",
       "1 to 2 each"
      ],
      [

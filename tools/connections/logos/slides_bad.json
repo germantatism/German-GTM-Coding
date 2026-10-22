@@ -3,5 +3,11 @@
  "https://www.google.com/s2/favicons?domain=corp.ecpay.com.tw&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali",
  "https://www.google.com/s2/favicons?domain=open-co.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali",
  "https://www.google.com/s2/favicons?domain=somosmach.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali",
- "https://www.google.com/s2/favicons?domain=tiendaselasturiano.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali"
+ "https://www.google.com/s2/favicons?domain=tiendaselasturiano.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=gmo-pg.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=sbpayment.jp&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=shopfacil.com.br&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=sonypaymentservices.jp&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=nets.eu&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=xacbank.mn&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI:batchUpdate?alt=json returned \"Invali"
 }

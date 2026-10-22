@@ -212,6 +212,36 @@
 ],
 [
 "Japan",
+"Provider",
+"GMO Payment Gateway",
+[
+"Cards"
+],
+"Integrated (code)",
+"gmopg"
+],
+[
+"Japan",
+"Provider",
+"SB Payment Service",
+[
+"Cards"
+],
+"Integrated (code)",
+"softbank"
+],
+[
+"Japan",
+"Provider",
+"Sony Payment Services",
+[
+"Cards"
+],
+"Integrated (code)",
+"sony"
+],
+[
+"Japan",
 "Direct payment method",
 "7-Eleven",
 [],
@@ -383,7 +413,8 @@
 "Provider",
 "Boku",
 [
-"DANA"
+"DANA",
+"ShopeePay"
 ],
 "Live",
 "boku"
@@ -545,6 +576,27 @@
 ],
 [
 "Singapore",
+"Provider",
+"AllinPay",
+[
+"Cards",
+"Alipay",
+"PayNow",
+"WeChat Pay"
+],
+"Integrated (code)",
+"allinpay"
+],
+[
+"Singapore",
+"Provider",
+"Tazapay",
+[],
+"Integrated (code)",
+"tazapay"
+],
+[
+"Singapore",
 "Direct payment method",
 "Apple Pay",
 [],
@@ -691,6 +743,7 @@
 "Airwallex",
 [
 "Cards",
+"Alipay",
 "Apple Pay",
 "Google Pay"
 ],
@@ -881,7 +934,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"Zip"
 ],
 "Live",
 "worldline"
@@ -896,6 +950,37 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Australia",
+"Provider",
+"GoCardless",
+[
+"BECS direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Australia",
+"Provider",
+"Windcave",
+[
+"Cards"
+],
+"Integrated (code)",
+"windcave"
+],
+[
+"Australia",
+"Provider",
+"Fat Zebra",
+[
+"Cards",
+"BECS direct debit"
+],
+"Integrated (code)",
+"fatzebra"
 ],
 [
 "Australia",
@@ -1031,6 +1116,7 @@
 "Airwallex",
 [
 "Cards",
+"Alipay",
 "Apple Pay",
 "Google Pay"
 ],
@@ -1236,7 +1322,9 @@
 "United Kingdom",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -1300,6 +1388,48 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"United Kingdom",
+"Provider",
+"GoCardless",
+[
+"Bacs direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"United Kingdom",
+"Provider",
+"Opayo",
+[
+"Cards"
+],
+"Integrated (code)",
+"opayo"
+],
+[
+"United Kingdom",
+"Provider",
+"Trust Payments",
+[
+"Cards"
+],
+"Integrated (code)",
+"trustpayments"
+],
+[
+"United Kingdom",
+"Provider",
+"J.P. Morgan (Orbital)",
+[
+"Cards",
+"Bacs direct debit",
+"Google Pay"
+],
+"Integrated (code)",
+"orbital"
 ],
 [
 "United Kingdom",
@@ -1466,6 +1596,7 @@
 "Airwallex",
 [
 "Cards",
+"Alipay",
 "Apple Pay",
 "Google Pay"
 ],
@@ -1527,7 +1658,8 @@
 "Ecommpay",
 [
 "Cards",
-"Neteller"
+"Neteller",
+"Open banking"
 ],
 "Live",
 "ecommpay"
@@ -1652,7 +1784,9 @@
 "Germany",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -1706,6 +1840,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Germany",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Germany",
@@ -1841,6 +1985,7 @@
 "Airwallex",
 [
 "Cards",
+"Alipay",
 "Apple Pay",
 "Google Pay"
 ],
@@ -2069,7 +2214,9 @@
 "Spain",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -2125,6 +2272,28 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Spain",
+"Provider",
+"Redsys",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Integrated (code)",
+"redsys"
+],
+[
+"Spain",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Spain",
@@ -2291,6 +2460,7 @@
 "Airwallex",
 [
 "Cards",
+"Alipay",
 "Apple Pay",
 "Google Pay"
 ],
@@ -2457,6 +2627,37 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Canada",
+"Provider",
+"GoCardless",
+[
+"PAD direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Canada",
+"Provider",
+"J.P. Morgan (Orbital)",
+[
+"Cards",
+"Google Pay"
+],
+"Integrated (code)",
+"orbital"
+],
+[
+"Canada",
+"Provider",
+"Moneris",
+[
+"Cards"
+],
+"Integrated (code)",
+"moneris"
 ],
 [
 "Canada",
@@ -2849,6 +3050,56 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Argentina",
+"Provider",
+"Prisma",
+[
+"Cards"
+],
+"Integrated (code)",
+"prisma"
+],
+[
+"Argentina",
+"Provider",
+"Payway",
+[
+"Cards"
+],
+"Integrated (code)",
+"payway"
+],
+[
+"Argentina",
+"Provider",
+"Nave",
+[
+"Cards"
+],
+"Integrated (code)",
+"nave"
+],
+[
+"Argentina",
+"Provider",
+"MODO",
+[
+"MODO"
+],
+"Integrated (code)",
+"modo"
+],
+[
+"Argentina",
+"Provider",
+"Mobbex",
+[
+"Cards"
+],
+"Integrated (code)",
+"mobbex"
 ],
 [
 "Argentina",
@@ -3647,6 +3898,59 @@
 ],
 "Live",
 "zoop"
+],
+[
+"Brazil",
+"Provider",
+"Itaú",
+[
+"Itaú Pay",
+"PIX",
+"PIX Automático"
+],
+"Integrated (code)",
+"itau"
+],
+[
+"Brazil",
+"Provider",
+"Shopfácil",
+[
+"Boleto"
+],
+"Integrated (code)",
+"shopfacil"
+],
+[
+"Brazil",
+"Provider",
+"Safeway",
+[
+"PIX"
+],
+"Integrated (code)",
+"safeway"
+],
+[
+"Brazil",
+"Provider",
+"OKTO",
+[
+"PIX"
+],
+"Integrated (code)",
+"okto"
+],
+[
+"Brazil",
+"Provider",
+"Payamigo",
+[
+"Cards",
+"PIX"
+],
+"Integrated (code)",
+"payamigo"
 ],
 [
 "Brazil",
@@ -4837,6 +5141,17 @@
 ],
 [
 "Colombia",
+"Provider",
+"Refácil",
+[
+"Bre-B",
+"PSE"
+],
+"Integrated (code)",
+"refacil"
+],
+[
+"Colombia",
 "Direct payment method",
 "ADDI",
 [],
@@ -5596,6 +5911,18 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Mexico",
+"Provider",
+"Conekta",
+[
+"Cards",
+"Aplazo",
+"SPEI"
+],
+"Integrated (code)",
+"conekta"
 ],
 [
 "Mexico",
@@ -7047,6 +7374,14 @@
 [],
 "Live",
 "walmart"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"SINPE Móvil",
+[],
+"Signed",
+"sinpemvil"
 ],
 [
 "Dominican Republic",

@@ -1,7 +1,7 @@
 {
  "merchant": "Waymo",
  "deal_dir": "Deals/Waymo",
- "presentation_id": "1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE",
+ "presentation_id": "1jf0dGr-eQjsubBzJ70B6teCJ9WjukC_E0UwHC0TtaBI",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
  "logo_aspect": 6.963,
  "recurring_only": false,
@@ -120,5 +120,7 @@
     "body": "We map authorization, re-authorization on route changes, capture and Premier renewals to the providers and methods above."
    }
   ]
- }
+ },
+ "presentation_id_v1": "1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE",
+ "signed": true
 }

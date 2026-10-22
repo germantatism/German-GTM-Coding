@@ -17,22 +17,23 @@ def dcountry(c): return lib.DISPLAY_COUNTRY.get(c, c)
 def chip(name, key=None):
     k = key or nk(name)
     if k in usable and usable[k] not in SLIDES_BAD: return {'name': name, 'logo': usable[k], 'aspect': aspect.get(k, 1.0)}
-    w = DIRW.get(k, ''); dom = re.sub(r'^https?://(www\.)?', '', w).split('/')[0]
+    w = DIRW.get(k, ''); dom = re.sub(r'^https?://(www\.)?', '', w).split('/')[0] or lib.CODE_ONLY_DOMAIN.get(k, '')
     url = f'https://www.google.com/s2/favicons?domain={dom}&sz=128' if dom else ''
     return {'name': name, 'logo': '' if url in SLIDES_BAD else url, 'aspect': 1.0}
 WALLETS = {'Apple Pay', 'Google Pay', 'PayPal'}
 GLOBAL = WALLETS | {'Alipay', 'WeChat Pay', 'UnionPay', 'Neteller', 'Skrill', 'Samsung Pay', 'AstroPay'}
-by = {c: {'live': [], 'homolog': [], 'direct': [], 'methods': collections.defaultdict(list), 'global_m': collections.defaultdict(list), 'key': {}, 'nodata': []} for c in T}
+by = {c: {'live': [], 'homolog': [], 'code': [], 'code_m': {}, 'signed': [], 'direct': [], 'methods': collections.defaultdict(list), 'global_m': collections.defaultdict(list), 'key': {}, 'nodata': []} for c in T}
 for c, typ, name, meths, status, key in R:
     d = by[c]; d['key'][name] = key
     if typ == 'Provider':
         if status == 'Homologating': d['homolog'].append(name); continue
+        if status == 'Integrated (code)': d['code'].append(name); d['code_m'][name] = meths; continue
         d['live'].append(name)
         if not meths: d['nodata'].append(name)
         for m in meths:
             if m in GLOBAL: d['global_m'][m].append(name)
             else: d['methods'][m].append(name)
-    else: d['direct'].append(name)
+    else: (d['signed'] if status == 'Signed' else d['direct']).append(name)
 def slug(c): return c.lower().replace(' ', '-')
 def pl(n, w): return f"{n} {w}" + ('' if n == 1 else 's')
 def grouped(d):
@@ -47,6 +48,9 @@ def method_table(d, max_rows):
     if single: rows.append(["Other local methods" if not REC else "Other recurring methods", '; '.join(f"{m} ({', '.join(p)})" for m, p in sorted(single)), "1 to 2 each"])
     if d['global_m']:
         rows.append(["Wallets and global methods via providers", '; '.join(f"{m} ({', '.join(sorted(ps, key=str.lower))})" for m, ps in sorted(d['global_m'].items(), key=lambda kv: (-len(kv[1]), kv[0]))), str(sum(len(v) for v in d['global_m'].values()))])
+    cm = {p: ms for p, ms in d['code_m'].items() if ms}
+    if cm:
+        rows.append(["Via providers integrated in code, not yet listed", '; '.join(f"{p}: {', '.join(ms)}" for p, ms in sorted(cm.items())), str(len(cm))])
     return rows
 def short_methods(d, k=6):
     ms = [m for m, _ in sorted(d['methods'].items(), key=lambda kv: -len(kv[1])) if m != 'Cards']
@@ -60,7 +64,7 @@ def fits(s):
     except GE.FitError: return False
 S = []
 cv = CFG['cover']; S.append({"id": "cover", "type": "cover", "title": cv['title'], "subtitle": cv['subtitle'], "presenter": cv['presenter'], "logo_url": CFG['logo_url']})
-SRC_NOTE = ("Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan (Caio Freitas, 14 Oct 2026); "
+SRC_NOTE = ("Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); "
             "Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). "
             "Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant.")
 # ---- markets slide (Waymo) ----
@@ -78,19 +82,19 @@ if CFG.get('basis'):
       "cols": [{"header": "RECURRING THROUGH YUNO TODAY", "items": [
           {"title": "Subscriptions engine", "body": "Yuno bills on the schedule you set: cards, PayPal (billing agreement) and Pix Automático in Brazil, all on a vaulted token."},
           {"title": "Stored credentials", "body": "Cards plus Apple Pay and Google Pay tokens, with the network transaction id stored on the token so renewals can be routed or retried on any connected provider."},
-          {"title": "Enrollable local methods", "body": "A vaulted token after a one-time consent: SEPA Direct Debit, iDEAL, Bancontact, Klarna, Afterpay, NuPay, Daviplata, Mercado Pago Wallet, Yape, Smart PIX, AstroPay and bank direct debit."}]},
+          {"title": "Enrollable local methods", "body": "A vaulted token after a one-time consent: SEPA, Bacs, Autogiro, Betalingsservice, BECS and PAD direct debits, iDEAL, Bancontact, Klarna, Afterpay, TWINT, Revolut Pay, NuPay, Daviplata, Nequi, Mercado Pago Wallet, Yape, Smart PIX, AstroPay, GCash, DANA, GoPay, ShopeePay and Touch 'n Go."}]},
         {"header": "LEFT OUT ON PURPOSE", "items": [
-          {"title": "One-time methods", "body": "Cash and vouchers, QR codes, one-shot bank transfers and wallets without an enrollment flow (BLIK, TWINT, Swish, MobilePay, OXXO, one-time Pix and similar)."},
-          {"title": "How to read the country slides", "body": "Live means the connection is built and available through Yuno for that country. Every live card processor supports recurring card billing; local methods are listed only where the docs show an enrollment or recurring flow."}]}],
-      "bar": "Basis: docs.y.uno subscriptions, stored credentials and enrollment pages, read on 22 October 2026.", "notes": SRC_NOTE})
+          {"title": "One-time methods", "body": "Cash and vouchers, QR codes, one-shot bank transfers and wallets without an enrollment flow (BLIK, Swish, MobilePay, OXXO, one-time Pix and similar)."},
+          {"title": "How to read the country slides", "body": "Live = built and available through Yuno for that country; every live card processor supports recurring card billing. Outlined chips = integration code exists but y.uno/integrations does not list the provider yet (integrated, not live). Local methods appear only where Yuno's catalog has an enrollment or recurring flow."}]}],
+      "bar": "Basis: docs.y.uno subscriptions, stored credentials and enrollment pages, Yuno's catalog of enrollment types and integration repo inventory, read on 22 October 2026.", "notes": SRC_NOTE})
 # ---- overview tables per region ----
 def overview(rg):
     cs = rg['countries']; chunks = [cs[i:i + 10] for i in range(0, len(cs), 10)]
     for i, ch in enumerate(chunks):
-        rows = [[dcountry(c), str(len(by[c]['live'])), str(len(by[c]['homolog'])), short_methods(by[c])] for c in ch]
+        rows = [[dcountry(c), str(len(by[c]['live'])), f"{len(by[c]['homolog'])} · {len(by[c]['code'])}", short_methods(by[c])] for c in ch]
         s = {"id": f"sum-{slug(rg['name'])}-{i + 1}", "type": "table", "kicker": f"OVERVIEW › {rg['name'].upper()}" + (f" ({i + 1} OF {len(chunks)})" if len(chunks) > 1 else ""),
-             "headline": rg['headline'], "columns": ["Country", "Providers live", "Homologating", "Recurring methods and wallets through Yuno" if REC else "Local methods and wallets through Yuno"],
-             "col_widths": [0.17, 0.12, 0.13, 0.58], "rows": rows, "header_style": "dark", "font_size": 8, "bold_first_col": True, "zebra": True, "note": rg.get('note', ''), "notes": SRC_NOTE}
+             "headline": rg['headline'], "columns": ["Country", "Providers live", "Homologating · in code", "Recurring methods and wallets through Yuno" if REC else "Local methods and wallets through Yuno"],
+             "col_widths": [0.17, 0.11, 0.14, 0.58], "rows": rows, "header_style": "dark", "font_size": 8, "bold_first_col": True, "zebra": True, "note": (rg.get('note', '') + " In code = integration repo exists, not listed on y.uno/integrations yet.").strip(), "notes": SRC_NOTE}
         if not fits(s): s['font_size'] = 7.5
         if not fits(s): s['font_size'] = 7
         S.append(s)
@@ -99,7 +103,7 @@ for rg in CFG['regions']: overview(rg)
 def country_slides(c):
     d = by[c]; live = sorted(d['live'], key=str.lower); hom = sorted(d['homolog'], key=str.lower)
     cards = d['methods'].get('Cards', []); direct = sorted(d['direct'], key=lambda x: (x not in WALLETS, x.lower()))
-    gr = grouped(d); nloc = len(gr); cn = dcountry(c)
+    gr = grouped(d); nloc = len(gr); cn = dcountry(c); code = sorted(d['code'], key=str.lower); signed = sorted(d['signed'], key=str.lower)
     if REC:
         headA = f"{cn}: {pl(len(live), 'provider')} live through Yuno, {len(cards)} for recurring card billing" + (f", {pl(len(hom), 'more')} in homologation." if hom else ".")
         headB = f"{cn}: {pl(len(direct), 'recurring-capable payment method')} available and {pl(nloc, 'recurring local method')} carried by the providers." if nloc else f"{cn}: {pl(len(direct), 'recurring-capable payment method')} available through Yuno."
@@ -108,10 +112,12 @@ def country_slides(c):
         headA = f"{cn}: {pl(len(live), 'provider')} live through Yuno, {len(cards)} for cards" + (f", {pl(len(hom), 'more provider')} in homologation." if hom else ".")
         headB = f"{cn}: {pl(len(direct), 'payment method')} available and {pl(nloc, 'local method')} carried by the providers." if nloc else f"{cn}: {pl(len(direct), 'payment method')} available through Yuno."
         secB_h = f"Wallets and payment methods available ({len(direct)})"; tcols = ["Local method", "Providers carrying it through Yuno", "#"]
-    if not live and not hom: headA = f"{cn}: no provider lists this market on y.uno/integrations yet; {pl(len(direct), 'global payment method')} available."
+    if not live and not hom: headA = f"{cn}: no provider lists this market on y.uno/integrations yet; {pl(len(direct), 'global payment method')} available." + (f" {pl(len(code), 'provider')} integrated in code." if code else "")
     secA = [{"header": f"Live through Yuno ({len(live)})", "chips": [chip(x, d['key'].get(x)) for x in live]}] if live else []
     if hom: secA.append({"header": f"Homologating ({len(hom)})", "chips": [chip(x, d['key'].get(x)) for x in hom], "muted": True})
+    if code: secA.append({"header": f"Integrated in Yuno's code, not yet listed on y.uno/integrations ({len(code)})", "chips": [chip(x, d['key'].get(x)) for x in code], "style": "signed"})
     secB = [{"header": secB_h, "chips": [chip(x, d['key'].get(x)) for x in direct]}] if direct else []
+    if signed: secB.append({"header": f"Signed with partners, not yet integrated ({len(signed)})", "chips": [chip(x, d['key'].get(x)) for x in signed], "style": "request"})
     tbl = {"columns": tcols, "col_widths": [0.24, 0.70, 0.06], "font_size": 7.5}
     kick = "COUNTRY DETAIL › " + cn.upper()
     # 1) one combined slide

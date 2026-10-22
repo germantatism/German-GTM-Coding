@@ -46,7 +46,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -218,6 +219,36 @@
 ],
 [
 "Australia",
+"Provider",
+"GoCardless",
+[
+"BECS direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Australia",
+"Provider",
+"Windcave",
+[
+"Cards"
+],
+"Integrated (code)",
+"windcave"
+],
+[
+"Australia",
+"Provider",
+"Fat Zebra",
+[
+"Cards"
+],
+"Integrated (code)",
+"fatzebra"
+],
+[
+"Australia",
 "Direct payment method",
 "Apple Pay",
 [],
@@ -325,7 +356,11 @@
 "Indonesia",
 "Provider",
 "Boku",
-[],
+[
+"DANA",
+"GoPay",
+"ShopeePay"
+],
 "Live",
 "boku"
 ],
@@ -753,7 +788,9 @@
 "Singapore",
 "Provider",
 "Boku",
-[],
+[
+"ShopeePay"
+],
 "Live",
 "boku"
 ],
@@ -762,7 +799,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -908,6 +946,16 @@
 ],
 [
 "Singapore",
+"Provider",
+"AllinPay",
+[
+"Cards"
+],
+"Integrated (code)",
+"allinpay"
+],
+[
+"Singapore",
 "Direct payment method",
 "Apple Pay",
 [],
@@ -997,7 +1045,9 @@
 "Thailand",
 "Provider",
 "Boku",
-[],
+[
+"ShopeePay"
+],
 "Live",
 "boku"
 ],
@@ -1264,7 +1314,9 @@
 "Vietnam",
 "Provider",
 "Boku",
-[],
+[
+"ShopeePay"
+],
 "Live",
 "boku"
 ],
@@ -1445,6 +1497,7 @@
 [
 "Cards",
 "Apple Pay",
+"GCash",
 "Google Pay"
 ],
 "Live",
@@ -1472,7 +1525,10 @@
 "Philippines",
 "Provider",
 "Boku",
-[],
+[
+"GCash",
+"ShopeePay"
+],
 "Live",
 "boku"
 ],
@@ -1509,7 +1565,8 @@
 "Provider",
 "dLocal",
 [
-"Cards"
+"Cards",
+"GCash"
 ],
 "Live",
 "dlocal"
@@ -1731,7 +1788,10 @@
 "Malaysia",
 "Provider",
 "Boku",
-[],
+[
+"ShopeePay",
+"Touch 'n Go"
+],
 "Live",
 "boku"
 ],
@@ -1740,7 +1800,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -2043,14 +2104,6 @@
 [
 "Bangladesh",
 "Direct payment method",
-"PayPal",
-[],
-"Live",
-"paypal"
-],
-[
-"Bangladesh",
-"Direct payment method",
 "UnionPay",
 [],
 "Live",
@@ -2081,6 +2134,16 @@
 ],
 "Live",
 "unlimit"
+],
+[
+"Hong Kong",
+"Provider",
+"UseePay",
+[
+"Cards"
+],
+"Integrated (code)",
+"useepay"
 ],
 [
 "Hong Kong",
@@ -2187,14 +2250,6 @@
 [],
 "Live",
 "mastercard"
-],
-[
-"Pakistan",
-"Direct payment method",
-"PayPal",
-[],
-"Live",
-"paypal"
 ],
 [
 "Pakistan",
@@ -2342,6 +2397,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"New Zealand",
+"Provider",
+"Windcave",
+[
+"Cards"
+],
+"Integrated (code)",
+"windcave"
 ],
 [
 "New Zealand",
@@ -2780,6 +2845,16 @@
 ],
 [
 "Mongolia",
+"Provider",
+"XacBank",
+[
+"Cards"
+],
+"Integrated (code)",
+"xacbank"
+],
+[
+"Mongolia",
 "Direct payment method",
 "Apple Pay",
 [],
@@ -3093,7 +3168,9 @@
 "Germany",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -3131,7 +3208,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -3146,6 +3224,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Germany",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Germany",
@@ -3194,6 +3282,7 @@
 [
 "Cards",
 "Apple Pay",
+"Bacs direct debit",
 "Google Pay",
 "Klarna"
 ],
@@ -3235,7 +3324,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -3255,7 +3345,8 @@
 "Provider",
 "Cybersource",
 [
-"Cards"
+"Cards",
+"Bacs direct debit"
 ],
 "Live",
 "cybersource"
@@ -3404,7 +3495,9 @@
 "United Kingdom",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -3449,7 +3542,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"Bacs direct debit"
 ],
 "Live",
 "worldline"
@@ -3464,6 +3558,48 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"United Kingdom",
+"Provider",
+"GoCardless",
+[
+"Bacs direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"United Kingdom",
+"Provider",
+"Opayo",
+[
+"Cards"
+],
+"Integrated (code)",
+"opayo"
+],
+[
+"United Kingdom",
+"Provider",
+"Trust Payments",
+[
+"Cards"
+],
+"Integrated (code)",
+"trustpayments"
+],
+[
+"United Kingdom",
+"Provider",
+"J.P. Morgan (Orbital)",
+[
+"Cards",
+"Bacs direct debit",
+"Google Pay"
+],
+"Integrated (code)",
+"orbital"
 ],
 [
 "United Kingdom",
@@ -3715,7 +3851,9 @@
 "France",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -3753,7 +3891,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -3768,6 +3907,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"France",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "France",
@@ -3874,7 +4023,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -4039,7 +4189,9 @@
 "Italy",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -4077,7 +4229,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -4092,6 +4245,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Italy",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Italy",
@@ -4218,7 +4381,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -4391,7 +4555,9 @@
 "Spain",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -4429,7 +4595,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -4444,6 +4611,28 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Spain",
+"Provider",
+"Redsys",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Integrated (code)",
+"redsys"
+],
+[
+"Spain",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Spain",
@@ -4635,6 +4824,26 @@
 ],
 [
 "Turkey",
+"Provider",
+"iyzico",
+[
+"Cards"
+],
+"Integrated (code)",
+"iyzico"
+],
+[
+"Turkey",
+"Provider",
+"QNB Finansbank",
+[
+"Cards"
+],
+"Integrated (code)",
+"qnbfinansbank"
+],
+[
+"Turkey",
 "Direct payment method",
 "Discover",
 [],
@@ -4715,7 +4924,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -4860,7 +5070,9 @@
 "Netherlands",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -4899,7 +5111,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -4914,6 +5127,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Netherlands",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Netherlands",
@@ -4971,7 +5194,8 @@
 "Cards",
 "Apple Pay",
 "Google Pay",
-"Klarna"
+"Klarna",
+"TWINT"
 ],
 "Live",
 "adyen"
@@ -5236,7 +5460,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -5417,7 +5642,9 @@
 "Poland",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -5567,7 +5794,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -5698,7 +5926,9 @@
 "Belgium",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -5737,7 +5967,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -5752,6 +5983,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Belgium",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Belgium",
@@ -5965,7 +6206,9 @@
 "Ireland",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -6003,7 +6246,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -6018,6 +6262,26 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Ireland",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Ireland",
+"Provider",
+"Opayo",
+[
+"Cards"
+],
+"Integrated (code)",
+"opayo"
 ],
 [
 "Ireland",
@@ -6107,7 +6371,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -6228,7 +6493,9 @@
 "Sweden",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -6280,6 +6547,26 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Sweden",
+"Provider",
+"GoCardless",
+[
+"Autogiro"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Sweden",
+"Provider",
+"Nets",
+[
+"Cards"
+],
+"Integrated (code)",
+"nets"
 ],
 [
 "Sweden",
@@ -6385,7 +6672,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -6516,7 +6804,9 @@
 "Austria",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -6554,7 +6844,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -6569,6 +6860,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Austria",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Austria",
@@ -6795,6 +7096,16 @@
 ],
 [
 "Norway",
+"Provider",
+"Nets",
+[
+"Cards"
+],
+"Integrated (code)",
+"nets"
+],
+[
+"Norway",
 "Direct payment method",
 "Apple Pay",
 [],
@@ -6891,7 +7202,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -7012,7 +7324,9 @@
 "Denmark",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -7064,6 +7378,26 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Denmark",
+"Provider",
+"GoCardless",
+[
+"Betalingsservice"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Denmark",
+"Provider",
+"Nets",
+[
+"Cards"
+],
+"Integrated (code)",
+"nets"
 ],
 [
 "Denmark",
@@ -7266,7 +7600,9 @@
 "Romania",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -7554,7 +7890,9 @@
 "Czech Republic",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -7857,7 +8195,9 @@
 "Portugal",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -7895,7 +8235,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -7910,6 +8251,16 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Portugal",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
 ],
 [
 "Portugal",
@@ -8139,7 +8490,9 @@
 "Finland",
 "Provider",
 "Revolut",
-[],
+[
+"Revolut Pay"
+],
 "Live",
 "revolut"
 ],
@@ -8177,7 +8530,8 @@
 "Provider",
 "Worldline",
 [
-"Cards"
+"Cards",
+"SEPA Direct Debit"
 ],
 "Live",
 "worldline"
@@ -8192,6 +8546,26 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Finland",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Finland",
+"Provider",
+"Nets",
+[
+"Cards"
+],
+"Integrated (code)",
+"nets"
 ],
 [
 "Finland",
@@ -8568,6 +8942,46 @@
 ],
 "Live",
 "worldpay"
+],
+[
+"Argentina",
+"Provider",
+"Prisma",
+[
+"Cards"
+],
+"Integrated (code)",
+"prisma"
+],
+[
+"Argentina",
+"Provider",
+"Payway",
+[
+"Cards"
+],
+"Integrated (code)",
+"payway"
+],
+[
+"Argentina",
+"Provider",
+"Nave",
+[
+"Cards"
+],
+"Integrated (code)",
+"nave"
+],
+[
+"Argentina",
+"Provider",
+"Mobbex",
+[
+"Cards"
+],
+"Integrated (code)",
+"mobbex"
 ],
 [
 "Argentina",
@@ -9207,6 +9621,26 @@
 ],
 [
 "Brazil",
+"Provider",
+"Itaú",
+[
+"PIX Automático"
+],
+"Integrated (code)",
+"itau"
+],
+[
+"Brazil",
+"Provider",
+"Payamigo",
+[
+"Cards"
+],
+"Integrated (code)",
+"payamigo"
+],
+[
+"Brazil",
 "Direct payment method",
 "Apple Pay",
 [],
@@ -9790,7 +10224,8 @@
 "Provider",
 "dLocal",
 [
-"Cards"
+"Cards",
+"Nequi"
 ],
 "Live",
 "dlocal"
@@ -10077,7 +10512,9 @@
 "Provider",
 "Wompi",
 [
-"Cards"
+"Cards",
+"Bancolombia Tokenbox",
+"Nequi"
 ],
 "Live",
 "wompi"
@@ -10664,6 +11101,16 @@
 ],
 [
 "Mexico",
+"Provider",
+"Conekta",
+[
+"Cards"
+],
+"Integrated (code)",
+"conekta"
+],
+[
+"Mexico",
 "Direct payment method",
 "Apple Pay",
 [],
@@ -10859,7 +11306,8 @@
 "Provider",
 "Monnet",
 [
-"Cards"
+"Cards",
+"Yape"
 ],
 "Live",
 "monnet"

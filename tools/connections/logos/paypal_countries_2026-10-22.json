@@ -1,0 +1,798 @@
+[
+[
+"dz",
+"Algeria English / العربية / Français"
+],
+[
+"ao",
+"Angola English"
+],
+[
+"bj",
+"Benin English / Français"
+],
+[
+"bw",
+"Botswana English"
+],
+[
+"bf",
+"Burkina Faso English / Français"
+],
+[
+"bi",
+"Burundi English / Français"
+],
+[
+"cm",
+"Cameroon English / Français"
+],
+[
+"cv",
+"Cape Verde English"
+],
+[
+"td",
+"Chad English / Français"
+],
+[
+"km",
+"Comoros English / Français"
+],
+[
+"cg",
+"Congo - Brazzaville English / Français"
+],
+[
+"cd",
+"Congo - Kinshasa English"
+],
+[
+"ci",
+"Côte d’Ivoire English / Français"
+],
+[
+"dj",
+"Djibouti English / Français"
+],
+[
+"eg",
+"Egypt English / العربية"
+],
+[
+"er",
+"Eritrea English"
+],
+[
+"sz",
+"Eswatini English"
+],
+[
+"et",
+"Ethiopia English"
+],
+[
+"ga",
+"Gabon English / Français"
+],
+[
+"gm",
+"Gambia English"
+],
+[
+"gn",
+"Guinea English / Français"
+],
+[
+"gw",
+"Guinea-Bissau English"
+],
+[
+"ke",
+"Kenya English"
+],
+[
+"ls",
+"Lesotho English"
+],
+[
+"mg",
+"Madagascar English / Français"
+],
+[
+"mw",
+"Malawi English"
+],
+[
+"ml",
+"Mali English / Français"
+],
+[
+"mr",
+"Mauritania English"
+],
+[
+"mu",
+"Mauritius English"
+],
+[
+"yt",
+"Mayotte Français"
+],
+[
+"ma",
+"Morocco English / العربية"
+],
+[
+"mz",
+"Mozambique English"
+],
+[
+"na",
+"Namibia English"
+],
+[
+"ne",
+"Niger English / Français"
+],
+[
+"ng",
+"Nigeria English"
+],
+[
+"re",
+"Réunion Français"
+],
+[
+"rw",
+"Rwanda English"
+],
+[
+"st",
+"São Tomé & Príncipe English"
+],
+[
+"sn",
+"Senegal English / Français"
+],
+[
+"sc",
+"Seychelles English"
+],
+[
+"sl",
+"Sierra Leone English"
+],
+[
+"so",
+"Somalia English"
+],
+[
+"za",
+"South Africa English"
+],
+[
+"sh",
+"St. Helena English"
+],
+[
+"tz",
+"Tanzania English"
+],
+[
+"tg",
+"Togo English / Français"
+],
+[
+"tn",
+"Tunisia English / العربية / Français"
+],
+[
+"ug",
+"Uganda English"
+],
+[
+"zm",
+"Zambia English"
+],
+[
+"zw",
+"Zimbabwe English"
+],
+[
+"am",
+"Armenia English"
+],
+[
+"az",
+"Azerbaijan English"
+],
+[
+"bt",
+"Bhutan English"
+],
+[
+"bn",
+"Brunei English"
+],
+[
+"kh",
+"Cambodia English"
+],
+[
+"ge",
+"Georgia English"
+],
+[
+"hk",
+"Hong Kong SAR China English / 中文"
+],
+[
+"in",
+"India English"
+],
+[
+"id",
+"Indonesia English / Indonesia"
+],
+[
+"jp",
+"Japan 日本語"
+],
+[
+"kz",
+"Kazakhstan English / Français"
+],
+[
+"kg",
+"Kyrgyzstan English"
+],
+[
+"la",
+"Laos English"
+],
+[
+"my",
+"Malaysia English"
+],
+[
+"mv",
+"Maldives English"
+],
+[
+"mn",
+"Mongolia English"
+],
+[
+"np",
+"Nepal English"
+],
+[
+"ph",
+"Philippines English"
+],
+[
+"sg",
+"Singapore English"
+],
+[
+"kr",
+"South Korea English / 한국어"
+],
+[
+"lk",
+"Sri Lanka English"
+],
+[
+"tw",
+"Taiwan English / 中文"
+],
+[
+"tj",
+"Tajikistan English"
+],
+[
+"th",
+"Thailand English / ไทย"
+],
+[
+"tm",
+"Turkmenistan English"
+],
+[
+"vn",
+"Vietnam English / Tiếng Việt"
+],
+[
+"ai",
+"Anguilla English"
+],
+[
+"ag",
+"Antigua & Barbuda English"
+],
+[
+"aw",
+"Aruba English"
+],
+[
+"bs",
+"Bahamas English"
+],
+[
+"bb",
+"Barbados English"
+],
+[
+"bm",
+"Bermuda English"
+],
+[
+"ky",
+"Cayman Islands English"
+],
+[
+"dm",
+"Dominica English"
+],
+[
+"do",
+"Dominican Republic English / Español"
+],
+[
+"gd",
+"Grenada English"
+],
+[
+"gp",
+"Guadeloupe Français"
+],
+[
+"jm",
+"Jamaica English"
+],
+[
+"mq",
+"Martinique Français"
+],
+[
+"ms",
+"Montserrat English"
+],
+[
+"an",
+"Netherlands Antilles English"
+],
+[
+"kn",
+"St. Kitts & Nevis English"
+],
+[
+"lc",
+"St. Lucia English"
+],
+[
+"vc",
+"St. Vincent & Grenadines English"
+],
+[
+"tt",
+"Trinidad & Tobago English"
+],
+[
+"tc",
+"Turks & Caicos Islands English"
+],
+[
+"bz",
+"Belize English"
+],
+[
+"cr",
+"Costa Rica English / Español"
+],
+[
+"sv",
+"El Salvador English / Español"
+],
+[
+"gt",
+"Guatemala English / Español"
+],
+[
+"hn",
+"Honduras English / Español"
+],
+[
+"ni",
+"Nicaragua English / Español"
+],
+[
+"pa",
+"Panama English / Español"
+],
+[
+"al",
+"Albania English"
+],
+[
+"ad",
+"Andorra English / Español"
+],
+[
+"at",
+"Austria Deutsch"
+],
+[
+"by",
+"Belarus English"
+],
+[
+"be",
+"Belgium English / Français / Nederlands"
+],
+[
+"ba",
+"Bosnia & Herzegovina English"
+],
+[
+"vg",
+"British Virgin Islands English"
+],
+[
+"bg",
+"Bulgaria English"
+],
+[
+"hr",
+"Croatia English"
+],
+[
+"cy",
+"Cyprus English"
+],
+[
+"cz",
+"Czechia Čeština"
+],
+[
+"dk",
+"Denmark Dansk"
+],
+[
+"ee",
+"Estonia English / Eesti"
+],
+[
+"fo",
+"Faroe Islands English"
+],
+[
+"fi",
+"Finland Suomi"
+],
+[
+"fr",
+"France Français"
+],
+[
+"de",
+"Germany Deutsch"
+],
+[
+"gi",
+"Gibraltar English"
+],
+[
+"gr",
+"Greece Ελληνικά"
+],
+[
+"gl",
+"Greenland English"
+],
+[
+"hu",
+"Hungary Magyar"
+],
+[
+"is",
+"Iceland English"
+],
+[
+"ie",
+"Ireland English"
+],
+[
+"it",
+"Italy Italiano"
+],
+[
+"lv",
+"Latvia English"
+],
+[
+"li",
+"Liechtenstein English"
+],
+[
+"lt",
+"Lithuania English"
+],
+[
+"lu",
+"Luxembourg English / Français"
+],
+[
+"mt",
+"Malta English"
+],
+[
+"md",
+"Moldova English"
+],
+[
+"mc",
+"Monaco English / Français"
+],
+[
+"me",
+"Montenegro English"
+],
+[
+"nl",
+"Netherlands Nederlands"
+],
+[
+"mk",
+"North Macedonia English"
+],
+[
+"no",
+"Norway Norsk"
+],
+[
+"pl",
+"Poland Polski"
+],
+[
+"pt",
+"Portugal Português"
+],
+[
+"ro",
+"Romania English"
+],
+[
+"sm",
+"San Marino English"
+],
+[
+"rs",
+"Serbia English"
+],
+[
+"sk",
+"Slovakia Slovenčina"
+],
+[
+"si",
+"Slovenia English"
+],
+[
+"es",
+"Spain Español"
+],
+[
+"sj",
+"Svalbard & Jan Mayen English"
+],
+[
+"se",
+"Sweden Svenska"
+],
+[
+"ch",
+"Switzerland Deutsch / Français"
+],
+[
+"ua",
+"Ukraine English"
+],
+[
+"gb",
+"United Kingdom English"
+],
+[
+"va",
+"Vatican City English"
+],
+[
+"bh",
+"Bahrain English / العربية"
+],
+[
+"il",
+"Israel English / עברית"
+],
+[
+"jo",
+"Jordan English / العربية"
+],
+[
+"kw",
+"Kuwait English / العربية"
+],
+[
+"om",
+"Oman English / العربية"
+],
+[
+"qa",
+"Qatar English / العربية"
+],
+[
+"sa",
+"Saudi Arabia English / العربية"
+],
+[
+"ae",
+"United Arab Emirates English / العربية"
+],
+[
+"ye",
+"Yemen English / العربية"
+],
+[
+"ca",
+"Canada English / Français"
+],
+[
+"mx",
+"Mexico Español"
+],
+[
+"pm",
+"St. Pierre & Miquelon English / Français"
+],
+[
+"au",
+"Australia English"
+],
+[
+"ck",
+"Cook Islands English"
+],
+[
+"fj",
+"Fiji English"
+],
+[
+"pf",
+"French Polynesia English / Français"
+],
+[
+"ki",
+"Kiribati English"
+],
+[
+"mh",
+"Marshall Islands English"
+],
+[
+"fm",
+"Micronesia English"
+],
+[
+"nr",
+"Nauru English"
+],
+[
+"nc",
+"New Caledonia English / Français"
+],
+[
+"nz",
+"New Zealand English"
+],
+[
+"nu",
+"Niue English"
+],
+[
+"nf",
+"Norfolk Island English"
+],
+[
+"pw",
+"Palau English"
+],
+[
+"pg",
+"Papua New Guinea English"
+],
+[
+"pn",
+"Pitcairn Islands English"
+],
+[
+"ws",
+"Samoa English"
+],
+[
+"sb",
+"Solomon Islands English"
+],
+[
+"to",
+"Tonga English"
+],
+[
+"tv",
+"Tuvalu English"
+],
+[
+"vu",
+"Vanuatu English"
+],
+[
+"wf",
+"Wallis & Futuna English / Français"
+],
+[
+"ar",
+"Argentina English / Español"
+],
+[
+"bo",
+"Bolivia English / Español"
+],
+[
+"br",
+"Brazil Português"
+],
+[
+"cl",
+"Chile English / Español"
+],
+[
+"co",
+"Colombia English / Español"
+],
+[
+"ec",
+"Ecuador English / Español"
+],
+[
+"fk",
+"Falkland Islands English"
+],
+[
+"gf",
+"French Guiana Français"
+],
+[
+"gy",
+"Guyana English"
+],
+[
+"py",
+"Paraguay English / Español"
+],
+[
+"pe",
+"Peru English / Español"
+],
+[
+"sr",
+"Suriname English"
+],
+[
+"uy",
+"Uruguay English / Español"
+],
+[
+"ve",
+"Venezuela English / Español"
+]
+]
