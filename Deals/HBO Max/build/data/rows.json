@@ -2286,7 +2286,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -2449,6 +2450,14 @@
 "visa"
 ],
 [
+"New Zealand",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
 "Sri Lanka",
 "Provider",
 "Cybersource",
@@ -2566,16 +2575,6 @@
 ],
 "Live",
 "2c2p"
-],
-[
-"Myanmar",
-"Provider",
-"Cybersource Gtw",
-[
-"Cards"
-],
-"Live",
-"cybersourcegtw"
 ],
 [
 "Myanmar",
@@ -2973,7 +2972,8 @@
 "Cards",
 "Apple Pay",
 "EU bank transfer",
-"Google Pay"
+"Google Pay",
+"Klarna"
 ],
 "Live",
 "adyen"
@@ -3013,7 +3013,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -3274,6 +3275,22 @@
 [],
 "Live",
 "visa"
+],
+[
+"Germany",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Germany",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
 ],
 [
 "United Kingdom",
@@ -5213,7 +5230,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -5414,13 +5432,22 @@
 "visa"
 ],
 [
+"Switzerland",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
 "Poland",
 "Provider",
 "Adyen",
 [
 "Cards",
 "Apple Pay",
-"Google Pay"
+"Google Pay",
+"Klarna"
 ],
 "Live",
 "adyen"
@@ -5744,6 +5771,14 @@
 [],
 "Live",
 "visa"
+],
+[
+"Poland",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
 ],
 [
 "Belgium",
@@ -6099,7 +6134,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -6322,6 +6358,14 @@
 [],
 "Live",
 "visa"
+],
+[
+"Ireland",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
 ],
 [
 "Sweden",
@@ -6632,7 +6676,8 @@
 "Cards",
 "Apple Pay",
 "EU bank transfer",
-"Google Pay"
+"Google Pay",
+"Klarna"
 ],
 "Live",
 "adyen"
@@ -6920,13 +6965,22 @@
 "visa"
 ],
 [
+"Austria",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
 "Norway",
 "Provider",
 "Adyen",
 [
 "Cards",
 "Apple Pay",
-"Google Pay"
+"Google Pay",
+"Klarna"
 ],
 "Live",
 "adyen"
@@ -6944,7 +6998,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -7143,6 +7198,22 @@
 [],
 "Live",
 "visa"
+],
+[
+"Norway",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Norway",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
 ],
 [
 "Denmark",
@@ -7503,7 +7574,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -7704,6 +7776,14 @@
 "visa"
 ],
 [
+"Romania",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
 "Czech Republic",
 "Provider",
 "Adyen",
@@ -7751,7 +7831,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -7994,6 +8075,14 @@
 "visa"
 ],
 [
+"Czech Republic",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
 "Portugal",
 "Provider",
 "Adyen",
@@ -8052,7 +8141,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -8311,6 +8401,14 @@
 "visa"
 ],
 [
+"Portugal",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
 "Finland",
 "Provider",
 "Adyen",
@@ -8359,7 +8457,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -8614,6 +8713,14 @@
 [],
 "Live",
 "visa"
+],
+[
+"Finland",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
 ],
 [
 "Kazakhstan",
@@ -9039,8 +9146,7 @@
 "Cards",
 "Apple Pay",
 "Google Pay",
-"PIX Automático",
-"PIX biométrico"
+"PIX Automático"
 ],
 "Live",
 "adyen"
@@ -11166,6 +11272,14 @@
 [],
 "Live",
 "visa"
+],
+[
+"Mexico",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
 ],
 [
 "Peru",

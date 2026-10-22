@@ -63,6 +63,8 @@ ISO2 = {'Japan': 'jp', 'Singapore': 'sg', 'Australia': 'au', 'United Kingdom': '
         'India': 'in', 'Israel': 'il', 'Saudi Arabia': 'sa', 'United Arab Emirates': 'ae', 'South Africa': 'za', 'China': 'cn', 'Egypt': 'eg', 'Qatar': 'qa', 'Kuwait': 'kw', 'Bahrain': 'bh', 'Oman': 'om', 'Jordan': 'jo', 'South Korea': 'kr'}
 _pp = os.path.join(ROOT, 'tools/connections/logos/paypal_countries_2026-10-22.json')
 PAYPAL_CC = {cc for cc, _ in json.load(open(_pp))} if os.path.exists(_pp) else None
+# Klarna's own market list (klarna.com, 22 Oct 2026): the y.uno Klarna page omits Germany and other core Klarna markets
+KLARNA_OK = set('''Australia Austria Belgium Canada Czechia Denmark Finland France Germany Greece Hungary Ireland Italy Mexico Netherlands New Zealand Norway Poland Portugal Romania Slovakia Spain Sweden Switzerland'''.split()) | {'United Kingdom', 'United States', 'Czech Republic'}
 def paypal_ok(c):
     if PAYPAL_CC is None or c not in ISO2: return True   # unknown country name: keep the directory's word
     return ISO2[c] in PAYPAL_CC
@@ -316,7 +318,9 @@ class Data:
     def countries_of(self, spec):
         if spec == 'ALL': return set(self.T)
         if spec == 'DIR:Apple Pay': return self.dir_countries.get('applepay', set()) & (APPLE_PAY_OK | APPLE_PAY_EXTRA)
-        if spec == 'DIR:Paypal': return {c for c in self.dir_countries.get('paypal', set()) if paypal_ok(c)}
+        if spec == 'DIR:Paypal':   # directory list, plus in-scope countries paypal.com serves (the y.uno PayPal page omits Germany, New Zealand, UAE...)
+            return {c for c in self.dir_countries.get('paypal', set()) if paypal_ok(c)} | {c for c in self.T if c in ISO2 and PAYPAL_CC and ISO2[c] in PAYPAL_CC}
+        if spec == 'DIR:Klarna': return self.dir_countries.get('klarna', set()) | (KLARNA_OK & set(self.T))
         if isinstance(spec, str) and spec.startswith('DIR:'): return self.dir_countries.get(nk(spec[4:]), set())
         return set(spec)
     def all_codes(self, dirname):
@@ -367,12 +371,16 @@ class Data:
                 labs = self.labels(set(codes), c, key, recurring_only)
                 if recurring_only and not labs: continue
                 R.append([c, 'Provider', name, labs, 'Integrated (code)', key])
+            carried = {lab for r in R if r[0] == c and r[1] == 'Provider' and r[4] == 'Live' for lab in r[3]}
             seen_m = set()
             for d in sorted(self.meth_by_c[c], key=lambda d: disp(d['name']).lower()):
                 if recurring_only and d['name'] not in RECURRING_DIRECT: continue
                 if nk(disp(d['name'])) in seen_m: continue
                 seen_m.add(nk(disp(d['name'])))
                 R.append([c, 'Direct payment method', disp(d['name']), [RECURRING_DIRECT_NOTE[d['name']]] if d['name'] in RECURRING_DIRECT_NOTE else [], 'Live', nk(d['name'])])
+            for name in ('PayPal', 'Klarna'):   # chip where a live provider carries it, even if the y.uno method page omits the country
+                if name in carried and nk(name) not in seen_m and (not recurring_only or name in RECURRING_DIRECT or name.title() in RECURRING_DIRECT):
+                    seen_m.add(nk(name)); R.append([c, 'Direct payment method', name, [], 'Live', nk(name)])
             if signed and not recurring_only:
                 for sc, name in SIGNED:
                     if sc == c: R.append([c, 'Direct payment method', name, [], 'Signed', nk(name)])

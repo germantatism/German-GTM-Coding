@@ -1,7 +1,7 @@
 {
  "merchant": "HBO Max",
  "deal_dir": "Deals/HBO Max",
- "presentation_id": "1TyFXKt2OfoBLHGn8T1xX_Z1Uic_5ZYeeGUb8g_n0jrw",
+ "presentation_id": "1vULwizzS9eoNpyOYCOEfxGDkZegRp_9bmPgPhUAy2zo",
  "logo_url": "https://drive.google.com/uc?export=download&id=1l8hvOsBCmtK8a9VsB9bqTP4cay2Bl7_g",
  "logo_aspect": 6.299,
  "recurring_only": true,
@@ -115,7 +115,7 @@
    }
   ]
  },
- "presentation_id_v1": "1Z_xHfeXnUoM_NWp5j3MShpAuTbzwQNVnVOFyPQ0mxMw",
+ "presentation_id_v1": "1TyFXKt2OfoBLHGn8T1xX_Z1Uic_5ZYeeGUb8g_n0jrw",
  "signed": false,
  "presentation_id_prev": "1GyS-IR10Hd_pIP4CmrioQNeONeGAP2GZ4mU7I7IMl_A",
  "intro": {

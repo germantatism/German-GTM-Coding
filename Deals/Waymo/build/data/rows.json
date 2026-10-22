@@ -2148,7 +2148,8 @@
 "Provider",
 "Pockyt",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "pockyt"
@@ -2257,6 +2258,14 @@
 [],
 "Live",
 "visa"
+],
+[
+"Taiwan",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
 ],
 [
 "Hong Kong",
@@ -3712,7 +3721,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -3733,7 +3743,8 @@
 "Ecommpay",
 [
 "Cards",
-"Neteller"
+"Neteller",
+"PayPal"
 ],
 "Live",
 "ecommpay"
@@ -3782,7 +3793,8 @@
 "Provider",
 "Pockyt",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "pockyt"
@@ -3803,6 +3815,7 @@
 "Cards",
 "Afterpay",
 "Klarna",
+"PayPal",
 "Zip"
 ],
 "Live",
@@ -3921,6 +3934,14 @@
 [],
 "Live",
 "westernunion"
+],
+[
+"New Zealand",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
 ],
 [
 "United Kingdom",
@@ -4413,6 +4434,7 @@
 "Apple Pay",
 "EU bank transfer",
 "Google Pay",
+"Klarna",
 "SEPA Direct Debit",
 "Trustly"
 ],
@@ -4456,7 +4478,8 @@
 "Provider",
 "Braintree",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "braintree"
@@ -4489,7 +4512,8 @@
 [
 "Cards",
 "Neteller",
-"Open banking"
+"Open banking",
+"PayPal"
 ],
 "Live",
 "ecommpay"
@@ -4549,7 +4573,8 @@
 "Provider",
 "Nuvei",
 [
-"Cards"
+"Cards",
+"Klarna"
 ],
 "Live",
 "nuvei"
@@ -4585,7 +4610,8 @@
 "Provider",
 "Pockyt",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "pockyt"
@@ -4626,6 +4652,8 @@
 "Stripe",
 [
 "Cards",
+"Klarna",
+"PayPal",
 "SEPA Direct Debit"
 ],
 "Live",
@@ -4792,6 +4820,22 @@
 [],
 "Live",
 "westernunion"
+],
+[
+"Germany",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Germany",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
 ],
 [
 "Spain",
@@ -9105,6 +9149,14 @@
 "wibond"
 ],
 [
+"Mexico",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
 "Peru",
 "Provider",
 "Alignet",
@@ -10274,6 +10326,7 @@
 [
 "Cards",
 "Cash",
+"PayPal",
 "SafetyPay (bank transfer)",
 "SafetyPay (cash)"
 ],
@@ -10400,6 +10453,14 @@
 [],
 "Live",
 "visa"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
 ],
 [
 "Ecuador",
@@ -10920,6 +10981,7 @@
 [
 "Cards",
 "Cash",
+"PayPal",
 "SafetyPay (bank transfer)",
 "SafetyPay (cash)"
 ],
@@ -11110,6 +11172,14 @@
 [],
 "Live",
 "walmart"
+],
+[
+"Guatemala",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
 ],
 [
 "Honduras",
@@ -11430,6 +11500,7 @@
 [
 "Cards",
 "Cash",
+"PayPal",
 "SafetyPay (bank transfer)",
 "SafetyPay (cash)"
 ],
@@ -11610,6 +11681,14 @@
 "yappy"
 ],
 [
+"Panama",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
 "Paraguay",
 "Provider",
 "Bancard",
@@ -11758,7 +11837,8 @@
 "Provider",
 "Ecommpay",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "ecommpay"
@@ -11778,7 +11858,8 @@
 "Provider",
 "Pockyt",
 [
-"Cards"
+"Cards",
+"PayPal"
 ],
 "Live",
 "pockyt"
@@ -11830,6 +11911,14 @@
 [],
 "Live",
 "visa"
+],
+[
+"Venezuela",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
 ],
 [
 "Saudi Arabia",

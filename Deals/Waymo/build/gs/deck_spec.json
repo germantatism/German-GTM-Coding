@@ -1,5 +1,5 @@
 {
- "presentation_id": "1Qu3JvldczchxT9TrXmUkU1bSso9ltTGvOt5peT3hHjQ",
+ "presentation_id": "1r7g6kFtX8ZENovd3-51qyx9M0369yYLahpwXEGeEHRY",
  "merchant": "Waymo",
  "footer": "",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
@@ -467,7 +467,7 @@
      "Europe",
      "Munich: testing from late 2026, launch end of 2027, permit pending",
      "25",
-     "SEPA Direct Debit · EU bank transfer · Trustly · +4 more"
+     "SEPA Direct Debit · Klarna · EU bank transfer · +6 more"
     ],
     [
      "Spain",
@@ -517,7 +517,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Public announcements as of 22 October 2026, plus Thailand and Indonesia as shared by Waymo. Providers live = connections available through Yuno in that country.",
-   "notes": "Market status sources: Waymo blog (London, Oct 2025), CNBC (Munich, 25 Aug 2026), The Olive Press (Madrid, 25 Aug 2026), Fortune and LTA (Singapore, 17 Sep 2026), Element Fleet and TipRanks (Toronto, 2028), Nihon Kotsu and GO (Tokyo 2027), AFR via ACS (Australia, Jan 2026). Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Market status sources: Waymo blog (London, Oct 2025), CNBC (Munich, 25 Aug 2026), The Olive Press (Madrid, 25 Aug 2026), Fortune and LTA (Singapore, 17 Sep 2026), Element Fleet and TipRanks (Toronto, 2028), Nihon Kotsu and GO (Tokyo 2027), AFR via ACS (Australia, Jan 2026). Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-asia-pacific-1",
@@ -577,7 +577,7 @@
      "Taiwan",
      "10",
      "2 · 0",
-     "Apple Pay · Google Pay"
+     "Apple Pay · Google Pay · PayPal"
     ],
     [
      "Hong Kong",
@@ -603,7 +603,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Japan 2027, Singapore 2028, Australia in talks, Thailand and Indonesia per Waymo (Oct 2026); South Korea, Taiwan, Hong Kong, Malaysia, Philippines, Vietnam, India and New Zealand added as the main APAC markets for later waves. In code = integration repo exists, not listed on y.uno/integrations yet.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-asia-pacific-2",
@@ -639,7 +639,7 @@
      "New Zealand",
      "11",
      "2 · 2",
-     "Klarna · Afterpay · Zip · Apple Pay · Google Pay"
+     "Klarna · Afterpay · Zip · Apple Pay · Google Pay · PayPal"
     ]
    ],
    "header_style": "dark",
@@ -647,7 +647,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Japan 2027, Singapore 2028, Australia in talks, Thailand and Indonesia per Waymo (Oct 2026); South Korea, Taiwan, Hong Kong, Malaysia, Philippines, Vietnam, India and New Zealand added as the main APAC markets for later waves. In code = integration repo exists, not listed on y.uno/integrations yet.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-europe-and-north-america-1",
@@ -677,7 +677,7 @@
      "Germany",
      "25",
      "1 · 1",
-     "SEPA Direct Debit · EU bank transfer · Trustly · Open banking · Revolut Pay · Apple Pay · +1 more"
+     "SEPA Direct Debit · Klarna · EU bank transfer · Trustly · Open banking · Revolut Pay · +3 more"
     ],
     [
      "Spain",
@@ -697,7 +697,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "United Kingdom: London 2026. Germany: Munich 2027. Spain: Madrid, testing from late 2026. Canada: Toronto 2028. In code = integration repo exists, not listed on y.uno/integrations yet.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-latin-america-1",
@@ -775,7 +775,7 @@
      "Dominican Republic",
      "10",
      "3 · 0",
-     "Cash · Bank transfer · Banco Popular · SafetyPay (bank transfer) · SafetyPay (cash) · Local bank transfers and cash · +3 more"
+     "Cash · Bank transfer · Banco Popular · SafetyPay (bank transfer) · SafetyPay (cash) · Local bank transfers and cash · +4 more"
     ]
    ],
    "header_style": "dark",
@@ -783,7 +783,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "All Spanish- and Portuguese-speaking markets with Yuno coverage; Cuba is not served. In code = integration repo exists, not listed on y.uno/integrations yet.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-latin-america-2",
@@ -819,7 +819,7 @@
      "Guatemala",
      "15",
      "4 · 0",
-     "Bank transfer · Cash · SafetyPay (bank transfer) · SafetyPay (cash) · Monnet QR · Monnet wallet · +4 more"
+     "Bank transfer · Cash · SafetyPay (bank transfer) · SafetyPay (cash) · Monnet QR · Monnet wallet · +5 more"
     ],
     [
      "Honduras",
@@ -837,7 +837,7 @@
      "Panama",
      "14",
      "2 · 0",
-     "Cash · Clave · Bank transfer · Nequi · Punto Pago · SafetyPay (bank transfer) · +3 more"
+     "Cash · Clave · Bank transfer · Nequi · Punto Pago · SafetyPay (bank transfer) · +4 more"
     ],
     [
      "Paraguay",
@@ -849,7 +849,7 @@
      "Venezuela",
      "5",
      "0 · 0",
-     "Cards"
+     "PayPal"
     ]
    ],
    "header_style": "dark",
@@ -857,7 +857,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "All Spanish- and Portuguese-speaking markets with Yuno coverage; Cuba is not served. In code = integration repo exists, not listed on y.uno/integrations yet.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-middle-east-1",
@@ -937,7 +937,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Gulf states, Israel, Jordan and Egypt. No Waymo launch is announced in the region; coverage shown for later waves. Israel tiers per Yuno's traffic and partner data (Oct 2026). In code = integration repo exists, not listed on y.uno/integrations yet.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (Caio Freitas, payment-method-coverage-gaps, 14 Oct 2026, re-read 22 Oct); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "c-japan",
@@ -2514,7 +2514,7 @@
      "muted": true
     },
     {
-     "header": "Wallets and payment methods available (8)",
+     "header": "Wallets and payment methods available (9)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -2524,6 +2524,11 @@
       {
        "name": "Google Pay",
        "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
        "aspect": 1.0
       },
       {
@@ -2574,8 +2579,8 @@
     "rows": [
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Fiserv, Rapyd, Worldpay); Google Pay (Fiserv, Rapyd)",
-      "5"
+      "Apple Pay (Fiserv, Rapyd, Worldpay); Google Pay (Fiserv, Rapyd); PayPal (Pockyt)",
+      "6"
      ]
     ]
    }
@@ -3731,7 +3736,7 @@
      "style": "signed"
     },
     {
-     "header": "Wallets and payment methods available (9)",
+     "header": "Wallets and payment methods available (10)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -3741,6 +3746,11 @@
       {
        "name": "Google Pay",
        "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
        "aspect": 1.0
       },
       {
@@ -3801,8 +3811,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Fiserv, Worldpay); Google Pay (Adyen, Fiserv); Neteller (Ecommpay)",
-      "6"
+      "PayPal (Braintree, Ecommpay, Pockyt, Stripe); Apple Pay (Adyen, Fiserv, Worldpay); Google Pay (Adyen, Fiserv); Neteller (Ecommpay)",
+      "10"
      ],
      [
       "Via providers integrated in code, not yet listed",
@@ -4309,10 +4319,10 @@
    "id": "c-germany-methods",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › GERMANY › PAYMENT METHODS",
-   "headline": "Germany: 14 payment methods available and 4 local methods carried by the providers.",
+   "headline": "Germany: 16 payment methods available and 5 local methods carried by the providers.",
    "sections": [
     {
-     "header": "Wallets and payment methods available (14)",
+     "header": "Wallets and payment methods available (16)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -4322,6 +4332,11 @@
       {
        "name": "Google Pay",
        "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
        "aspect": 1.0
       },
       {
@@ -4338,6 +4353,11 @@
        "name": "Edenred",
        "logo": "https://y.uno/vendor/webflow/68df541264162943f4cc9342_67ad6584963571939df29f61_adenred.png",
        "aspect": 1.0
+      },
+      {
+       "name": "Klarna",
+       "logo": "https://y.uno/vendor/webflow/68df541b23b5b6ad0c3e2dfb_67b419fee38e4ea89b9c295b_Screenshot%25202025-02-17%2520at%25209.26.18%25E2%2580%25AFPM.png",
+       "aspect": 1.019
       },
       {
        "name": "Mastercard",
@@ -4406,14 +4426,19 @@
       "4"
      ],
      [
+      "Klarna",
+      "Adyen, Nuvei, Stripe",
+      "3"
+     ],
+     [
       "Other local methods",
       "EU bank transfer · Trustly (Adyen); Open banking (Ecommpay); Revolut Pay (Revolut)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); Alipay (Airwallex, Antom); Neteller (Ecommpay)",
-      "12"
+      "Apple Pay (Adyen, Airwallex, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Airwallex, Fiserv, Rapyd); PayPal (Braintree, Ecommpay, Pockyt, Stripe); Alipay (Airwallex, Antom); Neteller (Ecommpay)",
+      "16"
      ],
      [
       "Via providers integrated in code, not yet listed",
@@ -6954,10 +6979,10 @@
    "id": "c-mexico-methods",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › MEXICO › PAYMENT METHODS",
-   "headline": "Mexico: 43 payment methods available and 16 local methods carried by the providers.",
+   "headline": "Mexico: 44 payment methods available and 16 local methods carried by the providers.",
    "sections": [
     {
-     "header": "Wallets and payment methods available (43)",
+     "header": "Wallets and payment methods available (44)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -7068,6 +7093,11 @@
        "name": "Farmacias Del Ahorro",
        "logo": "https://y.uno/vendor/webflow/68df54150f788c69f5e5c1e2_6789cc69d77f3b0e827fbf03_678316e8121980e08d828e23_6783082b46abe81b08509837_farmaciasdelahorro_logosimbolo.png",
        "aspect": 1.0
+      },
+      {
+       "name": "Klarna",
+       "logo": "https://y.uno/vendor/webflow/68df541b23b5b6ad0c3e2dfb_67b419fee38e4ea89b9c295b_Screenshot%25202025-02-17%2520at%25209.26.18%25E2%2580%25AFPM.png",
+       "aspect": 1.019
       },
       {
        "name": "Kueski",
@@ -8130,7 +8160,7 @@
      "muted": true
     },
     {
-     "header": "Wallets and payment methods available (7)",
+     "header": "Wallets and payment methods available (8)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -8140,6 +8170,11 @@
       {
        "name": "Google Pay",
        "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
        "aspect": 1.0
       },
       {
@@ -8197,6 +8232,11 @@
       "Other local methods",
       "Banco Popular (dLocal); Local bank transfers and cash · Pagatodo (Inswitch); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
       "1 to 2 each"
+     ],
+     [
+      "Wallets and global methods via providers",
+      "PayPal (EBANX)",
+      "1"
      ]
     ]
    }
@@ -8682,11 +8722,16 @@
      "muted": true
     },
     {
-     "header": "Wallets and payment methods available (6)",
+     "header": "Wallets and payment methods available (7)",
      "chips": [
       {
        "name": "Apple Pay",
        "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
        "aspect": 1.0
       },
       {
@@ -8747,8 +8792,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Rapyd)",
-      "1"
+      "Apple Pay (Rapyd); PayPal (EBANX)",
+      "2"
      ]
     ]
    }
@@ -9093,7 +9138,7 @@
      "muted": true
     },
     {
-     "header": "Wallets and payment methods available (8)",
+     "header": "Wallets and payment methods available (9)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -9103,6 +9148,11 @@
       {
        "name": "Google Pay",
        "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
        "aspect": 1.0
       },
       {
@@ -9168,8 +9218,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Fiserv, Rapyd); Google Pay (Fiserv, Rapyd)",
-      "4"
+      "Apple Pay (Fiserv, Rapyd); Google Pay (Fiserv, Rapyd); PayPal (EBANX)",
+      "5"
      ]
     ]
    }
@@ -9330,8 +9380,13 @@
      ]
     },
     {
-     "header": "Wallets and payment methods available (6)",
+     "header": "Wallets and payment methods available (7)",
      "chips": [
+      {
+       "name": "PayPal",
+       "logo": "https://y.uno/vendor/webflow/69541e641ba507be10322a6b_PayPal-Logo-RGB-Black.png",
+       "aspect": 1.0
+      },
       {
        "name": "Discover",
        "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
@@ -9380,8 +9435,8 @@
     "rows": [
      [
       "Wallets and global methods via providers",
-      "AstroPay (AstroPay)",
-      "1"
+      "PayPal (Ecommpay, Pockyt); AstroPay (AstroPay)",
+      "3"
      ]
     ]
    }
