@@ -126,3 +126,54 @@ Pattern {first initial}{last}@jpay.com, confirmed historically by efeldman@jpay.
 - David Lovitt: **dlovitt@jpay.com** (backup dlovitt@securustechnologies.com, Securus pattern {f}{last} ~93% per Mailmo)
 - Dariel Baez: **dbaez@jpay.com** (backup dbaez@securustechnologies.com)
 - Aventiv corporate uses first.last@aventiv.com (~75% per Prospeo); less likely for these two.
+
+---
+
+## Email 2 (follow-up, 22-Oct-2026). Gmail reply drafts created in the original threads.
+David: reply on the dlovitt@jpay.com thread (the dlovitt@securustechnologies.com send also never bounced; one draft only).
+Dariel: reply on the dbaez@securustechnologies.com thread (dbaez@jpay.com bounced 14-Oct, "Message blocked").
+Slots offered: Tue 27 or Wed 28-Oct, late morning Eastern (calendar clear). Stats: only y.uno published figures (up to 7% uplift, Rappi zero implementation time).
+
+### David Lovitt
+**Subject:** Re: Payments redundancy at JPay
+
+Hi David,
+
+Hope your week is going well. I wanted to follow up on my note from last week and get a bit more concrete about how this would actually look for JPay, since "add a second processor" tends to sound like a bigger project than it is.
+
+Smart routing and failover: Yuno sits on top of Worldpay and adds a second acquirer behind it, so every deposit goes to the path that's up and approving best at that moment, and a soft decline gets retried on the other side before the family ever sees an error. Nothing changes in your checkout, and merchants on our routing see up to a 7% lift in authorization rates.
+
+Cost per deposit and new rails: with two processors live, each deposit can also go to the cheaper route, which lowers your floor when a state compares fees and gives you a real alternative at the table when pricing comes up. And if an agency asks for Apple Pay, Google Pay or bank transfers in an RFP, turning them on is a configuration change through the same API, not a new integration.
+
+One view across both processors: approvals, declines, refunds and chargebacks from every provider and every state land in one dashboard, so a bad hour shows up in minutes instead of in the support queue. Adding the second connection is weeks of work on our side rather than a rebuild on yours. Rappi runs its providers through this same layer and got implementation time for a new one down to zero.
+
+We also just launched Payments Concierge, an AI assistant your team can ask about payment performance in plain language from Slack or WhatsApp. It sends an alert the moment approval rates drop or declines spike, so you catch it before deposits are lost.
+
+We work with leaders such as GoFundMe, Uber, SpaceX, McDonald's and Crypto.com, which has given us a lot of hands-on time keeping high-volume payment flows running when one provider has a bad day.
+
+Would 30 minutes next week work? Tuesday or Wednesday late morning Eastern is open on my side, and if payments sits with someone else at JPay I'd be grateful for a pointer.
+
+Best,
+German
+
+### Dariel Baez
+**Subject:** Re: A View on Your Payments
+
+Hi Dariel,
+
+Hope your week is going well. I wanted to follow up on my note from last week and be a bit more specific about how JPay could add a second processor without doubling the compliance work, since that's usually the part that stalls it.
+
+Smart routing and failover: Yuno sits on top of Worldpay and adds a second acquirer behind it, so deposits reroute automatically when a provider has a bad hour or approvals dip, and a soft decline is retried on the other path before the family sees an error. Merchants on our routing see up to a 7% lift in authorization rates, and two live processors give JPay a real alternative when pricing comes up.
+
+One set of fraud rules: risk screening runs in Yuno's layer across 50+ fraud tools, so the rules and thresholds you have today apply to every processor behind it instead of being rebuilt per vendor. Card data stays in our PCI vault, so a new processor doesn't expand where card numbers live.
+
+One set of reports: every transaction, refund, dispute and chargeback from both processors lands in one dashboard, so reporting, audit trails and vendor oversight stay one process rather than two. You add a provider, not a second way of doing things.
+
+We also just launched Payments Concierge, an AI assistant your team can ask about payment performance in plain language from Slack or WhatsApp. It sends an alert the moment approval rates drop or declines spike, so issues get caught before they turn into tickets.
+
+We work with leaders such as GoFundMe, Uber, SpaceX, McDonald's and Crypto.com, including regulated businesses where adding a processor had to pass the same scrutiny you'd apply at JPay.
+
+I'd still love your take on this. Would 30 minutes next week work, Tuesday or Wednesday late morning Eastern? And if the decision sits with someone else on the payments side, a pointer would mean a lot.
+
+Best,
+German
