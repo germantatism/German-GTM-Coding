@@ -7,6 +7,7 @@ sys.path.insert(0, GS); import gs_engine as GE
 sys.path.insert(0, os.path.join(ROOT, 'tools', 'connections')); import lib
 LOG = os.environ.get('LOGO_DIR') or os.path.join(ROOT, 'tools', 'connections', 'logos')
 usable = json.load(open(os.path.join(LOG, 'usable.json'))); aspect = json.load(open(os.path.join(LOG, 'aspect.json')))
+SLIDES_BAD = json.load(open(os.path.join(LOG, 'slides_bad.json'))) if os.path.exists(os.path.join(LOG, 'slides_bad.json')) else {}   # urls Google's image fetcher rejects (preflight_slides.py)
 DIRW = {lib.nk(d['name']): (d.get('website') or '') for d in lib.load_directory()}
 REC = CFG.get('recurring_only', False)
 R = json.load(open(os.path.join(DEAL, 'build', 'data', 'rows.json')))
@@ -15,9 +16,10 @@ def nk(s): return lib.nk(s)
 def dcountry(c): return lib.DISPLAY_COUNTRY.get(c, c)
 def chip(name, key=None):
     k = key or nk(name)
-    if k in usable: return {'name': name, 'logo': usable[k], 'aspect': aspect.get(k, 1.0)}
+    if k in usable and usable[k] not in SLIDES_BAD: return {'name': name, 'logo': usable[k], 'aspect': aspect.get(k, 1.0)}
     w = DIRW.get(k, ''); dom = re.sub(r'^https?://(www\.)?', '', w).split('/')[0]
-    return {'name': name, 'logo': f'https://www.google.com/s2/favicons?domain={dom}&sz=128' if dom else '', 'aspect': 1.0}
+    url = f'https://www.google.com/s2/favicons?domain={dom}&sz=128' if dom else ''
+    return {'name': name, 'logo': '' if url in SLIDES_BAD else url, 'aspect': 1.0}
 WALLETS = {'Apple Pay', 'Google Pay', 'PayPal'}
 GLOBAL = WALLETS | {'Alipay', 'WeChat Pay', 'UnionPay', 'Neteller', 'Skrill', 'Samsung Pay', 'AstroPay'}
 by = {c: {'live': [], 'homolog': [], 'direct': [], 'methods': collections.defaultdict(list), 'global_m': collections.defaultdict(list), 'key': {}, 'nodata': []} for c in T}

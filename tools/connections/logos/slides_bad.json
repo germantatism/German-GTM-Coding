@@ -1,0 +1,7 @@
+{
+ "https://www.google.com/s2/favicons?domain=coppeldigital.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=corp.ecpay.com.tw&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=open-co.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=somosmach.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali",
+ "https://www.google.com/s2/favicons?domain=tiendaselasturiano.com&sz=128": "<HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1JrAhQGKMJ6qeQjefS0c6aoWTobQq48q1yVjjp-CvTxE:batchUpdate?alt=json returned \"Invali"
+}
