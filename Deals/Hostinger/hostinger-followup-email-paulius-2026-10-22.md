@@ -22,23 +22,20 @@ Three date-only nudges got nothing back, so this one: (1) acknowledges he is bus
 - Thursday 29-oct, 16:00 Vilnius = 15:00 Amsterdam (Dirk free after Nutrameg 14:30) = 07:00 PT (German's CEO Q&A ends 07:00 PT).
 - Note: EU clocks change 25-oct, so Vilnius is UTC+2 and SF is still UTC-7 that week (9 hours apart).
 
-## Email
+## Email (v2, short, as German asked: "quick note to lock our demo", no details already given)
 
 Hi Paulius,
 
-Hope all is well. I imagine Q4 is pretty packed on your side, so I'll be quick.
-
-I'd love to lock in the token migration session. It's 45 minutes, Dirk runs it, and it's hands-on with your own data: how your tokens and network transaction IDs come across, what we ask from your current provider, and how we keep approval rates intact during the switch. We'd also use part of it for India, since you said that's the most straightforward place to start.
-
-Would Tuesday, October 27, or Thursday, October 29, at 4 PM your time work? If not, send me any slot that suits you and we'll make it happen. Bring whoever owns the vault on your side, or just come yourself and we loop them in after.
-
-If priorities have shifted on your side, just say so and I'll adjust, no problem at all.
+Hope all is well. Quick note here to lock our demo on the token migration with your data. Would Tuesday, October 27, or Thursday, October 29, at 4 PM your time work? If not, send me any slot that suits you and we'll make it happen.
 
 Best,
 German
 
+## v1 (discarded)
+
+The first draft restated what the session covers (tokens, network transaction IDs, approval rates, India) and gave an easy out. German cut it to two lines: no details already given in the thread, just the ask.
+
 ## Before sending
 
-- The India line commits TJ/Antoine to bring something on India to the session (Razorpay/BillDesk tokens, UPI Autopay mandates, what works cross-border). Ping them in the Slack group before sending, or cut the sentence.
 - Consider a parallel nudge from Piotr on WhatsApp or LinkedIn: he is the only one who has seen Paulius in person since the demo, and three emails in a row have gone unanswered.
 - If Paulius picks a slot, send the invite from German's calendar with Dirk as presenter; Antoine, Piotr and TJ optional.
