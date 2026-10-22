@@ -1,0 +1,118 @@
+{
+ "merchant": "HBO Max",
+ "deal_dir": "Deals/HBO Max",
+ "presentation_id": "1Z_xHfeXnUoM_NWp5j3MShpAuTbzwQNVnVOFyPQ0mxMw",
+ "logo_url": "https://drive.google.com/uc?export=download&id=1l8hvOsBCmtK8a9VsB9bqTP4cay2Bl7_g",
+ "logo_aspect": 6.299,
+ "recurring_only": true,
+ "basis": true,
+ "cover": {
+  "title": "Recurring connections and payment methods",
+  "subtitle": "Recurring-capable connections across HBO Max's Asia Pacific, European and Latin American markets",
+  "presenter": "German Tatis, Yuno · October 2026"
+ },
+ "regions": [
+  {
+   "name": "Asia Pacific",
+   "countries": [
+    "Australia",
+    "Indonesia",
+    "Taiwan",
+    "Singapore",
+    "Thailand",
+    "Vietnam",
+    "Philippines",
+    "Malaysia",
+    "Bangladesh",
+    "Hong Kong",
+    "Pakistan",
+    "New Zealand",
+    "Sri Lanka",
+    "Myanmar",
+    "Macau",
+    "Cambodia",
+    "Nepal",
+    "Papua New Guinea",
+    "Mongolia",
+    "Laos"
+   ],
+   "headline": "The large Asia Pacific markets run on global acquirers plus local direct debit; the small ones on the card schemes and wallets.",
+   "note": "The 20 largest of the 38 Asia Pacific markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF). HBO Max does not publish subscribers by country."
+  },
+  {
+   "name": "Europe",
+   "countries": [
+    "Germany",
+    "United Kingdom",
+    "France",
+    "Italy",
+    "Spain",
+    "Turkey",
+    "Netherlands",
+    "Switzerland",
+    "Poland",
+    "Belgium",
+    "Ireland",
+    "Sweden",
+    "Austria",
+    "Norway",
+    "Denmark",
+    "Romania",
+    "Czech Republic",
+    "Portugal",
+    "Finland",
+    "Kazakhstan"
+   ],
+   "headline": "Every large European market has twenty or more card processors live, with SEPA Direct Debit, iDEAL, Bancontact and Klarna where they are used for subscriptions.",
+   "note": "The 20 largest of the 46 European and Central Asian markets where HBO Max is available (help.hbomax.com), ranked by 2025 nominal GDP (IMF)."
+  },
+  {
+   "name": "Latin America",
+   "countries": [
+    "Argentina",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Mexico",
+    "Peru",
+    "Uruguay",
+    "Bolivia",
+    "Costa Rica",
+    "Dominican Republic",
+    "Ecuador",
+    "El Salvador",
+    "Guatemala",
+    "Honduras",
+    "Nicaragua",
+    "Panama",
+    "Paraguay",
+    "Venezuela"
+   ],
+   "headline": "Latin America adds the recurring local rails that matter for subscriptions: Pix Automático and NuPay in Brazil, Mercado Pago Wallet, Yape and Daviplata.",
+   "note": "All Spanish- and Portuguese-speaking markets where HBO Max is available (help.hbomax.com); Belize, Guyana and Suriname are served by the global schemes only. Puerto Rico rides on US acquiring."
+  }
+ ],
+ "next": {
+  "headline": "Pick one market and we confirm recurring activation end to end before anything is built.",
+  "cards": [
+   {
+    "eyebrow": "HBO MAX",
+    "num": "01",
+    "title": "Pilot market",
+    "body": "One market where renewals matter most, and the recurring methods you want switched on there."
+   },
+   {
+    "eyebrow": "YUNO",
+    "num": "02",
+    "title": "Confirm per provider",
+    "body": "Yuno confirms recurring activation with each provider in that market, including Pix Automático, SEPA and the wallets."
+   },
+   {
+    "eyebrow": "TOGETHER",
+    "num": "03",
+    "title": "Parallel routing test",
+    "body": "A measured test of renewals and retries on that market, alongside what runs today, with the results in your hands."
+   }
+  ]
+ }
+}
