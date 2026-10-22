@@ -1,6 +1,6 @@
 # Carry1st · reply to Cordel with the agreement draft (22 Oct 2026)
 
-Status: pending Gmail draft. German already wrote his own draft in the Carry1st thread with Cordel (cordel@carry1st.com). Merge the clarification paragraph into his draft, keep all his wording, leave ONE draft in the thread, create_draft + replyToMessageId (never update_draft), never send.
+Status: Gmail draft CREATED 22 Oct 2026 (via session gtmcoding-d6) in thread "Re: Yuno Demo and Next Steps" (threadId 1a1447d95338ef27), reply to Cordel's message asking for the template contract (22 Oct 09:26 UTC). To cordel@carry1st.com; CC fatih@carry1st.com, hannah@carry1st.com, juan@y.uno, justo@y.uno, caio@y.uno. Full body used (no prior draft from German existed in Gmail). Not sent; German attaches the contract PDF and sends.
 
 ## Clarification paragraph (merge into German's draft)
 
