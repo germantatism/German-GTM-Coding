@@ -58,7 +58,7 @@ SRC = ("Sources: Waymo Help Center, Approved payment methods (cards, Apple Pay, 
 # ---------------------------------------------------------------- 1. the problem
 sid = NEW[0]
 if sid not in have:
-    p = chrome(sid, 'THE VAULT  ›  THE PROBLEM', 'Rider cards live with one processor, and new markets mean moving them again', SRC, title_size=18)
+    p = chrome(sid, 'THE VAULT  ›  THE PROBLEM', 'Rider cards live with one processor. New markets mean moving them', SRC, title_size=18)
     p.card(36, 84, 300, 286)
     p.text(50, 96, 60, 14, 'BEFORE', size=8, color=GREY, weight=600)
     p.text(104, 93, 220, 18, 'Cards tied to one processor', size=13, color=INK, weight=600)
@@ -70,8 +70,8 @@ if sid not in have:
     p.card(190, 120, 132, 122, fill=PANEL, line=None)
     p.text(200, 128, 120, 16, 'New markets', size=11, color=INK, weight=600)
     p.text(200, 144, 120, 14, 'each needs its own acquirer', size=9, color=GREY)
-    for i, t in enumerate(('London 2026', 'Tokyo and Munich 2027', 'Singapore and Toronto 2028')):
-        p.card(200, 164 + i * 24, 116, 20, fill=WHITE, line=LINE); p.text(207, 168 + i * 24, 108, 12, t, size=8.5, color=INK)
+    for i, t in enumerate(('London 2026', 'Tokyo, Munich 2027', 'Singapore, Toronto 2028')):
+        p.card(200, 164 + i * 24, 116, 20, fill=WHITE, line=LINE); p.text(207, 168 + i * 24, 108, 12, t, size=7.5, color=INK)
     for i, t in enumerate(('Rider cards are locked to the processor that stores them', 'Processor tokens do not travel to a new acquirer', 'Card updates arrive only as the processor provides them')):
         p.text(52, 256 + i * 20, 12, 14, '×', size=10, color=GREY, weight=600)
         p.text(66, 257 + i * 20, 262, 14, t, size=9.5, color=INK)
@@ -89,10 +89,10 @@ if sid not in have:
         p.line(x + 44, 162, x + 44, 176, '#C9CDD6', 1)
     p.card(388, 176, 282, 70, fill=BLUE, line=None)
     p.text(400, 186, 200, 16, 'Yuno Vault', size=12, color=WHITE, weight=600)
-    for i, (t, w) in enumerate((('Cards', 58), ('Network tokens', 84), ('Apple Pay and Google Pay tokens', 128))):
-        x = 398 + sum(ww + 4 for _, ww in (('Cards', 58), ('Network tokens', 84), ('Apple Pay and Google Pay tokens', 128))[:i])
+    for i, (t, w) in enumerate((('Cards', 58), ('Network tokens', 84), ('Wallet tokens', 84))):
+        x = 398 + sum(ww + 4 for _, ww in (('Cards', 58), ('Network tokens', 84), ('Wallet tokens', 84))[:i])
         p.pill(x, 214, w, t, fill=BLUE, color=WHITE, size=7, h=16, line=WHITE)
-    for i, t in enumerate(('Cards work on any processor you connect, in any market', 'One vault to secure and audit', 'Riders never re-enter a card when a processor or market changes')):
+    for i, t in enumerate(('Cards work on any processor you connect, in any market', 'One vault to secure and audit', 'Riders never re-enter a card when processors change')):
         p.shape(390, 262 + i * 22, 13, 13, 'ELLIPSE', BLUE, None)
         p.text(390, 263 + i * 22, 13, 10, '✓', size=7.5, color=WHITE, weight=600, align='CENTER', pad=False)
         p.text(410, 261 + i * 22, 262, 14, t, size=9.5, color=INK)
@@ -105,7 +105,7 @@ if sid not in have:
     p.text(36, 98, 137, 35, 'What Waymo needs', size=10.5, color=INK, weight=700, pad=False, valign='MIDDLE')
     p.text(180, 96, 216, 38, '**Standalone vault**\nStores the data. The rest is yours to build or buy.', size=8.5, color=BODY, weight=400, pad=False, kind='ROUND_RECTANGLE', fill='#F4F4FA', valign='MIDDLE', bold_color=INK)
     p.text(408, 96, 276, 38, '**Yuno integrated vault**\nStores the data, connects it to processors and runs payments on it.', size=8.5, color='#E8EAF5', weight=400, pad=False, kind='ROUND_RECTANGLE', fill=BLUE, valign='MIDDLE', bold_color=WHITE)
-    p.pill(629, 101, 46, 'INCLUDED', fill='#2738CB', color=WHITE, size=6.5, h=12.5)
+    p.pill(611, 101, 64, 'INCLUDED', fill='#2738CB', color=WHITE, size=6.5, h=12.5)
     p.text(36, 138, 137, 32, 'Basic vault function', size=9, color=INK, weight=700, pad=False, valign='MIDDLE')
     p.text(180, 142, 504, 25, 'PCI DSS Level 1 storage   ·   Tokenisation   ·   Proxy to providers   ·   Portable tokens and contractual exit', size=8.5, color=BODY, pad=False, kind='ROUND_RECTANGLE', fill='#F7F9FC', line=LINE, align='CENTER', valign='MIDDLE')
     p.text(36, 176, 220, 14, 'Other connections and capabilities', size=9, color=BLUE, weight=700, pad=False)
@@ -117,8 +117,8 @@ if sid not in have:
     for i, (lab, pill, left, right) in enumerate(rows):
         y = 192 + i * 40
         p.text(36, y, 137, 40, lab, size=9.5, color=INK, weight=700, pad=False, valign='MIDDLE')
-        p.text(186, y + 8, 52, 24, pill, size=7.5, color='#B5473A', weight=700, pad=False, kind='ROUND_RECTANGLE', fill='#F7E4E1', align='CENTER', valign='MIDDLE', ls=100)
-        p.text(240, y, 157, 40, left, size=9, color=BODY, pad=False, valign='MIDDLE')
+        p.text(186, y + 8, 66, 24, pill, size=7, color='#B5473A', weight=700, pad=False, kind='ROUND_RECTANGLE', fill='#F7E4E1', align='CENTER', valign='MIDDLE', ls=100)
+        p.text(258, y, 139, 40, left, size=8.5, color=BODY, pad=False, valign='MIDDLE')
         if i < 3: p.shape(36, y + 40, 360, 0.5, 'RECTANGLE', '#E7E7ED', None)
         p.line(420, y + 19, 423, y + 22, BLUE, 1.5); p.line(423, y + 22, 429, y + 15, BLUE, 1.5)
         p.text(433, y, 244, 40, right, size=10, color=INK, weight=400, pad=False, valign='MIDDLE', bold_color=BLUE)
@@ -141,7 +141,7 @@ if sid not in have:
     x = 48
     p.text(x + 8, 146, 100, 12, 'Card number', size=8, color=GREY)
     p.card(x + 8, 160, 168, 22, line=LINE); p.text(x + 14, 165, 120, 12, '4895 •••• •••• 0193', size=8.5, color=INK, font=MONO)
-    p.pill(x + 140, 164, 30, 'Visa', fill=LAV, color=DEEP, size=7.5, h=14)
+    p.pill(x + 134, 164, 36, 'Visa', fill=LAV, color=DEEP, size=7.5, h=14)
     p.text(x + 8, 190, 60, 12, 'Expiry', size=8, color=GREY); p.text(x + 94, 190, 30, 12, 'CVV', size=8, color=GREY)
     p.text(x + 120, 190, 60, 12, 'never stored', size=8, color=RED, weight=600)
     p.card(x + 8, 204, 78, 22, line=LINE); p.text(x + 14, 209, 64, 12, '09 / 29', size=8.5, color=INK, font=MONO)
@@ -164,7 +164,7 @@ if sid not in have:
                            'Import from your current processor as a PGP-encrypted file over SFTP. Export is documented.')):
         p.text(48 + i * 220, 266, 184, 50, t, size=9.5, color=INK, ls=125)
     p.card(36, 334, 648, 36, fill=BLUE, line=None)
-    p.text(50, 344, 620, 16, '**One vaulted token, every processor.** Add or swap a processor and the stored cards keep working, with nothing collected again from riders.', size=10, color=WHITE, bold_color=WHITE)
+    p.text(50, 344, 620, 16, '**One vaulted token, every processor.** Add or swap a processor and the stored cards keep working.', size=10, color=WHITE, bold_color=WHITE)
     run(s, PID, p.R, sid); set_notes(sid, p.notes)
 
 # ---------------------------------------------------------------- 4. versus VGS and Basis Theory (kept as in the OnlyFans deck)
