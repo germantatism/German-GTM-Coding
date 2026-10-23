@@ -74,14 +74,14 @@ OFFER = {  # slide vlt_personal, body redrawn
         ('PAR', '5001•••••••••', 'One buyer', 'lav'),
         ('Expiry', '09 / 29', 'Account updater', 'lav'),
     ],
-    'foot': 'Captured when the buyer saves a card, bids in a show or makes an offer. Reused from the vault when the seller accepts.',
+    'foot': 'Captured when the buyer saves a card, bids or makes an offer. Reused when the seller accepts.',
     'right': [
         ("Offer accepted on today's processor", 'The stored card, its network token and transaction ID travel with the charge, whichever account you route to.'),
         ('Offer accepted after a processor switch', "Same token, same reference, translated into the new provider's format. The buyer does nothing."),
         ('Charge after a card reissue', 'The account updater refreshes the PAN. Token, transaction ID and PAR stay the same.'),
     ],
     'quote': 'docs.y.uno: "The network_transaction_id belongs to the card network, not to the provider that processed the first payment." Read 23 Oct 2026.',
-    'src': 'poshmark.com/offers_help: "Offers are Binding. To submit an offer, you must have a valid payment method. If an offer is accepted, payment will be processed immediately." Read 23 Oct 2026.',
+    'src': 'poshmark.com/offers_help: "Offers are Binding. … If an offer is accepted, payment will be processed immediately." Read 23 Oct 2026.',
 }
 
 DESIGN = {  # slide h7c266de662ba1cf0_9_241 (table mockup): buyers table plus seller payout methods
