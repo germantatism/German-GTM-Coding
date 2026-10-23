@@ -8,6 +8,7 @@ Owner: German Tatis. Request (23 Oct 2026): "make a deck for Poshmark like the o
 - Objections: platform reliability and uptime, data security in sandbox testing, limited budgets after leadership changes.
 - Emails: Samuel 19 May 2026 asked for decline mix and transaction numbers for a business case (never received). Samuel 6 Oct 2026 introduced the standalone token vault as one PCI DSS Level 1 vault across Braintree and Adyen, offered a sandbox, noted Bay Area availability. No reply, no agreed next steps as of 23 Oct 2026.
 - German's role: he is in SF through November; Poshmark HQ is Redwood City. Coordinate with Samuel and Melissa before sending.
+- Public leadership (research 23 Oct 2026): CEO Namsun Kim (since 1 Oct 2025, ex Naver CFO), CPO Heather Friedland (Oct 2025), CRO Elizabeth von der Goltz (Jan 2026), CTO Gautam Golwala, VP Eng Chetan Pungaliya; CFO seat unconfirmed since Rodrigo Brumana left in May 2025. "Robbie Fritts, Senior Director Operations, Fraud and Payments" appears only in a directory snippet (UNVERIFIED). Naver calls Poshmark "going through rebuilding" (1Q26) and a "service and organization revamp" (2Q26).
 
 ## Source deck
 OnlyFans + Yuno | Token Vault, 15 slides, Google Slides `1hrBLCFxPXXAyNR73j46JH12ZtMZGPglRnFeaGBxjKk8`. Copied on 23 Oct 2026 through German's Drive to:
