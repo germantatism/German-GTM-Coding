@@ -1,0 +1,346 @@
+target presentation: 1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8 (Deck - Waymo + Yuno · Connections & Payment Methods (Oct 2026))
+[01] cover              cover
+  applied    2 requests duplicate t1 -> n01_g3f77215683c_1_445
+  applied   17 requests n01
+[02] divider            d01
+  applied    2 requests duplicate t3 -> n02_g3f769a0f446_0_988
+  applied   28 requests n02
+  applied    1 requests notes n02_g3f769a0f446_0_988
+[03] template_keep      yuno-story
+  warning: template_keep find text not found on slide 22: 'Eventbrite'
+  applied    2 requests duplicate t22 -> n03_g3f769a0f446_0_14188
+  warning: template_keep find text not found on slide 22: 'Eventbrite'
+  applied    6 requests n03
+  applied    1 requests notes n03_g3f769a0f446_0_14188
+[04] template_keep      four-pillars
+  warning: template_keep find text not found on slide 23: 'Eventbrite'
+  applied    2 requests duplicate t23 -> n04_g3f769a0f446_0_7028
+  warning: template_keep find text not found on slide 23: 'Eventbrite'
+  applied    5 requests n04
+[05] template_keep      trusted
+  warning: template_keep find text not found on slide 25: 'Eventbrite'
+  applied    2 requests duplicate t25 -> n05_g3f769a0f446_0_8218
+  warning: template_keep find text not found on slide 25: 'Eventbrite'
+  applied    5 requests n05
+  applied    1 requests notes n05_g3f769a0f446_0_8218
+[06] template_keep      team
+  warning: template_keep find text not found on slide 26: 'Eventbrite'
+  applied    2 requests duplicate t26 -> n06_g3f77215683c_1_1334
+  warning: template_keep find text not found on slide 26: 'Eventbrite'
+  applied    5 requests n06
+  applied    1 requests notes n06_g3f77215683c_1_1334
+[07] divider            d02
+  applied    2 requests duplicate t3 -> n07_g3f769a0f446_0_988
+  applied   28 requests n07
+  applied    1 requests notes n07_g3f769a0f446_0_988
+[08] table              vault-market
+  applied    2 requests duplicate t7 -> n08_g3f77215683c_2_2968
+  applied  311 requests n08
+  applied    3 requests notes n08_g3f77215683c_2_2968
+[09] cards_row          vault-cards
+  applied    2 requests duplicate t7 -> n09_g3f77215683c_2_2968
+  applied  133 requests n09
+  applied    3 requests notes n09_g3f77215683c_2_2968
+[10] diagram            keep-current
+  applied    2 requests duplicate t7 -> n10_g3f77215683c_2_2968
+  applied  158 requests n10
+  applied    3 requests notes n10_g3f77215683c_2_2968
+[11] table              versus-bt
+  applied    2 requests duplicate t7 -> n11_g3f77215683c_2_2968
+  applied  234 requests n11
+  applied    3 requests notes n11_g3f77215683c_2_2968
+[12] divider            d03
+  applied    2 requests duplicate t3 -> n12_g3f769a0f446_0_988
+  applied   28 requests n12
+  applied    1 requests notes n12_g3f769a0f446_0_988
+[13] table              markets
+  applied    2 requests duplicate t7 -> n13_g3f77215683c_2_2968
+  applied  381 requests n13
+  applied    3 requests notes n13_g3f77215683c_2_2968
+[14] table              sum-asia-pacific-1
+  applied    2 requests duplicate t7 -> n14_g3f77215683c_2_2968
+  applied  340 requests n14
+  applied    3 requests notes n14_g3f77215683c_2_2968
+[15] table              sum-asia-pacific-2
+  applied    2 requests duplicate t7 -> n15_g3f77215683c_2_2968
+  applied  144 requests n15
+  applied    3 requests notes n15_g3f77215683c_2_2968
+[16] table              sum-europe-and-north-america-1
+  applied    2 requests duplicate t7 -> n16_g3f77215683c_2_2968
+  applied  171 requests n16
+  applied    3 requests notes n16_g3f77215683c_2_2968
+[17] table              sum-latin-america-1
+  applied    2 requests duplicate t7 -> n17_g3f77215683c_2_2968
+  applied  339 requests n17
+  applied    3 requests notes n17_g3f77215683c_2_2968
+[18] table              sum-latin-america-2
+  applied    2 requests duplicate t7 -> n18_g3f77215683c_2_2968
+  applied  283 requests n18
+  applied    3 requests notes n18_g3f77215683c_2_2968
+[19] table              sum-middle-east-1
+  applied    2 requests duplicate t7 -> n19_g3f77215683c_2_2968
+  applied  311 requests n19
+  applied    3 requests notes n19_g3f77215683c_2_2968
+[20] logo_grid          c-japan
+  applied    2 requests duplicate t7 -> n20_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n20): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 2 on chunk 0 (n20): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 3 on chunk 0 (n20): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  dropped image 182 on chunk 0 (n20): https://www.google.com/s2/favicons?domain=global.jcb&sz=128
+  applied  227 requests n20
+  applied    1 requests notes n20_g3f77215683c_2_2968
+[21] logo_grid          c-japan-methods
+  applied    2 requests duplicate t7 -> n21_g3f77215683c_2_2968
+  applied  269 requests n21
+  applied    1 requests notes n21_g3f77215683c_2_2968
+[22] logo_grid          c-singapore
+  applied    2 requests duplicate t7 -> n22_g3f77215683c_2_2968
+  applied  429 requests n22
+  applied    1 requests notes n22_g3f77215683c_2_2968
+[23] logo_grid          c-australia
+  applied    2 requests duplicate t7 -> n23_g3f77215683c_2_2968
+  applied  239 requests n23
+  applied    1 requests notes n23_g3f77215683c_2_2968
+[24] logo_grid          c-australia-methods
+  applied    2 requests duplicate t7 -> n24_g3f77215683c_2_2968
+  applied  269 requests n24
+  applied    1 requests notes n24_g3f77215683c_2_2968
+[25] logo_grid          c-thailand
+  applied    2 requests duplicate t7 -> n25_g3f77215683c_2_2968
+  applied  413 requests n25
+  applied    1 requests notes n25_g3f77215683c_2_2968
+[26] logo_grid          c-indonesia
+  applied    2 requests duplicate t7 -> n26_g3f77215683c_2_2968
+  applied  411 requests n26
+  applied    1 requests notes n26_g3f77215683c_2_2968
+[27] logo_grid          c-south-korea
+  applied    2 requests duplicate t7 -> n27_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n27): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 2 on chunk 0 (n27): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 3 on chunk 0 (n27): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  dropped image 143 on chunk 0 (n27): https://www.google.com/s2/favicons?domain=kginicis.com&sz=128
+  retry 1 on chunk 0 (n27): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 2 on chunk 0 (n27): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 3 on chunk 0 (n27): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  dropped image 164 on chunk 0 (n27): https://www.google.com/s2/favicons?domain=nicepay.co.kr&sz=128
+  applied  203 requests n27
+  applied    1 requests notes n27_g3f77215683c_2_2968
+[28] logo_grid          c-south-korea-methods
+  applied    2 requests duplicate t7 -> n28_g3f77215683c_2_2968
+  applied  208 requests n28
+  applied    1 requests notes n28_g3f77215683c_2_2968
+[29] logo_grid          c-taiwan
+  applied    2 requests duplicate t7 -> n29_g3f77215683c_2_2968
+  applied  258 requests n29
+  applied    1 requests notes n29_g3f77215683c_2_2968
+[30] logo_grid          c-hong-kong
+  applied    2 requests duplicate t7 -> n30_g3f77215683c_2_2968
+  applied  160 requests n30
+  applied    1 requests notes n30_g3f77215683c_2_2968
+[31] logo_grid          c-malaysia
+  applied    2 requests duplicate t7 -> n31_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n31): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 2 on chunk 0 (n31): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 3 on chunk 0 (n31): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  dropped image 215 on chunk 0 (n31): https://www.google.com/s2/favicons?domain=duitnow.my&sz=128
+  applied  465 requests n31
+  applied    1 requests notes n31_g3f77215683c_2_2968
+[32] logo_grid          c-philippines
+  applied    2 requests duplicate t7 -> n32_g3f77215683c_2_2968
+  applied  418 requests n32
+  applied    1 requests notes n32_g3f77215683c_2_2968
+[33] logo_grid          c-vietnam
+  applied    2 requests duplicate t7 -> n33_g3f77215683c_2_2968
+  applied  360 requests n33
+  applied    1 requests notes n33_g3f77215683c_2_2968
+[34] logo_grid          c-india
+  applied    2 requests duplicate t7 -> n34_g3f77215683c_2_2968
+  applied  255 requests n34
+  applied    1 requests notes n34_g3f77215683c_2_2968
+[35] logo_grid          c-india-methods
+  applied    2 requests duplicate t7 -> n35_g3f77215683c_2_2968
+  applied  240 requests n35
+  applied    1 requests notes n35_g3f77215683c_2_2968
+[36] logo_grid          c-new-zealand
+  applied    2 requests duplicate t7 -> n36_g3f77215683c_2_2968
+  applied  330 requests n36
+  applied    1 requests notes n36_g3f77215683c_2_2968
+[37] logo_grid          c-united-kingdom
+  applied    2 requests duplicate t7 -> n37_g3f77215683c_2_2968
+  applied  303 requests n37
+  applied    1 requests notes n37_g3f77215683c_2_2968
+[38] logo_grid          c-united-kingdom-methods
+  applied    2 requests duplicate t7 -> n38_g3f77215683c_2_2968
+  applied  301 requests n38
+  applied    1 requests notes n38_g3f77215683c_2_2968
+[39] logo_grid          c-germany
+  applied    2 requests duplicate t7 -> n39_g3f77215683c_2_2968
+  applied  263 requests n39
+  applied    1 requests notes n39_g3f77215683c_2_2968
+[40] logo_grid          c-germany-methods
+  applied    2 requests duplicate t7 -> n40_g3f77215683c_2_2968
+  applied  285 requests n40
+  applied    1 requests notes n40_g3f77215683c_2_2968
+[41] logo_grid          c-spain
+  applied    2 requests duplicate t7 -> n41_g3f77215683c_2_2968
+  applied  295 requests n41
+  applied    1 requests notes n41_g3f77215683c_2_2968
+[42] logo_grid          c-spain-methods
+  applied    2 requests duplicate t7 -> n42_g3f77215683c_2_2968
+  applied  301 requests n42
+  applied    1 requests notes n42_g3f77215683c_2_2968
+[43] logo_grid          c-canada
+  applied    2 requests duplicate t7 -> n43_g3f77215683c_2_2968
+  applied  207 requests n43
+  applied    1 requests notes n43_g3f77215683c_2_2968
+[44] logo_grid          c-canada-methods
+  applied    2 requests duplicate t7 -> n44_g3f77215683c_2_2968
+  applied  277 requests n44
+  applied    1 requests notes n44_g3f77215683c_2_2968
+[45] logo_grid          c-argentina
+  applied    2 requests duplicate t7 -> n45_g3f77215683c_2_2968
+  applied  287 requests n45
+  applied    1 requests notes n45_g3f77215683c_2_2968
+[46] logo_grid          c-argentina-methods
+  applied    2 requests duplicate t7 -> n46_g3f77215683c_2_2968
+  applied  335 requests n46
+  applied    1 requests notes n46_g3f77215683c_2_2968
+[47] logo_grid          c-brazil
+  applied    2 requests duplicate t7 -> n47_g3f77215683c_2_2968
+  applied  580 requests n47
+  applied    1 requests notes n47_g3f77215683c_2_2968
+[48] logo_grid          c-brazil-methods
+  applied    2 requests duplicate t7 -> n48_g3f77215683c_2_2968
+  applied  312 requests n48
+  applied    1 requests notes n48_g3f77215683c_2_2968
+[49] logo_grid          c-chile
+  applied    2 requests duplicate t7 -> n49_g3f77215683c_2_2968
+  applied  353 requests n49
+  applied    1 requests notes n49_g3f77215683c_2_2968
+[50] logo_grid          c-chile-methods
+  applied    2 requests duplicate t7 -> n50_g3f77215683c_2_2968
+  applied  356 requests n50
+  applied    1 requests notes n50_g3f77215683c_2_2968
+[51] logo_grid          c-colombia
+  applied    2 requests duplicate t7 -> n51_g3f77215683c_2_2968
+  applied  407 requests n51
+  applied    1 requests notes n51_g3f77215683c_2_2968
+[52] logo_grid          c-colombia-methods
+  applied    2 requests duplicate t7 -> n52_g3f77215683c_2_2968
+  applied  341 requests n52
+  applied    1 requests notes n52_g3f77215683c_2_2968
+[53] logo_grid          c-mexico
+  applied    2 requests duplicate t7 -> n53_g3f77215683c_2_2968
+  applied  470 requests n53
+  applied    1 requests notes n53_g3f77215683c_2_2968
+[54] logo_grid          c-mexico-methods
+  applied    2 requests duplicate t7 -> n54_g3f77215683c_2_2968
+  applied  380 requests n54
+  applied    1 requests notes n54_g3f77215683c_2_2968
+[55] table              c-mexico-local
+  applied    2 requests duplicate t7 -> n55_g3f77215683c_2_2968
+  applied  194 requests n55
+  applied    1 requests notes n55_g3f77215683c_2_2968
+[56] logo_grid          c-peru
+  applied    2 requests duplicate t7 -> n56_g3f77215683c_2_2968
+  applied  504 requests n56
+  applied    1 requests notes n56_g3f77215683c_2_2968
+[57] logo_grid          c-uruguay
+  applied    2 requests duplicate t7 -> n57_g3f77215683c_2_2968
+  applied  317 requests n57
+  applied    1 requests notes n57_g3f77215683c_2_2968
+[58] logo_grid          c-bolivia
+  applied    2 requests duplicate t7 -> n58_g3f77215683c_2_2968
+  applied  237 requests n58
+  applied    1 requests notes n58_g3f77215683c_2_2968
+[59] logo_grid          c-costa-rica
+  applied    2 requests duplicate t7 -> n59_g3f77215683c_2_2968
+  applied  364 requests n59
+  applied    1 requests notes n59_g3f77215683c_2_2968
+[60] logo_grid          c-dominican-republic
+  applied    2 requests duplicate t7 -> n60_g3f77215683c_2_2968
+  applied  314 requests n60
+  applied    1 requests notes n60_g3f77215683c_2_2968
+[61] logo_grid          c-ecuador
+  applied    2 requests duplicate t7 -> n61_g3f77215683c_2_2968
+  applied  386 requests n61
+  applied    1 requests notes n61_g3f77215683c_2_2968
+[62] logo_grid          c-el-salvador
+  applied    2 requests duplicate t7 -> n62_g3f77215683c_2_2968
+  applied  293 requests n62
+  applied    1 requests notes n62_g3f77215683c_2_2968
+[63] logo_grid          c-guatemala
+  applied    2 requests duplicate t7 -> n63_g3f77215683c_2_2968
+  applied  354 requests n63
+  applied    1 requests notes n63_g3f77215683c_2_2968
+[64] logo_grid          c-honduras
+  applied    2 requests duplicate t7 -> n64_g3f77215683c_2_2968
+  applied  240 requests n64
+  applied    1 requests notes n64_g3f77215683c_2_2968
+[65] logo_grid          c-nicaragua
+  applied    2 requests duplicate t7 -> n65_g3f77215683c_2_2968
+  applied  203 requests n65
+  applied    1 requests notes n65_g3f77215683c_2_2968
+[66] logo_grid          c-panama
+  applied    2 requests duplicate t7 -> n66_g3f77215683c_2_2968
+  applied  346 requests n66
+  applied    1 requests notes n66_g3f77215683c_2_2968
+[67] logo_grid          c-paraguay
+  applied    2 requests duplicate t7 -> n67_g3f77215683c_2_2968
+  applied  216 requests n67
+  applied    1 requests notes n67_g3f77215683c_2_2968
+[68] logo_grid          c-venezuela
+  applied    2 requests duplicate t7 -> n68_g3f77215683c_2_2968
+  applied  174 requests n68
+  applied    1 requests notes n68_g3f77215683c_2_2968
+[69] logo_grid          c-saudi-arabia
+  applied    2 requests duplicate t7 -> n69_g3f77215683c_2_2968
+  applied  497 requests n69
+  applied    1 requests notes n69_g3f77215683c_2_2968
+[70] logo_grid          c-united-arab-emirates
+  applied    2 requests duplicate t7 -> n70_g3f77215683c_2_2968
+  retry 1 on chunk 0 (n70): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 2 on chunk 0 (n70): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  retry 3 on chunk 0 (n70): <HttpError 400 when requesting https://slides.googleapis.com/v1/presentations/1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8:batchUpdate?alt=j
+  dropped image 284 on chunk 0 (n70): https://www.google.com/s2/favicons?domain=magnati.com&sz=128
+  applied  524 requests n70
+  applied    1 requests notes n70_g3f77215683c_2_2968
+[71] logo_grid          c-israel
+  applied    2 requests duplicate t7 -> n71_g3f77215683c_2_2968
+  applied  302 requests n71
+  applied    1 requests notes n71_g3f77215683c_2_2968
+[72] logo_grid          c-egypt
+  applied    2 requests duplicate t7 -> n72_g3f77215683c_2_2968
+  applied  256 requests n72
+  applied    1 requests notes n72_g3f77215683c_2_2968
+[73] logo_grid          c-egypt-methods
+  applied    2 requests duplicate t7 -> n73_g3f77215683c_2_2968
+  applied  387 requests n73
+  applied    1 requests notes n73_g3f77215683c_2_2968
+[74] logo_grid          c-qatar
+  applied    2 requests duplicate t7 -> n74_g3f77215683c_2_2968
+  applied  345 requests n74
+  applied    1 requests notes n74_g3f77215683c_2_2968
+[75] logo_grid          c-kuwait
+  applied    2 requests duplicate t7 -> n75_g3f77215683c_2_2968
+  applied  366 requests n75
+  applied    1 requests notes n75_g3f77215683c_2_2968
+[76] logo_grid          c-oman
+  applied    2 requests duplicate t7 -> n76_g3f77215683c_2_2968
+  applied  292 requests n76
+  applied    1 requests notes n76_g3f77215683c_2_2968
+[77] logo_grid          c-bahrain
+  applied    2 requests duplicate t7 -> n77_g3f77215683c_2_2968
+  applied  329 requests n77
+  applied    1 requests notes n77_g3f77215683c_2_2968
+[78] logo_grid          c-jordan
+  applied    2 requests duplicate t7 -> n78_g3f77215683c_2_2968
+  applied  285 requests n78
+  applied    1 requests notes n78_g3f77215683c_2_2968
+[79] next_steps         next
+  applied    2 requests duplicate t7 -> n79_g3f77215683c_2_2968
+  applied   97 requests n79
+  applied    1 requests notes n79_g3f77215683c_2_2968
+  applied   46 requests delete 46 slides
+deleted 46 template slides in one call; deck now has 79 slides
+WAYMO_EXIT=0

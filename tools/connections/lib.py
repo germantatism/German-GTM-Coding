@@ -292,6 +292,25 @@ ISRAEL_EXTRA = [
  ('Provider', 'Tranzila', [], 'On request'), ('Provider', 'Cardcom', [], 'On request'), ('Provider', 'Pelecard', [], 'On request'), ('Provider', 'Finaro (Shift4)', [], 'On request'),
  ('Direct payment method', 'Bit', [], 'On request'),
 ]   # Israel research of 14 Oct 2026 (adidas): matrix shows Israeli card traffic through the five cross-border acquirers; Rapyd and Worldline integrated with Israel in partner coverage; the rest are new connections
+# German, 23-oct-2026 (Waymo deck): connections from the ride-hailing gap ratings (rating 8+) to show as "in homologation" in these 13 markets.
+# Each entry replaces any lower tier the same name had (in code, signed, on request). (country) -> [(type, name, logo domain)]
+HOMOLOGATING_EXTRA = {
+ 'South Korea': [('Provider', 'NHN KCP', 'kcp.co.kr'), ('Provider', 'KG Inicis', 'kginicis.com'), ('Provider', 'Toss Payments', 'tosspayments.com'), ('Provider', 'NICE Payments', 'nicepay.co.kr'),
+                 ('Direct payment method', 'Korean domestic cards (local PG)', '')],
+ 'Japan': [('Provider', 'GMO Payment Gateway', 'gmo-pg.com'), ('Direct payment method', 'JCB', 'global.jcb')],
+ 'Taiwan': [('Direct payment method', 'LINE Pay', 'pay.line.me')],
+ 'Hong Kong': [('Direct payment method', 'AlipayHK', 'alipayhk.com'), ('Provider', 'Adyen', 'adyen.com'), ('Provider', 'Global Payments', 'globalpayments.com')],
+ 'Malaysia': [('Direct payment method', 'DuitNow QR', 'duitnow.my')],
+ 'Spain': [('Provider', 'Redsys', 'redsys.es')],
+ 'Canada': [('Provider', 'Moneris', 'moneris.com')],
+ 'Singapore': [('Provider', 'AllinPay', 'allinpay.com.sg'), ('Direct payment method', 'PayNow', 'abs.org.sg')],
+ 'Indonesia': [('Provider', 'Midtrans', 'midtrans.com')],
+ 'Germany': [('Provider', 'Payone', 'payone.com')],
+ 'Argentina': [('Provider', 'Payway', 'payway.com.ar')],
+ 'Israel': [('Provider', 'Cal (Israel Credit Cards)', 'cal-online.co.il'), ('Provider', 'Isracard', 'isracard.co.il')],
+ 'United Arab Emirates': [('Provider', 'Magnati', 'magnati.com')],
+}
+HOMOLOGATING_EXTRA_DOMAIN = {nk(n): d for v in HOMOLOGATING_EXTRA.values() for _, n, d in v if d}
 SIGNED = [('Costa Rica', 'SINPE Móvil'), ('Indonesia', 'GoPay'), ('Indonesia', 'Kredivo'), ('Malaysia', 'DuitNow QR'), ('Vietnam', 'MoMo'), ('Vietnam', 'ZaloPay'), ('Vietnam', 'VNPay QR'),
           ('Vietnam', 'Viettel Money (ViettelPay)'), ('Vietnam', 'NAPAS domestic cards and VietQR')]
 
@@ -388,4 +407,10 @@ class Data:
                 have = {r[2] for r in R if r[0] == c}
                 for typ, name, labs, st in ISRAEL_EXTRA:
                     if name not in have: R.append([c, typ, name, labs, st, nk(name)])
+            if not recurring_only and c in HOMOLOGATING_EXTRA:   # German 23-oct-2026: show these as in homologation, replacing any lower tier
+                keys = {nk(n) for _, n, _ in HOMOLOGATING_EXTRA[c]}
+                R[:] = [r for r in R if not (r[0] == c and nk(r[2]) in keys and r[4] != 'Live')]
+                have = {nk(r[2]) for r in R if r[0] == c}
+                for typ, name, dom in HOMOLOGATING_EXTRA[c]:
+                    if nk(name) not in have: R.append([c, typ, name, [], 'Homologating', nk(name)])
         return R

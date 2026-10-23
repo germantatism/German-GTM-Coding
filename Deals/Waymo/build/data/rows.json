@@ -214,16 +214,6 @@
 [
 "Japan",
 "Provider",
-"GMO Payment Gateway",
-[
-"Cards"
-],
-"Integrated (code)",
-"gmopg"
-],
-[
-"Japan",
-"Provider",
 "SB Payment Service",
 [
 "Cards"
@@ -352,6 +342,22 @@
 [],
 "Live",
 "westernunion"
+],
+[
+"Japan",
+"Provider",
+"GMO Payment Gateway",
+[],
+"Homologating",
+"gmopaymentgateway"
+],
+[
+"Japan",
+"Direct payment method",
+"JCB",
+[],
+"Homologating",
+"jcb"
 ],
 [
 "Singapore",
@@ -579,19 +585,6 @@
 [
 "Singapore",
 "Provider",
-"AllinPay",
-[
-"Cards",
-"Alipay",
-"PayNow",
-"WeChat Pay"
-],
-"Integrated (code)",
-"allinpay"
-],
-[
-"Singapore",
-"Provider",
 "Tazapay",
 [],
 "Integrated (code)",
@@ -724,6 +717,22 @@
 [],
 "Live",
 "westernunion"
+],
+[
+"Singapore",
+"Provider",
+"AllinPay",
+[],
+"Homologating",
+"allinpay"
+],
+[
+"Singapore",
+"Direct payment method",
+"PayNow",
+[],
+"Homologating",
+"paynow"
 ],
 [
 "Australia",
@@ -1583,14 +1592,6 @@
 [
 "Indonesia",
 "Provider",
-"Midtrans",
-[],
-"Homologating",
-"midtrans"
-],
-[
-"Indonesia",
-"Provider",
 "Nuvei",
 [
 "Cards"
@@ -1816,6 +1817,14 @@
 "kredivo"
 ],
 [
+"Indonesia",
+"Provider",
+"Midtrans",
+[],
+"Homologating",
+"midtrans"
+],
+[
 "South Korea",
 "Provider",
 "2C2P",
@@ -1980,18 +1989,6 @@
 [
 "South Korea",
 "Provider",
-"NHN KCP",
-[
-"Cards",
-"Bank transfer (KCP)",
-"Kakao Pay"
-],
-"Integrated (code)",
-"kcp"
-],
-[
-"South Korea",
-"Provider",
 "Payssion",
 [
 "Cards",
@@ -2074,6 +2071,46 @@
 [],
 "Live",
 "wechatpay"
+],
+[
+"South Korea",
+"Provider",
+"NHN KCP",
+[],
+"Homologating",
+"nhnkcp"
+],
+[
+"South Korea",
+"Provider",
+"KG Inicis",
+[],
+"Homologating",
+"kginicis"
+],
+[
+"South Korea",
+"Provider",
+"Toss Payments",
+[],
+"Homologating",
+"tosspayments"
+],
+[
+"South Korea",
+"Provider",
+"NICE Payments",
+[],
+"Homologating",
+"nicepayments"
+],
+[
+"South Korea",
+"Direct payment method",
+"Korean domestic cards (local PG)",
+[],
+"Homologating",
+"koreandomesticcardslocalpg"
 ],
 [
 "Taiwan",
@@ -2268,6 +2305,14 @@
 "paypal"
 ],
 [
+"Taiwan",
+"Direct payment method",
+"LINE Pay",
+[],
+"Homologating",
+"linepay"
+],
+[
 "Hong Kong",
 "Provider",
 "PPRO",
@@ -2318,6 +2363,30 @@
 [],
 "Live",
 "visa"
+],
+[
+"Hong Kong",
+"Direct payment method",
+"AlipayHK",
+[],
+"Homologating",
+"alipayhk"
+],
+[
+"Hong Kong",
+"Provider",
+"Adyen",
+[],
+"Homologating",
+"adyen"
+],
+[
+"Hong Kong",
+"Provider",
+"Global Payments",
+[],
+"Homologating",
+"globalpayments"
 ],
 [
 "Malaysia",
@@ -2700,7 +2769,7 @@
 "Direct payment method",
 "DuitNow QR",
 [],
-"Signed",
+"Homologating",
 "duitnowqr"
 ],
 [
@@ -4838,6 +4907,14 @@
 "klarna"
 ],
 [
+"Germany",
+"Provider",
+"Payone",
+[],
+"Homologating",
+"payone"
+],
+[
 "Spain",
 "Provider",
 "Adyen",
@@ -5151,18 +5228,6 @@
 [
 "Spain",
 "Provider",
-"Redsys",
-[
-"Cards",
-"Apple Pay",
-"Google Pay"
-],
-"Integrated (code)",
-"redsys"
-],
-[
-"Spain",
-"Provider",
 "GoCardless",
 [
 "SEPA Direct Debit"
@@ -5313,6 +5378,14 @@
 [],
 "Live",
 "westernunion"
+],
+[
+"Spain",
+"Provider",
+"Redsys",
+[],
+"Homologating",
+"redsys"
 ],
 [
 "Canada",
@@ -5526,16 +5599,6 @@
 ],
 [
 "Canada",
-"Provider",
-"Moneris",
-[
-"Cards"
-],
-"Integrated (code)",
-"moneris"
-],
-[
-"Canada",
 "Direct payment method",
 "Apple Pay",
 [],
@@ -5653,6 +5716,14 @@
 [],
 "Live",
 "wechatpay"
+],
+[
+"Canada",
+"Provider",
+"Moneris",
+[],
+"Homologating",
+"moneris"
 ],
 [
 "Argentina",
@@ -5939,16 +6010,6 @@
 [
 "Argentina",
 "Provider",
-"Payway",
-[
-"Cards"
-],
-"Integrated (code)",
-"payway"
-],
-[
-"Argentina",
-"Provider",
 "Nave",
 [
 "Cards"
@@ -6111,6 +6172,14 @@
 [],
 "Live",
 "wibond"
+],
+[
+"Argentina",
+"Provider",
+"Payway",
+[],
+"Homologating",
+"payway"
 ],
 [
 "Brazil",
@@ -12789,6 +12858,14 @@
 "westernunion"
 ],
 [
+"United Arab Emirates",
+"Provider",
+"Magnati",
+[],
+"Homologating",
+"magnati"
+],
+[
 "Israel",
 "Provider",
 "Nuvei",
@@ -12957,22 +13034,6 @@
 [
 "Israel",
 "Provider",
-"Isracard",
-[],
-"On request",
-"isracard"
-],
-[
-"Israel",
-"Provider",
-"Cal (Israel Credit Cards)",
-[],
-"On request",
-"calisraelcreditcards"
-],
-[
-"Israel",
-"Provider",
 "Max",
 [],
 "On request",
@@ -13017,6 +13078,22 @@
 [],
 "On request",
 "bit"
+],
+[
+"Israel",
+"Provider",
+"Cal (Israel Credit Cards)",
+[],
+"Homologating",
+"calisraelcreditcards"
+],
+[
+"Israel",
+"Provider",
+"Isracard",
+[],
+"Homologating",
+"isracard"
 ],
 [
 "Egypt",

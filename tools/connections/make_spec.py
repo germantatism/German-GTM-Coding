@@ -17,7 +17,7 @@ def dcountry(c): return lib.DISPLAY_COUNTRY.get(c, c)
 def chip(name, key=None):
     k = key or nk(name)
     if k in usable and usable[k] not in SLIDES_BAD: return {'name': name, 'logo': usable[k], 'aspect': aspect.get(k, 1.0)}
-    w = DIRW.get(k, ''); dom = re.sub(r'^https?://(www\.)?', '', w).split('/')[0] or lib.CODE_ONLY_DOMAIN.get(k, '')
+    w = DIRW.get(k, ''); dom = re.sub(r'^https?://(www\.)?', '', w).split('/')[0] or lib.CODE_ONLY_DOMAIN.get(k, '') or getattr(lib, 'HOMOLOGATING_EXTRA_DOMAIN', {}).get(k, '')
     url = f'https://www.google.com/s2/favicons?domain={dom}&sz=128' if dom else ''
     return {'name': name, 'logo': '' if url in SLIDES_BAD else url, 'aspect': 1.0}
 WALLETS = {'Apple Pay', 'Google Pay', 'PayPal'}
@@ -26,8 +26,8 @@ by = {c: {'live': [], 'homolog': [], 'code': [], 'code_m': {}, 'signed': [], 'di
 for c, typ, name, meths, status, key in R:
     d = by[c]; d['key'][name] = key
     if status == 'On request': d['request'].append(name); continue
+    if status == 'Homologating': d['homolog'].append(name); d.setdefault('homolog_types', {})[name] = typ; continue
     if typ == 'Provider':
-        if status == 'Homologating': d['homolog'].append(name); continue
         if status == 'Integrated (code)': d['code'].append(name); d['code_m'][name] = meths; continue
         if status == 'Activation on request': d['activate'].append(name); continue
         if status == 'Live (cross-border)': d['xborder'].append(name)
@@ -129,7 +129,8 @@ def country_slides(c):
         headB = f"{cn}: {pl(len(direct), 'recurring-capable payment method')} available and {pl(nloc, 'recurring local method')} carried by the providers." if nloc else f"{cn}: {pl(len(direct), 'recurring-capable payment method')} available through Yuno."
         secB_h = f"Recurring-capable wallets and payment methods ({len(direct)})"; tcols = ["Recurring method", "Providers carrying it through Yuno", "#"]
     else:
-        headA = f"{cn}: {pl(len(live), 'provider')} live through Yuno, {len(cards)} for cards" + (f", {pl(len(hom), 'more provider')} in homologation." if hom else ".")
+        hom_word = 'more provider' if all(d.get('homolog_types', {}).get(h) == 'Provider' for h in hom) else 'more connection'
+        headA = f"{cn}: {pl(len(live), 'provider')} live through Yuno, {len(cards)} for cards" + (f", {pl(len(hom), hom_word)} in homologation." if hom else ".")
         headB = f"{cn}: {pl(len(direct), 'payment method')} available and {pl(nloc, 'local method')} carried by the providers." if nloc else f"{cn}: {pl(len(direct), 'payment method')} available through Yuno."
         secB_h = f"Wallets and payment methods available ({len(direct)})"; tcols = ["Local method", "Providers carrying it through Yuno", "#"]
     if not live and not hom: headA = f"{cn}: no provider lists this market on y.uno/integrations yet; {pl(len(direct), 'global payment method')} available." + (f" {pl(len(code), 'provider')} integrated in code." if code else "")
