@@ -1,5 +1,5 @@
 {
- "presentation_id": "1GNgEptEXFiQtuc79yOgESnKNOBV8H621C_u8-xK_O0M",
+ "presentation_id": "12Csr_ovgJRsRpHExj1qMUzEppaQdQk14QAP4TrYFdE0",
  "merchant": "Waymo",
  "footer": "",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
@@ -517,7 +517,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Public announcements as of 22 October 2026, plus Thailand and Indonesia as shared by Waymo. Providers live = connections available through Yuno in that country.",
-   "notes": "Market status sources: Waymo blog (London, Oct 2025), CNBC (Munich, 25 Aug 2026), The Olive Press (Madrid, 25 Aug 2026), Fortune and LTA (Singapore, 17 Sep 2026), Element Fleet and TipRanks (Toronto, 2028), Nihon Kotsu and GO (Tokyo 2027), AFR via ACS (Australia, Jan 2026). Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Market status sources: Waymo blog (London, Oct 2025), CNBC (Munich, 25 Aug 2026), The Olive Press (Madrid, 25 Aug 2026), Fortune and LTA (Singapore, 17 Sep 2026), Element Fleet and TipRanks (Toronto, 2028), Nihon Kotsu and GO (Tokyo 2027), AFR via ACS (Australia, Jan 2026). Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-asia-pacific-1",
@@ -564,7 +564,7 @@
     [
      "Indonesia",
      "18",
-     "5",
+     "7",
      "OVO · ShopeePay · QRIS · DANA · Alfamart · Virtual Account · +5 more"
     ],
     [
@@ -603,7 +603,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Japan 2027, Singapore 2028, Australia in talks, Thailand and Indonesia per Waymo (Oct 2026); South Korea, Taiwan, Hong Kong, Malaysia, Philippines, Vietnam, India and New Zealand added as the main APAC markets for later waves.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-asia-pacific-2",
@@ -626,7 +626,7 @@
     [
      "Vietnam",
      "12",
-     "3",
+     "8",
      "MoMo · ShopeePay · Apple Pay · Google Pay · PayPal"
     ],
     [
@@ -647,7 +647,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Japan 2027, Singapore 2028, Australia in talks, Thailand and Indonesia per Waymo (Oct 2026); South Korea, Taiwan, Hong Kong, Malaysia, Philippines, Vietnam, India and New Zealand added as the main APAC markets for later waves.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-europe-and-north-america-1",
@@ -697,7 +697,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "United Kingdom: London 2026. Germany: Munich 2027. Spain: Madrid, testing from late 2026. Canada: Toronto 2028.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-latin-america-1",
@@ -768,7 +768,7 @@
     [
      "Costa Rica",
      "15",
-     "3",
+     "4",
      "Bank transfer · Cash · Banco Nacional cash · SafetyPay (bank transfer) · SafetyPay (cash) · SafetyPay · +3 more"
     ],
     [
@@ -783,7 +783,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "All Spanish- and Portuguese-speaking markets with Yuno coverage; Cuba is not served.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-latin-america-2",
@@ -857,7 +857,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "All Spanish- and Portuguese-speaking markets with Yuno coverage; Cuba is not served.",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "sum-middle-east-1",
@@ -937,7 +937,7 @@
    "bold_first_col": true,
    "zebra": true,
    "note": "Gulf states, Israel, Jordan and Egypt. No Waymo launch is announced in the region; coverage shown for later waves. Israel tiers per Yuno's traffic and partner data (Oct 2026).",
-   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration code scan and repo inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
+   "notes": "Sources: y.uno/integrations directory (export of 14 Oct 2026), docs.y.uno Payment Type list and API enums (22 Oct 2026), Yuno integration inventory (internal, October 2026); Payments Concierge integration matrix for the Latin American markets; Apple Pay availability per Apple (22 Oct 2026). Live = the connection is built and available to process through Yuno for this country; method activation is set per merchant."
   },
   {
    "id": "c-japan",
@@ -1924,7 +1924,7 @@
    "id": "c-indonesia",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › INDONESIA",
-   "headline": "Indonesia: 18 providers live through Yuno, 14 for cards, 5 more providers in homologation.",
+   "headline": "Indonesia: 18 providers live through Yuno, 14 for cards, 7 more connections in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (18)",
@@ -2022,7 +2022,7 @@
      ]
     },
     {
-     "header": "Homologating (5)",
+     "header": "Homologating (7)",
      "chips": [
       {
        "name": "AsiaPay",
@@ -2038,6 +2038,16 @@
        "name": "Doku",
        "logo": "https://y.uno/vendor/webflow/68df54117fcfdc8906817552_67ad654c7bdcfbd90c71df76_doku%2520logo.png",
        "aspect": 1.013
+      },
+      {
+       "name": "GoPay",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "Kredivo",
+       "logo": "",
+       "aspect": 1.0
       },
       {
        "name": "Midtrans",
@@ -2121,22 +2131,6 @@
        "aspect": 1.0
       }
      ]
-    },
-    {
-     "header": "Signed with partners, not yet integrated (2)",
-     "chips": [
-      {
-       "name": "GoPay",
-       "logo": "",
-       "aspect": 1.0
-      },
-      {
-       "name": "Kredivo",
-       "logo": "",
-       "aspect": 1.0
-      }
-     ],
-     "style": "request"
     }
    ],
    "table": {
@@ -2153,8 +2147,18 @@
     "font_size": 7.5,
     "rows": [
      [
+      "OVO",
+      "Adyen, dLocal, Xendit",
+      "3"
+     ],
+     [
+      "QRIS",
+      "dLocal, Ecommpay, Xendit",
+      "3"
+     ],
+     [
       "Other local methods",
-      "Alfamart · Virtual Account (dLocal, Xendit); DANA (Boku, Xendit); Direct debit (Worldline, Xendit); GoPay (Boku); Indomaret (Xendit); OVO (Adyen, dLocal, Xendit); QRIS (dLocal, Ecommpay, Xendit); ShopeePay (Boku, dLocal, Xendit)",
+      "Alfamart · Virtual Account (dLocal, Xendit); DANA (Boku, Xendit); Direct debit (Worldline, Xendit); GoPay (Boku); Indomaret (Xendit); ShopeePay (Boku, dLocal, Xendit)",
       "1 to 2 each"
      ],
      [
@@ -3044,7 +3048,7 @@
    "id": "c-vietnam",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › VIETNAM",
-   "headline": "Vietnam: 12 providers live through Yuno, 10 for cards, 3 more providers in homologation.",
+   "headline": "Vietnam: 12 providers live through Yuno, 10 for cards, 8 more connections in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (12)",
@@ -3112,7 +3116,7 @@
      ]
     },
     {
-     "header": "Homologating (3)",
+     "header": "Homologating (8)",
      "chips": [
       {
        "name": "AsiaPay",
@@ -3125,8 +3129,33 @@
        "aspect": 1.079
       },
       {
+       "name": "MoMo",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "NAPAS domestic cards and VietQR",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
        "name": "PPRO",
        "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
+       "aspect": 1.0
+      },
+      {
+       "name": "Viettel Money (ViettelPay)",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "VNPay QR",
+       "logo": "",
+       "aspect": 1.0
+      },
+      {
+       "name": "ZaloPay",
+       "logo": "",
        "aspect": 1.0
       }
      ],
@@ -3191,37 +3220,6 @@
        "aspect": 1.0
       }
      ]
-    },
-    {
-     "header": "Signed with partners, not yet integrated (5)",
-     "chips": [
-      {
-       "name": "MoMo",
-       "logo": "",
-       "aspect": 1.0
-      },
-      {
-       "name": "NAPAS domestic cards and VietQR",
-       "logo": "",
-       "aspect": 1.0
-      },
-      {
-       "name": "Viettel Money (ViettelPay)",
-       "logo": "",
-       "aspect": 1.0
-      },
-      {
-       "name": "VNPay QR",
-       "logo": "",
-       "aspect": 1.0
-      },
-      {
-       "name": "ZaloPay",
-       "logo": "",
-       "aspect": 1.0
-      }
-     ],
-     "style": "request"
     }
    ],
    "table": {
@@ -3238,9 +3236,14 @@
     "font_size": 7.5,
     "rows": [
      [
-      "Other local methods",
-      "MoMo (Adyen, Antom, Ecommpay); ShopeePay (Boku, dLocal, Xendit)",
-      "1 to 2 each"
+      "MoMo",
+      "Adyen, Antom, Ecommpay",
+      "3"
+     ],
+     [
+      "ShopeePay",
+      "Boku, dLocal, Xendit",
+      "3"
      ],
      [
       "Wallets and global methods via providers",
@@ -7409,7 +7412,7 @@
    "id": "c-costa-rica",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › COSTA RICA",
-   "headline": "Costa Rica: 15 providers live through Yuno, 9 for cards, 3 more providers in homologation.",
+   "headline": "Costa Rica: 15 providers live through Yuno, 9 for cards, 4 more connections in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (15)",
@@ -7492,7 +7495,7 @@
      ]
     },
     {
-     "header": "Homologating (3)",
+     "header": "Homologating (4)",
      "chips": [
       {
        "name": "Directa 24",
@@ -7507,6 +7510,11 @@
       {
        "name": "PayCash",
        "logo": "https://y.uno/vendor/webflow/68df5431259785112e047f78_6789cc73b5901ecb61f75f5e_678316ef90fa45540bd97f49_678303be5852c5789574da37_673a83c482767acb2d27c926_paycash_logosimbolo.png",
+       "aspect": 1.0
+      },
+      {
+       "name": "SINPE Móvil",
+       "logo": "",
        "aspect": 1.0
       }
      ],
@@ -7576,17 +7584,6 @@
        "aspect": 1.0
       }
      ]
-    },
-    {
-     "header": "Signed with partners, not yet integrated (1)",
-     "chips": [
-      {
-       "name": "SINPE Móvil",
-       "logo": "",
-       "aspect": 1.0
-      }
-     ],
-     "style": "request"
     }
    ],
    "table": {
@@ -7603,8 +7600,18 @@
     "font_size": 7.5,
     "rows": [
      [
+      "Bank transfer",
+      "dLocal, Inswitch",
+      "2"
+     ],
+     [
+      "Cash",
+      "EBANX, Inswitch",
+      "2"
+     ],
+     [
       "Other local methods",
-      "Banco Nacional cash (dLocal); Bank transfer (dLocal, Inswitch); Cash (EBANX, Inswitch); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
+      "Banco Nacional cash (dLocal); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
       "1 to 2 each"
      ],
      [

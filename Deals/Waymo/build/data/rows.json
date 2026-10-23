@@ -1780,7 +1780,7 @@
 "Direct payment method",
 "GoPay",
 [],
-"Signed",
+"Homologating",
 "gopay"
 ],
 [
@@ -1788,7 +1788,7 @@
 "Direct payment method",
 "Kredivo",
 [],
-"Signed",
+"Homologating",
 "kredivo"
 ],
 [
@@ -3240,7 +3240,7 @@
 "Direct payment method",
 "MoMo",
 [],
-"Signed",
+"Homologating",
 "momo"
 ],
 [
@@ -3248,7 +3248,7 @@
 "Direct payment method",
 "ZaloPay",
 [],
-"Signed",
+"Homologating",
 "zalopay"
 ],
 [
@@ -3256,7 +3256,7 @@
 "Direct payment method",
 "VNPay QR",
 [],
-"Signed",
+"Homologating",
 "vnpayqr"
 ],
 [
@@ -3264,7 +3264,7 @@
 "Direct payment method",
 "Viettel Money (ViettelPay)",
 [],
-"Signed",
+"Homologating",
 "viettelmoneyviettelpay"
 ],
 [
@@ -3272,7 +3272,7 @@
 "Direct payment method",
 "NAPAS domestic cards and VietQR",
 [],
-"Signed",
+"Homologating",
 "napasdomesticcardsandvietqr"
 ],
 [
@@ -9859,7 +9859,7 @@
 "Direct payment method",
 "SINPE Móvil",
 [],
-"Signed",
+"Homologating",
 "sinpemvil"
 ],
 [
