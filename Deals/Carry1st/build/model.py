@@ -11,7 +11,12 @@ LADDER = [(INCLUDED, 0.0), (2_000_000, 0.0040), (5_000_000, 0.0030), (10_000_000
 LADDER_V3 = [(INCLUDED, 0.0), (3_000_000, 0.0030), (6_000_000, 0.0025), (float("inf"), 0.0020)]   # v3, superseded, kept for reference
 LADDER_V1 = [(2_000_000, 0.0030), (5_000_000, 0.0025), (float("inf"), 0.0020)]              # v1, no allotment, kept for reference
 AVG_TICKET, MEDIAN_TICKET = 10.0, 5.0
-CREDIT, CREDIT_MONTHS = 3_750, 3          # optional launch lever: Dec-2026 to Feb-2027 (billing start 1-Dec-2026)
+CREDIT, CREDIT_MONTHS = 3_750, 3          # v4 optional launch lever (superseded by RAMP): Dec-2026 to Feb-2027 (billing start 1-Dec-2026)
+# v5 (German, 23-oct-2026, PENDING Justo's OK): platform fee ramps with the launch instead of $7,500 flat from month one.
+# Cordel (email 20-oct-2026): "fixed costs at launch may ultimately lead to a no-go". Ladder, included block and everything else unchanged.
+RAMP = [3_000, 4_000, 5_500]              # months 1, 2, 3; PLATFORM ($7,500) from month 4. Concession = $10,000 (credits of $4,500 / $3,500 / $2,000 on $7,500)
+def platform_fee(month):                  # month 1 = first billed month (1-Dec-2026 if billing starts then)
+    return RAMP[month - 1] if month <= len(RAMP) else PLATFORM
 
 def usage(tpv, ladder=None):
     fee, lo = 0.0, 0.0
@@ -46,9 +51,11 @@ if __name__ == "__main__":
     print(f"\nall-in at $4.5M = {bps(t,tpv):.1f} bps; break-even conversion uplift by gross margin:")
     for m in (0.05, 0.10, 0.15, 0.20, 0.30):
         print(f"  margin {m:>4.0%}: need +{bps(t,tpv)/1e4/m*100:.2f}% more approved sales  (Yuno published uplift 7%)")
-    # launch ramp with credits
-    print(f"\nlaunch lever: ${CREDIT:,} credit x {CREDIT_MONTHS} months = ${CREDIT*CREDIT_MONTHS:,} total")
-    for label, tpv in (("Dec-26", 300_000), ("Jan-27", 500_000), ("Feb-27", 800_000), ("Mar-27", 1_200_000)):
-        c = CREDIT if label != "Mar-27" else 0
-        u, t = monthly(tpv, c)
-        print(f"  {label} TPV ${tpv/1e6:.1f}M -> usage ${u:,.0f} + platform ${PLATFORM-c:,} = ${t:,.0f}")
+    # v5 launch ramp (pending Justo): platform fee by month, nothing per transaction until $500K/month
+    y1 = sum(platform_fee(m) for m in range(1, 13))
+    print(f"\nv5 ramp: platform fee {' / '.join(f'${r:,}' for r in RAMP)} then ${PLATFORM:,}; year-1 platform ${y1:,} vs ${PLATFORM*12:,} flat, concession ${PLATFORM*12-y1:,} (vs ${CREDIT*CREDIT_MONTHS:,} on the v4 credit lever)")
+    for m, (label, tpv) in enumerate((("Dec-26", 300_000), ("Jan-27", 500_000), ("Feb-27", 800_000), ("Mar-27", 1_200_000)), 1):
+        u = usage(tpv); pf = platform_fee(m); t = u + pf
+        print(f"  m{m} {label} TPV ${tpv/1e6:.1f}M -> usage ${u:,.0f} + platform ${pf:,} = ${t:,.0f}  ({bps(t,tpv):.0f} bps)")
+    for tpv in (500_000,):
+        print(f"  slide tile: ${tpv/1e6:.1f}M in month 1 -> ${platform_fee(1):,} = {bps(platform_fee(1),tpv):.0f} bps of sales")

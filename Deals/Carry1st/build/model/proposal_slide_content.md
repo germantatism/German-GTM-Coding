@@ -76,3 +76,15 @@ Paragraph under it: "Usage at the $5 median ticket is $0.020 per transaction in 
 - Numbers must match `bc_model.xlsx` Pricing sheet (average-ticket block) exactly: $7,500 / $13,500 / $21,000; 1.50% / 0.68% / 0.47%; $0.150 / $0.068 / $0.047; at 200K tranche 1 = $1.5M x 0.40% = $6,000; at 450K tranche 1 $1.5M x 0.40% = $6,000 + tranche 2 $2.5M x 0.30% = $7,500.
 - "1,000+" is the y.uno figure for payment methods, PSPs and fraud solutions combined; do not split it into separate provider and method counts.
 - No em dashes and no spaced hyphens as punctuation anywhere. Use "·", commas, colons.
+
+## v3 deck (23 Oct 2026, pending Justo's OK): platform fee ramps with the launch
+
+Applied on the copy "Carry1st + Yuno_Oct 2026v3 (ramp)", Slides id `1qmkK4eFBaq_Hsp_EA3r-QngFNJp3XIupHUrJt2gPfqo`, by `apply_ramp_v3.py`; only the proposal slide changes.
+Trigger: Cordel, 20 Oct 2026: "fixed costs at launch may ultimately lead to a no-go".
+
+- Title: "A platform fee that ramps up over the first three months, then a share of sales that falls as Carry1st grows."
+- Sub-line: platform fee from $3,000 in month 1 to $7,500 from month 4, covering the first $500K of monthly sales, plus the share of sales above it ($21,000 a month at 450,000 transactions, 47 bps).
+- Middle card: the big "$7,500 / month" figure is replaced by a four-column strip "RAMPS UP WITH THE LAUNCH": MONTH 1 $3,000 · MONTH 2 $4,000 · MONTH 3 $5,500 · MONTH 4+ $7,500, then "Then $7,500 a month from month 4, covering the first $500K of monthly sales. This is what covers the stack." The includes list moves down 14pt.
+- Right card, first tile: $0.5M of monthly sales, you pay $3,000 in month 1, 60 bps of sales. Tiles at $2M and $4.5M unchanged. Callout: "The platform fee ramps with the launch, from $3,000 in month 1 to $7,500 from month 4. No fixed fee per transaction, and the rate falls as Carry1st grows."
+- Footer: "Platform fee billed monthly." (monthly billing of the platform fee is a yellow-zone item in the pricing policy; Justo to confirm).
+- Internal: year-1 platform fee $80,000 instead of $90,000, concession $10,000, cheaper than the v4 credit lever ($3,750 x 3 = $11,250). Bookable as $7,500 with launch credits of $4,500 / $3,500 / $2,000.

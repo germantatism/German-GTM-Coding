@@ -25,7 +25,8 @@ INP = dict(
     fixA=0.05, fixB=0.10,     # hypothetical fixed fees for the small-ticket argument
     ramp_m=13,                # Dec 2026 to Dec 2027 (going direct: linear $0.5M to $4.5M, markets enabled one by one; also the time-to-market baseline)
     # ---- INTERNAL launch lever (never on the customer slide) ----
-    credit=3750.0, credit_months=3, credit_on=0,   # $3,750 credit against the platform fee, Dec 2026 to Feb 2027, default OFF
+    credit=3750.0, credit_months=3, credit_on=0,   # v4 lever, superseded: $3,750 credit against the platform fee, Dec 2026 to Feb 2027, default OFF
+    ramp=[3000.0, 4000.0, 5500.0],                 # v5 (23 Oct 2026, pending Justo): platform fee in months 1 to 3, then pf; concession $10,000; run rate unchanged
 )
 SCEN = {
     # Integrations lever: mkt_weeks = engineer-weeks per market for EBANX direct (country enablement, per-country sandbox tests and certification,
