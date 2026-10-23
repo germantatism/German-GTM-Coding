@@ -14,6 +14,7 @@ for r in cfg['regions']:
 # ---------------- coverage from the rebuilt rows.json
 import sys as _sys; _sys.path.insert(0, f'{ROOT}/tools/connections'); import lib as _lib
 _lib.APPLY_HOMOLOGATING_EXTRA = False   # real status, not the deck's homologation framing
+_lib.CODE_AS_LIVE = False   # real status: 'Integrated (code)' stays distinct from Live in the ratings sheet
 rows = _lib.Data(ORDER).rows(signed=True)
 COV = collections.defaultdict(lambda: collections.defaultdict(set))
 for c, typ, name, meths, st, key in rows:

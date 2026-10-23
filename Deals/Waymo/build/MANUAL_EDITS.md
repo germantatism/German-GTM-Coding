@@ -1,6 +1,6 @@
 # Waymo connections deck · customisations on the live Google Slides file
 
-Current deck (v9, 23 Oct 2026): `1KBdTNcmpAWAqrdlBCibo1o-6CFE8QGPnJNFJIcOgnTw` ("Deck - Waymo + Yuno · Connections & Payment Methods (Oct 2026)"), 77 slides.
+Current deck (v10, 23 Oct 2026): `1GNgEptEXFiQtuc79yOgESnKNOBV8H621C_u8-xK_O0M` ("Deck - Waymo + Yuno · Connections & Payment Methods (Oct 2026)"), 69 slides. Previous: v9 `1KBdTNcmpAWAqrdlBCibo1o-6CFE8QGPnJNFJIcOgnTw` (renamed OLD).
 Previous decks: v8 `1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8`, v7 `1r7g6kFtX8ZENovd3-51qyx9M0369yYLahpwXEGeEHRY` and v6 `1Qu3JvldczchxT9TrXmUkU1bSso9ltTGvOt5peT3hHjQ`, renamed "OLD, do not use". The v6 copy stays as the reference the sync clones from.
 
 The live file diverges from `gs/deck_spec.json`. After ANY rebuild from the spec: run `vault_slides.py <pid>` (four vault slides, Geist restyle), then the scripts in
@@ -8,6 +8,9 @@ The live file diverges from `gs/deck_spec.json`. After ANY rebuild from the spec
 
 ## Why v7 exists (23 Oct 2026)
 - Review found slide 11 speaker notes naming another customer's deck (removed) and Germany without PayPal or Klarna because the y.uno PayPal and Klarna pages omit Germany. `lib.py` now shows a method where a live provider carries it and the scheme serves the country; PayPal also appeared for New Zealand, Taiwan, Venezuela, Panama, Guatemala and the Dominican Republic, Klarna for Mexico. Full rebuild on a fresh template copy.
+
+## Why v10 exists (23 Oct 2026)
+German, on the "Integrated in Yuno's code, not yet listed on y.uno/integrations" tier: "todos los que digan cosas así métalos como si estuvieran conectados" and "no pongas eso de que no están listados". `lib.CODE_AS_LIVE = True` now emits the 30 code-only provider rows as Live (SB Payment Service and Sony Payment Services in Japan, Tazapay in Singapore, GoCardless/Windcave/Fat Zebra in Australia, Opn in Thailand, Payssion in Korea, UseePay in Hong Kong, CCAvenue in India, GoCardless/Windcave in New Zealand, GoCardless/Opayo/Trust Payments/J.P. Morgan Orbital in the UK, GoCardless in Germany and Spain, GoCardless and J.P. Morgan Orbital in Canada, Prisma/Nave/MODO/Mobbex in Argentina, Itaú/Shopfácil/OKTO/Payamigo in Brazil, Refácil in Colombia, Conekta in Mexico). Six providers that v8/v9 showed as "in homologation" are code-only too and therefore now Live: GMO Payment Gateway (Japan), NHN KCP (Korea), Redsys (Spain), Moneris (Canada), Payway (Argentina), AllinPay (Singapore). Their methods (GoCardless direct debits, Conekta OXXO/SPEI, Prisma/MODO wallets, Itaú Pix…) now sit in the regular local-method rows. `make_spec.py` drops the tier header, the "Homologating · in code" column (now "Homologating") and the "In code = …" footnote whenever no row carries the code status; the "not listed" wording is gone from every slide. The ratings sheet keeps the real status (`build_gaps.py` sets `CODE_AS_LIVE = False`). Rebuilt on a fresh copy: build → `vault_slides.py` → `post_build_waymo.py`.
 
 ## Why v9 exists (23 Oct 2026)
 - German: no connection may appear under a country where it does not really operate (the "Walmart in Bolivia" kind of error). Geography check of every provider and method against the operators' own sites; 96 country pairs removed through `lib.GEO_EXCLUDE` (log: `GEO_CHECK.md`). Examples: NBK EG Wallet in Kuwait, QNB Al-Ahli wallet in Qatar, Tamara in Qatar, Tabby in Egypt, Google Pay in South Korea, Stripe in South Korea, Kushki in Canada, PagSeguro in Spain, Getnet outside its markets, Pockyt in the Gulf, Ecommpay in the Gulf.

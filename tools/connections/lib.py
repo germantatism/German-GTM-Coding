@@ -412,6 +412,7 @@ HOMOLOGATING_EXTRA = {
  'United Arab Emirates': [('Provider', 'Magnati', 'magnati.com')],
 }
 APPLY_HOMOLOGATING_EXTRA = True   # deck framing only; set False to get the real integration status (ratings sheet)
+CODE_AS_LIVE = True   # German 23-oct-2026: show the 'integrated in Yuno's code' providers as live, never as 'not listed'; set False for the real status (ratings sheet)
 HOMOLOGATING_EXTRA_DOMAIN = {nk(n): d for v in HOMOLOGATING_EXTRA.values() for _, n, d in v if d}
 SIGNED = [('Costa Rica', 'SINPE Móvil'), ('Indonesia', 'GoPay'), ('Indonesia', 'Kredivo'), ('Malaysia', 'DuitNow QR'), ('Vietnam', 'MoMo'), ('Vietnam', 'ZaloPay'), ('Vietnam', 'VNPay QR'),
           ('Vietnam', 'Viettel Money (ViettelPay)'), ('Vietnam', 'NAPAS domestic cards and VietQR')]
@@ -491,7 +492,7 @@ class Data:
                 if c not in cs or key in dir_keys or code_for(key) in dir_keys: continue
                 labs = self.labels(set(codes), c, key, recurring_only)
                 if recurring_only and not labs: continue
-                R.append([c, 'Provider', name, labs, 'Integrated (code)', key])
+                R.append([c, 'Provider', name, labs, 'Live' if CODE_AS_LIVE else 'Integrated (code)', key])
             carried = {lab for r in R if r[0] == c and r[1] == 'Provider' and r[4] == 'Live' for lab in r[3]}
             seen_m = set()
             for d in sorted(self.meth_by_c[c], key=lambda d: disp(d['name']).lower()):

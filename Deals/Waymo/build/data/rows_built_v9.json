@@ -1,0 +1,14008 @@
+[
+[
+"Japan",
+"Provider",
+"Adyen",
+[
+"Cards",
+"7-Eleven",
+"Apple Pay",
+"Google Pay",
+"Konbini (FamilyMart, Lawson, Ministop, Seicomart)",
+"Pay-easy",
+"PayPay"
+],
+"Live",
+"adyen"
+],
+[
+"Japan",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay",
+"PayPay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Japan",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Japan",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Japan",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Japan",
+"Provider",
+"dLocal",
+[
+"Cards",
+"7-Eleven"
+],
+"Live",
+"dlocal"
+],
+[
+"Japan",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"PayPal",
+"UnionPay"
+],
+"Live",
+"ecommpay"
+],
+[
+"Japan",
+"Provider",
+"Nium",
+[],
+"Homologating",
+"nium"
+],
+[
+"Japan",
+"Provider",
+"NTT DATA",
+[
+"Cards",
+"PayPay"
+],
+"Live",
+"nttdata"
+],
+[
+"Japan",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Japan",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Japan",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Japan",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Japan",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Japan",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Japan",
+"Provider",
+"Stripe",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"Japan",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"7-Eleven"
+],
+"Live",
+"unlimit"
+],
+[
+"Japan",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Japan",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Japan",
+"Provider",
+"SB Payment Service",
+[
+"Cards"
+],
+"Integrated (code)",
+"softbank"
+],
+[
+"Japan",
+"Provider",
+"Sony Payment Services",
+[
+"Cards"
+],
+"Integrated (code)",
+"sony"
+],
+[
+"Japan",
+"Direct payment method",
+"7-Eleven",
+[],
+"Live",
+"7eleven"
+],
+[
+"Japan",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Japan",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Japan",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Japan",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Japan",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Japan",
+"Direct payment method",
+"PayPay",
+[],
+"Live",
+"paypay"
+],
+[
+"Japan",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Japan",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Japan",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Japan",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Japan",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Japan",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Japan",
+"Provider",
+"GMO Payment Gateway",
+[],
+"Homologating",
+"gmopaymentgateway"
+],
+[
+"Japan",
+"Direct payment method",
+"JCB",
+[],
+"Homologating",
+"jcb"
+],
+[
+"Singapore",
+"Provider",
+"2C2P",
+[
+"Cards"
+],
+"Live",
+"2c2p"
+],
+[
+"Singapore",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"Atome",
+"Google Pay",
+"GrabPay"
+],
+"Live",
+"adyen"
+],
+[
+"Singapore",
+"Provider",
+"Airwallex",
+[
+"Cards",
+"Alipay",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"airwallex"
+],
+[
+"Singapore",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Singapore",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"Singapore",
+"Provider",
+"Boku",
+[
+"ShopeePay"
+],
+"Live",
+"boku"
+],
+[
+"Singapore",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"braintree"
+],
+[
+"Singapore",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Singapore",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Singapore",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal",
+"UnionPay"
+],
+"Live",
+"ecommpay"
+],
+[
+"Singapore",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Singapore",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Singapore",
+"Provider",
+"Nium",
+[],
+"Homologating",
+"nium"
+],
+[
+"Singapore",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Singapore",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Singapore",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Singapore",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Singapore",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Singapore",
+"Provider",
+"Stripe",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"Singapore",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Singapore",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Singapore",
+"Provider",
+"Tazapay",
+[],
+"Integrated (code)",
+"tazapay"
+],
+[
+"Singapore",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Singapore",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"Singapore",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Singapore",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Singapore",
+"Direct payment method",
+"GrabPay",
+[],
+"Live",
+"grabpay"
+],
+[
+"Singapore",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Singapore",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Singapore",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Singapore",
+"Direct payment method",
+"Samsung Pay",
+[],
+"Live",
+"samsungpay"
+],
+[
+"Singapore",
+"Direct payment method",
+"ShopeePay",
+[],
+"Live",
+"shopeepay"
+],
+[
+"Singapore",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Singapore",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Singapore",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Singapore",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Singapore",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Singapore",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Singapore",
+"Provider",
+"AllinPay",
+[],
+"Homologating",
+"allinpay"
+],
+[
+"Singapore",
+"Direct payment method",
+"PayNow",
+[],
+"Homologating",
+"paynow"
+],
+[
+"Australia",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Afterpay",
+"Apple Pay",
+"Google Pay",
+"Klarna"
+],
+"Live",
+"adyen"
+],
+[
+"Australia",
+"Provider",
+"Airwallex",
+[
+"Cards",
+"Alipay",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"airwallex"
+],
+[
+"Australia",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"Australia",
+"Provider",
+"Authorize.Net",
+[],
+"Live",
+"authorizenet"
+],
+[
+"Australia",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"braintree"
+],
+[
+"Australia",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Australia",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Australia",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"Australia",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Australia",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Australia",
+"Provider",
+"Nium",
+[],
+"Homologating",
+"nium"
+],
+[
+"Australia",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Klarna"
+],
+"Live",
+"nuvei"
+],
+[
+"Australia",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"Australia",
+"Provider",
+"PayWay",
+[],
+"Live",
+"payway"
+],
+[
+"Australia",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Australia",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Australia",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Australia",
+"Provider",
+"Stripe",
+[
+"Cards",
+"Afterpay",
+"Klarna",
+"PayPal",
+"Zip"
+],
+"Live",
+"stripe"
+],
+[
+"Australia",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Australia",
+"Provider",
+"Volt",
+[],
+"Live",
+"volt"
+],
+[
+"Australia",
+"Provider",
+"Worldline",
+[
+"Cards",
+"Zip"
+],
+"Live",
+"worldline"
+],
+[
+"Australia",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Australia",
+"Provider",
+"GoCardless",
+[
+"BECS direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Australia",
+"Provider",
+"Windcave",
+[
+"Cards"
+],
+"Integrated (code)",
+"windcave"
+],
+[
+"Australia",
+"Provider",
+"Fat Zebra",
+[
+"Cards",
+"BECS direct debit"
+],
+"Integrated (code)",
+"fatzebra"
+],
+[
+"Australia",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Australia",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Australia",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Australia",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Australia",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
+"Australia",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Australia",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Australia",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Australia",
+"Direct payment method",
+"Samsung Pay",
+[],
+"Live",
+"samsungpay"
+],
+[
+"Australia",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Australia",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Australia",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Australia",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Australia",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Thailand",
+"Provider",
+"2C2P",
+[
+"Cards"
+],
+"Live",
+"2c2p"
+],
+[
+"Thailand",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Google Pay"
+],
+"Live",
+"adyen"
+],
+[
+"Thailand",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Thailand",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"Thailand",
+"Provider",
+"Boku",
+[
+"ShopeePay"
+],
+"Live",
+"boku"
+],
+[
+"Thailand",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Thailand",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Thailand",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Thailand",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Big C",
+"ShopeePay",
+"Thai QR (PromptPay)",
+"TrueMoney"
+],
+"Live",
+"dlocal"
+],
+[
+"Thailand",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal",
+"UnionPay"
+],
+"Live",
+"ecommpay"
+],
+[
+"Thailand",
+"Provider",
+"NTT DATA",
+[
+"Cards"
+],
+"Live",
+"nttdata"
+],
+[
+"Thailand",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Thailand",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Thailand",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Thailand",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Thailand",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Thailand",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Thailand",
+"Provider",
+"Stripe",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"Thailand",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Thailand",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Thailand",
+"Provider",
+"Worldpay",
+[
+"Cards"
+],
+"Live",
+"worldpay"
+],
+[
+"Thailand",
+"Provider",
+"Xendit",
+[
+"Cards",
+"ShopeePay",
+"Thai QR (PromptPay)",
+"TrueMoney",
+"WeChat Pay"
+],
+"Live",
+"xendit"
+],
+[
+"Thailand",
+"Provider",
+"Opn",
+[],
+"Integrated (code)",
+"opn"
+],
+[
+"Thailand",
+"Direct payment method",
+"Big C",
+[],
+"Live",
+"bigc"
+],
+[
+"Thailand",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Thailand",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Thailand",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Thailand",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Thailand",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Thailand",
+"Direct payment method",
+"ShopeePay",
+[],
+"Live",
+"shopeepay"
+],
+[
+"Thailand",
+"Direct payment method",
+"Thai QR (PromptPay)",
+[],
+"Live",
+"thaiqr"
+],
+[
+"Thailand",
+"Direct payment method",
+"TrueMoney",
+[],
+"Live",
+"truemoney"
+],
+[
+"Thailand",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Thailand",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Thailand",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Thailand",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Thailand",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Indonesia",
+"Provider",
+"2C2P",
+[
+"Cards"
+],
+"Live",
+"2c2p"
+],
+[
+"Indonesia",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Google Pay",
+"OVO"
+],
+"Live",
+"adyen"
+],
+[
+"Indonesia",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Indonesia",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"Indonesia",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Indonesia",
+"Provider",
+"Boku",
+[
+"DANA",
+"GoPay",
+"ShopeePay"
+],
+"Live",
+"boku"
+],
+[
+"Indonesia",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Indonesia",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Indonesia",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Indonesia",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Alfamart",
+"OVO",
+"QRIS",
+"ShopeePay",
+"Virtual Account"
+],
+"Live",
+"dlocal"
+],
+[
+"Indonesia",
+"Provider",
+"Doku",
+[],
+"Homologating",
+"doku"
+],
+[
+"Indonesia",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal",
+"QRIS",
+"UnionPay"
+],
+"Live",
+"ecommpay"
+],
+[
+"Indonesia",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Indonesia",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Indonesia",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Indonesia",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Indonesia",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Indonesia",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Indonesia",
+"Provider",
+"Stripe",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"Indonesia",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Indonesia",
+"Provider",
+"Worldline",
+[
+"Cards",
+"Direct debit"
+],
+"Live",
+"worldline"
+],
+[
+"Indonesia",
+"Provider",
+"Xendit",
+[
+"Cards",
+"Alfamart",
+"DANA",
+"Direct debit",
+"Indomaret",
+"OVO",
+"QRIS",
+"ShopeePay",
+"Virtual Account",
+"WeChat Pay"
+],
+"Live",
+"xendit"
+],
+[
+"Indonesia",
+"Direct payment method",
+"Alfamart",
+[],
+"Live",
+"alfamart"
+],
+[
+"Indonesia",
+"Direct payment method",
+"DANA",
+[],
+"Live",
+"dana"
+],
+[
+"Indonesia",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Indonesia",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Indonesia",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Indonesia",
+"Direct payment method",
+"OVO",
+[],
+"Live",
+"ovowallet"
+],
+[
+"Indonesia",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Indonesia",
+"Direct payment method",
+"QRIS",
+[],
+"Live",
+"qris"
+],
+[
+"Indonesia",
+"Direct payment method",
+"ShopeePay",
+[],
+"Live",
+"shopeepay"
+],
+[
+"Indonesia",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Indonesia",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Indonesia",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Indonesia",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Indonesia",
+"Direct payment method",
+"GoPay",
+[],
+"Signed",
+"gopay"
+],
+[
+"Indonesia",
+"Direct payment method",
+"Kredivo",
+[],
+"Signed",
+"kredivo"
+],
+[
+"Indonesia",
+"Provider",
+"Midtrans",
+[],
+"Homologating",
+"midtrans"
+],
+[
+"South Korea",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"Bank transfer (KCP)",
+"Kakao Pay",
+"Naver Pay",
+"Payco"
+],
+"Live",
+"adyen"
+],
+[
+"South Korea",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay",
+"Kakao Pay",
+"Naver Pay",
+"Toss Pay"
+],
+"Live",
+"antomalipay"
+],
+[
+"South Korea",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"South Korea",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"South Korea",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"South Korea",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"South Korea",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"South Korea",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"South Korea",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"South Korea",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"South Korea",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"South Korea",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"South Korea",
+"Provider",
+"Payssion",
+[
+"Cards",
+"Naver Pay",
+"Payco",
+"Samsung Pay",
+"SSG Pay"
+],
+"Integrated (code)",
+"payssion"
+],
+[
+"South Korea",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"South Korea",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"South Korea",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"South Korea",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"South Korea",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"South Korea",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"South Korea",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"South Korea",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"South Korea",
+"Provider",
+"NHN KCP",
+[],
+"Homologating",
+"nhnkcp"
+],
+[
+"South Korea",
+"Provider",
+"KG Inicis",
+[],
+"Homologating",
+"kginicis"
+],
+[
+"South Korea",
+"Provider",
+"Toss Payments",
+[],
+"Homologating",
+"tosspayments"
+],
+[
+"South Korea",
+"Provider",
+"NICE Payments",
+[],
+"Homologating",
+"nicepayments"
+],
+[
+"South Korea",
+"Direct payment method",
+"Korean domestic cards (local PG)",
+[],
+"Homologating",
+"koreandomesticcardslocalpg"
+],
+[
+"Taiwan",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"Taiwan",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Taiwan",
+"Provider",
+"ECPay",
+[],
+"Live",
+"ecpay"
+],
+[
+"Taiwan",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Taiwan",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Taiwan",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Taiwan",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Taiwan",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Taiwan",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Taiwan",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Taiwan",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Taiwan",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Taiwan",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Taiwan",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Taiwan",
+"Direct payment method",
+"ShopeePay",
+[],
+"Live",
+"shopeepay"
+],
+[
+"Taiwan",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Taiwan",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Taiwan",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Taiwan",
+"Direct payment method",
+"LINE Pay",
+[],
+"Homologating",
+"linepay"
+],
+[
+"Hong Kong",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Hong Kong",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Hong Kong",
+"Provider",
+"UseePay",
+[
+"Cards"
+],
+"Integrated (code)",
+"useepay"
+],
+[
+"Hong Kong",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Hong Kong",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Hong Kong",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Hong Kong",
+"Direct payment method",
+"AlipayHK",
+[],
+"Homologating",
+"alipayhk"
+],
+[
+"Hong Kong",
+"Provider",
+"Adyen",
+[],
+"Homologating",
+"adyen"
+],
+[
+"Hong Kong",
+"Provider",
+"Global Payments",
+[],
+"Homologating",
+"globalpayments"
+],
+[
+"Malaysia",
+"Provider",
+"2C2P",
+[
+"Cards"
+],
+"Live",
+"2c2p"
+],
+[
+"Malaysia",
+"Provider",
+"Adyen",
+[
+"Cards",
+"7-Eleven",
+"Apple Pay",
+"Atome",
+"Google Pay",
+"GrabPay"
+],
+"Live",
+"adyen"
+],
+[
+"Malaysia",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Malaysia",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"Malaysia",
+"Provider",
+"Boku",
+[
+"ShopeePay",
+"Touch 'n Go"
+],
+"Live",
+"boku"
+],
+[
+"Malaysia",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"braintree"
+],
+[
+"Malaysia",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Malaysia",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Malaysia",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Malaysia",
+"Provider",
+"dLocal",
+[
+"Cards",
+"7-Eleven",
+"Boost",
+"FPX",
+"ShopeePay",
+"Touch 'n Go"
+],
+"Live",
+"dlocal"
+],
+[
+"Malaysia",
+"Provider",
+"Doku",
+[],
+"Homologating",
+"doku"
+],
+[
+"Malaysia",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Malaysia",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Malaysia",
+"Provider",
+"NTT DATA",
+[
+"Cards"
+],
+"Live",
+"nttdata"
+],
+[
+"Malaysia",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Malaysia",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Malaysia",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Malaysia",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Malaysia",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Malaysia",
+"Provider",
+"Stripe",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"Malaysia",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"7-Eleven"
+],
+"Live",
+"unlimit"
+],
+[
+"Malaysia",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Malaysia",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Malaysia",
+"Provider",
+"Xendit",
+[
+"Cards",
+"7-Eleven",
+"FPX",
+"GrabPay",
+"ShopeePay",
+"Touch 'n Go",
+"WeChat Pay"
+],
+"Live",
+"xendit"
+],
+[
+"Malaysia",
+"Direct payment method",
+"7-Eleven",
+[],
+"Live",
+"7eleven"
+],
+[
+"Malaysia",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Malaysia",
+"Direct payment method",
+"Boost",
+[],
+"Live",
+"boost"
+],
+[
+"Malaysia",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Malaysia",
+"Direct payment method",
+"FPX",
+[],
+"Live",
+"fpx"
+],
+[
+"Malaysia",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Malaysia",
+"Direct payment method",
+"GrabPay",
+[],
+"Live",
+"grabpay"
+],
+[
+"Malaysia",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Malaysia",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Malaysia",
+"Direct payment method",
+"ShopeePay",
+[],
+"Live",
+"shopeepay"
+],
+[
+"Malaysia",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Malaysia",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Malaysia",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Malaysia",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Malaysia",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Malaysia",
+"Direct payment method",
+"DuitNow QR",
+[],
+"Homologating",
+"duitnowqr"
+],
+[
+"Philippines",
+"Provider",
+"2C2P",
+[
+"Cards"
+],
+"Live",
+"2c2p"
+],
+[
+"Philippines",
+"Provider",
+"Adyen",
+[
+"Cards",
+"7-Eleven",
+"Apple Pay",
+"GCash",
+"Google Pay",
+"GrabPay"
+],
+"Live",
+"adyen"
+],
+[
+"Philippines",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Philippines",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"Philippines",
+"Provider",
+"Boku",
+[
+"GCash",
+"ShopeePay"
+],
+"Live",
+"boku"
+],
+[
+"Philippines",
+"Provider",
+"Checkout.com",
+[
+"Cards",
+"GCash"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Philippines",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Philippines",
+"Provider",
+"dLocal",
+[
+"Cards",
+"7-Eleven",
+"GCash",
+"ShopeePay"
+],
+"Live",
+"dlocal"
+],
+[
+"Philippines",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"GCash",
+"Neteller",
+"PayPal",
+"QR Ph",
+"UnionPay"
+],
+"Live",
+"ecommpay"
+],
+[
+"Philippines",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Philippines",
+"Provider",
+"Maya",
+[
+"Cards",
+"Maya",
+"QR Ph"
+],
+"Live",
+"maya"
+],
+[
+"Philippines",
+"Provider",
+"NTT DATA",
+[
+"Cards"
+],
+"Live",
+"nttdata"
+],
+[
+"Philippines",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Philippines",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Philippines",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Philippines",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Philippines",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Philippines",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"7-Eleven"
+],
+"Live",
+"unlimit"
+],
+[
+"Philippines",
+"Provider",
+"Xendit",
+[
+"Cards",
+"7-Eleven",
+"Direct debit",
+"GCash",
+"GrabPay",
+"Maya",
+"ShopeePay",
+"WeChat Pay"
+],
+"Live",
+"xendit"
+],
+[
+"Philippines",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Philippines",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Philippines",
+"Direct payment method",
+"GCash",
+[],
+"Live",
+"gcash"
+],
+[
+"Philippines",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Philippines",
+"Direct payment method",
+"GrabPay",
+[],
+"Live",
+"grabpay"
+],
+[
+"Philippines",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Philippines",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Philippines",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Philippines",
+"Direct payment method",
+"ShopeePay",
+[],
+"Live",
+"shopeepay"
+],
+[
+"Philippines",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Philippines",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Philippines",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Philippines",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Vietnam",
+"Provider",
+"2C2P",
+[
+"Cards"
+],
+"Live",
+"2c2p"
+],
+[
+"Vietnam",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"Google Pay",
+"MoMo"
+],
+"Live",
+"adyen"
+],
+[
+"Vietnam",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay",
+"MoMo"
+],
+"Live",
+"antomalipay"
+],
+[
+"Vietnam",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"Vietnam",
+"Provider",
+"Boku",
+[
+"ShopeePay"
+],
+"Live",
+"boku"
+],
+[
+"Vietnam",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Vietnam",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Vietnam",
+"Provider",
+"dLocal",
+[
+"Cards",
+"ShopeePay"
+],
+"Live",
+"dlocal"
+],
+[
+"Vietnam",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"MoMo",
+"Neteller",
+"PayPal",
+"UnionPay"
+],
+"Live",
+"ecommpay"
+],
+[
+"Vietnam",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Vietnam",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Vietnam",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Vietnam",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Vietnam",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Vietnam",
+"Provider",
+"Xendit",
+[
+"Cards",
+"ShopeePay",
+"WeChat Pay"
+],
+"Live",
+"xendit"
+],
+[
+"Vietnam",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Vietnam",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Vietnam",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Vietnam",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Vietnam",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Vietnam",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Vietnam",
+"Direct payment method",
+"ShopeePay",
+[],
+"Live",
+"shopeepay"
+],
+[
+"Vietnam",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Vietnam",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Vietnam",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Vietnam",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Vietnam",
+"Direct payment method",
+"MoMo",
+[],
+"Signed",
+"momo"
+],
+[
+"Vietnam",
+"Direct payment method",
+"ZaloPay",
+[],
+"Signed",
+"zalopay"
+],
+[
+"Vietnam",
+"Direct payment method",
+"VNPay QR",
+[],
+"Signed",
+"vnpayqr"
+],
+[
+"Vietnam",
+"Direct payment method",
+"Viettel Money (ViettelPay)",
+[],
+"Signed",
+"viettelmoneyviettelpay"
+],
+[
+"Vietnam",
+"Direct payment method",
+"NAPAS domestic cards and VietQR",
+[],
+"Signed",
+"napasdomesticcardsandvietqr"
+],
+[
+"India",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"Google Pay",
+"UPI",
+"UPI Autopay"
+],
+"Live",
+"adyen"
+],
+[
+"India",
+"Provider",
+"AsiaPay",
+[],
+"Homologating",
+"asiapay"
+],
+[
+"India",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"India",
+"Provider",
+"Billdesk",
+[],
+"Live",
+"billdesk"
+],
+[
+"India",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"India",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"India",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"India",
+"Provider",
+"dLocal",
+[
+"Cards",
+"UPI"
+],
+"Live",
+"dlocal"
+],
+[
+"India",
+"Provider",
+"EBANX",
+[
+"Cards",
+"PayPal",
+"UPI",
+"UPI Autopay"
+],
+"Live",
+"ebanx"
+],
+[
+"India",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"India",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"India",
+"Provider",
+"Nium",
+[],
+"Homologating",
+"nium"
+],
+[
+"India",
+"Provider",
+"NTT DATA",
+[
+"Cards"
+],
+"Live",
+"nttdata"
+],
+[
+"India",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"India",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"India",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"India",
+"Provider",
+"PayU",
+[
+"Cards",
+"UPI"
+],
+"Live",
+"payu"
+],
+[
+"India",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"India",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"India",
+"Provider",
+"Razorpay",
+[],
+"Live",
+"razorpay"
+],
+[
+"India",
+"Provider",
+"Stripe",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"India",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"India",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"India",
+"Provider",
+"CCAvenue",
+[
+"Cards"
+],
+"Integrated (code)",
+"ccavenue"
+],
+[
+"India",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"India",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"India",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"India",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"India",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"India",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"India",
+"Direct payment method",
+"Payzen",
+[],
+"Live",
+"payzen"
+],
+[
+"India",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"India",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"India",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"India",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"India",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"New Zealand",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Afterpay",
+"Apple Pay",
+"Google Pay",
+"Klarna"
+],
+"Live",
+"adyen"
+],
+[
+"New Zealand",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"braintree"
+],
+[
+"New Zealand",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"New Zealand",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"New Zealand",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"New Zealand",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Klarna"
+],
+"Live",
+"nuvei"
+],
+[
+"New Zealand",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"New Zealand",
+"Provider",
+"Paysquad",
+[],
+"Live",
+"paysquad"
+],
+[
+"New Zealand",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"New Zealand",
+"Provider",
+"Stripe",
+[
+"Cards",
+"Afterpay",
+"Klarna",
+"PayPal",
+"Zip"
+],
+"Live",
+"stripe"
+],
+[
+"New Zealand",
+"Provider",
+"Worldline",
+[
+"Cards",
+"Zip"
+],
+"Live",
+"worldline"
+],
+[
+"New Zealand",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"New Zealand",
+"Provider",
+"GoCardless",
+[
+"BECS direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"New Zealand",
+"Provider",
+"Windcave",
+[
+"Cards"
+],
+"Integrated (code)",
+"windcave"
+],
+[
+"New Zealand",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"New Zealand",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"New Zealand",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"New Zealand",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
+"New Zealand",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"New Zealand",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"New Zealand",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"New Zealand",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"New Zealand",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"New Zealand",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"United Kingdom",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"Bacs direct debit",
+"Clearpay",
+"Google Pay",
+"Klarna",
+"Trustly"
+],
+"Live",
+"adyen"
+],
+[
+"United Kingdom",
+"Provider",
+"Airwallex",
+[
+"Cards",
+"Alipay",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"airwallex"
+],
+[
+"United Kingdom",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"United Kingdom",
+"Provider",
+"Authorize.Net",
+[],
+"Live",
+"authorizenet"
+],
+[
+"United Kingdom",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"braintree"
+],
+[
+"United Kingdom",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"United Kingdom",
+"Provider",
+"Cybersource",
+[
+"Cards",
+"Bacs direct debit"
+],
+"Live",
+"cybersource"
+],
+[
+"United Kingdom",
+"Provider",
+"E-Comprocessing",
+[
+"Cards"
+],
+"Live",
+"ecomprocessing"
+],
+[
+"United Kingdom",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal",
+"UnionPay"
+],
+"Live",
+"ecommpay"
+],
+[
+"United Kingdom",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"United Kingdom",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"United Kingdom",
+"Provider",
+"Mollie",
+[],
+"Live",
+"mollie"
+],
+[
+"United Kingdom",
+"Provider",
+"Nium",
+[],
+"Homologating",
+"nium"
+],
+[
+"United Kingdom",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Klarna"
+],
+"Live",
+"nuvei"
+],
+[
+"United Kingdom",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"United Kingdom",
+"Provider",
+"payabl.",
+[],
+"Live",
+"payabl"
+],
+[
+"United Kingdom",
+"Provider",
+"Paynetics",
+[],
+"Live",
+"paynetics"
+],
+[
+"United Kingdom",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"United Kingdom",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"United Kingdom",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"United Kingdom",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"United Kingdom",
+"Provider",
+"Revolut",
+[
+"Revolut Pay"
+],
+"Live",
+"revolut"
+],
+[
+"United Kingdom",
+"Provider",
+"Stripe",
+[
+"Cards",
+"Bacs direct debit",
+"Klarna",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"United Kingdom",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"United Kingdom",
+"Provider",
+"Volt",
+[],
+"Live",
+"volt"
+],
+[
+"United Kingdom",
+"Provider",
+"Worldline",
+[
+"Cards",
+"Bacs direct debit"
+],
+"Live",
+"worldline"
+],
+[
+"United Kingdom",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"United Kingdom",
+"Provider",
+"GoCardless",
+[
+"Bacs direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"United Kingdom",
+"Provider",
+"Opayo",
+[
+"Cards"
+],
+"Integrated (code)",
+"opayo"
+],
+[
+"United Kingdom",
+"Provider",
+"Trust Payments",
+[
+"Cards"
+],
+"Integrated (code)",
+"trustpayments"
+],
+[
+"United Kingdom",
+"Provider",
+"J.P. Morgan (Orbital)",
+[
+"Cards",
+"Bacs direct debit",
+"Google Pay"
+],
+"Integrated (code)",
+"orbital"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Paysera",
+[],
+"Live",
+"paysera"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Samsung Pay",
+[],
+"Live",
+"samsungpay"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Trustly",
+[],
+"Live",
+"trustly"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"United Kingdom",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Germany",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"EU bank transfer",
+"Google Pay",
+"Klarna",
+"SEPA Direct Debit",
+"Trustly"
+],
+"Live",
+"adyen"
+],
+[
+"Germany",
+"Provider",
+"Airwallex",
+[
+"Cards",
+"Alipay",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"airwallex"
+],
+[
+"Germany",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Germany",
+"Provider",
+"Authorize.Net",
+[],
+"Live",
+"authorizenet"
+],
+[
+"Germany",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"braintree"
+],
+[
+"Germany",
+"Provider",
+"Checkout.com",
+[
+"Cards",
+"SEPA Direct Debit"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Germany",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Germany",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"Open banking",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"Germany",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Germany",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Germany",
+"Provider",
+"Mollie",
+[],
+"Live",
+"mollie"
+],
+[
+"Germany",
+"Provider",
+"Novalnet",
+[
+"Cards"
+],
+"Live",
+"novalnet"
+],
+[
+"Germany",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Klarna"
+],
+"Live",
+"nuvei"
+],
+[
+"Germany",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Germany",
+"Provider",
+"payabl.",
+[],
+"Live",
+"payabl"
+],
+[
+"Germany",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Germany",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Germany",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Germany",
+"Provider",
+"Revolut",
+[
+"Revolut Pay"
+],
+"Live",
+"revolut"
+],
+[
+"Germany",
+"Provider",
+"Stripe",
+[
+"Cards",
+"Klarna",
+"PayPal",
+"SEPA Direct Debit"
+],
+"Live",
+"stripe"
+],
+[
+"Germany",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Germany",
+"Provider",
+"Volt",
+[],
+"Live",
+"volt"
+],
+[
+"Germany",
+"Provider",
+"Worldline",
+[
+"Cards",
+"SEPA Direct Debit"
+],
+"Live",
+"worldline"
+],
+[
+"Germany",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Germany",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Germany",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Germany",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"Germany",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Germany",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Germany",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Germany",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Germany",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Germany",
+"Direct payment method",
+"Paysera",
+[],
+"Live",
+"paysera"
+],
+[
+"Germany",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Germany",
+"Direct payment method",
+"Trustly",
+[],
+"Live",
+"trustly"
+],
+[
+"Germany",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Germany",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Germany",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Germany",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Germany",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Germany",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
+"Germany",
+"Provider",
+"Payone",
+[],
+"Homologating",
+"payone"
+],
+[
+"Spain",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"EU bank transfer",
+"Google Pay",
+"Klarna",
+"SEPA Direct Debit",
+"Trustly"
+],
+"Live",
+"adyen"
+],
+[
+"Spain",
+"Provider",
+"Airwallex",
+[
+"Cards",
+"Alipay",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"airwallex"
+],
+[
+"Spain",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Spain",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Spain",
+"Provider",
+"Authorize.Net",
+[],
+"Live",
+"authorizenet"
+],
+[
+"Spain",
+"Provider",
+"BBVA",
+[
+"Cards"
+],
+"Live",
+"bbva"
+],
+[
+"Spain",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"braintree"
+],
+[
+"Spain",
+"Provider",
+"Checkout.com",
+[
+"Cards",
+"SEPA Direct Debit"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Spain",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Spain",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"Spain",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Spain",
+"Provider",
+"Getnet",
+[
+"Cards"
+],
+"Live",
+"getnet"
+],
+[
+"Spain",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Spain",
+"Provider",
+"Mollie",
+[],
+"Live",
+"mollie"
+],
+[
+"Spain",
+"Provider",
+"Novalnet",
+[
+"Cards"
+],
+"Live",
+"novalnet"
+],
+[
+"Spain",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Klarna"
+],
+"Live",
+"nuvei"
+],
+[
+"Spain",
+"Provider",
+"payabl.",
+[],
+"Live",
+"payabl"
+],
+[
+"Spain",
+"Provider",
+"Paynetics",
+[],
+"Live",
+"paynetics"
+],
+[
+"Spain",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Spain",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Spain",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Spain",
+"Provider",
+"Revolut",
+[
+"Revolut Pay"
+],
+"Live",
+"revolut"
+],
+[
+"Spain",
+"Provider",
+"Stripe",
+[
+"Cards",
+"Klarna",
+"PayPal",
+"SEPA Direct Debit"
+],
+"Live",
+"stripe"
+],
+[
+"Spain",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Spain",
+"Provider",
+"Volt",
+[],
+"Live",
+"volt"
+],
+[
+"Spain",
+"Provider",
+"Worldline",
+[
+"Cards",
+"SEPA Direct Debit"
+],
+"Live",
+"worldline"
+],
+[
+"Spain",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Spain",
+"Provider",
+"GoCardless",
+[
+"SEPA Direct Debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Spain",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Spain",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"Spain",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Spain",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Spain",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Spain",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
+"Spain",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Spain",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Spain",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Spain",
+"Direct payment method",
+"Paysera",
+[],
+"Live",
+"paysera"
+],
+[
+"Spain",
+"Direct payment method",
+"Samsung Pay",
+[],
+"Live",
+"samsungpay"
+],
+[
+"Spain",
+"Direct payment method",
+"SIBS",
+[],
+"Live",
+"sibs"
+],
+[
+"Spain",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Spain",
+"Direct payment method",
+"Trustly",
+[],
+"Live",
+"trustly"
+],
+[
+"Spain",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Spain",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Spain",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Spain",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Spain",
+"Provider",
+"Redsys",
+[],
+"Homologating",
+"redsys"
+],
+[
+"Canada",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Afterpay",
+"Apple Pay",
+"Google Pay",
+"Klarna",
+"Trustly"
+],
+"Live",
+"adyen"
+],
+[
+"Canada",
+"Provider",
+"Airwallex",
+[
+"Cards",
+"Alipay",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"airwallex"
+],
+[
+"Canada",
+"Provider",
+"Authorize.Net",
+[],
+"Live",
+"authorizenet"
+],
+[
+"Canada",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"braintree"
+],
+[
+"Canada",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Canada",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Canada",
+"Provider",
+"Elavon",
+[
+"Cards"
+],
+"Live",
+"elavon"
+],
+[
+"Canada",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Canada",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Canada",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Klarna"
+],
+"Live",
+"nuvei"
+],
+[
+"Canada",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"Canada",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Canada",
+"Provider",
+"Stripe",
+[
+"Cards",
+"Afterpay",
+"Klarna",
+"PAD direct debit",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"Canada",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Canada",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Canada",
+"Provider",
+"GoCardless",
+[
+"PAD direct debit"
+],
+"Integrated (code)",
+"gocardless"
+],
+[
+"Canada",
+"Provider",
+"J.P. Morgan (Orbital)",
+[
+"Cards",
+"Google Pay"
+],
+"Integrated (code)",
+"orbital"
+],
+[
+"Canada",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Canada",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"Canada",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Canada",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Canada",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Canada",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
+"Canada",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Canada",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Canada",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Canada",
+"Direct payment method",
+"Samsung Pay",
+[],
+"Live",
+"samsungpay"
+],
+[
+"Canada",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Canada",
+"Direct payment method",
+"Trustly",
+[],
+"Live",
+"trustly"
+],
+[
+"Canada",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Canada",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Canada",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Canada",
+"Provider",
+"Moneris",
+[],
+"Homologating",
+"moneris"
+],
+[
+"Argentina",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Argentina",
+"Provider",
+"Bamboo",
+[
+"Cards",
+"Pago Fácil",
+"Transferencias 3.0"
+],
+"Live",
+"bamboo"
+],
+[
+"Argentina",
+"Provider",
+"Banco Galicia",
+[],
+"Live",
+"bancogalicia"
+],
+[
+"Argentina",
+"Provider",
+"BBVA",
+[
+"Cards"
+],
+"Live",
+"bbva"
+],
+[
+"Argentina",
+"Provider",
+"Cobro Digital",
+[
+"Cards"
+],
+"Live",
+"cobrodigital"
+],
+[
+"Argentina",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Argentina",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"Cash",
+"MODO",
+"Pago Fácil",
+"Rapipago"
+],
+"Live",
+"dlocal"
+],
+[
+"Argentina",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"Checkout Pro",
+"PayPal",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)"
+],
+"Live",
+"ebanx"
+],
+[
+"Argentina",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"Argentina",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Argentina",
+"Provider",
+"Getnet",
+[
+"Cards"
+],
+"Live",
+"getnet"
+],
+[
+"Argentina",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Argentina",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Argentina",
+"Provider",
+"Mercado Pago",
+[
+"Cards",
+"Checkout Pro",
+"Mercado Pago Fast Payments",
+"Mercado Pago QR",
+"Mercado Pago Wallet"
+],
+"Live",
+"mercadopago"
+],
+[
+"Argentina",
+"Provider",
+"Monnet",
+[
+"Cards"
+],
+"Live",
+"monnet"
+],
+[
+"Argentina",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Argentina",
+"Provider",
+"PagSeguro",
+[
+"Cards"
+],
+"Live",
+"pagseguro"
+],
+[
+"Argentina",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Argentina",
+"Provider",
+"PayRetailers",
+[],
+"Live",
+"payretailers"
+],
+[
+"Argentina",
+"Provider",
+"PayU",
+[
+"Cards",
+"Cash"
+],
+"Live",
+"payu"
+],
+[
+"Argentina",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Argentina",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"unlimit"
+],
+[
+"Argentina",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Argentina",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Argentina",
+"Provider",
+"Prisma",
+[
+"Cards"
+],
+"Integrated (code)",
+"prisma"
+],
+[
+"Argentina",
+"Provider",
+"Nave",
+[
+"Cards"
+],
+"Integrated (code)",
+"nave"
+],
+[
+"Argentina",
+"Provider",
+"MODO",
+[
+"MODO"
+],
+"Integrated (code)",
+"modo"
+],
+[
+"Argentina",
+"Provider",
+"Mobbex",
+[
+"Cards"
+],
+"Integrated (code)",
+"mobbex"
+],
+[
+"Argentina",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Argentina",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"Argentina",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Argentina",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Argentina",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Argentina",
+"Direct payment method",
+"Khipu",
+[],
+"Live",
+"khipu"
+],
+[
+"Argentina",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Argentina",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Argentina",
+"Direct payment method",
+"Pago Fácil",
+[],
+"Live",
+"pagofacil"
+],
+[
+"Argentina",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Argentina",
+"Direct payment method",
+"Payzen",
+[],
+"Live",
+"payzen"
+],
+[
+"Argentina",
+"Direct payment method",
+"Rapipago",
+[],
+"Live",
+"rapipago"
+],
+[
+"Argentina",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Argentina",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Argentina",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Argentina",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Argentina",
+"Direct payment method",
+"Wibond",
+[],
+"Live",
+"wibond"
+],
+[
+"Argentina",
+"Provider",
+"Payway",
+[],
+"Homologating",
+"payway"
+],
+[
+"Brazil",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"Google Pay",
+"Google Pay PIX",
+"PIX",
+"PIX Automático",
+"PIX biométrico",
+"Trustly"
+],
+"Live",
+"adyen"
+],
+[
+"Brazil",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Brazil",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Brazil",
+"Provider",
+"Bamboo",
+[
+"Cards",
+"Bank transfer",
+"Boleto",
+"PIX"
+],
+"Live",
+"bamboo"
+],
+[
+"Brazil",
+"Provider",
+"Banco do Brasil",
+[
+"BB Pay",
+"Boleto",
+"PIX"
+],
+"Live",
+"bancodobrasil"
+],
+[
+"Brazil",
+"Provider",
+"Banco Rendimento",
+[],
+"Homologating",
+"bancorendimento"
+],
+[
+"Brazil",
+"Provider",
+"Barte",
+[
+"Cards"
+],
+"Live",
+"barte"
+],
+[
+"Brazil",
+"Provider",
+"Bradesco",
+[
+"Boleto",
+"PIX"
+],
+"Live",
+"bradesco"
+],
+[
+"Brazil",
+"Provider",
+"BTG Pactual",
+[],
+"Homologating",
+"btgpactual"
+],
+[
+"Brazil",
+"Provider",
+"Cielo",
+[
+"Cards",
+"Apple Pay",
+"Google Pay",
+"PIX"
+],
+"Live",
+"cielo"
+],
+[
+"Brazil",
+"Provider",
+"Commerce Gate",
+[],
+"Homologating",
+"commercegate"
+],
+[
+"Brazil",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Brazil",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Brazil",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"Boleto",
+"NuPay",
+"PIX",
+"Smart PIX"
+],
+"Live",
+"dlocal"
+],
+[
+"Brazil",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Boleto",
+"Cash",
+"Checkout Pro",
+"PayPal",
+"PicPay",
+"PIX",
+"PIX Automático",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)"
+],
+"Live",
+"ebanx"
+],
+[
+"Brazil",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"Brazil",
+"Provider",
+"emerchantpay",
+[
+"Cards"
+],
+"Live",
+"emerchantpay"
+],
+[
+"Brazil",
+"Provider",
+"Facilitapay",
+[],
+"Homologating",
+"facilitapay"
+],
+[
+"Brazil",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay",
+"PIX"
+],
+"Live",
+"fiserv"
+],
+[
+"Brazil",
+"Provider",
+"Getnet",
+[
+"Cards",
+"PIX"
+],
+"Live",
+"getnet"
+],
+[
+"Brazil",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Brazil",
+"Provider",
+"Koin",
+[
+"PIX Parcelado"
+],
+"Live",
+"koin"
+],
+[
+"Brazil",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Brazil",
+"Provider",
+"Mercado Pago",
+[
+"Cards",
+"Boleto",
+"Checkout Pro",
+"Mercado Pago Fast Payments",
+"Mercado Pago QR",
+"Mercado Pago Wallet",
+"PIX"
+],
+"Live",
+"mercadopago"
+],
+[
+"Brazil",
+"Provider",
+"More Payments",
+[],
+"Homologating",
+"morepaymentsuniteller"
+],
+[
+"Brazil",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"PIX"
+],
+"Live",
+"nuvei"
+],
+[
+"Brazil",
+"Provider",
+"Openco",
+[],
+"Homologating",
+"openco"
+],
+[
+"Brazil",
+"Provider",
+"Pag Brasil",
+[],
+"Homologating",
+"pagbrasil"
+],
+[
+"Brazil",
+"Provider",
+"Pagaleve",
+[
+"PIX",
+"PIX Parcelado"
+],
+"Live",
+"pagaleve"
+],
+[
+"Brazil",
+"Provider",
+"Pagar.me",
+[
+"Cards",
+"Boleto",
+"PIX"
+],
+"Live",
+"pagarme"
+],
+[
+"Brazil",
+"Provider",
+"PagBank",
+[
+"Cards",
+"Boleto",
+"Pagar com PagBank",
+"PIX"
+],
+"Live",
+"pagbank"
+],
+[
+"Brazil",
+"Provider",
+"PagSeguro",
+[
+"Cards",
+"PIX"
+],
+"Live",
+"pagseguro"
+],
+[
+"Brazil",
+"Provider",
+"Pagsmile",
+[
+"PIX"
+],
+"Live",
+"pagsmile"
+],
+[
+"Brazil",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Brazil",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Brazil",
+"Provider",
+"PayRetailers",
+[
+"PIX",
+"PIX Automático"
+],
+"Live",
+"payretailers"
+],
+[
+"Brazil",
+"Provider",
+"PayU",
+[
+"Cards",
+"Cash"
+],
+"Live",
+"payu"
+],
+[
+"Brazil",
+"Provider",
+"PicPay",
+[
+"Cards",
+"PicPay",
+"PIX"
+],
+"Live",
+"picpay"
+],
+[
+"Brazil",
+"Provider",
+"Pinbank",
+[
+"Cards",
+"PIX"
+],
+"Live",
+"pinbank"
+],
+[
+"Brazil",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Brazil",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Brazil",
+"Provider",
+"Primefy",
+[],
+"Homologating",
+"primefy"
+],
+[
+"Brazil",
+"Provider",
+"Pronto Paga",
+[],
+"Homologating",
+"prontopaga"
+],
+[
+"Brazil",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Brazil",
+"Provider",
+"Rede",
+[
+"Cards",
+"Google Pay",
+"Samsung Pay"
+],
+"Live",
+"rede"
+],
+[
+"Brazil",
+"Provider",
+"Safe2Pay",
+[
+"Cards"
+],
+"Live",
+"safe2pay"
+],
+[
+"Brazil",
+"Provider",
+"SafetyPay",
+[
+"PIX",
+"SafetyPay"
+],
+"Live",
+"safetypay"
+],
+[
+"Brazil",
+"Provider",
+"Safrapay",
+[
+"Cards"
+],
+"Live",
+"safrapay"
+],
+[
+"Brazil",
+"Provider",
+"Santander",
+[
+"PIX"
+],
+"Live",
+"santander"
+],
+[
+"Brazil",
+"Provider",
+"Stark Bank",
+[
+"PIX"
+],
+"Live",
+"starkbank"
+],
+[
+"Brazil",
+"Provider",
+"Stone",
+[
+"Cards"
+],
+"Live",
+"stone"
+],
+[
+"Brazil",
+"Provider",
+"Stripe",
+[
+"Cards",
+"PayPal",
+"PIX",
+"PIX Automático"
+],
+"Live",
+"stripe"
+],
+[
+"Brazil",
+"Provider",
+"Trace Finance",
+[],
+"Homologating",
+"tracefinance"
+],
+[
+"Brazil",
+"Provider",
+"Transfeera",
+[
+"PIX"
+],
+"Live",
+"transfeera"
+],
+[
+"Brazil",
+"Provider",
+"Transfero",
+[],
+"Homologating",
+"transfero"
+],
+[
+"Brazil",
+"Provider",
+"Unico",
+[],
+"Homologating",
+"unico"
+],
+[
+"Brazil",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"PIX"
+],
+"Live",
+"unlimit"
+],
+[
+"Brazil",
+"Provider",
+"Vindi",
+[
+"Cards"
+],
+"Live",
+"vindi"
+],
+[
+"Brazil",
+"Provider",
+"Volt",
+[
+"PIX"
+],
+"Live",
+"volt"
+],
+[
+"Brazil",
+"Provider",
+"We Payments",
+[],
+"Homologating",
+"wepayments"
+],
+[
+"Brazil",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Brazil",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Brazil",
+"Provider",
+"Zoop",
+[
+"Cards",
+"PIX"
+],
+"Live",
+"zoop"
+],
+[
+"Brazil",
+"Provider",
+"Itaú",
+[
+"Itaú Pay",
+"PIX",
+"PIX Automático"
+],
+"Integrated (code)",
+"itau"
+],
+[
+"Brazil",
+"Provider",
+"Shopfácil",
+[
+"Boleto"
+],
+"Integrated (code)",
+"shopfacil"
+],
+[
+"Brazil",
+"Provider",
+"OKTO",
+[
+"PIX"
+],
+"Integrated (code)",
+"okto"
+],
+[
+"Brazil",
+"Provider",
+"Payamigo",
+[
+"Cards",
+"PIX"
+],
+"Integrated (code)",
+"payamigo"
+],
+[
+"Brazil",
+"Direct payment method",
+"Alelo",
+[],
+"Live",
+"alelo"
+],
+[
+"Brazil",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Brazil",
+"Direct payment method",
+"Belvo",
+[
+"Direct debit enrollment"
+],
+"Live",
+"belvo"
+],
+[
+"Brazil",
+"Direct payment method",
+"Boleto",
+[],
+"Live",
+"boleto"
+],
+[
+"Brazil",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"Brazil",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Brazil",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Brazil",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Brazil",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Brazil",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Brazil",
+"Direct payment method",
+"NuPay",
+[],
+"Live",
+"nupay"
+],
+[
+"Brazil",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Brazil",
+"Direct payment method",
+"Payzen",
+[],
+"Live",
+"payzen"
+],
+[
+"Brazil",
+"Direct payment method",
+"PIX",
+[],
+"Live",
+"pix"
+],
+[
+"Brazil",
+"Direct payment method",
+"Pluxee",
+[],
+"Live",
+"pluxee"
+],
+[
+"Brazil",
+"Direct payment method",
+"RappiBank",
+[],
+"Live",
+"rappibank"
+],
+[
+"Brazil",
+"Direct payment method",
+"Samsung Pay",
+[],
+"Live",
+"samsungpay"
+],
+[
+"Brazil",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Brazil",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Brazil",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Brazil",
+"Direct payment method",
+"VR",
+[],
+"Live",
+"vr"
+],
+[
+"Brazil",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Chile",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Chile",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Chile",
+"Provider",
+"Bamboo",
+[
+"Cards",
+"Khipu",
+"Klap (cash)",
+"Webpay"
+],
+"Live",
+"bamboo"
+],
+[
+"Chile",
+"Provider",
+"Banco Estado de Chile",
+[],
+"Homologating",
+"bancoestadodechile"
+],
+[
+"Chile",
+"Provider",
+"Commerce Gate",
+[],
+"Homologating",
+"commercegate"
+],
+[
+"Chile",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Chile",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Chile",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"Khipu"
+],
+"Live",
+"dlocal"
+],
+[
+"Chile",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"Checkout Pro",
+"MACH",
+"PayPal",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)",
+"Servipag",
+"Webpay"
+],
+"Live",
+"ebanx"
+],
+[
+"Chile",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"Chile",
+"Provider",
+"Etpay",
+[],
+"Homologating",
+"etpay"
+],
+[
+"Chile",
+"Provider",
+"Fintoc",
+[
+"Bank transfer"
+],
+"Live",
+"fintoc"
+],
+[
+"Chile",
+"Provider",
+"Getnet",
+[
+"Cards"
+],
+"Live",
+"getnet"
+],
+[
+"Chile",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Chile",
+"Provider",
+"Klap",
+[
+"Cards"
+],
+"Live",
+"klap"
+],
+[
+"Chile",
+"Provider",
+"Kushki",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"kushki"
+],
+[
+"Chile",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Chile",
+"Provider",
+"Mach Pay",
+[
+"MACH QR"
+],
+"Live",
+"machpay"
+],
+[
+"Chile",
+"Provider",
+"Mercado Pago",
+[
+"Cards",
+"Checkout Pro",
+"Mercado Pago QR",
+"Mercado Pago Wallet"
+],
+"Live",
+"mercadopago"
+],
+[
+"Chile",
+"Provider",
+"Monnet",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"monnet"
+],
+[
+"Chile",
+"Provider",
+"More Payments",
+[],
+"Homologating",
+"morepaymentsuniteller"
+],
+[
+"Chile",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Webpay"
+],
+"Live",
+"nuvei"
+],
+[
+"Chile",
+"Provider",
+"PagSeguro",
+[
+"Cards"
+],
+"Live",
+"pagseguro"
+],
+[
+"Chile",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Chile",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Chile",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Chile",
+"Provider",
+"PayRetailers",
+[],
+"Live",
+"payretailers"
+],
+[
+"Chile",
+"Provider",
+"PayU",
+[
+"Cards",
+"Cash"
+],
+"Live",
+"payu"
+],
+[
+"Chile",
+"Provider",
+"PlacetoPay",
+[
+"Cards"
+],
+"Live",
+"placetopay"
+],
+[
+"Chile",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Chile",
+"Provider",
+"Pronto Paga",
+[],
+"Homologating",
+"prontopaga"
+],
+[
+"Chile",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Chile",
+"Provider",
+"SafetyPay",
+[
+"MACH",
+"SafetyPay"
+],
+"Live",
+"safetypay"
+],
+[
+"Chile",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Chile",
+"Provider",
+"Venti",
+[],
+"Homologating",
+"venti"
+],
+[
+"Chile",
+"Provider",
+"Webpay",
+[
+"Cards",
+"Webpay"
+],
+"Live",
+"webpay"
+],
+[
+"Chile",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Chile",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Chile",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Chile",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Chile",
+"Direct payment method",
+"Khipu",
+[],
+"Live",
+"khipu"
+],
+[
+"Chile",
+"Direct payment method",
+"MACH",
+[],
+"Live",
+"mach"
+],
+[
+"Chile",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Chile",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Chile",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Chile",
+"Direct payment method",
+"Pluxee",
+[],
+"Live",
+"pluxee"
+],
+[
+"Chile",
+"Direct payment method",
+"Sencillito",
+[],
+"Live",
+"sencillito"
+],
+[
+"Chile",
+"Direct payment method",
+"Transbank",
+[],
+"Live",
+"transbank"
+],
+[
+"Chile",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Chile",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Chile",
+"Direct payment method",
+"Walmart",
+[],
+"Live",
+"walmart"
+],
+[
+"Chile",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Colombia",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Colombia",
+"Provider",
+"Bamboo",
+[
+"Cards",
+"Bank transfer",
+"Nequi",
+"Nequi QR",
+"PSE"
+],
+"Live",
+"bamboo"
+],
+[
+"Colombia",
+"Provider",
+"Banco de Bogota",
+[],
+"Homologating",
+"bancodebogota"
+],
+[
+"Colombia",
+"Provider",
+"Bancolombia",
+[],
+"Homologating",
+"bancolombia"
+],
+[
+"Colombia",
+"Provider",
+"BBVA",
+[
+"Cards"
+],
+"Live",
+"bbva"
+],
+[
+"Colombia",
+"Provider",
+"Cobre",
+[],
+"Homologating",
+"cobre"
+],
+[
+"Colombia",
+"Provider",
+"Commerce Gate",
+[],
+"Homologating",
+"commercegate"
+],
+[
+"Colombia",
+"Provider",
+"Credibanco",
+[
+"Cards"
+],
+"Live",
+"credibanco"
+],
+[
+"Colombia",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Colombia",
+"Provider",
+"Davivienda",
+[],
+"Homologating",
+"davivienda"
+],
+[
+"Colombia",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Colombia",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"Bre-B",
+"Cash",
+"Efecty",
+"Nequi",
+"PSE"
+],
+"Live",
+"dlocal"
+],
+[
+"Colombia",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"Checkout Pro",
+"PayPal",
+"PSE",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)"
+],
+"Live",
+"ebanx"
+],
+[
+"Colombia",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal",
+"PSE"
+],
+"Live",
+"ecommpay"
+],
+[
+"Colombia",
+"Provider",
+"emerchantpay",
+[
+"Cards"
+],
+"Live",
+"emerchantpay"
+],
+[
+"Colombia",
+"Provider",
+"ePayco",
+[
+"Cards"
+],
+"Live",
+"epayco"
+],
+[
+"Colombia",
+"Provider",
+"Facilitapay",
+[],
+"Homologating",
+"facilitapay"
+],
+[
+"Colombia",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Colombia",
+"Provider",
+"Inswitch",
+[
+"Acciones y Valores (cash)",
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Colombia",
+"Provider",
+"Kushki",
+[
+"Cards",
+"Bank transfer",
+"PSE"
+],
+"Live",
+"kushki"
+],
+[
+"Colombia",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Colombia",
+"Provider",
+"Mercado Pago",
+[
+"Cards",
+"Checkout Pro",
+"Mercado Pago QR",
+"Mercado Pago Wallet",
+"PSE"
+],
+"Live",
+"mercadopago"
+],
+[
+"Colombia",
+"Provider",
+"Movii",
+[
+"Cards",
+"Transfiya"
+],
+"Live",
+"movii"
+],
+[
+"Colombia",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Daviplata",
+"Efecty",
+"Nequi",
+"PSE"
+],
+"Live",
+"nuvei"
+],
+[
+"Colombia",
+"Provider",
+"Openpay",
+[
+"Cards"
+],
+"Live",
+"openpay"
+],
+[
+"Colombia",
+"Provider",
+"PagSeguro",
+[
+"Cards",
+"Efecty",
+"PSE"
+],
+"Live",
+"pagseguro"
+],
+[
+"Colombia",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Colombia",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Colombia",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Colombia",
+"Provider",
+"Payments Way",
+[],
+"Homologating",
+"paymentsway"
+],
+[
+"Colombia",
+"Provider",
+"PayRetailers",
+[],
+"Live",
+"payretailers"
+],
+[
+"Colombia",
+"Provider",
+"PayU",
+[
+"Cards",
+"Cash",
+"PSE"
+],
+"Live",
+"payu"
+],
+[
+"Colombia",
+"Provider",
+"Payvalida",
+[
+"Payvalida"
+],
+"Live",
+"payvalida"
+],
+[
+"Colombia",
+"Provider",
+"PlacetoPay",
+[
+"Cards"
+],
+"Live",
+"placetopay"
+],
+[
+"Colombia",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Colombia",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Colombia",
+"Provider",
+"Redeban",
+[
+"Cards"
+],
+"Live",
+"redeban"
+],
+[
+"Colombia",
+"Provider",
+"SafetyPay",
+[
+"Nequi",
+"PSE",
+"SafetyPay"
+],
+"Live",
+"safetypay"
+],
+[
+"Colombia",
+"Provider",
+"Sistecredito",
+[],
+"Homologating",
+"sistecredito"
+],
+[
+"Colombia",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"Bank transfer",
+"Cash",
+"Efecty",
+"PSE"
+],
+"Live",
+"unlimit"
+],
+[
+"Colombia",
+"Provider",
+"Wompi",
+[
+"Cards",
+"Bancolombia BNPL",
+"Bancolombia QR",
+"Bancolombia Tokenbox",
+"Bancolombia transfer",
+"Botón Bancolombia",
+"Daviplata",
+"Nequi",
+"PSE",
+"SU+ Pay"
+],
+"Live",
+"wompi"
+],
+[
+"Colombia",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Colombia",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Colombia",
+"Provider",
+"Refácil",
+[
+"Bre-B",
+"PSE"
+],
+"Integrated (code)",
+"refacil"
+],
+[
+"Colombia",
+"Direct payment method",
+"ADDI",
+[],
+"Live",
+"addi"
+],
+[
+"Colombia",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Colombia",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"Colombia",
+"Direct payment method",
+"Daviplata",
+[],
+"Live",
+"daviplata"
+],
+[
+"Colombia",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Colombia",
+"Direct payment method",
+"Druo",
+[],
+"Live",
+"druo"
+],
+[
+"Colombia",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Colombia",
+"Direct payment method",
+"Efecty",
+[],
+"Live",
+"efecty"
+],
+[
+"Colombia",
+"Direct payment method",
+"Farmatodo",
+[],
+"Live",
+"farmatodo"
+],
+[
+"Colombia",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Colombia",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Colombia",
+"Direct payment method",
+"Nequi",
+[],
+"Live",
+"nequi"
+],
+[
+"Colombia",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Colombia",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Colombia",
+"Direct payment method",
+"Payzen",
+[],
+"Live",
+"payzen"
+],
+[
+"Colombia",
+"Direct payment method",
+"Pluxee",
+[],
+"Live",
+"pluxee"
+],
+[
+"Colombia",
+"Direct payment method",
+"RappiBank",
+[],
+"Live",
+"rappibank"
+],
+[
+"Colombia",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Colombia",
+"Direct payment method",
+"Tpaga",
+[],
+"Live",
+"tpaga"
+],
+[
+"Colombia",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Colombia",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Colombia",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Mexico",
+"Provider",
+"Adyen",
+[
+"Cards",
+"7-Eleven",
+"Apple Pay",
+"Google Pay",
+"Klarna"
+],
+"Live",
+"adyen"
+],
+[
+"Mexico",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Mexico",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Mexico",
+"Provider",
+"Bamboo",
+[
+"Cards",
+"Bank transfer",
+"Cash",
+"OXXO Pay",
+"Paynet",
+"SPEI"
+],
+"Live",
+"bamboo"
+],
+[
+"Mexico",
+"Provider",
+"BanBajío",
+[],
+"Homologating",
+"banbajio"
+],
+[
+"Mexico",
+"Provider",
+"Banco Azteca",
+[],
+"Homologating",
+"bancoazteca"
+],
+[
+"Mexico",
+"Provider",
+"Banorte",
+[
+"Cards"
+],
+"Live",
+"banorte"
+],
+[
+"Mexico",
+"Provider",
+"BBVA",
+[
+"Cards"
+],
+"Live",
+"bbva"
+],
+[
+"Mexico",
+"Provider",
+"Cobre",
+[],
+"Homologating",
+"cobre"
+],
+[
+"Mexico",
+"Provider",
+"Commerce Gate",
+[],
+"Homologating",
+"commercegate"
+],
+[
+"Mexico",
+"Provider",
+"Coppel",
+[],
+"Homologating",
+"coppel"
+],
+[
+"Mexico",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Mexico",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Mexico",
+"Provider",
+"dLocal",
+[
+"Cards",
+"7-Eleven",
+"Bank transfer",
+"Cash",
+"CoDi",
+"OXXO",
+"Paynet",
+"SPEI"
+],
+"Live",
+"dlocal"
+],
+[
+"Mexico",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"Checkout Pro",
+"OXXO Pay",
+"PayPal",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)",
+"SPEI"
+],
+"Live",
+"ebanx"
+],
+[
+"Mexico",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"Mexico",
+"Provider",
+"emerchantpay",
+[
+"Cards"
+],
+"Live",
+"emerchantpay"
+],
+[
+"Mexico",
+"Provider",
+"Etpay",
+[],
+"Homologating",
+"etpay"
+],
+[
+"Mexico",
+"Provider",
+"EVO Payments",
+[
+"Cards"
+],
+"Live",
+"evopayments"
+],
+[
+"Mexico",
+"Provider",
+"Facilitapay",
+[],
+"Homologating",
+"facilitapay"
+],
+[
+"Mexico",
+"Provider",
+"Fintoc",
+[
+"Bank transfer"
+],
+"Live",
+"fintoc"
+],
+[
+"Mexico",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Mexico",
+"Provider",
+"Getnet",
+[
+"Cards"
+],
+"Live",
+"getnet"
+],
+[
+"Mexico",
+"Provider",
+"Global Payments",
+[
+"Cards"
+],
+"Live",
+"globalpayments"
+],
+[
+"Mexico",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Mexico",
+"Provider",
+"Kushki",
+[
+"Cards",
+"Bank transfer",
+"PayCash",
+"Paynet",
+"SPEI"
+],
+"Live",
+"kushki"
+],
+[
+"Mexico",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Mexico",
+"Provider",
+"Mercado Pago",
+[
+"Cards",
+"Checkout Pro",
+"Mercado Pago QR",
+"Mercado Pago Wallet"
+],
+"Live",
+"mercadopago"
+],
+[
+"Mexico",
+"Provider",
+"Monnet",
+[
+"Cards"
+],
+"Live",
+"monnet"
+],
+[
+"Mexico",
+"Provider",
+"Netpay",
+[],
+"Homologating",
+"netpay"
+],
+[
+"Mexico",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Klarna",
+"OXXO Pay",
+"SPEI"
+],
+"Live",
+"nuvei"
+],
+[
+"Mexico",
+"Provider",
+"Openpay",
+[
+"Cards",
+"Paynet"
+],
+"Live",
+"openpay"
+],
+[
+"Mexico",
+"Provider",
+"PagSeguro",
+[
+"Cards",
+"OXXO Pay",
+"SPEI"
+],
+"Live",
+"pagseguro"
+],
+[
+"Mexico",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Mexico",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Mexico",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Mexico",
+"Provider",
+"Paynet",
+[],
+"Homologating",
+"paynet"
+],
+[
+"Mexico",
+"Provider",
+"PayRetailers",
+[],
+"Live",
+"payretailers"
+],
+[
+"Mexico",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"Mexico",
+"Provider",
+"PayU",
+[
+"Cards",
+"7-Eleven",
+"Cash",
+"Farmacias Benavides and Del Ahorro (cash)",
+"OXXO"
+],
+"Live",
+"payu"
+],
+[
+"Mexico",
+"Provider",
+"Pockyt",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"pockyt"
+],
+[
+"Mexico",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Mexico",
+"Provider",
+"Prosa",
+[
+"Cards"
+],
+"Live",
+"prosa"
+],
+[
+"Mexico",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Mexico",
+"Provider",
+"SafetyPay",
+[
+"SafetyPay",
+"SPEI"
+],
+"Live",
+"safetypay"
+],
+[
+"Mexico",
+"Provider",
+"Stripe",
+[
+"Cards",
+"Klarna",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"Mexico",
+"Provider",
+"Transfero",
+[],
+"Homologating",
+"transfero"
+],
+[
+"Mexico",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"7-Eleven",
+"Alsuper (cash)",
+"Bank transfer",
+"Banorte (cash deposit)",
+"BBVA (cash deposit)",
+"Bodega Aurrera (cash)",
+"Calimax (cash)",
+"Cash",
+"CoDi",
+"Comercial Mexicana (cash)",
+"Círculo K (cash)",
+"El Asturiano (cash)",
+"Extra (cash)",
+"Farmacias Benavides (cash)",
+"Farmacias del Ahorro (cash)",
+"Farmacias Roma (cash)",
+"Farmacias Santa María (cash)",
+"Farmacias Unión (cash)",
+"Farmatodo (cash)",
+"Kiosko (cash)",
+"La Más Barata (cash)",
+"OXXO",
+"OXXO Pay",
+"PayCash",
+"Paynet",
+"Puntos Hey",
+"Sam's Club (cash)",
+"San Francisco de Asís (cash)",
+"Soriana (cash)",
+"SPEI",
+"Superama (cash)",
+"Telecomm (cash)",
+"Waldo's (cash)",
+"Walmart (cash)"
+],
+"Live",
+"unlimit"
+],
+[
+"Mexico",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Mexico",
+"Provider",
+"Worldpay",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"worldpay"
+],
+[
+"Mexico",
+"Provider",
+"Conekta",
+[
+"Cards",
+"Aplazo",
+"SPEI"
+],
+"Integrated (code)",
+"conekta"
+],
+[
+"Mexico",
+"Direct payment method",
+"7-Eleven",
+[],
+"Live",
+"7eleven"
+],
+[
+"Mexico",
+"Direct payment method",
+"Afirme",
+[],
+"Live",
+"afirme"
+],
+[
+"Mexico",
+"Direct payment method",
+"Alsuper",
+[],
+"Live",
+"alsuper"
+],
+[
+"Mexico",
+"Direct payment method",
+"Aplazo",
+[],
+"Live",
+"aplazo"
+],
+[
+"Mexico",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Mexico",
+"Direct payment method",
+"Arcus",
+[],
+"Live",
+"arcus"
+],
+[
+"Mexico",
+"Direct payment method",
+"Belvo",
+[
+"Direct debit enrollment"
+],
+"Live",
+"belvo"
+],
+[
+"Mexico",
+"Direct payment method",
+"Benavides",
+[],
+"Live",
+"benavides"
+],
+[
+"Mexico",
+"Direct payment method",
+"Calimax",
+[],
+"Live",
+"calimax"
+],
+[
+"Mexico",
+"Direct payment method",
+"CircleK",
+[],
+"Live",
+"circlek"
+],
+[
+"Mexico",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"Mexico",
+"Direct payment method",
+"CoDi",
+[],
+"Live",
+"codi"
+],
+[
+"Mexico",
+"Direct payment method",
+"Coppel Pay",
+[],
+"Live",
+"coppelpay"
+],
+[
+"Mexico",
+"Direct payment method",
+"Creditea",
+[],
+"Live",
+"creditea"
+],
+[
+"Mexico",
+"Direct payment method",
+"DIMO",
+[],
+"Live",
+"dimo"
+],
+[
+"Mexico",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Mexico",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Mexico",
+"Direct payment method",
+"Farmacias Del Ahorro",
+[],
+"Live",
+"farmaciasdelahorro"
+],
+[
+"Mexico",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Mexico",
+"Direct payment method",
+"Kueski",
+[],
+"Live",
+"kueski"
+],
+[
+"Mexico",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Mexico",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Mexico",
+"Direct payment method",
+"OXXO Pay",
+[],
+"Live",
+"oxxopay"
+],
+[
+"Mexico",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Mexico",
+"Direct payment method",
+"Puntos Hey",
+[],
+"Live",
+"puntoshey"
+],
+[
+"Mexico",
+"Direct payment method",
+"RappiBank",
+[],
+"Live",
+"rappibank"
+],
+[
+"Mexico",
+"Direct payment method",
+"Sam's Club",
+[],
+"Live",
+"samsclub"
+],
+[
+"Mexico",
+"Direct payment method",
+"Soriana",
+[],
+"Live",
+"soriana"
+],
+[
+"Mexico",
+"Direct payment method",
+"SPEI",
+[],
+"Live",
+"spei"
+],
+[
+"Mexico",
+"Direct payment method",
+"STP",
+[],
+"Live",
+"stp"
+],
+[
+"Mexico",
+"Direct payment method",
+"T1 Pagos",
+[],
+"Live",
+"t1pagos"
+],
+[
+"Mexico",
+"Direct payment method",
+"Telecomm",
+[],
+"Live",
+"telecomm"
+],
+[
+"Mexico",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Mexico",
+"Direct payment method",
+"Tiendas El Asturiano",
+[],
+"Live",
+"tiendaselasturiano"
+],
+[
+"Mexico",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Mexico",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Mexico",
+"Direct payment method",
+"Waldos",
+[],
+"Live",
+"waldos"
+],
+[
+"Mexico",
+"Direct payment method",
+"Walmart",
+[],
+"Live",
+"walmart"
+],
+[
+"Mexico",
+"Direct payment method",
+"Klarna",
+[],
+"Live",
+"klarna"
+],
+[
+"Peru",
+"Provider",
+"Alignet",
+[],
+"Homologating",
+"alignet"
+],
+[
+"Peru",
+"Provider",
+"Antom",
+[
+"Cards",
+"Alipay"
+],
+"Live",
+"antomalipay"
+],
+[
+"Peru",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Peru",
+"Provider",
+"Bamboo",
+[
+"Cards",
+"PagoEfectivo",
+"Yape"
+],
+"Live",
+"bamboo"
+],
+[
+"Peru",
+"Provider",
+"BBVA",
+[
+"Cards"
+],
+"Live",
+"bbva"
+],
+[
+"Peru",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Peru",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Peru",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"PagoEfectivo",
+"Yape"
+],
+"Live",
+"dlocal"
+],
+[
+"Peru",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"Checkout Pro",
+"PagoEfectivo",
+"PayPal",
+"SafetyPay",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)"
+],
+"Live",
+"ebanx"
+],
+[
+"Peru",
+"Provider",
+"Ecommpay",
+[
+"Cards",
+"Neteller",
+"PayPal"
+],
+"Live",
+"ecommpay"
+],
+[
+"Peru",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Peru",
+"Provider",
+"Kushki",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"kushki"
+],
+[
+"Peru",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Peru",
+"Provider",
+"Mercado Pago",
+[
+"Cards",
+"Checkout Pro",
+"Mercado Pago Wallet"
+],
+"Live",
+"mercadopago"
+],
+[
+"Peru",
+"Provider",
+"Monnet",
+[
+"Cards",
+"Bank transfer",
+"Cash",
+"Monnet QR",
+"Monnet wallet",
+"Yape"
+],
+"Live",
+"monnet"
+],
+[
+"Peru",
+"Provider",
+"Niubiz",
+[
+"Cards",
+"Plin",
+"Yape"
+],
+"Live",
+"niubiz"
+],
+[
+"Peru",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"PagoEfectivo"
+],
+"Live",
+"nuvei"
+],
+[
+"Peru",
+"Provider",
+"Openpay",
+[
+"Cards"
+],
+"Live",
+"openpay"
+],
+[
+"Peru",
+"Provider",
+"PagSeguro",
+[
+"Cards"
+],
+"Live",
+"pagseguro"
+],
+[
+"Peru",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Peru",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Peru",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Peru",
+"Provider",
+"PayRetailers",
+[],
+"Live",
+"payretailers"
+],
+[
+"Peru",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"Peru",
+"Provider",
+"PayU",
+[
+"Cards",
+"Cash"
+],
+"Live",
+"payu"
+],
+[
+"Peru",
+"Provider",
+"Payvalida",
+[
+"Payvalida"
+],
+"Live",
+"payvalida"
+],
+[
+"Peru",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Peru",
+"Provider",
+"Pronto Paga",
+[],
+"Homologating",
+"prontopaga"
+],
+[
+"Peru",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Peru",
+"Provider",
+"SafetyPay",
+[
+"Mercado Pago",
+"PagoEfectivo",
+"SafetyPay"
+],
+"Live",
+"safetypay"
+],
+[
+"Peru",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"PagoEfectivo"
+],
+"Live",
+"unlimit"
+],
+[
+"Peru",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Peru",
+"Direct payment method",
+"aCuotaz",
+[],
+"Live",
+"acuotaz"
+],
+[
+"Peru",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Peru",
+"Direct payment method",
+"Cuotéalo BCP",
+[],
+"Live",
+"cuotalobcp"
+],
+[
+"Peru",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Peru",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Peru",
+"Direct payment method",
+"Izipay",
+[],
+"Live",
+"izipay"
+],
+[
+"Peru",
+"Direct payment method",
+"Khipu",
+[],
+"Live",
+"khipu"
+],
+[
+"Peru",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Peru",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Peru",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Peru",
+"Direct payment method",
+"Payzen",
+[],
+"Live",
+"payzen"
+],
+[
+"Peru",
+"Direct payment method",
+"Powerpay",
+[],
+"Live",
+"powerpay"
+],
+[
+"Peru",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Peru",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Peru",
+"Direct payment method",
+"Yape",
+[],
+"Live",
+"yape"
+],
+[
+"Uruguay",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Uruguay",
+"Provider",
+"Bamboo",
+[
+"Cards"
+],
+"Live",
+"bamboo"
+],
+[
+"Uruguay",
+"Provider",
+"BBVA",
+[
+"Cards"
+],
+"Live",
+"bbva"
+],
+[
+"Uruguay",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Uruguay",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"dlocal"
+],
+[
+"Uruguay",
+"Provider",
+"emerchantpay",
+[
+"Cards"
+],
+"Live",
+"emerchantpay"
+],
+[
+"Uruguay",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Uruguay",
+"Provider",
+"Getnet",
+[
+"Cards"
+],
+"Live",
+"getnet"
+],
+[
+"Uruguay",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Uruguay",
+"Provider",
+"Mercado Pago",
+[
+"Cards",
+"Checkout Pro",
+"Mercado Pago Wallet"
+],
+"Live",
+"mercadopago"
+],
+[
+"Uruguay",
+"Provider",
+"More Payments",
+[],
+"Homologating",
+"morepaymentsuniteller"
+],
+[
+"Uruguay",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Uruguay",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"Uruguay",
+"Provider",
+"Totalnet",
+[],
+"Homologating",
+"totalnet"
+],
+[
+"Uruguay",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Uruguay",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Uruguay",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Uruguay",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Uruguay",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Uruguay",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Uruguay",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Uruguay",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Bolivia",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Bolivia",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Bolivia",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Bolivia",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"Multipago",
+"Pago al Paso"
+],
+"Live",
+"dlocal"
+],
+[
+"Bolivia",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Bolivia",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Bolivia",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Bolivia",
+"Provider",
+"PagosNet",
+[],
+"Homologating",
+"pagosnet"
+],
+[
+"Bolivia",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Bolivia",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Bolivia",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Bolivia",
+"Direct payment method",
+"Pago al Paso",
+[],
+"Live",
+"pagoalpaso"
+],
+[
+"Bolivia",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Bolivia",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Costa Rica",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Costa Rica",
+"Provider",
+"BAC Credomatic",
+[
+"Cards"
+],
+"Live",
+"baccredomatic"
+],
+[
+"Costa Rica",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Costa Rica",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Costa Rica",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Banco Nacional cash",
+"Bank transfer"
+],
+"Live",
+"dlocal"
+],
+[
+"Costa Rica",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"PayPal",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)"
+],
+"Live",
+"ebanx"
+],
+[
+"Costa Rica",
+"Provider",
+"Evertec",
+[],
+"Live",
+"evertec"
+],
+[
+"Costa Rica",
+"Provider",
+"FAC (First Atlantic Commerce)",
+[
+"Cards"
+],
+"Live",
+"fac"
+],
+[
+"Costa Rica",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Costa Rica",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Costa Rica",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Costa Rica",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Costa Rica",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Costa Rica",
+"Provider",
+"PlacetoPay",
+[
+"Cards"
+],
+"Live",
+"placetopay"
+],
+[
+"Costa Rica",
+"Provider",
+"Powertranz",
+[],
+"Live",
+"powertranz"
+],
+[
+"Costa Rica",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Costa Rica",
+"Provider",
+"SafetyPay",
+[
+"SafetyPay"
+],
+"Live",
+"safetypay"
+],
+[
+"Costa Rica",
+"Provider",
+"Unlimit",
+[
+"Cards"
+],
+"Live",
+"unlimit"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Banco Nacional de Costa Rica",
+[],
+"Live",
+"banconacionaldecostarica"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Credix",
+[],
+"Live",
+"credix"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"Walmart",
+[],
+"Live",
+"walmart"
+],
+[
+"Costa Rica",
+"Direct payment method",
+"SINPE Móvil",
+[],
+"Signed",
+"sinpemvil"
+],
+[
+"Dominican Republic",
+"Provider",
+"Azul",
+[
+"Cards"
+],
+"Live",
+"azul"
+],
+[
+"Dominican Republic",
+"Provider",
+"BHD Leon",
+[],
+"Live",
+"bhdleon"
+],
+[
+"Dominican Republic",
+"Provider",
+"Cardnet",
+[],
+"Homologating",
+"cardnet"
+],
+[
+"Dominican Republic",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Dominican Republic",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Banco Popular",
+"Bank transfer",
+"Cash"
+],
+"Live",
+"dlocal"
+],
+[
+"Dominican Republic",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"PayPal",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)"
+],
+"Live",
+"ebanx"
+],
+[
+"Dominican Republic",
+"Provider",
+"FAC (First Atlantic Commerce)",
+[
+"Cards"
+],
+"Live",
+"fac"
+],
+[
+"Dominican Republic",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash",
+"Local bank transfers and cash",
+"Pagatodo"
+],
+"Live",
+"inswitch"
+],
+[
+"Dominican Republic",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Dominican Republic",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Dominican Republic",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Dominican Republic",
+"Provider",
+"Powertranz",
+[],
+"Live",
+"powertranz"
+],
+[
+"Dominican Republic",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"Banco Popular Dominicana",
+[],
+"Live",
+"bancopopulardominicana"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Dominican Republic",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Ecuador",
+"Provider",
+"Commerce Gate",
+[],
+"Homologating",
+"commercegate"
+],
+[
+"Ecuador",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Ecuador",
+"Provider",
+"Datafast",
+[
+"Cards"
+],
+"Live",
+"datafast"
+],
+[
+"Ecuador",
+"Provider",
+"Diners Club Ecuador",
+[
+"Cards"
+],
+"Live",
+"dinersclubecuador"
+],
+[
+"Ecuador",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Ecuador",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"Deuna",
+"PagoEfectivo"
+],
+"Live",
+"dlocal"
+],
+[
+"Ecuador",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Ecuador",
+"Provider",
+"Kushki",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"kushki"
+],
+[
+"Ecuador",
+"Provider",
+"Medianet",
+[
+"Cards"
+],
+"Live",
+"medianet"
+],
+[
+"Ecuador",
+"Provider",
+"Monnet",
+[
+"Cards",
+"Bank transfer",
+"Cash"
+],
+"Live",
+"monnet"
+],
+[
+"Ecuador",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"PagoEfectivo"
+],
+"Live",
+"nuvei"
+],
+[
+"Ecuador",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Ecuador",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Ecuador",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Ecuador",
+"Provider",
+"PayRetailers",
+[],
+"Live",
+"payretailers"
+],
+[
+"Ecuador",
+"Provider",
+"Payvalida",
+[
+"Payvalida"
+],
+"Live",
+"payvalida"
+],
+[
+"Ecuador",
+"Provider",
+"PlacetoPay",
+[
+"Cards"
+],
+"Live",
+"placetopay"
+],
+[
+"Ecuador",
+"Provider",
+"Pronto Paga",
+[],
+"Homologating",
+"prontopaga"
+],
+[
+"Ecuador",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Ecuador",
+"Provider",
+"SafetyPay",
+[
+"Deuna",
+"PagoEfectivo",
+"SafetyPay"
+],
+"Live",
+"safetypay"
+],
+[
+"Ecuador",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"PagoEfectivo"
+],
+"Live",
+"unlimit"
+],
+[
+"Ecuador",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Ecuador",
+"Direct payment method",
+"Deuna",
+[],
+"Live",
+"deuna"
+],
+[
+"Ecuador",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Ecuador",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Ecuador",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Ecuador",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Ecuador",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Ecuador",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"El Salvador",
+"Provider",
+"BAC Credomatic",
+[
+"Cards"
+],
+"Live",
+"baccredomatic"
+],
+[
+"El Salvador",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"El Salvador",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"El Salvador",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"PuntoXpress"
+],
+"Live",
+"dlocal"
+],
+[
+"El Salvador",
+"Provider",
+"FAC (First Atlantic Commerce)",
+[
+"Cards"
+],
+"Live",
+"fac"
+],
+[
+"El Salvador",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"El Salvador",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"El Salvador",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"El Salvador",
+"Provider",
+"Payvalida",
+[
+"Payvalida"
+],
+"Live",
+"payvalida"
+],
+[
+"El Salvador",
+"Provider",
+"Powertranz",
+[],
+"Live",
+"powertranz"
+],
+[
+"El Salvador",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"El Salvador",
+"Provider",
+"SafetyPay",
+[
+"SafetyPay"
+],
+"Live",
+"safetypay"
+],
+[
+"El Salvador",
+"Provider",
+"Wompi",
+[
+"Cards"
+],
+"Live",
+"wompi"
+],
+[
+"El Salvador",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"El Salvador",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"El Salvador",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"El Salvador",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"El Salvador",
+"Direct payment method",
+"PuntoXpress",
+[],
+"Live",
+"puntoxpress"
+],
+[
+"El Salvador",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"El Salvador",
+"Direct payment method",
+"Walmart",
+[],
+"Live",
+"walmart"
+],
+[
+"Guatemala",
+"Provider",
+"BAC Credomatic",
+[
+"Cards"
+],
+"Live",
+"baccredomatic"
+],
+[
+"Guatemala",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Guatemala",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Guatemala",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"dlocal"
+],
+[
+"Guatemala",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"PayPal",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)"
+],
+"Live",
+"ebanx"
+],
+[
+"Guatemala",
+"Provider",
+"FAC (First Atlantic Commerce)",
+[
+"Cards"
+],
+"Live",
+"fac"
+],
+[
+"Guatemala",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Guatemala",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Guatemala",
+"Provider",
+"Monnet",
+[
+"Cards",
+"Bank transfer",
+"Cash",
+"Monnet QR",
+"Monnet wallet"
+],
+"Live",
+"monnet"
+],
+[
+"Guatemala",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Guatemala",
+"Provider",
+"Pagalo",
+[
+"Cards"
+],
+"Live",
+"pagalo"
+],
+[
+"Guatemala",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Guatemala",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Guatemala",
+"Provider",
+"Payvalida",
+[
+"Payvalida"
+],
+"Live",
+"payvalida"
+],
+[
+"Guatemala",
+"Provider",
+"Powertranz",
+[],
+"Live",
+"powertranz"
+],
+[
+"Guatemala",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Guatemala",
+"Provider",
+"SafetyPay",
+[
+"SafetyPay"
+],
+"Live",
+"safetypay"
+],
+[
+"Guatemala",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"BAM (Banco Agromercantil)"
+],
+"Live",
+"unlimit"
+],
+[
+"Guatemala",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Guatemala",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Guatemala",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Guatemala",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Guatemala",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Guatemala",
+"Direct payment method",
+"Walmart",
+[],
+"Live",
+"walmart"
+],
+[
+"Guatemala",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Honduras",
+"Provider",
+"BAC Credomatic",
+[
+"Cards"
+],
+"Live",
+"baccredomatic"
+],
+[
+"Honduras",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Honduras",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Honduras",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"dlocal"
+],
+[
+"Honduras",
+"Provider",
+"FAC (First Atlantic Commerce)",
+[
+"Cards"
+],
+"Live",
+"fac"
+],
+[
+"Honduras",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Honduras",
+"Provider",
+"Local Payment",
+[],
+"Homologating",
+"localpayment"
+],
+[
+"Honduras",
+"Provider",
+"Monnet",
+[
+"Cards"
+],
+"Live",
+"monnet"
+],
+[
+"Honduras",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Honduras",
+"Provider",
+"PlacetoPay",
+[
+"Cards"
+],
+"Live",
+"placetopay"
+],
+[
+"Honduras",
+"Provider",
+"Powertranz",
+[],
+"Live",
+"powertranz"
+],
+[
+"Honduras",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Honduras",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Honduras",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Honduras",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Honduras",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Honduras",
+"Direct payment method",
+"Walmart",
+[],
+"Live",
+"walmart"
+],
+[
+"Nicaragua",
+"Provider",
+"BAC Credomatic",
+[
+"Cards"
+],
+"Live",
+"baccredomatic"
+],
+[
+"Nicaragua",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Nicaragua",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"PuntoXpress"
+],
+"Live",
+"dlocal"
+],
+[
+"Nicaragua",
+"Provider",
+"FAC (First Atlantic Commerce)",
+[
+"Cards"
+],
+"Live",
+"fac"
+],
+[
+"Nicaragua",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Nicaragua",
+"Provider",
+"Powertranz",
+[],
+"Live",
+"powertranz"
+],
+[
+"Nicaragua",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Nicaragua",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Nicaragua",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Nicaragua",
+"Direct payment method",
+"PuntoXpress",
+[],
+"Live",
+"puntoxpress"
+],
+[
+"Nicaragua",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Nicaragua",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Nicaragua",
+"Direct payment method",
+"Walmart",
+[],
+"Live",
+"walmart"
+],
+[
+"Panama",
+"Provider",
+"BAC Credomatic",
+[
+"Cards",
+"Clave"
+],
+"Live",
+"baccredomatic"
+],
+[
+"Panama",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Panama",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Panama",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer",
+"Clave",
+"Nequi",
+"Punto Pago"
+],
+"Live",
+"dlocal"
+],
+[
+"Panama",
+"Provider",
+"EBANX",
+[
+"Cards",
+"Cash",
+"PayPal",
+"SafetyPay (bank transfer)",
+"SafetyPay (cash)"
+],
+"Live",
+"ebanx"
+],
+[
+"Panama",
+"Provider",
+"FAC (First Atlantic Commerce)",
+[
+"Cards"
+],
+"Live",
+"fac"
+],
+[
+"Panama",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Panama",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Panama",
+"Provider",
+"Nuvei",
+[
+"Cards",
+"Nequi"
+],
+"Live",
+"nuvei"
+],
+[
+"Panama",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Panama",
+"Provider",
+"Panda blue",
+[],
+"Live",
+"pandablue"
+],
+[
+"Panama",
+"Provider",
+"PayCash",
+[],
+"Homologating",
+"paycash"
+],
+[
+"Panama",
+"Provider",
+"PlacetoPay",
+[
+"Cards"
+],
+"Live",
+"placetopay"
+],
+[
+"Panama",
+"Provider",
+"Powertranz",
+[],
+"Live",
+"powertranz"
+],
+[
+"Panama",
+"Provider",
+"Rapyd",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"rapyd"
+],
+[
+"Panama",
+"Provider",
+"Unlimit",
+[
+"Cards",
+"Cash"
+],
+"Live",
+"unlimit"
+],
+[
+"Panama",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Panama",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Panama",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Panama",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Panama",
+"Direct payment method",
+"Pluxee",
+[],
+"Live",
+"pluxee"
+],
+[
+"Panama",
+"Direct payment method",
+"Punto Pago",
+[],
+"Live",
+"puntopago"
+],
+[
+"Panama",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Panama",
+"Direct payment method",
+"Yappy",
+[],
+"Live",
+"yappy"
+],
+[
+"Panama",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Paraguay",
+"Provider",
+"Bancard",
+[
+"Cards"
+],
+"Live",
+"bancard"
+],
+[
+"Paraguay",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Paraguay",
+"Provider",
+"Directa 24",
+[],
+"Homologating",
+"directa24"
+],
+[
+"Paraguay",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Bank transfer"
+],
+"Live",
+"dlocal"
+],
+[
+"Paraguay",
+"Provider",
+"Inswitch",
+[
+"Bank transfer",
+"Cash"
+],
+"Live",
+"inswitch"
+],
+[
+"Paraguay",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Paraguay",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"Paraguay",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Paraguay",
+"Direct payment method",
+"Banco Continental",
+[],
+"Live",
+"bancocontinental"
+],
+[
+"Paraguay",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Paraguay",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Paraguay",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Paraguay",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Paraguay",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Venezuela",
+"Provider",
+"AstroPay",
+[
+"AstroPay"
+],
+"Live",
+"astropay"
+],
+[
+"Venezuela",
+"Provider",
+"BBVA",
+[
+"Cards"
+],
+"Live",
+"bbva"
+],
+[
+"Venezuela",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Venezuela",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Venezuela",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"Venezuela",
+"Direct payment method",
+"Farmatodo",
+[],
+"Live",
+"farmatodo"
+],
+[
+"Venezuela",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Venezuela",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"Venezuela",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Venezuela",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Al Rajhi Bank",
+[],
+"Live",
+"alrajhibank"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Al Rajhi Payment Gateway",
+[],
+"Live",
+"alrajhipaymentgateway"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Amazon Payments Services",
+[],
+"Live",
+"amazonpaymentsservices"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Bank Al Jazira",
+[],
+"Live",
+"bankaljazira"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Bank Albilad",
+[],
+"Live",
+"bankalbilad"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Bank Alinma",
+[],
+"Live",
+"bankalinma"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Carry1st",
+[],
+"Live",
+"carry1st"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Checkout.com",
+[
+"Cards",
+"Tabby",
+"Tamara"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Saudi Arabia",
+"Provider",
+"dLocal",
+[
+"Cards",
+"Tamara"
+],
+"Live",
+"dlocal"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Edaat",
+[],
+"Live",
+"edaat"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Geidea",
+[],
+"Live",
+"geidea"
+],
+[
+"Saudi Arabia",
+"Provider",
+"HyperPay",
+[],
+"Live",
+"hyperpay"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Lean Technologies",
+[],
+"Live",
+"leantechnologies"
+],
+[
+"Saudi Arabia",
+"Provider",
+"mada",
+[],
+"Live",
+"mada"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Moyasar",
+[],
+"Live",
+"moyasar"
+],
+[
+"Saudi Arabia",
+"Provider",
+"MyFatoorah",
+[],
+"Live",
+"myfatoorah"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Network International",
+[],
+"Live",
+"networkinternational"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Noon Payments",
+[],
+"Live",
+"noonpayments"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Paymob",
+[],
+"Live",
+"paymob"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"Saudi Arabia",
+"Provider",
+"PayTabs",
+[],
+"Live",
+"paytabs"
+],
+[
+"Saudi Arabia",
+"Provider",
+"PostPay",
+[],
+"Live",
+"postpay"
+],
+[
+"Saudi Arabia",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Saudi Awwal Bank",
+[],
+"Live",
+"saudiawwalbank"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Saudi National Bank",
+[],
+"Live",
+"saudinationalbank"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Tap Payments",
+[],
+"Live",
+"tap"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Telr",
+[],
+"Live",
+"telr"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Urway",
+[],
+"Live",
+"urway"
+],
+[
+"Saudi Arabia",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"Al Rajhi Mokafaa",
+[],
+"Live",
+"alrajhimokafaa"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"SADAD",
+[],
+"Live",
+"sadad"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"STC Pay",
+[],
+"Live",
+"stcpay"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"Tabby",
+[],
+"Live",
+"tabby"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"Tamara",
+[],
+"Live",
+"tamara"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Saudi Arabia",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Abu Dhabi Commercial Bank (ADCB)",
+[],
+"Live",
+"abudhabicommercialbankadcb"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"adyen"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Amazon Payments Services",
+[],
+"Live",
+"amazonpaymentsservices"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Carry1st",
+[],
+"Live",
+"carry1st"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Checkout.com",
+[
+"Cards",
+"Tabby",
+"Tamara"
+],
+"Live",
+"checkoutcom"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Commercial Bank of Dubai",
+[],
+"Live",
+"commercialbankofdubai"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Dubai Islamic Bank",
+[],
+"Live",
+"dubaiislamicbank"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Fiserv",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"fiserv"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Foloosi",
+[],
+"Live",
+"foloosi"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Geidea",
+[],
+"Live",
+"geidea"
+],
+[
+"United Arab Emirates",
+"Provider",
+"HyperPay",
+[],
+"Live",
+"hyperpay"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Lean Technologies",
+[],
+"Live",
+"leantechnologies"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Mashreqbank",
+[],
+"Live",
+"mashreqbank"
+],
+[
+"United Arab Emirates",
+"Provider",
+"MyFatoorah",
+[],
+"Live",
+"myfatoorah"
+],
+[
+"United Arab Emirates",
+"Provider",
+"National Bank of Abu Dhabi (NBAD)",
+[],
+"Live",
+"nationalbankofabudhabinbad"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Network International",
+[],
+"Live",
+"networkinternational"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Noon Payments",
+[],
+"Live",
+"noonpayments"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Paysafe",
+[],
+"Homologating",
+"paysafe"
+],
+[
+"United Arab Emirates",
+"Provider",
+"PayTabs",
+[],
+"Live",
+"paytabs"
+],
+[
+"United Arab Emirates",
+"Provider",
+"PostPay",
+[],
+"Live",
+"postpay"
+],
+[
+"United Arab Emirates",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Rakbank",
+[],
+"Live",
+"rakbank"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Stripe",
+[
+"Cards",
+"PayPal"
+],
+"Live",
+"stripe"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Tap Payments",
+[],
+"Live",
+"tap"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Telr",
+[],
+"Live",
+"telr"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Triple-A",
+[],
+"Live",
+"triplea"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Careem Pay",
+[],
+"Live",
+"careempay"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Click to Pay",
+[],
+"Live",
+"clicktopay"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Edenred",
+[],
+"Live",
+"edenred"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Samsung Pay",
+[],
+"Live",
+"samsungpay"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Tabby",
+[],
+"Live",
+"tabby"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Tamara",
+[],
+"Live",
+"tamara"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Ticket Edenred",
+[],
+"Live",
+"ticketedenred"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"United Arab Emirates",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"United Arab Emirates",
+"Provider",
+"Magnati",
+[],
+"Homologating",
+"magnati"
+],
+[
+"Israel",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Israel",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Israel",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Israel",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Israel",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Israel",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Israel",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Israel",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Israel",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Israel",
+"Direct payment method",
+"WeChat Pay",
+[],
+"Live",
+"wechatpay"
+],
+[
+"Israel",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Israel",
+"Provider",
+"Adyen",
+[
+"Cards"
+],
+"Live (cross-border)",
+"adyen"
+],
+[
+"Israel",
+"Provider",
+"Airwallex",
+[
+"Cards",
+"Alipay"
+],
+"Live (cross-border)",
+"airwallex"
+],
+[
+"Israel",
+"Provider",
+"Braintree",
+[
+"Cards",
+"PayPal"
+],
+"Live (cross-border)",
+"braintree"
+],
+[
+"Israel",
+"Provider",
+"Stripe",
+[
+"Cards"
+],
+"Live (cross-border)",
+"stripe"
+],
+[
+"Israel",
+"Provider",
+"Worldpay",
+[
+"Cards"
+],
+"Live (cross-border)",
+"worldpay"
+],
+[
+"Israel",
+"Provider",
+"Rapyd",
+[],
+"Activation on request",
+"rapyd"
+],
+[
+"Israel",
+"Provider",
+"Worldline",
+[],
+"Activation on request",
+"worldline"
+],
+[
+"Israel",
+"Provider",
+"PayPlus",
+[],
+"On request",
+"payplus"
+],
+[
+"Israel",
+"Provider",
+"Max",
+[],
+"On request",
+"max"
+],
+[
+"Israel",
+"Provider",
+"Tranzila",
+[],
+"On request",
+"tranzila"
+],
+[
+"Israel",
+"Provider",
+"Cardcom",
+[],
+"On request",
+"cardcom"
+],
+[
+"Israel",
+"Provider",
+"Pelecard",
+[],
+"On request",
+"pelecard"
+],
+[
+"Israel",
+"Provider",
+"Finaro (Shift4)",
+[],
+"On request",
+"finaroshift4"
+],
+[
+"Israel",
+"Direct payment method",
+"Bit",
+[],
+"On request",
+"bit"
+],
+[
+"Israel",
+"Provider",
+"Cal (Israel Credit Cards)",
+[],
+"Homologating",
+"calisraelcreditcards"
+],
+[
+"Israel",
+"Provider",
+"Isracard",
+[],
+"Homologating",
+"isracard"
+],
+[
+"Egypt",
+"Provider",
+"AAIB",
+[],
+"Live",
+"aaib"
+],
+[
+"Egypt",
+"Provider",
+"Amazon Payments Services",
+[],
+"Live",
+"amazonpaymentsservices"
+],
+[
+"Egypt",
+"Provider",
+"Banque Misr",
+[],
+"Live",
+"banquemisr"
+],
+[
+"Egypt",
+"Provider",
+"Carry1st",
+[],
+"Live",
+"carry1st"
+],
+[
+"Egypt",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Egypt",
+"Provider",
+"CowPay",
+[],
+"Live",
+"cowpay"
+],
+[
+"Egypt",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Egypt",
+"Provider",
+"dLocal",
+[
+"Cards"
+],
+"Live",
+"dlocal"
+],
+[
+"Egypt",
+"Provider",
+"Fawry",
+[],
+"Live",
+"fawry"
+],
+[
+"Egypt",
+"Provider",
+"Flutterwave",
+[],
+"Live",
+"flutterwave"
+],
+[
+"Egypt",
+"Provider",
+"Geidea",
+[],
+"Live",
+"geidea"
+],
+[
+"Egypt",
+"Provider",
+"HyperPay",
+[],
+"Live",
+"hyperpay"
+],
+[
+"Egypt",
+"Provider",
+"JumiaPay",
+[],
+"Live",
+"jumiapay"
+],
+[
+"Egypt",
+"Provider",
+"Kashier",
+[],
+"Live",
+"kashier"
+],
+[
+"Egypt",
+"Provider",
+"MyFatoorah",
+[],
+"Live",
+"myfatoorah"
+],
+[
+"Egypt",
+"Provider",
+"Noon Payments",
+[],
+"Live",
+"noonpayments"
+],
+[
+"Egypt",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Egypt",
+"Provider",
+"OPay",
+[],
+"Live",
+"opay"
+],
+[
+"Egypt",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Egypt",
+"Provider",
+"Paymob",
+[],
+"Live",
+"paymob"
+],
+[
+"Egypt",
+"Provider",
+"PayTabs",
+[],
+"Live",
+"paytabs"
+],
+[
+"Egypt",
+"Provider",
+"PPRO",
+[],
+"Homologating",
+"ppro"
+],
+[
+"Egypt",
+"Provider",
+"Tap Payments",
+[],
+"Live",
+"tap"
+],
+[
+"Egypt",
+"Provider",
+"WePay",
+[],
+"Live",
+"wepay"
+],
+[
+"Egypt",
+"Direct payment method",
+"ABK Wallet",
+[],
+"Live",
+"abkwallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"Alexbank Ma7fazty",
+[],
+"Live",
+"alexbankma7fazty"
+],
+[
+"Egypt",
+"Direct payment method",
+"Aman",
+[],
+"Live",
+"aman"
+],
+[
+"Egypt",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Egypt",
+"Direct payment method",
+"AUBE Mobile Wallet-e-Pocket",
+[],
+"Live",
+"aubemobilewalletepocket"
+],
+[
+"Egypt",
+"Direct payment method",
+"Audi2Pay",
+[],
+"Live",
+"audi2pay"
+],
+[
+"Egypt",
+"Direct payment method",
+"Banki Wallet",
+[],
+"Live",
+"bankiwallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"Blom Wallet",
+[],
+"Live",
+"blomwallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"BM Wallet",
+[],
+"Live",
+"bmwallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"CIB E-Wallet",
+[],
+"Live",
+"cibewallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"Contact getGo",
+[],
+"Live",
+"contactgetgo"
+],
+[
+"Egypt",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Egypt",
+"Direct payment method",
+"Etisalat Cash",
+[],
+"Live",
+"etisalatcash"
+],
+[
+"Egypt",
+"Direct payment method",
+"Gebe",
+[],
+"Live",
+"gebe"
+],
+[
+"Egypt",
+"Direct payment method",
+"Masary",
+[],
+"Live",
+"masary"
+],
+[
+"Egypt",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Egypt",
+"Direct payment method",
+"Meeza",
+[],
+"Live",
+"meeza"
+],
+[
+"Egypt",
+"Direct payment method",
+"NBK EG Wallet",
+[],
+"Live",
+"nbkegwallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Egypt",
+"Direct payment method",
+"OrangeCash",
+[],
+"Live",
+"orangecash"
+],
+[
+"Egypt",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Egypt",
+"Direct payment method",
+"Phone Cash",
+[],
+"Live",
+"phonecash"
+],
+[
+"Egypt",
+"Direct payment method",
+"Premium Card",
+[],
+"Live",
+"premiumcard"
+],
+[
+"Egypt",
+"Direct payment method",
+"Qahera Cash",
+[],
+"Live",
+"qaheracash"
+],
+[
+"Egypt",
+"Direct payment method",
+"QNB Al-Ahli E-Wallet",
+[],
+"Live",
+"qnbalahliewallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"Saib Wallet",
+[],
+"Live",
+"saibwallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"SCB E-Wallet",
+[],
+"Live",
+"scbewallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"Shahry",
+[],
+"Live",
+"shahry"
+],
+[
+"Egypt",
+"Direct payment method",
+"Souhoola",
+[],
+"Live",
+"souhoola"
+],
+[
+"Egypt",
+"Direct payment method",
+"Sympl",
+[],
+"Live",
+"sympl"
+],
+[
+"Egypt",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Egypt",
+"Direct payment method",
+"UB Digital Wallet",
+[],
+"Live",
+"ubdigitalwallet"
+],
+[
+"Egypt",
+"Direct payment method",
+"ValU",
+[],
+"Live",
+"valu"
+],
+[
+"Egypt",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Egypt",
+"Direct payment method",
+"Vodafone Cash",
+[],
+"Live",
+"vodafonecash"
+],
+[
+"Egypt",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Qatar",
+"Provider",
+"Amazon Payments Services",
+[],
+"Live",
+"amazonpaymentsservices"
+],
+[
+"Qatar",
+"Provider",
+"Carry1st",
+[],
+"Live",
+"carry1st"
+],
+[
+"Qatar",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Qatar",
+"Provider",
+"Commercial Bank of Qatar",
+[],
+"Live",
+"commercialbankofqatar"
+],
+[
+"Qatar",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Qatar",
+"Provider",
+"Dibsy",
+[],
+"Live",
+"dibsy"
+],
+[
+"Qatar",
+"Provider",
+"HyperPay",
+[],
+"Live",
+"hyperpay"
+],
+[
+"Qatar",
+"Provider",
+"Mashreqbank",
+[],
+"Live",
+"mashreqbank"
+],
+[
+"Qatar",
+"Provider",
+"MyFatoorah",
+[],
+"Live",
+"myfatoorah"
+],
+[
+"Qatar",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Qatar",
+"Provider",
+"Qatar National Bank",
+[],
+"Live",
+"qatarnationalbank"
+],
+[
+"Qatar",
+"Provider",
+"Skipcash",
+[],
+"Live",
+"skipcash"
+],
+[
+"Qatar",
+"Provider",
+"Tap Payments",
+[],
+"Live",
+"tap"
+],
+[
+"Qatar",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Qatar",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Qatar",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Qatar",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Qatar",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Qatar",
+"Direct payment method",
+"NAPS/QPAY",
+[],
+"Live",
+"napsqpay"
+],
+[
+"Qatar",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Qatar",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Qatar",
+"Direct payment method",
+"QPay",
+[],
+"Live",
+"qpay"
+],
+[
+"Qatar",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Qatar",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Qatar",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Kuwait",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"adyen"
+],
+[
+"Kuwait",
+"Provider",
+"Amazon Payments Services",
+[],
+"Live",
+"amazonpaymentsservices"
+],
+[
+"Kuwait",
+"Provider",
+"Bookeey",
+[],
+"Live",
+"bookeey"
+],
+[
+"Kuwait",
+"Provider",
+"Carry1st",
+[],
+"Live",
+"carry1st"
+],
+[
+"Kuwait",
+"Provider",
+"Checkout.com",
+[
+"Cards",
+"Tabby",
+"Tamara"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Kuwait",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Kuwait",
+"Provider",
+"Gulf Bank",
+[],
+"Live",
+"gulfbank"
+],
+[
+"Kuwait",
+"Provider",
+"Kuwait International Bank",
+[],
+"Live",
+"kuwaitinternationalbank"
+],
+[
+"Kuwait",
+"Provider",
+"MyFatoorah",
+[],
+"Live",
+"myfatoorah"
+],
+[
+"Kuwait",
+"Provider",
+"NBK (National Bank of Kuwait)",
+[],
+"Live",
+"nbknationalbankofkuwait"
+],
+[
+"Kuwait",
+"Provider",
+"Network International",
+[],
+"Live",
+"networkinternational"
+],
+[
+"Kuwait",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Kuwait",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Kuwait",
+"Provider",
+"PayTabs",
+[],
+"Live",
+"paytabs"
+],
+[
+"Kuwait",
+"Provider",
+"Tap Payments",
+[],
+"Live",
+"tap"
+],
+[
+"Kuwait",
+"Provider",
+"UPayments",
+[],
+"Live",
+"upayments"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Kuwait",
+"Direct payment method",
+"KFast",
+[],
+"Live",
+"kfast"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Knet",
+[],
+"Live",
+"knet"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Kuwait",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Samsung Pay",
+[],
+"Live",
+"samsungpay"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Tabby",
+[],
+"Live",
+"tabby"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Tamara",
+[],
+"Live",
+"tamara"
+],
+[
+"Kuwait",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Kuwait",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Oman",
+"Provider",
+"Amazon Payments Services",
+[],
+"Live",
+"amazonpaymentsservices"
+],
+[
+"Oman",
+"Provider",
+"Bank Dhofar",
+[],
+"Live",
+"bankdhofar"
+],
+[
+"Oman",
+"Provider",
+"Bank Muscat",
+[],
+"Live",
+"bankmuscat"
+],
+[
+"Oman",
+"Provider",
+"Carry1st",
+[],
+"Live",
+"carry1st"
+],
+[
+"Oman",
+"Provider",
+"Checkout.com",
+[
+"Cards"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Oman",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Oman",
+"Provider",
+"HyperPay",
+[],
+"Live",
+"hyperpay"
+],
+[
+"Oman",
+"Provider",
+"MyFatoorah",
+[],
+"Live",
+"myfatoorah"
+],
+[
+"Oman",
+"Provider",
+"National bank of Oman",
+[],
+"Live",
+"nationalbankofoman"
+],
+[
+"Oman",
+"Provider",
+"Network International",
+[],
+"Live",
+"networkinternational"
+],
+[
+"Oman",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Oman",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Oman",
+"Provider",
+"PayTabs",
+[],
+"Live",
+"paytabs"
+],
+[
+"Oman",
+"Provider",
+"Tap Payments",
+[],
+"Live",
+"tap"
+],
+[
+"Oman",
+"Provider",
+"Thawani",
+[],
+"Live",
+"thawani"
+],
+[
+"Oman",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Oman",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Oman",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Oman",
+"Direct payment method",
+"Google Pay",
+[],
+"Live",
+"googlepay"
+],
+[
+"Oman",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Oman",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Oman",
+"Direct payment method",
+"OmanNet",
+[],
+"Live",
+"omannet"
+],
+[
+"Oman",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Oman",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Oman",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Bahrain",
+"Provider",
+"Adyen",
+[
+"Cards",
+"Apple Pay"
+],
+"Live",
+"adyen"
+],
+[
+"Bahrain",
+"Provider",
+"Ahli United bank",
+[],
+"Live",
+"ahliunitedbank"
+],
+[
+"Bahrain",
+"Provider",
+"Amazon Payments Services",
+[],
+"Live",
+"amazonpaymentsservices"
+],
+[
+"Bahrain",
+"Provider",
+"Benefit",
+[],
+"Live",
+"benefit"
+],
+[
+"Bahrain",
+"Provider",
+"Carry1st",
+[],
+"Live",
+"carry1st"
+],
+[
+"Bahrain",
+"Provider",
+"Checkout.com",
+[
+"Cards",
+"Tamara"
+],
+"Live",
+"checkoutcom"
+],
+[
+"Bahrain",
+"Provider",
+"Credimax",
+[],
+"Live",
+"credimax"
+],
+[
+"Bahrain",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Bahrain",
+"Provider",
+"HyperPay",
+[],
+"Live",
+"hyperpay"
+],
+[
+"Bahrain",
+"Provider",
+"MyFatoorah",
+[],
+"Live",
+"myfatoorah"
+],
+[
+"Bahrain",
+"Provider",
+"Network International",
+[],
+"Live",
+"networkinternational"
+],
+[
+"Bahrain",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Bahrain",
+"Provider",
+"Pagsmile",
+[],
+"Live",
+"pagsmile"
+],
+[
+"Bahrain",
+"Provider",
+"PayGCC",
+[],
+"Live",
+"paygcc"
+],
+[
+"Bahrain",
+"Provider",
+"Tap Payments",
+[],
+"Live",
+"tap"
+],
+[
+"Bahrain",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Bahrain",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Bahrain",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Bahrain",
+"Direct payment method",
+"Neteller",
+[],
+"Live",
+"neteller"
+],
+[
+"Bahrain",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Bahrain",
+"Direct payment method",
+"Tamara",
+[],
+"Live",
+"tamara"
+],
+[
+"Bahrain",
+"Direct payment method",
+"UATP",
+[],
+"Live",
+"uatp"
+],
+[
+"Bahrain",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Bahrain",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+],
+[
+"Bahrain",
+"Direct payment method",
+"Western Union",
+[],
+"Live",
+"westernunion"
+],
+[
+"Jordan",
+"Provider",
+"Amazon Payments Services",
+[],
+"Live",
+"amazonpaymentsservices"
+],
+[
+"Jordan",
+"Provider",
+"Arab Bank",
+[],
+"Live",
+"arabbank"
+],
+[
+"Jordan",
+"Provider",
+"Capital Bank of Jordan",
+[],
+"Live",
+"capitalbankofjordan"
+],
+[
+"Jordan",
+"Provider",
+"Carry1st",
+[],
+"Live",
+"carry1st"
+],
+[
+"Jordan",
+"Provider",
+"Cybersource",
+[
+"Cards"
+],
+"Live",
+"cybersource"
+],
+[
+"Jordan",
+"Provider",
+"HyperPay",
+[],
+"Live",
+"hyperpay"
+],
+[
+"Jordan",
+"Provider",
+"MadfoatCom",
+[],
+"Live",
+"madfoatcom"
+],
+[
+"Jordan",
+"Provider",
+"Middle East Payments (MEPS)",
+[],
+"Live",
+"middleeastpaymentsmeps"
+],
+[
+"Jordan",
+"Provider",
+"MyFatoorah",
+[],
+"Live",
+"myfatoorah"
+],
+[
+"Jordan",
+"Provider",
+"Network International",
+[],
+"Live",
+"networkinternational"
+],
+[
+"Jordan",
+"Provider",
+"Nuvei",
+[
+"Cards"
+],
+"Live",
+"nuvei"
+],
+[
+"Jordan",
+"Provider",
+"PayTabs",
+[],
+"Live",
+"paytabs"
+],
+[
+"Jordan",
+"Provider",
+"Tap Payments",
+[],
+"Live",
+"tap"
+],
+[
+"Jordan",
+"Provider",
+"Worldline",
+[
+"Cards"
+],
+"Live",
+"worldline"
+],
+[
+"Jordan",
+"Direct payment method",
+"Apple Pay",
+[],
+"Live",
+"applepay"
+],
+[
+"Jordan",
+"Direct payment method",
+"Discover",
+[],
+"Live",
+"discover"
+],
+[
+"Jordan",
+"Direct payment method",
+"EFAWATEERcom",
+[],
+"Live",
+"efawateercom"
+],
+[
+"Jordan",
+"Direct payment method",
+"Mastercard",
+[],
+"Live",
+"mastercard"
+],
+[
+"Jordan",
+"Direct payment method",
+"PayPal",
+[],
+"Live",
+"paypal"
+],
+[
+"Jordan",
+"Direct payment method",
+"UnionPay",
+[],
+"Live",
+"unionpay"
+],
+[
+"Jordan",
+"Direct payment method",
+"Visa",
+[],
+"Live",
+"visa"
+]
+]

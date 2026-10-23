@@ -202,11 +202,21 @@
 [
 "Japan",
 "Provider",
+"GMO Payment Gateway",
+[
+"Cards"
+],
+"Live",
+"gmopg"
+],
+[
+"Japan",
+"Provider",
 "SB Payment Service",
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "softbank"
 ],
 [
@@ -216,7 +226,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "sony"
 ],
 [
@@ -322,14 +332,6 @@
 [],
 "Live",
 "westernunion"
-],
-[
-"Japan",
-"Provider",
-"GMO Payment Gateway",
-[],
-"Homologating",
-"gmopaymentgateway"
 ],
 [
 "Japan",
@@ -563,9 +565,22 @@
 [
 "Singapore",
 "Provider",
+"AllinPay",
+[
+"Cards",
+"Alipay",
+"PayNow",
+"WeChat Pay"
+],
+"Live",
+"allinpay"
+],
+[
+"Singapore",
+"Provider",
 "Tazapay",
 [],
-"Integrated (code)",
+"Live",
 "tazapay"
 ],
 [
@@ -695,14 +710,6 @@
 [],
 "Live",
 "westernunion"
-],
-[
-"Singapore",
-"Provider",
-"AllinPay",
-[],
-"Homologating",
-"allinpay"
 ],
 [
 "Singapore",
@@ -947,7 +954,7 @@
 [
 "BECS direct debit"
 ],
-"Integrated (code)",
+"Live",
 "gocardless"
 ],
 [
@@ -957,7 +964,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "windcave"
 ],
 [
@@ -968,7 +975,7 @@
 "Cards",
 "BECS direct debit"
 ],
-"Integrated (code)",
+"Live",
 "fatzebra"
 ],
 [
@@ -1314,7 +1321,7 @@
 "Provider",
 "Opn",
 [],
-"Integrated (code)",
+"Live",
 "opn"
 ],
 [
@@ -1923,6 +1930,18 @@
 [
 "South Korea",
 "Provider",
+"NHN KCP",
+[
+"Cards",
+"Bank transfer (KCP)",
+"Kakao Pay"
+],
+"Live",
+"kcp"
+],
+[
+"South Korea",
+"Provider",
 "Payssion",
 [
 "Cards",
@@ -1931,7 +1950,7 @@
 "Samsung Pay",
 "SSG Pay"
 ],
-"Integrated (code)",
+"Live",
 "payssion"
 ],
 [
@@ -1997,14 +2016,6 @@
 [],
 "Live",
 "wechatpay"
-],
-[
-"South Korea",
-"Provider",
-"NHN KCP",
-[],
-"Homologating",
-"nhnkcp"
 ],
 [
 "South Korea",
@@ -2230,7 +2241,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "useepay"
 ],
 [
@@ -3498,7 +3509,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "ccavenue"
 ],
 [
@@ -3734,7 +3745,7 @@
 [
 "BECS direct debit"
 ],
-"Integrated (code)",
+"Live",
 "gocardless"
 ],
 [
@@ -3744,7 +3755,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "windcave"
 ],
 [
@@ -4112,7 +4123,7 @@
 [
 "Bacs direct debit"
 ],
-"Integrated (code)",
+"Live",
 "gocardless"
 ],
 [
@@ -4122,7 +4133,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "opayo"
 ],
 [
@@ -4132,7 +4143,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "trustpayments"
 ],
 [
@@ -4144,7 +4155,7 @@
 "Bacs direct debit",
 "Google Pay"
 ],
-"Integrated (code)",
+"Live",
 "orbital"
 ],
 [
@@ -4552,7 +4563,7 @@
 [
 "SEPA Direct Debit"
 ],
-"Integrated (code)",
+"Live",
 "gocardless"
 ],
 [
@@ -4977,11 +4988,23 @@
 [
 "Spain",
 "Provider",
+"Redsys",
+[
+"Cards",
+"Apple Pay",
+"Google Pay"
+],
+"Live",
+"redsys"
+],
+[
+"Spain",
+"Provider",
 "GoCardless",
 [
 "SEPA Direct Debit"
 ],
-"Integrated (code)",
+"Live",
 "gocardless"
 ],
 [
@@ -5127,14 +5150,6 @@
 [],
 "Live",
 "westernunion"
-],
-[
-"Spain",
-"Provider",
-"Redsys",
-[],
-"Homologating",
-"redsys"
 ],
 [
 "Canada",
@@ -5304,7 +5319,7 @@
 [
 "PAD direct debit"
 ],
-"Integrated (code)",
+"Live",
 "gocardless"
 ],
 [
@@ -5315,8 +5330,18 @@
 "Cards",
 "Google Pay"
 ],
-"Integrated (code)",
+"Live",
 "orbital"
+],
+[
+"Canada",
+"Provider",
+"Moneris",
+[
+"Cards"
+],
+"Live",
+"moneris"
 ],
 [
 "Canada",
@@ -5437,14 +5462,6 @@
 [],
 "Live",
 "wechatpay"
-],
-[
-"Canada",
-"Provider",
-"Moneris",
-[],
-"Homologating",
-"moneris"
 ],
 [
 "Argentina",
@@ -5707,8 +5724,18 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "prisma"
+],
+[
+"Argentina",
+"Provider",
+"Payway",
+[
+"Cards"
+],
+"Live",
+"payway"
 ],
 [
 "Argentina",
@@ -5717,7 +5744,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "nave"
 ],
 [
@@ -5727,7 +5754,7 @@
 [
 "MODO"
 ],
-"Integrated (code)",
+"Live",
 "modo"
 ],
 [
@@ -5737,7 +5764,7 @@
 [
 "Cards"
 ],
-"Integrated (code)",
+"Live",
 "mobbex"
 ],
 [
@@ -5875,14 +5902,6 @@
 [],
 "Live",
 "wibond"
-],
-[
-"Argentina",
-"Provider",
-"Payway",
-[],
-"Homologating",
-"payway"
 ],
 [
 "Brazil",
@@ -6556,7 +6575,7 @@
 "PIX",
 "PIX Automático"
 ],
-"Integrated (code)",
+"Live",
 "itau"
 ],
 [
@@ -6566,7 +6585,7 @@
 [
 "Boleto"
 ],
-"Integrated (code)",
+"Live",
 "shopfacil"
 ],
 [
@@ -6576,7 +6595,7 @@
 [
 "PIX"
 ],
-"Integrated (code)",
+"Live",
 "okto"
 ],
 [
@@ -6587,7 +6606,7 @@
 "Cards",
 "PIX"
 ],
-"Integrated (code)",
+"Live",
 "payamigo"
 ],
 [
@@ -7724,7 +7743,7 @@
 "Bre-B",
 "PSE"
 ],
-"Integrated (code)",
+"Live",
 "refacil"
 ],
 [
@@ -8463,7 +8482,7 @@
 "Aplazo",
 "SPEI"
 ],
-"Integrated (code)",
+"Live",
 "conekta"
 ],
 [

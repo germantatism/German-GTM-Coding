@@ -1,7 +1,7 @@
 {
  "merchant": "Waymo",
  "deal_dir": "Deals/Waymo",
- "presentation_id": "1KBdTNcmpAWAqrdlBCibo1o-6CFE8QGPnJNFJIcOgnTw",
+ "presentation_id": "1GNgEptEXFiQtuc79yOgESnKNOBV8H621C_u8-xK_O0M",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
  "logo_aspect": 6.963,
  "recurring_only": false,
@@ -517,5 +517,6 @@
  "markets_methods": 3,
  "presentation_id_v6": "1Qu3JvldczchxT9TrXmUkU1bSso9ltTGvOt5peT3hHjQ",
  "presentation_id_v7": "1r7g6kFtX8ZENovd3-51qyx9M0369yYLahpwXEGeEHRY",
- "presentation_id_v8": "1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8"
+ "presentation_id_v8": "1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8",
+ "presentation_id_v9": "1KBdTNcmpAWAqrdlBCibo1o-6CFE8QGPnJNFJIcOgnTw"
 }

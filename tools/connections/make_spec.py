@@ -37,6 +37,7 @@ for c, typ, name, meths, status, key in R:
             if m in GLOBAL: d['global_m'][m].append(name)
             else: d['methods'][m].append(name)
     else: (d['signed'] if status == 'Signed' else d['direct']).append(name)
+HAS_CODE = any(by[c]['code'] for c in by)   # the 'integrated in code' tier only renders when some row still carries that status
 def slug(c): return c.lower().replace(' ', '-')
 def pl(n, w): return f"{n} {w}" + ('' if n == 1 else 's')
 def grouped(d):
@@ -111,10 +112,10 @@ if CFG.get('basis'):
 def overview(rg):
     cs = rg['countries']; chunks = [cs[i:i + 10] for i in range(0, len(cs), 10)]
     for i, ch in enumerate(chunks):
-        rows = [[dcountry(c), str(len(by[c]['live'])), f"{len(by[c]['homolog'])} · {len(by[c]['code'])}", short_methods(by[c])] for c in ch]
+        rows = [[dcountry(c), str(len(by[c]['live'])), (f"{len(by[c]['homolog'])} · {len(by[c]['code'])}" if HAS_CODE else str(len(by[c]['homolog']))), short_methods(by[c])] for c in ch]
         s = {"id": f"sum-{slug(rg['name'])}-{i + 1}", "type": "table", "kicker": f"OVERVIEW › {rg['name'].upper()}" + (f" ({i + 1} OF {len(chunks)})" if len(chunks) > 1 else ""),
-             "headline": rg['headline'], "columns": ["Country", "Providers live", "Homologating · in code", "Recurring methods and wallets through Yuno" if REC else "Local methods and wallets through Yuno"],
-             "col_widths": [0.17, 0.11, 0.14, 0.58], "rows": rows, "header_style": "dark", "font_size": 8, "bold_first_col": True, "zebra": True, "note": (rg.get('note', '') + " In code = integration repo exists, not listed on y.uno/integrations yet.").strip(), "notes": SRC_NOTE}
+             "headline": rg['headline'], "columns": ["Country", "Providers live", ("Homologating · in code" if HAS_CODE else "Homologating"), "Recurring methods and wallets through Yuno" if REC else "Local methods and wallets through Yuno"],
+             "col_widths": [0.17, 0.11, 0.14, 0.58], "rows": rows, "header_style": "dark", "font_size": 8, "bold_first_col": True, "zebra": True, "note": (rg.get('note', '') + (" In code = integration repo exists, not listed on y.uno/integrations yet." if HAS_CODE else "")).strip(), "notes": SRC_NOTE}
         if not fits(s): s['font_size'] = 7.5
         if not fits(s): s['font_size'] = 7
         S.append(s)
@@ -133,7 +134,7 @@ def country_slides(c):
         headA = f"{cn}: {pl(len(live), 'provider')} live through Yuno, {len(cards)} for cards" + (f", {pl(len(hom), hom_word)} in homologation." if hom else ".")
         headB = f"{cn}: {pl(len(direct), 'payment method')} available and {pl(nloc, 'local method')} carried by the providers." if nloc else f"{cn}: {pl(len(direct), 'payment method')} available through Yuno."
         secB_h = f"Wallets and payment methods available ({len(direct)})"; tcols = ["Local method", "Providers carrying it through Yuno", "#"]
-    if not live and not hom: headA = f"{cn}: no provider lists this market on y.uno/integrations yet; {pl(len(direct), 'global payment method')} available." + (f" {pl(len(code), 'provider')} integrated in code." if code else "")
+    if not live and not hom: headA = f"{cn}: no provider live through Yuno yet; {pl(len(direct), 'global payment method')} available." + (f" {pl(len(code), 'provider')} integrated in code." if code else "")
     live_h = f"Live through Yuno ({len(live)})"
     if d['xborder']:
         loc = [x for x in live if x not in d['xborder']]
