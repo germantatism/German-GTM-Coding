@@ -11,6 +11,14 @@ print('ref', len(S), 'slides; new', len(D), 'slides')
 # 1. story: kicker off, $30B -> $100B
 k = find(D[2], lambda e: text_of(e).strip() == 'THE YUNO STORY')
 run(([{'deleteObject': {'objectId': k[0]['objectId']}}] if k else []) + [{'replaceAllText': {'containsText': {'text': '30', 'matchCase': True}, 'replaceText': '100', 'pageObjectIds': [sid(2)]}}], 'story')
+# 1b. the $100B+ number box: the template box is sized for "$30B+" and wraps "B+" onto the TPV label; match the reference width
+k = find(D[2], lambda e: text_of(e).strip() in ('$30B+', '$100B+')); r = find(S[2], lambda e: text_of(e).strip() == '$100B+')
+if k and r:
+    e = k[0]; tf = dict(e['transform']); cur_w = e['size']['width']['magnitude'] * tf.get('scaleX', 1)
+    ref_w = r[0]['size']['width']['magnitude'] * r[0]['transform'].get('scaleX', 1)
+    if abs(ref_w - cur_w) > 1000:
+        tf['scaleX'] = tf.get('scaleX', 1) * ref_w / cur_w
+        run([{'updatePageElementTransform': {'objectId': e['objectId'], 'applyMode': 'ABSOLUTE', 'transform': {'scaleX': tf['scaleX'], 'scaleY': tf.get('scaleY', 1), 'shearX': tf.get('shearX', 0), 'shearY': tf.get('shearY', 0), 'translateX': tf.get('translateX', 0), 'translateY': tf.get('translateY', 0), 'unit': 'EMU'}}}], 'story width')
 # 2. pillars kicker off
 k = find(D[3], lambda e: text_of(e).strip() == 'ABOUT YUNO · PLATFORM'); run([{'deleteObject': {'objectId': k[0]['objectId']}}] if k else [], 'pillars')
 # 3. trusted: kicker off, page number 6, Kraken -> white Moonactive at the reference position

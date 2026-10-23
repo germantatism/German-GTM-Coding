@@ -1,0 +1,17 @@
+ref 80 slides; new 77 slides
+  story: 2 requests
+  pillars: 1 requests
+  trusted: 5 requests
+  team wipe: 79 requests
+  team clone 0: 120 requests
+  team clone 120: 120 requests
+  team clone 240: 10 requests
+  team widen + order: 33 requests
+  closing create: 1 requests
+  skip line h2d2d16976c09ce2e_6_1398
+  closing content: 25 requests
+  drop next steps: 1 requests
+  dividers: 6 requests
+  vault wording: 7 requests
+  cover logo: 1 requests
+final slides 77 ['n01_g3f77215', 'n02_g3f769a0', 'n03_g3f769a0', 'n04_g3f769a0', 'n06_g3f77215', 'n05_g3f769a0', 'n07_g3f769a0', 'wv_problem', 'wv_summary', 'wv_cards', 'wv_versus', 'n12_g3f769a0', 'n13_g3f77215'] closing_sync
