@@ -293,8 +293,8 @@
   "recurring": false,
   "why": "Most used e-commerce method; one-time push",
   "source": "knowledge",
-  "yuno_status": "MISSING",
-  "yuno_match": ""
+  "yuno_status": "Live",
+  "yuno_match": "Virtual Account (via Xendit, dLocal)"
  },
  {
   "country": "Indonesia",
@@ -1294,8 +1294,8 @@
   "recurring": false,
   "why": "Cash via Dragonpay network; prepaid one-time",
   "source": "https://hitpayapp.com/ph/blog/best-subscription-billing-software-philippines",
-  "yuno_status": "MISSING",
-  "yuno_match": ""
+  "yuno_status": "Live",
+  "yuno_match": "7-Eleven (via Adyen, Unlimit, Xendit, dLocal)"
  },
  {
   "country": "Philippines",
@@ -4396,8 +4396,8 @@
   "recurring": null,
   "why": "Second acquirer (ex Axepta BNL)",
   "source": "knowledge",
-  "yuno_status": "MISSING",
-  "yuno_match": ""
+  "yuno_status": "Live",
+  "yuno_match": "Worldline (provider)"
  },
  {
   "country": "Italy",
@@ -6783,8 +6783,8 @@
   "recurring": null,
   "why": "PSP",
   "source": "knowledge",
-  "yuno_status": "MISSING",
-  "yuno_match": ""
+  "yuno_status": "Live",
+  "yuno_match": "PayU (provider)"
  },
  {
   "country": "Czech Republic",
@@ -6794,8 +6794,8 @@
   "recurring": null,
   "why": "Acquiring",
   "source": "knowledge",
-  "yuno_status": "MISSING",
-  "yuno_match": ""
+  "yuno_status": "Live",
+  "yuno_match": "Worldline (provider)"
  },
  {
   "country": "Portugal",
@@ -9555,8 +9555,8 @@
   "recurring": null,
   "why": "Bancolombia-group gateway",
   "source": "knowledge",
-  "yuno_status": "MISSING",
-  "yuno_match": ""
+  "yuno_status": "Live",
+  "yuno_match": "Wompi (provider)"
  },
  {
   "country": "El Salvador",
@@ -10259,8 +10259,8 @@
   "recurring": false,
   "why": "QR surpassed physical card use; one-time",
   "source": "knowledge",
-  "yuno_status": "MISSING",
-  "yuno_match": ""
+  "yuno_status": "Partial",
+  "yuno_match": "Bancard live through Yuno for cards; Bancard QR and the Zimple wallet are not catalogued as methods"
  },
  {
   "country": "Paraguay",
