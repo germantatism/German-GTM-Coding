@@ -1,0 +1,531 @@
+
+=== SLIDE 1 n01_g3f77215683c_1_445 layout=g3f77215683c_1_523
+  [n01_g3f77215683c_1_527] TEXT_BOX x=29 y=257 w=493 h=42 :: 'The OnlyFans Yuno Vault'
+  [n01_g3f77215683c_1_528] IMG x=157 y=53 w=131 h=23 url=https://docs.google.com/slides-images-rt/AE1YXSZMKE1b2XBA9XA
+  [n01_g3f77215683c_1_529] IMG x=58 y=57 w=68 h=19 url=https://docs.google.com/slides-images-rt/AE1YXSYRPR0VWLU2J0t
+  [n01_e001] TEXT_BOX x=29 y=300 w=574 h=30 :: 'Your schema, your connections, your vault.'
+  [n01_e002] TEXT_BOX x=29 y=351 w=574 h=26 :: 'Prepared for OnlyFans · October 2026 · Strictly confidential'
+  [cv_www] TEXT_BOX x=526 y=25 w=166 h=18 :: 'W W W . Y . U N O'
+  [cv_stat] TEXT_BOX x=29 y=364 w=576 h=18 :: '1,000+ PAYMENT OPTIONS   |   180+ CURRENCIES   |   190+ COUNTRIES'
+
+=== SLIDE 2 of_exec_understanding_v2 layout=g3f77215683c_2_1907
+  [of_es1_v2_001] IMG x=645 y=24 w=39 h=11 url=https://docs.google.com/slides-images-rt/AE1YXSYVwktp0anRYoG
+  [of_es1_v2_002] RECTANGLE x=36 y=25 w=555 h=13 :: 'EXECUTIVE SUMMARY'
+  [of_es1_v2_003] RECTANGLE x=36 y=41 w=648 h=59 :: 'OnlyFans needs one vault that every provider can use, under its own rules'
+  [of_es1_v2_008] TEXT_BOX x=66 y=102 w=137 h=48 :: 'What OnlyFans aims to deliver'
+  [of_es1_v2_009] TEXT_BOX x=215 y=102 w=476 h=48 :: 'Reliable payments and payouts, with one place for every sensitive record: fan cards, network tokens and creator identity, tax and bank data.'
+  [of_es1_v2_011] TEXT_BOX x=66 y=158 w=137 h=65 :: 'What makes this challenging'
+  [of_es1_v2_012] TEXT_BOX x=215 y=158 w=476 h=65 :: 'Today fan cards sit with the processor and creator data sits in OnlyFans systems. Every new processor or issuer means moving sensitive data again, and every system that holds it has to be secured and audited.'
+  [of_es1_v2_014] TEXT_BOX x=66 y=231 w=137 h=63 :: 'The decision now'
+  [of_es1_v2_015] TEXT_BOX x=215 y=231 w=476 h=63 :: 'OnlyFans is selecting a token vault provider through the current RFP. That choice decides who holds every credential and how freely OnlyFans can add, swap or leave providers.'
+  [of_es1_v2_026] RECTANGLE x=36 y=308 w=648 h=57 :: 'What we propose\nOne PCI DSS Level 1 Yuno Vault for cards, network tokens and creator data, a proxy that delivers each value only to the provider that needs it, and portable tokens with the exit written into the contract.'
+  [pgbx_04] TEXT_BOX x=7 y=379 w=58 h=19 :: '2'
+
+=== SLIDE 3 vlt_problem layout=p51
+  [vlt_problem__9_243] RECTANGLE x=36 y=25 w=322 h=14 :: 'THE VAULT  ›  THE PROBLEM'
+  [vlt_problem__9_244] RECTANGLE x=36 y=41 w=648 h=54 :: 'Fan cards live with your processor and creator data lives in your systems'
+  [vlt_problem_mpg_05] TEXT_BOX x=7 y=376 w=58 h=23 :: '3'
+  [vlt_problem_mlg_05] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSa1bd3HP100J_1
+  [vlt_problem_k002] TEXT_BOX x=43 y=89 w=74 h=28 :: 'BEFORE'
+  [vlt_problem_k003] TEXT_BOX x=97 y=86 w=214 h=32 :: 'Data in two places'
+  [vlt_problem_k005] TEXT_BOX x=53 y=121 w=124 h=30 :: 'Processor'
+  [vlt_problem_k006] TEXT_BOX x=53 y=137 w=124 h=28 :: "holds the fan's card"
+  [vlt_problem_k008] TEXT_BOX x=61 y=206 w=110 h=28 :: 'Fan cards'
+  [vlt_problem_k010] TEXT_BOX x=193 y=121 w=130 h=30 :: 'OnlyFans systems'
+  [vlt_problem_k011] TEXT_BOX x=193 y=137 w=130 h=28 :: "hold the creator's data"
+  [vlt_problem_k013] TEXT_BOX x=200 y=161 w=114 h=26 :: 'Bank accounts'
+  [vlt_problem_k015] TEXT_BOX x=200 y=185 w=114 h=26 :: 'ID documents'
+  [vlt_problem_k017] TEXT_BOX x=200 y=209 w=114 h=26 :: 'Tax records'
+  [vlt_problem_k018] TEXT_BOX x=45 y=249 w=26 h=28 :: '×'
+  [vlt_problem_k019] TEXT_BOX x=59 y=250 w=274 h=28 :: 'Fan cards are locked to the processor that stores them'
+  [vlt_problem_k020] TEXT_BOX x=45 y=269 w=26 h=28 :: '×'
+  [vlt_problem_k021] TEXT_BOX x=59 y=270 w=274 h=28 :: 'Two systems to secure and audit'
+  [vlt_problem_k022] TEXT_BOX x=45 y=289 w=26 h=28 :: '×'
+  [vlt_problem_k023] TEXT_BOX x=59 y=290 w=274 h=28 :: 'A new provider means collecting creator details again'
+  [vlt_problem_k024] TEXT_BOX x=45 y=315 w=284 h=50 :: 'OnlyFans Privacy Policy: "We do not receive your full payment card number." Read 8 Oct 2026.'
+  [vlt_problem_k026] TEXT_BOX x=335 y=211 w=40 h=30 :: '→'
+  [vlt_problem_k028] TEXT_BOX x=381 y=89 w=64 h=28 :: 'AFTER'
+  [vlt_problem_k029] TEXT_BOX x=425 y=86 w=214 h=32 :: 'One vault'
+  [vlt_problem_k031] TEXT_BOX x=389 y=117 w=90 h=28 :: 'Processors'
+  [vlt_problem_k032] ROUND_RECTANGLE x=396 y=142 w=64 h=13 :: 'SWAPPABLE'
+  [vlt_problem_k035] TEXT_BOX x=485 y=117 w=90 h=28 :: 'Card issuers'
+  [vlt_problem_k036] ROUND_RECTANGLE x=492 y=142 w=64 h=13 :: 'SWAPPABLE'
+  [vlt_problem_k039] TEXT_BOX x=581 y=117 w=90 h=28 :: 'KYC and tax'
+  [vlt_problem_k040] ROUND_RECTANGLE x=588 y=142 w=64 h=13 :: 'SWAPPABLE'
+  [vlt_problem_k043] TEXT_BOX x=393 y=179 w=214 h=30 :: 'Yuno Vault'
+  [vlt_problem_k044] ROUND_RECTANGLE x=400 y=214 w=60 h=16 :: 'Cards'
+  [vlt_problem_k045] ROUND_RECTANGLE x=466 y=214 w=60 h=16 :: 'Bank details'
+  [vlt_problem_k046] ROUND_RECTANGLE x=532 y=214 w=60 h=16 :: 'ID documents'
+  [vlt_problem_k047] ROUND_RECTANGLE x=598 y=214 w=60 h=16 :: 'Tax records'
+  [vlt_problem_k049] TEXT_BOX x=390 y=263 w=13 h=10 :: '✓'
+  [vlt_problem_k050] TEXT_BOX x=403 y=254 w=274 h=28 :: 'Cards work on any processor you connect'
+  [vlt_problem_k052] TEXT_BOX x=390 y=285 w=13 h=10 :: '✓'
+  [vlt_problem_k053] TEXT_BOX x=403 y=276 w=274 h=28 :: 'One vault to secure and audit'
+  [vlt_problem_k055] TEXT_BOX x=390 y=307 w=13 h=10 :: '✓'
+  [vlt_problem_k056] TEXT_BOX x=403 y=298 w=274 h=28 :: 'Creator details collected once and reused'
+
+=== SLIDE 4 m5_mock layout=g3f77215683c_2_1907
+  [m5_lg] IMG x=645 y=24 w=39 h=11 url=https://docs.google.com/slides-images-rt/AE1YXSYVwktp0anRYoG
+  [m5_kk] RECTANGLE x=36 y=25 w=322 h=10 :: 'EXECUTIVE SUMMARY  ›  INTEGRATED VERSUS STANDALONE'
+  [m5_tt] RECTANGLE x=36 y=41 w=603 h=44 :: "Yuno's vault does everything a standalone vault does, plus the connections, with far less to build"
+  [m5_pg] TEXT_BOX x=7 y=388 w=58 h=16 :: '4'
+  [m5_hl] TEXT_BOX x=36 y=98 w=137 h=35 :: 'What OnlyFans needs'
+  [m5_ha] ROUND_RECTANGLE x=180 y=96 w=216 h=38 :: 'Standalone vault\nStores the data. The rest is yours to build or buy.'
+  [m5_hb] ROUND_RECTANGLE x=408 y=96 w=276 h=38 :: 'Yuno integrated vault\nStores the data, connects it to providers and runs payments on it.'
+  [m5_sl] TEXT_BOX x=36 y=138 w=137 h=32 :: 'Basic vault function'
+  [m5_sb] ROUND_RECTANGLE x=180 y=142 w=504 h=25 :: 'PCI DSS Level 1 storage   ·   Tokenisation   ·   Proxy to providers   ·   Portable tokens and contractual exit'
+  [m5_ol] TEXT_BOX x=36 y=176 w=150 h=14 :: 'Other connections and capabilities'
+  [m5_l0] TEXT_BOX x=36 y=192 w=137 h=40 :: 'Data in one vault'
+  [m5_at0] ROUND_RECTANGLE x=186 y=200 w=52 h=24 :: 'PARTIAL'
+  [m5_ad0] TEXT_BOX x=240 y=192 w=157 h=40 :: 'Cards and tokens; other data varies by vendor'
+  [m5_bt0] ROUND_RECTANGLE x=629 y=101 w=46 h=12 :: 'INCLUDED'
+  [m5_bd0] TEXT_BOX x=433 y=192 w=244 h=40 :: 'Cards, network tokens, bank, identity and tax data in one vault'
+  [m5_l1] TEXT_BOX x=36 y=232 w=137 h=40 :: 'Provider connections'
+  [m5_at1] ROUND_RECTANGLE x=186 y=240 w=52 h=24 :: 'Additional Build'
+  [m5_ad1] TEXT_BOX x=240 y=232 w=157 h=40 :: 'Each processor and bank connection, built and run in-house'
+  [m5_bd1] TEXT_BOX x=433 y=232 w=244 h=40 :: '460+ processor integrations already built and maintained'
+  [m5_l2] TEXT_BOX x=36 y=272 w=137 h=40 :: 'Payment capabilities'
+  [m5_ad2] TEXT_BOX x=240 y=272 w=157 h=40 :: 'Routing, retries, failover and payouts, built in-house'
+  [m5_bd2] TEXT_BOX x=433 y=272 w=244 h=40 :: 'Routing, retries, failover and payouts on rules you set'
+  [m5_l3] TEXT_BOX x=36 y=312 w=137 h=40 :: 'Additional services'
+  [m5_ad3] TEXT_BOX x=240 y=312 w=157 h=40 :: 'A new vendor and integration for each service'
+  [m5_bd3] TEXT_BOX x=433 y=312 w=244 h=40 :: '3DS, account updater, network tokens and payouts on the same tokens'
+  [m5_band] ROUND_RECTANGLE x=36 y=360 w=648 h=25 :: 'Same independence, far less to build.   OnlyFans keeps portable tokens and exit terms, and decides how much of the stack Yuno runs.'
+  [h6757c61d145eaba9_20_741] ROUND_RECTANGLE x=186 y=280 w=52 h=24 :: 'Additional Build'
+  [h6757c61d145eaba9_20_742] ROUND_RECTANGLE x=186 y=320 w=52 h=24 :: 'Additional Purchase'
+
+=== SLIDE 5 vlt_cards layout=p51
+  [vlt_cards__9_243] RECTANGLE x=36 y=25 w=322 h=14 :: 'THE VAULT  ›  CARDS'
+  [vlt_cards__9_244] RECTANGLE x=36 y=41 w=648 h=54 :: 'Fan cards are stored once and work on every processor you connect'
+  [vlt_cards_mpg_05] TEXT_BOX x=7 y=376 w=58 h=23 :: '5'
+  [vlt_cards_mlg_05] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSa1bd3HP100J_1
+  [vlt_cards_k002] TEXT_BOX x=41 y=89 w=74 h=26 :: 'STEP 1'
+  [vlt_cards_k003] TEXT_BOX x=125 y=89 w=114 h=26 :: 'Hosted fields'
+  [vlt_cards_k004] TEXT_BOX x=41 y=105 w=194 h=32 :: 'Store'
+  [vlt_cards_k007] TEXT_BOX x=261 y=89 w=74 h=26 :: 'STEP 2'
+  [vlt_cards_k008] TEXT_BOX x=345 y=89 w=114 h=26 :: 'Account updater'
+  [vlt_cards_k009] TEXT_BOX x=261 y=105 w=194 h=32 :: 'Keep'
+  [vlt_cards_k012] TEXT_BOX x=481 y=89 w=74 h=26 :: 'STEP 3'
+  [vlt_cards_k013] TEXT_BOX x=565 y=89 w=114 h=26 :: 'Import and export'
+  [vlt_cards_k014] TEXT_BOX x=481 y=105 w=194 h=32 :: 'Move'
+  [vlt_cards_k016] TEXT_BOX x=49 y=139 w=114 h=26 :: 'Card number'
+  [vlt_cards_k018] TEXT_BOX x=55 y=158 w=134 h=26 :: '4895 •••• •••• 0193'
+  [vlt_cards_k019] ROUND_RECTANGLE x=188 y=164 w=30 h=14 :: 'Visa'
+  [vlt_cards_k020] TEXT_BOX x=49 y=183 w=74 h=26 :: 'Expiry'
+  [vlt_cards_k021] TEXT_BOX x=135 y=183 w=44 h=26 :: 'CVV'
+  [vlt_cards_k022] TEXT_BOX x=161 y=183 w=74 h=26 :: 'never stored'
+  [vlt_cards_k024] TEXT_BOX x=55 y=202 w=78 h=26 :: '09 / 29'
+  [vlt_cards_k026] TEXT_BOX x=141 y=202 w=78 h=26 :: '•••'
+  [vlt_cards_k027] TEXT_BOX x=269 y=139 w=114 h=26 :: 'Before reissue'
+  [vlt_cards_k029] TEXT_BOX x=275 y=158 w=84 h=26 :: '•••• 0193'
+  [vlt_cards_k030] TEXT_BOX x=371 y=158 w=74 h=26 :: 'tok_9f2a'
+  [vlt_cards_k031] TEXT_BOX x=269 y=183 w=174 h=26 :: '↻  Account updater'
+  [vlt_cards_k032] TEXT_BOX x=269 y=199 w=114 h=26 :: 'After reissue'
+  [vlt_cards_k034] TEXT_BOX x=275 y=218 w=84 h=26 :: '•••• 5521'
+  [vlt_cards_k035] TEXT_BOX x=371 y=218 w=74 h=26 :: 'tok_9f2a'
+  [vlt_cards_k037] TEXT_BOX x=495 y=148 w=30 h=26 :: '01'
+  [vlt_cards_k038] TEXT_BOX x=515 y=143 w=106 h=38 :: 'Current processor exports'
+  [vlt_cards_k039] TEXT_BOX x=601 y=148 w=66 h=26 :: 'PGP file'
+  [vlt_cards_k041] TEXT_BOX x=495 y=182 w=30 h=26 :: '02'
+  [vlt_cards_k042] TEXT_BOX x=515 y=177 w=106 h=38 :: 'Drop over SFTP'
+  [vlt_cards_k043] TEXT_BOX x=601 y=182 w=66 h=26 :: 'to Yuno'
+  [vlt_cards_k045] TEXT_BOX x=495 y=216 w=30 h=26 :: '03'
+  [vlt_cards_k046] TEXT_BOX x=515 y=211 w=106 h=38 :: 'Yuno imports and issues tokens'
+  [vlt_cards_k047] TEXT_BOX x=601 y=216 w=66 h=26 :: 'fans untouched'
+  [vlt_cards_k048] TEXT_BOX x=41 y=259 w=198 h=64 :: 'Hosted fields on web, iOS and Android. No charge needed. The CVV is never stored.'
+  [vlt_cards_k049] TEXT_BOX x=261 y=259 w=198 h=64 :: 'The account updater refreshes cards. The vaulted token stays the same. PAR identifies the unique card behind every credential.'
+  [vlt_cards_k050] TEXT_BOX x=481 y=259 w=198 h=64 :: 'Import from your current processor as a PGP-encrypted file over SFTP. Export is documented.'
+  [vlt_cards_k052] TEXT_BOX x=43 y=337 w=634 h=30 :: 'One vaulted token, every processor. Add or swap a processor and the stored cards keep working, with nothing collected again from fans.'
+
+=== SLIDE 6 h7c266de662ba1cf0_9_207 layout=p51
+  [h7c266de662ba1cf0_9_208] IMG x=0 y=0 w=720 h=405 url=https://docs.google.com/slides-images-rt/AE1YXSYpTGPJA9EdACS
+  [h7c266de662ba1cf0_9_209] RECTANGLE x=36 y=25 w=322 h=14 :: 'THE VAULT  ›  NETWORK TOKENS'
+  [h7c266de662ba1cf0_9_210] RECTANGLE x=36 y=41 w=648 h=54 :: 'Network tokens and PAR sit next to the card, so one fan stays one fan\x0bacross every credential'
+  [h7c266de662ba1cf0_9_213] IMG x=36 y=168 w=98 h=46 url=https://docs.google.com/slides-images-rt/AE1YXSZkY8vCJi4yQNg
+  [h7c266de662ba1cf0_9_214] RECTANGLE x=46 y=177 w=35 h=14 :: 'PAN'
+  [h7c266de662ba1cf0_9_215] RECTANGLE x=46 y=192 w=85 h=14 :: '•••• 0193'
+  [h7c266de662ba1cf0_9_216] IMG x=134 y=190 w=41 h=1 url=https://docs.google.com/slides-images-rt/AE1YXSZfqiab6CdtI4D
+  [h7c266de662ba1cf0_9_217] IMG x=175 y=161 w=150 h=60 url=https://docs.google.com/slides-images-rt/AE1YXSZNpKrdbi60GzE
+  [h7c266de662ba1cf0_9_218] RECTANGLE x=186 y=170 w=35 h=14 :: 'PAR'
+  [h7c266de662ba1cf0_9_219] RECTANGLE x=186 y=183 w=110 h=31 :: 'Payment Account\x0bReference'
+  [h7c266de662ba1cf0_9_220] IMG x=325 y=190 w=30 h=1 url=https://docs.google.com/slides-images-rt/AE1YXSaTazh_2Uwtsdw
+  [h7c266de662ba1cf0_9_221] IMG x=355 y=141 w=1 h=100 url=https://docs.google.com/slides-images-rt/AE1YXSaLns03gOJ_UQ0
+  [h7c266de662ba1cf0_9_222] IMG x=355 y=141 w=26 h=1 url=https://docs.google.com/slides-images-rt/AE1YXSYnpEn7Hc96GfR
+  [h7c266de662ba1cf0_9_223] IMG x=381 y=122 w=303 h=41 url=https://docs.google.com/slides-images-rt/AE1YXSYc5XBvPnbZbJS
+  [h7c266de662ba1cf0_9_224] RECTANGLE x=392 y=128 w=160 h=16 :: 'Network token · card on file'
+  [h7c266de662ba1cf0_9_225] RECTANGLE x=392 y=145 w=352 h=11 :: '•••• 7740 · network transaction ID 3812•••••••2210'
+  [h7c266de662ba1cf0_9_226] IMG x=355 y=190 w=26 h=1 url=https://docs.google.com/slides-images-rt/AE1YXSYnpEn7Hc96GfR
+  [h7c266de662ba1cf0_9_227] IMG x=381 y=171 w=303 h=41 url=https://docs.google.com/slides-images-rt/AE1YXSYc5XBvPnbZbJS
+  [h7c266de662ba1cf0_9_228] RECTANGLE x=392 y=177 w=154 h=16 :: 'Network token · Apple Pay'
+  [h7c266de662ba1cf0_9_229] RECTANGLE x=392 y=194 w=64 h=11 :: '•••• 2215'
+  [h7c266de662ba1cf0_9_230] IMG x=355 y=240 w=26 h=1 url=https://docs.google.com/slides-images-rt/AE1YXSYnpEn7Hc96GfR
+  [h7c266de662ba1cf0_9_231] IMG x=381 y=220 w=303 h=41 url=https://docs.google.com/slides-images-rt/AE1YXSYc5XBvPnbZbJS
+  [h7c266de662ba1cf0_9_232] RECTANGLE x=392 y=227 w=81 h=16 :: 'Reissued card'
+  [h7c266de662ba1cf0_9_233] RECTANGLE x=392 y=243 w=169 h=11 :: 'PAN •••• 5521 · same PAR'
+  [h7c266de662ba1cf0_9_234] IMG x=36 y=291 w=648 h=44 url=https://docs.google.com/slides-images-rt/AE1YXSbGEnoXkrrB2Jt
+  [h7c266de662ba1cf0_9_235] RECTANGLE x=46 y=298 w=360 h=30 :: 'One fan across card, wallet and reissue: for chargebacks, bans\x0band subscriptions.'
+  [h7c266de662ba1cf0_9_236] RECTANGLE x=404 y=299 w=344 h=28 :: 'Token requestor ID registered under OnlyFans where the scheme\nallows it. Yuno acts as TS-TRP.'
+  [h7c266de662ba1cf0_9_237] IMG x=129 y=184 w=50 h=14 url=https://docs.google.com/slides-images-rt/AE1YXSZoYXwrNRM_90-
+  [impg_04] TEXT_BOX x=7 y=376 w=58 h=23 :: '6'
+  [imlg_04] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSa1bd3HP100J_1
+
+=== SLIDE 7 vlt_personal layout=p51
+  [vlt_personal__9_243] RECTANGLE x=36 y=25 w=322 h=14 :: 'THE VAULT  ›  PERSONAL DATA'
+  [vlt_personal__9_244] RECTANGLE x=36 y=41 w=648 h=54 :: 'Creator identity, tax and bank data get the same Level 1 protection as a card'
+  [vlt_personal_mpg_05] TEXT_BOX x=7 y=376 w=58 h=23 :: '7'
+  [vlt_personal_mlg_05] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSa1bd3HP100J_1
+  [vlt_personal_k003] TEXT_BOX x=43 y=95 w=36 h=26 :: 'AS'
+  [vlt_personal_k004] TEXT_BOX x=73 y=92 w=134 h=32 :: 'Ana Souza'
+  [vlt_personal_k005] TEXT_BOX x=153 y=95 w=74 h=28 :: 'cr_8812'
+  [vlt_personal_k006] ROUND_RECTANGLE x=316 y=100 w=92 h=16 :: 'PCI DSS LEVEL 1'
+  [vlt_personal_k007] TEXT_BOX x=43 y=127 w=124 h=26 :: 'FIELD'
+  [vlt_personal_k008] TEXT_BOX x=169 y=127 w=124 h=26 :: 'STORED AS'
+  [vlt_personal_k009] TEXT_BOX x=333 y=127 w=124 h=26 :: 'PROTECTION'
+  [vlt_personal_k011] TEXT_BOX x=43 y=148 w=134 h=28 :: 'Legal name'
+  [vlt_personal_k012] TEXT_BOX x=169 y=148 w=164 h=28 :: 'A••• S••••'
+  [vlt_personal_k013] ROUND_RECTANGLE x=340 y=155 w=62 h=15 :: 'Encrypted'
+  [vlt_personal_k015] TEXT_BOX x=43 y=175 w=134 h=28 :: 'Date of birth'
+  [vlt_personal_k016] TEXT_BOX x=169 y=175 w=164 h=28 :: '••/••/1991'
+  [vlt_personal_k017] ROUND_RECTANGLE x=340 y=182 w=62 h=15 :: 'Encrypted'
+  [vlt_personal_k019] TEXT_BOX x=43 y=202 w=134 h=28 :: 'Passport'
+  [vlt_personal_k020] TEXT_BOX x=169 y=202 w=164 h=28 :: 'tok_71c0 ····'
+  [vlt_personal_k021] ROUND_RECTANGLE x=340 y=209 w=62 h=15 :: 'Tokenized'
+  [vlt_personal_k023] TEXT_BOX x=43 y=229 w=134 h=28 :: 'Selfies × 2'
+  [vlt_personal_k024] TEXT_BOX x=169 y=229 w=164 h=28 :: '2 encrypted files'
+  [vlt_personal_k025] ROUND_RECTANGLE x=340 y=236 w=62 h=15 :: 'Encrypted'
+  [vlt_personal_k027] TEXT_BOX x=43 y=256 w=134 h=28 :: 'TIN / W-9'
+  [vlt_personal_k028] TEXT_BOX x=169 y=256 w=164 h=28 :: '•••-••-6789'
+  [vlt_personal_k029] ROUND_RECTANGLE x=340 y=263 w=62 h=15 :: 'Tokenized'
+  [vlt_personal_k031] TEXT_BOX x=43 y=283 w=134 h=28 :: 'Bank accounts × 3'
+  [vlt_personal_k032] TEXT_BOX x=169 y=283 w=164 h=28 :: '•••• 4421  +2 more'
+  [vlt_personal_k033] ROUND_RECTANGLE x=340 y=290 w=62 h=15 :: 'Tokenized'
+  [vlt_personal_k035] TEXT_BOX x=43 y=315 w=364 h=28 :: 'Collected once at onboarding. Reused from the vault every time after.'
+  [vlt_personal_k038] TEXT_BOX x=475 y=107 w=204 h=30 :: 'KYC and verification'
+  [vlt_personal_k039] TEXT_BOX x=475 y=126 w=210 h=28 :: 'legal name · date of birth · passport · selfies'
+  [vlt_personal_k042] TEXT_BOX x=475 y=199 w=204 h=30 :: 'Card issuer onboarding'
+  [vlt_personal_k043] TEXT_BOX x=475 y=218 w=210 h=28 :: 'legal name · TIN · bank account'
+  [vlt_personal_k046] TEXT_BOX x=475 y=291 w=204 h=30 :: 'Tax reporting'
+  [vlt_personal_k047] TEXT_BOX x=475 y=310 w=210 h=28 :: 'legal name · TIN'
+
+=== SLIDE 8 h7c266de662ba1cf0_9_241 layout=p51
+  [h7c266de662ba1cf0_9_242] IMG x=0 y=0 w=720 h=405 url=https://docs.google.com/slides-images-rt/AE1YXSbxHvSGf9BMPO5
+  [h7c266de662ba1cf0_9_243] RECTANGLE x=36 y=25 w=322 h=14 :: 'THE VAULT  ›  YOUR DESIGN'
+  [h7c266de662ba1cf0_9_244] RECTANGLE x=36 y=41 w=648 h=54 :: 'You define the tables, the columns, how each one is protected and how\x0blong it lives'
+  [h7c266de662ba1cf0_9_245] RECTANGLE x=50 y=113 w=52 h=14 :: 'TABLES'
+  [h7c266de662ba1cf0_9_246] RECTANGLE x=50 y=138 w=44 h=11 :: 'cards'
+  [h7c266de662ba1cf0_9_247] RECTANGLE x=51 y=151 w=29 h=14 :: 'PCI'
+  [h7c266de662ba1cf0_9_248] RECTANGLE x=50 y=180 w=107 h=11 :: 'network_tokens'
+  [h7c266de662ba1cf0_9_249] RECTANGLE x=51 y=192 w=29 h=14 :: 'PCI'
+  [h7c266de662ba1cf0_9_250] RECTANGLE x=50 y=221 w=114 h=11 :: 'creator_records'
+  [h7c266de662ba1cf0_9_251] RECTANGLE x=53 y=234 w=27 h=14 :: 'PII'
+  [h7c266de662ba1cf0_9_252] RECTANGLE x=50 y=303 w=65 h=15 :: '+ New table'
+  [h7c266de662ba1cf0_9_253] RECTANGLE x=200 y=134 w=57 h=14 :: 'COLUMN'
+  [h7c266de662ba1cf0_9_254] RECTANGLE x=329 y=134 w=40 h=14 :: 'TYPE'
+  [h7c266de662ba1cf0_9_255] RECTANGLE x=402 y=134 w=46 h=14 :: 'CLASS'
+  [h7c266de662ba1cf0_9_256] RECTANGLE x=475 y=134 w=82 h=14 :: 'PROTECTION'
+  [h7c266de662ba1cf0_9_257] RECTANGLE x=576 y=134 w=74 h=14 :: 'RETENTION'
+  [h7c266de662ba1cf0_9_260] IMG x=44 y=256 w=134 h=39 url=https://docs.google.com/slides-images-rt/AE1YXSYo-lSUkPKjeYC
+  [h7c266de662ba1cf0_9_261] RECTANGLE x=50 y=262 w=107 h=11 :: 'payout_methods'
+  [h7c266de662ba1cf0_9_262] RECTANGLE x=51 y=275 w=29 h=14 :: 'PCI'
+  [h7c266de662ba1cf0_9_263] RECTANGLE x=87 y=275 w=27 h=14 :: 'PII'
+  [h7c266de662ba1cf0_9_264] IMG x=300 y=114 w=68 h=13 url=https://docs.google.com/slides-images-rt/AE1YXSZR1BKrhw4PaJQ
+  [h7c266de662ba1cf0_9_265] RECTANGLE x=200 y=114 w=123 h=13 :: 'payout_methods'
+  [h7c266de662ba1cf0_9_266] RECTANGLE x=301 y=113 w=29 h=14 :: 'PCI'
+  [h7c266de662ba1cf0_9_267] RECTANGLE x=339 y=113 w=27 h=14 :: 'PII'
+  [h7c266de662ba1cf0_9_268] RECTANGLE x=376 y=113 w=142 h=14 :: 'one table, two classifications'
+  [h7c266de662ba1cf0_9_269] IMG x=200 y=157 w=470 h=18 url=https://docs.google.com/slides-images-rt/AE1YXSYLeXCe5EDR4CM
+  [h7c266de662ba1cf0_9_270] RECTANGLE x=200 y=158 w=84 h=11 :: 'method_type'
+  [h7c266de662ba1cf0_9_271] RECTANGLE x=329 y=156 w=38 h=15 :: 'enum'
+  [h7c266de662ba1cf0_9_272] RECTANGLE x=402 y=156 w=26 h=15 :: '—'
+  [h7c266de662ba1cf0_9_273] RECTANGLE x=479 y=157 w=35 h=14 :: 'Clear'
+  [h7c266de662ba1cf0_9_274] RECTANGLE x=576 y=156 w=45 h=15 :: '7 years'
+  [h7c266de662ba1cf0_9_275] IMG x=200 y=180 w=470 h=18 url=https://docs.google.com/slides-images-rt/AE1YXSasmjB3kmd-W7q
+  [h7c266de662ba1cf0_9_276] RECTANGLE x=200 y=181 w=107 h=11 :: 'account_number'
+  [h7c266de662ba1cf0_9_277] RECTANGLE x=329 y=180 w=39 h=15 :: 'string'
+  [h7c266de662ba1cf0_9_278] RECTANGLE x=406 y=180 w=27 h=14 :: 'PII'
+  [h7c266de662ba1cf0_9_279] RECTANGLE x=479 y=180 w=53 h=14 :: 'Tokenized'
+  [h7c266de662ba1cf0_9_280] RECTANGLE x=576 y=180 w=45 h=15 :: '7 years'
+  [h7c266de662ba1cf0_9_281] IMG x=200 y=204 w=470 h=18 url=https://docs.google.com/slides-images-rt/AE1YXSbwKpz33O8Dmr-
+  [h7c266de662ba1cf0_9_282] RECTANGLE x=200 y=205 w=107 h=11 :: 'routing_number'
+  [h7c266de662ba1cf0_9_283] RECTANGLE x=329 y=203 w=39 h=15 :: 'string'
+  [h7c266de662ba1cf0_9_284] RECTANGLE x=406 y=204 w=27 h=14 :: 'PII'
+  [h7c266de662ba1cf0_9_285] RECTANGLE x=479 y=204 w=54 h=14 :: 'Encrypted'
+  [h7c266de662ba1cf0_9_286] RECTANGLE x=576 y=203 w=45 h=15 :: '7 years'
+  [h7c266de662ba1cf0_9_287] IMG x=200 y=227 w=470 h=18 url=https://docs.google.com/slides-images-rt/AE1YXSbIhw65rFHhejS
+  [h7c266de662ba1cf0_9_288] RECTANGLE x=200 y=228 w=62 h=11 :: 'card_pan'
+  [h7c266de662ba1cf0_9_289] RECTANGLE x=329 y=226 w=39 h=15 :: 'string'
+  [h7c266de662ba1cf0_9_290] RECTANGLE x=406 y=227 w=29 h=14 :: 'PCI'
+  [h7c266de662ba1cf0_9_291] RECTANGLE x=479 y=227 w=53 h=14 :: 'Tokenized'
+  [h7c266de662ba1cf0_9_292] RECTANGLE x=576 y=226 w=45 h=15 :: '7 years'
+  [h7c266de662ba1cf0_9_293] IMG x=200 y=249 w=470 h=19 url=https://docs.google.com/slides-images-rt/AE1YXSZ0RfH07QiW613
+  [h7c266de662ba1cf0_9_294] RECTANGLE x=200 y=251 w=84 h=11 :: 'card_expiry'
+  [h7c266de662ba1cf0_9_295] RECTANGLE x=329 y=249 w=39 h=15 :: 'string'
+  [h7c266de662ba1cf0_9_296] RECTANGLE x=406 y=250 w=29 h=14 :: 'PCI'
+  [h7c266de662ba1cf0_9_297] RECTANGLE x=479 y=250 w=45 h=14 :: 'Masked'
+  [h7c266de662ba1cf0_9_298] RECTANGLE x=576 y=249 w=45 h=15 :: '7 years'
+  [h7c266de662ba1cf0_9_299] IMG x=200 y=273 w=470 h=18 url=https://docs.google.com/slides-images-rt/AE1YXSbwKpz33O8Dmr-
+  [h7c266de662ba1cf0_9_300] RECTANGLE x=200 y=274 w=107 h=11 :: 'account_holder'
+  [h7c266de662ba1cf0_9_301] RECTANGLE x=329 y=273 w=39 h=15 :: 'string'
+  [h7c266de662ba1cf0_9_302] RECTANGLE x=406 y=273 w=27 h=14 :: 'PII'
+  [h7c266de662ba1cf0_9_303] RECTANGLE x=479 y=273 w=54 h=14 :: 'Encrypted'
+  [h7c266de662ba1cf0_9_304] RECTANGLE x=576 y=273 w=45 h=15 :: '7 years'
+  [h7c266de662ba1cf0_9_305] IMG x=200 y=297 w=470 h=18 url=https://docs.google.com/slides-images-rt/AE1YXSYLeXCe5EDR4CM
+  [h7c266de662ba1cf0_9_306] RECTANGLE x=200 y=298 w=76 h=11 :: 'mandate_id'
+  [h7c266de662ba1cf0_9_307] RECTANGLE x=329 y=296 w=39 h=15 :: 'string'
+  [h7c266de662ba1cf0_9_308] RECTANGLE x=402 y=296 w=26 h=15 :: '—'
+  [h7c266de662ba1cf0_9_309] RECTANGLE x=479 y=297 w=35 h=14 :: 'Clear'
+  [h7c266de662ba1cf0_9_310] RECTANGLE x=576 y=296 w=78 h=15 :: 'Life of account'
+  [h7c266de662ba1cf0_9_311] IMG x=200 y=323 w=73 h=22 url=https://docs.google.com/slides-images-rt/AE1YXSa_ZnNsqXDQvhh
+  [h7c266de662ba1cf0_9_312] RECTANGLE x=208 y=327 w=74 h=15 :: '+ Add column'
+  [impg_05] TEXT_BOX x=7 y=376 w=58 h=23 :: '8'
+  [imlg_05] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSa1bd3HP100J_1
+
+=== SLIDE 9 h7c266de662ba1cf0_9_391 layout=p51
+  [h7c266de662ba1cf0_9_392] IMG x=0 y=0 w=720 h=405 url=https://docs.google.com/slides-images-rt/AE1YXSYpTGPJA9EdACS
+  [h7c266de662ba1cf0_9_393] RECTANGLE x=36 y=25 w=322 h=14 :: 'THE PROXY  ›  HOW IT WORKS'
+  [h7c266de662ba1cf0_9_394] RECTANGLE x=36 y=41 w=648 h=54 :: 'You build the request your provider expects and mark the tokens. The\x0bproxy fills in the real values'
+  [h7c266de662ba1cf0_9_397] IMG x=36 y=101 w=186 h=44 url=https://docs.google.com/slides-images-rt/AE1YXSa7jJJkfoDToCa
+  [h7c266de662ba1cf0_9_398] RECTANGLE x=46 y=108 w=100 h=16 :: 'OnlyFans system'
+  [h7c266de662ba1cf0_9_399] RECTANGLE x=46 y=125 w=88 h=14 :: 'builds the request'
+  [h7c266de662ba1cf0_9_400] IMG x=222 y=123 w=45 h=1 url=https://docs.google.com/slides-images-rt/AE1YXSYj9Ym67oI1dga
+  [h7c266de662ba1cf0_9_401] IMG x=267 y=102 w=186 h=42 url=https://docs.google.com/slides-images-rt/AE1YXSZGYNHXVVZsQqT
+  [h7c266de662ba1cf0_9_402] RECTANGLE x=277 y=108 w=65 h=16 :: 'Yuno Proxy'
+  [h7c266de662ba1cf0_9_403] RECTANGLE x=277 y=125 w=145 h=14 :: 'swaps tokens for vault values'
+  [h7c266de662ba1cf0_9_404] IMG x=453 y=123 w=45 h=1 url=https://docs.google.com/slides-images-rt/AE1YXSYj9Ym67oI1dga
+  [h7c266de662ba1cf0_9_405] IMG x=498 y=101 w=186 h=44 url=https://docs.google.com/slides-images-rt/AE1YXSa7jJJkfoDToCa
+  [h7c266de662ba1cf0_9_406] RECTANGLE x=508 y=108 w=78 h=16 :: 'Your provider'
+  [h7c266de662ba1cf0_9_407] RECTANGLE x=508 y=125 w=114 h=14 :: 'receives the real values'
+  [h7c266de662ba1cf0_9_408] IMG x=36 y=155 w=319 h=174 url=https://docs.google.com/slides-images-rt/AE1YXSaO4w9BgOp5XnO
+  [h7c266de662ba1cf0_9_409] RECTANGLE x=36 y=155 w=112 h=15 :: 'As OnlyFans sends it'
+  [h7c266de662ba1cf0_9_410] RECTANGLE x=132 y=155 w=79 h=14 :: 'ILLUSTRATIVE'
+  [h7c266de662ba1cf0_9_411] RECTANGLE x=45 y=181 w=380 h=140 :: 'POST /v1/pci-proxy/forward\x0byuno-proxy-destination-url:\x0b  https://provider.example/v1/charges\x0b{\x0b  "amount": 1499,\x0b  "currency": "USD",\x0b  "card": {\x0b    "number": "{{vaulted_token.9f2a….network_token}}",\x0b    "expiry": "{{vaulted_token.9f2a….expiration}}"\x0b  },\x0b  "initial_transaction_id":\x0b    "{{vaulted_'
+  [h7c266de662ba1cf0_9_412] IMG x=365 y=155 w=319 h=174 url=https://docs.google.com/slides-images-rt/AE1YXSaG3OFJS1bvyEL
+  [h7c266de662ba1cf0_9_413] RECTANGLE x=365 y=155 w=140 h=15 :: 'As the provider receives it'
+  [h7c266de662ba1cf0_9_414] RECTANGLE x=483 y=155 w=79 h=14 :: 'ILLUSTRATIVE'
+  [h7c266de662ba1cf0_9_415] RECTANGLE x=374 y=181 w=317 h=108 :: 'POST https://provider.example/v1/charges\x0b{\x0b  "amount": 1499,\x0b  "currency": "USD",\x0b  "card": {\x0b    "number": "4895 •••• •••• 7740",\x0b    "expiry": "09/29"\x0b  },\x0b  "initial_transaction_id": "3812•••••••2210"\x0b}'
+  [h7c266de662ba1cf0_9_416] IMG x=218 y=116 w=54 h=14 url=https://docs.google.com/slides-images-rt/AE1YXSYVV_mRCMQ28NG
+  [h7c266de662ba1cf0_9_417] IMG x=448 y=116 w=54 h=14 url=https://docs.google.com/slides-images-rt/AE1YXSa0BETSx6SVJXj
+  [impg_07] TEXT_BOX x=7 y=376 w=58 h=23 :: '9'
+  [imlg_07] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSbY7fhWzH59CO4
+
+=== SLIDE 10 vlt_controls layout=p51
+  [vlt_controls__9_243] RECTANGLE x=36 y=25 w=322 h=14 :: 'THE PROXY  ›  CONTROLS'
+  [vlt_controls__9_244] RECTANGLE x=36 y=41 w=648 h=54 :: 'The controls you would build around card data come with the proxy'
+  [vlt_controls_mpg_05] TEXT_BOX x=7 y=376 w=58 h=23 :: '10'
+  [vlt_controls_mlg_05] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSa1bd3HP100J_1
+  [vlt_controls_k001] ROUND_RECTANGLE x=132 y=23 w=34 h=13 :: 'BETA'
+  [vlt_controls_k003] TEXT_BOX x=39 y=151 w=104 h=30 :: 'OnlyFans system'
+  [vlt_controls_k004] TEXT_BOX x=39 y=169 w=104 h=38 :: 'request with tokens'
+  [vlt_controls_k007] TEXT_BOX x=165 y=99 w=134 h=30 :: 'Yuno Proxy'
+  [vlt_controls_k008] TEXT_BOX x=423 y=101 w=134 h=28 :: 'every call, in this order'
+  [vlt_controls_k011] TEXT_BOX x=155 y=131 w=54 h=26 :: '01'
+  [vlt_controls_k012] TEXT_BOX x=165 y=155 w=102 h=30 :: 'Allowlist'
+  [vlt_controls_k013] TEXT_BOX x=165 y=173 w=102 h=84 :: 'Exact HTTPS hosts you register. Every change lands in an append-only log.'
+  [vlt_controls_k015] TEXT_BOX x=251 y=131 w=54 h=26 :: '02'
+  [vlt_controls_k016] TEXT_BOX x=261 y=155 w=102 h=30 :: 'Mutual TLS'
+  [vlt_controls_k017] TEXT_BOX x=261 y=173 w=102 h=84 :: 'Your client certificate per destination. The private key is write-only in KMS.'
+  [vlt_controls_k019] TEXT_BOX x=347 y=131 w=54 h=26 :: '03'
+  [vlt_controls_k020] TEXT_BOX x=357 y=155 w=102 h=30 :: 'Detokenize'
+  [vlt_controls_k021] TEXT_BOX x=357 y=173 w=102 h=84 :: 'Tokens are swapped for vault values inside the request body.'
+  [vlt_controls_k023] TEXT_BOX x=443 y=131 w=54 h=26 :: '04'
+  [vlt_controls_k024] TEXT_BOX x=453 y=155 w=102 h=30 :: 'Audit'
+  [vlt_controls_k025] TEXT_BOX x=453 y=173 w=102 h=84 :: 'One record for every call, with the destination and the result.'
+  [vlt_controls_k028] TEXT_BOX x=583 y=151 w=104 h=30 :: 'Destination'
+  [vlt_controls_k029] TEXT_BOX x=583 y=169 w=104 h=38 :: 'receives the real values'
+  [vlt_controls_k031] TEXT_BOX x=45 y=270 w=104 h=30 :: 'Nothing kept'
+  [vlt_controls_k032] ROUND_RECTANGLE x=132 y=278 w=56 h=14 :: 'OPTIONAL'
+  [vlt_controls_k033] TEXT_BOX x=199 y=263 w=480 h=44 :: 'Request bodies are not stored or logged unless you switch it on, per destination. Card numbers echoed back are cut to the last four.'
+  [vlt_controls_k034] TEXT_BOX x=29 y=327 w=84 h=26 :: 'DESTINATIONS'
+  [vlt_controls_k035] ROUND_RECTANGLE x=112 y=332 w=106 h=16 :: 'PSPs and acquirers'
+  [vlt_controls_k036] ROUND_RECTANGLE x=226 y=332 w=106 h=16 :: 'Your own acquiring'
+  [vlt_controls_k037] ROUND_RECTANGLE x=340 y=332 w=106 h=16 :: 'Card issuers'
+  [vlt_controls_k038] ROUND_RECTANGLE x=454 y=332 w=106 h=16 :: 'KYC and tax providers'
+  [vlt_controls_k039] ROUND_RECTANGLE x=568 y=332 w=106 h=16 :: 'Fraud services'
+
+=== SLIDE 11 vlt_versus layout=p51
+  [vlt_versus__9_243] RECTANGLE x=36 y=25 w=322 h=14 :: 'WHY YUNO  ›  VERSUS A STANDALONE VAULT'
+  [vlt_versus__9_244] RECTANGLE x=36 y=41 w=648 h=54 :: 'Yuno matches standalone vaults on the core and leads on everything built around it'
+  [vlt_versus_mpg_05] TEXT_BOX x=7 y=376 w=58 h=23 :: '11'
+  [vlt_versus_mlg_05] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSa1bd3HP100J_1
+  [vlt_versus_k002] TEXT_BOX x=37 y=82 w=152 h=26 :: 'YOUR DESIGN NEEDS'
+  [vlt_versus_k003] TEXT_BOX x=187 y=82 w=150 h=26 :: 'YUNO'
+  [vlt_versus_k004] TEXT_BOX x=335 y=82 w=130 h=26 :: 'VGS'
+  [vlt_versus_k005] TEXT_BOX x=463 y=82 w=130 h=26 :: 'BASIS THEORY'
+  [vlt_versus_k006] TEXT_BOX x=591 y=82 w=96 h=26 :: 'WHO LEADS'
+  [vlt_versus_k007] TEXT_BOX x=37 y=104 w=152 h=32 :: 'PCI DSS Level 1 card vault'
+  [vlt_versus_k008] TEXT_BOX x=187 y=104 w=150 h=32 :: 'Yes, hosted fields and SDKs'
+  [vlt_versus_k009] TEXT_BOX x=335 y=104 w=130 h=32 :: 'Yes, Collect and Show'
+  [vlt_versus_k010] TEXT_BOX x=463 y=104 w=130 h=32 :: 'Yes, Elements'
+  [vlt_versus_k011] TEXT_BOX x=591 y=106 w=96 h=26 :: 'Level'
+  [vlt_versus_k013] TEXT_BOX x=37 y=130 w=152 h=32 :: 'Personal data beyond cards'
+  [vlt_versus_k014] TEXT_BOX x=187 y=130 w=150 h=32 :: 'Tables you define, protection per column'
+  [vlt_versus_k015] TEXT_BOX x=335 y=130 w=130 h=32 :: 'Aliases for PII, bank, IBAN'
+  [vlt_versus_k016] TEXT_BOX x=463 y=130 w=130 h=32 :: 'Token types for bank, SSN, EIN'
+  [vlt_versus_k017] TEXT_BOX x=591 y=132 w=96 h=26 :: 'Level'
+  [vlt_versus_k018] TEXT_BOX x=37 y=156 w=152 h=32 :: 'Network tokens'
+  [vlt_versus_k019] TEXT_BOX x=187 y=156 w=150 h=32 :: 'Visa, Mastercard, Amex; TRID under OnlyFans'
+  [vlt_versus_k020] TEXT_BOX x=335 y=156 w=130 h=32 :: 'All four networks'
+  [vlt_versus_k021] TEXT_BOX x=463 y=156 w=130 h=32 :: 'TRID created for you'
+  [vlt_versus_k022] TEXT_BOX x=591 y=158 w=96 h=26 :: 'Vaults lead'
+  [vlt_versus_k024] TEXT_BOX x=37 y=182 w=152 h=32 :: 'Proxy and custom code'
+  [vlt_versus_k025] TEXT_BOX x=187 y=182 w=150 h=32 :: 'Outbound proxy, allowlist, mTLS, audit'
+  [vlt_versus_k026] TEXT_BOX x=335 y=182 w=130 h=32 :: 'Inbound and outbound routes, custom code'
+  [vlt_versus_k027] TEXT_BOX x=463 y=182 w=130 h=32 :: 'Proxy and serverless Reactors'
+  [vlt_versus_k028] TEXT_BOX x=591 y=184 w=96 h=26 :: 'Vaults lead'
+  [vlt_versus_k029] TEXT_BOX x=37 y=208 w=152 h=32 :: 'Show an issued card, set its PIN'
+  [vlt_versus_k030] TEXT_BOX x=187 y=208 w=150 h=32 :: 'Not offered today'
+  [vlt_versus_k031] TEXT_BOX x=335 y=208 w=130 h=32 :: 'Card display with VGS Show'
+  [vlt_versus_k032] TEXT_BOX x=463 y=208 w=130 h=32 :: 'Display; PIN with Lithic, Marqeta'
+  [vlt_versus_k033] TEXT_BOX x=591 y=210 w=96 h=26 :: 'Vaults lead'
+  [vlt_versus_k035] TEXT_BOX x=37 y=234 w=152 h=32 :: 'Rules for where each request goes'
+  [vlt_versus_k036] TEXT_BOX x=187 y=234 w=150 h=32 :: 'Rules, splits, fallbacks and monitors'
+  [vlt_versus_k037] TEXT_BOX x=335 y=234 w=130 h=32 :: '"Does not make routing decisions for you"'
+  [vlt_versus_k038] TEXT_BOX x=463 y=234 w=130 h=32 :: 'No rules product found'
+  [vlt_versus_k039] TEXT_BOX x=591 y=236 w=96 h=26 :: 'Yuno leads'
+  [vlt_versus_k040] TEXT_BOX x=37 y=260 w=152 h=32 :: 'Provider connections built for you'
+  [vlt_versus_k041] TEXT_BOX x=187 y=260 w=150 h=32 :: '460+ processor integrations'
+  [vlt_versus_k042] TEXT_BOX x=335 y=260 w=130 h=32 :: 'Your own logic, or a partner'
+  [vlt_versus_k043] TEXT_BOX x=463 y=260 w=130 h=32 :: 'Proxy requests you write'
+  [vlt_versus_k044] TEXT_BOX x=591 y=262 w=96 h=26 :: 'Yuno leads'
+  [vlt_versus_k046] TEXT_BOX x=37 y=286 w=152 h=32 :: 'Payments on the same token'
+  [vlt_versus_k047] TEXT_BOX x=187 y=286 w=150 h=32 :: '3DS, account updater, routing, retries'
+  [vlt_versus_k048] TEXT_BOX x=335 y=286 w=130 h=32 :: 'A second vendor'
+  [vlt_versus_k049] TEXT_BOX x=463 y=286 w=130 h=32 :: 'A second vendor'
+  [vlt_versus_k050] TEXT_BOX x=591 y=288 w=96 h=26 :: 'Yuno leads'
+  [vlt_versus_k051] TEXT_BOX x=37 y=312 w=152 h=32 :: 'Payouts and split payments'
+  [vlt_versus_k052] TEXT_BOX x=187 y=312 w=150 h=32 :: 'Payouts API, split payments'
+  [vlt_versus_k053] TEXT_BOX x=335 y=312 w=130 h=32 :: 'Via partners like TabaPay, Astra'
+  [vlt_versus_k054] TEXT_BOX x=463 y=312 w=130 h=32 :: 'No payouts product found'
+  [vlt_versus_k055] TEXT_BOX x=591 y=314 w=96 h=26 :: 'Yuno leads'
+  [vlt_versus_k057] TEXT_BOX x=29 y=341 w=534 h=26 :: 'Yuno leads on 4, level on 2, the standalone vaults lead on 3. VGS and Basis Theory: their public pages, read 7 October 2026.'
+
+=== SLIDE 12 h7c266de662ba1cf0_9_469 layout=p51
+  [h7c266de662ba1cf0_9_470] IMG x=0 y=0 w=720 h=405 url=https://docs.google.com/slides-images-rt/AE1YXSYpTGPJA9EdACS
+  [h7c266de662ba1cf0_9_471] RECTANGLE x=36 y=25 w=322 h=14 :: 'YOUR WAY  ›  PORTABILITY'
+  [h7c266de662ba1cf0_9_472] RECTANGLE x=36 y=41 w=544 h=31 :: 'Your tokens and your exit, written into the contract'
+  [h7c266de662ba1cf0_9_475] IMG x=36 y=80 w=317 h=290 url=https://docs.google.com/slides-images-rt/AE1YXSb9C3MErhYCzkx
+  [h7c266de662ba1cf0_9_476] RECTANGLE x=49 y=95 w=85 h=14 :: 'PROCESSORS'
+  [h7c266de662ba1cf0_9_477] RECTANGLE x=121 y=90 w=231 h=20 :: 'Switch processor, keep the cards'
+  [h7c266de662ba1cf0_9_478] RECTANGLE x=49 y=318 w=359 h=41 :: 'Cards and network tokens are stored once and forwarded to any of\x0b460+ processors through the proxy. A migration is a routing change,\x0bnot a re-collection.'
+  [h7c266de662ba1cf0_9_479] IMG x=82 y=140 w=227 h=144 url=https://docs.google.com/slides-images-rt/AE1YXSbhzIcv-vKkCjP
+  [h7c266de662ba1cf0_9_480] IMG x=156 y=195 w=77 h=32 url=https://docs.google.com/slides-images-rt/AE1YXSZNBJGeqZdOyTG
+  [h7c266de662ba1cf0_9_481] RECTANGLE x=169 y=202 w=67 h=17 :: 'Yuno Vault'
+  [h7c266de662ba1cf0_9_482] IMG x=175 y=130 w=40 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSalvc148S263Ol
+  [h7c266de662ba1cf0_9_483] RECTANGLE x=183 y=133 w=38 h=14 :: 'Stripe'
+  [h7c266de662ba1cf0_9_484] IMG x=246 y=146 w=41 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSb9pTDDIVyI4T2
+  [h7c266de662ba1cf0_9_485] RECTANGLE x=255 y=149 w=39 h=14 :: 'Adyen'
+  [h7c266de662ba1cf0_9_486] IMG x=285 y=189 w=42 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSbu2RFxQYuKytD
+  [h7c266de662ba1cf0_9_487] RECTANGLE x=293 y=192 w=40 h=14 :: 'dLocal'
+  [h7c266de662ba1cf0_9_488] IMG x=270 y=237 w=43 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSaAxUruhhRtNqM
+  [h7c266de662ba1cf0_9_489] RECTANGLE x=279 y=240 w=41 h=14 :: 'PayPal'
+  [h7c266de662ba1cf0_9_490] IMG x=198 y=268 w=71 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSa3xY5LrOkfzIo
+  [h7c266de662ba1cf0_9_491] RECTANGLE x=206 y=271 w=70 h=14 :: 'Checkout.com'
+  [h7c266de662ba1cf0_9_492] IMG x=129 y=268 w=54 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSZWnUb6kMZoOyp
+  [h7c266de662ba1cf0_9_493] RECTANGLE x=138 y=271 w=52 h=14 :: 'Worldpay'
+  [h7c266de662ba1cf0_9_494] IMG x=78 y=237 w=39 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSY106DkzP1kLS_
+  [h7c266de662ba1cf0_9_495] RECTANGLE x=86 y=240 w=37 h=14 :: 'Nuvei'
+  [h7c266de662ba1cf0_9_496] IMG x=58 y=189 w=52 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSahf9FfJd4sQDP
+  [h7c266de662ba1cf0_9_497] RECTANGLE x=66 y=192 w=51 h=14 :: 'Airwallex'
+  [h7c266de662ba1cf0_9_498] IMG x=93 y=146 w=59 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSYTJ2r8kBwvOtq
+  [h7c266de662ba1cf0_9_499] RECTANGLE x=101 y=149 w=57 h=14 :: '+450 more'
+  [h7c266de662ba1cf0_9_500] IMG x=367 y=80 w=317 h=290 url=https://docs.google.com/slides-images-rt/AE1YXSac2vS4rbJoHym
+  [h7c266de662ba1cf0_9_501] RECTANGLE x=380 y=95 w=46 h=14 :: 'VAULT'
+  [h7c266de662ba1cf0_9_502] RECTANGLE x=417 y=90 w=200 h=20 :: 'Leave Yuno, keep the tokens'
+  [h7c266de662ba1cf0_9_503] RECTANGLE x=380 y=197 w=95 h=14 :: 'VAULT EXPORT'
+  [h7c266de662ba1cf0_9_504] RECTANGLE x=380 y=331 w=352 h=28 :: 'Exit terms are part of the contract, so the price of leaving is known\x0bbefore you sign.'
+  [h7c266de662ba1cf0_9_505] IMG x=380 y=118 w=292 h=69 url=https://docs.google.com/slides-images-rt/AE1YXSbuEm1bEL0olU-
+  [h7c266de662ba1cf0_9_506] RECTANGLE x=393 y=127 w=80 h=14 :: 'Network tokens'
+  [h7c266de662ba1cf0_9_507] RECTANGLE x=465 y=125 w=248 h=54 :: "Registered under OnlyFans' token requestor ID\nwhere the scheme allows it, so they survive a\nchange of processor or of vault. No\nre-tokenization on exit."
+  [h7c266de662ba1cf0_9_508] IMG x=388 y=226 w=1 h=88 url=https://docs.google.com/slides-images-rt/AE1YXSaGGaCXISKEaoN
+  [h7c266de662ba1cf0_9_509] IMG x=380 y=228 w=20 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSaTVgXYJ30c2jW
+  [h7c266de662ba1cf0_9_510] RECTANGLE x=385 y=231 w=25 h=14 :: '01'
+  [h7c266de662ba1cf0_9_511] RECTANGLE x=404 y=230 w=187 h=16 :: 'A written request from OnlyFans'
+  [h7c266de662ba1cf0_9_512] IMG x=380 y=260 w=20 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSaTVgXYJ30c2jW
+  [h7c266de662ba1cf0_9_513] RECTANGLE x=385 y=264 w=25 h=14 :: '02'
+  [h7c266de662ba1cf0_9_514] RECTANGLE x=404 y=262 w=198 h=16 :: "The recipient's PCI DSS attestation"
+  [h7c266de662ba1cf0_9_515] IMG x=380 y=293 w=20 h=20 url=https://docs.google.com/slides-images-rt/AE1YXSaTVgXYJ30c2jW
+  [h7c266de662ba1cf0_9_516] RECTANGLE x=385 y=296 w=25 h=14 :: '03'
+  [h7c266de662ba1cf0_9_517] RECTANGLE x=404 y=295 w=236 h=16 :: 'A PGP-encrypted file delivered over SFTP'
+  [impg_09] TEXT_BOX x=7 y=376 w=58 h=23 :: '12'
+  [imlg_09] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSbY7fhWzH59CO4
+
+=== SLIDE 13 h6032acb876a0077a_1_0 layout=g3f77215683c_2_1907
+  [h6032acb876a0077a_1_1] IMG x=0 y=0 w=720 h=405 url=https://docs.google.com/slides-images-rt/AE1YXSZzlboplC8w67o
+  [h6032acb876a0077a_1_2] RECTANGLE x=36 y=25 w=322 h=14 :: 'WHY YUNO'
+  [h6032acb876a0077a_1_3] RECTANGLE x=36 y=41 w=556 h=31 :: 'Today, Yuno is proven global payment infrastructure'
+  [h6032acb876a0077a_1_4] IMG x=36 y=80 w=155 h=150 url=https://docs.google.com/slides-images-rt/AE1YXSaomiYZYchaUtY
+  [h6032acb876a0077a_1_5] RECTANGLE x=36 y=106 w=151 h=73 :: '$100B+'
+  [h6032acb876a0077a_1_6] RECTANGLE x=42 y=175 w=162 h=14 :: 'ANNUAL TPV PROCESSED'
+  [h6032acb876a0077a_1_7] IMG x=200 y=80 w=155 h=150 url=https://docs.google.com/slides-images-rt/AE1YXSaomiYZYchaUtY
+  [h6032acb876a0077a_1_8] RECTANGLE x=200 y=106 w=115 h=73 :: '150+'
+  [h6032acb876a0077a_1_9] RECTANGLE x=213 y=169 w=81 h=25 :: 'ENTERPRISE\x0bMERCHANTS'
+  [h6032acb876a0077a_1_10] IMG x=364 y=80 w=155 h=150 url=https://docs.google.com/slides-images-rt/AE1YXSaomiYZYchaUtY
+  [h6032acb876a0077a_1_11] RECTANGLE x=364 y=106 w=159 h=73 :: '1,000+'
+  [h6032acb876a0077a_1_12] RECTANGLE x=370 y=175 w=158 h=14 :: 'PAYMENT CONNECTIONS'
+  [h6032acb876a0077a_1_13] IMG x=529 y=80 w=155 h=150 url=https://docs.google.com/slides-images-rt/AE1YXSaomiYZYchaUtY
+  [h6032acb876a0077a_1_14] RECTANGLE x=529 y=106 w=115 h=73 :: '190+'
+  [h6032acb876a0077a_1_15] RECTANGLE x=534 y=169 w=112 h=25 :: 'COUNTRIES WITH\x0bTRANSACTIONS'
+  [h6032acb876a0077a_1_16] IMG x=36 y=238 w=648 h=129 url=https://docs.google.com/slides-images-rt/AE1YXSYPlRUgV0L3ZOy
+  [h6032acb876a0077a_1_17] RECTANGLE x=51 y=282 w=356 h=14 :: "BACKED BY THE WORLD'S MOST ESTEEMED INVESTORS"
+  [h6032acb876a0077a_1_19] TEXT_BOX x=7 y=376 w=58 h=23 :: '13'
+  [h6032acb876a0077a_1_20] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSY-4aWpmlP50rJ
+
+=== SLIDE 14 h6032acb876a0077a_1_974 layout=g3f77215683c_2_1907
+  [h6032acb876a0077a_1_975] IMG x=0 y=0 w=720 h=405 url=https://docs.google.com/slides-images-rt/AE1YXSZVEiIogRUuf9D
+  [h6032acb876a0077a_1_976] RECTANGLE x=36 y=25 w=322 h=14 :: 'WHY YUNO  ›  TEAM'
+  [h6032acb876a0077a_1_977] RECTANGLE x=36 y=41 w=503 h=31 :: 'Run by builders from top payments companies'
+  [h6032acb876a0077a_1_978] IMG x=58 y=83 w=84 h=138 url=https://docs.google.com/slides-images-rt/AE1YXSYY5gGVhi77D1o
+  [h6032acb876a0077a_1_979] RECTANGLE x=47 y=120 w=105 h=16 :: 'Juan Pablo Ortega'
+  [h6032acb876a0077a_1_980] RECTANGLE x=43 y=135 w=114 h=14 :: 'Co-Founder & CEO · US'
+  [h6032acb876a0077a_1_981] RECTANGLE x=45 y=149 w=110 h=25 :: 'Previously Co-founder\x0bof Rappi'
+  [h6032acb876a0077a_1_982] RECTANGLE x=53 y=207 w=94 h=13 :: 'YUNO FOUNDER'
+  [h6032acb876a0077a_1_983] IMG x=46 y=228 w=107 h=138 url=https://docs.google.com/slides-images-rt/AE1YXSZrGkzKZRq9VgL
+  [h6032acb876a0077a_1_984] RECTANGLE x=52 y=265 w=96 h=16 :: 'Antoine Cathelin'
+  [h6032acb876a0077a_1_985] RECTANGLE x=37 y=280 w=126 h=14 :: 'Head of Trust & Vault · NL'
+  [h6032acb876a0077a_1_986] RECTANGLE x=29 y=294 w=142 h=36 :: '10 years in card-not-present\x0bpayments; leads Trust &\x0bVault at Yuno'
+  [h6032acb876a0077a_1_987] RECTANGLE x=44 y=352 w=66 h=13 :: 'YOUR LEAD'
+  [h6032acb876a0077a_1_988] IMG x=210 y=83 w=48 h=137 url=https://docs.google.com/slides-images-rt/AE1YXSbsQEOgtGbbkch
+  [h6032acb876a0077a_1_989] RECTANGLE x=196 y=120 w=76 h=16 :: 'Justo Benetti'
+  [h6032acb876a0077a_1_990] RECTANGLE x=210 y=135 w=48 h=14 :: 'CRO · US'
+  [h6032acb876a0077a_1_991] RECTANGLE x=161 y=149 w=145 h=25 :: 'Led enterprise integrations at\x0bdLocal across LATAM'
+  [h6032acb876a0077a_1_992] IMG x=347 y=83 w=33 h=138 url=https://docs.google.com/slides-images-rt/AE1YXSYX0l4jcH-uIHl
+  [h6032acb876a0077a_1_993] RECTANGLE x=293 y=120 w=141 h=16 :: 'Mauricio Schwartzmann'
+  [h6032acb876a0077a_1_994] RECTANGLE x=288 y=135 w=150 h=25 :: 'Chief Financial Services Officer\x0b· MX'
+  [h6032acb876a0077a_1_995] RECTANGLE x=287 y=161 w=153 h=36 :: 'Former CM Mexico at\x0bMastercard, CEO of RappiBank,\x0bMD at Citi'
+  [h6032acb876a0077a_1_996] IMG x=468 y=83 w=50 h=138 url=https://docs.google.com/slides-images-rt/AE1YXSbKcunGm-xFgSE
+  [h6032acb876a0077a_1_997] RECTANGLE x=449 y=120 w=89 h=16 :: 'Walter Campos'
+  [h6032acb876a0077a_1_998] RECTANGLE x=455 y=135 w=76 h=14 :: 'GM LATAM · BR'
+  [h6032acb876a0077a_1_999] RECTANGLE x=419 y=149 w=149 h=25 :: '20+ years in LATAM payments\x0bat MercadoPago and Cielo'
+  [h6032acb876a0077a_1_1000] IMG x=600 y=83 w=46 h=136 url=https://docs.google.com/slides-images-rt/AE1YXSYkeZDogTeBGGM
+  [h6032acb876a0077a_1_1001] RECTANGLE x=594 y=120 w=57 h=16 :: 'Chee Beh'
+  [h6032acb876a0077a_1_1002] RECTANGLE x=572 y=135 w=101 h=14 :: 'SVP & GM APAC · SG'
+  [h6032acb876a0077a_1_1003] RECTANGLE x=554 y=149 w=137 h=25 :: '20+ years across JPMorgan,\x0bUber, NTT Data, TSYS'
+  [h6032acb876a0077a_1_1004] IMG x=200 y=228 w=69 h=137 url=https://docs.google.com/slides-images-rt/AE1YXSarIpvUnGBMgvk
+  [h6032acb876a0077a_1_1005] RECTANGLE x=200 y=265 w=66 h=16 :: 'Edwin Poot'
+  [h6032acb876a0077a_1_1006] RECTANGLE x=210 y=280 w=47 h=14 :: 'CTO · NL'
+  [h6032acb876a0077a_1_1007] RECTANGLE x=164 y=294 w=139 h=36 :: 'Former VP Product &\x0bTechnology at Nubank, Chief\x0bArchitect at Booking.com'
+  [h6032acb876a0077a_1_1008] IMG x=342 y=228 w=44 h=136 url=https://docs.google.com/slides-images-rt/AE1YXSbOfh5cbMARqn9
+  [h6032acb876a0077a_1_1009] RECTANGLE x=325 y=265 w=77 h=16 :: 'Martin Mexia'
+  [h6032acb876a0077a_1_1010] RECTANGLE x=321 y=280 w=84 h=14 :: 'SVP, Product · AE'
+  [h6032acb876a0077a_1_1011] RECTANGLE x=295 y=294 w=138 h=36 :: '12+ years in fintech product\x0b(Revolut, Rappi); founder\x0bof Payit'
+  [h6032acb876a0077a_1_1012] IMG x=477 y=228 w=33 h=138 url=https://docs.google.com/slides-images-rt/AE1YXSbC2Xvh-90h5i-
+  [h6032acb876a0077a_1_1013] RECTANGLE x=448 y=265 w=90 h=16 :: 'Bruno Ascencio'
+  [h6032acb876a0077a_1_1014] RECTANGLE x=436 y=280 w=115 h=14 :: 'VP Data, AI and ML · AE'
+  [h6032acb876a0077a_1_1015] RECTANGLE x=415 y=294 w=157 h=25 :: '10+ years in data and AI across\x0bFIs (FAB, Wio Bank, Bineo, Uber)'
+  [h6032acb876a0077a_1_1016] IMG x=603 y=228 w=39 h=136 url=https://docs.google.com/slides-images-rt/AE1YXSarCERXc-YHuiR
+  [h6032acb876a0077a_1_1017] RECTANGLE x=571 y=265 w=104 h=16 :: 'Maria José Pineda'
+  [h6032acb876a0077a_1_1018] RECTANGLE x=587 y=280 w=71 h=14 :: 'GM EMEA · CH'
+  [h6032acb876a0077a_1_1019] RECTANGLE x=556 y=294 w=134 h=47 :: '5+ years at Adyen leading\x0benterprise account teams;\x0bpreviously Head of Account\x0bManagement at Yuno'
+  [h6032acb876a0077a_1_1021] TEXT_BOX x=7 y=376 w=58 h=23 :: '14'
+  [h6032acb876a0077a_1_1022] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSZ3WWfkRDkI78F
+
+=== SLIDE 15 h7c266de662ba1cf0_9_611 layout=p51
+  [h7c266de662ba1cf0_9_612] IMG x=0 y=0 w=720 h=405 url=https://docs.google.com/slides-images-rt/AE1YXSYpTGPJA9EdACS
+  [h7c266de662ba1cf0_9_613] RECTANGLE x=36 y=25 w=322 h=14 :: 'WHY YUNO'
+  [h7c266de662ba1cf0_9_614] RECTANGLE x=36 y=41 w=518 h=31 :: 'Yuno is trusted by leading companies worldwide'
+  [h7c266de662ba1cf0_9_617] IMG x=36 y=80 w=648 h=66 url=https://docs.google.com/slides-images-rt/AE1YXSZeYonKBda5vMS
+  [h7c266de662ba1cf0_9_618] IMG x=36 y=153 w=648 h=66 url=https://docs.google.com/slides-images-rt/AE1YXSaKZgltc0JuZTX
+  [h7c266de662ba1cf0_9_619] IMG x=36 y=227 w=648 h=66 url=https://docs.google.com/slides-images-rt/AE1YXSZNpZry9MhRPoC
+  [h7c266de662ba1cf0_9_620] IMG x=36 y=301 w=648 h=66 url=https://docs.google.com/slides-images-rt/AE1YXSYBT34ijKt5jvr
+  [impg_14] TEXT_BOX x=7 y=376 w=58 h=23 :: '15'
+  [imlg_14] IMG x=645 y=24 w=39 h=10 url=https://docs.google.com/slides-images-rt/AE1YXSZlpTRC2OnLrKy
