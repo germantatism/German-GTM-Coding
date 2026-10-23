@@ -77,6 +77,107 @@ def excluded(name, c):
     if k == 'visacheckout': return 'Visa Checkout retired'
     return None
 
+# Geography exclusions (German, 23-oct-2026: every connection shown under a country must really operate there). (country, nk(name)) pairs removed from
+# providers, direct chips and provider method labels. Filled from the 23-oct verification pass; see Deals/Waymo/build/GEO_CHECK.md.
+GEO_EXCLUDE = {
+ ('Argentina', 'emerchantpay'),
+ ('Argentina', 'transfero'),
+ ('Bahrain', 'ecommpay'),
+ ('Bahrain', 'pockyt'),
+ ('Bahrain', 'tabby'),
+ ('Bahrain', 'triplea'),
+ ('Brazil', 'safeway'),
+ ('Canada', 'kushki'),
+ ('Canada', 'novalnet'),
+ ('Canada', 'simpaisa'),
+ ('Chile', 'payzen'),
+ ('Chile', 'pockyt'),
+ ('Chile', 'transfero'),
+ ('Chile', 'wibond'),
+ ('Chile', 'worldpay'),
+ ('Colombia', 'belvo'),
+ ('Colombia', 'morepayments'),
+ ('Colombia', 'transfero'),
+ ('Costa Rica', 'puntoxpress'),
+ ('Ecuador', 'morepayments'),
+ ('Egypt', 'ecommpay'),
+ ('Egypt', 'fiserv'),
+ ('Egypt', 'pockyt'),
+ ('Egypt', 'tabby'),
+ ('Egypt', 'triplea'),
+ ('El Salvador', 'ibex'),
+ ('Germany', 'getnet'),
+ ('Germany', 'payplug'),
+ ('Guatemala', 'ibex'),
+ ('India', '2c2p'),
+ ('India', 'ecommpay'),
+ ('India', 'getnet'),
+ ('India', 'neteller'),
+ ('Japan', 'clicktopay'),
+ ('Japan', 'fiserv'),
+ ('Jordan', 'checkoutcom'),
+ ('Jordan', 'ecommpay'),
+ ('Jordan', 'pagsmile'),
+ ('Jordan', 'paymob'),
+ ('Jordan', 'pockyt'),
+ ('Kuwait', 'ecommpay'),
+ ('Kuwait', 'hyperpay'),
+ ('Kuwait', 'nbkegwallet'),
+ ('Kuwait', 'pockyt'),
+ ('Kuwait', 'triplea'),
+ ('Malaysia', 'dana'),
+ ('Mexico', 'datransfer'),
+ ('Mexico', 'druo'),
+ ('Mexico', 'nium'),
+ ('Mexico', 'paymentsway'),
+ ('Mexico', 'payzen'),
+ ('Mexico', 'placetopay'),
+ ('Mexico', 'tpaga'),
+ ('Mexico', 'wibond'),
+ ('New Zealand', 'pockyt'),
+ ('Oman', 'ecommpay'),
+ ('Oman', 'pockyt'),
+ ('Peru', 'druo'),
+ ('Peru', 'paymentsway'),
+ ('Peru', 'rappibank'),
+ ('Philippines', 'directa24'),
+ ('Philippines', 'pandablue'),
+ ('Qatar', 'ecommpay'),
+ ('Qatar', 'novalnet'),
+ ('Qatar', 'pockyt'),
+ ('Qatar', 'qnbalahliewallet'),
+ ('Qatar', 'tamara'),
+ ('Qatar', 'triplea'),
+ ('Saudi Arabia', 'ecommpay'),
+ ('Saudi Arabia', 'novalnet'),
+ ('Saudi Arabia', 'pockyt'),
+ ('Saudi Arabia', 'triplea'),
+ ('Singapore', 'dana'),
+ ('South Korea', '2c2p'),
+ ('South Korea', 'googlepay'),
+ ('South Korea', 'nttdata'),
+ ('South Korea', 'stripe'),
+ ('Spain', 'commercegate'),
+ ('Spain', 'pagseguro'),
+ ('Spain', 'payplug'),
+ ('Taiwan', 'fiserv'),
+ ('Taiwan', 'nttdata'),
+ ('Taiwan', 'worldpay'),
+ ('Thailand', 'dana'),
+ ('Thailand', 'nium'),
+ ('United Arab Emirates', 'bankdhofar'),
+ ('United Arab Emirates', 'dpoafrica'),
+ ('United Arab Emirates', 'getnet'),
+ ('United Arab Emirates', 'novalnet'),
+ ('United Kingdom', 'getnet'),
+ ('United Kingdom', 'simpaisa'),
+ ('Uruguay', 'payzen'),
+ ('Uruguay', 'placetopay'),
+ ('Venezuela', 'ecommpay'),
+ ('Venezuela', 'pockyt'),
+ ('Vietnam', 'morepayments'),
+}
+def geo_excluded(c, name): return (c, nk(name)) in GEO_EXCLUDE
 # ---------------- display names (adidas sheet QA)
 DISPLAY = {'Dlocal': 'dLocal', 'Astropay': 'AstroPay', 'Ebanx': 'EBANX', 'Fac': 'FAC (First Atlantic Commerce)', 'Ppro': 'PPRO', 'Paypal': 'PayPal', 'Pag Smile': 'Pagsmile',
            'MercadoPago': 'Mercado Pago', '2c2p': '2C2P', 'Safetypay': 'SafetyPay', 'PlaceToPay': 'PlacetoPay', 'Antom/Alipay': 'Antom', 'More Payments/uniteller': 'More Payments',
@@ -366,7 +467,7 @@ class Data:
                 continue
             if m in M:
                 lab, cs = M[m]
-                if c in self.countries_of(cs): out.append(lab)
+                if c in self.countries_of(cs) and not geo_excluded(c, lab): out.append(lab)
             elif m in SKIP: pass
             else: self.UNKNOWN[m] += 1
         konb = sorted({x[9:-1] for x in out if x.startswith('Konbini (')})
@@ -407,6 +508,7 @@ class Data:
                 have = {r[2] for r in R if r[0] == c}
                 for typ, name, labs, st in ISRAEL_EXTRA:
                     if name not in have: R.append([c, typ, name, labs, st, nk(name)])
+            R[:] = [r for r in R if not (r[0] == c and geo_excluded(c, r[2]))]
             if not recurring_only and c in HOMOLOGATING_EXTRA:   # German 23-oct-2026: show these as in homologation, replacing any lower tier
                 keys = {nk(n) for _, n, _ in HOMOLOGATING_EXTRA[c]}
                 R[:] = [r for r in R if not (r[0] == c and nk(r[2]) in keys and r[4] != 'Live')]

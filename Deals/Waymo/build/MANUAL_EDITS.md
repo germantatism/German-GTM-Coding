@@ -1,13 +1,16 @@
 # Waymo connections deck · customisations on the live Google Slides file
 
-Current deck (v8, 23 Oct 2026): `1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8` ("Deck - Waymo + Yuno · Connections & Payment Methods (Oct 2026)"), 79 slides.
-Previous decks: v7 `1r7g6kFtX8ZENovd3-51qyx9M0369yYLahpwXEGeEHRY` and v6 `1Qu3JvldczchxT9TrXmUkU1bSso9ltTGvOt5peT3hHjQ`, renamed "OLD, do not use". The v6 copy stays as the reference the sync clones from.
+Current deck (v9, 23 Oct 2026): `1KBdTNcmpAWAqrdlBCibo1o-6CFE8QGPnJNFJIcOgnTw` ("Deck - Waymo + Yuno · Connections & Payment Methods (Oct 2026)"), 77 slides.
+Previous decks: v8 `1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8`, v7 `1r7g6kFtX8ZENovd3-51qyx9M0369yYLahpwXEGeEHRY` and v6 `1Qu3JvldczchxT9TrXmUkU1bSso9ltTGvOt5peT3hHjQ`, renamed "OLD, do not use". The v6 copy stays as the reference the sync clones from.
 
 The live file diverges from `gs/deck_spec.json`. After ANY rebuild from the spec: run `vault_slides.py <pid>` (four vault slides, Geist restyle), then the scripts in
 `tools/connections/sync/post_build_waymo.py <new_pid>` (one script: intro kickers, $100B+, Moonactive, team slide, closing, next-steps removal, divider and vault wording, cover wordmark), which reproduces the reviewed look from the v6 reference deck.
 
 ## Why v7 exists (23 Oct 2026)
 - Review found slide 11 speaker notes naming another customer's deck (removed) and Germany without PayPal or Klarna because the y.uno PayPal and Klarna pages omit Germany. `lib.py` now shows a method where a live provider carries it and the scheme serves the country; PayPal also appeared for New Zealand, Taiwan, Venezuela, Panama, Guatemala and the Dominican Republic, Klarna for Mexico. Full rebuild on a fresh template copy.
+
+## Why v9 exists (23 Oct 2026)
+- German: no connection may appear under a country where it does not really operate (the "Walmart in Bolivia" kind of error). Geography check of every provider and method against the operators' own sites; 96 country pairs removed through `lib.GEO_EXCLUDE` (log: `GEO_CHECK.md`). Examples: NBK EG Wallet in Kuwait, QNB Al-Ahli wallet in Qatar, Tamara in Qatar, Tabby in Egypt, Google Pay in South Korea, Stripe in South Korea, Kushki in Canada, PagSeguro in Spain, Getnet outside its markets, Pockyt in the Gulf, Ecommpay in the Gulf.
 
 ## Why v8 exists (23 Oct 2026)
 - German: add the ride-hailing gap connections rated 8+ for South Korea, Japan, Taiwan, Hong Kong, Malaysia, Spain, Canada, Singapore, Indonesia, Germany, Argentina, Israel and the UAE and show them as "in homologation". `lib.HOMOLOGATING_EXTRA` adds them as Homologating rows (providers and methods) and replaces any lower tier the same name had (in code, signed, on request): NHN KCP, KG Inicis, Toss Payments, NICE Payments and Korean domestic cards via a local PG; GMO and JCB; LINE Pay; AlipayHK, Adyen and Global Payments for Hong Kong; DuitNow QR; Redsys; Moneris; AllinPay and PayNow; Midtrans (already homologating); Payone; Payway; Cal and Isracard; Magnati. Headlines say "more connections in homologation" where methods are included. Not real integration status: a commercial framing German chose.

@@ -83,18 +83,6 @@
 [
 "Japan",
 "Provider",
-"Fiserv",
-[
-"Cards",
-"Apple Pay",
-"Google Pay"
-],
-"Live",
-"fiserv"
-],
-[
-"Japan",
-"Provider",
 "Nium",
 [],
 "Homologating",
@@ -250,14 +238,6 @@
 [
 "Japan",
 "Direct payment method",
-"Click to Pay",
-[],
-"Live",
-"clicktopay"
-],
-[
-"Japan",
-"Direct payment method",
 "Edenred",
 [],
 "Live",
@@ -391,7 +371,6 @@
 "Cards",
 "Alipay",
 "Apple Pay",
-"DANA",
 "Google Pay"
 ],
 "Live",
@@ -421,7 +400,6 @@
 "Provider",
 "Boku",
 [
-"DANA",
 "ShopeePay"
 ],
 "Live",
@@ -1150,7 +1128,6 @@
 "Provider",
 "Boku",
 [
-"DANA",
 "ShopeePay"
 ],
 "Live",
@@ -1210,14 +1187,6 @@
 ],
 "Live",
 "ecommpay"
-],
-[
-"Thailand",
-"Provider",
-"Nium",
-[],
-"Homologating",
-"nium"
 ],
 [
 "Thailand",
@@ -1332,7 +1301,6 @@
 "Xendit",
 [
 "Cards",
-"DANA",
 "ShopeePay",
 "Thai QR (PromptPay)",
 "TrueMoney",
@@ -1827,22 +1795,11 @@
 [
 "South Korea",
 "Provider",
-"2C2P",
-[
-"Cards"
-],
-"Live",
-"2c2p"
-],
-[
-"South Korea",
-"Provider",
 "Adyen",
 [
 "Cards",
 "Apple Pay",
 "Bank transfer (KCP)",
-"Google Pay",
 "Kakao Pay",
 "Naver Pay",
 "Payco"
@@ -1890,21 +1847,10 @@
 "Fiserv",
 [
 "Cards",
-"Apple Pay",
-"Google Pay"
+"Apple Pay"
 ],
 "Live",
 "fiserv"
-],
-[
-"South Korea",
-"Provider",
-"NTT DATA",
-[
-"Cards"
-],
-"Live",
-"nttdata"
 ],
 [
 "South Korea",
@@ -1938,22 +1884,10 @@
 "Rapyd",
 [
 "Cards",
-"Apple Pay",
-"Google Pay"
+"Apple Pay"
 ],
 "Live",
 "rapyd"
-],
-[
-"South Korea",
-"Provider",
-"Stripe",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"stripe"
 ],
 [
 "South Korea",
@@ -2007,14 +1941,6 @@
 [],
 "Live",
 "applepay"
-],
-[
-"South Korea",
-"Direct payment method",
-"Google Pay",
-[],
-"Live",
-"googlepay"
 ],
 [
 "South Korea",
@@ -2141,34 +2067,12 @@
 [
 "Taiwan",
 "Provider",
-"Fiserv",
-[
-"Cards",
-"Apple Pay",
-"Google Pay"
-],
-"Live",
-"fiserv"
-],
-[
-"Taiwan",
-"Provider",
 "Global Payments",
 [
 "Cards"
 ],
 "Live",
 "globalpayments"
-],
-[
-"Taiwan",
-"Provider",
-"NTT DATA",
-[
-"Cards"
-],
-"Live",
-"nttdata"
 ],
 [
 "Taiwan",
@@ -2220,17 +2124,6 @@
 ],
 "Live",
 "worldline"
-],
-[
-"Taiwan",
-"Provider",
-"Worldpay",
-[
-"Cards",
-"Apple Pay"
-],
-"Live",
-"worldpay"
 ],
 [
 "Taiwan",
@@ -2437,7 +2330,6 @@
 "Provider",
 "Boku",
 [
-"DANA",
 "ShopeePay",
 "Touch 'n Go"
 ],
@@ -2634,7 +2526,6 @@
 [
 "Cards",
 "7-Eleven",
-"DANA",
 "FPX",
 "GrabPay",
 "ShopeePay",
@@ -2851,14 +2742,6 @@
 [
 "Philippines",
 "Provider",
-"Directa 24",
-[],
-"Homologating",
-"directa24"
-],
-[
-"Philippines",
-"Provider",
 "dLocal",
 [
 "Cards",
@@ -2933,14 +2816,6 @@
 [],
 "Live",
 "pagsmile"
-],
-[
-"Philippines",
-"Provider",
-"Panda blue",
-[],
-"Live",
-"pandablue"
 ],
 [
 "Philippines",
@@ -3204,14 +3079,6 @@
 [
 "Vietnam",
 "Provider",
-"More Payments",
-[],
-"Homologating",
-"morepaymentsuniteller"
-],
-[
-"Vietnam",
-"Provider",
 "Nuvei",
 [
 "Cards"
@@ -3400,16 +3267,6 @@
 [
 "India",
 "Provider",
-"2C2P",
-[
-"Cards"
-],
-"Live",
-"2c2p"
-],
-[
-"India",
-"Provider",
 "Adyen",
 [
 "Cards",
@@ -3502,19 +3359,6 @@
 [
 "India",
 "Provider",
-"Ecommpay",
-[
-"Cards",
-"Neteller",
-"PayPal",
-"UnionPay"
-],
-"Live",
-"ecommpay"
-],
-[
-"India",
-"Provider",
 "Fiserv",
 [
 "Cards",
@@ -3523,16 +3367,6 @@
 ],
 "Live",
 "fiserv"
-],
-[
-"India",
-"Provider",
-"Getnet",
-[
-"Cards"
-],
-"Live",
-"getnet"
 ],
 [
 "India",
@@ -3710,14 +3544,6 @@
 [
 "India",
 "Direct payment method",
-"Neteller",
-[],
-"Live",
-"neteller"
-],
-[
-"India",
-"Direct payment method",
 "PayPal",
 [],
 "Live",
@@ -3856,17 +3682,6 @@
 [],
 "Live",
 "paysquad"
-],
-[
-"New Zealand",
-"Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
 ],
 [
 "New Zealand",
@@ -4130,16 +3945,6 @@
 [
 "United Kingdom",
 "Provider",
-"Getnet",
-[
-"Cards"
-],
-"Live",
-"getnet"
-],
-[
-"United Kingdom",
-"Provider",
 "Global Payments",
 [
 "Cards"
@@ -4246,14 +4051,6 @@
 ],
 "Live",
 "revolut"
-],
-[
-"United Kingdom",
-"Provider",
-"Simpaisa",
-[],
-"Live",
-"simpaisa"
 ],
 [
 "United Kingdom",
@@ -4602,16 +4399,6 @@
 [
 "Germany",
 "Provider",
-"Getnet",
-[
-"Cards"
-],
-"Live",
-"getnet"
-],
-[
-"Germany",
-"Provider",
 "Global Payments",
 [
 "Cards"
@@ -4663,16 +4450,6 @@
 [],
 "Live",
 "payabl"
-],
-[
-"Germany",
-"Provider",
-"PayPlug",
-[
-"Cards"
-],
-"Live",
-"payplug"
 ],
 [
 "Germany",
@@ -5007,14 +4784,6 @@
 [
 "Spain",
 "Provider",
-"Commerce Gate",
-[],
-"Homologating",
-"commercegate"
-],
-[
-"Spain",
-"Provider",
 "Cybersource",
 [
 "Cards"
@@ -5098,16 +4867,6 @@
 [
 "Spain",
 "Provider",
-"PagSeguro",
-[
-"Cards"
-],
-"Live",
-"pagseguro"
-],
-[
-"Spain",
-"Provider",
 "payabl.",
 [],
 "Live",
@@ -5120,16 +4879,6 @@
 [],
 "Live",
 "paynetics"
-],
-[
-"Spain",
-"Provider",
-"PayPlug",
-[
-"Cards"
-],
-"Live",
-"payplug"
 ],
 [
 "Spain",
@@ -5489,26 +5238,6 @@
 [
 "Canada",
 "Provider",
-"Kushki",
-[
-"Cards"
-],
-"Live",
-"kushki"
-],
-[
-"Canada",
-"Provider",
-"Novalnet",
-[
-"Cards"
-],
-"Live",
-"novalnet"
-],
-[
-"Canada",
-"Provider",
 "Nuvei",
 [
 "Cards",
@@ -5532,14 +5261,6 @@
 [],
 "Homologating",
 "ppro"
-],
-[
-"Canada",
-"Provider",
-"Simpaisa",
-[],
-"Live",
-"simpaisa"
 ],
 [
 "Canada",
@@ -5830,16 +5551,6 @@
 [
 "Argentina",
 "Provider",
-"emerchantpay",
-[
-"Cards"
-],
-"Live",
-"emerchantpay"
-],
-[
-"Argentina",
-"Provider",
 "Fiserv",
 [
 "Cards",
@@ -5956,14 +5667,6 @@
 [],
 "Homologating",
 "ppro"
-],
-[
-"Argentina",
-"Provider",
-"Transfero",
-[],
-"Homologating",
-"transfero"
 ],
 [
 "Argentina",
@@ -6869,16 +6572,6 @@
 [
 "Brazil",
 "Provider",
-"Safeway",
-[
-"PIX"
-],
-"Integrated (code)",
-"safeway"
-],
-[
-"Brazil",
-"Provider",
 "OKTO",
 [
 "PIX"
@@ -7372,17 +7065,6 @@
 [
 "Chile",
 "Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
-],
-[
-"Chile",
-"Provider",
 "PPRO",
 [],
 "Homologating",
@@ -7422,14 +7104,6 @@
 [
 "Chile",
 "Provider",
-"Transfero",
-[],
-"Homologating",
-"transfero"
-],
-[
-"Chile",
-"Provider",
 "Unlimit",
 [
 "Cards"
@@ -7465,17 +7139,6 @@
 ],
 "Live",
 "worldline"
-],
-[
-"Chile",
-"Provider",
-"Worldpay",
-[
-"Cards",
-"Apple Pay"
-],
-"Live",
-"worldpay"
 ],
 [
 "Chile",
@@ -7544,14 +7207,6 @@
 [
 "Chile",
 "Direct payment method",
-"Payzen",
-[],
-"Live",
-"payzen"
-],
-[
-"Chile",
-"Direct payment method",
 "Pluxee",
 [],
 "Live",
@@ -7604,14 +7259,6 @@
 [],
 "Live",
 "westernunion"
-],
-[
-"Chile",
-"Direct payment method",
-"Wibond",
-[],
-"Live",
-"wibond"
 ],
 [
 "Colombia",
@@ -7849,14 +7496,6 @@
 [
 "Colombia",
 "Provider",
-"More Payments",
-[],
-"Homologating",
-"morepaymentsuniteller"
-],
-[
-"Colombia",
-"Provider",
 "Movii",
 [
 "Cards",
@@ -8026,14 +7665,6 @@
 [
 "Colombia",
 "Provider",
-"Transfero",
-[],
-"Homologating",
-"transfero"
-],
-[
-"Colombia",
-"Provider",
 "Unlimit",
 [
 "Cards",
@@ -8111,16 +7742,6 @@
 [],
 "Live",
 "applepay"
-],
-[
-"Colombia",
-"Direct payment method",
-"Belvo",
-[
-"Direct debit enrollment"
-],
-"Live",
-"belvo"
 ],
 [
 "Colombia",
@@ -8601,14 +8222,6 @@
 [
 "Mexico",
 "Provider",
-"Nium",
-[],
-"Homologating",
-"nium"
-],
-[
-"Mexico",
-"Provider",
 "Nuvei",
 [
 "Cards",
@@ -8669,14 +8282,6 @@
 [
 "Mexico",
 "Provider",
-"Payments Way",
-[],
-"Homologating",
-"paymentsway"
-],
-[
-"Mexico",
-"Provider",
 "Paynet",
 [],
 "Homologating",
@@ -8711,16 +8316,6 @@
 ],
 "Live",
 "payu"
-],
-[
-"Mexico",
-"Provider",
-"PlacetoPay",
-[
-"Cards"
-],
-"Live",
-"placetopay"
 ],
 [
 "Mexico",
@@ -8988,14 +8583,6 @@
 [
 "Mexico",
 "Direct payment method",
-"Datransfer",
-[],
-"Live",
-"datransfer"
-],
-[
-"Mexico",
-"Direct payment method",
 "DIMO",
 [],
 "Live",
@@ -9008,14 +8595,6 @@
 [],
 "Live",
 "discover"
-],
-[
-"Mexico",
-"Direct payment method",
-"Druo",
-[],
-"Live",
-"druo"
 ],
 [
 "Mexico",
@@ -9080,14 +8659,6 @@
 [],
 "Live",
 "paypal"
-],
-[
-"Mexico",
-"Direct payment method",
-"Payzen",
-[],
-"Live",
-"payzen"
 ],
 [
 "Mexico",
@@ -9172,14 +8743,6 @@
 [
 "Mexico",
 "Direct payment method",
-"Tpaga",
-[],
-"Live",
-"tpaga"
-],
-[
-"Mexico",
-"Direct payment method",
 "UATP",
 [],
 "Live",
@@ -9208,14 +8771,6 @@
 [],
 "Live",
 "walmart"
-],
-[
-"Mexico",
-"Direct payment method",
-"Wibond",
-[],
-"Live",
-"wibond"
 ],
 [
 "Mexico",
@@ -9463,14 +9018,6 @@
 [
 "Peru",
 "Provider",
-"Payments Way",
-[],
-"Homologating",
-"paymentsway"
-],
-[
-"Peru",
-"Provider",
 "PayRetailers",
 [],
 "Live",
@@ -9600,14 +9147,6 @@
 [
 "Peru",
 "Direct payment method",
-"Druo",
-[],
-"Live",
-"druo"
-],
-[
-"Peru",
-"Direct payment method",
 "Edenred",
 [],
 "Live",
@@ -9668,14 +9207,6 @@
 [],
 "Live",
 "powerpay"
-],
-[
-"Peru",
-"Direct payment method",
-"RappiBank",
-[],
-"Live",
-"rappibank"
 ],
 [
 "Peru",
@@ -9836,16 +9367,6 @@
 [
 "Uruguay",
 "Provider",
-"PlacetoPay",
-[
-"Cards"
-],
-"Live",
-"placetopay"
-],
-[
-"Uruguay",
-"Provider",
 "Totalnet",
 [],
 "Homologating",
@@ -9898,14 +9419,6 @@
 [],
 "Live",
 "paypal"
-],
-[
-"Uruguay",
-"Direct payment method",
-"Payzen",
-[],
-"Live",
-"payzen"
 ],
 [
 "Uruguay",
@@ -10094,8 +9607,7 @@
 [
 "Cards",
 "Banco Nacional cash",
-"Bank transfer",
-"PuntoXpress"
+"Bank transfer"
 ],
 "Live",
 "dlocal"
@@ -10298,14 +9810,6 @@
 [],
 "Live",
 "paypal"
-],
-[
-"Costa Rica",
-"Direct payment method",
-"PuntoXpress",
-[],
-"Live",
-"puntoxpress"
 ],
 [
 "Costa Rica",
@@ -10637,14 +10141,6 @@
 [
 "Ecuador",
 "Provider",
-"More Payments",
-[],
-"Homologating",
-"morepaymentsuniteller"
-],
-[
-"Ecuador",
-"Provider",
 "Nuvei",
 [
 "Cards",
@@ -10865,14 +10361,6 @@
 [
 "El Salvador",
 "Provider",
-"Ibex",
-[],
-"Homologating",
-"ibex"
-],
-[
-"El Salvador",
-"Provider",
 "Inswitch",
 [
 "Bank transfer",
@@ -11066,14 +10554,6 @@
 ],
 "Live",
 "fac"
-],
-[
-"Guatemala",
-"Provider",
-"Ibex",
-[],
-"Homologating",
-"ibex"
 ],
 [
 "Guatemala",
@@ -11904,34 +11384,12 @@
 [
 "Venezuela",
 "Provider",
-"Ecommpay",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"ecommpay"
-],
-[
-"Venezuela",
-"Provider",
 "Nuvei",
 [
 "Cards"
 ],
 "Live",
 "nuvei"
-],
-[
-"Venezuela",
-"Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
 ],
 [
 "Venezuela",
@@ -12081,19 +11539,6 @@
 [
 "Saudi Arabia",
 "Provider",
-"Ecommpay",
-[
-"Cards",
-"Neteller",
-"PayPal",
-"UnionPay"
-],
-"Live",
-"ecommpay"
-],
-[
-"Saudi Arabia",
-"Provider",
 "Edaat",
 [],
 "Live",
@@ -12178,16 +11623,6 @@
 [
 "Saudi Arabia",
 "Provider",
-"Novalnet",
-[
-"Cards"
-],
-"Live",
-"novalnet"
-],
-[
-"Saudi Arabia",
-"Provider",
 "Nuvei",
 [
 "Cards"
@@ -12226,17 +11661,6 @@
 [],
 "Live",
 "paytabs"
-],
-[
-"Saudi Arabia",
-"Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
 ],
 [
 "Saudi Arabia",
@@ -12285,14 +11709,6 @@
 [],
 "Live",
 "telr"
-],
-[
-"Saudi Arabia",
-"Provider",
-"Triple-A",
-[],
-"Live",
-"triplea"
 ],
 [
 "Saudi Arabia",
@@ -12447,14 +11863,6 @@
 [
 "United Arab Emirates",
 "Provider",
-"Bank Dhofar",
-[],
-"Live",
-"bankdhofar"
-],
-[
-"United Arab Emirates",
-"Provider",
 "Carry1st",
 [],
 "Live",
@@ -12493,14 +11901,6 @@
 [
 "United Arab Emirates",
 "Provider",
-"DPO Africa",
-[],
-"Live",
-"dpoafrica"
-],
-[
-"United Arab Emirates",
-"Provider",
 "Dubai Islamic Bank",
 [],
 "Live",
@@ -12533,16 +11933,6 @@
 [],
 "Live",
 "geidea"
-],
-[
-"United Arab Emirates",
-"Provider",
-"Getnet",
-[
-"Cards"
-],
-"Live",
-"getnet"
 ],
 [
 "United Arab Emirates",
@@ -12599,16 +11989,6 @@
 [],
 "Live",
 "noonpayments"
-],
-[
-"United Arab Emirates",
-"Provider",
-"Novalnet",
-[
-"Cards"
-],
-"Live",
-"novalnet"
 ],
 [
 "United Arab Emirates",
@@ -13132,8 +12512,7 @@
 "Provider",
 "Checkout.com",
 [
-"Cards",
-"Tabby"
+"Cards"
 ],
 "Live",
 "checkoutcom"
@@ -13169,33 +12548,10 @@
 [
 "Egypt",
 "Provider",
-"Ecommpay",
-[
-"Cards",
-"Neteller",
-"PayPal"
-],
-"Live",
-"ecommpay"
-],
-[
-"Egypt",
-"Provider",
 "Fawry",
 [],
 "Live",
 "fawry"
-],
-[
-"Egypt",
-"Provider",
-"Fiserv",
-[
-"Cards",
-"Apple Pay"
-],
-"Live",
-"fiserv"
 ],
 [
 "Egypt",
@@ -13298,17 +12654,6 @@
 [
 "Egypt",
 "Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
-],
-[
-"Egypt",
-"Provider",
 "PPRO",
 [],
 "Homologating",
@@ -13321,14 +12666,6 @@
 [],
 "Live",
 "tap"
-],
-[
-"Egypt",
-"Provider",
-"Triple-A",
-[],
-"Live",
-"triplea"
 ],
 [
 "Egypt",
@@ -13581,14 +12918,6 @@
 [
 "Egypt",
 "Direct payment method",
-"Tabby",
-[],
-"Live",
-"tabby"
-],
-[
-"Egypt",
-"Direct payment method",
 "UATP",
 [],
 "Live",
@@ -13655,8 +12984,7 @@
 "Provider",
 "Checkout.com",
 [
-"Cards",
-"Tamara"
+"Cards"
 ],
 "Live",
 "checkoutcom"
@@ -13690,19 +13018,6 @@
 [
 "Qatar",
 "Provider",
-"Ecommpay",
-[
-"Cards",
-"Neteller",
-"PayPal",
-"UnionPay"
-],
-"Live",
-"ecommpay"
-],
-[
-"Qatar",
-"Provider",
 "HyperPay",
 [],
 "Live",
@@ -13727,31 +13042,10 @@
 [
 "Qatar",
 "Provider",
-"Novalnet",
-[
-"Cards"
-],
-"Live",
-"novalnet"
-],
-[
-"Qatar",
-"Provider",
 "Pagsmile",
 [],
 "Live",
 "pagsmile"
-],
-[
-"Qatar",
-"Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
 ],
 [
 "Qatar",
@@ -13776,14 +13070,6 @@
 [],
 "Live",
 "tap"
-],
-[
-"Qatar",
-"Provider",
-"Triple-A",
-[],
-"Live",
-"triplea"
 ],
 [
 "Qatar",
@@ -13854,26 +13140,10 @@
 [
 "Qatar",
 "Direct payment method",
-"QNB Al-Ahli E-Wallet",
-[],
-"Live",
-"qnbalahliewallet"
-],
-[
-"Qatar",
-"Direct payment method",
 "QPay",
 [],
 "Live",
 "qpay"
-],
-[
-"Qatar",
-"Direct payment method",
-"Tamara",
-[],
-"Live",
-"tamara"
 ],
 [
 "Qatar",
@@ -13960,31 +13230,10 @@
 [
 "Kuwait",
 "Provider",
-"Ecommpay",
-[
-"Cards",
-"Neteller",
-"PayPal",
-"UnionPay"
-],
-"Live",
-"ecommpay"
-],
-[
-"Kuwait",
-"Provider",
 "Gulf Bank",
 [],
 "Live",
 "gulfbank"
-],
-[
-"Kuwait",
-"Provider",
-"HyperPay",
-[],
-"Live",
-"hyperpay"
 ],
 [
 "Kuwait",
@@ -14047,29 +13296,10 @@
 [
 "Kuwait",
 "Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
-],
-[
-"Kuwait",
-"Provider",
 "Tap Payments",
 [],
 "Live",
 "tap"
-],
-[
-"Kuwait",
-"Provider",
-"Triple-A",
-[],
-"Live",
-"triplea"
 ],
 [
 "Kuwait",
@@ -14126,14 +13356,6 @@
 [],
 "Live",
 "mastercard"
-],
-[
-"Kuwait",
-"Direct payment method",
-"NBK EG Wallet",
-[],
-"Live",
-"nbkegwallet"
 ],
 [
 "Kuwait",
@@ -14246,19 +13468,6 @@
 [
 "Oman",
 "Provider",
-"Ecommpay",
-[
-"Cards",
-"Neteller",
-"PayPal",
-"UnionPay"
-],
-"Live",
-"ecommpay"
-],
-[
-"Oman",
-"Provider",
 "HyperPay",
 [],
 "Live",
@@ -14313,17 +13522,6 @@
 [],
 "Live",
 "paytabs"
-],
-[
-"Oman",
-"Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
 ],
 [
 "Oman",
@@ -14472,7 +13670,6 @@
 "Checkout.com",
 [
 "Cards",
-"Tabby",
 "Tamara"
 ],
 "Live",
@@ -14495,19 +13692,6 @@
 ],
 "Live",
 "cybersource"
-],
-[
-"Bahrain",
-"Provider",
-"Ecommpay",
-[
-"Cards",
-"Neteller",
-"PayPal",
-"UnionPay"
-],
-"Live",
-"ecommpay"
 ],
 [
 "Bahrain",
@@ -14562,29 +13746,10 @@
 [
 "Bahrain",
 "Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
-],
-[
-"Bahrain",
-"Provider",
 "Tap Payments",
 [],
 "Live",
 "tap"
-],
-[
-"Bahrain",
-"Provider",
-"Triple-A",
-[],
-"Live",
-"triplea"
 ],
 [
 "Bahrain",
@@ -14625,14 +13790,6 @@
 [],
 "Live",
 "paypal"
-],
-[
-"Bahrain",
-"Direct payment method",
-"Tabby",
-[],
-"Live",
-"tabby"
 ],
 [
 "Bahrain",
@@ -14709,34 +13866,12 @@
 [
 "Jordan",
 "Provider",
-"Checkout.com",
-[
-"Cards"
-],
-"Live",
-"checkoutcom"
-],
-[
-"Jordan",
-"Provider",
 "Cybersource",
 [
 "Cards"
 ],
 "Live",
 "cybersource"
-],
-[
-"Jordan",
-"Provider",
-"Ecommpay",
-[
-"Cards",
-"PayPal",
-"UnionPay"
-],
-"Live",
-"ecommpay"
 ],
 [
 "Jordan",
@@ -14791,37 +13926,10 @@
 [
 "Jordan",
 "Provider",
-"Pagsmile",
-[],
-"Live",
-"pagsmile"
-],
-[
-"Jordan",
-"Provider",
-"Paymob",
-[],
-"Live",
-"paymob"
-],
-[
-"Jordan",
-"Provider",
 "PayTabs",
 [],
 "Live",
 "paytabs"
-],
-[
-"Jordan",
-"Provider",
-"Pockyt",
-[
-"Cards",
-"PayPal"
-],
-"Live",
-"pockyt"
 ],
 [
 "Jordan",

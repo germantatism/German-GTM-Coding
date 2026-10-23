@@ -1,5 +1,5 @@
 {
- "presentation_id": "1NvO73rW7fvS2cZ-q9qsrWSnJsvQ0GvolXzYTIAw1Lb8",
+ "presentation_id": "1KBdTNcmpAWAqrdlBCibo1o-6CFE8QGPnJNFJIcOgnTw",
  "merchant": "Waymo",
  "footer": "",
  "logo_url": "https://drive.google.com/uc?export=download&id=1HFeAWJ7g6h1esrtdKsVrmPyICqRYhge2",
@@ -452,28 +452,28 @@
      "United Kingdom",
      "Europe",
      "London 2026, pending UK approval; Moove runs the fleet",
-     "26",
+     "24",
      "Bacs direct debit · Klarna · Clearpay · +5 more"
     ],
     [
      "Japan",
      "Asia Pacific",
      "Tokyo 2027 with Nihon Kotsu and GO, subject to permits",
-     "18",
+     "17",
      "7-Eleven · PayPay · Konbini (FamilyMart, Lawson, Ministop, Seicomart) · +4 more"
     ],
     [
      "Germany",
      "Europe",
      "Munich: testing from late 2026, launch end of 2027, permit pending",
-     "25",
+     "23",
      "SEPA Direct Debit · Klarna · EU bank transfer · +6 more"
     ],
     [
      "Spain",
      "Europe",
      "Madrid: Waymo Iberia SL registered, tests before end 2026, no date",
-     "28",
+     "26",
      "SEPA Direct Debit · Klarna · EU bank transfer · +5 more"
     ],
     [
@@ -481,7 +481,7 @@
      "Asia Pacific",
      "Named by Waymo as a next market (Oct 2026); not announced",
      "19",
-     "ShopeePay · DANA · Thai QR (PromptPay) · +4 more"
+     "ShopeePay · Thai QR (PromptPay) · TrueMoney · +3 more"
     ],
     [
      "Indonesia",
@@ -495,13 +495,13 @@
      "Asia Pacific",
      "Announced Sep 2026: manual driving 2027, launch 2028 with LTA",
      "18",
-     "DANA · Atome · GrabPay · +4 more"
+     "Atome · GrabPay · ShopeePay · +3 more"
     ],
     [
      "Canada",
      "North America",
      "Toronto: first riders 2028; Element Fleet runs the fleet",
-     "16",
+     "13",
      "Klarna · Afterpay · Trustly · +4 more"
     ],
     [
@@ -539,7 +539,7 @@
    "rows": [
     [
      "Japan",
-     "18",
+     "17",
      "4 · 2",
      "7-Eleven · PayPay · Konbini (FamilyMart, Lawson, Ministop, Seicomart) · Pay-easy · Apple Pay · Google Pay · +1 more"
     ],
@@ -547,7 +547,7 @@
      "Singapore",
      "18",
      "5 · 1",
-     "DANA · Atome · GrabPay · ShopeePay · Apple Pay · Google Pay · +1 more"
+     "Atome · GrabPay · ShopeePay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Australia",
@@ -558,8 +558,8 @@
     [
      "Thailand",
      "19",
-     "4 · 1",
-     "ShopeePay · DANA · Thai QR (PromptPay) · TrueMoney · Big C · Google Pay · +1 more"
+     "3 · 1",
+     "ShopeePay · Thai QR (PromptPay) · TrueMoney · Big C · Google Pay · PayPal"
     ],
     [
      "Indonesia",
@@ -569,13 +569,13 @@
     ],
     [
      "South Korea",
-     "14",
+     "11",
      "6 · 1",
-     "Kakao Pay · Naver Pay · Bank transfer (KCP) · Payco · Toss Pay · Apple Pay · +2 more"
+     "Kakao Pay · Naver Pay · Bank transfer (KCP) · Payco · Toss Pay · Apple Pay · +1 more"
     ],
     [
      "Taiwan",
-     "10",
+     "7",
      "3 · 0",
      "Apple Pay · Google Pay · PayPal"
     ],
@@ -589,12 +589,12 @@
      "Malaysia",
      "20",
      "5 · 0",
-     "7-Eleven · ShopeePay · Touch 'n Go · GrabPay · DANA · FPX · +5 more"
+     "7-Eleven · ShopeePay · Touch 'n Go · GrabPay · FPX · Atome · +4 more"
     ],
     [
      "Philippines",
-     "18",
-     "3 · 0",
+     "17",
+     "2 · 0",
      "GCash · 7-Eleven · ShopeePay · GrabPay · QR Ph · Maya · +4 more"
     ]
    ],
@@ -626,18 +626,18 @@
     [
      "Vietnam",
      "12",
-     "4 · 0",
+     "3 · 0",
      "MoMo · ShopeePay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "India",
-     "22",
+     "19",
      "4 · 1",
      "UPI · UPI Autopay · Apple Pay · Google Pay · PayPal"
     ],
     [
      "New Zealand",
-     "11",
+     "10",
      "2 · 2",
      "Klarna · Afterpay · Zip · Apple Pay · Google Pay · PayPal"
     ]
@@ -669,25 +669,25 @@
    "rows": [
     [
      "United Kingdom",
-     "26",
+     "24",
      "3 · 4",
      "Bacs direct debit · Klarna · Clearpay · Trustly · Revolut Pay · Apple Pay · +2 more"
     ],
     [
      "Germany",
-     "25",
+     "23",
      "2 · 1",
      "SEPA Direct Debit · Klarna · EU bank transfer · Trustly · Open banking · Revolut Pay · +3 more"
     ],
     [
      "Spain",
-     "28",
-     "3 · 1",
+     "26",
+     "2 · 1",
      "SEPA Direct Debit · Klarna · EU bank transfer · Trustly · Revolut Pay · Apple Pay · +2 more"
     ],
     [
      "Canada",
-     "16",
+     "13",
      "3 · 2",
      "Klarna · Afterpay · Trustly · PAD direct debit · Apple Pay · Google Pay · +1 more"
     ]
@@ -719,43 +719,43 @@
    "rows": [
     [
      "Argentina",
-     "23",
-     "4 · 4",
+     "22",
+     "3 · 4",
      "Cash · Bank transfer · Pago Fácil · Checkout Pro · Transferencias 3.0 · MODO · +9 more"
     ],
     [
      "Brazil",
      "46",
-     "17 · 5",
+     "17 · 4",
      "PIX · Boleto · PIX Automático · Bank transfer · Cash · Checkout Pro · +18 more"
     ],
     [
      "Chile",
-     "29",
-     "11 · 0",
+     "27",
+     "10 · 0",
      "Bank transfer · Webpay · Cash · Khipu · Checkout Pro · MACH · +11 more"
     ],
     [
      "Colombia",
      "31",
-     "14 · 1",
+     "12 · 1",
      "PSE · Bank transfer · Nequi · Cash · Efecty · Checkout Pro · +20 more"
     ],
     [
      "Mexico",
-     "36",
-     "17 · 1",
+     "35",
+     "15 · 1",
      "SPEI · Bank transfer · Cash · OXXO Pay · Paynet · 7-Eleven · +39 more"
     ],
     [
      "Peru",
      "25",
-     "8 · 0",
+     "7 · 0",
      "PagoEfectivo · Yape · Bank transfer · Cash · Checkout Pro · SafetyPay · +10 more"
     ],
     [
      "Uruguay",
-     "12",
+     "11",
      "3 · 0",
      "Bank transfer · Cash · Checkout Pro · Mercado Pago Wallet · Apple Pay · Google Pay · +1 more"
     ],
@@ -769,7 +769,7 @@
      "Costa Rica",
      "15",
      "3 · 0",
-     "Bank transfer · Cash · Banco Nacional cash · PuntoXpress · SafetyPay (bank transfer) · SafetyPay (cash) · +4 more"
+     "Bank transfer · Cash · Banco Nacional cash · SafetyPay (bank transfer) · SafetyPay (cash) · SafetyPay · +3 more"
     ],
     [
      "Dominican Republic",
@@ -806,19 +806,19 @@
     [
      "Ecuador",
      "17",
-     "5 · 0",
+     "4 · 0",
      "Bank transfer · PagoEfectivo · Deuna · Cash · Payvalida · SafetyPay · +3 more"
     ],
     [
      "El Salvador",
      "12",
-     "2 · 0",
+     "1 · 0",
      "Bank transfer · PuntoXpress · Cash · Payvalida · SafetyPay · Apple Pay"
     ],
     [
      "Guatemala",
      "15",
-     "4 · 0",
+     "3 · 0",
      "Bank transfer · Cash · SafetyPay (bank transfer) · SafetyPay (cash) · Monnet QR · Monnet wallet · +5 more"
     ],
     [
@@ -847,7 +847,7 @@
     ],
     [
      "Venezuela",
-     "5",
+     "3",
      "0 · 0",
      "PayPal"
     ]
@@ -879,13 +879,13 @@
    "rows": [
     [
      "Saudi Arabia",
-     "35",
+     "31",
      "2 · 0",
      "Tamara · Tabby · Apple Pay · Google Pay · PayPal"
     ],
     [
      "United Arab Emirates",
-     "32",
+     "28",
      "3 · 0",
      "Tabby · Tamara · Apple Pay · Google Pay · PayPal"
     ],
@@ -897,37 +897,37 @@
     ],
     [
      "Egypt",
-     "27",
+     "23",
      "1 · 0",
-     "Tabby · Apple Pay · PayPal"
+     "Apple Pay · PayPal"
     ],
     [
      "Qatar",
-     "18",
+     "14",
      "0 · 0",
-     "Tamara · Apple Pay · Google Pay · PayPal"
+     "Apple Pay · Google Pay · PayPal"
     ],
     [
      "Kuwait",
-     "20",
+     "16",
      "0 · 0",
      "Tabby · Tamara · Apple Pay · Google Pay · PayPal"
     ],
     [
      "Oman",
-     "18",
+     "16",
      "0 · 0",
      "Apple Pay · Google Pay · PayPal"
     ],
     [
      "Bahrain",
-     "18",
+     "15",
      "0 · 0",
-     "Tabby · Tamara · Apple Pay · PayPal"
+     "Tamara · Apple Pay · PayPal"
     ],
     [
      "Jordan",
-     "19",
+     "14",
      "0 · 0",
      "Apple Pay · PayPal"
     ]
@@ -943,10 +943,10 @@
    "id": "c-japan",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › JAPAN › PROVIDERS",
-   "headline": "Japan: 18 providers live through Yuno, 15 for cards, 4 more connections in homologation.",
+   "headline": "Japan: 17 providers live through Yuno, 14 for cards, 4 more connections in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (18)",
+     "header": "Live through Yuno (17)",
      "chips": [
       {
        "name": "Adyen",
@@ -982,11 +982,6 @@
        "name": "Ecommpay",
        "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
        "aspect": 0.967
-      },
-      {
-       "name": "Fiserv",
-       "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
-       "aspect": 1.0
       },
       {
        "name": "NTT DATA",
@@ -1088,10 +1083,10 @@
    "id": "c-japan-methods",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › JAPAN › PAYMENT METHODS",
-   "headline": "Japan: 14 payment methods available and 3 local methods carried by the providers.",
+   "headline": "Japan: 13 payment methods available and 3 local methods carried by the providers.",
    "sections": [
     {
-     "header": "Wallets and payment methods available (14)",
+     "header": "Wallets and payment methods available (13)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -1112,11 +1107,6 @@
        "name": "7-Eleven",
        "logo": "https://y.uno/vendor/webflow/68df53fd7fcfdc8906817071_6789cc5a28ddfc7fd8551249_678316e13203c67638d3b0b3_678303b4ca16eb93e3cde987_673ab24f13e892dd737ee8cd_7eleven_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "Click to Pay",
-       "logo": "https://y.uno/vendor/webflow/68df540cef364b1307eec434_67abc0f0b0aad9c410050eef_1525258644-ClicToPay.jpeg",
-       "aspect": 1.124
       },
       {
        "name": "Edenred",
@@ -1196,8 +1186,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Fiserv, Rapyd); PayPal (Ecommpay, Pockyt, Stripe); Alipay (Antom); AstroPay (AstroPay); UnionPay (Ecommpay)",
-      "13"
+      "Apple Pay (Adyen, Rapyd, Worldpay); PayPal (Ecommpay, Pockyt, Stripe); Google Pay (Adyen, Rapyd); Alipay (Antom); AstroPay (AstroPay); UnionPay (Ecommpay)",
+      "11"
      ],
      [
       "Via providers integrated in code, not yet listed",
@@ -1451,7 +1441,7 @@
     "rows": [
      [
       "Other local methods",
-      "Atome · GrabPay (Adyen); DANA (Airwallex, Boku); ShopeePay (Boku)",
+      "Atome · GrabPay (Adyen); ShopeePay (Boku)",
       "1 to 2 each"
      ],
      [
@@ -1739,7 +1729,7 @@
    "id": "c-thailand",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › THAILAND",
-   "headline": "Thailand: 19 providers live through Yuno, 16 for cards, 4 more providers in homologation.",
+   "headline": "Thailand: 19 providers live through Yuno, 16 for cards, 3 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (19)",
@@ -1842,7 +1832,7 @@
      ]
     },
     {
-     "header": "Homologating (4)",
+     "header": "Homologating (3)",
      "chips": [
       {
        "name": "AsiaPay",
@@ -1853,11 +1843,6 @@
        "name": "Directa 24",
        "logo": "https://y.uno/vendor/webflow/68df541065c91e2e24ec4f99_67ad634fed27500ac52fc38f_Screenshot%25202025-02-12%2520at%252022.13.14.png",
        "aspect": 1.079
-      },
-      {
-       "name": "Nium",
-       "logo": "https://y.uno/vendor/webflow/68df5425ac140397e186a1da_67ad66533a8bd016351f3629_Screenshot%25202025-02-12%2520at%252022.26.06.png",
-       "aspect": 1.139
       },
       {
        "name": "PPRO",
@@ -1969,7 +1954,7 @@
     "rows": [
      [
       "Other local methods",
-      "Big C (dLocal); DANA (Boku, Xendit); ShopeePay (Boku, dLocal, Xendit); Thai QR (PromptPay) · TrueMoney (dLocal, Xendit)",
+      "Big C (dLocal); ShopeePay (Boku, dLocal, Xendit); Thai QR (PromptPay) · TrueMoney (dLocal, Xendit)",
       "1 to 2 each"
      ],
      [
@@ -2228,17 +2213,12 @@
   {
    "id": "c-south-korea",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › SOUTH KOREA › PROVIDERS",
-   "headline": "South Korea: 14 providers live through Yuno, 13 for cards, 6 more connections in homologation.",
+   "kicker": "COUNTRY DETAIL › SOUTH KOREA",
+   "headline": "South Korea: 11 providers live through Yuno, 10 for cards, 6 more connections in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (14)",
+     "header": "Live through Yuno (11)",
      "chips": [
-      {
-       "name": "2C2P",
-       "logo": "https://y.uno/vendor/webflow/68df53fd2b26a64840013600_6789cc5a3897af7356fa6887_678316e182afe52e9ec7db8d_678303aadb1c5be39294e2f0_67398b790d745d3b8a6c05d2_2c2p_logosimbolo.png",
-       "aspect": 1.0
-      },
       {
        "name": "Adyen",
        "logo": "https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f4276a734a3f06_678303aaf872b2b85fd78040_673acbe2eaa24fed0492bf8a_adyen_logosimbolo.png",
@@ -2265,11 +2245,6 @@
        "aspect": 1.0
       },
       {
-       "name": "NTT DATA",
-       "logo": "https://y.uno/vendor/webflow/68df54236c13d614183e79a3_67b41857a8284907dd80575c_Screenshot%25202025-02-17%2520at%25209.19.16%25E2%2580%25AFPM.png",
-       "aspect": 1.088
-      },
-      {
        "name": "Nuvei",
        "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
        "aspect": 1.0
@@ -2282,11 +2257,6 @@
       {
        "name": "Rapyd",
        "logo": "https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Stripe",
-       "logo": "https://y.uno/vendor/webflow/68df5445a8ef8a62bf6afaec_6789cc79c8c462843dab8e35_678316f2c376a1c58e0975d0_6783057c9c28a58ed23f20ac_stripe_logosimbolo%252525202.png",
        "aspect": 1.0
       },
       {
@@ -2352,26 +2322,13 @@
       }
      ],
      "style": "signed"
-    }
-   ]
-  },
-  {
-   "id": "c-south-korea-methods",
-   "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › SOUTH KOREA › PAYMENT METHODS",
-   "headline": "South Korea: 9 payment methods available and 3 local methods carried by the providers.",
-   "sections": [
+    },
     {
-     "header": "Wallets and payment methods available (9)",
+     "header": "Wallets and payment methods available (8)",
      "chips": [
       {
        "name": "Apple Pay",
        "logo": "https://y.uno/vendor/webflow/68df5401fc8bd1b796ca8926_6789cc5d6fe30f3f883ee0e6_678316e29e0a1b2f05cc3171_678303ae4b92192a0601364b_673ac3cd7519d5dcb6cde2e2_applepay_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Google Pay",
-       "logo": "https://y.uno/vendor/webflow/68df5418af49e4323ac02404_6789cc6b73863d34426ba6ed_678316e97658bde19f2c38e4_678303b5db1c5be39294e7e4_673abea9e9962bf4ba5de7dd_googlepay_logosimbolo.png",
        "aspect": 1.0
       },
       {
@@ -2426,19 +2383,14 @@
     "font_size": 7.5,
     "rows": [
      [
-      "Kakao Pay · Naver Pay",
-      "Adyen, Antom",
-      "2"
-     ],
-     [
       "Other local methods",
-      "Bank transfer (KCP) · Payco (Adyen); Toss Pay (Antom)",
+      "Bank transfer (KCP) · Payco (Adyen); Kakao Pay · Naver Pay (Adyen, Antom); Toss Pay (Antom)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Adyen, Fiserv, Rapyd, Worldpay); Google Pay (Adyen, Fiserv, Rapyd); Alipay (Antom); PayPal (Stripe)",
-      "9"
+      "Apple Pay (Adyen, Fiserv, Rapyd, Worldpay); Alipay (Antom)",
+      "5"
      ],
      [
       "Via providers integrated in code, not yet listed",
@@ -2452,10 +2404,10 @@
    "id": "c-taiwan",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › TAIWAN",
-   "headline": "Taiwan: 10 providers live through Yuno, 9 for cards, 3 more connections in homologation.",
+   "headline": "Taiwan: 7 providers live through Yuno, 6 for cards, 3 more connections in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (10)",
+     "header": "Live through Yuno (7)",
      "chips": [
       {
        "name": "Cybersource",
@@ -2468,19 +2420,9 @@
        "aspect": 1.0
       },
       {
-       "name": "Fiserv",
-       "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Global Payments",
        "logo": "https://y.uno/vendor/webflow/68df5416bcaf40b055aef984_6789cc6a7d7b8ce401d2e595_678316e982afe52e9ec7dedc_6783066d7be1a6e4396296db_globalpayments_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "NTT DATA",
-       "logo": "https://y.uno/vendor/webflow/68df54236c13d614183e79a3_67b41857a8284907dd80575c_Screenshot%25202025-02-17%2520at%25209.19.16%25E2%2580%25AFPM.png",
-       "aspect": 1.088
       },
       {
        "name": "Nuvei",
@@ -2500,11 +2442,6 @@
       {
        "name": "Worldline",
        "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Worldpay",
-       "logo": "https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121980e08d82933e_678303aa53424d2385a60043_673acbda09c217998145f662_worldpay_logosimbolo%25252525202.png",
        "aspect": 1.0
       }
      ]
@@ -2596,8 +2533,8 @@
     "rows": [
      [
       "Wallets and global methods via providers",
-      "Apple Pay (Fiserv, Rapyd, Worldpay); Google Pay (Fiserv, Rapyd); PayPal (Pockyt)",
-      "6"
+      "Apple Pay (Rapyd); Google Pay (Rapyd); PayPal (Pockyt)",
+      "3"
      ]
     ]
    }
@@ -2945,7 +2882,7 @@
      ],
      [
       "Other local methods",
-      "Atome (Adyen); Boost (dLocal); DANA (Boku, Xendit); FPX (dLocal, Xendit); GrabPay (Adyen, Xendit)",
+      "Atome (Adyen); Boost (dLocal); FPX (dLocal, Xendit); GrabPay (Adyen, Xendit)",
       "1 to 2 each"
      ],
      [
@@ -2960,10 +2897,10 @@
    "id": "c-philippines",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › PHILIPPINES",
-   "headline": "Philippines: 18 providers live through Yuno, 15 for cards, 3 more providers in homologation.",
+   "headline": "Philippines: 17 providers live through Yuno, 15 for cards, 2 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (18)",
+     "header": "Live through Yuno (17)",
      "chips": [
       {
        "name": "2C2P",
@@ -3031,11 +2968,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Panda blue",
-       "logo": "https://y.uno/vendor/webflow/68df542c7fcfdc890681778c_6789cc72e8ffdd3fd5a6e64d_678316ee3eefa6a6387a65f5_678303b87658bde19f231001_673abd169ababb22e63a6be5_pandablue_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Pockyt",
        "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
        "aspect": 1.0
@@ -3058,17 +2990,12 @@
      ]
     },
     {
-     "header": "Homologating (3)",
+     "header": "Homologating (2)",
      "chips": [
       {
        "name": "AsiaPay",
        "logo": "https://y.uno/vendor/webflow/68df540212e55e653363e813_6789cc5ee8ffdd3fd5a6da1b_678316e2fdc7f8e0ccad78ba_678303adf872b2b85fd78220_673ac4c29a97cb3ec913a32e_asiapay_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "Directa 24",
-       "logo": "https://y.uno/vendor/webflow/68df541065c91e2e24ec4f99_67ad634fed27500ac52fc38f_Screenshot%25202025-02-12%2520at%252022.13.14.png",
-       "aspect": 1.079
       },
       {
        "name": "PPRO",
@@ -3189,7 +3116,7 @@
    "id": "c-vietnam",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › VIETNAM",
-   "headline": "Vietnam: 12 providers live through Yuno, 10 for cards, 4 more providers in homologation.",
+   "headline": "Vietnam: 12 providers live through Yuno, 10 for cards, 3 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (12)",
@@ -3257,7 +3184,7 @@
      ]
     },
     {
-     "header": "Homologating (4)",
+     "header": "Homologating (3)",
      "chips": [
       {
        "name": "AsiaPay",
@@ -3268,11 +3195,6 @@
        "name": "Directa 24",
        "logo": "https://y.uno/vendor/webflow/68df541065c91e2e24ec4f99_67ad634fed27500ac52fc38f_Screenshot%25202025-02-12%2520at%252022.13.14.png",
        "aspect": 1.079
-      },
-      {
-       "name": "More Payments",
-       "logo": "https://www.google.com/s2/favicons?domain=uniteller.com&sz=128",
-       "aspect": 1.0
       },
       {
        "name": "PPRO",
@@ -3404,16 +3326,11 @@
    "id": "c-india",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › INDIA › PROVIDERS",
-   "headline": "India: 22 providers live through Yuno, 17 for cards, 4 more providers in homologation.",
+   "headline": "India: 19 providers live through Yuno, 14 for cards, 4 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (22)",
+     "header": "Live through Yuno (19)",
      "chips": [
-      {
-       "name": "2C2P",
-       "logo": "https://y.uno/vendor/webflow/68df53fd2b26a64840013600_6789cc5a3897af7356fa6887_678316e182afe52e9ec7db8d_678303aadb1c5be39294e2f0_67398b790d745d3b8a6c05d2_2c2p_logosimbolo.png",
-       "aspect": 1.0
-      },
       {
        "name": "Adyen",
        "logo": "https://y.uno/vendor/webflow/68df53ff161bb6d113276f14_6789cc5b7d7b8ce401d2de3e_678316e294f4276a734a3f06_678303aaf872b2b85fd78040_673acbe2eaa24fed0492bf8a_adyen_logosimbolo.png",
@@ -3450,18 +3367,8 @@
        "aspect": 1.0
       },
       {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
-      },
-      {
        "name": "Fiserv",
        "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Getnet",
-       "logo": "https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65ae45dd6a22707_678303b52c3f11a6260a4761_673abeb9945b73b0f330f900_getnet_logosimbolo.png",
        "aspect": 1.0
       },
       {
@@ -3564,10 +3471,10 @@
    "id": "c-india-methods",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › INDIA › PAYMENT METHODS",
-   "headline": "India: 13 payment methods available and 2 local methods carried by the providers.",
+   "headline": "India: 12 payment methods available and 2 local methods carried by the providers.",
    "sections": [
     {
-     "header": "Wallets and payment methods available (13)",
+     "header": "Wallets and payment methods available (12)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -3597,11 +3504,6 @@
       {
        "name": "Mastercard",
        "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Neteller",
-       "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -3662,8 +3564,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "PayPal (EBANX, Ecommpay, Pockyt, Stripe); Apple Pay (Adyen, Fiserv); Google Pay (Adyen, Fiserv); AstroPay (AstroPay); Neteller (Ecommpay); UnionPay (Ecommpay)",
-      "11"
+      "PayPal (EBANX, Pockyt, Stripe); Apple Pay (Adyen, Fiserv); Google Pay (Adyen, Fiserv); AstroPay (AstroPay)",
+      "8"
      ],
      [
       "Via providers integrated in code, not yet listed",
@@ -3677,10 +3579,10 @@
    "id": "c-new-zealand",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › NEW ZEALAND",
-   "headline": "New Zealand: 11 providers live through Yuno, 10 for cards, 2 more providers in homologation.",
+   "headline": "New Zealand: 10 providers live through Yuno, 9 for cards, 2 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (11)",
+     "header": "Live through Yuno (10)",
      "chips": [
       {
        "name": "Adyen",
@@ -3715,11 +3617,6 @@
       {
        "name": "Paysquad",
        "logo": "https://www.google.com/s2/favicons?domain=paysquad.co&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
        "aspect": 1.0
       },
       {
@@ -3847,8 +3744,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "PayPal (Braintree, Ecommpay, Pockyt, Stripe); Apple Pay (Adyen, Fiserv, Worldpay); Google Pay (Adyen, Fiserv); Neteller (Ecommpay)",
-      "10"
+      "Apple Pay (Adyen, Fiserv, Worldpay); PayPal (Braintree, Ecommpay, Stripe); Google Pay (Adyen, Fiserv); Neteller (Ecommpay)",
+      "9"
      ],
      [
       "Via providers integrated in code, not yet listed",
@@ -3862,10 +3759,10 @@
    "id": "c-united-kingdom",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › UNITED KINGDOM › PROVIDERS",
-   "headline": "United Kingdom: 26 providers live through Yuno, 18 for cards, 3 more providers in homologation.",
+   "headline": "United Kingdom: 24 providers live through Yuno, 17 for cards, 3 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (26)",
+     "header": "Live through Yuno (24)",
      "chips": [
       {
        "name": "Adyen",
@@ -3918,11 +3815,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Getnet",
-       "logo": "https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65ae45dd6a22707_678303b52c3f11a6260a4761_673abeb9945b73b0f330f900_getnet_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Global Payments",
        "logo": "https://y.uno/vendor/webflow/68df5416bcaf40b055aef984_6789cc6a7d7b8ce401d2e595_678316e982afe52e9ec7dedc_6783066d7be1a6e4396296db_globalpayments_logosimbolo.png",
        "aspect": 1.0
@@ -3966,11 +3858,6 @@
        "name": "Revolut",
        "logo": "https://www.google.com/s2/favicons?domain=revolut.com&sz=128",
        "aspect": 1.0
-      },
-      {
-       "name": "Simpaisa",
-       "logo": "https://y.uno/vendor/webflow/68df54420dabba2fa33f733b_67b4141d3203f3902c901620_Screenshot%25202025-02-17%2520at%25209.01.15%25E2%2580%25AFPM.png",
-       "aspect": 1.013
       },
       {
        "name": "Stripe",
@@ -4195,10 +4082,10 @@
    "id": "c-germany",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › GERMANY › PROVIDERS",
-   "headline": "Germany: 25 providers live through Yuno, 19 for cards, 2 more providers in homologation.",
+   "headline": "Germany: 23 providers live through Yuno, 17 for cards, 2 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (25)",
+     "header": "Live through Yuno (23)",
      "chips": [
       {
        "name": "Adyen",
@@ -4246,11 +4133,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Getnet",
-       "logo": "https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65ae45dd6a22707_678303b52c3f11a6260a4761_673abeb9945b73b0f330f900_getnet_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Global Payments",
        "logo": "https://y.uno/vendor/webflow/68df5416bcaf40b055aef984_6789cc6a7d7b8ce401d2e595_678316e982afe52e9ec7dedc_6783066d7be1a6e4396296db_globalpayments_logosimbolo.png",
        "aspect": 1.0
@@ -4278,11 +4160,6 @@
       {
        "name": "payabl.",
        "logo": "https://www.google.com/s2/favicons?domain=payabl.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "PayPlug",
-       "logo": "https://y.uno/vendor/webflow/68df542ea8ef8a62bf6af80a_6789cc7272061cb2483dba09_678316ee82afe52e9ec7e0ef_678303b81a94a8a105943206_673abc7f00a0d08adff11c1b_payplug_logosimbolo.png",
        "aspect": 1.0
       },
       {
@@ -4493,10 +4370,10 @@
    "id": "c-spain",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › SPAIN › PROVIDERS",
-   "headline": "Spain: 28 providers live through Yuno, 21 for cards, 3 more providers in homologation.",
+   "headline": "Spain: 26 providers live through Yuno, 19 for cards, 2 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (28)",
+     "header": "Live through Yuno (26)",
      "chips": [
       {
        "name": "Adyen",
@@ -4579,11 +4456,6 @@
        "aspect": 1.0
       },
       {
-       "name": "PagSeguro",
-       "logo": "https://y.uno/vendor/webflow/68df542a9df0c977b7542cce_6789cc71244a2a4112ec8356_678316edfc63058ecb4baa6b_678303b87e970d10c4826e35_673abd2f3d717f1dc1a1b2dc_pagseguro_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "payabl.",
        "logo": "https://www.google.com/s2/favicons?domain=payabl.com&sz=128",
        "aspect": 1.0
@@ -4592,11 +4464,6 @@
        "name": "Paynetics",
        "logo": "https://y.uno/vendor/webflow/68df5432912e47a8d536bdbf_67b40ea89cd29a4f781f60c4_Screenshot%25202025-02-17%2520at%25208.37.55%25E2%2580%25AFPM.png",
        "aspect": 2.147
-      },
-      {
-       "name": "PayPlug",
-       "logo": "https://y.uno/vendor/webflow/68df542ea8ef8a62bf6af80a_6789cc7272061cb2483dba09_678316ee82afe52e9ec7e0ef_678303b81a94a8a105943206_673abc7f00a0d08adff11c1b_payplug_logosimbolo.png",
-       "aspect": 1.0
       },
       {
        "name": "Pockyt",
@@ -4641,13 +4508,8 @@
      ]
     },
     {
-     "header": "Homologating (3)",
+     "header": "Homologating (2)",
      "chips": [
-      {
-       "name": "Commerce Gate",
-       "logo": "https://www.google.com/s2/favicons?domain=commercegate.com&sz=128",
-       "aspect": 1.0
-      },
       {
        "name": "PPRO",
        "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
@@ -4821,10 +4683,10 @@
    "id": "c-canada",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › CANADA › PROVIDERS",
-   "headline": "Canada: 16 providers live through Yuno, 14 for cards, 3 more providers in homologation.",
+   "headline": "Canada: 13 providers live through Yuno, 12 for cards, 3 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (16)",
+     "header": "Live through Yuno (13)",
      "chips": [
       {
        "name": "Adyen",
@@ -4872,24 +4734,9 @@
        "aspect": 1.0
       },
       {
-       "name": "Kushki",
-       "logo": "https://y.uno/vendor/webflow/68df541b23a777518d9acb43_6789cc6d4ecd423306d4b749_678316f063212cff9aa0274d_678303b6fdc7f8e0cca38f84_673abe01a2e46cbceb742165_kushki_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Novalnet",
-       "logo": "https://y.uno/vendor/webflow/68df5427f31b569edbf160af_6789cc6f404949fd079f8a82_678316ec8cf0cfe32e79bfc9_678303b7ca16eb93e3cdeafc_673abdada2e46cbceb73e36d_novalnet_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Nuvei",
        "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "Simpaisa",
-       "logo": "https://y.uno/vendor/webflow/68df54420dabba2fa33f733b_67b4141d3203f3902c901620_Screenshot%25202025-02-17%2520at%25209.01.15%25E2%2580%25AFPM.png",
-       "aspect": 1.013
       },
       {
        "name": "Stripe",
@@ -5079,10 +4926,10 @@
    "id": "c-argentina",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › ARGENTINA › PROVIDERS",
-   "headline": "Argentina: 23 providers live through Yuno, 18 for cards, 4 more providers in homologation.",
+   "headline": "Argentina: 22 providers live through Yuno, 17 for cards, 3 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (23)",
+     "header": "Live through Yuno (22)",
      "chips": [
       {
        "name": "AstroPay",
@@ -5128,11 +4975,6 @@
        "name": "Ecommpay",
        "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
        "aspect": 0.967
-      },
-      {
-       "name": "emerchantpay",
-       "logo": "https://y.uno/vendor/webflow/68df541394b9393f1b0c13ae_67b40586ac75800b7abb780e_Screenshot%25202025-02-17%2520at%25207.59.00%25E2%2580%25AFPM.png",
-       "aspect": 2.877
       },
       {
        "name": "Fiserv",
@@ -5202,7 +5044,7 @@
      ]
     },
     {
-     "header": "Homologating (4)",
+     "header": "Homologating (3)",
      "chips": [
       {
        "name": "Local Payment",
@@ -5217,11 +5059,6 @@
       {
        "name": "PPRO",
        "logo": "https://www.google.com/s2/favicons?domain=ppro.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Transfero",
-       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
        "aspect": 1.0
       }
      ],
@@ -5736,7 +5573,7 @@
      "muted": true
     },
     {
-     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (5)",
+     "header": "Integrated in Yuno's code, not yet listed on y.uno/integrations (4)",
      "chips": [
       {
        "name": "Itaú",
@@ -5751,11 +5588,6 @@
       {
        "name": "Payamigo",
        "logo": "https://www.google.com/s2/favicons?domain=payamigo.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Safeway",
-       "logo": "",
        "aspect": 1.0
       },
       {
@@ -5920,8 +5752,8 @@
      ],
      [
       "Via providers integrated in code, not yet listed",
-      "Itaú: Itaú Pay, PIX, PIX Automático; OKTO: PIX; Payamigo: Cards, PIX; Safeway: PIX; Shopfácil: Boleto",
-      "5"
+      "Itaú: Itaú Pay, PIX, PIX Automático; OKTO: PIX; Payamigo: Cards, PIX; Shopfácil: Boleto",
+      "4"
      ]
     ]
    }
@@ -5930,10 +5762,10 @@
    "id": "c-chile",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › CHILE › PROVIDERS",
-   "headline": "Chile: 29 providers live through Yuno, 21 for cards, 11 more providers in homologation.",
+   "headline": "Chile: 27 providers live through Yuno, 19 for cards, 10 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (29)",
+     "header": "Live through Yuno (27)",
      "chips": [
       {
        "name": "Antom",
@@ -6046,11 +5878,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Rapyd",
        "logo": "https://y.uno/vendor/webflow/68df543b21adf69d14871a9a_67ad65f26566fb1940b50920_rapyd.png",
        "aspect": 1.0
@@ -6074,16 +5901,11 @@
        "name": "Worldline",
        "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "Worldpay",
-       "logo": "https://y.uno/vendor/webflow/68df545380217b8fdc3af4bc_6789cc7e93543256a36ae80c_678316f4121980e08d82933e_678303aa53424d2385a60043_673acbda09c217998145f662_worldpay_logosimbolo%25252525202.png",
-       "aspect": 1.0
       }
      ]
     },
     {
-     "header": "Homologating (11)",
+     "header": "Homologating (10)",
      "chips": [
       {
        "name": "Banco Estado de Chile",
@@ -6131,11 +5953,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Transfero",
-       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
-       "aspect": 1.0
-      },
-      {
        "name": "Venti",
        "logo": "https://y.uno/vendor/webflow/692f4aa70cb6730172228e14_Venti_Isotipo_verde%20copy.png",
        "aspect": 1.0
@@ -6149,10 +5966,10 @@
    "id": "c-chile-methods",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › CHILE › PAYMENT METHODS",
-   "headline": "Chile: 17 payment methods available and 11 local methods carried by the providers.",
+   "headline": "Chile: 15 payment methods available and 11 local methods carried by the providers.",
    "sections": [
     {
-     "header": "Wallets and payment methods available (17)",
+     "header": "Wallets and payment methods available (15)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -6195,11 +6012,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Payzen",
-       "logo": "https://y.uno/vendor/webflow/68df54330f2385e23707029a_6789cc74bbca4bebb8b534c9_678316ef7d66819748388381_678303b99e0a1b2f05c23ec3_673cbd0ea8e36c1040538898_payzen.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Pluxee",
        "logo": "https://y.uno/vendor/webflow/68df54360e698e806d221ed9_6789cc7428ddfc7fd855219b_678316ef46abe81b0856d54b_678303b91f15d89d5f967b24_673ab57e9a97cb3ec907e9e9_pluxee_logosimbolo.png",
        "aspect": 1.0
@@ -6232,11 +6044,6 @@
       {
        "name": "Western Union",
        "logo": "https://y.uno/vendor/webflow/68df54520dabba2fa33f7473_6789cc7ce8ffdd3fd5a6eb25_678316f49c28a58ed247e0ec_678303bbdb1c5be39294ea57_673ab3fc98fc4326f558d472_westerunion_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Wibond",
-       "logo": "https://y.uno/vendor/webflow/68df545270b424d2aa4cd073_6789cc7c09bc1fa384ed9e72_678316f463212cff9aa02ac8_678303bbdb64cb3e07497fd3_673ab3ad363fb0ab8ff99eb5_wibond_logosimbolo.png",
        "aspect": 1.0
       }
      ]
@@ -6292,8 +6099,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "PayPal (EBANX, Ecommpay, Pockyt); Apple Pay (Rapyd, Worldpay); Alipay (Antom); AstroPay (AstroPay); Google Pay (Rapyd); Neteller (Ecommpay)",
-      "9"
+      "PayPal (EBANX, Ecommpay); Alipay (Antom); Apple Pay (Rapyd); AstroPay (AstroPay); Google Pay (Rapyd); Neteller (Ecommpay)",
+      "7"
      ]
     ]
    }
@@ -6302,7 +6109,7 @@
    "id": "c-colombia",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › COLOMBIA › PROVIDERS",
-   "headline": "Colombia: 31 providers live through Yuno, 24 for cards, 14 more providers in homologation.",
+   "headline": "Colombia: 31 providers live through Yuno, 24 for cards, 12 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (31)",
@@ -6465,7 +6272,7 @@
      ]
     },
     {
-     "header": "Homologating (14)",
+     "header": "Homologating (12)",
      "chips": [
       {
        "name": "Banco de Bogota",
@@ -6508,11 +6315,6 @@
        "aspect": 1.0
       },
       {
-       "name": "More Payments",
-       "logo": "https://www.google.com/s2/favicons?domain=uniteller.com&sz=128",
-       "aspect": 1.0
-      },
-      {
        "name": "PayCash",
        "logo": "https://y.uno/vendor/webflow/68df5431259785112e047f78_6789cc73b5901ecb61f75f5e_678316ef90fa45540bd97f49_678303be5852c5789574da37_673a83c482767acb2d27c926_paycash_logosimbolo.png",
        "aspect": 1.0
@@ -6531,11 +6333,6 @@
        "name": "Sistecredito",
        "logo": "https://y.uno/vendor/webflow/68df5443161bb6d1132774f3_67b408c866ec70816dab8790_Screenshot%25202025-02-17%2520at%25208.12.52%25E2%2580%25AFPM.png",
        "aspect": 3.099
-      },
-      {
-       "name": "Transfero",
-       "logo": "https://www.google.com/s2/favicons?domain=transfero.com&sz=128",
-       "aspect": 1.0
       }
      ],
      "muted": true
@@ -6557,10 +6354,10 @@
    "id": "c-colombia-methods",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › COLOMBIA › PAYMENT METHODS",
-   "headline": "Colombia: 23 payment methods available and 16 local methods carried by the providers.",
+   "headline": "Colombia: 22 payment methods available and 16 local methods carried by the providers.",
    "sections": [
     {
-     "header": "Wallets and payment methods available (23)",
+     "header": "Wallets and payment methods available (22)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -6581,11 +6378,6 @@
        "name": "ADDI",
        "logo": "https://y.uno/vendor/webflow/68df53ff8fadd3f28366bbf0_6789cc5a4c05d3c3d4724cc1_678316e1410d52a65ac90cbc_678303aee993c621973014cc_673ac3e6eaa24fed048b503e_addi_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "Belvo",
-       "logo": "https://y.uno/vendor/webflow/68df5408b13a25b062a0f900_67b3cf6b9cd29a4f78e9b0ab_Screenshot%25202025-02-17%2520at%25204.08.05%25E2%2580%25AFPM.png",
-       "aspect": 1.81
       },
       {
        "name": "Click to Pay",
@@ -6725,10 +6517,10 @@
    "id": "c-mexico",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › MEXICO › PROVIDERS",
-   "headline": "Mexico: 36 providers live through Yuno, 29 for cards, 17 more providers in homologation.",
+   "headline": "Mexico: 35 providers live through Yuno, 28 for cards, 15 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (36)",
+     "header": "Live through Yuno (35)",
      "chips": [
       {
        "name": "Adyen",
@@ -6866,11 +6658,6 @@
        "aspect": 1.0
       },
       {
-       "name": "PlacetoPay",
-       "logo": "https://y.uno/vendor/webflow/68df54353282fc23c5606260_6789cc74b5901ecb61f76012_678316efca16eb93e3d7a471_678303b9d146a2cd328b7f47_673ab5b48e12ecfbeb0dcd15_placetopay_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Pockyt",
        "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
        "aspect": 1.0
@@ -6913,7 +6700,7 @@
      ]
     },
     {
-     "header": "Homologating (17)",
+     "header": "Homologating (15)",
      "chips": [
       {
        "name": "BanBajío",
@@ -6966,18 +6753,8 @@
        "aspect": 1.0
       },
       {
-       "name": "Nium",
-       "logo": "https://y.uno/vendor/webflow/68df5425ac140397e186a1da_67ad66533a8bd016351f3629_Screenshot%25202025-02-12%2520at%252022.26.06.png",
-       "aspect": 1.139
-      },
-      {
        "name": "PayCash",
        "logo": "https://y.uno/vendor/webflow/68df5431259785112e047f78_6789cc73b5901ecb61f75f5e_678316ef90fa45540bd97f49_678303be5852c5789574da37_673a83c482767acb2d27c926_paycash_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Payments Way",
-       "logo": "https://y.uno/vendor/webflow/68df5431f9fc69f703e4dd6b_67b4112e553bf680ce549b89_Screenshot%25202025-02-17%2520at%25208.48.42%25E2%2580%25AFPM.png",
        "aspect": 1.0
       },
       {
@@ -7020,10 +6797,10 @@
    "id": "c-mexico-methods",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › MEXICO › PAYMENT METHODS",
-   "headline": "Mexico: 44 payment methods available and 16 local methods carried by the providers.",
+   "headline": "Mexico: 39 payment methods available and 16 local methods carried by the providers.",
    "sections": [
     {
-     "header": "Wallets and payment methods available (44)",
+     "header": "Wallets and payment methods available (39)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -7106,11 +6883,6 @@
        "aspect": 2.359
       },
       {
-       "name": "Datransfer",
-       "logo": "https://y.uno/vendor/webflow/68df540f48b9659cfda45f61_67b3c9b2184a47493173637d_Screenshot%25202025-02-17%2520at%25203.43.34%25E2%2580%25AFPM.png",
-       "aspect": 2.333
-      },
-      {
        "name": "DIMO",
        "logo": "https://y.uno/vendor/webflow/68df540f1035987ae39a6a28_6789cc674c05d3c3d4725738_678316e7a65ae45dd6a225c5_678307babfedc303888b909f_dimo.png",
        "aspect": 1.003
@@ -7119,11 +6891,6 @@
        "name": "Discover",
        "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
-      },
-      {
-       "name": "Druo",
-       "logo": "https://y.uno/vendor/webflow/68df5411f9fc69f703e4da26_67b412fa2adef8a07a70568b_Screenshot%25202025-02-17%2520at%25208.56.22%25E2%2580%25AFPM.png",
-       "aspect": 0.995
       },
       {
        "name": "Edenred",
@@ -7158,11 +6925,6 @@
       {
        "name": "OXXO Pay",
        "logo": "https://y.uno/vendor/webflow/68df542946af4753b53eecde_6789cc709899d4b4b841e3df_678316ec01019e74c25f02cf_678303afa65ae45dd6982cf2_673ac1fbeaa24fed04897dfb_oxxo_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Payzen",
-       "logo": "https://y.uno/vendor/webflow/68df54330f2385e23707029a_6789cc74bbca4bebb8b534c9_678316ef7d66819748388381_678303b99e0a1b2f05c23ec3_673cbd0ea8e36c1040538898_payzen.png",
        "aspect": 1.0
       },
       {
@@ -7216,11 +6978,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Tpaga",
-       "logo": "https://y.uno/vendor/webflow/68df544a9b030ef60e5ec573_67b4094ba8284907dd7194eb_Screenshot%25202025-02-17%2520at%25208.15.04%25E2%2580%25AFPM.png",
-       "aspect": 1.436
-      },
-      {
        "name": "UATP",
        "logo": "https://y.uno/vendor/webflow/68df544b23a777518d9ad109_6789cc7a4e846d24f5e6306c_678316f337b9ced4ce436eb7_678303bb2c3f11a6260a491c_673ab4c050e3f53e92513691_uatp_logosimbolo.png",
        "aspect": 1.0
@@ -7238,11 +6995,6 @@
       {
        "name": "Walmart",
        "logo": "https://y.uno/vendor/webflow/68df545194b9393f1b0c1c11_6789cc7bd77f3b0e827fc909_678316f4db1c5be3929e3150_678303bfa65ae45dd6983650_673a82dd80570e7cba9c23c1_walmart_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Wibond",
-       "logo": "https://y.uno/vendor/webflow/68df545270b424d2aa4cd073_6789cc7c09bc1fa384ed9e72_678316f463212cff9aa02ac8_678303bbdb64cb3e07497fd3_673ab3ad363fb0ab8ff99eb5_wibond_logosimbolo.png",
        "aspect": 1.0
       }
      ]
@@ -7310,7 +7062,7 @@
    "id": "c-peru",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › PERU",
-   "headline": "Peru: 25 providers live through Yuno, 18 for cards, 8 more providers in homologation.",
+   "headline": "Peru: 25 providers live through Yuno, 18 for cards, 7 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (25)",
@@ -7443,7 +7195,7 @@
      ]
     },
     {
-     "header": "Homologating (8)",
+     "header": "Homologating (7)",
      "chips": [
       {
        "name": "Alignet",
@@ -7466,11 +7218,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Payments Way",
-       "logo": "https://y.uno/vendor/webflow/68df5431f9fc69f703e4dd6b_67b4112e553bf680ce549b89_Screenshot%25202025-02-17%2520at%25208.48.42%25E2%2580%25AFPM.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Paysafe",
        "logo": "https://y.uno/vendor/webflow/68df5432cba3eee36b2a733c_67ad7f1126124074b37d0c5d_Screenshot%25202025-02-12%2520at%25209.11.38%25E2%2580%25AFPM.png",
        "aspect": 2.0
@@ -7489,7 +7236,7 @@
      "muted": true
     },
     {
-     "header": "Wallets and payment methods available (17)",
+     "header": "Wallets and payment methods available (15)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -7515,11 +7262,6 @@
        "name": "Discover",
        "logo": "https://www.google.com/s2/favicons?domain=discover.com&sz=128",
        "aspect": 1.0
-      },
-      {
-       "name": "Druo",
-       "logo": "https://y.uno/vendor/webflow/68df5411f9fc69f703e4da26_67b412fa2adef8a07a70568b_Screenshot%25202025-02-17%2520at%25208.56.22%25E2%2580%25AFPM.png",
-       "aspect": 0.995
       },
       {
        "name": "Edenred",
@@ -7554,11 +7296,6 @@
       {
        "name": "Powerpay",
        "logo": "https://y.uno/vendor/webflow/68df5436ad0f85cc9972231b_67ad60ffcd1db5bca52e97a9_getpowerpay_logo.jpeg",
-       "aspect": 1.0
-      },
-      {
-       "name": "RappiBank",
-       "logo": "https://y.uno/vendor/webflow/68df543a6446e7be261f1a41_6789cc76bafc481a657e66ad_678316f05493a18101b5fb8d_678303b94b92192a060147c1_673ab56216ed64c02b708a50_rappibank_logosimbolo.png",
        "aspect": 1.0
       },
       {
@@ -7609,10 +7346,10 @@
    "id": "c-uruguay",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › URUGUAY",
-   "headline": "Uruguay: 12 providers live through Yuno, 10 for cards, 3 more providers in homologation.",
+   "headline": "Uruguay: 11 providers live through Yuno, 9 for cards, 3 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (12)",
+     "header": "Live through Yuno (11)",
      "chips": [
       {
        "name": "AstroPay",
@@ -7668,11 +7405,6 @@
        "name": "Nuvei",
        "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "PlacetoPay",
-       "logo": "https://y.uno/vendor/webflow/68df54353282fc23c5606260_6789cc74b5901ecb61f76012_678316efca16eb93e3d7a471_678303b9d146a2cd328b7f47_673ab5b48e12ecfbeb0dcd15_placetopay_logosimbolo.png",
-       "aspect": 1.0
       }
      ]
     },
@@ -7698,7 +7430,7 @@
      "muted": true
     },
     {
-     "header": "Wallets and payment methods available (9)",
+     "header": "Wallets and payment methods available (8)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -7728,11 +7460,6 @@
       {
        "name": "Neteller",
        "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Payzen",
-       "logo": "https://y.uno/vendor/webflow/68df54330f2385e23707029a_6789cc74bbca4bebb8b534c9_678316ef7d66819748388381_678303b99e0a1b2f05c23ec3_673cbd0ea8e36c1040538898_payzen.png",
        "aspect": 1.0
       },
       {
@@ -8011,7 +7738,7 @@
      "muted": true
     },
     {
-     "header": "Wallets and payment methods available (13)",
+     "header": "Wallets and payment methods available (12)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -8059,11 +7786,6 @@
        "aspect": 1.0
       },
       {
-       "name": "PuntoXpress",
-       "logo": "https://y.uno/vendor/webflow/68df5438df9624d89ffc88e2_6789cc75bbca4bebb8b53574_678316f0db1c5be3929e3036_678303b36a800be58e0ba8b1_673abfdc50e3f53e92598139_puntoexpress_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Ticket Edenred",
        "logo": "https://y.uno/vendor/webflow/68df5448171f10ee4680fe00_6789cc7a28ddfc7fd855244b_678316f39e0a1b2f05cc364c_678303bb4b92192a0601486e_673ab4e80b330ab299a544ba_ticket_logosimbolo.png",
        "aspect": 1.0
@@ -8107,7 +7829,7 @@
     "rows": [
      [
       "Other local methods",
-      "Banco Nacional cash · PuntoXpress (dLocal); Bank transfer (dLocal, Inswitch); Cash (EBANX, Inswitch); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
+      "Banco Nacional cash (dLocal); Bank transfer (dLocal, Inswitch); Cash (EBANX, Inswitch); SafetyPay (SafetyPay); SafetyPay (bank transfer) · SafetyPay (cash) (EBANX)",
       "1 to 2 each"
      ],
      [
@@ -8286,7 +8008,7 @@
    "id": "c-ecuador",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › ECUADOR",
-   "headline": "Ecuador: 17 providers live through Yuno, 11 for cards, 5 more providers in homologation.",
+   "headline": "Ecuador: 17 providers live through Yuno, 11 for cards, 4 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (17)",
@@ -8379,7 +8101,7 @@
      ]
     },
     {
-     "header": "Homologating (5)",
+     "header": "Homologating (4)",
      "chips": [
       {
        "name": "Commerce Gate",
@@ -8390,11 +8112,6 @@
        "name": "Directa 24",
        "logo": "https://y.uno/vendor/webflow/68df541065c91e2e24ec4f99_67ad634fed27500ac52fc38f_Screenshot%25202025-02-12%2520at%252022.13.14.png",
        "aspect": 1.079
-      },
-      {
-       "name": "More Payments",
-       "logo": "https://www.google.com/s2/favicons?domain=uniteller.com&sz=128",
-       "aspect": 1.0
       },
       {
        "name": "PayCash",
@@ -8495,7 +8212,7 @@
    "id": "c-el-salvador",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › EL SALVADOR",
-   "headline": "El Salvador: 12 providers live through Yuno, 7 for cards, 2 more providers in homologation.",
+   "headline": "El Salvador: 12 providers live through Yuno, 7 for cards, 1 more provider in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (12)",
@@ -8563,17 +8280,12 @@
      ]
     },
     {
-     "header": "Homologating (2)",
+     "header": "Homologating (1)",
      "chips": [
       {
        "name": "Directa 24",
        "logo": "https://y.uno/vendor/webflow/68df541065c91e2e24ec4f99_67ad634fed27500ac52fc38f_Screenshot%25202025-02-12%2520at%252022.13.14.png",
        "aspect": 1.079
-      },
-      {
-       "name": "Ibex",
-       "logo": "https://www.google.com/s2/favicons?domain=ibexpay.io&sz=128",
-       "aspect": 1.0
       }
      ],
      "muted": true
@@ -8654,7 +8366,7 @@
    "id": "c-guatemala",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › GUATEMALA",
-   "headline": "Guatemala: 15 providers live through Yuno, 10 for cards, 4 more providers in homologation.",
+   "headline": "Guatemala: 15 providers live through Yuno, 10 for cards, 3 more providers in homologation.",
    "sections": [
     {
      "header": "Live through Yuno (15)",
@@ -8737,17 +8449,12 @@
      ]
     },
     {
-     "header": "Homologating (4)",
+     "header": "Homologating (3)",
      "chips": [
       {
        "name": "Directa 24",
        "logo": "https://y.uno/vendor/webflow/68df541065c91e2e24ec4f99_67ad634fed27500ac52fc38f_Screenshot%25202025-02-12%2520at%252022.13.14.png",
        "aspect": 1.079
-      },
-      {
-       "name": "Ibex",
-       "logo": "https://www.google.com/s2/favicons?domain=ibexpay.io&sz=128",
-       "aspect": 1.0
       },
       {
        "name": "Local Payment",
@@ -9388,10 +9095,10 @@
    "id": "c-venezuela",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › VENEZUELA",
-   "headline": "Venezuela: 5 providers live through Yuno, 4 for cards.",
+   "headline": "Venezuela: 3 providers live through Yuno, 2 for cards.",
    "sections": [
     {
-     "header": "Live through Yuno (5)",
+     "header": "Live through Yuno (3)",
      "chips": [
       {
        "name": "AstroPay",
@@ -9404,18 +9111,8 @@
        "aspect": 1.278
       },
       {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
-      },
-      {
        "name": "Nuvei",
        "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
        "aspect": 1.0
       }
      ]
@@ -9476,8 +9173,8 @@
     "rows": [
      [
       "Wallets and global methods via providers",
-      "PayPal (Ecommpay, Pockyt); AstroPay (AstroPay)",
-      "3"
+      "AstroPay (AstroPay)",
+      "1"
      ]
     ]
    }
@@ -9486,10 +9183,10 @@
    "id": "c-saudi-arabia",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › SAUDI ARABIA",
-   "headline": "Saudi Arabia: 35 providers live through Yuno, 9 for cards, 2 more providers in homologation.",
+   "headline": "Saudi Arabia: 31 providers live through Yuno, 6 for cards, 2 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (35)",
+     "header": "Live through Yuno (31)",
      "chips": [
       {
        "name": "Al Rajhi Bank",
@@ -9542,11 +9239,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
-      },
-      {
        "name": "Edaat",
        "logo": "https://www.google.com/s2/favicons?domain=edaat.sa&sz=128",
        "aspect": 1.0
@@ -9597,11 +9289,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Novalnet",
-       "logo": "https://y.uno/vendor/webflow/68df5427f31b569edbf160af_6789cc6f404949fd079f8a82_678316ec8cf0cfe32e79bfc9_678303b7ca16eb93e3cdeafc_673abdada2e46cbceb73e36d_novalnet_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Nuvei",
        "logo": "https://y.uno/vendor/webflow/68df542800b69e016f4ecfb1_6789cc71a84ee7a87181bcbd_678316ecfdc7f8e0ccad7ca9_678303acc62546ef8ca3dc32_673ac737090f6729f6f6b8e6_nuvei_logosimbolo.png",
        "aspect": 1.0
@@ -9619,11 +9306,6 @@
       {
        "name": "PayTabs",
        "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
        "aspect": 1.0
       },
       {
@@ -9649,11 +9331,6 @@
       {
        "name": "Telr",
        "logo": "https://www.google.com/s2/favicons?domain=telr.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Triple-A",
-       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
        "aspect": 1.0
       },
       {
@@ -9775,8 +9452,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "PayPal (Ecommpay, Pockyt); Apple Pay (Fiserv); Google Pay (Fiserv); Neteller (Ecommpay); UnionPay (Ecommpay)",
-      "6"
+      "Apple Pay (Fiserv); Google Pay (Fiserv)",
+      "2"
      ]
     ]
    }
@@ -9785,10 +9462,10 @@
    "id": "c-united-arab-emirates",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › UNITED ARAB EMIRATES",
-   "headline": "United Arab Emirates: 32 providers live through Yuno, 9 for cards, 3 more providers in homologation.",
+   "headline": "United Arab Emirates: 28 providers live through Yuno, 7 for cards, 3 more providers in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (32)",
+     "header": "Live through Yuno (28)",
      "chips": [
       {
        "name": "Abu Dhabi Commercial Bank (ADCB)",
@@ -9803,11 +9480,6 @@
       {
        "name": "Amazon Payments Services",
        "logo": "https://y.uno/vendor/webflow/68df54029e3c325f5722b601_6789cc5c72061cb2483da82b_678316e213e73a399b33d9d1_678303ac37b9ced4ce3a74a0_673ac6f72b5f982ca74fd1cd_amazonpay_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Bank Dhofar",
-       "logo": "https://www.google.com/s2/favicons?domain=bankdhofar.com&sz=128",
        "aspect": 1.0
       },
       {
@@ -9831,11 +9503,6 @@
        "aspect": 1.0
       },
       {
-       "name": "DPO Africa",
-       "logo": "https://www.google.com/s2/favicons?domain=dpogroup.com&sz=128",
-       "aspect": 1.0
-      },
-      {
        "name": "Dubai Islamic Bank",
        "logo": "https://www.google.com/s2/favicons?domain=dib.ae&sz=128",
        "aspect": 1.0
@@ -9853,11 +9520,6 @@
       {
        "name": "Geidea",
        "logo": "https://www.google.com/s2/favicons?domain=geidea.net&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Getnet",
-       "logo": "https://y.uno/vendor/webflow/68df5416ec3d8a0ae53adcb5_6789cc6add92eede61f726e5_678316e9a65ae45dd6a22707_678303b52c3f11a6260a4761_673abeb9945b73b0f330f900_getnet_logosimbolo.png",
        "aspect": 1.0
       },
       {
@@ -9893,11 +9555,6 @@
       {
        "name": "Noon Payments",
        "logo": "https://www.google.com/s2/favicons?domain=noonpayments.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Novalnet",
-       "logo": "https://y.uno/vendor/webflow/68df5427f31b569edbf160af_6789cc6f404949fd079f8a82_678316ec8cf0cfe32e79bfc9_678303b7ca16eb93e3cdeafc_673abdada2e46cbceb73e36d_novalnet_logosimbolo.png",
        "aspect": 1.0
       },
       {
@@ -10289,11 +9946,11 @@
   {
    "id": "c-egypt",
    "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › EGYPT › PROVIDERS",
-   "headline": "Egypt: 27 providers live through Yuno, 7 for cards, 1 more provider in homologation.",
+   "kicker": "COUNTRY DETAIL › EGYPT",
+   "headline": "Egypt: 23 providers live through Yuno, 4 for cards, 1 more provider in homologation.",
    "sections": [
     {
-     "header": "Live through Yuno (27)",
+     "header": "Live through Yuno (23)",
      "chips": [
       {
        "name": "AAIB",
@@ -10336,18 +9993,8 @@
        "aspect": 1.0
       },
       {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
-      },
-      {
        "name": "Fawry",
        "logo": "https://www.google.com/s2/favicons?domain=fawry.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Fiserv",
-       "logo": "https://y.uno/vendor/webflow/68df5415f0ba1ef216476003_6789cc6abbb1a212454fc139_678316e93eefa6a6387a641a_678303b5c376a1c58e0005ce_673abec80f6cca562df8b65b_fiserv_logosimbolo.png",
        "aspect": 1.0
       },
       {
@@ -10411,18 +10058,8 @@
        "aspect": 1.0
       },
       {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Tap Payments",
        "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Triple-A",
-       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
        "aspect": 1.0
       },
       {
@@ -10442,17 +10079,9 @@
       }
      ],
      "muted": true
-    }
-   ]
-  },
-  {
-   "id": "c-egypt-methods",
-   "type": "logo_grid",
-   "kicker": "COUNTRY DETAIL › EGYPT › PAYMENT METHODS",
-   "headline": "Egypt: 37 payment methods available and 1 local method carried by the providers.",
-   "sections": [
+    },
     {
-     "header": "Wallets and payment methods available (37)",
+     "header": "Wallets and payment methods available (36)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -10605,11 +10234,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Tabby",
-       "logo": "https://y.uno/vendor/webflow/68df5447a4092968f2a04020_67ad630d04243d5701eb7180_tabby.png",
-       "aspect": 1.0
-      },
-      {
        "name": "UATP",
        "logo": "https://y.uno/vendor/webflow/68df544b23a777518d9ad109_6789cc7a4e846d24f5e6306c_678316f337b9ced4ce436eb7_678303bb2c3f11a6260a491c_673ab4c050e3f53e92513691_uatp_logosimbolo.png",
        "aspect": 1.0
@@ -10641,41 +10265,16 @@
       }
      ]
     }
-   ],
-   "table": {
-    "columns": [
-     "Local method",
-     "Providers carrying it through Yuno",
-     "#"
-    ],
-    "col_widths": [
-     0.24,
-     0.7,
-     0.06
-    ],
-    "font_size": 7.5,
-    "rows": [
-     [
-      "Other local methods",
-      "Tabby (Checkout.com)",
-      "1 to 2 each"
-     ],
-     [
-      "Wallets and global methods via providers",
-      "PayPal (Ecommpay, Pockyt); Apple Pay (Fiserv); Neteller (Ecommpay)",
-      "4"
-     ]
-    ]
-   }
+   ]
   },
   {
    "id": "c-qatar",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › QATAR",
-   "headline": "Qatar: 18 providers live through Yuno, 6 for cards.",
+   "headline": "Qatar: 14 providers live through Yuno, 3 for cards.",
    "sections": [
     {
-     "header": "Live through Yuno (18)",
+     "header": "Live through Yuno (14)",
      "chips": [
       {
        "name": "Amazon Payments Services",
@@ -10708,11 +10307,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
-      },
-      {
        "name": "HyperPay",
        "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
        "aspect": 1.0
@@ -10728,18 +10322,8 @@
        "aspect": 1.0
       },
       {
-       "name": "Novalnet",
-       "logo": "https://y.uno/vendor/webflow/68df5427f31b569edbf160af_6789cc6f404949fd079f8a82_678316ec8cf0cfe32e79bfc9_678303b7ca16eb93e3cdeafc_673abdada2e46cbceb73e36d_novalnet_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Pagsmile",
        "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
        "aspect": 1.0
       },
       {
@@ -10758,11 +10342,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Triple-A",
-       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
-       "aspect": 1.0
-      },
-      {
        "name": "Worldline",
        "logo": "https://y.uno/vendor/webflow/68df54539df0c977b75430b3_6789cc7d0b7516aa4489bd63_678316f49e0c0b6adb34f48f_678305051a94a8a10594cdcb_worldline_logosimbolo.png",
        "aspect": 1.0
@@ -10770,7 +10349,7 @@
      ]
     },
     {
-     "header": "Wallets and payment methods available (13)",
+     "header": "Wallets and payment methods available (11)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -10808,18 +10387,8 @@
        "aspect": 1.0
       },
       {
-       "name": "QNB Al-Ahli E-Wallet",
-       "logo": "https://y.uno/vendor/webflow/68df5438f4e9282e4fb30526_67bd50da1249e9a51ac6c40b_qnb%2520ah-ahli.png",
-       "aspect": 1.0
-      },
-      {
        "name": "QPay",
        "logo": "https://www.google.com/s2/favicons?domain=qnb.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Tamara",
-       "logo": "https://y.uno/vendor/webflow/68df5448ec43badecc065762_67ad620dead7cbb57427db02_apple-touch-icon-120x120.png",
        "aspect": 1.0
       },
       {
@@ -10839,41 +10408,16 @@
       }
      ]
     }
-   ],
-   "table": {
-    "columns": [
-     "Local method",
-     "Providers carrying it through Yuno",
-     "#"
-    ],
-    "col_widths": [
-     0.24,
-     0.7,
-     0.06
-    ],
-    "font_size": 7.5,
-    "rows": [
-     [
-      "Other local methods",
-      "Tamara (Checkout.com)",
-      "1 to 2 each"
-     ],
-     [
-      "Wallets and global methods via providers",
-      "PayPal (Ecommpay, Pockyt); Neteller (Ecommpay); UnionPay (Ecommpay)",
-      "4"
-     ]
-    ]
-   }
+   ]
   },
   {
    "id": "c-kuwait",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › KUWAIT",
-   "headline": "Kuwait: 20 providers live through Yuno, 6 for cards.",
+   "headline": "Kuwait: 16 providers live through Yuno, 4 for cards.",
    "sections": [
     {
-     "header": "Live through Yuno (20)",
+     "header": "Live through Yuno (16)",
      "chips": [
       {
        "name": "Adyen",
@@ -10906,18 +10450,8 @@
        "aspect": 1.0
       },
       {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
-      },
-      {
        "name": "Gulf Bank",
        "logo": "",
-       "aspect": 1.0
-      },
-      {
-       "name": "HyperPay",
-       "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
        "aspect": 1.0
       },
       {
@@ -10956,18 +10490,8 @@
        "aspect": 1.0
       },
       {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Tap Payments",
        "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Triple-A",
-       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
        "aspect": 1.0
       },
       {
@@ -10978,7 +10502,7 @@
      ]
     },
     {
-     "header": "Wallets and payment methods available (14)",
+     "header": "Wallets and payment methods available (13)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -11013,11 +10537,6 @@
       {
        "name": "Mastercard",
        "logo": "https://y.uno/vendor/webflow/68df541eaf2d30ed3bbb713c_6789cc6dbf80c9ad43c41b80_678316eb1a94a8a1059cf26e_678303a9fdc7f8e0cca3800f_673acbf55b646fa5a7e1038e_mastercard_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "NBK EG Wallet",
-       "logo": "https://y.uno/vendor/webflow/68df54222582c830c7c86039_67bd4f85432130b7246b4b61_nbk%2520eg%2520wallet.png",
        "aspect": 1.0
       },
       {
@@ -11073,8 +10592,8 @@
      ],
      [
       "Wallets and global methods via providers",
-      "PayPal (Ecommpay, Pockyt); Apple Pay (Adyen); Google Pay (Adyen); Neteller (Ecommpay); UnionPay (Ecommpay)",
-      "6"
+      "Apple Pay (Adyen); Google Pay (Adyen)",
+      "2"
      ]
     ]
    }
@@ -11083,10 +10602,10 @@
    "id": "c-oman",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › OMAN",
-   "headline": "Oman: 18 providers live through Yuno, 6 for cards.",
+   "headline": "Oman: 16 providers live through Yuno, 4 for cards.",
    "sections": [
     {
-     "header": "Live through Yuno (18)",
+     "header": "Live through Yuno (16)",
      "chips": [
       {
        "name": "Amazon Payments Services",
@@ -11117,11 +10636,6 @@
        "name": "Cybersource",
        "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
       },
       {
        "name": "HyperPay",
@@ -11156,11 +10670,6 @@
       {
        "name": "PayTabs",
        "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
        "aspect": 1.0
       },
       {
@@ -11230,36 +10739,16 @@
       }
      ]
     }
-   ],
-   "table": {
-    "columns": [
-     "Local method",
-     "Providers carrying it through Yuno",
-     "#"
-    ],
-    "col_widths": [
-     0.24,
-     0.7,
-     0.06
-    ],
-    "font_size": 7.5,
-    "rows": [
-     [
-      "Wallets and global methods via providers",
-      "PayPal (Ecommpay, Pockyt); Neteller (Ecommpay); UnionPay (Ecommpay)",
-      "4"
-     ]
-    ]
-   }
+   ]
   },
   {
    "id": "c-bahrain",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › BAHRAIN",
-   "headline": "Bahrain: 18 providers live through Yuno, 6 for cards.",
+   "headline": "Bahrain: 15 providers live through Yuno, 4 for cards.",
    "sections": [
     {
-     "header": "Live through Yuno (18)",
+     "header": "Live through Yuno (15)",
      "chips": [
       {
        "name": "Adyen",
@@ -11302,11 +10791,6 @@
        "aspect": 1.0
       },
       {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
-      },
-      {
        "name": "HyperPay",
        "logo": "https://y.uno/vendor/webflow/68df5417c3ff446a8c70e081_6789cc6b0b7516aa4489b233_678316e93eefa6a6387a6493_678303acc62546ef8ca3dc9c_673ac605342deb5c46fcfe5c_hyperpay_logosimbolo.png",
        "aspect": 1.0
@@ -11337,24 +10821,14 @@
        "aspect": 1.0
       },
       {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Tap Payments",
        "logo": "https://y.uno/vendor/webflow/68df5447dd2fe60440456394_6789cc7993543256a36ae54c_678316f3328eb3ff8db21007_6783063dfdc7f8e0cca51373_tap_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
-       "name": "Triple-A",
-       "logo": "https://www.google.com/s2/favicons?domain=triple-a.io&sz=128",
        "aspect": 1.0
       }
      ]
     },
     {
-     "header": "Wallets and payment methods available (11)",
+     "header": "Wallets and payment methods available (10)",
      "chips": [
       {
        "name": "Apple Pay",
@@ -11379,11 +10853,6 @@
       {
        "name": "Neteller",
        "logo": "https://www.google.com/s2/favicons?domain=neteller.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Tabby",
-       "logo": "https://y.uno/vendor/webflow/68df5447a4092968f2a04020_67ad630d04243d5701eb7180_tabby.png",
        "aspect": 1.0
       },
       {
@@ -11429,13 +10898,13 @@
     "rows": [
      [
       "Other local methods",
-      "Tabby · Tamara (Checkout.com)",
+      "Tamara (Checkout.com)",
       "1 to 2 each"
      ],
      [
       "Wallets and global methods via providers",
-      "PayPal (Ecommpay, Pockyt); Apple Pay (Adyen); Neteller (Ecommpay); UnionPay (Ecommpay)",
-      "5"
+      "Apple Pay (Adyen)",
+      "1"
      ]
     ]
    }
@@ -11444,10 +10913,10 @@
    "id": "c-jordan",
    "type": "logo_grid",
    "kicker": "COUNTRY DETAIL › JORDAN",
-   "headline": "Jordan: 19 providers live through Yuno, 6 for cards.",
+   "headline": "Jordan: 14 providers live through Yuno, 3 for cards.",
    "sections": [
     {
-     "header": "Live through Yuno (19)",
+     "header": "Live through Yuno (14)",
      "chips": [
       {
        "name": "Amazon Payments Services",
@@ -11470,19 +10939,9 @@
        "aspect": 1.0
       },
       {
-       "name": "Checkout.com",
-       "logo": "https://y.uno/vendor/webflow/68df540bbcf0bfb6a116181e_6789cc65798234106f51d55c_678316e653424d2385af6b46_678303ac814ce2295cf5cd5f_673ac64cafeea5c14165f86a_checkout.com_logosimbolo.png",
-       "aspect": 1.0
-      },
-      {
        "name": "Cybersource",
        "logo": "https://y.uno/vendor/webflow/68df540ed7746e423c5233a9_6789cc67404949fd079f83d6_678316e7e3d5bc7c2189dc82_678303ac814ce2295cf5cccd_673ac71deaa24fed048db46c_cybersource_logosimbolo.png",
        "aspect": 1.0
-      },
-      {
-       "name": "Ecommpay",
-       "logo": "https://y.uno/vendor/webflow/68df5412ac140397e186a00c_67ad60930a3e3ff8db208fb3_Screenshot%25202025-02-12%2520at%252022.01.33.png",
-       "aspect": 0.967
       },
       {
        "name": "HyperPay",
@@ -11515,23 +10974,8 @@
        "aspect": 1.0
       },
       {
-       "name": "Pagsmile",
-       "logo": "https://www.google.com/s2/favicons?domain=pagsmile.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Paymob",
-       "logo": "https://www.google.com/s2/favicons?domain=paymob.com&sz=128",
-       "aspect": 1.0
-      },
-      {
        "name": "PayTabs",
        "logo": "https://www.google.com/s2/favicons?domain=paytabs.com&sz=128",
-       "aspect": 1.0
-      },
-      {
-       "name": "Pockyt",
-       "logo": "https://y.uno/vendor/webflow/68df54366c155b83271c0e82_67ad61aefd9a67a40e5e4818_pockyt.png",
        "aspect": 1.0
       },
       {
@@ -11586,27 +11030,7 @@
       }
      ]
     }
-   ],
-   "table": {
-    "columns": [
-     "Local method",
-     "Providers carrying it through Yuno",
-     "#"
-    ],
-    "col_widths": [
-     0.24,
-     0.7,
-     0.06
-    ],
-    "font_size": 7.5,
-    "rows": [
-     [
-      "Wallets and global methods via providers",
-      "PayPal (Ecommpay, Pockyt); UnionPay (Ecommpay)",
-      "3"
-     ]
-    ]
-   }
+   ]
   },
   {
    "id": "next",
