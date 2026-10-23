@@ -12,7 +12,9 @@ ORDER = []
 for r in cfg['regions']:
     for c in r['countries']: REGION[c] = r['name']; ORDER.append(c)
 # ---------------- coverage from the rebuilt rows.json
-rows = json.load(open(f'{ROOT}/Deals/Waymo/build/data/rows.json'))
+import sys as _sys; _sys.path.insert(0, f'{ROOT}/tools/connections'); import lib as _lib
+_lib.APPLY_HOMOLOGATING_EXTRA = False   # real status, not the deck's homologation framing
+rows = _lib.Data(ORDER).rows(signed=True)
 COV = collections.defaultdict(lambda: collections.defaultdict(set))
 for c, typ, name, meths, st, key in rows:
     if typ == 'Provider':

@@ -1,0 +1,942 @@
+[
+ {
+  "country": "Saudi Arabia",
+  "name": "mada",
+  "type": "Payment method",
+  "category": "Local card scheme",
+  "rating": 10,
+  "why": "SAMA 2025 data: mada e-commerce SAR 325.2bn over 1.77bn tx (+65% YoY); 30M+ debit cards; the only route to Saudi domestic debit, which is the card most riders hold.",
+  "source": "https://www.okaz.com.sa/economy/na/2233803",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "Visa / Mastercard cards",
+  "type": "Payment method",
+  "category": "Cards",
+  "rating": 10,
+  "why": "Uber: credit cards remain the most popular payment method on the Uber app in MENA; Careem lists credit/debit card for rides. Baseline for both apps.",
+  "source": "https://www.uber.com/ae/en/blog/menacash/",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "Apple Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 9,
+  "why": "Careem lists Apple Pay for rides; Apple Pay is available in Saudi Arabia and carries mada cards (Checkout.com: mada can be used on Apple Pay).",
+  "source": "https://help.careem.com/hc/en-us/articles/360001603207-What-are-my-payment-options",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "STC Pay / STC Bank",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 8,
+  "why": "stc Q4 2025 investor deck: STC Bank +8M customers since Jan 2025 launch (stc pay wallets upgraded to bank accounts); largest Saudi wallet; no ride-hailing listing found.",
+  "source": "https://www.stc.com/content/dam/groupsites/en/pdf/EarningsPresentationQ4-2025En.pdf",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "Geidea",
+  "type": "Acquirer/PSP",
+  "category": "Local acquirer",
+  "rating": 8,
+  "why": "SAMA-supervised acquirer and gateway; site claims 530,000+ establishments served in Saudi Arabia; POS and online gateway; self-reported first choice for merchants.",
+  "source": "https://www.geidea.net/",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "Checkout.com",
+  "type": "Acquirer/PSP",
+  "category": "Global acquirer (local acquiring)",
+  "rating": 8,
+  "why": "Native mada acquiring with SAR processing and settlement, mada on Apple Pay; its mada page cites 30M cards and 1bn+ tx a year.",
+  "source": "https://www.checkout.com/payment-methods/accept/mada",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "Google Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 7,
+  "why": "Careem lists Google Pay for rides; Google lists Saudi Arabia for paying online or in apps.",
+  "source": "https://support.google.com/googlepay/answer/12429287",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "HyperPay",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "Riyadh-HQ gateway licensed by the Saudi Central Bank; 9 countries; mada pre-authorization; claims hundreds of thousands of clients across the Arab world.",
+  "source": "https://www.hyperpay.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "PayTabs",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "Gateway listing mada, STC Pay, urpay, Apple Pay, Samsung Pay, KNET, OmanNet, Meeza; live in KSA, UAE, Egypt, Jordan, Kuwait, Oman, Qatar, Iraq.",
+  "source": "https://paytabs.com/en/",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "Tap Payments",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "9 MENA countries with GCC regulatory approvals; mada, KNET, Benefit, OmanNet, NAPS, Meeza, Apple, Google and Samsung Pay; clients Jahez, talabat, flydubai.",
+  "source": "https://www.tap.company/",
+  "yuno_has": true
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "urpay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Al Rajhi group (neoleap) wallet; site claims millions of users, Visa cards, SADAD bill pay; supported by PayTabs; no public share figure; no Careem/Uber listing.",
+  "source": "https://www.urpay.com.sa/",
+  "yuno_has": false
+ },
+ {
+  "country": "Saudi Arabia",
+  "name": "Samsung Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Listed as available in Saudi Arabia (Samsung Pay availability table); accepted via Telr and PayTabs gateways; not in Careem's rides list; no public share figure.",
+  "source": "https://en.wikipedia.org/wiki/Samsung_Pay",
+  "yuno_has": false
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Visa / Mastercard cards",
+  "type": "Payment method",
+  "category": "Cards",
+  "rating": 10,
+  "why": "Uber: cash or card available in UAE and across MENA, credit cards the most popular method on the app; Careem lists credit/debit card for rides.",
+  "source": "https://www.uber.com/en-BH/blog/bh-cash",
+  "yuno_has": true
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Apple Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 9,
+  "why": "Careem lists Apple Pay for rides; Apple Pay is available in the UAE.",
+  "source": "https://help.careem.com/hc/en-us/articles/360001603207-What-are-my-payment-options",
+  "yuno_has": true
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Network International",
+  "type": "Acquirer/PSP",
+  "category": "Local acquirer",
+  "rating": 9,
+  "why": "60,000+ UAE merchant partners; processed the first issued Jaywan cards and enabled Jaywan on its online gateway with no added merchant fee.",
+  "source": "https://gulfnews.com/business/banking/emirates-nbd-rolls-out-uaes-jaywan-debit-cards-signs-deal-with-network-international-1.500023445",
+  "yuno_has": true
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Careem Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 8,
+  "why": "Careem's own CBUAE-authorised wallet (Apr 2022, powered by FAB with Magnati); 'Use Careem Pay first' settles fares; remittances to 35+ countries in 2025.",
+  "source": "https://www.arabnews.com/business/careem-pay-introduces-digital-wallets-to-uae-customers-2068036",
+  "yuno_has": true
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Magnati",
+  "type": "Acquirer/PSP",
+  "category": "Local acquirer",
+  "rating": 8,
+  "why": "FAB's payments arm; payments solution partner behind the Careem Pay wallet with FAB; no public acquiring share figure.",
+  "source": "https://www.arabnews.com/business/careem-pay-introduces-digital-wallets-to-uae-customers-2068036",
+  "yuno_has": false
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Google Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 7,
+  "why": "Careem lists Google Pay for rides; Google lists the UAE for paying online or in apps.",
+  "source": "https://support.google.com/googlepay/answer/12429287",
+  "yuno_has": true
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Aani",
+  "type": "Payment method",
+  "category": "Instant/A2A",
+  "rating": 6,
+  "why": "CBUAE instant rail: 12.5M registered users (Apr 2026), 74 institutions, QR and Request to Pay live, about 774,000 merchants set to accept; not yet in Careem or Uber apps.",
+  "source": "https://gulfnews.com/business/banking/uae-instant-payments-platform-aani-crosses-125-million-users-1.500502686",
+  "yuno_has": false
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Jaywan",
+  "type": "Payment method",
+  "category": "Local card scheme",
+  "rating": 6,
+  "why": "National card scheme; nationwide issuance launched 20 Jul 2026 (FAB debit, CBD prepaid, ENBD); accepted at POS, e-commerce and wallets; no public issuance figure yet.",
+  "source": "https://www.thenationalnews.com/business/money/2026/07/20/uae-starts-issuing-jaywan-cards-to-banks-and-financial-institutions/",
+  "yuno_has": false
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Telr",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Licensed and regulated by the Central Bank of the UAE; 15+ methods incl. mada, Apple Pay, Samsung Pay; merchants GymNation, drivu, New Balance.",
+  "source": "https://telr.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Amazon Payment Services",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Ex-PayFort; 9 MENA countries, 3,500+ businesses; Apple Pay; clients Air Arabia, flyadeal, Ticketmaster, Instashop.",
+  "source": "https://paymentservices.amazon.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Tap Payments",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "9 MENA countries; Apple, Google, Samsung Pay plus GCC domestic schemes; clients flydubai, talabat, Tim Hortons.",
+  "source": "https://www.tap.company/",
+  "yuno_has": true
+ },
+ {
+  "country": "United Arab Emirates",
+  "name": "Samsung Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Samsung Pay/Wallet live in the UAE (launched Apr 2017); Telr and PayTabs accept it; not in Careem's rides list; no public share figure.",
+  "source": "https://www.samsung.com/ae/samsung-pay/",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "Visa / Mastercard cards",
+  "type": "Payment method",
+  "category": "Cards",
+  "rating": 10,
+  "why": "Uber: cash or card payment methods available in Qatar; Careem lists credit/debit card for rides.",
+  "source": "https://www.uber.com/en-BH/blog/bh-cash",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "NAPS / QPay",
+  "type": "Payment method",
+  "category": "Local card scheme",
+  "rating": 9,
+  "why": "Checkout.com calls QPAY 'Qatar's primary online payment method'; Tap: NAPS/QPay is a debit-card option processed in QAR only; no public share figure.",
+  "source": "https://www.checkout.com/payment-methods/accept/qpay",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "Apple Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 9,
+  "why": "Careem lists Apple Pay for rides; Apple Pay is available in Qatar.",
+  "source": "https://help.careem.com/hc/en-us/articles/360001603207-What-are-my-payment-options",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "Google Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 7,
+  "why": "Careem lists Google Pay for rides; Google lists Qatar for paying online or in apps.",
+  "source": "https://support.google.com/googlepay/answer/12429287",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "Tap Payments",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "Lists NAPS plus Apple, Google and Samsung Pay; GCC regulatory approvals; 9 MENA countries.",
+  "source": "https://www.tap.company/",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "Checkout.com",
+  "type": "Acquirer/PSP",
+  "category": "Global acquirer (local acquiring)",
+  "rating": 7,
+  "why": "Processes QPAY in QAR (0.01 QAR minimum, issuer-set maximum) alongside cards and wallets.",
+  "source": "https://www.checkout.com/payment-methods/accept/qpay",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "Dibsy",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Qatar-only gateway, regulated; 300,000+ successful transactions a month, 100+ registered companies; hosted and embedded checkout.",
+  "source": "https://dibsy.one/",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "MyFatoorah",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Receives payments in 8 MENA countries incl. Qatar; 80K+ merchants; 4.5bn+ transactions claimed.",
+  "source": "https://www.myfatoorah.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "HyperPay",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Lists Qatar among its 9 markets; Saudi Central Bank licensed gateway.",
+  "source": "https://www.hyperpay.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "Ooredoo Money",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Qatar's first mobile wallet, 4.7M+ accounts created since launch; Apple Pay, QR merchant payments; Careem credit top-up via Ooredoo since 2015; no ride share figure.",
+  "source": "https://www.ooredoo.qa/web/en/ooredoo-money/",
+  "yuno_has": false
+ },
+ {
+  "country": "Qatar",
+  "name": "Amazon Payment Services",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 5,
+  "why": "Qatar among its 9 MENA countries; 3,500+ businesses; Apple Pay.",
+  "source": "https://paymentservices.amazon.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Qatar",
+  "name": "Samsung Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Available in Qatar since Aug 2022 (availability table); supported by Tap; not in Careem's rides list; no public share figure.",
+  "source": "https://en.wikipedia.org/wiki/Samsung_Pay",
+  "yuno_has": false
+ },
+ {
+  "country": "Kuwait",
+  "name": "KNET",
+  "type": "Payment method",
+  "category": "Local card scheme",
+  "rating": 10,
+  "why": "Checkout.com: nearly 80% of all online transactions in Kuwait are made via a KNET card; debit cards of 11 member banks; KWD only. KNET 2024 e-transactions +17%.",
+  "source": "https://www.checkout.com/payment-methods/accept/knet",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "Visa / Mastercard cards",
+  "type": "Payment method",
+  "category": "Cards",
+  "rating": 9,
+  "why": "Careem lists credit/debit card for rides; Careem and NBK agreed an online payment option for booking rides in Kuwait (2019). Uber does not list Kuwait.",
+  "source": "https://help.careem.com/hc/en-us/articles/360001603207-What-are-my-payment-options",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "Apple Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 8,
+  "why": "Careem lists Apple Pay for rides; Apple Pay is available in Kuwait.",
+  "source": "https://help.careem.com/hc/en-us/articles/360001603207-What-are-my-payment-options",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "National Bank of Kuwait (NBK)",
+  "type": "Acquirer/PSP",
+  "category": "Local acquirer",
+  "rating": 8,
+  "why": "NBK provides the online payment avenue for booking cars on Careem's platform under a 2019 partnership aimed at raising non-cash payments.",
+  "source": "https://startupbahrain.com/news/careem-joins-forces-with-nbk-to-improve-payment-experience-of-ride-hailing-users",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "MyFatoorah",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 8,
+  "why": "Kuwait-based gateway; 80K+ merchants, 4.5bn+ transactions claimed, 8 MENA countries, Saudi Central Bank licence for KSA.",
+  "source": "https://www.myfatoorah.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "Tap Payments",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 8,
+  "why": "Kuwait-origin PSP; KNET plus Benefit, OmanNet, NAPS, mada, Apple, Google and Samsung Pay; 9 MENA countries; clients talabat, Jahez.",
+  "source": "https://www.tap.company/",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "Checkout.com",
+  "type": "Acquirer/PSP",
+  "category": "Global acquirer (local acquiring)",
+  "rating": 7,
+  "why": "KNET acceptance for all local debit cards of the 11 member banks, 0.01 KWD minimum; calls KNET Kuwait's leading payment gateway.",
+  "source": "https://www.checkout.com/payment-methods/accept/knet",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "Google Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 6,
+  "why": "Careem lists Google Pay for rides; Google lists Kuwait for paying online or in apps.",
+  "source": "https://support.google.com/googlepay/answer/12429287",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "PayTabs",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "KNET activation and workflow documented for merchants; Kuwait in its country list.",
+  "source": "https://support.paytabs.com/en/support/solutions/articles/60000692059-knet-activation-and-workflow",
+  "yuno_has": true
+ },
+ {
+  "country": "Kuwait",
+  "name": "Samsung Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Available in Kuwait since Sep 2020 (availability table); supported by Tap; not in Careem's rides list; no public share figure.",
+  "source": "https://en.wikipedia.org/wiki/Samsung_Pay",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "OmanNet",
+  "type": "Payment method",
+  "category": "Local card scheme",
+  "rating": 10,
+  "why": "Checkout.com: 95% of all cards in Oman are OmanNet debit cards and every Omani debit card carries OmanNet; PayTabs processes OmanNet in sale-only mode.",
+  "source": "https://www.checkout.com/payment-methods/accept/omannet",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "Visa / Mastercard cards",
+  "type": "Payment method",
+  "category": "Cards",
+  "rating": 8,
+  "why": "Credit cards and visitor cards; Careem's rides list is cash, credit/debit card, Apple Pay, Google Pay, Careem Pay (not Oman-specific); no Uber in Oman.",
+  "source": "https://help.careem.com/hc/en-us/articles/360001603207-What-are-my-payment-options",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "Apple Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 8,
+  "why": "Apple Pay is available in Oman; Careem lists Apple Pay for rides.",
+  "source": "https://support.apple.com/en-us/102775",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "Thawani Pay",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "Oman's main wallet plus gateway: 216,000 users, 5,500+ merchants, $428M processed in 2025, 22,000 Visa prepaid cards (Forbes ME Fintech 50 2026).",
+  "source": "https://www.forbesmiddleeast.com/lists/?p=86090",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "Network International",
+  "type": "Acquirer/PSP",
+  "category": "Local acquirer",
+  "rating": 7,
+  "why": "Partnered with Thawani Pay to expand digital payments in Oman (card processing); regional acquirer with 60,000+ UAE merchants.",
+  "source": "https://meatechwatch.com/?p=44312",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "Tap Payments",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "Lists Oman Net plus Apple, Google and Samsung Pay; GCC regulatory approvals.",
+  "source": "https://www.tap.company/",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "PayTabs",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "OmanNet cards processed (sale mode, refunds from dashboard); Oman in its country and issuance lists.",
+  "source": "https://support.paytabs.com/en/support/solutions/articles/60000692060",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "Checkout.com",
+  "type": "Acquirer/PSP",
+  "category": "Global acquirer (local acquiring)",
+  "rating": 7,
+  "why": "OmanNet acceptance; describes it as Oman's leading online payment method.",
+  "source": "https://www.checkout.com/payment-methods/accept/omannet",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "Google Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 6,
+  "why": "Google lists Oman for paying online or in apps; Careem lists Google Pay for rides.",
+  "source": "https://support.google.com/googlepay/answer/12429287",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "MyFatoorah",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Oman among its 8 MENA countries; 80K+ merchants.",
+  "source": "https://www.myfatoorah.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Oman",
+  "name": "Samsung Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Available in Oman since Apr 2024 (availability table); supported by Tap; no public share figure.",
+  "source": "https://en.wikipedia.org/wiki/Samsung_Pay",
+  "yuno_has": false
+ },
+ {
+  "country": "Oman",
+  "name": "Amazon Payment Services",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 5,
+  "why": "Oman among its 9 MENA countries (partner logos); 3,500+ businesses.",
+  "source": "https://paymentservices.amazon.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "Benefit (debit scheme)",
+  "type": "Payment method",
+  "category": "Local card scheme",
+  "rating": 10,
+  "why": "National switch and debit scheme; Checkout.com: 'the preferred payment method for many Bahraini consumers', processed in BHD; the only route to Bahraini domestic debit.",
+  "source": "https://www.checkout.com/payment-methods/accept/benefitpay",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "BenefitPay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 9,
+  "why": "BENEFIT 2025: 466M transactions worth BD10.2bn executed through the BenefitPay app (Fawri, Fawri+, Fawateer); the dominant everyday payment app.",
+  "source": "https://www.tradearabia.com/News/389437/BENEFIT-records-nearly-%24100bn-in-e-transactions-across-all-transfer-services",
+  "yuno_has": "unsure"
+ },
+ {
+  "country": "Bahrain",
+  "name": "Visa / Mastercard cards",
+  "type": "Payment method",
+  "category": "Cards",
+  "rating": 9,
+  "why": "Uber Bahrain: cash or card payment methods; Careem lists credit/debit card for rides.",
+  "source": "https://www.uber.com/en-BH/blog/bh-cash",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "Apple Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 8,
+  "why": "Careem lists Apple Pay for rides; Apple Pay is available in Bahrain; CrediMax cards can be added to Apple Pay.",
+  "source": "https://help.careem.com/hc/en-us/articles/360001603207-What-are-my-payment-options",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "CrediMax",
+  "type": "Acquirer/PSP",
+  "category": "Local acquirer",
+  "rating": 8,
+  "why": "BBK subsidiary, first credit card issuer in Bahrain; runs POS and a payment gateway for online merchants; no public acquiring share figure.",
+  "source": "https://www.credimax.com.bh/",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "Fawri+",
+  "type": "Payment method",
+  "category": "Instant/A2A",
+  "rating": 7,
+  "why": "BENEFIT instant transfer rail: 467.9M transactions worth BD9.7bn in 2025 (+11.3%); 455.3M of them via BenefitPay; P2P and merchant transfers.",
+  "source": "https://benefit.bh/media-centre/news-and-press-releases/BENEFIT-Records-BD-37-Billion-in-Electronic-Financial-Transactions-Across-All-Transfer-Services-in-2025",
+  "yuno_has": false
+ },
+ {
+  "country": "Bahrain",
+  "name": "Tap Payments",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "Lists Benefit and Benefit Pay plus Apple, Google and Samsung Pay; GCC regulatory approvals.",
+  "source": "https://www.tap.company/",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "Checkout.com",
+  "type": "Acquirer/PSP",
+  "category": "Global acquirer (local acquiring)",
+  "rating": 7,
+  "why": "BenefitPay acceptance with BHD processing (0.01 BHD minimum).",
+  "source": "https://www.checkout.com/payment-methods/accept/benefitpay",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "Google Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 6,
+  "why": "Google lists Bahrain for paying online or in apps; Careem lists Google Pay for rides.",
+  "source": "https://support.google.com/googlepay/answer/12429287",
+  "yuno_has": false
+ },
+ {
+  "country": "Bahrain",
+  "name": "MyFatoorah",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Bahrain among its 8 MENA countries; 80K+ merchants.",
+  "source": "https://www.myfatoorah.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "HyperPay",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Lists Bahrain among its markets; Saudi Central Bank licensed gateway.",
+  "source": "https://www.hyperpay.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Bahrain",
+  "name": "Samsung Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Available in Bahrain since Dec 2022 (availability table); supported by Tap; no public share figure.",
+  "source": "https://en.wikipedia.org/wiki/Samsung_Pay",
+  "yuno_has": false
+ },
+ {
+  "country": "Jordan",
+  "name": "Visa / Mastercard cards",
+  "type": "Payment method",
+  "category": "Cards",
+  "rating": 10,
+  "why": "Uber: cash or card payment methods in Jordan; Careem lists credit/debit card for rides.",
+  "source": "https://www.uber.com/en-BH/blog/bh-cash",
+  "yuno_has": true
+ },
+ {
+  "country": "Jordan",
+  "name": "Apple Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 8,
+  "why": "Careem lists Apple Pay for rides; Apple Pay is available in Jordan.",
+  "source": "https://help.careem.com/hc/en-us/articles/360001603207-What-are-my-payment-options",
+  "yuno_has": true
+ },
+ {
+  "country": "Jordan",
+  "name": "MEPS (Middle East Payment Services)",
+  "type": "Acquirer/PSP",
+  "category": "Local acquirer",
+  "rating": 8,
+  "why": "Self-described leading digital financial solutions provider in Jordan; manages Jordan's largest ATM network; thousands of online merchants.",
+  "source": "https://mepspay.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Jordan",
+  "name": "CliQ",
+  "type": "Payment method",
+  "category": "Instant/A2A",
+  "rating": 7,
+  "why": "JoPACC: H1 2025 70.66M transactions, JOD 8.8bn, 1.88M users; purchases 15.1% of value; FY2025 167.92M tx, JOD 19.97bn, 2.13M users; not in Careem/Uber lists.",
+  "source": "https://www.jordannews.jo/Section-112/Economy/8-8-Billion-Dinars-in-Transactions-via-CliQ-in-First-Half-of-2025-43204",
+  "yuno_has": false
+ },
+ {
+  "country": "Jordan",
+  "name": "Network International Jordan",
+  "type": "Acquirer/PSP",
+  "category": "Local acquirer",
+  "rating": 7,
+  "why": "Network International Jordan added instant payments through CliQ to its acquiring; regional acquirer.",
+  "source": "https://ibsintelligence.com/ibsi-news/network-international-jordan-incorporates-instant-payments-through-cliq",
+  "yuno_has": true
+ },
+ {
+  "country": "Jordan",
+  "name": "HyperPay",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 7,
+  "why": "Jordan among its markets; Saudi Central Bank licensed gateway; 9 countries.",
+  "source": "https://www.hyperpay.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Jordan",
+  "name": "Orange Money / Zain Cash (JoMoPay wallets)",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 6,
+  "why": "JoPACC 2025 report: 2.81M mobile wallet users; wallets link to CliQ via JoMoPay (ISO 20022); no per-wallet share figure; no ride-hailing listing found.",
+  "source": "https://www.jopacc.com/node/647",
+  "yuno_has": false
+ },
+ {
+  "country": "Jordan",
+  "name": "Google Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 6,
+  "why": "Google lists Jordan for paying online or in apps; Careem lists Google Pay for rides.",
+  "source": "https://support.google.com/googlepay/answer/12429287",
+  "yuno_has": false
+ },
+ {
+  "country": "Jordan",
+  "name": "PayTabs",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Jordan in its country list with SoftPOS and card issuance support.",
+  "source": "https://paytabs.com/en/",
+  "yuno_has": true
+ },
+ {
+  "country": "Jordan",
+  "name": "Amazon Payment Services",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 5,
+  "why": "Royal Jordanian among its client logos; 9 MENA countries; 3,500+ businesses.",
+  "source": "https://paymentservices.amazon.com/",
+  "yuno_has": true
+ },
+ {
+  "country": "Jordan",
+  "name": "eFAWATEERcom",
+  "type": "Payment method",
+  "category": "Other",
+  "rating": 2,
+  "why": "Bill-presentment and payment rail: $16.3bn in 2025; bills and B2B, not a ride checkout method.",
+  "source": "https://meatechwatch.com/2025/10/15/jordan-efawateercom-payment-transactions-reach-16-3-billion-in-2025/",
+  "yuno_has": true
+ },
+ {
+  "country": "Jordan",
+  "name": "Samsung Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 1,
+  "why": "Jordan is not in the Samsung Pay availability list; not relevant.",
+  "source": "https://en.wikipedia.org/wiki/Samsung_Pay",
+  "yuno_has": false
+ },
+ {
+  "country": "Egypt",
+  "name": "Visa / Mastercard cards",
+  "type": "Payment method",
+  "category": "Cards",
+  "rating": 9,
+  "why": "Uber Egypt: credit and debit cards saved in the Uber Wallet, with Uber Cash as an alternative; auto-refill via debit/credit cards.",
+  "source": "https://www.uber.com/en-EG/blog/cashless-payments-with-uber-cash",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "Meeza",
+  "type": "Payment method",
+  "category": "Local card scheme",
+  "rating": 9,
+  "why": "CBE: 40M+ of 67M bank cards are Meeza (Sep 2024); Paymob enables Meeza cards inside the Uber app; Fawry Uber Cash top-ups via Meeza.",
+  "source": "https://egyptianstreets.com/2024/11/20/egypts-digital-leap-cbe-to-launch-card-tokenization-by-2025/",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "Vodafone Cash",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 9,
+  "why": "Paymob enables Vodafone Cash and other mobile wallets in the Uber app (Dec 2021); Egypt 50M+ mobile wallets (May 2025); no public share figure for Vodafone Cash.",
+  "source": "https://www.intelligentcio.com/me/?p=67347",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "Paymob",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 9,
+  "why": "Uber's in-app APM partner in Egypt: Meeza cards, OTC and mobile wallets such as Vodafone Cash; Uber and Swvl on its client list; partners Meeza, Vodafone, CIB.",
+  "source": "https://www.intelligentcio.com/me/?p=67347",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "Fawry",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 8,
+  "why": "Uber's processing partner for Uber Cash in Egypt; 166,500+ locations in 300 cities and 29M online shoppers (Checkout.com); FawryPay for online checkout.",
+  "source": "https://www.uber.com/en-EG/blog/cashless-payments-with-uber-cash",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "Orange Cash / Etisalat Cash",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 6,
+  "why": "Fawry-Uber 2021: Uber Cash top-ups available via operator wallets Orange, Vodafone and Etisalat as well as bank wallets (NBE, Banque Misr).",
+  "source": "https://thebrandberries.com/?p=9699",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "InstaPay",
+  "type": "Payment method",
+  "category": "Instant/A2A",
+  "rating": 6,
+  "why": "1.5bn transactions worth EGP 2.9tn by end-2024; CBE Q1 2025: 263M IPN tx, EGP 1.2tn; 0.1% fee from Apr 2025; P2P and bank-to-card, not yet a ride checkout method.",
+  "source": "https://www.transfi.com/id/blog/egypts-payment-rails-how-they-work---meeza-instapay-mobile-wallet-growth",
+  "yuno_has": false
+ },
+ {
+  "country": "Egypt",
+  "name": "Apple Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 6,
+  "why": "Apple Pay is available in Egypt (Africa list); Careem lists Apple Pay for rides.",
+  "source": "https://support.apple.com/en-us/102775",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "Checkout.com",
+  "type": "Acquirer/PSP",
+  "category": "Global acquirer (local acquiring)",
+  "rating": 6,
+  "why": "Fawry acceptance up to EGP 100,000 per transaction; cards and wallets.",
+  "source": "https://www.checkout.com/payment-methods/accept/fawry",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "PayTabs",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Egypt in its country list with Meeza, SoftPOS and issuance support.",
+  "source": "https://paytabs.com/en/",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "Tap Payments",
+  "type": "Acquirer/PSP",
+  "category": "Domestic PSP/gateway",
+  "rating": 6,
+  "why": "Lists Meeza and Fawry alongside Apple, Google and Samsung Pay; 9 MENA countries.",
+  "source": "https://www.tap.company/",
+  "yuno_has": true
+ },
+ {
+  "country": "Egypt",
+  "name": "Google Pay",
+  "type": "Payment method",
+  "category": "Wallet",
+  "rating": 5,
+  "why": "Google lists Egypt for paying online or in apps; Careem lists Google Pay for rides.",
+  "source": "https://support.google.com/googlepay/answer/12429287",
+  "yuno_has": false
+ }
+]

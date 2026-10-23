@@ -411,6 +411,7 @@ HOMOLOGATING_EXTRA = {
  'Israel': [('Provider', 'Cal (Israel Credit Cards)', 'cal-online.co.il'), ('Provider', 'Isracard', 'isracard.co.il')],
  'United Arab Emirates': [('Provider', 'Magnati', 'magnati.com')],
 }
+APPLY_HOMOLOGATING_EXTRA = True   # deck framing only; set False to get the real integration status (ratings sheet)
 HOMOLOGATING_EXTRA_DOMAIN = {nk(n): d for v in HOMOLOGATING_EXTRA.values() for _, n, d in v if d}
 SIGNED = [('Costa Rica', 'SINPE Móvil'), ('Indonesia', 'GoPay'), ('Indonesia', 'Kredivo'), ('Malaysia', 'DuitNow QR'), ('Vietnam', 'MoMo'), ('Vietnam', 'ZaloPay'), ('Vietnam', 'VNPay QR'),
           ('Vietnam', 'Viettel Money (ViettelPay)'), ('Vietnam', 'NAPAS domestic cards and VietQR')]
@@ -509,7 +510,7 @@ class Data:
                 for typ, name, labs, st in ISRAEL_EXTRA:
                     if name not in have: R.append([c, typ, name, labs, st, nk(name)])
             R[:] = [r for r in R if not (r[0] == c and geo_excluded(c, r[2]))]
-            if not recurring_only and c in HOMOLOGATING_EXTRA:   # German 23-oct-2026: show these as in homologation, replacing any lower tier
+            if APPLY_HOMOLOGATING_EXTRA and not recurring_only and c in HOMOLOGATING_EXTRA:   # German 23-oct-2026: show these as in homologation, replacing any lower tier
                 keys = {nk(n) for _, n, _ in HOMOLOGATING_EXTRA[c]}
                 R[:] = [r for r in R if not (r[0] == c and nk(r[2]) in keys and r[4] != 'Live')]
                 have = {nk(r[2]) for r in R if r[0] == c}
