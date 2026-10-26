@@ -14,14 +14,47 @@ COVER = {
 }
 
 EXEC = {  # slide of_exec_understanding_v2, element id -> new text (styles kept)
-    'of_es1_v2_003': 'Yuno answers both halves of the evaluation: a token vault and payment orchestration, standalone or together',
-    'of_es1_v2_008': 'What Autodesk is buying',
-    'of_es1_v2_009': 'A **PCI DSS Level 1 token vault** and a **payment orchestration layer** for a business that now bills most of its revenue directly, through its own stores in the US, Europe, the UK, Brazil, Mexico, India, Japan and Australia.',
-    'of_es1_v2_011': 'What makes the choice hard',
-    'of_es1_v2_012': 'Most vendors answer one half. A standalone vault stores the cards and leaves routing, retries and every processor connection to build. An orchestrator without a vault of its own leaves the cards with each processor. **Two vendors, two contracts, two integrations.**',
-    'of_es1_v2_014': 'Why Yuno fits',
-    'of_es1_v2_015': 'Yuno runs both as separate products on one platform. **The vault works with the processors Autodesk uses today.** The orchestration layer routes, retries and recovers every renewal on the same tokens. Tokens stay portable and the exit is written into the contract.',
-    'of_es1_v2_026': 'What we propose\nEvaluate Yuno in both parts of the RFP. Start with whichever half you need first: the vault runs on your current processors, and orchestration joins on the same tokens when you are ready.',
+    'of_es1_v2_003': "Yuno sits above Autodesk's processors and methods: one vault and one orchestration layer, standalone or together",
+    'of_es1_v2_008': 'What Autodesk runs today',
+    'of_es1_v2_009': 'Most of its revenue **billed directly**, through its own stores in the US, Europe, the UK, Brazil, Mexico, India, Japan and Australia, each with its own processors, local methods and renewals to collect.',
+    'of_es1_v2_011': 'Where the complexity sits',
+    'of_es1_v2_012': 'Every store adds a processor, a method and a contract. **Cards live with the processor that stored them**, a declined renewal retries inside one provider, and each new market or product line is a new integration.',
+    'of_es1_v2_014': 'Where Yuno fits',
+    'of_es1_v2_015': 'A **PCI DSS Level 1 vault** that holds the cards above every processor, and an **orchestration layer** that routes, retries and recovers every renewal on the same tokens. Two products on one platform; tokens stay portable and the exit is written into the contract.',
+    'of_es1_v2_026': 'What we bring\nThe vault runs with the processors Autodesk uses today, and orchestration joins on the same tokens whenever Autodesk is ready. One integration for every store, method and provider.',
+}
+
+SUBS = {  # new slide: the subscription engine (content as used in the HBO Max deck, Oct 2026, adapted to Autodesk)
+    'kicker': 'SUBSCRIPTIONS  ›  THE ENGINE',
+    'title': 'One subscription engine. Every payment method, every provider',
+    'intro': "Plans, trials, add-ons, usage metering and Smart Retries, built on Yuno's orchestration, so the same subscription bills through any provider you route to.",
+    'stats': [('300K+', 'active subscriptions billed by Yuno'), ('$15M/mo', 'recurring volume processed'),
+              ('1.2M+', 'subscriptions created to date'), ('30+', 'merchants on recurring')],
+    'wall_h': 'RUNNING ON YUNO', 'wall_sub': 'recurring and subscriptions',
+    'box1_h': 'WHY THIS MATTERS FOR AUTODESK',
+    'box1': 'Autodesk renews most of its $6.7B of subscription revenue directly, through stores with different processors and local methods. The engine sits above all of them, so a renewal can retry on a different provider instead of failing.',
+    'box2_h': 'ALREADY LIVE ON THE SAME ENGINE',
+    'box2': 'Subscription billing is in production across software, streaming, marketplace, mobility and creator platforms, on the same orchestration layer shown here. No pilot code path and no separate product.',
+    'src': 'Yuno Subscriptions, production figures as of October 2026. Merchant logos: companies billing recurring payments through Yuno.',
+}
+
+DEPTH = {  # new slide: billing-platform depth (content as used in the HBO Max deck, Oct 2026, adapted to Autodesk)
+    'kicker': 'SUBSCRIPTIONS  ›  BILLING DEPTH',
+    'title': 'Full billing-platform depth, above the routing decision',
+    'intro': 'Define plans once. Yuno bills every cycle, meters usage, recovers failed renewals and notifies your systems in real time.',
+    'diff_h': 'THE DIFFERENCE',
+    'diff': 'Billing platforms lock you to one processor. Yuno sits **above the routing decision**, so you switch providers, add local rails and keep every subscriber.',
+    'cards': [
+        ('Plans and local pricing', 'One plan definition with an explicit price per country, so there is no FX drift and no surprise on the statement.', 'Per-country prices, one plan'),
+        ('Trials and intro offers', 'Free or paid trials in calendar days, multi-phase pricing in one subscription, pre-renewal events before every step-up.', 'Trial, intro price, full price'),
+        ('Add-ons and promotions', 'Upsell extras and run promotions, billed together in one charge with a clean line-item breakdown.', 'Bundle and promo, one charge'),
+        ('Upgrades and downgrades', 'Change a plan and Yuno applies it on the next billing date. Pause, cancel or reactivate without refund tickets.', 'Effective next renewal'),
+        ('Smart Retries', 'Picks the best moment and provider to retry a failed renewal, by decline code, country and provider. Recovers revenue that is written off today.', 'Multi-provider recovery'),
+        ('Usage-based billing', 'Meter anything: tokens, seats, cloud credits, add-on minutes. Send usage events and Yuno rates them into the renewal charge.', 'Per unit, package or tier'),
+        ('Cards, wallets and local rails', 'Recurring on cards, Apple Pay, Google Pay, PayPal and the local rails behind your stores, such as SEPA mandates and Pix Automático.', 'The rails your stores already list'),
+        ('Subscription analytics', 'Renewal approval, churn, trial conversion and recovered revenue, broken out per plan, per country and per provider.', 'Approval, churn, recovery'),
+    ],
+    'enabled': [('Back office', 'No-code setup and day-to-day operations'), ('API', 'Full programmatic control'), ('Webhooks', 'Real-time notifications on every event')],
 }
 
 TODAY = {  # slide vlt_problem, body redrawn
@@ -57,7 +90,7 @@ TODAY = {  # slide vlt_problem, body redrawn
 }
 
 M5 = {  # slide m5_mock
-    'm5_kk': 'WHY YUNO  ›  ONE VENDOR FOR BOTH HALVES',
+    'm5_kk': 'WHY YUNO  ›  VAULT AND ORCHESTRATION, ONE PLATFORM',
     'm5_tt': "Yuno's vault does everything a standalone vault does, and the orchestration layer is already built around it",
     'm5_hl': 'What Autodesk needs',
     'm5_bd0': 'Cards, network tokens and the bank details behind SEPA, BACS and ACH, in one vault',
@@ -126,25 +159,25 @@ PORT = {  # slide h7c266de662ba1cf0_9_469
 }
 
 BEYOND = {  # new slide, drawn
-    'kicker': 'BEYOND THE RFP  ›  ON THE SAME PLATFORM',
+    'kicker': 'BEYOND VAULT AND ORCHESTRATION  ›  ON THE SAME PLATFORM',
     'title': 'Once the tokens and the routing are in one place, the rest switches on as configuration',
     'cards': [
-        ('Subscriptions', 'Plans with trial, intro and regular phases, prices per country, and Smart Retries that can route a retry through a different processor than the one that declined. Stripe Billing can stay as the billing engine.', 'Monthly and annual plans billed directly'),
+        ('Agentic commerce', 'When AI agents buy on behalf of your customers, you set the spend limits and approvals. The platform enforces and records each one, on the same tokens and routing.', 'Agents buying seats, tokens and add-ons'),
         ('3DS and SCA', 'Yuno 3DS with Netcetera as the default provider, plus standalone authentication that returns ECI and CAVV for any acquirer, so EU and UK checkouts meet SCA on the same tokens.', 'EEA and UK stores'),
         ('Reconciliation', 'Settlement files from each provider matched to your transactions, and approval, cost and fees by provider and market in one view.', 'Finance and treasury'),
         ('Payments Concierge', 'An AI agent for the payments team. It watches approvals and providers, explains what changed in plain language and helps route, retry and recover.', 'Payments operations'),
     ],
     'also_pill': 'ALSO',
-    'also': '**Agentic commerce, stablecoins and banking connectivity** run on the same connection, when Autodesk needs them.',
+    'also': '**Stablecoins and banking connectivity** run on the same connection, when Autodesk needs them.',
     'src': 'Products as published on y.uno and docs.y.uno, read 26 Oct 2026.',
 }
 
 CLOSE = {  # new slide, drawn
     'kicker': 'NEXT STEPS',
-    'title': 'What we bring to the evaluation, and where we start',
+    'title': 'Where we start',
     'steps': [
-        ('01  ·  INCLUDE', 'Yuno in both parts', 'Vault and orchestration answered by one vendor, scored separately if you prefer.'),
-        ('02  ·  TEST', 'A sandbox, open now', 'Hosted fields, vault, proxy and routing in a sandbox your team can use during the evaluation.'),
+        ('01  ·  MAP', 'Your stack today', 'Processors, methods and entities per store, and where approvals, renewals or costs slip today.'),
+        ('02  ·  TEST', 'A sandbox, open now', 'Hosted fields, vault, proxy and routing in a sandbox your team can try at its own pace.'),
         ('03  ·  PROVE', 'One flow, clear metrics', 'Start with the vault on your current processors, or with routing on one store. Nothing migrates until the numbers say so.'),
     ],
     'security': 'Available on request: PCI DSS Level 1 attestation, SOC 2 Type 2 report, ISO 27001 and ISO 27701 certificates, Visa Service Provider listing.',
@@ -179,6 +212,15 @@ NOTES = {
         "Stored credentials: 'The network_transaction_id belongs to the card network, not to the provider that processed the first payment. Yuno stores it on the vaulted_token and sends it on every merchant-initiated payment, whichever provider your routing selects.' (docs.y.uno stored credentials). CONFIRMED.\n"
         "Smart Retries: timing from approval and decline data across issuers, methods and countries; hard declines stop; retry cap; a retry can go through a different PSP; A/B against your own schedule (y.uno/product/subscriptions, read 26 Oct 2026). Subscriptions Smart Retries 'up to six attempts' (docs automation page). Monitors: provider health events, traffic moved on drops (docs). Account updater: Visa and Mastercard, asynchronous, same vaulted token (docs). Network tokens: Visa, Mastercard, Amex per docs; activation per scheme in writing before a pilot.\n"
         "Figures: 'up to a 7% uplift in approval rates' and '30%' recovered revenue are on y.uno (read 26 Oct 2026). Never quote any other uplift number."),
+    'subs': (
+        "Figures: 300K+ active subscriptions and $15M a month of recurring volume come from the Subscriptions product team (Daniel Lozano, 1 Sep 2026); 1.2M+ subscriptions created and 30+ merchants on recurring are the figures already used in the HBO Max deck (Oct 2026). Internal production figures, not on y.uno: confirm with Daniel before quoting them in writing.\n"
+        "Logo wall: companies billing recurring payments through Yuno, as shown in the HBO Max deck. Do not name individual merchants' volumes.\n"
+        "Autodesk: subscription revenue $6.74B of $7.21B in FY26 (Form 10-K); monthly plans sold only directly; annual plans renewed directly under the new transaction model. PUBLIC.\n"
+        "Engine on the orchestration: each renewal is routed like a first purchase, with routing rules, PSP fallback, vaulted credentials and local rails (y.uno/product/subscriptions, read 26 Oct 2026)."),
+    'depth': (
+        "Source: y.uno/product/subscriptions (read 26 Oct 2026): phases (trial, intro, regular) with their own length and frequency, prices per country, Smart Retries with hard-decline stop and retry cap, retry through a different PSP, A/B tests against your own schedule, meters for usage-based billing (included credits, per-unit, package, tiered), cards, Apple Pay, Google Pay, PayPal and Pix Automático in one subscription object, webhooks on every transition, Stripe Billing compatibility. docs.y.uno: SEPA and ACH enrollments stored in the vault.\n"
+        "Add-ons and promotions, upgrades and downgrades: wording as used in the HBO Max deck (Oct 2026); plan changes apply on the next billing date with no proration. Not offered: invoicing, tax, credit notes, end-customer dunning emails, revenue recognition. If Autodesk needs a full billing engine behind its enterprise invoices, say so; the engine covers the direct-store subscriptions.\n"
+        "Usage-based billing example for Autodesk: Flex tokens (pay-as-you-go) are listed on Autodesk's own pages; metering them through Yuno is a possibility, not a claim about how Autodesk bills Flex today."),
     'cards': (
         "Store: SDKs for Web, iOS, Android, Flutter, React Native; Secure Fields; most SDK merchants qualify for SAQ A, the QSA confirms (docs.y.uno PCI compliance page). CONFIRMED.\n"
         "Keep: Card Account Updater, Visa and Mastercard, asynchronous; vaulted_token and fingerprint stay the same; registration up to 100 tokens per request; scheme registration up to 10 working days (docs). Amex and Discover updater: not in docs, concede if asked.\n"

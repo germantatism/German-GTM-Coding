@@ -17,9 +17,14 @@ S = {  # slide ids (preserved by the Drive copy of 1hrBLCF...)
     'proxy': 'h7c266de662ba1cf0_9_391', 'controls': 'vlt_controls', 'versus': 'vlt_versus', 'port': 'h7c266de662ba1cf0_9_469',
     'proven': 'h6032acb876a0077a_1_0', 'team': 'h6032acb876a0077a_1_974', 'trusted': 'h7c266de662ba1cf0_9_611',
     # new slides, drawn from the chrome of vlt_versus
-    'orch': 'ad_orch', 'renew': 'ad_renew', 'beyond': 'ad_beyond', 'close': 'ad_close'}
+    'orch': 'ad_orch', 'renew': 'ad_renew', 'subs': 'ad_subs', 'depth': 'ad_depth', 'beyond': 'ad_beyond', 'close': 'ad_close'}
 BASE = 'versus'   # chrome donor for the new slides (kicker 322x14, title 648x54, page number, wordmark)
-ORDER = ('cover', 'exec', 'today', 'm5', 'orch', 'renew', 'cards', 'port', 'beyond', 'proven', 'trusted', 'close')
+ORDER = ('cover', 'exec', 'today', 'm5', 'orch', 'renew', 'subs', 'depth', 'cards', 'port', 'beyond', 'proven', 'trusted', 'close')
+WALL_URL = ''     # logo wall PNG (companies billing recurring payments through Yuno), anyone-reader on Drive
+try:
+    WALL_URL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'SUBS_WALL_URL.txt')).read().strip()
+except Exception:
+    pass
 
 try:
     import os
@@ -51,7 +56,9 @@ def fresh(s, pid, P, key, kicker, title):
     sid = S[key]
     if any(sl['objectId'] == sid for sl in P['slides']):
         return g.clear_body(s, pid, P, sid, kicker=kicker, title=title)
-    return g.new_slide(s, pid, P, S[BASE], sid, kicker, title)
+    live = {sl['objectId'] for sl in P['slides']}
+    donor = next(S[k] for k in (BASE, 'orch', 'renew', 'beyond', 'close') if S[k] in live)   # the OnlyFans donor is gone after the first finish()
+    return g.new_slide(s, pid, P, donor, sid, kicker, title)
 
 
 def main(dry=False):
@@ -87,6 +94,17 @@ def main(dry=False):
     # ---------------------------------------------------------------- 6. renewals (new)
     P = s.presentations().get(presentationId=pid).execute()
     p = fresh(s, pid, P, 'renew', C.RENEW['kicker'], C.RENEW['title']); draw_renew(p); g.run(s, pid, p.R, 'renew body')
+    # ---------------------------------------------------------------- 7. subscription engine (new)
+    P = s.presentations().get(presentationId=pid).execute()
+    p = fresh(s, pid, P, 'subs', C.SUBS['kicker'], C.SUBS['title']); draw_subs(p)
+    try:
+        g.run(s, pid, p.R, 'subs body')
+    except Exception as e:   # the logo wall URL may not be fetchable yet: draw everything else, add the image later
+        print('  subs body: wall image rejected, retrying without it:', str(e)[-90:])
+        g.run(s, pid, [r for r in p.R if 'createImage' not in r], 'subs body (no wall)')
+    # ---------------------------------------------------------------- 8. billing depth (new)
+    P = s.presentations().get(presentationId=pid).execute()
+    p = fresh(s, pid, P, 'depth', C.DEPTH['kicker'], C.DEPTH['title']); draw_depth(p); g.run(s, pid, p.R, 'depth body')
     # ---------------------------------------------------------------- 9. beyond (new)
     P = s.presentations().get(presentationId=pid).execute()
     p = fresh(s, pid, P, 'beyond', C.BEYOND['kicker'], C.BEYOND['title']); draw_beyond(p); g.run(s, pid, p.R, 'beyond body')
@@ -224,6 +242,48 @@ def draw_renew(p):
         p.text(482, y + 2, 12, 10, '✓', size=7, color=WHITE, weight=600, align='CENTER', pad=False)
         p.text(500, y - 1, 172, 34, t, size=8.5, color=INK, ls=108)
     p.text(36, 344, 420, 26, c['src'], size=6.5, color=GREY, ls=110)
+
+
+def draw_subs(p):
+    c = C.SUBS
+    p.text(36, 84, 324, 46, c['intro'], size=9.5, color=INK, ls=118)
+    for i, (v, l) in enumerate(c['stats']):
+        x = 36 + (i % 2) * 164; y = 140 + (i // 2) * 66
+        p.text(x, y, 150, 26, v, size=22, color=BLUE, weight=600)
+        p.text(x, y + 30, 150, 24, l, size=8, color=BODY, ls=108)
+    p.text(376, 86, 90, 12, c['wall_h'], size=7.5, color=BLUE, weight=600)
+    p.text(462, 86, 180, 12, c['wall_sub'], size=8, color=GREY)
+    p.line(376, 100, 684, 100, LINE, 0.75)
+    if WALL_URL:
+        w, h = 308, 308 * 194 / 306.0   # 3 x 5 cards of 98 x 34 pt with 6 pt gaps
+        p.R.append({'createImage': {'objectId': 'ad_subs_wall', 'url': WALL_URL, 'elementProperties': {'pageObjectId': p.sid,
+                    'size': {'width': {'magnitude': w * PT, 'unit': 'EMU'}, 'height': {'magnitude': h * PT, 'unit': 'EMU'}},
+                    'transform': {'scaleX': 1, 'scaleY': 1, 'translateX': 376 * PT, 'translateY': 104 * PT, 'unit': 'EMU'}}}})
+    for (x, w, hh, body) in ((36, 324, c['box1_h'], c['box1']), (376, 308, c['box2_h'], c['box2'])):
+        p.card(x, 306, w, 64, fill=PANEL, line=None)
+        p.text(x + 12, 312, w - 24, 10, hh, size=7, color=BLUE, weight=600)
+        p.text(x + 12, 324, w - 24, 42, body, size=8, color=INK, ls=110)
+    p.text(36, 374, 600, 9, c['src'], size=6, color=GREY)
+
+
+def draw_depth(p):
+    c = C.DEPTH
+    p.text(36, 84, 470, 32, c['intro'], size=9.5, color=INK, ls=115)
+    p.card(520, 80, 164, 56, fill=BLUE, line=None)
+    p.text(530, 86, 144, 10, c['diff_h'], size=7, color=WHITE, weight=600)
+    p.text(530, 97, 144, 38, c['diff'], size=7.5, color=WHITE, ls=108, bold_color=WHITE)
+    cw, ch = 154, 96
+    for i, (t, body, tag) in enumerate(c['cards']):
+        x = 36 + (i % 4) * 164.67; y = 144 + (i // 4) * 104
+        p.card(x, y, cw, ch)
+        p.text(x + 10, y + 8, cw - 20, 12, t, size=9.5, color=INK, weight=600)
+        p.text(x + 10, y + 23, cw - 20, 44, body, size=7.5, color=BODY, ls=110)
+        p.pill(x + 10, y + 72, cw - 20, tag, fill=LAV, color=BLUE, size=7, h=15)
+    p.card(36, 352, 648, 24, fill=BLUE, line=None)
+    p.text(48, 352, 72, 24, 'ENABLED BY', size=7.5, color=WHITE, weight=600, valign='MIDDLE')
+    p.line(126, 356, 126, 372, '#7C89EF', 0.75)
+    for j, (t, sub) in enumerate(c['enabled']):
+        p.text(140 + j * 185, 352, 180, 24, f'**{t}**  ' + sub, size=7.5, color=LAV, valign='MIDDLE', bold_color=WHITE)
 
 
 def draw_beyond(p):
