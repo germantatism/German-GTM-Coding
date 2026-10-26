@@ -2,45 +2,25 @@
  "1": [],
  "2": [],
  "3": [
-  "FONT(template text) n03_g3f769a0f446_0_14192 6 pt 'THE YUNO STORY'",
-  "OVERFLOW n03_g3f769a0f446_0_14202 needs 57 pt (2 lines) in 32 pt: '1,000+'"
+  "OVERFLOW h577ad80233c4e52f_0_14 needs 57 pt (2 lines) in 32 pt: '1,000+'"
  ],
  "4": [
-  "OUT n04_g3f769a0f446_0_7031 (195,164,0x246) ''",
-  "OUT n04_g3f769a0f446_0_7032 (360,164,0x246) ''",
-  "OUT n04_g3f769a0f446_0_7033 (525,164,0x246) ''",
-  "FONT(template text) n04_g3f769a0f446_0_7106 6 pt 'ABOUT YUNO \u00b7 PLATFORM'"
+  "OUT h577ad80233c4e52f_0_29 (195,164,0x246) ''",
+  "OUT h577ad80233c4e52f_0_30 (360,164,0x246) ''",
+  "OUT h577ad80233c4e52f_0_31 (525,164,0x246) ''"
  ],
  "5": [
-  "FONT(template text) n05_g3f769a0f446_0_8220 6 pt 'WHY YUNO?'"
+  "OVERLAP '10 years in card-not-pre' x 'Former VP Product &\u000bTech' (6x36 pt)",
+  "OVERLAP 'Led enterprise integrati' x 'Chief Financial Services' (18x11 pt)",
+  "OVERLAP 'Led enterprise integrati' x 'Former CM Mexico at\u000bMast' (19x13 pt)",
+  "OVERLAP 'Chief Financial Services' x '20+ years in LATAM payme' (20x11 pt)",
+  "OVERLAP 'Former CM Mexico at\u000bMast' x '20+ years in LATAM payme' (21x13 pt)",
+  "OVERLAP '20+ years in LATAM payme' x '20+ years across JPMorga' (13x25 pt)",
+  "OVERLAP 'Former VP Product &\u000bTech' x '12+ years in fintech pro' (8x36 pt)",
+  "OVERLAP '12+ years in fintech pro' x '10+ years in data and AI' (18x25 pt)",
+  "OVERLAP '10+ years in data and AI' x '5+ years at Adyen leadin' (16x25 pt)"
  ],
- "6": [
-  "FONT(template text) n06_g3f77215683c_1_1357 6 pt 'CRO'",
-  "FONT(template text) n06_g3f77215683c_1_1358 6 pt '\ud83c\udde6\ud83c\uddf7 Argentina'",
-  "FONT(template text) n06_g3f77215683c_1_1359 6 pt 'Led dLocal\u2019s enterprise integr'",
-  "FONT(template text) n06_g3f77215683c_1_1364 6 pt 'CTO'",
-  "FONT(template text) n06_g3f77215683c_1_1365 6 pt '\ud83c\uddf3\ud83c\uddf1 Netherlands'",
-  "FONT(template text) n06_g3f77215683c_1_1366 6 pt '20+ years of experience in\ntec'",
-  "FONT(template text) n06_g3f77215683c_1_1371 6 pt 'CHIEF BANKING & FI'",
-  "FONT(template text) n06_g3f77215683c_1_1372 6 pt '\ud83c\uddf2\ud83c\uddfd Mexico'",
-  "FONT(template text) n06_g3f77215683c_1_1373 6 pt 'Former Country Manager at Mast'",
-  "FONT(template text) n06_g3f77215683c_1_1378 6 pt 'GM LATAM'",
-  "FONT(template text) n06_g3f77215683c_1_1379 6 pt '\ud83c\udde7\ud83c\uddf7 Brazil'",
-  "FONT(template text) n06_g3f77215683c_1_1380 6 pt '20+ years in LATAM payments at'",
-  "FONT(template text) n06_g3f77215683c_1_1385 6 pt 'GM APAC'",
-  "FONT(template text) n06_g3f77215683c_1_1386 6 pt '\ud83c\uddf8\ud83c\uddec Singapore'",
-  "FONT(template text) n06_g3f77215683c_1_1387 6 pt '20+ years in payments; ex-Dire'",
-  "FONT(template text) n06_g3f77215683c_1_1392 6 pt 'SVP, PRODUCT'",
-  "FONT(template text) n06_g3f77215683c_1_1393 6 pt '\ud83c\udde6\ud83c\uddea UAE'",
-  "FONT(template text) n06_g3f77215683c_1_1394 6 pt '12+ years in fintech product \u000b'",
-  "FONT(template text) n06_g3f77215683c_1_1399 6 pt 'HEAD, GTM'",
-  "FONT(template text) n06_g3f77215683c_1_1400 6 pt '\ud83c\udde6\ud83c\uddf7 Argentina'",
-  "FONT(template text) n06_g3f77215683c_1_1401 6 pt '10+ years in fintech; former D'",
-  "FONT(template text) n06_g3f77215683c_1_1406 6 pt 'VP, ENGINEERING'",
-  "FONT(template text) n06_g3f77215683c_1_1407 6 pt '\ud83c\uddf3\ud83c\uddf1 Netherlands'",
-  "FONT(template text) n06_g3f77215683c_1_1408 6 pt '20+ years in payments; former\n'",
-  "FONT(template text) n06_g3f77215683c_2_69 6 pt 'WHY YUNO?'"
- ],
+ "6": [],
  "7": [],
  "8": [],
  "9": [
