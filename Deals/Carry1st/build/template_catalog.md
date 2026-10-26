@@ -40,7 +40,7 @@ Source: `template_dump.json` (presentations.get of the working copy `10A2GokDXPE
 
 **Speaker notes.** 42 of 46 slides have Eventbrite notes text in `notesPage.notesProperties.speakerNotesObjectId` (a BODY placeholder, parent `n_i5`). Duplicating a slide duplicates its notes, so the engine deletes notes text (`deleteText ALL`) on every duplicate before writing new notes.
 
-**Internal names present in the template.** Slide 25 "trusted by" logo wall includes a SpaceX logo: image `g3f76accd9b2_0_4` at x 80.7, y 229.1, w 74.2, h 9.1 (verified on the thumbnail crop). CONTEXT.md forbids SpaceX in this deck: `template_keep` with `delete_images_matching: ["g3f76accd9b2_0_4"]` removes it (the placeholder `SPACEX_LOGO_OBJECT_ID` resolves to the same id). Slides 5, 6, 10, 13, 15, 16, 21 carry Eventbrite PSP logos (Stripe, Braintree, Authorize.net, Wells Fargo, Mercado Pago, Adyen, EBANX): those slides are not safe to reuse except as chrome.
+**Internal names present in the template.** Slide 25 "trusted by" logo wall includes a SpaceX logo (KEEP IT: German, 26 Oct 2026, never remove SpaceX): image `g3f76accd9b2_0_4` at x 80.7, y 229.1, w 74.2, h 9.1 (verified on the thumbnail crop). CONTEXT.md forbids SpaceX in this deck: `template_keep` with `delete_images_matching: ["g3f76accd9b2_0_4"]` removes it (the placeholder `SPACEX_LOGO_OBJECT_ID` resolves to the same id). Slides 5, 6, 10, 13, 15, 16, 21 carry Eventbrite PSP logos (Stripe, Braintree, Authorize.net, Wells Fargo, Mercado Pago, Adyen, EBANX): those slides are not safe to reuse except as chrome.
 
 ## 1. Slide by slide
 
@@ -102,7 +102,7 @@ Format: `n · objectId · layout · kind · what is on it · natives vs images v
 | divider | 3 (twins 8, 14, 20, 28, 39) | background image, hairline, tick, wordmark; number and title rewritten |
 | stats (light), four_numbers, traffic_list, exec_summary, cards_row, two_column, table, comparison_grid, diagram, code_before_after, code_block, checklist_table, phases, open_items_table, next_steps, appendix_table, sources | 7 | kicker, headline, wordmark (everything else deleted, content drawn with primitives using the measurements from slides 4, 9, 10, 13, 15, 17, 18, 19, 27, 30 to 36, 42 to 45) |
 | stats (dark) | 22 | background image, kicker, hairline, wordmark, headline; tiles redrawn |
-| template (verbatim reuse with text swaps and deletions) | 23 four pillars, 24 offices, 25 trusted by (delete SpaceX), 26 team, 27 dedicated team, 38 awards, 40 coverage, 41 credentials, 45 compliance | everything; `replace` map rewrites text by objectId or text prefix, `delete` removes element ids |
+| template (verbatim reuse with text swaps and deletions) | 23 four pillars, 24 offices, 25 trusted by (keep SpaceX), 26 team, 27 dedicated team, 38 awards, 40 coverage, 41 credentials, 45 compliance | everything; `replace` map rewrites text by objectId or text prefix, `delete` removes element ids |
 | closing | 46 | layout, title and body placeholders; logo lockup redrawn |
 
 Slides never used as a base: 4, 5, 6, 9 to 21, 29 to 37, 42 to 44 (Eventbrite content, forbidden stats or oversized groups).
