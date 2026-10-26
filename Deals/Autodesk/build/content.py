@@ -14,14 +14,14 @@ COVER = {
 }
 
 EXEC = {  # slide of_exec_understanding_v2, element id -> new text (styles kept)
-    'of_es1_v2_003': "Yuno sits above Autodesk's processors and methods: one vault and one orchestration layer, standalone or together",
+    'of_es1_v2_003': "Yuno sits above Autodesk's processors and methods: one orchestration layer and one vault, together or on their own",
     'of_es1_v2_008': 'What Autodesk runs today',
     'of_es1_v2_009': 'Most of its revenue **billed directly**, through its own stores in the US, Europe, the UK, Brazil, Mexico, India, Japan and Australia, each with its own processors, local methods and renewals to collect.',
     'of_es1_v2_011': 'Where the complexity sits',
     'of_es1_v2_012': 'Every store adds a processor, a method and a contract. **Cards live with the processor that stored them**, a declined renewal retries inside one provider, and each new market or product line is a new integration.',
     'of_es1_v2_014': 'Where Yuno fits',
-    'of_es1_v2_015': 'A **PCI DSS Level 1 vault** that holds the cards above every processor, and an **orchestration layer** that routes, retries and recovers every renewal on the same tokens. Two products on one platform; tokens stay portable and the exit is written into the contract.',
-    'of_es1_v2_026': 'What we bring\nThe vault runs with the processors Autodesk uses today, and orchestration joins on the same tokens whenever Autodesk is ready. One integration for every store, method and provider.',
+    'of_es1_v2_015': 'An **orchestration layer** that routes, retries and recovers every renewal across the processors and local methods behind each store, and a **PCI DSS Level 1 vault** that holds the cards above all of them. Two products on one platform; tokens stay portable and the exit is written into the contract.',
+    'of_es1_v2_026': 'What we bring\nOrchestration runs on the processors and methods Autodesk uses today, and the vault holds the cards above them. One integration for every store, method and provider.',
 }
 
 SUBS = {  # new slide: the subscription engine (content as used in the HBO Max deck, Oct 2026, adapted to Autodesk)
@@ -68,13 +68,13 @@ TODAY = {  # slide vlt_problem, body redrawn
         ('$2.6B', 'US REVENUE', 'EMEA $2.8B · APAC $1.2B · Other Americas $0.6B'),
     ],
     'bullets': [
-        'Autodesk entities are the seller of record in every region checked',
-        'Monthly plans are sold only directly; annual billing saves 33%',
-        "Payment processing fees now sit in Autodesk's own operating costs",
+        'Autodesk entities are seller of record in every region checked',
+        'Monthly plans only direct; annual billing saves 33%',
+        "Processing fees now sit in Autodesk's own operating costs",
     ],
     'left_src': 'Autodesk FY26 Form 10-K (revenue, indirect share, processing fees); Online Purchase Terms, Dec 2025 (seller of record); Terms and Payments pages (monthly plans direct only). Read 19 Oct 2026.',
     'right_h': 'THE STORES AND THEIR METHODS, AS PUBLISHED',
-    'col1': 'MARKET', 'col2': 'METHODS LISTED ON THE TERMS AND PAYMENTS PAGE',
+    'col1': 'MARKET', 'col2': 'METHODS LISTED ON THE TERMS AND PAYMENTS PAGE OF EACH STORE',
     'rows': [
         ('United States', 'Cards · Apple Pay · Google Pay · PayPal · Pay by Bank · ACH'),
         ('EU', 'Cards · SEPA · iDEAL · PayPal'),
@@ -86,7 +86,7 @@ TODAY = {  # slide vlt_problem, body redrawn
         ('Japan', 'Cards · konbini · Pay-easy · PayPal · Apple Pay · Google Pay'),
         ('Australia', 'Cards · Zip · PayPal · Apple Pay · Google Pay'),
     ],
-    'right_note': "Card acquirer and current card vault are not named on Autodesk's public pages. This deck assumes nothing about them.",
+    'right_note': "Card brands as listed per store; Diners Club is also listed in the US, EU, UK and Australia. Card acquirer and current card vault are not named on Autodesk's public pages. This deck assumes nothing about them.",
 }
 
 M5 = {  # slide m5_mock
@@ -159,8 +159,8 @@ PORT = {  # slide h7c266de662ba1cf0_9_469
 }
 
 BEYOND = {  # new slide, drawn
-    'kicker': 'BEYOND VAULT AND ORCHESTRATION  ›  ON THE SAME PLATFORM',
-    'title': 'Once the tokens and the routing are in one place, the rest switches on as configuration',
+    'kicker': 'BEYOND ORCHESTRATION AND VAULT  ›  ON THE SAME PLATFORM',
+    'title': 'Once the routing and the tokens are in one place, the rest switches on as configuration',
     'cards': [
         ('Agentic commerce', 'When AI agents buy on behalf of your customers, you set the spend limits and approvals. The platform enforces and records each one, on the same tokens and routing.', 'Agents buying seats, tokens and add-ons'),
         ('3DS and SCA', 'Yuno 3DS with Netcetera as the default provider, plus standalone authentication that returns ECI and CAVV for any acquirer, so EU and UK checkouts meet SCA on the same tokens.', 'EEA and UK stores'),
@@ -178,7 +178,7 @@ CLOSE = {  # new slide, drawn
     'steps': [
         ('01  ·  MAP', 'Your stack today', 'Processors, methods and entities per store, and where approvals, renewals or costs slip today.'),
         ('02  ·  TEST', 'A sandbox, open now', 'Hosted fields, vault, proxy and routing in a sandbox your team can try at its own pace.'),
-        ('03  ·  PROVE', 'One flow, clear metrics', 'Start with the vault on your current processors, or with routing on one store. Nothing migrates until the numbers say so.'),
+        ('03  ·  PROVE', 'One flow, clear metrics', 'Start with routing on one store, or with the vault on your current processors. Nothing migrates until the numbers say so.'),
     ],
     'security': 'Available on request: PCI DSS Level 1 attestation, SOC 2 Type 2 report, ISO 27001 and ISO 27701 certificates, Visa Service Provider listing.',
     'band': "**Let's grow together**",
@@ -197,6 +197,7 @@ NOTES = {
         "Seller of record: Autodesk, Inc. (US and Canada terms, Dec 2025), Autodesk Ireland Operations Unlimited Co. (EEA, Switzerland, UK), Autodesk India Online Store Pvt. Ltd., Autodesk Ltd. Japan, Autodesk Australia Pty Ltd. Brazil and Mexico stores price in BRL and MXN; their seller-of-record pages were not fetched.\n"
         "Methods: Terms and Payments pages per country, Wayback snapshots Mar to Oct 2026, plus the India help page for CCAvenue (annual and 3-year plans; monthly plans are credit card only there). Monthly billing 'only available directly from Autodesk'; annual 'Save 33% over the monthly price'.\n"
         "Not on the slide, on purpose: no card processor is named on any public page; older statement descriptors point to a past merchant-of-record provider and a possible processor in Australia, both inferences. Do not state them. If asked who processes today, say we do not know and the RFP will tell us.\n"
+        "Logos (26 Oct): card brands shown are the ones each store lists among Visa, Mastercard, Amex, Discover and JCB; Diners Club is also listed in the US, EU, UK and Australia (left off the row for space, said in the footnote). Germany's page says 'cards' without brands, so it shows a plain 'Cards' chip. India's monthly plans take Visa and Mastercard credit only; UPI and wallets come through CCAvenue on annual plans. 'direct debit' next to SEPA on the Germany row is SEPA-Lastschrift. Logos are the brands' own marks from Wikimedia Commons.\n"
         "German decides whether this slide stays. If it goes, the deck is 11 slides."),
     'm5': (
         "Standalone vault column = what standalone vault vendors' public pages offer (storage, tokenization, proxy, portable tokens). Yuno column: PCI DSS Level 1, SOC 2 Type 2, ISO 27001, ISO 27701, Visa Service Provider and '460+ Processor integrations' (y.uno/product/vault, read 26 Oct 2026); routing, Monitors, Smart Retries (docs.y.uno automation page); account updater Visa and Mastercard (docs); network tokens Visa, Mastercard, Amex per docs, scheme activation confirmed in writing before any pilot (OPEN, Trust & Vault).\n"

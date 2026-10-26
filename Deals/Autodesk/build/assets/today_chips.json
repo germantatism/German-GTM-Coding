@@ -1,0 +1,27 @@
+{
+ "scale": 6,
+ "w_pt": 304,
+ "row_pt": 22,
+ "rows": [
+  "United States",
+  "EU",
+  "United Kingdom",
+  "Germany",
+  "Brazil",
+  "Mexico",
+  "India",
+  "Japan",
+  "Australia"
+ ],
+ "widths": {
+  "United States": 300.7,
+  "EU": 288.3,
+  "United Kingdom": 289.5,
+  "Germany": 185.7,
+  "Brazil": 204.0,
+  "Mexico": 145.7,
+  "India": 196.5,
+  "Japan": 252.5,
+  "Australia": 257.3
+ }
+}

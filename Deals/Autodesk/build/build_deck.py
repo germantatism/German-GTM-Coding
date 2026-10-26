@@ -19,10 +19,15 @@ S = {  # slide ids (preserved by the Drive copy of 1hrBLCF...)
     # new slides, drawn from the chrome of vlt_versus
     'orch': 'ad_orch', 'renew': 'ad_renew', 'subs': 'ad_subs', 'depth': 'ad_depth', 'beyond': 'ad_beyond', 'close': 'ad_close'}
 BASE = 'versus'   # chrome donor for the new slides (kicker 322x14, title 648x54, page number, wordmark)
-ORDER = ('cover', 'exec', 'today', 'm5', 'orch', 'renew', 'subs', 'depth', 'cards', 'port', 'beyond', 'proven', 'trusted', 'close')
+ORDER = ('cover', 'exec', 'today', 'orch', 'renew', 'subs', 'cards', 'port', 'beyond', 'proven', 'trusted', 'close')   # 26 Oct pm: orchestration first, m5 and depth cut (German)
 WALL_URL = ''     # logo wall PNG (companies billing recurring payments through Yuno), anyone-reader on Drive
 try:
     WALL_URL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'SUBS_WALL_URL.txt')).read().strip()
+except Exception:
+    pass
+CHIPS_URL = ''    # slide 3 methods column: one PNG of logo chips per market (methods_chips.py), anyone-reader on Drive
+try:
+    CHIPS_URL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'TODAY_CHIPS_URL.txt')).read().strip()
 except Exception:
     pass
 
@@ -75,7 +80,8 @@ def main(dry=False):
     # ---------------------------------------------------------------- 2. executive summary
     for oid, t in C.EXEC.items(): g.set_text_id(P, S['exec'], oid, t, R)
     # ---------------------------------------------------------------- 4. one vendor for both halves
-    for oid, t in C.M5.items(): g.set_text_id(P, S['m5'], oid, t, R)
+    if 'm5' in ORDER:
+        for oid, t in C.M5.items(): g.set_text_id(P, S['m5'], oid, t, R)
     # ---------------------------------------------------------------- 7. cards
     for oid, t in C.CARDS.items(): g.set_text_id(P, S['cards'], oid, t, R)
     # ---------------------------------------------------------------- 8. portability
@@ -103,8 +109,9 @@ def main(dry=False):
         print('  subs body: wall image rejected, retrying without it:', str(e)[-90:])
         g.run(s, pid, [r for r in p.R if 'createImage' not in r], 'subs body (no wall)')
     # ---------------------------------------------------------------- 8. billing depth (new)
-    P = s.presentations().get(presentationId=pid).execute()
-    p = fresh(s, pid, P, 'depth', C.DEPTH['kicker'], C.DEPTH['title']); draw_depth(p); g.run(s, pid, p.R, 'depth body')
+    if 'depth' in ORDER:
+        P = s.presentations().get(presentationId=pid).execute()
+        p = fresh(s, pid, P, 'depth', C.DEPTH['kicker'], C.DEPTH['title']); draw_depth(p); g.run(s, pid, p.R, 'depth body')
     # ---------------------------------------------------------------- 9. beyond (new)
     P = s.presentations().get(presentationId=pid).execute()
     p = fresh(s, pid, P, 'beyond', C.BEYOND['kicker'], C.BEYOND['title']); draw_beyond(p); g.run(s, pid, p.R, 'beyond body')
@@ -114,7 +121,8 @@ def main(dry=False):
     # ---------------------------------------------------------------- speaker notes
     P = s.presentations().get(presentationId=pid).execute()
     N = []
-    for key, text in C.NOTES.items(): N += g.set_notes(s, pid, P, S[key], text)
+    for key, text in C.NOTES.items():
+        if key in ORDER: N += g.set_notes(s, pid, P, S[key], text)
     g.run(s, pid, N, 'speaker notes')
     g.finish(s, pid, [S[k] for k in ORDER])
 
@@ -134,35 +142,39 @@ TOP = 96   # body start on slides with a two-line title (title box ends at 95)
 
 
 def draw_today(p):
+    """Left: the business (246 wide). Right: stores and methods (390 wide), market names as text and the methods as one
+    image of logo chips (assets/today_chips.png, 304 x 198 pt, rows on the same 22 pt pitch as the lines drawn here)."""
     c = C.TODAY
     # ---- left: the business
-    p.card(36, TOP, 300, 274)
+    p.card(36, TOP, 246, 274)
     p.text(50, TOP + 10, 200, 12, c['left_h'], size=7.5, color=GREY, weight=600)
     for i, (v, l, sub) in enumerate(c['tiles']):
-        x = 50 + (i % 2) * 140; y = TOP + 26 + (i // 2) * 66
-        p.card(x, y, 132, 60, fill=PANEL, line=None)
-        p.text(x + 10, y + 5, 116, 22, v, size=18, color=BLUE, weight=600)
-        p.text(x + 10, y + 29, 116, 10, l, size=6.5, color=GREY, weight=600)
-        p.text(x + 10, y + 40, 116, 18, sub, size=7, color=BODY, ls=105)
+        x = 50 + (i % 2) * 112; y = TOP + 26 + (i // 2) * 66
+        p.card(x, y, 106, 60, fill=PANEL, line=None)
+        p.text(x + 9, y + 5, 92, 22, v, size=18, color=BLUE, weight=600)
+        p.text(x + 9, y + 29, 92, 10, l, size=6.5, color=GREY, weight=600)
+        p.text(x + 9, y + 40, 92, 18, sub, size=7, color=BODY, ls=105)
     for i, t in enumerate(c['bullets']):
         y = TOP + 164 + i * 19
         dot(p, 52, y + 5)
-        p.text(64, y, 262, 14, t, size=9, color=INK)
-    p.text(50, TOP + 226, 274, 40, c['left_src'], size=6.5, color=GREY, ls=110)
+        p.text(64, y, 212, 14, t, size=8, color=INK)
+    p.text(50, TOP + 226, 220, 40, c['left_src'], size=6.5, color=GREY, ls=110)
     # ---- right: stores and methods
-    p.card(374, TOP, 310, 274)
-    p.text(388, TOP + 10, 290, 12, c['right_h'], size=7.5, color=GREY, weight=600)
-    p.text(388, TOP + 26, 60, 10, c['col1'], size=6, color=GREY, weight=600)
-    p.text(452, TOP + 26, 226, 10, c['col2'], size=6, color=GREY, weight=600)
+    p.card(294, TOP, 390, 274)
+    p.text(308, TOP + 10, 360, 12, c['right_h'], size=7.5, color=GREY, weight=600)
+    p.text(308, TOP + 26, 56, 10, c['col1'], size=6, color=GREY, weight=600)
+    p.text(366, TOP + 26, 300, 10, c['col2'], size=6, color=GREY, weight=600)
     y = TOP + 40
-    for mk, methods in c['rows']:
-        p.line(388, y - 2, 670, y - 2, LINE, 0.5)
-        p.text(388, y + 2, 62, 14, mk, size=8, color=INK, weight=600)
-        p.text(452, y + 2, 224, 16, methods, size=7.5, color=INK, ls=105)
+    for mk, _methods in c['rows']:
+        p.line(308, y - 2, 670, y - 2, LINE, 0.5)
+        p.text(308, y + 2, 58, 14, mk, size=7.5, color=INK, weight=600)
         y += 22
-    p.line(388, y - 2, 670, y - 2, LINE, 0.5)
-    p.text(388, y + 3, 282, 26, c['right_note'], size=6.5, color=GREY, ls=110)
-
+    p.line(308, y - 2, 670, y - 2, LINE, 0.5)
+    p.text(308, y + 3, 362, 26, c['right_note'], size=6.5, color=GREY, ls=110)
+    if CHIPS_URL:
+        p.R.append({'createImage': {'objectId': 'ad_today_chips', 'url': CHIPS_URL, 'elementProperties': {'pageObjectId': p.sid,
+                    'size': {'width': {'magnitude': 304 * PT, 'unit': 'EMU'}, 'height': {'magnitude': 198 * PT, 'unit': 'EMU'}},
+                    'transform': {'scaleX': 1, 'scaleY': 1, 'translateX': 366 * PT, 'translateY': (TOP + 38) * PT, 'unit': 'EMU'}}}})
 
 def draw_orch(p):
     c = C.ORCH
