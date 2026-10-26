@@ -30,12 +30,20 @@ SUBS = {  # new slide: the subscription engine (content as used in the HBO Max d
     'intro': "Plans, trials, add-ons, usage metering and Smart Retries, built on Yuno's orchestration, so the same subscription bills through any provider you route to.",
     'stats': [('300K+', 'active subscriptions billed by Yuno'), ('$15M/mo', 'recurring volume processed'),
               ('1.2M+', 'subscriptions created to date'), ('30+', 'merchants on recurring')],
-    'wall_h': 'RUNNING ON YUNO', 'wall_sub': 'recurring and subscriptions',
+    'flow_h': 'HOW IT WORKS  ·  ONE SUBSCRIPTION OBJECT, EVERY PROVIDER',
+    'steps': [  # number, title, description, built on
+        ('01', 'Define the plan', 'Phases (trial, intro, regular), a price per country and usage meters, set once from the back office or the API.', 'Back office · API'),
+        ('02', 'Subscribe once', 'The customer checks out; the card, wallet or bank mandate is stored in the vault as one credential.', 'Checkout · Vault'),
+        ('03', 'Bill every cycle', 'On each renewal date the engine creates the charge and routes it, through orchestration, to the best provider.', 'Smart routing'),
+        ('04', 'Recover declines', 'Smart Retries pick when and through which provider to retry; account updater and network tokens keep the credential current.', 'Smart Retries · Updater'),
+        ('05', 'Notify and measure', "Webhooks on every transition feed Autodesk's entitlement and finance systems; analytics per plan, country and provider.", 'Webhooks · Analytics'),
+    ],
+    'band': '**Built on the orchestration layer.** A renewal is routed like a first purchase: routing rules, provider fallback, vaulted credentials and the local rails behind each store, in one subscription object.',
     'box1_h': 'WHY THIS MATTERS FOR AUTODESK',
     'box1': 'Autodesk renews most of its $6.7B of subscription revenue directly, through stores with different processors and local methods. The engine sits above all of them, so a renewal can retry on a different provider instead of failing.',
     'box2_h': 'ALREADY LIVE ON THE SAME ENGINE',
     'box2': 'Subscription billing is in production across software, streaming, marketplace, mobility and creator platforms, on the same orchestration layer shown here. No pilot code path and no separate product.',
-    'src': 'Yuno Subscriptions, production figures as of October 2026. Merchant logos: companies billing recurring payments through Yuno.',
+    'src': 'Yuno Subscriptions, production figures as of October 2026; flow as documented on y.uno/product/subscriptions and docs.y.uno, read 26 Oct 2026.',
 }
 
 DEPTH = {  # new slide: billing-platform depth (content as used in the HBO Max deck, Oct 2026, adapted to Autodesk)
@@ -86,7 +94,7 @@ TODAY = {  # slide vlt_problem, body redrawn
         ('Japan', 'Cards · konbini · Pay-easy · PayPal · Apple Pay · Google Pay'),
         ('Australia', 'Cards · Zip · PayPal · Apple Pay · Google Pay'),
     ],
-    'right_note': "Card brands as listed per store; Diners Club is also listed in the US, EU, UK and Australia. Card acquirer and current card vault are not named on Autodesk's public pages. This deck assumes nothing about them.",
+    'right_note': "Card brands as listed per store (Germany's page lists cards without naming brands). The Plaid, Nacha, Direct Debit, Nexi and convenience-store marks stand for Pay by Bank, ACH, Bacs, CartaSi and konbini. Card acquirer and current card vault are not named on Autodesk's public pages; this deck assumes nothing about them.",
 }
 
 M5 = {  # slide m5_mock
@@ -197,7 +205,7 @@ NOTES = {
         "Seller of record: Autodesk, Inc. (US and Canada terms, Dec 2025), Autodesk Ireland Operations Unlimited Co. (EEA, Switzerland, UK), Autodesk India Online Store Pvt. Ltd., Autodesk Ltd. Japan, Autodesk Australia Pty Ltd. Brazil and Mexico stores price in BRL and MXN; their seller-of-record pages were not fetched.\n"
         "Methods: Terms and Payments pages per country, Wayback snapshots Mar to Oct 2026, plus the India help page for CCAvenue (annual and 3-year plans; monthly plans are credit card only there). Monthly billing 'only available directly from Autodesk'; annual 'Save 33% over the monthly price'.\n"
         "Not on the slide, on purpose: no card processor is named on any public page; older statement descriptors point to a past merchant-of-record provider and a possible processor in Australia, both inferences. Do not state them. If asked who processes today, say we do not know and the RFP will tell us.\n"
-        "Logos (26 Oct): card brands shown are the ones each store lists among Visa, Mastercard, Amex, Discover and JCB; Diners Club is also listed in the US, EU, UK and Australia (left off the row for space, said in the footnote). Germany's page says 'cards' without brands, so it shows a plain 'Cards' chip. India's monthly plans take Visa and Mastercard credit only; UPI and wallets come through CCAvenue on annual plans. 'direct debit' next to SEPA on the Germany row is SEPA-Lastschrift. Logos are the brands' own marks from Wikimedia Commons.\n"
+        "Logos (26 Oct, v2): every listed method as a mark, smaller. Card brands per store among Visa, Mastercard, Amex, Discover, JCB and Diners Club. Germany's page says 'cards' without brands: Visa, Mastercard and Amex are shown there as the usual set (assumption, say so if asked). Representative marks: Plaid for Pay by Bank (Autodesk's Pay by Bank runs on Plaid), Nacha for ACH, the UK Direct Debit mark for Bacs, Nexi for CartaSi (rebranded 2017), 7-Eleven, Lawson and FamilyMart for konbini, Pay-easy's own mark, a bank front for India net banking and Japan's invoice bank transfer, a barcode for Boleto, Paytm and CCAvenue for India wallets (help page). India's monthly plans take Visa and Mastercard credit only. 'direct debit' next to SEPA on the Germany row is SEPA-Lastschrift. Logos from Wikimedia Commons and the schemes' own sites.\n"
         "German decides whether this slide stays. If it goes, the deck is 11 slides."),
     'm5': (
         "Standalone vault column = what standalone vault vendors' public pages offer (storage, tokenization, proxy, portable tokens). Yuno column: PCI DSS Level 1, SOC 2 Type 2, ISO 27001, ISO 27701, Visa Service Provider and '460+ Processor integrations' (y.uno/product/vault, read 26 Oct 2026); routing, Monitors, Smart Retries (docs.y.uno automation page); account updater Visa and Mastercard (docs); network tokens Visa, Mastercard, Amex per docs, scheme activation confirmed in writing before any pilot (OPEN, Trust & Vault).\n"
@@ -215,7 +223,7 @@ NOTES = {
         "Figures: 'up to a 7% uplift in approval rates' and '30%' recovered revenue are on y.uno (read 26 Oct 2026). Never quote any other uplift number."),
     'subs': (
         "Figures: 300K+ active subscriptions and $15M a month of recurring volume come from the Subscriptions product team (Daniel Lozano, 1 Sep 2026); 1.2M+ subscriptions created and 30+ merchants on recurring are the figures already used in the HBO Max deck (Oct 2026). Internal production figures, not on y.uno: confirm with Daniel before quoting them in writing.\n"
-        "Logo wall: companies billing recurring payments through Yuno, as shown in the HBO Max deck. Do not name individual merchants' volumes.\n"
+        "Flow (26 Oct evening, German: no logos, illustrate the process): define the plan (phases, price per country, meters: y.uno/product/subscriptions) > subscribe once (credential in the vault: docs vault pages) > bill every cycle (renewal routed like a first purchase, routing rules and PSP fallback: y.uno subscriptions page) > recover declines (Smart Retries with hard-decline stop and retry cap, retry through a different PSP; account updater and network tokens on the same vaulted token: docs) > notify and measure (webhooks on every transition, subscription analytics: y.uno). Mandates for SEPA and ACH are stored in the vault per docs; Pix Automático per the subscriptions page.\n"
         "Autodesk: subscription revenue $6.74B of $7.21B in FY26 (Form 10-K); monthly plans sold only directly; annual plans renewed directly under the new transaction model. PUBLIC.\n"
         "Engine on the orchestration: each renewal is routed like a first purchase, with routing rules, PSP fallback, vaulted credentials and local rails (y.uno/product/subscriptions, read 26 Oct 2026)."),
     'depth': (

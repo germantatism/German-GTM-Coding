@@ -257,26 +257,32 @@ def draw_renew(p):
 
 
 def draw_subs(p):
+    """Stats row, then the subscription engine as a five-step flow on the orchestration band (no logo wall, 26 Oct evening)."""
     c = C.SUBS
-    p.text(36, 84, 324, 46, c['intro'], size=9.5, color=INK, ls=118)
     for i, (v, l) in enumerate(c['stats']):
-        x = 36 + (i % 2) * 164; y = 140 + (i // 2) * 66
-        p.text(x, y, 150, 26, v, size=22, color=BLUE, weight=600)
-        p.text(x, y + 30, 150, 24, l, size=8, color=BODY, ls=108)
-    p.text(376, 86, 90, 12, c['wall_h'], size=7.5, color=BLUE, weight=600)
-    p.text(462, 86, 180, 12, c['wall_sub'], size=8, color=GREY)
-    p.line(376, 100, 684, 100, LINE, 0.75)
-    if WALL_URL:
-        w, h = 308, 308 * 194 / 306.0   # 3 x 5 cards of 98 x 34 pt with 6 pt gaps
-        p.R.append({'createImage': {'objectId': 'ad_subs_wall', 'url': WALL_URL, 'elementProperties': {'pageObjectId': p.sid,
-                    'size': {'width': {'magnitude': w * PT, 'unit': 'EMU'}, 'height': {'magnitude': h * PT, 'unit': 'EMU'}},
-                    'transform': {'scaleX': 1, 'scaleY': 1, 'translateX': 376 * PT, 'translateY': 104 * PT, 'unit': 'EMU'}}}})
-    for (x, w, hh, body) in ((36, 324, c['box1_h'], c['box1']), (376, 308, c['box2_h'], c['box2'])):
-        p.card(x, 306, w, 64, fill=PANEL, line=None)
-        p.text(x + 12, 312, w - 24, 10, hh, size=7, color=BLUE, weight=600)
-        p.text(x + 12, 324, w - 24, 42, body, size=8, color=INK, ls=110)
-    p.text(36, 374, 600, 9, c['src'], size=6, color=GREY)
-
+        x = 36 + i * 164
+        p.card(x, TOP, 156, 40, fill=PANEL, line=None)
+        p.text(x + 10, TOP + 4, 72, 32, v, size=16, color=BLUE, weight=600, valign='MIDDLE')
+        p.text(x + 82, TOP + 5, 70, 30, l, size=6.5, color=BODY, ls=105, valign='MIDDLE')
+    p.label(36, TOP + 50, 420, c['flow_h'], color=GREY, size=7)
+    B = TOP + 64
+    for i, (n, tt, d, tag) in enumerate(c['steps']):
+        x = 36 + i * 132; w = 120
+        p.card(x, B, w, 96)
+        p.pill(x + 8, B + 9, 28, n, fill=BLUE, color=WHITE, size=6.5, h=13)   # shape insets eat 14 pt, keep it wide
+        p.text(x + 38, B + 5, w - 42, 22, tt, size=7.5, color=INK, weight=600, valign='MIDDLE')
+        p.text(x + 8, B + 30, w - 16, 48, d, size=7, color=BODY, ls=108)
+        p.text(x + 8, B + 80, w - 16, 10, tag, size=6.5, color=BLUE, weight=600)
+        if i < 4: p.line(x + w, B + 48, x + 132, B + 48, BLUE, 1, arrow=True)
+    y = B + 106
+    p.card(36, y, 648, 28, fill=BLUE, line=None)
+    p.text(48, y, 624, 28, c['band'], size=8.5, color=WHITE, valign='MIDDLE', bold_color=WHITE)
+    y2 = y + 36
+    for (x, w, hh, body) in ((36, 320, c['box1_h'], c['box1']), (364, 320, c['box2_h'], c['box2'])):
+        p.card(x, y2, w, 60, fill=PANEL, line=None)
+        p.text(x + 12, y2 + 6, w - 24, 10, hh, size=7, color=BLUE, weight=600)
+        p.text(x + 12, y2 + 18, w - 24, 40, body, size=7.5, color=INK, ls=108)
+    p.text(36, y2 + 66, 640, 9, c['src'], size=6, color=GREY)
 
 def draw_depth(p):
     c = C.DEPTH
