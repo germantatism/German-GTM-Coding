@@ -17,9 +17,10 @@ S = {  # slide ids (preserved by the Drive copy of 1hrBLCF...)
     'proxy': 'h7c266de662ba1cf0_9_391', 'controls': 'vlt_controls', 'versus': 'vlt_versus', 'port': 'h7c266de662ba1cf0_9_469',
     'proven': 'h6032acb876a0077a_1_0', 'team': 'h6032acb876a0077a_1_974', 'trusted': 'h7c266de662ba1cf0_9_611',
     # new slides, drawn from the chrome of vlt_versus
-    'orch': 'ad_orch', 'renew': 'ad_renew', 'subs': 'ad_subs', 'depth': 'ad_depth', 'beyond': 'ad_beyond', 'close': 'ad_close'}
+    'orch': 'ad_orch', 'renew': 'ad_renew', 'subs': 'ad_subs', 'depth': 'ad_depth', 'beyond': 'ad_beyond', 'close': 'ad_close',
+    'team2': 'h4674785995ee081b_0_1058'}   # team slide German pasted in by hand on 26 Oct evening (not the OnlyFans 'team' id)
 BASE = 'versus'   # chrome donor for the new slides (kicker 322x14, title 648x54, page number, wordmark)
-ORDER = ('cover', 'exec', 'today', 'orch', 'renew', 'subs', 'cards', 'port', 'beyond', 'proven', 'trusted', 'close')   # 26 Oct pm: orchestration first, m5 and depth cut (German)
+ORDER = ('cover', 'exec', 'today', 'orch', 'renew', 'subs', 'cards', 'port', 'beyond', 'proven', 'team2', 'trusted')   # 26 Oct evening: German removed 'close' by hand (twice, keep it out) and pasted a team slide before trusted; m5 and depth cut
 WALL_URL = ''     # logo wall PNG (companies billing recurring payments through Yuno), anyone-reader on Drive
 try:
     WALL_URL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'SUBS_WALL_URL.txt')).read().strip()
@@ -139,6 +140,7 @@ def tick(p, x, y, text, w=260, size=9.5, color=INK):
 
 
 TOP = 96   # body start on slides with a two-line title (title box ends at 95)
+SRC_Y = 368   # source line baseline shared by the drawn slides (page number sits at 376)
 
 
 def draw_today(p):
@@ -204,7 +206,7 @@ def draw_orch(p):
     p.card(36, 302, 648, 38, fill=PANEL, line=None)
     p.shape(36, 302, 2, 38, 'RECTANGLE', BLUE, None)
     p.text(50, 302, 620, 38, c['band'], size=9.5, color=INK, valign='MIDDLE', bold_color=DEEP)
-    p.text(36, 350, 640, 12, c['src'], size=6.5, color=GREY)
+    p.text(36, SRC_Y, 640, 12, c['src'], size=6.5, color=GREY)
 
 
 def draw_renew(p):
@@ -240,7 +242,7 @@ def draw_renew(p):
         p.text(x + 10, 278, 20, 14, n, size=11, color=BLUE, weight=600)
         p.text(x + 10, 294, 114, 30, t, size=7.5, color=INK, ls=105)
     # right column
-    p.card(470, TOP, 214, 244, fill=PANEL, line=None)
+    p.card(470, TOP, 214, 230, fill=PANEL, line=None)   # ends at 326 like the step cards on the left
     p.text(482, TOP + 10, 190, 9, c['right_h'], size=7, color=BLUE, weight=600)
     (v1, l1), (v2, l2) = c['stats']
     p.text(482, TOP + 22, 90, 28, v1, size=22, color=BLUE)
@@ -253,19 +255,20 @@ def draw_renew(p):
         p.shape(482, y + 1, 12, 12, 'ELLIPSE', BLUE, None)
         p.text(482, y + 2, 12, 10, '✓', size=7, color=WHITE, weight=600, align='CENTER', pad=False)
         p.text(500, y - 1, 172, 34, t, size=8.5, color=INK, ls=108)
-    p.text(36, 344, 420, 26, c['src'], size=6.5, color=GREY, ls=110)
+    p.text(36, SRC_Y - 4, 640, 22, c['src'], size=6.5, color=GREY, ls=110)   # two lines, same baseline as the other slides
 
 
 def draw_subs(p):
     """Stats row, then the subscription engine as a five-step flow on the orchestration band (no logo wall, 26 Oct evening)."""
     c = C.SUBS
+    T0 = TOP - 8   # one-line title
     for i, (v, l) in enumerate(c['stats']):
         x = 36 + i * 164
-        p.card(x, TOP, 156, 40, fill=PANEL, line=None)
-        p.text(x + 10, TOP + 4, 72, 32, v, size=16, color=BLUE, weight=600, valign='MIDDLE')
-        p.text(x + 82, TOP + 5, 70, 30, l, size=6.5, color=BODY, ls=105, valign='MIDDLE')
-    p.label(36, TOP + 50, 420, c['flow_h'], color=GREY, size=7)
-    B = TOP + 64
+        p.card(x, T0, 156, 40, fill=PANEL, line=None)
+        p.text(x + 10, T0 + 4, 72, 32, v, size=16, color=BLUE, weight=600, valign='MIDDLE')
+        p.text(x + 82, T0 + 5, 70, 30, l, size=6.5, color=BODY, ls=105, valign='MIDDLE')
+    p.label(36, T0 + 50, 420, c['flow_h'], color=GREY, size=7)
+    B = T0 + 64
     for i, (n, tt, d, tag) in enumerate(c['steps']):
         x = 36 + i * 132; w = 120
         p.card(x, B, w, 96)
@@ -282,7 +285,7 @@ def draw_subs(p):
         p.card(x, y2, w, 60, fill=PANEL, line=None)
         p.text(x + 12, y2 + 6, w - 24, 10, hh, size=7, color=BLUE, weight=600)
         p.text(x + 12, y2 + 18, w - 24, 40, body, size=7.5, color=INK, ls=108)
-    p.text(36, y2 + 66, 640, 9, c['src'], size=6, color=GREY)
+    p.text(36, SRC_Y, 640, 10, c['src'], size=6.5, color=GREY)
 
 def draw_depth(p):
     c = C.DEPTH
@@ -319,7 +322,7 @@ def draw_beyond(p):
     p.card(36, 292, 648, 36, fill=WHITE, line=BLUE)
     p.pill(48, 303, 40, c['also_pill'], fill=LAV, color=BLUE, size=7, h=15)
     p.text(98, 292, 570, 36, c['also'], size=9.5, color=INK, valign='MIDDLE', bold_color=DEEP)
-    p.text(36, 338, 600, 12, c['src'], size=6.5, color=GREY)
+    p.text(36, SRC_Y, 600, 12, c['src'], size=6.5, color=GREY)
 
 
 def draw_close(p):
