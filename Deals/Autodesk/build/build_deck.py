@@ -134,8 +134,8 @@ def dot(p, x, y, color=BLUE, d=5):
 
 
 def tick(p, x, y, text, w=260, size=9.5, color=INK):
-    p.shape(x, y + 1, 13, 13, 'ELLIPSE', BLUE, None)
-    p.text(x, y + 2, 13, 10, '✓', size=7.5, color=WHITE, weight=600, align='CENTER', pad=False)
+    """Unused since 26 Oct evening: the check glyph and the 13 pt text box did not survive the editor. Use dot()."""
+    dot(p, x + 4, y + 5)
     p.text(x + 20, y, w, 14, text, size=size, color=color)
 
 
@@ -235,7 +235,7 @@ def draw_renew(p):
         if n:
             mx, my = 293, (top + 74 + y + 20) / 2
             p.shape(mx - 7, my - 7, 14, 14, 'ELLIPSE', WHITE, BLUE, 1)
-            p.text(mx - 7, my - 6, 14, 12, n, size=7, color=BLUE, weight=600, align='CENTER', pad=False)
+            p.text(mx - 20, my - 8, 40, 16, n, size=7, color=BLUE, weight=600, align='CENTER', pad=False)   # wide box, text centred on the circle
     for i, (n, t) in enumerate(c['steps']):
         x = 36 + i * 140
         p.card(x, 272, 132, 54, fill=PANEL, line=None)
@@ -252,9 +252,8 @@ def draw_renew(p):
     p.line(482, TOP + 68, 672, TOP + 68, '#C9CDD6', 0.5)
     for i, t in enumerate(c['checks']):
         y = TOP + 78 + i * 42
-        p.shape(482, y + 1, 12, 12, 'ELLIPSE', BLUE, None)
-        p.text(482, y + 2, 12, 10, '✓', size=7, color=WHITE, weight=600, align='CENTER', pad=False)
-        p.text(500, y - 1, 172, 34, t, size=8.5, color=INK, ls=108)
+        dot(p, 484, y + 4)
+        p.text(498, y - 1, 174, 34, t, size=8.5, color=INK, ls=108)
     p.text(36, SRC_Y - 4, 640, 22, c['src'], size=6.5, color=GREY, ls=110)   # two lines, same baseline as the other slides
 
 

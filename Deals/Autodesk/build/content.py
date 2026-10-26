@@ -142,7 +142,7 @@ RENEW = {  # new slide, drawn
     'engine': ('Routing engine', 'Rules you set, or AI', 'Issuer country, BIN, amount, transaction type, cost, provider health'),
     'providers': [('Processor A', 'DECLINED'), ('Processor B', 'APPROVED'), ('Processor C', 'STANDBY')],
     'steps': [('1', 'The first route declines, or the provider is down'),
-              ('2', 'Smart Retries re-send on the schedule and route most likely to approve'),
+              ('2', 'Smart Retries resend on the schedule and route most likely to approve'),
               ('3', 'The customer keeps access and re-enters nothing')],
     'right_h': 'WHAT IT DELIVERS',
     'stats': [('Up to 7%', 'approval uplift'), ('30%', 'recovered revenue')],
