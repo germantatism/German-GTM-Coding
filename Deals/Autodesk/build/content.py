@@ -8,8 +8,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 LOGO_URL = open(os.path.join(HERE, 'LOGO_URL.txt')).read().strip() if os.path.exists(os.path.join(HERE, 'LOGO_URL.txt')) else ''
 
 COVER = {
-    'title': 'Vault and orchestration',
-    'sub': 'Two products on one platform, standalone or together',
+    'title': 'Global payments, one platform',
+    'sub': 'The AI native operating system for global financial infrastructure',
     'prep': 'Prepared for Autodesk · October 2026 · Strictly confidential',
 }
 
