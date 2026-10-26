@@ -43,7 +43,7 @@ def font(oid, pt):
                  'style': {'fontSize': {'magnitude': pt, 'unit': 'PT'}}, 'fields': 'fontSize'}})
 
 # ---------------- slide 13 (p14): five lever cards ----------------
-txt('p14_i5618', 'Cinco palancas sobre la data de Civitatis: aprobación y métodos locales son las más grandes', 'Cinco palancas')
+txt('p14_i5618', 'Cinco palancas: aprobación y métodos locales son las dos más grandes', 'Cinco palancas')
 txt('p14_i5620', 'Base Civitatis LATAM: 38,000 pay-ins al mes, ticket promedio USD 157.89, cerca de USD 6M al mes y USD 72M al año en MX, BR, AR, CO, CL y PE. Stack: dLocal, Ebanx, PayPal, MercadoPago, Amex, Adyen y Checkout.com. Aprobación de tarjeta cerca de 90%, chargebacks 0.35%.', 'Baseline')
 
 CARDS = [
@@ -61,7 +61,7 @@ CARDS = [
   'Con 7 PSPs en el stack, cada transacción va al proveedor más barato a igual aprobación: adquirencia local frente a cross-border, débito frente a crédito, cuotas. 10 a 20 bps sobre cerca de USD 72M al año. Se calibra con sus tarifas actuales.',
   '$72K/año', '$144K/año'),
  ('p14_i5666', 'p14_i5669', 'p14_i5670', 'p14_i5673', 'p14_i5676',
-  'Costo de integrar', '7 integraciones',
+  'Costo de integrar', '7 → 1',
   'Mantener 7 integraciones directas cuesta cada año entre 20% y 30% de lo que costó construirlas (8 a 12 semanas y 2 ingenieros cada una), y sumar un método o PSP nuevo es otro proyecto. Con Yuno es configuración, no desarrollo.',
   '$45K/año', '$115K/año'),
  ('p14_i5681', 'p14_i5684', 'p14_i5685', 'p14_i5688', 'p14_i5691',

@@ -53,3 +53,7 @@ Diferencias con Cruz Verde: FTE a $60K (equipo en Madrid) en vez de $50K (Colomb
 ## Build
 `build/fill_bc_civitatis.py <presentationId> dry|apply` (texto por element ID, método Cruz Verde; los IDs sobreviven la copia de Drive). `build/share_with_alejandro.py <presentationId>` comparte la copia con alejandro@y.uno como editor con mensaje. Thumbs en `build/thumbs/`.
 Limitación encontrada: la service account tiene cuota de Drive 0 (Google), así que NO puede copiar ni crear archivos; la copia la hace German desde la UI y la comparte con `gtm-claude-editor@gtm-claude-tools-260922.iam.gserviceaccount.com`.
+
+## Entregado (25-oct-2026, noche)
+- Copia de German: "Civitatis × Yuno — Propuesta (Business Case)", Slides `1wEBUVxKnP7-Ev-JGTWv0Pl13U5BHrkNyxRATsd3TCwk` (German la creó desde la UI y la compartió con la SA; renombrada por script). Slides 13 y 14 rellenados con `build/fill_bc_civitatis.py ... apply` + `build/fix1_civitatis.py` (métrica L4 "7 → 1" en una línea, título de S13 en una línea). Thumbs QA en `build/thumbs/`.
+- Compartida con alejandro@y.uno como editor con notificación de Drive y mensaje en voz de German (Gmail de claude.ai desconectado ese día; el correo lo manda German si quiere algo más formal).
