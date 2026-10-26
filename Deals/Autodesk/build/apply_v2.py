@@ -9,7 +9,7 @@ import build_deck as B
 import content as C
 import restructure as R0      # host(), run_with_image(), s, d, pid
 
-CHIPS_FID_V2 = '1RN9hYHdRXAjwEKzDkPpyAD3byPNz89sp'   # new placeholder (new id, so the lh3 CDN never serves the v1 bytes)
+CHIPS_FID_V2 = '1aWdIDSpwcw0mmTeR5m2qvYwpdCggucTY'   # v3 (rows uniform, no grey notes); v2 was 1RN9hYHdRXAjwEKzDkPpyAD3byPNz89sp, v1 1FQYy8xqCZfl1wWlIdgl9txf-Ty34JR4P. New id per version: the lh3 CDN caches old bytes
 s, pid, get = R0.s, R0.pid, R0.get
 
 

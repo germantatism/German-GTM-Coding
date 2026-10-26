@@ -21,13 +21,13 @@ H = {  # chip height in pt (v2, 26 Oct evening: smaller, every method as a mark)
 CARDS6 = [('l', 'visa'), ('l', 'mastercard'), ('l', 'amex'), ('l', 'discover'), ('l', 'jcb'), ('l', 'diners')]
 CARDS3 = [('l', 'visa'), ('l', 'mastercard'), ('l', 'amex')]
 WALLETS = [('l', 'applepay'), ('l', 'gpaymark'), ('l', 'paypal')]
-ROWS = [  # (market, chips): ('l', logo) | ('i', drawn icon: bank | barcode) | ('n', grey note)
+ROWS = [  # (market, chips): ('l', logo) | ('i', drawn icon: bank | barcode) | ('n', grey note; unused since 26 Oct evening, German: rows uniform, marks only)
     ('United States', CARDS6 + WALLETS + [('l', 'plaid'), ('l', 'nacha')]),                       # Pay by Bank (Plaid), ACH (Nacha)
     ('EU', CARDS6 + [('l', 'cb'), ('l', 'dankort'), ('l', 'nexi'), ('l', 'paypal'), ('l', 'sepa'), ('l', 'ideal')]),   # CartaSi is Nexi today
     ('United Kingdom', CARDS6 + WALLETS + [('l', 'directdebit')]),                                 # Bacs Direct Debit
-    ('Germany', CARDS3 + WALLETS + [('l', 'sepa'), ('n', 'direct debit')]),                        # page lists cards without brands
-    ('Brazil', CARDS3 + [('l', 'paypal'), ('l', 'pix'), ('i', 'barcode'), ('n', 'priced in BRL')]),   # Boleto
-    ('Mexico', CARDS3 + [('l', 'paypal'), ('n', 'priced in MXN')]),
+    ('Germany', CARDS3 + WALLETS + [('l', 'sepa')]),                        # page lists cards without brands
+    ('Brazil', CARDS3 + [('l', 'paypal'), ('l', 'pix'), ('i', 'barcode')]),   # Boleto
+    ('Mexico', CARDS3 + [('l', 'paypal')]),
     ('India', [('l', 'visa'), ('l', 'mastercard'), ('l', 'upi'), ('i', 'bank'), ('l', 'paytm'), ('l', 'ccavenue')]),   # net banking, wallets
     ('Japan', [('l', 'visa'), ('l', 'mastercard'), ('l', 'amex'), ('l', 'jcb')] + WALLETS + [('l', 'seven'), ('l', 'lawson'), ('l', 'familymart'), ('l', 'payeasy'), ('i', 'bank')]),   # konbini, Pay-easy, bank transfer
     ('Australia', CARDS6 + WALLETS + [('l', 'zip')]),
