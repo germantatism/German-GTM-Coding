@@ -20,7 +20,7 @@ S = {  # slide ids (preserved by the Drive copy of 1hrBLCF...)
     'orch': 'ad_orch', 'renew': 'ad_renew', 'subs': 'ad_subs', 'depth': 'ad_depth', 'beyond': 'ad_beyond', 'close': 'ad_close',
     'team2': 'h4674785995ee081b_0_1058', 'ask': 'ad_ask'}   # team slide German pasted in by hand on 26 Oct evening (not the OnlyFans 'team' id)
 BASE = 'versus'   # chrome donor for the new slides (kicker 322x14, title 648x54, page number, wordmark)
-ORDER = ('cover', 'exec', 'today', 'orch', 'renew', 'subs', 'cards', 'port', 'beyond', 'proven', 'team2', 'trusted', 'ask')   # 26 Oct evening: German removed 'close' by hand (twice, keep it out) and pasted a team slide before trusted; m5 and depth cut
+ORDER = ('cover', 'exec', 'today', 'orch', 'renew', 'subs', 'cards', 'port', 'beyond', 'proven', 'team2', 'trusted')   # no closing slide: German deleted 'close' twice and 'ask' once by hand (26 Oct); the ask lives in the email   # 26 Oct evening: German removed 'close' by hand (twice, keep it out) and pasted a team slide before trusted; m5 and depth cut
 WALL_URL = ''     # logo wall PNG (companies billing recurring payments through Yuno), anyone-reader on Drive
 try:
     WALL_URL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'SUBS_WALL_URL.txt')).read().strip()
@@ -179,36 +179,28 @@ def draw_today(p):
                     'transform': {'scaleX': 1, 'scaleY': 1, 'translateX': 366 * PT, 'translateY': (TOP + 38) * PT, 'unit': 'EMU'}}}})
 
 def draw_orch(p):
+    """v2 (26 Oct night): the Yuno box with its modules on the left, six outcome tiles on the right, the Autodesk-scale band."""
     c = C.ORCH
-    T = TOP + 2
-    p.label(36, T, 150, c['left_h'], color=GREY, size=7)
-    p.label(214, T, 100, c['mid_h'], color=GREY, size=7)
-    p.label(534, T, 150, c['right_h'], color=GREY, size=7)
+    p.label(36, TOP + 2, 300, c['left_h'], color=GREY, size=7)
+    p.label(436, TOP + 2, 248, c['right_h'], color=GREY, size=7)
     B = TOP + 16   # 112
-    for i, (t, sub) in enumerate(c['left']):
-        y = B + i * 46
-        p.card(36, y, 150, 38)
-        p.text(46, y + 5, 134, 12, t, size=9, color=INK, weight=600)
-        p.text(46, y + 20, 134, 16, sub, size=7, color=GREY, ls=105)
-        p.line(186, y + 19, 213, y + 19, BLUE, 1, arrow=True)
-    p.card(214, B, 292, 178, fill=BLUE, line=None)
-    p.text(228, B + 10, 260, 18, 'Yuno', size=14, color=WHITE, weight=600)
-    p.text(228, B + 29, 260, 10, c['mid_sub'], size=8, color=LAV)
+    p.card(36, B, 380, 172, fill=BLUE, line=None)
+    p.text(50, B + 8, 352, 18, c['box_title'], size=14, color=WHITE, weight=600)
+    p.text(50, B + 27, 352, 10, c['box_sub'], size=7.5, color=LAV)
     for i, m in enumerate(c['mods']):
-        x = 228 + (i % 2) * 134; y = B + 48 + (i // 2) * 31
-        p.pill(x, y, 128, m, fill=WHITE, color=DEEP, size=7.5, h=25)
-    for i, (t, sub) in enumerate(c['right']):
-        y = B + i * 30
-        p.line(506, y + 13, 533, y + 13, BLUE, 1, arrow=True)
-        p.card(534, y, 150, 26, fill=PANEL, line=None)
-        p.text(542, y + 2, 138, 11, t, size=8, color=INK, weight=600)
-        p.text(542, y + 13, 138, 10, sub, size=6.5, color=GREY)
-    p.card(36, 302, 648, 38, fill=PANEL, line=None)
-    p.shape(36, 302, 2, 38, 'RECTANGLE', BLUE, None)
-    p.text(50, 302, 620, 38, c['band'], size=9.5, color=INK, valign='MIDDLE', bold_color=DEEP)
-    p.text(36, 345, 648, 20, c['coverage'], size=7.5, color=INK, ls=108, bold_color=DEEP)
-    p.text(36, SRC_Y, 640, 12, c['src'], size=6.5, color=GREY)
-
+        x = 50 + (i % 2) * 180; y = B + 44 + (i // 2) * 29
+        p.pill(x, y, 172, m, fill=WHITE, color=DEEP, size=7.5, h=23)
+    p.text(50, B + 157, 352, 12, c['box_foot'], size=7, color=LAV)
+    for i, (v, l, src) in enumerate(c['tiles']):
+        x = 436 + (i % 2) * 128; y = B + (i // 2) * 59
+        p.card(x, y, 120, 52, fill=PANEL, line=None)
+        p.text(x + 10, y + 3, 104, 22, v, size=17, color=BLUE, weight=600)
+        p.text(x + 10, y + 25, 104, 17, l, size=7, color=INK, ls=105)
+        p.text(x + 10, y + 42, 104, 9, src, size=6, color=GREY)
+    p.card(36, 300, 648, 40, fill=PANEL, line=None)
+    p.shape(36, 300, 2, 40, 'RECTANGLE', BLUE, None)
+    p.text(50, 300, 620, 40, c['band'], size=9.5, color=INK, valign='MIDDLE', bold_color=DEEP)
+    p.text(36, SRC_Y - 4, 640, 22, c['src'], size=6.5, color=GREY, ls=110)
 
 def draw_renew(p):
     c = C.RENEW

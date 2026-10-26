@@ -123,6 +123,7 @@ def chrome_ids(P, sid):
         elif t.isdigit() and x < 12 and y > 360: keep[el['objectId']] = 'pg'
         elif t and abs(y - 25) < 3 and x < 40: keep[el['objectId']] = 'kicker'
         elif t and abs(y - 41) < 3 and x < 40: keep[el['objectId']] = 'title'
+        elif t and 26 < y < 80 and x < 40 and (el.get('size', {}).get('width', {}).get('magnitude', 0) / PT) * tr.get('scaleX', 1) > 400: keep[el['objectId']] = 'title'   # nudged by hand
     return keep
 
 def new_slide(s, pid, P, base_sid, new_sid, kicker, title, pg=None):

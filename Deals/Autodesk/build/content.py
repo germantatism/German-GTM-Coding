@@ -45,9 +45,9 @@ SUBS = {  # new slide: the subscription engine (content as used in the HBO Max d
     'band': '**Built on the orchestration layer.** A renewal is routed like a first purchase: routing rules, provider fallback, vaulted credentials and the local rails behind each store, in one subscription object.',
     'box1_h': 'WHY THIS MATTERS FOR AUTODESK',
     'box1': 'Autodesk renews most of its $6.7B of subscription revenue directly, through stores with different processors and local methods. The engine sits above all of them, so a renewal can retry on a different provider instead of failing.',
-    'box2_h': 'PUBLISHED RESULTS ON THE SAME LAYER',
-    'box2': 'Open English, a SaaS, unified its processing on Yuno to lift approval rates and cut time-to-market. inDrive runs about 90% approval and opened 10 countries in under eight months. Livelo recovered 50% of transactions. Reference calls on request.',
-    'src': 'Flow as documented on y.uno/product/subscriptions and docs.y.uno (Smart Retries, Stripe Billing); results as published on y.uno/en/success-stories. Read 26 Oct 2026.',
+    'box2_h': 'WHAT WE WOULD MEASURE WITH YOU',
+    'box2': 'Renewal approval rate per store and per provider, revenue recovered by Smart Retries, involuntary churn, and the time it takes to add a method or a provider. Your baseline first, then a pilot on one store measured against it.',
+    'src': 'Flow as documented on y.uno/product/subscriptions and docs.y.uno (Smart Retries, Stripe Billing), read 26 Oct 2026.',
 }
 
 DEPTH = {  # new slide: billing-platform depth (content as used in the HBO Max deck, Oct 2026, adapted to Autodesk)
@@ -114,30 +114,24 @@ M5 = {  # slide m5_mock
     'm5_band': 'Same independence, far less to build.   Autodesk keeps portable tokens and exit terms, and decides how much of the stack Yuno runs.',
 }
 
-ORCH = {  # new slide, drawn
+ORCH = {  # new slide, drawn. v2 (26 Oct night, German): present Yuno's orchestration and what it achieves, not Autodesk's stack
     'kicker': 'ORCHESTRATION  ›  ONE INTEGRATION',
-    'title': "One integration between Autodesk's stores and every processor and method, in every region you sell",
-    'left_h': 'Autodesk', 'mid_h': 'Yuno', 'right_h': "Autodesk's methods today",
-    'left': [
-        ('Direct store checkout', 'checkout.autodesk.com, local currency per country'),
-        ('Subscription renewals', 'monthly and annual plans, billed by Autodesk'),
-        ('Regional sellers of record', 'Autodesk Inc, Ireland Operations, India, Japan, Australia'),
-        ('New lines and entities', 'the same layer for every seller of record'),
-    ],
-    'mid_sub': 'One API, one dashboard, every provider',
+    'title': 'One integration to every provider and method, and what it does to approval, revenue and cost',
+    'left_h': 'WHAT YOU GET', 'right_h': 'WHAT IT DOES, ON NUMBERS WE SEE EVERY DAY',
+    'box_title': 'Yuno', 'box_sub': 'One API, one dashboard: 1,000+ methods, PSPs and fraud tools in 190+ countries',
     'mods': ['Checkout and SDKs', 'Smart routing and retries', 'Vault and network tokens', '3DS and risk conditions',
              'Subscriptions', 'Account updater', 'Reconciliation and insights', 'Payments Concierge (AI)'],
-    'right': [
-        ('Card acquirers', 'any region, any provider'),
-        ('PayPal, Apple Pay, Google Pay', 'every store; wallets in US, UK, DE, JP, AU'),
-        ('SEPA, iDEAL, BACS', 'EU, Germany, UK'),
-        ('Pix, Boleto', 'Brazil'),
-        ('UPI, net banking, konbini, Pay-easy', 'India, Japan'),
-        ('Pay by Bank, ACH, Zip', 'US, Australia'),
+    'box_foot': 'Yuno never holds the money: funds settle from your providers straight to your entities.',
+    'tiles': [  # value, label, source
+        ('Up to 7%', 'approval uplift', 'published, y.uno'),
+        ('30%', 'recovered revenue', 'published, y.uno'),
+        ('27%', 'savings on payment costs', 'published, y.uno'),
+        ('+2 pts', 'approval with a second provider on the same rail', 'Yuno merchants, about $17B a year'),
+        ('83% to 86%', 'renewal approval per cycle, after Smart Retries', 'Yuno subscriptions engine'),
+        ('90%', 'less development time per new provider or method', 'published, y.uno'),
     ],
-    'band': "**Yuno never holds the money.** Funds settle from your providers straight to Autodesk's entities; Yuno connects, decides, secures and reconciles.",
-    'coverage': "**Every method on the right is in Yuno's published payment-type list** (docs.y.uno, 22 Oct 2026), Pay by Bank through Plaid and the Japanese konbini (7-Eleven, Lawson, FamilyMart) and Pay-easy included. India net banking and Paytm wallets are the two we confirm with you.",
-    'src': "Autodesk's methods as listed on its Terms and Payments pages per country, read 19 Oct 2026. Yuno: 1,000+ payment methods, PSPs and fraud tools, as published on y.uno; payment-type list on docs.y.uno.",
+    'band': "**One point of renewal approval at Autodesk is about $67M a year,** on $6.7B of subscription revenue. Illustrative; we would size it on your own data first.",
+    'src': "Published figures: y.uno, read 26 Oct 2026. Approval by providers: Yuno merchant data, about $17B of annual volume across 50 merchants (internal). Renewal approval per cycle: Yuno Subscriptions engine, Aug 2026 (internal). Autodesk subscription revenue: FY26 Form 10-K. Every method on Autodesk's store pages is in Yuno's published payment-type list (22 Oct 2026).",
 }
 
 RENEW = {  # new slide, drawn
@@ -176,13 +170,13 @@ BEYOND = {  # new slide, drawn
     'kicker': 'BEYOND ORCHESTRATION AND VAULT  ›  ON THE SAME PLATFORM',
     'title': 'Once the routing and the tokens are in one place, the rest switches on as configuration',
     'cards': [
-        ('Agentic commerce', 'When AI agents buy on behalf of your customers, you set the spend limits and approvals. The platform enforces and records each one, on the same tokens and routing.', 'Agents buying seats, tokens and add-ons'),
+        ('Multiple entities', 'One organization with an account per seller of record, region or business line: Autodesk Inc, Ireland, India, Japan, Australia. Providers, routing, users and roles, and reports per account; one dashboard and one API across all of them.', 'Every seller of record, one view'),
         ('3DS and SCA', 'Yuno 3DS with Netcetera as the default provider, plus standalone authentication that returns ECI and CAVV for any acquirer, so EU and UK checkouts meet SCA on the same tokens.', 'EEA and UK stores'),
         ('Reconciliation', 'Settlement files from each provider matched to your transactions, and approval, cost and fees by provider and market in one view.', 'Finance and treasury'),
         ('Payments Concierge', 'An AI agent for the payments team. It watches approvals and providers, explains what changed in plain language and helps route, retry and recover.', 'Payments operations'),
     ],
     'also_pill': 'ALSO',
-    'also': '**Stablecoins and banking connectivity** run on the same connection, when Autodesk needs them.',
+    'also': '**Agentic commerce, stablecoins and banking connectivity** run on the same connection, when Autodesk needs them.',
     'src': 'Products as published on y.uno and docs.y.uno, read 26 Oct 2026.',
 }
 
@@ -230,10 +224,11 @@ NOTES = {
         "Bank details: ACH and SEPA enrollments can be stored vault-only (enroll API, docs). BACS direct debit mandates are collected by a UK provider; whether the mandate reference is vaulted is a design choice (OPEN, Solutions).\n"
         "Subscriptions: y.uno/product/subscriptions (plans, trials, Smart Retries, retry through a different PSP, Stripe Billing compatibility), read 26 Oct 2026."),
     'orch': (
-        "Left column is Autodesk's public footprint: hosted checkout on checkout.autodesk.com with local currency (BRL, MXN, INR, JPY, AUD, GBP, EUR); monthly and annual plans billed directly; sellers of record per region (see slide 3 notes). 'New lines and entities' is deliberately generic: Autodesk has closed acquisitions recently (MaintainX, Aug 2026; Payapps, 2024), but nothing public says how they bill, so do not claim it.\n"
-        "Right column is what Autodesk already offers, per its own pages; it is not a claim that each method is live on Yuno today. Yuno publishes 1,000+ payment methods, PSPs and fraud tools and 190+ countries (y.uno). If asked about a specific method (Pay-easy, konbini, Zip, CCAvenue), check the integrations directory before answering.\n"
-        "Yuno never holds the money: funds settle from each provider to the merchant's own accounts (docs, how Yuno works). Reconciliation: settlement files matched to transactions (docs automation page).\n"
-        "Coverage line (26 Oct): Yuno payment-type list, docs.y.uno/reference/payment-type, snapshot 22 Oct 2026 (tools/connections/ptl_2026-10-22.md): ACH_PLAID (Adyen, Stripe), ACH, SEPA, IDEAL, BACS, PIX and PIX_AUTOMATIC, BOLETO, UPI and UPI_AUTOPAY, ZIP, APPLE_PAY, GOOGLE_PAY, PAYPAL and PAYPAL_CREDIT, 7ELEVEN, LAWSON, FAMILY_MART, SEICOMART and PAY_EASY (Adyen). Not in the list: India net banking as a method, and Paytm; CCAvenue appears as a card connection only. A method in the list is documented, not necessarily switched on for an organization; confirm with the integrations team before the questionnaire."),
+        "v2, 26 Oct night (German): 'no me enfoques tanto en lo que tiene Autodesk, presenta la orquestación de Yuno y la integración: todo lo que vas a tener y lo que puedes lograr; ahí van las cifras de impacto'. The Autodesk stack columns and the coverage line came off this slide; slide 3 still carries their stores and methods.\n"
+        "Published tiles: 'up to a 7% uplift in approval rates', '30% recovered revenue', '27% savings on payment costs', '90% reduction in development time' are on y.uno (home page, read 26 Oct 2026). 1,000+ methods, PSPs and fraud tools and 190+ countries: y.uno.\n"
+        "+2 pts with a second provider: the Carry1st data slide (Deals/Carry1st/build/data_slide.py): Yuno merchant data, about $17B annual volume across 50 merchants, +2 pts with a second provider on the same rail, +1 more with a third, flat beyond three. INTERNAL: say 'what we see across our merchants'. Renewal approval per cycle 83% first attempt to 86% after retries: Subscriptions engine, Control Center, 31 Aug 2026 (16 merchants, 135K active subscriptions); INTERNAL, Daniel Lozano's OK before it goes out in writing.\n"
+        "Band: 1% of Autodesk's $6.74B FY26 subscription revenue is about $67M; arithmetic on their public number, not a forecast. Say 'illustrative' every time.\n"
+        "Coverage, if asked: every method on Autodesk's store pages is in Yuno's published payment-type list (docs.y.uno/reference/payment-type, snapshot 22 Oct 2026): ACH_PLAID (Adyen, Stripe), ACH, SEPA, IDEAL, BACS, PIX, BOLETO, UPI, ZIP, APPLE_PAY, GOOGLE_PAY, PAYPAL, 7ELEVEN, LAWSON, FAMILY_MART, PAY_EASY (Adyen). Not in the list: India net banking as a method, and Paytm; CCAvenue appears as a card connection only. Yuno never holds the money: docs, how Yuno works."),
     'renew': (
         "Illustrative renewal: $260 is AutoCAD's US monthly list price (Autodesk product page snapshot, Oct 2026). Values and processors are fictional.\n"
         "Routing: conditions on amount, country, issuer country, card type, brand, BIN, currency, installments and transaction type (CIT, MIT, RECURRING); per-step outputs for declines, decline groups, timeouts and errors with a next step; percentage splits; Smart Routing optimizes conversion and cost or latency (docs.y.uno routing pages). CONFIRMED.\n"
@@ -242,7 +237,7 @@ NOTES = {
         "Figures: 'up to a 7% uplift in approval rates' and '30%' recovered revenue are on y.uno (read 26 Oct 2026). Never quote any other uplift number."),
     'subs': (
         "Figures 300K+ / $15M a month / 1.2M+ / 30+ were taken off the slide on 26 Oct (read as a Head of Payments they look small next to Autodesk's roughly $560M a month of subscription revenue). If asked for scale, quote the orchestration layer ($100B+ TPV, published) and say the engine is newer; the internal figures (Daniel Lozano, 1 Sep 2026; HBO Max deck) only with Daniel's OK.\n"
-        "Fit tiles: 'Keep an external billing engine: if Stripe Billing already owns your plans, invoices and dunning, Yuno can process every charge while Stripe stays the subscription engine' (docs subscriptions index and the Stripe Billing page: Yuno executes first charge, renewals, retries, refunds and reports back). Smart Retries 'up to six attempts with a default, smart, or custom schedule, a stop on hard declines' (docs automation page). Published results: y.uno/en/success-stories, read 26 Oct 2026 (Open English, SaaS: 'increase approval rates, reduce time-to-market, unify payment processing'; inDrive: '90% payment approval rate', '10 new countries in under eight months'; Livelo: 'recovered 50% of transactions'). Reference calls: German arranges them through the customer success team.\n"
+        "Fit tiles: 'Keep an external billing engine: if Stripe Billing already owns your plans, invoices and dunning, Yuno can process every charge while Stripe stays the subscription engine' (docs subscriptions index and the Stripe Billing page: Yuno executes first charge, renewals, retries, refunds and reports back). Smart Retries 'up to six attempts with a default, smart, or custom schedule, a stop on hard declines' (docs automation page). The 'published results' box (Open English, inDrive, Livelo from y.uno/en/success-stories) was replaced the same night at German's ask by 'what we would measure with you'; the cases stay available for the conversation: Open English (SaaS) 'increase approval rates, reduce time-to-market, unify payment processing'; inDrive '90% payment approval rate', '10 new countries in under eight months'; Livelo 'recovered 50% of transactions'.\n"
         "Flow (26 Oct evening, German: no logos, illustrate the process): define the plan (phases, price per country, meters: y.uno/product/subscriptions) > subscribe once (credential in the vault: docs vault pages) > bill every cycle (renewal routed like a first purchase, routing rules and PSP fallback: y.uno subscriptions page) > recover declines (Smart Retries with hard-decline stop and retry cap, retry through a different PSP; account updater and network tokens on the same vaulted token: docs) > notify and measure (webhooks on every transition, subscription analytics: y.uno). Mandates for SEPA and ACH are stored in the vault per docs; Pix Automático per the subscriptions page.\n"
         "Autodesk: subscription revenue $6.74B of $7.21B in FY26 (Form 10-K); monthly plans sold only directly; annual plans renewed directly under the new transaction model. PUBLIC.\n"
         "Engine on the orchestration: each renewal is routed like a first purchase, with routing rules, PSP fallback, vaulted credentials and local rails (y.uno/product/subscriptions, read 26 Oct 2026)."),
@@ -264,7 +259,8 @@ NOTES = {
         "Subscriptions: y.uno/product/subscriptions, read 26 Oct 2026: phases (trial, intro, regular) with their own length and frequency, prices per country, Smart Retries with hard-decline stop and retry cap, retry through a different PSP, A/B tests, meters for usage-based billing, cards, Apple Pay, Google Pay, PayPal and Pix Automático in one subscription object, Stripe Billing kept as the billing engine or a Stripe-compatible endpoint. Not offered: invoicing, tax, credit notes, end-customer dunning emails, revenue recognition; if Autodesk asks for a full billing engine, say so.\n"
         "3DS: own connection 'Yuno 3DS', Netcetera default; 3DS Standalone returns ECI and CAVV with no provider involved (docs). SCA applies to customer-initiated payments; merchant-initiated renewals are out of SCA scope once the mandate is set up with authentication.\n"
         "Reconciliation: 'Reconciliations against provider settlement files' on the docs automation page; Insights on y.uno. Scope per provider is confirmed during the evaluation.\n"
-        "Payments Concierge, agentic commerce, stablecoins, banking connectivity: product names on y.uno (read 26 Oct 2026); banking connectivity per docs (accounts, balances, transfers)."),
+        "Payments Concierge, agentic commerce, stablecoins, banking connectivity: product names on y.uno (read 26 Oct 2026); banking connectivity per docs (accounts, balances, transfers).\n"
+        "Multi-entity management (card 1 since 26 Oct night, replacing agentic commerce at German's ask): organization > account groups > accounts > users with roles; 'This structure allows you to separate business logic, regions, or business lines for the same merchant' (docs B2B organization management). The automation APIs for creating groups, accounts and users need the whitelabel property on the organization (docs note); the structure itself and the dashboard roles are standard. Autodesk's sellers of record per its own terms pages: Autodesk Inc, Autodesk Ireland Operations, Autodesk India Online Store, Autodesk Ltd Japan, Autodesk Australia Pty Ltd; Brazil and Mexico entities not fetched."),
     'ask': (
         "Added 26 Oct evening after reading the deck as Autodesk's Head of Payments: the deck ended on a logo wall with no ask. Products separate and priced separately: pricing policy (Finance). 'Within your timeline' and 'reference calls on request' are commitments German owns; adjust before sending. German is in San Francisco through November; Autodesk HQ is One Market."),
     'close': (
