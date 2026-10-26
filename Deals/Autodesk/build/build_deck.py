@@ -18,9 +18,9 @@ S = {  # slide ids (preserved by the Drive copy of 1hrBLCF...)
     'proven': 'h6032acb876a0077a_1_0', 'team': 'h6032acb876a0077a_1_974', 'trusted': 'h7c266de662ba1cf0_9_611',
     # new slides, drawn from the chrome of vlt_versus
     'orch': 'ad_orch', 'renew': 'ad_renew', 'subs': 'ad_subs', 'depth': 'ad_depth', 'beyond': 'ad_beyond', 'close': 'ad_close',
-    'team2': 'h4674785995ee081b_0_1058'}   # team slide German pasted in by hand on 26 Oct evening (not the OnlyFans 'team' id)
+    'team2': 'h4674785995ee081b_0_1058', 'ask': 'ad_ask'}   # team slide German pasted in by hand on 26 Oct evening (not the OnlyFans 'team' id)
 BASE = 'versus'   # chrome donor for the new slides (kicker 322x14, title 648x54, page number, wordmark)
-ORDER = ('cover', 'exec', 'today', 'orch', 'renew', 'subs', 'cards', 'port', 'beyond', 'proven', 'team2', 'trusted')   # 26 Oct evening: German removed 'close' by hand (twice, keep it out) and pasted a team slide before trusted; m5 and depth cut
+ORDER = ('cover', 'exec', 'today', 'orch', 'renew', 'subs', 'cards', 'port', 'beyond', 'proven', 'team2', 'trusted', 'ask')   # 26 Oct evening: German removed 'close' by hand (twice, keep it out) and pasted a team slide before trusted; m5 and depth cut
 WALL_URL = ''     # logo wall PNG (companies billing recurring payments through Yuno), anyone-reader on Drive
 try:
     WALL_URL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'SUBS_WALL_URL.txt')).read().strip()
@@ -206,6 +206,7 @@ def draw_orch(p):
     p.card(36, 302, 648, 38, fill=PANEL, line=None)
     p.shape(36, 302, 2, 38, 'RECTANGLE', BLUE, None)
     p.text(50, 302, 620, 38, c['band'], size=9.5, color=INK, valign='MIDDLE', bold_color=DEEP)
+    p.text(36, 345, 648, 20, c['coverage'], size=7.5, color=INK, ls=108, bold_color=DEEP)
     p.text(36, SRC_Y, 640, 12, c['src'], size=6.5, color=GREY)
 
 
@@ -261,13 +262,13 @@ def draw_subs(p):
     """Stats row, then the subscription engine as a five-step flow on the orchestration band (no logo wall, 26 Oct evening)."""
     c = C.SUBS
     T0 = TOP - 8   # one-line title
-    for i, (v, l) in enumerate(c['stats']):
-        x = 36 + i * 164
-        p.card(x, T0, 156, 40, fill=PANEL, line=None)
-        p.text(x + 10, T0 + 4, 72, 32, v, size=16, color=BLUE, weight=600, valign='MIDDLE')
-        p.text(x + 82, T0 + 5, 70, 30, l, size=6.5, color=BODY, ls=105, valign='MIDDLE')
-    p.label(36, T0 + 50, 420, c['flow_h'], color=GREY, size=7)
-    B = T0 + 64
+    for i, (tt, body) in enumerate(c['fit']):
+        x = 36 + i * 328
+        p.card(x, T0, 320, 44, fill=PANEL, line=None)
+        p.text(x + 12, T0 + 5, 296, 12, tt, size=8, color=DEEP, weight=600)
+        p.text(x + 12, T0 + 18, 296, 24, body, size=6.5, color=INK, ls=106)
+    p.label(36, T0 + 54, 420, c['flow_h'], color=GREY, size=7)
+    B = T0 + 68
     for i, (n, tt, d, tag) in enumerate(c['steps']):
         x = 36 + i * 132; w = 120
         p.card(x, B, w, 96)
@@ -304,6 +305,23 @@ def draw_depth(p):
     p.line(126, 356, 126, 372, '#7C89EF', 0.75)
     for j, (t, sub) in enumerate(c['enabled']):
         p.text(140 + j * 185, 352, 180, 24, f'**{t}**  ' + sub, size=7.5, color=LAV, valign='MIDDLE', bold_color=WHITE)
+
+
+def draw_ask(p):
+    """Closing slide, 26 Oct evening: three asks on cards, then the contact band."""
+    c = C.ASK
+    T0 = TOP - 8
+    for i, (k, tt, d) in enumerate(c['cards']):
+        x = 36 + i * 220; w = 208
+        p.card(x, T0, w, 148)
+        p.shape(x, T0, w, 3, 'RECTANGLE', BLUE, None)
+        p.text(x + 14, T0 + 16, w - 28, 10, k, size=7, color=BLUE, weight=600)
+        p.text(x + 14, T0 + 32, w - 28, 18, tt, size=12, color=INK, weight=600)
+        p.text(x + 14, T0 + 58, w - 28, 80, d, size=8.5, color=BODY, ls=115)
+    y = 300   # sign-off band at the foot of the slide, like the house closing slides
+    p.card(36, y, 648, 56, fill=BLUE, line=None)
+    p.text(52, y, 300, 56, c['band'], size=14, color=WHITE, weight=600, valign='MIDDLE', bold_color=WHITE)
+    p.text(380, y, 292, 56, c['contact'], size=8, color=WHITE, align='END', valign='MIDDLE', ls=120)
 
 
 def draw_beyond(p):
