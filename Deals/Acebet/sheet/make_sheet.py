@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Acebet proposal explainer workbook (27-oct-2026): 4 tabs, live formulas, house format. Upload as xlsx -> Google Sheet."""
 import sys; sys.path.insert(0, '../build')
-from model import CUTS, RATES, PLATFORM
+from model import CUTS, RATES, PLATFORM, var, total
+TX = 680000; V, T = var(TX), total(TX)
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 NAVY, F = '10284A', 'Roboto'
@@ -32,14 +33,14 @@ S = [
  ('What they want', 'Split volume across several acquirers by fixed percentages, cascade declines, add acquirers fast.', 'Leverage on price and redundancy. Approval on Breeze is already in the 90s, so this is not an uplift sale.'),
  ('Volume basis', 'About 680,000 successful transactions a month, average ticket about $33.', 'Real last 30 days: 678,498 deposits, $22.77M, all on Breeze (internal data; never cite it to the client). Boris said ~700K and ~$25M.'),
  ('Pricing structure', f'Platform fee ${PLATFORM:,}/month flat + a rate per successful transaction in 4 tranches.', 'Tranche (ladder) pricing: each tranche billed at its own rate within the month, so the average falls as volume grows.'),
- ('Tranches', ' / '.join(f'{"0" if i == 0 else f"{CUTS[i-1]+1:,}"} to {CUTS[i]:,}: ${RATES[i]:.3f}' if CUTS[i] else f'above {CUTS[i-1]:,}: ${RATES[i]:.3f}' for i in range(4)), 'Top tranche sits at Spreedly\'s quoted ~1.5 cents: upside as they open Canada, Australia, France, Spain.'),
- ('Today\'s bill', 'See tab Calculator: $17,300 usage + $10,000 platform = $27,300 a month ($327,600 a year).', 'Usage average $0.025 per transaction (the "2.5 cents" target). All-in with platform fee: $0.040.'),
+ ('Tranches', ' / '.join(f'{"0" if i == 0 else f"{CUTS[i-1]+1:,}"} to {CUTS[i]:,}: ${RATES[i]:.3f}' if CUTS[i] else f'above {CUTS[i-1]:,}: ${RATES[i]:.3f}' for i in range(4)), 'Target (German, 27-Oct): about 3 cents all-in at today\'s volume, platform fee included. Top tranche $0.010 = pricing policy floor (internal).'),
+ ('Today\'s bill', f'See tab Calculator: ${V:,.0f} usage + ${PLATFORM:,} platform = ${T:,.0f} a month (${T*12:,.0f} a year).', f'All-in ${T/TX:.4f} per transaction (the 3-cent target); ${V/TX:.4f} before the platform fee.'),
  ('Billing rules', 'Charged only on approved transactions. A retried or cascaded payment counts once. Declines cost nothing. No setup fee.', 'Matches what was promised on the call (retries charged once when accepted).'),
  ('Included', 'Orchestration and rules engine; volume split, cascading, retries; monitors and failover; hosted fields, SDKs, sandbox; new provider connections maintained by Yuno; dashboard and insights; KAM, TAM, solutions engineer.', '"Every acquirer you add is a routing change, not a new fee."'),
- ('Not included (pending review)', 'Payouts (redemptions) and reconciliation across Breeze, Coinflow, Whop and Checkout.', 'Boris showed interest in reconciliation; payouts relevant because Whop payouts are buggy. Price later.'),
- ('Terms', 'Rates locked, tranches reviewed annually. Pricing valid 30 days, subject to final agreement.', 'Term length and minimums not stated yet.'),
- ('Competitive frame', 'PaymentIQ ~$0.04/trx, Spreedly ~$0.015/trx (as quoted by Boris). See tab Vs competitors.', 'Our usage average ($0.025) sits between them; all-in ($0.040) equals PaymentIQ. Unknown whether their quotes include platform fees: ask.'),
- ('Open risks (internal)', 'Pricing approval (Justo + Salesforce). Wallet cascading across MoRs to confirm with Ben Lee. 2-week acquirer SLA not in writing yet. Whop needs a provider ticket. Legal check on Cyprus entity.', 'Policy floor is $0.01 per transaction; top tranche $0.015 is above it.'),
+ ('Not included (pending review)', 'Reconciliation across Breeze, Coinflow, Whop and Checkout, for further review.', 'Boris showed interest in reconciliation; scope and price later. Payouts removed from the proposal.'),
+ ('Terms', '36-month contract. Rates locked, tranches reviewed annually. Pricing valid 30 days, subject to final agreement.', 'Minimums and billing start date not stated yet.'),
+ ('Competitive frame', 'PaymentIQ ~$0.04/trx, Spreedly ~$0.015/trx (as quoted by Boris). See tab Vs competitors.', f'Our all-in (${T/TX:.3f}) sits between them; usage only (${V/TX:.3f}) matches Spreedly. Unknown whether their quotes include platform fees: ask.'),
+ ('Open risks (internal)', 'Pricing approval (Justo + Salesforce). Wallet cascading across MoRs to confirm with Ben Lee. 2-week acquirer SLA not in writing yet. Whop needs a provider ticket. Legal check on Cyprus entity.', 'Policy floor is $0.01 per transaction; tranche 4 sits on it and tranche 3 ($0.011) just above.'),
 ]
 for i, r in enumerate(S, 2): row(ws, i, r)
 ws.freeze_panes = 'B2'

@@ -6,8 +6,8 @@ volume, the top tranche at Spreedly's ~1.5 cents so the rate falls as Acebet exp
 TX = 680_000                 # successful transactions / month: last 30 days to 27-oct-2026 = 678,498 deposits, $22.77M (internal data via German), rounded; Boris said ~700K
 TPV = 22_770_000             # last 30 days (Boris said ~$25M); avg deposit $33.42 on Breeze
 PLATFORM = 10_000
-CUTS = [240_000, 500_000, 1_000_000, None]          # upper bound of each tranche; None = no cap
-RATES = [0.030, 0.025, 0.020, 0.015]
+CUTS = [500_000, 1_000_000, 2_000_000, None]   # v3 (German, 27-oct): 0-500K / 500K-1M / 1M-2M / 2M+          # upper bound of each tranche; None = no cap
+RATES = [0.016, 0.013, 0.011, 0.010]          # all-in ~$0.030 at 680K incl. $10K platform (German target); $0.010 = policy floor
 GROWTH = [680_000, 1_000_000, 1_500_000, 2_000_000]  # illustrative volumes, not forecasts
 def bands(tx):
     out, lo = [], 0
