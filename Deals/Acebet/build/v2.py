@@ -143,8 +143,8 @@ def price(s):
     s.text(314, y + 44, 90, 24, 'Total', size=8.5, color=DEEP, weight=600, valign='MIDDLE')
     s.text(404, y + 44, 50, 24, f'${TOT:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
     s.text(452, y + 44, 48, 24, f'${TOT*12:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
-    s.text(310, 282, 190, 30, c3(TOT / TX), size=26, color=BLUE)
-    s.text(310, 316, 190, 30, f'all-in per successful transaction, platform fee included; {c3(V/TX)} before the platform fee.', size=7.5, color=BODY, spacing=108)
+    s.text(310, 282, 190, 30, c3(V / TX), size=26, color=BLUE)
+    s.text(310, 316, 190, 30, f'average per successful transaction before the platform fee; {c3(TOT/TX)} all-in.', size=7.5, color=BODY, spacing=108)
     # right: growth (usage only, monthly and annual)
     s.rect(524, 84, 160, 276, fill=BLUE)
     s.text(536, 96, 140, 9, 'AS ACEBET GROWS', size=7, color=WHITE, weight=600)
@@ -153,7 +153,7 @@ def price(s):
         y = 140 + i * 50
         s.rect(536, y - 4, 136, 0.5, fill=LAV)
         s.text(536, y + 2, 80, 12, f'{t:,}' + (' today' if i == 0 else ''), size=8, color=LAV)
-        s.text(536, y + 16, 80, 20, f'${var(t) / t:.4f}', size=15, color=WHITE, weight=600)
+        s.text(536, y + 16, 80, 20, c3(var(t) / t), size=15, color=WHITE, weight=600)
         s.text(596, y + 14, 76, 24, f'${var(t):,.0f}/mo\n${var(t)*12:,.0f}/yr', size=7, color=LAV, align='END', valign='MIDDLE', spacing=110)
     source(s, '36-month contract. Pricing valid for 30 days, subject to final agreement.')
 
