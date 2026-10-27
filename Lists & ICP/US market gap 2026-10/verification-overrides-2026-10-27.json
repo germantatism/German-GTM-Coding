@@ -1,0 +1,497 @@
+{
+"Cover Genius": {
+"fit": "5",
+"conf": "High",
+"score": "78",
+"note": "privacy policy lists Adyen, Stripe and Braintree as sub-processors; NYC HQ; claims paid in 90+ currencies. Caveat: insurtech selling inside partner checkouts, confirm it is merchant of record for premiums before pitching.",
+"industry": "Insurance (embedded travel insurance)"
+},
+"MarketWise": {
+"fit": "5",
+"conf": "High",
+"score": "76",
+"note": "Zuora case (2025) quotes MarketWise: 'orchestrating payments across multiple processors, cost control and authorization rate optimization', 12 brands, Zuora Fraud Protection live; FY2025 10-K cites card processors (plural) and chargeback-driven fee increases. US-only, so the win is multi-processor consolidation plus subscription recovery, not expansion."
+},
+"LegalZoom": {
+"fit": "4",
+"conf": "High",
+"score": "68",
+"note": "Chargebee customer page confirms Adyen and Vantiv as gateways under Chargebee, 1.8M subscribers migrated off a 20-year homegrown system, 'substantial increase in payment approval rates' from the migration alone. US-only; vault plus routing and retries across two acquirers is the pitch."
+},
+"Virgin Voyages": {
+"fit": "4",
+"conf": "High",
+"score": "66",
+"note": "PayPal case study (30 Jun 2026): 'take on new processors and new acquirers', PayPal Enterprise Payments (Braintree) with ~$240M processed since launch, 12x YoY on PayPal. Plantation FL HQ. Multi-processor by design, USD/GBP/AUD deposits and balances."
+},
+"Groupon": {
+"fit": "4",
+"conf": "High",
+"score": "70",
+"note": "Groupon logo confirmed on adyen.com/customers; FY2024 10-K: localized sites in 13 countries and 'difficulties in integrating with local payment providers'. Merchant remittances and refunds across 13 countries. Chicago HQ.",
+"industry": "Online Marketplaces"
+},
+"Dollar Shave Club": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "dollarshaveclub.com runs on Shopify with Shop Pay today (checked 27-Oct-2026), so the Adyen customer-wall listing is stale and the stack is Shopify Payments captive. Fails the own-contracts gate."
+},
+"Conde Nast": {
+"fit": "4",
+"conf": "Med",
+"score": "62",
+"note": "Chargebee customer page confirms Chargebee Billing and Retention for Vogue, Wired, The New Yorker; no gateways named; exec quote 'even a basis point is significant'. Multi-country editions make it a recurring plus multi-entity reconciliation play."
+},
+"ActiveCampaign": {
+"fit": "3",
+"conf": "Low",
+"note": "Zuora case is about Zuora AI for billing ops; it names no gateway or processor and no payments detail, so the multi-processor claim is unverified. Keep as a self-serve global SaaS lead only."
+},
+"TaskRabbit": {
+"fit": "4",
+"conf": "High",
+"score": "58",
+"note": "TaskRabbit blog (Aug 2025, updated Jul 2026): 'Taskrabbit processes payments through Stripe', Tasker payouts in 1 to 3 days via Stripe. Single-PSP concentration across 8 to 9 countries; IKEA-owned, decision may sit in Sweden."
+},
+"Hilton Grand Vacations": {
+"fit": "4",
+"conf": "Med",
+"score": "64",
+"note": "HGV privacy policy confirms owners in Japan and other non-US regions pay through third-party financial providers in local currency; recurring dues, HOA fees and loan payments across HGV, Diamond and Bluegreen member bases. Processor undisclosed."
+},
+"Marriott Vacations Worldwide": {
+"fit": "4",
+"conf": "Med",
+"score": "60",
+"note": "Separate public company from Marriott International (which is on your lists); seven club brands plus Interval International in 90+ countries, recurring dues. Processor undisclosed.",
+"industry": "Travel & Online Agencies (OTAs)"
+},
+"Waymo": {
+"fit": "5",
+"conf": "Med",
+"score": "72",
+"rec": "Add to Core ICP, owner Samuel (active vault RFP)",
+"note": "Already an active Yuno pursuit (token vault RFP, Samuel owns follow-up) but absent from every list; listed so the Core ICP tab reflects it. Six international launches announced."
+},
+"Cimpress (Vista / Vistaprint)": {
+"fit": "3",
+"conf": "Med",
+"note": "Cimpress plc is headquartered in Dundalk, Ireland; Vista's US operations are in Boston. Fails the North America decision-center gate unless the Vista segment buys on its own. Five acquired segments on separate stacks is real, but treat as EMEA-led."
+},
+"Tesla (Supercharging and in-app subscriptions)": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, in-house builder",
+"note": "Stack opaque and almost certainly in-house; Tesla builds its own payment rails. Not a realistic orchestration buyer."
+},
+"Mozio": {
+"fit": "3",
+"conf": "Low",
+"note": "Small private marketplace; payout evidence is a 2017 Payoneer post. Keep as a bank lead."
+},
+"SurveyMonkey": {
+"drop": true
+},
+"Take-Two (Rockstar/2K)": {
+"drop": true
+},
+"Allegiant / Sun Country": {
+"drop": true
+},
+"eToro US": {
+"drop": true
+},
+"Moomoo (Futu)": {
+"drop": true
+},
+"Pocket FM": {
+"drop": true
+},
+"Secretlab": {
+"drop": true
+},
+"G2A": {
+"drop": true
+},
+"Eneba": {
+"drop": true
+},
+"FTMO": {
+"drop": true
+},
+"FundedNext": {
+"drop": true
+},
+"Sweat": {
+"drop": true
+},
+"Current": {
+"drop": true
+},
+"MoonPay": {
+"drop": true
+},
+"CoreWeave": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, invoiced B2B",
+"note": "Cloud capacity is sold on contracts and invoices; self-serve card volume is small. Not an orchestration buyer."
+},
+"Oura": {
+"fit": "4",
+"conf": "Med",
+"score": "60",
+"note": "ouraring.com checkout is its own platform with Braintree plus Klarna and Affirm scripts (checked 27-Oct-2026), not Shopify; membership subscription on top of hardware across 30+ countries; IPO preparation reported in your 2026 bank. Re-verify IPO status."
+},
+"Carvana": {
+"fit": "3",
+"conf": "Low",
+"note": "US-only; most volume is auto financing and ACH, not card-not-present at scale. Narrow angle."
+},
+"Snyk": {
+"fit": "3",
+"conf": "Low",
+"note": "Developer security SaaS; most revenue is enterprise contracts, self-serve card share small. Narrow angle."
+},
+"WorkOS": {
+"fit": "3",
+"conf": "Low",
+"note": "Usage-based developer SaaS, mostly invoiced at scale. Narrow angle."
+},
+"Peek": {
+"fit": "3",
+"conf": "Low"
+},
+"Bloom Nutrition": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "bloomnu.com runs on Shopify with Shop Pay (checked 27-Oct-2026); Shopify Payments captive."
+},
+"Caraway": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "carawayhome.com runs on Shopify with Shop Pay (checked 27-Oct-2026)."
+},
+"Cuts Clothing": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "cutsclothing.com runs on Shopify with Shop Pay (checked 27-Oct-2026)."
+},
+"Cymbiotika": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "cymbiotika.com runs on Shopify with Shop Pay (checked 27-Oct-2026)."
+},
+"Dossier": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "dossier.co runs on Shopify with Shop Pay (checked 27-Oct-2026)."
+},
+"Goli Nutrition": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "goli.com runs on Shopify with Shop Pay, Klarna and Afterpay (checked 27-Oct-2026)."
+},
+"Gruns": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "gruns.co runs on Shopify with Shop Pay (checked 27-Oct-2026)."
+},
+"Momentous": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "livemomentous.com runs on Shopify with Shop Pay (checked 27-Oct-2026)."
+},
+"Pair Eyewear": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "paireyewear.com runs on Shopify with Shop Pay and Klarna (checked 27-Oct-2026)."
+},
+"Ritual": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "ritual.com runs on Shopify with Shop Pay (checked 27-Oct-2026)."
+},
+"Signos": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "signos.com runs on Shopify (checked 27-Oct-2026)."
+},
+"Learner": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, too small"
+},
+"Pray.com": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, app-store led"
+},
+"Sunnyside": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, too small"
+},
+"Nutrisense": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, too small"
+},
+"Sling Money": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, too small and a money transmitter"
+},
+"Linden Lab (Second Life)": {
+"fit": "2",
+"conf": "Med",
+"rec": "Skip, locked to Thunes"
+},
+"Signet Jewelers": {
+"fit": "4",
+"conf": "High",
+"score": "66",
+"note": "FY2026 10-K confirms US, Canada (Peoples), UK and Ireland banners (Kay, Zales, Jared, Diamonds Direct, Banter, Rocksbox, James Allen, Blue Nile, H.Samuel, Ernest Jones) and that jamesallen.com is being sunset in H1 FY2027. Nine banners on separate checkouts in four countries; card processor undisclosed. Note: Bermuda-domiciled, operating HQ Akron OH."
+},
+"Deckers Brands": {
+"fit": "4",
+"conf": "High",
+"score": "70",
+"note": "FY2026 10-K (year ended 31 Mar 2026): 'we operate Company-owned e-commerce websites in 54 different countries', 203 company-owned stores (141 UGG, 62 HOKA). Processor undisclosed. Goleta CA HQ. Multi-market DTC at scale with one US finance team."
+},
+"Somnigroup International": {
+"fit": "4",
+"conf": "High",
+"score": "68",
+"note": "FY2025 10-K confirms 'approximately 30 e-commerce platforms', Direct channel 63.5% of net sales after the Mattress Firm acquisition (closed 5 Feb 2025), consumers in over 100 countries, reliance on third-party 'payment systems' for the Direct channel. Processor undisclosed."
+},
+"Angi Inc.": {
+"fit": "4",
+"conf": "High",
+"score": "64",
+"note": "FY2025 10-K confirms International segment in Europe and Canada (HomeStars, MyBuilder, MyHammer, Travaux, Werkspot; Austria and Italy); consumers pay on the Angi platform and Pros pay referral fees. Card processing fee line and Pro payouts in the 10-K financial sections not re-read. Denver HQ."
+},
+"1-800-Flowers.com": {
+"fit": "4",
+"conf": "Med",
+"score": "58",
+"note": "US-only but a dozen acquired brands on one P&L (Harry & David, PersonalizationMall, Shari's Berries), Passport membership renewals and BloomNet florist settlements; Paze accepted at checkout; processor undisclosed."
+},
+"Heritage Auctions": {
+"fit": "4",
+"conf": "Med",
+"score": "56",
+"note": "$2.16B 2025 sales (fifth record year), offices in 7 countries, buyer payments plus consignor settlements on an in-house platform. Private, Dallas. Processor undisclosed."
+},
+"DigiKey Electronics": {
+"fit": "3",
+"conf": "Low",
+"note": "B2B electronics distributor; many card orders in 180+ countries but mostly business buyers and invoiced accounts; stack undisclosed. Narrow angle."
+},
+"RH": {
+"fit": "4",
+"conf": "Med",
+"score": "58",
+"note": "US core plus Europe rollout (UK, Germany, Belgium, Spain, France, Italy next) adds per-country acquiring and membership renewals; high-ticket declines matter. Processor undisclosed."
+},
+"Wonder Group": {
+"fit": "4",
+"conf": "Med",
+"score": "60",
+"note": "Three acquired businesses on three stacks: Grubhub (PayPal Braintree per PayPal case studies, with restaurant and driver payouts), Blue Apron recurring billing, Wonder app. US-only. Note Grubhub itself is on your lists; Wonder is the parent since Nov 2024."
+},
+"Equinox Group": {
+"fit": "4",
+"conf": "Med",
+"score": "56",
+"note": "Recurring dues across US, Canada and UK clubs plus SoulCycle and Equinox+; private, PE pressure. Processor undisclosed."
+},
+"Major League Baseball (MLB Advanced Media, Tickets.com)": {
+"fit": "4",
+"conf": "Med",
+"score": "60",
+"note": "MLB.TV sold globally since 2003 plus Tickets.com club ticketing; two stacks (MLBAM subscriptions, Tickets.com settlements to clubs). Processor undisclosed.",
+"industry": "Event & Travel Ticketing"
+},
+"National Basketball Association (NBA League Pass)": {
+"fit": "4",
+"conf": "Med",
+"score": "62",
+"note": "International League Pass billing already stitched across carrier-billing partners (PM Connect in Europe and Africa, airG) plus cards; local wallets and debit in LatAm and India are the gap. Processor undisclosed."
+},
+"Mammoth Brands (formerly Harry's Inc.)": {
+"fit": "2",
+"conf": "High",
+"rec": "Skip, Shopify-captive storefront",
+"note": "harrys.com runs on Shopify with Shop Pay (checked 27-Oct-2026); the group's DTC brands are Shopify Payments captive."
+},
+"Manscaped": {
+"fit": "3",
+"conf": "Low",
+"note": "39 countries and subscriptions are real, but the storefront blocked the platform check and the processor is undisclosed; re-verify before promoting."
+},
+"BFA Industries (Ipsy, BoxyCharm)": {
+"fit": "3",
+"conf": "Low",
+"note": "US-centric low-ticket monthly renewals; stack undisclosed; subscription-engine angle only."
+},
+"Cimpress (Vistaprint)": {
+"drop": true
+},
+"Crumbl": {
+"fit": "3",
+"conf": "High",
+"note": "Stripe case study confirms Stripe across 1,100 franchise locations; Mexico expansion; US-centric and franchise-held economics. Single-PSP angle only."
+},
+"PVH Corp (Calvin Klein, Tommy Hilfiger)": {
+"fit": "4",
+"conf": "Med",
+"score": "70",
+"note": "Added by Claude after the sweeps (no agent covered it): NYC HQ, company-run e-commerce for two brands across North America, Europe and Asia on Salesforce Commerce Cloud (usa.tommy.com shows Demandware markers, 27-Oct-2026). No public processor evidence found in one search; confirm stack via job posts before outreach.",
+"industry": "Luxury Goods & Fashion"
+},
+"Capri Holdings (Michael Kors, Jimmy Choo)": {
+"fit": "4",
+"conf": "Low",
+"score": "64",
+"note": "Added by Claude after the sweeps: Michael Kors e-commerce in the US, Canada, EMEA and Asia; Americas replatform in Jul 2023 hurt results (Capri Q2 FY2024 release). Processor not found in one search. BVI-incorporated with NYC operations."
+},
+"Patagonia": {
+"fit": "3",
+"conf": "Low",
+"note": "Added by Claude after the sweeps: regional company-run sites (US, Canada, EU per country, Japan, Australia); EU payment pages show issuer-side authentication handling. Private and opaque; processor unknown."
+},
+"Care.com": {
+"score": "58",
+"industry": "Online Marketplaces"
+},
+"Bright Horizons Family Solutions": {
+"score": "56"
+},
+"Enova International": {
+"score": "56",
+"industry": "Other (consumer lending)"
+},
+"Upbound Group": {
+"score": "56",
+"industry": "Other (lease-to-own, cash advance)"
+},
+"Strategic Education": {
+"score": "52"
+},
+"Blink Charging": {
+"score": "52"
+},
+"World Travel Holdings": {
+"score": "54"
+},
+"Pursuit Attractions and Hospitality": {
+"score": "50"
+},
+"WorldStrides": {
+"score": "50",
+"industry": "Travel & Online Agencies (OTAs)"
+},
+"arrivia": {
+"score": "48"
+},
+"Apex Trader Funding": {
+"fit": "4",
+"conf": "Low",
+"score": "54",
+"note": "From your 2026 bank: prop-trading evaluation fees plus large trader payouts ($65M in 90 days per your note); Austin TX; card-only pay-ins in a high-risk MCC. Re-verify volume."
+},
+"TickPick": {
+"score": "52"
+},
+"Boatsetter": {
+"fit": "3",
+"conf": "Low"
+},
+"Curology": {
+"fit": "3",
+"conf": "Med",
+"note": "curology.com is its own platform (not Shopify, checked 27-Oct-2026); Rx skincare subscriptions, US-only; subscription-engine angle."
+},
+"Seed Health": {
+"fit": "3",
+"conf": "Low",
+"note": "Storefront blocked the platform check; subscriptions, US-centric."
+},
+"Spot & Tango": {
+"fit": "3",
+"conf": "Low"
+},
+"Sundays for Dogs": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, too small"
+},
+"Bubble Skincare": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, too small"
+},
+"Jinx": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, too small"
+},
+"Maelys": {
+"fit": "2",
+"conf": "Low",
+"rec": "Skip, too small"
+},
+"Swimply": {
+"fit": "3",
+"conf": "Low"
+},
+"LaunchGood": {
+"fit": "3",
+"conf": "Low"
+},
+"Comun": {
+"fit": "3",
+"conf": "Low"
+},
+"Fomo": {
+"fit": "3",
+"conf": "Low"
+},
+"Pomelo": {
+"fit": "3",
+"conf": "Low"
+},
+"Wonder": {
+"drop": true
+},
+"Life Time": {
+"drop": true
+},
+"MLB (MLB Advanced Media, MLB.TV)": {
+"drop": true
+},
+"NBA (League Pass)": {
+"drop": true
+},
+"IPSY (BFA Industries)": {
+"drop": true
+},
+"Hearst": {
+"fit": "4",
+"conf": "Low",
+"score": "50"
+}
+}
