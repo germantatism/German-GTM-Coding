@@ -106,7 +106,7 @@ def setup(s):
     source(s, 'Provider roles as described by Acebet on the call of 27 Oct 2026.')
 
 
-@slide('price', 'PROPOSAL', f'Platform fee plus usage: about {V/TX*100:.1f} cents today, {RATES[-1]*100:g} cents above 1M')
+@slide('price', 'PROPOSAL', 'Platform fee plus usage')
 def price(s):
     # left: tranches
     s.rect(X0, 84, 250, 276, fill=PANEL)
