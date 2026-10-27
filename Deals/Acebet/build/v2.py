@@ -49,7 +49,7 @@ def slide(key, kicker, headline):
     return deco
 
 
-@slide('heard', 'WHAT WE HEARD', 'Acebet wants leverage and redundancy across acquirers, with room to grow')
+@slide('heard', 'WHAT WE HEARD', 'Acebet wants leverage, redundancy and room to grow')
 def heard(s):
     tiles = [('$25M', 'Monthly volume', 'as shared on our call'),
              ('~700K', 'Transactions a month', '$30 to $50 average ticket'),
@@ -106,7 +106,7 @@ def setup(s):
     source(s, 'Provider roles as described by Acebet on the call of 27 Oct 2026.')
 
 
-@slide('price', 'PROPOSAL', f'Platform fee plus usage: about {V/TX*100:.1f} cents a transaction today, {RATES[-1]*100:g} above 1M')
+@slide('price', 'PROPOSAL', f'Platform fee plus usage: about {V/TX*100:.1f} cents today, {RATES[-1]*100:g} cents above 1M')
 def price(s):
     # left: tranches
     s.rect(X0, 84, 250, 276, fill=PANEL)
@@ -245,7 +245,7 @@ def build(dry):
     for key, sid in HOUSE.items():
         if key == 'cover': continue
         for e in els(pres, sid):
-            if txt(e).isdigit():
+            if txt(e).isdigit() and e.get('transform', {}).get('translateY', 0) / PT > 360:   # page number only, not step labels
                 x = Slide(sid); x.set_text(e['objectId'], str(ORDER.index(key) + 1)); reqs += x.reqs
     final = [HOUSE.get(k) or pages[k] for k in ORDER]
     reqs += [{'deleteObject': {'objectId': sid}} for sid in have if sid not in final]
