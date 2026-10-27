@@ -148,7 +148,7 @@ def price(s):
         s.text(536, y + 2, 80, 12, f'{t:,}' + (' today' if i == 0 else ''), size=8, color=LAV)
         s.text(536, y + 16, 80, 20, c3(var(t) / t), size=15, color=WHITE, weight=600)
         s.text(600, y + 16, 72, 20, f'${var(t):,.0f}/mo', size=7.5, color=LAV, align='END', valign='MIDDLE')
-    source(s, 'Illustrative volumes above today are not forecasts. Pricing valid for 30 days; subject to final agreement.')
+    source(s, '36-month contract. Pricing valid for 30 days, subject to final agreement.')
 
 
 @slide('terms', "WHAT'S INCLUDED", 'Every acquirer Acebet adds is a routing change, not a new fee')
