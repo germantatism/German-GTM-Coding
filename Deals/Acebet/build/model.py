@@ -3,12 +3,12 @@
 Client-reported inputs (Boris, call 27-oct-2026): ~$25M a month, ~700,000 transactions a month, average ticket $30 to $50.
 Pricing (German, 27-oct-2026): $10,000 platform fee + 4 tranches per successful transaction, about 2.5 cents average at today's
 volume, the top tranche at Spreedly's ~1.5 cents so the rate falls as Acebet expands (Canada, Australia, France, Spain)."""
-TX = 700_000                 # successful transactions / month today (reported)
-TPV = 25_000_000             # monthly volume (reported)
+TX = 680_000                 # successful transactions / month: last 30 days to 27-oct-2026 = 678,498 deposits, $22.77M (internal data via German), rounded; Boris said ~700K
+TPV = 22_770_000             # last 30 days (Boris said ~$25M); avg deposit $33.42 on Breeze
 PLATFORM = 10_000
-CUTS = [250_000, 500_000, 1_000_000, None]          # upper bound of each tranche; None = no cap
+CUTS = [240_000, 500_000, 1_000_000, None]          # upper bound of each tranche; None = no cap
 RATES = [0.030, 0.025, 0.020, 0.015]
-GROWTH = [700_000, 1_000_000, 1_500_000, 2_000_000]  # illustrative volumes, not forecasts
+GROWTH = [680_000, 1_000_000, 1_500_000, 2_000_000]  # illustrative volumes, not forecasts
 def bands(tx):
     out, lo = [], 0
     for cut, r in zip(CUTS, RATES):
