@@ -1,73 +1,91 @@
-# Meeting Brief: Yuno <> Acebet (Oct 27, 2026)
+# Meeting Brief: Yuno <> Acebet (Oct 27, 2026) · v2
 
 - **When:** Tuesday Oct 27, 2026, 11:00 to 11:25 PT (25 minutes)
 - **Link:** meet.google.com/xpe-rihd-ybf · phone +1 423-707-2717, PIN 570917024
-- **Organizer:** Melissa Pottenger (Yuno)
+- **Organizer:** Melissa Pottenger (Yuno) · **Lead:** German Tatis
 
-**Objective:** Learn who Boris is and which Acebet entity he speaks for. Map how deposits and payouts run today. Leave with a booked 30-minute working session with Yuno solutions and a KYC/KYB pack (entities, licences, UBOs) moving in parallel.
+**Objective:** Confirm Boris's orchestration plan across Breeze, Coinflow and a third PSP. Show that Yuno already runs Coinflow in production and can add Breeze and a third provider behind one integration. Leave with a technical working session booked this week and the KYC/KYB pack started.
 
-Evidence labels: ✅ verified · ⚠️ inference or unconfirmed (never state in the call) · 🔍 ask in discovery.
+Evidence labels: ✅ verified · ⚠️ inference or unconfirmed (never state in the call) · ❓ ask in discovery.
 
 > ⚠️ **PRE-MEETING ACTIONS**
 >
-> 1. **Boris has not accepted the invite.** borissaidme@gmail.com shows "needs action". Ask Melissa to confirm he is attending and get his surname, title and company email.
-> 2. **Boris is unidentified.** No surname, no LinkedIn match, no public link to Acebet, Golden Frog Inc., 51 Plus One Ltd or Trey Mark Services. Ask Melissa where the lead came from (inbound form, event, referral).
-> 3. **Legal pre-check.** The operating licence is Anjouan. Yuno legal precedent requires the contracting entity to match the KYC'd entity and the licence holder. Post a heads-up in #salesops-legal before the call so there is an answer on appetite before a second meeting.
-> 4. **Agree roles with Sean and Justo.** Suggested split: Melissa or Sean intros, German runs discovery, Justo covers commercial and partners questions.
-> 5. **No company-email domain** exists for Acebet in Gmail or Calendar, so there is no email history to build on.
+> 1. **Ask the integrations squad about Coinflow health.** The Coinflow api-int QA suite in #qa-reports-api-int has failed every morning this week, with 20 to 21 of 64 tests failing on 20 to 27 Oct. Get a one-line status before promising anything on Coinflow. Internal only.
+> 2. **Ask how long a Breeze connector would take.** Breeze is not in Yuno's provider catalog (docs.y.uno provider list). Do not give a timeline on the call without a number from integrations.
+> 3. **Legal pre-check still applies.** Golden Frog Inc. holds an Anjouan licence. Both Breeze and Coinflow act as merchant of record, which may change what Yuno's KYC has to cover ⚠️. Post a heads-up in #salesops-legal.
+> 4. **Boris still has not accepted the invite.** Ask Melissa to confirm he will attend and to share his surname and company email.
+> 5. **Roles:** German leads end to end. Melissa opens with 30 seconds on why she connected us. Sean handles the senior close if needed. Justo covers partners and commercial questions.
 
 ---
 
 # STUDY ZONE
 
+## 0. New context from Melissa (27-Oct, 10:28)
+
+| What Melissa said | What it means for the call |
+|---|---|
+| Boris is **one of the founders** of Acebet | ✅ A decision maker is in the room. Skip the "who decides" questions and go straight to the plan |
+| Acebet is "a large gaming operator **going live with Coinflow**" | Coinflow is not live yet. ❓ Ask the go-live date and what Coinflow covers (cards, wallets, ACH, crypto) |
+| They are **evaluating gateways** and asked for an intro to Yuno | Inbound interest. They want to be sold a solution, not convinced the problem exists |
+| They do **about $20M GMV today** | ❓ Ask per month or per year. Do not assume. It changes the pricing tier entirely |
+| They want to **orchestrate across Breeze, Coinflow and potentially another PSP** | They have already decided to orchestrate. The question is build it themselves or use Yuno |
+| **Breeze and Coinflow are MoR providers**, similar to Xsolla or Coda | Both providers take merchant-of-record liability. Yuno would route between MoRs, not acquirers |
+
+**What we know about each provider**
+
+| Provider | What it is | Status with Yuno |
+|---|---|---|
+| **Coinflow** | Chicago-based payments company. Takes cards and wallets and settles in stablecoins, with chargeback indemnification. $25M Series A in Oct-2025 led by Pantera Capital (blockworks.co) | ✅ **In Yuno's provider catalog** (COINFLOW, docs.y.uno). ✅ **Live in production** with Whop (crypto, US) and Felix Pago (card account-funding). ✅ Partner contract signed, partner manager Melissa Pottenger. ✅ Partner sheet lists Coinflow as accepting **gambling in the US**: Card, Apple Pay, Google Pay, Cash App Pay, ACH, Wire, Crypto. ✅ Coinflow chargeback protection is built into Yuno's iOS SDK (v2.5.0 changelog) |
+| **Breeze** | Merchant of record for games and apps, founded 2022. Handles payments, fraud, chargebacks, tax and compliance through one API, fiat and crypto. Third-party profiles claim over $1B processed a year ⚠️ unverified | ⚠️ **Not in Yuno's provider catalog.** It would be a new connection. ✅ The "breeze" key in Acebet's code is this provider (cards, Amex, Apple Pay, Google Pay, ACH, instant bank on acebet.cc) |
+| **Third PSP candidates** | Partner sheet entries that are signed and accept US gambling | ✅ **Checkout.com** (cards, Apple Pay, Google Pay, PayPal, Venmo, ACH, SEPA, Klarna, card and bank payouts; partner manager Melissa). ✅ **CoinsPaid** (crypto). Coda Payment is an MoR in the sheet but flagged as not accepting gambling, and its contract is unsigned |
+
+**So what for the call:** we are not pitching orchestration as an idea. Boris has already chosen it. Our edge is that one of his two providers already runs live on Yuno. The open risks are Breeze, which needs building, and licence and KYC appetite.
+
 ## 1. TL;DR Battle Card
 
 **Five facts to know cold**
 
-1. ✅ **Two brands, three entities.** acebet.co is the international real-money crypto plus fiat casino and sportsbook, owned by Golden Frog Inc. under Anjouan licence 15831. Payments run through its Cyprus subsidiary, 51 Plus One Ltd. acebet.cc is a US sweepstakes casino run by Trey Mark Services Limited (Cyprus) on the same codebase.
-2. ✅ **The US sweepstakes site is the volume.** About 6.7M visits for acebet.cc (94% US) against about 371K for acebet.co (Germany 62%, US 19%, Spain 7%, France 4%, Canada 2%). SimilarWeb, Sep-2026.
-3. ✅ **Hand-wired cashier with no orchestrator.** Their code shows 13 rail identifiers: Fireblocks and Mesh for crypto, separate rails for cards, Interac, PIX and open banking, Revolut and Wise via peer.xyz, Kinguin gift cards, Zen, PayPal and MassPay payouts, LatAm and India payouts, and Whop rails on the US site. Each provider has its own hosted redirect and its own fee notice.
-4. ✅ **Payouts are the public pain.** About 60% of 105 Trustpilot reviews read are about withdrawal delays, blocked cash-outs or KYC loops. Operator pages promise three different payout timelines.
-5. ✅ **Young and product-led.** They launched in November 2025, added the US sweepstakes site in January 2026 and launched PvP Slot Battles in April 2026. Payout rails for LatAm and India are already in the code ahead of the traffic.
+1. ✅ **Boris is a co-founder** and wants to orchestrate across Breeze, Coinflow and possibly a third PSP. Both providers are merchants of record.
+2. ✅ **Coinflow already runs on Yuno in production** (Whop, Felix Pago), and the partner sheet marks it as accepting US gambling. **Breeze is not in Yuno's catalog yet.**
+3. ✅ **About $20M GMV today** ❓ period unknown. US sweepstakes site acebet.cc has about 6.7M visits a month (94% US). The real-money site acebet.co has about 371K (Germany 62%). SimilarWeb, Sep-2026.
+4. ✅ **Three entities.** Golden Frog Inc. (Anjouan licence 15831) runs acebet.co. 51 Plus One Ltd (Cyprus) manages payments. Trey Mark Services Ltd (Cyprus) runs acebet.cc.
+5. ✅ **Payouts are the public pain.** About 60% of 105 Trustpilot reviews are about withdrawal delays, blocked cash-outs or KYC loops.
 
 **Three hooks, in priority order**
 
-1. **Payouts.** Route SEPA, card payouts, LatAm bank transfers and crypto through one layer with real-time monitoring. Aim at the "up to 10 business days" cases and the conflicting SLAs.
-2. **One integration instead of thirteen.** Each new method or market stops being a new contract, a new redirect and a new fee notice. Routing and failover come with it.
-3. **Fiat and stablecoins in one flow.** They already settle in USDT and USDC on six chains each. Yuno's Stablecoins product can remove the third-party on-ramp step and its player-paid fees.
+1. **"Coinflow is already live on Yuno."** Going live with Coinflow through Yuno means one integration that then reaches Breeze and the third PSP too, instead of a second direct build.
+2. **Routing and failover between MoRs.** Send each transaction to the MoR most likely to approve it, at the best cost. Retry on the other when one declines or goes down.
+3. **One view of payouts and reconciliation** across Breeze, Coinflow and crypto, with real-time monitoring.
 
-**The objection they will raise:** "We built our own cashier. It works, and we can add rails ourselves."
+**The objection he will raise:** "Why not just build the switch between Breeze and Coinflow ourselves?"
+**The answer:** "You can build the first switch in a sprint. Then it needs retries, failover, decline-code mapping, reporting, reconciliation and a third provider. That's the part that never ends. With Yuno, Coinflow is already done, and every provider after it is configuration, not code."
 
-**The answer:** "You have built a lot, and fast. The question is what the next ten rails cost. Yuno sits on top of the providers you already contracted, so nothing gets ripped out. You get routing, retries and monitoring across all of them, and the engineers who maintain redirects go back to building product like Slot Battles."
+**The ask:** a technical working session this week with Yuno solutions, to map Breeze, Coinflow and the third PSP. The KYC/KYB pack starts in parallel.
 
-**The ask:** a 30-minute working session this week with Yuno solutions, plus the KYC/KYB pack started in parallel (entity, licences, UBOs).
-
-**Rapport opener:** "Congrats on Slot Battles. A PvP format on slots is a genuinely different idea. How has it landed since April?" ✅ The launch was 4-Apr-2026, and the operator claimed 1,300 players in its first weeks.
-
----
+**Rapport opener:** "Congrats on going live with Coinflow. What made you pick them?" Or: "Slot Battles is a different idea. How has it landed since April?"
 
 ## 2. Who Is in the Room
 
 | Name | Role | Side | Status / history |
 |---|---|---|---|
-| Boris (surname unknown), borissaidme@gmail.com | Unknown 🔍 | Acebet (assumed) | Invite "needs action". No prior meeting, email or Slack trace ✅ |
-| Melissa Pottenger | Organizer | Yuno | Accepted. Booked the meeting on 26-Oct |
+| Boris (surname unknown), borissaidme@gmail.com | **Co-founder** (per Melissa, 27-Oct) | Acebet | Invite "needs action". No prior meeting, email or Slack trace ✅ |
+| Melissa Pottenger | Organizer; partner manager for Coinflow and Checkout.com | Yuno | Accepted. Booked the meeting on 26-Oct and supplied the context in section 0 |
 | Sean Calabro | Head of North America | Yuno | Accepted. Forwarded the invite to German on 26-Oct with "if you can join" |
 | Justo Benetti | Commercial | Yuno | Accepted |
-| German Tatis | Senior AE | Yuno | Accepted |
+| German Tatis | Senior AE, **leads the call** | Yuno | Accepted |
 
-**Boris, profile.** No profile could be built. Searches for the email handle, for "Boris" with Acebet, Golden Frog, 51 Plus One or Trey Mark, the Acebet LinkedIn company page (which shows four people, one named without a title) and press items all returned nothing. Acebet publishes no executives. LinkedIn was not opened directly because there is no surname to search on.
+**Boris, profile.** Co-founder of Acebet, per Melissa ✅. No public profile could be built: Acebet names no executives, and searches by email handle and by "Boris" with each Acebet entity returned nothing. Without a surname, LinkedIn cannot be searched.
 
-- ⚠️ **How to read him:** a personal Gmail on a commercial call usually means a founder, an owner-operator, or an outside payments consultant or agency. Do not assume which. Open with "tell me about your role at Acebet" and calibrate from there.
-- 🔍 Get his surname, role, his entity (Golden Frog, 51 Plus One or Trey Mark), and who else owns payments and engineering.
+- ⚠️ **How to read him:** a founder who has already picked two merchants of record and decided to orchestrate. He knows payments, wants specifics, and will judge Yuno on how concrete it is. Talk providers, routing rules and timelines, not vision.
+- ❓ Get his surname, which entity he signs for, and who runs payments engineering day to day.
 
-**Intro path.** The meeting came through Melissa Pottenger. The lead source is unknown 🔍 (ask Melissa before the call).
+**Intro path.** Boris asked for an intro to Yuno while evaluating gateways, and Melissa booked it ✅. Melissa manages the Coinflow partnership, so the intro may have come through Coinflow ⚠️ (ask Melissa before the call).
 
 **Relationship timeline.**
 
 - No prior meeting with any attendee of this call exists on the calendar. The calendar was searched by Boris's email, by "Boris" and by "Acebet" for 2025 to 2026, and the only hit is this invite ✅.
 - No Gmail threads with Boris or any Acebet, Golden Frog, Trey Mark or 51 Plus One address. No Slack mentions. No Gong CRM account ✅.
-- **Implication:** first-meeting framing. They have received no Yuno material. Every fact we show is new to them.
+- **Implication:** first meeting, but inbound and warm. They have received no Yuno material.
 
 **Other known contacts in the account:** none. Acebet publishes no leadership, and no payments job postings were found on LinkedIn or Pentasia ✅.
 
@@ -154,7 +172,7 @@ Caveats: the deposit-share figures cover only operators that on-chain trackers c
 
 ## 6. Payments Money Map
 
-**Orchestrator status:** none found in the code of either site. Each provider has its own key, hosted redirect ("Your payment will be processed through [provider name]") and fee notice ✅. ⚠️ Reads as in-house method selection by region.
+**Orchestrator status:** none today. Boris plans to orchestrate across Breeze, Coinflow and a third PSP ✅ (per Melissa). None found in the code of either site. Each provider has its own key, hosted redirect ("Your payment will be processed through [provider name]") and fee notice ✅. ⚠️ Reads as in-house method selection by region.
 
 **Providers by function** (from the acebet.co code snapshot of 3-Oct-2026 and the live acebet.cc code; vendor identities behind short keys are ⚠️ unless the page names the vendor)
 
@@ -163,7 +181,8 @@ Caveats: the deposit-share figures cover only operators that on-chain trackers c
 | Crypto deposits and custody | Fireblocks ✅; Mesh ("meshconnect") ⚠️; wallet connect (Phantom, Solflare, Coinbase Wallet, Trust, Ledger and others) ✅ |
 | Fiat-to-crypto on-ramp | Swapped.com ✅ |
 | Cards, Interac, PIX, Open Banking | "paytech" (BASIC_CARD, INTERAC, PIX, Open Banking) ⚠️ vendor unconfirmed |
-| US cards, wallets, ACH | "breeze" (Visa, Mastercard, Amex, Apple Pay, Google Pay, ACH, instant bank transfer) ⚠️ vendor unconfirmed |
+| US cards, wallets, ACH | **Breeze**, merchant of record (Visa, Mastercard, Amex, Apple Pay, Google Pay, ACH, instant bank transfer) ✅ confirmed by Melissa |
+| Going live | **Coinflow**, merchant of record ✅ per Melissa |
 | Instant bank (EU/UK) | peer.xyz for Revolut and Wise ✅ |
 | Other deposit rails | Kinguin gift cards ✅; Zen, paycom, memepay, skindeck, des (USD) ⚠️ |
 | Payouts | MassPay, PayPal, "cdn-software" (USD); SEPA, Visa Payout, Mastercard Payout ✅; "tx-tech" bank transfers in AR, CL, CO, MX, PE, plus card and IMPS ⚠️ |
@@ -202,9 +221,9 @@ Caveats: the deposit-share figures cover only operators that on-chain trackers c
 
 | Market | Share of acebet.co visits | Payment behaviour | For the call |
 |---|---|---|---|
-| Germany | 62% | Bank-led market (SEPA, open banking) with PayPal and Sofort/Klarna popular ⚠️ (general market knowledge) | 🔍 Confirm whether German players get the sweepstakes tenant or real money. That decides which rails matter |
+| Germany | 62% | Bank-led market (SEPA, open banking) with PayPal and Sofort/Klarna popular ⚠️ (general market knowledge) | ❓ Confirm whether German players get the sweepstakes tenant or real money. That decides which rails matter |
 | United States | 19% (.co) plus 94% of acebet.cc | Cards and ACH; high decline rates for gaming-coded transactions ⚠️ | The volume market. Ask about card approval rates on Gold Coin purchases |
-| Spain | 7% | Cards and Bizum ⚠️ | 🔍 Ask whether Spain is served on real money |
+| Spain | 7% | Cards and Bizum ⚠️ | ❓ Ask whether Spain is served on real money |
 | Canada | 2% | Interac confirmed in their code ✅ | Interac is already live. Ask how it performs versus cards |
 | Brazil | 1.2% of acebet.cc | PIX confirmed in code ✅ | Possible expansion lever. Ask about plans |
 
@@ -231,76 +250,128 @@ Nothing from the last 7 days that works as a rapport opener.
 
 ## 9. Selling Yuno Here
 
-**Core frame:** "You have built more payment coverage in a year than most operators build in three. Yuno makes that coverage work as one system: routing, failover, payouts and monitoring across all of it, through one integration on top of the providers you already have."
+**Core frame:** "You've already decided to run more than one merchant of record. Yuno is the layer that makes that work: one integration, Coinflow already live on it, Breeze and a third provider added as configuration, with routing, failover, payouts and reporting across all of them."
 
 **Hooks with proof points** (published Yuno results only)
 
-1. **Payouts and monitoring.** Rappi detects payment anomalies in milliseconds instead of 5 to 10 minutes manually, with 80% less analyst resolution time. Livelo recovered 50% of failed transactions.
-2. **One integration, faster markets.** inDrive reached about 90% approval and went live in 11 new countries in under eight months on one integration (y.uno).
-3. **Approvals and recovery.** Up to 7% approval uplift and 30% recovered revenue (y.uno).
-4. **Stablecoins and crypto.** Yuno lists Crypto as a vertical "bridging fiat and crypto rails" for exchanges, on-ramps and Web3 platforms, and sells a Stablecoins product (y.uno).
-5. **Gaming logos.** Garena, Moon Active and NetEase appear on y.uno. Whop is a Yuno customer logo too ⚠️. Do not mention that Whop appears in Acebet's code.
+1. **Coinflow is already live on Yuno.** Production traffic for Whop and Felix Pago. Name Whop only if asked for references, and check with Melissa first ⚠️.
+2. **Approvals and recovery.** Up to 7% approval uplift and 30% recovered revenue (y.uno).
+3. **Speed to add providers and markets.** inDrive reached about 90% approval and went live in 11 new countries in under eight months on one integration (y.uno).
+4. **Monitoring.** Rappi detects payment anomalies in milliseconds instead of 5 to 10 minutes manually, with 80% less analyst resolution time.
+5. **Stablecoins and crypto.** Yuno bridges fiat and crypto rails and sells a Stablecoins product (y.uno). Coinflow settles in stablecoins.
 
 **Landmines (what NOT to say)**
 
-- Do not say "you don't have X" for any method or market.
-- Do not mention their licence quality, restricted-country conflicts, Trustpilot scores or the thegamehaus delisting.
-- Do not quote prices, MDRs or timelines for go-live before legal has cleared the entities.
-- Do not promise acquiring for gambling in any specific country. Partner appetite for Anjouan-licensed operators is unconfirmed.
-- Do not reveal that we inspected their site code. Use "from what is visible on your site".
-- Do not use unpublished stats.
-
----
+- Do not say Breeze is "supported" or give a timeline for it. It is not in the catalog.
+- Do not say Yuno is an MoR or takes chargeback liability. Breeze and Coinflow do that.
+- Do not quote prices or MDRs. The GMV period is unknown and legal has not cleared the entities.
+- Do not mention the Anjouan licence, the restricted-country conflicts, Trustpilot scores or reviewer delistings.
+- Do not reveal that we read their site code. Say "from what is visible on your site".
+- Do not mention the Coinflow QA failures or name other Yuno merchants beyond the public logos without checking.
+- Do not say "you don't have X" about any method or market.
 
 ## 10. Be Ready For
 
-| They may ask | Ready answer |
+| He may ask | Ready answer |
 |---|---|
-| "Can you onboard us with an Anjouan licence?" | "Our compliance team reviews every gaming merchant by entity and licence. I'll take your entity details back today and come back with a clear answer, rather than guess on the call." Do not say yes or no. |
-| "How much does it cost?" | "Pricing depends on volume, markets and which providers you bring. Once we see your mix we'll send a proposal. Our model is a platform fee plus a per-transaction fee." Do not quote numbers. Consult the Finance pricing policy afterwards. |
-| "Do we have to replace our providers?" | "No. Yuno connects to the providers you already contract with. You add or switch providers from the dashboard without new engineering work." |
-| "How long does integration take?" | "One API or SDK integration on your side. inDrive went live in 11 new countries in under eight months on that single integration. Your timeline depends on how many rails you move first." |
-| "Do you have acquirers that take gaming?" | "We work with high-risk and gaming partners. Which ones fit depends on licence and market, so that's part of the review we'd run with you." |
-| "PCI and card data?" | "Our hosted checkout and SDK keep card data out of your scope. Cards are tokenized in Yuno's vault and can be reused for payouts and repeat deposits." |
+| "Do you already integrate Coinflow?" | "Yes. Coinflow is in our catalog and live in production with other merchants today. You'd be connecting to something that already runs." |
+| "Do you integrate Breeze?" | "Not yet. It's not one of our live connectors. Let me get you a firm timeline from our integrations team rather than guess. That's one of the outputs of the working session." |
+| "What would you suggest as the third PSP?" | "It depends on what you want it to fix: cards approval, a market or payouts. Our partner network has providers that accept gaming in the US, and we'd map options against your volume in the working session." Do not name partners as committed. |
+| "Can you route between two MoRs?" | "Yes. Each MoR is a connection in Yuno. Rules decide which one gets each payment, by country, method, card type, amount or approval history, with automatic fallback to the other." |
+| "How much does it cost?" | "It depends on volume and mix. Is the $20M monthly or annual? Once we have that and the provider split, we'll send a proposal. The model is a platform fee plus a per-transaction fee." No numbers. |
+| "How long to go live?" | "One integration on your side. Because Coinflow is already a Yuno connector, that piece is configuration. Breeze depends on the build, which we'll confirm." |
+| "Can you onboard us given our licence?" | "Compliance reviews every gaming merchant by entity and licence. Send me the entity details and I'll come back with a clear answer." Do not say yes or no. |
 | "Do you do payouts?" | "Yes. Yuno has a Payouts product, and routing and monitoring cover payouts as well as pay-ins." |
-| "Do you support crypto or stablecoins?" | "Yes. Yuno bridges fiat and crypto rails and offers stablecoin settlement. We'd map that against how Fireblocks and your wallets work today." |
+| "PCI and card data?" | "Our hosted checkout and SDK keep card data out of your scope. Cards are tokenized in Yuno's vault." |
 | "Who else in gaming uses you?" | "Garena, Moon Active and NetEase are public names. Others we can discuss under NDA." |
-| "Why not build routing ourselves?" | "You can, and you've shown you build fast. The trade-off is that every new rule, retry and monitor is your team's time forever. We give you that layer on day one so your engineers stay on product." |
+| "Why not build the switch ourselves?" | "You can build version one. Retries, failover, decline mapping, reporting, reconciliation and every new provider after that are the part that never ends. We give you that on day one." |
 
 ---
 
 # LIVE ZONE
 
-## 11. Agenda (25 minutes)
+## 11. Call Plan: German Leads
+
+**Goal of the 25 minutes:** confirm the plan, prove Yuno fits it, and book the working session. Talk 30% of the time, listen 70%.
+
+**1. Open (minute 0 to 3).** Melissa takes 30 seconds to introduce. Then you say:
+> "Thanks Boris. Melissa gave us the headline: you're going live with Coinflow, you already work with Breeze, and you want to orchestrate across both and maybe a third PSP. I'd like to spend most of the time on your plan, show you where Yuno fits, and agree whether a deeper technical session makes sense. Does that work?"
+
+Then the rapport opener: "Congrats on going live with Coinflow. What made you pick them?"
+
+**2. Discovery (minute 3 to 12).** Ask the five must-ask questions below in order. Write the answers in the Notes column. If he gives a long answer, let him finish.
+
+**3. Position Yuno (minute 12 to 19).** Three points only, tied to what he said:
+> "First, Coinflow is already a live connector on Yuno, so that piece is configuration, not a build."
+> "Second, Yuno routes each payment to whichever MoR is most likely to approve it at the best cost, and falls back automatically when one declines or goes down."
+> "Third, you get one view of payments, payouts and reconciliation across Breeze, Coinflow and crypto, with monitoring that catches problems in milliseconds."
+
+Be straight about Breeze: "Breeze isn't a live connector yet. I'll get you a firm timeline from our integrations team."
+
+**4. Handle his questions (minute 19 to 22).** Use the Be Ready For table. If you don't know, say "Let me confirm and come back today."
+
+**5. Close (minute 22 to 25).**
+> "Here's what I'd suggest: a 45-minute technical session this week with our solutions team. We'd map how Breeze, Coinflow and a third provider would sit behind Yuno, and what go-live looks like. In parallel, we'll send our KYC list so compliance isn't the long pole. Does Thursday or Friday work?"
+
+Get a date before hanging up. Confirm who from his side joins.
+
+**Say this**
+
+- "You've already decided to orchestrate. We make that decision cheaper to run."
+- "Coinflow is already live on Yuno."
+- "Configuration, not code, for every provider after the first."
+- "Let me confirm and come back today." (whenever unsure)
+
+**Don't say this**
+
+- Anything that promises Breeze support or a timeline.
+- Any price, MDR or discount.
+- Anything about their licence, reviews or what we saw in their code.
+- "Yuno is an MoR" or "we take the chargeback risk".
+- Unpublished stats or merchant names beyond Garena, Moon Active and NetEase.
+
+**If the call goes sideways**
+
+- **He wants a price now:** "Happy to. I need the GMV period and the split by provider first. I'll send a range within 48 hours of the session."
+- **He's only shopping for a third PSP:** "We can help with that too. Our partner network covers gaming in the US. Orchestration is what lets you switch between them without new code each time."
+- **He asks about licence or compliance:** "Our compliance team reviews every gaming merchant. Send me the entity details and I'll come back with an answer."
+
+## 12. Agenda (25 minutes)
 
 | Minute | Block | Owner | Notes |
 |---|---|---|---|
-| 0 to 3 | Intros. Boris's role, entity and who else owns payments | Melissa / Sean | Notes: ____ |
-| 3 to 13 | Discovery: today's cashier, volumes, payouts, markets (questions 1 to 8) | German | Notes: ____ |
-| 13 to 20 | Yuno in one breath: one integration, routing and failover, payouts with monitoring, stablecoins. Proof points | German | Notes: ____ |
-| 20 to 23 | Their questions | All | Notes: ____ |
-| 23 to 25 | Next step: 30-minute working session this week plus the KYC/KYB pack | Sean / Justo | Notes: ____ |
+| 0 to 3 | Melissa intro (30 seconds). German frames the call and asks the opener | Melissa, German | Notes: ____ |
+| 3 to 12 | Five must-ask questions | German | Notes: ____ |
+| 12 to 19 | Three Yuno points: Coinflow live, routing and failover across MoRs, one view of payouts and reporting | German | Notes: ____ |
+| 19 to 22 | His questions | German (Justo on partners and commercial) | Notes: ____ |
+| 22 to 25 | Close: technical session this week plus KYC pack. Get a date | German (Sean backs up) | Notes: ____ |
 
-## 12. Discovery Questions
+## 13. Discovery Questions
 
-1. What is your role at Acebet, and which entity do you work for: Golden Frog, 51 Plus One or Trey Mark? Who else owns payments and engineering?<br>Notes: ____
-2. Is acebet.cc in scope for this conversation, or only the real-money site? Which entity would sign with a payments partner, and which licences does it hold?<br>Notes: ____
-3. How is the cashier built today? Do you choose providers by method and region in-house, or does a provider host the cashier for you? Can you walk me through the main card and bank providers?<br>Notes: ____
-4. Roughly what monthly deposit volume do you process, and how does it split between fiat and crypto, and between the US sweepstakes site and the real-money site?<br>Notes: ____
-5. What card approval rates do you see by country, especially the US, Germany and Canada?<br>Notes: ____
-6. Payouts: volume, average size, rails (SEPA, card payouts, bank transfers, crypto), the target timeline per rail, and how many need manual review?<br>Notes: ____
-7. Which markets come next, and what blocks launching them? How long did the last new rail take your team?<br>Notes: ____
-8. Where do KYC and fraud hurt most today, with Sumsub and Sift in place? False declines or re-verification?<br>Notes: ____
-9. What would a payments partner have to prove in the first 90 days for this to be worth it?<br>Notes: ____
+**Must-ask (in this order)**
 
-## 13. Post-Meeting Checklist
+1. "Walk me through the plan: what does Breeze handle today, what will Coinflow handle, and what's the third PSP for?"<br>Notes: ____
+2. "When does Coinflow go live, and are you integrating it directly or waiting to do it through an orchestrator?"<br>Notes: ____
+3. "Is the $20M GMV per month or per year, and how does it split between the US sweepstakes site, the real-money site and crypto?"<br>Notes: ____
+4. "How do you want to route between Breeze and Coinflow: by country, payment method, card type, approval rates or cost?"<br>Notes: ____
+5. "What does success look like in 90 days, and who besides you is involved in choosing the gateway?"<br>Notes: ____
 
-- [ ] Recap email to Boris the same day: what we heard, the two or three priorities, the proposed working-session slots, and the KYC/KYB document list.
-- [ ] Post entity, licence and UBO details in #salesops-legal for a pre-check (Golden Frog Inc., 51 Plus One Ltd, Trey Mark Services Ltd).
-- [ ] Ask Payments Concierge which partners accept Anjouan-licensed operators for EU and Canadian cards and for US sweepstakes.
-- [ ] Create the Salesforce opportunity and log the outcome and new facts.
-- [ ] Book the working session with solutions.
-- [ ] Update memory (project_acebet) and the research brief with new facts.
+**If time allows**
+
+6. "Which entity would sign with us: Golden Frog, 51 Plus One or Trey Mark?"<br>Notes: ____
+7. "What approval rates do you see today on Breeze, and where do you lose the most?"<br>Notes: ____
+8. "How do payouts work today, and are they in scope for the orchestration?"<br>Notes: ____
+9. "Which other gateways are you evaluating, and when do you want to decide?"<br>Notes: ____
+
+## 14. Post-Meeting Checklist
+
+- [ ] Recap email to Boris the same day: his plan in his words, the three Yuno points, the session date and the KYC/KYB list.
+- [ ] Ask integrations for a Breeze connector estimate and the current Coinflow status.
+- [ ] Post entities, licence and the MoR model in #salesops-legal for a pre-check (Golden Frog Inc., 51 Plus One Ltd, Trey Mark Services Ltd).
+- [ ] Ask Melissa and Justo about third-PSP options (Checkout.com, CoinsPaid) for US gambling.
+- [ ] Pricing: run the GMV figure through the Finance pricing policy before any number goes out.
+- [ ] Create the Salesforce opportunity and log the outcome.
+- [ ] Update memory (project_acebet) and the research brief.
 
 ---
 
@@ -333,5 +404,11 @@ Nothing from the last 7 days that works as a rapport opener.
 - https://www.askgamblers.com/online-casinos/reviews/bc-game-casino · https://www.askgamblers.com/online-casinos/reviews/rainbet-casino · https://www.askgamblers.com/online-casinos/reviews/shuffle-casino · https://www.askgamblers.com/online-casinos/reviews/gamdom-casino
 - https://praxis.tech/ · https://partnerkin.com/en/b2b/payment-orchestration/
 - https://www.y.uno/
+- Melissa Pottenger context message, 27-Oct-2026 10:28
+- https://docs.y.uno/reference/api-enums (provider list, COINFLOW) · https://docs.y.uno/changelog/ios (Coinflow chargeback protection)
+- Slack #partnerships--sales, Payments Concierge partner sheet answers 22-Oct and 27-Oct-2026 · #product-tech Coinflow tickets (Whop 3-Mar-2026, Felix Pago 25-Feb-2026) · #qa-reports-api-int Coinflow suite 20 to 27-Oct-2026
+- https://blockworks.co/news/coinflow-raise-stablecoin-payments
+- https://thegrid.id/profiles/breeze · https://assetstore.unity.com/packages/sdk/breeze-payment-sdk-7562841
 
-*Google Doc: https://docs.google.com/document/d/18ufiAJlRHgtFg20E_bk_GkbGgrLUU1JSft5tNT_P6MA/edit*
+
+*Google Doc v2 (current): https://docs.google.com/document/d/1AIvBmnjJSLBt99ir6r_gmu48ojjp9oXJwQ2ZououPf4/edit · v1 renamed OLD: 18ufiAJlRHgtFg20E_bk_GkbGgrLUU1JSft5tNT_P6MA*
