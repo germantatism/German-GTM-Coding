@@ -121,24 +121,31 @@ def price(s):
         s.text(170, y + 6, 104, 30, f'**{c3(RATES[i])}** /trx', size=10, color=GREY, align='END', valign='MIDDLE', bold_color=BLUE)
     s.rect(48, 318, 226, 30, fill=WHITE)
     s.text(56, 318, 212, 30, f'Every transaction above {CUTS[2]:,} a month is billed at {c3(RATES[3])} as Acebet adds markets.', size=7.5, color=BODY, valign='MIDDLE')
-    # middle: what it means today
+    # middle: what it means today (monthly and annual)
     s.rect(298, 84, 214, 276, fill=WHITE, outline=BORDER)
     label(s, 310, 96, 'What it means today')
     s.text(310, 108, 190, 10, f'At about {TX:,} successful transactions a month', size=7.5, color=GREY)
-    rows = [(f'Tranche {i+1}: {n:,} at {c3(r)}', f'${m:,.0f}') for i, (n, r, m) in enumerate(b) if n]
-    y = 128
+    s.text(410, 124, 44, 9, 'MONTHLY', size=6.5, color=GREY, weight=600, align='END')
+    s.text(456, 124, 44, 9, 'ANNUAL', size=6.5, color=GREY, weight=600, align='END')
+    s.rect(310, 135, 190, 0.5, fill=LINE)
+    rows = [(f'Tranche {i+1}: {n:,} at {c3(r)}', m) for i, (n, r, m) in enumerate(b) if n]
+    y = 140
     for t, m in rows:
-        s.text(310, y, 140, 12, t, size=8.5, color=INK); s.text(440, y, 60, 12, m, size=8.5, color=INK, align='END'); y += 17
+        s.text(310, y, 112, 12, t, size=7.5, color=INK)
+        s.text(410, y, 44, 12, f'${m:,.0f}', size=7.5, color=INK, align='END'); s.text(456, y, 44, 12, f'${m*12:,.0f}', size=7.5, color=INK, align='END'); y += 16
     s.rect(310, y + 2, 190, 0.5, fill=LINE)
-    s.text(310, y + 8, 140, 12, 'Transactions', size=8.5, color=INK, weight=600); s.text(440, y + 8, 60, 12, f'${V:,.0f}', size=8.5, color=INK, weight=600, align='END')
-    s.text(310, y + 25, 140, 12, 'Platform fee', size=8.5, color=INK); s.text(440, y + 25, 60, 12, f'${PLATFORM:,}', size=8.5, color=INK, align='END')
+    for k, (t, m, bold) in enumerate([('Transactions', V, True), ('Platform fee', PLATFORM, False)]):
+        yy = y + 8 + k * 16
+        s.text(310, yy, 100, 12, t, size=7.5, color=INK, weight=600 if bold else 400)
+        s.text(410, yy, 44, 12, f'${m:,.0f}', size=7.5, color=INK, weight=600 if bold else 400, align='END')
+        s.text(456, yy, 44, 12, f'${m*12:,.0f}', size=7.5, color=INK, weight=600 if bold else 400, align='END')
     s.rect(306, y + 44, 198, 24, fill=PANEL)
-    s.text(314, y + 44, 120, 24, 'Total a month', size=9, color=DEEP, weight=600, valign='MIDDLE')
-    s.text(420, y + 44, 78, 24, f'${TOT:,.0f}', size=10, color=DEEP, weight=700, align='END', valign='MIDDLE')
-    s.text(310, y + 76, 190, 10, f'${TOT*12:,.0f} a year', size=7.5, color=GREY)
+    s.text(314, y + 44, 90, 24, 'Total', size=8.5, color=DEEP, weight=600, valign='MIDDLE')
+    s.text(404, y + 44, 50, 24, f'${TOT:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
+    s.text(452, y + 44, 48, 24, f'${TOT*12:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
     s.text(310, 282, 190, 30, c3(V / TX), size=26, color=BLUE)
     s.text(310, 316, 190, 30, f'average per successful transaction before the platform fee; {c3(TOT/TX)} all-in.', size=7.5, color=BODY, spacing=108)
-    # right: growth
+    # right: growth (usage only, monthly and annual)
     s.rect(524, 84, 160, 276, fill=BLUE)
     s.text(536, 96, 140, 9, 'AS ACEBET GROWS', size=7, color=WHITE, weight=600)
     s.text(536, 108, 140, 20, 'Average rate per transaction, before the platform fee', size=7.5, color=LAV, spacing=105)
@@ -147,7 +154,7 @@ def price(s):
         s.rect(536, y - 4, 136, 0.5, fill=LAV)
         s.text(536, y + 2, 80, 12, f'{t:,}' + (' today' if i == 0 else ''), size=8, color=LAV)
         s.text(536, y + 16, 80, 20, c3(var(t) / t), size=15, color=WHITE, weight=600)
-        s.text(600, y + 16, 72, 20, f'${var(t):,.0f}/mo', size=7.5, color=LAV, align='END', valign='MIDDLE')
+        s.text(596, y + 14, 76, 24, f'${var(t):,.0f}/mo\n${var(t)*12:,.0f}/yr', size=7, color=LAV, align='END', valign='MIDDLE', spacing=110)
     source(s, '36-month contract. Pricing valid for 30 days, subject to final agreement.')
 
 
