@@ -153,29 +153,32 @@ def price(s):
 
 @slide('terms', "WHAT'S INCLUDED", 'Every acquirer Acebet adds is a routing change, not a new fee')
 def terms(s):
-    s.rect(X0, 84, 312, 190, fill=WHITE, outline=BORDER)
+    s.rect(X0, 84, 312, 200, fill=WHITE, outline=BORDER)
     label(s, 48, 96, 'Included in the platform fee')
+    for i, (v, l) in enumerate([('1,000+', 'payment methods'), ('450+', 'payment providers'), ('50+', 'anti-fraud tools')]):
+        x = 48 + i * 98
+        s.rect(x, 112, 90, 40, fill=PANEL)
+        s.text(x + 8, 115, 76, 18, v, size=14, color=BLUE, weight=600)
+        s.text(x + 8, 135, 76, 10, l, size=7, color=BODY)
     inc = ['Orchestration and rules engine', 'Volume split, cascading and retries', 'Monitors and auto-failover',
            'Hosted fields, SDKs and sandbox', 'New provider connections, maintained by Yuno', 'Dashboard, approval and cost insights',
-           'Dedicated team: account manager, technical account manager, solutions engineer']
+           'Dedicated team: KAM, TAM and solutions engineer']
     for i, t in enumerate(inc):
-        dot(s, 48, 114 + i * 22, t, size=9, w=280, h=20)
-    s.rect(360, 84, 324, 190, fill=PANEL)
+        dot(s, 48, 162 + i * 17, t, size=8.5, w=280, h=14)
+    s.rect(360, 84, 324, 200, fill=PANEL)
     label(s, 372, 96, 'Commercial terms')
     terms_ = [('Platform fee', f'${PLATFORM:,} / month flat'), ('Usage', 'Four tranches per successful transaction'),
               ('Setup fee', 'None'), ('Retries and cascades', 'Billed once, only when approved'), ('Review', 'Rates locked, tranches reviewed annually')]
     for i, (k, v) in enumerate(terms_):
-        y = 116 + i * 30
+        y = 116 + i * 32
         s.rect(372, y - 4, 300, 0.5, fill=LINE)
         s.text(372, y + 2, 120, 14, k, size=9, color=GREY)
         s.text(482, y + 2, 190, 14, v, size=9, color=INK, weight=600, align='END')
-    for i, (t, body) in enumerate([('PAYOUTS', 'Redemptions and payouts on the same platform, routed across providers from one integration.'),
-                                   ('RECONCILIATION', 'One reconciliation view across Breeze, Coinflow, Whop and Checkout instead of one process per provider.')]):
-        x = X0 + i * 330
-        s.rect(x, 290, 318, 62, fill=WHITE, outline=BORDER); s.rect(x, 290, 2, 62, fill=BLUE)
-        s.text(x + 14, 298, 150, 10, t, size=7.5, color=INK, weight=600)
-        s.pill(x + 226, 296, 80, 14, 'PENDING REVIEW', fill=PILL, color=BLUE, size=6)
-        s.text(x + 14, 314, 290, 32, body + ' **Not included** in the totals.', size=8, color=BODY, spacing=108)
+    s.rect(X0, 298, W0, 56, fill=WHITE, outline=BORDER); s.rect(X0, 298, 2, 56, fill=BLUE)
+    s.text(X0 + 14, 306, 200, 10, 'RECONCILIATION', size=7.5, color=INK, weight=600)
+    s.pill(X0 + W0 - 106, 304, 94, 14, 'FOR FURTHER REVIEW', fill=PILL, color=BLUE, size=6)
+    s.text(X0 + 14, 322, W0 - 28, 26, 'One reconciliation view across **Breeze, Coinflow, Whop and Checkout**, instead of one process per provider. '
+           'Scope and pricing to be reviewed together; **not included** in the totals.', size=8.5, color=BODY, spacing=110)
 
 
 @slide('next', 'NEXT STEPS', 'From proposal to live traffic, at the pace Acebet sets')
