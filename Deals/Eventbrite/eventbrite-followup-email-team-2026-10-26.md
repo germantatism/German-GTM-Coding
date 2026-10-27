@@ -1,4 +1,4 @@
-# Eventbrite / Bending Spoons follow-up, 2026-10-26
+# Eventbrite / Bending Spoons follow-up, 2026-10-26 (v2)
 
 Reply in thread "Re: Eventbrite + Yuno" (reply to German's 2026-10-07 note). Draft left in Gmail, not sent.
 
@@ -9,17 +9,17 @@ Fact check: Berkshire Hathaway invested a further $330M in Bending Spoons on 202
 
 Context: fourth touch since the 2026-08-20 call. No reply from Filippo, Giacomo or Noe to 7-Sep, 17-Sep or 7-Oct. Angle this time: congratulations + portfolio-wide single payments infrastructure (German's brief), no PSD3 or Fever repeat.
 
+v1 rejected by German as "muy AI" (phrases like "quite the vote of confidence", "just a short note from our side", "we see a great opportunity to work with you across the portfolio ... plugs into the same providers, routing and reporting"). He also changed the greeting to "Hi All,". v2 below keeps his greeting.
+
 ---
 
-Hi Filippo, Giacomo, Noe,
+Hi All,
 
-Congratulations on the Berkshire news! Another $330M on top of their IPO stake is quite the vote of confidence, and I imagine the acquisition pipeline is only getting busier.
+Congrats on the Berkshire news! Saw they put in another $330M. It's not every day Berkshire doubles down on a company like that.
 
-Just a short note from our side: we're still very keen to pick the conversation back up whenever the timing works for you.
+We'd still love to pick this back up whenever you have some room. And honestly, the more we look at the group, the more we think the opportunity goes well beyond Eventbrite. Every company you bring in comes with its own payments setup, and we'd love to help you run all of that, Eventbrite included, on a single infrastructure.
 
-Beyond Eventbrite, we see a great opportunity to work with you across the portfolio, bringing all the companies under one payments infrastructure so each new acquisition plugs into the same providers, routing and reporting instead of arriving with its own stack. We'd love to explore that with you.
-
-Would a call in the next couple of weeks work? Happy to go with whatever time suits you in Milan.
+Would a call in the next couple of weeks work?
 
 Best,
 German
