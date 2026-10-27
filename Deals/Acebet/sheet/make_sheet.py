@@ -32,8 +32,8 @@ S = [
  ('Client', 'Acebet: US sweepstakes / social casino operator, Cyprus entity. Contact: Boris (co-founder).', 'Referred by Coinflow. First call 27-Oct-2026.'),
  ('What they want', 'Split volume across several acquirers by fixed percentages, cascade declines, add acquirers fast.', 'Leverage on price and redundancy. Approval on Breeze is already in the 90s, so this is not an uplift sale.'),
  ('Volume basis', 'About 680,000 successful transactions a month, average ticket about $33.', 'Real last 30 days: 678,498 deposits, $22.77M, all on Breeze (internal data; never cite it to the client). Boris said ~700K and ~$25M.'),
- ('Pricing structure', f'Platform fee ${PLATFORM:,}/month flat + a rate per successful transaction in 4 tranches.', 'Tranche (ladder) pricing: each tranche billed at its own rate within the month, so the average falls as volume grows.'),
- ('Tranches', ' / '.join(f'{"0" if i == 0 else f"{CUTS[i-1]+1:,}"} to {CUTS[i]:,}: ${RATES[i]:.3f}' if CUTS[i] else f'above {CUTS[i-1]:,}: ${RATES[i]:.3f}' for i in range(4)), 'Rates per German (27-Oct): 3, 2.5, 2 and 1.5 cents, platform fee on top. Top tranche sits at Spreedly\'s quoted ~1.5 cents.'),
+ ('Pricing structure', f'Platform fee ${PLATFORM:,}/month flat + a rate per successful transaction in {len(RATES)} tranches.', 'Tranche (ladder) pricing: each tranche billed at its own rate within the month, so the average falls as volume grows.'),
+ ('Tranches', ' / '.join(f'{"0" if i == 0 else f"{CUTS[i-1]+1:,}"} to {CUTS[i]:,}: ${RATES[i]:.3f}' if CUTS[i] else f'above {CUTS[i-1]:,}: ${RATES[i]:.3f}' for i in range(len(RATES))), 'Rates per German (27-Oct): 2.5, 2 and 1.5 cents, platform fee on top. Top tranche sits at Spreedly\'s quoted ~1.5 cents.'),
  ('Today\'s bill', f'See tab Calculator: ${V:,.0f} usage + ${PLATFORM:,} platform = ${T:,.0f} a month (${T*12:,.0f} a year).', f'Average ${V/TX:.4f} per transaction before the platform fee; ${T/TX:.4f} all-in.'),
  ('Billing rules', 'Charged only on approved transactions. A retried or cascaded payment counts once. Declines cost nothing. No setup fee.', 'Matches what was promised on the call (retries charged once when accepted).'),
  ('Included', 'Orchestration and rules engine; volume split, cascading, retries; monitors and failover; hosted fields, SDKs, sandbox; new provider connections maintained by Yuno; dashboard and insights; KAM, TAM, solutions engineer.', '"Every acquirer you add is a routing change, not a new fee."'),
@@ -52,13 +52,13 @@ row(ws, 2, ['Successful transactions / month (edit)', 680000, '', '', '', ''], f
 ws['B2'].fill = INPUT
 row(ws, 3, ['Platform fee / month', PLATFORM, '', '', '', ''], fmt=['$#,##0', None, None, None, None]); ws['B3'].fill = INPUT
 row(ws, 5, ['Tranche', 'From', 'To', 'Rate / trx', 'Trx in tranche', 'Cost / month'], header=True)
-for i in range(4):
+for i in range(len(RATES)):
     r = 6 + i; lo = 0 if i == 0 else CUTS[i - 1]; hi = CUTS[i]
     row(ws, r, [f'Tranche {i+1}', lo + (1 if i else 0), hi if hi else 'no cap', RATES[i],
                 f'=MAX(0,MIN($B$2,{hi})-{lo})' if hi else f'=MAX(0,$B$2-{lo})', f'=E{r}*D{r}'],
         fmt=['#,##0', '#,##0', '$0.000', '#,##0', '$#,##0'])
     ws[f'D{r}'].fill = INPUT
-row(ws, 11, ['Usage subtotal', '', '', '', '=SUM(E6:E9)', '=SUM(F6:F9)'], bold=True, fmt=[None, None, None, '#,##0', '$#,##0'])
+row(ws, 11, ['Usage subtotal', '', '', '', f'=SUM(E6:E{5+len(RATES)})', f'=SUM(F6:F{5+len(RATES)})'], bold=True, fmt=[None, None, None, '#,##0', '$#,##0'])
 row(ws, 12, ['Platform fee', '', '', '', '', '=B3'], fmt=[None, None, None, None, '$#,##0'])
 row(ws, 13, ['Total / month', '', '', '', '', '=F11+F12'], bold=True, fmt=[None, None, None, None, '$#,##0'], fill=KEY)
 row(ws, 14, ['Total / year', '', '', '', '', '=F13*12'], fmt=[None, None, None, None, '$#,##0'])
@@ -71,7 +71,7 @@ ws = wb.create_sheet(); sheet(ws, 'Growth', [26, 16, 16, 16, 16, 16])
 row(ws, 1, ['Monthly transactions', 'Usage / month', 'Platform fee', 'Total / month', 'Usage avg / trx', 'All-in / trx'], header=True)
 def usage(c):
     parts = []
-    for i in range(4):
+    for i in range(len(RATES)):
         lo = 0 if i == 0 else CUTS[i - 1]; hi = CUTS[i]
         parts.append(f'MAX(0,MIN({c},{hi})-{lo})*{RATES[i]}' if hi else f'MAX(0,{c}-{lo})*{RATES[i]}')
     return '=' + '+'.join(parts)

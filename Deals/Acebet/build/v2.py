@@ -113,14 +113,15 @@ def price(s):
     label(s, 48, 96, 'Rate per successful transaction')
     s.text(48, 110, 226, 22, 'Each tranche is billed at its own rate within the month. Declines cost nothing; a retried or cascaded payment counts once.',
            size=7.5, color=BODY, spacing=108)
-    for i in range(4):
-        y = 142 + i * 44
+    n_t = len(RATES); step = 176 / n_t
+    for i in range(n_t):
+        y = 142 + i * step
         s.rect(48, y, 226, 0.5, fill=LINE)
         s.text(48, y + 8, 120, 9, f'TRANCHE {i+1}', size=6.5, color=GREY, weight=600)
         s.text(48, y + 19, 130, 14, rng(i), size=10.5, color=INK, weight=600)
         s.text(170, y + 6, 104, 30, f'**{c3(RATES[i])}** /trx', size=10, color=GREY, align='END', valign='MIDDLE', bold_color=BLUE)
     s.rect(48, 318, 226, 30, fill=WHITE)
-    s.text(56, 318, 212, 30, f'Every transaction above {CUTS[2]:,} a month is billed at {c3(RATES[3])} as Acebet grows.', size=7.5, color=BODY, valign='MIDDLE')
+    s.text(56, 318, 212, 30, f'Every transaction above {CUTS[-2]:,} a month is billed at {c3(RATES[-1])} as Acebet grows.', size=7.5, color=BODY, valign='MIDDLE')
     # middle: what it means today (monthly and annual)
     s.rect(298, 84, 214, 276, fill=WHITE, outline=BORDER)
     label(s, 310, 96, 'What it means today')
@@ -174,7 +175,7 @@ def terms(s):
         dot(s, 48, 162 + i * 17, t, size=8.5, w=280, h=14)
     s.rect(360, 84, 324, 200, fill=PANEL)
     label(s, 372, 96, 'Commercial terms')
-    terms_ = [('Platform fee', f'${PLATFORM:,} / month flat'), ('Usage', 'Four tranches per successful transaction'),
+    terms_ = [('Platform fee', f'${PLATFORM:,} / month flat'), ('Usage', f'{["One", "Two", "Three", "Four"][len(RATES) - 1]} tranches per successful transaction'),
               ('Setup fee', 'None'), ('Retries and cascades', 'Billed once, only when approved'), ('Review', 'Rates locked, tranches reviewed annually')]
     for i, (k, v) in enumerate(terms_):
         y = 116 + i * 32
