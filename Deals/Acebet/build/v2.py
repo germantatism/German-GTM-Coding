@@ -141,13 +141,13 @@ def price(s):
     # right: growth
     s.rect(524, 84, 160, 276, fill=BLUE)
     s.text(536, 96, 140, 9, 'AS ACEBET GROWS', size=7, color=WHITE, weight=600)
-    s.text(536, 108, 140, 20, 'All-in rate per transaction, platform fee included', size=7.5, color=LAV, spacing=105)
+    s.text(536, 108, 140, 20, 'Average rate per transaction, before the platform fee', size=7.5, color=LAV, spacing=105)
     for i, t in enumerate(GROWTH):
         y = 140 + i * 50
         s.rect(536, y - 4, 136, 0.5, fill=LAV)
         s.text(536, y + 2, 80, 12, f'{t:,}' + (' today' if i == 0 else ''), size=8, color=LAV)
-        s.text(536, y + 16, 80, 20, c3(total(t) / t), size=15, color=WHITE, weight=600)
-        s.text(600, y + 16, 72, 20, f'${total(t):,.0f}/mo', size=7.5, color=LAV, align='END', valign='MIDDLE')
+        s.text(536, y + 16, 80, 20, c3(var(t) / t), size=15, color=WHITE, weight=600)
+        s.text(600, y + 16, 72, 20, f'${var(t):,.0f}/mo', size=7.5, color=LAV, align='END', valign='MIDDLE')
     source(s, 'Illustrative volumes above today are not forecasts. Pricing valid for 30 days; subject to final agreement.')
 
 
