@@ -146,7 +146,7 @@ def price(s):
         s.text(310, y + 17, 110, 10, sub, size=6.5, color=GREY)
         s.text(410, y + 6, 44, 12, f'${n*r:,.0f}', size=7.5, color=INK, align='END'); s.text(456, y + 6, 44, 12, f'${n*r*12:,.0f}', size=7.5, color=INK, align='END')
     s.rect(310, 210 + len(RATES) * 34, 190, 0.5, fill=LINE)
-    s.text(310, 322, 190, 26, 'All-in: no platform fee, no setup fee. Each rate applies only to the transactions inside its tranche.',
+    s.text(310, 318, 190, 34, 'No platform fee, no setup fee; $10,000 monthly minimum, met by usage today. Each rate applies only to the transactions inside its tranche.',
            size=7, color=BODY, spacing=108)
     # right: growth (usage only, monthly and annual)
     s.rect(524, 84, 160, 276, fill=BLUE)
@@ -158,7 +158,7 @@ def price(s):
         s.text(536, y + 2, 80, 12, f'{t:,}' + (' today' if i == 0 else ''), size=8, color=LAV)
         s.text(536, y + 16, 80, 20, f'${var(t) / t:.4f}', size=15, color=WHITE, weight=600)
         s.text(596, y + 14, 76, 24, f'${var(t):,.0f}/mo\n${var(t)*12:,.0f}/yr', size=7, color=LAV, align='END', valign='MIDDLE', spacing=110)
-    source(s, '36-month contract. Pricing valid for 30 days, subject to final agreement.')
+    source(s, '5-year contract with a $10,000 monthly minimum. Pricing valid for 30 days, subject to final agreement.')
 
 
 @slide('terms', "WHAT'S INCLUDED", 'Every acquirer Acebet adds is a routing change, not a new fee')
@@ -177,10 +177,11 @@ def terms(s):
         dot(s, 48, 162 + i * 17, t, size=8.5, w=280, h=14)
     s.rect(360, 84, 324, 200, fill=PANEL)
     label(s, 372, 96, 'Commercial terms')
-    terms_ = [('Platform fee', 'None'), ('Usage', f'{["One", "Two", "Three", "Four"][len(RATES) - 1]} tranches per successful transaction'),
-              ('Setup fee', 'None'), ('Retries and cascades', 'Billed once, only when approved'), ('Review', 'Rates locked, tranches reviewed annually')]
+    terms_ = [('Platform fee', 'None'), ('Monthly minimum', '$10,000, usage counts toward it'),
+              ('Usage', f'{["One", "Two", "Three", "Four"][len(RATES) - 1]} tranches per successful transaction'),
+              ('Setup fee', 'None'), ('Retries and cascades', 'Billed once, only when approved'), ('Contract term', '5 years, rates locked')]
     for i, (k, v) in enumerate(terms_):
-        y = 116 + i * 32
+        y = 116 + i * 28
         s.rect(372, y - 4, 300, 0.5, fill=LINE)
         s.text(372, y + 2, 120, 14, k, size=9, color=GREY)
         s.text(482, y + 2, 190, 14, v, size=9, color=INK, weight=600, align='END')
