@@ -118,8 +118,9 @@ def price(s):
         y = 142 + i * step
         s.rect(48, y, 226, 0.5, fill=LINE)
         s.text(48, y + 8, 120, 9, f'TRANCHE {i+1}', size=6.5, color=GREY, weight=600)
-        s.text(48, y + 19, 130, 14, rng(i), size=10.5, color=INK, weight=600)
-        s.text(170, y + 6, 104, 30, f'**{c3(RATES[i])}** /trx', size=10, color=GREY, align='END', valign='MIDDLE', bold_color=BLUE)
+        s.text(48, y + 19, 130, 16, rng(i), size=12, color=INK, weight=600)
+        s.text(150, y + 4, 96, 34, c3(RATES[i]), size=20, color=BLUE, weight=600, align='END', valign='MIDDLE')
+        s.text(250, y + 11, 24, 26, '/trx', size=8, color=GREY, align='START', valign='MIDDLE')
     s.rect(48, 318, 226, 30, fill=WHITE)
     s.text(56, 318, 212, 30, f'Every transaction above {CUTS[-2]:,} a month is billed at {c3(RATES[-1])} as Acebet grows.', size=7.5, color=BODY, valign='MIDDLE')
     # middle: what it means today (monthly and annual)
