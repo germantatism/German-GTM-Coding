@@ -106,7 +106,7 @@ def setup(s):
     source(s, 'Provider roles as described by Acebet on the call of 27 Oct 2026.')
 
 
-@slide('price', 'PROPOSAL', 'Platform fee plus usage')
+@slide('price', 'PROPOSAL', 'Usage only, no platform fee')
 def price(s):
     # left: tranches
     s.rect(X0, 84, 250, 276, fill=PANEL)
@@ -134,22 +134,16 @@ def price(s):
     for t, m in rows:
         s.text(310, y, 112, 12, t, size=7.5, color=INK)
         s.text(410, y, 44, 12, f'${m:,.0f}', size=7.5, color=INK, align='END'); s.text(456, y, 44, 12, f'${m*12:,.0f}', size=7.5, color=INK, align='END'); y += 16
-    s.rect(310, y + 2, 190, 0.5, fill=LINE)
-    for k, (t, m, bold) in enumerate([('Transactions', V, True), ('Platform fee', PLATFORM, False)]):
-        yy = y + 8 + k * 16
-        s.text(310, yy, 100, 12, t, size=7.5, color=INK, weight=600 if bold else 400)
-        s.text(410, yy, 44, 12, f'${m:,.0f}', size=7.5, color=INK, weight=600 if bold else 400, align='END')
-        s.text(456, yy, 44, 12, f'${m*12:,.0f}', size=7.5, color=INK, weight=600 if bold else 400, align='END')
-    s.rect(306, y + 44, 198, 24, fill=PANEL)
-    s.text(314, y + 44, 90, 24, 'Total', size=8.5, color=DEEP, weight=600, valign='MIDDLE')
-    s.text(404, y + 44, 50, 24, f'${TOT:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
-    s.text(452, y + 44, 48, 24, f'${TOT*12:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
+    s.rect(306, y + 6, 198, 24, fill=PANEL)
+    s.text(314, y + 6, 90, 24, 'Total', size=8.5, color=DEEP, weight=600, valign='MIDDLE')
+    s.text(404, y + 6, 50, 24, f'${TOT:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
+    s.text(452, y + 6, 48, 24, f'${TOT*12:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
     s.text(310, 282, 190, 30, c3(V / TX), size=26, color=BLUE)
-    s.text(310, 316, 190, 30, f'average per successful transaction before the platform fee; {c3(TOT/TX)} all-in.', size=7.5, color=BODY, spacing=108)
+    s.text(310, 316, 190, 30, 'average per successful transaction, all-in. No platform fee.', size=7.5, color=BODY, spacing=108)
     # right: growth (usage only, monthly and annual)
     s.rect(524, 84, 160, 276, fill=BLUE)
     s.text(536, 96, 140, 9, 'AS ACEBET GROWS', size=7, color=WHITE, weight=600)
-    s.text(536, 108, 140, 20, 'Average rate per transaction, before the platform fee', size=7.5, color=LAV, spacing=105)
+    s.text(536, 108, 140, 20, 'Average rate per transaction, all-in', size=7.5, color=LAV, spacing=105)
     for i, t in enumerate(GROWTH):
         y = 140 + i * 50
         s.rect(536, y - 4, 136, 0.5, fill=LAV)
@@ -162,7 +156,7 @@ def price(s):
 @slide('terms', "WHAT'S INCLUDED", 'Every acquirer Acebet adds is a routing change, not a new fee')
 def terms(s):
     s.rect(X0, 84, 312, 200, fill=WHITE, outline=BORDER)
-    label(s, 48, 96, 'Included in the platform fee')
+    label(s, 48, 96, 'Included at no extra cost')
     for i, (v, l) in enumerate([('1,000+', 'payment methods'), ('450+', 'payment providers'), ('50+', 'anti-fraud tools')]):
         x = 48 + i * 98
         s.rect(x, 112, 90, 40, fill=PANEL)
@@ -175,7 +169,7 @@ def terms(s):
         dot(s, 48, 162 + i * 17, t, size=8.5, w=280, h=14)
     s.rect(360, 84, 324, 200, fill=PANEL)
     label(s, 372, 96, 'Commercial terms')
-    terms_ = [('Platform fee', f'${PLATFORM:,} / month flat'), ('Usage', f'{["One", "Two", "Three", "Four"][len(RATES) - 1]} tranches per successful transaction'),
+    terms_ = [('Platform fee', 'None'), ('Usage', f'{["One", "Two", "Three", "Four"][len(RATES) - 1]} tranches per successful transaction'),
               ('Setup fee', 'None'), ('Retries and cascades', 'Billed once, only when approved'), ('Review', 'Rates locked, tranches reviewed annually')]
     for i, (k, v) in enumerate(terms_):
         y = 116 + i * 32
