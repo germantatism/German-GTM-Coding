@@ -11,7 +11,7 @@
 | 2 | Catherine Winfield | VP, Product & Experience, digital direct business ($1B+) | Business sponsor | Med-High | LinkedIn posts | ✅ |
 | 3 | Dev Patel | COO Chief Technologist (likely SVP) | Technical owner; VP Commerce Tech + Chief Architect report here | Med-Low | LinkedIn post, ~330 days old | ✅ |
 | 4 | Chelsea Hall | Director, Digital Technical Programs (Berkeley) | Program lead / back door | Med | linkedin.com/in/chelseahhall | ✅ |
-| 5 | Neil O'Connor | Technology Sourcing lead | Runs RFP mechanics; bidder list | Med | linkedin.com/in/neil-o-connor-21932b16 | ✅ |
+| 5 | Neil O'Connor | Director, Technology Sourcing (CP Finance, PPO, Strategic Sourcing; Dublin) | Runs RFP mechanics; bidder list. REPLIED 28-oct-2026: "too far down the process to add another bidder at this point". Reply drafted 28-oct: strong fit, send NDA + docs today and we return signed NDA + full response today | High (confirmed by his signature) | neil.oconnor@autodesk.com (confirmed), linkedin.com/in/neil-o-connor-21932b16 | ✅ sent 20-oct, 27-oct; reply draft 28-oct |
 | 6 | Sebastian Goodwin | Chief Trust Officer | Security / PCI review of the vault | High | autodesk.com exec bio | ✅ |
 | 7 | Thierry Carel | VP Platform Next (ex Dir PM eCommerce) | Influencer, store history | Med | linkedin.com/in/thierrycarel | ✅ |
 | 8 | Brandon Hillstead | Assistant Treasurer | Processing cost, settlement | Med-High | linkedin.com/in/brandonhillstead | ✅ |
@@ -32,3 +32,6 @@
 - CEO Anagnost → COO Blum → SVP Chief Technologist (Dev Patel?).
 - Under the Chief Technologist: VP Commerce Technology, VP Chief Architect, and payments product/engineering (SF, Toronto, Bengaluru).
 - Parallel approvers: CTO Arasu, CIO Kelly, Chief Trust Officer Goodwin, CFO Moorjani (→ CAO Diamond, Treasury), and Technology Sourcing.
+
+
+**28-oct-2026 update:** Neil O'Connor is the only Autodesk contact who has replied. His answer closes the bidder list ("too far down the process"). Justo's direction (WhatsApp 28-oct 9:02 AM): answer that if they send the docs and the NDA we return everything the same day, and assemble one Vault RFP response and one Orchestration RFP response from the RFPs Yuno has answered before, so the same-day promise is real. Reply draft left in Gmail, in-thread, Sean in cc.
