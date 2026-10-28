@@ -148,7 +148,7 @@ def price(s):
         y = 140 + i * 50
         s.rect(536, y - 4, 136, 0.5, fill=LAV)
         s.text(536, y + 2, 80, 12, f'{t:,}' + (' today' if i == 0 else ''), size=8, color=LAV)
-        s.text(536, y + 16, 80, 20, c3(var(t) / t), size=15, color=WHITE, weight=600)
+        s.text(536, y + 16, 80, 20, f'${var(t) / t:.4f}', size=15, color=WHITE, weight=600)
         s.text(596, y + 14, 76, 24, f'${var(t):,.0f}/mo\n${var(t)*12:,.0f}/yr', size=7, color=LAV, align='END', valign='MIDDLE', spacing=110)
     source(s, '36-month contract. Pricing valid for 30 days, subject to final agreement.')
 
