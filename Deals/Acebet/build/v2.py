@@ -125,24 +125,29 @@ def price(s):
     # middle: what it means today (monthly and annual)
     s.rect(298, 84, 214, 276, fill=WHITE, outline=BORDER)
     label(s, 310, 96, 'What it means for Acebet')
-    s.text(310, 108, 190, 10, 'Cost of each tranche when it is fully used', size=7.5, color=GREY)
-    s.text(410, 124, 44, 9, 'MONTHLY', size=6.5, color=GREY, weight=600, align='END')
-    s.text(456, 124, 44, 9, 'ANNUAL', size=6.5, color=GREY, weight=600, align='END')
-    s.rect(310, 135, 190, 0.5, fill=LINE)
+    # today, the headline number
+    s.rect(306, 112, 198, 72, fill=PANEL)
+    s.text(316, 118, 180, 10, f'TODAY, AT ABOUT {TX:,} TRANSACTIONS A MONTH', size=6, color=GREY, weight=600)
+    s.text(316, 130, 120, 28, f'${TOT:,.0f}', size=22, color=BLUE, weight=600, valign='MIDDLE')
+    s.text(420, 130, 76, 28, 'per month', size=8, color=BODY, align='END', valign='MIDDLE')
+    s.rect(316, 161, 180, 0.5, fill=LINE)
+    s.text(316, 165, 90, 14, f'${TOT*12:,.0f} a year', size=8, color=INK, weight=600, valign='MIDDLE')
+    s.text(396, 165, 100, 14, f'{c3(TOT/TX)} per transaction', size=8, color=INK, weight=600, align='END', valign='MIDDLE')
+    # cost of each tranche when fully used
+    s.text(310, 198, 100, 9, 'COST OF EACH FULL TRANCHE', size=6, color=GREY, weight=600)
+    s.text(410, 198, 44, 9, 'MONTHLY', size=6, color=GREY, weight=600, align='END')
+    s.text(456, 198, 44, 9, 'ANNUAL', size=6, color=GREY, weight=600, align='END')
     for i, r in enumerate(RATES):
-        y = 140 + i * 30
+        y = 210 + i * 34
         n = (CUTS[i] - (CUTS[i-1] if i else 0)) if CUTS[i] else 1_000_000
         sub = (f'First {n:,} at {c3(r)}' if i == 0 else f'Next {n:,} at {c3(r)}') if CUTS[i] else f'Each extra {n:,} at {c3(r)}'
-        s.text(310, y, 100, 12, f'Tranche {i+1}', size=7.5, color=INK, weight=600)
-        s.text(310, y + 11, 110, 10, sub, size=6.5, color=GREY)
-        s.text(410, y, 44, 12, f'${n*r:,.0f}', size=7.5, color=INK, align='END'); s.text(456, y, 44, 12, f'${n*r*12:,.0f}', size=7.5, color=INK, align='END')
-    y = 140 + len(RATES) * 30
-    s.rect(306, y, 198, 24, fill=PANEL)
-    s.text(314, y, 96, 24, f'Today, at ~{TX:,}', size=8.5, color=DEEP, weight=600, valign='MIDDLE')
-    s.text(404, y, 50, 24, f'${TOT:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
-    s.text(452, y, 48, 24, f'${TOT*12:,.0f}', size=8.5, color=DEEP, weight=700, align='END', valign='MIDDLE')
-    s.text(310, 282, 190, 30, c3(V / TX), size=26, color=BLUE)
-    s.text(310, 316, 190, 30, 'average per successful transaction, all-in. No platform fee.', size=7.5, color=BODY, spacing=108)
+        s.rect(310, y, 190, 0.5, fill=LINE)
+        s.text(310, y + 6, 100, 12, f'Tranche {i+1}', size=7.5, color=INK, weight=600)
+        s.text(310, y + 17, 110, 10, sub, size=6.5, color=GREY)
+        s.text(410, y + 6, 44, 12, f'${n*r:,.0f}', size=7.5, color=INK, align='END'); s.text(456, y + 6, 44, 12, f'${n*r*12:,.0f}', size=7.5, color=INK, align='END')
+    s.rect(310, 210 + len(RATES) * 34, 190, 0.5, fill=LINE)
+    s.text(310, 322, 190, 26, 'All-in: no platform fee, no setup fee. Each rate applies only to the transactions inside its tranche.',
+           size=7, color=BODY, spacing=108)
     # right: growth (usage only, monthly and annual)
     s.rect(524, 84, 160, 276, fill=BLUE)
     s.text(536, 96, 140, 9, 'AS ACEBET GROWS', size=7, color=WHITE, weight=600)
