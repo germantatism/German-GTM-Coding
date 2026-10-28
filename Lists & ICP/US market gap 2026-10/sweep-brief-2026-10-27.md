@@ -1,7 +1,7 @@
 # US market sweep brief (Yuno, 27-Oct-2026)
 
 ## Who asks and why
-German Tatis, Account Executive at Yuno (payment orchestration: one API to 1,000+ payment methods, PSPs, fraud tools, vault, network tokens, subscriptions engine, reconciliation; 190+ countries). He already has 2,533 companies across his lists. He wants the US companies that are MISSING from those lists and that "should use Yuno with their eyes closed to improve operational efficiency".
+German Tatis, Business Development Manager at Yuno (payment orchestration: one API to 1,000+ payment methods, PSPs, fraud tools, vault, network tokens, subscriptions engine, reconciliation; 190+ countries). He already has 2,533 companies across his lists. He wants the US companies that are MISSING from those lists and that "should use Yuno with their eyes closed to improve operational efficiency".
 
 Yuno positioning: "AI native operating system for global financial infrastructure. We help companies orchestrate their payment stack across a fragmented ecosystem (payment methods, processors, antifraud tools, KYC/KYB, reconciliations, stablecoins) to lower processing costs, increase authorization rates, expand globally, and become more operationally efficient."
 

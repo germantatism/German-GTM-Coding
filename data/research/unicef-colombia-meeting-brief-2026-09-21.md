@@ -63,7 +63,7 @@ Their first ever benefit gala (17 April 2026, Country Club de Bogotá) raised ap
 | Idual Kerguelen Montaño (ikerguelen@unicef.org) | Database Officer | UNICEF Colombia | Accepted |
 | Susana Awad (susana.awad@y.uno) | Organiser, booked the meeting | Yuno | Accepted |
 | Alejandro Albarracín (alejandro@y.uno) | Added German to the invite today | Yuno | Accepted |
-| German Tatis (german.tatis@y.uno) | Senior AE | Yuno | Accepted, marked optional |
+| German Tatis (german.tatis@y.uno) | Business Development Manager | Yuno | Accepted, marked optional |
 
 ### Profiles
 

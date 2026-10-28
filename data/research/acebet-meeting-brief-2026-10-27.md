@@ -72,7 +72,7 @@ Evidence labels: ✅ verified · ⚠️ inference or unconfirmed (never state in
 | Melissa Pottenger | Organizer; partner manager for Coinflow and Checkout.com | Yuno | Accepted. Booked the meeting on 26-Oct and supplied the context in section 0 |
 | Sean Calabro | Head of North America | Yuno | Accepted. Forwarded the invite to German on 26-Oct with "if you can join" |
 | Justo Benetti | Commercial | Yuno | Accepted |
-| German Tatis | Senior AE, **leads the call** | Yuno | Accepted |
+| German Tatis | Business Development Manager, **leads the call** | Yuno | Accepted |
 
 **Boris, profile.** Co-founder of Acebet, per Melissa ✅. No public profile could be built: Acebet names no executives, and searches by email handle and by "Boris" with each Acebet entity returned nothing. Without a surname, LinkedIn cannot be searched.
 

@@ -214,7 +214,7 @@ def nxt(s):
         s.text(x + 12, 168, 124, 66, body, size=8.5, color=BODY, spacing=112)
     s.rect(X0, 272, W0, 56, fill=BLUE)
     s.text(X0 + 16, 272, 300, 56, "**Let's grow together**", size=14, color=WHITE, valign='MIDDLE')
-    s.text(330, 272, 340, 56, 'German Tatis  ·  Senior Account Executive\ngerman.tatis@y.uno  ·  +1 786 238 4554  ·  y.uno',
+    s.text(330, 272, 340, 56, 'German Tatis  ·  Business Development Manager\ngerman.tatis@y.uno  ·  +1 786 238 4554  ·  y.uno',
            size=9, color=WHITE, align='END', valign='MIDDLE', spacing=120)
 
 

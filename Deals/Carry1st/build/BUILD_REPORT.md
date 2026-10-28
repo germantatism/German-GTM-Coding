@@ -36,7 +36,7 @@ Files: `make_spec.py` (generates `deck_spec.json`; pulls the ~150 provider and m
 | 72 | phase2 | table | A merchant of record launches in weeks, local presence in months; through Yuno the move happens without a rebuild. |
 | 73 | d08 | divider | 08 Next steps |
 | 74 | next | next_steps | Three weeks, owners on both sides, and a decision by 23 October so provider onboarding can start in time for Black Friday. |
-| 75 | closing | closing | Let's grow together · German Tatis, Senior Account Executive, Yuno |
+| 75 | closing | closing | Let's grow together · German Tatis, Business Development Manager, Yuno |
 | 76 | dA | divider | Appendix: LatAm deep dive and sources (split rule in the sub-line) |
 | 77 | cty-br | country_deepdive | Brazil is the launch market: Pix and domestic cards carry more than 80% of online purchases and confirm in seconds. |
 | 78 | cty-br-connections | logo_grid | Brazil: EBANX and dLocal are two of 46 providers live through Yuno; Pix is carried by 27 of them. |

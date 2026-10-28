@@ -7,7 +7,7 @@ Each entry keeps its original slug (useful when a memory links to another with `
 ## Index
 
 ### Who German is
-- **user_german_profile** · Who German is — Account Executive (senior) at Yuno, SDR/outreach workflows
+- **user_german_profile** · Who German is — Business Development Manager (BDM) at Yuno, outbound research + outreach workflows; never call him AE or Senior AE
 
 ### Standing rules (how German wants Claude to work)
 - **Always commit and push automatically** · After completing any code/file changes, automatically git commit and git push without asking the user
@@ -23,7 +23,7 @@ Each entry keeps its original slug (useful when a memory links to another with `
 - **feedback_deliverables_google_sheets** · Listas y cruces de datos se entregan en Google Sheets (vía conector de Drive), no en Claude Docs ni artifacts
 - **feedback_drive_download_to_disk** · Para leer un Google Sheet grande completo sin OAuth: download_file_content como xlsx → el harness lo guarda en disco → decodificar base64 con Python y abrir con openpyxl
 - **Email 1 — no name dropping** · Email 1 (opener) must always use the Yuno description boilerplate, never client name dropping. Name dropping is for Email 2+.
-- **feedback_email_length_senior** · Email 1 and Email 2 must be shorter, denser with value, senior AE tone (same voice)
+- **feedback_email_length_senior** · Email 1 and Email 2 must be shorter, denser with value, senior tone (same voice)
 - **feedback-email-no-links-sober** · Correos a prospectos que German envía él mismo van sobrios y sin links ni menciones de "sección X del deck"; German agrega el link o adjunto a mano
 - **feedback_gmail_update_draft_detaches_thread** · Gmail MCP update_draft desprende el borrador del hilo original; para cambiar un borrador de respuesta, recrearlo con create_draft + replyToMessageId
 - **gmail-workflow-central** · German quiere a Claude siempre dentro de su Gmail (conector claude.ai); leer threads y dejar drafts sin preguntar
@@ -149,7 +149,7 @@ Each entry keeps its original slug (useful when a memory links to another with `
 - **project_supabase_service_key_location** · Where the Supabase service-role key for /builddeck upserts is stored
 - **project_super_contacts** · Super.com (Yuno target) key contacts and relationship history for outreach
 - **project_tango_live** · Tango Live (tango.me) research — live-streaming/gifting, web top-up already bypasses app-store fee, dual-sided orchestration play
-- **project_tcl_agent** · Target Company List (TCL) build — German's AE outbound list of ~695 companies being enriched into a full sourced schema in Google Sheets
+- **project_tcl_agent** · Target Company List (TCL) build — German's outbound list of ~695 companies being enriched into a full sourced schema in Google Sheets
 - **project_tcl_final_list_misaligned** · En la TCL (Google Sheet), la pestaña Final List tiene columnas desalineadas desde Insight 3 hasta Confidence; usar TCL_v2 para rating, tier, SF status y stakeholders
 - **project_thinkific** · Thinkific (Vancouver, TSX THNC, Thinkific Payments = Stripe en 36 países, cero LatAm/India) — Darren (VP Product) solo le contesta a Justo; 4 FUPs sin respuesta; 23-sep-2026 reorganización (96 puestos, foco Plus + FCF); research 24-sep contra prioridades Skool + mensaje para Justo en Deals/Thinkific
 - **project_thrivecart** · ThriveCart research brief — checkout platform building payments in-house; embed-Yuno angle not merchant sale
@@ -170,10 +170,10 @@ Each entry keeps its original slug (useful when a memory links to another with `
 # Who German is
 
 ## user_german_profile
-*Who German is — Account Executive (senior) at Yuno, SDR/outreach workflows*  
+*Who German is — Business Development Manager (BDM) at Yuno, outbound research + outreach workflows; never call him AE or Senior AE*  
 *type: user · last updated 2026-07-01*
 
-German Tatis (german.tatis@y.uno) is an **Account Executive at Yuno** (more senior role; previously led pre-sales). Yuno is a payment orchestration platform (single API to 1,000+ payment methods, PSPs, fraud tools, 190+ countries).
+German Tatis (german.tatis@y.uno) is a **Business Development Manager (BDM) at Yuno** (previously led pre-sales). His title is BDM, not Account Executive and not "Senior AE". Yuno is a payment orchestration platform (single API to 1,000+ payment methods, PSPs, fraud tools, 190+ countries).
 
 His workflow centers on outbound sales research and outreach: /research briefs, /builddeck merchant decks on deck.yuno.tools, and a cadence of emails (Email 1 opener, Email 2 deep dive, success case, industry snapshot) tailored to [[reference_buyer_personas]]. His written deliverables follow strict voice rules: no em-dashes, no name dropping in Email 1, tight and senior tone (see [[feedback_email_length_senior]]).
 
@@ -356,12 +356,12 @@ Email 1 always uses the descriptive Yuno boilerplate ("Yuno is a global payment 
 **How to apply:** When writing /email1, always use Variant A (description). When writing /email2 or later cadence emails, name dropping is allowed and encouraged.
 
 ## feedback_email_length_senior
-*Email 1 and Email 2 must be shorter, denser with value, senior AE tone (same voice)*  
+*Email 1 and Email 2 must be shorter, denser with value, senior tone (same voice)*  
 *type: feedback · last updated 2026-10-05*
 
 All Email 1 and Email 2 outreach must keep their existing structure but be shorter and higher-value than the older versions.
 
-**Why:** German is now an Account Executive and more senior (see [[user_german_profile]]); his emails should read tighter and sharper, not junior or padded.
+**Why:** German is a Business Development Manager (see [[user_german_profile]]) and writes to senior counterparts; his emails should read tighter and sharper, not junior or padded.
 
 **How to apply:**
 - Keep the SAME structure. Email 1: hook → PSP paragraph → APM/local-methods paragraph → one capability paragraph → Yuno boilerplate → CTA. Email 2: opener → 3 titled solution paragraphs → Payments Concierge → client logos → CTA. Keep the SAME persona-tailoring off the base message ([[reference_buyer_personas]]).
@@ -369,7 +369,7 @@ All Email 1 and Email 2 outreach must keep their existing structure but be short
 - Every sentence must carry value (a specific finding, number, market, method, or a concrete Yuno outcome). No generic lines.
 - Same voice German always uses: warm, peer-to-peer, curious, human, first person, genuine questions. Not corporate.
 - Hard rules still apply: no em-dashes or " - " punctuation, no "no small feat", no name dropping in Email 1 (logos start Email 2+), keep Payments Concierge to 2 sentences.
-- Net effect: senior AE polish. Shorter, denser, more confident, still the same tone.
+- Net effect: senior polish. Shorter, denser, more confident, still the same tone.
 
 **Añadido 21-sep-2026 (Appmaking, respuesta a preguntas técnicas de un cliente):** aun cuando el cliente pregunta con nombres de campos de API, German quiere respuestas de 2 o 3 frases por pregunta en lenguaje simple, sin listas de casos, sin "notas para desarrolladores" y sin párrafos de contexto de pricing: sí/no, el mecanismo en una frase y la única limitación que importa. El detalle técnico se lleva a la call. Empezar por la versión corta; rechazó tres versiones largas seguidas.
 
@@ -413,7 +413,7 @@ Relacionado: [[feedback_gmail_workflow]].
 
 German dijo (2026-08-05) que conectar Gmail con Claude es "importantísimo" porque necesita a Claude entrando a su correo siempre.
 
-**Why:** Su workflow de AE vive en el correo: threads de deals (Hostinger, Lululemon, Eventbrite), RFPs, follow-ups. Quiere que Claude opere ahí directamente, no que le pase texto para copiar/pegar.
+**Why:** Su workflow de BDM vive en el correo: threads de deals (Hostinger, Lululemon, Eventbrite), RFPs, follow-ups. Quiere que Claude opere ahí directamente, no que le pase texto para copiar/pegar.
 
 **How to apply:** Si el conector claude.ai Gmail está autenticado en la sesión, usarlo proactivamente: leer el thread relevante antes de redactar, y dejar el draft creado en Gmail (draft, no enviar sin OK). Si NO está autenticado, avisarle al inicio y darle el paso de claude.ai/settings/connectors. Pendiente al 2026-08-05: German estaba por autorizarlo. Relacionado: [[project_hostinger]] (primer uso previsto: draft en el thread de Hostinger con las respuestas del RFP).
 
@@ -2276,7 +2276,7 @@ Thread so far (no reply from Gus): Apr 21 2026 connection thank-you + business c
 
 Palco = **Palco4 Tecnología y Servicios SL** (Madrid), rebrand a "PALCO" en **pal.co**. White-label B2B ticketing: 500+ venues, 30 países, 8M+ tickets/año (Bad Bunny RD, Tini AR, Don Omar MX, Shakira UY 2025). Research: data/research/palco-ticketing-2026-09-08.md. Brief de reunión: data/research/palco-meeting-brief-2026-09-09.md.
 
-**Estado del deal (sep 2026):** demo + payment orchestration review 9-sep. Magdalena Torrealba es la dueña de la relación (1ra call 30-jul, SIN grabación en Gong). German entra como AE. Contrapartes: **Patricio Villalobos Cuevas (CEO y co-dueño, Madrid, +34 669 561085)**, Fernando Nava Feldman (VP Engineering), Javier Sánchez (SSE).
+**Estado del deal (sep 2026):** demo + payment orchestration review 9-sep. Magdalena Torrealba es la dueña de la relación (1ra call 30-jul, SIN grabación en Gong). German entra como BDM. Contrapartes: **Patricio Villalobos Cuevas (CEO y co-dueño, Madrid, +34 669 561085)**, Fernando Nava Feldman (VP Engineering), Javier Sánchez (SSE).
 
 **Lo que ellos mismos mandaron por email (2-sep, confidencial):**
 - TPV LTM ~$457M USD, ticket promedio $37.09, ~235,000 tx/mes
@@ -2830,10 +2830,10 @@ Tango (TangoMe): live-streaming/creator-economy app, virtual gifting (Coins in /
 **Strong Yuno ICP — 🔴 High (16).** Key wedge: Tango ALREADY runs a web coin store on tango.me that bypasses Apple/Google 30% fee (up to 40% bonus coins), accepting Visa/MC/Amex + Fawry (EG) + UPI/NetBanking (IN) + crypto stablecoins + "regional methods." Acquirer UNDISCLOSED, NO orchestrator (greenfield). Dual-sided orchestration play: (1) pay-in = smart routing + decline recovery across MENA/India/CIS web top-ups (documented "paid but no coins" + repeated card declines); (2) payouts = 20+ rails run manually (Airwallex, Tipalti, Payoneer, PIX, GCash, STCPay, SBP, carrier billing, all settle USD) with "approved-but-not-settled" complaints → multi-rail redundancy + reconciliation. Catalyst: Dec-2024 Google Play delisting (reinstated May 2025) makes web rail strategic. Personas: Head of Payments/Payments-Ops (Tel Aviv), CTO, VP Finance (US/Cyprus). Never claim they "lack" a method (broad set). Category peers doing same web-topup fee-bypass: Bigo (bigo.tv), TikTok (tiktok.com/coin), MICO, Chamet — good next targets. Brief: data/research/tango-live-2026-07-27.md. Related: [[reference_yuno_positioning]] [[project_thrivecart]] [[feedback_no_false_info_disclaimer]] [[feedback_paypal_not_processor]]
 
 ## project_tcl_agent
-*Target Company List (TCL) build — German's AE outbound list of ~695 companies being enriched into a full sourced schema in Google Sheets*  
+*Target Company List (TCL) build — German's outbound list of ~695 companies being enriched into a full sourced schema in Google Sheets*  
 *type: project · last updated 2026-07-02*
 
-German is building his AE Target Company List in a Google Sheet (ID `1QY5pH4Td2sRitHpHI3Eec69sFfGdK2nuY-QMleqEnek`), edited via [[project_gsheets_mcp]]. Goal: every contact must be defensible with a source.
+German is building his Target Company List in a Google Sheet (ID `1QY5pH4Td2sRitHpHI3Eec69sFfGdK2nuY-QMleqEnek`), edited via [[project_gsheets_mcp]]. Goal: every contact must be defensible with a source.
 
 **Tabs:** `TCL` = original preliminary list (~700 rows, keep intact). `TCL_v2` = new 36-column schema tab (created 2026-07-01) with 695 deduped companies imported. 7 dupes removed (Sympla, Activision Blizzard, Picsart, Quizlet, Civitatis, Clapper, Privalia).
 

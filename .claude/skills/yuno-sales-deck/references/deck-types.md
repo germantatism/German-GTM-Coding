@@ -108,7 +108,7 @@ Goal: get to signature. They know Yuno. Modest, credible numbers and pricing the
 11. TOTAL IMPACT · scenario × levers table + average, set against their current monthly processing cost.
 12-13. PRICING · Option A vs Option B, each with WHAT IT COVERS and WHAT IT MEANS FOR <MERCHANT> (all-in $/transaction at three volumes), term, ramp note. Approved numbers only; if the deal has no negotiated pricing yet, use Yuno's standard pricing (first $50,000 processed free, then $0.05 per transaction) and label it standard. Never invent tiers.
 14. IMPLEMENTATION and TEAM · timeline in weeks, who they get.
-15. NEXT STEPS · dated checklist to signature · close with German's name and title (Account Executive, Yuno).
+15. NEXT STEPS · dated checklist to signature · close with German's name and title (Business Development Manager, Yuno).
 
 ## E. Customer workshop / QBR
 

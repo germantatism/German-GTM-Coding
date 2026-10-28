@@ -330,7 +330,7 @@ def s12(s):
             s.line(x + cw + 3, 169, x + cw + 20, 169, color=BLUE, weight=1.25, arrow=True)
     s.rect(X0, 266, W0, 56, fill=BLUE)
     s.text(X0 + 16, 266, 300, 56, "**Let's grow together**", size=14, color=WHITE, valign='MIDDLE')
-    s.text(330, 266, 340, 56, 'German Tatis  ·  Senior Account Executive\ngerman.tatis@y.uno  ·  +1 786 238 4554  ·  y.uno', size=9, color=WHITE, align='END', valign='MIDDLE', spacing=120)
+    s.text(330, 266, 340, 56, 'German Tatis  ·  Business Development Manager\ngerman.tatis@y.uno  ·  +1 786 238 4554  ·  y.uno', size=9, color=WHITE, align='END', valign='MIDDLE', spacing=120)
 
 
 # ====================================================================== build plumbing

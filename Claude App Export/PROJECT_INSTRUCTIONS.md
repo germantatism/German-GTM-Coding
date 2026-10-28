@@ -4,8 +4,8 @@ Distilled 2026-10-06 from German's Claude Code memory: his profile plus every st
 
 ## Who German is
 
-### Who German is — Account Executive (senior) at Yuno, SDR/outreach workflows
-German Tatis (german.tatis@y.uno) is an **Account Executive at Yuno** (more senior role; previously led pre-sales). Yuno is a payment orchestration platform (single API to 1,000+ payment methods, PSPs, fraud tools, 190+ countries).
+### Who German is — Business Development Manager (BDM) at Yuno, outbound research + outreach workflows; never call him AE or Senior AE
+German Tatis (german.tatis@y.uno) is a **Business Development Manager (BDM) at Yuno** (previously led pre-sales). His title is BDM, not Account Executive and not "Senior AE". Yuno is a payment orchestration platform (single API to 1,000+ payment methods, PSPs, fraud tools, 190+ countries).
 
 His workflow centers on outbound sales research and outreach: /research briefs, /builddeck merchant decks on deck.yuno.tools, and a cadence of emails (Email 1 opener, Email 2 deep dive, success case, industry snapshot) tailored to [[reference_buyer_personas]]. His written deliverables follow strict voice rules: no em-dashes, no name dropping in Email 1, tight and senior tone (see [[feedback_email_length_senior]]).
 
@@ -146,10 +146,10 @@ Email 1 always uses the descriptive Yuno boilerplate ("Yuno is a global payment 
 
 **How to apply:** When writing /email1, always use Variant A (description). When writing /email2 or later cadence emails, name dropping is allowed and encouraged.
 
-### Email 1 and Email 2 must be shorter, denser with value, senior AE tone (same voice)
+### Email 1 and Email 2 must be shorter, denser with value, senior tone (same voice)
 All Email 1 and Email 2 outreach must keep their existing structure but be shorter and higher-value than the older versions.
 
-**Why:** German is now an Account Executive and more senior (see [[user_german_profile]]); his emails should read tighter and sharper, not junior or padded.
+**Why:** German is a Business Development Manager (see [[user_german_profile]]) and writes to senior counterparts; his emails should read tighter and sharper, not junior or padded.
 
 **How to apply:**
 - Keep the SAME structure. Email 1: hook → PSP paragraph → APM/local-methods paragraph → one capability paragraph → Yuno boilerplate → CTA. Email 2: opener → 3 titled solution paragraphs → Payments Concierge → client logos → CTA. Keep the SAME persona-tailoring off the base message ([[reference_buyer_personas]]).
@@ -157,7 +157,7 @@ All Email 1 and Email 2 outreach must keep their existing structure but be short
 - Every sentence must carry value (a specific finding, number, market, method, or a concrete Yuno outcome). No generic lines.
 - Same voice German always uses: warm, peer-to-peer, curious, human, first person, genuine questions. Not corporate.
 - Hard rules still apply: no em-dashes or " - " punctuation, no "no small feat", no name dropping in Email 1 (logos start Email 2+), keep Payments Concierge to 2 sentences.
-- Net effect: senior AE polish. Shorter, denser, more confident, still the same tone.
+- Net effect: senior polish. Shorter, denser, more confident, still the same tone.
 
 **Añadido 21-sep-2026 (Appmaking, respuesta a preguntas técnicas de un cliente):** aun cuando el cliente pregunta con nombres de campos de API, German quiere respuestas de 2 o 3 frases por pregunta en lenguaje simple, sin listas de casos, sin "notas para desarrolladores" y sin párrafos de contexto de pricing: sí/no, el mecanismo en una frase y la única limitación que importa. El detalle técnico se lleva a la call. Empezar por la versión corta; rechazó tres versiones largas seguidas.
 
@@ -192,7 +192,7 @@ Relacionado: [[feedback_gmail_workflow]].
 ### German quiere a Claude siempre dentro de su Gmail (conector claude.ai); leer threads y dejar drafts sin preguntar
 German dijo (2026-08-05) que conectar Gmail con Claude es "importantísimo" porque necesita a Claude entrando a su correo siempre.
 
-**Why:** Su workflow de AE vive en el correo: threads de deals (Hostinger, Lululemon, Eventbrite), RFPs, follow-ups. Quiere que Claude opere ahí directamente, no que le pase texto para copiar/pegar.
+**Why:** Su workflow de BDM vive en el correo: threads de deals (Hostinger, Lululemon, Eventbrite), RFPs, follow-ups. Quiere que Claude opere ahí directamente, no que le pase texto para copiar/pegar.
 
 **How to apply:** Si el conector claude.ai Gmail está autenticado en la sesión, usarlo proactivamente: leer el thread relevante antes de redactar, y dejar el draft creado en Gmail (draft, no enviar sin OK). Si NO está autenticado, avisarle al inicio y darle el paso de claude.ai/settings/connectors. Pendiente al 2026-08-05: German estaba por autorizarlo. Relacionado: [[project_hostinger]] (primer uso previsto: draft en el thread de Hostinger con las respuestas del RFP).
 

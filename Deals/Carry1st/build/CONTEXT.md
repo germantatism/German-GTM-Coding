@@ -1,6 +1,6 @@
 # Carry1st · LatAm Shop launch deck · shared context for all agents (15 Oct 2026)
 
-Owner: German Tatis (Senior AE, Yuno, german.tatis@y.uno). Deal lead on Yuno's side: Justo Benetti (CRO). Juan Pablo Ortega (CEO) booked the review.
+Owner: German Tatis (Business Development Manager, Yuno, german.tatis@y.uno). Deal lead on Yuno's side: Justo Benetti (CRO). Juan Pablo Ortega (CEO) booked the review.
 
 ## The deal in six lines
 - Carry1st: Africa's largest mobile-games publisher and fintech (Cape Town, founded 2018). Backed by a16z, BITKRAFT, Google, Sony Innovation Fund. Publishes and distributes games (partners include Supercell, Activision) and runs the **Carry1st Shop** (game top-ups and digital gift cards).

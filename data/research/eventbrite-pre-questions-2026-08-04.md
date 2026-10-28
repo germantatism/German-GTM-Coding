@@ -7,7 +7,7 @@ Paste-ready for the "pre questions" tab of the meeting brief doc. Companion rese
 
 **Their verbatim ask:** "For reference, we are currently speaking with several other orchestrators. During our call, we would like to see specific examples of how your integrations with PayPal (Braintree), Stripe, Adyen, and JPM Chase support marketplace use cases."
 
-**How to read this doc:** every question has a spoken answer (what you say out loud, English, senior AE register), technical backup, a status, and a source. Statuses: ✅ verified (public docs or hard internal evidence), ⚠️ partial (capability verified but details need internal confirmation), OPEN (do not answer in the call until resolved; the resolution owner is named). Facts marked **INTERNAL** must never be quoted to Eventbrite verbatim (volumes, client architecture details) without permission.
+**How to read this doc:** every question has a spoken answer (what you say out loud, English, senior register), technical backup, a status, and a source. Statuses: ✅ verified (public docs or hard internal evidence), ⚠️ partial (capability verified but details need internal confirmation), OPEN (do not answer in the call until resolved; the resolution owner is named). Facts marked **INTERNAL** must never be quoted to Eventbrite verbatim (volumes, client architecture details) without permission.
 
 ---
 

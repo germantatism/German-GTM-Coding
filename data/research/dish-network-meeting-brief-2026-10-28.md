@@ -49,7 +49,7 @@
 | Name | Role | Side | Status / history |
 |---|---|---|---|
 | Juan Pablo Ortega | CEO, Yuno | Yuno (organizer) | Met Chris at Bullhound Summit, Marbella, 23 to 26 Sep 2026 |
-| German Tatis | Senior AE | Yuno | Accepted; first contact with DISH |
+| German Tatis | Business Development Manager | Yuno | Accepted; first contact with DISH |
 | Chris Ergen | International Business Development & Wireless Innovation, DISH Wireless | DISH | Accepted; Bullhound attendee |
 | Max (Jennings) Orcutt | Not found publicly | DISH | Accepted 27-Oct |
 | Tyler Boscolo | Not found publicly | DISH | Accepted 27-Oct |

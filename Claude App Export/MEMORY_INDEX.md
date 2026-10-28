@@ -50,7 +50,7 @@
 - [Deck edits scoped](feedback_deck_edits_scoped.md) — Cada edición aplica a UN deck (slug / audience+language)
 - [FanDuel deck+research](project_fanduel.md) — PayNearMe/Trustly/Play+, sin orquestador; pains payout + declines; Predicts catalyst
 - [Buyer personas](reference_buyer_personas.md) — 13 personas de Yuno; adaptar outreach a la persona que nombre German
-- [German profile](user_german_profile.md) — Senior AE en Yuno; outbound research + outreach
+- [German profile](user_german_profile.md) — Business Development Manager (BDM) en Yuno, nunca AE; outbound research + outreach
 - [Emails shorter + senior](feedback_email_length_senior.md) — Email 1 y 2 más densos, tono senior, misma voz
 - [LinkedIn shorter](feedback_linkedin_shorter.md) — Outreach LinkedIn/InMail/DM más corto que email
 - [Google Sheets editing (gdrive MCP)](project_gsheets_mcp.md) — ⚠️ MUERTO desde sep-2026; reemplazo vía tools/gsuite

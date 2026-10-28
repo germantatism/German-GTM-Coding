@@ -190,7 +190,7 @@ CLOSE = {  # new slide, drawn
     ],
     'security': 'Available on request: PCI DSS Level 1 attestation, SOC 2 Type 2 report, ISO 27001 and ISO 27701 certificates, Visa Service Provider listing.',
     'band': "**Let's grow together**",
-    'contact': 'German Tatis  ·  Senior Account Executive  ·  San Francisco\ngerman.tatis@y.uno  ·  +1 786 238 4554  ·  y.uno',
+    'contact': 'German Tatis  ·  Business Development Manager  ·  San Francisco\ngerman.tatis@y.uno  ·  +1 786 238 4554  ·  y.uno',
 }
 
 ASK = {  # new slide, drawn (26 Oct evening: the explicit ask the deck lacked)
@@ -202,7 +202,7 @@ ASK = {  # new slide, drawn (26 Oct evening: the explicit ask the deck lacked)
         ('03  ·  THE PAPERWORK, READY', 'Answers within your timeline', 'PCI DSS Level 1 attestation, SOC 2 Type 2 report, ISO 27001 and 27701 certificates and the Visa Service Provider listing on request. Reference calls on request.'),
     ],
     'band': "**Let's grow together**",
-    'contact': 'German Tatis  ·  Senior Account Executive  ·  San Francisco\ngerman.tatis@y.uno  ·  +1 786 238 4554  ·  y.uno',
+    'contact': 'German Tatis  ·  Business Development Manager  ·  San Francisco\ngerman.tatis@y.uno  ·  +1 786 238 4554  ·  y.uno',
 }
 
 NOTES = {

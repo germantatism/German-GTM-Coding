@@ -366,7 +366,7 @@ S.append({'id': 'phase2', 'type': 'table', 'kicker': 'PHASE 2 · MERCHANT OF REC
           'source': 'EBANX api-operability and pay-in guide; Healy, Commenda, BizLatinHub, TMF 2025 to 2026 (incorporation); Kintsugi 2026, Estatuto Tributario, Ley 27.430, Decree 12.499/2025, RG 5617/2024 (tax); docs.y.uno connections and routing. PUBLIC DOCS unless marked.',
           'notes': 'Merchant of record against local presence, on launch time and the long-term customer experience. The short version: the MoR launches in weeks and gives the gamer a domestic charge in local currency from day one; a local entity takes months and pays off at scale through lower processing and local acquiring. The Yuno column is the point: because the acquirer is a connection, Carry1st can make that move in Brazil first and Mexico second without touching the checkout, and keep the MoR live as fallback while it does.'})
 
-S.append({'id': 'closing', 'type': 'closing', 'line': "Let's grow together", 'name': 'German Tatis', 'title': 'Senior Account Executive, Yuno', 'phone': '+1 786 238 4554', 'email': 'german.tatis@y.uno',
+S.append({'id': 'closing', 'type': 'closing', 'line': "Let's grow together", 'name': 'German Tatis', 'title': 'Business Development Manager, Yuno', 'phone': '+1 786 238 4554', 'email': 'german.tatis@y.uno',
           'notes': 'Thank you. German Tatis, Yuno.'})
 
 S.append(divider('dA', 'A', 'Appendix: LatAm deep dive and sources', 'Country levers show one fifth of the base case at run rate, an equal split until volumes by country arrive.',

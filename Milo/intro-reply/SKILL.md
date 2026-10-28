@@ -14,7 +14,7 @@ description: >-
 ## Contexto
 
 Magdalena Torrealba (SDR de Yuno, `magdalena.torrealba@y.uno`) incluye a German
-(`german.tatis@y.uno`, Account Executive de Yuno) en su cadence. En cierto punto
+(`german.tatis@y.uno`, Business Development Manager de Yuno) en su cadence. En cierto punto
 le escribe al lead un email presentando a German: el lead va en TO, German va en CC,
 y el cuerpo dice algo como "introduce you to German" / "presentarte a German".
 
@@ -128,7 +128,7 @@ sin el OK explícito de Magdalena.**
   4. CTA que refuerce el que Magda ya propuso (el call de los tres). Si Magda propuso
      día, confirmarlo y ofrecer horas. Tono de facilitar, no de presionar.
   5. Cierre simple: "Best," + "German".
-- **Tono**: senior, sobrio, seguro. German es el AE que lleva las conversaciones grandes;
+- **Tono**: senior, sobrio, seguro. German es el BDM que lleva las conversaciones grandes;
   no suena a vendedor persiguiendo, suena a la persona que el lead va a querer en la sala.
 - **Prohibido**:
   - Em-dashes y " - " como puntuación. Usar comas o puntos.

@@ -31,7 +31,7 @@ Appendix split rule (stated on the appendix divider): the three lever cards on e
 | 23 | 23 | onus | two_column | What Yuno puts in before signing, and what the platform fee already covers. | Prototype, localization, provider negotiation; no setup fee; routing change not a fee; vault, risk, monitors, dashboard, 20 seats; KAM and TAM | Yuno commitment |
 | 24 | 24 | d07 | divider | 07 Phase 2: merchant of record or local presence |  |  |
 | 25 | 25 | phase2 | table | A merchant of record launches in weeks, local presence in months; through Yuno the move happens without a rebuild. | Launch time, tax and FX, approval and CX, cost, when it makes sense, Yuno's role | PUBLIC DOCS · OPEN (tax per MoR) |
-| 26 | 26 | closing | closing | Senior Account Executive, Yuno |  |  |
+| 26 | 26 | closing | closing | Business Development Manager, Yuno |  |  |
 | 27 | 27 | dA | divider | A Appendix: LatAm deep dive and sources | Split rule in the sub-line: equal fifths until volumes by country arrive |  |
 | 28 | 28 | cty-br | country_deepdive | Brazil is the launch market: Pix and domestic cards carry more than 80% of online purchases and confirm in seconds. | Pix 42% · $2.5B games · 93% of adults used Pix · 46 providers live | PUBLIC DOCS · CONFIRMED |
 | 29 | 29 | cty-br-connections | logo_grid | Brazil: 46 providers live through Yuno, EBANX among them; 27 of them carry Pix and eight carry Boleto. | 46 live providers, EBANX highlighted as MoR at launch; 27 carry Pix, 8 Boleto | CONFIRMED |

@@ -60,7 +60,7 @@ Let Alejandro open with the referral. If something recent helps: on 18 September
 |---|---|---|---|
 | Belén Casaret (belen.casaret@pedidosya.com) | ⚠️ Regional Collections Manager per internal intel | PedidosYa | Accepted |
 | Alejandro Albarracín (alejandro@y.uno) | Organiser, holds the referral | Yuno | Accepted |
-| German Tatis (german.tatis@y.uno) | Senior AE | Yuno | Accepted |
+| German Tatis (german.tatis@y.uno) | Business Development Manager | Yuno | Accepted |
 
 ### Profile: Belén Casaret
 

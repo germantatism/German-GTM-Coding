@@ -1,6 +1,6 @@
 # OnlyFans token vault deck · shared context for all agents (8 Oct 2026)
 
-Owner: German Tatis (Senior AE, Yuno, german.tatis@y.uno). Requested by Samuel Vieira (BDM, samuel@y.uno) on 7 Oct 2026 by Slack DM.
+Owner: German Tatis (Business Development Manager, Yuno, german.tatis@y.uno). Requested by Samuel Vieira (BDM, samuel@y.uno) on 7 Oct 2026 by Slack DM.
 
 ## The deal in five lines
 - OnlyFans (Fenix International Ltd, UK; Fenix Internet LLC, US) opened an RFP for a token vault. Yuno is late. Our contact forwards this deck to OnlyFans' Payments Manager; the deck must be good enough to get Yuno added to the RFP. Deadline: today, 8 Oct 2026.
