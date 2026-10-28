@@ -166,7 +166,7 @@ def price(s):
     source(s, '5-year contract. No platform fee, no setup fee. Pricing valid for 30 days, subject to final agreement.')
 
 
-@slide('terms', "WHAT'S INCLUDED", 'Every acquirer Acebet adds is a routing change, not a new fee')
+@slide('terms', "WHAT'S INCLUDED", "What's included and commercial terms")
 def terms(s):
     s.rect(X0, 84, 312, 200, fill=WHITE, outline=BORDER)
     label(s, 48, 96, 'Included at no extra cost')
