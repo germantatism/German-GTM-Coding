@@ -146,8 +146,13 @@ def price(s):
         s.text(310, y + 17, 110, 10, sub, size=6.5, color=GREY)
         s.text(410, y + 6, 44, 12, f'${n*r:,.0f}', size=7.5, color=INK, align='END'); s.text(456, y + 6, 44, 12, f'${n*r*12:,.0f}', size=7.5, color=INK, align='END')
     s.rect(310, 210 + len(RATES) * 34, 190, 0.5, fill=LINE)
-    s.text(310, 318, 190, 34, 'No platform fee, no setup fee; $10,000 monthly minimum, met by usage today. Each rate applies only to the transactions inside its tranche.',
-           size=7, color=BODY, spacing=108)
+    # monthly minimum, met through usage
+    MIN = 10_000
+    s.rect(306, 318, 198, 34, fill=WHITE, outline=BORDER); s.rect(306, 318, 2, 34, fill=BLUE)
+    s.text(316, 321, 110, 9, 'MONTHLY MINIMUM, BY USAGE', size=6, color=GREY, weight=600)
+    s.text(316, 331, 120, 18, f'Equal to {MIN / RATES[0]:,.0f} transactions at {c3(RATES[0])}. Today\'s usage already covers it.',
+           size=6.5, color=BODY, spacing=105)
+    s.text(430, 318, 66, 34, f'${MIN:,}', size=13, color=BLUE, weight=600, align='END', valign='MIDDLE')
     # right: growth (usage only, monthly and annual)
     s.rect(524, 84, 160, 276, fill=BLUE)
     s.text(536, 96, 140, 9, 'AS ACEBET GROWS', size=7, color=WHITE, weight=600)
@@ -158,7 +163,7 @@ def price(s):
         s.text(536, y + 2, 80, 12, f'{t:,}' + (' today' if i == 0 else ''), size=8, color=LAV)
         s.text(536, y + 16, 80, 20, f'${var(t) / t:.4f}', size=15, color=WHITE, weight=600)
         s.text(596, y + 14, 76, 24, f'${var(t):,.0f}/mo\n${var(t)*12:,.0f}/yr', size=7, color=LAV, align='END', valign='MIDDLE', spacing=110)
-    source(s, '5-year contract with a $10,000 monthly minimum. Pricing valid for 30 days, subject to final agreement.')
+    source(s, '5-year contract. No platform fee, no setup fee. Pricing valid for 30 days, subject to final agreement.')
 
 
 @slide('terms', "WHAT'S INCLUDED", 'Every acquirer Acebet adds is a routing change, not a new fee')
@@ -177,7 +182,7 @@ def terms(s):
         dot(s, 48, 162 + i * 17, t, size=8.5, w=280, h=14)
     s.rect(360, 84, 324, 200, fill=PANEL)
     label(s, 372, 96, 'Commercial terms')
-    terms_ = [('Platform fee', 'None'), ('Monthly minimum', '$10,000, usage counts toward it'),
+    terms_ = [('Platform fee', 'None'), ('Monthly minimum', f'$10,000 in usage (~{10_000 / RATES[0]:,.0f} transactions)'),
               ('Usage', f'{["One", "Two", "Three", "Four"][len(RATES) - 1]} tranches per successful transaction'),
               ('Setup fee', 'None'), ('Retries and cascades', 'Billed once, only when approved'), ('Contract term', '5 years, rates locked')]
     for i, (k, v) in enumerate(terms_):
