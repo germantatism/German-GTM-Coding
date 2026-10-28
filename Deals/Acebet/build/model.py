@@ -7,7 +7,7 @@ TX = 680_000                 # successful transactions / month: last 30 days to 
 TPV = 22_770_000             # last 30 days (Boris said ~$25M); avg deposit $33.42 on Breeze
 PLATFORM = 0   # v7 (German, 27-oct): platform fee removed, usage only
 CUTS = [1_000_000, 2_000_000, None]   # v6 (German, 27-oct): 0-1M / 1M-2M / 2M+
-RATES = [0.020, 0.017, 0.014]          # v9 (German, 27-oct): 2 / 1.7 / 1.4 cents, no platform fee
+RATES = [0.020, 0.017, 0.015]          # v10 (German, 27-oct): 2 / 1.7 / 1.5 cents, no platform fee
 GROWTH = [680_000, 1_000_000, 1_500_000, 2_000_000]  # illustrative volumes, not forecasts
 def bands(tx):
     out, lo = [], 0
