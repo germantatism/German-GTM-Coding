@@ -164,7 +164,7 @@ def price(s):
         s.text(536, y + 2, 80, 12, f'{t:,}' + (' today' if i == 0 else ''), size=8, color=LAV)
         s.text(536, y + 16, 80, 20, f'${var(t) / t:.4f}', size=15, color=WHITE, weight=600)
         s.text(596, y + 14, 76, 24, f'${var(t):,.0f}/mo\n${var(t)*12:,.0f}/yr', size=7, color=LAV, align='END', valign='MIDDLE', spacing=110)
-    source(s, '5-year contract. No platform fee, no setup fee. Pricing valid for 30 days, subject to final agreement.')
+    source(s, '3-year contract. No platform fee, no setup fee. Pricing valid for 30 days, subject to final agreement.')
 
 
 @slide('terms', "WHAT'S INCLUDED", "What's included and commercial terms")
@@ -185,7 +185,7 @@ def terms(s):
     label(s, 372, 96, 'Commercial terms')
     terms_ = [('Platform fee', 'None'), ('Monthly minimum', f'$10,000 in usage (~{10_000 / RATES[0]:,.0f} transactions)'),
               ('Usage', f'{["One", "Two", "Three", "Four"][len(RATES) - 1]} tranches per successful transaction'),
-              ('Setup fee', 'None'), ('Retries and cascades', 'Billed once, only when approved'), ('Contract term', '5 years, rates locked')]
+              ('Setup fee', 'None'), ('Retries and cascades', 'Billed once, only when approved'), ('Contract term', '3 years, rates locked')]
     for i, (k, v) in enumerate(terms_):
         y = 116 + i * 28
         s.rect(372, y - 4, 300, 0.5, fill=LINE)
