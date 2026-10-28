@@ -3,7 +3,7 @@
 **Para:** Sergio Rubio (srubio@unicef.org), Cluster Manager, UNICEF LAC Private Sector Fundraising Cluster (Panamá)
 **Cc:** Juan Lapena Tortuero (jlapena@unicef.org), Lucca Zadra (lucca.zadra@y.uno), Carlos Medina (carlos.medina@y.uno, Implementation Engineer)
 **Asunto:** Re: UNICEF – Recurring Payment Optimization Consultancy (reply al mensaje de Sergio del 26-oct, hilo 1a178b28b5cac823)
-**Estado:** BORRADOR en Gmail (v2 corta, 28-oct-2026 tarde; German pidió "mucho más corto, solo docs.y.uno como link, sin tanta negrita"). v1 larga con 4 links y subtítulos en negrita descartada. Sin enviar.
+**Estado:** BORRADOR en Gmail (v2 corta, 28-oct-2026 tarde; German pidió "mucho más corto, solo docs.y.uno como link, sin tanta negrita"). v1 larga (4 links, subtítulos en negrita) SIGUE en Gmail como segundo borrador del hilo: trash_message fue bloqueado, German debe descartarla a mano. Sin enviar.
 
 **Horarios (German + Carlos libres según calendario, hora Panamá):** vie 30-oct 14:00 a 16:00; mar 3-nov 8:30 a 12:00; vie 6-nov 8:00 a 10:00, 10:20 a 12:00, 14:00 a 16:00. ⚠️ 3-nov es feriado nacional en Panamá (Separación de Colombia; 2 al 5 de nov son feriados), por eso el correo deja el viernes 6 como salida.
 
