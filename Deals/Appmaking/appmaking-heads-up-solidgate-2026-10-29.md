@@ -36,3 +36,20 @@ Notas:
 - Sin links, sin precio, sin lista de beneficios, sin nombrar a Genesis como prospecto de Yuno ni a Primer.
 - Si Tatsiana responde preguntando "qué sabes", la respuesta honesta es: solo lo público (complaint de la FTC + origen de Solidgate en Genesis); sugerirle que lo confirme con Solidgate.
 - Mismo ángulo sirve para cualquier merchant de Solidgate en US (pedido de Justo): cambiar el párrafo 3 por los datos del merchant.
+
+## v2 (29-oct, más corta y directa; es el borrador vigente en Gmail)
+
+⚠️ German había cambiado "In June" por "A couple weeks ago": incorrecto. El complaint es de junio (TRO 4-jun, anuncio 17-jun) y el último paso público es la preliminary injunction del 2-jul-2026 (N.D. Cal., ua.news 4-jul): activos de 10 compañías del grupo congelados hasta el fin del juicio; PayPal congeló ~$8M en cuentas vinculadas (8-jun) y JPMorgan ~$2M (9-jun). No hay fallo en octubre. Se mantiene "In June" y se usa el dato de PayPal/JPMorgan (cuentas de los demandados, no de Solidgate).
+
+Hi Tatsiana,
+
+Not a follow-up on the proposal, just something you should see given how much of your volume runs through Solidgate.
+
+In June the FTC sued fifteen companies tied to Genesis Tech over their subscription practices. A federal court froze their operations, and PayPal and JPMorgan froze accounts linked to them. Solidgate is not named, but it came out of the Genesis group, so it is worth asking them directly whether their US acquiring and wallet relationships are affected.
+
+With the US at around 40% of your revenue, that is a concentration question. If a US acquirer or wallet tightens, where does the traffic go that week? That is the third layer you described to us: your own MIDs, your own tokens, outside the flow of funds, in place before you need it.
+
+Happy to pick it back up whenever it makes sense.
+
+Best regards,
+German
